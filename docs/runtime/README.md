@@ -38,6 +38,15 @@ reload: 624/624 presentations and 2,390 valid option probabilities, with unchang
 P3/P4 runtime contracts. This is runtime success, not learning-quality evidence
 or default promotion; E7 independently scores the delivered outputs.
 
+## M8 untied readout reload (P6)
+
+The [P6 report](p6-m8-checkpoint.md) records one strict fresh stock-HF reload:
+624/624 predictions, exactly627 total forwards including3 startup rows, in36.246s.
+The [explicit v2 contract](p6-readout-contract.md) binds actual frozen tensors,
+learned-row export and CPU/MPS storage identity without changing the scorer.
+E8 independently interprets quality; execution success is not promotion or a
+fresh small-head-versus-stock numerical comparison on every development input.
+
 ## Linux CPU follow-up (P2)
 
 A separate [pinned Linux CPU recipe](../../configs/runtime/linux-cpu/README.md)

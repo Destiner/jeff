@@ -316,8 +316,13 @@ def predict(args, receipt, start):
         rss_bytes = rss if sys.platform == "darwin" else rss * 1024
         require(rss_bytes <= cfg["max_cpu_rss_bytes"], "CPU lifetime RSS guard exceeded")
         if args.device == "mps":
-            require(torch.mps.driver_allocated_memory() <= cfg["max_mps_driver_bytes"],
-                    "MPS driver allocation guard exceeded")
+            driver = torch.mps.driver_allocated_memory()
+            require(driver <= cfg["max_mps_driver_bytes"], "MPS driver allocation guard exceeded")
+            if is_v2:
+                headroom = torch.mps.recommended_max_memory() - driver
+                receipt["minimum_observed_recommended_headroom_bytes"] = min(
+                    receipt.get("minimum_observed_recommended_headroom_bytes", headroom), headroom)
+                require(headroom >= 2 * 2**30, "v2 recommended MPS headroom below 2 GiB")
 
     def sync():
         if args.device == "mps":
