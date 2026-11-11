@@ -36,4 +36,6 @@ No simultaneous appends to one dataset file. Review agents must not silently rew
 
 ## Handoff
 
-Publish `artifacts/handoffs/data/<id>.md` in the shared root with branch/commit, manifest path, counts by family and split, quality findings, generation method, dependencies, and actual/pending cost. Notify Model as soon as the tiny first shard is available; do not wait for all subagents.
+Publish `artifacts/handoffs/data/<id>.md` in the shared root with branch/commit, manifest path, counts by family and split, quality findings, generation method, dependencies, and actual/pending cost. Publish the tiny first shard and its handoff file immediately so Model can discover it, but do not send a chat report or ask Timur to relay that intermediate step.
+
+Send one final chat report after the pilot dataset, manifest, and quality summary are complete. Report early only if genuinely blocked. Continue coordinating subagents and assembling the pilot after the tiny shard is published.

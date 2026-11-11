@@ -35,4 +35,6 @@ Keep ownership disjoint. CPU metric computation is allowed; request Model's comp
 
 ## Handoff
 
-Publish `artifacts/handoffs/evaluation/<id>.md` in the shared root with branch/commit, commands, report and input paths, baseline comparisons, failure counts, dependencies, and costs. Early handoffs must not reveal reserved final-evaluation content.
+Publish `artifacts/handoffs/evaluation/<id>.md` in the shared root with branch/commit, commands, report and input paths, baseline comparisons, failure counts, dependencies, and costs. Intermediate handoffs must not reveal reserved final-evaluation content.
+
+Keep startup updates, inference requests, and early baseline results in these files. Discover Data/Model inputs through their public handoff files when needed. Send one final chat report when the assigned evaluation task is complete; report early only if genuinely blocked. Do not end the task merely because you delegated work or published an input request.

@@ -6,7 +6,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 
 - The model is the project. Prioritize training, evaluation, and improvement; applications and UI are optional.
 - Deliver a saved, reloadable trained model and held-out evaluation by the end of day one. Improve it on day two.
-- Start from pretrained weights. Use Python with uv; the backbone, ML backend, and training method remain open.
+- Start from pretrained weights. Use Python 3.12 with uv; current pilot decisions are in `docs/plan.md`.
 - Target Apple silicon with 16–24 GB unified memory. Prefer local training and inference; cloud training is a fallback.
 - Additional teacher-model and compute spending has a combined £50 ceiling. Estimate and track aggregate spend before scaling.
 - Strong-model-generated labels are acceptable by default. Use lightweight quality checks; distinguish teacher agreement from independently verified correctness.
@@ -23,6 +23,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 - Queue training jobs against measured memory capacity; agent count is not compute capacity.
 - Put generated data, checkpoints, caches, and run outputs under ignored `artifacts/`, with unique IDs. Commit small provenance manifests and configurations, not bulky artifacts.
 - Never overwrite another worker's outputs. Submit a small reviewable change and report checks, artifact IDs, and costs.
+- The main session is project lead. Send one final chat report per completed assigned task; interrupt only for a genuine blocker. Keep intermediate updates in shared handoff files. Timur relays final reports and decisions; do not assume automatic notifications.
 
 ## No tests or linting
 
@@ -31,6 +32,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 
 ## Verification
 
-- This starts as a documentation-only scaffold. Do not invent successful builds or model runs.
-- When introducing the toolchain, document its setup and build/package commands. Verify a real build when implementation exists; do not add test or lint steps.
+- `uv sync --locked` installs the shared package; `uv sync --locked --extra model` includes the ML stack. Keep environments isolated per worktree.
+- `uv build --no-sources` builds the package. No software test or lint steps.
+- Use `uv run --locked --extra model` for model commands so uv retains the optional ML dependencies. Worker implementation and model-run evidence must be reported separately from packaging.
 - Model handoff requires saved weights, a fresh-process reload, working inference, and a comparison with the starting baseline.
