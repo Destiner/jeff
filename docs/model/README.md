@@ -8,6 +8,10 @@ This deliberately small provisional model proves training/save/reload before a l
 
 ## Latest learning contrast: full-parameter Qwen
 
+M7 reset to original P3 and changed only AdamW LR 2e-5 → 2e-6 on the exact M6 schedule. Its one completed run improved TRAIN agreement 805 → 1,130/1,500 and CE 1.357724 → 0.530299, but rule agreement fell 184 → 176/500 with 472 final rule selections at position 0. P5 fresh-process inference and independent E7 held-out comparison are pending here: this is not an end-to-end learning claim or promotion. See [M7 results](m7-qwen-low-lr-results.md), [frozen plan](m7-qwen-low-lr-plan.md), and [run index](m7-qwen-low-lr-run.json).
+
+### Historical M6 contrast
+
 M6 completed its one authorized1500-TRAIN/375-update run, but fixed-schedule TRAIN fit regressed:805→431agreements/1500, CE1.357724→1.390592, with every final recorded argmax at position0. Preserve the negative final checkpoint; no retry, default promotion or causal claim. Fresh starting624predictions are byte-identical to frozen P3. Runtime P4 completed independent final-checkpoint reload; E6 finds all624development choices strictly select input position0, with no both-order success. A small new-reversed NLL improvement does not offset the broad failure; full exceptions remain in the report. See [M6 results](m6-qwen-results.md), [frozen plan](m6-qwen-plan.md), and [run/evidence index](m6-qwen-run.json).
 
 ## Historical control: scalar-head learning rate
