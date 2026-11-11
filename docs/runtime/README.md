@@ -22,6 +22,15 @@ conditional answer-symbol probabilities are not calibrated confidence. The
 pre-load implementation failure and explicitly authorized corrected pass are
 both preserved. No training or root dependency change was made.
 
+## Trained-checkpoint reload (P4)
+
+The [P4 execution report](p4-trained-checkpoint.md) records actual fresh-process
+M6 reload and 624/624 label-free development presentations using unchanged P3
+scoring. Runtime completion is not learning success: Model reported TRAIN-fit
+regression/first-position degeneration; E6 owns independent quality scoring.
+See the [checkpoint binding contract](p4-checkpoint-contract.md) for identity
+verification and its historical implementation-only scope.
+
 ## Linux CPU follow-up (P2)
 
 A separate [pinned Linux CPU recipe](../../configs/runtime/linux-cpu/README.md)

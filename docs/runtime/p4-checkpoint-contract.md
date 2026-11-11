@@ -16,7 +16,7 @@ Required manifest fields:
 | --- | --- |
 | `schema_version` | `jeff.qwen-trained-checkpoint.v1` |
 | `status`, `kind` | `complete`, `trained` |
-| `checkpoint_id`, `run_id` | Nonempty strings; producer assigns unique identities |
+| `checkpoint_id`, `run_id` | Nonempty producer strings; qualify identity by manifest path/hash |
 | `base_model_id` | `Qwen/Qwen2.5-0.5B-Instruct` |
 | `base_revision` | `7ae557604adf67be50417f59c2c2f167def9a775` |
 | `training_code_revision` | 40 hexadecimal characters |
@@ -107,9 +107,17 @@ filesystem mutation between validation and loading.
 
 ## Verification boundary
 
-This implementation was source-reviewed and packaged with `uv build --no-sources`.
-The trained checkpoint was not ready during implementation. No fabricated
-checkpoint/fixture, software test, lint, tokenizer audit, model load, inference,
-training, or extra original-weight scan was executed. Actual trained manifest
-acceptance, fresh-process reload, 624-presentation development coverage, resource
-measurements, and evaluation remain pending Model publication and scheduling.
+At implementation delivery, this change was source-reviewed and packaged with
+`uv build --no-sources`; the trained checkpoint was not yet ready. That historical
+implementation-only scope included no fabricated checkpoint/fixture, software
+test, lint, tokenizer audit, model load, inference, training, or extra
+original-weight scan.
+
+Subsequently, the actual frozen M6 manifest was accepted and revalidated, and a
+fresh process completed all 624 development presentations, exit 0, at runtime
+revision `264c44349c3eee73e539a200645abe7d9c50169c`. The
+[P4 execution report](p4-trained-checkpoint.md) records exact checkpoint and
+output identities, timing, memory and offline qualifications. This is completed
+runtime verification, not proof of learning: Model reported TRAIN-fit regression
+and first-position degeneration; independent held-out scoring belongs to E6.
+No Runtime label scoring or promotion is implied.
