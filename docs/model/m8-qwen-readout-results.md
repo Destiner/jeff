@@ -114,5 +114,5 @@ saved training receipt/readout proof/checkpoint manifest. Earlier artifacts'
 “P6 pending” statements describe their creation time; P6 return supersedes them.
 The [readiness assessment](m8-readout-readiness.md) remains immutable historical
 context: the run was subsequently executed under the lead grant, not an edit
-to that assessment. No M9 audit, active-branch edits or main integration are
-part of this documentation delivery.
+to that assessment. No additional inference or training was performed for
+this publication.
