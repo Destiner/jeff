@@ -1,0 +1,76 @@
+{
+  "schema_version": "e7.preparation/1",
+  "status": "predeclared; deferred analysis unexecuted; execution evidence pending",
+  "plan": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclared-v1/plan.md",
+    "sha256": "91b5e28e2a597052d1750f0e05be76b315911cd9ec05aed18ba620bc21a64110"
+  },
+  "receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclared-v1/receipt.json",
+    "sha256": "e51df73e9a7da28c066aa41946330b73fb134147c38fa28dd45db8775b852cd1"
+  },
+  "label_free_inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclared-v1/inputs.json",
+    "sha256": "32adf57bf93980aac612743e8a351d13bb8d4a61ba7480cd1715f6ee9910c320"
+  },
+  "tracked_plan": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e7-plan.md",
+    "sha256": "91b5e28e2a597052d1750f0e05be76b315911cd9ec05aed18ba620bc21a64110"
+  },
+  "tracked_receipt": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e7-predeclaration-v1.json",
+    "sha256": "e51df73e9a7da28c066aa41946330b73fb134147c38fa28dd45db8775b852cd1"
+  },
+  "owner_scope_and_branch": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e7-binding.md",
+    "sha256": "7695db6be74b595747d6d5f76df72e3e78ee47e7125b1c4956f60f11e4fc2b4a"
+  },
+  "independent_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclaration-review-v1/findings.md",
+      "sha256": "206537bccbaef9f4e1eabe8369ac6b8d80063b378d8c3da113890e4c130a1b27"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclaration-review-v1/receipt.json",
+      "sha256": "1b086095ca55b4ee58e700af6be8feb576971289ee3772a363eb6c36180b3362"
+    }
+  ],
+  "deferred_preparation": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/run.py",
+      "sha256": "f1ee704793615dad44e627696e853420e3cde89c71bb7164e47cda716ba6aaba"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/topset.py",
+      "sha256": "c249d9299e0d0ca1f61343f2752ab378bf543dec68850b9963eb403068a7e2cc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/README.md",
+      "sha256": "ddb4c843eae20fe36088737dadd39b809d3e0000ea2ae6b1246c78ca3803f16c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/metadata-verification.json",
+      "sha256": "37c16bf831ec52051336f1ed406a896918dc9ae826e697384c3a37083f165b99"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/preparation-lock.json",
+      "sha256": "422af87c315dfc907c935dd001592cb89ed30f8aa7341a1b9509226e97dce465"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/receipt.json",
+      "sha256": "6b95a1eef27f3bde277c38208e4307c4fc90de4066e882655fc1f61bbbcca52c"
+    }
+  ],
+  "scientific_pins": 117,
+  "nested_reference_bindings_reviewed": 194,
+  "deferred_dependency_pins": 152,
+  "presentations": 624,
+  "pairs": 312,
+  "predictors_expected_per_stratum": 12,
+  "controls": "M7 lowerLR2e-6 chosen beforelearning; preserveoriginalP3/failedM6/all11retainedcomparators. Actualsource/reset/reuse/TRAINfit/finalP5binding stillrequirespublished evidence. No newSTARTunlessactualreuseinvalidityjustifiesit.",
+  "limits": "Local timestamps notcryptoproof. No runner/syntax/readiness certification, softwaretests or MLexecution. Samecorrelateddevelopmentstrata, nofinalaccess/newcases/defaultpromotion/calibration/significance claim.",
+  "cost_gbp": {
+    "additional_actual": 0,
+    "additional_pending": 0
+  }
+}
