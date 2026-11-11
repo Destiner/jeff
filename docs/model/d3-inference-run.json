@@ -1,0 +1,176 @@
+{
+  "schema_version": "model/d3-inference/1",
+  "scope": "96 original-only decisions; four preserved M4 snapshots; no training/tuning/checkpoint/reversal replay",
+  "units": {
+    "decisions": 96,
+    "policy_source_groups": 48,
+    "intentionally_seen_mechanisms": 8
+  },
+  "preflight": {
+    "path": "model/m4-d3-inference-20261111-01/preflight.json",
+    "sha256": "15e7a79bced4b2be7b40c4b0e10f89c0f43e130d875c93b746cdb04da277c566"
+  },
+  "receipt": {
+    "path": "model/m4-d3-inference-20261111-01/receipt.json",
+    "sha256": "b8ad423e15e2e0b1909aa73532265d549979b8b5de32b4c1b233da5cfe37e177"
+  },
+  "execution_script": {
+    "path": "model/m4-d3-inference-20261111-01/execute.py",
+    "sha256": "af090f6bba6164ceb7a369b0d1e0b54e6a0c7b10c72297e1a0f0d9f7f9c2fe37"
+  },
+  "execution_revision": "2d344c75c62740966362386535c954bfd5b3818e",
+  "token_audits": {
+    "minilm-baseline": {
+      "tokenizer_sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "pairs": 361,
+      "full_pair_min": 56,
+      "full_pair_max": 129,
+      "native_cap": 256,
+      "over_budget_pairs": 0
+    },
+    "minilm-checkpoint": {
+      "tokenizer_sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "pairs": 361,
+      "full_pair_min": 56,
+      "full_pair_max": 129,
+      "native_cap": 256,
+      "over_budget_pairs": 0
+    },
+    "msmarco-baseline": {
+      "tokenizer_sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "pairs": 361,
+      "full_pair_min": 56,
+      "full_pair_max": 129,
+      "native_cap": 256,
+      "over_budget_pairs": 0
+    },
+    "msmarco-checkpoint": {
+      "tokenizer_sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "pairs": 361,
+      "full_pair_min": 56,
+      "full_pair_max": 129,
+      "native_cap": 256,
+      "over_budget_pairs": 0
+    }
+  },
+  "jobs": [
+    {
+      "snapshot": "minilm-baseline",
+      "checkpoint": "model/m4-v2-20261111-01/minilm/baseline",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+        "rows": 96
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-predictions.jsonl",
+        "sha256": "c0f9322dddf8e1f15f0139c804ab3c25f61be978e8f9d1f260b1486410f15500",
+        "rows": 96
+      },
+      "job_receipt": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-baseline-receipt.json",
+        "sha256": "55a6ff56fcb28d1c695a16f058e3fe397a91117e32258858c2bb2f49fec7e3ff"
+      },
+      "checkpoint_inventory_before": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-baseline-inventory-before.json",
+        "sha256": "9cff9e17285d790e1b7f2cd7086ac5b7f396053f65460478fd8ac66f50a8feed"
+      },
+      "checkpoint_inventory_after": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-baseline-inventory-after.json",
+        "sha256": "9cff9e17285d790e1b7f2cd7086ac5b7f396053f65460478fd8ac66f50a8feed"
+      },
+      "checkpoint_files_unchanged": true,
+      "exit_code": 0,
+      "process_wall_seconds": 2.928024666849524
+    },
+    {
+      "snapshot": "minilm-checkpoint",
+      "checkpoint": "model/m4-v2-20261111-01/minilm/checkpoint",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+        "rows": 96
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-predictions.jsonl",
+        "sha256": "1d7f4a850d836f1091a07aebe1f0e22cbcac4d33e1503debfc97603837ecd01f",
+        "rows": 96
+      },
+      "job_receipt": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-checkpoint-receipt.json",
+        "sha256": "9d76c3396b5a86ee5eeb286493cfe2b43b29dbf1a6c997b8c8bfdf015cd57df9"
+      },
+      "checkpoint_inventory_before": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-checkpoint-inventory-before.json",
+        "sha256": "f4b83eed5583d1a2baf1e99d59113aef83e031cb6e577a8828b499a26194f174"
+      },
+      "checkpoint_inventory_after": {
+        "path": "model/m4-d3-inference-20261111-01/minilm-checkpoint-inventory-after.json",
+        "sha256": "f4b83eed5583d1a2baf1e99d59113aef83e031cb6e577a8828b499a26194f174"
+      },
+      "checkpoint_files_unchanged": true,
+      "exit_code": 0,
+      "process_wall_seconds": 1.9592528748326004
+    },
+    {
+      "snapshot": "msmarco-baseline",
+      "checkpoint": "model/m4-v2-20261111-01/msmarco/baseline",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+        "rows": 96
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-predictions.jsonl",
+        "sha256": "18a6768fb5a1596a2ca55cceaf58792efa65554897183f767e617c595d256076",
+        "rows": 96
+      },
+      "job_receipt": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-baseline-receipt.json",
+        "sha256": "67ce0bf586e4ab03c04b1cafdbb3f2a145f63e63aae6bb90f5908af712937e0d"
+      },
+      "checkpoint_inventory_before": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-baseline-inventory-before.json",
+        "sha256": "56754daf67a374e1698ea4b5606d0da64fc8a2c1af5b37ee6548714723fe5928"
+      },
+      "checkpoint_inventory_after": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-baseline-inventory-after.json",
+        "sha256": "56754daf67a374e1698ea4b5606d0da64fc8a2c1af5b37ee6548714723fe5928"
+      },
+      "checkpoint_files_unchanged": true,
+      "exit_code": 0,
+      "process_wall_seconds": 1.960908374749124
+    },
+    {
+      "snapshot": "msmarco-checkpoint",
+      "checkpoint": "model/m4-v2-20261111-01/msmarco/checkpoint",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+        "rows": 96
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-predictions.jsonl",
+        "sha256": "ff9656e94d63f437f56638e088c2edca8b0326f016a605334baff677b5936c28",
+        "rows": 96
+      },
+      "job_receipt": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-checkpoint-receipt.json",
+        "sha256": "765d3249679516a4a936b20b4e1a1acecd6b86d769cfc39f797ccc6382fe772d"
+      },
+      "checkpoint_inventory_before": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-checkpoint-inventory-before.json",
+        "sha256": "f9a3b11c8f67a6e2d9e13c5fb809572b710c04d11414d5049bee6319300cb094"
+      },
+      "checkpoint_inventory_after": {
+        "path": "model/m4-d3-inference-20261111-01/msmarco-checkpoint-inventory-after.json",
+        "sha256": "f9a3b11c8f67a6e2d9e13c5fb809572b710c04d11414d5049bee6319300cb094"
+      },
+      "checkpoint_files_unchanged": true,
+      "exit_code": 0,
+      "process_wall_seconds": 1.9504466252401471
+    }
+  ],
+  "additional_spend_gbp": 0,
+  "interpretation": "Prediction integrity only; E4 independently scores in separate seen-mechanism/new-policy stratum. No accuracy/calibration/default claim."
+}
