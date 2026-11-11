@@ -49,4 +49,6 @@ Actual local HF load.709607s/full-pass36.818456s/16.948022decisions/s. Runtime r
 
 Evaluation E6 interprets both orders and source/family/probe regressions independently under its pre-outcome plan. TRAIN fit cannot substitute for those results or establish general rule-transfer failure by itself.
 
+The subsequent [bounded source/receipt diagnosis](m6-qwen-diagnosis.md) found no concrete defect in the scoped Python objective/update path; native-gradient correctness and the cause of lost discrimination remain unresolved. It performed no new model/weight load or inference and did not redefine the negative outcome.
+
 The full learning allocation is exhausted. Keep the negative final checkpoint, original P3 and all prior encoder candidates. Any causal diagnosis, new objective, LR/epoch change or fallback needs its own authorization; this failure does not reject every decoder or supervised-learning approach. £0additional actual/pending/allocation. No software tests/lint, dependencies, final access, external uploads or production/default migration.
