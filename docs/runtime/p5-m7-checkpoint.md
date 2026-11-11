@@ -77,4 +77,4 @@ original evidence unchanged.
 
 Documentation source review and `uv build --no-sources` are the only delivery
 checks; build log: `artifacts/release/p5-m7-20261111-01/report-build.log` at root.
-No runtime/framework/bundle/Linux/dependency work, main merge or mailbox action.
+No new runtime/framework/bundle/Linux/dependency work was added.
