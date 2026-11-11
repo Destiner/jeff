@@ -10,7 +10,9 @@ Inputs: {"schema_version":"p3.inputs.v1","datasets":[{"name":"validation",
 Paths are relative to the manifest. Local asset identity is an owner download
 attestation, not independently authenticated against the remote repository.
 Audit hashes weights but never loads them; place the complete pinned download
-before auditing. A changed cap/asset/source/config requires a fresh audit.
+before auditing. For trained weights, audit with --checkpoint-manifest pointing
+to the sibling manifest: base revision then denotes lineage, not weight identity.
+A changed cap/asset/source/config requires a fresh audit.
 """
 
 import argparse
@@ -191,12 +193,20 @@ def prepare(tokenizer, cfg, row):
     return prompt, answer_ids
 
 
-def evidence(config_path, manifest_path, model_dir):
+def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
     # Importing the tokenizer never imports Jeff's scorer or constructs a model.
     from transformers import AutoTokenizer
 
     cfg = configuration(config_path)
-    asset_hashes = assets(model_dir, cfg)
+    binding = None
+    if checkpoint_manifest is not None:
+        from jeff.runtime.qwen_checkpoint import validate_checkpoint
+
+        binding, asset_hashes = validate_checkpoint(
+            checkpoint_manifest, model_dir, config_path, cfg, require=require, load=load,
+            digest=digest, safe_path=safe_path, assets=assets)
+    else:
+        asset_hashes = assets(model_dir, cfg)
     suites = read_inputs(manifest_path)
     tokenizer = AutoTokenizer.from_pretrained(str(model_dir), local_files_only=True, trust_remote_code=False)
     require(isinstance(tokenizer.chat_template, str) and tokenizer.chat_template, "official chat template required")
@@ -215,14 +225,17 @@ def evidence(config_path, manifest_path, model_dir):
                                   "prompt_token_sha256": text_hash(json.dumps(prompt))}
                                  for row, (prompt, answers) in zip(rows, encoded)]})
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    return {"schema_version": "p3.audit.v1", "config_path": str(config_path),
+    proof = {"schema_version": "p3.audit.v1", "config_path": str(config_path),
             "config": cfg, "config_sha256": digest(config_path), "source_sha256": digest(SOURCE),
             "git_revision": revision, "git_status": subprocess.check_output(
                 ["git", "status", "--porcelain"], cwd=ROOT, text=True),
             "input_manifest_path": str(manifest_path), "input_manifest": load(manifest_path),
             "input_manifest_sha256": digest(manifest_path),
             "model_assets": asset_hashes, "chat_template_sha256": text_hash(tokenizer.chat_template),
-            "environment": environment(), "suites": reports}, prepared
+            "environment": environment(), "suites": reports}
+    if binding is not None:
+        proof["trained_checkpoint"] = binding
+    return proof, prepared
 
 
 def memory(torch, device, stage):
@@ -237,7 +250,10 @@ def predict(args, receipt, start):
     audit = load(args.audit_dir / "audit.json")
     require(audit["status"] == "complete", "incomplete audit")
     frozen = audit["evidence"]
-    current, suites = evidence(Path(frozen["config_path"]), Path(frozen["input_manifest_path"]), args.model_dir)
+    checkpoint_manifest = (Path(frozen["trained_checkpoint"]["manifest_path"])
+                           if "trained_checkpoint" in frozen else None)
+    current, suites = evidence(Path(frozen["config_path"]), Path(frozen["input_manifest_path"]),
+                               args.model_dir, checkpoint_manifest=checkpoint_manifest)
     require(current == frozen, "code/config/input/model/tokenization/environment changed since audit")
     cfg = current["config"]
     require(args.device == cfg["device"], "device must match the pre-outcome frozen recipe")
@@ -353,6 +369,7 @@ def main():
     audit.add_argument("--config", type=Path, required=True)
     audit.add_argument("--inputs", type=Path, required=True)
     audit.add_argument("--audit-dir", type=Path, required=True)
+    audit.add_argument("--checkpoint-manifest", type=Path)
     run = commands.add_parser("predict")
     run.add_argument("--audit-dir", type=Path, required=True)
     run.add_argument("--output-dir", type=Path, required=True)
@@ -370,7 +387,8 @@ def main():
     exit_code = 0
     try:
         if args.command == "audit":
-            proof, _ = evidence(args.config.resolve(), safe_path(args.inputs), args.model_dir)
+            proof, _ = evidence(args.config.resolve(), safe_path(args.inputs), args.model_dir,
+                                checkpoint_manifest=args.checkpoint_manifest)
             receipt["evidence"] = proof
             receipt["status"] = "complete"
         else:
