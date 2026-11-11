@@ -45,8 +45,17 @@ python -m jeff.training.train --dataset-manifest "$MANIFEST" --output-dir "$NEW_
   --revision 233902d25c440f23af6f7d6e94d2946bac0bee0a \
   --device mps --seed 42 --batch-size 4 --threads 4 --max-length 256 \
   --learning-rate 2e-5 --head-learning-rate 5e-4 \
-  --epochs 12 --max-steps 4500 --m9-resource-guards
+  --epochs 12 --max-steps 4500 --m9-resource-guards \
+  --m9-initial-run "$ORIGINAL_M4_MSMARCO_RUN_JSON" \
+  --m9-initial-run-sha256 "$FROZEN_ORIGINAL_RUN_SHA256"
 ```
+
+Before validation or updates, guarded training compares all already-computed
+initial parameter hashes with the original M4 run's `weights.before`, requiring
+its pinned bytes and completed status. No additional tensor/hash scan is added.
+Mismatch stops before learning; the binding and actual hashes remain in failure
+metadata. The inference environment explicitly fixes OMP/MKL/VECLIB threads to4
+(the existing predictor has no threads CLI flag).
 
 ## Guard evidence and completion
 

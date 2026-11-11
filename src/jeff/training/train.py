@@ -41,6 +41,8 @@ def parser():
     result.add_argument("--max-steps", type=int)
     result.add_argument("--threads", type=int, default=4)
     result.add_argument("--m9-resource-guards", action="store_true")
+    result.add_argument("--m9-initial-run")
+    result.add_argument("--m9-initial-run-sha256")
     return result
 
 
@@ -266,6 +268,23 @@ def train_run(args, output, record, started, guards=None):
         raise ValueError("Unexpected parameters outside the backbone/head optimizer groups")
 
     baseline_hashes = parameter_hashes(torch, model, guards)
+    if guards is not None:
+        if not args.m9_initial_run or not re.fullmatch(r"[0-9a-f]{64}", args.m9_initial_run_sha256 or ""):
+            raise ValueError("M9 requires a pinned original M4 run for pre-update identity binding")
+        reference_bytes = Path(args.m9_initial_run).read_bytes()
+        if hashlib.sha256(reference_bytes).hexdigest() != args.m9_initial_run_sha256:
+            raise ValueError("M9 original-run reference bytes changed")
+        reference = json.loads(reference_bytes)
+        record["m9_initial_binding"] = {
+            "reference_path": str(Path(args.m9_initial_run).resolve()),
+            "reference_sha256": args.m9_initial_run_sha256,
+            "actual_parameter_hashes": baseline_hashes,
+            "exact_match": baseline_hashes == reference["weights"]["before"],
+        }
+        if reference["status"] != "completed" or not record["m9_initial_binding"]["exact_match"]:
+            raise ValueError("M9 initial parameters differ from the original M4 start; no updates allowed")
+    elif args.m9_initial_run or args.m9_initial_run_sha256:
+        raise ValueError("M9 initial binding requires its resource guards")
     parameter_names = {id(parameter): name for name, parameter in model.named_parameters()}
     group_names = {
         "backbone": {parameter_names[id(parameter)] for parameter in backbone_parameters},

@@ -35,6 +35,10 @@ class ResourceGuards:
 
     def bind(self, torch, device):
         self.torch, self.device = torch, device
+        threads = torch.get_num_threads()
+        self._event({"stage": "bind", "torch_threads": threads})
+        if threads != 4:
+            raise RuntimeError("M9 requires exactly four torch CPU threads")
         self.check("before_load")
 
     def check(self, stage):
