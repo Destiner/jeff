@@ -1,6 +1,6 @@
 {
   "schema_version": "m9.publication-index.v1",
-  "scope": "Docs-only postrun publication; no new execution/scoring; pending P7/E9 snapshot",
+  "scope": "Docs-only postrun publication; Model/P7 complete, independent E9 quality pending; no new execution or scoring",
   "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01",
   "evidence": [
     {
@@ -477,6 +477,8 @@
     }
   },
   "aggregate_model_ml_seconds": 311.9599703750573,
+  "aggregate_model_and_p7_ml_seconds": 316.05845020804554,
+  "unused_aggregate_seconds": 883.9415497919545,
   "resource_qualification": "External max_sampled_process_rss_bytes is sampled per-process RSS, not R9 derived tree sum or physical usage. Internal lifetime HWM and sampled driver/headroom differ in scope; strict guards do not guarantee continuous peaks.",
   "processes_and_groups_absent": true,
   "unchanged_frozen_pins": 73,
@@ -488,21 +490,88 @@
     "implementation_window_end": "2026-11-11T22:56:57Z"
   },
   "p7": {
-    "status": "pending_at_draft",
+    "status": "complete_verified_closed",
     "original_start_by": "2026-11-11T23:12:00Z",
     "original_disposition": "Missed before ANY ML/binding; preflight-unstarted preserved",
     "renewed_handoff": "2026-11-11T23:15:00Z",
     "renewed_start_by": "2026-11-11T23:30:00Z",
     "reservation": "c00b7ab7-78f1-484d-a4fe-e6e05a099f86",
-    "reservation_consumed": false,
-    "seconds": 120,
+    "reservation_consumed": true,
     "decisions": 624,
     "batches": 156,
     "batch_size": 4,
     "threads": 4,
     "startup_or_canary": 0,
     "aggregate_cap_seconds": 1200,
-    "actual_return": "Parent to append; no P7 outcomes read or scored here"
+    "actual_return": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/p7-return.json",
+      "sha256": "651f85c614610f2a662b6ae2ab9f74cf26de13e9ba0155062b044c38738bdb2c"
+    },
+    "maximum_seconds": 120,
+    "process_wall_seconds": 4.098479832988232,
+    "evidence": {
+      "schema_version": "m9.p7-return.v1",
+      "status": "verified and closed",
+      "checked_at": "2026-11-11T23:21:21.883919+00:00",
+      "reservation": "c00b7ab7-78f1-484d-a4fe-e6e05a099f86",
+      "renewed_activation": "9d8031ae-5960-4daa-add3-a48c8c9bee9d",
+      "original_activation": "112718ad-c5ec-4ea1-999f-ac1f53415656",
+      "process": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/process-receipt.json",
+        "sha256": "73effd842dc46a3760b2ab45eec96f1a585b9557f719647e66833698eb4b3aba"
+      },
+      "run_receipt": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/receipt.json",
+        "sha256": "5ffcec25d221440aa8b14d1c7e85ea4577f44627842e82c7370863884ddae8c6"
+      },
+      "binding": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/binding.json",
+        "sha256": "a49a0934ea45febea4817a1a602ca6391d608bfe518d6a39ae0125ab48224f69"
+      },
+      "delivery_summary": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/delivery-summary.json",
+        "sha256": "ee9730a9d3165348e68d07c9327143d483b3dea6876c60a4a474bdccbfb2313e"
+      },
+      "expired_unstarted_preflight": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/preflight-unstarted.json",
+        "sha256": "fe8f7d9b6c698d16ab975b1af36f14a3b0c4b080cfc52c83b6c55d6994fee935"
+      },
+      "outputs": [
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+          "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+          "rows": 300
+        },
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-reversed.jsonl",
+          "sha256": "20237f96c1c1e2bccb819029e7a262ee476a03bb92f14ae843ca4da48d3eb5f7",
+          "rows": 300
+        },
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/probes-paired.jsonl",
+          "sha256": "b5fcb19fa66f0145ca5e497856d158e779b373e7faaf7361319705c36e02ceba",
+          "rows": 24
+        }
+      ],
+      "processes_and_group_absent": true,
+      "process_wall_seconds": 4.098479832988232,
+      "model_ml_seconds": 311.9599703750573,
+      "total_model_and_p7_ml_seconds": 316.05845020804554,
+      "unused_aggregate_seconds": 883.9415497919545,
+      "batch_size": 4,
+      "attempted_batches": 156,
+      "completed_batches": 156,
+      "decisions": 624,
+      "startup_or_canary": 0,
+      "source_revision": "b072c8ba7a4e411b73d9efa8a9062793f016545c",
+      "memory": {
+        "lifetime_peak_rss_bytes": 499187712,
+        "max_sampled_driver_bytes": 1108017152,
+        "minimum_sampled_headroom_bytes": 17961648128,
+        "samples": 317
+      },
+      "qualification": "CPU metadata/hash/coverage closure, not held-out scoring or independent tensor/update replay. Unused budget does not authorize extra work."
+    }
   },
   "e9": {
     "status": "independent_quality_pending"

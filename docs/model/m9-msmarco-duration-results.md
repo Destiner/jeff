@@ -1,6 +1,6 @@
 # M9: longer fresh MS MARCO training improves TRAIN fit; rules remain incomplete
 
-**Full-TRAIN supplied-target agreement rises from M4's 985 to 1,314/1,500, and CE falls 0.726023 → 0.2890573.** Intent and sentiment reach 500/500 each; rules reach 314/500. This is a fit diagnostic, not held-out correctness, architectural incapacity, or a promotion decision. **P7 reload/development return and independent E9 quality interpretation are pending at this draft.**
+**Full-TRAIN supplied-target agreement rises from M4's 985 to 1,314/1,500, and CE falls 0.726023 → 0.2890573.** Intent and sentiment reach 500/500 each; rules reach 314/500. This is a fit diagnostic, not held-out correctness, architectural incapacity, or a promotion decision. **P7 fresh reload/development execution is complete and its slot closed; independent E9 quality interpretation remains pending.**
 
 ## Fit first, then the predeclared branch
 
@@ -45,7 +45,7 @@ The unchanged original 300-row validation reports 129 → 208 agreements and CE 
 
 Preparation began 22:11:57Z; first fit invocation was 22:51:58Z: **40m01s, within 45 minutes**. The native implementation/source-preparation window ended 22:56:57Z; this publication is docs-only and does not extend it. Core resource guards and the initial-binding gate were reviewed; package builds passed. Strict source guards are not complete peak-resource guarantees.
 
-Model ML process time totals **311.959970375 s**: training 292.392775500 + initial MiniLM fit 6.989023333 + initial MS MARCO fit 6.262047042 + final fit 6.316124500. P7 is excluded. All four receipts report success and absent process groups; checkpoint-ready records all processes/groups gone and **73 frozen source/data/old-asset pins unchanged**. Additional local process spend: £0.
+Model ML process time totals **311.959970375 s**: training 292.392775500 + initial MiniLM fit 6.989023333 + initial MS MARCO fit 6.262047042 + final fit 6.316124500. P7 is excluded from that Model subtotal. Including P7's 4.098479833 s, the complete chain used **316.058450208 s of 1,200**; unused time is not authority for more work. All four Model receipts report success and absent process groups; checkpoint-ready records all processes/groups gone and **73 frozen source/data/old-asset pins unchanged**. Additional local process spend: £0.
 
 | Job | Internal lifetime RSS HWM (bytes) | Sampled driver max (bytes) | Sampled recommended headroom min (bytes) | External max sampled per-process RSS (bytes) |
 | --- | ---: | ---: | ---: | ---: |
@@ -56,9 +56,13 @@ Model ML process time totals **311.959970375 s**: training 292.392775500 + initi
 
 Internal RSS is a process-lifetime high-water observation; driver/headroom and external RSS are sampled, not continuous accelerator/physical-memory peaks. External values above are actual process-receipt `max_sampled_process_rss_bytes`. R9's “external tree RSS” is a **derived sum**, not the per-process guard metric or physical usage. Do not add these scopes together. Bounds were 8 GiB RSS/driver, ≥2 GiB recommended headroom, and 1,200 s aggregate; sampling cannot guarantee no intersample overshoot.
 
-## P7 / E9 handoff remains open
+## P7 completed; independent E9 interpretation remains open
 
-The original P7 start-by 23:12Z was missed **before any ML or binding**; the preflight-unstarted record is preserved. The renewed 23:15Z handoff sets start-by 23:30Z with the same unconsumed 120-second reservation: 624 decisions / 156 batches of four, four threads, no startup/canary, within the same 1,200-second aggregate. Parent will append the actual P7 return when available. No P7 outcomes were read or scored for this publication; Runtime progress is not gated on these docs. Independent E9 quality remains pending.
+The original P7 start-by 23:12Z was missed **before any ML or binding**; the preflight-unstarted record is preserved. Only the operational window was renewed, retaining the same unconsumed 120-second reservation and scientific scope.
+
+The sole fresh existing-encoder process ran **23:17:40.638389–23:17:44.737118Z**, exit0, **4.098479833 s**: exactly624 decisions /156 attempted and completed batches of four, four threads, FP32/MPS/cap256/T1, one model load and **zero startup/canary**. Source/input/seven-file checkpoint bindings and resource checks passed. Model verified output hashes, per-suite unique coverage/IDs/options and absent wrapper82072/child82073/process group, then closed the reservation. No retry or extra pass occurred.
+
+`p7-return.json` pins the actual binding, completed receipts and 300-original/300-reversed/24-paired output files. Outputs went directly to E9; only label-free execution/coverage was checked here, not held-out quality. Historical training evidence was not independently replayed. Independent E9 quality remains pending; no report/build gate delayed scoring.
 
 ## Evidence index
 

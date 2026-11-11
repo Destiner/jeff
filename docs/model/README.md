@@ -8,7 +8,7 @@ This deliberately small provisional model proves training/save/reload before a l
 
 ## Latest fit diagnostic: fresh MS MARCO duration contrast
 
-M9 first measured both preserved M4 encoders on full TRAIN, then activated the predeclared fresh-original-base 12-epoch MS MARCO arm. TRAIN agreement improves 985 → 1,314/1,500, CE 0.726023 → 0.2890573; rules remain incomplete at 314/500, including 32 lost prior agreements. P7 return and independent E9 quality are **pending at draft**; no promotion or architectural-capacity inference. See [M9 results](m9-msmarco-duration-results.md) and [pinned run index](m9-msmarco-duration-run.json).
+M9 first measured both preserved M4 encoders on full TRAIN, then activated the predeclared fresh-original-base 12-epoch MS MARCO arm. TRAIN agreement improves 985 → 1,314/1,500, CE 0.726023 → 0.2890573; rules remain incomplete at 314/500, including 32 lost prior agreements. P7 fresh execution is complete and its slot closed; independent E9 quality is **pending**; no promotion or architectural-capacity inference. See [M9 results](m9-msmarco-duration-results.md) and [pinned run index](m9-msmarco-duration-run.json).
 
 ## Prior executed contrast: frozen-base Qwen readout
 
