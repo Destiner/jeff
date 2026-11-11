@@ -31,6 +31,8 @@ def parser():
     inbox.add_argument("--all", action="store_true", help="also include completed/declined messages")
     read = commands.add_parser("read", help="display a message; does NOT acknowledge it")
     read.add_argument("message_id")
+    receipt = commands.add_parser("receipt", help="display the recipient receipt or unread status; no writes")
+    receipt.add_argument("message_id")
     actions = {
         "ack": ("acknowledged", "attest that you actually read the message; NOT completion"),
         "complete": ("completed", "record completion after acknowledgement"),
@@ -70,9 +72,15 @@ def main(checkout=None):
                 print(f"{meta['id']}\t{label}\t{meta['sender']}\t{meta['created_at']}\t{meta['subject']}")
             if not rows:
                 print("(empty)")
-        elif args.command == "read":
+        elif args.command in ("read", "receipt"):
             mailbox.check_board(board)
             meta, body = mailbox.load_message(board, args.message_id)
+            if args.command == "receipt":
+                receipt = mailbox.load_receipt(board, meta["recipient"], meta["id"])
+                if receipt is None:
+                    print(f"unread: no receipt for {meta['id']} (recipient: {meta['recipient']})")
+                    return 0
+                meta, body = receipt
             print(mailbox.encode(meta, body), end="")
         else:
             print(mailbox.record(board, args.recipient, args.message_id, args.status, args.note))

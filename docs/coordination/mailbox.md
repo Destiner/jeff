@@ -61,6 +61,7 @@ current code from a stale ML worktree; use `jeff_mail` for live operations.
 jeff_mail status
 jeff_mail inbox --recipient infra
 jeff_mail read MESSAGE_ID
+jeff_mail receipt MESSAGE_ID  # existing status, times, explanation/evidence; no writes
 
 # Only after actually reading the full message:
 jeff_mail ack MESSAGE_ID --recipient infra
@@ -77,7 +78,12 @@ jeff_mail inbox --recipient infra --all
 ```
 
 The dispositions above are **alternatives**, not a command sequence.
-`read` is read-only; it never acknowledges. `ack` is an explicit attestation
+`read` displays the message; `receipt` displays its recipient-owned receipt,
+including status, acknowledgement/update times, and explanation/evidence. If
+none exists, `receipt` prints `unread` without creating one. Both are read-only;
+reading a receipt is not a substitute for reading the request before ack.
+A receipt is a snapshot for that message, not an aggregate task state: later
+handoffs may explain resumed work or changed dependencies. `ack` is an explicit attestation
 that the owner actually read the message, not evidence that a file exists.
 It neither accepts new authority nor claims completion. The CLI cannot prove
 human/agent comprehension.
@@ -100,7 +106,10 @@ Task IDs are optional labels, not managed tasks. `--reply-to ID` requires an
 existing message with reversed endpoints. `--supersedes ID` requires the
 same endpoints (a correction by the original sender). Both may be present
 if each independently satisfies its rule. References stay within the chosen
-board, must exist, and cannot be self-references or cycles.
+board, must exist, and cannot be self-references or cycles. If citing a message
+between different participants (for example Infra discussing a Model → Evaluation
+handoff with Evaluation), put its ID/link in the body rather than `--reply-to`.
+The endpoint check intentionally rejects that cross-conversation reply.
 
 Corrections and replies are new messages, never edits. Superseding a message
 does not hide it, close its receipt, or transfer authority. If obsolete, its
