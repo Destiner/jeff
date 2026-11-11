@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1",
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "device": "mps",
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate": 0.00002,
+  "head_learning_rate": 0.0005,
+  "max_length": 128,
+  "seed": 42,
+  "threads": 4,
+  "notes": "Reference CLI settings, not an automatically loaded configuration file. Pass flags to jeff.training.train; run.json records all resolved arguments. Baseline is a pretrained encoder with random scalar head. Full backbone fine-tuning; uncalibrated softmax over choices."
+}
