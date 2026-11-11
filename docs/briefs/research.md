@@ -31,9 +31,9 @@ Publish actionable findings directly to the affected owner's public handoff queu
 
 ## Current direction
 
-R1–R4 are completed and integrated. Model M5 now executes R4's single recommended LR control, with independent Evaluation E4 scoring. Research is on reserve; no new investigation is assigned. Acknowledge the standby direction and park rather than inventing an architecture survey or another review gate.
+R1–R4 are completed and integrated; M5's LR control is also complete and failed its fixed conjunction despite one recovered probe group. Research is reactivated for R5: about one hour of source-backed learning-strategy research, as specified in coordination and the live task message. Focus on sample-efficient decision learning, rule transfer, and probability quality; recommend one next experiment plus a contingent alternative without repeating R1/R4.
 
-A later specific question can reactivate this owner. No model loads, new datasets, or training authority follows from having proposed the experiment. Keep individual validation/probe cases out of Data authoring requests.
+Existing agent/subagent capacity is available. No model loads, new datasets, current-recipe changes, training authority, or new approval gate. Keep individual validation/probe cases out of Data authoring requests; use published aggregate findings rather than mining private examples.
 
 Do not start new backbone research or repeat the completed v1 audit without a specific unresolved question. After the current objective, propose or take a small useful follow-up within scope; ask for redirection if the objective is exhausted.
 
