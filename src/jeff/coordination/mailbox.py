@@ -40,12 +40,15 @@ def safe_path(path):
     return path
 
 
-def board_path(explicit=None):
+def board_path(explicit=None, checkout=None):
     if explicit is not None:
         return safe_path(explicit)
+    if checkout is not None:
+        require(not any(key in os.environ for key in ("GIT_DIR", "GIT_COMMON_DIR", "GIT_WORK_TREE")),
+                "unset GIT_DIR/GIT_COMMON_DIR/GIT_WORK_TREE for the canonical launcher, or supply --board")
     result = subprocess.run(
         ["git", "rev-parse", "--path-format=absolute", "--git-common-dir"],
-        capture_output=True, text=True, check=False,
+        capture_output=True, text=True, check=False, cwd=checkout,
     )
     require(result.returncode == 0, "outside a Git checkout; supply --board PATH")
     common = Path(result.stdout.strip())
@@ -190,6 +193,39 @@ def check_board(board):
         require(safe_path(path).is_dir(), f"uninitialized board; missing directory: {path}")
 
 
+def peer_posting_enabled(board):
+    path = safe_path(board / "peer-posting.md")
+    if not path.exists():
+        return False
+    meta, _ = decode(path)
+    keys(meta, "peer_posting", ("enabled_by", "enabled_at"))
+    require(meta["enabled_by"] == "lead", "peer enablement must be recorded by lead")
+    timestamp(meta["enabled_at"])
+    return True
+
+
+def enable_peers(board, sender, confirmed):
+    check_board(board)
+    require(sender == "lead", "only lead may enable peer posting; identities are not authentication")
+    require(confirmed is True, "lead must confirm compatible-client adoption before enablement")
+    path = safe_path(board / "peer-posting.md")
+    if not peer_posting_enabled(board):
+        meta = {"schema_version": VERSION, "record_type": "peer_posting",
+                "enabled_by": sender, "enabled_at": now()}
+        try:
+            publish(path, encode(meta, "Lead confirms compatible-client adoption. Peer posting enabled."))
+        except AlreadyExists:
+            peer_posting_enabled(board)
+    return path
+
+
+def client_status(board):
+    check_board(board)
+    return {"message_schema": VERSION, "peer_reading": True,
+            "peer_posting": peer_posting_enabled(board),
+            "source": str(Path(__file__).resolve()), "board": str(board)}
+
+
 def message_path(board, message_id):
     identifier(message_id)
     return safe_path(board / "messages" / f"{message_id}.md")
@@ -202,7 +238,7 @@ def validate_message(meta, body, message_id):
     require(meta["id"] == message_id, "message ID does not match filename")
     identity(meta["sender"])
     identity(meta["recipient"])
-    require((meta["sender"] == "lead") != (meta["recipient"] == "lead"), "only lead ↔ team routing is allowed")
+    require(meta["sender"] != meta["recipient"], "sender and recipient must differ")
     require(meta["kind"] in KINDS, "unknown message kind")
     timestamp(meta["created_at"])
     short_text(meta["subject"], "subject")
@@ -253,6 +289,9 @@ def send(board, sender, recipient, kind, subject, body, task_id=None, reply_to=N
         if value is not None:
             meta[field] = value
     validate_message(meta, body, message_id)
+    if sender != "lead" and recipient != "lead":
+        require(peer_posting_enabled(board),
+                "peer posting is disabled; lead must confirm client adoption and run enable-peers")
     for field in ("reply_to", "supersedes"):
         if field in meta:
             reference, _ = load_message(board, meta[field])

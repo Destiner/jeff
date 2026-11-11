@@ -1,6 +1,7 @@
 """Run with uv run --locked python -m jeff.coordination."""
 
 import argparse
+import json
 import sys
 
 from . import mailbox
@@ -11,6 +12,11 @@ def parser():
     root.add_argument("--board", help="explicit board path; default: shared Git main-root/.coord")
     commands = root.add_subparsers(dest="command", required=True)
     commands.add_parser("init", help="initialize directories/format marker without replaying assignments")
+    commands.add_parser("status", help="show code source, reader capability, board, and posting gate")
+    enable = commands.add_parser("enable-peers", help="lead-only: enable peer posts after adoption confirmations")
+    enable.add_argument("--sender", required=True, choices=("lead",))
+    enable.add_argument("--confirm-adoption", action="store_true", required=True,
+                        help="attest all owners and lead use a compatible reader; not authentication")
     send = commands.add_parser("send", help="publish an immutable message from a UTF-8 Markdown body file")
     send.add_argument("--sender", required=True, choices=mailbox.PARTICIPANTS)
     send.add_argument("--recipient", required=True, choices=mailbox.PARTICIPANTS)
@@ -40,12 +46,16 @@ def parser():
     return root
 
 
-def main():
+def main(checkout=None):
     args = parser().parse_args()
     try:
-        board = mailbox.board_path(args.board)
+        board = mailbox.board_path(args.board, checkout=checkout)
         if args.command == "init":
             print(mailbox.init(board))
+        elif args.command == "status":
+            print(json.dumps(mailbox.client_status(board), indent=2))
+        elif args.command == "enable-peers":
+            print(mailbox.enable_peers(board, args.sender, args.confirm_adoption))
         elif args.command == "send":
             print(mailbox.send(
                 board, args.sender, args.recipient, args.kind, args.subject,
