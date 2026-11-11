@@ -17,6 +17,25 @@ The unchanged materialized schedule has431targets in position0, explaining final
 
 Fit is eval/no-grad on the same seeded TRAIN presentations before and after learning, with per-row CE/agreement/positions and overall/family/all880declared-source-group summaries. It is not held-out evidence. Online changing-weight mean CE1.400337771 is descriptive and not interchangeable with either fixed-snapshot fit. A fresh read-only reviewer independently replayed the schedule and all fit buckets without finding an identity, remapping, aggregation or update-accounting discrepancy. That validates the observed failure, **not its optimization/supervision/representation cause**.
 
+## Independent E6 development comparison
+
+E6 completed CPU scoring and independent arithmetic/binding review against the byte-identical fresh P3 control. These are reused developmental label-agreement populations, not untouched final tests or independently verified semantic truth.
+
+| Population/order | Start→final agreement | Start→final NLL | Start→final Brier |
+| --- | ---: | ---: | ---: |
+| Inherited60, original |35→17|1.194707→1.442884|.599128→.778014|
+| Inherited60, reversed |34→13|.966733→1.472594|.537541→.803253|
+| New240, original |129→65|1.312350→1.413320|.633492→.779200|
+| New240, reversed |118→65|1.410621→1.407130|.687402→.778134|
+
+All624trained development choices select **actual input position0, without ties**. Direct input/output joins—not output-list order or TRAIN argmax counts—show positive top-two margins.102494–.456558. Inherited/new/probe flips worsen19→60/60,122→240/240,2→12/12; both-order agreements28→0/60,82→0/240,9→0/12. New-rule flips65→80/80 and both-order correctness4→0/80. Probe agreement20→8/24, paired-macro NLL.534509→1.173711 and Brier.284486→.737779; intent retention is lost.
+
+Preserve the exception: **new reversed NLL improves by.0034906383**, while its Brier/ranking worsen. Some sentiment/rule proper scores also improve despite positional collapse. Do not claim every metric worsens or smaller probability-TV establishes robustness. Trained proper scores are worse than uniform in both broad strata/orders and probes. Full family/source-unit contributions remain Evaluation-owned; no combined promotion score or architecture/permutation-only causal conclusion.
+
+Evidence: `artifacts/evaluation/e6-analysis-preparation-v3/execution-01/` (11predictors,33quality+33order reports), `e6-quality-review-v1/` (24,797independent arithmetic checks and640direct bindings, zero discrepancies), `e6-start-control-review-v1/`, `e6-train-control-review-v1/`, `e6-p4-binding-v1/`. E6 independently reproduces Model's TRAIN-fit/all880group summaries. **Development zero ties do not fill the missing full TRAIN vectors/tie counts.**
+
+Evaluation's firstv2analysis attempt stopped before scoring after operational AGENTS/coordination pins changed. Its v3 runner is byte-identical, only those2policy pins updated; all94other/scientific dependencies unchanged and the failed preparation preserved. No new prediction, training, tuning or criterion change followed.
+
 ## Executed intervention and control
 
 Clean execution source `dafd5d235b53af341fbf539e4bf32dcf09a399f2`; full source/runtime/asset/config identity persisted. Frozen v2 TRAIN only:1,500unique decisions/880declared groups,500per family, one seed42 row/option shuffle with stable target-ID remapping. All prompts89–220tokens; complete P3 assistant-boundary checks, unchanged cap1024/no truncation. Whole-manifest final/split/path checks precede TRAIN-only shard reads; no D3, development/probe/reference or final data enters learning.
