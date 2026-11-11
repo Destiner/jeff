@@ -1,4 +1,4 @@
-"""Identity-only validation of the flat P4 trained-checkpoint manifest."""
+"""Flat checkpoint identity, plus explicit P6 v2 semantic proof validation."""
 
 from pathlib import Path
 import re
@@ -21,7 +21,7 @@ ALLOWED_FILES = REQUIRED_FILES | {"README.md", "LICENSE"}
 
 def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
                         require, load, digest, safe_path, assets):
-    """Check identity without following training provenance or parsing its receipt.
+    """Keep v1 identity checks; v2 additionally binds producer/readout evidence.
 
     Adapter helpers keep JSON/path/hash semantics identical to P3. Strict flat
     inventory checks precede assets(), so it cannot follow checkpoint symlinks.
@@ -36,7 +36,13 @@ def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
     require(manifest_path.is_file(), "checkpoint manifest must be an existing file")
     manifest = load(manifest_path)
     require(isinstance(manifest, dict), "checkpoint manifest must be an object")
-    fixed = {"schema_version": "jeff.qwen-trained-checkpoint.v1", "status": "complete",
+    version = manifest.get("schema_version")
+    require(version in ("jeff.qwen-trained-checkpoint.v1", "jeff.qwen-trained-checkpoint.v2"),
+            "unsupported checkpoint schema version")
+    if version == "jeff.qwen-trained-checkpoint.v1":
+        require(not {"adaptation_kind", "representation", "readout_proof"} & set(manifest),
+                "v2 semantic fields cannot be downgraded to v1")
+    fixed = {"schema_version": version, "status": "complete",
              "kind": "trained", "base_model_id": MODEL, "base_revision": REVISION}
     require(all(manifest.get(k) == v for k, v in fixed.items()), "checkpoint identity/status")
     for key in ("checkpoint_id", "run_id"):
@@ -91,6 +97,13 @@ def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
     require(receipt_path.is_file(), "checkpoint source run receipt must exist")
     receipt_hash = digest(receipt_path)
     require(receipt_hash == receipt["sha256"].lower(), "checkpoint source run receipt hash mismatch")
-    return {"manifest_path": str(manifest_path), "manifest_sha256": digest(manifest_path),
-            "manifest": manifest, "source_run_receipt": {"path": str(receipt_path),
-            "sha256": receipt_hash}, "validator_source_sha256": digest(SOURCE)}, asset_hashes
+    binding = {"manifest_path": str(manifest_path), "manifest_sha256": digest(manifest_path),
+               "manifest": manifest, "source_run_receipt": {"path": str(receipt_path),
+               "sha256": receipt_hash}, "validator_source_sha256": digest(SOURCE)}
+    if version == "jeff.qwen-trained-checkpoint.v2":
+        from jeff.runtime.qwen_readout import validate_metadata
+
+        binding["readout_proof"] = validate_metadata(
+            manifest_path, model_dir, manifest, receipt_path, require=require,
+            load=load, digest=digest, safe_path=safe_path)
+    return binding, asset_hashes

@@ -1,4 +1,4 @@
-"""Experimental frozen P3 decoder; no training, generation, labels or scorer imports.
+"""Experimental P3 decoder and explicit trained reload; no training or generation.
 
 python -m jeff.runtime.qwen_challenger audit --config configs/runtime/p3-qwen.json \
     --inputs /absolute/inputs.json --model-dir /absolute/pinned-model --audit-dir NEW
@@ -207,7 +207,16 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
             digest=digest, safe_path=safe_path, assets=assets)
     else:
         asset_hashes = assets(model_dir, cfg)
+    is_v2 = (binding is not None and
+             binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v2")
+    if is_v2:
+        from jeff.runtime import qwen_readout
+
     suites = read_inputs(manifest_path)
+    if is_v2:
+        require(tuple(len(rows) for _, rows, _ in suites) == (300, 300, 24),
+                "v2 requires the frozen 300/300/24 development suites")
+        require(cfg["startup_rows"] == 3, "v2 requires exactly three startup forwards")
     tokenizer = AutoTokenizer.from_pretrained(str(model_dir), local_files_only=True, trust_remote_code=False)
     require(isinstance(tokenizer.chat_template, str) and tokenizer.chat_template, "official chat template required")
     prepared, reports = [], []
@@ -216,6 +225,8 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
         for row in rows:
             try:
                 encoded.append(prepare(tokenizer, cfg, row))
+                if is_v2:
+                    qwen_readout.validate_answer_ids(binding, encoded[-1][1], require=require)
             except ValueError as exc:
                 raise ValueError(f"suite {name}, input {row['id']}: {exc}") from exc
         prepared.append((name, rows, encoded))
@@ -235,6 +246,17 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
             "environment": environment(), "suites": reports}
     if binding is not None:
         proof["trained_checkpoint"] = binding
+    if is_v2:
+        proof["readout_source_sha256"] = digest(Path(qwen_readout.__file__).resolve())
+        executable_paths = ["pyproject.toml", "uv.lock", "src/jeff/__init__.py",
+            "src/jeff/runtime/__init__.py", "src/jeff/model/__init__.py",
+            "src/jeff/model/scorer.py", "src/jeff/model/qwen_readout_proof.py", *[
+                f"src/jeff/runtime/{name}.py" for name in
+                ("qwen_challenger", "qwen_checkpoint", "qwen_readout", "qwen_safetensors")]]
+        proof["executable_sources"] = {name: digest(ROOT / name) for name in executable_paths}
+        proof["executable_git_status"] = subprocess.check_output(
+            ["git", "status", "--porcelain", "--untracked-files=all", "--", *executable_paths],
+            cwd=ROOT, text=True)
     return proof, prepared
 
 
@@ -254,10 +276,26 @@ def predict(args, receipt, start):
                            if "trained_checkpoint" in frozen else None)
     current, suites = evidence(Path(frozen["config_path"]), Path(frozen["input_manifest_path"]),
                                args.model_dir, checkpoint_manifest=checkpoint_manifest)
-    require(current == frozen, "code/config/input/model/tokenization/environment changed since audit")
     cfg = current["config"]
+    is_v2 = ("trained_checkpoint" in current and
+             current["trained_checkpoint"]["manifest"]["schema_version"] ==
+             "jeff.qwen-trained-checkpoint.v2")
+    if is_v2:
+        from jeff.runtime import qwen_readout
+
+        receipt["forwards"] = {"maximum": 627, "expected_startup": 3,
+                               "expected_suite_rows": [300, 300, 24],
+                               "attempted": 0, "completed": 0}
+        context_keys = {"git_revision", "git_status"}
+        require({k: v for k, v in current.items() if k not in context_keys} ==
+                {k: v for k, v in frozen.items() if k not in context_keys},
+                "v2 executable/config/input/model/tokenization/environment changed since audit")
+        require(not current["executable_git_status"], "v2 executable sources must be clean and frozen")
+        receipt["audit_git_context"] = {k: frozen[k] for k in context_keys}
+    else:
+        require(current == frozen, "code/config/input/model/tokenization/environment changed since audit")
+        require(not current["git_status"], "prediction requires the clean frozen code revision")
     require(args.device == cfg["device"], "device must match the pre-outcome frozen recipe")
-    require(not current["git_status"], "prediction requires the clean frozen code revision")
     receipt["suites"] = [{"name": name, "status": "not_started", "expected_rows": len(rows),
                          "written_rows": 0, "coverage": 0.0,
                          "expected_input_tokens": sum(len(p) for p, _ in encoded),
@@ -287,17 +325,50 @@ def predict(args, receipt, start):
 
     deadline()
     load_start = time.monotonic()
-    model = AutoModelForCausalLM.from_pretrained(str(args.model_dir), local_files_only=True,
-        trust_remote_code=False, use_safetensors=True, torch_dtype=torch.float32,
-        attn_implementation=cfg["attention"])
+    storage_seconds = 0.0
+    if is_v2:
+        model, loading_info = AutoModelForCausalLM.from_pretrained(
+            str(args.model_dir), local_files_only=True, trust_remote_code=False,
+            use_safetensors=True, torch_dtype=torch.float32,
+            attn_implementation=cfg["attention"], output_loading_info=True,
+            ignore_mismatched_sizes=False)
+        receipt["loading_info"] = loading_info
+        require(isinstance(loading_info, dict), "v2 loading diagnostics must be an object")
+        require(all(key in loading_info and loading_info[key] == [] for key in
+                    ("missing_keys", "unexpected_keys", "mismatched_keys", "error_msgs")),
+                "v2 requires all four empty loading diagnostics")
+        proof_start = time.monotonic()
+        try:
+            receipt["readout_cpu_storage"] = qwen_readout.validate_storage(model, require=require)
+        finally:
+            storage_seconds = time.monotonic() - proof_start
+            receipt["readout_storage_seconds"] = storage_seconds
+            receipt["readout_proof_seconds"] = storage_seconds
+        deadline()
+    else:
+        model = AutoModelForCausalLM.from_pretrained(str(args.model_dir), local_files_only=True,
+            trust_remote_code=False, use_safetensors=True, torch_dtype=torch.float32,
+            attn_implementation=cfg["attention"])
     require("logits_to_keep" in inspect.signature(model.forward).parameters,
             "last-token-only projection unsupported; full-prompt logits prohibited")
     model.requires_grad_(False).eval().to(args.device)
     sync()
     receipt["cold_load_seconds"] = time.monotonic() - load_start
+    if is_v2:
+        receipt["cold_load_seconds"] -= storage_seconds
     require(all(p.dtype == torch.float32 and p.device.type == args.device for p in model.parameters()),
             "unexpected parameter device/dtype")
     receipt["memory_samples"].append(memory(torch, args.device, "after_load"))
+    if is_v2:
+        proof_start = time.monotonic()
+        try:
+            receipt["readout_reload"] = qwen_readout.validate_loaded(
+                model, current["trained_checkpoint"], loading_info, require=require, guard=deadline)
+        finally:
+            receipt["readout_reload_seconds"] = time.monotonic() - proof_start
+            receipt["readout_proof_seconds"] = storage_seconds + receipt["readout_reload_seconds"]
+            receipt["memory_samples"].append(memory(torch, args.device, "after_readout_proof"))
+        deadline()
 
     def forward(encoded):
         deadline()
@@ -306,9 +377,19 @@ def predict(args, receipt, start):
         sync()
         before = time.monotonic()
         with torch.inference_mode():
-            result = model(input_ids=ids, attention_mask=torch.ones_like(ids),
-                           use_cache=False, logits_to_keep=1)
-            sync()
+            if is_v2:
+                attention_mask = torch.ones_like(ids)
+                require(receipt["forwards"]["attempted"] < receipt["forwards"]["maximum"],
+                        "v2 forward budget exhausted")
+                receipt["forwards"]["attempted"] += 1
+                result = model(input_ids=ids, attention_mask=attention_mask,
+                               use_cache=False, logits_to_keep=1)
+                sync()
+                receipt["forwards"]["completed"] += 1
+            else:
+                result = model(input_ids=ids, attention_mask=torch.ones_like(ids),
+                               use_cache=False, logits_to_keep=1)
+                sync()
             latency = time.monotonic() - before
             require(tuple(result.logits.shape[:2]) == (1, 1), "unexpected logits projection")
             probabilities = torch.softmax(result.logits[0, 0, answers].float(), dim=0).cpu().tolist()
@@ -319,6 +400,8 @@ def predict(args, receipt, start):
 
     startup_start = time.monotonic()
     startup = [encoded for _, _, encodings in suites for encoded in encodings][:cfg["startup_rows"]]
+    if is_v2:
+        require(len(startup) == 3, "v2 requires exactly three existing startup rows")
     receipt["startup"] = {"rows": 0, "forward_seconds": [], "elapsed_seconds": None}
     for encoded in startup:
         _, latency = forward(encoded)
@@ -358,6 +441,10 @@ def predict(args, receipt, start):
             if output.exists():
                 stats["output_sha256"] = digest(output)
                 output.chmod(0o444)
+    if is_v2:
+        require(receipt["startup"]["rows"] == 3 and
+                receipt["forwards"]["attempted"] == receipt["forwards"]["completed"] == 627,
+                "v2 requires exactly 627 attempted and completed forwards")
     receipt["memory_samples"].append(memory(torch, args.device, "end"))
     deadline()
 
