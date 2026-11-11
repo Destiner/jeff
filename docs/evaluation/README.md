@@ -2,9 +2,11 @@
 
 Runtime dependencies: Python standard library only (project Python 3.12/uv). No imports from Data, Model, or Training. No model downloads, software tests, or linting.
 
-From this worktree, before integration, set `PYTHONPATH=src` and use `python3 -m` (actual initial runs used Python 3.9.6; the project targets 3.12). With integrated packaging, use `uv run python -m`.
+Shared packaging from approved main `1f64aea` is incorporated: run `uv sync --locked`, then `uv run --locked python -m`. Initial pre-packaging tiny runs used `PYTHONPATH=src python3` (3.9.6); subsequent curation/pilot/model comparisons use project Python 3.12. No ML extras are needed.
 
 ## Validation workflow
+
+For a multi-shard Data manifest, first run `uv run --locked python -m jeff.evaluation.assemble --manifest <data-manifest> --dataset-id <new-evaluation-dataset-id> --output-dir <new-evaluation-artifact-dir>`. This verifies validation shard hashes/counts/splits, joins them into one frozen reference file, and records source provenance. It rejects final paths/manifests, does not read training content, and does not replace Data's cross-split validator.
 
 ```sh
 export JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts
@@ -34,7 +36,7 @@ All outputs are exclusive-create; choose new run IDs rather than overwriting. Re
 - Report overall, family, label basis, family × basis, and option count. Five fixed confidence bins and ECE are descriptive, especially with small or correlated groups; no calibration claim or calibration fitting.
 - Comparison recomputes every run on the same reference file and reports each run's full coverage. Pairwise deltas use the common-valid ID intersection, with wins/losses and its denominator. Positive agreement delta favors the left; negative loss delta favors the left. Infinite/empty loss deltas are undefined.
 
-`score` returns 0 for a nonempty clean report, 1 for prediction issues/empty references (report still written), and 2 for fatal input/output/reference errors. `compare` returns 1 when any run has issues. The other preparation CLIs fail loudly on invalid input.
+`score` returns 0 for a nonempty clean report, 1 for prediction issues/empty references (report still written), and 2 for fatal input/output/reference errors. `compare` returns 1 when any run has issues (report written), and 2 for fatal reference/input/output errors (no completed report). The other preparation CLIs fail loudly on invalid input.
 
 ## Baselines
 
@@ -50,4 +52,4 @@ Label-free files inherently lose split metadata; baseline generation cannot enfo
 
 ## Delegation
 
-Three read-only subagents separately supplied metrics specification, validation-only adversarial cases/order analysis, and protected final curation. Lead serializes all code/artifacts; no subagents share a mutable checkout. Teacher labels from these curators are not independently verified.
+Three read-only subagents separately supplied metrics specification, validation-only adversarial cases/order analysis, and protected final curation. Follow-up metrics review identified fatal comparison exit-code ambiguity and prevalidation publication of curated shards; both were corrected. A separate validation analyst reviewed tiny model and simple-probe failure evidence without final access. Lead serializes all code/artifacts; no subagents share a mutable checkout. Teacher labels from these curators are not independently verified.

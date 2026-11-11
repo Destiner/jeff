@@ -71,8 +71,16 @@ def validate_input(row):
 
 
 def load_examples(path):
+    return validate_records(records(path))
+
+
+def validate_examples(rows):
+    return validate_records((line, row, None) for line, row in enumerate(rows, 1))
+
+
+def validate_records(source):
     rows, failures, ids, group_splits, splits = [], [], set(), {}, set()
-    for line, row, error in records(path):
+    for line, row, error in source:
         if error:
             failures.append({"line": line, "reason": error})
             continue
