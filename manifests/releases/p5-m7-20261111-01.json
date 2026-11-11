@@ -1,0 +1,351 @@
+{
+  "schema_version": "jeff.runtime.p5-report.v1",
+  "release_id": "p5-m7-20261111-01",
+  "scope": "Completed runtime coverage/reload evidence only; no quality or default promotion",
+  "summary": {
+    "schema_version": "jeff.runtime.trained-checkpoint-result.v1",
+    "status": "fresh-process trained-checkpoint inference complete; independent scoring owned by E7",
+    "frozen_runtime_code_revision": "7a5af91ed352c648ff64bff6ab9f5bdb240302c1",
+    "runtime_source_sha256": "cb07ceaf8af6cf1b06b08d11aff7a234031877428eb0aa27e37ad609eef731a5",
+    "runtime_validator_source_sha256": "e5fa5fe33c8cc2b87da98fa7aded21e98c8d1781449faf74a9a2a25660b5e62c",
+    "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "trained_checkpoint_manifest_path": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training/checkpoint-manifest.json",
+    "trained_checkpoint_manifest_sha256": "70163c8567781bb7151b11c125999ea4bc6ec1ff52af52c52a205f9f4dbdd022",
+    "checkpoint_id": "m7-qwen-low-lr-20261111-01/training-checkpoint",
+    "run_id": "m7-qwen-low-lr-20261111-01/training",
+    "kind": "trained",
+    "base_lineage": {
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    },
+    "trained_weights": {
+      "sha256": "cf570cbe4ad2f847509ad6cdedb96085e3f4740c04c37889b9051dc08adc54c2",
+      "bytes": 1976163472
+    },
+    "training_code_revision": "574774d631d707de9398c80dc5b936d9563e386c",
+    "training_data_manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+    "training_recipe_sha256": "e5aa684e3b5d7fe3d2298d5f56d854f0551455f1fc7722083d52ab096a292a3b",
+    "training_schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+    "source_run_receipt": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training/receipt.json",
+      "sha256": "c78ad96769b76c2cabb7c2b0ec87dde13bca78e2f7e2256a51b6ca545b54e156"
+    },
+    "environment": {
+      "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+      "platform": "macOS-26.7.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "packages": {
+        "torch": "2.15.0",
+        "transformers": "4.57.6",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "validation": {
+      "scope": "Label-free output contract/identity validation only; no reference labels or quality scoring.",
+      "suites": [
+        {
+          "name": "v2-original",
+          "rows": 300,
+          "options": 1160,
+          "maximum_sum_error": 1.8362334230914712e-07,
+          "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+          "output_sha256": "43d65f741ac2c485332a1aecc8d102590fd5f63992f714a0f48974519bbc7651"
+        },
+        {
+          "name": "v2-reversed",
+          "rows": 300,
+          "options": 1160,
+          "maximum_sum_error": 1.2665987014770508e-07,
+          "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+          "output_sha256": "1a2b635a454a745f02e12412c1bb4ade261e148e817a9f8d6796a91b2d275ab8"
+        },
+        {
+          "name": "probes-paired",
+          "rows": 24,
+          "options": 70,
+          "maximum_sum_error": 1.014086592476815e-07,
+          "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+          "output_sha256": "271c1824d4161a9690bff8bedffaf282dc36a7d48227412dd64c934fdcb0734b"
+        }
+      ]
+    },
+    "presentations": 624,
+    "options": 2390,
+    "process_wall_seconds": 39.07104558264837,
+    "model_load_seconds": 0.3915399997495115,
+    "startup": {
+      "rows": 3,
+      "forward_seconds": [
+        0.23821675032377243,
+        0.04511258332058787,
+        0.049997624941170216
+      ],
+      "elapsed_seconds": 0.3366200407035649
+    },
+    "suite_wall_seconds": 35.71673941705376,
+    "suites": [
+      {
+        "name": "v2-original",
+        "status": "complete",
+        "expected_rows": 300,
+        "written_rows": 300,
+        "coverage": 1.0,
+        "expected_input_tokens": 39949,
+        "input_length_distribution": {
+          "count": 300,
+          "min": 94,
+          "max": 220,
+          "p50": 133,
+          "p95": 171
+        },
+        "input_tokens": 39949,
+        "elapsed_seconds": 16.47392833326012,
+        "rows_per_second": 18.210592757910298,
+        "input_tokens_per_second": 2424.9832336191953,
+        "latency_seconds": {
+          "count": 300,
+          "min": 0.04045824985951185,
+          "max": 0.08468437474220991,
+          "p50": 0.05496716685593128,
+          "p95": 0.06663295906037092
+        },
+        "output_sha256": "43d65f741ac2c485332a1aecc8d102590fd5f63992f714a0f48974519bbc7651"
+      },
+      {
+        "name": "v2-reversed",
+        "status": "complete",
+        "expected_rows": 300,
+        "written_rows": 300,
+        "coverage": 1.0,
+        "expected_input_tokens": 39949,
+        "input_length_distribution": {
+          "count": 300,
+          "min": 94,
+          "max": 220,
+          "p50": 133,
+          "p95": 171
+        },
+        "input_tokens": 39949,
+        "elapsed_seconds": 17.964078084100038,
+        "rows_per_second": 16.69999421041981,
+        "input_tokens_per_second": 2223.82689570687,
+        "latency_seconds": {
+          "count": 300,
+          "min": 0.04521158430725336,
+          "max": 0.08992774970829487,
+          "p50": 0.06017170799896121,
+          "p95": 0.07293249992653728
+        },
+        "output_sha256": "1a2b635a454a745f02e12412c1bb4ade261e148e817a9f8d6796a91b2d275ab8"
+      },
+      {
+        "name": "probes-paired",
+        "status": "complete",
+        "expected_rows": 24,
+        "written_rows": 24,
+        "coverage": 1.0,
+        "expected_input_tokens": 2638,
+        "input_length_distribution": {
+          "count": 24,
+          "min": 98,
+          "max": 124,
+          "p50": 107,
+          "p95": 124
+        },
+        "input_tokens": 2638,
+        "elapsed_seconds": 1.2787329996936023,
+        "rows_per_second": 18.768577964086834,
+        "input_tokens_per_second": 2062.979527885878,
+        "latency_seconds": {
+          "count": 24,
+          "min": 0.049340249970555305,
+          "max": 0.058134375140070915,
+          "p50": 0.05118150031194091,
+          "p95": 0.057432916946709156
+        },
+        "output_sha256": "271c1824d4161a9690bff8bedffaf282dc36a7d48227412dd64c934fdcb0734b"
+      }
+    ],
+    "cpu_lifetime_maxrss_bytes": 552632320,
+    "mps_observed_samples": [
+      {
+        "stage": "after_load",
+        "current_allocated_bytes": 2013552384,
+        "driver_allocated_bytes": 2760327168
+      },
+      {
+        "stage": "after_startup",
+        "current_allocated_bytes": 2013552384,
+        "driver_allocated_bytes": 2768977920
+      },
+      {
+        "stage": "end",
+        "current_allocated_bytes": 2013552384,
+        "driver_allocated_bytes": 2768961536
+      },
+      {
+        "stage": "process_end",
+        "current_allocated_bytes": 0,
+        "driver_allocated_bytes": 2768961536
+      }
+    ],
+    "memory_qualification": "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory; native process footprint is separate OS accounting, not a true MPS/unified-memory peak; do not sum overlapping metrics.",
+    "completed_at": "2026-11-11T17:19:08.558254+00:00",
+    "additional_spend_gbp": 0,
+    "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01",
+    "artifacts": {
+      "audit/audit.json": {
+        "bytes": 223718,
+        "sha256": "0bea2db185764e93a957eaec0ab236f3c1a71817abb464ec77cc3c497691d19c"
+      },
+      "run/receipt.json": {
+        "bytes": 245455,
+        "sha256": "cffa05d92eca8b45a7f29073496c1ce9909a4e15ddfddb16d33630640ff5a372"
+      },
+      "process-invocation.json": {
+        "bytes": 1336,
+        "sha256": "1e10add095da4416599fae5f261e03011b02abe82cc7d2ea3edef8a76d1b8aaa"
+      },
+      "process-receipt.json": {
+        "bytes": 1495,
+        "sha256": "686523557661d5358be083f22c5b2d3c8333bb2ca3e494417b184788a8765995"
+      },
+      "process.stderr.log": {
+        "bytes": 1234,
+        "sha256": "21d6f59ef49f2262aa196e680cb67b7e08d63c5e30ed6d875e04d0f65f726688"
+      },
+      "launch.py": {
+        "bytes": 2889,
+        "sha256": "336bc6bc8568dbbf47edd6efaf48367d784b864fb2ba112aeb0be9a195ecff25"
+      },
+      "run/v2-original.jsonl": {
+        "bytes": 106416,
+        "sha256": "43d65f741ac2c485332a1aecc8d102590fd5f63992f714a0f48974519bbc7651"
+      },
+      "run/v2-reversed.jsonl": {
+        "bytes": 113330,
+        "sha256": "1a2b635a454a745f02e12412c1bb4ade261e148e817a9f8d6796a91b2d275ab8"
+      },
+      "run/probes-paired.jsonl": {
+        "bytes": 6241,
+        "sha256": "271c1824d4161a9690bff8bedffaf282dc36a7d48227412dd64c934fdcb0734b"
+      }
+    },
+    "macos_peak_process_footprint_bytes": 3133490328,
+    "decisions_per_second": 17.470799691812214
+  },
+  "process": {
+    "command": [
+      "/usr/bin/time",
+      "-l",
+      "/Users/destiner/Code/jeff/.worktrees/release/.venv/bin/python",
+      "-m",
+      "jeff.runtime.qwen_challenger",
+      "predict",
+      "--audit-dir",
+      "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/audit",
+      "--model-dir",
+      "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training/checkpoint",
+      "--output-dir",
+      "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/run",
+      "--device",
+      "mps"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin",
+      "HOME": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/run-home",
+      "HF_HOME": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/empty-hf-cache",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "TOKENIZERS_PARALLELISM": "false",
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4"
+    },
+    "cwd": "/Users/destiner/Code/jeff/.worktrees/release",
+    "started_at": "2026-11-11T17:18:29.486849+00:00",
+    "wrapper_pid": 22652,
+    "timeout_seconds": 300,
+    "termination_grace_seconds": 10,
+    "timing_scope": "External wall includes interpreter/import/hash-tokenization preflight/model load/startup/full pass/output.",
+    "child_pid": 22653,
+    "returncode": 0,
+    "wall_seconds": 39.07104558264837,
+    "completed_at": "2026-11-11T17:19:08.558254+00:00",
+    "cache_files_after": []
+  },
+  "inputs": {
+    "schema_version": "p3.inputs.v1",
+    "datasets": [
+      {
+        "name": "v2-original",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+        "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "rows": 300
+      },
+      {
+        "name": "v2-reversed",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+        "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "rows": 300
+      },
+      {
+        "name": "probes-paired",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "rows": 24
+      }
+    ]
+  },
+  "reporting": {
+    "new_model_runs": 0,
+    "new_weight_scans": 0,
+    "tests_or_lint": false,
+    "model_grant": "558f98d8",
+    "grant_status": "returned",
+    "pids_absent": [
+      22652,
+      22653
+    ],
+    "e7_output_handoff": "4c6ad1fc-28bf-4c5c-b176-bc6b0fb51bc6",
+    "unchanged": "P4 validator; P3 renderer, loader, readout and config; original300/reversed300/already-paired24",
+    "limitations": [
+      "Local-only loading/offline flags and empty HF cache are not OS network denial or offline installation.",
+      "OS caches not flushed; memory mapping not traced; no cold-storage or comparative speed/memory claims.",
+      "RSS, native OS footprint and observed MPS samples overlap and are nonadditive; not system/MPS peaks.",
+      "Model reports mixed TRAIN fit, not held-out transfer; E7 independently scores. No cause/tie inference from argmax counts.",
+      "Actual audit/predict hashed checkpoint artifacts; this reporting step only reads/hashes small evidence metadata."
+    ]
+  },
+  "evidence_files": {
+    "delivery-summary.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/delivery-summary.json",
+      "bytes": 8456,
+      "sha256": "2fcc0b77d5ac4bb0071df436dc789c59c246a7ddf74e8d3848f0add132308086"
+    },
+    "output-validation.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/output-validation.json",
+      "bytes": 1071,
+      "sha256": "d3b913c6fd79c49aead5947ac8a2fb4a1a12279a1ba842d944e2af6f0a027cd1"
+    },
+    "process-receipt.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/process-receipt.json",
+      "bytes": 1495,
+      "sha256": "686523557661d5358be083f22c5b2d3c8333bb2ca3e494417b184788a8765995"
+    },
+    "process.stderr.log": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/process.stderr.log",
+      "bytes": 1234,
+      "sha256": "21d6f59ef49f2262aa196e680cb67b7e08d63c5e30ed6d875e04d0f65f726688"
+    },
+    "inputs.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/inputs.json",
+      "bytes": 788,
+      "sha256": "77c57b75b64a0b306c8c851bb2d3a023bddd5d237334cd288316013c26d2927a"
+    }
+  }
+}
