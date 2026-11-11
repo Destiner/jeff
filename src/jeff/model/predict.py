@@ -46,7 +46,9 @@ def _rows(path: Path):
         raise ValueError("input contains no decisions")
 
 
-def _write_batch(model, rows: list[dict], output) -> None:
+def _write_batch(model, rows: list[dict], output, guards=None) -> None:
+    if guards is not None:
+        guards.check("before_prediction_batch")
     probabilities = model.probabilities(rows).cpu()
     expected_shape = (len(rows), max(len(row["options"]) for row in rows))
     if tuple(probabilities.shape) != expected_shape:
@@ -69,18 +71,25 @@ def _write_batch(model, rows: list[dict], output) -> None:
             ],
         }
         output.write(json.dumps(result, ensure_ascii=False, allow_nan=False) + "\n")
+    if guards is not None:
+        guards.check("after_prediction_batch")
 
 
-def _predict(args) -> int:
+def _predict(args, guards=None) -> int:
     started = time.perf_counter()
     destination = Path(args.output)
     if os.path.lexists(destination):
         raise FileExistsError(f"refusing to overwrite output: {destination}")
     device = resolve_device(args.device)
     print(f"device={device}", file=sys.stderr)
+    if guards is not None:
+        guards.bind(torch, device)
     model = load_checkpoint(args.checkpoint, device=str(device))
+    if guards is not None:
+        guards.check("after_load")
     model.eval()
     temporary = None
+    published = False
     completed = 0
     try:
         # The temporary file shares the destination filesystem, so link publication
@@ -95,18 +104,32 @@ def _predict(args) -> int:
                 for row in _rows(Path(args.input)):
                     batch.append(row)
                     if len(batch) == args.batch_size:
-                        _write_batch(model, batch, output)
+                        _write_batch(model, batch, output, guards)
                         completed += len(batch)
                         batch.clear()
                 if batch:
-                    _write_batch(model, batch, output)
+                    _write_batch(model, batch, output, guards)
                     completed += len(batch)
+            if guards is not None:
+                guards.check("before_prediction_file_close")
             output.flush()
             os.fsync(output.fileno())
+        if guards is not None:
+            guards.finish()
         os.link(temporary, destination)
+        published = True
     finally:
         if temporary is not None:
-            temporary.unlink(missing_ok=True)
+            if guards is None:
+                temporary.unlink(missing_ok=True)
+            elif published:
+                # Cleanup must not turn a published result into a guard failure.
+                try:
+                    temporary.unlink(missing_ok=True)
+                except OSError:
+                    pass
+            else:
+                print(f"partial_predictions={temporary}", file=sys.stderr)
     print(f"predictions={completed} duration_seconds={time.perf_counter() - started:.3f}", file=sys.stderr)
     return completed
 
@@ -118,13 +141,23 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--device", choices=("auto", "cpu", "mps"), default="auto")
     parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--m9-resource-guards", action="store_true")
     args = parser.parse_args(argv)
     if args.batch_size < 1:
         parser.error("--batch-size must be positive")
     started = time.perf_counter()
+    guards = None
     try:
-        _predict(args)
+        if args.m9_resource_guards:
+            from .resource_guards import ResourceGuards
+            guards = ResourceGuards(str(args.output) + ".m9-resources")
+        _predict(args, guards)
     except Exception as error:
+        if guards is not None:
+            try:
+                guards.finish(error=error)
+            except Exception as close_error:
+                print(f"guard_close_error={close_error}", file=sys.stderr)
         parser.exit(1, f"prediction failed after {time.perf_counter() - started:.3f}s: {error}\n")
 
 
