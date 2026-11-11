@@ -31,9 +31,9 @@ Publish actionable findings directly to the affected owner's public handoff queu
 
 ## Current direction
 
-R1 backbone research and R2 pilot shortcut audit are completed and integrated. Current work is R3 in coordination: a bounded audit of frozen v2 candidates, checking whether known v1 construction shortcuts improved and inherited data is honestly separated from fresh data.
+R1 backbone research, R2 pilot shortcut audit, and R3 first frozen-v2 candidate audit are completed and integrated. Current work is R4 in coordination: explain M3's pilot/probe divergence from existing evidence and recommend one bounded future experiment.
 
-Reuse existing audit tooling where appropriate. Analyze frozen candidate shards as they appear rather than mutable generation files. Consult Data about candidate readiness. This is advisory and parallel, not a new publication/review gate.
+Reuse Evaluation's grouped reports and existing saved outputs. Do not load models, create new datasets, or modify/delay Model's frozen M4 recipe. Observed error patterns do not prove an optimization cause. Keep individual validation/probe cases out of Data authoring requests. Data/Evaluation own current v2 repairs and exclusion receipts; Research is not their publication gate.
 
 Do not start new backbone research or repeat the completed v1 audit without a specific unresolved question. After the current objective, propose or take a small useful follow-up within scope; ask for redirection if the objective is exhausted.
 
