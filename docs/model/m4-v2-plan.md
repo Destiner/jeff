@@ -44,6 +44,14 @@ Publish hashed predictions for each M4 baseline/trained snapshot on Evaluation's
 
 Evaluation reuses its compare/order/report pipeline for uniform, lexical, pretrained/random-head starts, both trained M4 candidates, and optional historical references. Model records actual pipeline evidence separately from package builds. No new default is selected automatically. Self-review and integrate only owned paths using the atomic main merge lock and integrated build; final handoff includes exact implementation/main hashes, artifacts, outcomes, limitations and released queue.
 
+## Released-data recipe (frozen before training)
+
+Data published final `artifacts/data/data-pilot-v2/manifest.json` in handoff008 at11:48Z, SHA256 `d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac`. It is byte-identical to revised pre-review-r3, not the first candidate audited above. Final counts remain1500/300; intent option revisions and one sentiment training-state wording correction are immutable new shards. Data's final provenance, quality audit, and semantic-review receipts accompany release; Evaluation rebinds its probe exclusion/input freeze to these exact bytes.
+
+Owner executed both final-release token audits:6848 complete pairs,max169,p95=96,zero overflow/question/candidate loss at256. Frozen shared cap is therefore256; update cap1125,4500 training presentations. Reports: `artifacts/model/m4-v2-20261111-01/{minilm,msmarco}-token-budget.json`. All other pre-result controls and decision rules above remain unchanged. Final new-intent longest-character diagnostic is32/80 (inherited18/20), with producer-a21/40 residual shortcut; superseded53/80 must not be attributed to final data.
+
+Release P1 used an explicitly granted sequential CPU slot while data were pending and released it at11:41:08Z after four completed invocations. Owner verified no remaining Python/uv/model processes. M4 owns the idle local slot again; no concurrent model loads authorized.
+
 ## Initial preparation evidence
 
 Existing clean `worker/model` / `.worktrees/model` adopted after Timur explicitly transferred ownership. Fast-forwarded f8c90c6→5ee2b18, then17e9e0a. No active ML processes found and old subagent worktrees retained. Fresh narrowly scoped read-only subagents assessed trainer controls and candidate readiness; no trainer changes needed. Main's current M4/E3 direction governs direct coordination. Public request: `artifacts/handoffs/model/20261111T1123-M4-owner-adopted-and-input-request.md`.
