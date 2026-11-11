@@ -1,8 +1,8 @@
 # File-based evaluation
 
-Latest independent results: [E6 decoder learning](e6-decoder-learning.md) finds a negative result from the single authorized recipe: all624 trained development choices prefer the first input option without ties, no both-order successes remain, and intent/probe retention is lost. Some proper scores improve, including new reversed NLL, but do not establish robust learning. No automatic promotion or follow-on run follows from E6.
+Latest independent results: [E7 lower-LR learning](e7-low-lr-learning.md) is mixed. M7 improves inherited/new agreement and proper scores in both orders versus original P3 and both trained encoders, driven by intent/sentiment. New rules still flip80/80 and have zero both-order successes; unchanged9/12stable probe successes hide two lost rule pairs. No automatic promotion.
 
-Separately authorized E7: [frozen interpretation](e7-plan.md) and [control/preparation boundary](e7-binding.md). Same624presentations; compare the one M7 lower-LR attempt against original P3 as well as failed M6. Outcomes pending.
+Prior [E6 decoder learning](e6-decoder-learning.md) remains a negative result: all624 trained choices prefer the first input option without ties and no both-order successes remain. E7 is the separately authorized lower-LR contrast, not a redefinition of E6. Its [frozen interpretation](e7-plan.md) and [preparation boundary](e7-binding.md) remain preserved.
 
 Prior [E5 frozen decoder comparison](e5-frozen-decoder.md) found stronger reused-probe performance but worse inherited/new probability quality than both trained M4 encoders and severe reversal sensitivity. It motivated the bounded E6 experiment; its original findings remain intact.
 
