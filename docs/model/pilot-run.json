@@ -1,0 +1,399 @@
+{
+  "dataset": {
+    "schema_version": "0.1",
+    "dataset_id": "data-pilot-v1",
+    "manifest_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+    "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+    "shards": [
+      {
+        "path": "data/data-pilot-v1/intent/train.jsonl",
+        "split": "train",
+        "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/intent/validation.jsonl",
+        "split": "validation",
+        "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+        "split": "train",
+        "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+        "split": "validation",
+        "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/train.jsonl",
+        "split": "train",
+        "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+        "split": "validation",
+        "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl"
+      }
+    ],
+    "counts": {
+      "train": 300,
+      "validation": 60
+    },
+    "families": {
+      "train": {
+        "intent": 100,
+        "sentiment": 100,
+        "rule_application": 100
+      },
+      "validation": {
+        "intent": 20,
+        "sentiment": 20,
+        "rule_application": 20
+      }
+    },
+    "label_basis": {
+      "train": {
+        "teacher": 200,
+        "rule_verified": 100
+      },
+      "validation": {
+        "teacher": 40,
+        "rule_verified": 20
+      }
+    },
+    "likely_content_duplicates": [],
+    "frozen_manifest": "dataset-manifest.json"
+  },
+  "code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "3a737389c91ce950bff7c9d468681c2b7ac19279",
+    "dirty": false,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "00c81efa6f691865b523ee727bf733c19b4cfac62c0fd8dde0d5930fd3a31375",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "0c6f0edb0f67a218450e9b78dd8b0f983b0ac607f144cbf91824448aa8c13a02"
+    }
+  },
+  "base_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "max_length": 128,
+    "temperature": 1.0,
+    "baseline": "pretrained backbone with explicitly reset randomly initialized linear scoring head"
+  },
+  "config": {
+    "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "output_dir": "/Users/destiner/Code/jeff/artifacts/model/pilot-20261111-01",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "max_length": 128,
+    "seed": 42,
+    "max_steps": null,
+    "threads": 4
+  },
+  "runtime": {
+    "elapsed_seconds": 20.48063512472436,
+    "elapsed_scope": "through both checkpoint saves, before run.json write",
+    "memory": {
+      "cpu_max_rss_bytes": 1074069504,
+      "cpu_max_rss_raw": 1074069504,
+      "cpu_max_rss_raw_unit": "bytes",
+      "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+      "mps_current_allocated_bytes": 366998528,
+      "mps_driver_allocated_bytes": 2256502784,
+      "mps_measurement": "point-in-time, not peak"
+    }
+  },
+  "metrics": {
+    "validation_before": {
+      "count": 60,
+      "loss": 1.378222680091858,
+      "top1_target_agreement": 0.31666666666666665,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    },
+    "validation_after": {
+      "count": 60,
+      "loss": 0.8434007162538667,
+      "top1_target_agreement": 0.6,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    }
+  },
+  "costs": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."
+  },
+  "run_id": "pilot-20261111-01",
+  "training": {
+    "steps": 225,
+    "examples_seen": 900,
+    "epochs_completed": 3,
+    "epoch_history": [
+      {
+        "epoch": 1,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.3372004413604737
+      },
+      {
+        "epoch": 2,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.0749312090873717
+      },
+      {
+        "epoch": 3,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.8484513839085897
+      }
+    ],
+    "stopped_by_max_steps": false
+  },
+  "weights": {
+    "changed_parameter_count": 103,
+    "backbone_changed": true,
+    "head_changed": true,
+    "representative_differences": {
+      "backbone": {
+        "name": "encoder.embeddings.word_embeddings.weight",
+        "l2_difference": 0.3124803900718689,
+        "l2_before": 190.320556640625
+      },
+      "head": {
+        "name": "head.weight",
+        "l2_difference": 0.38018667697906494,
+        "l2_before": 0.5793976783752441
+      }
+    }
+  },
+  "comparisons": {
+    "intent": {
+      "uniform": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 6,
+        "agreement": 0.3,
+        "log_loss": 1.3701597308354978
+      },
+      "lexical": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 16,
+        "agreement": 0.8,
+        "log_loss": 1.2167250615675516
+      },
+      "random_head": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 6,
+        "agreement": 0.3,
+        "log_loss": 1.373596790274882
+      },
+      "trained": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 20,
+        "agreement": 1.0,
+        "log_loss": 0.06783813836692823
+      }
+    },
+    "sentiment-r2": {
+      "uniform": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 5,
+        "agreement": 0.25,
+        "log_loss": 1.3862943611198906
+      },
+      "lexical": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 5,
+        "agreement": 0.25,
+        "log_loss": 1.3806930651067177
+      },
+      "random_head": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 6,
+        "agreement": 0.3,
+        "log_loss": 1.382233893831891
+      },
+      "trained": {
+        "count": 20,
+        "groups": 5,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "teacher_agreement",
+        "correct": 11,
+        "agreement": 0.55,
+        "log_loss": 1.066197255576597
+      }
+    },
+    "rule_application": {
+      "uniform": {
+        "count": 20,
+        "groups": 2,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "rule_verified_accuracy",
+        "correct": 6,
+        "agreement": 0.3,
+        "log_loss": 1.3798405090061334
+      },
+      "lexical": {
+        "count": 20,
+        "groups": 2,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "rule_verified_accuracy",
+        "correct": 8,
+        "agreement": 0.4,
+        "log_loss": 1.3737118073149082
+      },
+      "random_head": {
+        "count": 20,
+        "groups": 2,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "rule_verified_accuracy",
+        "correct": 7,
+        "agreement": 0.35,
+        "log_loss": 1.3788375699607696
+      },
+      "trained": {
+        "count": 20,
+        "groups": 2,
+        "coverage": 1.0,
+        "status": "ok",
+        "metric_name": "rule_verified_accuracy",
+        "correct": 5,
+        "agreement": 0.25,
+        "log_loss": 1.3961667740286292
+      }
+    }
+  },
+  "aggregate": {
+    "uniform": {
+      "count": 60,
+      "correct": 17,
+      "reference_label_agreement": 0.2833333333333333,
+      "log_loss": 1.3787648669871737,
+      "coverage": 1.0,
+      "prediction_failures": 0
+    },
+    "lexical": {
+      "count": 60,
+      "correct": 29,
+      "reference_label_agreement": 0.48333333333333334,
+      "log_loss": 1.3237099779963926,
+      "coverage": 1.0,
+      "prediction_failures": 0
+    },
+    "random_head": {
+      "count": 60,
+      "correct": 19,
+      "reference_label_agreement": 0.31666666666666665,
+      "log_loss": 1.3782227513558474,
+      "coverage": 1.0,
+      "prediction_failures": 0
+    },
+    "trained": {
+      "count": 60,
+      "correct": 36,
+      "reference_label_agreement": 0.6,
+      "log_loss": 0.8434007226573849,
+      "coverage": 1.0,
+      "prediction_failures": 0
+    }
+  },
+  "token_budget": {
+    "full_pair_tokens": {
+      "min": 41,
+      "p50": 62,
+      "p95": 114,
+      "max": 169
+    },
+    "budgets": {
+      "128": {
+        "candidate_pairs": 1412,
+        "over_budget_pairs": 45,
+        "question_loss_pairs": 45,
+        "candidate_loss_pairs": 0,
+        "question_loss_by_split": {
+          "validation": 45
+        },
+        "question_loss_by_family": {
+          "rule_application": 45
+        }
+      },
+      "256": {
+        "candidate_pairs": 1412,
+        "over_budget_pairs": 0,
+        "question_loss_pairs": 0,
+        "candidate_loss_pairs": 0,
+        "question_loss_by_split": {},
+        "question_loss_by_family": {}
+      }
+    }
+  },
+  "fresh_process_reload": {
+    "offline": true,
+    "device": "mps",
+    "baseline_predictions": 60,
+    "trained_predictions": 60,
+    "baseline_probes": 24,
+    "trained_probes": 24,
+    "separate_process_per_family_and_stage": true
+  },
+  "artifacts": {
+    "root": "/Users/destiner/Code/jeff/artifacts",
+    "checkpoint": "model/pilot-20261111-01/checkpoint",
+    "baseline": "model/pilot-20261111-01/baseline",
+    "run_record": "model/pilot-20261111-01/run.json",
+    "validation_outputs": "model/pilot-validation-20261111-01",
+    "probe_outputs": "model/pilot-probes-20261111-01"
+  }
+}

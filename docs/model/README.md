@@ -81,6 +81,6 @@ Each immutable run contains:
 
 Reload uses local files only and rejects pickle fallback and custom remote code. A checkpoint is self-contained for inference, **not optimizer-resumable**. Software dependencies still require the shared Python environment.
 
-First executed evidence: `docs/model/tiny-run.json`. Tiny data establishes plumbing only; validation degraded, so it is not evidence of generalization. Both baseline/trained predictions were produced in fresh offline processes with a separate empty Hugging Face cache. Run records honestly mark this initial implementation checkout dirty.
+First executed evidence: `docs/model/tiny-run.json` and `first-results.md`. Tiny data establishes plumbing only; validation degraded. The subsequent 300-train/60-validation pilot improved aggregate reference-label agreement from 19/60 to 36/60, but rule performance fell and a truncation audit found lost question tokens in rule-validation inputs. See `pilot-results.md` and `pilot-run.json` for the qualified comparison. Both runs have fresh offline-process predictions; the tiny run records a dirty checkout, while the pilot executed clean committed code.
 
 Memory records distinguish CPU lifetime high-water RSS from point-in-time MPS allocator/driver usage, which is not a GPU peak. All runs were local with £0 additional spend. No software tests or linters are part of this project; verification is package building and actual training/inference/evaluation.
