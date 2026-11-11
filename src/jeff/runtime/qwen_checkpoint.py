@@ -36,7 +36,10 @@ def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
     require(manifest_path.is_file(), "checkpoint manifest must be an existing file")
     manifest = load(manifest_path)
     require(isinstance(manifest, dict), "checkpoint manifest must be an object")
-    fixed = {"schema_version": "jeff.qwen-trained-checkpoint.v1", "status": "complete",
+    version = manifest.get("schema_version")
+    require(version in ("jeff.qwen-trained-checkpoint.v1", "jeff.qwen-trained-checkpoint.v2"),
+            "unsupported checkpoint schema version")
+    fixed = {"schema_version": version, "status": "complete",
              "kind": "trained", "base_model_id": MODEL, "base_revision": REVISION}
     require(all(manifest.get(k) == v for k, v in fixed.items()), "checkpoint identity/status")
     for key in ("checkpoint_id", "run_id"):
@@ -91,6 +94,13 @@ def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
     require(receipt_path.is_file(), "checkpoint source run receipt must exist")
     receipt_hash = digest(receipt_path)
     require(receipt_hash == receipt["sha256"].lower(), "checkpoint source run receipt hash mismatch")
-    return {"manifest_path": str(manifest_path), "manifest_sha256": digest(manifest_path),
-            "manifest": manifest, "source_run_receipt": {"path": str(receipt_path),
-            "sha256": receipt_hash}, "validator_source_sha256": digest(SOURCE)}, asset_hashes
+    binding = {"manifest_path": str(manifest_path), "manifest_sha256": digest(manifest_path),
+               "manifest": manifest, "source_run_receipt": {"path": str(receipt_path),
+               "sha256": receipt_hash}, "validator_source_sha256": digest(SOURCE)}
+    if version == "jeff.qwen-trained-checkpoint.v2":
+        from jeff.runtime.qwen_readout import validate_metadata
+
+        binding["readout_proof"] = validate_metadata(
+            manifest_path, model_dir, manifest, receipt_path, require=require,
+            load=load, digest=digest, safe_path=safe_path)
+    return binding, asset_hashes
