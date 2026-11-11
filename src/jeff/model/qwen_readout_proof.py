@@ -82,10 +82,22 @@ def backbone_records(model, guard=None):
 
 
 def storage_disjoint(left, right):
-    """Whole backing-storage intervals, not Python identities or view pointers."""
+    """CPU byte ranges; MPS allocator-owned buffer identities, not payload addresses."""
+    for tensor in (left, right):
+        storage = tensor.untyped_storage()
+        require(tensor.device.type in {"cpu", "mps"} and
+                str(tensor.dtype) == "torch.float32" and tensor.is_contiguous() and
+                tensor.numel() > 0 and storage.data_ptr() != 0 and
+                0 <= tensor.storage_offset() * tensor.element_size() and
+                (tensor.storage_offset() + tensor.numel()) * tensor.element_size() <= storage.nbytes(),
+                "unsupported storage dtype/device/layout/extent")
     if left.device != right.device:
         return True
     a, b = left.untyped_storage(), right.untyped_storage()
+    if left.device.type == "mps":
+        # MPS storage data_ptr is an opaque MTLBuffer handle; adding bytes is invalid.
+        # Valid for our live allocator-owned .to(MPS)/clone allocations, not external aliases.
+        return a.data_ptr() != b.data_ptr()
     return a.data_ptr() + a.nbytes() <= b.data_ptr() or b.data_ptr() + b.nbytes() <= a.data_ptr()
 
 
