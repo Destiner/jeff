@@ -1,0 +1,19 @@
+{
+  "dataset_id": "data-tiny-v1",
+  "schema_version": "0.1",
+  "group_splits": {
+    "data:tiny:intent:cancel": "train",
+    "data:tiny:intent:invoice": "train",
+    "data:tiny:intent:reschedule": "validation",
+    "data:tiny:sentiment:lamp": "train",
+    "data:tiny:sentiment:meal": "train",
+    "data:tiny:sentiment:museum": "validation",
+    "data:tiny:rule_application:parcel": "train",
+    "data:tiny:rule_application:entry": "train",
+    "data:tiny:rule_application:priority": "validation"
+  },
+  "assignment_policy": "Named scenarios assigned before authoring; one row per group; no variants.",
+  "teacher_model": "openai/gpt-astra (PI_MODEL alias; immutable revision unavailable)",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}
