@@ -6,7 +6,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest comparison: frozen v2
+## Latest control: scalar-head learning rate
+
+M5 changed only the retained MS MARCO classifier's learning rate, with byte-identical fresh starting predictions. It recovered one previously lost probe group without a new group error, but **failed the predeclared criterion because probe log loss worsened**. Pilot agreement stayed40/60; no default promotion or further training. See [M5 results](m5-head-lr-results.md), [plan](m5-head-lr-plan.md), and [run/provenance index](m5-head-lr-run.json).
+
+## Frozen-v2 comparison
 
 M4 completed one fresh-pretrained v2 run per supported architecture under matched controls, with saved baselines/checkpoints and fresh offline inference. Both improve on newly authored validation versus their own starts, but **neither passes the predeclared inherited/probe robustness gate**. Preserve M2/M3 and the new candidates; no default promotion. See [M4 results](m4-v2-results.md), [frozen plan](m4-v2-plan.md), and [run/provenance index](m4-v2-run.json).
 
@@ -70,6 +74,8 @@ Repeat with `baseline` and a different output path. Output parents must already 
 ## Dataset and isolation safeguards
 
 The trainer independently verifies manifest/shard hashes and row counts, decision fields, target membership, allowed task families, provenance fields, global ID uniqueness, and group isolation. It reports exact content duplicates. It rejects final shards in a whole-manifest preflight, refuses paths into protected `evaluation/final`, and rejects artifact-root traversal. Validation labels are used only for before/after metrics; only train rows reach optimizer updates.
+
+Rows carrying `provenance.usage="validation_only_never_train"` are rejected from training shards even if both manifest and row splits have been relabeled to `train`. They remain eligible for validation-only use; removing the marker or making untracked derivatives is a procedural exclusion, not something this guard can recognize. This safeguard was added after M5; historical experiment sources and artifacts remain unchanged.
 
 These checks do not prove semantic label correctness or catch every paraphrase leak. Data owns broader validation. Final evaluation remains outside this workstream.
 

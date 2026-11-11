@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "assignment": "M5",
+  "historical_source_revision": "e37b0f3e7f2e3162abca87a76883eb81300603e0",
+  "architecture": "retained_cross_encoder",
+  "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "dataset_manifest": "data/data-pilot-v1/manifest.json",
+  "dataset_manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+  "device": "mps",
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate": 0.00002,
+  "head_learning_rate": 0.00002,
+  "max_length": 256,
+  "seed": 42,
+  "max_steps": null,
+  "threads": 4,
+  "expected_steps": 225,
+  "expected_presentations": 900,
+  "notes": "Exactly one fresh historical-M3 control: only scalar classifier LR5e-4->2e-5. Encoder and native pooler stay2e-5. Reference settings, not automatically loaded. R4/E4 full criterion; no default promotion or extra training."
+}

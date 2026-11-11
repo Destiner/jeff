@@ -11,6 +11,16 @@ P1 exports the existing **M2** checkpoint without changing its weights, tokenize
 - [`BUNDLE-README.md`](BUNDLE-README.md): short macOS CPU install/run instructions included in each delivered bundle.
 - [`p1-results.md`](p1-results.md): executed evidence, hashes, qualifications and failures. `manifests/releases/` stores the small inventory/runtime receipts; large bundles are ignored artifacts, never Git objects.
 
+## Linux CPU follow-up (P2)
+
+A separate [pinned Linux CPU recipe](../../configs/runtime/linux-cpu/README.md)
+uses the existing M2 bundle without its CUDA-heavy universal requirements.
+Target: CPython 3.12, Linux x86_64, glibc ≥2.28; official Torch 2.15.0+cpu,
+all other package versions retained from the root lock. This is
+**metadata-checked preparation, not executed Linux support**: no authorized
+local Linux runtime was found. See [P2 status/evidence](p2-linux-cpu.md).
+P1 bundles and macOS runtime evidence remain unchanged.
+
 ## Reproduce an export
 
 Use Python 3.12. Run at a clean committed revision and record its actual full hash. The P1 wheel was built from `82c327a7ba6def23e77123f3e768b31255feb2b5`; the later delivery adds support/docs/evidence without changing that wheel's inference/runtime code.

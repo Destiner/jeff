@@ -1,0 +1,47 @@
+{
+  "schema_version": "jeff.runtime.linux-cpu-preparation.v1",
+  "status": "recipe prepared; Linux installation and inference unexecuted",
+  "target": "CPython 3.12 / Linux x86_64 / glibc >=2.28",
+  "existing_bundle_id": "p1-m2-20261111-01",
+  "existing_bundle_manifest_sha256": "1c1fc4bc742beb7ec396e5b6b51550df216d38a097b467b9ce3fe0aa4f190e59",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p2-linux-cpu-20261111-01",
+  "files": {
+    "linux-cpu-support/README.md": {
+      "bytes": 4885,
+      "sha256": "9cdb0b6a11ed4d3945e96698b54b5c33994a305c9fcc31f54dc88a6dfdf2911a"
+    },
+    "linux-cpu-support/provenance.json": {
+      "bytes": 1755,
+      "sha256": "82df6c1dd0a35c9fac970e5e7c961adf7d47ff7223cad333d7394c59e35ec610"
+    },
+    "linux-cpu-support/requirements.txt": {
+      "bytes": 6462,
+      "sha256": "f2df19722404e0750e5e3b1a18b95fb5f5c96131e1d54b0951c4de5ce2778eb6"
+    },
+    "local-runtime-availability.json": {
+      "bytes": 1455,
+      "sha256": "9ef63814457bfd35c4be4f2e1c3cfc97cc3fb8680da604eb5004f2de91d970ac"
+    },
+    "recipe-investigation/torch-index-retrieval.json": {
+      "bytes": 449,
+      "sha256": "26e6798f9c07e38c70abba4772aca19e6345c5bcf35eebc5576a97436677cf1e"
+    },
+    "recipe-investigation/torch-metadata-retrieval.json": {
+      "bytes": 290,
+      "sha256": "bf12de13df87508f34002c76cce7cf17464b8226c31239aaad15169a49ebf175"
+    },
+    "recipe-investigation/non-torch-metadata-retrievals.json": {
+      "bytes": 9349,
+      "sha256": "59d538871ec96e30af9c864703e3344728f1d697be6f90ae2acd2dfb6e70b1fd"
+    },
+    "recipe-investigation/applicable-requirements.json": {
+      "bytes": 1361,
+      "sha256": "cba8c19371b4f9dc0f560dec9a16db5c1e852e2c8ba883cb1acfc930dedcbb29"
+    }
+  },
+  "runtime_gap": "Host and installed Tart sandbox are Darwin. No available Linux/container runtime found; new infrastructure/remote machines are outside scope. No ML slot requested/used.",
+  "inference_invocations": 0,
+  "linux_installs": 0,
+  "additional_spend_gbp": 0,
+  "root_uv_lock_sha256": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4"
+}
