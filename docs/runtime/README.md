@@ -31,6 +31,13 @@ regression; E6 owns independent quality scoring.
 See the [checkpoint binding contract](p4-checkpoint-contract.md) for identity
 verification and its historical implementation-only scope.
 
+## M7 trained-checkpoint reload (P5)
+
+The [P5 evidence report](p5-m7-checkpoint.md) records the completed M7 fresh-process
+reload: 624/624 presentations and 2,390 valid option probabilities, with unchanged
+P3/P4 runtime contracts. This is runtime success, not learning-quality evidence
+or default promotion; E7 independently scores the delivered outputs.
+
 ## Linux CPU follow-up (P2)
 
 A separate [pinned Linux CPU recipe](../../configs/runtime/linux-cpu/README.md)
