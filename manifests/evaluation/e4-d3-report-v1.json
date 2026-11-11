@@ -1,0 +1,99 @@
+{
+  "schema_version": "evaluation-report-index/1",
+  "task": "E4-D3",
+  "status": "completed-development-comparison",
+  "created_at": "2026-11-11T14:55:45.082384+00:00",
+  "recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e4-d3-v1.json",
+    "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+  },
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e4-d3-seen-rules.md",
+    "sha256": "56e0e1902b86e97c4e131f8da8309ca0d8b844a39396fc7c8e45fb67a192e097"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+      "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/units.json",
+      "sha256": "ad0004ceca3474182da0dd9b86c33415b22fb9a0ecb823343a865add33fce788"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-owner-binding-v1/receipt.json",
+      "sha256": "ca6b1f5beacb8ba37078aee9d455e19ad7b86625c91e99982229865f946e2611"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/superseded-sentiment-train-exclusion.json",
+      "sha256": "881b583f130a61a08707564f34999b12e559588de5d0bff8a9b3bf45d0d9c608"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/score_d3.py",
+      "sha256": "dd9d4c00e2d426c2dd66d5023a8acb5a4f0e5ee33b9e2d5879b6aeb7c8c181e9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/recipe.json",
+      "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/bindings.json",
+      "sha256": "821608283da2467ec6fd42c565f264beceba0c537e2bb65b776af13d92bc2f90"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/pins.json",
+      "sha256": "5f9aa4cc755ee4495fd688952f9a3fc225a8a3d7cfc24d820fe881ce49abb330"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/comparison.json",
+      "sha256": "652d21c03342bc835260f1ed28b161b5fc4f2b59ddce0a8efd4abf6e613dcb5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/report.json",
+      "sha256": "68bba3f94f5bf26142c421504b883f85318d89fee10a221cc007f861eee83aa4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/receipt.json",
+      "sha256": "1efbad249d5cf209ead91c60d8a795243449cbeaa8bff87371cb3399bc43a29b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/source-recheck.json",
+      "sha256": "5e44c79c2d3b84cb36161975109b9ce3a38761c84254e1361bbee4bcd926f536"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/completion.json",
+      "sha256": "a37695a3096fe3908aab323d69fcc509987ab54b5da913f5f60d2db80ffe4de2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/audit.json",
+      "sha256": "df302382e355d655d2cb2cde8bfd5293a06648a87e65ab8be91d6d830fc08811"
+    }
+  ],
+  "final_evaluation_access": false,
+  "default_promoted": false,
+  "evaluation_model_loads": 0,
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "population": {
+    "cases": 96,
+    "policies_source_groups": 48,
+    "seen_mechanisms": 8,
+    "stratum": "seen_mechanism_new_policy",
+    "not_pooled_with": [
+      "unseen-v2",
+      "probes"
+    ]
+  },
+  "model_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/receipt.json",
+    "sha256": "b8ad423e15e2e0b1909aa73532265d549979b8b5de32b4c1b233da5cfe37e177"
+  }
+}
