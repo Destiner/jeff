@@ -31,6 +31,8 @@ Resolve these with a small pilot rather than a lengthy architecture exercise:
 
 1. **Backbone and training approach.** Initial pilot approved: `sentence-transformers/all-MiniLM-L6-v2` (roughly 22M parameters), loaded through Transformers with a shared scalar candidate head and full fine-tuning. This is smaller than the original 100–300M suggestion to prove the loop sooner. The Model worker must record the exact model revision and actual backend behavior. Larger encoders or small decoders remain later candidates, not parallel mandatory builds.
 2. **Trainable parameters.** Try full fine-tuning for the small initial backbone, subject to measured memory use. Consider head-only or adapter alternatives if that reveals a concrete need.
+
+   **Pilot input-budget decision (LD002):** the next controlled baseline/trained comparison uses 256 tokens rather than 128. A reproduced tokenizer audit found that 128 removed question tokens from 45 candidate pairs in 12 rule-validation decisions; every pilot pair fits at 256. This fixes a measured input-loss problem, not a demonstrated accuracy problem. Keep the current architecture until the corrected comparison is available; the retained-head cross-encoder recommendation remains an unmeasured alternative.
 3. **Contracts.** Follow [the v0.1 contracts](contracts.md) for training examples, predictions, and artifacts. Propose changes through the integrator.
 4. **Task mix and splits.** Choose a small initial mix and reserve validation and final-test groups before producing variants.
 5. **Teacher access and cost.** Check existing access, model terms, and pilot costs before expanding generation. Do not assume existing subscriptions provide programmatic API access.
