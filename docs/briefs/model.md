@@ -36,9 +36,9 @@ Do not automatically promote the newest or highest pilot-scoring checkpoint. Ref
 
 ## Current direction
 
-M1–M4 are completed and integrated; do not replay those tasks. Current work is M5 in coordination: exactly one historical-M3 scalar-head learning-rate control, followed by E4's existing-checkpoint inference requests for D3. Both v2 candidates improved newly authored validation but failed the historical robustness gate. Preserve all candidates; no default promotion, Qwen/backend migration, dependency expansion, or new training sweep is authorized.
+M1–M5 and D3 inference/scheduling are complete; do not replay them. Current work is M6 in coordination: one bounded full-parameter Qwen decision-learning experiment using R5's fixed primary recipe, unchanged v2 TRAIN, training-only option permutations and measured local feasibility. This narrow experimental training path is authorized; default migration, new dependencies, LoRA/cloud fallback and sweeps are not.
 
-Follow the live task message and frozen R4 control rather than rereading the full experiment history. Keep Evaluation informed through public handoffs; no routine lead relay.
+Model owns capacity preflight, training, fresh-start predictions, deterministic train-fit summaries, final checkpoint and ML scheduling. Runtime P4 owns the trained-checkpoint development inference pass; Evaluation E6 scores independently. Follow the live task/coordination directions and coordinate directly through the enabled canonical mailbox.
 
 ## Delivery
 

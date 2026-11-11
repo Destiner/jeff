@@ -31,9 +31,9 @@ Publish actionable findings directly to the affected owner's public handoff queu
 
 ## Current direction
 
-R1–R4 are completed and integrated; M5's LR control is also complete and failed its fixed conjunction despite one recovered probe group. Research is reactivated for R5: about one hour of source-backed learning-strategy research, as specified in coordination and the live task message. Focus on sample-efficient decision learning, rule transfer, and probability quality; recommend one next experiment plus a contingent alternative without repeating R1/R4.
+R1–R5 are complete and integrated. R5 delivered its decision-ready synthesis after about28minutes of actual work rather than claiming a full hour. Its primary proposal is now authorized as Model M6 with Runtime P4/Evaluation E6 support. The contingent temperature diagnostic is not automatically authorized.
 
-Existing agent/subagent capacity is available. No model loads, new datasets, current-recipe changes, training authority, or new approval gate. Keep individual validation/probe cases out of Data authoring requests; use published aggregate findings rather than mining private examples.
+Research is available for concrete methodology questions, not a repeated survey or new review gate. No model loads, dataset authoring, unilateral recipe changes or training authority. Keep private validation/probe cases out of Data authoring requests; current execution must not wait for another Research approval.
 
 Do not start new backbone research or repeat the completed v1 audit without a specific unresolved question. After the current objective, propose or take a small useful follow-up within scope; ask for redirection if the objective is exhausted.
 

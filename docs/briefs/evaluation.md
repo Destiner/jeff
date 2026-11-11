@@ -38,9 +38,9 @@ Do not silently promote a candidate or conceal a regression. Publish actionable 
 
 ## Current direction
 
-E1–E3 are complete and integrated. Reuse the existing scorer, comparer, assembler, input exporter, baselines, group/order analysis, and Markdown renderer.
+E1–E5 are complete and integrated. Reuse the existing scorer, comparer, assembler, input exporter, baselines, group/order analysis, and Markdown renderer.
 
-Current objective is E4 in coordination: independently score M5's one LR control against its frozen historical comparator, and assess D3's seen-mechanism/new-policy diagnostic with existing M4 checkpoints. Keep this intentionally seen-mechanism evidence distinct from unseen-mechanism v2 and existing probes. Do not rebuild the pipeline or start final evaluation.
+Current objective is E6 in coordination: independently evaluate the single M6 Qwen decision-learning recipe versus preserved P3 and fresh-start controls on the same624 E5 presentations. Freeze interpretation before outcomes; report both-order proper scores, stability/correctness, source units, intent/probe retention and every regression. Model owns training/start predictions; Runtime P4 supplies final checkpoint predictions. No D3 extension, new framework, automatic fallback/default, or final access.
 
 The latest E2 report directory is `artifacts/evaluation/e2-m3-v2/`: its v2 suffix is a report revision, NOT Data pilot-v2. M3 improved pilot agreement but substantially regressed on probes; both trained candidates remain available.
 
