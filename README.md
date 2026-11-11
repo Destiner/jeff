@@ -2,48 +2,47 @@
 
 A small text decision model, trained with help from an agent swarm.
 
-Give Jeff context, a question, and possible answers. The goal is to return probabilities over those answers, including for decisions not explicitly seen during training.
-
-## Goals
-
-- Fine-tune a small pretrained model rather than pretrain language understanding from scratch.
-- Have a usable trained checkpoint by the end of day one; improve and evaluate it on day two.
-- Prefer local training and inference on Apple silicon with 16–24 GB memory.
-- Design contributions for tens or hundreds of agents working in the same codebase through isolated workspaces.
-- Keep additional teacher-model and compute spending within £50.
-
-Training and understanding the model are the primary deliverables. Applications and web demos are optional.
+Give Jeff context, a question, and possible answers. It returns probabilities over those answers, rather than generating a response.
 
 ## What works
 
-A ~22.7M-parameter MiniLM candidate scorer, full fine-tuning, self-contained inference checkpoints, and decision-only JSONL prediction. Local MPS training and fresh offline-process reloads have completed.
+- Two ~22.7M-parameter encoder scorers: sentence-pretrained MiniLM with a new scalar head, and an MS MARCO cross-encoder retaining its pretrained head.
+- Full local fine-tuning, self-contained inference checkpoints, and fresh offline-process reloads.
+- Versioned synthetic datasets, independent file-based evaluation, source-group reporting, and option-order analysis.
+- Portable local bundles for both architectures, demonstrated outside the development checkout on macOS CPU.
+- A shared Markdown mailbox for agent coordination.
 
-The 300-train/60-validation pilot improved reference-label agreement from 19/60 to 36/60. This mixes teacher and rule-verified labels, not wholly verified accuracy. Rule performance regressed, and some rule-validation questions were truncated at 128 tokens. See [the qualified results](docs/model/pilot-results.md).
+The latest dataset contains 1,500 training and 300 validation examples. On its 240 newly authored validation rows, trained MiniLM and MS MARCO achieve **55% and 58.75% supplied-label agreement**, versus a lexical baseline's 41.25%.
 
-Data-generation and evaluation tooling are still on separate worker branches. Checkpoints and datasets are local artifacts, not bundled with this repository.
+These gains coexist with regressions on historical examples and development probes. Rule performance remains weak, and no newer checkpoint is an unqualified replacement. See [the independent comparison](docs/evaluation/pilot-e3-m4.md).
 
 ## What's faked or mocked
 
-No mocked model outputs. The starting scoring head is random; probabilities are not claimed to be calibrated. This small pilot does not establish broad generalization. No application demo is claimed.
+No mocked model predictions. Data is synthetic; labels mix teacher judgments and programmatically verified rules, not uniformly independent ground truth. Probabilities are not claimed to be calibrated, and broad generalization is not established. Final evaluation remains sealed.
+
+Runtime execution is demonstrated on macOS arm64 CPU only. Weights/datasets are local artifacts, not published downloads; installation may fetch Python dependencies. External redistribution/licensing questions remain unresolved.
 
 ## How to run
 
 Use Python 3.12 and [uv](https://docs.astral.sh/uv/).
 
 ```sh
-uv sync --locked                 # Shared package, without ML dependencies
-uv sync --locked --extra model   # Model/training environment
+uv sync --locked                 # Data, evaluation, coordination
+uv sync --locked --extra model   # Training and inference
 uv build --no-sources            # Wheel and source distribution
 ```
 
-Use separate environments per worktree. Run model commands with `uv run --locked --extra model` to retain their optional dependencies. [Model setup and commands](docs/model/README.md) cover training and local checkpoint inference. The recorded pilot uses 128 tokens; the approved follow-up uses 256 to avoid the measured input loss.
+- [Model setup and commands](docs/model/README.md): train or run a local checkpoint. Use `uv run --locked --extra model` for ML commands.
+- [Data pipeline](docs/data/README.md): frozen manifests and validation.
+- [Runtime bundles](docs/runtime/README.md): export, integrity checks, and isolated installation.
+- [Mailbox](docs/coordination/mailbox.md): lead/owner communication without a service.
 
-No software tests or linting. Model evaluation and dataset validation remain part of the training workflow.
+Use separate environments per worktree. No software tests or linting; actual training, inference, dataset validation, evaluation, and builds provide execution evidence.
 
 ## Project docs
 
 - [Agent instructions](AGENTS.md)
-- [Plan and decisions](docs/plan.md)
+- [Plan](docs/plan.md)
+- [Current assignments and ownership](docs/coordination.md)
+- [Data and inference contracts](docs/contracts.md)
 - [Swarm workflow](docs/swarm.md)
-- [Worker assignments and launch order](docs/coordination.md)
-- [Shared data and inference contracts](docs/contracts.md)

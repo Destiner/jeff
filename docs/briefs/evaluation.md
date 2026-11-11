@@ -38,9 +38,9 @@ Do not silently promote a candidate or conceal a regression. Publish actionable 
 
 ## Current direction
 
-E1 tooling and E2 M2/M3 comparisons are complete and integrated. Reuse the existing scorer, comparer, assembler, input exporter, baselines, group/order analysis, and Markdown renderer.
+E1–E3 are complete and integrated. Reuse the existing scorer, comparer, assembler, input exporter, baselines, group/order analysis, and Markdown renderer.
 
-Current objective is E3 in coordination: prepare the v2 evaluation boundary and compare M4 candidates while keeping inherited-v1, new-v2, and independent existing probes distinct. Do not rebuild the completed pipeline or repeatedly re-score v1 without a new question.
+Current objective is E4 in coordination: independently score M5's one LR control against its frozen historical comparator, and assess D3's seen-mechanism/new-policy diagnostic with existing M4 checkpoints. Keep this intentionally seen-mechanism evidence distinct from unseen-mechanism v2 and existing probes. Do not rebuild the pipeline or start final evaluation.
 
 The latest E2 report directory is `artifacts/evaluation/e2-m3-v2/`: its v2 suffix is a report revision, NOT Data pilot-v2. M3 improved pilot agreement but substantially regressed on probes; both trained candidates remain available.
 

@@ -36,9 +36,9 @@ Do not automatically promote the newest or highest pilot-scoring checkpoint. Ref
 
 ## Current direction
 
-M1/M2/M3 are completed and integrated; do not replay those tasks. Current work is M4 in coordination: data-focused robustness using Data D2/v2 and the already supported architectures. Keep both all-MiniLM and retained-head cross-encoder candidates. No Qwen/backend migration or dependency expansion is currently authorized.
+M1–M4 are completed and integrated; do not replay those tasks. Current work is M5 in coordination: exactly one historical-M3 scalar-head learning-rate control, followed by E4's existing-checkpoint inference requests for D3. Both v2 candidates improved newly authored validation but failed the historical robustness gate. Preserve all candidates; no default promotion, Qwen/backend migration, dependency expansion, or new training sweep is authorized.
 
-While waiting for a frozen data input, fulfill peer inference requests, assess existing failure evidence, and prepare the bounded comparison rather than launching an unrelated architecture search.
+Follow the live task message and frozen R4 control rather than rereading the full experiment history. Keep Evaluation informed through public handoffs; no routine lead relay.
 
 ## Delivery
 

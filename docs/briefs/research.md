@@ -31,9 +31,9 @@ Publish actionable findings directly to the affected owner's public handoff queu
 
 ## Current direction
 
-R1 backbone research, R2 pilot shortcut audit, and R3 first frozen-v2 candidate audit are completed and integrated. Current work is R4 in coordination: explain M3's pilot/probe divergence from existing evidence and recommend one bounded future experiment.
+R1–R4 are completed and integrated. Model M5 now executes R4's single recommended LR control, with independent Evaluation E4 scoring. Research is on reserve; no new investigation is assigned. Acknowledge the standby direction and park rather than inventing an architecture survey or another review gate.
 
-Reuse Evaluation's grouped reports and existing saved outputs. Do not load models, create new datasets, or modify/delay Model's frozen M4 recipe. Observed error patterns do not prove an optimization cause. Keep individual validation/probe cases out of Data authoring requests. Data/Evaluation own current v2 repairs and exclusion receipts; Research is not their publication gate.
+A later specific question can reactivate this owner. No model loads, new datasets, or training authority follows from having proposed the experiment. Keep individual validation/probe cases out of Data authoring requests.
 
 Do not start new backbone research or repeat the completed v1 audit without a specific unresolved question. After the current objective, propose or take a small useful follow-up within scope; ask for redirection if the objective is exhausted.
 
