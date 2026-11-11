@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-pilot-v1",
+  "artifact_prefix": "data/data-pilot-v1",
+  "teacher_policy": "Record actual PI_MODEL/PI_PROVIDER alias when available; do not invent revisions. Existing approved agent access only.",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "assignments": [
+    {
+      "owner": "intent-producer",
+      "task_family": "intent",
+      "artifact_directory": "intent",
+      "group_namespace": "data:pilot-v1:intent:",
+      "train_groups": ["g01", "g02", "g03", "g04", "g05", "g06", "g07", "g08", "g09", "g10", "g11", "g12", "g13", "g14", "g15", "g16", "g17", "g18", "g19", "g20", "g21", "g22", "g23", "g24", "g25"],
+      "validation_groups": ["g26", "g27", "g28", "g29", "g30"],
+      "rows_per_group": 4,
+      "instruction": "Each group is a distinct source domain/scenario cluster. Four varied requests per cluster, not cosmetic paraphrases; distinct domains held for validation. Store domain allocation before authoring."
+    },
+    {
+      "owner": "sentiment-producer",
+      "task_family": "sentiment",
+      "artifact_directory": "sentiment",
+      "published_directory": "sentiment-r2",
+      "prepublication_correction": "Use all four candidate classes and a neutral subject-preserving question template; remove original class-correlated question/candidate-set shortcuts without changing teacher judgments.",
+      "group_namespace": "data:pilot-v1:sentiment:",
+      "train_groups": ["g01", "g02", "g03", "g04", "g05", "g06", "g07", "g08", "g09", "g10", "g11", "g12", "g13", "g14", "g15", "g16", "g17", "g18", "g19", "g20", "g21", "g22", "g23", "g24", "g25"],
+      "validation_groups": ["g26", "g27", "g28", "g29", "g30"],
+      "rows_per_group": 4,
+      "instruction": "Each group is a distinct review domain/source scenario. Four varied reviews per cluster, not cosmetic paraphrases; explicit object of sentiment, no ambiguous overall label. Store domain allocation before authoring."
+    },
+    {
+      "owner": "rule-producer",
+      "task_family": "rule_application",
+      "artifact_directory": "rule_application",
+      "group_namespace": "data:pilot-v1:rule_application:",
+      "train_groups": ["g01", "g02", "g03", "g04", "g05", "g06", "g07", "g08", "g09", "g10"],
+      "validation_groups": ["g11", "g12"],
+      "rows_per_group": 10,
+      "instruction": "One distinct generator mechanism per group, frozen before cases. Hold complete generator mechanisms out for validation. Mix boundaries and outcomes; include an independently executable label audit in artifact storage if claiming rule_verified."
+    }
+  ],
+  "assembly_policy": "Six split-pure shards; reject final, bad targets, duplicate IDs, exact duplicates, conflicting targets, or group leakage. Report likely duplicates for review. Tiny dataset is separate; do not concatenate it automatically."
+}
