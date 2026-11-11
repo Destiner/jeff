@@ -90,8 +90,11 @@ JSON with sorted keys, compact separators, `ensure_ascii=False`, and
 `allow_nan=False`; JSON object key order is irrelevant, array order is not.
 
 `receipt.json` pins manifests, provenance, allowlist file if supplied, assembled
-examples, probes, consumed shards and helper source, plus the Git revision and
-tracked-dirty flag. Inputs are fingerprinted again before output creation. It
+examples, probes, consumed shards, helper source and shared validator/input-writer
+source. Git revision/dirty metadata is recorded only when the imported helper is
+tracked by the discovered checkout. Installed wheels outside that owning checkout
+record unknown Git metadata explicitly; code hashes remain authoritative. Inputs
+are fingerprinted again before output creation. It
 records classification/order/hash policy, publication status, output hashes,
 row/group counts and distributions by family, **label_basis** and exact source.
 The receipt is written last; a directory without it is incomplete, not a freeze

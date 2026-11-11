@@ -53,6 +53,22 @@ def identity(row, stratum, origin):
             "order_free_content_sha256": content_hash(row), "provenance": row["provenance"]}
 
 
+def checkout_identity(code):
+    try:
+        def git(*args):
+            return subprocess.check_output(["git", *args], cwd=code.parent, text=True,
+                                           stderr=subprocess.DEVNULL).strip()
+        root = Path(git("rev-parse", "--show-toplevel")).resolve()
+        relative = code.relative_to(root)
+        git("ls-files", "--error-unmatch", "--", str(relative))
+        return {"code_revision": git("rev-parse", "HEAD"),
+                "tracked_dirty_at_execution": bool(git("status", "--porcelain", "--untracked-files=no")),
+                "code_checkout": str(root), "code_checkout_status": "imported helper is tracked by this checkout"}
+    except (OSError, ValueError, subprocess.CalledProcessError):
+        return {"code_revision": None, "tracked_dirty_at_execution": None,
+                "code_checkout": None, "code_checkout_status": "unknown: imported helper is not in an owning Git checkout; use code hashes"}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("examples", "v1-manifest", "source-manifest", "provenance", "probes", "output-dir"):
@@ -196,8 +212,8 @@ def main():
 
     code = Path(__file__).resolve()
     pin(code)
-    revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=code.parent, text=True).strip()
-    dirty = subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=no"], cwd=code.parent, text=True)
+    pin(Path(input_only.__code__.co_filename).resolve())
+    code_identity = checkout_identity(code)
     for path in list(pins):
         pin(Path(path))
     output.mkdir(parents=True, exist_ok=False)
@@ -220,8 +236,8 @@ def main():
     write_jsonl(output / "parent-identities.jsonl", (identity(r, "v1-ancestry", old_origins[r["id"]]) for r in old))
     write_json(output / "receipt.json", {
         "schema_version": "evaluation/e3-freeze/0.1", "publication_status": args.publication_status,
-        "candidate_not_release": args.publication_status == "candidate", "code_revision": revision,
-        "tracked_dirty_at_execution": bool(dirty), "pins": list(pins.values()),
+        "candidate_not_release": args.publication_status == "candidate", **code_identity,
+        "pins": list(pins.values()),
         "source_dataset_id": source["dataset_id"], "parent_dataset_id": parent["dataset_id"],
         "v1_shards": old_shards, "source_validation_shards": source_shards,
         "new_sources": sorted(allowed), "outputs": outputs,
