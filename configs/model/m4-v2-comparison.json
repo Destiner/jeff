@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1",
+  "assignment": "M4",
+  "status": "pre-release reference; freeze final manifest and audited cap before training",
+  "dataset_id": "data-pilot-v2",
+  "architectures": [
+    {
+      "architecture": "mean_pool_scalar",
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "head_initialization": "random"
+    },
+    {
+      "architecture": "retained_cross_encoder",
+      "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "head_initialization": "pretrained"
+    }
+  ],
+  "shared": {
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 4,
+    "learning_rate": 0.00002,
+    "head_learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "threads": 4,
+    "max_length_pending_final_audit": 256,
+    "max_steps_formula": "3 * ceil(final_train_rows / 4)",
+    "max_training_invocations_per_architecture": 1,
+    "additional_spend_gbp": 0
+  },
+  "notes": [
+    "Reference settings, not automatically loaded by CLI.",
+    "Fresh pinned pretrained initialization for each architecture; do not resume v1 checkpoints.",
+    "Candidate audit supports 256 but final released bytes must be audited for both tokenizers.",
+    "Same recipe between architectures; not a pure data-only ablation against v1.",
+    "Preserve M2 and M3 and leave default unchanged."
+  ]
+}
