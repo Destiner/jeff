@@ -33,10 +33,12 @@ All outputs are exclusive-create; choose new run IDs rather than overwriting. Re
 - Coverage partitions reference IDs into valid, missing, invalid, duplicate. Extras and unidentifiable records are reported separately; extras never change the reference denominator.
 - Top-choice agreement has both valid-prediction and all-example denominators. Failed predictions are unsuccessful in the latter. Teacher labels yield **teacher agreement**, source labels yield source-label accuracy, and mixed labels yield reference-label agreement; basis-specific reports are mandatory.
 - Natural-log loss and summed multiclass Brier score are conditional on valid predictions. Exact zero target probability means infinite log loss, serialized as null mean plus `status: positive_infinity`, not a fabricated finite penalty.
-- Report overall, family, label basis, family × basis, and option count. Five fixed confidence bins and ECE are descriptive, especially with small or correlated groups; no calibration claim or calibration fitting.
-- Comparison recomputes every run on the same reference file and reports each run's full coverage. Pairwise deltas use the common-valid ID intersection, with wins/losses and its denominator. Positive agreement delta favors the left; negative loss delta favors the left. Infinite/empty loss deltas are undefined.
+- Report overall, family, source group, label basis, family × basis, and option count. Five fixed confidence bins and ECE are descriptive, especially with small or correlated groups; no calibration claim or calibration fitting.
+- Comparison recomputes every run on the same reference file and reports each run's full coverage, with paired differences overall, per family, and per source group. Pairwise deltas use the common-valid ID intersection, with wins/losses and its denominator. Positive agreement delta favors the left; negative loss delta favors the left. Infinite/empty loss deltas are undefined.
 
 `score` returns 0 for a nonempty clean report, 1 for prediction issues/empty references (report still written), and 2 for fatal input/output/reference errors. `compare` returns 1 when any run has issues (report written), and 2 for fatal reference/input/output errors (no completed report). The other preparation CLIs fail loudly on invalid input.
+
+See [grouped-comparisons.md](grouped-comparisons.md) for the corrected pilot/M3 recipe, 60-row versus 12-group distinction, and reusable validation reversal generation with complete-pair quality summaries.
 
 ## Baselines
 
