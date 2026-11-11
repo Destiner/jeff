@@ -91,8 +91,10 @@ For example, a predictor entry (replace every pin with actual values) is:
 ```
 
 At stratum level supply **both** `order_examples` and `order_pairs` pins to
-request order analysis. The existing order CLI validates exact reversal pairs,
-group consistency and full pair coverage; the existing renderer requires
+request order analysis. Before scoring, the study requires each comparison row
+to equal the corresponding full order-reference row, including state, question,
+option text/order and provenance. The existing order CLI validates exact reversal
+pairs, group consistency and full pair coverage; the existing renderer requires
 comparison IDs to equal originals or all presentations, with exactly matching
 predictor probabilities/statuses. Prefer reusing a same-snapshot order bundle
 for comparison originals and order sources as above: the split is audited and

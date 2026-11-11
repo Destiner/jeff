@@ -122,6 +122,9 @@ def main():
             raise ValueError("Order examples and pairs must be supplied together")
         if "order_examples" in spec:
             order_rows = reference(spec["order_examples"])
+            order_by_id = {row["id"]: row for row in order_rows}
+            if any(order_by_id.get(row["id"]) != row for row in rows):
+                raise ValueError("Comparison rows must match order-reference full rows, including ordered inputs")
             pinned(spec["order_pairs"])
         predictors = spec.get("predictors", {})
         if len(predictors) + len(baselines) < 2:
