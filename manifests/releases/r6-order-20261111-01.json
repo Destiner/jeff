@@ -1,0 +1,140 @@
+{
+  "schema_version": "r6.runtime.execution.v1",
+  "release_id": "r6-order-20261111-01",
+  "scope": "Execution evidence only; original frozen P3, not M6; separate from P4/E6 and Research analysis",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+  "evidence_root": "release/r6-order-20261111-01",
+  "packet_main_commit": "deb9c5b7e11ee5ed218aa802e83b0b288d5d6b1d",
+  "predictions_handoff_to_research": "da549dd3-c86d-4096-a55a-a6b0a72fe904",
+  "grant_id": "ab6fcab8-bd4d-4105-9883-4187ab2629b9",
+  "grant_returned": true,
+  "summary": {
+    "status": "pass",
+    "cases": 48,
+    "expected_rows": 192,
+    "written_rows": 192,
+    "forward_attempts": 192,
+    "completed_forwards": 192,
+    "coverage": 1.0,
+    "error": null,
+    "process_runtime_seconds": 12.642685583326966,
+    "cold_load_seconds": 0.5167036661878228,
+    "first_forward_seconds": 0.09682999970391393,
+    "cpu_lifetime_maxrss_bytes": 3357491200,
+    "mps_observed_driver_max_bytes": 2768977920,
+    "process": {
+      "started_at": "2026-11-11T16:22:50.929631+00:00",
+      "completed_at": "2026-11-11T16:23:03.909725+00:00",
+      "returncode": 0,
+      "wall_seconds": 12.979705292265862,
+      "combined_audit_predict_wall_seconds": 13.867752459365875,
+      "wrapper_pid": 93634,
+      "child_pid": 93635,
+      "timeout": null
+    },
+    "output_sha256": "c9068e41915629f9419066941124c74fd7f181e93c840ca05e807d9e0056494d",
+    "receipt_sha256": "9c0e1e530bd88d0ce08f55fc26c82efdbc83dca50c20efd8748979d0d1799c7a"
+  },
+  "output_validation": {
+    "scope": "label-free output identity/coverage/finite scores/normalization only; no quality/causal analysis",
+    "presentations": 192,
+    "option_probabilities": 740,
+    "conditions": {
+      "O0L0": 48,
+      "O0L1": 48,
+      "O1L0": 48,
+      "O1L1": 48
+    },
+    "maximum_sum_error": 1.3702083379030228e-07,
+    "first_forward_retained_once": true,
+    "receipt_sha256": "9c0e1e530bd88d0ce08f55fc26c82efdbc83dca50c20efd8748979d0d1799c7a",
+    "predictions_sha256": "c9068e41915629f9419066941124c74fd7f181e93c840ca05e807d9e0056494d"
+  },
+  "independent_pins": {
+    "/Users/destiner/Code/jeff/experiments/research/run_order_packet.py": "1f3bb7bb6d652121813692db5899c434ddaba9feed9fdbfb26ade26c5a6e8599",
+    "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/packet.json": "7598451302c5389e62476c88e7c2489fa355e0c40611e91cfbd6da1d9dc35e03",
+    "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/inputs.jsonl": "178708cd6a620c395d29131a0eb0bad65f66f8a71e608950f7282a4e9e2ed061",
+    "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/selection.json": "8e008f2c39e37529d32942b15eaba5e5b13cc0b9b3766f6d9b12722f15304a8f",
+    "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/config.json": "128d550e355af4772a8f996ccb1f49675e5ba6bdc61d2ed7a1c84e11c4b6090f",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a"
+  },
+  "supervisor_source_sha256": "41f16022effbdb3704f5ff67891e8ac40c5936433fc794e3d19e49020bd3bba5",
+  "model": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "model_assets": {
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "README.md": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+      "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "paths": {
+      "inputs": "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/inputs.jsonl",
+      "config": "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/config.json",
+      "selection": "/Users/destiner/Code/jeff/artifacts/research/r6-20261111T155310Z/packet-v1/selection.json",
+      "model_dir": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/model",
+      "p3_audit": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json"
+    }
+  },
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "packages": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    }
+  },
+  "controls": {
+    "seconds": 300,
+    "rss_bytes": 8589934592,
+    "mps_driver_bytes": 8589934592,
+    "batch_size": 1,
+    "threads": 4,
+    "dtype": "float32",
+    "device": "mps",
+    "attention": "sdpa",
+    "use_cache": false,
+    "logits_to_keep": 1,
+    "temperature": 1.0,
+    "startup_extra_forwards": 0
+  },
+  "actual_model_asset_hashes_verified": true,
+  "audit": {
+    "status": "pass",
+    "forward_attempts": 0,
+    "presentations": 192,
+    "min_tokens": 95,
+    "max_tokens": 199
+  },
+  "budget": {
+    "previous_audit_wall_seconds": 0.8880471671000123,
+    "remaining_process_budget_seconds": 299.1119528329,
+    "term_after_seconds": 294.1119528329,
+    "kill_deadline_seconds": 299.1119528329,
+    "budget_scope": "Sum of actual audit and predict externally supervised process wall times; queue wait excluded."
+  },
+  "memory_scope": "CPU process-lifetime ru_maxrss; MPS cooperative observed samples, not peak",
+  "memory_caveat": "Nonadditive; no system/unified-memory or MPS peak claim; separate cooperative 8 GiB bounds",
+  "handoff": "handoffs/release/20261111T1624-R6-complete-slot-returned.md",
+  "build_log": "release/r6-order-20261111-01/report-build.log",
+  "evidence_sha256": {
+    "completion-summary.json": "f992ddac5a299990c586c55dc3a27a829f58647c7d7e6f6dfe7588c7b8ba1e96",
+    "output-validation.json": "e991955a8eb00be632a226a3fc3c5666115a5923844ca78897c4349d6d892485",
+    "audit-process.json": "a6899748150e9dfc1cff05bdc40819cd6955256ee32163a8cde6206d73ef2952",
+    "predict-process.json": "ac2bad82ff108f2a26726ba977ee886abd62f58b3dacc6917202d7984915ae68",
+    "audit-invocation.json": "377bde84c5a704763bf89b30bdbb878da33c0165772e9b803716d49e08219a25",
+    "predict-invocation.json": "35da38c75cf8122c1a4dbd4c3761f60cdc949bd13ee8c6462c10d1569c08dab0",
+    "launch.py": "41f16022effbdb3704f5ff67891e8ac40c5936433fc794e3d19e49020bd3bba5",
+    "audit/audit.json": "ddd09457f96777b9ee611601fa3bd0fb6e3bafd7dec07a3fc44740fa7e3a2d23",
+    "run/receipt.json": "9c0e1e530bd88d0ce08f55fc26c82efdbc83dca50c20efd8748979d0d1799c7a",
+    "predict.stderr.log": "2aa69e934c516ed0e31ac42e873e31e614d21699e1c754c26d06cdc7d42fae31"
+  }
+}
