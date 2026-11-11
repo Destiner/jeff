@@ -90,6 +90,8 @@ def row_errors(row, split):
     if not isinstance(provenance, dict):
         errors.append("provenance must be an object")
     else:
+        if provenance.get("usage") == "validation_only_never_train" and split != "validation":
+            errors.append("validation-only diagnostic cannot enter training")
         if not isinstance(provenance.get("kind"), str) or provenance["kind"] not in {"teacher", "public_dataset", "programmatic", "human"}:
             errors.append("invalid provenance kind")
         if not isinstance(provenance.get("label_basis"), str) or provenance["label_basis"] not in {"teacher", "source_label", "rule_verified", "human_verified"}:

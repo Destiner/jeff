@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-d3-seen-rules-v1",
+  "stratum": "seen_mechanism_new_policy",
+  "counts": {
+    "decisions": 96,
+    "source_policy_groups": 48,
+    "mechanisms": 8,
+    "decisions_per_mechanism": {
+      "packs": 12,
+      "rates": 12,
+      "coordinates": 12,
+      "cooldown": 12,
+      "lexicographic": 12,
+      "fifo": 12,
+      "discount": 12,
+      "rounding": 12
+    },
+    "policy_groups_per_mechanism": {
+      "packs": 6,
+      "rates": 6,
+      "coordinates": 6,
+      "cooldown": 6,
+      "lexicographic": 6,
+      "fifo": 6,
+      "discount": 6,
+      "rounding": 6
+    }
+  },
+  "permanently_training_excluded": true,
+  "derivatives_never_train": true,
+  "plan_sha256": "a03280d92d913445464263d2dd9c3430f0b35a30d441a83e1404932287b90000",
+  "training_manifest": "data/data-pilot-v2/manifest.json",
+  "training_manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "sources": [
+    {
+      "producer": "geometry",
+      "metadata": "data/data-d3-seen-rules-v1/geometry-r3/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "sha256": {
+        "data/data-d3-seen-rules-v1/geometry-r3/audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+        "data/data-d3-seen-rules-v1/geometry-r3/audit_cases.jsonl": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e",
+        "data/data-d3-seen-rules-v1/geometry-r3/change-map.json": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456",
+        "data/data-d3-seen-rules-v1/geometry-r3/diagnostics.json": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555",
+        "data/data-d3-seen-rules-v1/geometry-r3/distractor-rationales.json": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166",
+        "data/data-d3-seen-rules-v1/geometry-r3/freeze.json": "9afdaeefd09f7d8f245ab0f17d77e7e78ff24c6b8b5db296e15e114b5d838bf0",
+        "data/data-d3-seen-rules-v1/geometry-r3/generation_review.md": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9",
+        "data/data-d3-seen-rules-v1/geometry-r3/group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+        "data/data-d3-seen-rules-v1/geometry-r3/metadata.json": "fdbc8acb03e2d81c4066ba7ea2c6c01a7037c62d027af7354782bf1d0d1d20d4",
+        "data/data-d3-seen-rules-v1/geometry-r3/rank-plan.json": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+        "data/data-d3-seen-rules-v1/geometry-r3/revise.py": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf",
+        "data/data-d3-seen-rules-v1/geometry-r3/source_cases.jsonl": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6",
+        "data/data-d3-seen-rules-v1/geometry-r3/validation.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+        "data/data-d3-seen-rules-v1/geometry-r3/validation_report.json": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d"
+      }
+    },
+    {
+      "producer": "ordering",
+      "metadata": "data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "sha256": {
+        "data/data-d3-seen-rules-v1/ordering-r2/audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+        "data/data-d3-seen-rules-v1/ordering-r2/audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+        "data/data-d3-seen-rules-v1/ordering-r2/change_map.json": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623",
+        "data/data-d3-seen-rules-v1/ordering-r2/distractor_constructions.json": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a",
+        "data/data-d3-seen-rules-v1/ordering-r2/generation_review.md": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0",
+        "data/data-d3-seen-rules-v1/ordering-r2/group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+        "data/data-d3-seen-rules-v1/ordering-r2/manifest.json": "708aed3cd5b3898cde3c9b10610f2586db899026297a441cf5a6e1862f9535a1",
+        "data/data-d3-seen-rules-v1/ordering-r2/metadata.json": "d7f5bd0d17cbc9d9c597fbc2034b483cdb865c23c46ae4d561a50ed502ef5f06",
+        "data/data-d3-seen-rules-v1/ordering-r2/parent_refs.json": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2",
+        "data/data-d3-seen-rules-v1/ordering-r2/revise.py": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7",
+        "data/data-d3-seen-rules-v1/ordering-r2/source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+        "data/data-d3-seen-rules-v1/ordering-r2/validation.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+        "data/data-d3-seen-rules-v1/ordering-r2/validation_report.json": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290"
+      }
+    }
+  ],
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "limitations": [
+    "Developmental seen-mechanism evidence, not final or mechanism-disjoint evaluation",
+    "Two cases share each new policy; common authors/algorithms remain; not iid",
+    "Rule recomputation is same-author separate-algorithm consistency, not independent text verification"
+  ],
+  "review_report": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r3/review.json",
+    "sha256": "04af4cc16fe55e114d349e87104ad57cd4287d9751537ee317b5aa7d44eb9a0b"
+  }
+}
