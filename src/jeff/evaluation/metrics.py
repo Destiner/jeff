@@ -139,7 +139,7 @@ def score_examples(examples, predictions_path):
                 diagnostics.append({"line": line, "id": identifier, "kind": "invalid_prediction", "reason": str(exc)})
         outcomes.append(outcome)
     grouped = {}
-    for field in ("task_family", "label_basis", "option_count"):
+    for field in ("task_family", "label_basis", "option_count", "group_id"):
         groups = defaultdict(list)
         for row in outcomes:
             groups[str(row[field])].append(row)
@@ -162,6 +162,7 @@ def score_examples(examples, predictions_path):
         "unidentifiable_records": sum(row["kind"] == "unidentifiable" for row in diagnostics),
         "roundoff": {"normalized_rows": sum(d != 0 for d in deviations), "max_sum_deviation": max(deviations, default=0)},
         "overall": summarize(outcomes), "per_family": grouped["task_family"],
+        "per_source_group": grouped["group_id"],
         "per_label_basis": grouped["label_basis"], "per_option_count": grouped["option_count"],
         "per_family_label_basis": [{"family": family, "label_basis": basis, "metrics": summarize(rows)}
                                   for (family, basis), rows in sorted(family_basis.items())],
