@@ -51,4 +51,10 @@ Primary M2 six-way file comparison executed successfully at `evaluation/e2-256-v
 
 Separate read-only metrics review confirmed paired family/group denominators and multiple-pairs-per-group handling. It identified independent valid-subset summaries in the order output; `paired_quality` was added while retaining full coverage. Separate validation analysis found corrected M2 election regressions and sentiment weaknesses; no final content was provided.
 
+## Completed M2/M3 reports
+
+All requested M2/M3 original/reversed/probe predictions were received directly from Model and scored. Final report revision (not a new dataset): `evaluation/e2-m3-v2/`. See [pilot-e2-m3.md](pilot-e2-m3.md) for measured gains, material probe regressions, provenance, and exact reproduction guidance.
+
+`python -m jeff.evaluation.render --comparison <report.json> --order <predictor>=<matching-order.json> ... --output <new-report.md>` renders reusable Markdown tables for coverage, label-source/teacher identity, family/group quality, paired deltas, and order behavior. It refuses final-split reports and requires matching predictor probabilities across comparison/order inputs. Exact zero loss infinities and undefined pair deltas remain explicit. It does not rerun scoring or infer model identity from file names.
+
 No tests, linting, model loads, or paid calls by Evaluation.

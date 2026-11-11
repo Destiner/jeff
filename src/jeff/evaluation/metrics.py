@@ -93,6 +93,18 @@ def validate_prediction(row, example):
     return {key: value / total for key, value in probabilities.items()}, deviation
 
 
+def provenance_summary(examples):
+    groups = defaultdict(list)
+    for row in examples:
+        source = row["provenance"]
+        teacher = source.get("teacher_model") if source["kind"] == "teacher" or source["label_basis"] == "teacher" else None
+        groups[(source["kind"], source["source"], source["label_basis"], teacher or "")].append(row)
+    return [{"kind": kind, "source": source, "label_basis": basis, "teacher_model": teacher or None,
+             "rows": len(rows), "groups": len({row["group_id"] for row in rows}),
+             "families": sorted({row["task_family"] for row in rows})}
+            for (kind, source, basis, teacher), rows in sorted(groups.items())]
+
+
 def score_examples(examples, predictions_path):
     by_id = {row["id"]: row for row in examples}
     identified = defaultdict(list)
@@ -150,6 +162,7 @@ def score_examples(examples, predictions_path):
     failures = any(row["status"] != "valid" for row in outcomes)
     return {
         "report_schema_version": "evaluation/0.1", "prediction_file": fingerprint(predictions_path),
+        "reference_provenance": provenance_summary(examples),
         "status": "empty_reference" if not examples else "prediction_issues" if failures or diagnostics else "ok",
         "policy": {"probability_sum_absolute_tolerance": SUM_TOLERANCE,
                    "accepted_roundoff": "divide by observed sum; never clip probabilities",

@@ -1,5 +1,7 @@
 # Actual comparisons and limitations
 
+Historical first-deliverable snapshots below. The subsequent complete pilot/M2/M3 results are in [pilot-e2-m3.md](pilot-e2-m3.md); the previously outstanding pilot predictions have since been received and evaluated.
+
 All values below come from frozen prediction files scored independently of Training. Full reports include SHA-256 references, per-family/basis/option-count results, coverage/failures, individual outcomes, Brier scores, descriptive confidence bins, and paired common-valid comparisons. No evaluator loaded a model.
 
 ## Tiny starting versus trained
