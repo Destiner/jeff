@@ -1,6 +1,10 @@
 # File-based evaluation
 
-Latest independent results: [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
+Latest independent results: [E5 frozen decoder comparison](e5-frozen-decoder.md) finds stronger reused-probe performance but worse inherited/new probability quality than both trained M4 encoders, and severe reversal sensitivity. One bounded learning experiment is worth proposing, not a default switch.
+
+E4's [historical LR control](e4-m5-lr-control.md) fails its frozen loss condition; the separate [D3 seen-mechanism/new-policy diagnostic](e4-d3-seen-rules.md) finds mixed agreement and worsened overall probability metrics for both trained M4 candidates. No promotion.
+
+Prior [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
 
 E3 preparation: [protocol](e3-plan.md), [identity freeze](e3-freeze.md), and [pinned study recipe](e3-study.md).
 
