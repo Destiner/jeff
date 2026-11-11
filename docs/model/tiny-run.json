@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.1",
+  "run_id": "tiny-20261111-01",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+  "purpose": "plumbing only; not held-out quality evidence",
+  "dataset": {
+    "schema_version": "0.1",
+    "dataset_id": "data-tiny-v1",
+    "manifest_path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/manifest.json",
+    "manifest_sha256": "a0c62a16355fc98e3a43f2d71f94a0a43208971aa9b090f3cd44dbb60a8a06ca",
+    "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+    "shards": [
+      {
+        "path": "data/data-tiny-v1/train.jsonl",
+        "split": "train",
+        "sha256": "52414edd7121ce99fc58a33f5f56b262c99f17348739a8da7b85e7dd6365eea4",
+        "rows": 6,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/train.jsonl"
+      },
+      {
+        "path": "data/data-tiny-v1/validation.jsonl",
+        "split": "validation",
+        "sha256": "6854d9e86516ba3af759fdd003c41b594fc0005e827860158cec8039e242d65e",
+        "rows": 3,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/validation.jsonl"
+      }
+    ],
+    "counts": {
+      "train": 6,
+      "validation": 3
+    },
+    "families": {
+      "train": {
+        "intent": 2,
+        "sentiment": 2,
+        "rule_application": 2
+      },
+      "validation": {
+        "intent": 1,
+        "sentiment": 1,
+        "rule_application": 1
+      }
+    },
+    "label_basis": {
+      "train": {
+        "teacher": 6
+      },
+      "validation": {
+        "teacher": 3
+      }
+    },
+    "likely_content_duplicates": [],
+    "frozen_manifest": "dataset-manifest.json"
+  },
+  "code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "1f64aead582da3da50a03fb6fc7f4fc66953b187",
+    "dirty": true,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "00c81efa6f691865b523ee727bf733c19b4cfac62c0fd8dde0d5930fd3a31375",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "0c6f0edb0f67a218450e9b78dd8b0f983b0ac607f144cbf91824448aa8c13a02"
+    }
+  },
+  "base_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "max_length": 128,
+    "temperature": 1,
+    "baseline": "pretrained backbone with explicitly reset randomly initialized linear scoring head"
+  },
+  "config": {
+    "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/manifest.json",
+    "output_dir": "/Users/destiner/Code/jeff/artifacts/model/tiny-20261111-01",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "device": "mps",
+    "epochs": 2,
+    "batch_size": 2,
+    "learning_rate": 0.00002,
+    "head_learning_rate": 0.0005,
+    "max_length": 128,
+    "seed": 42,
+    "max_steps": null,
+    "threads": 4
+  },
+  "metrics": {
+    "validation_before": {
+      "count": 3,
+      "loss": 1.096827785174052,
+      "top1_target_agreement": 0.3333333333333333,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    },
+    "validation_after": {
+      "count": 3,
+      "loss": 1.1035197575887044,
+      "top1_target_agreement": 0,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    }
+  },
+  "runtime": {
+    "elapsed_seconds": 20.67962508322671,
+    "elapsed_scope": "through both checkpoint saves, before run.json write",
+    "memory": {
+      "cpu_max_rss_bytes": 767492096,
+      "cpu_max_rss_raw": 767492096,
+      "cpu_max_rss_raw_unit": "bytes",
+      "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+      "mps_current_allocated_bytes": 362869760,
+      "mps_driver_allocated_bytes": 1178599424,
+      "mps_measurement": "point-in-time, not peak"
+    }
+  },
+  "weights": {
+    "changed_parameter_count": 103,
+    "backbone_changed": true,
+    "head_changed": true,
+    "representative_differences": {
+      "backbone": {
+        "name": "encoder.embeddings.word_embeddings.weight",
+        "l2_difference": 0.012517277151346207,
+        "l2_before": 190.320556640625
+      },
+      "head": {
+        "name": "head.weight",
+        "l2_difference": 0.029619060456752777,
+        "l2_before": 0.5793976783752441
+      }
+    }
+  },
+  "fresh_process_reload": {
+    "offline": true,
+    "external_base_cache_required": false,
+    "device": "mps",
+    "input": "evaluation/tiny-v1-20261111T1030/inputs.jsonl",
+    "baseline_predictions": "model/tiny-20261111-01/baseline-predictions.jsonl",
+    "trained_predictions": "model/tiny-20261111-01/trained-predictions.jsonl",
+    "predictions_each": 3,
+    "cli_duration_seconds": {
+      "baseline": 0.35,
+      "trained": 0.231
+    }
+  },
+  "artifacts": {
+    "baseline": "model/tiny-20261111-01/baseline",
+    "checkpoint": "model/tiny-20261111-01/checkpoint",
+    "run_record": "model/tiny-20261111-01/run.json",
+    "handoff": "handoffs/model/20261111-1043-tiny-loop-ready.md"
+  },
+  "costs": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."
+  }
+}
