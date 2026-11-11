@@ -1,6 +1,6 @@
 {
   "schema_version": "m7.docs-results.v1",
-  "status": "training_complete_heldout_pending",
+  "status": "training_and_reload_complete_independent_scoring_pending",
   "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01",
   "plan": "m7-qwen-low-lr-plan.md",
   "source_revision": "574774d631d707de9398c80dc5b936d9563e386c",
@@ -419,8 +419,17 @@
       "bytes": 2776833
     }
   },
+  "P5": {
+    "status": "complete_exit_0_slot_returned",
+    "presentations": 624,
+    "option_probabilities": 2390,
+    "separate_startup_rows": 3,
+    "external_wall_seconds": 39.07104558264837,
+    "evidence": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/p5-return.json",
+    "sha256": "30b4f58e8bcdfba45a3a4f0c1912ef8668a34edb722f4d111c75859a5697b963",
+    "no_duplicate_inference": true
+  },
   "pending": {
-    "P5": "one offline fresh-process 624-presentation inference pass",
     "E7": "independent frozen held-out comparison against original P3, failed M6 and retained encoders"
   },
   "qualifications": [
