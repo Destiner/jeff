@@ -26,6 +26,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 - Every main-checkout writer, including the lead, must use the short shared merge-lock protocol in `docs/coordination.md`. Never edit or merge into a dirty main checkout or remove another owner's lock.
 - Never overwrite another worker's artifacts. Coordinate routine inputs/inference directly through public handoffs; the lead handles shared contracts, root dependencies, budget, and cross-team priorities.
 - Send one final chat report per completed assignment, including the main merge commit. Interrupt only for a genuine blocker. Keep intermediate updates in shared files and continue bounded in-scope work without waiting for the lead.
+- Fresh/replacement owners follow `docs/owner-lifecycle.md`: adopt existing work and verify ownership transfer; do not recreate workspaces, rerun completed tasks, or compete with an outgoing owner.
 
 ## No tests or linting
 

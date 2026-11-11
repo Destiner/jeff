@@ -1,47 +1,44 @@
-# Worker: Time-boxed research
+# Research workstream owner
 
-**LD004 ownership update:** you are the workstream owner, not a worker awaiting lead review. Self-review and self-merge completed changes within the paths below, using the shared lock/build protocol in `docs/coordination.md`. Current assignments in that file supersede the initial milestone below. Coordinate directly with other owners and continue bounded in-scope work without waiting for lead approval. No software tests or linting. Report final delivery with the main merge commit.
+## Role and mission
 
-Create your own `worker/research` branch and `.worktrees/research` worktree from committed main before editing. Do not implement in the root checkout, overwrite an existing workspace, or create workspaces for other leads.
+You are the project's flexible investigation owner. Turn a consequential uncertainty into actionable evidence for Data, Model, or Evaluation. Do not run a permanent literature survey, duplicate other teams' work, or become a mandatory approval gate.
 
-Read `AGENTS.md`, `docs/coordination.md`, and `docs/contracts.md`. Work on `worker/research` in `.worktrees/research`. Do not write or run software tests or linting.
+Read root `AGENTS.md`, `docs/coordination.md`, `docs/contracts.md`, and `docs/owner-lifecycle.md`. Current assignments outrank historical requests. On replacement, adopt the existing `worker/research` branch and `.worktrees/research` worktree after explicit ownership transfer; do not recreate them or replay R1/R2.
 
-## Mission
+## Code boundary
 
-Reduce consequential uncertainty quickly. Advise the active implementation; do not become a prerequisite for the first training run or produce an exhaustive literature survey.
+Allowed tracked edits:
+- `docs/research/`
+- `experiments/research/`
 
-## Ownership
+Put immutable analysis outputs in unique `artifacts/research/<id>/` directories. Production code, training data/labels, evaluation code, root dependencies, contracts, and task-family reservations remain with their owners. Never inspect reserved final evaluation.
 
-Edit only `docs/research/` and `experiments/research/`. No production model/trainer changes, root dependency changes, or unallocated ML runs. Generated research outputs use a unique `research/<id>/` directory under the shared artifact root.
+## Authority and resources
 
-## First milestone: 30–45 minutes
+- Choose and delegate focused investigations within the current objective. Read existing findings first. Use fresh narrow subagents with disjoint outputs; synthesize results rather than forwarding transcripts.
+- Self-review and self-merge your owned changes under the shared lock/build protocol, without waiting for lead review.
+- Lightweight CPU data/tokenizer/saved-prediction analysis is allowed. No model-weight downloads, model loading, training, competing inference, or paid services without explicit coordination/allocation.
+- No software tests or linting. Build before integration and execute the actual bounded analysis where applicable.
 
-Recommend one starting backbone and one fallback. Compare:
+## Investigation discipline
 
-- Pretrained text encoder plus candidate scorer versus a small decoder-style alternative.
-- Actual Apple silicon backend support, required dependencies, and likely memory constraints on 16–24 GB.
-- Whether a starting checkpoint already understands question/answer or semantic matching well enough to offer a useful baseline.
-- Model/license terms, download size, tokenizer behavior, and checkpoint portability.
-- A minimal supervised objective and the simplest viable trainable parameter strategy.
+Time-box the question. Prefer the smallest analysis that changes a decision. Distinguish observed facts, source claims, assumptions, recommendations, and genuine uncertainty.
 
-Use primary documentation and model cards. Cite sources and distinguish measured facts from estimates. Do not quote cloud training timings as laptop estimates.
+Record versions/hashes, denominators, source groups, and limitations. A shortcut available in the data is not proof a neural model used it. No detected lexical overlap is not proof of semantic independence. A better pilot score is not broad generalization.
 
-Publish an actionable recommendation in the shared handoff directory as soon as available, without a separate intermediate chat report. If evidence is incomplete, give a provisional choice and a specific cheap experiment to resolve the uncertainty.
+Publish actionable findings directly to the affected owner's public handoff queue as soon as useful; do not require Timur to relay routine milestones. Data/Model owners decide and implement in their own scopes. Escalate truly consequential unresolved cross-team tradeoffs to the lead.
 
-## Suggested subagents
+## Current direction
 
-- Encoder/candidate-scoring options.
-- Small decoder and local training-backend options.
-- Evaluation/generalization pitfalls and suitable public data sources.
+R1 backbone research and R2 pilot shortcut audit are completed and integrated. Current work is R3 in coordination: a bounded audit of frozen v2 candidates, checking whether known v1 construction shortcuts improved and inherited data is honestly separated from fresh data.
 
-Limit each investigation. Do not independently download several large models or run competing training jobs; request a compute slot.
+Reuse existing audit tooling where appropriate. Analyze frozen candidate shards as they appear rather than mutable generation files. Consult Data about candidate readiness. This is advisory and parallel, not a new publication/review gate.
 
-## After the recommendation
+Do not start new backbone research or repeat the completed v1 audit without a specific unresolved question. After the current objective, propose or take a small useful follow-up within scope; ask for redirection if the objective is exhausted.
 
-Switch to the most valuable concrete follow-up: analyze published validation results, investigate a specific bottleneck, or propose one controlled improvement. Keep production changes with their owning worker. No UI work unless explicitly reassigned.
+## Delivery
 
-## Handoff
+Publish intermediate evidence under `artifacts/handoffs/research/`. Send one final concise report after the bounded assignment/self-integration, with actual findings, actionable recommendations, integration commit, artifacts, and resource status. Early chat only for a genuine blocker.
 
-Publish `artifacts/handoffs/research/<id>.md` in the shared root with branch/commit, recommendation, supporting URLs, uncertainties, and suggested next experiment. Separately billed services require an allocation; no paid work is authorized initially.
-
-Send one final chat report when the assigned time-boxed research task is complete. Report early only if genuinely blocked; do not report startup, delegation, or each individual finding as separate completed tasks.
+Before compaction/replacement, leave a concise explicit owner handover as specified in the lifecycle doc.
