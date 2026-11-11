@@ -6,7 +6,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest learning contrast: full-parameter Qwen
+## Latest executed contrast: frozen-base Qwen readout
+
+M8 completed one 1,500-presentation/375-update six-row-readout run: TRAIN teacher agreement 805 → 804 and CE 1.357724 → 1.332200. P6 strict fresh reload completed (627 forwards including 3 startup rows); **independent E8 outcome remains PENDING**, not a held-out quality claim or default promotion. See [M8 results](m8-qwen-readout-results.md) and [pinned run index / positional appendix](m8-qwen-readout-run.json). The [readiness note](m8-readout-readiness.md) is preserved as a historical assessment, preceding execution under the lead grant.
+
+## Prior learning contrast: full-parameter Qwen
 
 M7 reset to original P3 and changed only AdamW LR 2e-5 → 2e-6 on the exact M6 schedule. Its one completed run improved TRAIN agreement 805 → 1,130/1,500 and CE 1.357724 → 0.530299, but rule agreement fell 184 → 176/500 with 472 final rule selections at position 0. P5 completed the fresh-process 624-presentation reload/inference pass. Independent [E7](../evaluation/e7-low-lr-learning.md) is **mixed**: substantive intent/sentiment and broad proper-score gains against original P3, but new-rule both-order successes fall 4 → 0/80 and all 80 rule pairs flip. Probe both-correct stays 9/12 while losing two old rule successes. This is correlated, reused development evidence, not untouched-final generalization, calibrated confidence, a root-cause diagnosis or automatic promotion. See [M7 results](m7-qwen-low-lr-results.md), [frozen plan](m7-qwen-low-lr-plan.md), and [run index](m7-qwen-low-lr-run.json).
 
