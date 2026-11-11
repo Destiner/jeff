@@ -1,0 +1,260 @@
+{
+  "schema_version": "e7.report/1",
+  "status": "complete-measured-mixed-result",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e7-low-lr-learning.md",
+    "sha256": "3c6d2ab0a68fd636b99a5cfa5719add405569cc5d9f167a41f6e04eb0d28800c"
+  },
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/execution-01/recipe.json",
+    "sha256": "2cbbe93b8a8897156aec6db6e15e3f803e2c9c631f166611316794ad4bdc1d55"
+  },
+  "tracked_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e7-m7-v1.json",
+    "sha256": "2cbbe93b8a8897156aec6db6e15e3f803e2c9c631f166611316794ad4bdc1d55"
+  },
+  "predeclared_plan": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclared-v1/plan.md",
+    "sha256": "91b5e28e2a597052d1750f0e05be76b315911cd9ec05aed18ba620bc21a64110"
+  },
+  "predeclaration_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-predeclared-v1/receipt.json",
+    "sha256": "e51df73e9a7da28c066aa41946330b73fb134147c38fa28dd45db8775b852cd1"
+  },
+  "predeclaration_integration": "3c9a0e7d2eaa6f4d905a3e7ce9ef143e22a69b57",
+  "completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/execution-01/completion.json",
+    "sha256": "341652259c10c68633b3aa23c502dd83f1b976be00bd9c50bb8a0c56b450895a"
+  },
+  "grouped_both_order_results": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/execution-01/grouped-both-order-summary.json",
+    "sha256": "aede294f1f3a3ff29582252fbdc33cd5882a43e0b38148f5420c866e9df86a0d"
+  },
+  "raw_topset_results": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/execution-01/raw-topset-supplement.json",
+    "sha256": "7fb02b214b46a36785caa4d26a8a718c824c6d24388e5d628d5ab7c3f7e21705"
+  },
+  "start_P3_differences": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-analysis-preparation-v1/execution-01/fresh-start-vs-p3-exact-differences.json",
+    "sha256": "d2da9328e1f1d19ab7754fa2fc5812279081cf651342084512f9b0155f06fb6a"
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-owner-integrity-v2/receipt.json",
+    "sha256": "217f8d593a28f522123c459820f747e3876085564d04ff8e77d31e3364f7f63d"
+  },
+  "preserved_publication_attempt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-owner-integrity-v1/failure.json",
+    "sha256": "66c35bba03dc1314438a589f209db1da963a5162a922c42351196f76763f886d"
+  },
+  "independent_quality_delivery": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/delivery-receipt.json",
+    "sha256": "d03c82f1045c2ae6e33dbd3853b82dcb1ab344d13bfd221ec93eadbff2f1de74"
+  },
+  "quality_evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/coverage.csv",
+      "sha256": "6d136a37044e6899a5faaed564cac04c7d1731712fd6cf5a62d0cea66af87552"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/all-orientation-unit-metrics.csv",
+      "sha256": "b3e3c1a0a6c40eb0f75a7424187df0e29fc1e835701844c199379dc5d70502e2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/pair-detail.csv",
+      "sha256": "1e8982bba9a5bf4365ab87c861144d0e1c398bd143d82e045db73a12033de7a2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/explicit-case-unit-mapping.csv",
+      "sha256": "7eaf30da1d1cc3e3e375bb89cab293273965da624ea6b20f766c261779230f5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/report-candidate-invocation01.md",
+      "sha256": "08210c973a6856af12305314bc605977b30f26e844f3c18e716de6381fe81dd5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/source-pins.json",
+      "sha256": "cdec27127f2e473480cf2993dc4731295d35a4c8061b870ef024f601db99d779"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/supplemental-receipt-v2.json",
+      "sha256": "7fe73a31402f386bb13dbbc1a0c78c2cf7cc517ad214ed54baec0c294e3af532"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/position-summary.json",
+      "sha256": "8c32190d6c067ae91a8ac93fee0d02440db45a505d9101b21b6355a78197a840"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/invocation-02-output.txt",
+      "sha256": "b9d3e991b9d78ce6b9f50714c2b5810482ea2a344ff2f7f7bcad97e424b91cc7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/synthesis-01-output.txt",
+      "sha256": "cbde30f1b0fbf1d0f8a8d11922cb6e83d1e85d025844c1663dea0b17015a0f67"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/invocation-01-failure.txt",
+      "sha256": "7213d1cb21d966802d080209566c6a49de3e08549c52347f4a31e2062a6fbffb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/supplemental-receipt.json",
+      "sha256": "e0a42890fbfbd65277e7f53ba5b3c52c548f8215f7e125a76860d3d006f45329"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/synthesize-v2.py",
+      "sha256": "04b2eaf55519ea34d5039646a3d35b94a4469514aa18560f32c6605d0a7902fa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/review.py",
+      "sha256": "8249acb4a8a381176c86a93a72673be99ad7b812a17080b3ad24b83a4041526d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/numbers.json",
+      "sha256": "31d73b5c5b33970876aad8eab2986f74a711663ab55c31e90602d00e7b9651e5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/probe-exact-retention.csv",
+      "sha256": "429bcefedcae8ef63c4e934d5fd221e2739de6d19961f6022ccd0e5df8818d5b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/synthesize.py",
+      "sha256": "6c89ae54ee1eeb8ebd9cbe79f466cf65061005d40d3b19c57509999fa6752d04"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/direct-p5-input-positions.csv",
+      "sha256": "f26dd5486f78510f26cf650b8a0afc08e8bdf0749ba31916a211f0b4e8ecf416"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/all-unit-order-topset-metrics.csv",
+      "sha256": "849d772287a96411b63a77895a56c49f9d23ccbb0daac05a84f2ed2ee89999e3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/review-v2.py",
+      "sha256": "fff87a5294a47879db183390724735eacffba0b44558dec9998d34dcc40e4901"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/report-candidate.md",
+      "sha256": "949a0fddc5fc903e1fb3e53dbe2a75454048202b9a7e04af4fe1b1b2b9083c1a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/invocation-01-output.txt",
+      "sha256": "7213d1cb21d966802d080209566c6a49de3e08549c52347f4a31e2062a6fbffb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/synthesis-02-output.txt",
+      "sha256": "62dcfec9e8237737eaf0bc1454c4aee56ebecf688535a70d676792ca3a4cb762"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/appendix.md",
+      "sha256": "5d703344e522669fe11e029e68b48c604b2d49a2f0d4ddc05ef65965971d6df7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/appendix-invocation01.md",
+      "sha256": "a283358ef48d63ca832f564aa37289eb378224000d8933d2f7e70c7ff429f138"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/per-presentation-arithmetic.csv",
+      "sha256": "3df5077d67b4dd2ca4585e89a5628f6f6a97323f8cb37d0c5c980c5f69b8888c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/receipt.json",
+      "sha256": "c1b65679f8184cefa4fbbdf483127cf194dc2e29a0759adc280eb6e9b22ee486"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-quality-review-v1/paired-gains-losses.csv",
+      "sha256": "b023c23ae3361421029465e0d9a57d54ca14ab303b44110bd656d6d94a2a3eff"
+    }
+  ],
+  "control_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-control-reuse-review-v1/findings.md",
+      "sha256": "d7001bc272acb8c5d9251337a183fe2fb6e0ce9e1932e4a27ce1d1c2536d8a8c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-control-reuse-review-v1/receipt.json",
+      "sha256": "3aa557b8671d4744b5ddc4294f2e1d6ed81a41fd1cfa077d9d6b08d138290f43"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-control-reuse-review-v1/raw-comparison.json",
+      "sha256": "ed186ec3db04b771c39c5a2850574ca46d15426b1cada6208e0081b293563ae3"
+    }
+  ],
+  "TRAIN_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/findings.md",
+      "sha256": "7708feaca6334c666a85d673bdec5df7b2906ca9780530160919cb8fc63510f5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/receipt.json",
+      "sha256": "2d4d247e099bd4506c6f56560c3e71000415bc7988115d8152f65e696fc72f64"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/supplemental-receipt.json",
+      "sha256": "4581d80ceb375993f1f6070783a969e50e50a55652172a8e58cde977fb77cc64"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/aggregates.json",
+      "sha256": "e99a15161a6b7cb524e0de656a5ff271ea883f355287fea90798abbae0083971"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/case-detail.json",
+      "sha256": "68b7b1fa177b346b3f9102831eae39ad568a2a8217d27ec05f3d9aeaeb3dd6ef"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/source-unit-detail.json",
+      "sha256": "0870be39b232797cf2df599abc40de549444e80ba0f587b58ec115b8484762d9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/source-pins.json",
+      "sha256": "19190fd986edfac1e6171b54c14cb0c4f8b510733eb45e7b6a1d8d8d0da82d35"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/analyze-v2.py",
+      "sha256": "044c0f7baaa8f4e2bced5c08be1ac44c66f5202b29e211b673e7f2dcab0e9669"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-train-review-v1/supplement.py",
+      "sha256": "5eccc2d55d9596e201cef3bca06081b302abb77f856d044ed0f36bec8f9f8b92"
+    }
+  ],
+  "P5_binding": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e7-p5-binding-v1/receipt.json",
+    "sha256": "ae3cacee01e1e0897573ea38cb780e61e0a5f113aceca634803911fad1049e7f"
+  },
+  "M7_checkpoint_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training/checkpoint-manifest.json",
+    "sha256": "70163c8567781bb7151b11c125999ea4bc6ec1ff52af52c52a205f9f4dbdd022"
+  },
+  "M7_process": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/train-process.json",
+    "sha256": "26cef7e812511a087f16883a3626c749689e3b03e648a072d4be4026c2b517c3"
+  },
+  "P5_summary": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/delivery-summary.json",
+    "sha256": "2fcc0b77d5ac4bb0071df436dc789c59c246a7ddf74e8d3848f0add132308086"
+  },
+  "P5_process": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p5-m7-20261111-01/process-receipt.json",
+    "sha256": "686523557661d5358be083f22c5b2d3c8333bb2ca3e494417b184788a8765995"
+  },
+  "model_revision": "574774d631d707de9398c80dc5b936d9563e386c",
+  "runtime_revision": "7a5af91ed352c648ff64bff6ab9f5bdb240302c1",
+  "coverage": {
+    "predictors_per_stratum": 12,
+    "quality_reports": 36,
+    "order_reports": 36,
+    "new_prediction_presentations": 624,
+    "analysis_output_files": 171,
+    "population_limits": "Inherited60/12groups,new240/170groups andprobes24/12pairs separate; reversals/dependentunits are not independent additional evidence."
+  },
+  "verdict": "Mixed: substantive intent/sentiment and broad probability/ranking gains vsoriginalP3, but zero newrule both-order successes/all80flip and lost probe-rule retention. No automatic promotion or further experiment.",
+  "checks": {
+    "main": 39675,
+    "supplemental": 4424,
+    "failed_substantive_checks": 0
+  },
+  "cost_gbp": {
+    "additional_actual": 0,
+    "additional_pending": 0
+  },
+  "boundaries": "No ML rerun, duplicated scoring phase, final access, tests/lint, dependencies, uploads or Fable snapshot modification; existing failures retained."
+}
