@@ -22,6 +22,21 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def export_config(original):
+    """Exact pinned-HF normalization; no arbitrary new config keys or path changes."""
+    require(original.get("torch_dtype") == "bfloat16" and
+            original.get("tie_word_embeddings") is True and
+            original.get("use_sliding_window") is False and
+            original.get("num_hidden_layers") == 24,
+            "unexpected original P3 configuration")
+    expected = dict(original)
+    del expected["torch_dtype"]
+    expected.update(dtype="float32", transformers_version="4.57.6", use_cache=False,
+                    sliding_window=None, rope_scaling=None,
+                    layer_types=["full_attention"] * 24, tie_word_embeddings=False)
+    return expected
+
+
 def _update(digest, tensor, guard):
     require(str(tensor.dtype) == "torch.float32", "canonical evidence requires actual FP32")
     require(tensor.is_contiguous(), "canonical evidence requires contiguous storage")

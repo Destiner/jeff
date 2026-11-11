@@ -347,10 +347,8 @@ def save_checkpoint(model, directory, receipt, monitor):
                 config["hidden_size"] == proof.HIDDEN_SIZE and
                 config.get("torch_dtype", config.get("dtype")) == "float32", "wrong saved HF config")
         original_config = data.read_json(data.MODEL_DIR / "config.json")
-        controlled = {"tie_word_embeddings", "use_cache", "torch_dtype", "transformers_version"}
-        require(all(config.get(k) == v for k, v in original_config.items() if k not in controlled),
-                "saved configuration changed original architecture/scoring fields")
-        require(config.get("use_cache") is False, "saved cache setting changed")
+        require(data.json_line(config) == data.json_line(proof.export_config(original_config)),
+                "saved configuration differs from exact pinned HF normalization")
         require(not list(checkpoint.glob("*.index.json")), "sharded export prohibited")
         receipt["saved_metadata"] = {"config": config, "tensor_header": header,
             "qualification": "saved header/config inspection only; P6 owns sole fresh numerical reload"}
@@ -606,14 +604,14 @@ def main():
         receipt["process_runtime_seconds"] = time.monotonic() - start
         receipt["cpu_lifetime_rss_bytes"] = legacy.rss_bytes()
         receipt_path = directory / ("audit.json" if args.command == "audit" else "receipt.json")
-        # Stage the manifest and publish it last, only after all metadata I/O guards.
-        # A finalization failure replaces the actual receipt with a failed one.
+        # Keep the run directory writable for failed-receipt replacement; files seal first.
+        pending_manifest = directory / "checkpoint-manifest.pending.json"
+        published_manifest = directory / "checkpoint-manifest.json"
         try:
             if monitor is not None and receipt["status"] == "complete":
                 monitor.guard("publication:before")
             save_status(directory, receipt)
             p3.save(receipt_path, receipt)
-            pending_manifest = directory / "checkpoint-manifest.pending.json"
             if args.command == "train" and receipt["status"] == "complete":
                 manifest = legacy.checkpoint_manifest(directory, receipt)
                 manifest.update(schema_version="jeff.qwen-trained-checkpoint.v2",
@@ -622,9 +620,19 @@ def main():
                 p3.save(pending_manifest, manifest)
             if monitor is not None and receipt["status"] == "complete":
                 monitor.guard("publication:after_io")
+            if monitor is not None and not monitor.events.closed:
+                monitor.events.close()
+            for path in directory.iterdir():
+                if path.is_file():
+                    path.chmod(0o444)
+            signal.signal(signal.SIGTERM, old_term)
+            print(json.dumps({"prepared_status": receipt["status"], "receipt": str(receipt_path),
+                              "seconds": receipt["process_runtime_seconds"]}), flush=True)
             if pending_manifest.exists():
-                pending_manifest.rename(directory / "checkpoint-manifest.json")
+                pending_manifest.rename(published_manifest)
         except BaseException as exc:
+            if published_manifest.exists():
+                published_manifest.rename(directory / "checkpoint-manifest.failed.json")
             receipt["status"] = "failed"
             receipt["error"] = {"type": type(exc).__name__, "message": str(exc)[:2000], "retry": False}
             receipt["process_runtime_seconds"] = time.monotonic() - start
@@ -634,15 +642,10 @@ def main():
             failed_path.replace(receipt_path)
             save_status(directory, receipt)
         finally:
-            if monitor is not None and not monitor.events.closed:
-                monitor.events.close()
-        for path in directory.iterdir():
-            if path.is_file():
-                path.chmod(0o444)
-        directory.chmod(0o555)
-        signal.signal(signal.SIGTERM, old_term)
-    print(json.dumps({"status": receipt["status"], "receipt": str(receipt_path),
-                      "seconds": receipt["process_runtime_seconds"]}), flush=True)
+            if receipt["status"] != "complete":
+                if monitor is not None and not monitor.events.closed:
+                    monitor.events.close()
+                signal.signal(signal.SIGTERM, old_term)
     return exit_code
 
 
