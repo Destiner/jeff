@@ -1,0 +1,285 @@
+{
+  "schema_version": "jeff.runtime.challenger-result.v1",
+  "status": "executed; independent quality scoring owned by Evaluation E5",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "frozen_code_revision": "49823af30d6b394a147c7b8a9f5c676526a439f3",
+  "source_sha256": "325d3a6b8e5577bba3b885fe8b61d5551305b456e2586d3949b2c45c649438d5",
+  "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01",
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "packages": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "host": {
+    "chip": "Apple M5",
+    "installed_memory_bytes": 25769803776
+  },
+  "recipe": {
+    "schema_version": "p3.config.v1",
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "system_prompt": "You are a decision assistant. Choose exactly one of the listed options. Reply with only its letter.",
+    "user_template": "State:\n{state}\n\nQuestion:\n{question}\n\nOptions:\n{options}",
+    "symbols": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "max_input_tokens": 1024,
+    "device": "mps",
+    "dtype": "float32",
+    "batch_size": 1,
+    "threads": 4,
+    "temperature": 1.0,
+    "startup_rows": 3,
+    "maximum_run_seconds": 1200,
+    "max_cpu_rss_bytes": 8589934592,
+    "max_mps_driver_bytes": 8589934592,
+    "attention": "sdpa",
+    "use_cache": false,
+    "logits_to_keep": 1,
+    "probability_semantics": "T=1 softmax conditional on supplied single-token option symbols; not full-vocabulary confidence or calibrated confidence",
+    "asset_allowlist": [
+      "config.json",
+      "generation_config.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "special_tokens_map.json",
+      "added_tokens.json",
+      "vocab.json",
+      "merges.txt",
+      "chat_template.jinja",
+      "model.safetensors",
+      "README.md",
+      "LICENSE",
+      "LICENSE.txt",
+      ".gitattributes"
+    ]
+  },
+  "validation": {
+    "status": "complete",
+    "suites": [
+      {
+        "name": "v2-original",
+        "rows": 300,
+        "options": 1160,
+        "max_probability_sum_error": 1.3131648302078247e-07,
+        "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "output_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5"
+      },
+      {
+        "name": "v2-reversed",
+        "rows": 300,
+        "options": 1160,
+        "max_probability_sum_error": 1.341104507446289e-07,
+        "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "output_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78"
+      },
+      {
+        "name": "probes-paired",
+        "rows": 24,
+        "options": 70,
+        "max_probability_sum_error": 6.151094567030668e-08,
+        "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "output_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+      }
+    ],
+    "scope": "Label-free output contract and identity validation only, not quality scoring."
+  },
+  "total_presentations": 624,
+  "total_options": 2390,
+  "suites": [
+    {
+      "name": "v2-original",
+      "status": "complete",
+      "expected_rows": 300,
+      "written_rows": 300,
+      "coverage": 1.0,
+      "expected_input_tokens": 39949,
+      "input_length_distribution": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "elapsed_seconds": 15.670843832660466,
+      "rows_per_second": 19.143831895941272,
+      "input_tokens_per_second": 2549.2564680365263,
+      "latency_seconds": {
+        "count": 300,
+        "min": 0.03926958283409476,
+        "max": 0.13124533370137215,
+        "p50": 0.05115049984306097,
+        "p95": 0.06173462513834238
+      },
+      "output_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5"
+    },
+    {
+      "name": "v2-reversed",
+      "status": "complete",
+      "expected_rows": 300,
+      "written_rows": 300,
+      "coverage": 1.0,
+      "expected_input_tokens": 39949,
+      "input_length_distribution": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "elapsed_seconds": 16.40480350004509,
+      "rows_per_second": 18.28732663571224,
+      "input_tokens_per_second": 2435.2013725668944,
+      "latency_seconds": {
+        "count": 300,
+        "min": 0.04166895803064108,
+        "max": 0.07846499979496002,
+        "p50": 0.05513862520456314,
+        "p95": 0.06413508299738169
+      },
+      "output_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78"
+    },
+    {
+      "name": "probes-paired",
+      "status": "complete",
+      "expected_rows": 24,
+      "written_rows": 24,
+      "coverage": 1.0,
+      "expected_input_tokens": 2638,
+      "input_length_distribution": {
+        "count": 24,
+        "min": 98,
+        "max": 124,
+        "p50": 107,
+        "p95": 124
+      },
+      "input_tokens": 2638,
+      "elapsed_seconds": 1.191283790860325,
+      "rows_per_second": 20.146333043503937,
+      "input_tokens_per_second": 2214.4177736984743,
+      "latency_seconds": {
+        "count": 24,
+        "min": 0.0457502081990242,
+        "max": 0.05204408289864659,
+        "p50": 0.04906720807775855,
+        "p95": 0.05199579196050763
+      },
+      "output_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    }
+  ],
+  "external_process_wall_seconds": 38.27064758306369,
+  "cold_model_load_seconds": 1.1571430419571698,
+  "startup": {
+    "rows": 3,
+    "forward_seconds": [
+      0.5238641249015927,
+      0.11786820832639933,
+      0.08502520760521293
+    ],
+    "elapsed_seconds": 0.7590416660532355
+  },
+  "aggregate_suite_wall_seconds": 33.26693112356588,
+  "aggregate_decisions_per_second": 18.757365916387943,
+  "cpu_lifetime_maxrss_bytes": 2532196352,
+  "macos_time_peak_process_footprint_bytes": 4179249192,
+  "mps_samples": [
+    {
+      "stage": "after_load",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2760327168
+    },
+    {
+      "stage": "after_startup",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2768961536
+    },
+    {
+      "stage": "end",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2768961536
+    },
+    {
+      "stage": "process_end",
+      "current_allocated_bytes": 0,
+      "driver_allocated_bytes": 2768961536
+    }
+  ],
+  "memory_qualification": "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory; macOS time peak process footprint is separate OS accounting, not an MPS/unified-memory peak; do not sum overlapping metrics.",
+  "completed_at": "2026-11-11T14:41:30.432060+00:00",
+  "prior_failure": {
+    "frozen_revision": "8b03a390d2164cf9495aabcffe0f993b7a4fa9c0",
+    "error": "KeyError config_path: incorrect audit envelope lookup",
+    "model_loaded": false,
+    "predictions": 0,
+    "preserved_at": "run/receipt.json",
+    "correction": "Minimal envelope lookup; renewed freeze/audit and explicit Model grant before execution. No outcome or recipe change."
+  },
+  "additional_spend_gbp": 0,
+  "files": {
+    "download/manifest.json": {
+      "sha256": "7741a686ef6f0cc211438961223fb089e5f3a62da17c582cca27b021ce6191b5",
+      "bytes": 9122
+    },
+    "download/receipt.json": {
+      "sha256": "615b3e99c65a6cce593ddad3f30d8e8a58a43ce82ade68e170734cbcdf531381",
+      "bytes": 10454
+    },
+    "audit/audit.json": {
+      "sha256": "d90446114a51af995db436d69362714d904cb641d50b3d993ddaf997a99db8e4",
+      "bytes": 220095
+    },
+    "audit-02/audit.json": {
+      "sha256": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a",
+      "bytes": 220094
+    },
+    "run/receipt.json": {
+      "sha256": "83e4d9a16b92c0eda519dd8f80c48dade4cdb8e46768dca7456ff6ba6d2d9b21",
+      "bytes": 513
+    },
+    "run-02/receipt.json": {
+      "sha256": "602069d9eed481cc8ca902e91bb446e31569014e36545f839f046d2e43c3ad4c",
+      "bytes": 241835
+    },
+    "process-receipt.json": {
+      "sha256": "61efc2e24b244de90671e37c92d59c630da242580d526da6c34ebce5770159f1",
+      "bytes": 1417
+    },
+    "process-02-receipt.json": {
+      "sha256": "b23d42f0a3baec507ab74f63334ba086adf9085e8dc453cdec5112e53e78fa58",
+      "bytes": 1424
+    },
+    "process-02.stderr.log": {
+      "sha256": "6b44d1a9f6b2b71d4f67b7ab873550a7effc7c2a482e64894900ca6625a1e310",
+      "bytes": 827
+    },
+    "output-validation.json": {
+      "sha256": "4308350fe48f3198f56607640d5eb0329b0fafd3b14de5f43c3db5891d737baa",
+      "bytes": 1103
+    },
+    "launch-02.py": {
+      "sha256": "3505f1790604b6fd7ada4236829fcda84a903cfdef30a4bb387488a35b373c85",
+      "bytes": 2435
+    },
+    "run-02/v2-original.jsonl": {
+      "sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "bytes": 105881
+    },
+    "run-02/v2-reversed.jsonl": {
+      "sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "bytes": 112825
+    },
+    "run-02/probes-paired.jsonl": {
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "bytes": 6245
+    }
+  }
+}
