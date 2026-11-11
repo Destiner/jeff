@@ -1,0 +1,170 @@
+{
+  "schema_version": "jeff.runtime.p4-release-evidence.v1",
+  "release_id": "p4-m6-20261111-01",
+  "status": "runtime complete; no learning-success or promotion claim",
+  "frozen_runtime_code_revision": "264c44349c3eee73e539a200645abe7d9c50169c",
+  "runtime_source_sha256": "cb07ceaf8af6cf1b06b08d11aff7a234031877428eb0aa27e37ad609eef731a5",
+  "runtime_validator_source_sha256": "e5fa5fe33c8cc2b87da98fa7aded21e98c8d1781449faf74a9a2a25660b5e62c",
+  "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "trained_checkpoint_manifest_path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint-manifest.json",
+  "trained_checkpoint_manifest_sha256": "1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f",
+  "checkpoint_id": "training-checkpoint",
+  "run_id": "training",
+  "kind": "trained",
+  "base_lineage": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "trained_weights": {
+    "sha256": "ecbeb36556281cf00e9175603aecefd83f2ce3fc8a610e4b2cf056b7a4a926fb",
+    "bytes": 1976163472
+  },
+  "training_code_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+  "training_data_manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "training_recipe_sha256": "61b43e043bb11f3fa25cb39bf4c09bc80040da802a0eeb617d4ec1378787a624",
+  "training_schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+  "source_run_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/receipt.json",
+    "sha256": "893c6a1b154734133d49ce41036a05bef2b5830c3615070b3547d56aebff1657"
+  },
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "packages": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "validation": {
+    "scope": "Label-free output contract/identity validation only; no reference labels or quality scoring.",
+    "suites": [
+      {
+        "name": "v2-original",
+        "rows": 300,
+        "options": 1160,
+        "maximum_sum_error": 1.341104507446289e-07,
+        "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "output_sha256": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72"
+      },
+      {
+        "name": "v2-reversed",
+        "rows": 300,
+        "options": 1160,
+        "maximum_sum_error": 1.043081283569336e-07,
+        "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "output_sha256": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615"
+      },
+      {
+        "name": "probes-paired",
+        "rows": 24,
+        "options": 70,
+        "maximum_sum_error": 8.940696716308594e-08,
+        "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "output_sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+      }
+    ]
+  },
+  "presentations": 624,
+  "options": 2390,
+  "process_wall_seconds": 40.52782383421436,
+  "model_load_seconds": 0.7096073748543859,
+  "startup": {
+    "rows": 3,
+    "forward_seconds": [
+      0.27335500018671155,
+      0.04548866720870137,
+      0.05295070819556713
+    ],
+    "elapsed_seconds": 0.37538362527266145
+  },
+  "suite_wall_seconds": 36.81845620833337,
+  "cpu_lifetime_maxrss_bytes": 554598400,
+  "mps_observed_samples": [
+    {
+      "stage": "after_load",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2760327168
+    },
+    {
+      "stage": "after_startup",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2768977920
+    },
+    {
+      "stage": "end",
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2777350144
+    },
+    {
+      "stage": "process_end",
+      "current_allocated_bytes": 0,
+      "driver_allocated_bytes": 2777350144
+    }
+  ],
+  "memory_qualification": "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory; native process footprint is separate OS accounting, not a true MPS/unified-memory peak; do not sum overlapping metrics.",
+  "macos_peak_process_footprint_bytes": 3143828608,
+  "decisions_per_second": 16.948021841794816,
+  "additional_spend_gbp": 0,
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01",
+  "artifacts": {
+    "audit/audit.json": {
+      "bytes": 223642,
+      "sha256": "40a7e9953cd8d9852563ebbc32e3c03c2b51eae870f0213ac0547233b9b26801"
+    },
+    "run/receipt.json": {
+      "bytes": 245338,
+      "sha256": "6f164b6c1b9feb6d09e6eed6afacf8e709e7968017aad6b2ab8f3ac5310255e8"
+    },
+    "process-invocation.json": {
+      "bytes": 1329,
+      "sha256": "d658a4b1ef9dc53f5f2ff79816bd9b09e0a67a309fdfc718cf062b91abbd7ab8"
+    },
+    "process-receipt.json": {
+      "bytes": 1488,
+      "sha256": "a55570868eea6565d7ed41209cdbe8c3b0537edd56da104e8ad0c79bdb54535e"
+    },
+    "process.stderr.log": {
+      "bytes": 1227,
+      "sha256": "7aeb4b0c5aeeec459281ae2d2ebc7e2b6e6a1b109e37bd209a1e7fa7877a2caf"
+    },
+    "launch.py": {
+      "bytes": 2889,
+      "sha256": "80785df634c1ab1df352313c0476db5f834f00cf71702a18dff589f75e9eafbe"
+    },
+    "run/v2-original.jsonl": {
+      "bytes": 105179,
+      "sha256": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72"
+    },
+    "run/v2-reversed.jsonl": {
+      "bytes": 112094,
+      "sha256": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615"
+    },
+    "run/probes-paired.jsonl": {
+      "bytes": 6185,
+      "sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+    }
+  },
+  "config_path": "configs/runtime/p3-qwen.json",
+  "model_dir": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint",
+  "started_at": "2026-11-11T16:10:46.886945+00:00",
+  "completed_at": "2026-11-11T16:11:27.420722+00:00",
+  "returncode": 0,
+  "model_grant": "e34dfed8",
+  "grant_status": "returned; Runtime wrapper/child exited",
+  "identity_qualification": "Manifest path/hash qualify short producer IDs; base revision is lineage, not trained byte identity. Hashes copied from recorded evidence, no new weight scan.",
+  "coverage_qualification": "300 original + 300 reversed + 24 already-paired; 3 startup rows separate.",
+  "memory_storage_qualification": "FP32 safetensors loading can use memory mapping; no storage/mapping trace collected; OS caches not flushed. Lifetime RSS is not total unified memory or evidence of memory advantage. No cold-storage claim.",
+  "offline_qualification": "Existing local_files_only loader and offline environment; new HOME and empty HF cache, cache remained empty; not OS network denial or offline installation.",
+  "heldout_quality": {
+    "owner": "Evaluation E6",
+    "status": "external scoring; no Runtime label access or scoring",
+    "delivery_handoff": "6e22b1f8",
+    "model_report": "TRAIN-fit regression; every recorded post-fit argmax at position0. These counts establish neither tie status nor cause.",
+    "decision": "No successful-learner, calibration or promotion claim."
+  },
+  "report": "docs/runtime/p4-trained-checkpoint.md"
+}
