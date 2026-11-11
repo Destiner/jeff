@@ -1,6 +1,6 @@
 # R6 frozen order/letter diagnostic packet
 
-**Prepared, not yet executed.** R6 separately authorizes one frozen-P3 inference-only diagnostic, lower priority than ready M6/P4. Model grants the slot; Runtime executes. Research never loads the model. This document is the input/execution freeze, not a result or a change to M6/E6.
+**Executed once by Runtime on2026-11-11,16:22:50–16:23:03UTC:**192/192 forwards, original frozen P3, Model's single-use grant after M6/P4 completed; slot returned. [Scientific diagnosis](order-instability-diagnosis.md) and [Runtime execution report](../runtime/r6-order-diagnostic.md) distinguish outcomes from preparation. Research never loaded the model. The sections below preserve the input/execution freeze, not a change to M6/E6. The immutable packet's original `prepared_not_executed` status is historical, not today's execution state.
 
 ## Frozen scope
 
