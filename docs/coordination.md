@@ -33,7 +33,7 @@ Current M6/P4/E6 directions: `artifacts/handoffs/lead/wave-20261111-1520/`. R5's
 - **Model M6:** one full-parameter Qwen0.5B grouped-choice CE run from P3's pinned start, on exact released1,500TRAIN decisions only; R5's fixed AdamW2e-5/oneepoch/microbatch1/accum4/375updates/seed42 recipe with one materialized training-only option permutation per presentation. Preserve prompt/readout/T1/cap1024/FP32-MPS controls. Audit inputs and measure train-only backward/optimizer capacity before commitment; any disposable probe state is discarded/restored and separately accounted. Freeze controls before outcomes; at most one full learning run under a45-minute scheduled cap. No automatic LoRA/dependency/cloud fallback. Produce fresh starting E5 predictions, deterministic before/after TRAIN-fit summaries and a reloadable final checkpoint; do not select by development score. No D3 extension. Model remains scheduler through P4's return.
 - **Release/Runtime P4:** coordinate narrow P3 rendering/readout reuse and an additive HF-compatible trained-checkpoint handoff with Model. Preserve P3 pins/artifacts and avoid competing loaders. Prepare while M6 is implemented; own the one fresh-process trained-checkpoint624-presentation development inference pass under Model's grant, with offline reload, identity/coverage and measured resource evidence. Model owns starting predictions/train-fit; do not duplicate final inference. No new serving/framework/portability/bundle work.
 - **Evaluation E6:** reuse E5's exact624 presentations, references and source units. Before new outcomes, freeze interpretation of both-order inherited/new proper scores, rule flip/both-order success, intent/probe retention and family regressions. Check fresh-start/P3 comparability and distinguish train-fit from held-out behavior. Report every component; no post-outcome combined score, significance/calibration assertion, automatic promotion, architecture/permutation-only causal claim, or temperature fallback. No new framework or final access.
-- **Research:** R5 is delivered at070d4d8 and its primary experiment is now authorized above; no repeat survey or new research assignment. Remain available for concrete method questions. The contingent temperature diagnostic is not automatically authorized. Research is not an execution review gate.
+- **Research R6:** investigate the observed Qwen order instability using saved target/text-free NEW-v2 paired outputs, with explicit identifiability limits, not another broad strategy survey. Prepare at most48 preselected TRAIN cases ×4 fixed order/letter-assignment conditions (≤192presentations) on the unchanged frozen P3 model if needed. One such inference-only pass is authorized under Model scheduling and Runtime execution, lower priority than ready M6/P4 work; no Research model load, new learning, prompt search, dependencies or modification of M6/E6. Publish a frozen packet before outputs and distinguish diagnostic execution from mere preparation. R5's contingent temperature alternative remains unauthorized.
 - **Data D4:** continue the original bounded data-flow observation and training-only audit, then stop/report actual outcomes. Do not extend the hour or author training cases from E4/E5 failures. Published artifacts remain immutable; genuine frozen-data issues require hash-linked errata. Share aggregate/source-appropriate findings directly with owners, not private held-out cases.
 - **Infra I4:** continue the original bounded operational experiment, then stop/report measured interventions and overhead. Peer posting is live and all owners use canonical current.py. Small justified owned fixes are allowed; no scheduler takeover, repeated weight scans, process interference, observer-service expansion or new review gate.
 
@@ -44,6 +44,14 @@ Each R5/D4/I4 owner records actual start/end and stops around60minutes from resu
 Self-review/build/self-merge small in-scope fixes under the existing short lock. Cross-owner patches require that owner's agreement and integration; do not become an approval gate. Observations stay in compact append-only artifact logs, not a second task ledger. Message concrete actionable findings, not each poll.
 
 At the end, report useful findings, interventions, actual fixes and observed effects, unresolved issues, and overhead. Do not fabricate counterfactual time saved or require a patch to justify the hour. "No demonstrated benefit" is a valid result. No automatic extension or leftover monitoring process.
+
+## Throughput and availability
+
+Owners use the bounded continuation policy in `docs/owner-lifecycle.md`; active sessions poll about each minute after delivery for up to30 idle minutes and take already-authorized/in-scope follow-on work. This does not add automatic wake-up or extend observation deadlines.
+
+Parallelize preparation, CPU analysis, input validation and evaluator work; serialize substantial model loads through Model. M6 remains the only learning run. R6 adds a small explicitly bounded frozen-model diagnostic, not an architecture/seed sweep. No new experiment scheduler, dependency or cloud allocation is authorized.
+
+Infra's existing I4 now includes a requested interim view of real peer traffic/acknowledgements, actionable stalls/fixes, and known ML busy versus ready-waiting intervals. Treat acknowledgements as attention evidence, not transport latency, and missing activity telemetry as unknown. Do not assume compute is the bottleneck before measuring eligible work and its waits.
 
 ## Markdown mailbox experiment (Infra I1)
 
@@ -95,7 +103,7 @@ Final content stays under `evaluation/final/` and must not reach training/data/r
 
 ## Reporting
 
-Send one concise final chat report per completed assignment, after eligible self-integration. Early chat is only for a genuine blocker preventing useful progress or required authorization. Do not stop/report merely because a worktree, environment, tiny shard, or subagent delegation is ready.
+Publish each completed assignment promptly through the mailbox after eligible self-integration; do not wait for user relay or the end of an idle window. Then follow the [bounded continuation policy](owner-lifecycle.md#bounded-continuation-after-delivery): up to30 idle minutes of active inbox check-ins and already-authorized/in-scope follow-on work. Final chat is for actually parking or a genuine blocker, not an automatic stop after every delivery. Do not stop/report merely because a worktree, environment, tiny shard, or subagent delegation is ready.
 
 ```text
 TEAM / TASK:

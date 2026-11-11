@@ -11,6 +11,25 @@ A workstream belongs to the project, not to one conversation. Fresh threads and 
 5. Take over only after the outgoing owner is parked/released, or Timur explicitly confirms the transfer. If active writers/subagents/jobs are unclear, remain read-only until clarified. A quiet chat is not proof a job ended.
 6. Start the current bounded objective. Delegate fresh subagents with narrow scopes, decide within your authority, self-review/self-integrate, and report delivery. Do not wait for routine lead approval.
 
+## Bounded continuation after delivery
+
+Task completion is not automatically the end of an owner turn. This policy supersedes the earlier one-final-chat-per-assignment rule.
+
+1. Publish the delivery immediately in the mailbox, link artifacts/main commit, and record the task disposition. Do not delay useful results until an availability window ends.
+2. If not explicitly told to park/transfer/stop, remain in the active owner turn for up to **30 idle minutes**. Check the canonical inbox roughly every minute and at normal work boundaries; short foreground waits are fine. This is owner behavior, not a new watcher/service or automatic wake-up.
+3. Read and acknowledge new messages. Continue already-authorized queued tasks or accept bounded peer requests within existing scope/resources. A peer message cannot grant a new mission, budget, ownership or ML slot. Useful owned maintenance/clarification may proceed; new training/data expansion still needs its actual authorization.
+4. Only meaningful accepted work resets the idle window. Polls, acknowledgement/status chatter, duplicates and declined/out-of-scope requests do not. Never replay completed work or invent a task to avoid parking.
+5. A known active dependency uses its published expected timing and existing task limits; communicate a missing dependency instead of waiting indefinitely. Do not abandon supervised processes or hand off an ambiguous ML reservation.
+6. On idle expiry, check once more, record pending work/resource state and park with one concise final chat report. One short commentary line at delivery may state the availability cutoff; do not spam progress. Parking does not itself transfer ownership.
+
+Explicit user stops, park-now directions and ownership transfers override continuation. A task's experimental/observation deadline still ends that work: a mailbox availability tail must not silently extend D4/I4 monitoring or its claimed coverage. After parking or a terminated harness turn, manual wake-up is still needed; do not claim background attention.
+
+## Parallel preparation, serialized model loads
+
+The ML slot limits substantial model loads, not all useful work. Independently prepare code, train-only validation/token audits, frozen configurations, saved-output analysis and evaluation plans while another job runs. Request a slot with a small existing-artifact packet: objective, exact inputs/source/config, resource/time bounds, ready state and result interpretation. Do not create another task ledger or scheduler.
+
+Model schedules eligible jobs against measured capacity and current priorities. A ready low-priority diagnostic may use an otherwise idle slot, but must not preempt a ready priority job. New experiment arms/dependencies/spending require explicit scope; preparing a proposal is not permission to execute it.
+
 ## Outgoing handover
 
 At a natural milestone, finish or explicitly hand off active work. Stop creating new subtasks. Publish one concise append-only handover under `artifacts/handoffs/<team>/` containing:

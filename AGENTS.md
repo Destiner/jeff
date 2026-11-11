@@ -25,7 +25,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 - Workstream owners self-review and self-merge bounded changes within their owned paths; routine delivery does not wait for lead approval. Subagents do not merge to main.
 - Every main-checkout writer, including the lead, must use the short shared merge-lock protocol in `docs/coordination.md`. Never edit or merge into a dirty main checkout or remove another owner's lock.
 - Never overwrite another worker's artifacts. Coordinate routine inputs/inference directly through public handoffs; the lead handles shared contracts, root dependencies, budget, and cross-team priorities.
-- Send one final chat report per completed assignment, including the main merge commit. Interrupt only for a genuine blocker. Keep intermediate updates in shared files and continue bounded in-scope work without waiting for the lead.
+- Publish completed assignments promptly through the mailbox with evidence and the main commit. Follow the [bounded continuation policy](docs/owner-lifecycle.md#bounded-continuation-after-delivery): stay available for up to 30 idle minutes, taking queued authorized/in-scope peer work without routine lead approval. Final chat is for parking or a genuine blocker, not an automatic stop after each delivery.
 - Fresh/replacement owners follow `docs/owner-lifecycle.md`: adopt existing work and verify ownership transfer; do not recreate workspaces, rerun completed tasks, or compete with an outgoing owner.
 
 ## Mailbox check-ins
