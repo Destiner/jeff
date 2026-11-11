@@ -1,4 +1,4 @@
-"""Identity-only validation of the flat P4 trained-checkpoint manifest."""
+"""Flat checkpoint identity, plus explicit P6 v2 semantic proof validation."""
 
 from pathlib import Path
 import re
@@ -21,7 +21,7 @@ ALLOWED_FILES = REQUIRED_FILES | {"README.md", "LICENSE"}
 
 def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
                         require, load, digest, safe_path, assets):
-    """Check identity without following training provenance or parsing its receipt.
+    """Keep v1 identity checks; v2 additionally binds producer/readout evidence.
 
     Adapter helpers keep JSON/path/hash semantics identical to P3. Strict flat
     inventory checks precede assets(), so it cannot follow checkpoint symlinks.
@@ -39,6 +39,9 @@ def validate_checkpoint(manifest_path, model_dir, config_path, cfg, *,
     version = manifest.get("schema_version")
     require(version in ("jeff.qwen-trained-checkpoint.v1", "jeff.qwen-trained-checkpoint.v2"),
             "unsupported checkpoint schema version")
+    if version == "jeff.qwen-trained-checkpoint.v1":
+        require(not {"adaptation_kind", "representation", "readout_proof"} & set(manifest),
+                "v2 semantic fields cannot be downgraded to v1")
     fixed = {"schema_version": version, "status": "complete",
              "kind": "trained", "base_model_id": MODEL, "base_revision": REVISION}
     require(all(manifest.get(k) == v for k, v in fixed.items()), "checkpoint identity/status")

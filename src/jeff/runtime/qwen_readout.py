@@ -118,6 +118,8 @@ def validate_metadata(manifest_path, model_dir, manifest, receipt_path, *,
     from jeff.model import qwen_readout_proof as canonical
     from jeff.runtime import qwen_safetensors
 
+    require(_same(canonical.export_config(ORIGINAL_CONFIG), SAVED_CONFIG),
+            "producer/runtime controlled config transform differs")
     root = manifest_path.parent
 
     def reference(ref, *, sibling=False):
@@ -261,6 +263,10 @@ def validate_metadata(manifest_path, model_dir, manifest, receipt_path, *,
             _same(historical["fit_before"]["overall"]["rows"], 1500) and
             _same(control["source"], historical["identity"]["evidence"]["source"]), "wrong retained M7 receipt")
     receipt = load(receipt_path)
+    require(isinstance(receipt.get("base_loading_info"), dict) and
+            all(receipt["base_loading_info"].get(k) == [] for k in
+                ("missing_keys", "unexpected_keys", "mismatched_keys", "error_msgs")),
+            "producer original-base load diagnostics are incomplete or nonzero")
     require(receipt["schema_version"] == "m8.train.v1" and receipt["status"] == "complete" and
             receipt["command"] == "train" and _same(receipt["extra_backwards"], 0), "incomplete M8 source receipt")
     for key in ("presentations", "optimizer_steps", "optimizer_step_attempts", "gradient_norms", "online", "adam_final_state"):
@@ -322,7 +328,9 @@ def validate_answer_ids(binding, answers, *, require):
 
 
 def validate_storage(model, *, require):
-    """Inspect actual same-device backing allocations, including after migration."""
+    """Inspect actual allocator-owned storage, including after migration."""
+    from jeff.model import qwen_readout_proof as canonical
+
     require(type(model).__name__ == "Qwen2ForCausalLM" and
             type(model.model).__name__ == "Qwen2Model" and
             type(model.model.embed_tokens).__name__ == "Embedding" and
@@ -343,13 +351,13 @@ def validate_storage(model, *, require):
                 "invalid table backing storage extent")
         result[name] = {"device": str(weight.device), "dtype": "float32", "shape": list(weight.shape),
                         "stride": list(weight.stride()), "storage_offset": weight.storage_offset(),
-                        "storage_base": base, "storage_bytes": size, "tensor_bytes": extent}
-    a, b = result["input"], result["output"]
+                        "storage_token": base, "storage_bytes": size, "tensor_bytes": extent}
     require(tables["input"].device == tables["output"].device and
-            (a["storage_base"] + a["storage_bytes"] <= b["storage_base"] or
-             b["storage_base"] + b["storage_bytes"] <= a["storage_base"]),
+            canonical.storage_disjoint(tables["input"], tables["output"]),
             "input/output must have independent disjoint same-device backing allocations")
-    return {**result, "input_output_disjoint": True}
+    semantics = ("distinct opaque allocator-owned MTLBuffer handles" if
+                 tables["input"].device.type == "mps" else "disjoint CPU backing byte intervals")
+    return {**result, "input_output_disjoint": True, "storage_identity_semantics": semantics}
 
 
 def validate_loaded(model, binding, loading_info, *, require, guard):
