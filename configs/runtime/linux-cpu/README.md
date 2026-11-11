@@ -9,9 +9,11 @@ bundle's macOS/universal requirements file for this installation.
 
 On that Linux target, with Python 3.12 and uv already available, work outside
 any checkout. Set absolute paths to the copied existing bundle, this separate
-sidecar directory, and a **new** environment. Check the bundle's
-`manifest.sha256` against a separately trusted P1 receipt before installing its
-wheel; hashes are integrity checks, not publisher authentication.
+sidecar directory, and a **new** environment. Before installing, hash the actual
+bundle manifest against a separately trusted P1 receipt, then hash the wheel
+against that verified manifest; merely comparing sidecar text is insufficient.
+Follow the pre-install steps in `docs/runtime/README.md`. Hashes are integrity
+checks, not publisher authentication.
 
 ```sh
 BUNDLE=/absolute/path/to/p1-m2-20261111-01
@@ -82,4 +84,5 @@ sandbox are Darwin, with no available authorized Linux runtime. Therefore
 **Linux installation and inference remain unverified**; P1's executed macOS
 results are not Linux evidence. The next bounded step is installation and one
 Model-approved isolated CPU invocation on an authorized Linux target, recording
-versions, coverage and a source probability comparison. No new bundle is needed.
+versions, coverage and comparison with the saved P1 demo probabilities (any
+cross-platform numerical differences must be disclosed). No new bundle is needed.
