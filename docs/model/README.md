@@ -75,6 +75,8 @@ Repeat with `baseline` and a different output path. Output parents must already 
 
 The trainer independently verifies manifest/shard hashes and row counts, decision fields, target membership, allowed task families, provenance fields, global ID uniqueness, and group isolation. It reports exact content duplicates. It rejects final shards in a whole-manifest preflight, refuses paths into protected `evaluation/final`, and rejects artifact-root traversal. Validation labels are used only for before/after metrics; only train rows reach optimizer updates.
 
+Rows carrying `provenance.usage="validation_only_never_train"` are rejected from training shards even if both manifest and row splits have been relabeled to `train`. They remain eligible for validation-only use; removing the marker or making untracked derivatives is a procedural exclusion, not something this guard can recognize. This safeguard was added after M5; historical experiment sources and artifacts remain unchanged.
+
 These checks do not prove semantic label correctness or catch every paraphrase leak. Data owns broader validation. Final evaluation remains outside this workstream.
 
 ## Saved artifacts and evidence
