@@ -1,0 +1,219 @@
+{
+  "schema_version": "e6.report/1",
+  "status": "measured-negative-learning-result",
+  "scientific_plan": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/plan.md",
+    "sha256": "7b99168342b23cdec9685a357f9aef88c917e88cc4506dd109b1b0690d52928d"
+  },
+  "predeclaration_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/receipt.json",
+    "sha256": "c9df796f1fd3ddddaa8770bfbe08e2adbff4f738e32f2d2cbecc66fe38804394"
+  },
+  "declaration_integration": "cfbb25b013d2b284860f9e7e28f0552a7048ce1d",
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/recipe.json",
+    "sha256": "74beb1c96222455d69e562e4a5136e6014e0990fb46b9f84f30c02a5b94fd00c"
+  },
+  "tracked_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e6-m6-v1.json",
+    "sha256": "74beb1c96222455d69e562e4a5136e6014e0990fb46b9f84f30c02a5b94fd00c"
+  },
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e6-decoder-learning.md",
+    "sha256": "ba41f408a61288ba880e8cc76973ea5b396ef7a46dd6c944e08ddc1275c2a985"
+  },
+  "completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/completion.json",
+    "sha256": "448cc738aef433b18a51ece0b8d6a896c30e3eef47c09fa754b8f9737232ff60"
+  },
+  "grouped_both_order_results": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/grouped-both-order-summary.json",
+    "sha256": "3905582056aa6b35f8b973ec97ead8824e96c9f57b69961ad8a71475f2e5f373"
+  },
+  "fresh_control_probability_differences": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/fresh-start-vs-p3-exact-differences.json",
+    "sha256": "5a436e264d72c1bfc44560b8d1a078a1de46b000a4cc2a94c6d5cd0808788c77"
+  },
+  "preparations": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v1/preparation-lock.json",
+      "sha256": "4fbfef00335feca0d53a8312b64b75b48734c9286e338593be6c5402f5eefcd6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v2/preparation-lock.json",
+      "sha256": "35061de5966d8435f2cf52da224e35fdcbbe7a0b15c2b9f6ae12900ca845d698"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/preparation-lock.json",
+      "sha256": "4bfe3b8449c99d601af6289352f4376298874a6390ece1e3f3b0aaffec3d0c11"
+    }
+  ],
+  "preserved_failed_attempt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/previous-attempt.json",
+    "sha256": "09e58ce830d6216ad70903fce0f023e608342ce4227b4d21fed226fe25177e73"
+  },
+  "policy_only_diff": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/policy-changes.diff",
+    "sha256": "7c7d2133b8a2709c3c6817f4ad3330a6f104fbddaf7ca0b3a13c7c36c150d217"
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-owner-integrity-v2/receipt.json",
+    "sha256": "80523beed9a0f57dffc2e0badecf042b354beed7b204a8a9bc423654a29d9ab8"
+  },
+  "preserved_copy_failure": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-owner-integrity-v1/failure.json",
+    "sha256": "4a086b39e0aa798411ded9ebe2e5d7a8a98342e62d3a08419d306bec7c345a01"
+  },
+  "control_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-start-control-review-v1/findings.md",
+      "sha256": "fd64b987a8d399abf62dd7ff2995638b6c1d91a9a0da49267d4e86bda930c555"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-start-control-review-v1/receipt.json",
+      "sha256": "356d3629ed1e8eba489f2feacaae4d2c7291c554b58e0da201677adf5a3130b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-start-control-review-v1/check.py",
+      "sha256": "3b569035010a58dd34fa61f18ca799594c4604173c7dcdf2e0da9308aff9224d"
+    }
+  ],
+  "train_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/report.md",
+      "sha256": "8bd3eafc35de2d7863efd2756fe0fbf5e59e7fdc732ef642837de34f134ea35d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/receipt.json",
+      "sha256": "9935833487a3301c4c6194c76398d83e076fe47192da356ef2761f4765a09adb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/supplemental-checks.json",
+      "sha256": "05090c310ee7834e180ba732e89aaacc21fb85c241ec477e006b0ddc6ef6c640"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/fit-aggregates.json",
+      "sha256": "30b90ca86db3d8c6c50c07455c5a31762ad826168796b452001cd01e295ee592"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/controls.json",
+      "sha256": "2d325300d1db9f3168a1b3da9ab7dd316d899e1833f8f63c25729ff74cda3a07"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/source-pins.json",
+      "sha256": "1de9abbabaa070ec0fc95309336c1446e659eb82c9abefe436ad1fdb9710e581"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/checkpoint-inventory.json",
+      "sha256": "51e9994ac2e64834256e75f2e43ec229525dfbe6bc7bb8094657d3cb6cb0d051"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/resources.json",
+      "sha256": "340170b32fa32357b55e9a13e56f62d4c62f6812c1a78fcb12de3d96af209c34"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-train-control-review-v1/review.py",
+      "sha256": "5168f49003f49cb2fe19f8f0190503631b4aa34f62375e3e269be75a4a367999"
+    }
+  ],
+  "actual_runtime_binding": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-p4-binding-v1/receipt.json",
+    "sha256": "285ee5978b020bc3827b11408a61f46f5fe466dc37524a93a5a63ea7fe061bf4"
+  },
+  "quality_review": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/report-candidate.md",
+      "sha256": "274c951a2496f760d73e2b7a0d2db9c8ceeea5da7c356a6dacc6995e95ebd7bd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/appendix.md",
+      "sha256": "2e4b77ef8141d178df638076d875058ddefeeaed740cabdae4a02cbbabf6c011"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/numbers.json",
+      "sha256": "b10d34f05b4d7b6338c19638cb5ce5bc6312aa5045d13fe1b973929ed190c51b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/paired-gains-losses.csv",
+      "sha256": "6d7cf1e99b49302e92ca109cb9554420815c0ed3d6e1a308b81afd4f0bf11059"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/explicit-case-unit-mapping.csv",
+      "sha256": "7eaf30da1d1cc3e3e375bb89cab293273965da624ea6b20f766c261779230f5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/receipt.json",
+      "sha256": "10ffacad37efd9d9c901a1f4623d428494a30c85f7a7a676923a9c28e41ba632"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/source-pins.json",
+      "sha256": "a09820d60fce1d587ea0239b51b8d23ea7639a4be26b926ac5be4127ca57a749"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/direct-frozen-input-receipt.json",
+      "sha256": "aa901242cc47e5685e0e3c088b26fd5b16cf73c965ce06e53e34902197812f37"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/review.py",
+      "sha256": "253c8b3c8dde00c7e6de8ab0ae59086d4d06c088e6bd7ea0e5eccc50ae5f6f96"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/synthesize.py",
+      "sha256": "f5f70a1026e63e13d4b1bfa26e80d7d1f1b7e0da369a6010251de5bc49f2f37c"
+    }
+  ],
+  "model_checkpoint_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint-manifest.json",
+    "sha256": "1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f"
+  },
+  "runtime_delivery": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/delivery-summary.json",
+    "sha256": "435e84db493dff8258d49bbaf4df255aa930323e0ed6e1e5507d2ce018def071"
+  },
+  "runtime_execution_revision": "264c44349c3eee73e539a200645abe7d9c50169c",
+  "model_execution_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+  "fit_tie_supplement": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/d5-20261111T161610Z/fit-audit/report.json",
+      "sha256": "1b2ec29fae4feac348ed6e3c0ee8df47bd21d2d035350e187aa6b675f1ec9f56"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/d5-20261111T161610Z/binary-identifiability-addendum.json",
+      "sha256": "ba4d58bf47092acf5b78565f2002626557490fff84f659bddf9f2ad1847b25aa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/d5-20261111T161610Z/owner-crosscheck.json",
+      "sha256": "a9ec2c2e3969fc1f34c8b60b11837ef0a4241d10b491f741f6cecba173e0d639"
+    }
+  ],
+  "interpretation": {
+    "primary_contrast": "Final one-epoch checkpoint minus fresh start; preserved P3 byte-identical",
+    "populations": {
+      "inherited_v1": {
+        "cases": 60,
+        "source_groups": 12
+      },
+      "new_v2": {
+        "cases": 240,
+        "source_groups": 170,
+        "rule_policies": 40,
+        "rule_mechanisms": 10
+      },
+      "probes": {
+        "presentations": 24,
+        "paired_groups": 12
+      }
+    },
+    "trained_input_position_zero": 624,
+    "trained_untied_presentations": 624,
+    "all_predictors_per_stratum": 11,
+    "quality_reports": 33,
+    "order_reports": 33,
+    "significance_calibration_causality_promotion": false,
+    "limits": "Separate correlated development strata; teacher/rule evidence qualified; one combined recipe and seed, not architecture/permutation-only ablation. TRAIN full ties unknown; no historical loaded-tensor attestation."
+  },
+  "cost_gbp": {
+    "additional_actual": 0,
+    "additional_pending": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "evaluation.anonymous-probability-export/1",
+  "status": "delivered-to-research",
+  "purpose": "R6 support only: saved P3 NEW-v2, no E6 change or new inference",
+  "public_files": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/r6-new-v2-probabilities-v1/public/paired.jsonl",
+      "sha256": "ca9d0f47401b753be87ef9c12648c771ef62783d1f8e646af89e1b55404f792d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/r6-new-v2-probabilities-v1/public/receipt.json",
+      "sha256": "1b312883376325a045c27ff691e949c5ba3260f8fde29600461373f1f70f948e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/r6-new-v2-probabilities-v1/public/README.md",
+      "sha256": "e345a5ff1041f30c87aae715d40d3aa1a9e55123cb0ed9897abeaaf52ddbb794"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/r6-new-v2-probabilities-v1/public/delivery.json",
+      "sha256": "19d940ae49312ec186ca544d21195bb8f0b6a763935b6ea5ddb4b1bd8bbe2f14"
+    }
+  ],
+  "coverage": {
+    "paired_cases": 240,
+    "probability_vectors": 480,
+    "raw_probability_values": 1840
+  },
+  "private_identity_mapping_shared": false,
+  "text_targets_correctness_shared": false,
+  "construction_units": {
+    "producer": 6,
+    "per_family": 2,
+    "source_group": 170,
+    "domain": 16,
+    "policy": 40,
+    "mechanism": 10
+  },
+  "limits": "Conditional allowed-symbol values; exact raw binary64 preserved; nonzero roundoff disclosed. Shared teacher/rendering dependency persists; anonymous producer splits are not independent sampling. Pseudonymization is procedural, not non-reidentifiability or OS isolation.",
+  "delivery_message": "870fee96-d794-48c5-ac7f-afa76203e757",
+  "additional_spend_gbp": 0
+}
