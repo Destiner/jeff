@@ -89,6 +89,8 @@ def validate_labeled(row, split, validate_decision):
     provenance = row.get("provenance")
     if not isinstance(provenance, dict):
         raise ValueError("provenance must be an object")
+    if split == "train" and provenance.get("usage") == "validation_only_never_train":
+        raise ValueError("Rows marked validation_only_never_train cannot be used for training")
     if provenance.get("kind") not in {"teacher", "public_dataset", "programmatic", "human"}:
         raise ValueError("Invalid provenance.kind")
     if provenance.get("label_basis") not in {"teacher", "source_label", "rule_verified", "human_verified"}:
