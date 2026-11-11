@@ -36,7 +36,7 @@ The overall improvement is not uniform: rule performance deteriorated. Validatio
 
 A post-run audit using Research's unchanged tokenizer audit script found 45/1,412 candidate pairs exceeded 128 tokens. **All 45 were rule-validation pairs, and question tokens were truncated in each; candidate text was intact.** Full pair length ranged from 41 to 169 tokens. At 256 tokens, none would truncate.
 
-This qualifies the rule result: it is not a clean measure of rule comprehension with complete inputs. No training pairs were truncated. A natural next controlled comparison is a 256-token cap or question-preserving state budgeting, maintaining the current result/checkpoint as the reference. That follow-up has **not** been run in this task.
+This qualifies the rule result: it is not a clean measure of rule comprehension with complete inputs. No training pairs were truncated. A natural next controlled comparison is a 256-token cap or question-preserving state budgeting, maintaining the current result/checkpoint as the reference. That follow-up was not part of the initial task. The subsequently authorized LD002 repeat is recorded separately in `pilot-256-results.md`; the original run/artifacts remain unchanged.
 
 Audit artifact: `model/pilot-20261111-01/token-budget.json`.
 
