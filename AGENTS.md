@@ -23,6 +23,7 @@ A small, text-based decision model: context + question + caller-supplied choices
 - Queue training jobs against measured memory capacity; agent count is not compute capacity.
 - Put generated data, checkpoints, caches, and run outputs under ignored `artifacts/`, with unique IDs. Commit small provenance manifests and configurations, not bulky artifacts.
 - Never overwrite another worker's outputs. Submit a small reviewable change and report checks, artifact IDs, and costs.
+- The main session is project lead. Use the report format in `docs/coordination.md`; Timur relays reports and decisions between sessions. Do not assume automatic notifications.
 
 ## No tests or linting
 

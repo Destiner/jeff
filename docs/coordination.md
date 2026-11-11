@@ -58,6 +58,42 @@ All sessions use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. This 
 
 No software tests or linting. Use actual builds, training/inference runs, dataset validation, and model evaluation for evidence.
 
+## Reporting and decisions
+
+The main session is project lead and integrator. Timur manually copies worker reports into that session and relays decisions back. This is the initial communication channel; writing a handoff file does not automatically notify the lead.
+
+Report at the first usable output, when blocked or needing a cross-team decision, and at completion of each bounded task. Do not wait for an entire workstream to finish. Keep the chat report concise (roughly 150–250 words); put longer evidence in the handoff artifact.
+
+Use this format:
+
+```text
+TEAM / TASK:
+STATUS: ready | blocked | needs decision
+RESULT: what actually exists or changed
+EVIDENCE: actual invocation and outcome; metrics with dataset/version and sample count
+CODE: branch, commit, workspace, and any uncommitted changes
+ARTIFACTS: absolute manifest/checkpoint/report/handoff paths
+RESOURCES: compute running or released; actual and pending additional spend
+DECISION NEEDED: question, options, and recommendation; or "none"
+NEXT: proposed bounded next task
+```
+
+Do not include credentials, private final-evaluation examples, or invented measurements. Distinguish a claimed result from a result you reproduced.
+
+Workers may make reversible implementation choices within their assigned scope and resources. Escalate shared-contract changes, root dependencies, ownership/scope changes, access to another team's compute slot, and any unallocated paid work. For a blocker, describe the smallest decision that would unblock you; continue independent in-scope work where possible.
+
+The lead inspects the report and relevant code/artifacts, then responds with:
+
+- **Disposition:** integrate, request a change, or hold.
+- **Decision:** chosen option and short rationale, including remaining uncertainty.
+- **Next task:** owner, objective, allowed paths, and concrete completion evidence.
+- **Resources:** compute ownership and any spending allocation.
+- **Sync:** integration commit to incorporate, if applicable.
+
+Prefer evidence that advances the day-one training/save/reload/evaluation loop. Use comparisons on the same data; do not select models solely on training loss or unverifiable claims. Keep the working checkpoint while considering alternatives.
+
+The lead records decisions affecting shared contracts, ownership, or resources in the relevant project docs and sends copyable instructions back through Timur. Model-specific rationale belongs with the model workstream. No orchestration service, shared writable task board, or automatic monitoring is required.
+
 ## If the number of sessions changes
 
 - **Three workers plus integrator:** fold research into a time-boxed subagent under Model.
