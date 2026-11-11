@@ -1,0 +1,587 @@
+{
+  "schema_version": "model/m4-run-summary/1",
+  "dataset_manifest": {
+    "path": "data/data-pilot-v2/manifest.json",
+    "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+  },
+  "training_revision": "812a6557a559b82882b2a24a5c2f37fa9b74a163",
+  "runs": {
+    "minilm": {
+      "record": {
+        "path": "model/m4-v2-20261111-01/minilm/run.json",
+        "sha256": "19ef47fc47c34de79838b1b8a2ee5830b197e1bb6a8153144bfc16c8b5f285a0"
+      },
+      "status": "completed",
+      "base_model": {
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "resolved_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "architecture": "mean_pool_scalar",
+        "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "max_length": 256,
+        "temperature": 1.0,
+        "head_initialization": "random",
+        "baseline": "pretrained backbone with explicitly reset randomly initialized linear scoring head"
+      },
+      "config": {
+        "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+        "output_dir": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "architecture": "mean_pool_scalar",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "device": "mps",
+        "epochs": 3,
+        "batch_size": 4,
+        "learning_rate": 2e-05,
+        "head_learning_rate": 0.0005,
+        "max_length": 256,
+        "seed": 42,
+        "max_steps": 1125,
+        "threads": 4
+      },
+      "code": {
+        "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+        "revision": "812a6557a559b82882b2a24a5c2f37fa9b74a163",
+        "dirty": false,
+        "source_sha256": {
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c"
+        }
+      },
+      "training": {
+        "steps": 1125,
+        "examples_seen": 4500,
+        "epochs_completed": 3,
+        "stopped_by_max_steps": true,
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 1.116457242747148
+          },
+          {
+            "epoch": 2,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 0.9413971943457922
+          },
+          {
+            "epoch": 3,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 0.831500078526636
+          }
+        ]
+      },
+      "runtime": {
+        "elapsed_seconds": 74.40294358413666,
+        "elapsed_scope": "through both checkpoint saves, before run.json write",
+        "memory": {
+          "cpu_max_rss_bytes": 1572257792,
+          "cpu_max_rss_raw": 1572257792,
+          "cpu_max_rss_raw_unit": "bytes",
+          "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+          "mps_current_allocated_bytes": 371979264,
+          "mps_driver_allocated_bytes": 2265972736,
+          "mps_measurement": "point-in-time, not peak"
+        }
+      },
+      "weights": {
+        "changed_parameter_count": 103,
+        "backbone_changed": true,
+        "head_changed": true,
+        "representative_differences": {
+          "backbone": {
+            "name": "encoder.embeddings.word_embeddings.weight",
+            "l2_difference": 0.9129509329795837,
+            "l2_before": 190.320556640625
+          },
+          "head": {
+            "name": "head.weight",
+            "l2_difference": 0.5849015116691589,
+            "l2_before": 0.5793976783752441
+          }
+        }
+      },
+      "matching_historical_initial_parameter_hashes": 105,
+      "recorded_initial_parameters": 105,
+      "fresh_start_comparison_scope": "Recorded hashes only; no independent tensor loading",
+      "token_audit": {
+        "path": "model/m4-v2-20261111-01/minilm-token-budget.json",
+        "sha256": "33c02d33b4c122be7b42200ba7b506f5414213021244199ce1ab38ca665ec9c9"
+      }
+    },
+    "msmarco": {
+      "record": {
+        "path": "model/m4-v2-20261111-01/msmarco/run.json",
+        "sha256": "0e10cf02f38ce81c655f6e304eea2e1bd12f75bf166142e48955075143ad6f77"
+      },
+      "status": "completed",
+      "base_model": {
+        "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "resolved_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "architecture": "retained_cross_encoder",
+        "tokenizer_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "max_length": 256,
+        "temperature": 1.0,
+        "head_initialization": "pretrained",
+        "baseline": "pretrained backbone with retained pretrained ranking head"
+      },
+      "config": {
+        "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+        "output_dir": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco",
+        "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "architecture": "retained_cross_encoder",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "device": "mps",
+        "epochs": 3,
+        "batch_size": 4,
+        "learning_rate": 2e-05,
+        "head_learning_rate": 0.0005,
+        "max_length": 256,
+        "seed": 42,
+        "max_steps": 1125,
+        "threads": 4
+      },
+      "code": {
+        "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+        "revision": "812a6557a559b82882b2a24a5c2f37fa9b74a163",
+        "dirty": false,
+        "source_sha256": {
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+          "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/cross_encoder.py": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481"
+        }
+      },
+      "training": {
+        "steps": 1125,
+        "examples_seen": 4500,
+        "epochs_completed": 3,
+        "stopped_by_max_steps": true,
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 1.0409781304995218
+          },
+          {
+            "epoch": 2,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 0.9332624434307217
+          },
+          {
+            "epoch": 3,
+            "complete": true,
+            "examples": 1500,
+            "mean_loss": 0.8535528036082785
+          }
+        ]
+      },
+      "runtime": {
+        "elapsed_seconds": 76.622066042386,
+        "elapsed_scope": "through both checkpoint saves, before run.json write",
+        "memory": {
+          "cpu_max_rss_bytes": 1819230208,
+          "cpu_max_rss_raw": 1819230208,
+          "cpu_max_rss_raw_unit": "bytes",
+          "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+          "mps_current_allocated_bytes": 374113792,
+          "mps_driver_allocated_bytes": 2274361344,
+          "mps_measurement": "point-in-time, not peak"
+        }
+      },
+      "weights": {
+        "changed_parameter_count": 105,
+        "backbone_changed": true,
+        "head_changed": true,
+        "representative_differences": {
+          "backbone": {
+            "name": "classifier_model.bert.embeddings.word_embeddings.weight",
+            "l2_difference": 0.8436208367347717,
+            "l2_before": 138.0359649658203
+          },
+          "head": {
+            "name": "classifier_model.classifier.weight",
+            "l2_difference": 0.3097083568572998,
+            "l2_before": 0.6397854089736938
+          }
+        }
+      },
+      "matching_historical_initial_parameter_hashes": 105,
+      "recorded_initial_parameters": 105,
+      "fresh_start_comparison_scope": "Recorded hashes only; no independent tensor loading",
+      "token_audit": {
+        "path": "model/m4-v2-20261111-01/msmarco-token-budget.json",
+        "sha256": "8a10f3fc9c6707212695a697ca7056f5279a0193bc24d5a18111e60460bbeb55"
+      }
+    }
+  },
+  "checkpoint_inventory": {
+    "path": "model/m4-v2-20261111-01/checkpoint-inventory.json",
+    "sha256": "856a300705b45ba59690e37d56acf649963578b1225a523c8e9308f9bc5e4d85"
+  },
+  "prior_preservation": {
+    "path": "model/m4-v2-20261111-01/preserved-candidates-after.json",
+    "sha256": "0001a885a1cc970da7d2b372537a6ea9b6c9e1e7abfab7d3da2eded18e58c7c9"
+  },
+  "inference_receipt": {
+    "path": "model/m4-v2-20261111-01/inference/receipt.json",
+    "sha256": "9a2761efc2c617b47139df703776a03e273f4bf1c2bc8fc1dd9b6b262355d4ee"
+  },
+  "input_receipt": {
+    "path": "model/m4-v2-20261111-01/input-receipt.json",
+    "sha256": "b42a861cb6c4df498ccb5b698aa0526a7f75fd27bbd248f43697e7b572316052"
+  },
+  "independent_evaluation": {
+    "new-v2": {
+      "comparison": {
+        "path": "evaluation/e3-m4-v1/new-v2/comparison.json",
+        "sha256": "d11612de6a44242175837241776ae911a3716cab15cd7072a42e7636ed119f12"
+      },
+      "results": {
+        "uniform": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 65,
+          "log_loss": 1.3334632332543237,
+          "brier": 0.7336805555555556
+        },
+        "lexical": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 99,
+          "log_loss": 1.296867900931744,
+          "brier": 0.7128012383025367
+        },
+        "m4-minilm-random-start": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 66,
+          "log_loss": 1.3324666070317808,
+          "brier": 0.7331399120951492
+        },
+        "m4-minilm-trained": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 132,
+          "log_loss": 0.8231153493699339,
+          "brier": 0.46011497435630294
+        },
+        "m4-msmarco-pretrained-start": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 99,
+          "log_loss": 1.0585676282592658,
+          "brier": 0.5814922817963063
+        },
+        "m4-msmarco-trained": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 141,
+          "log_loss": 0.9172583449489373,
+          "brier": 0.48139232154626016
+        },
+        "m2-v1-trained": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 107,
+          "log_loss": 1.1364271896063711,
+          "brier": 0.606944967469034
+        },
+        "m3-v1-trained": {
+          "status": "ok",
+          "rows": 240,
+          "groups": 170,
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "correct": 110,
+          "log_loss": 1.024843693611751,
+          "brier": 0.5552985587790379
+        }
+      }
+    },
+    "inherited-v1": {
+      "comparison": {
+        "path": "evaluation/e3-m4-v1/inherited-v1/comparison.json",
+        "sha256": "a962b2dccfc5822d52fb88cf59d1844e58ed4c744b2694a3eff1bde85a884dae"
+      },
+      "results": {
+        "uniform": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 17,
+          "log_loss": 1.3787648669871742,
+          "brier": 0.7461111111111111
+        },
+        "lexical": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 29,
+          "log_loss": 1.3237099779963926,
+          "brier": 0.7178050247683313
+        },
+        "m4-minilm-random-start": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 20,
+          "log_loss": 1.3782670112554563,
+          "brier": 0.7460364458197348
+        },
+        "m4-minilm-trained": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 34,
+          "log_loss": 0.9075537395730444,
+          "brier": 0.47813517225831287
+        },
+        "m4-msmarco-pretrained-start": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 30,
+          "log_loss": 1.0268780321008346,
+          "brier": 0.5522226697822465
+        },
+        "m4-msmarco-trained": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 42,
+          "log_loss": 0.7126207803955256,
+          "brier": 0.39334276603436075
+        },
+        "m2-v1-trained": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 35,
+          "log_loss": 0.8552875089589308,
+          "brier": 0.4615426781182788
+        },
+        "m3-v1-trained": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "correct": 40,
+          "log_loss": 0.7937008119799213,
+          "brier": 0.4219370710806585
+        }
+      }
+    },
+    "probes": {
+      "comparison": {
+        "path": "evaluation/e3-m4-v1/probes/comparison.json",
+        "sha256": "63fec27b164d613c5185f646d140db340c11050b8a81c83ec9c225aaf272732b"
+      },
+      "results": {
+        "uniform": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 8,
+          "log_loss": 1.0550082766877307,
+          "brier": 0.6458333333333334
+        },
+        "lexical": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 9,
+          "log_loss": 1.0470441093070695,
+          "brier": 0.6462891168734193
+        },
+        "m4-minilm-random-start": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 2,
+          "log_loss": 1.0571073602915295,
+          "brier": 0.647165360931396
+        },
+        "m4-minilm-trained": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 12,
+          "log_loss": 1.0254562319395013,
+          "brier": 0.6284659459506109
+        },
+        "m4-msmarco-pretrained-start": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 14,
+          "log_loss": 1.45378312706827,
+          "brier": 0.6518403619357581
+        },
+        "m4-msmarco-trained": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 10,
+          "log_loss": 1.8764638622941086,
+          "brier": 0.7703126318824672
+        },
+        "m2-v1-trained": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 16,
+          "log_loss": 0.7104069052752945,
+          "brier": 0.44172808373217526
+        },
+        "m3-v1-trained": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "correct": 8,
+          "log_loss": 1.360701041245408,
+          "brier": 0.6535976449726478
+        }
+      }
+    }
+  },
+  "decision": "Both improve new-v2 vs own fresh start; neither passes pre-result inherited/probe robustness gate. Preserve all candidates and default; no promotion.",
+  "limitations": [
+    "Development references, not final evaluation or wholly independent correctness.",
+    "One seed; different data mixture/update count versus v1; not a pure data-only causal ablation.",
+    "Checkpoint file inventory recorded after inference, not before each process.",
+    "CPU high-water RSS and endpoint MPS allocations are not accelerator peak measurements."
+  ],
+  "additional_spend_gbp": 0
+}
