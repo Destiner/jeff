@@ -1,0 +1,71 @@
+{
+  "schema_version": "e4-m5-preregister/1",
+  "created_at": "2026-11-11T13:05:27.665301+00:00",
+  "status": "frozen_before_any_M5_outcome_access; owner_scores_later",
+  "hypothesis": "One scalar-head LR change 5e-4 -> 2e-5; encoder/native pooler stay 2e-5.",
+  "historical_bindings": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/historical-bindings.json",
+    "sha256": "8fc812ef3779a2de60eb400687baba7c3ffc5fd5ef994471c3a36fe55e83c54e"
+  },
+  "all_required": true,
+  "criteria": {
+    "recovery": {
+      "eligible_groups": [
+        "eval.validation.sentiment.03",
+        "eval.validation.sentiment.04",
+        "eval.validation.rule_application.02"
+      ],
+      "minimum": 1,
+      "definition": "target rank 1 in BOTH original and reversed presentation; count each source group once"
+    },
+    "no_newly_wrong_groups": {
+      "maximum": 0,
+      "definition": "no previously correct historical-trained presentation becomes wrong in either order; assess all 12 groups"
+    },
+    "probe_loss": {
+      "operator": "strictly_less_than",
+      "historical_value": 1.360701041245408,
+      "definition": "arithmetic mean over all 12 source-group mean losses; each group mean includes its original and reversal losses, NOT loss of averaged probabilities"
+    },
+    "pilot_loss": {
+      "operator": "less_than_or_equal",
+      "historical_exact": 0.7937008119799213,
+      "allowance": 0.05,
+      "maximum": 0.8437008119799213,
+      "definition": "all 60 original pilot decisions, row mean natural-log loss via existing scorer"
+    }
+  },
+  "coverage_precondition": {
+    "pilot": {
+      "valid_rows": 60,
+      "source_groups": 12
+    },
+    "probes": {
+      "valid_rows": 24,
+      "complete_exact_reversal_pairs": 12,
+      "source_groups": 12
+    },
+    "required": "exact frozen reference IDs and option sets; no missing, invalid, duplicate, extra, unidentifiable predictions; compare-bound reference and prediction hashes verified; no conditional-only success",
+    "on_failure": "explicit coverage/control failure; success=false, do not score partial sets as success"
+  },
+  "control_precondition": "Owner verifies source/data/config/runtime controls and fresh retained-head starting-state identity against bound historical run before interpreting intervention. A mismatch is explicit noncomparable, never criterion success.",
+  "ranking": "descending normalized probabilities, deterministic exact ties resolved using original reference option order for original ranks; reversed presentation uses its own frozen reference order as existing scorer requires; never average ranks or probabilities to claim recovery",
+  "reporting": "show all 12 original ranks/p(target)/signed target-minus-best-rival margins/losses plus reversal and pair-loss diagnostics, even on failure; signed probability margins are not logits or top-two confidence",
+  "nonfinite_loss": "zero target mass means positive infinity, not clipped; cannot pass lower finite probe or bounded pilot loss",
+  "limitations": [
+    "Probe labels are all teacher labels, teacher identity unknown; agreement is not independently verified correctness.",
+    "Pilot has 40 teacher and 20 rule-verified labels; no-result category diagnostic is descriptive, not an extra selection threshold.",
+    "M2 is descriptive context only, not a causal comparator.",
+    "Single-seed historical comparison remains vulnerable to MPS/stochastic variation; no significance, calibration, final-data or causal proof claim.",
+    "No thresholds/group exclusions may change in response to M5 outcomes."
+  ],
+  "receipt_method": {
+    "script": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/freeze.py",
+      "sha256": "145b459f849851dfc63bc34459fcfc56eb41d74fb68213cf6ccd6223d5eaf9e4"
+    },
+    "CPU_only": true,
+    "M5_outcomes_read": false,
+    "spend_GBP": 0
+  }
+}
