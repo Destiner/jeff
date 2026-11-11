@@ -1,4 +1,8 @@
-"""One experimental M6 recipe; owner schedules every command in a fresh process.
+"""Fixed M6 / explicitly selected M7 lower-LR recipe; owner schedules fresh processes.
+
+M6 is the unchanged default CLI. M7 requires --experiment m7 on audit/train;
+capacity is prohibited for M7. See M7.md beside this module for the exact owner
+commands, historical capacity reuse and observation-only fields.
 
 python -m jeff.training.qwen_decision audit --output-dir /absolute/NEW-audit
 python -m jeff.training.qwen_decision capacity --audit-dir /absolute/AUDIT \
@@ -39,6 +43,7 @@ from jeff.training import qwen_data as data
 
 require = p3.require
 AUTHORIZATION = "M6-1500-375-seed42"
+M7_AUTHORIZATION = "M7-ONE-original-P3-LR2e-6-1500-375-seed42"
 
 
 def rss_bytes():
@@ -47,10 +52,11 @@ def rss_bytes():
 
 
 class Monitor:
-    def __init__(self, directory, receipt, start, seconds):
+    def __init__(self, directory, receipt, start, seconds, experiment="m6"):
         self.receipt, self.start, self.seconds = receipt, start, seconds
         self.torch = None
-        self.cfg = data.recipe()
+        self.experiment = experiment
+        self.cfg = data.recipe(experiment)
         self.events = (directory / "events.jsonl").open("x")
 
     def sample(self, stage, duration=None):
@@ -213,6 +219,8 @@ def fit(torch, model, schedule, path, monitor, label):
                     "target_position": row["target_position"], "option_ids": row["option_ids"],
                     "family": row["family"], "source": row["provenance"]["source"],
                     "group_id": row["group_id"]}
+                if monitor.experiment == "m7":
+                    result.update(fit_observations(torch, logits, row))
                 stream.write(data.json_line(result))
                 stream.flush()
                 add(stats["overall"], ce, predicted, row["target_position"])
@@ -233,6 +241,29 @@ def fit(torch, model, schedule, path, monitor, label):
             "path": str(path), **stats}
 
 
+def fit_observations(torch, logits, row):
+    # Called inside the existing no_grad fit; no extra forward, scan or objective.
+    probabilities = torch.softmax(logits, dim=0)
+    require(bool(torch.isfinite(probabilities).all().item()) and
+            bool(((probabilities >= 0) & (probabilities <= 1)).all().item()) and
+            abs(float(probabilities.sum().item()) - 1.0) <= 1e-6,
+            "invalid conditional allowed-answer probabilities")
+    raw = logits.tolist()
+    probs = probabilities.tolist()
+    top_probability, top_logit = max(probs), max(raw)
+    top_positions = [i for i, p in enumerate(probs) if p == top_probability]
+    logit_positions = [i for i, value in enumerate(raw) if value == top_logit]
+    ordered = sorted(probs, reverse=True)
+    return {"allowed_answer_ids": row["answer_ids"], "allowed_logits": raw,
+        "conditional_probabilities": probs, "option_count": len(probs),
+        "target_id": row["target_id"], "probability_top_positions": top_positions,
+        "probability_top_option_ids": [row["option_ids"][i] for i in top_positions],
+        "top_probability": top_probability, "top_logit": top_logit,
+        "logit_top_positions": logit_positions, "probability_top_tie_count": len(top_positions),
+        "logit_top_tie_count": len(logit_positions),
+        "top_two_probability_margin": ordered[0] - ordered[1]}
+
+
 def fingerprints(model):
     candidates = [(name, p) for name, p in model.named_parameters() if 2 <= p.numel() <= 8192]
     require(candidates, "no bounded parameter fingerprint candidates")
@@ -242,6 +273,7 @@ def fingerprints(model):
 
 
 def capacity(args, receipt, monitor, schedule):
+    require(monitor.experiment == "m6", "M7 capacity prohibited; no new learning probe")
     cfg = receipt["identity"]["evidence"]["recipe"]
     longest = sorted(schedule, key=lambda r: (-r["input_tokens"], r["index"]))[:4]
     receipt["capacity_rows"] = [{"id": r["id"], "index": r["index"], "input_tokens": r["input_tokens"]}
@@ -313,22 +345,38 @@ def capacity(args, receipt, monitor, schedule):
     monitor.guard("capacity_complete")
 
 
+@contextmanager
+def gradient_stream(directory, experiment):
+    if experiment == "m7":
+        with (directory / "gradient-norms.jsonl").open("x") as stream:
+            yield stream
+    else:
+        yield None
+
+
 def train(args, receipt, monitor, schedule, directory):
-    require(args.authorize_run == AUTHORIZATION, "explicit single-run authorization required")
+    authorization = AUTHORIZATION if args.experiment == "m6" else M7_AUTHORIZATION
+    require(args.authorize_run == authorization, "explicit single-run authorization required")
     require(len(args.comparison_freeze_sha256) == 64 and
             all(c in "0123456789abcdef" for c in args.comparison_freeze_sha256),
             "owner's pre-outcome comparison freeze SHA256 required")
     receipt["comparison_freeze_sha256"] = args.comparison_freeze_sha256
+    if args.experiment == "m7":
+        receipt["authorization"] = M7_AUTHORIZATION
+        receipt["treatment"] = "original P3; only AdamW LR 2e-5 -> 2e-6; no correctness repair"
     capacity_path = data.safe_path(args.capacity_receipt)
-    capacity_receipt = data.read_json(capacity_path)
-    require(capacity_receipt.get("schema_version") == "m6.capacity.v1" and
-            capacity_receipt.get("status") == "complete" and
-            capacity_receipt.get("identity") == receipt["identity"] and
-            capacity_receipt.get("presentations") == 4 and
-            capacity_receipt.get("optimizer_steps") == 1 and
-            capacity_receipt.get("extra_backwards") == 4 and
-            capacity_receipt.get("projection", {}).get("within_cap") is True,
-            "successful matching capacity receipt required; no bypass")
+    if args.experiment == "m7":
+        receipt["capacity_reuse"] = data.reuse_m6_capacity(capacity_path, receipt["identity"], schedule)
+    else:
+        capacity_receipt = data.read_json(capacity_path)
+        require(capacity_receipt.get("schema_version") == "m6.capacity.v1" and
+                capacity_receipt.get("status") == "complete" and
+                capacity_receipt.get("identity") == receipt["identity"] and
+                capacity_receipt.get("presentations") == 4 and
+                capacity_receipt.get("optimizer_steps") == 1 and
+                capacity_receipt.get("extra_backwards") == 4 and
+                capacity_receipt.get("projection", {}).get("within_cap") is True,
+                "successful matching capacity receipt required; no bypass")
     receipt["capacity_receipt"] = {"path": str(capacity_path), "sha256": p3.digest(capacity_path)}
     torch, model, parameters = load_model(monitor, receipt)
     receipt["initial_parameter_fingerprints"] = fingerprints(model)
@@ -338,7 +386,7 @@ def train(args, receipt, monitor, schedule, directory):
     model.train()
     optimizer.zero_grad(set_to_none=True)
     online_sum = 0.0
-    with (directory / "online.jsonl").open("x") as stream:
+    with (directory / "online.jsonl").open("x") as stream, gradient_stream(directory, args.experiment) as norms:
         for index, row in enumerate(schedule):
             with monitor.phase("train_forward"):
                 loss, logits = decision_loss(torch, model, row)
@@ -355,6 +403,10 @@ def train(args, receipt, monitor, schedule, directory):
             if (index + 1) % 4 == 0:
                 with monitor.phase("train_clip"):
                     norm = clip(torch, parameters)
+                if norms is not None:
+                    norms.write(data.json_line({"update": index // 4 + 1,
+                        "presentations": receipt["presentations"], "preclip_norm": norm}))
+                    norms.flush()
                 with monitor.phase("train_optimizer_step"):
                     optimizer.step()
                     receipt["optimizer_steps"] += 1
@@ -369,6 +421,11 @@ def train(args, receipt, monitor, schedule, directory):
             "training coverage/update count mismatch")
     with monitor.phase("final_optimizer_state"):
         receipt["adam_final_state"] = moment_evidence(torch, optimizer, parameters, expected_step=375)
+    if args.experiment == "m7":
+        norms_path = directory / "gradient-norms.jsonl"
+        norms_path.chmod(0o444)
+        receipt["gradient_norms"] = {"path": str(norms_path), "sha256": p3.digest(norms_path),
+            "values": receipt["optimizer_steps"], "meaning": "already-computed preclip norm, once per update"}
     receipt["online_mean_ce"] = online_sum / 1500
     receipt["online_rows_sha256"] = p3.digest(directory / "online.jsonl")
     receipt["final_parameter_fingerprints"] = fingerprints(model)
@@ -410,8 +467,10 @@ def train(args, receipt, monitor, schedule, directory):
 def checkpoint_manifest(directory, receipt):
     identity = receipt["identity"]
     proof = identity["evidence"]
+    producer = directory.name if receipt["schema_version"] == "m6.train.v1" else (
+        directory.parent.name + "/" + directory.name)
     return {"schema_version": "jeff.qwen-trained-checkpoint.v1", "status": "complete", "kind": "trained",
-        "checkpoint_id": directory.name + "-checkpoint", "run_id": directory.name,
+        "checkpoint_id": producer + "-checkpoint", "run_id": producer,
         "base_model_id": p3.MODEL, "base_revision": p3.REVISION,
         "training_code_revision": proof["source"]["revision"],
         "training_data_manifest_sha256": data.MANIFEST_HASH,
@@ -431,17 +490,22 @@ def main():
     train_parser = commands.add_parser("train")
     for cmd in (audit_parser, capacity_parser, train_parser):
         cmd.add_argument("--output-dir", type=Path, required=True)
+        cmd.add_argument("--experiment", choices=("m6", "m7"), default="m6")
     for cmd in (capacity_parser, train_parser):
         cmd.add_argument("--audit-dir", type=Path, required=True)
     train_parser.add_argument("--capacity-receipt", type=Path, required=True)
     train_parser.add_argument("--authorize-run", required=True)
     train_parser.add_argument("--comparison-freeze-sha256", required=True)
     args = parser.parse_args()
+    require(not (args.experiment == "m7" and args.command == "capacity"),
+            "M7 capacity command prohibited; reuse pinned historical M6 evidence")
+    if args.experiment == "m7" and args.command == "train":
+        require(args.authorize_run == M7_AUTHORIZATION, "explicit M7 single-run authorization required")
     start = time.monotonic()
     directory = args.output_dir.expanduser().resolve()
     require(not any("final" in part.lower() for part in directory.parts), "final output path forbidden")
     directory.mkdir(parents=True, exist_ok=False)
-    receipt = {"schema_version": f"m6.{args.command}.v1", "command": args.command,
+    receipt = {"schema_version": f"{args.experiment}.{args.command}.v1", "command": args.command,
         "status": "failed", "output_dir": str(directory), "memory_samples": [], "phase_seconds": {},
         "presentations": 0, "optimizer_steps": 0, "extra_backwards": 0,
         "memory_qualification": "observed MPS samples, NOT peaks; CPU lifetime RSS; never sum CPU and MPS",
@@ -457,19 +521,19 @@ def main():
 
     signal.signal(signal.SIGTERM, terminated)
     try:
-        cfg = data.recipe()
+        cfg = data.recipe(args.experiment)
         seconds = cfg["maximum_capacity_seconds"] if args.command == "capacity" else cfg["maximum_run_seconds"]
-        monitor = Monitor(directory, receipt, start, seconds)
+        monitor = Monitor(directory, receipt, start, seconds, args.experiment)
         with monitor.phase("revalidation"):
             if args.command == "audit":
-                proof, schedule = data.evidence(monitor.guard)
+                proof, schedule = data.evidence(monitor.guard, args.experiment)
                 text = data.schedule_text(schedule)
                 with (directory / "schedule.jsonl").open("x") as stream:
                     stream.write(text)
                 (directory / "schedule.jsonl").chmod(0o444)
                 receipt.update(evidence=proof, schedule_sha256=p3.text_hash(text))
             else:
-                identity, schedule = data.revalidate(args.audit_dir.resolve(), monitor.guard)
+                identity, schedule = data.revalidate(args.audit_dir.resolve(), monitor.guard, args.experiment)
                 receipt["identity"] = identity
         if args.command == "capacity":
             capacity(args, receipt, monitor, schedule)

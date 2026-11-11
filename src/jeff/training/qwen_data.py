@@ -39,11 +39,18 @@ def json_line(value):
     return json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False) + "\n"
 
 
-def recipe():
-    cfg = read_json(RECIPE)
+def recipe_path(experiment="m6"):
+    require(experiment in {"m6", "m7"}, "unsupported experiment")
+    return RECIPE if experiment == "m6" else ROOT / "configs/model/m7-qwen-low-lr.json"
+
+
+def recipe(experiment="m6"):
+    cfg = read_json(recipe_path(experiment))
+    fixed = FIXED if experiment == "m6" else {
+        **FIXED, "schema_version": "m7.recipe.v1", "learning_rate": 2e-6}
     require(set(cfg) == set(FIXED) | set(GUARDS), "unexpected recipe keys")
-    require(all(type(cfg[k]) is type(v) and cfg[k] == v for k, v in FIXED.items()),
-            "only the fixed M6 recipe is supported")
+    require(all(type(cfg[k]) is type(v) and cfg[k] == v for k, v in fixed.items()),
+            "only the fixed experiment recipe is supported")
     for key, default in GUARDS.items():
         value = cfg[key]
         require(type(value) is int and value > 0, "invalid memory guard")
@@ -151,11 +158,11 @@ def train_rows(guard=None):
     return rows, metadata
 
 
-def evidence(guard=None):
+def evidence(guard=None, experiment="m6"):
     from transformers import AutoTokenizer
 
     source = source_identity()
-    cfg = recipe()
+    cfg = recipe(experiment)
     env = runtime_environment()
     require(p3.digest(P3_CONFIG) == P3_HASH, "P3 scoring config changed")
     scoring = p3.configuration(P3_CONFIG)
@@ -186,8 +193,8 @@ def evidence(guard=None):
             "provenance": row["provenance"], "prompt_tokens": prompt,
             "input_tokens": len(prompt), "answer_ids": answers,
             "prompt_token_sha256": p3.text_hash(json.dumps(prompt))})
-    proof = {"source": source, "recipe_path": str(RECIPE), "recipe": cfg,
-        "recipe_sha256": p3.digest(RECIPE), "environment": env, "data": data,
+    proof = {"source": source, "recipe_path": str(recipe_path(experiment)), "recipe": cfg,
+        "recipe_sha256": p3.digest(recipe_path(experiment)), "environment": env, "data": data,
         "p3_scoring_config_sha256": P3_HASH, "p3_scoring_config": scoring,
         "model_dir": str(model_dir), "model_assets": assets,
         "base_model_id": p3.MODEL, "base_revision": p3.REVISION,
@@ -196,6 +203,8 @@ def evidence(guard=None):
         "lengths": p3.distribution([r["input_tokens"] for r in schedule]),
         "boundary_checks": 1500, "schedule_algorithm": "Random(42): shuffle rows then options once per row"}
     require(source_identity() == source, "source changed during preflight")
+    if experiment == "m7":
+        require_m6_schedule(schedule_text(schedule))
     return proof, schedule
 
 
@@ -203,11 +212,105 @@ def schedule_text(schedule):
     return "".join(json_line(row) for row in schedule)
 
 
-def revalidate(audit_dir, guard=None):
+M6_RUN = ARTIFACTS / "model/m6-qwen-20261111-01"
+M6_SCHEDULE_SHA = "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8"
+M6_AUDIT_SHA = "16a5dd978f47e22ec4e0c0b71f99fd6d6ed4e9cb0698e3d2fe25b6ca274cb1e5"
+M6_CAPACITY_SHA = "995602986e42132057df12fd823b92e0fec8492daace4e958f8ababfc11d667a"
+M6_PROCESS_SHA = "5fe0640793cb7e379ddf211339bf813578c88cd95f7f0c14348328d0129efa2a"
+M6_EVENTS_SHA = "69a50f63bca4a7d9e711b0713af752fe1d801b37f1d74a93a09b680985680c12"
+
+
+def pinned_json(path, digest):
+    raw = safe_path(path).read_bytes()
+    require(sha256(raw) == digest, "historical M6 evidence hash mismatch")
+    return strict_json(raw)
+
+
+def require_m6_schedule(text):
+    raw = safe_path(M6_RUN / "train-audit/schedule.jsonl").read_bytes()
+    require(sha256(raw) == M6_SCHEDULE_SHA and text.encode("utf-8") == raw,
+            "M7 must replay the actual byte-identical M6 TRAIN schedule")
+
+
+def reuse_m6_capacity(capacity_path, identity, schedule):
+    # Historical source identity is evidence, never substituted for the new clean source.
+    require(capacity_path == (M6_RUN / "capacity/receipt.json").resolve(),
+            "M7 requires the actual historical M6 capacity receipt")
+    old = pinned_json(capacity_path, M6_CAPACITY_SHA)
+    audit = pinned_json(M6_RUN / "train-audit/audit.json", M6_AUDIT_SHA)
+    process = pinned_json(M6_RUN / "capacity-process.json", M6_PROCESS_SHA)
+    events_raw = safe_path(M6_RUN / "capacity/events.jsonl").read_bytes()
+    require(sha256(events_raw) == M6_EVENTS_SHA, "M6 capacity process events changed")
+    events = [strict_json(line) for line in events_raw.splitlines()]
+    require(old["schema_version"] == "m6.capacity.v1" and old["status"] == "complete" and
+            old["command"] == "capacity" and old["presentations"] == 4 and
+            old["optimizer_steps"] == 1 and old["extra_backwards"] == 4 and
+            old["external_deadline_required"] is True, "incomplete M6 capacity evidence")
+    require(process["returncode"] == 0 and process["timeout"] is False and
+            process["automatic_retry"] is False and process["maximum_seconds"] == 600 and
+            0 < process["process_wall_seconds"] < 600 and
+            process["command"] == ["uv", "run", "--locked", "--extra", "model", "python", "-B",
+                "-m", "jeff.training.qwen_decision", "capacity", "--audit-dir",
+                str(M6_RUN / "train-audit"), "--output-dir", str(M6_RUN / "capacity")],
+            "successful matching M6 supervised process required")
+    require(any(e.get("sample", {}).get("stage") == "process_complete" and
+                e.get("presentations") == 4 and e.get("optimizer_steps") == 1 and
+                e.get("extra_backwards") == 4 for e in events), "M6 process completion missing")
+    require(audit["schema_version"] == "m6.audit.v1" and audit["status"] == "complete" and
+            old["identity"] == {"audit_sha256": M6_AUDIT_SHA,
+                "schedule_sha256": M6_SCHEDULE_SHA, "evidence": audit["evidence"]} and
+            audit["schedule_sha256"] == identity["schedule_sha256"] == M6_SCHEDULE_SHA,
+            "M6 audit/capacity identity mismatch")
+    historical, current = audit["evidence"], identity["evidence"]
+    exclusions = {"source", "recipe_path", "recipe_sha256", "recipe"}
+    require({k: v for k, v in historical.items() if k not in exclusions} ==
+            {k: v for k, v in current.items() if k not in exclusions},
+            "M6 model/tokenizer/template/data/length/runtime controls changed")
+    require(old["fresh_start"] == {"seed": 42, "base_model_id": current["base_model_id"],
+            "base_revision": current["base_revision"], "model_dir": current["model_dir"],
+            "base_weight_sha256": current["model_assets"]["model.safetensors"],
+            "optimizer_state": "new empty AdamW; capacity state never reused",
+            "rng": "fresh process; random.seed/torch.manual_seed/torch.mps.manual_seed(42)"},
+            "historical capacity must start from original P3, fresh optimizer/RNG")
+    parameters = old["parameters"]
+    require(parameters["dtype"] == "float32" and parameters["total"] == parameters["trainable"] and
+            old["adam_allocation"] == {"state_tensors": parameters["unique_tensors"],
+                "moment_bytes": parameters["total"] * 8, "step": 1},
+            "historical full-parameter FP32 AdamW allocation required")
+    before, after = historical["recipe"], current["recipe"]
+    require(before["schema_version"] == "m6.recipe.v1" and before["learning_rate"] == 2e-5 and
+            after["schema_version"] == "m7.recipe.v1" and after["learning_rate"] == 2e-6 and
+            {k: v for k, v in before.items() if k not in {"schema_version", "learning_rate"}} ==
+            {k: v for k, v in after.items() if k not in {"schema_version", "learning_rate"}},
+            "only LR and recipe schema may differ from actual M6 recipe (including guards/foreach)")
+    require_m6_schedule(schedule_text(schedule))
+    longest = sorted(schedule, key=lambda r: (-r["input_tokens"], r["index"]))[:4]
+    require(old["capacity_rows"] == [{"id": r["id"], "index": r["index"],
+            "input_tokens": r["input_tokens"]} for r in longest], "M6 capacity shape mismatch")
+    projection = old["projection"]
+    require(projection["within_cap"] is True and
+            0 < projection["estimated_total_seconds"] < after["maximum_run_seconds"] == 2700,
+            "M6 capacity projection invalid")
+    samples = old["memory_samples"]
+    require(samples and any("mps_recommended_headroom_bytes" in s for s in samples),
+            "M6 observed working-set headroom required")
+    for s in samples:
+        require(s["elapsed_seconds"] < 600 and
+                s["cpu_lifetime_rss_bytes"] <= after["max_cpu_rss_bytes"] and
+                s.get("mps_driver_bytes", 0) <= after["max_mps_driver_bytes"] and
+                s.get("mps_recommended_headroom_bytes", after["min_recommended_headroom_bytes"]) >=
+                    after["min_recommended_headroom_bytes"], "historical capacity guard violation")
+    return {"path": str(capacity_path), "sha256": M6_CAPACITY_SHA,
+        "audit_sha256": M6_AUDIT_SHA, "process_sha256": M6_PROCESS_SHA,
+        "events_sha256": M6_EVENTS_SHA, "historical_identity": old["identity"],
+        "projection": projection, "basis": "same controls/shapes; only LR 2e-5 -> 2e-6; no new probe"}
+
+
+def revalidate(audit_dir, guard=None, experiment="m6"):
     audit = read_json(audit_dir / "audit.json")
-    require(audit["schema_version"] == "m6.audit.v1" and audit["status"] == "complete",
-            "complete M6 audit required")
-    proof, schedule = evidence(guard)
+    require(audit["schema_version"] == f"{experiment}.audit.v1" and audit["status"] == "complete",
+            "complete matching experiment audit required")
+    proof, schedule = evidence(guard, experiment)
     require(proof == audit["evidence"], "source/config/data/assets/environment changed since audit")
     text = schedule_text(schedule)
     require(p3.text_hash(text) == audit["schedule_sha256"] and
