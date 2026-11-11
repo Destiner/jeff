@@ -1,0 +1,440 @@
+{
+  "schema_version": "m7.docs-results.v1",
+  "status": "training_complete_heldout_pending",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01",
+  "plan": "m7-qwen-low-lr-plan.md",
+  "source_revision": "574774d631d707de9398c80dc5b936d9563e386c",
+  "treatment": "original P3; only AdamW LR 2e-5 -> 2e-6; no correctness repair",
+  "full_training_attempts": 1,
+  "presentations": 1500,
+  "optimizer_steps": 375,
+  "extra_backwards": 0,
+  "fresh_start": {
+    "seed": 42,
+    "base_model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "base_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "model_dir": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/model",
+    "base_weight_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "optimizer_state": "new empty AdamW; capacity state never reused",
+    "rng": "fresh process; random.seed/torch.manual_seed/torch.mps.manual_seed(42)"
+  },
+  "schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+  "new_start_forwards": 0,
+  "new_capacity_probes": 0,
+  "fits": {
+    "before": {
+      "mode": "eval; torch.no_grad (not inference_mode)",
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 2036.5854429346423,
+        "agreements": 805,
+        "predicted_position_counts": {
+          "3": 278,
+          "1": 384,
+          "0": 417,
+          "2": 411,
+          "5": 3,
+          "4": 7
+        },
+        "target_position_counts": {
+          "0": 431,
+          "3": 266,
+          "1": 423,
+          "2": 368,
+          "4": 11,
+          "5": 1
+        },
+        "mean_ce": 1.357723628623095,
+        "agreement": 0.5366666666666666
+      },
+      "by_family": {
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 828.5630577247357,
+          "agreements": 184,
+          "predicted_position_counts": {
+            "3": 110,
+            "0": 168,
+            "2": 137,
+            "1": 85
+          },
+          "target_position_counts": {
+            "0": 154,
+            "2": 119,
+            "1": 155,
+            "3": 72
+          },
+          "mean_ce": 1.6571261154494714,
+          "agreement": 0.368
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 198.07646252535642,
+          "agreements": 442,
+          "predicted_position_counts": {
+            "3": 79,
+            "1": 141,
+            "2": 156,
+            "0": 114,
+            "5": 3,
+            "4": 7
+          },
+          "target_position_counts": {
+            "3": 74,
+            "1": 140,
+            "0": 140,
+            "2": 134,
+            "4": 11,
+            "5": 1
+          },
+          "mean_ce": 0.3961529250507128,
+          "agreement": 0.884
+        },
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 1009.9459226845502,
+          "agreements": 179,
+          "predicted_position_counts": {
+            "1": 158,
+            "0": 135,
+            "2": 118,
+            "3": 89
+          },
+          "target_position_counts": {
+            "3": 120,
+            "1": 128,
+            "2": 115,
+            "0": 137
+          },
+          "mean_ce": 2.0198918453691004,
+          "agreement": 0.358
+        }
+      }
+    },
+    "after": {
+      "mode": "eval; torch.no_grad (not inference_mode)",
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 795.4484813959436,
+        "agreements": 1130,
+        "predicted_position_counts": {
+          "0": 768,
+          "3": 181,
+          "1": 288,
+          "2": 252,
+          "4": 10,
+          "5": 1
+        },
+        "target_position_counts": {
+          "0": 431,
+          "3": 266,
+          "1": 423,
+          "2": 368,
+          "4": 11,
+          "5": 1
+        },
+        "mean_ce": 0.5302989875972958,
+        "agreement": 0.7533333333333333
+      },
+      "by_family": {
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 631.6499568857253,
+          "agreements": 176,
+          "predicted_position_counts": {
+            "0": 472,
+            "3": 6,
+            "1": 18,
+            "2": 4
+          },
+          "target_position_counts": {
+            "0": 154,
+            "2": 119,
+            "1": 155,
+            "3": 72
+          },
+          "mean_ce": 1.2632999137714505,
+          "agreement": 0.352
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 14.840668016179052,
+          "agreements": 496,
+          "predicted_position_counts": {
+            "3": 74,
+            "1": 140,
+            "0": 141,
+            "2": 134,
+            "4": 10,
+            "5": 1
+          },
+          "target_position_counts": {
+            "3": 74,
+            "1": 140,
+            "0": 140,
+            "2": 134,
+            "4": 11,
+            "5": 1
+          },
+          "mean_ce": 0.029681336032358105,
+          "agreement": 0.992
+        },
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 148.95785649403933,
+          "agreements": 458,
+          "predicted_position_counts": {
+            "3": 101,
+            "0": 155,
+            "1": 130,
+            "2": 114
+          },
+          "target_position_counts": {
+            "3": 120,
+            "1": 128,
+            "2": 115,
+            "0": 137
+          },
+          "mean_ce": 0.2979157129880787,
+          "agreement": 0.916
+        }
+      }
+    }
+  },
+  "vector_checks": {
+    "before": {
+      "rows": 1500,
+      "logit_max_ties": 0,
+      "probability_max_ties": 0,
+      "method": "CPU JSON check of actual finite vectors, option counts and exact top sets; no model loaded"
+    },
+    "after": {
+      "rows": 1500,
+      "logit_max_ties": 0,
+      "probability_max_ties": 0,
+      "method": "CPU JSON check of actual finite vectors, option counts and exact top sets; no model loaded"
+    }
+  },
+  "gradient_norms": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training/gradient-norms.jsonl",
+    "sha256": "f88584d96ad8179377230c6f2fb5c83f0a389688c4a81f4fd9e316b56c7c542d",
+    "values": 375,
+    "meaning": "already-computed preclip norm, once per update"
+  },
+  "online_mean_ce": 0.8775002024584446,
+  "process": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--extra",
+      "model",
+      "python",
+      "-B",
+      "-m",
+      "jeff.training.qwen_decision",
+      "train",
+      "--experiment",
+      "m7",
+      "--audit-dir",
+      "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/train-audit",
+      "--capacity-receipt",
+      "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/capacity/receipt.json",
+      "--authorize-run",
+      "M7-ONE-original-P3-LR2e-6-1500-375-seed42",
+      "--comparison-freeze-sha256",
+      "74fe6b26adcf1626c0f65f02548405277d4a4a9b2b05971742cec9ad900663f5",
+      "--output-dir",
+      "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/training"
+    ],
+    "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+    "maximum_seconds": 2700,
+    "started_at": "2026-11-11T16:58:51.463597+00:00",
+    "env_keys": [
+      "HF_HOME",
+      "HF_HUB_OFFLINE",
+      "HOME",
+      "JEFF_ARTIFACTS_DIR",
+      "LANG",
+      "PATH",
+      "PYTHONDONTWRITEBYTECODE",
+      "TOKENIZERS_PARALLELISM",
+      "TRANSFORMERS_OFFLINE"
+    ],
+    "initially_empty_home": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/train-home",
+    "automatic_retry": false,
+    "wrapper_pid": 13493,
+    "child_pid": 13494,
+    "timeout": false,
+    "returncode": 0,
+    "process_wall_seconds": 738.5207179998979,
+    "completed_at": "2026-11-11T17:11:09.986592+00:00"
+  },
+  "receipt_process_runtime_seconds": 737.4085158747621,
+  "phase_calls": {
+    "revalidation": {
+      "calls": 1,
+      "total_seconds": 2.6558915418572724,
+      "maximum_call_seconds": 2.6558915418572724
+    },
+    "load": {
+      "calls": 1,
+      "total_seconds": 0.6160627920180559,
+      "maximum_call_seconds": 0.6160627920180559
+    },
+    "fit_before:forward": {
+      "calls": 1500,
+      "total_seconds": 83.95838211243972,
+      "maximum_call_seconds": 0.2442862498573959
+    },
+    "optimizer_create": {
+      "calls": 1,
+      "total_seconds": 0.0002177921123802662,
+      "maximum_call_seconds": 0.0002177921123802662
+    },
+    "train_forward": {
+      "calls": 1500,
+      "total_seconds": 108.95870332280174,
+      "maximum_call_seconds": 0.29131545778363943
+    },
+    "train_backward": {
+      "calls": 1500,
+      "total_seconds": 278.96586805349216,
+      "maximum_call_seconds": 0.3489758330397308
+    },
+    "train_clip": {
+      "calls": 375,
+      "total_seconds": 19.870193999726325,
+      "maximum_call_seconds": 0.17572324955835938
+    },
+    "train_optimizer_step": {
+      "calls": 375,
+      "total_seconds": 120.37870940146968,
+      "maximum_call_seconds": 0.8512923750095069
+    },
+    "final_optimizer_state": {
+      "calls": 1,
+      "total_seconds": 0.0006304997950792313,
+      "maximum_call_seconds": 0.0006304997950792313
+    },
+    "fit_after:forward": {
+      "calls": 1500,
+      "total_seconds": 114.58299404056743,
+      "maximum_call_seconds": 0.23703812528401613
+    },
+    "save_checkpoint": {
+      "calls": 1,
+      "total_seconds": 2.713119083084166,
+      "maximum_call_seconds": 2.713119083084166
+    }
+  },
+  "memory": {
+    "cpu_lifetime_rss_bytes": 3380641792,
+    "mps_current_bytes": 8740772096,
+    "mps_driver_bytes": 11861164032,
+    "minimum_sampled_recommended_headroom_bytes": 7208501248,
+    "sample_count": 24768,
+    "qualification": "observed MPS samples, NOT peaks; CPU lifetime RSS; never sum CPU and MPS",
+    "cpu_rss_and_mps_driver_separate_guard_bytes": 17179869184,
+    "minimum_headroom_guard_bytes": 2147483648,
+    "guard_scope": "Cooperative before/after phase calls and row completion; not continuous monitoring; maximum call durations are observations, not separate call deadlines."
+  },
+  "evidence": {
+    "full-run-freeze.json": {
+      "sha256": "6dbda21d2973331b90e7aab42d02737f0a32af3cf150141dc57a8802b05c942c",
+      "bytes": 3773
+    },
+    "control-reuse.json": {
+      "sha256": "74fe6b26adcf1626c0f65f02548405277d4a4a9b2b05971742cec9ad900663f5",
+      "bytes": 5206
+    },
+    "capacity-reuse.json": {
+      "sha256": "01702d3a05521d7b499ce9f54992e5414c220bd84a16a95b9c9146bc7cc3f13f",
+      "bytes": 289573
+    },
+    "train-process.json": {
+      "sha256": "26cef7e812511a087f16883a3626c749689e3b03e648a072d4be4026c2b517c3",
+      "bytes": 1368
+    },
+    "train-invocation.json": {
+      "sha256": "c62faa998a802480072202c54879290cf3d154856fe0fa568172b64ff6f4382a",
+      "bytes": 1184
+    },
+    "training/receipt.json": {
+      "sha256": "c78ad96769b76c2cabb7c2b0ec87dde13bca78e2f7e2256a51b6ca545b54e156",
+      "bytes": 9783326
+    },
+    "training/checkpoint-manifest.json": {
+      "sha256": "70163c8567781bb7151b11c125999ea4bc6ec1ff52af52c52a205f9f4dbdd022",
+      "bytes": 2649
+    },
+    "training/fit-before.jsonl": {
+      "sha256": "4940b17902562c8da5cf34e80eaa3618fa5ab52c20ad90715fd6dc6d3c9d12d5",
+      "bytes": 1452686
+    },
+    "training/fit-after.jsonl": {
+      "sha256": "0dbaf4f403b1128bf3c75b8a174a0ac9d2b93220cd43a58a1bcae0da1d1b620a",
+      "bytes": 1457291
+    },
+    "training/gradient-norms.jsonl": {
+      "sha256": "f88584d96ad8179377230c6f2fb5c83f0a389688c4a81f4fd9e316b56c7c542d",
+      "bytes": 27473
+    }
+  },
+  "checkpoint_files_producer_record_only": {
+    "LICENSE": {
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    "README.md": {
+      "sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+      "bytes": 4917
+    },
+    "config.json": {
+      "sha256": "e8d5e8d6aaf17311a89b78e3914fca868cc77312513a276b1701e22fb73d62a3",
+      "bytes": 1227
+    },
+    "generation_config.json": {
+      "sha256": "da7d43d773bb1c2606bbd062d9af2e8aa2b73de104b1f8f0a93e31bf3b1426a3",
+      "bytes": 242
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "model.safetensors": {
+      "sha256": "cf570cbe4ad2f847509ad6cdedb96085e3f4740c04c37889b9051dc08adc54c2",
+      "bytes": 1976163472
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    }
+  },
+  "pending": {
+    "P5": "one offline fresh-process 624-presentation inference pass",
+    "E7": "independent frozen held-out comparison against original P3, failed M6 and retained encoders"
+  },
+  "qualifications": [
+    "TRAIN fitting is not end-to-end learning or held-out transfer.",
+    "M6 historical TRAIN vectors remain missing; source/path root cause unknown.",
+    "No weight/tokenizer reads or weight rehash in docs review.",
+    "Initial failure-receipt.json is superseded by complete receipt, not another attempt.",
+    "All source-unit detail remains in receipt."
+  ],
+  "promotion": false,
+  "retry": false,
+  "default_change": false,
+  "additional_spend_gbp": {
+    "actual": 0,
+    "pending": 0
+  }
+}
