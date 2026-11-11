@@ -6,7 +6,7 @@ Four worker sessions plus the main session as integrator. Start with 2–4 subag
 
 Each worker lead creates its own branch/worktree from committed main before editing. The integrator does not provision worker workspaces. Start by reading the root instructions, then move to your isolated checkout; do not implement in the root checkout. If the named branch or path already exists, inspect it and coordinate rather than overwriting it.
 
-| Session | Branch / worker-created workspace | Owns | First handoff |
+| Session | Branch / worker-created workspace | Owns | First task completion |
 | --- | --- | --- | --- |
 | Integrator | `main`, repository root | Root configuration, packaging, contracts, integration, resource allocations | Minimal Python/uv package setup; dependency requests resolved |
 | Model | `worker/model`, `.worktrees/model` | `src/jeff/model/`, `src/jeff/training/`, `configs/model/`, `docs/model/` | Small actual training run, checkpoint, fresh-process predictions |
@@ -51,12 +51,52 @@ All sessions use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. This 
 
 - Data writes under `data/`; model under `model/`; evaluation under `evaluation/`.
 - Final evaluation stays under `evaluation/final/`. Training workers must not inspect or consume it. This is procedural isolation, not an OS security boundary.
-- Each worker publishes append-only notes at `handoffs/<team>/<handoff-id>.md` under the artifact root so the integrator can see progress without merging code.
+- Each worker publishes append-only notes at `handoffs/<team>/<handoff-id>.md` under the artifact root. Put intermediate outputs and nonblocking requests here, not in chat reports. Other workers may inspect these public notes for inputs when needed; final-evaluation content remains private to Evaluation.
 - Include branch and commit, deliverables, commands actually executed, metrics or failures, artifact paths, dependency requests, and costs. Distinguish proposed commands from successful executions.
 - Commit logical changes on your worker branch. Do not merge or cherry-pick other workers' changes yourself; request integration.
 - The integrator merges ready changes and tells workers which integration commit to incorporate. Do not continuously rebase active subagents.
 
 No software tests or linting. Use actual builds, training/inference runs, dataset validation, and model evaluation for evidence.
+
+## Reporting and decisions
+
+The main session is project lead and integrator. Timur manually copies final worker reports into that session and relays decisions back. Writing an intermediate handoff file does not automatically notify the lead, and Timur is not expected to relay each milestone.
+
+Send one final chat report when the assigned task is complete. Creating a worktree, installing dependencies, delegating subagents, or publishing the first tiny shard is an intermediate step, not task completion. Continue through your brief's acceptance criteria rather than returning control after each substep. Keep the final report concise (roughly 150–250 words); put longer evidence in the handoff artifact.
+
+An early chat report is justified only by a genuine blocker that prevents further useful in-scope work, or a necessary authorization you cannot proceed without. Record nonblocking questions in shared handoff files and continue independent work. Do not send routine startup/progress/first-output reports.
+
+Publish intermediate artifacts promptly so the pipeline can proceed without chat relays. When an input is needed, inspect the relevant team's public handoff directory instead of asking Timur to forward routine status. Do not inspect final-evaluation content or assume anyone is monitoring files continuously.
+
+Use this format:
+
+```text
+TEAM / TASK:
+STATUS: done | blocked
+RESULT: what actually exists or changed
+EVIDENCE: actual invocation and outcome; metrics with dataset/version and sample count
+CODE: branch, commit, workspace, and any uncommitted changes
+ARTIFACTS: absolute manifest/checkpoint/report/handoff paths
+RESOURCES: compute running or released; actual and pending additional spend
+DECISION NEEDED: question, options, and recommendation; or "none"
+NEXT: proposed bounded next task
+```
+
+Do not include credentials, private final-evaluation examples, or invented measurements. Distinguish a claimed result from a result you reproduced.
+
+Workers may make reversible implementation choices within their assigned scope and resources. Shared-contract changes, root dependencies, ownership/scope changes, access to another team's compute slot, and unallocated paid work still require coordination. Record nonblocking requests in files; escalate in chat only when blocked. Do not treat the absence of a reply as permission. Describe the smallest decision that would unblock you and continue independent in-scope work where possible.
+
+The lead inspects the report and relevant code/artifacts, then responds with:
+
+- **Disposition:** integrate, request a change, or hold.
+- **Decision:** chosen option and short rationale, including remaining uncertainty.
+- **Next task:** owner, objective, allowed paths, and concrete completion evidence.
+- **Resources:** compute ownership and any spending allocation.
+- **Sync:** integration commit to incorporate, if applicable.
+
+Prefer evidence that advances the day-one training/save/reload/evaluation loop. Use comparisons on the same data; do not select models solely on training loss or unverifiable claims. Keep the working checkpoint while considering alternatives.
+
+The lead records decisions affecting shared contracts, ownership, or resources in the relevant project docs and sends copyable instructions back through Timur. Model-specific rationale belongs with the model workstream. No orchestration service, shared writable task board, or automatic monitoring is required.
 
 ## If the number of sessions changes
 

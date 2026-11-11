@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jeff"
+version = "0.1.0"
+description = "A small text decision model trained with an agent swarm."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+model = [
+    "torch>=2.6,<3",
+    "transformers>=4.48,<5",
+    "safetensors>=0.4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jeff"]

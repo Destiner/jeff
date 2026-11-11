@@ -11,7 +11,7 @@ The developer knows LLM and coding-agent fundamentals but has not trained a mode
 | Area | Decision |
 | --- | --- |
 | Starting point | Fine-tune pretrained weights; no language pretraining from scratch. |
-| Tooling | Python managed with uv. ML backend and exact dependencies remain to be selected. |
+| Tooling | Python 3.12 with uv and Hatchling packaging. Optional `model` dependencies: PyTorch, Transformers, safetensors. Data/evaluation need no third-party runtime dependencies initially. |
 | Software checks | No software tests, test runners, or linting. Build and execute the actual pipeline; keep model evaluation and dataset validation. |
 | Interface | Context + question + caller-supplied choices → probabilities over those choices. |
 | Initial output | Single-choice classification; yes/no is a two-choice case. Defer richer scoring and generated explanations. |
@@ -29,8 +29,8 @@ This borrows the decision-model interface and purpose, not Jev's proprietary arc
 
 Resolve these with a small pilot rather than a lengthy architecture exercise:
 
-1. **Backbone and training approach.** First candidate: a pretrained text encoder around 100–300M parameters with a candidate-answer scorer. Compare against a small decoder-style model if needed. No model family or ML library is locked in.
-2. **Trainable parameters.** Decide between updating a scoring component, adapters, or the full backbone after checking learning behavior and memory use.
+1. **Backbone and training approach.** Initial pilot approved: `sentence-transformers/all-MiniLM-L6-v2` (roughly 22M parameters), loaded through Transformers with a shared scalar candidate head and full fine-tuning. This is smaller than the original 100–300M suggestion to prove the loop sooner. The Model worker must record the exact model revision and actual backend behavior. Larger encoders or small decoders remain later candidates, not parallel mandatory builds.
+2. **Trainable parameters.** Try full fine-tuning for the small initial backbone, subject to measured memory use. Consider head-only or adapter alternatives if that reveals a concrete need.
 3. **Contracts.** Follow [the v0.1 contracts](contracts.md) for training examples, predictions, and artifacts. Propose changes through the integrator.
 4. **Task mix and splits.** Choose a small initial mix and reserve validation and final-test groups before producing variants.
 5. **Teacher access and cost.** Check existing access, model terms, and pilot costs before expanding generation. Do not assume existing subscriptions provide programmatic API access.

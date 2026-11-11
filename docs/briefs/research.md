@@ -24,7 +24,7 @@ Recommend one starting backbone and one fallback. Compare:
 
 Use primary documentation and model cards. Cite sources and distinguish measured facts from estimates. Do not quote cloud training timings as laptop estimates.
 
-Send Model a concise recommendation as soon as it is actionable. If evidence is incomplete, give a provisional choice and a specific cheap experiment to resolve the uncertainty.
+Publish an actionable recommendation in the shared handoff directory as soon as available, without a separate intermediate chat report. If evidence is incomplete, give a provisional choice and a specific cheap experiment to resolve the uncertainty.
 
 ## Suggested subagents
 
@@ -41,3 +41,5 @@ Switch to the most valuable concrete follow-up: analyze published validation res
 ## Handoff
 
 Publish `artifacts/handoffs/research/<id>.md` in the shared root with branch/commit, recommendation, supporting URLs, uncertainties, and suggested next experiment. Separately billed services require an allocation; no paid work is authorized initially.
+
+Send one final chat report when the assigned time-boxed research task is complete. Report early only if genuinely blocked; do not report startup, delegation, or each individual finding as separate completed tasks.

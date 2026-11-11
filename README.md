@@ -16,7 +16,7 @@ Training and understanding the model are the primary deliverables. Applications 
 
 ## What works
 
-The repository currently contains project decisions and a swarm workflow. No model or training implementation exists yet.
+Shared Python packaging, project decisions, and a swarm workflow. Model, data, and evaluation implementations are in parallel worker branches and are not integrated yet. No trained checkpoint is claimed.
 
 ## What's faked or mocked
 
@@ -24,7 +24,17 @@ No model outputs, benchmark results, or demos are presented.
 
 ## How to run
 
-There is no executable setup yet. The first implementation milestone is a tiny end-to-end training, save, reload, and evaluation run.
+Use Python 3.12 and [uv](https://docs.astral.sh/uv/).
+
+```sh
+uv sync --locked                 # Shared package, without ML dependencies
+uv sync --locked --extra model   # Model/training environment
+uv build --no-sources            # Wheel and source distribution
+```
+
+Use separate environments per worktree. Run model commands with `uv run --locked --extra model` to retain their optional dependencies. Training and inference commands will be documented when the worker implementations are integrated.
+
+No software tests or linting. Model evaluation and dataset validation remain part of the training workflow.
 
 ## Project docs
 
