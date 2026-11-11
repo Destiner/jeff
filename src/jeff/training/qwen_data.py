@@ -60,15 +60,32 @@ def recipe(experiment="m6"):
     return cfg
 
 
-def source_identity():
+def source_identity(experiment="m6"):
     def git(*args):
         return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
     require(not git("status", "--porcelain", "--untracked-files=all"),
-            "M6 requires a clean committed worktree")
+            "A clean committed worktree is required")
     paths = git("ls-files").splitlines()
-    return {"root": str(ROOT), "revision": git("rev-parse", "HEAD"),
-            "tracked_files": {name: p3.digest(ROOT / name) for name in paths
-                              if (ROOT / name).is_file()}}
+    hashes = {name: p3.digest(ROOT / name) for name in paths if (ROOT / name).is_file()}
+    result = {"root": str(ROOT), "revision": git("rev-parse", "HEAD"), "tracked_files": hashes}
+    if experiment == "m8":
+        executable = {name: digest for name, digest in hashes.items()
+                      if name.endswith(".py") or name in {"pyproject.toml", "uv.lock",
+                          "configs/model/m8-qwen-readout.json", "configs/runtime/p3-qwen.json"}}
+        result["tracked_files"] = executable
+        result["operating_context"] = {name: digest for name, digest in hashes.items()
+                                       if name not in executable}
+    return result
+
+
+def source_binding(source, experiment="m6"):
+    if experiment != "m8":
+        return source
+    return {key: source[key] for key in ("root", "tracked_files")}
+
+
+def evidence_binding(proof, experiment):
+    return {**proof, "source": source_binding(proof["source"], experiment)}
 
 
 def runtime_environment():
@@ -162,7 +179,7 @@ def train_rows(guard=None):
 def evidence(guard=None, experiment="m6"):
     from transformers import AutoTokenizer
 
-    source = source_identity()
+    source = source_identity(experiment)
     cfg = recipe(experiment)
     env = runtime_environment()
     require(p3.digest(P3_CONFIG) == P3_HASH, "P3 scoring config changed")
@@ -203,7 +220,8 @@ def evidence(guard=None, experiment="m6"):
         "tokenizer_assets": {k: assets[k] for k in TOKENIZER_FILES if k in assets},
         "lengths": p3.distribution([r["input_tokens"] for r in schedule]),
         "boundary_checks": 1500, "schedule_algorithm": "Random(42): shuffle rows then options once per row"}
-    require(source_identity() == source, "source changed during preflight")
+    require(source_binding(source_identity(experiment), experiment) == source_binding(source, experiment),
+            "executable source changed during preflight")
     if experiment in {"m7", "m8"}:
         require_m6_schedule(schedule_text(schedule))
     return proof, schedule
@@ -311,9 +329,29 @@ def revalidate(audit_dir, guard=None, experiment="m6"):
     audit = read_json(audit_dir / "audit.json")
     require(audit["schema_version"] == f"{experiment}.audit.v1" and audit["status"] == "complete",
             "complete matching experiment audit required")
-    proof, schedule = evidence(guard, experiment)
-    require(proof == audit["evidence"], "source/config/data/assets/environment changed since audit")
-    text = schedule_text(schedule)
+    if experiment == "m8":
+        # Recheck immutable dependencies; consume the audited schedule, never reshuffle/replay it.
+        text = (audit_dir / "schedule.jsonl").read_text(encoding="utf-8")
+        require_m6_schedule(text)
+        schedule = [strict_json(line) for line in text.splitlines()]
+        source, cfg, env = source_identity(experiment), recipe(experiment), runtime_environment()
+        require(p3.digest(P3_CONFIG) == P3_HASH, "P3 scoring config changed")
+        scoring = p3.configuration(P3_CONFIG)
+        assets = p3.assets(MODEL_DIR.resolve(strict=True), scoring)
+        _, metadata = train_rows(guard)
+        proof = {**audit["evidence"], "source": source,
+            "recipe_path": str(recipe_path(experiment)), "recipe": cfg,
+            "recipe_sha256": p3.digest(recipe_path(experiment)), "environment": env,
+            "data": metadata, "p3_scoring_config": scoring, "p3_scoring_config_sha256": P3_HASH,
+            "model_dir": str(MODEL_DIR.resolve(strict=True)), "model_assets": assets,
+            "tokenizer_assets": {k: assets[k] for k in TOKENIZER_FILES if k in assets}}
+        require(source_binding(source_identity(experiment), experiment) == source_binding(source, experiment),
+                "executable source changed during revalidation")
+    else:
+        proof, schedule = evidence(guard, experiment)
+        text = schedule_text(schedule)
+    require(evidence_binding(proof, experiment) == evidence_binding(audit["evidence"], experiment),
+            "executable/config/data/assets/environment changed since audit")
     require(p3.text_hash(text) == audit["schedule_sha256"] and
             (audit_dir / "schedule.jsonl").read_bytes() == text.encode("utf-8"),
             "schedule differs from re-derived pinned TRAIN schedule")

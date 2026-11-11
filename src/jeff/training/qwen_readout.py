@@ -481,7 +481,9 @@ def train(args, receipt, monitor, schedule, directory):
                     "frozen flags or gradients changed after export/FINAL")
         del optimizer
         save_checkpoint(model, directory, receipt, monitor)
-        require(data.source_identity() == receipt["identity"]["evidence"]["source"], "source changed during run")
+        require(data.source_binding(data.source_identity("m8"), "m8") ==
+                data.source_binding(receipt["identity"]["evidence"]["source"], "m8"),
+                "executable source changed during run")
         receipt["readout_proof_body"] = {
             "schema_version": proof.SCHEMA, "status": "complete",
             "adaptation_kind": proof.ADAPTATION, "representation": proof.REPRESENTATION,
