@@ -40,14 +40,15 @@ def json_line(value):
 
 
 def recipe_path(experiment="m6"):
-    require(experiment in {"m6", "m7"}, "unsupported experiment")
-    return RECIPE if experiment == "m6" else ROOT / "configs/model/m7-qwen-low-lr.json"
+    require(experiment in {"m6", "m7", "m8"}, "unsupported experiment")
+    return {"m6": RECIPE, "m7": ROOT / "configs/model/m7-qwen-low-lr.json",
+            "m8": ROOT / "configs/model/m8-qwen-readout.json"}[experiment]
 
 
 def recipe(experiment="m6"):
     cfg = read_json(recipe_path(experiment))
     fixed = FIXED if experiment == "m6" else {
-        **FIXED, "schema_version": "m7.recipe.v1", "learning_rate": 2e-6}
+        **FIXED, "schema_version": f"{experiment}.recipe.v1", "learning_rate": 2e-6}
     require(set(cfg) == set(FIXED) | set(GUARDS), "unexpected recipe keys")
     require(all(type(cfg[k]) is type(v) and cfg[k] == v for k, v in fixed.items()),
             "only the fixed experiment recipe is supported")
@@ -203,7 +204,7 @@ def evidence(guard=None, experiment="m6"):
         "lengths": p3.distribution([r["input_tokens"] for r in schedule]),
         "boundary_checks": 1500, "schedule_algorithm": "Random(42): shuffle rows then options once per row"}
     require(source_identity() == source, "source changed during preflight")
-    if experiment == "m7":
+    if experiment in {"m7", "m8"}:
         require_m6_schedule(schedule_text(schedule))
     return proof, schedule
 
