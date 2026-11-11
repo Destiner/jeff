@@ -1,6 +1,6 @@
 # Backbone decision: start small, preserve a useful baseline
 
-Research task `research-backbone-20261111`, opened 2026-11-11 10:19 UTC. Initial recommendation prepared by 10:25 UTC against contracts v0.1 and committed main `1bf5236`. Scope: documentation/source research only; no model downloads or execution. Three read-only subagents covered model suitability, backend/memory, and data/evaluation independently.
+Research task `research-backbone-20261111`, opened 2026-11-11 10:19 UTC. Initial recommendation prepared by 10:25 UTC against contracts v0.1 and committed main `1bf5236`. Initial scope: documentation/source research; no model weights downloaded or executed. Three read-only subagents covered model suitability, backend/memory, and data/evaluation independently. Subsequent CPU data/prediction analysis and Model-reported local evidence are separated in [the follow-up](follow-up.md); neither recommended checkpoint was run by Research.
 
 ## Decision for Model
 
@@ -17,6 +17,8 @@ Model's 10:19 dependency handoff provisionally selected `sentence-transformers/a
 3. Begin with one complete decision (2–6 pairs) per microbatch, at most 256 combined tokens per pair, accumulating four decisions before an optimizer step. These are proposals, not measured optimal settings. Preserve question and candidate before truncating state; report overflow rather than silently dropping a decisive rule. The architecture limit is 512 including special tokens. [E2–E3]
 4. First supervised recipe: full-model AdamW, proposed learning rate `2e-5`, one pilot epoch, fixed seed; preserve the pre-update baseline and the first usable checkpoint. Leave subsequent schedules/epoch selection to Model and validation evidence.
 5. During Model's authorized real run, record finite loss, actual device/dtype, synchronized time, allocator/driver memory, truncation counts, saved checkpoint and fresh-process predictions. Score untouched and trained predictions on identical validation cases. No research-owned ML job is requested.
+
+**Measured implementation update:** the approved all-MiniLM pilot should use the existing `--max-length 256`, for both untouched baseline and training. Research's CPU token audit found that 128 removes question tokens from **12/20 rule-validation decisions**; all 1,412 pilot candidate pairs fit at 256. This is a preprocessing finding, not an accuracy comparison. See [follow-up evidence](follow-up.md).
 
 ## Comparison
 
