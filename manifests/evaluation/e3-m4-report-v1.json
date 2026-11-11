@@ -1,0 +1,823 @@
+{
+  "schema_version": "evaluation/e3-report/1",
+  "study": "Released Data-v2 / M4 independent validation comparison",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+  "publication": "Data008; not pre-review-r2; final evaluation sealed",
+  "tooling_main_merge": "97d032433cf94e5647b664f578f4237613f9b500",
+  "recipe_sha256": "99ff4a79235269e7f63acd6e80716e0629484ed58e7c01ef54072b522884ad16",
+  "artifacts": [
+    {
+      "path": "data/data-pilot-v2/manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "data/data-pilot-v2/provenance.json",
+      "sha256": "a55a3bc0ba76958e6e2b81ef8288c4d2fa008f18bd2ff106a8cb8b0321a4c5e3"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/assembly-receipt.json",
+      "sha256": "7396a64f0ac8ea2c7ac46b09cdba1ac82775f0a81d4e90b5336a0b3228a219f5"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/inference-inputs.json",
+      "sha256": "c4c91dda664233b5e1d9ce430e391be12e6a12e823a08884e892cbc4811a9a9b"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/release-binding.json",
+      "sha256": "1413a12ad2ec9bfe7914ea3aae77395e629bb55bff9fbe4af058e5c79bbbfacf"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/historical-reuse.json",
+      "sha256": "f2dc8a51af0119c8650d6c418e9ac8b95901ed68f0f51b03a8b60c129aad0bb5"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/bind_historical.py",
+      "sha256": "c4d8b8a15e4779db0ccae2d608eb13750df0d346bf1c25b8de879ea9b08ac206"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/build_recipe.py",
+      "sha256": "afb21cfbf33149d98e0ae5a261f1768442532ebbc181eb0ddf41dfd6628ac7ab"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/inference-binding.json",
+      "sha256": "a1e92ed4ec1bd0a7a8fbf2c0294aa28de6f1792c08d1cf842bb10fe5a7753f9b"
+    },
+    {
+      "path": "evaluation/e3-v2-assembly-v1/m4-study.json",
+      "sha256": "99ff4a79235269e7f63acd6e80716e0629484ed58e7c01ef54072b522884ad16"
+    },
+    {
+      "path": "evaluation/e3-v2-freeze-v1/receipt.json",
+      "sha256": "c2c265bcccccad0df01912b60bc48fef606da06b68bfb2ae2fe21480d9a6f295"
+    },
+    {
+      "path": "evaluation/e3-v2-order-v1/receipt.json",
+      "sha256": "cf00d41d16bf360da9861af7fa3d74d57c822b65a5e26bcee276e78a09d4d6c0"
+    },
+    {
+      "path": "evaluation/e3-v2-new-order-v1/receipt.json",
+      "sha256": "26f4bb5577a72fed16802688e1947dc0d2b1e433fb0864863f7361c9527360eb"
+    },
+    {
+      "path": "evaluation/e3-release-identity-review-v1/findings.md",
+      "sha256": "be90aaba82f308194f7d110763228361216f8c3056c2736ccb4f6d3e18d3056b"
+    },
+    {
+      "path": "evaluation/e3-release-identity-review-v1/reconciled-evidence.json",
+      "sha256": "c34a3cc2e3a97157f0899199cc53a6adacb66d5ae5bb527d64ae21e986865d34"
+    },
+    {
+      "path": "evaluation/e3-release-identity-review-v1/validation-source-units-reviewed.json",
+      "sha256": "bbb16873176515a24b76caa6b628cce5bfb5bec28ab26e635f6a862615d0ee3a"
+    },
+    {
+      "path": "evaluation/e3-source-unit-analysis-v1/summarize.py",
+      "sha256": "cfa8cbe42ec81325a3cbec2f39a95004963fbdde9a96ada4925f51e12a0f6bee"
+    },
+    {
+      "path": "evaluation/e3-m4-source-units-v1/summary.json",
+      "sha256": "3cbfbd74201e3befa41a81630d1828a78e14c865b14c6b96380428d0219acacd"
+    },
+    {
+      "path": "evaluation/e3-m4-source-units-v1/summary.md",
+      "sha256": "4dba8ea41c5f2f2a294c74784d4e8904319915ec86f2ab8a5eff85d01ec5dd91"
+    },
+    {
+      "path": "evaluation/e3-final-integrity-review-v1/review.md",
+      "sha256": "6c97f6eec4147461b7008c22b1e81fe29f1e04aaf0b12e36dc92add3bb0b61a9"
+    },
+    {
+      "path": "evaluation/e3-control-audit-v1/findings.md",
+      "sha256": "64dd903c85423d6f240bfd7a1103a37aea14179d9d1fc8a1343fc4ac8907cb14"
+    },
+    {
+      "path": "evaluation/e3-control-audit-v1/receipt.json",
+      "sha256": "9b109b4771cdd963e71aa95c8aaa77d106da66e2daa21d312d4966dc1cb2d2b0"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/receipt.json",
+      "sha256": "ca0e45a505ba19479fa3252c8c4e847ab23fcfe6516c5973213dce5135550a81"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/subsets.json",
+      "sha256": "10cfb27caa4f8768503dab0056218872e01d8b95b207b5365a8a4ab1b61f265e"
+    },
+    {
+      "path": "model/m4-v2-20261111-01/inference/receipt.json",
+      "sha256": "9a2761efc2c617b47139df703776a03e273f4bf1c2bc8fc1dd9b6b262355d4ee"
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/run.json",
+      "sha256": "19ef47fc47c34de79838b1b8a2ee5830b197e1bb6a8153144bfc16c8b5f285a0"
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/run.json",
+      "sha256": "0e10cf02f38ce81c655f6e304eea2e1bd12f75bf166142e48955075143ad6f77"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/combined/comparison.json",
+      "sha256": "dda400470b2a797e1b7f51f31a224df4082974c576b7b9e6e75116b9b0106545"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/combined/report.md",
+      "sha256": "2d3bfd71b2e2da2a97edff58d80c8f029e7d4c4d842f1088a4b6e13cdb594d33"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/inherited-v1/comparison.json",
+      "sha256": "a962b2dccfc5822d52fb88cf59d1844e58ed4c744b2694a3eff1bde85a884dae"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/inherited-v1/report.md",
+      "sha256": "f237847964083ff2b5464d82b50abfed82e001dd98455eb174d17848ada6e96e"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/new-v2/comparison.json",
+      "sha256": "d11612de6a44242175837241776ae911a3716cab15cd7072a42e7636ed119f12"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/new-v2/report.md",
+      "sha256": "65f47f8291029f64f07787c45439f486656d4fdcee986ad16bf5c355f0f18dcb"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/probes/comparison.json",
+      "sha256": "63fec27b164d613c5185f646d140db340c11050b8a81c83ec9c225aaf272732b"
+    },
+    {
+      "path": "evaluation/e3-m4-v1/probes/report.md",
+      "sha256": "c6d33764cae52eb577a5706a84788f688184d1e09fcc272061aa90e743fc760b"
+    }
+  ],
+  "strata": {
+    "combined": {
+      "examples": 300,
+      "source_groups": 182,
+      "references": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+        "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+      },
+      "predictors": {
+        "uniform": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 82,
+            "denominator": 300,
+            "value": 0.2733333333333333
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3425235600008936
+          }
+        },
+        "lexical": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 128,
+            "denominator": 300,
+            "value": 0.4266666666666667
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3022363163446737
+          }
+        },
+        "m4-minilm-random-start": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 86,
+            "denominator": 300,
+            "value": 0.2866666666666667
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.341626687876516
+          }
+        },
+        "m4-minilm-trained": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 166,
+            "denominator": 300,
+            "value": 0.5533333333333333
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.8400030274105561
+          }
+        },
+        "m4-msmarco-pretrained-start": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 129,
+            "denominator": 300,
+            "value": 0.43
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0522297090275796
+          }
+        },
+        "m4-msmarco-trained": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 183,
+            "denominator": 300,
+            "value": 0.61
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.8763308320382549
+          }
+        },
+        "m2-v1-trained": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 142,
+            "denominator": 300,
+            "value": 0.47333333333333333
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.080199253476883
+          }
+        },
+        "m3-v1-trained": {
+          "coverage": {
+            "numerator": 300,
+            "denominator": 300,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 150,
+            "denominator": 300,
+            "value": 0.5
+          },
+          "log_loss": {
+            "n": 300,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.9786151172853852
+          }
+        }
+      }
+    },
+    "inherited-v1": {
+      "examples": 60,
+      "source_groups": 12,
+      "references": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+        "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+      },
+      "predictors": {
+        "uniform": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 17,
+            "denominator": 60,
+            "value": 0.2833333333333333
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3787648669871742
+          }
+        },
+        "lexical": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 29,
+            "denominator": 60,
+            "value": 0.48333333333333334
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3237099779963926
+          }
+        },
+        "m4-minilm-random-start": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 20,
+            "denominator": 60,
+            "value": 0.3333333333333333
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3782670112554563
+          }
+        },
+        "m4-minilm-trained": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 34,
+            "denominator": 60,
+            "value": 0.5666666666666667
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.9075537395730444
+          }
+        },
+        "m4-msmarco-pretrained-start": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 30,
+            "denominator": 60,
+            "value": 0.5
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0268780321008346
+          }
+        },
+        "m4-msmarco-trained": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 42,
+            "denominator": 60,
+            "value": 0.7
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7126207803955256
+          }
+        },
+        "m2-v1-trained": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 35,
+            "denominator": 60,
+            "value": 0.5833333333333334
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.8552875089589308
+          }
+        },
+        "m3-v1-trained": {
+          "coverage": {
+            "numerator": 60,
+            "denominator": 60,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 40,
+            "denominator": 60,
+            "value": 0.6666666666666666
+          },
+          "log_loss": {
+            "n": 60,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7937008119799213
+          }
+        }
+      }
+    },
+    "new-v2": {
+      "examples": 240,
+      "source_groups": 170,
+      "references": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+        "sha256": "847cf4cb43df058a44366c7f3acbcebdb7faaea756fe21de8cc80cd5f90796eb"
+      },
+      "predictors": {
+        "uniform": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 65,
+            "denominator": 240,
+            "value": 0.2708333333333333
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3334632332543237
+          }
+        },
+        "lexical": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 99,
+            "denominator": 240,
+            "value": 0.4125
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.296867900931744
+          }
+        },
+        "m4-minilm-random-start": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 66,
+            "denominator": 240,
+            "value": 0.275
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3324666070317808
+          }
+        },
+        "m4-minilm-trained": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 132,
+            "denominator": 240,
+            "value": 0.55
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.8231153493699339
+          }
+        },
+        "m4-msmarco-pretrained-start": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 99,
+            "denominator": 240,
+            "value": 0.4125
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0585676282592658
+          }
+        },
+        "m4-msmarco-trained": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 141,
+            "denominator": 240,
+            "value": 0.5875
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.9172583449489373
+          }
+        },
+        "m2-v1-trained": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 107,
+            "denominator": 240,
+            "value": 0.44583333333333336
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.1364271896063711
+          }
+        },
+        "m3-v1-trained": {
+          "coverage": {
+            "numerator": 240,
+            "denominator": 240,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 110,
+            "denominator": 240,
+            "value": 0.4583333333333333
+          },
+          "log_loss": {
+            "n": 240,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.024843693611751
+          }
+        }
+      }
+    },
+    "probes": {
+      "examples": 24,
+      "source_groups": 12,
+      "references": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "predictors": {
+        "uniform": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 8,
+            "denominator": 24,
+            "value": 0.3333333333333333
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0550082766877307
+          }
+        },
+        "lexical": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 9,
+            "denominator": 24,
+            "value": 0.375
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0470441093070695
+          }
+        },
+        "m4-minilm-random-start": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 2,
+            "denominator": 24,
+            "value": 0.08333333333333333
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0571073602915295
+          }
+        },
+        "m4-minilm-trained": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 12,
+            "denominator": 24,
+            "value": 0.5
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0254562319395013
+          }
+        },
+        "m4-msmarco-pretrained-start": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 14,
+            "denominator": 24,
+            "value": 0.5833333333333334
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.45378312706827
+          }
+        },
+        "m4-msmarco-trained": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 10,
+            "denominator": 24,
+            "value": 0.4166666666666667
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.8764638622941086
+          }
+        },
+        "m2-v1-trained": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 16,
+            "denominator": 24,
+            "value": 0.6666666666666666
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7104069052752945
+          }
+        },
+        "m3-v1-trained": {
+          "coverage": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1.0
+          },
+          "status": "ok",
+          "agreement": {
+            "numerator": 8,
+            "denominator": 24,
+            "value": 0.3333333333333333
+          },
+          "log_loss": {
+            "n": 24,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.360701041245408
+          }
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "new_v2_vs_own_start": "both pass agreement-and-log-loss improvement",
+    "historical_robustness": "both fail no-family-regression gate on inherited/probes",
+    "default_promoted": false
+  },
+  "limitations": [
+    "Strata/combined overlap; presentation variants not independent sources.",
+    "Teacher agreement and same-author rule verification are not independent correctness.",
+    "Single-seed development comparison; not calibration or data-only causal evidence.",
+    "No final data accessed."
+  ],
+  "packaged_reproduction": [
+    {
+      "path": "evaluation/e3-final-packaging-v1/reproduction.json",
+      "sha256": "e6ac5497f2287d3a41ce3b08a310cff9d4fc4d5cacfc0a21aaa2414aa3b36a68"
+    },
+    {
+      "path": "evaluation/e3-m4-wheel-v1/receipt.json",
+      "sha256": "01671dd3468f55e0b9967de3958e13b8339864176595d0f431d081187d94e3e1"
+    }
+  ],
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}

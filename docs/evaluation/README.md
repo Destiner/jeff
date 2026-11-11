@@ -1,6 +1,8 @@
 # File-based evaluation
 
-Latest independent results: [corrected 256-token pilot and retained-head cross-encoder](pilot-e2-m3.md), including the material cross-encoder probe regression, complete source-group tables, and order analysis.
+Latest independent results: [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
+
+E3 preparation: [protocol](e3-plan.md), [identity freeze](e3-freeze.md), and [pinned study recipe](e3-study.md).
 
 Runtime dependencies: Python standard library only (project Python 3.12/uv). No imports from Data, Model, or Training. No model downloads, software tests, or linting.
 
@@ -56,4 +58,4 @@ Label-free files inherently lose split metadata; baseline generation cannot enfo
 
 ## Delegation
 
-Three read-only subagents separately supplied metrics specification, validation-only adversarial cases/order analysis, and protected final curation. Follow-up metrics review identified fatal comparison exit-code ambiguity and prevalidation publication of curated shards; both were corrected. A separate validation analyst reviewed tiny model and simple-probe failure evidence without final access. Lead serializes all code/artifacts; no subagents share a mutable checkout. Teacher labels from these curators are not independently verified.
+Three read-only subagents separately supplied metrics specification, validation-only adversarial cases/order analysis, and protected final curation. Follow-up metrics review identified fatal comparison exit-code ambiguity and prevalidation publication of curated shards; both were corrected. A separate validation analyst reviewed tiny model and simple-probe failure evidence without final access. That historical E1 delegation is complete. Current owners self-review/self-integrate owned changes under the shared merge lock; fresh bounded subagents use isolated task worktrees or read-only review and never share a mutable checkout. Teacher labels from these curators are not independently verified.
