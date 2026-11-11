@@ -6,7 +6,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest control: scalar-head learning rate
+## Latest learning contrast: full-parameter Qwen
+
+M6 completed its one authorized1500-TRAIN/375-update run, but fixed-schedule TRAIN fit regressed:805→431agreements/1500, CE1.357724→1.390592, with every final recorded argmax at position0. Preserve the negative final checkpoint; no retry, default promotion or causal claim. Fresh starting624predictions are byte-identical to frozen P3. Runtime P4 owns independent final-checkpoint reload/development inference; Evaluation E6 owns held-out interpretation. See [M6 results](m6-qwen-results.md), [frozen plan](m6-qwen-plan.md), and [run/evidence index](m6-qwen-run.json).
+
+## Historical control: scalar-head learning rate
 
 M5 changed only the retained MS MARCO classifier's learning rate, with byte-identical fresh starting predictions. It recovered one previously lost probe group without a new group error, but **failed the predeclared criterion because probe log loss worsened**. Pilot agreement stayed40/60; no default promotion or further training. See [M5 results](m5-head-lr-results.md), [plan](m5-head-lr-plan.md), and [run/provenance index](m5-head-lr-run.json).
 

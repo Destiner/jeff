@@ -1,0 +1,432 @@
+{
+  "schema_version": "model/m6-run/1",
+  "execution_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+  "experiment": "one fixed full-parameter Qwen grouped-choice CE recipe, not architecture/permutation ablation",
+  "result": "TRAIN fit failure: agreement and overall CE worsen; all recorded post-fit argmax indices0, ties not recorded in fit rows",
+  "comparison_tolerance": 1e-06,
+  "starting_control": "624 rows byte-identical to retained P3, max absolute probability delta0.0",
+  "data": {
+    "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+    "rows": 1500,
+    "unique_ids": 1500,
+    "unique_groups": 880,
+    "families": {
+      "intent": 500,
+      "sentiment": 500,
+      "rule_application": 500
+    },
+    "label_basis": {
+      "teacher": 1000,
+      "rule_verified": 500
+    }
+  },
+  "schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+  "recipe": {
+    "schema_version": "m6.recipe.v1",
+    "seed": 42,
+    "train_rows": 1500,
+    "epochs": 1,
+    "microbatch": 1,
+    "accumulation": 4,
+    "updates": 375,
+    "optimizer": "AdamW",
+    "learning_rate": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "foreach": false,
+    "max_input_tokens": 1024,
+    "maximum_run_seconds": 2700,
+    "maximum_capacity_seconds": 600,
+    "max_cpu_rss_bytes": 17179869184,
+    "max_mps_driver_bytes": 17179869184,
+    "min_recommended_headroom_bytes": 2147483648
+  },
+  "token_lengths": {
+    "count": 1500,
+    "min": 89,
+    "max": 220,
+    "p50": 127,
+    "p95": 155
+  },
+  "actual_execution": {
+    "presentations": 1500,
+    "optimizer_updates": 375,
+    "extra_backwards": 0,
+    "process_wall_seconds": 776.083240292035,
+    "started_at": "2026-11-11T15:48:30.401721+00:00",
+    "completed_at": "2026-11-11T16:01:26.478213+00:00",
+    "returncode": 0,
+    "parameters": {
+      "unique_tensors": 290,
+      "total": 494032768,
+      "trainable": 494032768,
+      "dtype": "float32",
+      "theoretical_bytes": {
+        "weights": 1976131072,
+        "gradients": 1976131072,
+        "adam_first_moment": 1976131072,
+        "adam_second_moment": 1976131072,
+        "weights_gradients_moments": 7904524288
+      }
+    },
+    "selected_fingerprints_changed": true,
+    "optimizer_final": {
+      "state_tensors": 290,
+      "moment_bytes": 3952262144,
+      "step": 375
+    }
+  },
+  "train_fit": {
+    "fit_before": {
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 2036.5854429346423,
+        "agreements": 805,
+        "predicted_position_counts": {
+          "3": 278,
+          "1": 384,
+          "0": 417,
+          "2": 411,
+          "5": 3,
+          "4": 7
+        },
+        "target_position_counts": {
+          "0": 431,
+          "3": 266,
+          "1": 423,
+          "2": 368,
+          "4": 11,
+          "5": 1
+        },
+        "mean_ce": 1.357723628623095,
+        "agreement": 0.5366666666666666
+      },
+      "by_family": {
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 828.5630577247357,
+          "agreements": 184,
+          "predicted_position_counts": {
+            "3": 110,
+            "0": 168,
+            "2": 137,
+            "1": 85
+          },
+          "target_position_counts": {
+            "0": 154,
+            "2": 119,
+            "1": 155,
+            "3": 72
+          },
+          "mean_ce": 1.6571261154494714,
+          "agreement": 0.368
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 198.07646252535642,
+          "agreements": 442,
+          "predicted_position_counts": {
+            "3": 79,
+            "1": 141,
+            "2": 156,
+            "0": 114,
+            "5": 3,
+            "4": 7
+          },
+          "target_position_counts": {
+            "3": 74,
+            "1": 140,
+            "0": 140,
+            "2": 134,
+            "4": 11,
+            "5": 1
+          },
+          "mean_ce": 0.3961529250507128,
+          "agreement": 0.884
+        },
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 1009.9459226845502,
+          "agreements": 179,
+          "predicted_position_counts": {
+            "1": 158,
+            "0": 135,
+            "2": 118,
+            "3": 89
+          },
+          "target_position_counts": {
+            "3": 120,
+            "1": 128,
+            "2": 115,
+            "0": 137
+          },
+          "mean_ce": 2.0198918453691004,
+          "agreement": 0.358
+        }
+      }
+    },
+    "fit_after": {
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 2085.8880422115326,
+        "agreements": 431,
+        "predicted_position_counts": {
+          "0": 1500
+        },
+        "target_position_counts": {
+          "0": 431,
+          "3": 266,
+          "1": 423,
+          "2": 368,
+          "4": 11,
+          "5": 1
+        },
+        "mean_ce": 1.3905920281410218,
+        "agreement": 0.28733333333333333
+      },
+      "by_family": {
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 667.8563228845596,
+          "agreements": 154,
+          "predicted_position_counts": {
+            "0": 500
+          },
+          "target_position_counts": {
+            "0": 154,
+            "2": 119,
+            "1": 155,
+            "3": 72
+          },
+          "mean_ce": 1.3357126457691193,
+          "agreement": 0.308
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 695.9689158797264,
+          "agreements": 140,
+          "predicted_position_counts": {
+            "0": 500
+          },
+          "target_position_counts": {
+            "3": 74,
+            "1": 140,
+            "0": 140,
+            "2": 134,
+            "4": 11,
+            "5": 1
+          },
+          "mean_ce": 1.3919378317594528,
+          "agreement": 0.28
+        },
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 722.0628034472466,
+          "agreements": 137,
+          "predicted_position_counts": {
+            "0": 500
+          },
+          "target_position_counts": {
+            "3": 120,
+            "1": 128,
+            "2": 115,
+            "0": 137
+          },
+          "mean_ce": 1.4441256068944932,
+          "agreement": 0.274
+        }
+      }
+    }
+  },
+  "online_mean_ce_descriptive": 1.4003377714039138,
+  "capacity": {
+    "presentations": 4,
+    "optimizer_steps": 1,
+    "extra_backwards": 4,
+    "projection": {
+      "estimated_total_seconds": 2100.3375834366307,
+      "within_cap": true,
+      "method": "capacity elapsed + 375 * slower longest-four update + 3000 * slowest eval + 120s save allowance",
+      "first_update_seconds": 2.89379875222221,
+      "steady_update_seconds": 1.9994605835527182,
+      "before_after_fit_seconds": 886.7652509361506,
+      "save_allowance_seconds": 120,
+      "qualification": "longest-input conservative extrapolation, not measured full-run time or a guarantee"
+    },
+    "disposition": "all model/optimizer/RNG state discarded on process exit; no weights saved"
+  },
+  "resources": {
+    "cpu_lifetime_rss_bytes": 3371466752,
+    "mps_observed_driver_max_bytes": 11852775424,
+    "mps_observed_current_max_bytes": 8740772096,
+    "min_observed_recommended_headroom_bytes": 7216889856,
+    "qualification": "CPU lifetime RSS and observed MPS samples; not additive or device/unified-memory peaks",
+    "additional_spend_gbp": 0
+  },
+  "checkpoint_files": {
+    "LICENSE": {
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    "README.md": {
+      "sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+      "bytes": 4917
+    },
+    "config.json": {
+      "sha256": "e8d5e8d6aaf17311a89b78e3914fca868cc77312513a276b1701e22fb73d62a3",
+      "bytes": 1227
+    },
+    "generation_config.json": {
+      "sha256": "da7d43d773bb1c2606bbd062d9af2e8aa2b73de104b1f8f0a93e31bf3b1426a3",
+      "bytes": 242
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "model.safetensors": {
+      "sha256": "ecbeb36556281cf00e9175603aecefd83f2ce3fc8a610e4b2cf056b7a4a926fb",
+      "bytes": 1976163472
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    }
+  },
+  "evidence": [
+    {
+      "path": "model/m6-qwen-20261111-01/comparison-freeze.json",
+      "sha256": "5c24a089e3cb4025fb9fcdf4e10effb838d3fb7394eab96493d41b8598908e10"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/starting-comparison.json",
+      "sha256": "abb30d9a2044fd129b576d96d00f4bc443aca4902971a774d5841af67c34b746"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/control-audit/audit.json",
+      "sha256": "8e4931addef2882adb012e725dc090472b2d8962e7c9116c3ea77d43a7eaee39"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/starting/receipt.json",
+      "sha256": "5246102a94e47368c1b9470fb4ef0453da12552f30e175cb3a802dd3fedccc98"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/starting-process.json",
+      "sha256": "82e9ed059b8191fad023964cd191fadb9896ecb37fa82516fb4da7481f013c7a"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/train-audit/audit.json",
+      "sha256": "16a5dd978f47e22ec4e0c0b71f99fd6d6ed4e9cb0698e3d2fe25b6ca274cb1e5"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/train-audit/schedule.jsonl",
+      "sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/capacity/receipt.json",
+      "sha256": "995602986e42132057df12fd823b92e0fec8492daace4e958f8ababfc11d667a"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/capacity-process.json",
+      "sha256": "5fe0640793cb7e379ddf211339bf813578c88cd95f7f0c14348328d0129efa2a"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/full-run-freeze.json",
+      "sha256": "13f2e6f88f6e99323645a748ecaffdc7aa709cc43cb19fb35fd6a63e435b9ed9"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/train-invocation.json",
+      "sha256": "4f23295c6ad7ae43f78a3db775d78d4ddd18669db567beae3dc173123d6d0f8c"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/train-process.json",
+      "sha256": "c71e91c3402cdf0a3f123e0900dcb6db5c665217319509710ff7f72731d0e373"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/training/receipt.json",
+      "sha256": "893c6a1b154734133d49ce41036a05bef2b5830c3615070b3547d56aebff1657"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/training/checkpoint-manifest.json",
+      "sha256": "1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/training/fit-before.jsonl",
+      "sha256": "d13d8602294732339056781f1148426be1ef3003b9b8ce9bc833142ecdd83312"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/training/fit-after.jsonl",
+      "sha256": "a099822f30a234b0b3d2ff588888d712897bf5b1af4cbb878369cc23e619ca84"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/training/online.jsonl",
+      "sha256": "66cc8fbcf2a041472c5705f8d76073a13be83d8160e6d97db011d256e1c59cb6"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/implementation-review.md",
+      "sha256": "5ffc3704e8962e2d448584a42a6585ab0082b60ef2840a90dc25339fb90f168c"
+    },
+    {
+      "path": "model/m6-qwen-20261111-01/execution-review.md",
+      "sha256": "1b86b57ad91264107106833f96c06225aee3776f87f538e207cc7383f29b7508"
+    }
+  ],
+  "trained_development_inference_owner": "Runtime P4; not duplicated by Model; Evaluation E6 owns quality interpretation",
+  "p4_fresh_reload": {
+    "status": "completed",
+    "rows": 624,
+    "option_probabilities": 2390,
+    "process_wall_seconds": 40.52782383421436,
+    "load_seconds": 0.709607,
+    "evidence": [
+      {
+        "path": "release/p4-m6-20261111-01/audit/audit.json",
+        "sha256": "40a7e9953cd8d9852563ebbc32e3c03c2b51eae870f0213ac0547233b9b26801"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/run/receipt.json",
+        "sha256": "6f164b6c1b9feb6d09e6eed6afacf8e709e7968017aad6b2ab8f3ac5310255e8"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/process-receipt.json",
+        "sha256": "a55570868eea6565d7ed41209cdbe8c3b0537edd56da104e8ad0c79bdb54535e"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/output-validation.json",
+        "sha256": "781fb8cb6716762849340b7e1c70e98b4d4644ad04cdf1cff6e4c0e7f17ca5e5"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/delivery-summary.json",
+        "sha256": "435e84db493dff8258d49bbaf4df255aa930323e0ed6e1e5507d2ce018def071"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/run/v2-original.jsonl",
+        "sha256": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/run/v2-reversed.jsonl",
+        "sha256": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615"
+      },
+      {
+        "path": "release/p4-m6-20261111-01/run/probes-paired.jsonl",
+        "sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+      }
+    ],
+    "model_duplicate_final_inference": false,
+    "slot_return_verified": true,
+    "qualification": "Runtime completion does not establish learning success; E6 scores independently"
+  }
+}
