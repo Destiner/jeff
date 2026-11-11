@@ -37,3 +37,5 @@ Parallelize edits only in isolated workspaces or strictly disjoint scopes. Subag
 ## Handoff
 
 Publish `artifacts/handoffs/model/<id>.md` in the shared root, with branch/commit, dependency requirements, actual commands, dataset ID, checkpoint and prediction paths, runtime/memory, failures, and cost. Use the absolute shared root specified in coordination, not a private worktree artifact directory.
+
+Keep setup updates, dependency requests, and interim runs in these files. Check Data/Evaluation public handoff files for inputs when needed. Send one final chat report after the assigned train/save/reload/predict task is complete; report early only if genuinely blocked. Environment setup or subagent delegation alone is not task completion.
