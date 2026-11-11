@@ -1,6 +1,6 @@
 # Swarm workflow
 
-Design for tens or hundreds of contributors without requiring hundreds of simultaneous writers or training jobs. A small core owns integration; most workers produce independent, bounded contributions.
+Design for tens or hundreds of contributors without requiring hundreds of simultaneous writers or training jobs. Workstream owners own their implementation, review, and in-scope integration. The project lead steers shared decisions rather than gating routine delivery.
 
 This is a workflow specification, not a request to build a general-purpose orchestration platform. Current roles and launch order are in [coordination.md](coordination.md); payload formats are in [contracts.md](contracts.md).
 
@@ -34,7 +34,7 @@ Keep task assignments in one shared coordination record once work starts. Claim 
 - Use one branch/worktree per coding task. Never share a mutable checkout between agents.
 - Git worktrees need an initial commit. Until a rules-compliant initial commit exists, stay in planning mode rather than creating conflicting ad hoc implementations.
 - Prefer disjoint edit scopes. Shared files, dependencies, and contracts have an integration owner.
-- Workers submit changes; the integration owner merges them after inspecting the changes and relevant build/run evidence. Do not let workers independently merge to the integration branch.
+- Workstream owners self-review and self-merge bounded changes in their owned paths, using the shared merge lock and build protocol in `docs/coordination.md`. Subagents do not merge to main. Every main-checkout writer, including the project lead, obeys the lock.
 - Keep reviews small. Include checks performed, known failures, artifact IDs, provenance, and costs in the handoff.
 - If a shared contract must change, propose the change centrally and version it. Do not silently update downstream assumptions.
 - Recheck the combined system after integration; passing isolated checks does not prove compatibility.

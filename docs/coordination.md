@@ -1,107 +1,90 @@
-# Active coordination
+# Workstream ownership and coordination
 
-## Recommended topology
+## LD004: delegated ownership, effective now
 
-Four worker sessions plus the main session as integrator. Start with 2–4 subagents per worker; expand independent data and evaluation jobs after the first pipeline works. Do not create parallel work merely to maximize agent count.
+Timur identified lead review as the bottleneck. Workstream owners now own their implementation, review, delivery, and in-scope merges to main. This supersedes earlier prompts/rules requiring lead approval for every merge or next task.
 
-Each worker lead creates its own branch/worktree from committed main before editing. The integrator does not provision worker workspaces. Start by reading the root instructions, then move to your isolated checkout; do not implement in the root checkout. If the named branch or path already exists, inspect it and coordinate rather than overwriting it.
+The main session owns cross-workstream direction, shared contracts, root packaging, and budget. It reviews by exception or spot-check, not as a routine delivery gate. Owners choose and delegate bounded next steps within their assigned objective and resources without waiting for the lead.
 
-| Session | Branch / worker-created workspace | Owns | First task completion |
-| --- | --- | --- | --- |
-| Integrator | `main`, repository root | Root configuration, packaging, contracts, integration, resource allocations | Minimal Python/uv package setup; dependency requests resolved |
-| Model | `worker/model`, `.worktrees/model` | `src/jeff/model/`, `src/jeff/training/`, `configs/model/`, `docs/model/` | Small actual training run, checkpoint, fresh-process predictions |
-| Data | `worker/data`, `.worktrees/data` | `src/jeff/data/`, `configs/data/`, `manifests/data/`, `docs/data/` | Roughly 300 train + 60 validation examples, manifest, validation summary |
-| Evaluation | `worker/evaluation`, `.worktrees/evaluation` | `src/jeff/evaluation/`, `configs/evaluation/`, `manifests/evaluation/`, `docs/evaluation/` | Baseline metrics and a prediction-file evaluator; reserved final-evaluation design |
-| Research | `worker/research`, `.worktrees/research` | `docs/research/`, `experiments/research/` | Within 30–45 minutes: two candidate backbones, one recommendation, concrete compatibility risks |
+## Ownership boundaries
 
-Paths are ownership reservations, not claims that implementation already exists. Worker briefs are in [briefs/](briefs/model.md): [model](briefs/model.md), [data](briefs/data.md), [evaluation](briefs/evaluation.md), [research](briefs/research.md).
+| Owner | Branch / workspace | Allowed tracked edits |
+| --- | --- | --- |
+| Lead | `main`, repository root | Root files/configuration, `src/jeff/__init__.py`, shared contracts, coordination, budget |
+| Model | `worker/model`, `.worktrees/model` | `src/jeff/model/`, `src/jeff/training/`, `configs/model/`, `docs/model/` |
+| Data | `worker/data`, `.worktrees/data` | `src/jeff/data/`, `configs/data/`, `manifests/data/`, `docs/data/` |
+| Evaluation | `worker/evaluation`, `.worktrees/evaluation` | `src/jeff/evaluation/`, `configs/evaluation/`, `manifests/evaluation/`, `docs/evaluation/` |
+| Research | `worker/research`, `.worktrees/research` | `docs/research/`, `experiments/research/` |
 
-The integrator alone edits root files, `src/jeff/__init__.py`, shared contracts, and shared packaging. Workers report dependency requirements rather than racing to edit `pyproject.toml` or the lockfile. While waiting for packaging, research and dataset preparation can proceed; keep any temporary environment isolated.
+Create/manage your own isolated workspaces. Do not edit other owners' files or share a mutable checkout between subagents. Subagents return bounded contributions to their owner; only workstream owners merge to main.
 
-## Launch order and gates
+Root dependencies and shared interfaces still need the lead; cross-team implementation changes need the affected owner's agreement. Neither is permission to halt unrelated useful work. Coordinate routine inputs, predictions, and findings directly through public handoff files.
 
-1. **Immediately:** launch all four workers against [contracts v0.1](contracts.md). Research does not gate data or evaluator implementation.
-2. **First 30–45 minutes:** model selects a provisional backbone; data produces a tiny first shard before the full pilot; evaluation produces file-based scoring. Integrator supplies packaging.
-3. **First complete run:** model trains on the pilot, saves, reloads, and writes predictions. Evaluation scores the same validation inputs for baselines and the trained model.
-4. **After the loop works:** expand data, run hypothesis-driven improvements, and assign additional adversarial validation work.
-5. **Day-one cutoff:** preserve the best usable checkpoint and its provenance, even if a later experiment is unfinished.
+## Current assignments
 
-Do not wait for a perfect dataset or a definitive architecture survey. A small real run is the critical path.
+- **Data D2:** self-review and integrate completed pilot-v1 tooling first. Then build immutable `data-pilot-v2`, aiming for roughly 1,500 train / 300 validation rows across the existing three families. Prioritize genuinely different scenarios, domains, rule mechanisms, and less obvious sentiment/intent wording over multiplying templates. Aim for at least 100 training and 20 validation source groups per family if achievable without lowering quality. Record actual counts and limitations rather than filling quotas with weak variants. Keep v1 unchanged; no prior validation examples or their variants may become training data. Consult Research directly, without waiting for its full audit. Deliver validated shards, manifests/provenance, and concise quality findings.
+- **Evaluation E2:** self-review and integrate existing tooling first. Own the repeatable comparison report for the 256-token pilot and subsequent M3. Reuse the existing scoring/ordering tools rather than rebuilding them. Compare uniform, lexical, starting, and trained predictions on identical references; report coverage, label provenance, per-family and source-group results, log loss, and option-order behavior. Distinguish 60 rows from 12 independent groups. Request inference directly from Model; process already-available 128-token/pilot-probe predictions while waiting. Do not use reserved final data.
+- **Model M3:** finish/publish the assigned M2 256-token comparison and self-integrate completed work. Then implement and run one retained-pretrained-head `cross-encoder/ms-marco-MiniLM-L6-v2` comparison on frozen `data-pilot-v1`, with 256 tokens, the same seed, and the same training-step budget. Preserve its initial head; compute grouped choice cross-entropy externally rather than built-in one-label regression. Keep the existing all-MiniLM path/checkpoints working and the decision interface unchanged. Record necessary architecture-specific settings explicitly. No Qwen, data changes, new dependencies, paid jobs, or final-data access. Publish initial/trained checkpoints and fresh-process predictions; coordinate scoring directly with Evaluation.
+- **Research R2:** continue the assigned 30–45-minute pilot generalization/shortcut audit. Read Data's quality findings first. Examine source-group independence, template/near-duplicate overlap, answer-position/option-text shortcuts, and rule-mechanism coverage; recommend at most three prioritized improvements. Send actionable findings directly to Data/Model via files. Do not edit datasets, labels, production code, contracts, or task-family reservations.
 
-## Initial task reservation
+These are current objectives, not a requirement to wait for lead approval after each internal subtask. Complete, self-review, merge eligible changes, and report delivery. If an objective is exhausted and no useful in-scope follow-up exists, ask for direction rather than inventing unrelated features.
 
-- Training families: `intent`, `sentiment`, `rule_application`.
-- Validation: new source groups within those families.
-- Unseen-family final evaluation: reserve `passage_entailment` for evaluation only.
-- Evaluation also holds private in-family final cases with independently assigned source groups.
-- These are initial experiment boundaries, not a claim that the model supports those tasks well.
-- Changing these reservations requires coordination before generating more data.
+## Safe self-merge protocol
 
-## Compute and budget
+Every writer to the main checkout, including the lead, follows this protocol. Only the short integration step is serialized; implementation, review, data generation, and experiments remain parallel.
 
-- Model owns the initial local ML compute slot, including model downloads, GPU/MPS training, and model inference.
-- Other sessions may run lightweight CPU data processing and metric computation. They must request a slot before loading a large model or starting competing ML work.
-- Research can suggest runs but cannot independently launch training.
-- Shared additional-spend ceiling: £50. Initial paid allocations: £0 for every worker. Existing approved agent access may be used; separately billed API calls, GPU rentals, or services require an explicit allocation.
-- The integrator records allocations and actual/in-flight spend here or in a dedicated ledger before authorizing paid work. No paid jobs are launched by this scaffold.
+1. In your isolated worktree, review the change (delegate a focused review where useful), run the relevant actual workflow, and build the package. No software tests or linting. Commit a bounded change and record its exact hash. Check that changes not already on main stay inside your ownership boundary.
+2. Acquire the shared lock atomically: `mkdir /Users/destiner/Code/jeff/.git/jeff-merge.lock`. Write an `owner` file inside it with your team, purpose, and start time. If it exists, continue independent work or retry later; never delete another owner's lock.
+3. Verify the main checkout is clean with no merge/rebase in progress. If it is dirty, do not stash, reset, or overwrite anyone's work. Release your lock and coordinate.
+4. From main, merge the exact reviewed commit with `git -c core.hooksPath=/dev/null merge --no-ff --no-commit <commit>`. Already-integrated commits need no merge. If conflicts occur, abort the merge; resolve them in your isolated branch, involving affected owners, before retrying.
+5. Run `uv build --no-sources` on the integrated tree. Do not hold the lock during training, model downloads, or long analysis. If the build fails, abort the uncommitted merge and fix your branch.
+6. Commit the successful merge with a conventional message and no test/lint hooks. Record the resulting main commit. Release only your own lock, including its owner file, on success or after a safely aborted attempt. Do not leave main with an unfinished merge.
+7. Publish the integration hash and evidence in your handoff. Other owners may incorporate committed main at safe points without asking the lead. Do not rebase active subagents.
 
-## Artifact sharing and handoffs
+Do not force-push, rewrite main history, merge another owner's unapproved feature branch, or widen your edit scope. Failed/non-merged work remains on the owner branch. For a stale lock, coordinate with its recorded owner; do not guess that it is abandoned.
 
-All sessions use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. This is shared storage, not a shared checkout. Use team-specific, uniquely named directories; never mutate a completed artifact.
+## Shared contracts and task reservations
 
-- Data writes under `data/`; model under `model/`; evaluation under `evaluation/`.
-- Final evaluation stays under `evaluation/final/`. Training workers must not inspect or consume it. This is procedural isolation, not an OS security boundary.
-- Each worker publishes append-only notes at `handoffs/<team>/<handoff-id>.md` under the artifact root. Put intermediate outputs and nonblocking requests here, not in chat reports. Other workers may inspect these public notes for inputs when needed; final-evaluation content remains private to Evaluation.
-- Include branch and commit, deliverables, commands actually executed, metrics or failures, artifact paths, dependency requests, and costs. Distinguish proposed commands from successful executions.
-- Commit logical changes on your worker branch. Do not merge or cherry-pick other workers' changes yourself; request integration.
-- The integrator merges ready changes and tells workers which integration commit to incorporate. Do not continuously rebase active subagents.
+Follow [contracts v0.1](contracts.md). Training families remain `intent`, `sentiment`, `rule_application`; validation uses separate source groups. `passage_entailment` remains reserved for unseen-family final evaluation. Final in-family groups are also isolated. Do not change these reservations unilaterally.
 
-No software tests or linting. Use actual builds, training/inference runs, dataset validation, and model evaluation for evidence.
+Group before generating variants. Never put validation failures or their paraphrases into training. For repairs, create genuinely separate training scenarios while keeping the evaluated cases as validation.
 
-## Reporting and decisions
+## Compute and spending
 
-The main session is project lead and integrator. Timur manually copies final worker reports into that session and relays decisions back. Writing an intermediate handoff file does not automatically notify the lead, and Timur is not expected to relay each milestone.
+- Model owns and schedules the local ML slot. Other owners send it inference requests directly; no lead relay needed.
+- Other owners may run lightweight CPU data processing/scoring. Do not independently load large models or launch competing ML jobs.
+- Shared extra-spend ceiling is £50. Current paid allocations remain £0 per owner. Existing approved agent access is available; separately billed API calls/services or rented compute need a lead allocation.
+- Owners cannot each treat the £50 total as their personal budget. Track actual and pending spend in handoffs.
+- All prior checkpoint/data artifacts remain immutable. Preserve a working version while experimenting.
 
-Send one final chat report when the assigned task is complete. Creating a worktree, installing dependencies, delegating subagents, or publishing the first tiny shard is an intermediate step, not task completion. Continue through your brief's acceptance criteria rather than returning control after each substep. Keep the final report concise (roughly 150–250 words); put longer evidence in the handoff artifact.
+## Artifact sharing
 
-An early chat report is justified only by a genuine blocker that prevents further useful in-scope work, or a necessary authorization you cannot proceed without. Record nonblocking questions in shared handoff files and continue independent work. Do not send routine startup/progress/first-output reports.
+Use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. Data writes under `data/`, Model under `model/`, Evaluation under `evaluation/`, Research under `research/`; use unique IDs.
 
-Publish intermediate artifacts promptly so the pipeline can proceed without chat relays. When an input is needed, inspect the relevant team's public handoff directory instead of asking Timur to forward routine status. Do not inspect final-evaluation content or assume anyone is monitoring files continuously.
+Publish intermediate outputs and nonblocking requests in append-only `handoffs/<team>/<id>.md`. Check relevant public handoffs when inputs are needed. Files are not automatically monitored, and Timur is not expected to relay routine milestones.
 
-Use this format:
+Final content stays under `evaluation/final/` and must not reach training/data/research workers or tuning decisions. This is procedural, not OS-enforced isolation.
+
+## Reporting
+
+Send one concise final chat report per completed assignment, after eligible self-integration. Early chat is only for a genuine blocker preventing useful progress or required authorization. Do not stop/report merely because a worktree, environment, tiny shard, or subagent delegation is ready.
 
 ```text
 TEAM / TASK:
-STATUS: done | blocked
+STATUS: delivered | blocked
 RESULT: what actually exists or changed
-EVIDENCE: actual invocation and outcome; metrics with dataset/version and sample count
-CODE: branch, commit, workspace, and any uncommitted changes
-ARTIFACTS: absolute manifest/checkpoint/report/handoff paths
-RESOURCES: compute running or released; actual and pending additional spend
-DECISION NEEDED: question, options, and recommendation; or "none"
-NEXT: proposed bounded next task
+EVIDENCE: actual commands/outcomes; metrics with dataset and sample/group count
+CODE: branch, implementation commit, main merge commit (or why unmerged)
+ARTIFACTS: absolute relevant paths
+RESOURCES: compute running/released; actual and pending spend
+DECISION NEEDED: consequential question and recommendation, or none
+NEXT: bounded next step within scope, or requested direction
 ```
 
-Do not include credentials, private final-evaluation examples, or invented measurements. Distinguish a claimed result from a result you reproduced.
+The lead uses these reports to steer priorities and resolve cross-team tradeoffs; its response is not a prerequisite for routine in-scope progress. No credentials or reserved final examples in reports. Distinguish measured evidence from recommendations and teacher agreement from verified correctness.
 
-Workers may make reversible implementation choices within their assigned scope and resources. Shared-contract changes, root dependencies, ownership/scope changes, access to another team's compute slot, and unallocated paid work still require coordination. Record nonblocking requests in files; escalate in chat only when blocked. Do not treat the absence of a reply as permission. Describe the smallest decision that would unblock you and continue independent in-scope work where possible.
+## Integration history
 
-The lead inspects the report and relevant code/artifacts, then responds with:
-
-- **Disposition:** integrate, request a change, or hold.
-- **Decision:** chosen option and short rationale, including remaining uncertainty.
-- **Next task:** owner, objective, allowed paths, and concrete completion evidence.
-- **Resources:** compute ownership and any spending allocation.
-- **Sync:** integration commit to incorporate, if applicable.
-
-Prefer evidence that advances the day-one training/save/reload/evaluation loop. Use comparisons on the same data; do not select models solely on training loss or unverifiable claims. Keep the working checkpoint while considering alternatives.
-
-The lead records decisions affecting shared contracts, ownership, or resources in the relevant project docs and sends copyable instructions back through Timur. Model-specific rationale belongs with the model workstream. No orchestration service, shared writable task board, or automatic monitoring is required.
-
-## If the number of sessions changes
-
-- **Three workers plus integrator:** fold research into a time-boxed subagent under Model.
-- **Five workers plus integrator:** add a validation/failure-analysis worker after Evaluation has a working pipeline. Give it a disjoint directory and validation-only data; do not add a second trainer or an early UI workstream.
-- **Three sessions total:** integrator also handles evaluation; one worker owns model plus research; one owns data.
-
-Within each session, subagents need disjoint tasks and edit scopes. Use additional isolated worktrees for independent code-writing subagents, or serialize integration through the session lead. Never let several subagents edit the same mutable files concurrently.
+- Research through `59f70cf` was integrated; Lead reproduced the 128-token truncation finding and tiny validation arithmetic. Review artifacts: `artifacts/lead/research-review-FjOJ4y/`.
+- Initial Model through `2f85624` was integrated at `fb916bc`; package build succeeded. Lead independently rescored the 60 saved validation outputs (19/60 → 36/60; rule regression retained), not a new ML run. Evidence: `artifacts/lead/model-evaluation-2f85624-SEE0Za/`.
+- Historical LD002/LD003 centralized integration rules are superseded by LD004 above. Their experiment findings remain valid; M3 is now explicitly authorized.

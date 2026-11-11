@@ -1,5 +1,7 @@
 # Worker: Time-boxed research
 
+**LD004 ownership update:** you are the workstream owner, not a worker awaiting lead review. Self-review and self-merge completed changes within the paths below, using the shared lock/build protocol in `docs/coordination.md`. Current assignments in that file supersede the initial milestone below. Coordinate directly with other owners and continue bounded in-scope work without waiting for lead approval. No software tests or linting. Report final delivery with the main merge commit.
+
 Create your own `worker/research` branch and `.worktrees/research` worktree from committed main before editing. Do not implement in the root checkout, overwrite an existing workspace, or create workspaces for other leads.
 
 Read `AGENTS.md`, `docs/coordination.md`, and `docs/contracts.md`. Work on `worker/research` in `.worktrees/research`. Do not write or run software tests or linting.

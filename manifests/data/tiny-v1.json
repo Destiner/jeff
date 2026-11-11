@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-tiny-v1",
+  "shards": [
+    {
+      "path": "data/data-tiny-v1/train.jsonl",
+      "split": "train",
+      "sha256": "52414edd7121ce99fc58a33f5f56b262c99f17348739a8da7b85e7dd6365eea4",
+      "rows": 6
+    },
+    {
+      "path": "data/data-tiny-v1/validation.jsonl",
+      "split": "validation",
+      "sha256": "6854d9e86516ba3af759fdd003c41b594fc0005e827860158cec8039e242d65e",
+      "rows": 3
+    }
+  ]
+}

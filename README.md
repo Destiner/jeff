@@ -16,11 +16,15 @@ Training and understanding the model are the primary deliverables. Applications 
 
 ## What works
 
-Shared Python packaging, project decisions, and a swarm workflow. Model, data, and evaluation implementations are in parallel worker branches and are not integrated yet. No trained checkpoint is claimed.
+A ~22.7M-parameter MiniLM candidate scorer, full fine-tuning, self-contained inference checkpoints, and decision-only JSONL prediction. Local MPS training and fresh offline-process reloads have completed.
+
+The 300-train/60-validation pilot improved reference-label agreement from 19/60 to 36/60. This mixes teacher and rule-verified labels, not wholly verified accuracy. Rule performance regressed, and some rule-validation questions were truncated at 128 tokens. See [the qualified results](docs/model/pilot-results.md).
+
+Data-generation and evaluation tooling are still on separate worker branches. Checkpoints and datasets are local artifacts, not bundled with this repository.
 
 ## What's faked or mocked
 
-No model outputs, benchmark results, or demos are presented.
+No mocked model outputs. The starting scoring head is random; probabilities are not claimed to be calibrated. This small pilot does not establish broad generalization. No application demo is claimed.
 
 ## How to run
 
@@ -32,7 +36,7 @@ uv sync --locked --extra model   # Model/training environment
 uv build --no-sources            # Wheel and source distribution
 ```
 
-Use separate environments per worktree. Run model commands with `uv run --locked --extra model` to retain their optional dependencies. Training and inference commands will be documented when the worker implementations are integrated.
+Use separate environments per worktree. Run model commands with `uv run --locked --extra model` to retain their optional dependencies. [Model setup and commands](docs/model/README.md) cover training and local checkpoint inference. The recorded pilot uses 128 tokens; the approved follow-up uses 256 to avoid the measured input loss.
 
 No software tests or linting. Model evaluation and dataset validation remain part of the training workflow.
 

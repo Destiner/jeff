@@ -22,8 +22,10 @@ A small, text-based decision model: context + question + caller-supplied choices
 - Keep final test data out of training and tuning. Split related examples together, before generating paraphrases or variants.
 - Queue training jobs against measured memory capacity; agent count is not compute capacity.
 - Put generated data, checkpoints, caches, and run outputs under ignored `artifacts/`, with unique IDs. Commit small provenance manifests and configurations, not bulky artifacts.
-- Never overwrite another worker's outputs. Submit a small reviewable change and report checks, artifact IDs, and costs.
-- The main session is project lead. Send one final chat report per completed assigned task; interrupt only for a genuine blocker. Keep intermediate updates in shared handoff files. Timur relays final reports and decisions; do not assume automatic notifications.
+- Workstream owners self-review and self-merge bounded changes within their owned paths; routine delivery does not wait for lead approval. Subagents do not merge to main.
+- Every main-checkout writer, including the lead, must use the short shared merge-lock protocol in `docs/coordination.md`. Never edit or merge into a dirty main checkout or remove another owner's lock.
+- Never overwrite another worker's artifacts. Coordinate routine inputs/inference directly through public handoffs; the lead handles shared contracts, root dependencies, budget, and cross-team priorities.
+- Send one final chat report per completed assignment, including the main merge commit. Interrupt only for a genuine blocker. Keep intermediate updates in shared files and continue bounded in-scope work without waiting for the lead.
 
 ## No tests or linting
 
