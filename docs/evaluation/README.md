@@ -1,6 +1,8 @@
 # File-based evaluation
 
-Latest independent results: [E5 frozen decoder comparison](e5-frozen-decoder.md) finds stronger reused-probe performance but worse inherited/new probability quality than both trained M4 encoders, and severe reversal sensitivity. One bounded learning experiment is worth proposing, not a default switch.
+Latest independent results: [E6 decoder learning](e6-decoder-learning.md) finds a negative result from the single authorized recipe: all624 trained development choices prefer the first input option without ties, no both-order successes remain, and intent/probe retention is lost. Some proper scores improve, including new reversed NLL, but do not establish robust learning. No promotion or further run.
+
+Prior [E5 frozen decoder comparison](e5-frozen-decoder.md) found stronger reused-probe performance but worse inherited/new probability quality than both trained M4 encoders and severe reversal sensitivity. It motivated the bounded E6 experiment; its original findings remain intact.
 
 E4's [historical LR control](e4-m5-lr-control.md) fails its frozen loss condition; the separate [D3 seen-mechanism/new-policy diagnostic](e4-d3-seen-rules.md) finds mixed agreement and worsened overall probability metrics for both trained M4 candidates. No promotion.
 
