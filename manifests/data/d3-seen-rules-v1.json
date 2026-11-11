@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-d3-seen-rules-v1",
+  "shards": [
+    {
+      "path": "data/data-d3-seen-rules-v1/release/shards/geometry.jsonl",
+      "split": "validation",
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+      "rows": 48
+    },
+    {
+      "path": "data/data-d3-seen-rules-v1/release/shards/ordering.jsonl",
+      "split": "validation",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+      "rows": 48
+    }
+  ]
+}
