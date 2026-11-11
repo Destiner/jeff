@@ -1,0 +1,1204 @@
+{
+  "groups": {
+    "data:pilot-v2:sentiment-a:g001": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "night nursery boil"
+    },
+    "data:pilot-v2:sentiment-a:g002": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "mineral scale cleaning"
+    },
+    "data:pilot-v2:sentiment-a:g003": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "capacity log"
+    },
+    "data:pilot-v2:sentiment-a:g004": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "small cup pouring"
+    },
+    "data:pilot-v2:sentiment-a:g005": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "stiff hands lid"
+    },
+    "data:pilot-v2:sentiment-a:g006": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "plastic taste"
+    },
+    "data:pilot-v2:sentiment-a:g007": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "office placement"
+    },
+    "data:pilot-v2:sentiment-a:g008": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "boil signal"
+    },
+    "data:pilot-v2:sentiment-a:g009": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "campus tea queue"
+    },
+    "data:pilot-v2:sentiment-a:g010": {
+      "split": "train",
+      "domain": "electric kettles",
+      "scenario_plan": "minimum fill waste"
+    },
+    "data:pilot-v2:sentiment-a:g011": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "cycle commute storm"
+    },
+    "data:pilot-v2:sentiment-a:g012": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "hood visibility"
+    },
+    "data:pilot-v2:sentiment-a:g013": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "coat inventory"
+    },
+    "data:pilot-v2:sentiment-a:g014": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "pocket rain ingress"
+    },
+    "data:pilot-v2:sentiment-a:g015": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "school gate wind"
+    },
+    "data:pilot-v2:sentiment-a:g016": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "zip snag"
+    },
+    "data:pilot-v2:sentiment-a:g017": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "care label"
+    },
+    "data:pilot-v2:sentiment-a:g018": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "warm walk ventilation"
+    },
+    "data:pilot-v2:sentiment-a:g019": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "packability journey"
+    },
+    "data:pilot-v2:sentiment-a:g020": {
+      "split": "train",
+      "domain": "rain jackets",
+      "scenario_plan": "cuff fastener wear"
+    },
+    "data:pilot-v2:sentiment-a:g021": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "hospital waiting puzzles"
+    },
+    "data:pilot-v2:sentiment-a:g022": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "misprinted grid"
+    },
+    "data:pilot-v2:sentiment-a:g023": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "edition contents"
+    },
+    "data:pilot-v2:sentiment-a:g024": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "difficulty progression"
+    },
+    "data:pilot-v2:sentiment-a:g025": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "large print solving"
+    },
+    "data:pilot-v2:sentiment-a:g026": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "missing solution"
+    },
+    "data:pilot-v2:sentiment-a:g027": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "page allocation"
+    },
+    "data:pilot-v2:sentiment-a:g028": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "binding at cafe"
+    },
+    "data:pilot-v2:sentiment-a:g029": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "varied train puzzles"
+    },
+    "data:pilot-v2:sentiment-a:g030": {
+      "split": "train",
+      "domain": "puzzle books",
+      "scenario_plan": "spoiler placement"
+    },
+    "data:pilot-v2:sentiment-a:g031": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "shared desk presets"
+    },
+    "data:pilot-v2:sentiment-a:g032": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "wobble sketching"
+    },
+    "data:pilot-v2:sentiment-a:g033": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "height records"
+    },
+    "data:pilot-v2:sentiment-a:g034": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "motor and cable routing"
+    },
+    "data:pilot-v2:sentiment-a:g035": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "seated transition"
+    },
+    "data:pilot-v2:sentiment-a:g036": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "crank clearance"
+    },
+    "data:pilot-v2:sentiment-a:g037": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "delivery components"
+    },
+    "data:pilot-v2:sentiment-a:g038": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "surface and edge"
+    },
+    "data:pilot-v2:sentiment-a:g039": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "tall user setup"
+    },
+    "data:pilot-v2:sentiment-a:g040": {
+      "split": "train",
+      "domain": "standing desks",
+      "scenario_plan": "unplugged memory"
+    },
+    "data:pilot-v2:sentiment-a:g041": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "stairs carrying"
+    },
+    "data:pilot-v2:sentiment-a:g042": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "pet hair brush"
+    },
+    "data:pilot-v2:sentiment-a:g043": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "filter schedule"
+    },
+    "data:pilot-v2:sentiment-a:g044": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "suction and noise"
+    },
+    "data:pilot-v2:sentiment-a:g045": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "under sofa reach"
+    },
+    "data:pilot-v2:sentiment-a:g046": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "battery fade"
+    },
+    "data:pilot-v2:sentiment-a:g047": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "attachment storage"
+    },
+    "data:pilot-v2:sentiment-a:g048": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "bin emptying"
+    },
+    "data:pilot-v2:sentiment-a:g049": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "crumb pickup"
+    },
+    "data:pilot-v2:sentiment-a:g050": {
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "scenario_plan": "wheel marks"
+    },
+    "data:pilot-v2:sentiment-a:g051": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "tea heat retention"
+    },
+    "data:pilot-v2:sentiment-a:g052": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "handle joint crack"
+    },
+    "data:pilot-v2:sentiment-a:g053": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "cupboard inventory"
+    },
+    "data:pilot-v2:sentiment-a:g054": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "glaze and rim"
+    },
+    "data:pilot-v2:sentiment-a:g055": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "grip with sore fingers"
+    },
+    "data:pilot-v2:sentiment-a:g056": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "dishwasher fading"
+    },
+    "data:pilot-v2:sentiment-a:g057": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "volume measuring"
+    },
+    "data:pilot-v2:sentiment-a:g058": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "shape and base"
+    },
+    "data:pilot-v2:sentiment-a:g059": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "espresso routine"
+    },
+    "data:pilot-v2:sentiment-a:g060": {
+      "split": "train",
+      "domain": "ceramic mugs",
+      "scenario_plan": "metallic taste"
+    },
+    "data:pilot-v2:sentiment-a:g061": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "daytime nap"
+    },
+    "data:pilot-v2:sentiment-a:g062": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "bridge light leak"
+    },
+    "data:pilot-v2:sentiment-a:g063": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "fabric description"
+    },
+    "data:pilot-v2:sentiment-a:g064": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "strap and pressure"
+    },
+    "data:pilot-v2:sentiment-a:g065": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "side sleeping"
+    },
+    "data:pilot-v2:sentiment-a:g066": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "elastic loosening"
+    },
+    "data:pilot-v2:sentiment-a:g067": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "packing list"
+    },
+    "data:pilot-v2:sentiment-a:g068": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "darkness and heat"
+    },
+    "data:pilot-v2:sentiment-a:g069": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "travel face fit"
+    },
+    "data:pilot-v2:sentiment-a:g070": {
+      "split": "train",
+      "domain": "sleep masks",
+      "scenario_plan": "dye transfer"
+    },
+    "data:pilot-v2:sentiment-a:g071": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "heavy tins walk"
+    },
+    "data:pilot-v2:sentiment-a:g072": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "seam failure"
+    },
+    "data:pilot-v2:sentiment-a:g073": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "fold dimensions"
+    },
+    "data:pilot-v2:sentiment-a:g074": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "capacity and carry"
+    },
+    "data:pilot-v2:sentiment-a:g075": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "bike basket fit"
+    },
+    "data:pilot-v2:sentiment-a:g076": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "food smell retention"
+    },
+    "data:pilot-v2:sentiment-a:g077": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "bag sorting"
+    },
+    "data:pilot-v2:sentiment-a:g078": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "fabric and closure"
+    },
+    "data:pilot-v2:sentiment-a:g079": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "wet grocery protection"
+    },
+    "data:pilot-v2:sentiment-a:g080": {
+      "split": "train",
+      "domain": "reusable shopping bags",
+      "scenario_plan": "handle chafing"
+    },
+    "data:pilot-v2:sentiment-a:g081": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "late reading"
+    },
+    "data:pilot-v2:sentiment-a:g082": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "flicker drawing"
+    },
+    "data:pilot-v2:sentiment-a:g083": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "switch location"
+    },
+    "data:pilot-v2:sentiment-a:g084": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "beam and adjustment"
+    },
+    "data:pilot-v2:sentiment-a:g085": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "repair bench light"
+    },
+    "data:pilot-v2:sentiment-a:g086": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "clamp damage"
+    },
+    "data:pilot-v2:sentiment-a:g087": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "power specifications"
+    },
+    "data:pilot-v2:sentiment-a:g088": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "brightness and buzz"
+    },
+    "data:pilot-v2:sentiment-a:g089": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "bedside controls"
+    },
+    "data:pilot-v2:sentiment-a:g090": {
+      "split": "train",
+      "domain": "desk lamps",
+      "scenario_plan": "charging failure"
+    },
+    "data:pilot-v2:sentiment-a:g091": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "coffee repeatability"
+    },
+    "data:pilot-v2:sentiment-a:g092": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "display timeout"
+    },
+    "data:pilot-v2:sentiment-a:g093": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "recipe measurements"
+    },
+    "data:pilot-v2:sentiment-a:g094": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "weighing and cleaning"
+    },
+    "data:pilot-v2:sentiment-a:g095": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "tiny spice increments"
+    },
+    "data:pilot-v2:sentiment-a:g096": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "battery contact fault"
+    },
+    "data:pilot-v2:sentiment-a:g097": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "unit sequence"
+    },
+    "data:pilot-v2:sentiment-a:g098": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "platform and storage"
+    },
+    "data:pilot-v2:sentiment-a:g099": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "large bowl reading"
+    },
+    "data:pilot-v2:sentiment-a:g100": {
+      "split": "train",
+      "domain": "kitchen scales",
+      "scenario_plan": "button reset"
+    },
+    "data:pilot-v2:sentiment-a:g101": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "gum sensitivity"
+    },
+    "data:pilot-v2:sentiment-a:g102": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "bristle shedding"
+    },
+    "data:pilot-v2:sentiment-a:g103": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "brush replacement log"
+    },
+    "data:pilot-v2:sentiment-a:g104": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "reach and grip"
+    },
+    "data:pilot-v2:sentiment-a:g105": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "morning routine"
+    },
+    "data:pilot-v2:sentiment-a:g106": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "charging dock failure"
+    },
+    "data:pilot-v2:sentiment-a:g107": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "head dimensions"
+    },
+    "data:pilot-v2:sentiment-a:g108": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "cleaning and travel"
+    },
+    "data:pilot-v2:sentiment-a:g109": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "small mouth fit"
+    },
+    "data:pilot-v2:sentiment-a:g110": {
+      "split": "train",
+      "domain": "toothbrushes",
+      "scenario_plan": "slippery handle"
+    },
+    "data:pilot-v2:sentiment-a:g111": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "upright coach sleep"
+    },
+    "data:pilot-v2:sentiment-a:g112": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "inflation leak"
+    },
+    "data:pilot-v2:sentiment-a:g113": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "case measurements"
+    },
+    "data:pilot-v2:sentiment-a:g114": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "support and fabric"
+    },
+    "data:pilot-v2:sentiment-a:g115": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "side neck support"
+    },
+    "data:pilot-v2:sentiment-a:g116": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "valve discomfort"
+    },
+    "data:pilot-v2:sentiment-a:g117": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "packing checklist"
+    },
+    "data:pilot-v2:sentiment-a:g118": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "washable cover and bulk"
+    },
+    "data:pilot-v2:sentiment-a:g119": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "headphone coexistence"
+    },
+    "data:pilot-v2:sentiment-a:g120": {
+      "split": "train",
+      "domain": "travel pillows",
+      "scenario_plan": "fastener break"
+    },
+    "data:pilot-v2:sentiment-a:g121": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "long photo walk"
+    },
+    "data:pilot-v2:sentiment-a:g122": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "buckle slip"
+    },
+    "data:pilot-v2:sentiment-a:g123": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "strap threading"
+    },
+    "data:pilot-v2:sentiment-a:g124": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "comfort and adjustment"
+    },
+    "data:pilot-v2:sentiment-a:g125": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "quick tripod change"
+    },
+    "data:pilot-v2:sentiment-a:g126": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "edge abrasion"
+    },
+    "data:pilot-v2:sentiment-a:g127": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "strap material record"
+    },
+    "data:pilot-v2:sentiment-a:g128": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "security and noise"
+    },
+    "data:pilot-v2:sentiment-a:g129": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "wetland camera carry"
+    },
+    "data:pilot-v2:sentiment-a:g130": {
+      "split": "train",
+      "domain": "camera straps",
+      "scenario_plan": "connector scratch"
+    },
+    "data:pilot-v2:sentiment-a:g131": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "setup organisation"
+    },
+    "data:pilot-v2:sentiment-a:g132": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "lid cannot close"
+    },
+    "data:pilot-v2:sentiment-a:g133": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "tray contents"
+    },
+    "data:pilot-v2:sentiment-a:g134": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "sorting and card access"
+    },
+    "data:pilot-v2:sentiment-a:g135": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "sleeved card fit"
+    },
+    "data:pilot-v2:sentiment-a:g136": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "brittle divider"
+    },
+    "data:pilot-v2:sentiment-a:g137": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "component inventory"
+    },
+    "data:pilot-v2:sentiment-a:g138": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "speed and table space"
+    },
+    "data:pilot-v2:sentiment-a:g139": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "vertical storage"
+    },
+    "data:pilot-v2:sentiment-a:g140": {
+      "split": "train",
+      "domain": "board game inserts",
+      "scenario_plan": "assembly fit"
+    },
+    "data:pilot-v2:sentiment-a:g141": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "screen glare"
+    },
+    "data:pilot-v2:sentiment-a:g142": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "cord jam"
+    },
+    "data:pilot-v2:sentiment-a:g143": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "slat angle record"
+    },
+    "data:pilot-v2:sentiment-a:g144": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "shade and mounting"
+    },
+    "data:pilot-v2:sentiment-a:g145": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "night shift privacy"
+    },
+    "data:pilot-v2:sentiment-a:g146": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "warped slats"
+    },
+    "data:pilot-v2:sentiment-a:g147": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "window measurements"
+    },
+    "data:pilot-v2:sentiment-a:g148": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "look and cleaning"
+    },
+    "data:pilot-v2:sentiment-a:g149": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "child room operation"
+    },
+    "data:pilot-v2:sentiment-a:g150": {
+      "split": "train",
+      "domain": "window blinds",
+      "scenario_plan": "side gaps"
+    },
+    "data:pilot-v2:sentiment-a:g151": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "rainy seed shelter"
+    },
+    "data:pilot-v2:sentiment-a:g152": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "drain blockage"
+    },
+    "data:pilot-v2:sentiment-a:g153": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "refill log"
+    },
+    "data:pilot-v2:sentiment-a:g154": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "access and squirrel latch"
+    },
+    "data:pilot-v2:sentiment-a:g155": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "cleaning access"
+    },
+    "data:pilot-v2:sentiment-a:g156": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "perch collapse"
+    },
+    "data:pilot-v2:sentiment-a:g157": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "mounting location"
+    },
+    "data:pilot-v2:sentiment-a:g158": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "viewing and spillage"
+    },
+    "data:pilot-v2:sentiment-a:g159": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "small bird access"
+    },
+    "data:pilot-v2:sentiment-a:g160": {
+      "split": "train",
+      "domain": "bird feeders",
+      "scenario_plan": "sharp wire"
+    },
+    "data:pilot-v2:sentiment-a:g161": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "long wet run"
+    },
+    "data:pilot-v2:sentiment-a:g162": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "toe seam rubbing"
+    },
+    "data:pilot-v2:sentiment-a:g163": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "washing record"
+    },
+    "data:pilot-v2:sentiment-a:g164": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "cushion and heat"
+    },
+    "data:pilot-v2:sentiment-a:g165": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "hill descent fit"
+    },
+    "data:pilot-v2:sentiment-a:g166": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "heel wear"
+    },
+    "data:pilot-v2:sentiment-a:g167": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "sock composition"
+    },
+    "data:pilot-v2:sentiment-a:g168": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "drying and compression"
+    },
+    "data:pilot-v2:sentiment-a:g169": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "blister prevention"
+    },
+    "data:pilot-v2:sentiment-a:g170": {
+      "split": "train",
+      "domain": "running socks",
+      "scenario_plan": "elastic sag"
+    },
+    "data:pilot-v2:sentiment-a:g171": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "fountain pen notes"
+    },
+    "data:pilot-v2:sentiment-a:g172": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "page detachment"
+    },
+    "data:pilot-v2:sentiment-a:g173": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "page count"
+    },
+    "data:pilot-v2:sentiment-a:g174": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "paper and index"
+    },
+    "data:pilot-v2:sentiment-a:g175": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "field sketch binding"
+    },
+    "data:pilot-v2:sentiment-a:g176": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "cover dye"
+    },
+    "data:pilot-v2:sentiment-a:g177": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "ruling dimensions"
+    },
+    "data:pilot-v2:sentiment-a:g178": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "portable size and bleed"
+    },
+    "data:pilot-v2:sentiment-a:g179": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "study tab use"
+    },
+    "data:pilot-v2:sentiment-a:g180": {
+      "split": "train",
+      "domain": "notebooks",
+      "scenario_plan": "uneven trim"
+    },
+    "data:pilot-v2:sentiment-a:g181": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "low pressure rinse"
+    },
+    "data:pilot-v2:sentiment-a:g182": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "temperature instability"
+    },
+    "data:pilot-v2:sentiment-a:g183": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "flow mode list"
+    },
+    "data:pilot-v2:sentiment-a:g184": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "coverage and hose"
+    },
+    "data:pilot-v2:sentiment-a:g185": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "arthritic control"
+    },
+    "data:pilot-v2:sentiment-a:g186": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "leaking swivel"
+    },
+    "data:pilot-v2:sentiment-a:g187": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "fitting size"
+    },
+    "data:pilot-v2:sentiment-a:g188": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "spray and cleaning"
+    },
+    "data:pilot-v2:sentiment-a:g189": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "tall user angle"
+    },
+    "data:pilot-v2:sentiment-a:g190": {
+      "split": "train",
+      "domain": "shower heads",
+      "scenario_plan": "sharp spray"
+    },
+    "data:pilot-v2:sentiment-a:g191": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "stuffy bus ride"
+    },
+    "data:pilot-v2:sentiment-a:g192": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "rattling fan guard"
+    },
+    "data:pilot-v2:sentiment-a:g193": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "speed sequence"
+    },
+    "data:pilot-v2:sentiment-a:g194": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "airflow and battery"
+    },
+    "data:pilot-v2:sentiment-a:g195": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "quiet reading"
+    },
+    "data:pilot-v2:sentiment-a:g196": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "charging socket loose"
+    },
+    "data:pilot-v2:sentiment-a:g197": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "desk setup"
+    },
+    "data:pilot-v2:sentiment-a:g198": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "clip and hum"
+    },
+    "data:pilot-v2:sentiment-a:g199": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "outdoor scorekeeping"
+    },
+    "data:pilot-v2:sentiment-a:g200": {
+      "split": "train",
+      "domain": "portable fans",
+      "scenario_plan": "tilt droop"
+    },
+    "data:pilot-v2:sentiment-a:g201": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "wet kayak rescue"
+    },
+    "data:pilot-v2:sentiment-a:g202": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "roll seal leak"
+    },
+    "data:pilot-v2:sentiment-a:g203": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "packing capacity"
+    },
+    "data:pilot-v2:sentiment-a:g204": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "dryness and buckle"
+    },
+    "data:pilot-v2:sentiment-a:g205": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "map sleeve access"
+    },
+    "data:pilot-v2:sentiment-a:g206": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "strap tear"
+    },
+    "data:pilot-v2:sentiment-a:g207": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "launch inventory"
+    },
+    "data:pilot-v2:sentiment-a:g208": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "visibility and opening"
+    },
+    "data:pilot-v2:sentiment-a:g209": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "saltwater cleanup"
+    },
+    "data:pilot-v2:sentiment-a:g210": {
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "scenario_plan": "base seam seep"
+    },
+    "data:pilot-v2:sentiment-a:g211": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "linen tension"
+    },
+    "data:pilot-v2:sentiment-a:g212": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "screw stripping"
+    },
+    "data:pilot-v2:sentiment-a:g213": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "diameter comparison"
+    },
+    "data:pilot-v2:sentiment-a:g214": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "grip and weight"
+    },
+    "data:pilot-v2:sentiment-a:g215": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "small motif access"
+    },
+    "data:pilot-v2:sentiment-a:g216": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "rough rim snag"
+    },
+    "data:pilot-v2:sentiment-a:g217": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "material description"
+    },
+    "data:pilot-v2:sentiment-a:g218": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "shape and clamp"
+    },
+    "data:pilot-v2:sentiment-a:g219": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "fine fabric hold"
+    },
+    "data:pilot-v2:sentiment-a:g220": {
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "scenario_plan": "ring separation"
+    },
+    "data:pilot-v2:sentiment-a:g221": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "long rehearsal support"
+    },
+    "data:pilot-v2:sentiment-a:g222": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "mount slipping"
+    },
+    "data:pilot-v2:sentiment-a:g223": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "leg height record"
+    },
+    "data:pilot-v2:sentiment-a:g224": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "cushion and adjustment"
+    },
+    "data:pilot-v2:sentiment-a:g225": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "narrow shoulder fit"
+    },
+    "data:pilot-v2:sentiment-a:g226": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "pad collapse"
+    },
+    "data:pilot-v2:sentiment-a:g227": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "case storage"
+    },
+    "data:pilot-v2:sentiment-a:g228": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "stability and varnish mark"
+    },
+    "data:pilot-v2:sentiment-a:g229": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "fast fitting"
+    },
+    "data:pilot-v2:sentiment-a:g230": {
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "scenario_plan": "metal edge contact"
+    },
+    "data:pilot-v2:sentiment-a:g231": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "family lunch stability"
+    },
+    "data:pilot-v2:sentiment-a:g232": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "hinge collapse"
+    },
+    "data:pilot-v2:sentiment-a:g233": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "seat dimensions"
+    },
+    "data:pilot-v2:sentiment-a:g234": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "portability and latch"
+    },
+    "data:pilot-v2:sentiment-a:g235": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "uneven grass setup"
+    },
+    "data:pilot-v2:sentiment-a:g236": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "splintered seat"
+    },
+    "data:pilot-v2:sentiment-a:g237": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "loading sequence"
+    },
+    "data:pilot-v2:sentiment-a:g238": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "surface and legroom"
+    },
+    "data:pilot-v2:sentiment-a:g239": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "car boot fit"
+    },
+    "data:pilot-v2:sentiment-a:g240": {
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "scenario_plan": "pinched folding fingers"
+    }
+  }
+}

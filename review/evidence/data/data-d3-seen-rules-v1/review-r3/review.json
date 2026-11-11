@@ -1,0 +1,1071 @@
+{
+  "verdict": "pass",
+  "must_fix_count": 0,
+  "failures": [],
+  "reviewer": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai"
+  },
+  "immutable_model_revision": null,
+  "additional_model_calls": 0,
+  "spend": 0,
+  "new_target_hidden": {
+    "matches": 13,
+    "n": 13,
+    "decisions": [
+      {
+        "id": "data:d3-seen-rules-v1:packs:p06:c02",
+        "answer": "o2",
+        "rationale": "Available stock 25−5=20; required 42+10=52; deficit 32; two packs of 16. Reserve already doubled.",
+        "ambiguity": null,
+        "target_id": "o2",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+        "answer": "o3",
+        "rationale": "09:20 follows cooldown; session plus cooldown ends exactly 09:40.",
+        "ambiguity": null,
+        "target_id": "o3",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+        "answer": "o4",
+        "rationale": "Earliest possible 09:53 and latest 10:00; none listed fits.",
+        "ambiguity": null,
+        "target_id": "o4",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+        "answer": "o4",
+        "rationale": "13:25–13:45 leaves five minutes on each side.",
+        "ambiguity": null,
+        "target_id": "o4",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+        "answer": "o1",
+        "rationale": "14:10 ends exactly 14:30; 13:44 lacks reset; 14:11 ends late.",
+        "ambiguity": null,
+        "target_id": "o1",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+        "answer": "o1",
+        "rationale": "08:20–08:27 recovery ends 08:40; earliest listed feasible.",
+        "ambiguity": null,
+        "target_id": "o1",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+        "answer": "o3",
+        "rationale": "08:55 plus seven and thirteen ends exactly 09:15; 08:50 lacks prior recovery.",
+        "ambiguity": null,
+        "target_id": "o3",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+        "answer": "o1",
+        "rationale": "10:30–10:48 ventilation ends 11:00.",
+        "ambiguity": null,
+        "target_id": "o1",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+        "answer": "o1",
+        "rationale": "11:25 is earliest listed after ventilation ends 11:24; ends 11:43.",
+        "ambiguity": null,
+        "target_id": "o1",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+        "answer": "o1",
+        "rationale": "15:40 plus 25+15 ends exactly 16:20.",
+        "ambiguity": null,
+        "target_id": "o1",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+        "answer": "o3",
+        "rationale": "16:05 follows prior cooldown and finishes with cooldown 16:45, earlier than 16:20.",
+        "ambiguity": null,
+        "target_id": "o3",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+        "answer": "o2",
+        "rationale": "18:16 follows six-minute reset and finishes 18:26, before next session.",
+        "ambiguity": null,
+        "target_id": "o2",
+        "agreement": true
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+        "answer": "o2",
+        "rationale": "19:00 ends exactly at closing; final reset may extend beyond; other listed times end late.",
+        "ambiguity": null,
+        "target_id": "o2",
+        "agreement": true
+      }
+    ]
+  },
+  "r2_target_hidden": {
+    "matches": 56,
+    "n": 56,
+    "noncooldown_unchanged": 52
+  },
+  "final_content_coverage": {
+    "unique_decisions": 64,
+    "unique_policies": 40,
+    "ids": [
+      "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "data:d3-seen-rules-v1:discount:p01:c01",
+      "data:d3-seen-rules-v1:discount:p01:c02",
+      "data:d3-seen-rules-v1:discount:p02:c01",
+      "data:d3-seen-rules-v1:discount:p02:c02",
+      "data:d3-seen-rules-v1:discount:p03:c01",
+      "data:d3-seen-rules-v1:discount:p03:c02",
+      "data:d3-seen-rules-v1:discount:p04:c01",
+      "data:d3-seen-rules-v1:discount:p04:c02",
+      "data:d3-seen-rules-v1:discount:p05:c01",
+      "data:d3-seen-rules-v1:discount:p05:c02",
+      "data:d3-seen-rules-v1:discount:p06:c01",
+      "data:d3-seen-rules-v1:discount:p06:c02",
+      "data:d3-seen-rules-v1:fifo:p01:c01",
+      "data:d3-seen-rules-v1:fifo:p01:c02",
+      "data:d3-seen-rules-v1:fifo:p02:c01",
+      "data:d3-seen-rules-v1:fifo:p02:c02",
+      "data:d3-seen-rules-v1:fifo:p03:c01",
+      "data:d3-seen-rules-v1:fifo:p03:c02",
+      "data:d3-seen-rules-v1:fifo:p04:c01",
+      "data:d3-seen-rules-v1:fifo:p04:c02",
+      "data:d3-seen-rules-v1:fifo:p05:c01",
+      "data:d3-seen-rules-v1:fifo:p05:c02",
+      "data:d3-seen-rules-v1:fifo:p06:c01",
+      "data:d3-seen-rules-v1:fifo:p06:c02",
+      "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "data:d3-seen-rules-v1:packs:p01:c01",
+      "data:d3-seen-rules-v1:packs:p02:c02",
+      "data:d3-seen-rules-v1:packs:p04:c01",
+      "data:d3-seen-rules-v1:packs:p06:c02",
+      "data:d3-seen-rules-v1:rates:p01:c01",
+      "data:d3-seen-rules-v1:rates:p02:c02",
+      "data:d3-seen-rules-v1:rates:p04:c01",
+      "data:d3-seen-rules-v1:rates:p06:c02",
+      "data:d3-seen-rules-v1:rounding:p01:c01",
+      "data:d3-seen-rules-v1:rounding:p01:c02",
+      "data:d3-seen-rules-v1:rounding:p02:c01",
+      "data:d3-seen-rules-v1:rounding:p02:c02",
+      "data:d3-seen-rules-v1:rounding:p03:c01",
+      "data:d3-seen-rules-v1:rounding:p03:c02",
+      "data:d3-seen-rules-v1:rounding:p04:c01",
+      "data:d3-seen-rules-v1:rounding:p04:c02",
+      "data:d3-seen-rules-v1:rounding:p05:c01",
+      "data:d3-seen-rules-v1:rounding:p05:c02",
+      "data:d3-seen-rules-v1:rounding:p06:c01",
+      "data:d3-seen-rules-v1:rounding:p06:c02"
+    ]
+  },
+  "initial_history": {
+    "matches": 31,
+    "n": 32,
+    "ambiguity": "packs:p06:c02 reserve doubling; retained as history, not replaced"
+  },
+  "scope": "96 seen-mechanism development-only decisions / 48 policies / 8 mechanisms; never train; not final held-out evidence",
+  "limitations": [
+    "Same-model-alias agreement is not independent truth.",
+    "Pure author audit reuse corroborates consistency, not independent semantic proof.",
+    "Only 13 new hidden judgments; remaining coverage carries forward inspected unchanged r2 inputs.",
+    "Existing repaired diagnostic frozen; no additional heuristic search, generation or optimization."
+  ],
+  "recomputed": [
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "expected_text": "3 packs",
+      "target_id": "o1",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c02",
+      "expected_text": "5 packs",
+      "target_id": "o4",
+      "target_text": "5 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "expected_text": "2 packs",
+      "target_id": "o3",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c02",
+      "expected_text": "3 packs",
+      "target_id": "o3",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "expected_text": "0 packs",
+      "target_id": "o2",
+      "target_text": "0 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c02",
+      "expected_text": "3 packs",
+      "target_id": "o1",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "expected_text": "4 packs",
+      "target_id": "o3",
+      "target_text": "4 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c02",
+      "expected_text": "5 packs",
+      "target_id": "o3",
+      "target_text": "5 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "expected_text": "2 packs",
+      "target_id": "o1",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c02",
+      "expected_text": "3 packs",
+      "target_id": "o1",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "expected_text": "2 packs",
+      "target_id": "o4",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "expected_text": "2 packs",
+      "target_id": "o2",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "expected_text": "Aster",
+      "target_id": "o3",
+      "target_text": "Aster",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c02",
+      "expected_text": "Aster",
+      "target_id": "o3",
+      "target_text": "Aster",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "expected_text": "Ivo",
+      "target_id": "o3",
+      "target_text": "Ivo",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c02",
+      "expected_text": "Ivo",
+      "target_id": "o1",
+      "target_text": "Ivo",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "expected_text": "Bay",
+      "target_id": "o2",
+      "target_text": "Bay",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c02",
+      "expected_text": "Arc",
+      "target_id": "o2",
+      "target_text": "Arc",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "expected_text": "Birch",
+      "target_id": "o2",
+      "target_text": "Birch",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c02",
+      "expected_text": "Birch",
+      "target_id": "o2",
+      "target_text": "Birch",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "expected_text": "South",
+      "target_id": "o2",
+      "target_text": "South",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c02",
+      "expected_text": "North",
+      "target_id": "o1",
+      "target_text": "North",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "expected_text": "Dove",
+      "target_id": "o2",
+      "target_text": "Dove",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c02",
+      "expected_text": "Blue",
+      "target_id": "o4",
+      "target_text": "Blue",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "expected_text": "(-5,3)",
+      "target_id": "o2",
+      "target_text": "(-5,3)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+      "expected_text": "(1,0)",
+      "target_id": "o4",
+      "target_text": "(1,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "expected_text": "(-3,8)",
+      "target_id": "o1",
+      "target_text": "(-3,8)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "expected_text": "(4,2)",
+      "target_id": "o1",
+      "target_text": "(4,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "expected_text": "(7,2)",
+      "target_id": "o4",
+      "target_text": "(7,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+      "expected_text": "(1,-2)",
+      "target_id": "o1",
+      "target_text": "(1,-2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "expected_text": "(-6,2)",
+      "target_id": "o3",
+      "target_text": "(-6,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+      "expected_text": "(0,0)",
+      "target_id": "o2",
+      "target_text": "(0,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "expected_text": "(-2,4)",
+      "target_id": "o2",
+      "target_text": "(-2,4)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "expected_text": "(4,-2)",
+      "target_id": "o3",
+      "target_text": "(4,-2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "expected_text": "(0,0)",
+      "target_id": "o4",
+      "target_text": "(0,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "expected_text": "(-3,4)",
+      "target_id": "o4",
+      "target_text": "(-3,4)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "expected_text": "09:20",
+      "target_id": "o3",
+      "target_text": "09:20",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "expected_text": "No listed start fits",
+      "target_id": "o4",
+      "target_text": "No listed start fits",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "expected_text": "13:25",
+      "target_id": "o4",
+      "target_text": "13:25",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "expected_text": "14:10",
+      "target_id": "o1",
+      "target_text": "14:10",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "expected_text": "08:20",
+      "target_id": "o1",
+      "target_text": "08:20",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "expected_text": "08:55",
+      "target_id": "o3",
+      "target_text": "08:55",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "expected_text": "10:30",
+      "target_id": "o1",
+      "target_text": "10:30",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "expected_text": "11:25",
+      "target_id": "o1",
+      "target_text": "11:25",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "expected_text": "15:40",
+      "target_id": "o1",
+      "target_text": "15:40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "expected_text": "16:05",
+      "target_id": "o3",
+      "target_text": "16:05",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "expected_text": "18:16",
+      "target_id": "o2",
+      "target_text": "18:16",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "expected_text": "19:00",
+      "target_id": "o2",
+      "target_text": "19:00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "expected_text": "Cove",
+      "target_id": "o2",
+      "target_text": "Cove",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "expected_text": "Lagoon",
+      "target_id": "o1",
+      "target_text": "Lagoon",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "expected_text": "Elm",
+      "target_id": "o2",
+      "target_text": "Elm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "expected_text": "Yew",
+      "target_id": "o3",
+      "target_text": "Yew",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "expected_text": "Gully",
+      "target_id": "o4",
+      "target_text": "Gully",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "expected_text": "Spur",
+      "target_id": "o2",
+      "target_text": "Spur",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "expected_text": "Ochre",
+      "target_id": "o1",
+      "target_text": "Ochre",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "expected_text": "Slate",
+      "target_id": "o2",
+      "target_text": "Slate",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "expected_text": "Tern",
+      "target_id": "o2",
+      "target_text": "Tern",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "expected_text": "Ibis",
+      "target_id": "o1",
+      "target_text": "Ibis",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "expected_text": "Hedge",
+      "target_id": "o4",
+      "target_text": "Hedge",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "expected_text": "Verge",
+      "target_id": "o1",
+      "target_text": "Verge",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "expected_text": "Amber 12; Chalk 11; Indigo 0",
+      "target_id": "o1",
+      "target_text": "Amber 12; Chalk 11; Indigo 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "expected_text": "Amber 12; Chalk 16; Indigo 0",
+      "target_id": "o2",
+      "target_text": "Amber 12; Chalk 16; Indigo 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "expected_text": "East 45; North 30; West 0",
+      "target_id": "o3",
+      "target_text": "East 45; North 30; West 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "expected_text": "East 45; North 30; West 7",
+      "target_id": "o2",
+      "target_text": "East 45; North 30; West 7",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "expected_text": "Ink 0; Moss 8; Rust 11",
+      "target_id": "o1",
+      "target_text": "Ink 0; Moss 8; Rust 11",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "expected_text": "Ink 0; Moss 7; Rust 0",
+      "target_id": "o1",
+      "target_text": "Ink 0; Moss 7; Rust 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "expected_text": "Glow 6; Halo 10; Spark 1",
+      "target_id": "o1",
+      "target_text": "Glow 6; Halo 10; Spark 1",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "expected_text": "Glow 6; Halo 4; Spark 0",
+      "target_id": "o2",
+      "target_text": "Glow 6; Halo 4; Spark 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "expected_text": "Brass 9; Iron 0; Steel 9",
+      "target_id": "o3",
+      "target_text": "Brass 9; Iron 0; Steel 9",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "expected_text": "Brass 9; Iron 2; Steel 9",
+      "target_id": "o3",
+      "target_text": "Brass 9; Iron 2; Steel 9",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "expected_text": "Frost 9; Polar 5; Snow 0",
+      "target_id": "o3",
+      "target_text": "Frost 9; Polar 5; Snow 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "expected_text": "Frost 0; Polar 4; Snow 0",
+      "target_id": "o2",
+      "target_text": "Frost 0; Polar 4; Snow 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "expected_text": "£62.40",
+      "target_id": "o3",
+      "target_text": "£62.40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "expected_text": "£102.40",
+      "target_id": "o1",
+      "target_text": "£102.40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "expected_text": "£93.00",
+      "target_id": "o3",
+      "target_text": "£93.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "expected_text": "£161.00",
+      "target_id": "o4",
+      "target_text": "£161.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "expected_text": "£160.00",
+      "target_id": "o2",
+      "target_text": "£160.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "expected_text": "£220.00",
+      "target_id": "o2",
+      "target_text": "£220.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "expected_text": "£52.80",
+      "target_id": "o4",
+      "target_text": "£52.80",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "expected_text": "£88.80",
+      "target_id": "o1",
+      "target_text": "£88.80",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "expected_text": "£72.00",
+      "target_id": "o3",
+      "target_text": "£72.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "expected_text": "£108.00",
+      "target_id": "o3",
+      "target_text": "£108.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "expected_text": "£57.60",
+      "target_id": "o3",
+      "target_text": "£57.60",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "expected_text": "£111.60",
+      "target_id": "o4",
+      "target_text": "£111.60",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "expected_text": "2.4 g",
+      "target_id": "o4",
+      "target_text": "2.4 g",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "expected_text": "2.3 g",
+      "target_id": "o1",
+      "target_text": "2.3 g",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "expected_text": "45 kPa",
+      "target_id": "o3",
+      "target_text": "45 kPa",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "expected_text": "45 kPa",
+      "target_id": "o3",
+      "target_text": "45 kPa",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "expected_text": "1.21 ppt",
+      "target_id": "o4",
+      "target_text": "1.21 ppt",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "expected_text": "1.21 ppt",
+      "target_id": "o3",
+      "target_text": "1.21 ppt",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "expected_text": "130 kg",
+      "target_id": "o2",
+      "target_text": "130 kg",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "expected_text": "130 kg",
+      "target_id": "o4",
+      "target_text": "130 kg",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "expected_text": "7.5 mm",
+      "target_id": "o4",
+      "target_text": "7.5 mm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "expected_text": "8.0 mm",
+      "target_id": "o1",
+      "target_text": "8.0 mm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "expected_text": "20 cm",
+      "target_id": "o2",
+      "target_text": "20 cm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "expected_text": "20 cm",
+      "target_id": "o1",
+      "target_text": "20 cm",
+      "text_correspondence": true
+    }
+  ],
+  "checks_actually_executed": {
+    "48_per_shard": 2,
+    "exact_source_audit_row_ids": 2,
+    "snapshot_raw_bytes": 2,
+    "source_audit_identity": 96,
+    "unique_options": 96,
+    "unique_expected_target_id_text": 96,
+    "group_mapping": 96,
+    "contract_usage": 96,
+    "r2_state_question_target_group_split_preserved": 96,
+    "ordering_stated": 48,
+    "96_decisions_48_policies": 1,
+    "two_cases_per_policy": 1,
+    "eight_mechanisms_twelve_each": 1,
+    "manifest_hash_rows": 2,
+    "new_blind_agreement": 13,
+    "exact_13_blind_scope": 1,
+    "seven_changes_declared": 1,
+    "r2_exact_row_except_seven_wrong_clocks": 96,
+    "changed_slot_not_target": 7,
+    "revision_source_id_sets": 2,
+    "only_starts_and_source_distractors_changed": 96,
+    "geometry_helper_assignments_unchanged": 2,
+    "rank_plan_exact": 12,
+    "none_target_row_unchanged": 1,
+    "known_rank_counts_only": 1,
+    "change_map_rank_plan_hash": 1,
+    "rank_plan_parent_hash": 10,
+    "r2_56_agreement": 56,
+    "r2_reviewed_input_snapshot_identity": 56,
+    "noncooldown_reviewed_input_unchanged": 52,
+    "derived_final_content_coverage": 1,
+    "initial_31_32_history_preserved": 1,
+    "inputs_unchanged_during_integrity_checks": 1
+  },
+  "geometry_changes": [
+    "data:d3-seen-rules-v1:cooldown:p01:c01",
+    "data:d3-seen-rules-v1:cooldown:p02:c01",
+    "data:d3-seen-rules-v1:cooldown:p03:c02",
+    "data:d3-seen-rules-v1:cooldown:p04:c01",
+    "data:d3-seen-rules-v1:cooldown:p05:c01",
+    "data:d3-seen-rules-v1:cooldown:p05:c02",
+    "data:d3-seen-rules-v1:cooldown:p06:c02"
+  ],
+  "cooldown_rank_counts": {
+    "3": 3,
+    "1": 4,
+    "2": 4
+  },
+  "none_target_ids": [
+    "data:d3-seen-rules-v1:cooldown:p01:c02"
+  ],
+  "frozen_decisions_sha256": "82c048efd39b4af2ef27ae630475e65611d8ca53d23865601ef9af00e108574c",
+  "input_hashes_before": {
+    "pre-review-r3/provenance.json": "66512f072c1ff88f754dbfad84748229798964c91eb02d3d3a3df0d7a2952e9e",
+    "pre-review-r3/exclusion.json": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3",
+    "pre-review-r3/validation.json": "4b474ff006ac64e31782cb16a00abbfdae1530eba65d845be14d8fe6d9fc419e",
+    "pre-review-r3/validation-input.json": "e4538acdbc2e2f5d6d2aabe6309e0c78abd21ce854c0ce8edf1cf8e0b6fd487e",
+    "pre-review-r3/manifest.json": "3751605a81260dc4c90a836df1e76e2236c8af54ad3833882dff6f17de835b56",
+    "pre-review-r3/case-metadata.json": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075",
+    "pre-review-r3/freeze.json": "7b4f781f97bcd76755d0fd4bdfaa8ca354f202634fe2e51720f9378284dc3755",
+    "pre-review-r3/shards/geometry.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+    "pre-review-r3/shards/ordering.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "pre-review-r2/provenance.json": "b0bf6788f33da8b89164acfc8d10ed950074859f0cd056a9f2301221928f2211",
+    "pre-review-r2/exclusion.json": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3",
+    "pre-review-r2/validation.json": "c76ab7f512575e51ba5fc20852f7d64bae106d00661fe9f104dcbceb7dcf698f",
+    "pre-review-r2/validation-input.json": "c25b9d558b2f6027a90cfdf70624cd3085f447a8cc2740cb57e07186a2a2c9fc",
+    "pre-review-r2/manifest.json": "78a45bee3edc2c152202d3bdec1f0e7f9c8ec111f457904207ebeea16c6cef07",
+    "pre-review-r2/case-metadata.json": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075",
+    "pre-review-r2/freeze.json": "78faa47e9102d65fb27380e50ce1cbf1fa1ad07bc6d984089e28a3c7165763a9",
+    "pre-review-r2/shards/geometry.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "pre-review-r2/shards/ordering.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "geometry-r3/audit_cases.jsonl": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e",
+    "geometry-r3/group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "geometry-r3/change-map.json": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456",
+    "geometry-r3/audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "geometry-r3/revise.py": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf",
+    "geometry-r3/metadata.json": "fdbc8acb03e2d81c4066ba7ea2c6c01a7037c62d027af7354782bf1d0d1d20d4",
+    "geometry-r3/distractor-rationales.json": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166",
+    "geometry-r3/diagnostics.json": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555",
+    "geometry-r3/validation.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+    "geometry-r3/generation_review.md": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9",
+    "geometry-r3/validation_report.json": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d",
+    "geometry-r3/rank-plan.json": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+    "geometry-r3/source_cases.jsonl": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6",
+    "geometry-r3/freeze.json": "9afdaeefd09f7d8f245ab0f17d77e7e78ff24c6b8b5db296e15e114b5d838bf0",
+    "geometry-r2/audit_cases.jsonl": "36c958bd2d5518fd3af6238bae88c6bf0cc5bdc5465f395f0bb8020f8d11c79b",
+    "geometry-r2/group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "geometry-r2/audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "geometry-r2/metadata.json": "c5fea73b62e76cce54d25616dea9b7e681efea6a9413b7c48b251bddd0c7610f",
+    "geometry-r2/validation.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "geometry-r2/generation_review.md": "d25da8040b4e31703a035d60c14355b3ea7efc9ba4dc11ea539701fb683c8d6c",
+    "geometry-r2/revision.py": "e0f7cc84dacb5f9f4513d38ff43c2735e07848b12dc393f556f0e9711aa6b80d",
+    "geometry-r2/validation_report.json": "ab2c3fae8be9c2f4a122092a196d25245007c72114de8089712b426af39d975b",
+    "geometry-r2/source_cases.jsonl": "955b762f49d66e0865c774b2c3b321c3721fb9b94625e7ad3be4fe937a902bd5",
+    "geometry-r2/revision_map.json": "6c3b8b94a956e96da3d8ae5a54e7ca6df8bf65b9d57e1a739f82e31c6a8cb653",
+    "ordering-r2/audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+    "ordering-r2/group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+    "ordering-r2/audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+    "ordering-r2/revise.py": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7",
+    "ordering-r2/distractor_constructions.json": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a",
+    "ordering-r2/metadata.json": "d7f5bd0d17cbc9d9c597fbc2034b483cdb865c23c46ae4d561a50ed502ef5f06",
+    "ordering-r2/change_map.json": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623",
+    "ordering-r2/validation.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "ordering-r2/parent_refs.json": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2",
+    "ordering-r2/generation_review.md": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0",
+    "ordering-r2/manifest.json": "708aed3cd5b3898cde3c9b10610f2586db899026297a441cf5a6e1862f9535a1",
+    "ordering-r2/validation_report.json": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290",
+    "ordering-r2/source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+    "review-r2/input-hashes-before.json": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490",
+    "review-r2/blind-inputs.jsonl": "56ddf6e9b8b661c792cbaab68a0f622f04632fa2530a4ef548e836c61df0795f",
+    "review-r2/check.py": "32c8dddfd8944cc78e48f0178c4f59c86a62a5c9dbff578bc739a28503a1a7c3",
+    "review-r2/check-output.json": "cb29275c401ce601336e923f7415fc8ff397c011bc13d7ffb20769496f228609",
+    "review-r2/input-hashes-after.json": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490",
+    "review-r2/freeze.py": "89988f30345023c9c264731318f47cc92388f9723ead646dd1331290ac7ae836",
+    "review-r2/frozen-decisions.json": "4f01a433131b05dc2798d165e05c8a213b7bf71bb9496aba8235fc94cab3082f",
+    "review-r2/review.md": "3d009d216a2a542271799dcf1349533a7c322f65a7e3c28e021d3fa06b5a6b1f",
+    "review-r2/review.json": "4453907c24ece026a7858df9f7c2e2f4517c7c4c6857a1b9967153a5786b6a2f",
+    "review/review.json": "b7ee1c8ff77744b2c06a3346e715257a0fcba1b499220d12861d0b885404add3"
+  },
+  "input_hashes_after": {
+    "pre-review-r3/provenance.json": "66512f072c1ff88f754dbfad84748229798964c91eb02d3d3a3df0d7a2952e9e",
+    "pre-review-r3/exclusion.json": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3",
+    "pre-review-r3/validation.json": "4b474ff006ac64e31782cb16a00abbfdae1530eba65d845be14d8fe6d9fc419e",
+    "pre-review-r3/validation-input.json": "e4538acdbc2e2f5d6d2aabe6309e0c78abd21ce854c0ce8edf1cf8e0b6fd487e",
+    "pre-review-r3/manifest.json": "3751605a81260dc4c90a836df1e76e2236c8af54ad3833882dff6f17de835b56",
+    "pre-review-r3/case-metadata.json": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075",
+    "pre-review-r3/freeze.json": "7b4f781f97bcd76755d0fd4bdfaa8ca354f202634fe2e51720f9378284dc3755",
+    "pre-review-r3/shards/geometry.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+    "pre-review-r3/shards/ordering.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "pre-review-r2/provenance.json": "b0bf6788f33da8b89164acfc8d10ed950074859f0cd056a9f2301221928f2211",
+    "pre-review-r2/exclusion.json": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3",
+    "pre-review-r2/validation.json": "c76ab7f512575e51ba5fc20852f7d64bae106d00661fe9f104dcbceb7dcf698f",
+    "pre-review-r2/validation-input.json": "c25b9d558b2f6027a90cfdf70624cd3085f447a8cc2740cb57e07186a2a2c9fc",
+    "pre-review-r2/manifest.json": "78a45bee3edc2c152202d3bdec1f0e7f9c8ec111f457904207ebeea16c6cef07",
+    "pre-review-r2/case-metadata.json": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075",
+    "pre-review-r2/freeze.json": "78faa47e9102d65fb27380e50ce1cbf1fa1ad07bc6d984089e28a3c7165763a9",
+    "pre-review-r2/shards/geometry.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "pre-review-r2/shards/ordering.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "geometry-r3/audit_cases.jsonl": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e",
+    "geometry-r3/group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "geometry-r3/change-map.json": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456",
+    "geometry-r3/audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "geometry-r3/revise.py": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf",
+    "geometry-r3/metadata.json": "fdbc8acb03e2d81c4066ba7ea2c6c01a7037c62d027af7354782bf1d0d1d20d4",
+    "geometry-r3/distractor-rationales.json": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166",
+    "geometry-r3/diagnostics.json": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555",
+    "geometry-r3/validation.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+    "geometry-r3/generation_review.md": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9",
+    "geometry-r3/validation_report.json": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d",
+    "geometry-r3/rank-plan.json": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+    "geometry-r3/source_cases.jsonl": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6",
+    "geometry-r3/freeze.json": "9afdaeefd09f7d8f245ab0f17d77e7e78ff24c6b8b5db296e15e114b5d838bf0",
+    "geometry-r2/audit_cases.jsonl": "36c958bd2d5518fd3af6238bae88c6bf0cc5bdc5465f395f0bb8020f8d11c79b",
+    "geometry-r2/group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "geometry-r2/audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "geometry-r2/metadata.json": "c5fea73b62e76cce54d25616dea9b7e681efea6a9413b7c48b251bddd0c7610f",
+    "geometry-r2/validation.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "geometry-r2/generation_review.md": "d25da8040b4e31703a035d60c14355b3ea7efc9ba4dc11ea539701fb683c8d6c",
+    "geometry-r2/revision.py": "e0f7cc84dacb5f9f4513d38ff43c2735e07848b12dc393f556f0e9711aa6b80d",
+    "geometry-r2/validation_report.json": "ab2c3fae8be9c2f4a122092a196d25245007c72114de8089712b426af39d975b",
+    "geometry-r2/source_cases.jsonl": "955b762f49d66e0865c774b2c3b321c3721fb9b94625e7ad3be4fe937a902bd5",
+    "geometry-r2/revision_map.json": "6c3b8b94a956e96da3d8ae5a54e7ca6df8bf65b9d57e1a739f82e31c6a8cb653",
+    "ordering-r2/audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+    "ordering-r2/group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+    "ordering-r2/audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+    "ordering-r2/revise.py": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7",
+    "ordering-r2/distractor_constructions.json": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a",
+    "ordering-r2/metadata.json": "d7f5bd0d17cbc9d9c597fbc2034b483cdb865c23c46ae4d561a50ed502ef5f06",
+    "ordering-r2/change_map.json": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623",
+    "ordering-r2/validation.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "ordering-r2/parent_refs.json": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2",
+    "ordering-r2/generation_review.md": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0",
+    "ordering-r2/manifest.json": "708aed3cd5b3898cde3c9b10610f2586db899026297a441cf5a6e1862f9535a1",
+    "ordering-r2/validation_report.json": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290",
+    "ordering-r2/source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+    "review-r2/input-hashes-before.json": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490",
+    "review-r2/blind-inputs.jsonl": "56ddf6e9b8b661c792cbaab68a0f622f04632fa2530a4ef548e836c61df0795f",
+    "review-r2/check.py": "32c8dddfd8944cc78e48f0178c4f59c86a62a5c9dbff578bc739a28503a1a7c3",
+    "review-r2/check-output.json": "cb29275c401ce601336e923f7415fc8ff397c011bc13d7ffb20769496f228609",
+    "review-r2/input-hashes-after.json": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490",
+    "review-r2/freeze.py": "89988f30345023c9c264731318f47cc92388f9723ead646dd1331290ac7ae836",
+    "review-r2/frozen-decisions.json": "4f01a433131b05dc2798d165e05c8a213b7bf71bb9496aba8235fc94cab3082f",
+    "review-r2/review.md": "3d009d216a2a542271799dcf1349533a7c322f65a7e3c28e021d3fa06b5a6b1f",
+    "review-r2/review.json": "4453907c24ece026a7858df9f7c2e2f4517c7c4c6857a1b9967153a5786b6a2f",
+    "review/review.json": "b7ee1c8ff77744b2c06a3346e715257a0fcba1b499220d12861d0b885404add3"
+  },
+  "execution": "Standard-library local Python; inspected pure functions extracted by AST, no module top level or mains executed; no bytecode writes. No tests/lint/Git/mailbox/network/model/tokenizer/Evaluation/probe/finaldata/training content. Writes only new review-r3 files."
+}

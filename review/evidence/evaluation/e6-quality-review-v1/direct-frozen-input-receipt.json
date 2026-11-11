@@ -1,0 +1,3770 @@
+{
+  "checks": 640,
+  "failed": 0,
+  "source_pins": {
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-fresh-start.jsonl": "62ec08d6b6623cd30facd14438d09162bac91785a80cdff8396067128e26ed0f",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen.jsonl": "62ec08d6b6623cd30facd14438d09162bac91785a80cdff8396067128e26ed0f",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-fresh-start-order.jsonl": "62d1587bcb33b83cced088b54e80f837f35148424c6a1293d7fd40122f49e260",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen-order.jsonl": "62d1587bcb33b83cced088b54e80f837f35148424c6a1293d7fd40122f49e260",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-fresh-start.jsonl": "7e37d62969e112d42e0bb02ce9179484bafef23e3d640050c958f2c218a1d684",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/qwen25-05b-instruct-frozen.jsonl": "7e37d62969e112d42e0bb02ce9179484bafef23e3d640050c958f2c218a1d684",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-fresh-start-order.jsonl": "84954ad77530eff74dd2d0825728910118354ba4e5119a47aa040846fab20546",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/qwen25-05b-instruct-frozen-order.jsonl": "84954ad77530eff74dd2d0825728910118354ba4e5119a47aa040846fab20546",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-fresh-start.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/qwen25-05b-instruct-frozen.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-fresh-start-order.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/qwen25-05b-instruct-frozen-order.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/v2-original.jsonl": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+    "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/v2-reversed.jsonl": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+    "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/probes-paired.jsonl": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+  },
+  "positions": [
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g26:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g26:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g26:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g26:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g27:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g27:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g27:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g27:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g28:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g28:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g28:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g28:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g29:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g29:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g29:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g29:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g30:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g30:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g30:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:intent:g30:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g26:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g26:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g26:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g26:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g27:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g27:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g27:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g27:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g28:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g28:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g28:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g28:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g29:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g29:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g29:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g29:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g30:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g30:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g30:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:sentiment-r2:g30:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r09",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g11:r10",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r09",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v1:rule_application:g12:r10",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g201:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g202:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g203:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g204:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g205:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g206:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g207:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g208:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g209:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g210:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g211:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g212:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g213:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g214:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g215:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g216:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g217:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g218:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g219:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g220:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g221:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g222:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g223:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g224:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g225:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g226:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g227:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g228:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g229:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g230:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g231:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g232:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g233:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g234:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g235:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g236:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g237:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g238:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g239:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-a-r2:g240:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g201:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g202:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g203:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g204:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g205:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g206:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g207:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g208:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g209:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g210:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g211:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g212:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g213:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g214:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g215:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g216:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g217:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g218:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g219:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g220:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g221:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g222:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g223:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g224:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g225:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g226:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g227:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g228:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g229:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g230:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g231:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g232:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g233:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g234:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g235:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g236:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g237:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g238:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g239:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:intent-b-r2:g240:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g201:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g202:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g203:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g204:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g205:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g206:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g207:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g208:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g209:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g210:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g211:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g212:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g213:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g214:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g215:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g216:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g217:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g218:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g219:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g220:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g221:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g222:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g223:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g224:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g225:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g226:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g227:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g228:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g229:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g230:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g231:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g232:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g233:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g234:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g235:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g236:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g237:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g238:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g239:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-a:g240:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g208:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g206:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g226:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g230:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g222:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g217:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g214:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g223:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g201:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g239:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g225:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g229:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g213:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g209:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g236:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g205:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g237:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g235:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g219:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g240:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g210:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g221:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g211:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g215:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g204:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g238:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g224:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g202:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g218:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g234:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g228:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g203:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g216:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g220:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g227:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g212:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g231:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g232:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g207:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:sentiment-b-r2:g233:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g011:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g012:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g013:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g014:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-a:g015:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g011:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g012:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g013:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g014:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r01",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r02",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r03",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r04",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r05",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r06",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r07",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-original",
+      "id": "data:pilot-v2:rule-b:g015:r08",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g26:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g26:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g26:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g26:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g27:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g27:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g27:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g27:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g28:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g28:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g28:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g28:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g29:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g29:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g29:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g29:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g30:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g30:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g30:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:intent:g30:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g26:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g26:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g26:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g26:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g27:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g27:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g27:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g27:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g28:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g28:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g28:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g28:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g29:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g29:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g29:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g29:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g30:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g30:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g30:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:sentiment-r2:g30:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r09.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g11:r10.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r09.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v1:rule_application:g12:r10.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g201:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g202:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g203:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g204:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g205:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g206:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g207:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g208:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g209:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g210:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g211:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g212:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g213:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g214:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g215:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g216:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g217:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g218:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g219:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g220:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g221:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g222:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g223:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g224:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g225:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g226:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g227:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g228:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g229:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g230:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g231:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g232:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g233:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g234:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g235:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g236:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g237:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g238:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g239:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-a-r2:g240:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g201:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g202:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g203:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g204:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g205:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g206:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g207:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g208:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g209:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g210:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g211:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g212:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g213:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g214:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g215:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g216:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g217:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g218:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g219:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g220:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g221:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g222:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g223:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g224:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g225:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g226:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g227:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g228:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g229:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g230:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g231:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g232:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g233:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g234:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g235:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g236:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g237:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g238:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g239:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:intent-b-r2:g240:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g201:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g202:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g203:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g204:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g205:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g206:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g207:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g208:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g209:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g210:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g211:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g212:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g213:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g214:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g215:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g216:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g217:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g218:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g219:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g220:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g221:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g222:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g223:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g224:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g225:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g226:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g227:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g228:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g229:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g230:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g231:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g232:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g233:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g234:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g235:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g236:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g237:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g238:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g239:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-a:g240:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g208:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g206:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g226:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g230:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g222:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g217:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g214:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g223:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g201:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g239:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g225:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g229:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g213:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g209:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g236:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g205:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g237:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g235:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g219:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g240:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g210:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g221:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g211:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g215:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g204:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g238:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g224:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g202:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g218:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g234:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g228:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g203:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g216:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g220:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g227:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g212:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g231:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g232:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g207:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:sentiment-b-r2:g233:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g011:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g012:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g013:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g014:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-a:g015:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g011:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g012:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g013:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g014:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r01.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r02.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r03.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r04.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r05.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r06.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r07.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "v2-reversed",
+      "id": "data:pilot-v2:rule-b:g015:r08.evaluation-reversed-v1",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.01.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.01.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.02.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.02.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.03.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.03.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.04.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.intent.04.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.01.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.01.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.02.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.02.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.03.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.03.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.04.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.sentiment.04.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.01.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.01.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.02.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.02.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.03.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.03.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.04.original",
+      "input_position": 0,
+      "tie_size": 1
+    },
+    {
+      "suite": "probes-paired",
+      "id": "eval.validation.rule_application.04.reversed",
+      "input_position": 0,
+      "tie_size": 1
+    }
+  ]
+}

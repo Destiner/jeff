@@ -1,0 +1,53 @@
+{
+  "completed_at": "2026-11-11T14:36:54.747502+00:00",
+  "status": "delivered",
+  "comparison_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/receipt.json",
+    "sha256": "1efbad249d5cf209ead91c60d8a795243449cbeaa8bff87371cb3399bc43a29b"
+  },
+  "source_files_rechecked": 204,
+  "supplement_rechecked": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/superseded-sentiment-train-exclusion.json",
+    "sha256": "881b583f130a61a08707564f34999b12e559588de5d0bff8a9b3bf45d0d9c608"
+  },
+  "v1_recipe_preserved": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v1/score_d3.py",
+    "sha256": "70ef71caec53641df1a20f853c6897b315debc4fe4823626cbe674c1ea797caf"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/bindings.json",
+      "sha256": "821608283da2467ec6fd42c565f264beceba0c537e2bb65b776af13d92bc2f90"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/pins.json",
+      "sha256": "5f9aa4cc755ee4495fd688952f9a3fc225a8a3d7cfc24d820fe881ce49abb330"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/prepare-receipt.json",
+      "sha256": "82581835707d5b786d6ff108ed00c0a69e46308e6881e12f56c86e9c4f1ef196"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/recipe.json",
+      "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/report-candidate.md",
+      "sha256": "f7f0dbe39540a1be14f12b2b29c44eb5c2a5ce084be2eda9bc1026c35bf7e237"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/score_d3.py",
+      "sha256": "dd9d4c00e2d426c2dd66d5023a8acb5a4f0e5ee33b9e2d5879b6aeb7c8c181e9"
+    }
+  ],
+  "all_predictors": 6,
+  "cases_per_predictor": 96,
+  "policies_per_predictor": 48,
+  "mechanisms_per_predictor": 8,
+  "tracked_edits": false,
+  "model_or_tokenizer_loads": false,
+  "tensor_bytes_rehashed": false,
+  "loaded_tensors_independently_attested": false,
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}

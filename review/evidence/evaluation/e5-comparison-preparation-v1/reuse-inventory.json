@@ -1,0 +1,329 @@
+{
+  "status": "preparation only; counts and hashes, no decoder outcomes or scoring execution",
+  "strata": {
+    "inherited-v1": {
+      "rows": 60,
+      "groups": 12,
+      "families": {
+        "intent": {
+          "rows": 20,
+          "groups": 5,
+          "label_basis_counts": {
+            "teacher": 20
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 20,
+              "distinct_known_units": 1
+            },
+            "domain": {
+              "known_rows": 20,
+              "distinct_known_units": 5
+            },
+            "mechanism": {
+              "known_rows": 20,
+              "distinct_known_units": 5
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        },
+        "rule_application": {
+          "rows": 20,
+          "groups": 2,
+          "label_basis_counts": {
+            "rule_verified": 20
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 20,
+              "distinct_known_units": 1
+            },
+            "domain": {
+              "known_rows": 20,
+              "distinct_known_units": 2
+            },
+            "mechanism": {
+              "known_rows": 20,
+              "distinct_known_units": 2
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        },
+        "sentiment": {
+          "rows": 20,
+          "groups": 5,
+          "label_basis_counts": {
+            "teacher": 20
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 20,
+              "distinct_known_units": 1
+            },
+            "domain": {
+              "known_rows": 20,
+              "distinct_known_units": 5
+            },
+            "mechanism": {
+              "known_rows": 20,
+              "distinct_known_units": 5
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        }
+      },
+      "encoder_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained"
+      ],
+      "baselines": [
+        "uniform",
+        "lexical"
+      ],
+      "order_pairs": 60
+    },
+    "new-v2": {
+      "rows": 240,
+      "groups": 170,
+      "families": {
+        "intent": {
+          "rows": 80,
+          "groups": 80,
+          "label_basis_counts": {
+            "teacher": 80
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 80,
+              "distinct_known_units": 2
+            },
+            "domain": {
+              "known_rows": 80,
+              "distinct_known_units": 8
+            },
+            "mechanism": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        },
+        "rule_application": {
+          "rows": 80,
+          "groups": 10,
+          "label_basis_counts": {
+            "rule_verified": 80
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 80,
+              "distinct_known_units": 2
+            },
+            "domain": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "mechanism": {
+              "known_rows": 80,
+              "distinct_known_units": 10
+            },
+            "policy_instance": {
+              "known_rows": 80,
+              "distinct_known_units": 40
+            }
+          }
+        },
+        "sentiment": {
+          "rows": 80,
+          "groups": 80,
+          "label_basis_counts": {
+            "teacher": 80
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 80,
+              "distinct_known_units": 2
+            },
+            "domain": {
+              "known_rows": 80,
+              "distinct_known_units": 8
+            },
+            "mechanism": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        }
+      },
+      "encoder_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained"
+      ],
+      "baselines": [
+        "uniform",
+        "lexical"
+      ],
+      "order_pairs": 240
+    },
+    "probes": {
+      "rows": 24,
+      "groups": 12,
+      "families": {
+        "intent": {
+          "rows": 8,
+          "groups": 4,
+          "label_basis_counts": {
+            "teacher": 8
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "domain": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "mechanism": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        },
+        "rule_application": {
+          "rows": 8,
+          "groups": 4,
+          "label_basis_counts": {
+            "teacher": 8
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "domain": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "mechanism": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        },
+        "sentiment": {
+          "rows": 8,
+          "groups": 4,
+          "label_basis_counts": {
+            "teacher": 8
+          },
+          "reviewed_mapping_units": {
+            "producer": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "domain": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "mechanism": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            },
+            "policy_instance": {
+              "known_rows": 0,
+              "distinct_known_units": 0
+            }
+          }
+        }
+      },
+      "encoder_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained"
+      ],
+      "baselines": [
+        "uniform",
+        "lexical"
+      ],
+      "order_pairs": 12
+    }
+  },
+  "input_universes": {
+    "schema_version": "e5-inputs/1",
+    "created_at": "2026-11-11T14:12:10.951486+00:00",
+    "inputs": [
+      {
+        "name": "v2-original",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+        "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      {
+        "name": "v2-reversed",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+        "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      {
+        "name": "probes-paired",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "rows": 24,
+        "unique_ids": 24,
+        "strict_label_free": true
+      }
+    ],
+    "total_presentations": 624,
+    "notes": [
+      "Reuse byte-identical frozen E3 inputs; no new data.",
+      "Combined v2 contains inherited60 and new240. Evaluation partitions privately.",
+      "300 exact reversals repeat original cases; probes24 already contain12 exact reversal pairs. Do not reverse probes again.",
+      "Decision IDs map outputs only; only state/question/option text enters model."
+    ]
+  },
+  "roles": {
+    "uniform_lexical": "historical-retained is schema-compatible storage reuse, not a neural checkpoint",
+    "decoder": "fresh-start means pretrained/instruction-tuned but untouched by Jeff learning, not random/untrained"
+  },
+  "attestation": "No new checkpoint, prompt freeze chronology or Runtime execution attested."
+}

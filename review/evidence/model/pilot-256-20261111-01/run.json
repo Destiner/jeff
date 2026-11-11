@@ -1,0 +1,1948 @@
+{
+  "schema_version": "0.1",
+  "status": "completed",
+  "started_at": "2026-11-11T10:47:48.613880+00:00",
+  "config": {
+    "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "output_dir": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-20261111-01",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "max_length": 256,
+    "seed": 42,
+    "max_steps": null,
+    "threads": 4
+  },
+  "argv": [
+    "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py",
+    "--dataset-manifest",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/model/pilot-256-20261111-01",
+    "--revision",
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "--device",
+    "mps",
+    "--epochs",
+    "3",
+    "--batch-size",
+    "4",
+    "--max-length",
+    "256",
+    "--learning-rate",
+    "2e-5",
+    "--head-learning-rate",
+    "5e-4",
+    "--seed",
+    "42",
+    "--threads",
+    "4"
+  ],
+  "invocation_cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "output_dir": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-20261111-01",
+  "code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "2f856242ddf0e915fd5f063d8068aa58bff4dee2",
+    "dirty": false,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "00c81efa6f691865b523ee727bf733c19b4cfac62c0fd8dde0d5930fd3a31375",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "0c6f0edb0f67a218450e9b78dd8b0f983b0ac607f144cbf91824448aa8c13a02"
+    }
+  },
+  "invocation_cwd_code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "2f856242ddf0e915fd5f063d8068aa58bff4dee2",
+    "dirty": false
+  },
+  "artifacts": {
+    "baseline": "baseline",
+    "checkpoint": "checkpoint",
+    "manifest": "dataset-manifest.json",
+    "run": "run.json"
+  },
+  "costs": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."
+  },
+  "limitations": [
+    "No calibration claim",
+    "No final-evaluation data used",
+    "Fresh-process checkpoint reload is a separate lead-owned step"
+  ],
+  "dataset": {
+    "schema_version": "0.1",
+    "dataset_id": "data-pilot-v1",
+    "manifest_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+    "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+    "shards": [
+      {
+        "path": "data/data-pilot-v1/intent/train.jsonl",
+        "split": "train",
+        "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/intent/validation.jsonl",
+        "split": "validation",
+        "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+        "split": "train",
+        "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+        "split": "validation",
+        "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/train.jsonl",
+        "split": "train",
+        "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+        "split": "validation",
+        "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl"
+      }
+    ],
+    "counts": {
+      "train": 300,
+      "validation": 60
+    },
+    "families": {
+      "train": {
+        "intent": 100,
+        "sentiment": 100,
+        "rule_application": 100
+      },
+      "validation": {
+        "intent": 20,
+        "sentiment": 20,
+        "rule_application": 20
+      }
+    },
+    "label_basis": {
+      "train": {
+        "teacher": 200,
+        "rule_verified": 100
+      },
+      "validation": {
+        "teacher": 40,
+        "rule_verified": 20
+      }
+    },
+    "likely_content_duplicates": [],
+    "frozen_manifest": "dataset-manifest.json"
+  },
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "versions": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2"
+    },
+    "torch_version": "2.15.0",
+    "hardware": {
+      "machine": "arm64",
+      "processor": "arm",
+      "cpu_count": 10,
+      "hw.model": "Mac17,3",
+      "machdep.cpu.brand_string": "Apple M5",
+      "hw.memsize": "25769803776"
+    },
+    "device": "mps",
+    "torch_threads": 4,
+    "mps_built": true,
+    "mps_available": true,
+    "mps_fallback_environment": null
+  },
+  "seed_policy": "Python random + torch CPU + MPS when selected; not a guarantee of bitwise deterministic MPS kernels",
+  "base_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "max_length": 256,
+    "temperature": 1.0,
+    "baseline": "pretrained backbone with explicitly reset randomly initialized linear scoring head"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "backbone_learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "full_backbone_finetuning": true,
+    "backbone_parameter_count": 22713216,
+    "head_parameter_count": 385
+  },
+  "metrics": {
+    "validation_before": {
+      "count": 60,
+      "loss": 1.378266954421997,
+      "top1_target_agreement": 0.3333333333333333,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    },
+    "validation_after": {
+      "count": 60,
+      "loss": 0.8552874888603886,
+      "top1_target_agreement": 0.5833333333333334,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    }
+  },
+  "weights": {
+    "hash_format": "sha256 of canonical contiguous CPU tensor torch.save serialization",
+    "before": {
+      "encoder.embeddings.word_embeddings.weight": "a22896c3f0fad33ffc7b169dd4604a99cc9f57dc5b06cdbf7231c31b0ee72922",
+      "encoder.embeddings.position_embeddings.weight": "7b3edf217f5bfb30bb85202e885f0e51d85316b34d0f605f7e54a21549fa113d",
+      "encoder.embeddings.token_type_embeddings.weight": "d977e4968be5be9b89e77591cdd94833cbf9ae4b08487fe7c5fce6890a8dad41",
+      "encoder.embeddings.LayerNorm.weight": "b246bd4e9bfaec8f202f6ff078b53418754ba93aa984e72947a1b562033f2e0c",
+      "encoder.embeddings.LayerNorm.bias": "e32004944f3c1cd94647fb5c11094c6872ba7f9b1131a66993152c51b86eafee",
+      "encoder.encoder.layer.0.attention.self.query.weight": "615391dd7caed148abe6da0e2267d5f51c823bcc3f1bdaeb39628c8b75bea214",
+      "encoder.encoder.layer.0.attention.self.query.bias": "9cf681f2c74def716fb8940fa7bfdb8eda8c40097d42502c4dce352ef415aaf0",
+      "encoder.encoder.layer.0.attention.self.key.weight": "a6e6c325e56089eaa8c4b3acc16b38d393b90e689f00896b54f9914830c3a4bc",
+      "encoder.encoder.layer.0.attention.self.key.bias": "4ac4c9b6df9255101b24c3a874aeea509037ce6d193029c1811529dc0a40e011",
+      "encoder.encoder.layer.0.attention.self.value.weight": "270230feaee38f8ded92ff1f946f45256e6120bb886f293999004dff5718bfe9",
+      "encoder.encoder.layer.0.attention.self.value.bias": "f20f1b804d2a2e30a5d08e204a50e8cb8ec6d395f053a22cce161c2f4cce3e9a",
+      "encoder.encoder.layer.0.attention.output.dense.weight": "9846ea536e0af616e98af5da70f308c3d76b6c212d4a0b1fbad44dd9b6c5ec16",
+      "encoder.encoder.layer.0.attention.output.dense.bias": "3119e32cabcc6184a8a90a7bd270a44d680965c9e6c9963af3cfe0fed2b0c6ef",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.weight": "ddae94e3bee614221c8750264646d937322eb55f0091c57620ba21ffb7226e66",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.bias": "ae0b096804c3af39fd7837159e68698ebe77674ab206b4f9f1ae2fa632380c9d",
+      "encoder.encoder.layer.0.intermediate.dense.weight": "5535d95d2c5ea1816295277a2eceae528230b1f6f3bf92a1e0f8d0a0820cc862",
+      "encoder.encoder.layer.0.intermediate.dense.bias": "16fc74e8b463ef3983f929084eee9224d23375af98aa39a4820c3ce21d74daff",
+      "encoder.encoder.layer.0.output.dense.weight": "fbb0b352f2fdbbc654337bf3c153cae66854363c9702d39fbcb722f354053b3f",
+      "encoder.encoder.layer.0.output.dense.bias": "dfde6145132692d898cc8296fe86144a05e9d979b0ca11260788514e7a803c73",
+      "encoder.encoder.layer.0.output.LayerNorm.weight": "94ce721af73aba9cd7b742301827c3c1cf0b1bea8706d48221d1144de2fca4c7",
+      "encoder.encoder.layer.0.output.LayerNorm.bias": "508f84c036e8eee04c72b194bfcfacc74384ce7157ac8fe774df98934ebdcb3a",
+      "encoder.encoder.layer.1.attention.self.query.weight": "ddb24abe19d6878957b52ddd3b45e965eaee639e0cf309e149a9da2a74ca38a8",
+      "encoder.encoder.layer.1.attention.self.query.bias": "5922d84e3f515b3d0302ff452a540bc77262392396da9a9b08566c32575a3687",
+      "encoder.encoder.layer.1.attention.self.key.weight": "ac8c0d754a6273de37bd4ff3debaec8eb18b9117152165f34f945f446020d3f0",
+      "encoder.encoder.layer.1.attention.self.key.bias": "dee9a27b64c93d9a14fe84f63ea9e85ca7aeec8db4b91116f8c78f3c674223a7",
+      "encoder.encoder.layer.1.attention.self.value.weight": "abf3ebacbc433885032510cc51093b3cd227db0c6ced4a597532b0743fd3bc12",
+      "encoder.encoder.layer.1.attention.self.value.bias": "401b27654ad75ec1fbf1626222abdb67fa92e0a8c97c88e22d8fd935079c03c2",
+      "encoder.encoder.layer.1.attention.output.dense.weight": "05fcffa13daae794556fddf356f10406bdbee455318949bcd9a4c3e8e50f5c46",
+      "encoder.encoder.layer.1.attention.output.dense.bias": "09b0deb7eab7ded597e3355482f250fa0edce39acdd36d4f54767c92bb166b34",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.weight": "d8fac0ecaaaae472ff41795e0aff40aa519ac34d2f4dbbf1ed91e8c36ed90dbe",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.bias": "cf4c2db6740ec9a592e86641ac394efa73e2219dacfb8aa0a51944b8d06ccd13",
+      "encoder.encoder.layer.1.intermediate.dense.weight": "eb0aa0a68bf81050e499e68c2c0a1eb92d68f3c91262cb17e3e169c73c57a9aa",
+      "encoder.encoder.layer.1.intermediate.dense.bias": "9f42a0dc424c6408859801b1e2997c9a6ddd4aeaf10c4b2526563e69c96f4f0a",
+      "encoder.encoder.layer.1.output.dense.weight": "34c0f69c7475639931c40936f016ac2911fb9015128a5fb6ffef6aaa2e75dc87",
+      "encoder.encoder.layer.1.output.dense.bias": "e15e4fb770d3cc443c132781d59d1e594fc2133df410e724edfd69efe5f75248",
+      "encoder.encoder.layer.1.output.LayerNorm.weight": "c6b0ae7629f44d19172b02bba57da98701c90ba5447ba996bb307fffeeb6ae3b",
+      "encoder.encoder.layer.1.output.LayerNorm.bias": "b12a47cf667700fb592e3a8865a3517f864d86d048f56530be55ea9c4332eee9",
+      "encoder.encoder.layer.2.attention.self.query.weight": "84c4d235d71f89cf5cd17c4072d3e8b4825ac264d6be2477b4b5d4c0c8b90c1f",
+      "encoder.encoder.layer.2.attention.self.query.bias": "a134b89ff2d6ce5d29b08615b6186db3b4e96768490f63aef3074e8d4db91c59",
+      "encoder.encoder.layer.2.attention.self.key.weight": "60b7b9992f3486275f25dbe9ed882a3b53158a21b9afe883c8b0047dabb2e592",
+      "encoder.encoder.layer.2.attention.self.key.bias": "7f0ef4546ae36290df7d5a348b1a91e607aa8c14634253decd1317bff82ac625",
+      "encoder.encoder.layer.2.attention.self.value.weight": "514e6c9637a411df5320d104f2ef83b256da42c2fee1d01b6bf4053fcfd7e75a",
+      "encoder.encoder.layer.2.attention.self.value.bias": "96964ade75768f89acec18bcfee69b138cf5ed2701412aa79be0841ea3b8a46b",
+      "encoder.encoder.layer.2.attention.output.dense.weight": "412aab396631389b4be0c8855a61627297d54f7e09bcd27e74ecf30b04c5c1fe",
+      "encoder.encoder.layer.2.attention.output.dense.bias": "4ad9505b005cf095e029b4010c738c7540fa0cb0a143e64a119197689439db45",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.weight": "c5a004720afef375c38eef09d85e0d6dca9fc07f0039c26bd662a55f7eada1d5",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.bias": "c29ff8dc43d19fbeac89d5dce7698164f04a6064e77829a035f6f505e4952710",
+      "encoder.encoder.layer.2.intermediate.dense.weight": "1d48f471009e309f99d1e32549a2890818798091c1194afea4a2d826876d388e",
+      "encoder.encoder.layer.2.intermediate.dense.bias": "ac19f35b9919020e97f2c7851ba405f94b1b4ac876d6a38db0550d345c52f28b",
+      "encoder.encoder.layer.2.output.dense.weight": "1dc626ba484f434fd15f603b4fed4a8a9fde123ec05e891a6d8d6584b1a98739",
+      "encoder.encoder.layer.2.output.dense.bias": "f8c93d1488cf198803ded9b3ceacf7cb0026cd0dddb7482b880983d3cc9f0fba",
+      "encoder.encoder.layer.2.output.LayerNorm.weight": "ee11cfcf3f6d327fce4feeb8414e1073797edc5be8e5b65306317c6b2d165d95",
+      "encoder.encoder.layer.2.output.LayerNorm.bias": "a3bfc842a2e4a3b16a0696190c5d490fe48b61b361423b116b634f33af53892f",
+      "encoder.encoder.layer.3.attention.self.query.weight": "d04b524f5954a6753779a618771f94f7e20d6a8f1070c20aa799dd92ccba76dd",
+      "encoder.encoder.layer.3.attention.self.query.bias": "6b1cf927a2a3deb09041ee751dbf1b7198e94bfb5acb54e132ebaaf49338d74a",
+      "encoder.encoder.layer.3.attention.self.key.weight": "879cf577be2845a4917faf871c084c3c222c9a1846bce7099ef2613bbae9776a",
+      "encoder.encoder.layer.3.attention.self.key.bias": "c9c319f68599f758e0fafd190063487fa1c8d9b9150a85f1317fcfdf16057dca",
+      "encoder.encoder.layer.3.attention.self.value.weight": "68f3b560e90246af049cd69b629a65d10e6d3954bd811ed60938f1e64e7aaf90",
+      "encoder.encoder.layer.3.attention.self.value.bias": "04339f5fe677772f0d29a4769b561cd66acebf1bb2246ef24b9a8e6b53a0ae9b",
+      "encoder.encoder.layer.3.attention.output.dense.weight": "4edc21a394b2177043a9db7016c757b6e44e546fb086b98188261d322e509083",
+      "encoder.encoder.layer.3.attention.output.dense.bias": "44f0a5c53b4ec5aa8203af68e507f4dc3e62abfd36e6ea77d00911e944ae2aeb",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.weight": "48d87f66548cbbcda5d3d699809ef0bace2522545a91ce4faecc5fcfae0bf677",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.bias": "3dbdb653eff68c34704f19103535145b000ed4b2e67a1d7cd371f2d86c629206",
+      "encoder.encoder.layer.3.intermediate.dense.weight": "5c9d30050a473a5fef185b6acc55db710461612b538b3b40d2ad233539b3c985",
+      "encoder.encoder.layer.3.intermediate.dense.bias": "0343378348e3bcc59c30c370016a2782c2c5f401e263c7de35db6e247e45e974",
+      "encoder.encoder.layer.3.output.dense.weight": "8bd96321d45ece591d15c1b30cda9e04781d583fdc69b6e9d0dcd1c0cfeeeda4",
+      "encoder.encoder.layer.3.output.dense.bias": "953b20f9667667404808c0696ecb5e34e445c0753e45ef9269043dbff6c69dfb",
+      "encoder.encoder.layer.3.output.LayerNorm.weight": "079d50e2d3da971330b8c383afd03ca88fdee902a38539804b0548c59d5985a6",
+      "encoder.encoder.layer.3.output.LayerNorm.bias": "8a862bb0db67407382fbb10cd79b657b1bb3ddfd728694cda624f5a1d0f73735",
+      "encoder.encoder.layer.4.attention.self.query.weight": "b3749d49262af7c705747dc66bc976875e44f98796ae3f118574d85e393f6845",
+      "encoder.encoder.layer.4.attention.self.query.bias": "8463344923737071c0fc6e9f9fc24d984dbfeb69b6e1ebd451103510d5d67030",
+      "encoder.encoder.layer.4.attention.self.key.weight": "c7f4760ce7780cc7fa91c26e5ca2d763b2019bcec92ccb50562835de01accc49",
+      "encoder.encoder.layer.4.attention.self.key.bias": "4ef2c45ab2207ae40d74e0dba3c8644c15767d2a92dcf8b2729e59a5ebc6783f",
+      "encoder.encoder.layer.4.attention.self.value.weight": "bae47b2d3c94ea3e8503c980c1afbd564fb4a1a373ddf4f6c63a75da584c178e",
+      "encoder.encoder.layer.4.attention.self.value.bias": "7fbc77cbbb46b4fea44fc92e6d42e913c479887cdb3718eaf082a418ece6eee0",
+      "encoder.encoder.layer.4.attention.output.dense.weight": "1b1825f2a9e7b6b2be4bf7b6a9864a18e6644e7736f308554e885062f27f9c85",
+      "encoder.encoder.layer.4.attention.output.dense.bias": "bbf62b7d3da21305bdd6fc67a23aeccabbae2a034f45eaa5ea2ad44fa8412b8f",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.weight": "a153cbdb4f31dd681828379c27c3627de9a49986ee5fca7dc9302afa6c1d9cba",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.bias": "151a0f6c95f9d16836f0005bafae446bb8a83b90efe5f0dfbd315345e28b3f59",
+      "encoder.encoder.layer.4.intermediate.dense.weight": "e4e919fb5aaac3348f9928e4b42ebad9286fb41c60c39e57af1f087a42ca2142",
+      "encoder.encoder.layer.4.intermediate.dense.bias": "0b66087043ddc654deef2db99b02f3cff130d3fba6c624f64597052278425e7d",
+      "encoder.encoder.layer.4.output.dense.weight": "0a3a3e48d148b285d42147f369b2b44b8af05f7d945ab30d6bd40a93a558581f",
+      "encoder.encoder.layer.4.output.dense.bias": "80a4221119f44bb33e0d645369895a06e9fa44c4907883208f9787bbbdf071c4",
+      "encoder.encoder.layer.4.output.LayerNorm.weight": "a1fa63fb4a4866e1d2c1d6cecf4ab5d38eeaf479b4c2fa3166ed48f163b1c099",
+      "encoder.encoder.layer.4.output.LayerNorm.bias": "99412f5aebcb8be74c4869f98bce0c8ab8e6d5cf93021a43937e83dcf4ec0e8c",
+      "encoder.encoder.layer.5.attention.self.query.weight": "3e692a8a22569771a30fa041521215ea16fac715a8e8e46967337b2e38dce7fd",
+      "encoder.encoder.layer.5.attention.self.query.bias": "fbb5d6ddf280d30dbb05c8e6bd2ead15b80538b69cc0a10d5f78935565c4b920",
+      "encoder.encoder.layer.5.attention.self.key.weight": "97878f771e0f7612a2af458d9945a3af9d4c83f4a6f11cca903401939175927f",
+      "encoder.encoder.layer.5.attention.self.key.bias": "d75e25af386c567554dbdb34eef854ada5b6e4be38407ada68c18ca8caf2ffe5",
+      "encoder.encoder.layer.5.attention.self.value.weight": "2582786c00919db2a905e35ad9b94f9d8137dbf49a6323ae1d08283a09e6f883",
+      "encoder.encoder.layer.5.attention.self.value.bias": "960272d6e3a5888916caaab77e6558db1575d3141e1b3e0eefbf69488b0f73f9",
+      "encoder.encoder.layer.5.attention.output.dense.weight": "5a015add19014852803c3761e36db718a8a7fbb86c2e94ccde18fbe36a31d92d",
+      "encoder.encoder.layer.5.attention.output.dense.bias": "cc8ed101e6aeea213784851f49bd32a0654f84eb7363157a5ea19c1647411f7b",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.weight": "cf1ca7ed67b4235cfe24dcd4c6270af72bd3a98a46c524e8beea89d85e7bccd8",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.bias": "5b737b601c81947f6b5efa0d8881b7412fceeb733ca6e4f838483ddd3935c6c3",
+      "encoder.encoder.layer.5.intermediate.dense.weight": "95b74349118b1a5e9acf4b38fd3570426281cc36b9a89fdef382e909e24a18c6",
+      "encoder.encoder.layer.5.intermediate.dense.bias": "0e427e4dbfe986055ca2fd365c822d0fba21a5236013569933411aaff732b900",
+      "encoder.encoder.layer.5.output.dense.weight": "14e1d0af4014767b8d60e75c5a8f6179fee933c372418a83715491bb9150bf3b",
+      "encoder.encoder.layer.5.output.dense.bias": "7bd57f046d6cd9f23ac2af8329f65a45928ecfa411ebd4469a5d3129f6353d9b",
+      "encoder.encoder.layer.5.output.LayerNorm.weight": "f0a817a39a8e4458e7c26bae6302125057f40fc7a2fa62af9a3585638ae290f0",
+      "encoder.encoder.layer.5.output.LayerNorm.bias": "8a422e46375e3cef451d8a52512d7da529fca2b8f46b5a946681631802e53207",
+      "encoder.pooler.dense.weight": "0e81d0e4b9c24bb321dccc117ff0db5896255a07c2d518e41a6026555ffa8963",
+      "encoder.pooler.dense.bias": "492ecc5baaa1db0c398684804f7eab6bae1e8d2ce839e7a5245016627f691230",
+      "head.weight": "bd224905b0ba84ee0a4538d0bb5dceceb5c7d8f967f4e57e50c06d59e159cce8",
+      "head.bias": "86583c3981dadd7242eb799916a553116ea3ba998669e44395dcb8156cc33d4f"
+    },
+    "after": {
+      "encoder.embeddings.word_embeddings.weight": "580b97197a65d32aae5d9a3f8c7f8b3f2ea83e50d0de803842b1157a14e681d0",
+      "encoder.embeddings.position_embeddings.weight": "9a416f690c5a8d4ee901fe6a847a0086399b7bbe4aa23b64f11f72bf7cb8eab1",
+      "encoder.embeddings.token_type_embeddings.weight": "227f5f1140c1b3405d71c15e86ddf4807c22d155fde922b469d85cac16e2139a",
+      "encoder.embeddings.LayerNorm.weight": "2cd7a153bf438b759049cfef744559d0bae6df74eeb803e9be952da520ca97fc",
+      "encoder.embeddings.LayerNorm.bias": "1ae3b3d0fabdf87d7ff0352f348c988b59833a773781f20e53fa104bd1146104",
+      "encoder.encoder.layer.0.attention.self.query.weight": "30aad7e42236a700d8d81c7046cff182bc2a9a8eb96ce1778248d72eba34c598",
+      "encoder.encoder.layer.0.attention.self.query.bias": "264fd7b5b6597520f4558fd49f060095296e63a3872a7aa5163f3e312d88deeb",
+      "encoder.encoder.layer.0.attention.self.key.weight": "41f8fe799913ff6d57d15f3ee4ea9298ca7300af5206db0c69c8e82b30235e33",
+      "encoder.encoder.layer.0.attention.self.key.bias": "2a8bd75207cc2f725fa59e247c027ca41a57879a56681b8042a1b2367b4dc1ac",
+      "encoder.encoder.layer.0.attention.self.value.weight": "41fca21572ce835a8aca88aab3b50f76453fee3e14aff352e2151048bbb7a032",
+      "encoder.encoder.layer.0.attention.self.value.bias": "cb039aee1fd147b2e220faf7664b5bebf096a1a60cb8f67b5102d7ae33868aad",
+      "encoder.encoder.layer.0.attention.output.dense.weight": "792ae25290cca3adca95e61095035f55b376297574a1ae0c9c128d10d30172c3",
+      "encoder.encoder.layer.0.attention.output.dense.bias": "481d2fd2b923aa77f39699b09a723d6fc812fc59cdb4360d24f330e0472748ee",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.weight": "d59b08e1f548d3ffa2569984c0e4fe94a7d68ad333ff6d6656f4801ee6d5a92a",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.bias": "557bc0b3300a591444a7949e2369d7d812fedbd93f64dd3aa410d3a9e935b090",
+      "encoder.encoder.layer.0.intermediate.dense.weight": "8a4a8944d07102ab13bb2a16d4ae6337193deba2446e7f399621ed4b77252b30",
+      "encoder.encoder.layer.0.intermediate.dense.bias": "549cf14015486350385e9201a52aad5f18057d0f1d2ef6a6716b8996dc90e0f2",
+      "encoder.encoder.layer.0.output.dense.weight": "563f494a746d92cfc3ddc998eda427e19612c042c5f4dbf5b52ce1b904ab226d",
+      "encoder.encoder.layer.0.output.dense.bias": "5209f3ba53f589857a1e3cf83de10f75966054d8c611df032f77c0f87c2494e0",
+      "encoder.encoder.layer.0.output.LayerNorm.weight": "505633a4c4eda04a02f80dfe0a5eeb3587ac66430beb33df901f4569cf24d975",
+      "encoder.encoder.layer.0.output.LayerNorm.bias": "d7101f2f5793425bc676cdc2404fc453cb605406beff55f49bfe6ac66bc2ea12",
+      "encoder.encoder.layer.1.attention.self.query.weight": "d92233396e08217dac8f9985089b150c2858309987b814ccb2765f1640c3bda7",
+      "encoder.encoder.layer.1.attention.self.query.bias": "65eb0e214900c79a47b3e9cf85d65bba54950ad8ec746c25c6dd7be3e20bc5f5",
+      "encoder.encoder.layer.1.attention.self.key.weight": "9c255b60f192f0e067b5ad1e1d9ca6f1b899cc8a23b5f144abe7eae3cde18b90",
+      "encoder.encoder.layer.1.attention.self.key.bias": "1743d2e9e309dbcbe370f720fb1260fd59e55dc598e27b54ed32ba7b1c42ce1c",
+      "encoder.encoder.layer.1.attention.self.value.weight": "1b8e5a5667a8bda9064d006bb2bd53292556748117b591ef7385af4360a4f228",
+      "encoder.encoder.layer.1.attention.self.value.bias": "651e95f66e9f39b1ffe6fdcc168d1e603942c0b38b8aadd4bb327af2d87c42bc",
+      "encoder.encoder.layer.1.attention.output.dense.weight": "df0d83e591ad2b7642ca9facec003b63d2b7c426853c762de2f70324156e0bd8",
+      "encoder.encoder.layer.1.attention.output.dense.bias": "d2a83bdb9a02464f5a5b3eca0297d4c923f66cda3e53cc1835c25cb98935ab59",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.weight": "bc1668f66a425ae784b73eb4a1dc08ef36aca36c36f96300c8e583a7cd091a7f",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.bias": "74f7b74443b6dc902ffe1ea6509f710b0a7634d3296284a56756422e02a6b650",
+      "encoder.encoder.layer.1.intermediate.dense.weight": "9fcec8df7a183a9a0ef3dc247603c99416a906dde26942760fbb2fadda2093c1",
+      "encoder.encoder.layer.1.intermediate.dense.bias": "0d8f1e7bab3b73565a0daa30f1e768e048f37f4041e01927fc47bf5f6c567c9f",
+      "encoder.encoder.layer.1.output.dense.weight": "0b4bccab0777bae74553e2ed6717b9317e57845dd72972779253510eb4036fef",
+      "encoder.encoder.layer.1.output.dense.bias": "32a41d4d8f4718d40bfb372f26faeaf106f099c2e0db334b8a0eb8c696dca985",
+      "encoder.encoder.layer.1.output.LayerNorm.weight": "344f27035acb3975b66a07f35eec30a48f50ae96be3480ea6f247f56d02cd17f",
+      "encoder.encoder.layer.1.output.LayerNorm.bias": "1ae9a419b4f3ac237198fcb4611588ec86f24b19bfeeb919812d8e9ed269f828",
+      "encoder.encoder.layer.2.attention.self.query.weight": "9184e94b3eb333b5dd0e740eea499b52eca02cf3bbf56e2388c89d4f486a4381",
+      "encoder.encoder.layer.2.attention.self.query.bias": "d4b298475248a26657e15f7c004f0ef2255556e0ccbc50d04acf866cb9af4dba",
+      "encoder.encoder.layer.2.attention.self.key.weight": "e0f28ec167f305532442167835f2d2c9edc480df5ee81e0f15583b6c179d73bf",
+      "encoder.encoder.layer.2.attention.self.key.bias": "d8f8754cf99f40c6846e16e4d16152228dcc274a6274384ba23628395f5235b2",
+      "encoder.encoder.layer.2.attention.self.value.weight": "7f6518ec3b4483e7a4ae121be068706002b83fab6a2a594a6d90c580d31d626a",
+      "encoder.encoder.layer.2.attention.self.value.bias": "8df26ecb9e9d3a30a226fcac892e874db6f6ec375ca969afe7bfa5b5d3b86110",
+      "encoder.encoder.layer.2.attention.output.dense.weight": "0939cdc30b99ae55d235bddd2f633c6b7566e8d4037192748f84c8bb5c2dae83",
+      "encoder.encoder.layer.2.attention.output.dense.bias": "b0189e1a21ffd9765c0ceaecb321697061b16189f67df942dc2dd76d9f5a9e98",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.weight": "c02c4cc91da757abc2a55a3fd4e1667d1a9253ba98cf5521b8cc5aba222dbbd4",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.bias": "a22e6af7b181fa8bb5d10e424497c94d0f3b2878a6328788293420dfcd8794cb",
+      "encoder.encoder.layer.2.intermediate.dense.weight": "9ef691ebd6e6b3b318daab4a98d81ff2b23cfd42efc6c8fd33f6e1761557e1da",
+      "encoder.encoder.layer.2.intermediate.dense.bias": "73ea46ec7081f15e4f632e869009752d59585e6e71c2c458cbd6e2d0cd685d86",
+      "encoder.encoder.layer.2.output.dense.weight": "75c6c77d7a4d684944140782f89849a65e8350299d2fa5970c6e2eac603e4667",
+      "encoder.encoder.layer.2.output.dense.bias": "bb9aa5e9a170bfd2f9de00d56d02046ec95542925ef1bdc0c126bdd8e2573af9",
+      "encoder.encoder.layer.2.output.LayerNorm.weight": "5e629302e3db756c5b4c04148cd13f8df338ea82b8ccb29519f2fdac9ed0767d",
+      "encoder.encoder.layer.2.output.LayerNorm.bias": "083fc9b5a2e3ccb8fe9eeb2953ea8afb0afade4876765904cba9286f312146fe",
+      "encoder.encoder.layer.3.attention.self.query.weight": "be8d68bad96d30c2bf2d427f2a46218e4478c5440248009d10898365661c3ed6",
+      "encoder.encoder.layer.3.attention.self.query.bias": "a41221b7e59fd2d51a6593d4169572a6edf60e66e2000db39cc8f43ad473aff7",
+      "encoder.encoder.layer.3.attention.self.key.weight": "4b1b239bec2ecda46b395c4ff8dadb30a7f22da029345df2ccd602088407b432",
+      "encoder.encoder.layer.3.attention.self.key.bias": "e0ae702f1ed81e51019b7b1cc94f304250f662d55bf1844a4dcc62dd149c816e",
+      "encoder.encoder.layer.3.attention.self.value.weight": "2102fb6e0b743b6f0326b7224e48bfe9efa25280200ff1d3d760052cae96808e",
+      "encoder.encoder.layer.3.attention.self.value.bias": "edc064a24e11740820ebb3da5ff82fe76b29796fd7db31676e182c1e95b2d873",
+      "encoder.encoder.layer.3.attention.output.dense.weight": "255bdd84f42b90c2c71f4d389e4d56d9744a9ccd9c030adaaf5c1884ce40462d",
+      "encoder.encoder.layer.3.attention.output.dense.bias": "385967ad26efdbfb6d4f37521d88d54e0a9aaedad8602636db3308f3af8afd59",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.weight": "e78d67479be1a21ee844144fbd452c48c564309879ce414159be53cefd289a58",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.bias": "66168c02d504a3bd6df47994dcfe75c772e2b26b63d7804199a423f8abdef92a",
+      "encoder.encoder.layer.3.intermediate.dense.weight": "e69ce25fab3948c1402b7b59d0b78295bbceaf2d209a954f99a90065cdf248ce",
+      "encoder.encoder.layer.3.intermediate.dense.bias": "4370faa9c6305696ed1c3eeaafa86be686629047431cdfc292f6f103765b1ed8",
+      "encoder.encoder.layer.3.output.dense.weight": "ba299c8b90aa54f054dc3817d43f38647fb764a5be772f29fa6ee906d272fe1d",
+      "encoder.encoder.layer.3.output.dense.bias": "e297f60fef9d39b2a9bc3eea62ae85edf180eab34cc5505834cf046aeff4a358",
+      "encoder.encoder.layer.3.output.LayerNorm.weight": "82b72a4c141c72f2e69d0760b935637b58c26018909bacdb27d196dfc521e5cd",
+      "encoder.encoder.layer.3.output.LayerNorm.bias": "cdbdf08fe00b81b34906f0af888c20344ee180f90ae269076fa1a1c54969f6c0",
+      "encoder.encoder.layer.4.attention.self.query.weight": "9a5143f5057f914a91c8b983bec509305d58386b85c1fbfe045d842bc99ee7f4",
+      "encoder.encoder.layer.4.attention.self.query.bias": "e4259f2c0b4eacb261a4763a4d378aad9a3a8b7ca8427eaba578bdd8e8c74cf7",
+      "encoder.encoder.layer.4.attention.self.key.weight": "f228c7c209d5688068af56ca8ad9034b5f41fa6ffb9f2d1db4ae955f77ce17bc",
+      "encoder.encoder.layer.4.attention.self.key.bias": "1d85fc55618facef6fb1feb061bd855ec4fb87e8cffafc890816aa187df7c53b",
+      "encoder.encoder.layer.4.attention.self.value.weight": "a955c0bd22359697806008565c5c5d6dc3f14353c6bc573dfdb21e60d7282b77",
+      "encoder.encoder.layer.4.attention.self.value.bias": "f8531ebdb1f05aae83209f110979dddbffb92f26af44a3aa33c88acb0b48112c",
+      "encoder.encoder.layer.4.attention.output.dense.weight": "d97221afd5fd8e79f40175500fbb2440eee77a2bb279f19926785c924dec0295",
+      "encoder.encoder.layer.4.attention.output.dense.bias": "31a09deeec4e020ae559096142b3e15992d1d1ec80be14096b3d12e9d9ae6f1b",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.weight": "4edd02761333b343973c58ad68a646b7018c89e4a0b8165c0934f1ee15b65541",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.bias": "6c54aa4d5a7134ec671727ee16cc52f84fb408e9cf091113ea8287e2809be785",
+      "encoder.encoder.layer.4.intermediate.dense.weight": "e47685e1016640c01051e9e41c8710879ccf6d69953e619fcd7ac0bdf345d46e",
+      "encoder.encoder.layer.4.intermediate.dense.bias": "a09741058c40027974ff5020ac0fc8d0e62e48fa821b9fbb785082defaf1db32",
+      "encoder.encoder.layer.4.output.dense.weight": "1796e749082edcc675fc93cbd949f5a6a52c79840ac671d255d6a6aa2ddef1b0",
+      "encoder.encoder.layer.4.output.dense.bias": "fc3eae691899493d36490b286d682273ad0779bd8a3160e2ddf8c64414d8e51b",
+      "encoder.encoder.layer.4.output.LayerNorm.weight": "7515a573339164a457bd1cff463dad431380e7b3701a3e0eb6b522f2cf7469cd",
+      "encoder.encoder.layer.4.output.LayerNorm.bias": "53bfad0e37ee99078da37e0666c089059933dc58f8890ce2cf029b67b237e46c",
+      "encoder.encoder.layer.5.attention.self.query.weight": "4a30daee10f0626aaad268502d7d8b3c5e2ea6c89059e7b216e9b8f1e826ddd3",
+      "encoder.encoder.layer.5.attention.self.query.bias": "687d0761b23199e85edae072b16a332b84e04885f24c56d53288369aeac745bc",
+      "encoder.encoder.layer.5.attention.self.key.weight": "dff4939a654ed9e6a092b96207184132e90b62b9adb3eff6cae19711fe545f3e",
+      "encoder.encoder.layer.5.attention.self.key.bias": "2ee48b3684677fd0041e2243367f7630eb6e6c57c49bef03c4852f4609014ab6",
+      "encoder.encoder.layer.5.attention.self.value.weight": "6dad118e01c83bff2322710c67c608f631ba9b093f76e4d1e9e05f08cb2047af",
+      "encoder.encoder.layer.5.attention.self.value.bias": "79ecb69e9b4fc56fe0f7f895dddceacb6a7f4a574ee1deb314520c2e39805221",
+      "encoder.encoder.layer.5.attention.output.dense.weight": "e94e0a229308525cfe29e0b88a5a7effd2c5af60eab43822fe44d9b44948846a",
+      "encoder.encoder.layer.5.attention.output.dense.bias": "73db5608206a0b7b63e14f88cadce818d6d25dc430fbdef56bb041095c10e6ee",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.weight": "943a1668ff9b87e145765d6e2f647da95b2c019a3cc49d5c8641a473effd80d6",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.bias": "ba863acaa4f0a57a3e7f341c3509811dc94e9ee52d49b0b010053c7219d795bf",
+      "encoder.encoder.layer.5.intermediate.dense.weight": "09b237f578cb25bf1a541161c63e323efe3c4e4fb455876415cd87b27b261382",
+      "encoder.encoder.layer.5.intermediate.dense.bias": "d3a0a91ebff8d291d807975adf638b07f2daeb77a29761524cdfadf94a325583",
+      "encoder.encoder.layer.5.output.dense.weight": "c5e508d04e17dae60bc5ef5be1a095ed8af96803745fefe76e4e9193b283d159",
+      "encoder.encoder.layer.5.output.dense.bias": "3399f9cc38db8c1d6fbbe68b33e683b82e535764641bac95be1e75ce2c4d45c9",
+      "encoder.encoder.layer.5.output.LayerNorm.weight": "c992bce299bf8bfe1dfa9cde9b7db4751c0d5ea7203f3aaaa5edd18a17bbc5e9",
+      "encoder.encoder.layer.5.output.LayerNorm.bias": "0fcbf0fddd6f91a9e659b52bae881506c14974bf4e0b581ab9caf9f6c0d2e5f6",
+      "encoder.pooler.dense.weight": "0e81d0e4b9c24bb321dccc117ff0db5896255a07c2d518e41a6026555ffa8963",
+      "encoder.pooler.dense.bias": "492ecc5baaa1db0c398684804f7eab6bae1e8d2ce839e7a5245016627f691230",
+      "head.weight": "ad96378c0a5fa6aa443f347919fe9eac2e50a79493a27d7eebbffd55ffa7081d",
+      "head.bias": "ed14122ccfe3ce9912fb994e89f4bc03058c35380fadd14b65b37afcafb97865"
+    },
+    "changed_parameter_names": [
+      "encoder.embeddings.word_embeddings.weight",
+      "encoder.embeddings.position_embeddings.weight",
+      "encoder.embeddings.token_type_embeddings.weight",
+      "encoder.embeddings.LayerNorm.weight",
+      "encoder.embeddings.LayerNorm.bias",
+      "encoder.encoder.layer.0.attention.self.query.weight",
+      "encoder.encoder.layer.0.attention.self.query.bias",
+      "encoder.encoder.layer.0.attention.self.key.weight",
+      "encoder.encoder.layer.0.attention.self.key.bias",
+      "encoder.encoder.layer.0.attention.self.value.weight",
+      "encoder.encoder.layer.0.attention.self.value.bias",
+      "encoder.encoder.layer.0.attention.output.dense.weight",
+      "encoder.encoder.layer.0.attention.output.dense.bias",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.0.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.0.intermediate.dense.weight",
+      "encoder.encoder.layer.0.intermediate.dense.bias",
+      "encoder.encoder.layer.0.output.dense.weight",
+      "encoder.encoder.layer.0.output.dense.bias",
+      "encoder.encoder.layer.0.output.LayerNorm.weight",
+      "encoder.encoder.layer.0.output.LayerNorm.bias",
+      "encoder.encoder.layer.1.attention.self.query.weight",
+      "encoder.encoder.layer.1.attention.self.query.bias",
+      "encoder.encoder.layer.1.attention.self.key.weight",
+      "encoder.encoder.layer.1.attention.self.key.bias",
+      "encoder.encoder.layer.1.attention.self.value.weight",
+      "encoder.encoder.layer.1.attention.self.value.bias",
+      "encoder.encoder.layer.1.attention.output.dense.weight",
+      "encoder.encoder.layer.1.attention.output.dense.bias",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.1.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.1.intermediate.dense.weight",
+      "encoder.encoder.layer.1.intermediate.dense.bias",
+      "encoder.encoder.layer.1.output.dense.weight",
+      "encoder.encoder.layer.1.output.dense.bias",
+      "encoder.encoder.layer.1.output.LayerNorm.weight",
+      "encoder.encoder.layer.1.output.LayerNorm.bias",
+      "encoder.encoder.layer.2.attention.self.query.weight",
+      "encoder.encoder.layer.2.attention.self.query.bias",
+      "encoder.encoder.layer.2.attention.self.key.weight",
+      "encoder.encoder.layer.2.attention.self.key.bias",
+      "encoder.encoder.layer.2.attention.self.value.weight",
+      "encoder.encoder.layer.2.attention.self.value.bias",
+      "encoder.encoder.layer.2.attention.output.dense.weight",
+      "encoder.encoder.layer.2.attention.output.dense.bias",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.2.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.2.intermediate.dense.weight",
+      "encoder.encoder.layer.2.intermediate.dense.bias",
+      "encoder.encoder.layer.2.output.dense.weight",
+      "encoder.encoder.layer.2.output.dense.bias",
+      "encoder.encoder.layer.2.output.LayerNorm.weight",
+      "encoder.encoder.layer.2.output.LayerNorm.bias",
+      "encoder.encoder.layer.3.attention.self.query.weight",
+      "encoder.encoder.layer.3.attention.self.query.bias",
+      "encoder.encoder.layer.3.attention.self.key.weight",
+      "encoder.encoder.layer.3.attention.self.key.bias",
+      "encoder.encoder.layer.3.attention.self.value.weight",
+      "encoder.encoder.layer.3.attention.self.value.bias",
+      "encoder.encoder.layer.3.attention.output.dense.weight",
+      "encoder.encoder.layer.3.attention.output.dense.bias",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.3.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.3.intermediate.dense.weight",
+      "encoder.encoder.layer.3.intermediate.dense.bias",
+      "encoder.encoder.layer.3.output.dense.weight",
+      "encoder.encoder.layer.3.output.dense.bias",
+      "encoder.encoder.layer.3.output.LayerNorm.weight",
+      "encoder.encoder.layer.3.output.LayerNorm.bias",
+      "encoder.encoder.layer.4.attention.self.query.weight",
+      "encoder.encoder.layer.4.attention.self.query.bias",
+      "encoder.encoder.layer.4.attention.self.key.weight",
+      "encoder.encoder.layer.4.attention.self.key.bias",
+      "encoder.encoder.layer.4.attention.self.value.weight",
+      "encoder.encoder.layer.4.attention.self.value.bias",
+      "encoder.encoder.layer.4.attention.output.dense.weight",
+      "encoder.encoder.layer.4.attention.output.dense.bias",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.4.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.4.intermediate.dense.weight",
+      "encoder.encoder.layer.4.intermediate.dense.bias",
+      "encoder.encoder.layer.4.output.dense.weight",
+      "encoder.encoder.layer.4.output.dense.bias",
+      "encoder.encoder.layer.4.output.LayerNorm.weight",
+      "encoder.encoder.layer.4.output.LayerNorm.bias",
+      "encoder.encoder.layer.5.attention.self.query.weight",
+      "encoder.encoder.layer.5.attention.self.query.bias",
+      "encoder.encoder.layer.5.attention.self.key.weight",
+      "encoder.encoder.layer.5.attention.self.key.bias",
+      "encoder.encoder.layer.5.attention.self.value.weight",
+      "encoder.encoder.layer.5.attention.self.value.bias",
+      "encoder.encoder.layer.5.attention.output.dense.weight",
+      "encoder.encoder.layer.5.attention.output.dense.bias",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.weight",
+      "encoder.encoder.layer.5.attention.output.LayerNorm.bias",
+      "encoder.encoder.layer.5.intermediate.dense.weight",
+      "encoder.encoder.layer.5.intermediate.dense.bias",
+      "encoder.encoder.layer.5.output.dense.weight",
+      "encoder.encoder.layer.5.output.dense.bias",
+      "encoder.encoder.layer.5.output.LayerNorm.weight",
+      "encoder.encoder.layer.5.output.LayerNorm.bias",
+      "head.weight",
+      "head.bias"
+    ],
+    "changed_parameter_count": 103,
+    "representative_differences": {
+      "backbone": {
+        "name": "encoder.embeddings.word_embeddings.weight",
+        "l2_difference": 0.3124803304672241,
+        "l2_before": 190.320556640625
+      },
+      "head": {
+        "name": "head.weight",
+        "l2_difference": 0.380186527967453,
+        "l2_before": 0.5793976783752441
+      }
+    },
+    "backbone_changed": true,
+    "head_changed": true
+  },
+  "training": {
+    "steps": 225,
+    "examples_seen": 900,
+    "epochs_completed": 3,
+    "loss_history": [
+      {
+        "step": 1,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2312030792236328
+      },
+      {
+        "step": 2,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3250117301940918
+      },
+      {
+        "step": 3,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2343568801879883
+      },
+      {
+        "step": 4,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3128217458724976
+      },
+      {
+        "step": 5,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3797582387924194
+      },
+      {
+        "step": 6,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2399554252624512
+      },
+      {
+        "step": 7,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3004226684570312
+      },
+      {
+        "step": 8,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3693766593933105
+      },
+      {
+        "step": 9,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3771775960922241
+      },
+      {
+        "step": 10,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2165749073028564
+      },
+      {
+        "step": 11,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3177344799041748
+      },
+      {
+        "step": 12,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.387666940689087
+      },
+      {
+        "step": 13,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4468692541122437
+      },
+      {
+        "step": 14,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4599697589874268
+      },
+      {
+        "step": 15,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3962748050689697
+      },
+      {
+        "step": 16,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3710908889770508
+      },
+      {
+        "step": 17,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.29732084274292
+      },
+      {
+        "step": 18,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4283376932144165
+      },
+      {
+        "step": 19,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3719321489334106
+      },
+      {
+        "step": 20,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3673241138458252
+      },
+      {
+        "step": 21,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3763240575790405
+      },
+      {
+        "step": 22,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3178510665893555
+      },
+      {
+        "step": 23,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3612169027328491
+      },
+      {
+        "step": 24,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.309410572052002
+      },
+      {
+        "step": 25,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.236187219619751
+      },
+      {
+        "step": 26,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3295913934707642
+      },
+      {
+        "step": 27,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2349917888641357
+      },
+      {
+        "step": 28,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4395053386688232
+      },
+      {
+        "step": 29,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4080631732940674
+      },
+      {
+        "step": 30,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.399942398071289
+      },
+      {
+        "step": 31,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3538326025009155
+      },
+      {
+        "step": 32,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.369072675704956
+      },
+      {
+        "step": 33,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4254240989685059
+      },
+      {
+        "step": 34,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2215036153793335
+      },
+      {
+        "step": 35,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3695536851882935
+      },
+      {
+        "step": 36,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3570902347564697
+      },
+      {
+        "step": 37,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1745340824127197
+      },
+      {
+        "step": 38,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4501614570617676
+      },
+      {
+        "step": 39,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3061504364013672
+      },
+      {
+        "step": 40,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2340890169143677
+      },
+      {
+        "step": 41,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.392391562461853
+      },
+      {
+        "step": 42,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.407808542251587
+      },
+      {
+        "step": 43,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.211640477180481
+      },
+      {
+        "step": 44,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2926229238510132
+      },
+      {
+        "step": 45,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3450078964233398
+      },
+      {
+        "step": 46,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3991544246673584
+      },
+      {
+        "step": 47,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3671875
+      },
+      {
+        "step": 48,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3325612545013428
+      },
+      {
+        "step": 49,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4096263647079468
+      },
+      {
+        "step": 50,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.392046570777893
+      },
+      {
+        "step": 51,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3076809644699097
+      },
+      {
+        "step": 52,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2508295774459839
+      },
+      {
+        "step": 53,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2871557474136353
+      },
+      {
+        "step": 54,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2508535385131836
+      },
+      {
+        "step": 55,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4319567680358887
+      },
+      {
+        "step": 56,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.396860122680664
+      },
+      {
+        "step": 57,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3860678672790527
+      },
+      {
+        "step": 58,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.231446623802185
+      },
+      {
+        "step": 59,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4324606657028198
+      },
+      {
+        "step": 60,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.271134853363037
+      },
+      {
+        "step": 61,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2888762950897217
+      },
+      {
+        "step": 62,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3914706707000732
+      },
+      {
+        "step": 63,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.304287314414978
+      },
+      {
+        "step": 64,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4713928699493408
+      },
+      {
+        "step": 65,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2500834465026855
+      },
+      {
+        "step": 66,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4956802129745483
+      },
+      {
+        "step": 67,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4532442092895508
+      },
+      {
+        "step": 68,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2355873584747314
+      },
+      {
+        "step": 69,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3287426233291626
+      },
+      {
+        "step": 70,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3695199489593506
+      },
+      {
+        "step": 71,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2224905490875244
+      },
+      {
+        "step": 72,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.295062780380249
+      },
+      {
+        "step": 73,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2114441394805908
+      },
+      {
+        "step": 74,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2847537994384766
+      },
+      {
+        "step": 75,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.385227918624878
+      },
+      {
+        "step": 76,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3202879428863525
+      },
+      {
+        "step": 77,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2277321815490723
+      },
+      {
+        "step": 78,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1999835968017578
+      },
+      {
+        "step": 79,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0600159168243408
+      },
+      {
+        "step": 80,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.316309928894043
+      },
+      {
+        "step": 81,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.4247715473175049
+      },
+      {
+        "step": 82,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3443111181259155
+      },
+      {
+        "step": 83,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.28202223777771
+      },
+      {
+        "step": 84,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2324192523956299
+      },
+      {
+        "step": 85,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3345541954040527
+      },
+      {
+        "step": 86,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8044061660766602
+      },
+      {
+        "step": 87,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3468763828277588
+      },
+      {
+        "step": 88,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2107397317886353
+      },
+      {
+        "step": 89,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2144125699996948
+      },
+      {
+        "step": 90,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3181253671646118
+      },
+      {
+        "step": 91,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9677112698554993
+      },
+      {
+        "step": 92,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.384993076324463
+      },
+      {
+        "step": 93,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9844405055046082
+      },
+      {
+        "step": 94,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1841864585876465
+      },
+      {
+        "step": 95,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2572519779205322
+      },
+      {
+        "step": 96,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2742630243301392
+      },
+      {
+        "step": 97,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3141072988510132
+      },
+      {
+        "step": 98,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8086914420127869
+      },
+      {
+        "step": 99,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.4438693523406982
+      },
+      {
+        "step": 100,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.852006733417511
+      },
+      {
+        "step": 101,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.185395359992981
+      },
+      {
+        "step": 102,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8129856586456299
+      },
+      {
+        "step": 103,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1693713665008545
+      },
+      {
+        "step": 104,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.070101261138916
+      },
+      {
+        "step": 105,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2185852527618408
+      },
+      {
+        "step": 106,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9652401208877563
+      },
+      {
+        "step": 107,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8430111408233643
+      },
+      {
+        "step": 108,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.330989122390747
+      },
+      {
+        "step": 109,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7139028906822205
+      },
+      {
+        "step": 110,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6310572028160095
+      },
+      {
+        "step": 111,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.6894903182983398
+      },
+      {
+        "step": 112,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9450827836990356
+      },
+      {
+        "step": 113,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9156062006950378
+      },
+      {
+        "step": 114,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1960288286209106
+      },
+      {
+        "step": 115,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1359511613845825
+      },
+      {
+        "step": 116,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.424471378326416
+      },
+      {
+        "step": 117,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9946578741073608
+      },
+      {
+        "step": 118,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6767623424530029
+      },
+      {
+        "step": 119,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6501892805099487
+      },
+      {
+        "step": 120,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.7842369079589844
+      },
+      {
+        "step": 121,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8687180876731873
+      },
+      {
+        "step": 122,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1914912462234497
+      },
+      {
+        "step": 123,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3677630424499512
+      },
+      {
+        "step": 124,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1008059978485107
+      },
+      {
+        "step": 125,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.2634952664375305
+      },
+      {
+        "step": 126,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0147643089294434
+      },
+      {
+        "step": 127,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0821136236190796
+      },
+      {
+        "step": 128,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9781804084777832
+      },
+      {
+        "step": 129,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0625437498092651
+      },
+      {
+        "step": 130,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.894912600517273
+      },
+      {
+        "step": 131,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1152513027191162
+      },
+      {
+        "step": 132,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6030271053314209
+      },
+      {
+        "step": 133,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.155989170074463
+      },
+      {
+        "step": 134,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.340344786643982
+      },
+      {
+        "step": 135,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1668493747711182
+      },
+      {
+        "step": 136,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.18081142008304596
+      },
+      {
+        "step": 137,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.118120789527893
+      },
+      {
+        "step": 138,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3521393537521362
+      },
+      {
+        "step": 139,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7875607013702393
+      },
+      {
+        "step": 140,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9013451337814331
+      },
+      {
+        "step": 141,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1400291919708252
+      },
+      {
+        "step": 142,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.470749855041504
+      },
+      {
+        "step": 143,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.4715174436569214
+      },
+      {
+        "step": 144,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8864558935165405
+      },
+      {
+        "step": 145,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8122578263282776
+      },
+      {
+        "step": 146,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8406524658203125
+      },
+      {
+        "step": 147,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.799908459186554
+      },
+      {
+        "step": 148,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5509768128395081
+      },
+      {
+        "step": 149,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9367797374725342
+      },
+      {
+        "step": 150,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7026816606521606
+      },
+      {
+        "step": 151,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.715611457824707
+      },
+      {
+        "step": 152,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.894493579864502
+      },
+      {
+        "step": 153,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.33359211683273315
+      },
+      {
+        "step": 154,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0485869646072388
+      },
+      {
+        "step": 155,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7130603194236755
+      },
+      {
+        "step": 156,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.4522687792778015
+      },
+      {
+        "step": 157,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9555110335350037
+      },
+      {
+        "step": 158,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.451613426208496
+      },
+      {
+        "step": 159,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9798071980476379
+      },
+      {
+        "step": 160,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.4586542844772339
+      },
+      {
+        "step": 161,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1252529621124268
+      },
+      {
+        "step": 162,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7699046730995178
+      },
+      {
+        "step": 163,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7692722082138062
+      },
+      {
+        "step": 164,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5556719303131104
+      },
+      {
+        "step": 165,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9557864665985107
+      },
+      {
+        "step": 166,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7741228342056274
+      },
+      {
+        "step": 167,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.426481157541275
+      },
+      {
+        "step": 168,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9697400331497192
+      },
+      {
+        "step": 169,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5581874251365662
+      },
+      {
+        "step": 170,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5979020595550537
+      },
+      {
+        "step": 171,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.3367947340011597
+      },
+      {
+        "step": 172,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7071170210838318
+      },
+      {
+        "step": 173,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8475211262702942
+      },
+      {
+        "step": 174,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7670528888702393
+      },
+      {
+        "step": 175,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.20220620930194855
+      },
+      {
+        "step": 176,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9101642370223999
+      },
+      {
+        "step": 177,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6830765008926392
+      },
+      {
+        "step": 178,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7754904627799988
+      },
+      {
+        "step": 179,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.761391282081604
+      },
+      {
+        "step": 180,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.79118812084198
+      },
+      {
+        "step": 181,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1322869062423706
+      },
+      {
+        "step": 182,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6899932026863098
+      },
+      {
+        "step": 183,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7732473611831665
+      },
+      {
+        "step": 184,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1325182914733887
+      },
+      {
+        "step": 185,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8484479188919067
+      },
+      {
+        "step": 186,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8321438431739807
+      },
+      {
+        "step": 187,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8157411217689514
+      },
+      {
+        "step": 188,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.13675326108932495
+      },
+      {
+        "step": 189,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9347704648971558
+      },
+      {
+        "step": 190,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7306240797042847
+      },
+      {
+        "step": 191,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1741153001785278
+      },
+      {
+        "step": 192,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.24061258137226105
+      },
+      {
+        "step": 193,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7946895360946655
+      },
+      {
+        "step": 194,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7484039664268494
+      },
+      {
+        "step": 195,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6986157894134521
+      },
+      {
+        "step": 196,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0004456043243408
+      },
+      {
+        "step": 197,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7413666844367981
+      },
+      {
+        "step": 198,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5974467992782593
+      },
+      {
+        "step": 199,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8365734815597534
+      },
+      {
+        "step": 200,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1868950128555298
+      },
+      {
+        "step": 201,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.008251577615737915
+      },
+      {
+        "step": 202,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6052882671356201
+      },
+      {
+        "step": 203,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6694585084915161
+      },
+      {
+        "step": 204,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0163428783416748
+      },
+      {
+        "step": 205,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.234987497329712
+      },
+      {
+        "step": 206,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.2157766819000244
+      },
+      {
+        "step": 207,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0916680097579956
+      },
+      {
+        "step": 208,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0323681831359863
+      },
+      {
+        "step": 209,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6564377546310425
+      },
+      {
+        "step": 210,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.274560809135437
+      },
+      {
+        "step": 211,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9075572490692139
+      },
+      {
+        "step": 212,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1952857971191406
+      },
+      {
+        "step": 213,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.17463111877441406
+      },
+      {
+        "step": 214,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1746852397918701
+      },
+      {
+        "step": 215,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9897358417510986
+      },
+      {
+        "step": 216,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8784405589103699
+      },
+      {
+        "step": 217,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0362374782562256
+      },
+      {
+        "step": 218,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6822587251663208
+      },
+      {
+        "step": 219,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5867590308189392
+      },
+      {
+        "step": 220,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9582054018974304
+      },
+      {
+        "step": 221,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.820324182510376
+      },
+      {
+        "step": 222,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1856842041015625
+      },
+      {
+        "step": 223,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7557848691940308
+      },
+      {
+        "step": 224,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.3651279211044312
+      },
+      {
+        "step": 225,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.7847926616668701
+      }
+    ],
+    "epoch_history": [
+      {
+        "epoch": 1,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.337200454076131
+      },
+      {
+        "epoch": 2,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.0749312339226405
+      },
+      {
+        "epoch": 3,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.8484515353043874
+      }
+    ],
+    "stopped_by_max_steps": false
+  },
+  "runtime": {
+    "elapsed_seconds": 19.30261379200965,
+    "elapsed_scope": "through both checkpoint saves, before run.json write",
+    "memory": {
+      "cpu_max_rss_bytes": 1148125184,
+      "cpu_max_rss_raw": 1148125184,
+      "cpu_max_rss_raw_unit": "bytes",
+      "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+      "mps_current_allocated_bytes": 370078720,
+      "mps_driver_allocated_bytes": 2256502784,
+      "mps_measurement": "point-in-time, not peak"
+    }
+  },
+  "completed_at": "2026-11-11T10:48:07.916112+00:00"
+}

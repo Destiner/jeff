@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.1",
+  "status": "passed",
+  "rows_checked": 120,
+  "rule_verified_rows": 120,
+  "counts": {
+    "train": 100,
+    "validation": 20
+  },
+  "group_counts": {
+    "data:pilot-v1:rule_application:g01": 10,
+    "data:pilot-v1:rule_application:g02": 10,
+    "data:pilot-v1:rule_application:g03": 10,
+    "data:pilot-v1:rule_application:g04": 10,
+    "data:pilot-v1:rule_application:g05": 10,
+    "data:pilot-v1:rule_application:g06": 10,
+    "data:pilot-v1:rule_application:g07": 10,
+    "data:pilot-v1:rule_application:g08": 10,
+    "data:pilot-v1:rule_application:g09": 10,
+    "data:pilot-v1:rule_application:g10": 10,
+    "data:pilot-v1:rule_application:g11": 10,
+    "data:pilot-v1:rule_application:g12": 10
+  },
+  "target_positions_zero_based_by_choice_count": {
+    "train:4_choices": {
+      "0": 17,
+      "1": 17,
+      "2": 17,
+      "3": 16
+    },
+    "train:3_choices": {
+      "0": 10,
+      "1": 10,
+      "2": 9
+    },
+    "train:5_choices": {
+      "0": 1,
+      "1": 1,
+      "2": 1
+    },
+    "train:2_choices": {
+      "0": 1
+    },
+    "validation:4_choices": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "validation:3_choices": {
+      "0": 1,
+      "1": 1
+    },
+    "validation:5_choices": {
+      "0": 1,
+      "1": 1
+    }
+  },
+  "outcome_counts": {
+    "data:pilot-v1:rule_application:g01": {
+      "Route to Safety bench.": 2,
+      "Route to Warranty bench.": 3,
+      "Route to Rapid bench.": 3,
+      "Route to General bench.": 2
+    },
+    "data:pilot-v1:rule_application:g02": {
+      "Charge 0 credits.": 2,
+      "Charge 6 credits.": 1,
+      "Charge 22 credits.": 1,
+      "Charge 28 credits.": 1,
+      "Charge 8 credits.": 1,
+      "Charge 46 credits.": 1,
+      "Charge 32 credits.": 1,
+      "Charge 16 credits.": 1,
+      "Charge 35 credits.": 1
+    },
+    "data:pilot-v1:rule_application:g03": {
+      "Load Amber, Cedar.": 1,
+      "Load Elm, Flint.": 1,
+      "Load nothing.": 2,
+      "Load Jade, Kite, Lime.": 1,
+      "Load Moss, Opal.": 1,
+      "Load Sage, Umber.": 1,
+      "Load Wave.": 1,
+      "Load Ash, Bramble.": 1,
+      "Load Echo, Glow.": 1
+    },
+    "data:pilot-v1:rule_application:g04": {
+      "Duty belongs to Aster.": 2,
+      "Duty belongs to Noon.": 1,
+      "Duty belongs to Evening.": 1,
+      "Duty belongs to Ivy.": 2,
+      "Duty belongs to Juno.": 1,
+      "Duty belongs to Poppy.": 1,
+      "Duty belongs to Topaz.": 1,
+      "Duty belongs to Xenia.": 1
+    },
+    "data:pilot-v1:rule_application:g05": {
+      "Reject batch.": 3,
+      "Release batch.": 4,
+      "Hold batch for review.": 3
+    },
+    "data:pilot-v1:rule_application:g06": {
+      "Issue amber, coral.": 1,
+      "Issue dune, elm.": 1,
+      "Issue no badges.": 3,
+      "Issue gold, hazel.": 1,
+      "Issue jade, khaki.": 1,
+      "Issue lime, mauve, navy, ochre.": 1,
+      "Issue pink, teal.": 1,
+      "Issue zinc.": 1
+    },
+    "data:pilot-v1:rule_application:g07": {
+      "Conflicts: none.": 2,
+      "Conflicts: Booking 1.": 2,
+      "Conflicts: Booking 1, Booking 2.": 2,
+      "Conflicts: Booking 2.": 2,
+      "Conflicts: Booking 1, Booking 2, Booking 3.": 1,
+      "Conflicts: Booking 2, Booking 3.": 1
+    },
+    "data:pilot-v1:rule_application:g08": {
+      "Send to Cedar.": 1,
+      "Send to Moss.": 1,
+      "Send to Fallback.": 2,
+      "Send to Dell.": 1,
+      "Send to Ash.": 1,
+      "Send to Rock.": 1,
+      "Send to Vale.": 1,
+      "Send to Fern.": 1,
+      "Send to Gale.": 1
+    },
+    "data:pilot-v1:rule_application:g09": {
+      "Print seal value 1.": 2,
+      "Print seal value 0.": 2,
+      "Print seal value 2.": 4,
+      "Print seal value 3.": 1,
+      "Print seal value 6.": 1
+    },
+    "data:pilot-v1:rule_application:g10": {
+      "Final state: open.": 4,
+      "Final state: occupied.": 3,
+      "Final state: locked.": 3
+    },
+    "data:pilot-v1:rule_application:g11": {
+      "Water reaches B, C.": 1,
+      "Water reaches no other junctions.": 2,
+      "Water reaches J, L, M.": 1,
+      "Water reaches T, U, V.": 1,
+      "Water reaches W, Y.": 1,
+      "Water reaches B1, D1, E1.": 1,
+      "Water reaches F1, G1, H1.": 1,
+      "Water reaches M1.": 1,
+      "Water reaches Q1.": 1
+    },
+    "data:pilot-v1:rule_application:g12": {
+      "Elect Ari.": 1,
+      "Elect nobody under this rule.": 5,
+      "Elect Lou.": 1,
+      "Elect Nia.": 1,
+      "Elect Sol.": 1,
+      "Elect Xiu.": 1
+    }
+  },
+  "exact_input_duplicates": 0,
+  "cross_split_group_overlap": 0,
+  "checks": [
+    "JSONL parse; exact contract fields; schema/family/split; nonempty text; 2–6 distinct choices; opaque unique per-row option IDs; target membership; namespaced unique row IDs; frozen group allocation; 10 cases per group; exact canonical-input duplicate detection; independent rule recomputation on all 120 rows"
+  ],
+  "audit_scope": "Independent algorithmic implementations, not an independent author or model. Facts and original natural-language semantics are teacher-created. Audit does not independently prove natural-language-to-fact fidelity.",
+  "file_sha256": {
+    "train.jsonl": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+    "validation.jsonl": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+    "group_assignments.json": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773",
+    "audit_cases.jsonl": "165dc88ce9482e5f244ed021c08a0bfb102ee86c73640030d2a8a3e8a1902183",
+    "generate.py": "980ca40458ddeb62897b32d25722857b9a280f86e6ec4a2f33d7a80a2ca5cd2c",
+    "audit.py": "adfa34a095b811773f5ccd5ef16e2d437a035eed95784c3da512f76f9e08c3a2"
+  }
+}

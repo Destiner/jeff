@@ -1,0 +1,87 @@
+{
+  "stage": "Frozen before reading labels/source/audit helpers",
+  "environment": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai"
+  },
+  "decisions": [
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "answer": "o2",
+      "rationale": "Available stock 25\u22125=20; required 42+10=52; deficit 32; two packs of 16. Reserve already doubled.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "answer": "o3",
+      "rationale": "09:20 follows cooldown; session plus cooldown ends exactly 09:40.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "answer": "o4",
+      "rationale": "Earliest possible 09:53 and latest 10:00; none listed fits.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "answer": "o4",
+      "rationale": "13:25\u201313:45 leaves five minutes on each side.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "answer": "o1",
+      "rationale": "14:10 ends exactly 14:30; 13:44 lacks reset; 14:11 ends late.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "answer": "o1",
+      "rationale": "08:20\u201308:27 recovery ends 08:40; earliest listed feasible.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "answer": "o3",
+      "rationale": "08:55 plus seven and thirteen ends exactly 09:15; 08:50 lacks prior recovery.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "answer": "o1",
+      "rationale": "10:30\u201310:48 ventilation ends 11:00.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "answer": "o1",
+      "rationale": "11:25 is earliest listed after ventilation ends 11:24; ends 11:43.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "answer": "o1",
+      "rationale": "15:40 plus 25+15 ends exactly 16:20.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "answer": "o3",
+      "rationale": "16:05 follows prior cooldown and finishes with cooldown 16:45, earlier than 16:20.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "answer": "o2",
+      "rationale": "18:16 follows six-minute reset and finishes 18:26, before next session.",
+      "ambiguity": null
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "answer": "o2",
+      "rationale": "19:00 ends exactly at closing; final reset may extend beyond; other listed times end late.",
+      "ambiguity": null
+    }
+  ]
+}

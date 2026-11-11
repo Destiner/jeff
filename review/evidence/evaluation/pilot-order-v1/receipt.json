@@ -1,0 +1,14 @@
+{
+  "schema_version": "evaluation/0.1",
+  "source": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+    "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+  },
+  "reversed_inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/reversed-inputs.jsonl",
+    "sha256": "befb765cf3616871d3a616b7107cba67e8b80000ba74202ecf43309dee3612d0"
+  },
+  "pairs": 60,
+  "source_groups": 12,
+  "change": "Example ID suffix plus exact reversed option objects; all other reference fields unchanged"
+}

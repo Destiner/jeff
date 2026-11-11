@@ -1,0 +1,842 @@
+[
+  {
+    "id": "data:pilot-v1:sentiment-r2:g01:r01",
+    "parent_id": "data:pilot-v1:sentiment:g01:r01",
+    "subject": "the oat cappuccino",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g01:r02",
+    "parent_id": "data:pilot-v1:sentiment:g01:r02",
+    "subject": "the counter service",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g01:r03",
+    "parent_id": "data:pilot-v1:sentiment:g01:r03",
+    "subject": "the cafe visit as described",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g01:r04",
+    "parent_id": "data:pilot-v1:sentiment:g01:r04",
+    "subject": "the cafe visit overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g02:r01",
+    "parent_id": "data:pilot-v1:sentiment:g02:r01",
+    "subject": "the evening bus service",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g02:r02",
+    "parent_id": "data:pilot-v1:sentiment:g02:r02",
+    "subject": "the bus journey",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g02:r03",
+    "parent_id": "data:pilot-v1:sentiment:g02:r03",
+    "subject": "the new seating arrangement",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g02:r04",
+    "parent_id": "data:pilot-v1:sentiment:g02:r04",
+    "subject": "the driver's assistance",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g03:r01",
+    "parent_id": "data:pilot-v1:sentiment:g03:r01",
+    "subject": "the borrowing arrangement",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g03:r02",
+    "parent_id": "data:pilot-v1:sentiment:g03:r02",
+    "subject": "the online renewal page",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g03:r03",
+    "parent_id": "data:pilot-v1:sentiment:g03:r03",
+    "subject": "the librarian's help",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g03:r04",
+    "parent_id": "data:pilot-v1:sentiment:g03:r04",
+    "subject": "the study room experience",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g04:r01",
+    "parent_id": "data:pilot-v1:sentiment:g04:r01",
+    "subject": "the trainers overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g04:r02",
+    "parent_id": "data:pilot-v1:sentiment:g04:r02",
+    "subject": "the shoes' comfort",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g04:r03",
+    "parent_id": "data:pilot-v1:sentiment:g04:r03",
+    "subject": "the shoes' grip",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g04:r04",
+    "parent_id": "data:pilot-v1:sentiment:g04:r04",
+    "subject": "the shoes",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g05:r01",
+    "parent_id": "data:pilot-v1:sentiment:g05:r01",
+    "subject": "the recipe scaling tool",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g05:r02",
+    "parent_id": "data:pilot-v1:sentiment:g05:r02",
+    "subject": "the vegetarian search filter",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g05:r03",
+    "parent_id": "data:pilot-v1:sentiment:g05:r03",
+    "subject": "the saved-recipe feature",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g05:r04",
+    "parent_id": "data:pilot-v1:sentiment:g05:r04",
+    "subject": "the cooking timer",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g06:r01",
+    "parent_id": "data:pilot-v1:sentiment:g06:r01",
+    "subject": "the dryer",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g06:r02",
+    "parent_id": "data:pilot-v1:sentiment:g06:r02",
+    "subject": "the laundry visit",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g06:r03",
+    "parent_id": "data:pilot-v1:sentiment:g06:r03",
+    "subject": "the pickup service overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g06:r04",
+    "parent_id": "data:pilot-v1:sentiment:g06:r04",
+    "subject": "the attendant's help",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g07:r01",
+    "parent_id": "data:pilot-v1:sentiment:g07:r01",
+    "subject": "the rake",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g07:r02",
+    "parent_id": "data:pilot-v1:sentiment:g07:r02",
+    "subject": "the watering can",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g07:r03",
+    "parent_id": "data:pilot-v1:sentiment:g07:r03",
+    "subject": "the pruning shears",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g07:r04",
+    "parent_id": "data:pilot-v1:sentiment:g07:r04",
+    "subject": "the trowel",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g08:r01",
+    "parent_id": "data:pilot-v1:sentiment:g08:r01",
+    "subject": "the colour consultation",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g08:r02",
+    "parent_id": "data:pilot-v1:sentiment:g08:r02",
+    "subject": "the haircut",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g08:r03",
+    "parent_id": "data:pilot-v1:sentiment:g08:r03",
+    "subject": "the booking process",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g08:r04",
+    "parent_id": "data:pilot-v1:sentiment:g08:r04",
+    "subject": "the appointment arrangement",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g09:r01",
+    "parent_id": "data:pilot-v1:sentiment:g09:r01",
+    "subject": "the fruit quality",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g09:r02",
+    "parent_id": "data:pilot-v1:sentiment:g09:r02",
+    "subject": "the grocery substitution",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g09:r03",
+    "parent_id": "data:pilot-v1:sentiment:g09:r03",
+    "subject": "the grocery order",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g09:r04",
+    "parent_id": "data:pilot-v1:sentiment:g09:r04",
+    "subject": "the delivery overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g10:r01",
+    "parent_id": "data:pilot-v1:sentiment:g10:r01",
+    "subject": "the exhibit lighting",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g10:r02",
+    "parent_id": "data:pilot-v1:sentiment:g10:r02",
+    "subject": "the collection's location",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g10:r03",
+    "parent_id": "data:pilot-v1:sentiment:g10:r03",
+    "subject": "the family trail",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g10:r04",
+    "parent_id": "data:pilot-v1:sentiment:g10:r04",
+    "subject": "the audio guide",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g11:r01",
+    "parent_id": "data:pilot-v1:sentiment:g11:r01",
+    "subject": "the headphones",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g11:r02",
+    "parent_id": "data:pilot-v1:sentiment:g11:r02",
+    "subject": "the earbuds overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g11:r03",
+    "parent_id": "data:pilot-v1:sentiment:g11:r03",
+    "subject": "the headphones' noise cancellation",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g11:r04",
+    "parent_id": "data:pilot-v1:sentiment:g11:r04",
+    "subject": "the microphone",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g12:r01",
+    "parent_id": "data:pilot-v1:sentiment:g12:r01",
+    "subject": "the circuit class overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g12:r02",
+    "parent_id": "data:pilot-v1:sentiment:g12:r02",
+    "subject": "the instructor's teaching",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g12:r03",
+    "parent_id": "data:pilot-v1:sentiment:g12:r03",
+    "subject": "the class instruction",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g12:r04",
+    "parent_id": "data:pilot-v1:sentiment:g12:r04",
+    "subject": "the stretching class",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g13:r01",
+    "parent_id": "data:pilot-v1:sentiment:g13:r01",
+    "subject": "the parcel collection process",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g13:r02",
+    "parent_id": "data:pilot-v1:sentiment:g13:r02",
+    "subject": "the attempted collection",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g13:r03",
+    "parent_id": "data:pilot-v1:sentiment:g13:r03",
+    "subject": "the collection instructions",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g13:r04",
+    "parent_id": "data:pilot-v1:sentiment:g13:r04",
+    "subject": "the locker service overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g14:r01",
+    "parent_id": "data:pilot-v1:sentiment:g14:r01",
+    "subject": "the adjustable armrests",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g14:r02",
+    "parent_id": "data:pilot-v1:sentiment:g14:r02",
+    "subject": "the desk chair",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g14:r03",
+    "parent_id": "data:pilot-v1:sentiment:g14:r03",
+    "subject": "the reclining feature",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g14:r04",
+    "parent_id": "data:pilot-v1:sentiment:g14:r04",
+    "subject": "the lumbar support",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g15:r01",
+    "parent_id": "data:pilot-v1:sentiment:g15:r01",
+    "subject": "the cinema outing",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g15:r02",
+    "parent_id": "data:pilot-v1:sentiment:g15:r02",
+    "subject": "the audiovisual presentation",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g15:r03",
+    "parent_id": "data:pilot-v1:sentiment:g15:r03",
+    "subject": "the staff's assistance",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g15:r04",
+    "parent_id": "data:pilot-v1:sentiment:g15:r04",
+    "subject": "the cinema seat",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g16:r01",
+    "parent_id": "data:pilot-v1:sentiment:g16:r01",
+    "subject": "the repair service overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g16:r02",
+    "parent_id": "data:pilot-v1:sentiment:g16:r02",
+    "subject": "the mechanic's explanation",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g16:r03",
+    "parent_id": "data:pilot-v1:sentiment:g16:r03",
+    "subject": "the wheel repair",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g16:r04",
+    "parent_id": "data:pilot-v1:sentiment:g16:r04",
+    "subject": "the listed maintenance work",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g17:r01",
+    "parent_id": "data:pilot-v1:sentiment:g17:r01",
+    "subject": "the fern's condition",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g17:r02",
+    "parent_id": "data:pilot-v1:sentiment:g17:r02",
+    "subject": "the plant pot",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g17:r03",
+    "parent_id": "data:pilot-v1:sentiment:g17:r03",
+    "subject": "the plant purchase",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g17:r04",
+    "parent_id": "data:pilot-v1:sentiment:g17:r04",
+    "subject": "the plant subscription",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g18:r01",
+    "parent_id": "data:pilot-v1:sentiment:g18:r01",
+    "subject": "the conversation lesson",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g18:r02",
+    "parent_id": "data:pilot-v1:sentiment:g18:r02",
+    "subject": "the next language lesson",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g18:r03",
+    "parent_id": "data:pilot-v1:sentiment:g18:r03",
+    "subject": "the online lesson overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g18:r04",
+    "parent_id": "data:pilot-v1:sentiment:g18:r04",
+    "subject": "the pronunciation lesson",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g19:r01",
+    "parent_id": "data:pilot-v1:sentiment:g19:r01",
+    "subject": "the storage set",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g19:r02",
+    "parent_id": "data:pilot-v1:sentiment:g19:r02",
+    "subject": "the glass containers",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g19:r03",
+    "parent_id": "data:pilot-v1:sentiment:g19:r03",
+    "subject": "the container's leak protection",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g19:r04",
+    "parent_id": "data:pilot-v1:sentiment:g19:r04",
+    "subject": "the storage lid",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g20:r01",
+    "parent_id": "data:pilot-v1:sentiment:g20:r01",
+    "subject": "the family swim session",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g20:r02",
+    "parent_id": "data:pilot-v1:sentiment:g20:r02",
+    "subject": "the lifeguard's guidance",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g20:r03",
+    "parent_id": "data:pilot-v1:sentiment:g20:r03",
+    "subject": "the changing-room lockers",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g20:r04",
+    "parent_id": "data:pilot-v1:sentiment:g20:r04",
+    "subject": "the lane-swimming setup",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g21:r01",
+    "parent_id": "data:pilot-v1:sentiment:g21:r01",
+    "subject": "the discussion hosting",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g21:r02",
+    "parent_id": "data:pilot-v1:sentiment:g21:r02",
+    "subject": "the group's handling of spoilers",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g21:r03",
+    "parent_id": "data:pilot-v1:sentiment:g21:r03",
+    "subject": "the book club arrangement",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g21:r04",
+    "parent_id": "data:pilot-v1:sentiment:g21:r04",
+    "subject": "the new discussion format",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g22:r01",
+    "parent_id": "data:pilot-v1:sentiment:g22:r01",
+    "subject": "the temperature widget",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g22:r02",
+    "parent_id": "data:pilot-v1:sentiment:g22:r02",
+    "subject": "the weather app",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g22:r03",
+    "parent_id": "data:pilot-v1:sentiment:g22:r03",
+    "subject": "the forecast chart",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g22:r04",
+    "parent_id": "data:pilot-v1:sentiment:g22:r04",
+    "subject": "the rain alert",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g23:r01",
+    "parent_id": "data:pilot-v1:sentiment:g23:r01",
+    "subject": "the tent",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g23:r02",
+    "parent_id": "data:pilot-v1:sentiment:g23:r02",
+    "subject": "the compact tent overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g23:r03",
+    "parent_id": "data:pilot-v1:sentiment:g23:r03",
+    "subject": "the tent's waterproofing",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g23:r04",
+    "parent_id": "data:pilot-v1:sentiment:g23:r04",
+    "subject": "the tent poles",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g24:r01",
+    "parent_id": "data:pilot-v1:sentiment:g24:r01",
+    "subject": "the tailoring service overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g24:r02",
+    "parent_id": "data:pilot-v1:sentiment:g24:r02",
+    "subject": "the sleeve alteration",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g24:r03",
+    "parent_id": "data:pilot-v1:sentiment:g24:r03",
+    "subject": "the handling of the hem request",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g24:r04",
+    "parent_id": "data:pilot-v1:sentiment:g24:r04",
+    "subject": "the alteration arrangement",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g25:r01",
+    "parent_id": "data:pilot-v1:sentiment:g25:r01",
+    "subject": "the tutor's instruction",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g25:r02",
+    "parent_id": "data:pilot-v1:sentiment:g25:r02",
+    "subject": "the finished-work collection system",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g25:r03",
+    "parent_id": "data:pilot-v1:sentiment:g25:r03",
+    "subject": "the pottery workshop setup",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g25:r04",
+    "parent_id": "data:pilot-v1:sentiment:g25:r04",
+    "subject": "the glazing session overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g26:r01",
+    "parent_id": "data:pilot-v1:sentiment:g26:r01",
+    "subject": "the handling of the dog's belongings",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g26:r02",
+    "parent_id": "data:pilot-v1:sentiment:g26:r02",
+    "subject": "the boarding arrangement",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g26:r03",
+    "parent_id": "data:pilot-v1:sentiment:g26:r03",
+    "subject": "the boarding environment",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g26:r04",
+    "parent_id": "data:pilot-v1:sentiment:g26:r04",
+    "subject": "the boarding staff's care",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g27:r01",
+    "parent_id": "data:pilot-v1:sentiment:g27:r01",
+    "subject": "the observing session",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g27:r02",
+    "parent_id": "data:pilot-v1:sentiment:g27:r02",
+    "subject": "the observatory talk experience",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g27:r03",
+    "parent_id": "data:pilot-v1:sentiment:g27:r03",
+    "subject": "the guide's explanation",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g27:r04",
+    "parent_id": "data:pilot-v1:sentiment:g27:r04",
+    "subject": "the telescope queue management",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g28:r01",
+    "parent_id": "data:pilot-v1:sentiment:g28:r01",
+    "subject": "the luggage storage site overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g28:r02",
+    "parent_id": "data:pilot-v1:sentiment:g28:r02",
+    "subject": "the bag-return procedure",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g28:r03",
+    "parent_id": "data:pilot-v1:sentiment:g28:r03",
+    "subject": "the luggage desk's reliability",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g28:r04",
+    "parent_id": "data:pilot-v1:sentiment:g28:r04",
+    "subject": "the luggage storage transaction",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g29:r01",
+    "parent_id": "data:pilot-v1:sentiment:g29:r01",
+    "subject": "the hearing loop's audio clarity",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g29:r02",
+    "parent_id": "data:pilot-v1:sentiment:g29:r02",
+    "subject": "the operation of the hearing loop",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g29:r03",
+    "parent_id": "data:pilot-v1:sentiment:g29:r03",
+    "subject": "the hearing-loop provision as described",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g29:r04",
+    "parent_id": "data:pilot-v1:sentiment:g29:r04",
+    "subject": "the hearing loop's coverage",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g30:r01",
+    "parent_id": "data:pilot-v1:sentiment:g30:r01",
+    "subject": "the seed labelling support",
+    "class": "N",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g30:r02",
+    "parent_id": "data:pilot-v1:sentiment:g30:r02",
+    "subject": "the seed exchange",
+    "class": "U",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g30:r03",
+    "parent_id": "data:pilot-v1:sentiment:g30:r03",
+    "subject": "the seed-swap event overall",
+    "class": "M",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  },
+  {
+    "id": "data:pilot-v1:sentiment-r2:g30:r04",
+    "parent_id": "data:pilot-v1:sentiment:g30:r04",
+    "subject": "the organiser's advice",
+    "class": "P",
+    "change": "question wording and candidate set/order only; state, group, split and teacher judgment preserved"
+  }
+]

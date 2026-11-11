@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "evaluation-data-v2-validation-v1",
+  "shards": [
+    {
+      "path": "evaluation/e3-v2-assembly-v1/validation.jsonl",
+      "split": "validation",
+      "rows": 300,
+      "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+    }
+  ]
+}

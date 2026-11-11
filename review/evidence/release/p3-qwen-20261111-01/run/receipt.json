@@ -1,0 +1,18 @@
+{
+  "schema_version": "p3.run.v1",
+  "status": "failed",
+  "suites": [],
+  "memory_samples": [],
+  "error": {
+    "type": "KeyError",
+    "message": "'config_path'",
+    "retry": false
+  },
+  "process_runtime_seconds": 0.0006252080202102661,
+  "cpu_lifetime_maxrss_bytes": 26329088,
+  "memory_qualification": "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory",
+  "mps_observed_maxima_bytes": {
+    "current_allocated_bytes": null,
+    "driver_allocated_bytes": null
+  }
+}

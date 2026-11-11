@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "boundary": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+    "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+  },
+  "reference": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+    "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+  },
+  "inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+  },
+  "corpus": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment/train.jsonl",
+    "sha256": "e918409e29cfef87ff8f830ffd0650849ec9d8ebdf5dd608e73935ca488e0d58"
+  },
+  "rows": 100,
+  "groups": 25,
+  "hits": {
+    "id": 0,
+    "group": 0,
+    "exact:ordered_input": 0,
+    "exact:orderfree_decision": 0,
+    "exact:state": 0,
+    "nfc_outerstrip:ordered_input": 0,
+    "nfc_outerstrip:orderfree_decision": 0,
+    "nfc_outerstrip:state": 0
+  },
+  "semantic_clearance": false,
+  "scope": "Supplement to immutable boundary; original superseded sentiment TRAIN bytes, no inference"
+}

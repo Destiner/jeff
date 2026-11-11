@@ -1,0 +1,597 @@
+{
+  "definitions": "Character lengths; first displayed option breaks length ties. Clock priors ignore none and choose numerical rank 1/2/3. None-case counts as miss for every clock prior.",
+  "before": {
+    "all": {
+      "rows": 48,
+      "target_slots_by_arity": {
+        "4": {
+          "1": 10,
+          "4": 9,
+          "3": 9,
+          "2": 9
+        },
+        "3": {
+          "2": 4,
+          "1": 4,
+          "3": 3
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 13,
+        "longest_first_tie_hits": 11,
+        "shortest_including_ties": 29,
+        "longest_including_ties": 23,
+        "strict_shortest": 5,
+        "strict_longest": 2
+      },
+      "none_option_slots": {
+        "2": 2,
+        "4": 3,
+        "3": 5,
+        "1": 2
+      },
+      "none_target_count": 1
+    },
+    "packs": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "1": 2,
+          "4": 2,
+          "3": 4,
+          "2": 1
+        },
+        "3": {
+          "2": 1,
+          "1": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 0,
+        "longest_first_tie_hits": 6,
+        "shortest_including_ties": 3,
+        "longest_including_ties": 12,
+        "strict_shortest": 0,
+        "strict_longest": 0
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "rates": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "3": {
+          "3": 3,
+          "1": 2,
+          "2": 3
+        },
+        "4": {
+          "2": 3,
+          "4": 1
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 5,
+        "longest_first_tie_hits": 1,
+        "shortest_including_ties": 8,
+        "longest_including_ties": 4,
+        "strict_shortest": 4,
+        "strict_longest": 0
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "coordinates": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "2": 3,
+          "4": 4,
+          "1": 3,
+          "3": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 2,
+        "longest_first_tie_hits": 3,
+        "shortest_including_ties": 7,
+        "longest_including_ties": 6,
+        "strict_shortest": 1,
+        "strict_longest": 1
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "cooldown": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "3": 3,
+          "4": 2,
+          "1": 5,
+          "2": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 6,
+        "longest_first_tie_hits": 1,
+        "shortest_including_ties": 11,
+        "longest_including_ties": 1,
+        "strict_shortest": 0,
+        "strict_longest": 1
+      },
+      "none_option_slots": {
+        "2": 2,
+        "4": 3,
+        "3": 5,
+        "1": 2
+      },
+      "none_target_count": 1,
+      "clock_prior_hits_of_12": {
+        "earliest": 0,
+        "second": 11,
+        "latest": 0
+      },
+      "non_none_numerical_target_ranks": {
+        "2": 11
+      },
+      "clock_gap_details": [
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+          "sorted_times": [
+            "09:19",
+            "09:20",
+            "10:00"
+          ],
+          "target": "09:20",
+          "adjacent_minute_gaps": [
+            1,
+            40
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+          "sorted_times": [
+            "09:52",
+            "10:01",
+            "10:08"
+          ],
+          "target": "No listed start fits",
+          "adjacent_minute_gaps": [
+            9,
+            7
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+          "sorted_times": [
+            "13:24",
+            "13:25",
+            "14:15"
+          ],
+          "target": "13:25",
+          "adjacent_minute_gaps": [
+            1,
+            50
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+          "sorted_times": [
+            "13:44",
+            "14:10",
+            "14:11"
+          ],
+          "target": "14:10",
+          "adjacent_minute_gaps": [
+            26,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+          "sorted_times": [
+            "08:19",
+            "08:20",
+            "09:00"
+          ],
+          "target": "08:20",
+          "adjacent_minute_gaps": [
+            1,
+            40
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+          "sorted_times": [
+            "08:50",
+            "08:55",
+            "08:56"
+          ],
+          "target": "08:55",
+          "adjacent_minute_gaps": [
+            5,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+          "sorted_times": [
+            "10:29",
+            "10:30",
+            "11:30"
+          ],
+          "target": "10:30",
+          "adjacent_minute_gaps": [
+            1,
+            60
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+          "sorted_times": [
+            "11:23",
+            "11:25",
+            "11:42"
+          ],
+          "target": "11:25",
+          "adjacent_minute_gaps": [
+            2,
+            17
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+          "sorted_times": [
+            "15:39",
+            "15:40",
+            "16:00"
+          ],
+          "target": "15:40",
+          "adjacent_minute_gaps": [
+            1,
+            20
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+          "sorted_times": [
+            "16:04",
+            "16:05",
+            "16:21"
+          ],
+          "target": "16:05",
+          "adjacent_minute_gaps": [
+            1,
+            16
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+          "sorted_times": [
+            "18:15",
+            "18:16",
+            "18:56"
+          ],
+          "target": "18:16",
+          "adjacent_minute_gaps": [
+            1,
+            40
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+          "sorted_times": [
+            "18:53",
+            "19:00",
+            "19:01"
+          ],
+          "target": "19:00",
+          "adjacent_minute_gaps": [
+            7,
+            1
+          ]
+        }
+      ],
+      "always_none_hits_of_12": 1
+    }
+  },
+  "after": {
+    "all": {
+      "rows": 48,
+      "target_slots_by_arity": {
+        "4": {
+          "1": 10,
+          "4": 9,
+          "3": 9,
+          "2": 9
+        },
+        "3": {
+          "2": 4,
+          "1": 4,
+          "3": 3
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 13,
+        "longest_first_tie_hits": 11,
+        "shortest_including_ties": 29,
+        "longest_including_ties": 23,
+        "strict_shortest": 5,
+        "strict_longest": 2
+      },
+      "none_option_slots": {
+        "2": 2,
+        "4": 3,
+        "3": 5,
+        "1": 2
+      },
+      "none_target_count": 1
+    },
+    "packs": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "1": 2,
+          "4": 2,
+          "3": 4,
+          "2": 1
+        },
+        "3": {
+          "2": 1,
+          "1": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 0,
+        "longest_first_tie_hits": 6,
+        "shortest_including_ties": 3,
+        "longest_including_ties": 12,
+        "strict_shortest": 0,
+        "strict_longest": 0
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "rates": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "3": {
+          "3": 3,
+          "1": 2,
+          "2": 3
+        },
+        "4": {
+          "2": 3,
+          "4": 1
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 5,
+        "longest_first_tie_hits": 1,
+        "shortest_including_ties": 8,
+        "longest_including_ties": 4,
+        "strict_shortest": 4,
+        "strict_longest": 0
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "coordinates": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "2": 3,
+          "4": 4,
+          "1": 3,
+          "3": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 2,
+        "longest_first_tie_hits": 3,
+        "shortest_including_ties": 7,
+        "longest_including_ties": 6,
+        "strict_shortest": 1,
+        "strict_longest": 1
+      },
+      "none_option_slots": {},
+      "none_target_count": 0
+    },
+    "cooldown": {
+      "rows": 12,
+      "target_slots_by_arity": {
+        "4": {
+          "3": 3,
+          "4": 2,
+          "1": 5,
+          "2": 2
+        }
+      },
+      "length": {
+        "shortest_first_tie_hits": 6,
+        "longest_first_tie_hits": 1,
+        "shortest_including_ties": 11,
+        "longest_including_ties": 1,
+        "strict_shortest": 0,
+        "strict_longest": 1
+      },
+      "none_option_slots": {
+        "2": 2,
+        "4": 3,
+        "3": 5,
+        "1": 2
+      },
+      "none_target_count": 1,
+      "clock_prior_hits_of_12": {
+        "earliest": 4,
+        "second": 4,
+        "latest": 3
+      },
+      "non_none_numerical_target_ranks": {
+        "3": 3,
+        "1": 4,
+        "2": 4
+      },
+      "clock_gap_details": [
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+          "sorted_times": [
+            "09:12",
+            "09:19",
+            "09:20"
+          ],
+          "target": "09:20",
+          "adjacent_minute_gaps": [
+            7,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+          "sorted_times": [
+            "09:52",
+            "10:01",
+            "10:08"
+          ],
+          "target": "No listed start fits",
+          "adjacent_minute_gaps": [
+            9,
+            7
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+          "sorted_times": [
+            "13:25",
+            "13:26",
+            "14:15"
+          ],
+          "target": "13:25",
+          "adjacent_minute_gaps": [
+            1,
+            49
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+          "sorted_times": [
+            "13:44",
+            "14:10",
+            "14:11"
+          ],
+          "target": "14:10",
+          "adjacent_minute_gaps": [
+            26,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+          "sorted_times": [
+            "08:19",
+            "08:20",
+            "09:00"
+          ],
+          "target": "08:20",
+          "adjacent_minute_gaps": [
+            1,
+            40
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+          "sorted_times": [
+            "08:38",
+            "08:50",
+            "08:55"
+          ],
+          "target": "08:55",
+          "adjacent_minute_gaps": [
+            12,
+            5
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+          "sorted_times": [
+            "10:30",
+            "10:31",
+            "11:30"
+          ],
+          "target": "10:30",
+          "adjacent_minute_gaps": [
+            1,
+            59
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+          "sorted_times": [
+            "11:23",
+            "11:25",
+            "11:42"
+          ],
+          "target": "11:25",
+          "adjacent_minute_gaps": [
+            2,
+            17
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+          "sorted_times": [
+            "15:25",
+            "15:39",
+            "15:40"
+          ],
+          "target": "15:40",
+          "adjacent_minute_gaps": [
+            14,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+          "sorted_times": [
+            "16:05",
+            "16:20",
+            "16:21"
+          ],
+          "target": "16:05",
+          "adjacent_minute_gaps": [
+            15,
+            1
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+          "sorted_times": [
+            "18:15",
+            "18:16",
+            "18:56"
+          ],
+          "target": "18:16",
+          "adjacent_minute_gaps": [
+            1,
+            40
+          ]
+        },
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+          "sorted_times": [
+            "19:00",
+            "19:01",
+            "19:04"
+          ],
+          "target": "19:00",
+          "adjacent_minute_gaps": [
+            1,
+            3
+          ]
+        }
+      ],
+      "always_none_hits_of_12": 1
+    }
+  }
+}

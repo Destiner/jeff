@@ -1,0 +1,301 @@
+[
+  {
+    "id": "data:d3-seen-rules-v1:packs:p06:c02",
+    "state": "Costume reflectors come in packs of 16. Desired stock equals show demand plus reserve, excluding rejected stock from what is available. Each scheduled purchase buys at least 1 pack. Above that minimum, buy only enough whole packs to cover the deficit. The listed reserve is the final requirement after doubling; only unopened returned reflectors count as accepted stock. Demand 42; reserve 10; stock 25; rejected 5.",
+    "question": "How many packs must be purchased?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "1 pack"
+      },
+      {
+        "id": "o2",
+        "text": "2 packs"
+      },
+      {
+        "id": "o3",
+        "text": "3 packs"
+      },
+      {
+        "id": "o4",
+        "text": "4 packs"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+    "state": "A new curing booking lasts 12 minutes; existing bookings have the stated end times. Every booking requires 8 minutes of exclusive cooldown afterward. Endpoints may touch. Work opens at 09:00; both the new session and its cooldown must finish by 10:20. Find a slot for a varnished panel between existing booth jobs. Existing sessions: 09:00\u201309:12; 09:40\u201309:52.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "09:12"
+      },
+      {
+        "id": "o2",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o3",
+        "text": "09:20"
+      },
+      {
+        "id": "o4",
+        "text": "09:19"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+    "state": "A new curing booking lasts 12 minutes; existing bookings have the stated end times. Every booking requires 8 minutes of exclusive cooldown afterward. Endpoints may touch. Work opens at 09:00; both the new session and its cooldown must finish by 10:20. An urgent replacement panel needs a slot after a long curing run. Existing sessions: 09:00\u201309:45.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "10:08"
+      },
+      {
+        "id": "o2",
+        "text": "10:01"
+      },
+      {
+        "id": "o3",
+        "text": "09:52"
+      },
+      {
+        "id": "o4",
+        "text": "No listed start fits"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+    "state": "A new oral-history session lasts 20 minutes; existing sessions have their stated end times. Leave at least 5 minutes between any two sessions for booth reset. Exact boundary contact after reset is allowed. Sessions must lie within 13:00\u201314:30; the last reset may extend beyond closing. Place a returning narrator between previously booked interviews. Existing sessions: 13:00\u201313:20; 13:50\u201314:10.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "13:26"
+      },
+      {
+        "id": "o2",
+        "text": "14:15"
+      },
+      {
+        "id": "o3",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o4",
+        "text": "13:25"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+    "state": "A new oral-history session lasts 20 minutes; existing sessions have their stated end times. Leave at least 5 minutes between any two sessions for booth reset. Exact boundary contact after reset is allowed. Sessions must lie within 13:00\u201314:30; the last reset may extend beyond closing. An interpreter-assisted interview must follow the afternoon recording. Existing sessions: 13:00\u201313:40.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "14:10"
+      },
+      {
+        "id": "o2",
+        "text": "13:44"
+      },
+      {
+        "id": "o3",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o4",
+        "text": "14:11"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+    "state": "A new scanner appointment lasts 7 minutes; existing scans have the stated end times. After each scan the scanner is unavailable for 13 minutes. Every booking must respect recovery on both sides; touching recovery endpoints is allowed. Open 08:00\u201309:15; the new scan and its recovery must both finish within that window. Fit a calibration scan between two thermographic surveys. Existing sessions: 08:00\u201308:07; 08:40\u201308:47.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "08:20"
+      },
+      {
+        "id": "o2",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o3",
+        "text": "08:19"
+      },
+      {
+        "id": "o4",
+        "text": "09:00"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+    "state": "A new scanner appointment lasts 7 minutes; existing scans have the stated end times. After each scan the scanner is unavailable for 13 minutes. Every booking must respect recovery on both sides; touching recovery endpoints is allowed. Open 08:00\u201309:15; the new scan and its recovery must both finish within that window. After an extended survey, fit a diagnostic scan if any listed start works. Existing sessions: 08:00\u201308:38.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o2",
+        "text": "08:38"
+      },
+      {
+        "id": "o3",
+        "text": "08:55"
+      },
+      {
+        "id": "o4",
+        "text": "08:50"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+    "state": "Spray-room sessions last 18 minutes, with at least 12 minutes of ventilation between sessions. Existing sessions have their stated durations. Equality at the ventilation boundary is valid. Sessions must be within 10:00\u201312:00; ventilation after the last session may run later. Find a spray slot for a small glaze batch. Existing sessions: 10:00\u201310:18; 11:00\u201311:18.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "10:30"
+      },
+      {
+        "id": "o2",
+        "text": "10:31"
+      },
+      {
+        "id": "o3",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o4",
+        "text": "11:30"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+    "state": "Spray-room sessions last 18 minutes, with at least 12 minutes of ventilation between sessions. Existing sessions have their stated durations. Equality at the ventilation boundary is valid. Sessions must be within 10:00\u201312:00; ventilation after the last session may run later. A delayed glaze delivery arrives after an extended earlier spray run. Existing sessions: 10:00\u201311:12.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "11:25"
+      },
+      {
+        "id": "o2",
+        "text": "11:23"
+      },
+      {
+        "id": "o3",
+        "text": "11:42"
+      },
+      {
+        "id": "o4",
+        "text": "No listed start fits"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+    "state": "A new sail trial lasts 25 minutes; existing trials use their stated end times. Every trial requires 15 minutes of tunnel cooldown afterward. Any consecutive trials must have that separation. Exact equality is allowed. Open 15:00\u201317:00; the new trial plus its cooldown must finish by closing. Schedule a reefed-sail trial between two wind-tunnel reservations. Existing sessions: 15:00\u201315:25; 16:20\u201316:45.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "15:40"
+      },
+      {
+        "id": "o2",
+        "text": "15:39"
+      },
+      {
+        "id": "o3",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o4",
+        "text": "15:25"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+    "state": "A new sail trial lasts 25 minutes; existing trials use their stated end times. Every trial requires 15 minutes of tunnel cooldown afterward. Any consecutive trials must have that separation. Exact equality is allowed. Open 15:00\u201317:00; the new trial plus its cooldown must finish by closing. Following a full-rig trial, try to fit the storm-sail check before shutdown. Existing sessions: 15:00\u201315:50.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "16:20"
+      },
+      {
+        "id": "o2",
+        "text": "16:21"
+      },
+      {
+        "id": "o3",
+        "text": "16:05"
+      },
+      {
+        "id": "o4",
+        "text": "No listed start fits"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+    "state": "Acoustic dome sessions last 10 minutes. Require at least 6 minutes of empty dome time between any two sessions. Existing sessions use their stated end times. Equality is allowed. Sessions must fit within 18:00\u201319:10, but the final reset may finish later. Find the earliest slot for a chamber ensemble measurement. Existing sessions: 18:00\u201318:10; 18:40\u201318:50.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "18:56"
+      },
+      {
+        "id": "o2",
+        "text": "18:16"
+      },
+      {
+        "id": "o3",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o4",
+        "text": "18:15"
+      }
+    ]
+  },
+  {
+    "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+    "state": "Acoustic dome sessions last 10 minutes. Require at least 6 minutes of empty dome time between any two sessions. Existing sessions use their stated end times. Equality is allowed. Sessions must fit within 18:00\u201319:10, but the final reset may finish later. A late soloist must follow a longer ensemble recording. Existing sessions: 18:00\u201318:48.",
+    "question": "Which listed start is earliest feasible? If none works, choose \u201cNo listed start fits\u201d.",
+    "options": [
+      {
+        "id": "o1",
+        "text": "No listed start fits"
+      },
+      {
+        "id": "o2",
+        "text": "19:00"
+      },
+      {
+        "id": "o3",
+        "text": "19:04"
+      },
+      {
+        "id": "o4",
+        "text": "19:01"
+      }
+    ]
+  }
+]

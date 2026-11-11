@@ -1,0 +1,30 @@
+{
+  "completed_at": "2026-11-11T14:35:04.335002+00:00",
+  "status": "ready_not_scored",
+  "examples": 96,
+  "mechanisms": [
+    "cooldown",
+    "coordinates",
+    "discount",
+    "fifo",
+    "lexicographic",
+    "packs",
+    "rates",
+    "rounding"
+  ],
+  "commands": [
+    [
+      "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/score_d3.py",
+      "--prepare"
+    ]
+  ],
+  "errors": [],
+  "pins": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/pins.json",
+    "sha256": "5f9aa4cc755ee4495fd688952f9a3fc225a8a3d7cfc24d820fe881ce49abb330"
+  },
+  "recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/recipe.json",
+    "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "task": "D4",
+  "started_at": "2026-11-11T14:48:12Z",
+  "original_deadline": "2026-11-11T15:48:12Z",
+  "last_observation_check_at": "2026-11-11T15:47:59.986450+00:00",
+  "closure_recorded_at": "2026-11-11T15:49:44.235626+00:00",
+  "elapsed_minutes": 59.8,
+  "timing_note": "Coverage ends at the last actual observation check before the original deadline. Closure validation/reporting is administrative, not an extension of D4.",
+  "integrity_checks": {
+    "data/data-pilot-v2/manifest.json": true,
+    "data/data-pilot-v1/rule_application/train.jsonl": true,
+    "data/data-pilot-v2/rule-a/train.jsonl": true,
+    "data/data-pilot-v2/rule-b/train.jsonl": true,
+    "data/data-d3-seen-rules-v1/release/manifest.json": true,
+    "data/data-d3-seen-rules-v1/release/shards/geometry.jsonl": true,
+    "data/data-d3-seen-rules-v1/release/shards/ordering.jsonl": true,
+    "selection.json": true,
+    "selected-reference.jsonl": true,
+    "blind-review/judgments.json": true,
+    "blind-inputs.jsonl": true
+  },
+  "integrity_valid": true,
+  "inbox_checks_lower_bound": 23,
+  "inbox_accounting_limit": "One early selection-metadata inbox check is unnumbered; numbered count is a conservative lower bound, not complete telemetry.",
+  "requested_foreground_wait_seconds": 765,
+  "completed_subagents": 4,
+  "active_data_subagents": 0,
+  "active_data_jobs": 0,
+  "background_observers_created": 0,
+  "outbound_peer_reports": {
+    "research": "0b69e467-8c31-4232-b936-93a43e568222",
+    "model": "0e29a37c-4f37-430c-bdf1-adb26937dd4b"
+  },
+  "decision_sample": 24,
+  "source_groups": 14,
+  "blind_agreement": 24,
+  "demonstrated_label_spec_defects": 0,
+  "production_code_fixes": 0,
+  "frozen_dataset_changes": 0,
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "limits": [
+    "Procedural target hiding, not OS isolation",
+    "Same exposed reviewer/source model alias, not independent ground truth",
+    "Paired purposive TRAIN slice, not whole-dataset semantic clearance",
+    "No causal model improvement or counterfactual time-saved estimate",
+    "Observation stops now; no extension or background monitoring promise"
+  ]
+}

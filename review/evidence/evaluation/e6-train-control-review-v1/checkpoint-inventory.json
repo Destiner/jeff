@@ -1,0 +1,56 @@
+[
+  {
+    "path": "LICENSE",
+    "actual_bytes": 11343,
+    "published_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "content_not_read": true
+  },
+  {
+    "path": "README.md",
+    "actual_bytes": 4917,
+    "published_sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+    "content_not_read": true
+  },
+  {
+    "path": "config.json",
+    "actual_bytes": 1227,
+    "published_sha256": "e8d5e8d6aaf17311a89b78e3914fca868cc77312513a276b1701e22fb73d62a3",
+    "content_not_read": true
+  },
+  {
+    "path": "generation_config.json",
+    "actual_bytes": 242,
+    "published_sha256": "da7d43d773bb1c2606bbd062d9af2e8aa2b73de104b1f8f0a93e31bf3b1426a3",
+    "content_not_read": true
+  },
+  {
+    "path": "merges.txt",
+    "actual_bytes": 1671839,
+    "published_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "content_not_read": true
+  },
+  {
+    "path": "model.safetensors",
+    "actual_bytes": 1976163472,
+    "published_sha256": "ecbeb36556281cf00e9175603aecefd83f2ce3fc8a610e4b2cf056b7a4a926fb",
+    "content_not_read": true
+  },
+  {
+    "path": "tokenizer.json",
+    "actual_bytes": 7031645,
+    "published_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "content_not_read": true
+  },
+  {
+    "path": "tokenizer_config.json",
+    "actual_bytes": 7305,
+    "published_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "content_not_read": true
+  },
+  {
+    "path": "vocab.json",
+    "actual_bytes": 2776833,
+    "published_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "content_not_read": true
+  }
+]

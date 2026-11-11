@@ -1,0 +1,497 @@
+{
+  "sentiment-a": {
+    "splits": {
+      "train": {
+        "rows": 200,
+        "domains": {
+          "electric kettles": 10,
+          "rain jackets": 10,
+          "puzzle books": 10,
+          "standing desks": 10,
+          "vacuum cleaners": 10,
+          "ceramic mugs": 10,
+          "sleep masks": 10,
+          "reusable shopping bags": 10,
+          "desk lamps": 10,
+          "kitchen scales": 10,
+          "toothbrushes": 10,
+          "travel pillows": 10,
+          "camera straps": 10,
+          "board game inserts": 10,
+          "window blinds": 10,
+          "bird feeders": 10,
+          "running socks": 10,
+          "notebooks": 10,
+          "shower heads": 10,
+          "portable fans": 10
+        },
+        "classes": {
+          "P": 50,
+          "N": 50,
+          "U": 50,
+          "M": 50
+        },
+        "target_positions": {
+          "1": 50,
+          "2": 50,
+          "3": 50,
+          "4": 50
+        },
+        "by_class": {
+          "P": {
+            "position": {
+              "1": 13,
+              "2": 13,
+              "3": 12,
+              "4": 12
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "N": {
+            "position": {
+              "1": 12,
+              "2": 12,
+              "3": 13,
+              "4": 13
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "U": {
+            "position": {
+              "1": 13,
+              "2": 12,
+              "3": 13,
+              "4": 12
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "M": {
+            "position": {
+              "1": 12,
+              "2": 13,
+              "3": 12,
+              "4": 13
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          }
+        }
+      },
+      "validation": {
+        "rows": 40,
+        "domains": {
+          "kayak dry bags": 10,
+          "embroidery hoops": 10,
+          "violin shoulder rests": 10,
+          "folding picnic benches": 10
+        },
+        "classes": {
+          "P": 10,
+          "N": 10,
+          "U": 10,
+          "M": 10
+        },
+        "target_positions": {
+          "1": 10,
+          "4": 10,
+          "2": 10,
+          "3": 10
+        },
+        "by_class": {
+          "P": {
+            "position": {
+              "1": 3,
+              "2": 3,
+              "3": 2,
+              "4": 2
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "N": {
+            "position": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 3
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "U": {
+            "position": {
+              "1": 3,
+              "2": 2,
+              "3": 3,
+              "4": 2
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "M": {
+            "position": {
+              "1": 2,
+              "2": 3,
+              "3": 2,
+              "4": 3
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          }
+        }
+      }
+    },
+    "failures": [],
+    "source_cases": 240,
+    "source_headings": 24
+  },
+  "sentiment-b": {
+    "splits": {
+      "train": {
+        "rows": 200,
+        "domains": {
+          "public park seating": 10,
+          "stationery delivery": 10,
+          "tailoring fittings": 10,
+          "video caption editing": 10,
+          "rehearsal room acoustics": 10,
+          "photobook binding": 10,
+          "language dictionary apps": 10,
+          "online art lessons": 10,
+          "podcast editing": 10,
+          "car wash visits": 10,
+          "guided cooking sessions": 10,
+          "garden fencing installation": 10,
+          "meal preparation kits": 10,
+          "skateboard repairs": 10,
+          "furniture restoration": 10,
+          "charity shop purchases": 10,
+          "food market stalls": 10,
+          "indoor plant watering services": 10,
+          "local newspaper delivery": 10,
+          "document scanning": 10
+        },
+        "classes": {
+          "M": 50,
+          "U": 50,
+          "P": 50,
+          "N": 50
+        },
+        "target_positions": {
+          "1": 50,
+          "3": 50,
+          "4": 50,
+          "2": 50
+        },
+        "by_class": {
+          "P": {
+            "position": {
+              "1": 13,
+              "2": 13,
+              "3": 12,
+              "4": 12
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "N": {
+            "position": {
+              "1": 12,
+              "2": 13,
+              "3": 13,
+              "4": 12
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "U": {
+            "position": {
+              "1": 12,
+              "2": 12,
+              "3": 13,
+              "4": 13
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          },
+          "M": {
+            "position": {
+              "1": 13,
+              "2": 12,
+              "3": 12,
+              "4": 13
+            },
+            "style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            },
+            "question_style": {
+              "0": 10,
+              "1": 10,
+              "2": 10,
+              "3": 10,
+              "4": 10
+            }
+          }
+        }
+      },
+      "validation": {
+        "rows": 40,
+        "domains": {
+          "orienteering map printing": 10,
+          "falconry demonstrations": 10,
+          "weaving loom rental": 10,
+          "community darkroom sessions": 10
+        },
+        "classes": {
+          "M": 10,
+          "N": 10,
+          "U": 10,
+          "P": 10
+        },
+        "target_positions": {
+          "1": 10,
+          "4": 10,
+          "3": 10,
+          "2": 10
+        },
+        "by_class": {
+          "P": {
+            "position": {
+              "1": 3,
+              "2": 3,
+              "3": 2,
+              "4": 2
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "N": {
+            "position": {
+              "1": 2,
+              "2": 3,
+              "3": 3,
+              "4": 2
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "U": {
+            "position": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 3
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          },
+          "M": {
+            "position": {
+              "1": 3,
+              "2": 2,
+              "3": 2,
+              "4": 3
+            },
+            "style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "question_style": {
+              "0": 2,
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            }
+          }
+        }
+      }
+    },
+    "failures": [],
+    "source_cases": 240,
+    "source_headings": 24
+  },
+  "combined": {
+    "rows": 480,
+    "distinct_exact_states": 480,
+    "distinct_case_and_punctuation_preserving_whitespace_normalized_states": 480
+  }
+}

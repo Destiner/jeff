@@ -1,0 +1,44 @@
+{
+  "job": "m3-new-reversed",
+  "suite": "new-reversed",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01/checkpoint",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m3-new-reversed.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01/checkpoint",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl",
+    "sha256": "3f122ed8b56d12ced0a62037f4917344d4830c3fb906a153b0afebf13dbe7a58",
+    "rows": 240
+  },
+  "started_at": "2026-11-11T12:00:34.256889+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/empty-reload-cache/m3-new-reversed",
+  "offline_environment": true,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "process_wall_seconds": 2.3685269579291344,
+  "completed_at": "2026-11-11T12:00:36.625513+00:00",
+  "output": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m3-new-reversed.jsonl",
+    "sha256": "9d6bf8e641d080a6c38f05dc9edf5418284c4e14a558429c0831c60e34cbc2ff",
+    "rows": 240
+  }
+}

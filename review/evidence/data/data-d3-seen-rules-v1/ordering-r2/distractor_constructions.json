@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Amber 0; Chalk 3; Indigo 20",
+    "rule_error": {
+      "priority": [
+        "Indigo",
+        "Chalk",
+        "Amber"
+      ]
+    },
+    "description": "Exhaust batches in priority order Indigo, Chalk, Amber instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Amber 3; Chalk 0; Indigo 20",
+    "rule_error": {
+      "priority": [
+        "Indigo",
+        "Amber",
+        "Chalk"
+      ]
+    },
+    "description": "Exhaust batches in priority order Indigo, Amber, Chalk instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Amber 0; Chalk 8; Indigo 20",
+    "rule_error": {
+      "priority": [
+        "Indigo",
+        "Chalk",
+        "Amber"
+      ]
+    },
+    "description": "Exhaust batches in priority order Indigo, Chalk, Amber instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Amber 12; Chalk 0; Indigo 16",
+    "rule_error": {
+      "priority": [
+        "Amber",
+        "Indigo",
+        "Chalk"
+      ]
+    },
+    "description": "Exhaust batches in priority order Amber, Indigo, Chalk instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "East 0; North 15; West 60",
+    "rule_error": {
+      "priority": [
+        "West",
+        "North",
+        "East"
+      ]
+    },
+    "description": "Exhaust batches in priority order West, North, East instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "East 15; North 0; West 60",
+    "rule_error": {
+      "priority": [
+        "West",
+        "East",
+        "North"
+      ]
+    },
+    "description": "Exhaust batches in priority order West, East, North instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "East 22; North 0; West 60",
+    "rule_error": {
+      "priority": [
+        "West",
+        "East",
+        "North"
+      ]
+    },
+    "description": "Exhaust batches in priority order West, East, North instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "East 45; North 0; West 37",
+    "rule_error": {
+      "priority": [
+        "East",
+        "West",
+        "North"
+      ]
+    },
+    "description": "Exhaust batches in priority order East, West, North instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Ink 4; Moss 0; Rust 15",
+    "rule_error": {
+      "priority": [
+        "Rust",
+        "Ink",
+        "Moss"
+      ]
+    },
+    "description": "Exhaust batches in priority order Rust, Ink, Moss instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Ink 11; Moss 8; Rust 0",
+    "rule_error": {
+      "priority": [
+        "Moss",
+        "Ink",
+        "Rust"
+      ]
+    },
+    "description": "Exhaust batches in priority order Moss, Ink, Rust instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Ink 0; Moss 0; Rust 7",
+    "rule_error": {
+      "priority": [
+        "Rust",
+        "Ink",
+        "Moss"
+      ]
+    },
+    "description": "Exhaust batches in priority order Rust, Ink, Moss instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Ink 7; Moss 0; Rust 0",
+    "rule_error": {
+      "priority": [
+        "Ink",
+        "Moss",
+        "Rust"
+      ]
+    },
+    "description": "Exhaust batches in priority order Ink, Moss, Rust instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Glow 0; Halo 8; Spark 9",
+    "rule_error": {
+      "priority": [
+        "Spark",
+        "Halo",
+        "Glow"
+      ]
+    },
+    "description": "Exhaust batches in priority order Spark, Halo, Glow instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Glow 0; Halo 10; Spark 7",
+    "rule_error": {
+      "priority": [
+        "Halo",
+        "Spark",
+        "Glow"
+      ]
+    },
+    "description": "Exhaust batches in priority order Halo, Spark, Glow instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Glow 1; Halo 0; Spark 9",
+    "rule_error": {
+      "priority": [
+        "Spark",
+        "Glow",
+        "Halo"
+      ]
+    },
+    "description": "Exhaust batches in priority order Spark, Glow, Halo instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Glow 0; Halo 10; Spark 0",
+    "rule_error": {
+      "priority": [
+        "Halo",
+        "Spark",
+        "Glow"
+      ]
+    },
+    "description": "Exhaust batches in priority order Halo, Spark, Glow instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Brass 4; Iron 14; Steel 0",
+    "rule_error": {
+      "priority": [
+        "Iron",
+        "Brass",
+        "Steel"
+      ]
+    },
+    "description": "Exhaust batches in priority order Iron, Brass, Steel instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Brass 9; Iron 9; Steel 0",
+    "rule_error": {
+      "priority": [
+        "Brass",
+        "Iron",
+        "Steel"
+      ]
+    },
+    "description": "Exhaust batches in priority order Brass, Iron, Steel instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Brass 0; Iron 11; Steel 9",
+    "rule_error": {
+      "priority": [
+        "Steel",
+        "Iron",
+        "Brass"
+      ]
+    },
+    "description": "Exhaust batches in priority order Steel, Iron, Brass instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Brass 6; Iron 14; Steel 0",
+    "rule_error": {
+      "priority": [
+        "Iron",
+        "Brass",
+        "Steel"
+      ]
+    },
+    "description": "Exhaust batches in priority order Iron, Brass, Steel instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Frost 12; Polar 0; Snow 2",
+    "rule_error": {
+      "priority": [
+        "Frost",
+        "Snow",
+        "Polar"
+      ]
+    },
+    "description": "Exhaust batches in priority order Frost, Snow, Polar instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "Frost 0; Polar 0; Snow 14",
+    "rule_error": {
+      "priority": [
+        "Snow",
+        "Polar",
+        "Frost"
+      ]
+    },
+    "description": "Exhaust batches in priority order Snow, Polar, Frost instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "Frost 0; Polar 0; Snow 4",
+    "rule_error": {
+      "priority": [
+        "Snow",
+        "Frost",
+        "Polar"
+      ]
+    },
+    "description": "Exhaust batches in priority order Snow, Frost, Polar instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "Frost 4; Polar 0; Snow 0",
+    "rule_error": {
+      "priority": [
+        "Frost",
+        "Polar",
+        "Snow"
+      ]
+    },
+    "description": "Exhaust batches in priority order Frost, Polar, Snow instead of increasing arrival number"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£60.00",
+    "rule_error": "reverse",
+    "description": "Reverse the two reductions"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£78.00",
+    "rule_error": "skip_percent",
+    "description": "Omit percentage reduction"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£52.80",
+    "rule_error": "double_fixed",
+    "description": "Apply the booking credit twice"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£100.00",
+    "rule_error": "reverse",
+    "description": "Reverse the two reductions"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£108.00",
+    "rule_error": "percent_as_cash",
+    "description": "Read 20 percent as a £20 credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£92.80",
+    "rule_error": "double_fixed",
+    "description": "Apply the booking credit twice"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£102.00",
+    "rule_error": "skip_fixed",
+    "description": "Omit voucher"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£94.35",
+    "rule_error": "reverse",
+    "description": "Deduct voucher before percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£111.00",
+    "rule_error": "skip_percent",
+    "description": "Omit trade reduction"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£162.35",
+    "rule_error": "reverse",
+    "description": "Deduct voucher before percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£170.00",
+    "rule_error": "skip_fixed",
+    "description": "Omit voucher"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£154.70",
+    "rule_error": "fixed_as_percent",
+    "description": "Read £9 voucher as a sequential 9 percent reduction"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£151.25",
+    "rule_error": "reverse",
+    "description": "Reverse all three steps"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£155.00",
+    "rule_error": "double_last_fixed",
+    "description": "Apply the final site credit twice"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£150.00",
+    "rule_error": "fixed_last",
+    "description": "Apply both fixed credits after percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£211.25",
+    "rule_error": "reverse",
+    "description": "Reverse all three steps"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£250.00",
+    "rule_error": "skip_first",
+    "description": "Omit installation credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£295.00",
+    "rule_error": "skip_percent",
+    "description": "Omit percentage reduction"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£50.00",
+    "rule_error": "original_base",
+    "description": "Calculate each percentage reduction from the original invoice"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£48.00",
+    "rule_error": "double_fixed",
+    "description": "Apply the fixed credit twice at its step"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£51.60",
+    "rule_error": "fixed_last",
+    "description": "Move fixed credit after both percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£85.00",
+    "rule_error": "add_percent",
+    "description": "Add percentage rates and apply them before fixed credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£93.60",
+    "rule_error": "skip_fixed",
+    "description": "Omit fixed credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£88.20",
+    "rule_error": "reverse",
+    "description": "Reverse all three steps"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£67.80",
+    "rule_error": "fixed_last",
+    "description": "Deduct fixed credit after both percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£70.00",
+    "rule_error": "add_percent",
+    "description": "Add membership and early-booking percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£80.00",
+    "rule_error": "skip_first_percent",
+    "description": "Omit membership percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£135.00",
+    "rule_error": "skip_last_percent",
+    "description": "Omit early-booking percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£118.80",
+    "rule_error": "skip_fixed",
+    "description": "Omit fixed credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£120.00",
+    "rule_error": "skip_first_percent",
+    "description": "Omit membership percentage"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£59.40",
+    "rule_error": "fixed_first",
+    "description": "Deduct reuse credit before both percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£56.80",
+    "rule_error": "fixed_last",
+    "description": "Deduct reuse credit after both percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "£54.40",
+    "rule_error": "add_percent",
+    "description": "Add percentage rates and apply before fixed credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "£113.40",
+    "rule_error": "fixed_first",
+    "description": "Deduct reuse credit before both percentages"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "£118.80",
+    "rule_error": "skip_fixed",
+    "description": "Omit reuse credit"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "£112.80",
+    "rule_error": "reverse",
+    "description": "Reverse all three steps"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "2.0 g",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "2.3 g",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "floor"
+    },
+    "description": "Use grid 0.1 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "2.2 g",
+    "rule_error": {
+      "grid": "0.2",
+      "mode": "floor"
+    },
+    "description": "Use grid 0.2 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "2.5 g",
+    "rule_error": {
+      "grid": "0.5",
+      "mode": "ceil"
+    },
+    "description": "Use grid 0.5 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "3.0 g",
+    "rule_error": {
+      "grid": "1",
+      "mode": "ceil"
+    },
+    "description": "Use grid 1 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "2.4 g",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "ceil"
+    },
+    "description": "Use grid 0.1 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "43 kPa",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "42 kPa",
+    "rule_error": {
+      "grid": "1",
+      "mode": "floor"
+    },
+    "description": "Use grid 1 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "40 kPa",
+    "rule_error": {
+      "grid": "5",
+      "mode": "tie_down"
+    },
+    "description": "Use grid 5 with tie_down instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "50 kPa",
+    "rule_error": {
+      "grid": "5",
+      "mode": "ceil"
+    },
+    "description": "Use grid 5 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "48 kPa",
+    "rule_error": {
+      "grid": "2",
+      "mode": "ceil"
+    },
+    "description": "Use grid 2 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "47 kPa",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "1.30 ppt",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "ceil"
+    },
+    "description": "Use grid 0.1 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "1.00 ppt",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "1.20 ppt",
+    "rule_error": {
+      "grid": "0.01",
+      "mode": "tie_down"
+    },
+    "description": "Use grid 0.01 with tie_down instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "1.25 ppt",
+    "rule_error": {
+      "grid": "0.05",
+      "mode": "ceil"
+    },
+    "description": "Use grid 0.05 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "1.22 ppt",
+    "rule_error": {
+      "grid": "0.01",
+      "mode": "ceil"
+    },
+    "description": "Use grid 0.01 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "1.20 ppt",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "120 kg",
+    "rule_error": {
+      "grid": "10",
+      "mode": "tie_down"
+    },
+    "description": "Use grid 10 with tie_down instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "125 kg",
+    "rule_error": {
+      "grid": "5",
+      "mode": "nearest"
+    },
+    "description": "Use grid 5 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "100 kg",
+    "rule_error": {
+      "grid": "100",
+      "mode": "nearest"
+    },
+    "description": "Use grid 100 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "140 kg",
+    "rule_error": {
+      "grid": "10",
+      "mode": "ceil"
+    },
+    "description": "Use grid 10 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "100 kg",
+    "rule_error": {
+      "grid": "100",
+      "mode": "nearest"
+    },
+    "description": "Use grid 100 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "135 kg",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "8.0 mm",
+    "rule_error": {
+      "grid": "1",
+      "mode": "ceil"
+    },
+    "description": "Use grid 1 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "7.3 mm",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "7.0 mm",
+    "rule_error": {
+      "grid": "0.5",
+      "mode": "tie_down"
+    },
+    "description": "Use grid 0.5 with tie_down instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "7.8 mm",
+    "rule_error": {
+      "grid": "0.1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "7.5 mm",
+    "rule_error": {
+      "grid": "0.5",
+      "mode": "floor"
+    },
+    "description": "Use grid 0.5 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "7.0 mm",
+    "rule_error": {
+      "grid": "1",
+      "mode": "floor"
+    },
+    "description": "Use grid 1 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "option_id": "o1",
+    "slot": 1,
+    "text": "10 cm",
+    "rule_error": {
+      "grid": "10",
+      "mode": "floor"
+    },
+    "description": "Use grid 10 with floor instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "19 cm",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "18 cm",
+    "rule_error": {
+      "grid": "2",
+      "mode": "tie_down"
+    },
+    "description": "Use grid 2 with tie_down instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "option_id": "o2",
+    "slot": 2,
+    "text": "25 cm",
+    "rule_error": {
+      "grid": "5",
+      "mode": "ceil"
+    },
+    "description": "Use grid 5 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "option_id": "o3",
+    "slot": 3,
+    "text": "22 cm",
+    "rule_error": {
+      "grid": "2",
+      "mode": "ceil"
+    },
+    "description": "Use grid 2 with ceil instead of the stated nearest/half-up grid"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "option_id": "o4",
+    "slot": 4,
+    "text": "21 cm",
+    "rule_error": {
+      "grid": "1",
+      "mode": "nearest"
+    },
+    "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid"
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "task": "R5 probability",
+  "date": "2026-11-11",
+  "status": "research-only; no local experiments or promotion",
+  "counts": {"web_search_calls": 2, "query_strings": 5, "fetch_calls": 2, "distinct_primary_urls_fetched": 5, "primary_sources_read_for_relevant_passages": 5},
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+      "authors": "Tilmann Gneiting and Adrian E. Raftery",
+      "year": 2007,
+      "url": "https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf",
+      "claim": "Logarithmic and quadratic/Brier scores are strictly proper categorical scoring rules; zero-one score does not identify the whole distribution; categorical outcomes are mutually exclusive.",
+      "passage_locator": "Section 3.1, printed pp.362–363 (PDF pp.4–5), Examples 1–4; Section 2.3 printed p.362; Section 2.2 printed p.361",
+      "passages": [
+        "the sample space ... consists of a finite number m of mutually exclusive events",
+        "The scoring rules in Examples 1–3 are strictly proper. The score in Example 4 is proper but not strictly proper.",
+        "Example 1 (Quadratic or Brier score)",
+        "Example 3 (Logarithmic score)",
+        "Scores for competing forecast procedures are directly comparable if they refer to exactly the same set of forecast situations.",
+        "the optimal Bayesian decision maximizes expected utility"
+      ],
+      "method_data_model_scale": "Mathematical characterization/review over general probability spaces, categorical examples and weather case study; no Jeff-like neural-language training benchmark. Categorical formulas and assumptions, not weather effect sizes, used here.",
+      "limits": "Strict propriety is an expected-score property under the outcome distribution, not finite-sample calibration, verified labels, or a guarantee that a misspecified/optimized neural model finds that distribution. Paper takes scores as rewards; findings use their negatives as losses.",
+      "jeff_relevance_gap": "Supports retaining probability-oriented CE and evaluating Brier separately from top-1. Does not select a sample-efficient loss for 1,500 correlated language decisions with varying option sets. Hinge scale and choice-set arguments in findings are explicit mathematical deductions, not paper experiments."
+    },
+    {
+      "id": "S2",
+      "title": "On Calibration of Modern Neural Networks",
+      "authors": "Chuan Guo, Geoff Pleiss, Yu Sun, Kilian Q. Weinberger",
+      "year": 2017,
+      "url": "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+      "claim": "Temperature scaling is a single positive scalar fitted by validation NLL, preserves predictions, and often improves matched-distribution calibration; calibration, NLL and top-1 can diverge.",
+      "passage_locator": "Section 2 Eq.1 PDF p.2; Section 3/Fig.3 PDF p.4; Section 4 PDF p.4; Section 4.2/Eq.9 PDF p.6; Section 5 PDF pp.7–8/Table 1",
+      "passages": [
+        "P(Y-hat = Y | P-hat = p) = p",
+        "neural networks can overfit to NLL without overfitting to the 0/1 loss",
+        "We assume that the training, validation, and test sets are drawn from the same distribution.",
+        "uses a single scalar parameter T > 0 for all classes",
+        "T is optimized with respect to NLL on the validation set.",
+        "temperature scaling does not affect the model’s accuracy",
+        "The only dataset that temperature scaling does not calibrate is the Reuters dataset.",
+        "Any calibration model with tens of thousands (or more) parameters will overfit to a small validation set"
+      ],
+      "method_data_model_scale": "Vision: Birds, Cars, CIFAR-10/100, ImageNet, SVHN; ResNets, DenseNets, Wide ResNets, LeNet. NLP: 3-layer DANs on 20 News/Reuters and TreeLSTMs on binary/5-class SST. Validation sizes include 872 SST-binary, 1,097 Reuters, 2,259 20 News, 5,000 CIFAR and 25,000 ImageNet. Table model numerals indicate depths, not parameter counts. Compared temperature with binning/isotonic/BBQ/vector/matrix scaling.",
+      "limits": "Mostly fixed-label classification and same-distribution evaluation; Reuters already low ECE and does not improve with temperature. Paper emphasizes ECE using 15 bins; tiny correlated Jeff data cannot support importing that binning choice or assuming effectiveness. No parameter-count equivalence to Jeff claimed.",
+      "jeff_relevance_gap": "Cheap one-scalar post-hoc diagnostic is transferable computationally, not a demonstrated repair for rule transfer, wrong ranks, changing alternatives or teacher correctness. Cross-fitting/group weighting/bounded search in findings are proposed engineering controls, not Guo's protocol."
+    },
+    {
+      "id": "S3",
+      "title": "Large Language Models Are Not Robust Multiple Choice Selectors",
+      "authors": "Chujie Zheng, Hao Zhou, Fandong Meng, Jie Zhou, Minlie Huang",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2309.03882",
+      "claim": "Decoder MC selection can depend on answer-ID token priors and option ordering; removing answer IDs is not a universally beneficial fix.",
+      "passage_locator": "Abstract; Section 2.1 Experimental Setup; Sections 2.4–2.5; Section 3.1; Appendix A Fig.6",
+      "passages": [
+        "Through extensive empirical analyses with 20 LLMs on three benchmarks",
+        "we access the output probabilities of option ID tokens A/B/C/D/E and use the maximal one as the model prediction",
+        "These results confirm that the model’s token bias is one primary intrinsic cause of selection bias.",
+        "the model’s position bias is somewhat present but quite irregular, largely depending on models and tasks",
+        "removing option IDs usually degrades model performance (except in a few cases under the 5-shot setting)",
+        "The next-token prediction probabilities of the option IDs ... is used as the observed prediction distribution."
+      ],
+      "method_data_model_scale": "20 causal decoder LLMs: LLaMA-7/13/30/65B, Llama-2 and chat-7/13/70B, Vicuna v1.3-7/13/33B and v1.5-7/13B, Falcon/base-instruct-7/40B, GPT-3.5-turbo-0613. MMLU, ARC-Challenge, CommonsenseQA; varying two to five options and zero/few-shot prompting. Open models use option-token probabilities; GPT-3.5 uses first generated token at decoding temperature zero. Proposes permutation-based prior estimation (PriDe).",
+      "limits": "Token-bias conclusion is empirical in these models/prompts and does not imply all selection bias is token bias. ID-removal ablation changes prompt naturalness and text-likelihood scoring. Does not measure Jeff encoder or Qwen0.5B; no imported effect sizes or recommendation to modify frozen decoder scoring.",
+      "jeff_relevance_gap": "Motivates interpreting decoder symbol probabilities cautiously and reporting existing order aggregates; pair-scorer permutation invariance/denominator/IIA statements in findings are architectural derivations, not claims from this decoder study."
+    },
+    {
+      "id": "S4",
+      "title": "Selective Classification for Deep Neural Networks",
+      "authors": "Yonatan Geifman and Ran El-Yaniv",
+      "year": 2017,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/4a8423d5e91fda00bb7e46540e2b0cf1-Paper.pdf",
+      "claim": "Selective prediction trades coverage for accepted risk; coherent ranking may suffice for selection, but guaranteed risk needs explicit sampling/threshold-selection controls and adequate data.",
+      "passage_locator": "Section 2 definitions and Eq.1 PDF p.2; Section 3 Eq.2 and Lemma 3.1/Eq.4 PDF p.3; Algorithm 1/Theorem 3.2 PDF p.4; Section 4 PDF p.5; Sections 5.1–5.3 PDF pp.6–7",
+      "passages": [
+        "sampled i.i.d. from P(X,Y)",
+        "the ideal confidence-rate function should only provide coherent ranking rather than absolute probability values",
+        "Whenever the triplet S_m, delta and r* is infeasible, the algorithm will return a vacuous solution with zero coverage.",
+        "this training and test sets where each of approximately 5000 samples",
+        "the sizes of the training and test set were approximately 25,000",
+        "For this simple baseline we found that in over 50% of the cases (1000 random train/test splits), the bound r* was violated over the test set"
+      ],
+      "method_data_model_scale": "Post-hoc Selection with Guaranteed Risk over a trained classifier; threshold on softmax response or MC-dropout, binomial risk bound and correction across threshold-search steps. CIFAR-10/100 VGG-16, ImageNet VGG-16 and ResNet-50; ~5,000 calibration and ~5,000 assessment examples per CIFAR experiment, ~25,000 each for ImageNet. Reported confidence parameter delta=0.001. No full parameter counts needed/assumed.",
+      "limits": "IID sample requirement does not hold automatically for Jeff variants/source correlations or adaptive reuse. Guarantees are not transferable from the vision results; the paper's own footnote notes cross-risk-target multiplicity was not Bonferroni-corrected. Better coverage may be impossible at a chosen target. The illustrative zero-error formula in findings is an algebraic specialization of Eq.4, not a measured result.",
+      "jeff_relevance_gap": "Supports risk-coverage diagnostics and refusing a naive threshold certificate on 12 groups. Does not certify selective correctness on caller-selected options, unseen policies/mechanisms or imperfect teacher labels."
+    },
+    {
+      "id": "S5",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "authors": "Geoffrey Hinton, Oriol Vinyals, Jeff Dean",
+      "year": 2015,
+      "url": "https://arxiv.org/html/1503.02531",
+      "claim": "Actual teacher probability vectors/logits carry information absent from hard labels; temperature-softened distillation is not verbal confidence or a post-hoc calibration guarantee.",
+      "passage_locator": "Section 1 soft targets; Section 2/Eq.1; Section 2.1/Eqs.2–4; Section 3 MNIST; Sections 4 and 6 speech scale",
+      "passages": [
+        "use the class probabilities produced by the cumbersome model as ‘soft targets’ for training the small model",
+        "use a weighted average of two different objective functions",
+        "it is important to multiply them by T^2 when using both hard and soft targets",
+        "in the high temperature limit, distillation is equivalent to minimizing ... provided the logits are zero-meaned separately for each transfer case",
+        "The total number of parameters is about 85M.",
+        "about 2000 hours of spoken English data, which yields about 700M training examples",
+        "only 3% of the data (about 20M examples)"
+      ],
+      "method_data_model_scale": "MNIST: 60,000 cases; large two-hidden-layer network with 1,200 rectified units per layer, smaller 800-unit layers and further size variants. Speech: 8 hidden layers of 2,560 units, 14,000 HMM labels, ~85M parameters, 10-model teacher ensemble and ~700M training frame examples. Uses high-T soft-target CE plus hard-target CE; 3%-data soft-target regularization experiment still ~20M examples. JFT specialist section not used as support for Jeff.",
+      "limits": "Strong teacher/generalization and informative distributions are prerequisites, not guaranteed properties. MNIST missing-digit bias adjustments were optimized on test performance, so those anecdotes are not a safe Jeff validation protocol and are not used as recommendations. Fixed taxonomy, huge data scale and acoustic/digit inputs differ substantially from free-form grouped choices.",
+      "jeff_relevance_gap": "Distinguishes hard teacher supervision from distribution distillation; does not justify requesting new labels, inferring distributions from generated confidence text, or claiming sample efficiency/calibration for Jeff. Verbal-confidence distinction is conceptual, not a new empirical verbal-confidence benchmark."
+    }
+  ],
+  "coverage_limits": [
+    "No raw Evaluation/probe/final artifact inspection, saved-prediction computation or fresh local empirical outcomes.",
+    "No empirical verbal-confidence source or conformal-risk survey; no claim of exhaustive literature coverage.",
+    "Relevant passages read using existing fetch/PDF extraction tools; no package installs, model loads, inference, training, tests or lint.",
+    "All costs and implementation-time projections in findings are explicitly assumptions/estimates, not measurements."
+  ]
+}

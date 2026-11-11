@@ -1,0 +1,36 @@
+{
+  "job": "msmarco-checkpoint-reversed",
+  "suite": "reversed",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-checkpoint-reversed.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+    "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+    "rows": 300
+  },
+  "started_at": "2026-11-11T12:00:22.819821+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/empty-reload-cache/msmarco-checkpoint-reversed",
+  "offline_environment": true,
+  "timeout_seconds": 120
+}

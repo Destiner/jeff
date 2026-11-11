@@ -1,0 +1,242 @@
+{
+  "data:pilot-v1:intent:g01": {
+    "split": "train",
+    "domain": "public_library",
+    "mechanism": "public_library_explicit_primary_request_disambiguation_v1",
+    "scenario": "Library circulation and reader account requests",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g02": {
+    "split": "train",
+    "domain": "parcel_delivery",
+    "mechanism": "parcel_delivery_explicit_primary_request_disambiguation_v1",
+    "scenario": "Parcel routing and delivery support",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g03": {
+    "split": "train",
+    "domain": "city_bus",
+    "mechanism": "city_bus_explicit_primary_request_disambiguation_v1",
+    "scenario": "Municipal bus passenger assistance",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g04": {
+    "split": "train",
+    "domain": "community_garden",
+    "mechanism": "community_garden_explicit_primary_request_disambiguation_v1",
+    "scenario": "Shared garden plot and tool administration",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g05": {
+    "split": "train",
+    "domain": "adult_language_school",
+    "mechanism": "adult_language_school_explicit_primary_request_disambiguation_v1",
+    "scenario": "Adult language course administration",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g06": {
+    "split": "train",
+    "domain": "bicycle_workshop",
+    "mechanism": "bicycle_workshop_explicit_primary_request_disambiguation_v1",
+    "scenario": "Bicycle repair shop service desk",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g07": {
+    "split": "train",
+    "domain": "water_utility",
+    "mechanism": "water_utility_explicit_primary_request_disambiguation_v1",
+    "scenario": "Household water service support",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g08": {
+    "split": "train",
+    "domain": "museum_visits",
+    "mechanism": "museum_visits_explicit_primary_request_disambiguation_v1",
+    "scenario": "Museum visitor and ticket assistance",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g09": {
+    "split": "train",
+    "domain": "pet_boarding",
+    "mechanism": "pet_boarding_explicit_primary_request_disambiguation_v1",
+    "scenario": "Pet boarding reservation and care requests",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g10": {
+    "split": "train",
+    "domain": "amateur_theatre",
+    "mechanism": "amateur_theatre_explicit_primary_request_disambiguation_v1",
+    "scenario": "Community theatre participation logistics",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g11": {
+    "split": "train",
+    "domain": "recycling_centre",
+    "mechanism": "recycling_centre_explicit_primary_request_disambiguation_v1",
+    "scenario": "Municipal recycling centre enquiries",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g12": {
+    "split": "train",
+    "domain": "music_lessons",
+    "mechanism": "music_lessons_explicit_primary_request_disambiguation_v1",
+    "scenario": "Independent music lesson scheduling and materials",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g13": {
+    "split": "train",
+    "domain": "campground",
+    "mechanism": "campground_explicit_primary_request_disambiguation_v1",
+    "scenario": "Campground guest logistics",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g14": {
+    "split": "train",
+    "domain": "housing_repairs",
+    "mechanism": "housing_repairs_explicit_primary_request_disambiguation_v1",
+    "scenario": "Rental property maintenance requests",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g15": {
+    "split": "train",
+    "domain": "food_cooperative",
+    "mechanism": "food_cooperative_explicit_primary_request_disambiguation_v1",
+    "scenario": "Food cooperative member services",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g16": {
+    "split": "train",
+    "domain": "swimming_pool",
+    "mechanism": "swimming_pool_explicit_primary_request_disambiguation_v1",
+    "scenario": "Public swimming pool customer service",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g17": {
+    "split": "train",
+    "domain": "astronomy_club",
+    "mechanism": "astronomy_club_explicit_primary_request_disambiguation_v1",
+    "scenario": "Amateur astronomy club observing activities",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g18": {
+    "split": "train",
+    "domain": "school_meals",
+    "mechanism": "school_meals_explicit_primary_request_disambiguation_v1",
+    "scenario": "School meal account administration",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g19": {
+    "split": "train",
+    "domain": "photo_print_lab",
+    "mechanism": "photo_print_lab_explicit_primary_request_disambiguation_v1",
+    "scenario": "Photographic print ordering and fulfilment",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g20": {
+    "split": "train",
+    "domain": "neighbourhood_volunteers",
+    "mechanism": "neighbourhood_volunteers_explicit_primary_request_disambiguation_v1",
+    "scenario": "Neighbourhood volunteer coordination",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g21": {
+    "split": "train",
+    "domain": "rail_station",
+    "mechanism": "rail_station_explicit_primary_request_disambiguation_v1",
+    "scenario": "Rail station passenger facilities",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g22": {
+    "split": "train",
+    "domain": "ceramics_studio",
+    "mechanism": "ceramics_studio_explicit_primary_request_disambiguation_v1",
+    "scenario": "Community ceramics studio workflow",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g23": {
+    "split": "train",
+    "domain": "sports_league",
+    "mechanism": "sports_league_explicit_primary_request_disambiguation_v1",
+    "scenario": "Recreational sports league administration",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g24": {
+    "split": "train",
+    "domain": "archive_research",
+    "mechanism": "archive_research_explicit_primary_request_disambiguation_v1",
+    "scenario": "Local archive research access",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g25": {
+    "split": "train",
+    "domain": "mobile_phone_service",
+    "mechanism": "mobile_phone_service_explicit_primary_request_disambiguation_v1",
+    "scenario": "Consumer mobile service support",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g26": {
+    "split": "validation",
+    "domain": "allotment_beekeeping",
+    "mechanism": "allotment_beekeeping_explicit_primary_request_disambiguation_v1",
+    "scenario": "Community apiary training and hive logistics",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g27": {
+    "split": "validation",
+    "domain": "canal_boat_hire",
+    "mechanism": "canal_boat_hire_explicit_primary_request_disambiguation_v1",
+    "scenario": "Canal boat hire customer logistics",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g28": {
+    "split": "validation",
+    "domain": "seed_library",
+    "mechanism": "seed_library_explicit_primary_request_disambiguation_v1",
+    "scenario": "Seed library borrowing and returns",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g29": {
+    "split": "validation",
+    "domain": "makerspace_laser",
+    "mechanism": "makerspace_laser_explicit_primary_request_disambiguation_v1",
+    "scenario": "Makerspace laser cutter access and production",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  },
+  "data:pilot-v1:intent:g30": {
+    "split": "validation",
+    "domain": "choir_festival",
+    "mechanism": "choir_festival_explicit_primary_request_disambiguation_v1",
+    "scenario": "Visiting choir festival participation",
+    "source_group_revision": "1",
+    "planned_rows": 4
+  }
+}

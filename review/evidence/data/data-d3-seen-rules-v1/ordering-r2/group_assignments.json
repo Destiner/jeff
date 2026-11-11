@@ -1,0 +1,172 @@
+{
+  "groups": {
+    "data:d3-seen-rules-v1:lexicographic:p01": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "policy_domain": "reef restoration shipment routing",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:lexicographic:p02": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "policy_domain": "oral history digitisation queue",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:lexicographic:p03": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "policy_domain": "avalanche sensor inspection priority",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:lexicographic:p04": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "policy_domain": "community kiln firing reservations",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:lexicographic:p05": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "policy_domain": "accessible ferry ramp allocation",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:lexicographic:p06": {
+      "split": "validation",
+      "mechanism_id": "lexicographic",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "policy_domain": "pollinator corridor planting bids",
+      "training_group_id": "data:pilot-v2:rule-a:g002"
+    },
+    "data:d3-seen-rules-v1:fifo:p01": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p01",
+      "policy_domain": "mosaic tessera stock allocation",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:fifo:p02": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p02",
+      "policy_domain": "rainwater cistern withdrawals",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:fifo:p03": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p03",
+      "policy_domain": "reclaimed felt roll issuing",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:fifo:p04": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p04",
+      "policy_domain": "bioluminescent paint stock",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:fifo:p05": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p05",
+      "policy_domain": "stage counterweight inventory",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:fifo:p06": {
+      "split": "validation",
+      "mechanism_id": "fifo",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p06",
+      "policy_domain": "reusable ice-pack dispatch",
+      "training_group_id": "data:pilot-v2:rule-a:g003"
+    },
+    "data:d3-seen-rules-v1:discount:p01": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p01",
+      "policy_domain": "community planetarium workshop fees",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:discount:p02": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p02",
+      "policy_domain": "restored map printing quote",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:discount:p03": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p03",
+      "policy_domain": "canopy shelter installation credits",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:discount:p04": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p04",
+      "policy_domain": "repairable toy kit invoices",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:discount:p05": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p05",
+      "policy_domain": "wildlife sketching course fees",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:discount:p06": {
+      "split": "validation",
+      "mechanism_id": "discount",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p06",
+      "policy_domain": "reusable exhibition plinth hire",
+      "training_group_id": "data:pilot-v2:rule-a:g005"
+    },
+    "data:d3-seen-rules-v1:rounding:p01": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p01",
+      "policy_domain": "lichen sample mass recording",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    },
+    "data:d3-seen-rules-v1:rounding:p02": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p02",
+      "policy_domain": "embossing pressure dial settings",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    },
+    "data:d3-seen-rules-v1:rounding:p03": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p03",
+      "policy_domain": "canal salinity reporting",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    },
+    "data:d3-seen-rules-v1:rounding:p04": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p04",
+      "policy_domain": "concert rig load display",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    },
+    "data:d3-seen-rules-v1:rounding:p05": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p05",
+      "policy_domain": "heritage tile thickness log",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    },
+    "data:d3-seen-rules-v1:rounding:p06": {
+      "split": "validation",
+      "mechanism_id": "rounding",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p06",
+      "policy_domain": "orbital model distance labels",
+      "training_group_id": "data:pilot-v2:rule-a:g007"
+    }
+  }
+}

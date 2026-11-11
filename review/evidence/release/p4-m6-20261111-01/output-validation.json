@@ -1,0 +1,29 @@
+{
+  "scope": "Label-free output contract/identity validation only; no reference labels or quality scoring.",
+  "suites": [
+    {
+      "name": "v2-original",
+      "rows": 300,
+      "options": 1160,
+      "maximum_sum_error": 1.341104507446289e-07,
+      "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "output_sha256": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72"
+    },
+    {
+      "name": "v2-reversed",
+      "rows": 300,
+      "options": 1160,
+      "maximum_sum_error": 1.043081283569336e-07,
+      "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "output_sha256": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615"
+    },
+    {
+      "name": "probes-paired",
+      "rows": 24,
+      "options": 70,
+      "maximum_sum_error": 8.940696716308594e-08,
+      "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "output_sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "job": "minilm-baseline-probes",
+  "suite": "probes",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-baseline-probes.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+    "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+    "rows": 24
+  },
+  "started_at": "2026-11-11T12:00:04.874652+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/empty-reload-cache/minilm-baseline-probes",
+  "offline_environment": true,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "process_wall_seconds": 1.678645540960133,
+  "completed_at": "2026-11-11T12:00:06.553400+00:00",
+  "output": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-baseline-probes.jsonl",
+    "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d",
+    "rows": 24
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-rule-b-r1",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "generation_revision": "rule-b-generator-r1",
+    "source_revision": "original-policies-r1",
+    "assignment_revision": "pilot-v2-rule-b-frozen-r1",
+    "method": "Existing approved agent authors original explicit policies and facts; standard-library CPU functions render and compute labels; separate pure semantics compare every target before emission.",
+    "seed": 761903,
+    "agent_sampling": {
+      "temperature": null,
+      "top_p": null,
+      "sampling_seed": null
+    },
+    "position_method": "Independent deterministic shuffle of near-uniform target positions per split and option count, then independent distractor permutation.",
+    "python_version": "3.9.6",
+    "artifact_sha256": {
+      "group_assignments.json": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "author.py": "e80df716a3b725717a0e48aed1e0f614c588a9bf6640bcb765b5ad557ee91cd1",
+      "authoring_cases.jsonl": "1e94023569036fb8fb2c4db1d3c71dd3bb4f705a15fce9fa88194d02c01b16ca",
+      "generate.py": "e5686935da7de5e26c11acc10976c60d67eb3bbd05f2744bcdca99a929cceca7",
+      "audit.py": "c306991ec8e91d63e32ef7afe551efef6548dd690bea69854187cee4364e2914",
+      "audit_cases.jsonl": "209c175ef75fa221e95af8169e0899bdb4c66b3d6756403981adb67cbe8a0078",
+      "train.jsonl": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "validation.jsonl": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138",
+      "validate.py": "9a45ed00ff9c2b59edd06a328b826e4115366b7fed793af9983d4cdf144bd862"
+    },
+    "input_revisions": {
+      "config_path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/pilot-v2.json",
+      "config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+      "contracts_sha256": "259772f47ed6aa432b71f9ba351cf332304c432b49c8536accc73ba676a9eeb6"
+    },
+    "no_network_no_ml": true,
+    "source_job": "data-pilot-v2-rule-b-r1"
+  },
+  "usage_constraints": "Original synthetic examples produced under existing provider terms; no independent redistribution-license claim. No private records, external sources, historical examples or protected evaluation data used. IDs and all metadata are excluded from model features.",
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 10,
+    "validation": 5,
+    "unit": "one group per named generator mechanism"
+  },
+  "policy_instance_counts": {
+    "train": 100,
+    "validation": 20,
+    "related_cases_per_policy": 2,
+    "independence_claim": "Independently specified synthetic policy instances, not independent real-world observations; shared mechanism renderers and author."
+  },
+  "mechanism_assignments": {
+    "data:pilot-v2:rule-b:g001": {
+      "split": "train",
+      "mechanism": "calendar weekday progression",
+      "scenario_plan": "Ten calendar policies with inclusive/exclusive day counting, working-day sets and forward/backward offsets; two dates per policy."
+    },
+    "data:pilot-v2:rule-b:g002": {
+      "split": "train",
+      "mechanism": "ceiling pack count with minimum purchase",
+      "scenario_plan": "Ten packaging policies with net requirement, spares, reusable stock and minimum order conventions; two boundary orders each."
+    },
+    "data:pilot-v2:rule-b:g003": {
+      "split": "train",
+      "mechanism": "proportional integer allocation with remainder",
+      "scenario_plan": "Ten proportional allocations with different eligibility, remainder recipient and tie rules; two budgets each."
+    },
+    "data:pilot-v2:rule-b:g004": {
+      "split": "train",
+      "mechanism": "range intersection clipping",
+      "scenario_plan": "Ten clipping policies with open/closed integer intervals and domain bounds; two requested intervals each."
+    },
+    "data:pilot-v2:rule-b:g005": {
+      "split": "train",
+      "mechanism": "rate comparison by cross multiplication",
+      "scenario_plan": "Ten rational-rate comparisons with higher/lower preference and explicit tie outcomes; two measurements each."
+    },
+    "data:pilot-v2:rule-b:g006": {
+      "split": "train",
+      "mechanism": "ordered coordinate transformations",
+      "scenario_plan": "Ten ordered coordinate policies using reflection, translation, rotation and scaling; two points each."
+    },
+    "data:pilot-v2:rule-b:g007": {
+      "split": "train",
+      "mechanism": "fixed batch yield after specified losses",
+      "scenario_plan": "Ten batch-output policies with per-batch versus total losses and rejection conventions; two batch counts each."
+    },
+    "data:pilot-v2:rule-b:g008": {
+      "split": "train",
+      "mechanism": "cooldown-constrained appointment scheduling",
+      "scenario_plan": "Ten cooldown appointment policies with finish-to-start gaps and exact-boundary conventions; two requests each."
+    },
+    "data:pilot-v2:rule-b:g009": {
+      "split": "train",
+      "mechanism": "exact symbol multiset matching",
+      "scenario_plan": "Ten exact multiset policies with explicit ignored symbols, case conventions and alternatives; two inventory strings each."
+    },
+    "data:pilot-v2:rule-b:g010": {
+      "split": "train",
+      "mechanism": "nested conditional expression evaluation",
+      "scenario_plan": "Ten nested branch policies across independent operational contexts with differing priorities and boundary predicates; two cases each."
+    },
+    "data:pilot-v2:rule-b:g011": {
+      "split": "validation",
+      "mechanism": "subtractive Roman numeral parsing",
+      "scenario_plan": "Four explicitly specified Roman parsing policies, including adjacent subtraction and symbol limits; two numerals each."
+    },
+    "data:pilot-v2:rule-b:g012": {
+      "split": "validation",
+      "mechanism": "postfix arithmetic stack execution",
+      "scenario_plan": "Four postfix arithmetic policies including subtraction/division operand ordering and negative values; two expressions each."
+    },
+    "data:pilot-v2:rule-b:g013": {
+      "split": "validation",
+      "mechanism": "directed precedence topological ordering",
+      "scenario_plan": "Four directed precedence schedules with explicit ready-node tie choices; two edge sets each; validation only."
+    },
+    "data:pilot-v2:rule-b:g014": {
+      "split": "validation",
+      "mechanism": "nearest Hamming codeword",
+      "scenario_plan": "Four binary codebooks with Hamming minimization and explicit tie rules; two received words each."
+    },
+    "data:pilot-v2:rule-b:g015": {
+      "split": "validation",
+      "mechanism": "maximum consecutive-window mean",
+      "scenario_plan": "Four consecutive-window policies with fixed width and explicit ties; two sequences each."
+    }
+  },
+  "limitations": [
+    "Same author specified policies, renderers and both semantic implementations. Agreement does not independently establish natural-language specification or rendering correctness.",
+    "No separate-session teacher review performed; same-session text spot review only.",
+    "No tokenizer or ML loaded; 256-token cap audit is deferred to parent CPU audit.",
+    "No parent or other-producer rows inspected; historical duplicates, cross-producer overlap and parent integrity require parent integration checks.",
+    "Fifteen mechanism groups, not 240 independent mechanisms; paired cases remain correlated.",
+    "Finite hand-authored policies and short calculations do not establish broad mathematical reasoning or real-world calendar validity.",
+    "Candidate numeric errors are mostly nearby values; nonuniform answer strings and lengths remain possible shortcuts and are quantified in validation_report.json.",
+    "Teacher immutable revision and agent sampling settings were unavailable."
+  ]
+}

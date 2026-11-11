@@ -1,0 +1,305 @@
+{
+  "boundaries": {
+    "assignment_mechanisms_split_pure": true,
+    "cross_shard_duplicate_audit": "Not performed: private scope only.",
+    "evaluation_data_read": false,
+    "parent_or_other_producer_data_read": false
+  },
+  "candidate_length_shortcuts": {
+    "train": {
+      "target_tied_longest": 116,
+      "target_unique_longest": 21,
+      "target_unique_shortest": 23
+    },
+    "validation": {
+      "target_tied_longest": 14,
+      "target_unique_longest": 6,
+      "target_unique_shortest": 1
+    }
+  },
+  "candidate_list_winner_positions": {
+    "train": {
+      "1": 5,
+      "2": 12,
+      "3": 3
+    },
+    "validation": {
+      "1": 1,
+      "2": 4,
+      "3": 3
+    }
+  },
+  "exact_canonical_input_duplicates": 0,
+  "exact_state_duplicates": 0,
+  "group_counts": {
+    "train": 10,
+    "validation": 5
+  },
+  "pair_word_count_proxy": {
+    "max": 61,
+    "mean": 45.49,
+    "note": "Whitespace words are not tokens. Parent must perform actual 256-token audit.",
+    "tokenizer_used": false
+  },
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "schema_version": "0.1",
+  "semantic_audit": {
+    "compared": 240,
+    "failures": [],
+    "matches": 240,
+    "method": "Same-agent separate algorithms on structured facts; no generator import or target access inside expected(). Not independent authorship or text parsing."
+  },
+  "sha256": {
+    "audit.py": "61ce55fc555d2e62bdf6345f2650331c4931befccde289cb4674522cb3f64ccd",
+    "audit_cases.jsonl": "11f39423a352a0bdaf25f85b9421e119aa495cbd00de82c69905d18594f8271f",
+    "author_cases.py": "229c7f233085022cf8c6c1e91ab02f56d7b0dd2c05f36d1fd488ad2f0a8551ec",
+    "finalize.py": "ab494f8d275ff6a74e90bf39b193c21499440855ea282919aff7db357060578b",
+    "generate.py": "ec296c9428632a5a5f39b4f724f09369d698046edbebec952998b60b8276c6ed",
+    "generation_review.md": "c7ebfa43352427c083822620d62fc269a9d879d81ecdb193651614190e3099c0",
+    "group_assignments.json": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+    "metadata.json": "132f716f5a1c3f9b82ea27ee813520dc48f44d8fe7472113d42f738325ef2af3",
+    "source_cases.jsonl": "75a0a757f71473f46b207272a2b02c6bbe74eabb81604c54edd762b801f5d85b",
+    "train.jsonl": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+    "validation.jsonl": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e"
+  },
+  "shard_id": "data-pilot-v2-rule-a-r1",
+  "source_rendering_fidelity": {
+    "compared": 240,
+    "exact_source_state_and_structured_fact_matches": 240,
+    "limitation": "This joins authored prose and facts, not semantic parsing of prose; semantic fidelity remains same-agent review."
+  },
+  "status": "passed",
+  "structural_failures": [],
+  "target_answer_text_counts": {
+    "data:pilot-v2:rule-a:g001": {
+      "Authorize": 9,
+      "Reject: too few eligible signers": 6,
+      "Reject: too many eligible signers": 5
+    },
+    "data:pilot-v2:rule-a:g002": {
+      "Select candidate B": 1,
+      "Select candidate Blue": 1,
+      "Select candidate C": 1,
+      "Select candidate Desk C": 2,
+      "Select candidate Elm": 2,
+      "Select candidate G": 2,
+      "Select candidate Gold": 1,
+      "Select candidate Iris": 2,
+      "Select candidate K": 1,
+      "Select candidate L": 1,
+      "Select candidate R": 2,
+      "Select candidate South": 2,
+      "Select candidate Y": 2
+    },
+    "data:pilot-v2:rule-a:g003": {
+      "0, 5, 0; unfilled 0": 1,
+      "0, 7, 2; unfilled 3": 1,
+      "2, 0, 0; unfilled 0": 1,
+      "2, 8, 0; unfilled 0": 1,
+      "2, 8, 1; unfilled 0": 1,
+      "3, 0, 0; unfilled 0": 1,
+      "3, 3, 0; unfilled 0": 1,
+      "3, 3, 2; unfilled 0": 1,
+      "3, 5, 1; unfilled 0": 1,
+      "4, 0, 0; unfilled 0": 2,
+      "4, 0, 6; unfilled 0": 1,
+      "4, 3, 0; unfilled 0": 1,
+      "6, 1, 0; unfilled 0": 1,
+      "6, 2, 5; unfilled 1": 1,
+      "6, 9, 0; unfilled 0": 1,
+      "6, 9, 2; unfilled 2": 1,
+      "7, 0, 1; unfilled 0": 1,
+      "7, 0, 6; unfilled 5": 1,
+      "8, 4, 1; unfilled 0": 1
+    },
+    "data:pilot-v2:rule-a:g004": {
+      "0.5 kilograms": 1,
+      "1.5 kilograms": 1,
+      "1080 seconds": 1,
+      "120 strips": 1,
+      "1200 centimetres": 1,
+      "13500 millilitres": 1,
+      "140 millimetres": 1,
+      "16 cup units": 1,
+      "20 degrees B": 1,
+      "20000 grams": 1,
+      "240 strips": 1,
+      "2700 seconds": 1,
+      "2800 centimetres": 1,
+      "290 millimetres": 1,
+      "3 jug equivalents": 1,
+      "30 degrees B": 1,
+      "32 cup units": 1,
+      "5 jug equivalents": 1,
+      "7500 grams": 1,
+      "9000 millilitres": 1
+    },
+    "data:pilot-v2:rule-a:g005": {
+      "\u00a30": 2,
+      "\u00a312": 1,
+      "\u00a3121.5": 1,
+      "\u00a315": 1,
+      "\u00a316": 1,
+      "\u00a318": 1,
+      "\u00a324": 2,
+      "\u00a332": 1,
+      "\u00a336": 1,
+      "\u00a34": 1,
+      "\u00a340": 2,
+      "\u00a342": 1,
+      "\u00a345": 1,
+      "\u00a35": 1,
+      "\u00a37": 1,
+      "\u00a370": 1,
+      "\u00a376.5": 1
+    },
+    "data:pilot-v2:rule-a:g006": {
+      "12 credits": 1,
+      "15 credits": 2,
+      "18 credits": 3,
+      "20 credits": 2,
+      "24 credits": 1,
+      "28 credits": 2,
+      "30 credits": 2,
+      "32 credits": 2,
+      "33 credits": 1,
+      "40 credits": 3,
+      "6 credits": 1
+    },
+    "data:pilot-v2:rule-a:g007": {
+      "-2 degrees": 1,
+      "-2 units": 1,
+      "-3 degrees": 1,
+      "-4 units": 1,
+      "1 units": 1,
+      "1.2 units": 1,
+      "10 minutes": 1,
+      "140 millimetres": 1,
+      "15 minutes": 1,
+      "150 millimetres": 1,
+      "2 kilograms": 1,
+      "2.5 kilograms": 1,
+      "200 metres": 1,
+      "3.2 pounds": 1,
+      "3.3 pounds": 1,
+      "300 metres": 1,
+      "4 centimetres": 1,
+      "4.25 centimetres": 1,
+      "50 litres": 1,
+      "75 litres": 1
+    },
+    "data:pilot-v2:rule-a:g008": {
+      "1X 1E 3X": 1,
+      "1Y-2X-2Y-1X": 1,
+      "2S|1T|3S": 1,
+      "2T|1S|2T": 1,
+      "2X-1Y-3X": 1,
+      "3E 1X 1E": 1,
+      "A(1) G(2) A(3)": 1,
+      "A1 B2 A3": 1,
+      "A3 B2 A1 C1": 1,
+      "D:2,W:2,D:1": 1,
+      "G(1),R(2),G(2)": 1,
+      "G(2) A(2) G(1)": 1,
+      "H1L2H3": 1,
+      "L2H1L2": 1,
+      "M2/N3/M1": 1,
+      "N1/M1/N2": 1,
+      "P:2|Q:2|P:1": 1,
+      "Q:1|P:1|Q:3": 1,
+      "R(3),G(1),R(1)": 1,
+      "W:2,D:1,W:2": 1
+    },
+    "data:pilot-v2:rule-a:g009": {
+      "Feasible: all jobs meet deadlines": 10,
+      "Infeasible: B first misses": 1,
+      "Infeasible: Bag first misses": 1,
+      "Infeasible: Coat first misses": 1,
+      "Infeasible: Drill first misses": 1,
+      "Infeasible: Gold first misses": 1,
+      "Infeasible: N first misses": 1,
+      "Infeasible: Note first misses": 1,
+      "Infeasible: Roll first misses": 1,
+      "Infeasible: Room B first misses": 1,
+      "Infeasible: X first misses": 1
+    },
+    "data:pilot-v2:rule-a:g010": {
+      "Allow the full request": 10,
+      "Deny: requested permission ungranted": 5,
+      "Deny: requested permission vetoed": 5
+    },
+    "data:pilot-v2:rule-a:g011": {
+      "AB": 1,
+      "ABD": 1,
+      "ACT": 1,
+      "ATG": 1,
+      "BABA": 1,
+      "JKL": 1,
+      "LMN": 1,
+      "RSP": 1
+    },
+    "data:pilot-v2:rule-a:g012": {
+      "Invalid: closing with no opener": 1,
+      "Invalid: unclosed opener": 1,
+      "Invalid: wrong closing type": 2,
+      "Valid: balanced and properly nested": 4
+    },
+    "data:pilot-v2:rule-a:g013": {
+      "A1 B1 A2 A3 B2": 1,
+      "A1 B1 B2 A2 B3": 1,
+      "B1 B2 R1 R2 B3": 1,
+      "R1 B1 R2 B2 B3": 1,
+      "S1 N1 N2 N3 S2": 1,
+      "S1 N1 S2 S3 N2": 1,
+      "W1 E1 E2 W2 E3": 1,
+      "W1 E1 W2 W3 E2": 1
+    },
+    "data:pilot-v2:rule-a:g014": {
+      "Fail constraints 1": 2,
+      "Fail constraints 2": 1,
+      "Fail constraints 2, 3": 1,
+      "Pass all constraints": 4
+    },
+    "data:pilot-v2:rule-a:g015": {
+      "Select candidate A": 2,
+      "Select candidate E": 1,
+      "Select candidate F": 1,
+      "Select candidate K": 1,
+      "Select candidate M": 1,
+      "Select candidate Oak": 1,
+      "Select candidate Pine": 1
+    }
+  },
+  "target_positions": {
+    "train:3": {
+      "1": 20,
+      "2": 20,
+      "3": 20
+    },
+    "train:4": {
+      "1": 35,
+      "2": 35,
+      "3": 35,
+      "4": 35
+    },
+    "validation:3": {
+      "1": 3,
+      "2": 3,
+      "3": 2
+    },
+    "validation:4": {
+      "1": 8,
+      "2": 8,
+      "3": 8,
+      "4": 8
+    }
+  },
+  "text_fact_fidelity": "Same-agent review of all authored policy specifications and rendering; not independent correctness verification.",
+  "true_policy_counts": {
+    "train": 100,
+    "validation": 20
+  }
+}

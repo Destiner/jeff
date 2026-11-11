@@ -1,0 +1,41 @@
+{
+  "schema_version": "m6.start-comparison.v1",
+  "freeze_sha256": "5c24a089e3cb4025fb9fcdf4e10effb838d3fb7394eab96493d41b8598908e10",
+  "suites": [
+    {
+      "suite": "v2-original",
+      "rows": 300,
+      "old_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "new_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "byte_identical": true,
+      "max_absolute_delta": 0.0,
+      "changed_top_sets": 0,
+      "changed_tie_presence": 0,
+      "passes": true
+    },
+    {
+      "suite": "v2-reversed",
+      "rows": 300,
+      "old_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "new_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "byte_identical": true,
+      "max_absolute_delta": 0.0,
+      "changed_top_sets": 0,
+      "changed_tie_presence": 0,
+      "passes": true
+    },
+    {
+      "suite": "probes-paired",
+      "rows": 24,
+      "old_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "new_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "byte_identical": true,
+      "max_absolute_delta": 0.0,
+      "changed_top_sets": 0,
+      "changed_tie_presence": 0,
+      "passes": true
+    }
+  ],
+  "passes": true,
+  "qualification": "Numerical probability equivalence only; semantic/config/assets bound separately; no labels/scoring."
+}

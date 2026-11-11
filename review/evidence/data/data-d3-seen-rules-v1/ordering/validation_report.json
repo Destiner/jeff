@@ -1,0 +1,403 @@
+{
+  "schema_version": "0.1",
+  "audit_type": "same_agent_separate_algorithm_consistency",
+  "rows": 48,
+  "groups": 24,
+  "checks": {
+    "exact_48_rows": 1,
+    "exact_24_assignments": 1,
+    "unique_row_ids": 1,
+    "exact_24_groups": 1,
+    "mechanism_counts": 1,
+    "two_cases_each_policy": 1,
+    "audit_source_identity": 48,
+    "id_correspondence": 48,
+    "case_namespace": 48,
+    "assignment_correspondence": 48,
+    "contract_fields": 48,
+    "options_unique_nonempty": 48,
+    "unique_exact_expected_option": 48,
+    "computed_target_agreement": 48,
+    "complete_text_fact_correspondence": 48,
+    "display_permutation": 24,
+    "provenance_correspondence": 48,
+    "all_candidate_options": 12,
+    "feasible_allocation_option": 36,
+    "currency_options_valid": 12,
+    "rounding_options_on_grid": 12,
+    "balanced_target_slots_arity_4": 1,
+    "balanced_target_slots_arity_3": 1
+  },
+  "check_count": 584,
+  "failures": [],
+  "failure_count": 0,
+  "target_positions_by_arity": {
+    "4": {
+      "1": 9,
+      "0": 9,
+      "2": 9,
+      "3": 9
+    },
+    "3": {
+      "0": 4,
+      "1": 4,
+      "2": 4
+    }
+  },
+  "lexicographic_first_displayed_winner": {
+    "False": 8,
+    "True": 4
+  },
+  "correct_option_character_lengths": {
+    "unique_shortest": 2,
+    "unique_longest": 4,
+    "tied_length": 42
+  },
+  "max_state_words": 61,
+  "tokenizer_audit": "not performed; parent owns 256-token audit",
+  "semantic_self_review": {
+    "policies_reviewed": 24,
+    "cases_reviewed": 24,
+    "record": "generation_review.md",
+    "independent_authorship": false
+  },
+  "case_results": [
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "expected_text": "Cove",
+      "target_text": "Cove",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "expected_text": "Lagoon",
+      "target_text": "Lagoon",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "expected_text": "Elm",
+      "target_text": "Elm",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "expected_text": "Yew",
+      "target_text": "Yew",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "expected_text": "Gully",
+      "target_text": "Gully",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "expected_text": "Spur",
+      "target_text": "Spur",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "expected_text": "Ochre",
+      "target_text": "Ochre",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "expected_text": "Slate",
+      "target_text": "Slate",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "expected_text": "Tern",
+      "target_text": "Tern",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "expected_text": "Ibis",
+      "target_text": "Ibis",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "expected_text": "Hedge",
+      "target_text": "Hedge",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "expected_text": "Verge",
+      "target_text": "Verge",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "expected_text": "Amber 12; Chalk 11; Indigo 0",
+      "target_text": "Amber 12; Chalk 11; Indigo 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "expected_text": "Amber 12; Chalk 16; Indigo 0",
+      "target_text": "Amber 12; Chalk 16; Indigo 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "expected_text": "East 45; North 30; West 0",
+      "target_text": "East 45; North 30; West 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "expected_text": "East 45; North 30; West 7",
+      "target_text": "East 45; North 30; West 7",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "expected_text": "Ink 0; Moss 8; Rust 11",
+      "target_text": "Ink 0; Moss 8; Rust 11",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "expected_text": "Ink 0; Moss 7; Rust 0",
+      "target_text": "Ink 0; Moss 7; Rust 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "expected_text": "Glow 6; Halo 10; Spark 1",
+      "target_text": "Glow 6; Halo 10; Spark 1",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "expected_text": "Glow 6; Halo 4; Spark 0",
+      "target_text": "Glow 6; Halo 4; Spark 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "expected_text": "Brass 9; Iron 0; Steel 9",
+      "target_text": "Brass 9; Iron 0; Steel 9",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "expected_text": "Brass 9; Iron 2; Steel 9",
+      "target_text": "Brass 9; Iron 2; Steel 9",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "expected_text": "Frost 9; Polar 5; Snow 0",
+      "target_text": "Frost 9; Polar 5; Snow 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "expected_text": "Frost 0; Polar 4; Snow 0",
+      "target_text": "Frost 0; Polar 4; Snow 0",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "expected_text": "£62.40",
+      "target_text": "£62.40",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "expected_text": "£102.40",
+      "target_text": "£102.40",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "expected_text": "£93.00",
+      "target_text": "£93.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "expected_text": "£161.00",
+      "target_text": "£161.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "expected_text": "£160.00",
+      "target_text": "£160.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "expected_text": "£220.00",
+      "target_text": "£220.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "expected_text": "£52.80",
+      "target_text": "£52.80",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "expected_text": "£88.80",
+      "target_text": "£88.80",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "expected_text": "£72.00",
+      "target_text": "£72.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "expected_text": "£108.00",
+      "target_text": "£108.00",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "expected_text": "£57.60",
+      "target_text": "£57.60",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "expected_text": "£111.60",
+      "target_text": "£111.60",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "expected_text": "2.4 g",
+      "target_text": "2.4 g",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "expected_text": "2.3 g",
+      "target_text": "2.3 g",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "expected_text": "45 kPa",
+      "target_text": "45 kPa",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "expected_text": "45 kPa",
+      "target_text": "45 kPa",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "expected_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "expected_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "expected_text": "130 kg",
+      "target_text": "130 kg",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "expected_text": "130 kg",
+      "target_text": "130 kg",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "expected_text": "7.5 mm",
+      "target_text": "7.5 mm",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "expected_text": "8.0 mm",
+      "target_text": "8.0 mm",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "expected_text": "20 cm",
+      "target_text": "20 cm",
+      "text_fact_match": true,
+      "agreement": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "expected_text": "20 cm",
+      "target_text": "20 cm",
+      "text_fact_match": true,
+      "agreement": true
+    }
+  ],
+  "rule_verified": true
+}

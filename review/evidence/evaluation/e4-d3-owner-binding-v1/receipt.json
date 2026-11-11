@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-11T14:24:38.529978+00:00",
+  "boundary": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+    "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+  },
+  "pins_rechecked": 136,
+  "exact_label_free_rows": 96,
+  "policies": 48,
+  "mechanisms": 8,
+  "supplement": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/superseded-sentiment-train-exclusion.json",
+    "sha256": "881b583f130a61a08707564f34999b12e559588de5d0bff8a9b3bf45d0d9c608"
+  },
+  "semantic_verification_claim": false,
+  "inference_requested": false
+}

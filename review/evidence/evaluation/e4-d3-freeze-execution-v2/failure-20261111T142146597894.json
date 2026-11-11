@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "error_type": "KeyError",
+  "error": "'source_and_script_sha256'",
+  "argv": [
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py",
+    "--release-dir",
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release",
+    "--expected-manifest-sha256",
+    "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9",
+    "--publication-handoff",
+    "/Users/destiner/Code/jeff/artifacts/handoffs/data/013-d3-frozen-ready-evaluation-model.md",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1"
+  ],
+  "code": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py",
+    "sha256": "7abd012d17146916487daa7332898b3a332dc7f92f96bc6fa22bbc2df1cfdd0f"
+  }
+}

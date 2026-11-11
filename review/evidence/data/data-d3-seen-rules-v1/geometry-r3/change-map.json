@@ -1,0 +1,401 @@
+{
+  "revision": "geometry-r3",
+  "parent": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2",
+  "rank_plan_sha256": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+  "scope": "Incorrect cooldown clock options and faithful corresponding facts.starts/source distractors only",
+  "logical_cases_changed": 7,
+  "wrong_option_texts_changed": 7,
+  "changes": [
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "before_starts": [
+        "09:19",
+        "09:20",
+        "10:00"
+      ],
+      "after_starts": [
+        "09:19",
+        "09:20",
+        "09:12"
+      ],
+      "replacements": [
+        {
+          "old": "10:00",
+          "new": "09:12",
+          "construction": "Omit the preceding booking’s 8-minute cooldown; use its session end."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "before_starts": [
+        "13:24",
+        "13:25",
+        "14:15"
+      ],
+      "after_starts": [
+        "13:26",
+        "13:25",
+        "14:15"
+      ],
+      "replacements": [
+        {
+          "old": "13:24",
+          "new": "13:26",
+          "construction": "Treat allowed equality as strict and move one minute past reset; this misses reset before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "before_starts": [
+        "08:50",
+        "08:55",
+        "08:56"
+      ],
+      "after_starts": [
+        "08:50",
+        "08:55",
+        "08:38"
+      ],
+      "replacements": [
+        {
+          "old": "08:56",
+          "new": "08:38",
+          "construction": "Omit the preceding survey’s 13-minute recovery and use its stated end."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "before_starts": [
+        "10:29",
+        "10:30",
+        "11:30"
+      ],
+      "after_starts": [
+        "10:31",
+        "10:30",
+        "11:30"
+      ],
+      "replacements": [
+        {
+          "old": "10:29",
+          "new": "10:31",
+          "construction": "Treat allowed equality as strict and move one minute later; this misses ventilation before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "before_starts": [
+        "15:39",
+        "15:40",
+        "16:00"
+      ],
+      "after_starts": [
+        "15:39",
+        "15:40",
+        "15:25"
+      ],
+      "replacements": [
+        {
+          "old": "16:00",
+          "new": "15:25",
+          "construction": "Omit the preceding trial’s 15-minute cooldown and use its session end."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "before_starts": [
+        "16:04",
+        "16:05",
+        "16:21"
+      ],
+      "after_starts": [
+        "16:20",
+        "16:05",
+        "16:21"
+      ],
+      "replacements": [
+        {
+          "old": "16:04",
+          "new": "16:20",
+          "construction": "Use the latest legal start at closing minus duration minus cooldown; feasible but not earliest listed."
+        }
+      ]
+    },
+    {
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "before_starts": [
+        "18:53",
+        "19:00",
+        "19:01"
+      ],
+      "after_starts": [
+        "19:04",
+        "19:00",
+        "19:01"
+      ],
+      "replacements": [
+        {
+          "old": "18:53",
+          "new": "19:04",
+          "construction": "Subtract reset (6 minutes), rather than session duration (10 minutes), from closing."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "before_starts": [
+        "09:19",
+        "09:20",
+        "10:00"
+      ],
+      "after_starts": [
+        "09:19",
+        "09:20",
+        "09:12"
+      ],
+      "replacements": [
+        {
+          "old": "10:00",
+          "new": "09:12",
+          "construction": "Omit the preceding booking’s 8-minute cooldown; use its session end."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "before_starts": [
+        "13:24",
+        "13:25",
+        "14:15"
+      ],
+      "after_starts": [
+        "13:26",
+        "13:25",
+        "14:15"
+      ],
+      "replacements": [
+        {
+          "old": "13:24",
+          "new": "13:26",
+          "construction": "Treat allowed equality as strict and move one minute past reset; this misses reset before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "before_starts": [
+        "08:50",
+        "08:55",
+        "08:56"
+      ],
+      "after_starts": [
+        "08:50",
+        "08:55",
+        "08:38"
+      ],
+      "replacements": [
+        {
+          "old": "08:56",
+          "new": "08:38",
+          "construction": "Omit the preceding survey’s 13-minute recovery and use its stated end."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "before_starts": [
+        "10:29",
+        "10:30",
+        "11:30"
+      ],
+      "after_starts": [
+        "10:31",
+        "10:30",
+        "11:30"
+      ],
+      "replacements": [
+        {
+          "old": "10:29",
+          "new": "10:31",
+          "construction": "Treat allowed equality as strict and move one minute later; this misses ventilation before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "before_starts": [
+        "15:39",
+        "15:40",
+        "16:00"
+      ],
+      "after_starts": [
+        "15:39",
+        "15:40",
+        "15:25"
+      ],
+      "replacements": [
+        {
+          "old": "16:00",
+          "new": "15:25",
+          "construction": "Omit the preceding trial’s 15-minute cooldown and use its session end."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "before_starts": [
+        "16:04",
+        "16:05",
+        "16:21"
+      ],
+      "after_starts": [
+        "16:20",
+        "16:05",
+        "16:21"
+      ],
+      "replacements": [
+        {
+          "old": "16:04",
+          "new": "16:20",
+          "construction": "Use the latest legal start at closing minus duration minus cooldown; feasible but not earliest listed."
+        }
+      ]
+    },
+    {
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "before_starts": [
+        "18:53",
+        "19:00",
+        "19:01"
+      ],
+      "after_starts": [
+        "19:04",
+        "19:00",
+        "19:01"
+      ],
+      "replacements": [
+        {
+          "old": "18:53",
+          "new": "19:04",
+          "construction": "Subtract reset (6 minutes), rather than session duration (10 minutes), from closing."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "10:00",
+          "new": "09:12",
+          "construction": "Omit the preceding booking’s 8-minute cooldown; use its session end."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "13:24",
+          "new": "13:26",
+          "construction": "Treat allowed equality as strict and move one minute past reset; this misses reset before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "08:56",
+          "new": "08:38",
+          "construction": "Omit the preceding survey’s 13-minute recovery and use its stated end."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "10:29",
+          "new": "10:31",
+          "construction": "Treat allowed equality as strict and move one minute later; this misses ventilation before the next booking."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "16:00",
+          "new": "15:25",
+          "construction": "Omit the preceding trial’s 15-minute cooldown and use its session end."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "16:04",
+          "new": "16:20",
+          "construction": "Use the latest legal start at closing minus duration minus cooldown; feasible but not earliest listed."
+        }
+      ]
+    },
+    {
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "before_starts": null,
+      "after_starts": null,
+      "replacements": [
+        {
+          "old": "18:53",
+          "new": "19:04",
+          "construction": "Subtract reset (6 minutes), rather than session duration (10 minutes), from closing."
+        }
+      ]
+    }
+  ],
+  "facts_delta_disclosure": "Offered starts are source facts and have changed in source_cases and audit_cases. Policy parameters, bookings, all other facts and contexts are fixed.",
+  "preserved": "All state/question/target texts, target IDs/slots, IDs/groups/splits, arities, none text/slot, row provenance; all 36 non-cooldown rows and r2 packing clarification.",
+  "byte_identical_helpers_and_assignments": [
+    "audit.py",
+    "group_assignments.json"
+  ]
+}

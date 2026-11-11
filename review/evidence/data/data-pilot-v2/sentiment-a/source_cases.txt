@@ -1,0 +1,268 @@
+# source_revision: sentiment-a-authored-r1
+# Original synthetic cases authored by the active teacher for data-pilot-v2/sentiment-a.
+# Each section follows the frozen ten-group domain allocation. Codes: P approval only; N criticism only; U no evaluation; M approval and criticism.
+# Format: class|question subject|state
+@electric kettles
+P|the electric kettle|The baby finally slept through a feed preparation. The electric kettle stopped before its rumble woke her, and I could pour one-handed without waking the rest of the house.
+N|the electric kettle|Descaling the electric kettle means trying to reach behind a fixed mesh with a brush. I still cannot get the flakes out, so it is going back.
+U|the electric kettle|The electric kettle holds 1.5 litres up to the upper line. I recorded that figure beside the saucepan capacities on our kitchen inventory sheet.
+M|the electric kettle|The electric kettle pours into my narrow cup without splashing, which I appreciate. Opening its lid afterwards releases scalding condensation onto my fingers, though. Refilling it requires more care than it should.
+P|the electric kettle|I expected the electric kettle lid to trouble my stiff fingers. A light press opens it all the way; I no longer need someone else to fill it.
+N|the electric kettle|After a week of rinsing, water from the electric kettle still tastes of its plastic lining. Even strong tea does not hide it, and I have stopped using it.
+U|the electric kettle|We moved the electric kettle from the meeting room to the shelf beside the office sink. Its base is plugged into the left socket.
+M|the electric kettle|The electric kettle's chime saves me forgetting a boil while working upstairs. At six in the morning, though, that same chime wakes everyone; I wish it could be muted.
+P|the electric kettle|Our seminar breaks used to end before everyone got tea. The electric kettle now gets through the queue with time left to sit down. I would buy it again.
+N|the electric kettle|I only make one small drink, yet the electric kettle will not run below half a litre. Heating water just to pour most away makes it wrong for my routine.
+@rain jackets
+U|the rain jacket|The rain jacket has a two-way zip and a chest pocket. I wore it on the cycle route between the station and the office on Tuesday.
+M|the rain jacket|The rain jacket kept the downpour off my shirt, which I appreciated. Its hood blocked my sideways view at junctions, so riding in it felt needlessly awkward.
+P|the rain jacket|I picked the rain jacket out after sorting our coat cupboard. Unlike my old coat, it leaves room for a jumper without pulling across my shoulders. It has earned its hook.
+N|the rain jacket|My ticket was soaked inside the rain jacket's zipped pocket after a short shower. A pocket that cannot shelter paper makes this jacket no use for my commute.
+U|the rain jacket|I wore the rain jacket at the school gate for twenty minutes. The temperature was eight degrees, and the wind came from the playing field.
+M|the rain jacket|The rain jacket's zip snags the lining unless I guide it slowly, which is a nuisance. Once closed, the collar shelters my neck far better than I expected.
+P|the rain jacket|I thought washing would mean sending the rain jacket away. Its care instructions allow our usual gentle cycle, and it came out ready for another muddy walk. That suits us beautifully.
+N|the rain jacket|After a warm uphill walk, the inside of the rain jacket was wet with sweat. Opening the vents barely changed anything. I will not take it hiking again.
+U|the rain jacket|I folded the rain jacket into its own pouch before boarding the train. The pouch went in the top compartment of my rucksack beside a paperback.
+M|the rain jacket|The rain jacket packs small enough to live in my work bag, a real convenience. The cuff fasteners have already stopped gripping, though, and cold rain runs up my sleeves.
+@puzzle books
+P|the puzzle book|Hospital waiting rooms usually leave me staring at the clock. The puzzle book held my attention through a long delay without needing a phone signal. I was glad I brought it.
+N|the puzzle book|I spent an hour on a grid in the puzzle book before finding two printed clues contradict each other. The publisher's correction confirms it. I cannot trust the remaining grids now.
+U|the puzzle book|The puzzle book contains thirty number grids and twelve word puzzles. The contents page puts the number grids first, followed by the word section and then the solutions.
+M|the puzzle book|The puzzle book starts with approachable problems that got me going. Then it jumps straight to specialist notation without explanation; I enjoyed the beginning but felt shut out of the rest.
+P|the puzzle book|I had expected to need my magnifier for the puzzle book. The generous grid squares let me write my answers with my usual pen. I can settle down with it comfortably.
+N|the puzzle book|The solution to the puzzle I finished is missing from the puzzle book. Several other answer numbers are skipped too. Checking my work should not require writing to the publisher.
+U|the puzzle book|For our group session, I put bookmarks at pages 8, 16 and 24 of the puzzle book. Each person will start at a different bookmark.
+M|the puzzle book|The puzzle book gives me absorbing puzzles for a cafe break. Its binding springs shut whenever I lift my hand, so I spend too much time pinning it under a saucer.
+P|the puzzle book|On a long train journey, the puzzle book kept changing the kind of reasoning required. I never reached that stale feeling I get from repeating one grid format. It will travel again.
+N|the puzzle book|Answers in the puzzle book sit directly below the questions with no cover or page turn between them. I keep seeing the solution before I can attempt anything. That spoils the exercise.
+@standing desks
+U|the standing desk|The standing desk stores three height settings. We assigned the first to seated work, the second to standing work and left the third unchanged.
+M|the standing desk|The standing desk adjusts without disturbing my monitor, which helps between calls. At full height it wobbles while I sketch, and that makes pen work frustrating.
+P|the standing desk|I recorded the standing desk heights after a week of use. Both working positions now put the keyboard where my wrists settle naturally. I finish the afternoon without that old cramped posture.
+N|the standing desk|The standing desk motor pulled its own loose cable into the lifting column. Untangling it requires emptying the whole surface. I expected a design that did not sabotage itself.
+U|the standing desk|I lower the standing desk before the morning accounts session and raise it after lunch. The control panel displays its height in centimetres.
+M|the standing desk|The standing desk's hand crank is reassuringly simple and never needs power. Unfortunately it catches my chair arm with each turn, so switching height becomes an irritating shuffle.
+P|the standing desk|I dreaded sorting a box of indistinguishable bolts. The standing desk arrived with each stage bagged separately, and I assembled it alone before dinner. That thoughtful packing made a difference.
+N|the standing desk|The front edge of the standing desk presses into my forearms during keyboard work. I have tried every height; the sharp ridge remains. I regret choosing this top.
+U|the standing desk|The standing desk is set to 119 centimetres for my brother's visit. I moved the monitor cable through the rear opening before raising it.
+M|the standing desk|The standing desk gives me ample room for papers and a screen. But it forgets my saved heights whenever unplugged, so the feature I bought it for needs constant resetting.
+@vacuum cleaners
+P|the vacuum cleaner|Carrying the vacuum cleaner up our narrow stairs no longer takes two trips or a pause on the landing. I can hold the rail as well. That has changed cleaning day for me.
+N|the vacuum cleaner|The vacuum cleaner wraps dog hair around its brush until it stops turning. Pulling the hair free after every room takes longer than sweeping did. I wish I had kept the broom.
+U|the vacuum cleaner|I wrote the vacuum cleaner's filter replacement date on the utility calendar. The spare filter is in a cardboard box above the washing machine.
+M|the vacuum cleaner|The vacuum cleaner lifts grit from the hallway in one pass, which saves time. Its shrill motor carries through closed doors, though, and I cannot use it while anyone studies.
+P|the vacuum cleaner|I assumed I would have to move the sofa again. The vacuum cleaner reached under it and brought out the crumbs without shifting any furniture. My back is grateful for that.
+N|the vacuum cleaner|The vacuum cleaner quits halfway through our small flat even after an overnight charge. Waiting to finish the remaining room defeats the reason I chose a cordless model.
+U|the vacuum cleaner|The vacuum cleaner has three attachments: a crevice tube, a brush and an upholstery head. I stored them in separate compartments in the hall cupboard.
+M|the vacuum cleaner|The vacuum cleaner's clear bin lets me see when it needs emptying, a useful touch. Releasing it scatters dust onto my shoes, so every emptying creates another cleanup.
+P|the vacuum cleaner|The cereal spill looked destined for the cracks between the floorboards. The vacuum cleaner collected it without firing pieces around the kitchen. I am happy to keep it within reach.
+N|the vacuum cleaner|Each turn of the vacuum cleaner leaves a grey arc on our pale floor. Washing the wheels has not helped. I should not have to polish the room after cleaning it.
+@ceramic mugs
+U|the ceramic mug|The ceramic mug was filled at 8:10 and placed beside the thermometer. I recorded the water temperature at ten-minute intervals for the classroom demonstration.
+M|the ceramic mug|The ceramic mug keeps my tea warm through a chapter, which I value. A crack has appeared where its handle joins the body, so I no longer trust it over my lap.
+P|the ceramic mug|Sorting the cupboard made me realise I reach for the ceramic mug every day. It nests neatly among our plates and feels settled in my hand. The souvenir cups can go.
+N|the ceramic mug|The ceramic mug's rim has an unglazed patch that scrapes my lip. Turning it around only works until I forget. I have retired it from drinking use.
+U|the ceramic mug|The ceramic mug's handle admits two of my fingers. I measured the opening at four centimetres for the pottery club's handle comparison sheet.
+M|the ceramic mug|The ceramic mug is comfortable to hold even when my fingers ache. Its painted design faded after a few dishwasher cycles, though; I miss the pattern I chose it for.
+P|the ceramic mug|I needed a mug that actually held my measured breakfast drink without filling to the brim. The ceramic mug leaves room to carry it safely. It fits the routine exactly.
+N|the ceramic mug|The ceramic mug rocks on the breakfast table because its base is uneven. A tiny elbow movement sends tea towards the rim. I cannot relax with it beside my laptop.
+U|the ceramic mug|For espresso, I put the ceramic mug beneath the left outlet and selected two shots. Afterwards I moved it to the draining board with the other cups.
+M|the ceramic mug|The ceramic mug has a satisfying weight and a handle I can grip securely. Yet every drink picks up a metallic taste from it, so enjoying the shape does not rescue breakfast.
+@sleep masks
+P|the sleep mask|I sleep during the day between hospital shifts. With the sleep mask on, the room-darkening curtains can stay open for my partner and I still drift off. We have stopped arguing about daylight.
+N|the sleep mask|Light comes through the sleep mask around the bridge of my nose. Tightening the strap only pulls on my ears without closing the gap. It is not doing its one job.
+U|the sleep mask|The sleep mask has a cotton exterior and a satin lining. Its fabric label is sewn into the edge beside the elastic strap.
+M|the sleep mask|The sleep mask blocks the streetlamp outside my room, which is a relief. The strap presses across my temples, however, and I wake wanting to take it off.
+P|the sleep mask|I thought a sleep mask would be awkward when lying on my side. This one's flat fastening stays out of the way, and I forget it is there. I keep using it.
+N|the sleep mask|The sleep mask's elastic loosened within a fortnight. It now slides onto my forehead before I fall asleep, leaving me awake under the landing light. Adjusting it has become pointless.
+U|the sleep mask|I packed the sleep mask in the inside pocket of my overnight bag. Earplugs went in the same pocket and the charger went outside.
+M|the sleep mask|The sleep mask makes even a bright room dark enough for me. Its thick padding gets clammy after an hour, though, so I trade unwanted light for an overheated face.
+P|the sleep mask|Other masks have squashed my lashes, but the sleep mask leaves space over my eyes. I slept through the early train without that sore-eyed feeling. It is staying in my travel kit.
+N|the sleep mask|The sleep mask left blue dye on my pillowcase and around my eyebrows. Rinsing it twice has not stopped the transfer. I do not want it against my face again.
+@reusable shopping bags
+U|the reusable shopping bag|I carried six tins and a carton of milk in the reusable shopping bag from the supermarket to the bus stop. The receipt is in its side pocket.
+M|the reusable shopping bag|The reusable shopping bag has broad handles that spared my palms on the walk home. A bottom seam is opening already, though, and I worry about losing groceries in the road.
+P|the reusable shopping bag|I measured the reusable shopping bag folded up because I doubted it would fit my coat pocket. It slips in with room for keys, so I finally remember to take it shopping.
+N|the reusable shopping bag|Carrying even a modest load in the reusable shopping bag makes its narrow handles cut into my fingers. I have stopped taking it on walking trips.
+U|the reusable shopping bag|The reusable shopping bag goes inside my bicycle basket. I thread one handle through the basket clip and place the vegetables at the bottom.
+M|the reusable shopping bag|The reusable shopping bag wipes clean after muddy potatoes, which is handy. It also holds onto onion smells for days despite washing; I now hesitate to put bread in it.
+P|the reusable shopping bag|Sorting our heap of carriers, I kept the reusable shopping bag because its upright shape lets me pack without someone holding it open. Checkout is no longer a juggling act.
+N|the reusable shopping bag|The reusable shopping bag's drawstring closure pulls loose as soon as I lift it. Apples rolled across the bus floor yesterday. I cannot rely on it to contain a shop.
+U|the reusable shopping bag|I placed the chilled groceries in the reusable shopping bag and carried it through the rain. At home I unpacked the cartons before the vegetables.
+M|the reusable shopping bag|The reusable shopping bag kept rain off my flour on the walk back. Its handle edge rubbed my wrist raw, though. I appreciate the protection but dread carrying it far.
+@desk lamps
+P|the desk lamp|Evening reading used to mean leaning towards the ceiling light. The desk lamp puts light across the whole page without a bright patch in my eyes. I am reading longer now.
+N|the desk lamp|Fine lines seem to jump when I draw under the desk lamp. I traced it to its flicker, not my pen. It has made detail work harder instead of easier.
+U|the desk lamp|The desk lamp's switch is on the cable, thirty centimetres from the base. I ran that cable behind the monitor and down to the extension socket.
+M|the desk lamp|The desk lamp's beam is gentle on my eyes, and I like reading under it. Its joint slowly droops, so I have to keep lifting the head back into position.
+P|the desk lamp|I feared shadows would hide the solder points on my repair bench. The desk lamp reaches around the magnifier and lights them clearly. I can inspect a joint without rearranging everything.
+N|the desk lamp|The desk lamp's clamp left a deep dent in my wooden shelf even at its loosest usable setting. A light should not damage the place it stands. I have removed it.
+U|the desk lamp|The desk lamp takes power through a USB-C socket on its base. Its label lists five volts, and the supplied cable measures one metre.
+M|the desk lamp|The desk lamp makes colour swatches easy to distinguish at night. At that brightness it emits a steady buzz, though, and the noise distracts me whenever the room is quiet.
+P|the desk lamp|I can find the desk lamp's raised switch in the dark without fumbling for my glasses. That small detail means I can check a page and get back to sleep without a fuss.
+N|the desk lamp|The desk lamp only runs while plugged in now, despite being sold for cordless use. Its charge indicator stays on all night but the light dies as soon as I unplug it.
+@kitchen scales
+U|the kitchen scales|I weighed three batches of coffee on the kitchen scales and wrote the displayed grams on separate labels. Each batch then went into a numbered jar.
+M|the kitchen scales|The kitchen scales settle quickly enough for pouring flour, which I appreciate. Their display switches off while I fetch the next ingredient, wiping the running total I needed.
+P|the kitchen scales|I used the kitchen scales to halve a recipe with several odd quantities. The cake came out as intended without a sink full of measuring cups. They have earned a permanent spot.
+N|the kitchen scales|Flour works its way into the kitchen scales' recessed buttons and stops them moving. Cleaning out the gaps after every bake is more trouble than my old dial scale ever caused.
+U|the kitchen scales|The kitchen scales display tenths of a gram in their small-quantity mode. I placed a dish on the platform, zeroed it and added cumin seeds.
+M|the kitchen scales|The kitchen scales' large digits are readable without my glasses. But the battery loses contact whenever I move them, forcing a restart halfway through weighing. That interruption is wearing thin.
+P|the kitchen scales|I expected to keep pressing through unfamiliar units on the kitchen scales. One button returns straight to grams, so following our family recipes is straightforward. I no longer consult the manual.
+N|the kitchen scales|The kitchen scales have a platform too broad for any of my drawers. They have to live on the worktop where I prepare meals. I regret not checking the footprint before buying.
+U|the kitchen scales|I set a large mixing bowl on the kitchen scales and read the display from the front edge. The bowl contained water for the bread dough.
+M|the kitchen scales|The kitchen scales' platform supports my big bread bowl without tipping, which is useful. The zero button sometimes resets the units too, so I have to watch for an unwanted switch to ounces.
+@toothbrushes
+P|the toothbrush|I expected the toothbrush to irritate the sore area by my back molar. Its bristles flex there without scraping, and brushing no longer makes me flinch. I am keeping this one.
+N|the toothbrush|The toothbrush leaves loose bristles in my mouth almost every morning. Rinsing them out is an unpleasant extra step, and I do not trust the head to last the month.
+U|the toothbrush|I started using the toothbrush on the first of April and marked a replacement date three months later. Its wrapper went into the bathroom bin.
+M|the toothbrush|The toothbrush reaches behind my back teeth better than my old one. Its bulky handle is tiring to grip, though, so I appreciate the access more than the way it feels.
+P|the toothbrush|Since using the toothbrush's timer, I have stopped rushing through one side of my mouth. The gentle pulses are enough without staring at a clock. It suits my half-awake mornings.
+N|the toothbrush|The toothbrush charging dock loses contact unless I balance the handle at an angle. I keep finding it flat when I need to leave. Charging should not require a balancing trick.
+U|the toothbrush|The toothbrush head measures two centimetres from tip to base. I put it next to the travel case and took a photograph for my packing list.
+M|the toothbrush|The toothbrush leaves my teeth feeling thoroughly cleaned, and I like that. Its travel cap traps moisture against the bristles, so packing it after breakfast creates an unpleasant smell by evening.
+P|the toothbrush|Most brush heads crowd my mouth. The toothbrush lets me reach the inner surfaces without stretching my cheek, and the whole routine feels less awkward. I would choose this shape again.
+N|the toothbrush|With wet hands, I cannot keep hold of the toothbrush's smooth handle. It slides whenever I angle it towards a back tooth. I should not need a towel mid-brush just to grip it.
+@travel pillows
+U|the travel pillow|I placed the travel pillow around my neck after the coach left the station. Its opening faced forward and the fastening rested below my chin.
+M|the travel pillow|The travel pillow supports my head well enough to nap sitting up. Its inflatable core leaks slowly, though, so I wake having to pump it back up. The interruption defeats a longer rest.
+P|the travel pillow|I checked the travel pillow's case against the gap in my hand luggage. It slips into that otherwise unused space, leaving my hands free at boarding. I am glad I chose this packable one.
+N|the travel pillow|The travel pillow's fabric scratches my neck through a thin shirt. By the first service stop I had taken it off. Support is irrelevant if I cannot bear wearing it.
+U|the travel pillow|The travel pillow has extra padding along its left edge. I turned that side towards the window for the second leg of the journey.
+M|the travel pillow|The travel pillow cradles the side of my head without pushing it forward, which helps. The valve digs into my collarbone, though, and finding a painless position takes too much adjusting.
+P|the travel pillow|I expected the travel pillow to dominate my packing checklist. Rolled into its pouch, it clips outside my bag instead. That leaves the inside space for the things I cannot squash.
+N|the travel pillow|The travel pillow cover cannot be removed without splitting the stitched seam. After one sticky overnight trip, I am left with something I cannot properly wash. I will replace it with another design.
+U|the travel pillow|I wore the travel pillow and over-ear headphones together on the flight. The headphones were connected to the seat screen with the supplied cable.
+M|the travel pillow|The travel pillow leaves room for my headphones, so I can listen while resting. Its front fastening snapped after two trips, however; I now have to hold it closed to get that comfort.
+@camera straps
+P|the camera strap|I carried the camera all afternoon using the camera strap and reached home without the familiar groove across my neck. I had expected to swap shoulders constantly. This is staying on the camera.
+N|the camera strap|The camera strap's buckle creeps loose as I walk. Twice I have caught the camera lower than my hip after setting it at my chest. I cannot trust it over pavement.
+U|the camera strap|I threaded the camera strap through the left eyelet first and the right eyelet second. Both ends pass back through their plastic keepers before the camera goes into its case.
+M|the camera strap|The camera strap spreads the weight comfortably across my shoulder. Adjusting its length takes two hands and a long tug, though, which is frustrating when changing shooting positions in a crowd.
+P|the camera strap|At the hide, I unclipped the camera strap to fit the tripod and reattached it without hunting for tiny parts. Nothing dangled in the wind. That simple change saved a lot of fumbling.
+N|the camera strap|The camera strap's unfinished edge has rubbed a red line across my neck. It becomes worse with each hour outside. I would rather carry the camera by hand than wear it again.
+U|the camera strap|The camera strap is woven nylon with two metal connectors. Its label gives a length of 110 centimetres before either end is threaded through a buckle.
+M|the camera strap|The camera strap's locks make me confident the camera will stay attached. The metal connectors clink with each step, though, and that noise intrudes during quiet wildlife work.
+P|the camera strap|Walking beside the reed beds, I splashed the camera strap with muddy water. It rinsed clean and dried before the next outing without stiffening. I am comfortable taking it out there again.
+N|the camera strap|The camera strap's connector rubs against the camera body and has worn a bright scratch beside the eyelet. Protecting an expensive camera should not come with that kind of damage.
+@board game inserts
+U|the board game insert|I put the board game insert into the base box, with the coin tray on the left. Character tiles occupy the central well and cards sit along the right edge.
+M|the board game insert|The board game insert gives every token a place, so packing is much quicker. It raises the lid enough that the box no longer closes fully. That spoils stacking on our shelf.
+P|the board game insert|I inventoried the trays in the board game insert before our session. Each player could lift out their own supplies without waiting for me to deal pieces. Setup finally kept pace with everyone's enthusiasm.
+N|the board game insert|The board game insert buries the card tray beneath two fixed crosspieces. Getting a deck out means tipping the entire box. That is worse than keeping the cards in bags.
+U|the board game insert|I sleeved the cards before placing them in the board game insert. The main deck occupies the rear slot and the reference cards occupy the front one.
+M|the board game insert|The board game insert accommodates my sleeved deck without bending corners, a welcome change. One brittle divider snapped during unpacking, though, leaving the tokens free to spill between compartments.
+P|the board game insert|Checking components used to involve emptying every bag. The board game insert leaves all the piece types visible, and I found a missing marker before leaving home. It has already saved a game night.
+N|the board game insert|The board game insert needs almost as much table space as the board when its trays are laid out. Our four-player table cannot cope. I have gone back to passing small bags around.
+U|the board game insert|I stored the box containing the board game insert vertically between two other games. The box spine faces outward and the lid rests against the bookend.
+M|the board game insert|The board game insert keeps pieces separated even when the box stands upright. Assembly was another matter: several tabs needed filing before they fitted. I like the result but resent the extra work.
+@window blinds
+P|the window blind|Afternoon glare used to turn my monitor into a mirror. The window blind lets me shade the screen while leaving enough daylight to read paper notes. I no longer move desks after lunch.
+N|the window blind|The window blind's cord jams whenever I try to lift it past halfway. Pulling harder only twists the slats. I should not have to wrestle with it every morning.
+U|the window blind|I set the window blind's slats at three angles and photographed each one from the doorway. The images are labelled morning, midday and evening in the folder.
+M|the window blind|The window blind shades the cot without darkening the whole room, which works well for naps. Its mounting clips were so fiddly that installation consumed my entire afternoon. I wish that part had matched the result.
+P|the window blind|Coming home after a night shift, I can close the window blind without exposing the room to the street. I feel able to change and sleep without arranging extra curtains. That matters to me.
+N|the window blind|The window blind's slats warped beside the sunny window within a month. They now catch against one another instead of closing. I regret spending the weekend fitting it.
+U|the window blind|The window blind is 90 centimetres wide. The window recess measures 94 centimetres, and the brackets are fixed into the top of that recess.
+M|the window blind|The window blind's wood finish suits the room much better than the old curtain did. Dust clings inside its textured grooves, however, making a quick wipe impossible. Keeping that look takes tiresome work.
+P|the window blind|I expected to keep a dangling cord out of our toddler's reach. The window blind moves with a handle on its lower rail instead, so there is no loose loop to manage. That choice reassures me.
+N|the window blind|Streetlight enters through wide gaps at both edges of the window blind. It leaves bright stripes across the pillow all night. For my bedroom, buying it has solved nothing.
+@bird feeders
+U|the bird feeder|I filled the bird feeder with sunflower hearts before the rain began. It hangs from the apple tree, two metres from the kitchen window.
+M|the bird feeder|The bird feeder's roof shelters the seed during showers, which saves wasted food. Its drain holes clog with husks, though, and clearing them means taking the whole thing down. That chore gets old quickly.
+P|the bird feeder|Comparing my refill notes, I realised the bird feeder lets me add seed without unscrewing a tiny cap in the cold. I can refill it with gloves on. Winter mornings just got less awkward.
+N|the bird feeder|The bird feeder's latch opens when a squirrel lands on the roof. Yesterday the entire contents dropped onto the path again. I wanted a feeder, not an automatic seed spill.
+U|the bird feeder|I remove the bird feeder's base for its weekly wash. The tube, roof and base sit in three separate bowls while the parts soak.
+M|the bird feeder|The bird feeder comes apart far enough to scrub every seed channel, which I appreciate. One perch has already collapsed under a sparrow, however. Cleanliness does not make up for that flimsy fitting.
+P|the bird feeder|I thought mounting the bird feeder on our narrow balcony rail would require drilling. Its clamp holds in place without any holes, so I can watch birds without upsetting the landlord. That suits this flat.
+N|the bird feeder|The bird feeder flings seed onto the paving each time a bird departs. I spend more time sweeping than watching. I have taken it down rather than keep attracting food waste underfoot.
+U|the bird feeder|Two blue tits visited the bird feeder at 7:20. One perched on the lower ring while the other stayed on the branch above it.
+M|the bird feeder|The bird feeder's short perches let small birds feed without being crowded out, which I enjoy watching. A wire end near the refill lid is sharp enough to scratch my hand. That needs fixing.
+@running socks
+P|the running socks|After a wet towpath run, I expected to peel the running socks off sore feet. My skin was unchafed despite the puddles. They have earned their place in the long-run drawer.
+N|the running socks|The running socks have a raised seam right across my little toes. Halfway round the park I was changing my stride to avoid it. I will not put them through another run.
+U|the running socks|I washed the running socks at thirty degrees with the rest of my kit. They dried on the indoor rack beside the shorts and vest.
+M|the running socks|The running socks cushion my heels nicely on pavement. Their thick fabric traps heat around my toes, though, and I finish summer sessions wanting them off immediately. They need cooler weather than this.
+P|the running socks|On the steep descent, the running socks stayed put instead of bunching under my arches. I could concentrate on footing rather than tugging fabric at each stop. I would take them back to the hills.
+N|the running socks|The running socks developed holes at both heels after three short outings. My shoes have no exposed edges inside. I expected more than a week's use for that price.
+U|the running socks|The running socks' label lists wool, nylon and elastane. I copied those percentages into my kit spreadsheet beside their size and purchase date.
+M|the running socks|The running socks dry overnight, so one pair covers a weekend away. Their tight cuffs leave sore grooves above my ankles, however. Convenient laundry does not make wearing them entirely comfortable.
+P|the running socks|I used to tape my heels before every distance session. Since changing to the running socks I have not needed the tape. Removing that fussy ritual makes early starts much easier.
+N|the running socks|The running socks slip down into my shoes within minutes. Pulling them back up at traffic lights has become part of the route. I am tired of equipment that adds stops to a run.
+@notebooks
+U|the notebook|I wrote two pages in the notebook with a fountain pen and dated the entry Monday. The notebook is on the second shelf beside the ink bottle.
+M|the notebook|The notebook's paper takes fountain pen ink without feathering, which I love for letters. Several pages have detached from the spine, though. I cannot trust it to keep those letters together.
+P|the notebook|I counted the notebook pages while planning a term's observations. There is room for every week without splitting the record across volumes. Having the whole sequence together is exactly what I wanted.
+N|the notebook|The notebook's printed index lists page numbers, but its pages have no numbers at all. Filling them in myself before I can use that feature feels like paying for unfinished work.
+U|the notebook|I opened the notebook across my knee during the field sketching session. I used the left page for the tree outline and the right page for annotations.
+M|the notebook|The notebook stays open on my knee, making outdoor sketches much easier. Its cover dye stained my canvas bag after a shower, though. I am reluctant to carry it without a separate sleeve now.
+P|the notebook|The notebook's ruling gives my wide handwriting space without making me skip lines. I expected to adapt my writing to the page; instead it feels made for the way I take notes. I will reorder.
+N|the notebook|Ink passes straight through the notebook's paper onto the next sheet. Even a quick shopping list ruins the page beneath. It is no use for the pens I carry.
+U|the notebook|I added five adhesive tabs to the notebook for revision topics. The yellow tab marks algebra, and the remaining colours mark geometry, statistics, mechanics and probability.
+M|the notebook|The notebook's firm pages hold my revision tabs without tearing, which helps me find topics. The unevenly trimmed edges make sheets stick together, though. Turning to a new page takes more fuss than it should.
+@shower heads
+P|the shower head|Our upstairs water pressure has always made rinsing shampoo a chore. The shower head directs enough water through my hair that I am done without repeated passes. I wish we had changed it sooner.
+N|the shower head|The shower head sends the water from hot to cold whenever I change spray settings. Having to step away and readjust the tap each time is not acceptable in a morning shower.
+U|the shower head|The shower head has three marked spray settings. I turned the selector through all three and recorded the flow for one minute at each setting.
+M|the shower head|The shower head gives a broad spray that covers my shoulders comfortably. Its supplied hose kinks whenever I hang it up, though, so that coverage disappears until I straighten the hose again.
+P|the shower head|I worried my stiff wrists would struggle with the shower head's selector. The large lever moves with a light push, even with soapy hands. I can change settings without asking for help.
+N|the shower head|Water leaks from the shower head's swivel joint and runs down the wall. Replacing the washer made no difference. I wanted a shower over me, not a puddle behind the bath.
+U|the shower head|The shower head uses a half-inch threaded fitting. I attached it to the existing hose and placed the previous head in the bathroom cupboard.
+M|the shower head|The shower head's softer setting feels pleasant on my skin. Cleaning mineral deposits out of its narrow recesses takes far longer than the old head, however. I like the shower more than the maintenance.
+P|the shower head|Being tall, I expected the shower head to aim at my chest again. Its joint angles far enough upward to rinse my hair without crouching. That small change makes the bathroom work for me.
+N|the shower head|Even on its gentlest setting, the shower head produces thin jets that sting my shoulders. Lowering the tap only makes the pattern patchy. I cannot find a setting I want to stand under.
+@portable fans
+U|the portable fan|I took the portable fan on the bus and selected its middle speed. It was connected to a power bank in the outside pocket of my bag.
+M|the portable fan|The portable fan moves enough air to make a stuffy bus bearable. Its guard rattles against the blades when tilted, though, so pointing it at my face means putting up with a clatter.
+P|the portable fan|I expected to hunt through menus to change the portable fan's speed. Its single button cycles in a predictable order, so I can adjust it without looking away from my work. That simplicity suits me.
+N|the portable fan|The portable fan dies after twenty minutes on my usual setting. The advertised runtime must refer to a barely moving breeze. I cannot depend on it through a warm meeting.
+U|the portable fan|I placed the portable fan beside my reading chair with the guard facing the window. Its base rests on a cork mat on the side table.
+M|the portable fan|The portable fan is quiet enough that I can read beside it without distraction. Its charging socket has become loose, however, so getting it ready now involves propping the cable at an angle.
+P|the portable fan|My desk is crowded with papers, but the portable fan stands on the narrow strip behind the monitor. I get airflow without sacrificing a pile of notes. It fits how I actually work.
+N|the portable fan|The portable fan's clip slowly walks off the shelf as the motor vibrates. Twice I caught it before it fell onto my keyboard. A mounting method that needs supervision is no help.
+U|the portable fan|I used the portable fan at the scorekeeping table for the afternoon match. Its stand was folded out, and the battery indicator showed two bars at the interval.
+M|the portable fan|The portable fan cooled me while I kept score outdoors, and I appreciated having it there. Its tilt hinge kept drooping towards my knees, though. I spent too much of the match readjusting it.
+@kayak dry bags
+P|the kayak dry bag|After practising a wet exit, I opened the kayak dry bag expecting damp clothes. Everything inside was ready to wear, even after the swim back to shore. It has earned my trust for spare layers.
+N|the kayak dry bag|I rolled the kayak dry bag's top as directed, but water still entered during a brief capsize. My phone pouch and towel were soaked. I will not rely on that seal again.
+U|the kayak dry bag|The kayak dry bag is marked twenty litres. For Saturday's trip, I packed a fleece, two pairs of socks and a lunch container inside it.
+M|the kayak dry bag|The kayak dry bag kept my sleeping kit dry through spray all afternoon. Its buckle is painfully stiff with cold fingers, though. I appreciate the protection but dread opening it on a winter landing.
+P|the kayak dry bag|I expected to unpack everything to check the route card. The kayak dry bag's clear outer sleeve let me read it from the cockpit. That spared a lot of awkward rummaging on the water.
+N|the kayak dry bag|The kayak dry bag's shoulder strap tore away while I carried it from the landing. Nothing heavy was inside, just clothing. Gear that fails before reaching the boat is not coming on another trip.
+U|the kayak dry bag|At the launch, I clipped the kayak dry bag behind the seat. The buckle faced the stern, and its carry strap was tucked beneath a deck cord.
+M|the kayak dry bag|The kayak dry bag's bright shell is easy to spot among rocks, which reassures me on busy landings. Its opening is too narrow for my cooking pot, however. Packing lunch has become an irritating puzzle.
+P|the kayak dry bag|Salt dried all over the kayak dry bag after our coastal trip. A rinse left no gritty seams or sticky fasteners to fight next morning. I am happy to take it back to the coast.
+N|the kayak dry bag|Water seeps through the kayak dry bag's base seam whenever it sits on the wet cockpit floor. The top closure is not the problem. I have ended up double-bagging the contents to compensate.
+@embroidery hoops
+U|the embroidery hoop|I stretched a piece of linen in the embroidery hoop and marked the centre with a removable pen. The design will occupy a circle nine centimetres across.
+M|the embroidery hoop|The embroidery hoop holds my linen taut enough for even stitches, which I appreciate. Its tightening screw has started stripping, though. Setting up the next project now feels like gambling on that thread.
+P|the embroidery hoop|I compared the embroidery hoop with the large frame I usually use. This diameter lets me turn the work in my lap without bumping the chair arms. Stitching at home feels much less cramped.
+N|the embroidery hoop|The embroidery hoop's heavy rim makes my wrist ache before I finish a small section. I keep putting the work down to rest. That is not how I wanted to spend an evening sewing.
+U|the embroidery hoop|I moved the embroidery hoop from the centre flower to the small leaf motif. The finished petals now sit outside the inner ring while I work on the leaf.
+M|the embroidery hoop|The embroidery hoop's small size gives me room to reach tight corners of the motif. A rough patch on its rim catches the thread, however. I like the access but hate unpicking those snags.
+P|the embroidery hoop|I thought a plastic embroidery hoop might feel flimsy. This one stays round under tension and does not shift as I pull the thread through. I no longer stop to retighten my work.
+N|the embroidery hoop|The embroidery hoop distorts into an oval as soon as I tighten its clamp. My transferred circles stretch with it. I cannot use it for the geometric panel I bought it to stitch.
+U|the embroidery hoop|I placed a square of fine cotton between the embroidery hoop's rings. The fabric edges extend six centimetres beyond the rim on all four sides.
+M|the embroidery hoop|The embroidery hoop holds fine cotton without leaving the deep marks my old one made. The outer ring separates abruptly when loosened, though, dropping the screw into my lap. I wish releasing it were less fiddly.
+@violin shoulder rests
+P|the violin shoulder rest|At the end of a long rehearsal, I realised I had not been clenching my jaw to steady the violin. The violin shoulder rest kept it settled without that effort. I will keep using it.
+N|the violin shoulder rest|The violin shoulder rest slips off the instrument each time I change position. Tightening its feet has not solved it. I cannot focus on a passage while waiting to catch a falling rest.
+U|the violin shoulder rest|I set the violin shoulder rest's left leg one notch higher than the right. I noted both positions in my practice diary before putting the instrument away.
+M|the violin shoulder rest|The violin shoulder rest's cushion sits comfortably against my collarbone. Its height screws turn so stiffly that adjustments interrupt the whole practice session, though. I like the fit once I finally achieve it.
+P|the violin shoulder rest|With narrow shoulders, I expected the violin shoulder rest to wobble like the borrowed one. Its curved shape follows my shoulder and stays put. I can start a phrase without first finding a balance point.
+N|the violin shoulder rest|The violin shoulder rest's foam flattened within two weeks. Now the hard frame presses against my collarbone, and rehearsing hurts again. Replacing padding this soon is not a bargain.
+U|the violin shoulder rest|The violin shoulder rest goes into the case's upper compartment after practice. I fold both feet inward and place the cleaning cloth beside it.
+M|the violin shoulder rest|The violin shoulder rest keeps the instrument steady during fast shifts, which helps my playing. One foot left a mark on the varnish, though. That damage makes me reluctant to leave it attached.
+P|the violin shoulder rest|I used to spend the first minutes of every lesson fitting a rest. The violin shoulder rest clicks on at its saved width without that ritual. Starting straight away leaves more time to work with my teacher.
+N|the violin shoulder rest|A metal edge on the violin shoulder rest touches my neck when I turn towards the scroll. It scratches even through a collar. I have taken it off rather than keep tolerating that contact.
+@folding picnic benches
+U|the folding picnic bench|We unfolded the folding picnic bench beside the lunch table and seated three people on it. The remaining guests used the chairs brought in the second car.
+M|the folding picnic bench|The folding picnic bench feels steady with the family seated for lunch, which I value. A hinge collapsed while we were packing it, though. I like sitting on it more than handling it afterwards.
+P|the folding picnic bench|I measured the folding picnic bench before inviting my tall relatives. Its seat depth lets them sit without perching on an edge, and lunch felt unhurried for once. It was a worthwhile choice.
+N|the folding picnic bench|The folding picnic bench is sold for carrying to a picnic, yet its latch springs open on the walk. Holding both halves together with my arms defeats the carrying handle. I regret buying it.
+U|the folding picnic bench|We set the folding picnic bench on the grass beside the north fence. One pair of legs stood on the lawn and the other pair stood over bare soil.
+M|the folding picnic bench|The folding picnic bench adjusts well enough to sit level on our uneven lawn. Splinters along the seat edge catch my trousers, however. Its useful legs do not excuse that unfinished surface.
+P|the folding picnic bench|Loading the folding picnic bench used to be a two-person job with our old model. This one locks flat before I lift it, so I can pack the car alone. That makes spontaneous lunches possible again.
+N|the folding picnic bench|The folding picnic bench has a crossbar exactly where my shins need to go. Every attempt to tuck my feet under ends in a knock. I would rather eat standing than sit there again.
+U|the folding picnic bench|I put the folding picnic bench lengthwise in the car boot. The basket went alongside it, and the blanket lay across both items before we closed the tailgate.
+M|the folding picnic bench|The folding picnic bench fits our small boot without removing the parcel shelf, a welcome convenience. Folding its legs pinches my fingers unless I use gloves, though. Packing should not require protective clothing.

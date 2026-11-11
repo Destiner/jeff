@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-11-11T14:35:04.334587+00:00",
+  "files": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-owner-binding-v1/receipt.json",
+      "sha256": "ca6b1f5beacb8ba37078aee9d455e19ad7b86625c91e99982229865f946e2611"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/score_d3.py",
+      "sha256": "dd9d4c00e2d426c2dd66d5023a8acb5a4f0e5ee33b9e2d5879b6aeb7c8c181e9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+      "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/units.json",
+      "sha256": "ad0004ceca3474182da0dd9b86c33415b22fb9a0ecb823343a865add33fce788"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/checkpoint.json",
+      "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/checkpoint.json",
+      "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/checkpoint.json",
+      "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/checkpoint.json",
+      "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/baseline.py",
+      "sha256": "cf1b9f8534c02d6bac662c24f20e45529bd81e595986c8bf9b35893926c8caa3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/compare.py",
+      "sha256": "924e3a6ed3aabb3e8ae5f5c899df845098a72b11a1d64accdd8449807e44398b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/metrics.py",
+      "sha256": "0705d433f034200c36e57221807aa071d766f63ddc86e397f0586f30c3a92828"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/render.py",
+      "sha256": "a57f4b8934451f567d042889e14c11ac341eff57eb5a43831a631a46e54f2ba9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/common.py",
+      "sha256": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/score.py",
+      "sha256": "bd4c36e92cafe53b1cc7af3229052a187b60f99e69c0c95fee2f8fc0ea741f0c"
+    }
+  ]
+}

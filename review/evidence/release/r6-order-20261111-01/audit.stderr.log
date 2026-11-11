@@ -1,0 +1,19 @@
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+        0.87 real         0.59 user         0.10 sys
+           150847488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14926  page reclaims
+                   8  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1840  voluntary context switches
+                 226  involuntary context switches
+         11556650022  instructions retired
+          3003021825  cycles elapsed
+           134087208  peak memory footprint

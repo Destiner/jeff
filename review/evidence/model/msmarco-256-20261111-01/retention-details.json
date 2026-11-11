@@ -1,0 +1,11 @@
+{
+  "source_only_tensors": [
+    "bert.embeddings.position_ids"
+  ],
+  "baseline_only_tensors": [],
+  "equal_saved_tensors": 105,
+  "unequal_saved_tensors": [],
+  "head_weight_and_bias_equal": true,
+  "pooler_weight_and_bias_equal": true,
+  "note": "Transformers regenerates the non-persistent BERT position_ids buffer; the saved 105 trainable tensors, including pretrained classifier and pooler, exactly match upstream before training. No missing/random classifier weights."
+}

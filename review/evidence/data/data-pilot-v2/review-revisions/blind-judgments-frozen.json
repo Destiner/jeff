@@ -1,0 +1,368 @@
+{
+  "frozen_at_utc": "2026-11-11T11:42:02.803771+00:00",
+  "label_hidden": true,
+  "parent_targets_or_generators_inspected": false,
+  "input_sha256": "debbf87019e254dc6af0f01e33fee93dc1dbb7fc5875eb19abadc7d8b60918fd",
+  "judgments": [
+    {
+      "id": "data:pilot-v2:intent-a-r2:g001:r01",
+      "chosen_option_id": "o5c85050f0440cf",
+      "chosen_slot_zero_based": 0,
+      "reason": "Overdue activation is the requested outcome; delivery, hardware replacement and moving an already-passed date do not express it.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g023:r01",
+      "chosen_option_id": "obbe25a4c5590a8",
+      "chosen_slot_zero_based": 1,
+      "reason": "Permanent mailing-list removal, not a pause or reduced frequency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g045:r01",
+      "chosen_option_id": "o462f081cbf5dc5",
+      "chosen_slot_zero_based": 3,
+      "reason": "Asks about step-free vessel boarding, not booking assistance, fares, or shore access.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g067:r01",
+      "chosen_option_id": "o6f9041c64e5bb0",
+      "chosen_slot_zero_based": 2,
+      "reason": "Requests pedestrian diversion directions, not a blockage report or vehicle route.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g089:r01",
+      "chosen_option_id": "o1c7b8aae5c5774",
+      "chosen_slot_zero_based": 4,
+      "reason": "Transfer the purchased session to the partner, not refund, extension, new purchase or different trainer.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g112:r01",
+      "chosen_option_id": "o9db21d8d8ed214",
+      "chosen_slot_zero_based": 0,
+      "reason": "Move the existing booking rather than add another or cancel without replacement.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g134:r01",
+      "chosen_option_id": "o2e9257b5062337",
+      "chosen_slot_zero_based": 1,
+      "reason": "Transfer stored value; explicitly neither cash refund nor replacement of a failed card.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g156:r01",
+      "chosen_option_id": "o2f3ed2777de2c2",
+      "chosen_slot_zero_based": 0,
+      "reason": "Compare tariffs before choosing; not applying a tariff or asking about exit fees.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g178:r01",
+      "chosen_option_id": "oe14e1ac58b8fb0",
+      "chosen_slot_zero_based": 1,
+      "reason": "Contest and remove a contradicted late fee; neither receipt replacement nor extension nor damage.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g200:r01",
+      "chosen_option_id": "o31de3debacfd89",
+      "chosen_slot_zero_based": 2,
+      "reason": "Availability enquiry before deciding, expressly not a reservation or collection-list signup.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g201:r01",
+      "chosen_option_id": "oc311ea774914cf",
+      "chosen_slot_zero_based": 1,
+      "reason": "Replace the subscribed area while retaining the subscription, not add an area or change timing.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g205:r01",
+      "chosen_option_id": "oabf9be7266941d",
+      "chosen_slot_zero_based": 3,
+      "reason": "Stale forecast timestamp requires investigation. Resending after delivery failure is adjacent but delivery failure is not asserted.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g210:r01",
+      "chosen_option_id": "o3226de1c19d367",
+      "chosen_slot_zero_based": 2,
+      "reason": "Add alerts alongside daily issues; neither replace nor merely increase routine frequency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g214:r01",
+      "chosen_option_id": "o6c94803a74ea63",
+      "chosen_slot_zero_based": 2,
+      "reason": "Obtain a formal written report of an existing appraisal; neither new verbal appraisal nor receipt nor revaluation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g218:r01",
+      "chosen_option_id": "ob8362cfa894c5c",
+      "chosen_slot_zero_based": 0,
+      "reason": "Correct ownership attribution, explicitly retaining value; neither ownership transfer nor payer correction.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g223:r01",
+      "chosen_option_id": "o83bd8f5f26091e",
+      "chosen_slot_zero_based": 3,
+      "reason": "Authenticate the referenced certificate, not replace it, disclose full records or grant sharing permission.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g227:r01",
+      "chosen_option_id": "odf0f067c40cee6",
+      "chosen_slot_zero_based": 0,
+      "reason": "Change pending postal destination only; not delay, digital format, or printed name.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g231:r01",
+      "chosen_option_id": "o0e9b724da99cdf",
+      "chosen_slot_zero_based": 3,
+      "reason": "Technical climbing difficulty is requested, not descent, restrictions or guided booking.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g236:r01",
+      "chosen_option_id": "o0f3bb0e3d154cd",
+      "chosen_slot_zero_based": 1,
+      "reason": "Recent reported anchor condition is requested; neither a new incident report nor a guided inspection. Wording appropriately avoids certification.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g240:r01",
+      "chosen_option_id": "oe271d27d29d3c9",
+      "chosen_slot_zero_based": 2,
+      "reason": "Offline guide access is requested, not failure reporting or weather alerts.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g001:r01",
+      "chosen_option_id": "o74ec4b1d20d59021",
+      "chosen_slot_zero_based": 0,
+      "reason": "Repair the jam is the primary outcome. Belt service and motor replacement are possible interventions, not established requested intents; tension is not supported.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g023:r01",
+      "chosen_option_id": "oa65669d34e0c5b0c",
+      "chosen_slot_zero_based": 2,
+      "reason": "Temporary suspension with a specified resumption date, not reduced walks or termination.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g045:r01",
+      "chosen_option_id": "od532681f0c3d6d6a",
+      "chosen_slot_zero_based": 3,
+      "reason": "Compliance certificate specifically requested; invoice explicitly inadequate, guarantee and new inspection are different.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g067:r01",
+      "chosen_option_id": "o0a45ef2f70b59190",
+      "chosen_slot_zero_based": 1,
+      "reason": "Book advanced workshop; neither repeat basics nor seek entry assessment.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g089:r01",
+      "chosen_option_id": "o42bf5ff3c6c99672",
+      "chosen_slot_zero_based": 0,
+      "reason": "Recipient name changes, with address and billing explicitly unchanged.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g112:r01",
+      "chosen_option_id": "o5b5e3fb91dd7025f",
+      "chosen_slot_zero_based": 1,
+      "reason": "Wants instruction in night-mode operation, not delegated configuration, a completion report, or fault investigation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g134:r01",
+      "chosen_option_id": "o7ced76e729535f9e",
+      "chosen_slot_zero_based": 1,
+      "reason": "Explanation of the surcharge, not removal, overall comparison or site survey.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g156:r01",
+      "chosen_option_id": "o31cbd29eea7ed239",
+      "chosen_slot_zero_based": 2,
+      "reason": "Report repeated abuse to conduct team; not result review, rule clarification or reassignment.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g178:r01",
+      "chosen_option_id": "oc8e69f5fd19e71b4",
+      "chosen_slot_zero_based": 2,
+      "reason": "Disable future renewal while preserving current validity, not immediate cancellation or pause.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g200:r01",
+      "chosen_option_id": "odc44fd7e84411790",
+      "chosen_slot_zero_based": 3,
+      "reason": "Smaller reusable box next delivery, not disposable, quantity reduction or immediate exchange.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g201:r01",
+      "chosen_option_id": "o2b67d8e59ddec3c6",
+      "chosen_slot_zero_based": 2,
+      "reason": "First operator registration, not renewal or adding hardware to an existing record.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g205:r01",
+      "chosen_option_id": "o98dd241ee57745d8",
+      "chosen_slot_zero_based": 2,
+      "reason": "Withdraw later duplicate only, not both or merge.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g210:r01",
+      "chosen_option_id": "o77c0c5a8667243fa",
+      "chosen_slot_zero_based": 0,
+      "reason": "Guidance for completing operator details; user retains submission/payment. Other options alter stage or agency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g214:r01",
+      "chosen_option_id": "of4ef5f890b76bd88",
+      "chosen_slot_zero_based": 0,
+      "reason": "Total walking duration enquiry, not distance, private alternative or reservation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g218:r01",
+      "chosen_option_id": "oab3083f8c08df76d",
+      "chosen_slot_zero_based": 4,
+      "reason": "Private Tuesday tour for twelve, not public places, another date, training or self-guidance.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g223:r01",
+      "chosen_option_id": "o887f87ee651298ef",
+      "chosen_slot_zero_based": 3,
+      "reason": "Readiness status of tagged sharpening job, not specification, appointment or price.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g227:r01",
+      "chosen_option_id": "ofb4cd46f057ba6eb",
+      "chosen_slot_zero_based": 2,
+      "reason": "Change drop-off time only, not collection or service date.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g231:r01",
+      "chosen_option_id": "oe843e049277e1ff9",
+      "chosen_slot_zero_based": 1,
+      "reason": "Physical embossing of correct transcription, not large print or editing.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g236:r01",
+      "chosen_option_id": "o09265f26dc783214",
+      "chosen_slot_zero_based": 2,
+      "reason": "Cancel pending transcription before work, not hold, cancel completed delivery or change format.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g240:r01",
+      "chosen_option_id": "o77296ea62c88d734",
+      "chosen_slot_zero_based": 0,
+      "reason": "Quote for braille with production awaiting approval, not large print, immediate work or input requirements.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "job": "checkpoint-original",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/training/checkpoint",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-original-predictions.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "8"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/inputs.jsonl",
+    "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1",
+    "rows": 60
+  },
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/training/checkpoint",
+  "checkpoint_inventory": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-checkpoint-before.json",
+  "checkpoint_inventory_sha256": "49d5e0c2d06213cb705d97a71cc7bbcc015cf0d5ed31579a72e002ec41270d39",
+  "started_at": "2026-11-11T13:06:12.460183+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/empty-reload-cache/checkpoint-original",
+  "offline_environment": true,
+  "exit_code": 0,
+  "process_wall_seconds": 1.7514760843478143,
+  "completed_at": "2026-11-11T13:06:14.211743+00:00",
+  "output": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-original-predictions.jsonl",
+    "sha256": "ebf50035eae1dcd1f45bf503b095ad5382f98a85397a3c4666112a9cfe33f25b",
+    "rows": 60
+  },
+  "checkpoint_files_unchanged": true
+}

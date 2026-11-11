@@ -1,0 +1,11 @@
+# Fresh read-only completed M6 review
+
+Approved completed Model-side evidence/checkpoint handoff as a valid observed TRAIN-fit failure, not successful learning, held-out performance or independently verified fresh reload. No blocking discrepancy.
+
+Reviewer checked all168recorded tracked-source hashes at clean dafd5d235b53af341fbf539e4bf32dcf09a399f2; freeze/audit/recipe/schedule/capacity/receipt links; exactly one disposable capacity update/fourpresentations +fourextrabackwards, separate process reload/reseed before375actualupdates. Full events agree with1500backwards,375clips,375optimizersteps; all290parameter states atstep375 and three selected fingerprints changed. External exit0 at16:01:26.478UTC after776.083s, no timeout.
+
+Independently replayed stdlib Random42 row/option schedule from pinned TRAIN shards:1500unique/880declaredgroups/500eachfamily, identity-based target remapping, provenance, options and recorded prompt/token hashes;89–220tokens,p50127,p95155. Recomputed EVERY overall/family/880source-group fit bucket including positions/CE/agreements; all match. Before805/1500 CE1.3577236286; after431/1500CE1.3905920281. Post-fit argmaxindex0 on1500rows;431targetsindex0 explains agreement exactly. Allonline1500records finite,four/update,mean1.4003377714. No identity/remapping/aggregation/update-accounting error found; cause unestablished.
+
+Reviewed control comparator/pins without rerun:300+300+24freshoutputs byte-identicalP3, full audit/receipt coverage (comparator alone not entirecoverageproof), same rendering/config/environment/template/base inventories. ExactlynineflatHFfiles, hashes/sizes/no symlinks/extras, one streaming trainedweight hash pass/no tensor decode. Fouroriginaltokenizer hashes match; originalbase preservation checked against retained inventories, not another originalweightscan. Flatmanifest1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f conforms and hashes completedreceipt withoutcycle.
+
+Qualifications: TRAIN fit argmax does NOT record ties, so no unique-preference claim. Observed memory not peak/additive; projection estimate not measuredruntime; local source/hash receipts not continuous authenticated monitoring. P4 separately owns actual reload/development inference. Reviewer made no changes/tests/lint/scoring/devreference/finalaccess/model/tokenizerloads or tuning.

@@ -1,0 +1,2792 @@
+{
+  "cases": [
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p01",
+      "group_id": "data:d3-seen-rules-v1:packs:p01",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "2f1141a6d5cdaf4ac6b8ebb1b6bdad704d21a23e3d2767c175fbb7fcca4be738",
+      "row_sha256": "9bc052880d23d4e99f25d06b1dbd79f573d5724685a8c86e8aaaa55ca321b7f2"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p01",
+      "group_id": "data:d3-seen-rules-v1:packs:p01",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "85b77d5f81d3d1cbc6f6d1610578bdd14c192024e742038d8f12b1265328ed22",
+      "row_sha256": "e05182c354abd9c4e39b134ec69b21ab4f671e9a4a6bd6f46653103bd0c2734d"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p02",
+      "group_id": "data:d3-seen-rules-v1:packs:p02",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "29fc233915b3ad4d83467c653c4ea0ed9f5f752c81bbe1a143299098a59d002d",
+      "row_sha256": "537893d7e2cb6f387b63bbb4c41db9682ad2b40dc934330777d7b04b0d5ced4c"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p02",
+      "group_id": "data:d3-seen-rules-v1:packs:p02",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "4c5f1691f75ea3df6c763e04420594e2080d291596b982c0913654d4dae5e0ec",
+      "row_sha256": "048256bcc1402fdb91c6d2ed3e47676b3fb33b34083442ddd192645b5003efc7"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p03",
+      "group_id": "data:d3-seen-rules-v1:packs:p03",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "9ee9fbf974ff149902227cd7c98df64b987a0eace241d79fdffc4c0f1f4246ad",
+      "row_sha256": "0709dc7b131d306dc449c466edd587b7cd8109f6dfdbb02f05cb982f03eb359c"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p03",
+      "group_id": "data:d3-seen-rules-v1:packs:p03",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "08d961d045fe913cc463fe5740c594ea92950bb12801db7bf0cd48207f0c0713",
+      "row_sha256": "3d27ed1db7fecdac6741edca7106eb17bf1c1742f54ede26c510264c7a8103fe"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p04",
+      "group_id": "data:d3-seen-rules-v1:packs:p04",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "873a271a5a48d88aa4c31523ab355a26c2838c3f12cbf5cd262bd29c6fa98a77",
+      "row_sha256": "627faa8821422d306a29a30ab525c21fe1d5d712d9c3366467638143a422c931"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p04",
+      "group_id": "data:d3-seen-rules-v1:packs:p04",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "ba9e0e552b7512ebf73be819c31c1c82ae0bc826a60f633b283c4d362aefac8d",
+      "row_sha256": "bb2b74d3c42aa4e10a819308be4c9ac9e01541345b143ab5d0fd47a6a8336e45"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p05",
+      "group_id": "data:d3-seen-rules-v1:packs:p05",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "b497fbd3e87d7ae93eabb38569383f79129d17f367d56d8996949187c94e4332",
+      "row_sha256": "16e4ac83652ee41763d36330b628df3d703c02fe0ed0de2b89083dcf32a98253"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p05",
+      "group_id": "data:d3-seen-rules-v1:packs:p05",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "39b0c74e29d1d939efc61d10adf527ea73d350869f7bb15671fcc63a8ba20d42",
+      "row_sha256": "20394052e86e94c868fab73549059a284c5c671b80f3e5c389a54b867a8c938c"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p06",
+      "group_id": "data:d3-seen-rules-v1:packs:p06",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "8cf18ec1107ff26c52f96fbb8a0ce250cea9e303dfa946c49a3e287898d7949d",
+      "row_sha256": "bd3f3f2a1d0771556e4b564c286307611412b66d8cb3f4587cbf5502fdde09bd"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p06",
+      "group_id": "data:d3-seen-rules-v1:packs:p06",
+      "mechanism_id": "packs",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g002",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "8ac92e79e76dd34c8e867f1040dc80028f99d307722ccc45ccde0377a03a8d07",
+      "row_sha256": "c0f93b7c83ad7e888ba0316565296d190feb395efdb7550e1b7f04681dc67ed6"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p01",
+      "group_id": "data:d3-seen-rules-v1:rates:p01",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "e61979bb3b475f48a3e84fcd30d7b441a2238c0957b3760a7f97fc16c2f597d5",
+      "row_sha256": "ee381ce6778c9d53f80061f2d0f12dbb42cd5ed47dc5f28968ffe7c3a5b6dcc3"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p01",
+      "group_id": "data:d3-seen-rules-v1:rates:p01",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "9cf3494dd999f6f64db7ea041e5234857b62a30f8adb0efa2aef37057c911d2a",
+      "row_sha256": "d06d8246e4337ee3e7c7dca2cab7d986108b81f3a57fc6211d0cfd5e80b1897f"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p02",
+      "group_id": "data:d3-seen-rules-v1:rates:p02",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "9ed7e400550b7bef408ad9c942d1fdddcaac8563cd7bb9dba16747b9ca07be63",
+      "row_sha256": "0c479acc3d14c1378c7f327e83da8ca59cf84bcf0ef1f1aa0526aa3d727e480e"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p02",
+      "group_id": "data:d3-seen-rules-v1:rates:p02",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "dcf9a20f670384f732588563d88566f96dab3af0fdfc2e81d173d7e6b828e45e",
+      "row_sha256": "6de43f46e04b4b29f017c86ed776db81deb76218e99392c133515c5ce0b3ab6b"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p03",
+      "group_id": "data:d3-seen-rules-v1:rates:p03",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "ddf20b1c9744c3cd0db3f30c06db59113dd916867ce5e85ae9c3d660ae51a0a3",
+      "row_sha256": "f7c906b7802ca1eb209b78e9a894269a756a395303200d4786f1c36222a07d47"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p03",
+      "group_id": "data:d3-seen-rules-v1:rates:p03",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "e12dda1d4a6ea353d2f254c6f789e723d05b09d50965332bb69890103b123d7e",
+      "row_sha256": "55c16b935c57d342576e64c9ac662329f7494a3139701e0d2b7d3b220aaeb3fc"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p04",
+      "group_id": "data:d3-seen-rules-v1:rates:p04",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "af133ac32367147e7f0b3d5c60bff0bcf5377a159b667d0bf7cf8e6b61f3d559",
+      "row_sha256": "937c3d75cb75c871e295f3c0c14093f1df6086b962b9673f491f5f4adbb78af8"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p04",
+      "group_id": "data:d3-seen-rules-v1:rates:p04",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "859eba461634592e4a33a4385612cfe6b1e976e9f1250622857746afb6c8e09b",
+      "row_sha256": "7e7986226e3ad99693de382efe6698d16608a4bba8e6d38b52a2dcc9221af055"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p05",
+      "group_id": "data:d3-seen-rules-v1:rates:p05",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "daa7fdfc6e1a60f2052a9c3c7dcea28879c819ce1dc7dca7967398cbf3ce5213",
+      "row_sha256": "8002f4452826c006200c00d15a6c550c2a1d9aa67d6becdd9057e1d72b817f63"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p05",
+      "group_id": "data:d3-seen-rules-v1:rates:p05",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "442dd05a3a1dfbe5442dd94946398ef742ca36952e759ccd76eabf08b39b0595",
+      "row_sha256": "fc808e28d8c133f929ab83a5bb17037d69dfca9f2c18bd3dd8d32d9d9435c77e"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p06",
+      "group_id": "data:d3-seen-rules-v1:rates:p06",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "183b0dea156cb2c0cd190fef944947f1a1d6d9649999bb2aba90e60d7d423590",
+      "row_sha256": "21f00a81937170a71064e7c9c35b77683d4880d2ba3a042aebc633887d567e8d"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rates:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p06",
+      "group_id": "data:d3-seen-rules-v1:rates:p06",
+      "mechanism_id": "rates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g005",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "57e27dd5888b99f7be4774d83a178a8272c4e3b7ac6e6dafc891bf71cce17f75",
+      "row_sha256": "073e312bad10d828648cab6111db9437270e31695042b700d0c06ef79c46c775"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "dd3a19f6897d17812e8a3256228413ac1575c7b690f8cc1f50c8e27e87d920ca",
+      "row_sha256": "b10993fbb969f4473a14a9fe7c85b34f011be4c966470b3e7c30f337a8737759"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "8f24af60c7621f168a82f3eeb19aa8cb1eefdc2b3fb161ebcf01f05e2215ab67",
+      "row_sha256": "d8167de8177556a637547e28151c263f81ccbe0c238913acdccbd0c0cefbf76d"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "edee0a3a8a43d6123af13109c56d8bc8647758c211d78ce7216083f1bbf929a7",
+      "row_sha256": "b6aa489fa4cd4ae9c12a64bed6260c3794587c62694baf298ed749172a204938"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "7b63086706aab3b35e02fb30a631edcfc557fe639f4c89006dba9e2e8b2e0323",
+      "row_sha256": "b64e7c7f6bf0098eccd18e3f8f42dcde16d8c72109c7d6f711146b01eb46dd65"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "041b3b3857be10c95bd665a8752469736122044edc935e3091bffafd405a9df8",
+      "row_sha256": "cac235a2bcc380481c9d9dc26acc6deb6988ba1e343fbffcdef48bc356e9a003"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "c4dd1484b3e28fc77ee73f95f160e00272e29608af815e41e0a5dd2ea51a6dda",
+      "row_sha256": "630c4f6275cf3eb6febeccf134335450b8b9b5c0f8f022860ab435588eeddbdf"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "b581402206e71cfdc6ebaba75bc1d4f45310e381e6a98b7a9312fd205f7f1b3a",
+      "row_sha256": "b0e9c05353d5059ee920c8c23585139f831f5f0a155881ca9f9c2279e0d4bcc2"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "ea0a5292af810c4433ab52a837b875eafab2ab7204f6ef959dbca67c1145f38b",
+      "row_sha256": "aba8e2217c11f1e07693adf1fdbcae53573b8684c3a4257082a95f4d36d003d0"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "930560e417357b0c440e2153e197dae2bc26cf91d7fe0bb3e741ee16e94b00d1",
+      "row_sha256": "6b6dea5edcfc0616c0b7a57b3b8cf2201b9de5d4847576c5403074dfc9ff1810"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "b3378c93f1fe1cec7ffce42367cfc96c4297fda11bc21a3db95abec92346fb4e",
+      "row_sha256": "a34e6fefb227495501f9551f131e4654999f11196c1147beb59e6c667180c5f3"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "e93398a5d1aab9165f27f69f01516fa3ee810a102eac34ce57cb6e92d9fb6e4e",
+      "row_sha256": "1db0e1b6b1d8608da5fc60b888ec7c138a73150a17bd3e5328fa9b8a391c1120"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "group_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "mechanism_id": "coordinates",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g006",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "dabce8dea126c21f7a2872b22d00bbae9f87befdc786d16b0ab236cdd530a494",
+      "row_sha256": "be3fb2174836edddb3fe148a24e62cae46f6b11ddd488d9a538cf496d19656a6"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "69c4e4a2efd22c252517fa1464374fa80fef39c8e95e373941f30a668b137638",
+      "row_sha256": "c0cdfdb4e63ef1015b10f2653c02e62d60d74c8f0a9e5d555d5e55f99d76c023"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "cc4d4aee8092c4c165141ee614dfd3ba6eb826ba56932d1f0de606c23a4dc65b",
+      "row_sha256": "e2e9929b4cdb33d590774bc11e5b858aa69655fc6da9875a9e2eb37617a47959"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "bea6ff0e98d546e4ee96436565d02afea859c1cdf57db520bf6f0add57b20f17",
+      "row_sha256": "4ac199bcf2a1519c14de70a3b130915a37822d8172ee139797d09eff73d10baa"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "b4c61bfcc11d91aad332f332817f3bf5fef799d0588c4fbabbfbb15a39268c67",
+      "row_sha256": "a302d9a8dbfe35a6233b2c418cda5b6fb45f1c0f2a090ce4e847093e4e7c5b7e"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "63c2cb5a9ddf319580e62692e9cd12d35bd3438cb10a1139013cd79f85591aa3",
+      "row_sha256": "fa90d442741b1338b8437db64a5176adc20838a081dbf21b99adf91a4e1f4a12"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "d8facac7df9ad2e18cc8f33faed2b844ea5f7a53aa4cbf3b8ac699cf489142c1",
+      "row_sha256": "68123b86618e0f64a097949c718d9bf8136c14b8c868242d98cc9087cbe5f8dc"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "69818ecd108512db68fc106efa7bd59ef2ac2b63e2529ab4121899fe08e679d0",
+      "row_sha256": "9514819a6737d351a15d62ff5c65302929cf4dd297ee7d44c056e596606950f3"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "8ef5ec93697bf7290edbad47c2d88bb82d5930533887508e61468ab34faec3fa",
+      "row_sha256": "4b6d4b199419260e69f0f2eaf2345b589f2edfea0f1e2c255cf7eb465d830c60"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "36ab51e4273c3cabe17314498f71483d3da32b11118788a20d03ddb029fa3a17",
+      "row_sha256": "4a4089cbb295e48ede4a21f7d8579e46fa3bccaed7d6d252262c4d1531b4bd0f"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "b341f9fba7f19e7770c2e7fa6bcbab7533f179a2337224174c9ea59ff9c0ae6e",
+      "row_sha256": "5a64d1061efb563038cb57324aaee9c75a5d0aa82f55802d97deddb93daedce3"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "4fb74eaf8ea9a1286a18928ad84c57c23dbbddcbd17af577d4ab10f9591c5876",
+      "row_sha256": "6661e270674aae9adecb6f593948bb50872130303a6b1f0a0e9eed586a1a9914"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "group_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "mechanism_id": "cooldown",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-b:g008",
+        "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+        "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+        "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+        "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+      },
+      "input_sha256": "a4e2015fd53fbb1ed362f1fa1905fef1d8419195900cc5dadd85af8e3a1c33ae",
+      "row_sha256": "4cec17d90a1e8db94a65f4e125e80f45b96affab9605aa0d82c8dc4c56877757"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "1f1e2f0c53d0db291f71a5197ae60d6021634db1dc240455ad744e9ca1f1d1bf",
+      "row_sha256": "346e84861f8fcf71d2defa9aceb51b3addc1924c3c44f9dbdab77108483358d2"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "8212ac6f75bff9ca2fca56851246801ce98b5fe53e9969bf1f70ef65a2414ea0",
+      "row_sha256": "cbe11dff18857b2c4600aad478c195f582ff9d5b0fa212454f06f58a5a501bf2"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "1b6c3a26479291ef6c586a690945f516c6cbafe2cc835b7d84c97e1ef3f95c79",
+      "row_sha256": "caf04d9333b44c0aa9c372d647e7cdab7fe0a43859e19bbad5d433ecbb09dac6"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "29327a33473e09c207d0feb85e462614c11caa61ecf3b1232decdbf4673577f2",
+      "row_sha256": "2f88d7a6af107af026e2c4440ea6fa1c915ee8f75b4bf983c6fe384a4153c7ce"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "14466a77b387bf0fd481f2121feb238091b3c87dd4d100ca425ecda7c965a2b3",
+      "row_sha256": "f3fc11b959358dcd9c8c2ada1f5ae75127559b08cfa24771c6bad4e7c73ac205"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "9357e7a5e9edc33e4b014e029cc5f7ca19e9eaea1b7c31e2344446886ff01631",
+      "row_sha256": "cc71313c0fa6dbdc6c0577621565fdab857959606678017fcf8ebca0779a277a"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "80c943859d89e42ab2f9d1eea0425858f5eddb5dec20ec2da4257b7219466324",
+      "row_sha256": "1ab498550b3c79d2614a9f99246f56d1db3860fbf006fd4dedbfb1d0a7022c04"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "4297bbf38b9d3b09ae4a3696f6d3a8606b22c48110aae4fd251f6296f166b3c3",
+      "row_sha256": "fdfef34db2b27bb5b49dc1408a496e31ca400d589bfe728eacacc69c9ea307cc"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "08dae9520d5945d507fc20524f9151b8ed7275275eab1d2b6a7b2e0bb58d1d9f",
+      "row_sha256": "4c7419592bf1d60ba3ec40ffc22fef18beb449ec4198c788274e77a1d2f22b22"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "ffd37bb18fb1472fe027e6ed87c0e9b6b8bef231020b2355e4bdc6f5b8cf4109",
+      "row_sha256": "498177a12671a6bf3048e478d3d9308ca4dbeee024a2f82a665f264c046b2e5c"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "9e30761cc63af1d47447ba6a9c4c7e94b4dfb3187e077e17e8169e9bd254378a",
+      "row_sha256": "7975c4de6774b187a0fa56d8a0d9a90e170f5c4ba80f80f243c86cb114c78023"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "group_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "mechanism_id": "lexicographic",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g002",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "082fcf9918175b1c471907b9ca46bacdcc518e20365e24f4f74b4df1bf7ae55b",
+      "row_sha256": "cf47644b134e2023611156f90161b35511c3d1c5b079938819c239e25dbdb449"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p01",
+      "group_id": "data:d3-seen-rules-v1:fifo:p01",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "8cc6c03930a9fafb837e94344c178e73f93edf14016bc999878125d0a3de0436",
+      "row_sha256": "3b97f1a05ddbc9422995fe82b3dffa8872dea273751901bde7929060f49bf27a"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p01",
+      "group_id": "data:d3-seen-rules-v1:fifo:p01",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "62ae33de374da3c47329dd62baca501d2a8ff8dfdb8fa18f84a7533df66462b9",
+      "row_sha256": "9cdb4cbb3efacded57562e43cc06c1ae8c0e4349ef2ada29c9e6e4cb3c3b26a4"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p02",
+      "group_id": "data:d3-seen-rules-v1:fifo:p02",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "df0958be89b3a6bfef6c5634846020c1a2494dde4b299208567f68c4a6d8ce74",
+      "row_sha256": "cc70d23d62fc9f4b4a11f24e84a81192cd6fe541a28a332a6de656d9fdcad7ff"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p02",
+      "group_id": "data:d3-seen-rules-v1:fifo:p02",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "509733c754c3c582e122d80b3096c885695431206727527b1777abf0cf783586",
+      "row_sha256": "cd26443e1d3d401ff218b0335386c83b4a3aa86cd5e28327c073a5f5f4f9d968"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p03",
+      "group_id": "data:d3-seen-rules-v1:fifo:p03",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "63bd0c2b80bc2d9a263f18db010c1b324bf911ac7d006ef77fddde03fad283e6",
+      "row_sha256": "d631460dae00d83ec4686a545d34ce668354d7512726a62a6a894ab06f43a855"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p03",
+      "group_id": "data:d3-seen-rules-v1:fifo:p03",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "552609b139cdb77b891bd3db14df952eab6e0da652b1b867bdb6fb49bcce7e66",
+      "row_sha256": "1f5501b9ea11d72bf4c2c8c50bb6ef3fa6dd8f05e87fb35e538e1b0c2a66a9a0"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p04",
+      "group_id": "data:d3-seen-rules-v1:fifo:p04",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "17a8f46927ab0f567313368e56df4edf8466d8c7b21ba6b86369f3a582596237",
+      "row_sha256": "0068bc714dd0e92be3dfea1c4c726ba7150d99bd5a920549e0de2d91ef3bbc89"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p04",
+      "group_id": "data:d3-seen-rules-v1:fifo:p04",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "86a7cf678c6d104ae4cea07b397b17e2f9727e45021ce643f78dcb4b1dcd15bc",
+      "row_sha256": "f221f7bf8681219211ca4d5d635bb76387446dcde758d05062d0281416c4e035"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p05",
+      "group_id": "data:d3-seen-rules-v1:fifo:p05",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "c0ed25dd24a3fd2a6fa60435a6e0aa77f91b5793a0d3c96621790b4a86fc6736",
+      "row_sha256": "a2128fcc1d2a337e4439db6f148c191ce5d14266485eb0b840251f2fa73e807e"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p05",
+      "group_id": "data:d3-seen-rules-v1:fifo:p05",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "f481cf8c2606a42a1543f180a4819cfde1daed782e8660bea7231d8e505ab317",
+      "row_sha256": "830852c7e499c8e1f6a8187ffd78b3f08eb07a92ff2a74919cfe47645c8acab8"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p06",
+      "group_id": "data:d3-seen-rules-v1:fifo:p06",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "2bf34e24a86286b2cce070a46926d6874fe182b1895e7a554ab388ce7999b694",
+      "row_sha256": "df1977109e7f778cab171e71a28ebcbe4c739b0df0235dc9a73c4cac0a7ce820"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p06",
+      "group_id": "data:d3-seen-rules-v1:fifo:p06",
+      "mechanism_id": "fifo",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g003",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "0c1511f83edfd0dd157957188b80547c2b6c74a0a97d9da06184ac85f2cc1a75",
+      "row_sha256": "e3db4d0a9ec2e0314a104c00adab97d469d8a45ab6d51693a7b3244a4a78479d"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p01",
+      "group_id": "data:d3-seen-rules-v1:discount:p01",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "a937bcca58740931aa475a82723f101f5fe27fa2f02450a8b8b6c99effb026f1",
+      "row_sha256": "d647128219ef9dccbb7908752bba844c7f598b58b7d3926527cd9056679b76ff"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p01",
+      "group_id": "data:d3-seen-rules-v1:discount:p01",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "8922218c110ca3a12c24288593dfe0c7feb70172760be6049d3a4be18af00e11",
+      "row_sha256": "f4b87d806a76ac4f728a3832b34d7ea4a90896fc3cd84572b879adefc6cd526c"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p02",
+      "group_id": "data:d3-seen-rules-v1:discount:p02",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "944c45858cf17840a31a90609c7e004a6a9ed7a2e16d17e581bbdff226a67fed",
+      "row_sha256": "1340f99395db6a60d6f8a431db042243081d951897271f1ddb9314604b07b2ee"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p02",
+      "group_id": "data:d3-seen-rules-v1:discount:p02",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "cdf5e04a3bea53d4bb467430699d9448b0c28f5d3391adfc91e83ea706bc4beb",
+      "row_sha256": "7c54ebc18970f85ab7e873288038c6c6dad9c504337222a028b61151b288f012"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p03",
+      "group_id": "data:d3-seen-rules-v1:discount:p03",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "123fa2eef6a1f5ff56505a58cc45091bc35b693b4f781f8baf945981171d8dd5",
+      "row_sha256": "68598cfa7ff98905578ff23522b6fde58a44ec8eaa067eb376553652874846a1"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p03",
+      "group_id": "data:d3-seen-rules-v1:discount:p03",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "23d8ca1cecd2e269805fc2f4afc8034bebaadd8ec81db230bd41abc8822ff136",
+      "row_sha256": "8ea07b93f24a2fdc768e8ca30c50a83db6d9ccd7a1bbe3c58d4d790840726db2"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p04",
+      "group_id": "data:d3-seen-rules-v1:discount:p04",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "5da804d1b16dd19b38789a1391e82b766974d05ff04b328947da50aa0217ec7c",
+      "row_sha256": "41fcad8bcdd81f1e87dca9d38413f2faa618929a213157d8bb37915f48a4e6eb"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p04",
+      "group_id": "data:d3-seen-rules-v1:discount:p04",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "452e64234e65cea9986c18813e047447149b275735d10d5a5584e9433beade09",
+      "row_sha256": "325c3449cc07607ae5b8deef7703c930c8d629a6de6be2d581a9899cc977885e"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p05",
+      "group_id": "data:d3-seen-rules-v1:discount:p05",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "55222fc94fafd24c2c7bd0f0540543f60712d9f1851622655a1e9c580d65b3b6",
+      "row_sha256": "d07bd8a92beaa2f6e924a2c084f3379658b8705c48cd609b480a18d5c8b4641f"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p05",
+      "group_id": "data:d3-seen-rules-v1:discount:p05",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "a6ac5708488529280847ad033de385a8c908a8b1bab1e159bb3229fe7d3320ee",
+      "row_sha256": "98a8ce588e42caf7ee6af33a0630d2bd176496ea7c701a7f9570889f5142dbf0"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p06",
+      "group_id": "data:d3-seen-rules-v1:discount:p06",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "5c11788d8d07f5adc6a23b439fb55bea8f5226829e1f1224e97bac30284e558d",
+      "row_sha256": "21625a3a52677836561c1b71f9f6cbf4df3c48daaab4171e3c9ec90800041602"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p06",
+      "group_id": "data:d3-seen-rules-v1:discount:p06",
+      "mechanism_id": "discount",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g005",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "6d50c736fc9ae2b659e93b06b006b1e35c703a9ea5bd2bca941c40f1dba2e4de",
+      "row_sha256": "7456d4df1983aecd8d7c3f3c0a58ad2f75a717e76fd3bd5906a49ac5be7713f0"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p01",
+      "group_id": "data:d3-seen-rules-v1:rounding:p01",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "dd951ded360fbe57e19b216993f70570b72ec2edeef298883ab14d52c632424f",
+      "row_sha256": "f7daae75613a7f8de551f355416cccf91cc156163272176d154c44492f25d77f"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p01",
+      "group_id": "data:d3-seen-rules-v1:rounding:p01",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "a74ab8331057144ae6e46f0791dd93253c1ad07538ef5bb34ed2a4e13a6891df",
+      "row_sha256": "83d97a52c3d322d8204fe6955cfabbb19ea4d52f1f4f0cdecea658c67e2c5608"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p02",
+      "group_id": "data:d3-seen-rules-v1:rounding:p02",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "53b5b273d8369fea0e94f486156105562d6e78919f747bfef1e3bacd1b411ec7",
+      "row_sha256": "8468af03bce3d65be64c125b7d3e75a78c670f86a8f229c4d38f90837e1fc177"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p02",
+      "group_id": "data:d3-seen-rules-v1:rounding:p02",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "e2634aa91fcb29c824fdc53c02f1187e320aa27ad11aa483427fa2d94ac25af7",
+      "row_sha256": "5c7b8bdb846615775047488f3718dbd8c9af32f6eb23cd36ee5b71c094834733"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p03",
+      "group_id": "data:d3-seen-rules-v1:rounding:p03",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "ffca06b39a09e2c8be080c6e479095e571c6112bf38d6d9c4722fbd7a66daeba",
+      "row_sha256": "3076bf2e84f39a84987b269bb284bfdaba6ff8c4aa633bcf9b2ac6b14c867da4"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p03",
+      "group_id": "data:d3-seen-rules-v1:rounding:p03",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "e66375f751560c00646128d7044f2ba4892b43e19b86a310149c7f970ca17152",
+      "row_sha256": "780f18a2bd0b51e9bb32da43908acd836df02d941d9eacf4dd0a3a1dfb2a0e6b"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p04",
+      "group_id": "data:d3-seen-rules-v1:rounding:p04",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "2a02c935425c5e0da584d3fd577aa9db257c9a565782354dc6ff4a26e19c5fe4",
+      "row_sha256": "5740253c13fdcd50c7224aa2b2ed579bfb0069f6d63f15a744c9bfc8e1c6519f"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p04",
+      "group_id": "data:d3-seen-rules-v1:rounding:p04",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "5947c230cdd15dc4bae7d543eab6f6ce8c375acaad69f40fd2fb57960dfb6eb6",
+      "row_sha256": "cfec03ecfffe18e1716d28210462439c5820518d1d977dbd25bfe7fa2d43fe01"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p05",
+      "group_id": "data:d3-seen-rules-v1:rounding:p05",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "9a7820010878492ab164b4eab35231bda381a1da93da849603e1b32a799ce0ef",
+      "row_sha256": "14d700ff6c2476384da787c985526e0d8dd6381e38cc75e05dcf0a94945f036a"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p05",
+      "group_id": "data:d3-seen-rules-v1:rounding:p05",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "4ee0e864b14eafbd998c5298b3670bceec6a8ec57af5a3e10672d4fd1ee5d75b",
+      "row_sha256": "f2ca62667109caa86c3190f08c3e083c13757413a72413383eb304f9398b25d1"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p06",
+      "group_id": "data:d3-seen-rules-v1:rounding:p06",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "8dabc58ee339945261c943d42813be9791557a176c257b367ec6682620c633aa",
+      "row_sha256": "70021958fe0ef051edcf9ddc164a482af607bbc940b9b9a6b4d9f9751e170974"
+    },
+    {
+      "case_id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p06",
+      "group_id": "data:d3-seen-rules-v1:rounding:p06",
+      "mechanism_id": "rounding",
+      "task_family": "rule_application",
+      "split": "validation",
+      "label_basis": "rule_verified",
+      "provenance_kind": "programmatic",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "row_teacher_model": "openai/gpt-sol",
+      "teacher_revision": "unknown",
+      "training_exposure": {
+        "dataset_id": "data-pilot-v2",
+        "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+        "group_id": "data:pilot-v2:rule-a:g007",
+        "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+        "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+        "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+        "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+      },
+      "input_sha256": "7b8e37c5cc807283838b4c05d94845d4337f8e4bf40a4a87fde540c7bde957cb",
+      "row_sha256": "167f2c25f7b0aee6d12c462ef14e5b46e8c068aac64c33c339518b197aa9e963"
+    }
+  ],
+  "policies": [
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p01:c01",
+        "data:d3-seen-rules-v1:cooldown:p01:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p02:c01",
+        "data:d3-seen-rules-v1:cooldown:p02:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p03:c01",
+        "data:d3-seen-rules-v1:cooldown:p03:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p04:c01",
+        "data:d3-seen-rules-v1:cooldown:p04:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p05:c01",
+        "data:d3-seen-rules-v1:cooldown:p05:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p06:c01",
+        "data:d3-seen-rules-v1:cooldown:p06:c02"
+      ],
+      "mechanism_id": "cooldown"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p01:c01",
+        "data:d3-seen-rules-v1:coordinates:p01:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p02:c01",
+        "data:d3-seen-rules-v1:coordinates:p02:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p03:c01",
+        "data:d3-seen-rules-v1:coordinates:p03:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p04:c01",
+        "data:d3-seen-rules-v1:coordinates:p04:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p05:c01",
+        "data:d3-seen-rules-v1:coordinates:p05:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p06:c01",
+        "data:d3-seen-rules-v1:coordinates:p06:c02"
+      ],
+      "mechanism_id": "coordinates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p01:c01",
+        "data:d3-seen-rules-v1:discount:p01:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p02:c01",
+        "data:d3-seen-rules-v1:discount:p02:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p03:c01",
+        "data:d3-seen-rules-v1:discount:p03:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p04:c01",
+        "data:d3-seen-rules-v1:discount:p04:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p05:c01",
+        "data:d3-seen-rules-v1:discount:p05:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:discount:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:discount:p06:c01",
+        "data:d3-seen-rules-v1:discount:p06:c02"
+      ],
+      "mechanism_id": "discount"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p01:c01",
+        "data:d3-seen-rules-v1:fifo:p01:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p02:c01",
+        "data:d3-seen-rules-v1:fifo:p02:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p03:c01",
+        "data:d3-seen-rules-v1:fifo:p03:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p04:c01",
+        "data:d3-seen-rules-v1:fifo:p04:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p05:c01",
+        "data:d3-seen-rules-v1:fifo:p05:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:fifo:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:fifo:p06:c01",
+        "data:d3-seen-rules-v1:fifo:p06:c02"
+      ],
+      "mechanism_id": "fifo"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p01:c01",
+        "data:d3-seen-rules-v1:lexicographic:p01:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p02:c01",
+        "data:d3-seen-rules-v1:lexicographic:p02:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p03:c01",
+        "data:d3-seen-rules-v1:lexicographic:p03:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p04:c01",
+        "data:d3-seen-rules-v1:lexicographic:p04:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p05:c01",
+        "data:d3-seen-rules-v1:lexicographic:p05:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:lexicographic:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:lexicographic:p06:c01",
+        "data:d3-seen-rules-v1:lexicographic:p06:c02"
+      ],
+      "mechanism_id": "lexicographic"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p01:c01",
+        "data:d3-seen-rules-v1:packs:p01:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p02:c01",
+        "data:d3-seen-rules-v1:packs:p02:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p03:c01",
+        "data:d3-seen-rules-v1:packs:p03:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p04:c01",
+        "data:d3-seen-rules-v1:packs:p04:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p05:c01",
+        "data:d3-seen-rules-v1:packs:p05:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p06:c01",
+        "data:d3-seen-rules-v1:packs:p06:c02"
+      ],
+      "mechanism_id": "packs"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p01:c01",
+        "data:d3-seen-rules-v1:rates:p01:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p02:c01",
+        "data:d3-seen-rules-v1:rates:p02:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p03:c01",
+        "data:d3-seen-rules-v1:rates:p03:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p04:c01",
+        "data:d3-seen-rules-v1:rates:p04:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p05:c01",
+        "data:d3-seen-rules-v1:rates:p05:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p06:c01",
+        "data:d3-seen-rules-v1:rates:p06:c02"
+      ],
+      "mechanism_id": "rates"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p01:c01",
+        "data:d3-seen-rules-v1:rounding:p01:c02"
+      ],
+      "mechanism_id": "rounding"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p02",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p02:c01",
+        "data:d3-seen-rules-v1:rounding:p02:c02"
+      ],
+      "mechanism_id": "rounding"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p03",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p03:c01",
+        "data:d3-seen-rules-v1:rounding:p03:c02"
+      ],
+      "mechanism_id": "rounding"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p04",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p04:c01",
+        "data:d3-seen-rules-v1:rounding:p04:c02"
+      ],
+      "mechanism_id": "rounding"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p05",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p05:c01",
+        "data:d3-seen-rules-v1:rounding:p05:c02"
+      ],
+      "mechanism_id": "rounding"
+    },
+    {
+      "policy_instance_id": "data:d3-seen-rules-v1:rounding:p06",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rounding:p06:c01",
+        "data:d3-seen-rules-v1:rounding:p06:c02"
+      ],
+      "mechanism_id": "rounding"
+    }
+  ],
+  "mechanisms": {
+    "packs": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-b:g002",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "resolved_mechanism_name": "ceiling pack count with minimum purchase",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "ceiling pack count with minimum purchase"
+    },
+    "rates": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-b:g005",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "resolved_mechanism_name": "rate comparison by cross multiplication",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "rate comparison by cross multiplication"
+    },
+    "coordinates": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-b:g006",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "resolved_mechanism_name": "ordered coordinate transformations",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "ordered coordinate transformations"
+    },
+    "cooldown": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-b:g008",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "assignment_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "resolved_mechanism_name": "cooldown-constrained appointment scheduling",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "cooldown-constrained appointment scheduling"
+    },
+    "lexicographic": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-a:g002",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "resolved_mechanism_name": "lexicographic tuple ranking",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "lexicographic tuple ranking"
+    },
+    "fifo": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-a:g003",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "resolved_mechanism_name": "FIFO stock batch issuing",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "FIFO stock batch issuing"
+    },
+    "discount": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-a:g005",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "resolved_mechanism_name": "ordered fixed and percentage discount composition",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "ordered fixed and percentage discount composition"
+    },
+    "rounding": {
+      "dataset_id": "data-pilot-v2",
+      "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "group_id": "data:pilot-v2:rule-a:g007",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "assignment_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "resolved_mechanism_name": "nearest rounding with explicit half-up ties",
+      "train_group_rows": 20,
+      "sidecar_mechanism_name": "nearest rounding with explicit half-up ties"
+    }
+  }
+}

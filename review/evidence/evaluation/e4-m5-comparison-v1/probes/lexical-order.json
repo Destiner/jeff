@@ -1,0 +1,3859 @@
+{
+  "report_schema_version": "evaluation/0.1",
+  "examples_file": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+    "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+  },
+  "pair_file": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+    "sha256": "f7e7b26e74e0fb33ef7745c6ef32bad366fba6d6eb190051135e8fceb3311895"
+  },
+  "prediction_report": {
+    "report_schema_version": "evaluation/0.1",
+    "prediction_file": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/lexical.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    "reference_provenance": [
+      {
+        "kind": "teacher",
+        "source": "evaluation-probes-v1",
+        "label_basis": "teacher",
+        "teacher_model": "unknown",
+        "rows": 24,
+        "groups": 12,
+        "families": [
+          "intent",
+          "rule_application",
+          "sentiment"
+        ]
+      }
+    ],
+    "status": "ok",
+    "policy": {
+      "probability_sum_absolute_tolerance": 1e-06,
+      "accepted_roundoff": "divide by observed sum; never clip probabilities",
+      "log_loss": "natural log; exact zero target probability is positive infinity",
+      "tie_break": "first option in reference input order; exact ties",
+      "invalid_predictions": "excluded from conditional quality; unsuccessful in all-example top-choice rate"
+    },
+    "prediction_records": 24,
+    "record_diagnostics": [],
+    "extra_prediction_ids": [],
+    "duplicate_prediction_ids": [],
+    "unidentifiable_records": 0,
+    "roundoff": {
+      "normalized_rows": 0,
+      "max_sum_deviation": 0.0
+    },
+    "overall": {
+      "examples": 24,
+      "groups": 12,
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "failures": {
+        "missing": 0,
+        "invalid": 0,
+        "duplicate": 0
+      },
+      "top_choice": {
+        "name": "teacher_agreement",
+        "on_valid": {
+          "numerator": 9,
+          "denominator": 24,
+          "value": 0.375
+        },
+        "on_all_failure_as_unsuccessful": {
+          "numerator": 9,
+          "denominator": 24,
+          "value": 0.375
+        }
+      },
+      "log_loss": {
+        "n": 24,
+        "zero_target_count": 0,
+        "status": "finite",
+        "mean": 1.0470441093070695
+      },
+      "brier": {
+        "n": 24,
+        "mean": 0.6462891168734193,
+        "definition": "sum over options, not divided by option count"
+      },
+      "ties": {
+        "examples": 8,
+        "sizes": {
+          "1": 16,
+          "2": 6,
+          "4": 2
+        }
+      },
+      "uniform_random_choice_expected_agreement": 0.3541666666666667,
+      "reliability": {
+        "n": 24,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "n": 20,
+            "mean_confidence": 0.3436036068590205,
+            "agreement": 0.45,
+            "confidence_minus_agreement": -0.10639639314097948
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "n": 4,
+            "mean_confidence": 0.5497606919334671,
+            "agreement": 0.0,
+            "confidence_minus_agreement": 0.5497606919334671
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          }
+        ],
+        "ece": 0.1802904429397274,
+        "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+        "sparse": true
+      }
+    },
+    "per_family": {
+      "intent": {
+        "examples": 8,
+        "groups": 4,
+        "coverage": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 2,
+            "denominator": 8,
+            "value": 0.25
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 2,
+            "denominator": 8,
+            "value": 0.25
+          }
+        },
+        "log_loss": {
+          "n": 8,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0945219210636132
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.66411995565691,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "1": 6,
+            "2": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 8,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 8,
+              "mean_confidence": 0.3516464381202975,
+              "agreement": 0.25,
+              "confidence_minus_agreement": 0.1016464381202975
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.1016464381202975,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "rule_application": {
+        "examples": 8,
+        "groups": 4,
+        "coverage": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 4,
+            "denominator": 8,
+            "value": 0.5
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 4,
+            "denominator": 8,
+            "value": 0.5
+          }
+        },
+        "log_loss": {
+          "n": 8,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 0.9015991085790662
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.6037279023338782,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 8
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.41666666666666663,
+        "reliability": {
+          "n": 8,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 4,
+              "mean_confidence": 0.3662506582787222,
+              "agreement": 1.0,
+              "confidence_minus_agreement": -0.6337493417212778
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 4,
+              "mean_confidence": 0.5497606919334671,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.5497606919334671
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.5917550168273724,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "sentiment": {
+        "examples": 8,
+        "groups": 4,
+        "coverage": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 3,
+            "denominator": 8,
+            "value": 0.375
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 3,
+            "denominator": 8,
+            "value": 0.375
+          }
+        },
+        "log_loss": {
+          "n": 8,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.1450112982785292
+        },
+        "brier": {
+          "n": 8,
+          "mean": 0.6710194926294697,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 6,
+          "sizes": {
+            "1": 2,
+            "2": 4,
+            "4": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3125,
+        "reliability": {
+          "n": 8,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 8,
+              "mean_confidence": 0.3242372498878926,
+              "agreement": 0.375,
+              "confidence_minus_agreement": -0.0507627501121074
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.0507627501121074,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      }
+    },
+    "per_source_group": {
+      "eval.validation.intent.01": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0581964639873493
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.641137168288546,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.35546600767162534,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.35546600767162534
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.35546600767162534,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.intent.02": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0776312555982286
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.6531965305176285,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.34697598752510256,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.34697598752510256
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.34697598752510256,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.intent.03": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.204137749907583
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.7351039108190348,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "2": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.35002473979683085,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.35002473979683085
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.35002473979683085,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.intent.04": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0381222147612916
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.6270422130024306,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.35411901748763136,
+              "agreement": 1.0,
+              "confidence_minus_agreement": -0.6458809825123686
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.6458809825123686,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.rule_application.01": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 0.82896577728194
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.635063391747356,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.5,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.5634995083171573,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.5634995083171573
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.5634995083171573,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.rule_application.02": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0300191875668723
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.620211199923977,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.3570001105399355,
+              "agreement": 1.0,
+              "confidence_minus_agreement": -0.6429998894600645
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.6429998894600645,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.rule_application.03": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 0.9794935960187673
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.5849981155283788,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.3755012060175089,
+              "agreement": 1.0,
+              "confidence_minus_agreement": -0.6244987939824911
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.6244987939824911,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.rule_application.04": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 0.7679178734486855
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.574638902135801,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.5,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.5360218755497769,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.5360218755497769
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.5360218755497769,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.sentiment.01": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0540799075036795
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.6376899688574251,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "2": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.34851294397571725,
+              "agreement": 0.5,
+              "confidence_minus_agreement": -0.15148705602428275
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.15148705602428275,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.sentiment.02": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.3862943611198906
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.75,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "4": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.25,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.25,
+              "agreement": 0.5,
+              "confidence_minus_agreement": -0.25
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.25,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.sentiment.03": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0599974847375875
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.641453303459791,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "2": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.3464566817584307,
+              "agreement": 0.5,
+              "confidence_minus_agreement": -0.1535433182415693
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.1535433182415693,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "eval.validation.sentiment.04": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0796734397529597
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.6549346982006627,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.3519793738174225,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.3519793738174225
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.3519793738174225,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      }
+    },
+    "per_label_basis": {
+      "teacher": {
+        "examples": 24,
+        "groups": 12,
+        "coverage": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 9,
+            "denominator": 24,
+            "value": 0.375
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 9,
+            "denominator": 24,
+            "value": 0.375
+          }
+        },
+        "log_loss": {
+          "n": 24,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.0470441093070695
+        },
+        "brier": {
+          "n": 24,
+          "mean": 0.6462891168734193,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 8,
+          "sizes": {
+            "1": 16,
+            "2": 6,
+            "4": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3541666666666667,
+        "reliability": {
+          "n": 24,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 20,
+              "mean_confidence": 0.3436036068590205,
+              "agreement": 0.45,
+              "confidence_minus_agreement": -0.10639639314097948
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 4,
+              "mean_confidence": 0.5497606919334671,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.5497606919334671
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.1802904429397274,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      }
+    },
+    "per_option_count": {
+      "2": {
+        "examples": 4,
+        "groups": 2,
+        "coverage": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0.0
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0.0
+          }
+        },
+        "log_loss": {
+          "n": 4,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 0.7984418253653127
+        },
+        "brier": {
+          "n": 4,
+          "mean": 0.6048511469415785,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 0,
+          "sizes": {
+            "1": 4
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.5,
+        "reliability": {
+          "n": 4,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 4,
+              "mean_confidence": 0.5497606919334671,
+              "agreement": 0.0,
+              "confidence_minus_agreement": 0.5497606919334671
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.5497606919334671,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "3": {
+        "examples": 18,
+        "groups": 9,
+        "coverage": {
+          "numerator": 18,
+          "denominator": 18,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 8,
+            "denominator": 18,
+            "value": 0.4444444444444444
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 8,
+            "denominator": 18,
+            "value": 0.4444444444444444
+          }
+        },
+        "log_loss": {
+          "n": 18,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.06459458887048
+        },
+        "brier": {
+          "n": 18,
+          "mean": 0.6439741231775415,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 6,
+          "sizes": {
+            "1": 12,
+            "2": 6
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.3333333333333333,
+        "reliability": {
+          "n": 18,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 18,
+              "mean_confidence": 0.35400400762113393,
+              "agreement": 0.4444444444444444,
+              "confidence_minus_agreement": -0.09044043682331049
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.09044043682331049,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      },
+      "4": {
+        "examples": 2,
+        "groups": 1,
+        "coverage": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "failures": {
+          "missing": 0,
+          "invalid": 0,
+          "duplicate": 0
+        },
+        "top_choice": {
+          "name": "teacher_agreement",
+          "on_valid": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          },
+          "on_all_failure_as_unsuccessful": {
+            "numerator": 1,
+            "denominator": 2,
+            "value": 0.5
+          }
+        },
+        "log_loss": {
+          "n": 2,
+          "zero_target_count": 0,
+          "status": "finite",
+          "mean": 1.3862943611198906
+        },
+        "brier": {
+          "n": 2,
+          "mean": 0.75,
+          "definition": "sum over options, not divided by option count"
+        },
+        "ties": {
+          "examples": 2,
+          "sizes": {
+            "4": 2
+          }
+        },
+        "uniform_random_choice_expected_agreement": 0.25,
+        "reliability": {
+          "n": 2,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.4,
+              "upper_inclusive": false,
+              "n": 2,
+              "mean_confidence": 0.25,
+              "agreement": 0.5,
+              "confidence_minus_agreement": -0.25
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.6,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.8,
+              "upper_inclusive": false,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "upper_inclusive": true,
+              "n": 0,
+              "mean_confidence": null,
+              "agreement": null,
+              "confidence_minus_agreement": null
+            }
+          ],
+          "ece": 0.25,
+          "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+          "sparse": true
+        }
+      }
+    },
+    "per_family_label_basis": [
+      {
+        "family": "intent",
+        "label_basis": "teacher",
+        "metrics": {
+          "examples": 8,
+          "groups": 4,
+          "coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "top_choice": {
+            "name": "teacher_agreement",
+            "on_valid": {
+              "numerator": 2,
+              "denominator": 8,
+              "value": 0.25
+            },
+            "on_all_failure_as_unsuccessful": {
+              "numerator": 2,
+              "denominator": 8,
+              "value": 0.25
+            }
+          },
+          "log_loss": {
+            "n": 8,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0945219210636132
+          },
+          "brier": {
+            "n": 8,
+            "mean": 0.66411995565691,
+            "definition": "sum over options, not divided by option count"
+          },
+          "ties": {
+            "examples": 2,
+            "sizes": {
+              "1": 6,
+              "2": 2
+            }
+          },
+          "uniform_random_choice_expected_agreement": 0.3333333333333333,
+          "reliability": {
+            "n": 8,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.4,
+                "upper_inclusive": false,
+                "n": 8,
+                "mean_confidence": 0.3516464381202975,
+                "agreement": 0.25,
+                "confidence_minus_agreement": 0.1016464381202975
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.6,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.8,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "upper_inclusive": true,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              }
+            ],
+            "ece": 0.1016464381202975,
+            "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+            "sparse": true
+          }
+        }
+      },
+      {
+        "family": "rule_application",
+        "label_basis": "teacher",
+        "metrics": {
+          "examples": 8,
+          "groups": 4,
+          "coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "top_choice": {
+            "name": "teacher_agreement",
+            "on_valid": {
+              "numerator": 4,
+              "denominator": 8,
+              "value": 0.5
+            },
+            "on_all_failure_as_unsuccessful": {
+              "numerator": 4,
+              "denominator": 8,
+              "value": 0.5
+            }
+          },
+          "log_loss": {
+            "n": 8,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.9015991085790662
+          },
+          "brier": {
+            "n": 8,
+            "mean": 0.6037279023338782,
+            "definition": "sum over options, not divided by option count"
+          },
+          "ties": {
+            "examples": 0,
+            "sizes": {
+              "1": 8
+            }
+          },
+          "uniform_random_choice_expected_agreement": 0.41666666666666663,
+          "reliability": {
+            "n": 8,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.4,
+                "upper_inclusive": false,
+                "n": 4,
+                "mean_confidence": 0.3662506582787222,
+                "agreement": 1.0,
+                "confidence_minus_agreement": -0.6337493417212778
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.6,
+                "upper_inclusive": false,
+                "n": 4,
+                "mean_confidence": 0.5497606919334671,
+                "agreement": 0.0,
+                "confidence_minus_agreement": 0.5497606919334671
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.8,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "upper_inclusive": true,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              }
+            ],
+            "ece": 0.5917550168273724,
+            "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+            "sparse": true
+          }
+        }
+      },
+      {
+        "family": "sentiment",
+        "label_basis": "teacher",
+        "metrics": {
+          "examples": 8,
+          "groups": 4,
+          "coverage": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1.0
+          },
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "top_choice": {
+            "name": "teacher_agreement",
+            "on_valid": {
+              "numerator": 3,
+              "denominator": 8,
+              "value": 0.375
+            },
+            "on_all_failure_as_unsuccessful": {
+              "numerator": 3,
+              "denominator": 8,
+              "value": 0.375
+            }
+          },
+          "log_loss": {
+            "n": 8,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.1450112982785292
+          },
+          "brier": {
+            "n": 8,
+            "mean": 0.6710194926294697,
+            "definition": "sum over options, not divided by option count"
+          },
+          "ties": {
+            "examples": 6,
+            "sizes": {
+              "1": 2,
+              "2": 4,
+              "4": 2
+            }
+          },
+          "uniform_random_choice_expected_agreement": 0.3125,
+          "reliability": {
+            "n": 8,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.2,
+                "upper": 0.4,
+                "upper_inclusive": false,
+                "n": 8,
+                "mean_confidence": 0.3242372498878926,
+                "agreement": 0.375,
+                "confidence_minus_agreement": -0.0507627501121074
+              },
+              {
+                "lower": 0.4,
+                "upper": 0.6,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.6,
+                "upper": 0.8,
+                "upper_inclusive": false,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "upper_inclusive": true,
+                "n": 0,
+                "mean_confidence": null,
+                "agreement": null,
+                "confidence_minus_agreement": null
+              }
+            ],
+            "ece": 0.0507627501121074,
+            "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+            "sparse": true
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "eval.validation.intent.01.original",
+        "group_id": "eval.validation.intent.01",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.29745277266299,
+          "o1": 0.34708121966538463,
+          "o2": 0.35546600767162534
+        },
+        "target_probability": 0.34708121966538463,
+        "log_loss": 1.0581964639873493,
+        "brier": 0.641137168288546,
+        "confidence": 0.35546600767162534,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.intent.01.reversed",
+        "group_id": "eval.validation.intent.01",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": false,
+        "probabilities": {
+          "o2": 0.35546600767162534,
+          "o1": 0.34708121966538463,
+          "o0": 0.29745277266299
+        },
+        "target_probability": 0.34708121966538463,
+        "log_loss": 1.0581964639873493,
+        "brier": 0.641137168288546,
+        "confidence": 0.35546600767162534,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.intent.02.original",
+        "group_id": "eval.validation.intent.02",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o0",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.34697598752510256,
+          "o1": 0.3126231183502548,
+          "o2": 0.3404008941246426
+        },
+        "target_probability": 0.3404008941246426,
+        "log_loss": 1.0776312555982286,
+        "brier": 0.6531965305176285,
+        "confidence": 0.34697598752510256,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.intent.02.reversed",
+        "group_id": "eval.validation.intent.02",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o0",
+        "correct": false,
+        "probabilities": {
+          "o2": 0.3404008941246426,
+          "o1": 0.3126231183502548,
+          "o0": 0.34697598752510256
+        },
+        "target_probability": 0.3404008941246426,
+        "log_loss": 1.0776312555982286,
+        "brier": 0.6531965305176285,
+        "confidence": 0.34697598752510256,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.intent.03.original",
+        "group_id": "eval.validation.intent.03",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.2999505204063383,
+          "o1": 0.35002473979683085,
+          "o2": 0.35002473979683085
+        },
+        "target_probability": 0.2999505204063383,
+        "log_loss": 1.204137749907583,
+        "brier": 0.7351039108190348,
+        "confidence": 0.35002473979683085,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.intent.03.reversed",
+        "group_id": "eval.validation.intent.03",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": false,
+        "probabilities": {
+          "o2": 0.35002473979683085,
+          "o1": 0.35002473979683085,
+          "o0": 0.2999505204063383
+        },
+        "target_probability": 0.2999505204063383,
+        "log_loss": 1.204137749907583,
+        "brier": 0.7351039108190348,
+        "confidence": 0.35002473979683085,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.intent.04.original",
+        "group_id": "eval.validation.intent.04",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": true,
+        "probabilities": {
+          "o0": 0.34842428655551816,
+          "o1": 0.35411901748763136,
+          "o2": 0.2974566959568505
+        },
+        "target_probability": 0.35411901748763136,
+        "log_loss": 1.0381222147612916,
+        "brier": 0.6270422130024306,
+        "confidence": 0.35411901748763136,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.intent.04.reversed",
+        "group_id": "eval.validation.intent.04",
+        "task_family": "intent",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": true,
+        "probabilities": {
+          "o2": 0.2974566959568505,
+          "o1": 0.35411901748763136,
+          "o0": 0.34842428655551816
+        },
+        "target_probability": 0.35411901748763136,
+        "log_loss": 1.0381222147612916,
+        "brier": 0.6270422130024306,
+        "confidence": 0.35411901748763136,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.sentiment.01.original",
+        "group_id": "eval.validation.sentiment.01",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o0",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.34851294397571725,
+          "o1": 0.3029741120485656,
+          "o2": 0.34851294397571725
+        },
+        "target_probability": 0.34851294397571725,
+        "log_loss": 1.0540799075036795,
+        "brier": 0.6376899688574251,
+        "confidence": 0.34851294397571725,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.sentiment.01.reversed",
+        "group_id": "eval.validation.sentiment.01",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": true,
+        "probabilities": {
+          "o2": 0.34851294397571725,
+          "o1": 0.3029741120485656,
+          "o0": 0.34851294397571725
+        },
+        "target_probability": 0.34851294397571725,
+        "log_loss": 1.0540799075036795,
+        "brier": 0.6376899688574251,
+        "confidence": 0.34851294397571725,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.sentiment.02.original",
+        "group_id": "eval.validation.sentiment.02",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 4,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o0",
+        "correct": true,
+        "probabilities": {
+          "o0": 0.25,
+          "o1": 0.25,
+          "o2": 0.25,
+          "o3": 0.25
+        },
+        "target_probability": 0.25,
+        "log_loss": 1.3862943611198906,
+        "brier": 0.75,
+        "confidence": 0.25,
+        "tie_size": 4
+      },
+      {
+        "id": "eval.validation.sentiment.02.reversed",
+        "group_id": "eval.validation.sentiment.02",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 4,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o3",
+        "correct": false,
+        "probabilities": {
+          "o3": 0.25,
+          "o2": 0.25,
+          "o1": 0.25,
+          "o0": 0.25
+        },
+        "target_probability": 0.25,
+        "log_loss": 1.3862943611198906,
+        "brier": 0.75,
+        "confidence": 0.25,
+        "tie_size": 4
+      },
+      {
+        "id": "eval.validation.sentiment.03.original",
+        "group_id": "eval.validation.sentiment.03",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o0",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.3464566817584307,
+          "o1": 0.3464566817584307,
+          "o2": 0.30708663648313866
+        },
+        "target_probability": 0.3464566817584307,
+        "log_loss": 1.0599974847375875,
+        "brier": 0.641453303459791,
+        "confidence": 0.3464566817584307,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.sentiment.03.reversed",
+        "group_id": "eval.validation.sentiment.03",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": true,
+        "probabilities": {
+          "o2": 0.30708663648313866,
+          "o1": 0.3464566817584307,
+          "o0": 0.3464566817584307
+        },
+        "target_probability": 0.3464566817584307,
+        "log_loss": 1.0599974847375875,
+        "brier": 0.641453303459791,
+        "confidence": 0.3464566817584307,
+        "tie_size": 2
+      },
+      {
+        "id": "eval.validation.sentiment.04.original",
+        "group_id": "eval.validation.sentiment.04",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.3083141840294145,
+          "o1": 0.3519793738174225,
+          "o2": 0.339706442153163
+        },
+        "target_probability": 0.339706442153163,
+        "log_loss": 1.0796734397529597,
+        "brier": 0.6549346982006627,
+        "confidence": 0.3519793738174225,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.sentiment.04.reversed",
+        "group_id": "eval.validation.sentiment.04",
+        "task_family": "sentiment",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o2": 0.339706442153163,
+          "o1": 0.3519793738174225,
+          "o0": 0.3083141840294145
+        },
+        "target_probability": 0.339706442153163,
+        "log_loss": 1.0796734397529597,
+        "brier": 0.6549346982006627,
+        "confidence": 0.3519793738174225,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.01.original",
+        "group_id": "eval.validation.rule_application.01",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 2,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.4365004916828427,
+          "o1": 0.5634995083171573
+        },
+        "target_probability": 0.4365004916828427,
+        "log_loss": 0.82896577728194,
+        "brier": 0.635063391747356,
+        "confidence": 0.5634995083171573,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.01.reversed",
+        "group_id": "eval.validation.rule_application.01",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 2,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o1": 0.5634995083171573,
+          "o0": 0.4365004916828427
+        },
+        "target_probability": 0.4365004916828427,
+        "log_loss": 0.82896577728194,
+        "brier": 0.635063391747356,
+        "confidence": 0.5634995083171573,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.02.original",
+        "group_id": "eval.validation.rule_application.02",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": true,
+        "probabilities": {
+          "o0": 0.32585385995051136,
+          "o1": 0.3171460295095531,
+          "o2": 0.3570001105399355
+        },
+        "target_probability": 0.3570001105399355,
+        "log_loss": 1.0300191875668723,
+        "brier": 0.620211199923977,
+        "confidence": 0.3570001105399355,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.02.reversed",
+        "group_id": "eval.validation.rule_application.02",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o2",
+        "status": "valid",
+        "choice_id": "o2",
+        "correct": true,
+        "probabilities": {
+          "o2": 0.3570001105399355,
+          "o1": 0.3171460295095531,
+          "o0": 0.32585385995051136
+        },
+        "target_probability": 0.3570001105399355,
+        "log_loss": 1.0300191875668723,
+        "brier": 0.620211199923977,
+        "confidence": 0.3570001105399355,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.03.original",
+        "group_id": "eval.validation.rule_application.03",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": true,
+        "probabilities": {
+          "o0": 0.3122493969912456,
+          "o1": 0.3755012060175089,
+          "o2": 0.3122493969912456
+        },
+        "target_probability": 0.3755012060175089,
+        "log_loss": 0.9794935960187673,
+        "brier": 0.5849981155283788,
+        "confidence": 0.3755012060175089,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.03.reversed",
+        "group_id": "eval.validation.rule_application.03",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 3,
+        "target_id": "o1",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": true,
+        "probabilities": {
+          "o2": 0.3122493969912456,
+          "o1": 0.3755012060175089,
+          "o0": 0.3122493969912456
+        },
+        "target_probability": 0.3755012060175089,
+        "log_loss": 0.9794935960187673,
+        "brier": 0.5849981155283788,
+        "confidence": 0.3755012060175089,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.04.original",
+        "group_id": "eval.validation.rule_application.04",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 2,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o0": 0.4639781244502231,
+          "o1": 0.5360218755497769
+        },
+        "target_probability": 0.4639781244502231,
+        "log_loss": 0.7679178734486855,
+        "brier": 0.574638902135801,
+        "confidence": 0.5360218755497769,
+        "tie_size": 1
+      },
+      {
+        "id": "eval.validation.rule_application.04.reversed",
+        "group_id": "eval.validation.rule_application.04",
+        "task_family": "rule_application",
+        "label_basis": "teacher",
+        "option_count": 2,
+        "target_id": "o0",
+        "status": "valid",
+        "choice_id": "o1",
+        "correct": false,
+        "probabilities": {
+          "o1": 0.5360218755497769,
+          "o0": 0.4639781244502231
+        },
+        "target_probability": 0.4639781244502231,
+        "log_loss": 0.7679178734486855,
+        "brier": 0.574638902135801,
+        "confidence": 0.5360218755497769,
+        "tie_size": 1
+      }
+    ]
+  },
+  "overall": {
+    "pairs": 12,
+    "source_groups": 12,
+    "complete_pair_coverage": {
+      "numerator": 12,
+      "denominator": 12,
+      "value": 1.0
+    },
+    "choice_consistency": {
+      "numerator": 8,
+      "denominator": 12,
+      "value": 0.6666666666666666
+    },
+    "choice_consistency_without_ties": {
+      "numerator": 8,
+      "denominator": 8,
+      "value": 1.0
+    },
+    "either_tied": 4,
+    "both_correct": 3,
+    "original_only_correct": 1,
+    "reversed_only_correct": 2,
+    "neither_correct": 6,
+    "mean_total_variation": 0.0,
+    "max_probability_change": 0.0
+  },
+  "original": {
+    "examples": 12,
+    "groups": 12,
+    "coverage": {
+      "numerator": 12,
+      "denominator": 12,
+      "value": 1.0
+    },
+    "failures": {
+      "missing": 0,
+      "invalid": 0,
+      "duplicate": 0
+    },
+    "top_choice": {
+      "name": "teacher_agreement",
+      "on_valid": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "on_all_failure_as_unsuccessful": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      }
+    },
+    "log_loss": {
+      "n": 12,
+      "zero_target_count": 0,
+      "status": "finite",
+      "mean": 1.0470441093070695
+    },
+    "brier": {
+      "n": 12,
+      "mean": 0.6462891168734193,
+      "definition": "sum over options, not divided by option count"
+    },
+    "ties": {
+      "examples": 4,
+      "sizes": {
+        "1": 8,
+        "2": 3,
+        "4": 1
+      }
+    },
+    "uniform_random_choice_expected_agreement": 0.3541666666666667,
+    "reliability": {
+      "n": 12,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "n": 10,
+          "mean_confidence": 0.3436036068590205,
+          "agreement": 0.4,
+          "confidence_minus_agreement": -0.056396393140979495
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "n": 2,
+          "mean_confidence": 0.5497606919334671,
+          "agreement": 0.0,
+          "confidence_minus_agreement": 0.5497606919334671
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        }
+      ],
+      "ece": 0.13862377627306077,
+      "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+      "sparse": true
+    }
+  },
+  "reversed": {
+    "examples": 12,
+    "groups": 12,
+    "coverage": {
+      "numerator": 12,
+      "denominator": 12,
+      "value": 1.0
+    },
+    "failures": {
+      "missing": 0,
+      "invalid": 0,
+      "duplicate": 0
+    },
+    "top_choice": {
+      "name": "teacher_agreement",
+      "on_valid": {
+        "numerator": 5,
+        "denominator": 12,
+        "value": 0.4166666666666667
+      },
+      "on_all_failure_as_unsuccessful": {
+        "numerator": 5,
+        "denominator": 12,
+        "value": 0.4166666666666667
+      }
+    },
+    "log_loss": {
+      "n": 12,
+      "zero_target_count": 0,
+      "status": "finite",
+      "mean": 1.0470441093070695
+    },
+    "brier": {
+      "n": 12,
+      "mean": 0.6462891168734193,
+      "definition": "sum over options, not divided by option count"
+    },
+    "ties": {
+      "examples": 4,
+      "sizes": {
+        "1": 8,
+        "2": 3,
+        "4": 1
+      }
+    },
+    "uniform_random_choice_expected_agreement": 0.3541666666666667,
+    "reliability": {
+      "n": 12,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "upper_inclusive": false,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "upper_inclusive": false,
+          "n": 10,
+          "mean_confidence": 0.3436036068590205,
+          "agreement": 0.5,
+          "confidence_minus_agreement": -0.15639639314097947
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6,
+          "upper_inclusive": false,
+          "n": 2,
+          "mean_confidence": 0.5497606919334671,
+          "agreement": 0.0,
+          "confidence_minus_agreement": 0.5497606919334671
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.8,
+          "upper_inclusive": false,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "upper_inclusive": true,
+          "n": 0,
+          "mean_confidence": null,
+          "agreement": null,
+          "confidence_minus_agreement": null
+        }
+      ],
+      "ece": 0.2219571096063941,
+      "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+      "sparse": true
+    }
+  },
+  "paired_quality": {
+    "complete_pairs": 12,
+    "original": {
+      "examples": 12,
+      "groups": 12,
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failures": {
+        "missing": 0,
+        "invalid": 0,
+        "duplicate": 0
+      },
+      "top_choice": {
+        "name": "teacher_agreement",
+        "on_valid": {
+          "numerator": 4,
+          "denominator": 12,
+          "value": 0.3333333333333333
+        },
+        "on_all_failure_as_unsuccessful": {
+          "numerator": 4,
+          "denominator": 12,
+          "value": 0.3333333333333333
+        }
+      },
+      "log_loss": {
+        "n": 12,
+        "zero_target_count": 0,
+        "status": "finite",
+        "mean": 1.0470441093070695
+      },
+      "brier": {
+        "n": 12,
+        "mean": 0.6462891168734193,
+        "definition": "sum over options, not divided by option count"
+      },
+      "ties": {
+        "examples": 4,
+        "sizes": {
+          "1": 8,
+          "2": 3,
+          "4": 1
+        }
+      },
+      "uniform_random_choice_expected_agreement": 0.3541666666666667,
+      "reliability": {
+        "n": 12,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "n": 10,
+            "mean_confidence": 0.3436036068590205,
+            "agreement": 0.4,
+            "confidence_minus_agreement": -0.056396393140979495
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "n": 2,
+            "mean_confidence": 0.5497606919334671,
+            "agreement": 0.0,
+            "confidence_minus_agreement": 0.5497606919334671
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          }
+        ],
+        "ece": 0.13862377627306077,
+        "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+        "sparse": true
+      }
+    },
+    "reversed": {
+      "examples": 12,
+      "groups": 12,
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "failures": {
+        "missing": 0,
+        "invalid": 0,
+        "duplicate": 0
+      },
+      "top_choice": {
+        "name": "teacher_agreement",
+        "on_valid": {
+          "numerator": 5,
+          "denominator": 12,
+          "value": 0.4166666666666667
+        },
+        "on_all_failure_as_unsuccessful": {
+          "numerator": 5,
+          "denominator": 12,
+          "value": 0.4166666666666667
+        }
+      },
+      "log_loss": {
+        "n": 12,
+        "zero_target_count": 0,
+        "status": "finite",
+        "mean": 1.0470441093070695
+      },
+      "brier": {
+        "n": 12,
+        "mean": 0.6462891168734193,
+        "definition": "sum over options, not divided by option count"
+      },
+      "ties": {
+        "examples": 4,
+        "sizes": {
+          "1": 8,
+          "2": 3,
+          "4": 1
+        }
+      },
+      "uniform_random_choice_expected_agreement": 0.3541666666666667,
+      "reliability": {
+        "n": 12,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.2,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.4,
+            "upper_inclusive": false,
+            "n": 10,
+            "mean_confidence": 0.3436036068590205,
+            "agreement": 0.5,
+            "confidence_minus_agreement": -0.15639639314097947
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.6,
+            "upper_inclusive": false,
+            "n": 2,
+            "mean_confidence": 0.5497606919334671,
+            "agreement": 0.0,
+            "confidence_minus_agreement": 0.5497606919334671
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.8,
+            "upper_inclusive": false,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 1.0,
+            "upper_inclusive": true,
+            "n": 0,
+            "mean_confidence": null,
+            "agreement": null,
+            "confidence_minus_agreement": null
+          }
+        ],
+        "ece": 0.2219571096063941,
+        "interpretation": "Descriptive reference-label reliability, not verified truth calibration; sparse bins and correlated groups limit interpretation.",
+        "sparse": true
+      }
+    }
+  },
+  "per_family": {
+    "intent": {
+      "pairs": 4,
+      "source_groups": 4,
+      "complete_pair_coverage": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 3,
+        "denominator": 3,
+        "value": 1.0
+      },
+      "either_tied": 1,
+      "both_correct": 1,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 3,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "rule_application": {
+      "pairs": 4,
+      "source_groups": 4,
+      "complete_pair_coverage": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 2,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 2,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "sentiment": {
+      "pairs": 4,
+      "source_groups": 4,
+      "complete_pair_coverage": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 3,
+      "both_correct": 0,
+      "original_only_correct": 1,
+      "reversed_only_correct": 2,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    }
+  },
+  "per_source_group": {
+    "eval.validation.intent.01": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.intent.02": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.intent.03": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "either_tied": 1,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.intent.04": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 1,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.rule_application.01": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.rule_application.02": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 1,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.rule_application.03": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 1,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.rule_application.04": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.sentiment.01": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "either_tied": 1,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 1,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.sentiment.02": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "either_tied": 1,
+      "both_correct": 0,
+      "original_only_correct": 1,
+      "reversed_only_correct": 0,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.sentiment.03": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "either_tied": 1,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 1,
+      "neither_correct": 0,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    "eval.validation.sentiment.04": {
+      "pairs": 1,
+      "source_groups": 1,
+      "complete_pair_coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "choice_consistency_without_ties": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "either_tied": 0,
+      "both_correct": 0,
+      "original_only_correct": 0,
+      "reversed_only_correct": 0,
+      "neither_correct": 1,
+      "mean_total_variation": 0.0,
+      "max_probability_change": 0.0
+    }
+  },
+  "pairs": [
+    {
+      "group_id": "eval.validation.intent.01",
+      "original_id": "eval.validation.intent.01.original",
+      "reversed_id": "eval.validation.intent.01.reversed",
+      "challenge": "Negation; immediate cancellation versus nonrenewal.",
+      "family": "intent",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.intent.02",
+      "original_id": "eval.validation.intent.02.original",
+      "reversed_id": "eval.validation.intent.02.reversed",
+      "challenge": "Unfamiliar option names and rejected distractors.",
+      "family": "intent",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.intent.03",
+      "original_id": "eval.validation.intent.03.original",
+      "reversed_id": "eval.validation.intent.03.reversed",
+      "challenge": "Unresolved referent with explicit clarification request.",
+      "family": "intent",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": false,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": true,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.intent.04",
+      "original_id": "eval.validation.intent.04.original",
+      "reversed_id": "eval.validation.intent.04.reversed",
+      "challenge": "Injected answer-selection instruction inside state.",
+      "family": "intent",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": true,
+      "reversed_correct": true,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.sentiment.01",
+      "original_id": "eval.validation.sentiment.01.original",
+      "reversed_id": "eval.validation.sentiment.01.reversed",
+      "challenge": "Negation and expectation overridden by present approval.",
+      "family": "sentiment",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": false,
+      "original_correct": false,
+      "reversed_correct": true,
+      "either_tied": true,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.sentiment.02",
+      "original_id": "eval.validation.sentiment.02.original",
+      "reversed_id": "eval.validation.sentiment.02.reversed",
+      "challenge": "Mixed versus neutral; supplied option descriptions.",
+      "family": "sentiment",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": false,
+      "original_correct": true,
+      "reversed_correct": false,
+      "either_tied": true,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.sentiment.03",
+      "original_id": "eval.validation.sentiment.03.original",
+      "reversed_id": "eval.validation.sentiment.03.reversed",
+      "challenge": "Quoted positive distractors and attribution.",
+      "family": "sentiment",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": false,
+      "original_correct": false,
+      "reversed_correct": true,
+      "either_tied": true,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.sentiment.04",
+      "original_id": "eval.validation.sentiment.04.original",
+      "reversed_id": "eval.validation.sentiment.04.reversed",
+      "challenge": "Negation and injected label instruction.",
+      "family": "sentiment",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.rule_application.01",
+      "original_id": "eval.validation.rule_application.01.original",
+      "reversed_id": "eval.validation.rule_application.01.reversed",
+      "challenge": "Conjunction; one satisfied condition is a distractor.",
+      "family": "rule_application",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.rule_application.02",
+      "original_id": "eval.validation.rule_application.02.original",
+      "reversed_id": "eval.validation.rule_application.02.reversed",
+      "challenge": "Rule precedence and urgent-priority distractor.",
+      "family": "rule_application",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": true,
+      "reversed_correct": true,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.rule_application.03",
+      "original_id": "eval.validation.rule_application.03.original",
+      "reversed_id": "eval.validation.rule_application.03.reversed",
+      "challenge": "Missing information versus explicit no.",
+      "family": "rule_application",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": true,
+      "reversed_correct": true,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    },
+    {
+      "group_id": "eval.validation.rule_application.04",
+      "original_id": "eval.validation.rule_application.04.original",
+      "reversed_id": "eval.validation.rule_application.04.reversed",
+      "challenge": "Inclusive boundary and injected rule replacement.",
+      "family": "rule_application",
+      "original_status": "valid",
+      "reversed_status": "valid",
+      "status": "valid",
+      "same_choice": true,
+      "original_correct": false,
+      "reversed_correct": false,
+      "either_tied": false,
+      "total_variation": 0.0,
+      "max_probability_change": 0.0
+    }
+  ],
+  "limitation": "Two presentations per example, potentially multiple examples per source group; not independent samples. Tied-choice changes are separated from probability changes. No final data used."
+}

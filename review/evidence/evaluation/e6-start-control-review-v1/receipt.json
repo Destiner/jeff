@@ -1,0 +1,249 @@
+{
+  "schema_version": "e6-start-control-independent-review/1",
+  "checked_at": "2026-11-11T16:04:09.172851+00:00",
+  "interpreter": "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+  "evaluation_git_revision": "518251d11086f3358eb559cd8c1e7b85aee743bf",
+  "blocking_findings": [],
+  "verdict": "No blocking finding for starting-control artifact comparability; runtime attestation limits apply. Not a training gate.",
+  "suites": [
+    {
+      "suite": "v2-original",
+      "rows": 300,
+      "option_probabilities": 1160,
+      "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "prediction_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "byte_identical": true,
+      "max_absolute_raw_delta": 0.0,
+      "mean_absolute_raw_delta": 0.0,
+      "nonzero_deltas": 0,
+      "changed_top_sets": 0,
+      "changed_input_order_tiebroken_choices": 0,
+      "p3_ties": 0,
+      "fresh_ties": 0,
+      "changed_tie_presence": 0,
+      "max_sum_deviation": 1.3131648302078247e-07,
+      "token_lengths": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "full_token_audit_rows": 300,
+      "overflows": 0
+    },
+    {
+      "suite": "v2-reversed",
+      "rows": 300,
+      "option_probabilities": 1160,
+      "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "prediction_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "byte_identical": true,
+      "max_absolute_raw_delta": 0.0,
+      "mean_absolute_raw_delta": 0.0,
+      "nonzero_deltas": 0,
+      "changed_top_sets": 0,
+      "changed_input_order_tiebroken_choices": 0,
+      "p3_ties": 0,
+      "fresh_ties": 0,
+      "changed_tie_presence": 0,
+      "max_sum_deviation": 1.341104507446289e-07,
+      "token_lengths": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "full_token_audit_rows": 300,
+      "overflows": 0
+    },
+    {
+      "suite": "probes-paired",
+      "rows": 24,
+      "option_probabilities": 70,
+      "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "prediction_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "byte_identical": true,
+      "max_absolute_raw_delta": 0.0,
+      "mean_absolute_raw_delta": 0.0,
+      "nonzero_deltas": 0,
+      "changed_top_sets": 0,
+      "changed_input_order_tiebroken_choices": 0,
+      "p3_ties": 0,
+      "fresh_ties": 0,
+      "changed_tie_presence": 0,
+      "max_sum_deviation": 6.151094567030668e-08,
+      "token_lengths": {
+        "count": 24,
+        "min": 98,
+        "max": 124,
+        "p50": 107,
+        "p95": 124
+      },
+      "input_tokens": 2638,
+      "full_token_audit_rows": 24,
+      "overflows": 0
+    }
+  ],
+  "total_rows": 624,
+  "total_option_probabilities": 2390,
+  "raw_probabilities_used": true,
+  "normalization_for_comparison": false,
+  "model_loads": 0,
+  "tokenizer_loads": 0,
+  "reference_rows_read": 0,
+  "weight_files_read": 0,
+  "network_calls": 0,
+  "source": {
+    "p3_git_revision": "49823af30d6b394a147c7b8a9f5c676526a439f3",
+    "fresh_git_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+    "sha256": "325d3a6b8e5577bba3b885fe8b61d5551305b456e2586d3949b2c45c649438d5",
+    "git_diff": "",
+    "source_bytes_identical": true
+  },
+  "semantic_pins": {
+    "config": {
+      "schema_version": "p3.config.v1",
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "system_prompt": "You are a decision assistant. Choose exactly one of the listed options. Reply with only its letter.",
+      "user_template": "State:\n{state}\n\nQuestion:\n{question}\n\nOptions:\n{options}",
+      "symbols": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "max_input_tokens": 1024,
+      "device": "mps",
+      "dtype": "float32",
+      "batch_size": 1,
+      "threads": 4,
+      "temperature": 1.0,
+      "startup_rows": 3,
+      "maximum_run_seconds": 1200,
+      "max_cpu_rss_bytes": 8589934592,
+      "max_mps_driver_bytes": 8589934592,
+      "attention": "sdpa",
+      "use_cache": false,
+      "logits_to_keep": 1,
+      "probability_semantics": "T=1 softmax conditional on supplied single-token option symbols; not full-vocabulary confidence or calibrated confidence",
+      "asset_allowlist": [
+        "config.json",
+        "generation_config.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "added_tokens.json",
+        "vocab.json",
+        "merges.txt",
+        "chat_template.jinja",
+        "model.safetensors",
+        "README.md",
+        "LICENSE",
+        "LICENSE.txt",
+        ".gitattributes"
+      ]
+    },
+    "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "model_assets": {
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "README.md": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+      "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "environment": {
+      "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+      "platform": "macOS-26.7.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "packages": {
+        "torch": "2.15.0",
+        "transformers": "4.57.6",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.22.2"
+      }
+    }
+  },
+  "chronology": {
+    "declared_at": "2026-11-11T15:31:06.064609+00:00",
+    "audit_started_at": "2026-11-11T15:44:03.587896+00:00",
+    "audit_completed_at": "2026-11-11T15:44:06.684103+00:00",
+    "starting_started_at": "2026-11-11T15:44:06.703240+00:00",
+    "starting_completed_at": "2026-11-11T15:44:45.064244+00:00",
+    "starting_wall_seconds": 38.36112583428621,
+    "filesystem": {
+      "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/plan.md": {
+        "mtime_utc": "2026-11-11T15:30:22.011138+00:00",
+        "birthtime_utc": "2026-11-11T15:30:22.010902+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/receipt.json": {
+        "mtime_utc": "2026-11-11T15:31:06.065071+00:00",
+        "birthtime_utc": "2026-11-11T15:31:06.065016+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/comparison-freeze.json": {
+        "mtime_utc": "2026-11-11T15:43:20.024920+00:00",
+        "birthtime_utc": "2026-11-11T15:43:20.024806+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-audit/audit.json": {
+        "mtime_utc": "2026-11-11T15:44:06.421070+00:00",
+        "birthtime_utc": "2026-11-11T15:44:06.418609+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/receipt.json": {
+        "mtime_utc": "2026-11-11T15:44:44.817584+00:00",
+        "birthtime_utc": "2026-11-11T15:44:44.814831+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/handoffs/evaluation/20261111-e6-predeclared-M6-P4-inputs.md": {
+        "mtime_utc": "2026-11-11T15:31:38.829237+00:00",
+        "birthtime_utc": "2026-11-11T15:31:38.828974+00:00"
+      },
+      "/Users/destiner/Code/jeff/artifacts/handoffs/model/20261111T1546-M6-start-control-ready.md": {
+        "mtime_utc": "2026-11-11T15:47:00.763237+00:00",
+        "birthtime_utc": "2026-11-11T15:47:00.763142+00:00"
+      }
+    },
+    "qualification": "Mutable local timestamps and owner handoff claims, not cryptographic precommitment or proof of loaded tensors."
+  },
+  "qualifications": [
+    "Artifact equality does not independently attest fresh execution, actual loaded tensor identity, or remote authenticity of base assets. Recorded weight hash compared only; no weight rehash.",
+    "Recorded complete prompt token hashes/boundaries compared across all 624 rows; no fresh tokenizer computation.",
+    "Shared validator validates both sets, but its normalized return is discarded. Raw stored numbers alone determine equivalence.",
+    "Only visible control attempt evidence reviewed; no global proof that no unrecorded attempts exist. Existing owner receipts remain untouched.",
+    "No trained outcomes, training data, labels, quality scores, final references or mailbox accessed. Model owns independent ongoing training; no review gate."
+  ],
+  "artifact_sha256": {
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/comparison-freeze.json": "5c24a089e3cb4025fb9fcdf4e10effb838d3fb7394eab96493d41b8598908e10",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/receipt.json": "c9df796f1fd3ddddaa8770bfbe08e2adbff4f738e32f2d2cbecc66fe38804394",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/plan.md": "7b99168342b23cdec9685a357f9aef88c917e88cc4506dd109b1b0690d52928d",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/inputs.json": "a73f53c41537b25e831349b649b3649950cdd721d2ab9492ca902a366b3b8d1e",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-inputs.json": "77c57b75b64a0b306c8c851bb2d3a023bddd5d237334cd288316013c26d2927a",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-audit/audit.json": "8e4931addef2882adb012e725dc090472b2d8962e7c9116c3ea77d43a7eaee39",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/receipt.json": "5246102a94e47368c1b9470fb4ef0453da12552f30e175cb3a802dd3fedccc98",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/receipt.json": "602069d9eed481cc8ca902e91bb446e31569014e36545f839f046d2e43c3ad4c",
+    "/Users/destiner/Code/jeff/.worktrees/model/configs/runtime/p3-qwen.json": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+    "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/runtime/qwen_challenger.py": "325d3a6b8e5577bba3b885fe8b61d5551305b456e2586d3949b2c45c649438d5",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-original.jsonl": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/v2-original.jsonl": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-reversed.jsonl": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/v2-reversed.jsonl": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/probes-paired.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/probes-paired.jsonl": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting-process.json": "82e9ed059b8191fad023964cd191fadb9896ecb37fa82516fb4da7481f013c7a",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting-invocation.json": "83b7ce37191dfac944584dcc7466edc62a48eae24016fe51d26513c7f15a8179",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-audit-process.json": "220b2c8ba2cc0ff9fae97124bbc483c28014d7add475d1933981ada77307f43f",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting-comparison.json": "abb30d9a2044fd129b576d96d00f4bc443aca4902971a774d5841af67c34b746",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/compare-start.py": "c2eab32f3c45a7b5723cfb71e0dfbea3f8a2ccd8ce6f618ea89649aa5bfff59e",
+    "/Users/destiner/Code/jeff/artifacts/handoffs/evaluation/20261111-e6-predeclared-M6-P4-inputs.md": "4877652c2cf7ca85e58492da50cbffe35fe0e848e22e0951b9323372ff8ad32d",
+    "/Users/destiner/Code/jeff/artifacts/handoffs/model/20261111T1546-M6-start-control-ready.md": "79b987c8abdc9ca226ec4ba4a5e43059e73c1c342a83b50ed283da58253848bd",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-start-control-review-v1/check.py": "3b569035010a58dd34fa61f18ca799594c4604173c7dcdf2e0da9308aff9224d",
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/metrics.py": "0705d433f034200c36e57221807aa071d766f63ddc86e397f0586f30c3a92828",
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/common.py": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+  }
+}

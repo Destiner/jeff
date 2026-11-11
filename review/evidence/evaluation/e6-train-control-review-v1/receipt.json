@@ -1,0 +1,642 @@
+{
+  "schema_version": "e6.train-control-independent-review.v1",
+  "created_at": "2026-11-11T16:12:18.200633+00:00",
+  "python_executable": "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+  "source_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+  "checks": [
+    {
+      "name": "exact published checkpoint manifest SHA256",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "completed source-run receipt hash",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin comparison-freeze.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin starting-comparison.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin train-audit/audit.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin train-audit/schedule.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin capacity/receipt.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin capacity-process.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin implementation-review.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "full-run freeze pin launch.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "control freeze e6_input_binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "control freeze e6_plan",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "control freeze p3_audit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "all recorded tracked source byte pins match exact Git revision",
+      "ok": true,
+      "detail": 168
+    },
+    {
+      "name": "source revision across freeze/audit/checkpoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "source preserved in recorded tracked pins src/jeff/training/qwen_decision.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "source preserved in recorded tracked pins src/jeff/training/qwen_data.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "source preserved in recorded tracked pins src/jeff/runtime/qwen_challenger.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "recipe Git bytes/hash",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "P3 config Git bytes/hash",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "training identity exactly matches capacity",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "training identity binds audit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1500/375 complete without extra backward",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "final all-parameter Adam step",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "parameter inventory 290/494032768",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "selected parameter fingerprints all changed",
+      "ok": true,
+      "detail": {
+        "initial": {
+          "model.layers.0.self_attn.q_proj.bias": "3e9e994eb1f03bccfc82f8bb3c324c920d42d547e07de5be83be12c428645063",
+          "model.layers.12.self_attn.q_proj.bias": "b14db2d327ce0deec97beda7d3965a56c43e1e63dc9181840fb176b114cf643a",
+          "model.norm.weight": "93a01a6db3419e85320a244bbf8ae81c43033b1d10c342bea3797ff2ce348390"
+        },
+        "final": {
+          "model.layers.0.self_attn.q_proj.bias": "b2524413d4490d305bac3f73a82a4f48d69e14438782d62ae9f254d0c13db94d",
+          "model.layers.12.self_attn.q_proj.bias": "a1656c8b7aabe3a9ef3b26852a726294eb08afaf3b53cd2e5204d09d1d9e54fe",
+          "model.norm.weight": "3eac8fe542bad0636ca0a57bdfca6d7d59f88ef852ec8f8c424105afb21769f0"
+        }
+      }
+    },
+    {
+      "name": "capacity separate process exited before training",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "capacity disposable 1 step +4 extra backwards",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "process complete without retry/timeout",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "authorized data manifest bytes",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v1/intent/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v1/intent/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v1/rule_application/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v1/rule_application/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/sentiment-a/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/sentiment-a/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/rule-a/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/rule-a/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard bytes data/data-pilot-v2/rule-b/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "TRAIN shard count/split data/data-pilot-v2/rule-b/train.jsonl",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1500 unique authorized TRAIN IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "schedule hash across freeze/audit/receipt/manifest",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "schedule length",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "exact seed42 row+option replay/identity/metadata/token inventory",
+      "ok": true,
+      "detail": {
+        "mismatched_indices": [],
+        "tokenizer_not_executed": true
+      }
+    },
+    {
+      "name": "fit before complete same schedule metadata",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit before independently reproduces receipt overall",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit before independently reproduces receipt by_family",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit before independently reproduces receipt by_source_group",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit before row pin",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit after complete same schedule metadata",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit after independently reproduces receipt overall",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit after independently reproduces receipt by_family",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit after independently reproduces receipt by_source_group",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "fit after row pin",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "all post-training argmax position0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "online schedule+375 groups of four",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "online pin and mean",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "independent control equality v2-original",
+      "ok": true,
+      "detail": {
+        "suite": "v2-original",
+        "rows": 300,
+        "unique_old": 300,
+        "unique_new": 300,
+        "bytes_equal": true,
+        "same_ids": true,
+        "max_absolute_probability_delta": 0.0,
+        "changed_top_sets": 0,
+        "ties_old_new": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "independent control equality v2-reversed",
+      "ok": true,
+      "detail": {
+        "suite": "v2-reversed",
+        "rows": 300,
+        "unique_old": 300,
+        "unique_new": 300,
+        "bytes_equal": true,
+        "same_ids": true,
+        "max_absolute_probability_delta": 0.0,
+        "changed_top_sets": 0,
+        "ties_old_new": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "independent control equality probes-paired",
+      "ok": true,
+      "detail": {
+        "suite": "probes-paired",
+        "rows": 24,
+        "unique_old": 24,
+        "unique_new": 24,
+        "bytes_equal": true,
+        "same_ids": true,
+        "max_absolute_probability_delta": 0.0,
+        "changed_top_sets": 0,
+        "ties_old_new": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "frozen label-free control input v2-original",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "frozen label-free control input v2-reversed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "frozen label-free control input probes-paired",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size LICENSE",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size README.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size config.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size generation_config.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size merges.txt",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size model.safetensors",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size tokenizer.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size tokenizer_config.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint inventory size vocab.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "exact checkpoint file inventory",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "tokenizer pins unchanged across source/receipt/manifest",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "failed_checks": [],
+  "input_pins": {
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/receipt.json": {
+      "sha256": "893c6a1b154734133d49ce41036a05bef2b5830c3615070b3547d56aebff1657",
+      "bytes": 9478378
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit/audit.json": {
+      "sha256": "16a5dd978f47e22ec4e0c0b71f99fd6d6ed4e9cb0698e3d2fe25b6ca274cb1e5",
+      "bytes": 798655
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/full-run-freeze.json": {
+      "sha256": "13f2e6f88f6e99323645a748ecaffdc7aa709cc43cb19fb35fd6a63e435b9ed9",
+      "bytes": 3812
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint-manifest.json": {
+      "sha256": "1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f",
+      "bytes": 2588
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/capacity/receipt.json": {
+      "sha256": "995602986e42132057df12fd823b92e0fec8492daace4e958f8ababfc11d667a",
+      "bytes": 835164
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-process.json": {
+      "sha256": "c71e91c3402cdf0a3f123e0900dcb6db5c665217319509710ff7f72731d0e373",
+      "bytes": 1293
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/capacity-process.json": {
+      "sha256": "5fe0640793cb7e379ddf211339bf813578c88cd95f7f0c14348328d0129efa2a",
+      "bytes": 1026
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/fit-before.jsonl": {
+      "sha256": "d13d8602294732339056781f1148426be1ef3003b9b8ce9bc833142ecdd83312",
+      "bytes": 574608
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/fit-after.jsonl": {
+      "sha256": "a099822f30a234b0b3d2ff588888d712897bf5b1af4cbb878369cc23e619ca84",
+      "bytes": 574021
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/online.jsonl": {
+      "sha256": "66cc8fbcf2a041472c5705f8d76073a13be83d8160e6d97db011d256e1c59cb6",
+      "bytes": 238019
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit/schedule.jsonl": {
+      "sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+      "bytes": 3124848
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-invocation.json": {
+      "sha256": "4f23295c6ad7ae43f78a3db775d78d4ddd18669db567beae3dc173123d6d0f8c",
+      "bytes": 1110
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/receipt.json": {
+      "sha256": "5246102a94e47368c1b9470fb4ef0453da12552f30e175cb3a802dd3fedccc98",
+      "bytes": 241819
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-audit/audit.json": {
+      "sha256": "8e4931addef2882adb012e725dc090472b2d8962e7c9116c3ea77d43a7eaee39",
+      "bytes": 220098
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/control-inputs.json": {
+      "sha256": "77c57b75b64a0b306c8c851bb2d3a023bddd5d237334cd288316013c26d2927a",
+      "bytes": 788
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/comparison-freeze.json": {
+      "sha256": "5c24a089e3cb4025fb9fcdf4e10effb838d3fb7394eab96493d41b8598908e10",
+      "bytes": 2363
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting-comparison.json": {
+      "sha256": "abb30d9a2044fd129b576d96d00f4bc443aca4902971a774d5841af67c34b746",
+      "bytes": 1447
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/implementation-review.md": {
+      "sha256": "5ffc3704e8962e2d448584a42a6585ab0082b60ef2840a90dc25339fb90f168c",
+      "bytes": 1202
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/launch.py": {
+      "sha256": "aa1aa4c5b66f774160368e5276e5dcd2574fba5dfc467bf0422a21881a84b0d0",
+      "bytes": 2096
+    },
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/inputs.json": {
+      "sha256": "a73f53c41537b25e831349b649b3649950cdd721d2ab9492ca902a366b3b8d1e",
+      "bytes": 1096
+    },
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e6-predeclared-v1/plan.md": {
+      "sha256": "7b99168342b23cdec9685a357f9aef88c917e88cc4506dd109b1b0690d52928d",
+      "bytes": 8595
+    },
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json": {
+      "sha256": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a",
+      "bytes": 220094
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json": {
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "bytes": 3732
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl": {
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+      "bytes": 83361
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl": {
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+      "bytes": 109457
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl": {
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "bytes": 93891
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/train.jsonl": {
+      "sha256": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9",
+      "bytes": 196259
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/train.jsonl": {
+      "sha256": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+      "bytes": 180421
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl": {
+      "sha256": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+      "bytes": 200105
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/train.jsonl": {
+      "sha256": "0c2d5441102fb0623dec43265f3d9dc44b025c92b788138344cdc1447ac1ab20",
+      "bytes": 225854
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/train.jsonl": {
+      "sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "bytes": 180954
+    },
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/train.jsonl": {
+      "sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "bytes": 167045
+    },
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-original.jsonl": {
+      "sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "bytes": 105881
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/v2-original.jsonl": {
+      "sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+      "bytes": 105881
+    },
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-reversed.jsonl": {
+      "sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "bytes": 112825
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/v2-reversed.jsonl": {
+      "sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+      "bytes": 112825
+    },
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/probes-paired.jsonl": {
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "bytes": 6245
+    },
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting/probes-paired.jsonl": {
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058",
+      "bytes": 6245
+    },
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl": {
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "bytes": 198424
+    },
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl": {
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "bytes": 205324
+    },
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl": {
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "bytes": 12388
+    }
+  },
+  "fit_ties": "unknown: fit rows save only CE/argmax, no probabilities/logits",
+  "probability_variance": "unknown: no per-option fixed-fit probabilities/logits saved",
+  "online_mean_ce": 1.4003377714039138,
+  "limits": "saved evidence and exact source review do not attest actual historical loaded tensor execution; no weight/tokenizer content reads, inference, network, final data, tests, lint, compilation or package build"
+}

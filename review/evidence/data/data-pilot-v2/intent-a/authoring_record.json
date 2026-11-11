@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "job": "jeff/data-pilot-v2/intent-a/r1",
+  "generation_revision": "intent-a-r1",
+  "source_revision": "source-cases-r1",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "teacher_identity_basis": "PI_PROVIDER and PI_MODEL captured in the authoring session; not a provider version claim.",
+  "sampling": {
+    "temperature": null,
+    "top_p": null
+  },
+  "assignment_preceded_content": true,
+  "method": "Direct agent text authoring; no programmatic request-template generation; CPU export only."
+}

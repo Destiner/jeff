@@ -1,0 +1,774 @@
+{
+  "schema_version": "evaluation/e3-freeze/0.1",
+  "publication_status": "released",
+  "candidate_not_release": false,
+  "code_revision": null,
+  "tracked_dirty_at_execution": null,
+  "code_checkout": null,
+  "code_checkout_status": "unknown: imported helper is not in an owning Git checkout; use code hashes",
+  "pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/manifests/data/pilot-v1.json",
+      "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl",
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl",
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "sha256": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "sha256": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl",
+      "sha256": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/validation.jsonl",
+      "sha256": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/validation.jsonl",
+      "sha256": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/provenance.json",
+      "sha256": "a55a3bc0ba76958e6e2b81ef8288c4d2fa008f18bd2ff106a8cb8b0321a4c5e3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/new-sources.json",
+      "sha256": "a618015f84769e005e93837d7be47e24ed95c6eb2d0c897a92b5b6fce2083b0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+      "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-packaging-v1/env/lib/python3.12/site-packages/jeff/evaluation/freeze.py",
+      "sha256": "14903e767f5118a740378744dbdb2f6562ca2d78843e5953818e74867e69e30c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-packaging-v1/env/lib/python3.12/site-packages/jeff/evaluation/common.py",
+      "sha256": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+    }
+  ],
+  "source_dataset_id": "data-pilot-v2",
+  "parent_dataset_id": "data-pilot-v1",
+  "v1_shards": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl",
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+      "split": "train",
+      "rows": 100
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "split": "validation",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+      "split": "train",
+      "rows": 100
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "split": "validation",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl",
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "split": "train",
+      "rows": 100
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "split": "validation",
+      "rows": 20
+    }
+  ],
+  "source_validation_shards": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "split": "validation",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "split": "validation",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "split": "validation",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "sha256": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "split": "validation",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "sha256": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "split": "validation",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl",
+      "sha256": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+      "split": "validation",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e",
+      "split": "validation",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/validation.jsonl",
+      "sha256": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e",
+      "split": "validation",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/validation.jsonl",
+      "sha256": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138",
+      "split": "validation",
+      "rows": 40
+    }
+  ],
+  "new_sources": [
+    "data-pilot-v2-intent-b-r2/source-mappings-r2",
+    "data-pilot-v2-rule-a-r1:source_cases-r1",
+    "data-pilot-v2-rule-b-r1:original-policies-r1",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g201",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g202",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g203",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g204",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g205",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g206",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g207",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g208",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g209",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g210",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g211",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g212",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g213",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g214",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g215",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g216",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g217",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g218",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g219",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g220",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g221",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g222",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g223",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g224",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g225",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g226",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g227",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g228",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g229",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g230",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g231",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g232",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g233",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g234",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g235",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g236",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g237",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g238",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g239",
+    "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g240",
+    "data-pilot-v2/sentiment-a:sentiment-a-authored-r1",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g201",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g202",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g203",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g204",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g205",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g206",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g207",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g208",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g209",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g210",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g211",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g212",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g213",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g214",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g215",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g216",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g217",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g218",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g219",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g220",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g221",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g222",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g223",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g224",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g225",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g226",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g227",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g228",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g229",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g230",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g231",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g232",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g233",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g234",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g235",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g236",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g237",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g238",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g239",
+    "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g240"
+  ],
+  "outputs": {
+    "inherited-v1": {
+      "rows": 60,
+      "groups": 12,
+      "task_family": {
+        "intent": {
+          "rows": 20,
+          "groups": 5
+        },
+        "rule_application": {
+          "rows": 20,
+          "groups": 2
+        },
+        "sentiment": {
+          "rows": 20,
+          "groups": 5
+        }
+      },
+      "label_basis": {
+        "rule_verified": {
+          "rows": 20,
+          "groups": 2
+        },
+        "teacher": {
+          "rows": 40,
+          "groups": 10
+        }
+      },
+      "source": {
+        "data-pilot-v1/rule_application/original-rule-job-r1": {
+          "rows": 20,
+          "groups": 2
+        },
+        "data-pilot-v1/sentiment-r2/from/jeff-data-pilot-v1-sentiment-agent-r1": {
+          "rows": 20,
+          "groups": 5
+        },
+        "data:pilot-v1:intent:agent-authoring-r1": {
+          "rows": 20,
+          "groups": 5
+        }
+      },
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+        "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+      },
+      "inputs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/inputs.jsonl",
+        "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1"
+      },
+      "manifest": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/manifest.json",
+        "sha256": "a85cb392593406ef9a1a2f33af1b3ebb53df3416b9e3ea3c608bef375a18a9e9"
+      }
+    },
+    "new-v2": {
+      "rows": 240,
+      "groups": 170,
+      "task_family": {
+        "intent": {
+          "rows": 80,
+          "groups": 80
+        },
+        "rule_application": {
+          "rows": 80,
+          "groups": 10
+        },
+        "sentiment": {
+          "rows": 80,
+          "groups": 80
+        }
+      },
+      "label_basis": {
+        "rule_verified": {
+          "rows": 80,
+          "groups": 10
+        },
+        "teacher": {
+          "rows": 160,
+          "groups": 160
+        }
+      },
+      "source": {
+        "data-pilot-v2-intent-b-r2/source-mappings-r2": {
+          "rows": 40,
+          "groups": 40
+        },
+        "data-pilot-v2-rule-a-r1:source_cases-r1": {
+          "rows": 40,
+          "groups": 5
+        },
+        "data-pilot-v2-rule-b-r1:original-policies-r1": {
+          "rows": 40,
+          "groups": 5
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g201": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g202": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g203": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g204": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g205": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g206": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g207": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g208": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g209": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g210": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g211": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g212": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g213": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g214": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g215": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g216": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g217": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g218": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g219": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g220": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g221": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g222": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g223": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g224": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g225": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g226": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g227": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g228": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g229": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g230": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g231": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g232": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g233": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g234": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g235": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g236": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g237": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g238": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g239": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g240": {
+          "rows": 1,
+          "groups": 1
+        },
+        "data-pilot-v2/sentiment-a:sentiment-a-authored-r1": {
+          "rows": 40,
+          "groups": 40
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g201": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g202": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g203": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g204": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g205": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g206": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g207": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g208": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g209": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g210": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g211": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g212": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g213": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g214": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g215": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g216": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g217": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g218": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g219": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g220": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g221": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g222": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g223": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g224": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g225": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g226": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g227": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g228": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g229": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g230": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g231": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g232": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g233": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g234": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g235": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g236": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g237": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g238": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g239": {
+          "rows": 1,
+          "groups": 1
+        },
+        "jeff/data-pilot-v2/intent-a-r2/choice_mappings.json#g240": {
+          "rows": 1,
+          "groups": 1
+        }
+      },
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+        "sha256": "847cf4cb43df058a44366c7f3acbcebdb7faaea756fe21de8cc80cd5f90796eb"
+      },
+      "inputs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/inputs.jsonl",
+        "sha256": "a3b65924d7ea3ed9b638457d42d7274ddcdad5a0d40ad5c87fd975da0a2846e0"
+      },
+      "manifest": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/manifest.json",
+        "sha256": "273a217566e4a22380e29f43dc0f66022bb53a7acb7cd42eb2ca171975f82a46"
+      }
+    },
+    "probes": {
+      "rows": 24,
+      "groups": 12,
+      "task_family": {
+        "intent": {
+          "rows": 8,
+          "groups": 4
+        },
+        "rule_application": {
+          "rows": 8,
+          "groups": 4
+        },
+        "sentiment": {
+          "rows": 8,
+          "groups": 4
+        }
+      },
+      "label_basis": {
+        "teacher": {
+          "rows": 24,
+          "groups": 12
+        }
+      },
+      "source": {
+        "evaluation-probes-v1": {
+          "rows": 24,
+          "groups": 12
+        }
+      },
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "inputs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+      },
+      "manifest": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/manifest.json",
+        "sha256": "da41d179a3a12d5e52999b2a5486c212460d4f2d9a07fe3c5348c0a7ef4bcd51"
+      }
+    }
+  },
+  "identities": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/identities.jsonl",
+    "sha256": "20e1c3639b9d570b0c511db24a5008d159493c68ad3afc71d7499caa4fa22fd7"
+  },
+  "parent_identities": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/parent-identities.jsonl",
+    "sha256": "309ad0b948bc1b54efbc73ba9545fe784938cb08ae7071f076ebb2ef7dc264c9"
+  },
+  "policy": {
+    "inherited": "ID plus identical full canonical row; all parent validation retained",
+    "new": "No historical ID/group/order-free exact content; exact caller-supplied source allowlist",
+    "content": "Exact state/question and sorted multiset of option texts; no whitespace/case normalization",
+    "assembly_order": "Any row permutation allowed; full row by ID must match; output retains assembled order",
+    "hashing": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=False, allow_nan=False",
+    "metric_basis": "Use label_basis, not kind; mixed aggregates are supplied-label agreement",
+    "probes": "Existing validation rows copied unchanged, including presentation pairs; no re-reversal"
+  },
+  "caveats": [
+    "Development evidence only: inherited validation and probes have been reused for tuning.",
+    "New authorship is not untouched final evidence; final data was not accessed.",
+    "Source allowlist is a caller attestation from released provenance (candidate provenance for candidate runs).",
+    "Source v2 train bytes not read or verified; cross-split/semantic exclusion remains Data-owned.",
+    "Provenance is pinned, not independently adjudicated; teacher revisions may be unavailable.",
+    "Groups/presentation variants are not independent samples. A successor release needs a new freeze."
+  ]
+}

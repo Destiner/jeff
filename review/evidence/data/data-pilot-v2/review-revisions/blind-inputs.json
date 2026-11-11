@@ -1,0 +1,882 @@
+[
+  {
+    "id": "data:pilot-v2:intent-a-r2:g001:r01",
+    "state": "The router arrived yesterday, but the activation date has passed and the service light is still red. Could someone get this connection live? I am not asking to change the package.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o5c85050f0440cf",
+        "text": "Resolve the overdue service activation"
+      },
+      {
+        "id": "o91f81d313ede93",
+        "text": "Check delivery of the activation equipment"
+      },
+      {
+        "id": "o22c1868e5919d2",
+        "text": "Replace a router with a red light"
+      },
+      {
+        "id": "o068ca526e9213f",
+        "text": "Bring forward the scheduled activation date"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g023:r01",
+    "state": "I have stopped cooking at home and no longer want any recipe emails. Please take me off the mailing list rather than reducing the frequency.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o60c28369d05973",
+        "text": "Suspend recipe deliveries until a chosen return date"
+      },
+      {
+        "id": "obbe25a4c5590a8",
+        "text": "Remove the subscriber from the recipe mailing list"
+      },
+      {
+        "id": "o2d4d2b85ea49db",
+        "text": "Switch recipe delivery from weekly to monthly"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g045:r01",
+    "state": "My father uses a wheelchair. Before we buy tickets, can you confirm whether he can board the commuter ferry without using steps?",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "ofb9c06bdf99b1b",
+        "text": "Reserve wheelchair assistance on a specific sailing"
+      },
+      {
+        "id": "o2acd0094bd6e8e",
+        "text": "Arrange priority boarding for a passenger with luggage"
+      },
+      {
+        "id": "o3a17189b438a5c",
+        "text": "Check wheelchair access from the pier to town"
+      },
+      {
+        "id": "o462f081cbf5dc5",
+        "text": "Confirm whether wheelchair boarding is step-free"
+      },
+      {
+        "id": "oc709fe73d51ea9",
+        "text": "Explain the fares for wheelchair users and companions"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g067:r01",
+    "state": "The pavement beside the works is fenced off. Where is the signed pedestrian diversion? I need directions, not a change to the construction timetable.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o540ad0d459fef5",
+        "text": "Report that the pedestrian diversion is blocked"
+      },
+      {
+        "id": "o88b4706a7a9fd8",
+        "text": "Request a change to the roadworks closure dates"
+      },
+      {
+        "id": "o6f9041c64e5bb0",
+        "text": "Explain the signed pedestrian diversion around the works"
+      },
+      {
+        "id": "o9aab678df2f377",
+        "text": "Ask for vehicle diversion directions past the supermarket"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g089:r01",
+    "state": "I bought a one-to-one training session I cannot use before expiry. Could my partner take that session instead? I am not asking for a cash refund.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oaf9336f9042f9b",
+        "text": "Refund the price of the unused training session"
+      },
+      {
+        "id": "o07a6393f1ca749",
+        "text": "Extend the expiry of the purchased training session"
+      },
+      {
+        "id": "ocf9a0f6a71be82",
+        "text": "Purchase a separate training session for the partner"
+      },
+      {
+        "id": "o36352164ee0f78",
+        "text": "Change the trainer assigned to the purchased session"
+      },
+      {
+        "id": "o1c7b8aae5c5774",
+        "text": "Transfer the unused personal training session to the partner"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g112:r01",
+    "state": "Our awards dinner must move from March to May. Can you transfer the hall booking to the new date rather than cancelling the event altogether?",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o9db21d8d8ed214",
+        "text": "Move the existing hall booking from March to May"
+      },
+      {
+        "id": "o33e712814ec2d1",
+        "text": "Reserve a second dinner in May alongside March"
+      },
+      {
+        "id": "ofc49acf2822165",
+        "text": "Cancel the dinner without arranging a replacement date"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g134:r01",
+    "state": "My old transit card still works, but I have bought a new one. Can you move the remaining stored value to it? I am not asking for a cash refund.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o2a01f8caf17cef",
+        "text": "Link the new card without transferring stored value"
+      },
+      {
+        "id": "o2e9257b5062337",
+        "text": "Move remaining credit from the old card to the new one"
+      },
+      {
+        "id": "o3e0c68510573bc",
+        "text": "Refund the old card's remaining credit in cash"
+      },
+      {
+        "id": "o220cfa44408790",
+        "text": "Replace the old card because it no longer works"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g156:r01",
+    "state": "My fixed energy deal ends soon. Could you show how your current tariffs compare for my usage? Please do not switch me until I choose one.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o2f3ed2777de2c2",
+        "text": "Compare available energy tariffs for the customer's usage"
+      },
+      {
+        "id": "o995de2302d48af",
+        "text": "Explain the exit charge for leaving the current deal"
+      },
+      {
+        "id": "oe0dca32664c96c",
+        "text": "Apply a chosen tariff when the fixed deal ends"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g178:r01",
+    "state": "You charged a late fee for the hired ball launcher, but your receipt records an on-time return. Please review and remove that fee.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oef625a634053ac",
+        "text": "Obtain a replacement receipt for the rental payment"
+      },
+      {
+        "id": "oe14e1ac58b8fb0",
+        "text": "Remove the late fee contradicted by the return receipt"
+      },
+      {
+        "id": "o29a74c977ad7dd",
+        "text": "Extend the hire period of the ball launcher"
+      },
+      {
+        "id": "o04d613aa2e2738",
+        "text": "Report damage found when returning the ball launcher"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g200:r01",
+    "state": "Will any copies of the forthcoming biography be signed by the author? I want to know before choosing whether to preorder; please do not reserve a copy yet.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oe3b45b44f5eddc",
+        "text": "Join an author event's signed-book collection list"
+      },
+      {
+        "id": "o4f51d7ade15655",
+        "text": "Reserve a signed biography copy before publication"
+      },
+      {
+        "id": "o31de3debacfd89",
+        "text": "Check whether signed copies of the biography will be available"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g201:r01",
+    "state": "My weather bulletin still covers the western shipping area, but our vessel now works in the eastern area. Please change the area for future bulletins, keeping the subscription.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oe2bed543652e78",
+        "text": "Add eastern bulletins alongside the existing western subscription"
+      },
+      {
+        "id": "oc311ea774914cf",
+        "text": "Switch future bulletins to the eastern shipping area"
+      },
+      {
+        "id": "od246e8be4f7391",
+        "text": "Change the time when daily marine bulletins arrive"
+      },
+      {
+        "id": "o1f876b6a1f763c",
+        "text": "Report an inaccurate forecast for the western area"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g205:r01",
+    "state": "Today's message contains yesterday's forecast timestamp. Please investigate the stale bulletin; our delivery address and chosen sea area are both correct.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oc37a436bfe3188",
+        "text": "Correct the email address receiving the marine bulletin"
+      },
+      {
+        "id": "o9a0192fd1418db",
+        "text": "Resend today's bulletin after an email delivery failure"
+      },
+      {
+        "id": "o39b63d26e4f97e",
+        "text": "Change the sea area covered by the weather subscription"
+      },
+      {
+        "id": "oabf9be7266941d",
+        "text": "Investigate the bulletin containing yesterday's forecast timestamp"
+      },
+      {
+        "id": "oef1e23c4f72b8a",
+        "text": "Ask when routine coastal forecasts are normally published"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g210:r01",
+    "state": "The routine daily bulletin suits me, but I also want immediate warnings for severe marine weather. Could you enable those extra alerts without replacing the daily issue?",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o454588a14846ad",
+        "text": "Increase routine daily bulletins to hourly forecast emails"
+      },
+      {
+        "id": "ofc208fb3367fee",
+        "text": "Replace routine bulletins with severe-weather-only messages"
+      },
+      {
+        "id": "o3226de1c19d367",
+        "text": "Add immediate severe-weather alerts alongside daily bulletins"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g214:r01",
+    "state": "The expert gave me a verbal valuation for the chest last week. My insurer now needs it in writing. Could you provide the formal report from that appraisal?",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o20443c8ca58209",
+        "text": "Arrange another verbal appraisal of the same chest"
+      },
+      {
+        "id": "ob01b2dc2234275",
+        "text": "Send a receipt for the completed chest appraisal"
+      },
+      {
+        "id": "o6c94803a74ea63",
+        "text": "Provide a written report from the completed chest appraisal"
+      },
+      {
+        "id": "o7d440b98bf190b",
+        "text": "Update the chest's value after a change in condition"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g218:r01",
+    "state": "The appraisal report says the watch belongs to my brother. It is mine; he only delivered it. Could you correct the ownership attribution without changing the valuation?",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "ob8362cfa894c5c",
+        "text": "Correct the watch owner's attribution without changing value"
+      },
+      {
+        "id": "o8fabdc1ea848a7",
+        "text": "Correct the payer named on the appraisal invoice"
+      },
+      {
+        "id": "oe79ff62b9f886c",
+        "text": "Transfer ownership of the watch to the brother"
+      },
+      {
+        "id": "o6f967c1f880e62",
+        "text": "Reassess the watch's recorded market valuation"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g223:r01",
+    "state": "A candidate gave us a language certificate with a reference number. Can you confirm whether that document was genuinely issued by your board? We are not requesting their full record.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "oe9c4b2fde07e53",
+        "text": "Release the candidate's complete examination record"
+      },
+      {
+        "id": "o0325d0450b43e3",
+        "text": "Confirm permission to share results with a university"
+      },
+      {
+        "id": "o06024cfbb0696c",
+        "text": "Issue a replacement certificate for the candidate"
+      },
+      {
+        "id": "o83bd8f5f26091e",
+        "text": "Confirm whether the referenced certificate was genuinely issued"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g227:r01",
+    "state": "My certificate has not been dispatched yet, and I have moved house. Please send it to my new address; the name and qualification are unchanged.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "odf0f067c40cee6",
+        "text": "Change the mailing address before certificate dispatch"
+      },
+      {
+        "id": "o37ea8951292790",
+        "text": "Delay certificate dispatch until a later date"
+      },
+      {
+        "id": "oaf5d813bc0366d",
+        "text": "Switch the certificate from paper to digital delivery"
+      },
+      {
+        "id": "obc0dd0b467a7fa",
+        "text": "Correct the candidate name printed on the certificate"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g231:r01",
+    "state": "The guide calls the ridge route 'moderate', but gives no technical grade. What climbing difficulty should a party expect? I am not asking to book a guided ascent.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o65fd2b9dcb9ce6",
+        "text": "Explain the normal descent from the ridge summit"
+      },
+      {
+        "id": "o360bfc8f088ed7",
+        "text": "Check whether seasonal restrictions affect the ridge"
+      },
+      {
+        "id": "o8803a09cd98fed",
+        "text": "Recommend a guided ascent suitable for beginners"
+      },
+      {
+        "id": "o0e9b724da99cdf",
+        "text": "Explain the ridge route's technical climbing difficulty"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g236:r01",
+    "state": "Before attempting the route, do you have recent information on the condition of the fixed anchors at the top? I am asking for what is known, not certifying them safe.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o3c7ac01e3e5bc5",
+        "text": "Log an anchor failure newly witnessed by the customer"
+      },
+      {
+        "id": "o0f3bb0e3d154cd",
+        "text": "Provide recent reported condition information for the top anchors"
+      },
+      {
+        "id": "o5c3b4af92f01d3",
+        "text": "Recommend a guided inspection of the climbing route"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-a-r2:g240:r01",
+    "state": "There is no mobile signal at the crag. Can I save your route guide for offline use before leaving home? I do not need live weather alerts.",
+    "question": "What is the primary intent of this request?",
+    "options": [
+      {
+        "id": "o0de8cb201cd239",
+        "text": "Report that the guide's mobile site fails to load"
+      },
+      {
+        "id": "o797349c615a7a7",
+        "text": "Subscribe to live weather updates for the climbing area"
+      },
+      {
+        "id": "oe271d27d29d3c9",
+        "text": "Explain how to save the route guide for offline use"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g001:r01",
+    "state": "The handwheel locks halfway round even with the thread removed. I want this machine fixed; I'm not shopping for a newer one.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o74ec4b1d20d59021",
+        "text": "Arrange repair of the jammed mechanism"
+      },
+      {
+        "id": "o6a79964aa757fa9e",
+        "text": "Adjust the machine's thread tension"
+      },
+      {
+        "id": "oc0078c0e3cc6f5f3",
+        "text": "Service the machine's drive belt"
+      },
+      {
+        "id": "o154028966792c9a0",
+        "text": "Replace the sewing machine motor"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g023:r01",
+    "state": "The dog needs ten days of rest after surgery. Suspend the walks until the 18th and then resume the usual arrangement.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o8df1b1d46d01d6ab",
+        "text": "Reduce walks during the recovery period"
+      },
+      {
+        "id": "od5f5467b3ee0b609",
+        "text": "End walks after the current booking period"
+      },
+      {
+        "id": "oa65669d34e0c5b0c",
+        "text": "Pause until the 18th, then resume walks"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g045:r01",
+    "state": "The installation is complete. Our buyer's solicitor needs the glazing compliance certificate; an invoice alone will not satisfy them.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o3aae94a2e9f544ce",
+        "text": "Supply the glazing installation invoice"
+      },
+      {
+        "id": "obb63cd681debe1a4",
+        "text": "Send the window guarantee documentation"
+      },
+      {
+        "id": "o0b29b9e5aa2625ac",
+        "text": "Arrange a compliance inspection of the glazing"
+      },
+      {
+        "id": "od532681f0c3d6d6a",
+        "text": "Supply the glazing compliance certificate"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g067:r01",
+    "state": "I've finished your introductory course and want to book the advanced viennoiserie workshop next. I'm not trying to repeat the basics.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o51fc213499f1f8b9",
+        "text": "Book a repeat introductory baking course"
+      },
+      {
+        "id": "o0a45ef2f70b59190",
+        "text": "Book the advanced viennoiserie workshop"
+      },
+      {
+        "id": "o54a2ac26663d6808",
+        "text": "Arrange assessment for advanced workshop entry"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g089:r01",
+    "state": "My neighbour will accept the supplies while I'm away. Put her name on the delivery, keeping my billing details and the same address.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o42bf5ff3c6c99672",
+        "text": "Change the delivery recipient to the neighbour"
+      },
+      {
+        "id": "of235ae9e947bd1c8",
+        "text": "Change the delivery address to the neighbour's"
+      },
+      {
+        "id": "oda411a718ff73eea",
+        "text": "Change the billing contact to the neighbour"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g112:r01",
+    "state": "The installers finished yesterday, but I still don't know how to set the night mode. I'd like someone to show me, not quote for extra equipment.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o4824f3ec42c8c0ea",
+        "text": "Configure the night mode on the user's behalf"
+      },
+      {
+        "id": "o5b5e3fb91dd7025f",
+        "text": "Explain how to set the alarm's night mode"
+      },
+      {
+        "id": "o5c09a657dfc292f6",
+        "text": "Send the alarm installation completion report"
+      },
+      {
+        "id": "o041955117727c7c4",
+        "text": "Check the keypad for an operating fault"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g134:r01",
+    "state": "One quote has a separate stairs charge and another doesn't. Explain what your surcharge covers; don't change my inventory or accept the quote for me.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o526d361611522de0",
+        "text": "Remove the stairs surcharge from the estimate"
+      },
+      {
+        "id": "o7ced76e729535f9e",
+        "text": "Explain the quoted stairs surcharge"
+      },
+      {
+        "id": "o0252f289097fe600",
+        "text": "Compare the two quotes' overall prices"
+      },
+      {
+        "id": "od1ae202835ce9f7d",
+        "text": "Arrange a survey of the staircase"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g156:r01",
+    "state": "A player repeatedly shouted insults after the organiser warned them. I want the conduct team to address this, not advice about improving my strategy.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o169a03a0a4158eac",
+        "text": "Request a review of the game's result"
+      },
+      {
+        "id": "o658533917bd76d41",
+        "text": "Ask the organiser to clarify the conduct rules"
+      },
+      {
+        "id": "o31cbd29eea7ed239",
+        "text": "Report the player's repeated abuse"
+      },
+      {
+        "id": "ofb36a0de19adea49",
+        "text": "Request a different table assignment"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g178:r01",
+    "state": "After the current licence expires, I won't be fishing for a while. Turn off automatic renewal, leaving the current permission valid until its end date.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "odc83cfc560c93612",
+        "text": "Cancel the current permit immediately"
+      },
+      {
+        "id": "o2612435a3b323ea4",
+        "text": "Pause the current licence's validity"
+      },
+      {
+        "id": "oc8e69f5fd19e71b4",
+        "text": "Stop auto-renewal, keeping current validity"
+      },
+      {
+        "id": "o8bed74e22bf4ce24",
+        "text": "Renew the permit for a shorter period"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g200:r01",
+    "state": "The reusable box is too large for my fridge. For the next delivery, switch to the smaller reusable size, not disposable packaging.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o11e1edb463eed91c",
+        "text": "Use smaller disposable packaging next delivery"
+      },
+      {
+        "id": "o55eda928d5d1f8a7",
+        "text": "Reduce the quantity in the next delivery"
+      },
+      {
+        "id": "o38625070c0c1c674",
+        "text": "Exchange the current box immediately"
+      },
+      {
+        "id": "odc44fd7e84411790",
+        "text": "Use a smaller reusable box next time"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g201:r01",
+    "state": "This is my first drone and I need to register as an operator. Can you start that registration rather than renew a record that doesn't exist?",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o5084e309bfe5dd64",
+        "text": "Renew an existing operator registration"
+      },
+      {
+        "id": "o94386a9664d82961",
+        "text": "Register an additional drone on an existing record"
+      },
+      {
+        "id": "o2b67d8e59ddec3c6",
+        "text": "Start a first operator registration"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g205:r01",
+    "state": "After a browser timeout I submitted again, and now two operator registration references appear. Withdraw the later application only; the first should still proceed.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o7699bbaae65b8b0b",
+        "text": "Withdraw both operator applications"
+      },
+      {
+        "id": "oe91cf7aa6c0056dd",
+        "text": "Merge the two operator registration references"
+      },
+      {
+        "id": "o98dd241ee57745d8",
+        "text": "Withdraw only the later duplicate application"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g210:r01",
+    "state": "I'm stuck at the operator-details screen of the drone registration form. Talk me through completing it myself; leave submission and payment to me.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o77c0c5a8667243fa",
+        "text": "Explain operator details; leave submission to me"
+      },
+      {
+        "id": "o09285713f06cf4a2",
+        "text": "Complete and submit the operator details"
+      },
+      {
+        "id": "o60a86d77e7683753",
+        "text": "Explain how to pay the registration fee"
+      },
+      {
+        "id": "o43d4554564275646",
+        "text": "Check an existing operator application's status"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g214:r01",
+    "state": "Roughly how long does the old-town walk take from start to finish? I'm checking the duration, not asking for a shorter private version.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "of4ef5f890b76bd88",
+        "text": "Explain the old-town walk's total duration"
+      },
+      {
+        "id": "o3b5855dd5556ec57",
+        "text": "Explain the walk's distance and terrain"
+      },
+      {
+        "id": "ob02ba6672ce6def8",
+        "text": "Quote for a shorter private walk"
+      },
+      {
+        "id": "obf21043c006eb76d",
+        "text": "Reserve a place on the old-town walk"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g218:r01",
+    "state": "Our history club wants a guide exclusively for twelve members on Tuesday. Can you arrange a private tour rather than distribute us across public departures?",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "oe50e2cf546f84a5d",
+        "text": "Reserve twelve places on a public Tuesday walk"
+      },
+      {
+        "id": "ob783e3ddc9940aa6",
+        "text": "Quote for a private tour on another day"
+      },
+      {
+        "id": "o4d4e57ef32f5c192",
+        "text": "Arrange a private guide-training session"
+      },
+      {
+        "id": "o9dafbb82f6f91b00",
+        "text": "Send a route for a self-guided club walk"
+      },
+      {
+        "id": "oab3083f8c08df76d",
+        "text": "Book a private Tuesday tour for twelve"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g223:r01",
+    "state": "My skates are on your sharpening bench under tag 47. Before I travel to the rink, confirm whether that pair is ready to collect.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o2996f6d002af3a3c",
+        "text": "Confirm the hollow requested for tag 47"
+      },
+      {
+        "id": "ob98268bc14ed30e1",
+        "text": "Change tag 47's collection appointment"
+      },
+      {
+        "id": "o91740f0336c4944f",
+        "text": "Ask for the sharpening job's price"
+      },
+      {
+        "id": "o887f87ee651298ef",
+        "text": "Check whether tag 47 is ready to collect"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g227:r01",
+    "state": "I'll bring the skates at 4 pm instead of noon. Keep the same sharpening request and collection day; only my drop-off time has changed.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o0bbdf94c24218071",
+        "text": "Move the collection time to 4 pm"
+      },
+      {
+        "id": "o906d8347d0810949",
+        "text": "Change the sharpening appointment's service date"
+      },
+      {
+        "id": "ofb4cd46f057ba6eb",
+        "text": "Move drop-off to 4 pm only"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g231:r01",
+    "state": "The text has already been transcribed correctly. I now need a physical embossed copy, not another round of editing or a large-print version.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "oebbba77adbf3568e",
+        "text": "Order a large-print copy of the document"
+      },
+      {
+        "id": "oe843e049277e1ff9",
+        "text": "Order embossing of the correct transcription"
+      },
+      {
+        "id": "o6a9d2df80a25a9e4",
+        "text": "Revise the existing braille transcription"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g236:r01",
+    "state": "The project has been withdrawn and you haven't begun transcription. Cancel the order rather than putting it on hold for a later date.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o7db1247db9b8667d",
+        "text": "Hold the transcription order for a later date"
+      },
+      {
+        "id": "oac87eb83b2d0ece5",
+        "text": "Cancel delivery of the completed transcription"
+      },
+      {
+        "id": "o09265f26dc783214",
+        "text": "Cancel transcription before work starts"
+      },
+      {
+        "id": "o397c048043ad479d",
+        "text": "Change the pending transcription's output format"
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:intent-b-r2:g240:r01",
+    "state": "Thanks, but large print will not meet the reader's needs. Give me a quote for braille transcription instead; don't begin production until it's approved.",
+    "question": "What does the customer want?",
+    "options": [
+      {
+        "id": "o77296ea62c88d734",
+        "text": "Quote for braille; await production approval"
+      },
+      {
+        "id": "o40b7f5610cd29e7c",
+        "text": "Quote for producing a large-print edition"
+      },
+      {
+        "id": "of22e9fa3306fdc0d",
+        "text": "Begin braille transcription immediately"
+      },
+      {
+        "id": "o6fa6a97780e81676",
+        "text": "Explain braille transcription's source requirements"
+      }
+    ]
+  }
+]

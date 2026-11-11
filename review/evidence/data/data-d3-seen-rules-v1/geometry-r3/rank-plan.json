@@ -1,0 +1,40 @@
+{
+  "revision": "geometry-r3",
+  "stage": "Frozen before selecting replacement clock times; no model predictions used",
+  "author": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai"
+  },
+  "rank_definition": "Ascending numerical rank among three clock options; null means none target",
+  "assignment": {
+    "data:d3-seen-rules-v1:cooldown:p01:c01": 3,
+    "data:d3-seen-rules-v1:cooldown:p01:c02": null,
+    "data:d3-seen-rules-v1:cooldown:p02:c01": 1,
+    "data:d3-seen-rules-v1:cooldown:p02:c02": 2,
+    "data:d3-seen-rules-v1:cooldown:p03:c01": 2,
+    "data:d3-seen-rules-v1:cooldown:p03:c02": 3,
+    "data:d3-seen-rules-v1:cooldown:p04:c01": 1,
+    "data:d3-seen-rules-v1:cooldown:p04:c02": 2,
+    "data:d3-seen-rules-v1:cooldown:p05:c01": 3,
+    "data:d3-seen-rules-v1:cooldown:p05:c02": 1,
+    "data:d3-seen-rules-v1:cooldown:p06:c01": 2,
+    "data:d3-seen-rules-v1:cooldown:p06:c02": 1
+  },
+  "non_none_rank_counts": {
+    "1": 4,
+    "2": 4,
+    "3": 3
+  },
+  "parent_hashes": {
+    "audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "audit_cases.jsonl": "36c958bd2d5518fd3af6238bae88c6bf0cc5bdc5465f395f0bb8020f8d11c79b",
+    "generation_review.md": "d25da8040b4e31703a035d60c14355b3ea7efc9ba4dc11ea539701fb683c8d6c",
+    "group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "metadata.json": "c5fea73b62e76cce54d25616dea9b7e681efea6a9413b7c48b251bddd0c7610f",
+    "revision.py": "e0f7cc84dacb5f9f4513d38ff43c2735e07848b12dc393f556f0e9711aa6b80d",
+    "revision_map.json": "6c3b8b94a956e96da3d8ae5a54e7ca6df8bf65b9d57e1a739f82e31c6a8cb653",
+    "source_cases.jsonl": "955b762f49d66e0865c774b2c3b321c3721fb9b94625e7ad3be4fe937a902bd5",
+    "validation.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "validation_report.json": "ab2c3fae8be9c2f4a122092a196d25245007c72114de8089712b426af39d975b"
+  }
+}

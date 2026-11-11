@@ -1,0 +1,16 @@
+{
+  "prior_lock": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v1/preparation-lock.json",
+    "sha256": "4fbfef00335feca0d53a8312b64b75b48734c9286e338593be6c5402f5eefcd6"
+  },
+  "prior_script": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v1/run.py",
+    "sha256": "71fa8e218a8518d9ac4ea1fcc1bd029d56c1b07bcd5bfad1b97726edd4fdc74c"
+  },
+  "current_script": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v2/run.py",
+    "sha256": "6ac93a8799087fadef6f672e2f2e5dde26c688a6fd63b05b9e106d1d37195560"
+  },
+  "change": "Before new outcome inspection: stream hashes for report-sized JSON, reject tensor extensions; detailed paired contributions narrowed to five named E6 contrasts while every11-predictor subgroup metric and existing original-order pairwise comparison remains. No metric, population, plan, tolerance or interpretation change.",
+  "executed": false
+}

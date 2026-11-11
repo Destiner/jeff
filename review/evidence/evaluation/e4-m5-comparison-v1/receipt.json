@@ -1,0 +1,419 @@
+{
+  "study": "E4 M5 LR control",
+  "commands": [
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/lexical.jsonl",
+        "--predictions",
+        "m3-pretrained-start=/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-original-predictions.jsonl",
+        "--predictions",
+        "m3-historical-trained=/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-original-predictions.jsonl",
+        "--predictions",
+        "m2-context=/Users/destiner/Code/jeff/artifacts/model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl",
+        "--predictions",
+        "m5-pretrained-start=/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-original-predictions.jsonl",
+        "--predictions",
+        "m5-low-head-lr=/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-original-predictions.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 7 prediction files on 60 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/comparison.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/report.md",
+        "--title",
+        "E4 M5 LR control — pilot"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 7 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/report.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/lexical.jsonl",
+        "--predictions",
+        "m3-pretrained-start=/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-probes-predictions.jsonl",
+        "--predictions",
+        "m3-historical-trained=/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "--predictions",
+        "m2-context=/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "--predictions",
+        "m5-pretrained-start=/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-probes-predictions.jsonl",
+        "--predictions",
+        "m5-low-head-lr=/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-probes-predictions.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 7 prediction files on 24 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/comparison.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/uniform.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/uniform-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/uniform-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/lexical.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/lexical-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/lexical-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-probes-predictions.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-pretrained-start-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-pretrained-start-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-historical-trained-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-historical-trained-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m2-context-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m2-context-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-probes-predictions.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-pretrained-start-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-pretrained-start-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-probes-predictions.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-low-head-lr-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-low-head-lr-order.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/comparison.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/report.md",
+        "--title",
+        "E4 M5 LR control — probes",
+        "--order",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/uniform-order.json",
+        "--order",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/lexical-order.json",
+        "--order",
+        "m3-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-pretrained-start-order.json",
+        "--order",
+        "m3-historical-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-historical-trained-order.json",
+        "--order",
+        "m2-context=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m2-context-order.json",
+        "--order",
+        "m5-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-pretrained-start-order.json",
+        "--order",
+        "m5-low-head-lr=/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-low-head-lr-order.json"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 7 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/report.md\n",
+      "stderr": ""
+    }
+  ],
+  "pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/inputs.jsonl",
+      "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/uniform.jsonl",
+      "sha256": "067f7fd2b440ac0ab5e5115760def020feb18a2ad23cb723b2f972947cb07090"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/lexical.jsonl",
+      "sha256": "d5f1422ae2ee6125f6826a39caf1d808fcd1afb999683f299d7ca3db7923ebd3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-original-predictions.jsonl",
+      "sha256": "cef650f002f9a7850c9f913b1e1d8dc169cc1b03db4a08ae10fafdf0a4935eb0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-original-predictions.jsonl",
+      "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl",
+      "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-original-predictions.jsonl",
+      "sha256": "cef650f002f9a7850c9f913b1e1d8dc169cc1b03db4a08ae10fafdf0a4935eb0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-original-predictions.jsonl",
+      "sha256": "ebf50035eae1dcd1f45bf503b095ad5382f98a85397a3c4666112a9cfe33f25b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/uniform.jsonl",
+      "sha256": "9da4e7f50b20d2f3db5943eaab83fbc1479ca17c6e50613d89f0d79794a06139"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/lexical.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-probes-predictions.jsonl",
+      "sha256": "263276ab7578cf62a363b6e4aec8f7510f532d30840b84d5cfc1cdb8bf12ef95"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-probes-predictions.jsonl",
+      "sha256": "263276ab7578cf62a363b6e4aec8f7510f532d30840b84d5cfc1cdb8bf12ef95"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/checkpoint-probes-predictions.jsonl",
+      "sha256": "3edaf8e82f00316ef501ea809794006c7cb32c4d346633896e8d05f3a3cb0921"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/criterion.json",
+      "sha256": "a74b9ebf2cd7f52a0367422d7ca9db489154c7060516be2ca768e40f23e709c6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/historical-bindings.json",
+      "sha256": "8fc812ef3779a2de60eb400687baba7c3ffc5fd5ef994471c3a36fe55e83c54e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+      "sha256": "f7e7b26e74e0fb33ef7745c6ef32bad366fba6d6eb190051135e8fceb3311895"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/receipt.json",
+      "sha256": "42376824ed133d03e244084c4c047394d182c5d521a11a05c5e788076039febc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-execution-v1/run.py",
+      "sha256": "6cf6e071950960a81fdb59fd7feea5a8c0e1614c3f2de6898e8d1b706d464f98"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-01.json",
+      "sha256": "4f8c939902b8a4f2968a687b699298637d1f7136c5af6ac8f071ceeaa441fbb3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-02.json",
+      "sha256": "5e3987807808bd0fd4aac9cc1f070b6fadfee15de1ed9b0389c6266d2c2f97af"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-03.json",
+      "sha256": "bd1230dc48f5e7e5340e65ce81dae80841699c952cc02dc450bb15367ccefea1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-04.json",
+      "sha256": "46f38ba96edbfaed78e99e6ff9ebeaa54a36b864eb9b4dcfd14dfb7e1bb64c4e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-05.json",
+      "sha256": "519f5c1827f760bcb08aa54cd70fb874d7c152e64b9a63801a82a55b6a208195"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-06.json",
+      "sha256": "c416473ea1b0f321acc4e6f2c7e14d99d9efec314ba29206941e42378c4de365"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-07.json",
+      "sha256": "2f9828602b9400506c3d776a368f5ba642576d060ecc687689df40a72df340af"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-08.json",
+      "sha256": "4f7c7e478206a991011ad3bc94d773bb256c6862de0b56b8ec5dc41777839628"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-09.json",
+      "sha256": "2b391c04899de304b89772a99036eb00b00919ebd0b39820c2c74a6da6e3c7b5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-10.json",
+      "sha256": "d36fc4361ba6d11f4d70fe68b816fa2a4df12ed6945e8b3388f7ba78c8976087"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/command-11.json",
+      "sha256": "4db21eb3c4b4accf0b8484816172e16dd420b0b8823903f37222505ace2f5948"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+      "sha256": "74bf9d75c540bceb5bf2bbeb5a48b0dacc67a2b9d8fe9bf14cc0e37d0deb60b3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/report.md",
+      "sha256": "4761c0b92da1fb39b69b8185a89fc52dede58c4384cd1b2f761c0737ecd9c6da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/comparison.json",
+      "sha256": "5ee579ac9f043df1de602201788571ed220f02183f3394c2941e37c304a549ed"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/lexical-order.json",
+      "sha256": "21a27d66213f0eebe3d8d7a60f06d5c42734ee174ec88e60de9605ccfafa2bea"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m2-context-order.json",
+      "sha256": "4e63402f4b44fbc3d1928a76e6d1fe2d22727b575b76180267c26a4a993ced8b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-historical-trained-order.json",
+      "sha256": "46743a88018f93b8e4b9158bacf750d98bbcbc649465241cb327d57d91ba3b46"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m3-pretrained-start-order.json",
+      "sha256": "a7309ac56b961913856bf591c65aee855821404788952b85c8bc5ded46e6791b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-low-head-lr-order.json",
+      "sha256": "97bbd1131a7286cc6c27b1fa72b8de6d48571b9493495cb20cc37a7823e2cb75"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-pretrained-start-order.json",
+      "sha256": "c961a24e8d593f50e022980a0e044813d4ec62f4e1f6575ef7f064484009655d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/report.md",
+      "sha256": "46956187cb4f28d84f129a70463323a4da00bf89aff98eeb8ecbeffe53df6a2e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/uniform-order.json",
+      "sha256": "f6800d2860b04977f3536500700af886699fb29666f9c8dbc1a1daac2ab4b3c0"
+    }
+  ],
+  "baseline_predictions_byte_identical": true,
+  "scope": "Actual CPU comparison of saved predictions; no training/inference/final-data access. Recorded controls verified separately."
+}

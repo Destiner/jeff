@@ -1,0 +1,3047 @@
+{
+  "schema_version": "evaluation/e4-m5-result/1",
+  "pins": {
+    "criterion": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/criterion.json",
+      "sha256": "a74b9ebf2cd7f52a0367422d7ca9db489154c7060516be2ca768e40f23e709c6"
+    },
+    "historical": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-preregister-v1/historical-bindings.json",
+      "sha256": "8fc812ef3779a2de60eb400687baba7c3ffc5fd5ef994471c3a36fe55e83c54e"
+    },
+    "controls": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-control-review-v1/receipt.json",
+      "sha256": "d24e9cbc6093bb3e2165ab6216c31d4fbf415c66f08d8ab74e25374f676377b6"
+    },
+    "pilot": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+      "sha256": "74bf9d75c540bceb5bf2bbeb5a48b0dacc67a2b9d8fe9bf14cc0e37d0deb60b3"
+    },
+    "probes": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/comparison.json",
+      "sha256": "5ee579ac9f043df1de602201788571ed220f02183f3394c2941e37c304a549ed"
+    },
+    "pairs": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+      "sha256": "f7e7b26e74e0fb33ef7745c6ef32bad366fba6d6eb190051135e8fceb3311895"
+    },
+    "references": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    "order": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-comparison-v1/probes/m5-low-head-lr-order.json",
+      "sha256": "97bbd1131a7286cc6c27b1fa72b8de6d48571b9493495cb20cc37a7823e2cb75"
+    }
+  },
+  "code": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-m5-execution-v1/criterion.py",
+    "sha256": "288f238e066bcf6f2675f26de8e858008facd492b951cead8ed752a712621109"
+  },
+  "criteria_pass": false,
+  "checks": {
+    "coverage": true,
+    "controls_comparable": true,
+    "recover_lost_group": true,
+    "no_new_error": true,
+    "lower_probe_group_macro_loss": false,
+    "pilot_loss_within_ceiling": true
+  },
+  "recovered_lost_groups": [
+    "eval.validation.sentiment.04"
+  ],
+  "newly_wrong_groups": [],
+  "all12_group_macro_loss": {
+    "uniform": 1.0550082766877307,
+    "lexical": 1.0470441093070695,
+    "m3-pretrained-start": 1.4537831337093712,
+    "m3-historical-trained": 1.360701041245408,
+    "m2-context": 0.7104069052752945,
+    "m5-pretrained-start": 1.4537831337093712,
+    "m5-low-head-lr": 1.3847732520228302
+  },
+  "pilot_loss": {
+    "n": 60,
+    "zero_target_count": 0,
+    "status": "finite",
+    "mean": 0.7945249517640895
+  },
+  "pilot_loss_ceiling": 0.8437008119799213,
+  "groups": [
+    {
+      "group_id": "eval.validation.intent.01",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.34708121966538463,
+            "signed_target_margin": -0.008384788006240707,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0581964639873493,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.34708121966538463,
+            "signed_target_margin": -0.008384788006240707,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0581964639873493,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0581964639873493
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7768065734079317,
+            "signed_target_margin": 0.5593968489172729,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.2525638998781949,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7768065734079317,
+            "signed_target_margin": 0.5593968489172729,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.2525638998781949,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.2525638998781949
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6828447112673219,
+            "signed_target_margin": 0.3666301736620689,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.3814878079747263,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6828447112673219,
+            "signed_target_margin": 0.3666301736620689,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.3814878079747263,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.3814878079747263
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.704547194111399,
+            "signed_target_margin": 0.4091872135330307,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.35019996037482254,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.704547194111399,
+            "signed_target_margin": 0.4091872135330307,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.35019996037482254,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.35019996037482254
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7768065734079317,
+            "signed_target_margin": 0.5593968489172729,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.2525638998781949,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7768065734079317,
+            "signed_target_margin": 0.5593968489172729,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.2525638998781949,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.2525638998781949
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7172987485723934,
+            "signed_target_margin": 0.4353025570560043,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.3322628604875543,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7172987440037807,
+            "signed_target_margin": 0.43530254791390816,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.33226286685674533,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.33226286367214986
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.intent.02",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3404008941246426,
+            "signed_target_margin": -0.006575093400459975,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0776312555982286,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3404008941246426,
+            "signed_target_margin": -0.006575093400459975,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0776312555982286,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0776312555982286
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.1611470322599354,
+            "signed_target_margin": -0.6652309167769129,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.8254380869005964,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.1611470322599354,
+            "signed_target_margin": -0.6652309167769129,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.8254380869005964,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.8254380869005964
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.12146705843089911,
+            "signed_target_margin": -0.7275406318896516,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 2.108112176987819,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.12146705658955836,
+            "signed_target_margin": -0.7275406359166776,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 2.1081121921469967,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 2.108112184567408
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9612097186648717,
+            "signed_target_margin": 0.9234993610406499,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.039562664200410526,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9612097186648717,
+            "signed_target_margin": 0.9234993610406499,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.039562664200410526,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.039562664200410526
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.1611470322599354,
+            "signed_target_margin": -0.6652309167769129,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.8254380869005964,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.1611470322599354,
+            "signed_target_margin": -0.6652309167769129,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.8254380869005964,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.8254380869005964
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.11989296414456498,
+            "signed_target_margin": -0.7314710127436085,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 2.1211558996999504,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.11989296495675217,
+            "signed_target_margin": -0.7314710110009688,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 2.1211558929256817,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 2.121155896312816
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.intent.03",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.2999505204063383,
+            "signed_target_margin": -0.05007421939049256,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 1.204137749907583,
+            "tie_size": 2
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.2999505204063383,
+            "signed_target_margin": -0.05007421939049256,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.204137749907583,
+            "tie_size": 2
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.204137749907583
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.0008103275884621684,
+            "signed_target_margin": -0.5240920148782976,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 7.1180719618574315,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.0008103275884621684,
+            "signed_target_margin": -0.5240920148782976,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 7.1180719618574315,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 7.1180719618574315
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3140495811119551,
+            "signed_target_margin": -0.05683404376608264,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.1582044039086037,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3140495811119551,
+            "signed_target_margin": -0.05683404376608264,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.1582044039086037,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.1582044039086037
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.22479095569808583,
+            "signed_target_margin": -0.25797557493935114,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.4925843944317168,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.22479095569808583,
+            "signed_target_margin": -0.25797557493935114,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.4925843944317168,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.4925843944317168
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.0008103275884621684,
+            "signed_target_margin": -0.5240920148782976,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 7.1180719618574315,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.0008103275884621684,
+            "signed_target_margin": -0.5240920148782976,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 7.1180719618574315,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 7.1180719618574315
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.2871071141564446,
+            "signed_target_margin": -0.10251795328993024,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.2478999127944992,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.2871071058905517,
+            "signed_target_margin": -0.10251797162157045,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 1.247899941584775,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.247899927189637
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.intent.04",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.35411901748763136,
+            "signed_target_margin": 0.005694730932113201,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 1.0381222147612916,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.35411901748763136,
+            "signed_target_margin": 0.005694730932113201,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 1.0381222147612916,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0381222147612916
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9984814244806297,
+            "signed_target_margin": 0.9973862056945533,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.0015197297238200452,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9984814244806297,
+            "signed_target_margin": 0.9973862056945533,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.0015197297238200452,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.0015197297238200452
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9696816061484574,
+            "signed_target_margin": 0.9481690589611372,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.030787502451669047,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9696816061484574,
+            "signed_target_margin": 0.9481690589611372,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.030787502451669047,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.030787502451669047
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5996569305709462,
+            "signed_target_margin": 0.3582874781148511,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.5113975696776317,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5996569305709462,
+            "signed_target_margin": 0.3582874781148511,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.5113975696776317,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.5113975696776317
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9984814244806297,
+            "signed_target_margin": 0.9973862056945533,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.0015197297238200452,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9984814244806297,
+            "signed_target_margin": 0.9973862056945533,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.0015197297238200452,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.0015197297238200452
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9688288687281962,
+            "signed_target_margin": 0.9468792395809668,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.03166728874771038,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9688288687281962,
+            "signed_target_margin": 0.9468792395809668,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.03166728874771038,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.03166728874771038
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.sentiment.01",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.34851294397571725,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0540799075036795,
+            "tie_size": 2
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.34851294397571725,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0540799075036795,
+            "tie_size": 2
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0540799075036795
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.20470794689140917,
+            "signed_target_margin": -0.549362019600087,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.5861709649316225,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.2047079457780433,
+            "signed_target_margin": -0.5493620213263775,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.5861709703704239,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.5861709676510232
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4382938616140172,
+            "signed_target_margin": -0.018741665455388634,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.8248656766428566,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4382938616140172,
+            "signed_target_margin": -0.018741665455388634,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.8248656766428566,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.8248656766428566
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6098432308341999,
+            "signed_target_margin": 0.35589685177188235,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.49455335347704704,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6098432308341999,
+            "signed_target_margin": 0.35589685177188235,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.49455335347704704,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.49455335347704704
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.20470794689140917,
+            "signed_target_margin": -0.549362019600087,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.5861709649316225,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.2047079457780433,
+            "signed_target_margin": -0.5493620213263775,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.5861709703704239,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.5861709676510232
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.46380069074787467,
+            "signed_target_margin": -0.0008518696783337831,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.768300364839101,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.46380069074787467,
+            "signed_target_margin": -0.0008518696783337831,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.768300364839101,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.768300364839101
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.sentiment.02",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.25,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 1.3862943611198906,
+            "tie_size": 4
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.25,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.3862943611198906,
+            "tie_size": 4
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3862943611198906
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.25,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 1.3862943611198906,
+            "tie_size": 4
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.25,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.3862943611198906,
+            "tie_size": 4
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.3862943611198906
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.2329447716474533,
+            "signed_target_margin": -0.057284995913505554,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.4569538850688502,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.2329447716474533,
+            "signed_target_margin": -0.057284995913505554,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.4569538850688502,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.4569538850688502
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.1309756766114283,
+            "signed_target_margin": -0.3548763788509909,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 2.032743647742592,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.1309756766114283,
+            "signed_target_margin": -0.3548763788509909,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 2.032743647742592,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 2.032743647742592
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.40764254274647366,
+            "signed_target_margin": -0.027357576239289638,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.897364609315474,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.40764254274647366,
+            "signed_target_margin": -0.027357576239289638,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.897364609315474,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.897364609315474
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.2329447716474533,
+            "signed_target_margin": -0.057284995913505554,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.4569538850688502,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 4,
+            "target_probability": 0.2329447716474533,
+            "signed_target_margin": -0.057284995913505554,
+            "correct": false,
+            "choice_id": "o3",
+            "target_id": "o0",
+            "loss": 1.4569538850688502,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.4569538850688502
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.13417699433203809,
+            "signed_target_margin": -0.34604568980464,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 2.008595497366297,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.13417699433203809,
+            "signed_target_margin": -0.34604568980464,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o0",
+            "loss": 2.008595497366297,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 2.008595497366297
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.sentiment.03",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3464566817584307,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 1.0599974847375875,
+            "tie_size": 2
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3464566817584307,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 1.0599974847375875,
+            "tie_size": 2
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0599974847375875
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4872434599163907,
+            "signed_target_margin": 0.004744291172988024,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7189913631239726,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4872434599163907,
+            "signed_target_margin": 0.004744291172988024,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7189913631239726,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7189913631239726
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4911501380178138,
+            "signed_target_margin": -0.012359857490138015,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 0.7110054178518023,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4911501380178138,
+            "signed_target_margin": -0.012359857490138015,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 0.7110054178518023,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7110054178518023
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5105070642924442,
+            "signed_target_margin": 0.05000484157369872,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.6723508034860028,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5105070642924442,
+            "signed_target_margin": 0.05000484157369872,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.6723508034860028,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.6723508034860028
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4872434599163907,
+            "signed_target_margin": 0.004744291172988024,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7189913631239726,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4872434599163907,
+            "signed_target_margin": 0.004744291172988024,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7189913631239726,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7189913631239726
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4715707427261082,
+            "signed_target_margin": -0.051546455797808255,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 0.7516861505679997,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4715707427261082,
+            "signed_target_margin": -0.051546455797808255,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 0.7516861505679997,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7516861505679997
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.sentiment.04",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.339706442153163,
+            "signed_target_margin": -0.012272931664259523,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o2",
+            "loss": 1.0796734397529597,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.339706442153163,
+            "signed_target_margin": -0.012272931664259523,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o2",
+            "loss": 1.0796734397529597,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0796734397529597
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8246056465238166,
+            "signed_target_margin": 0.6691552386456283,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.1928500111414449,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8246056465238166,
+            "signed_target_margin": 0.6691552386456283,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.1928500111414449,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.1928500111414449
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.47514815111948117,
+            "signed_target_margin": -0.024632007388308785,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o2",
+            "loss": 0.7441286264836384,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.47514815111948117,
+            "signed_target_margin": -0.024632007388308785,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o2",
+            "loss": 0.7441286264836384,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7441286264836384
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6591917921542509,
+            "signed_target_margin": 0.36040073901713443,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.4167407516867057,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6591917921542509,
+            "signed_target_margin": 0.36040073901713443,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.4167407516867057,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.4167407516867057
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8246056465238166,
+            "signed_target_margin": 0.6691552386456283,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.1928500111414449,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8246056465238166,
+            "signed_target_margin": 0.6691552386456283,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.1928500111414449,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.1928500111414449
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4933008831243929,
+            "signed_target_margin": 0.010876685340416858,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.7066359805060722,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4933008831243929,
+            "signed_target_margin": 0.010876685340416858,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.7066359805060722,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7066359805060722
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.rule_application.01",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.6931471805599453,
+            "tie_size": 2
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.5,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.6931471805599453,
+            "tie_size": 2
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.6931471805599453
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4365004916828427,
+            "signed_target_margin": -0.12699901663431462,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.82896577728194,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4365004916828427,
+            "signed_target_margin": -0.12699901663431462,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.82896577728194,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.82896577728194
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.032765547333579434,
+            "signed_target_margin": -0.9344689053328412,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 3.4183777018055577,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.032765547333579434,
+            "signed_target_margin": -0.9344689053328412,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 3.4183777018055577,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 3.4183777018055577
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.0007904118906066095,
+            "signed_target_margin": -0.9984191762187868,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 7.142956367860107,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.0007904118906066095,
+            "signed_target_margin": -0.9984191762187868,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 7.142956367860107,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 7.142956367860107
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3112483620643616,
+            "signed_target_margin": -0.37750327587127686,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 1.1671640936608847,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3112483620643616,
+            "signed_target_margin": -0.37750327587127686,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 1.1671640936608847,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.1671640936608847
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.032765547333579434,
+            "signed_target_margin": -0.9344689053328412,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 3.4183777018055577,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.032765547333579434,
+            "signed_target_margin": -0.9344689053328412,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 3.4183777018055577,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 3.4183777018055577
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.0005703627214763176,
+            "signed_target_margin": -0.9988592745570473,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 7.469238046055467,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.0005703627214763176,
+            "signed_target_margin": -0.9988592745570473,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 7.469238046055467,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 7.469238046055467
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.rule_application.02",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 3,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3570001105399355,
+            "signed_target_margin": 0.031146250589424163,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0300191875668723,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3570001105399355,
+            "signed_target_margin": 0.031146250589424163,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0300191875668723,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0300191875668723
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.778038247379622,
+            "signed_target_margin": 0.572935599270665,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.25097959485578897,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7780382457433438,
+            "signed_target_margin": 0.5729355972542097,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.250979596958871,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.25097959590733
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.48631732125035887,
+            "signed_target_margin": -0.01091715726009479,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.7208939437605767,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.48631732125035887,
+            "signed_target_margin": -0.01091715726009479,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.7208939437605767,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7208939437605767
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.35734668374061584,
+            "signed_target_margin": 0.014413118362426758,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0290488655030021,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.35734668374061584,
+            "signed_target_margin": 0.014413118362426758,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 1.0290488655030021,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0290488655030021
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.778038247379622,
+            "signed_target_margin": 0.572935599270665,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.25097959485578897,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.7780382457433438,
+            "signed_target_margin": 0.5729355972542097,
+            "correct": true,
+            "choice_id": "o2",
+            "target_id": "o2",
+            "loss": 0.250979596958871,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.25097959590733
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.49236645377489824,
+            "signed_target_margin": -0.0028374790616803036,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.7085320149883947,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.49236645377489824,
+            "signed_target_margin": -0.0028374790616803036,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o2",
+            "loss": 0.7085320149883947,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7085320149883947
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.rule_application.03",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o0",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.3333333333333333,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o2",
+            "target_id": "o1",
+            "loss": 1.0986122886681098,
+            "tie_size": 3
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 1.0986122886681098
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3755012060175089,
+            "signed_target_margin": 0.06325180902626332,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.9794935960187673,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.3755012060175089,
+            "signed_target_margin": 0.06325180902626332,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.9794935960187673,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.9794935960187673
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8888943559592198,
+            "signed_target_margin": 0.8021104052112518,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.1177768852211751,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8888943559592198,
+            "signed_target_margin": 0.8021104052112518,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.1177768852211751,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.1177768852211751
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9903662866483801,
+            "signed_target_margin": 0.9847620119118917,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.009680417768118465,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9903662866483801,
+            "signed_target_margin": 0.9847620119118917,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.009680417768118465,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.009680417768118465
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.4898195558678839,
+            "signed_target_margin": 0.181887965314863,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7137182090302228,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.48981955708148733,
+            "signed_target_margin": 0.1818879734344498,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.7137182065525686,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7137182077913957
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8888943559592198,
+            "signed_target_margin": 0.8021104052112518,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.1177768852211751,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.8888943559592198,
+            "signed_target_margin": 0.8021104052112518,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.1177768852211751,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.1177768852211751
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9915837991438318,
+            "signed_target_margin": 0.9867136097930262,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.008451817050745871,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.9915837991438318,
+            "signed_target_margin": 0.9867136097930262,
+            "correct": true,
+            "choice_id": "o1",
+            "target_id": "o1",
+            "loss": 0.008451817050745871,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.008451817050745871
+          }
+        }
+      }
+    },
+    {
+      "group_id": "eval.validation.rule_application.04",
+      "runs": {
+        "uniform": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.5,
+            "signed_target_margin": 0.0,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.6931471805599453,
+            "tie_size": 2
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.5,
+            "signed_target_margin": 0.0,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.6931471805599453,
+            "tie_size": 2
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": false,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.6931471805599453
+          }
+        },
+        "lexical": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4639781244502231,
+            "signed_target_margin": -0.0720437510995538,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.7679178734486855,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.4639781244502231,
+            "signed_target_margin": -0.0720437510995538,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.7679178734486855,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7679178734486855
+          }
+        },
+        "m3-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6030811487710134,
+            "signed_target_margin": 0.20616229754202675,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.5057035162330574,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6030811487710134,
+            "signed_target_margin": 0.20616229754202675,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.5057035162330574,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.5057035162330574
+          }
+        },
+        "m3-historical-trained": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.629048764705658,
+            "signed_target_margin": 0.2580975294113159,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.4635464979327993,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.629048764705658,
+            "signed_target_margin": 0.2580975294113159,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.4635464979327993,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.4635464979327993
+          }
+        },
+        "m2-context": {
+          "original": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.47701965203939833,
+            "signed_target_margin": -0.04596069592120333,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.7401975896984397,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 2,
+            "target_probability": 0.47701965203939833,
+            "signed_target_margin": -0.04596069592120333,
+            "correct": false,
+            "choice_id": "o1",
+            "target_id": "o0",
+            "loss": 0.7401975896984397,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": false,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.7401975896984397
+          }
+        },
+        "m5-pretrained-start": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6030811487710134,
+            "signed_target_margin": 0.20616229754202675,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.5057035162330574,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6030811487710134,
+            "signed_target_margin": 0.20616229754202675,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.5057035162330574,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.5057035162330574
+          }
+        },
+        "m5-low-head-lr": {
+          "original": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6294850486210017,
+            "signed_target_margin": 0.2589700972420035,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.4628531769775726,
+            "tie_size": 1
+          },
+          "reversed": {
+            "status": "valid",
+            "target_rank": 1,
+            "target_probability": 0.6294850486210017,
+            "signed_target_margin": 0.2589700972420035,
+            "correct": true,
+            "choice_id": "o0",
+            "target_id": "o0",
+            "loss": 0.4628531769775726,
+            "tie_size": 1
+          },
+          "complete": true,
+          "correct_both": true,
+          "choice_consistent": true,
+          "pair_loss": {
+            "n": 2,
+            "zero_target_count": 0,
+            "status": "finite",
+            "mean": 0.4628531769775726
+          }
+        }
+      }
+    }
+  ],
+  "pilot_rule_category_counts": {
+    "uniform": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 7,
+        "correct": 3,
+        "correct_no_result": 1,
+        "correct_nonempty": 2
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 1,
+        "correct": 3,
+        "correct_no_result": 1,
+        "correct_nonempty": 2
+      }
+    },
+    "lexical": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 0,
+        "correct": 3,
+        "correct_no_result": 0,
+        "correct_nonempty": 3
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 10,
+        "correct": 5,
+        "correct_no_result": 5,
+        "correct_nonempty": 0
+      }
+    },
+    "m3-pretrained-start": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 10,
+        "correct": 2,
+        "correct_no_result": 2,
+        "correct_nonempty": 0
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 8,
+        "correct": 3,
+        "correct_no_result": 3,
+        "correct_nonempty": 0
+      }
+    },
+    "m3-historical-trained": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 9,
+        "correct": 2,
+        "correct_no_result": 2,
+        "correct_nonempty": 0
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 10,
+        "correct": 5,
+        "correct_no_result": 5,
+        "correct_nonempty": 0
+      }
+    },
+    "m2-context": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 0,
+        "correct": 2,
+        "correct_no_result": 0,
+        "correct_nonempty": 2
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 0,
+        "correct": 2,
+        "correct_no_result": 0,
+        "correct_nonempty": 2
+      }
+    },
+    "m5-pretrained-start": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 10,
+        "correct": 2,
+        "correct_no_result": 2,
+        "correct_nonempty": 0
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 8,
+        "correct": 3,
+        "correct_no_result": 3,
+        "correct_nonempty": 0
+      }
+    },
+    "m5-low-head-lr": {
+      "data:pilot-v1:rule_application:g11": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 2,
+        "no_result_choices": 9,
+        "correct": 2,
+        "correct_no_result": 2,
+        "correct_nonempty": 0
+      },
+      "data:pilot-v1:rule_application:g12": {
+        "rows": 10,
+        "valid": 10,
+        "no_result_targets": 5,
+        "no_result_choices": 10,
+        "correct": 5,
+        "correct_no_result": 5,
+        "correct_nonempty": 0
+      }
+    }
+  },
+  "interpretation": "Fixed conjunction; no outcome-dependent exclusion. Teacher agreement, not independent correctness. M2 is context. One historical single-seed/backend comparison cannot establish causality; no default/promotion."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "evaluation-data-v2-new-order-v1",
+  "shards": [
+    {
+      "path": "evaluation/e3-v2-new-order-v1/validation.jsonl",
+      "split": "validation",
+      "rows": 480,
+      "sha256": "7a631e7d21f45be19e4464a1bfd7e95505dd0329b3c07d84071ae4d00581e682"
+    }
+  ]
+}

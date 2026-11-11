@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-pilot-v1",
+  "shards": [
+    {
+      "path": "data/data-pilot-v1/intent/train.jsonl",
+      "split": "train",
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/intent/validation.jsonl",
+      "split": "validation",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "rows": 20
+    },
+    {
+      "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "split": "train",
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "split": "validation",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "rows": 20
+    },
+    {
+      "path": "data/data-pilot-v1/rule_application/train.jsonl",
+      "split": "train",
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+      "split": "validation",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "rows": 20
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "window_start": "2026-11-11T14:48:35+00:00",
+  "observation_cutoff": "2026-11-11T15:48:44.204149+00:00",
+  "elapsed_seconds": 3609.204149,
+  "snapshot": "round-20261111T154844204161Z.json",
+  "peer_messages": 31,
+  "directed_routes": {
+    "data->model": 1,
+    "data->research": 1,
+    "evaluation->data": 1,
+    "evaluation->infra": 1,
+    "evaluation->model": 3,
+    "evaluation->release": 3,
+    "evaluation->research": 1,
+    "infra->evaluation": 2,
+    "model->evaluation": 2,
+    "model->release": 3,
+    "model->research": 1,
+    "release->evaluation": 3,
+    "release->model": 5,
+    "research->data": 1,
+    "research->evaluation": 1,
+    "research->model": 2
+  },
+  "statuses": {
+    "completed": 26,
+    "unread": 3,
+    "acknowledged": 2
+  },
+  "ack_denominator": 28,
+  "unread_censored": 3,
+  "ack_min_seconds": 19.57701,
+  "ack_median_seconds": 265.6885925,
+  "ack_p90_nearest_rank_seconds": 1657.612573,
+  "ack_max_seconds": 2050.932077,
+  "instrumented_inbox_calls": 48,
+  "full_metadata_rounds": 18,
+  "failed_inbox_calls": 0,
+  "measured_work_wall_seconds": 3.1662714574486017,
+  "measured_work_cpu_seconds": 2.7789599999999997,
+  "messages": [
+    {
+      "id": "07966c62-bbaf-4cd0-84fc-08974ecbb53a",
+      "route": "release->model",
+      "status": "completed",
+      "ack_seconds": 87.837381,
+      "age_seconds": 572.983743
+    },
+    {
+      "id": "0b69e467-8c31-4232-b936-93a43e568222",
+      "route": "data->research",
+      "status": "completed",
+      "ack_seconds": 332.94393,
+      "age_seconds": 2707.124386
+    },
+    {
+      "id": "0e29a37c-4f37-430c-bdf1-adb26937dd4b",
+      "route": "data->model",
+      "status": "completed",
+      "ack_seconds": 1477.835843,
+      "age_seconds": 2707.089749
+    },
+    {
+      "id": "1c87b566-fe6b-42b5-8f46-f98c6dceb761",
+      "route": "model->release",
+      "status": "unread",
+      "ack_seconds": null,
+      "age_seconds": 13.868928
+    },
+    {
+      "id": "2394734c-066a-45cb-8123-c1ecfbad2286",
+      "route": "evaluation->research",
+      "status": "completed",
+      "ack_seconds": 197.634021,
+      "age_seconds": 3280.179414
+    },
+    {
+      "id": "3c7ca3ca-8d62-4da8-854a-727f217be4df",
+      "route": "research->model",
+      "status": "completed",
+      "ack_seconds": 665.340618,
+      "age_seconds": 1894.564917
+    },
+    {
+      "id": "4aabac83-38c3-4461-b112-790be0fded98",
+      "route": "model->release",
+      "status": "completed",
+      "ack_seconds": 147.932472,
+      "age_seconds": 1156.777707
+    },
+    {
+      "id": "5a1ff11a-8495-4f6c-bf4e-19a5746b8d60",
+      "route": "evaluation->release",
+      "status": "completed",
+      "ack_seconds": 2036.695916,
+      "age_seconds": 3280.209511
+    },
+    {
+      "id": "5b972305-9b2b-496b-8dd2-492f6268b021",
+      "route": "evaluation->infra",
+      "status": "completed",
+      "ack_seconds": 83.299806,
+      "age_seconds": 3111.142975
+    },
+    {
+      "id": "5c80a75c-8439-40a3-9528-7d32d90e31eb",
+      "route": "evaluation->release",
+      "status": "completed",
+      "ack_seconds": 281.881389,
+      "age_seconds": 937.936552
+    },
+    {
+      "id": "5fea7077-8ca1-49a9-be79-88073e2f3228",
+      "route": "infra->evaluation",
+      "status": "completed",
+      "ack_seconds": 90.696199,
+      "age_seconds": 3201.872797
+    },
+    {
+      "id": "6157edd6-9f25-4eb7-95a6-d0717ff6b041",
+      "route": "research->model",
+      "status": "completed",
+      "ack_seconds": 1527.562154,
+      "age_seconds": 2756.845073
+    },
+    {
+      "id": "73138d4e-0158-43a0-abc8-704e7c993ae7",
+      "route": "model->research",
+      "status": "unread",
+      "ack_seconds": null,
+      "age_seconds": 1156.716318
+    },
+    {
+      "id": "7b94415e-1140-42ee-91c0-0b545cd4ebf9",
+      "route": "evaluation->model",
+      "status": "acknowledged",
+      "ack_seconds": 528.659209,
+      "age_seconds": 1014.041635
+    },
+    {
+      "id": "8cb6a271-d2c6-4a03-9398-1d5f35422b60",
+      "route": "evaluation->model",
+      "status": "completed",
+      "ack_seconds": 452.756875,
+      "age_seconds": 937.964461
+    },
+    {
+      "id": "9b74f781-7fa8-4a3b-b417-ffdb99e68088",
+      "route": "release->model",
+      "status": "completed",
+      "ack_seconds": 47.486896,
+      "age_seconds": 1187.559236
+    },
+    {
+      "id": "9ec376c7-941a-4f7b-bd77-866b4abe5836",
+      "route": "infra->evaluation",
+      "status": "completed",
+      "ack_seconds": 1657.612573,
+      "age_seconds": 2902.128458
+    },
+    {
+      "id": "9f747c21-49cd-4784-a5d5-d0700add830f",
+      "route": "model->evaluation",
+      "status": "completed",
+      "ack_seconds": 218.75312,
+      "age_seconds": 1156.745685
+    },
+    {
+      "id": "a44b51b9-a110-4867-bdb0-440f9f4058cb",
+      "route": "release->evaluation",
+      "status": "completed",
+      "ack_seconds": 99.856097,
+      "age_seconds": 3522.271976
+    },
+    {
+      "id": "a91cdb94-cfdf-4183-9ebe-0671bba51ada",
+      "route": "evaluation->release",
+      "status": "acknowledged",
+      "ack_seconds": 71.374296,
+      "age_seconds": 1014.009341
+    },
+    {
+      "id": "a9dfc5d4-89aa-45b2-96db-9071c306475f",
+      "route": "release->evaluation",
+      "status": "completed",
+      "ack_seconds": 445.515419,
+      "age_seconds": 942.607198
+    },
+    {
+      "id": "bac2909e-6ac5-4ce6-add8-cd1bc3c7b773",
+      "route": "evaluation->model",
+      "status": "completed",
+      "ack_seconds": 2050.932077,
+      "age_seconds": 3280.244475
+    },
+    {
+      "id": "bd85ed60-d1f3-4f57-8f2c-ce0a00a37eed",
+      "route": "release->model",
+      "status": "completed",
+      "ack_seconds": 19.57701,
+      "age_seconds": 504.660765
+    },
+    {
+      "id": "c241721d-4f1a-46b9-bd2c-e6bac891991d",
+      "route": "research->evaluation",
+      "status": "completed",
+      "ack_seconds": 650.059072,
+      "age_seconds": 1894.534619
+    },
+    {
+      "id": "c46ad127-b6e4-40a9-ad1d-304c050f6d52",
+      "route": "release->evaluation",
+      "status": "completed",
+      "ack_seconds": 249.495796,
+      "age_seconds": 1187.522381
+    },
+    {
+      "id": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52",
+      "route": "model->release",
+      "status": "completed",
+      "ack_seconds": 101.589647,
+      "age_seconds": 1044.3192
+    },
+    {
+      "id": "c96a2308-d19f-4e2b-a2a6-9d267aec690f",
+      "route": "release->model",
+      "status": "completed",
+      "ack_seconds": 457.431143,
+      "age_seconds": 942.697904
+    },
+    {
+      "id": "c9791c4c-54f6-424a-aab7-a9bd13913d73",
+      "route": "research->data",
+      "status": "completed",
+      "ack_seconds": 23.257114,
+      "age_seconds": 1894.501641
+    },
+    {
+      "id": "e46627e7-627e-465b-a24e-a0f3c0b6d916",
+      "route": "evaluation->data",
+      "status": "completed",
+      "ack_seconds": 248.25231,
+      "age_seconds": 3280.151071
+    },
+    {
+      "id": "f6659029-f2f8-4bde-80fc-98e2276bf95f",
+      "route": "release->model",
+      "status": "completed",
+      "ack_seconds": 523.48754,
+      "age_seconds": 1008.812065
+    },
+    {
+      "id": "f9b915c1-cf65-454b-acf8-adb54e92248c",
+      "route": "model->evaluation",
+      "status": "unread",
+      "ack_seconds": null,
+      "age_seconds": 103.402849
+    }
+  ]
+}

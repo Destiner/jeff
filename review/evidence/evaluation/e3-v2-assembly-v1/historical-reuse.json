@@ -1,0 +1,131 @@
+{
+  "schema_version": "evaluation/e3-historical-reuse/1",
+  "source_pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v2/recipe.json",
+      "sha256": "a456847c240dec875822df8672676ebdee4614c765363405e228c1569887b805"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+      "sha256": "a855e69bdf9b3acb63cd2cca9dbf391fc61968394d86909508bbcd1c73746678"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+      "sha256": "06b13a5697992140dfd807cef68985d3bfbfec88eec3b7131436d16322a454ad"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl",
+      "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-256-paired-predictions.jsonl",
+      "sha256": "47b98a73553fe0d8fbd534b8b1f256c343c743c686d42b6df3ab91f81021f394"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-original-predictions.jsonl",
+      "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-msmarco-256-paired-predictions.jsonl",
+      "sha256": "407bead1f699ebe58cd8b81862fb154d1247039a4e96da0ef9038f0b1849efc2"
+    }
+  ],
+  "input_identity": {
+    "inherited": {
+      "historical": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/inputs.jsonl",
+        "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1"
+      },
+      "current": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/inputs.jsonl",
+        "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1"
+      },
+      "canonical_ordered_inputs_equal": true,
+      "bytes_equal": true
+    },
+    "probes": {
+      "historical": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+      },
+      "current": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+      },
+      "canonical_ordered_inputs_equal": true,
+      "bytes_equal": true
+    }
+  },
+  "candidates": {
+    "m2-v1-trained": {
+      "role": "historical-retained",
+      "inherited_original": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl",
+        "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+      },
+      "inherited_paired": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-256-paired-predictions.jsonl",
+        "sha256": "47b98a73553fe0d8fbd534b8b1f256c343c743c686d42b6df3ab91f81021f394"
+      },
+      "probes": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+      },
+      "basis": "Existing E2 hashed snapshots; unchanged full labeled references and ordered decision inputs. Not fresh M4 starts."
+    },
+    "m3-v1-trained": {
+      "role": "historical-retained",
+      "inherited_original": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-original-predictions.jsonl",
+        "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+      },
+      "inherited_paired": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-msmarco-256-paired-predictions.jsonl",
+        "sha256": "407bead1f699ebe58cd8b81862fb154d1247039a4e96da0ef9038f0b1849efc2"
+      },
+      "probes": {
+        "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+        "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+      },
+      "basis": "Existing E2 hashed snapshots; unchanged full labeled references and ordered decision inputs. Not fresh M4 starts."
+    }
+  },
+  "checks": {
+    "unchanged_full_inherited_rows": 60,
+    "unchanged_inherited_paired_presentations": 120,
+    "unchanged_full_probe_rows": 24
+  },
+  "scope": "No inference or rescoring. No final access. Full rows/ordered inputs checked; old checkpoint authenticity remains existing Model/E2 evidence."
+}

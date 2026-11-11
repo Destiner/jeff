@@ -1,0 +1,54 @@
+{
+  "kind": "token_budget_data_audit",
+  "created_at": "2026-11-11T14:05:47.688612+00:00",
+  "dataset_id": "data-d3-seen-rules-v1",
+  "manifest": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/manifest.json",
+  "manifest_sha256": "3751605a81260dc4c90a836df1e76e2236c8af54ad3833882dff6f17de835b56",
+  "rows": 96,
+  "split_counts": {
+    "validation": 96
+  },
+  "tokenizer_source": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "tokenizer_sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+  "tokenizers_version": "0.22.2",
+  "script_sha256": "7d8c99b19cd779abd6babfb92df6af8b31587c69c504c819fb3b398ff534e27c",
+  "format": "(State:\\n{state}\\nQuestion:\\n{question}, Candidate:\\n{option.text})",
+  "truncation": "longest_first, right; exact Rust tokenizer, no model execution",
+  "full_pair_tokens": {
+    "min": 56,
+    "p50": 97,
+    "p95": 119,
+    "max": 129
+  },
+  "budgets": {
+    "128": {
+      "candidate_pairs": 361,
+      "over_budget_pairs": 1,
+      "question_loss_pairs": 1,
+      "candidate_loss_pairs": 0,
+      "affected": [
+        {
+          "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+          "option_id": "o2",
+          "split": "validation",
+          "task_family": "rule_application",
+          "full_pair_tokens": 129,
+          "question_tokens_lost": 1,
+          "candidate_tokens_lost": 0
+        }
+      ]
+    },
+    "256": {
+      "candidate_pairs": 361,
+      "over_budget_pairs": 0,
+      "question_loss_pairs": 0,
+      "candidate_loss_pairs": 0,
+      "affected": []
+    }
+  },
+  "limitations": [
+    "Token-budget evidence only; no model accuracy, latency or peak-memory measurement.",
+    "Budgets share examples and are not independent evaluation samples.",
+    "No claim about unseen longer inputs or reserved final evaluation."
+  ]
+}

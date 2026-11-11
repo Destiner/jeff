@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-d3-seen-rules-v1-geometry",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "seed": 704931,
+    "method": "Existing agent original authoring; deterministic Python arithmetic, rendering and shuffle; separate-algorithm same-agent audit",
+    "source_revision": "geometry-original-v1",
+    "assignment_revision": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "config_revision": "c622b1d943f02d38dd66561dd63d663f6c4f4f314f5bef0d831bb2617cee3132",
+    "harness_sampling": {
+      "temperature": "unknown",
+      "top_p": "unknown",
+      "seed": "unknown"
+    },
+    "hashes": {
+      "generate.py": "93ac6e69c3f82091d014949c66369074bc443570b0d29a05014910a216ef46ef",
+      "source_cases.jsonl": "517418e722807a5cb6eb5acf24a3525784d013c4b99d594f66276186eedb9ece",
+      "audit_cases.jsonl": "e2cec0ee3118a5bcaef5b53532833ba4cedc937d1f2633399719840ccd775ccf",
+      "group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+      "validation.jsonl": "e2dd23d00e11b5dd220fe7b4f48d51f9321de40a5291c67685dd706d050abc41",
+      "audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+      "validation_report.json": "a54166ce92596ffa7cb82b0b1a277789611eda862205773e426b5f8d6888ab0d",
+      "semantic_review.json": "53067b18301cd1c0eedc47bc72c2d7eaba0bf4c72d5efaf04891562df00ac32a",
+      "generation_review.md": "c1362a3cdeee04aa763f0648781395c4a475bcf4cf8af8baae60cff09862a68b"
+    },
+    "config_path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/d3-seen-rules-v1.json",
+    "old_rows_inspected": false
+  },
+  "usage_constraints": {
+    "usage": "validation_only_never_train",
+    "permanently_training_excluded": true,
+    "origin": "Original synthetic content authored under existing provider terms; no private records used; no additional redistribution license asserted."
+  },
+  "row_counts": {
+    "validation": 48
+  },
+  "group_counts": {
+    "validation": 24
+  },
+  "mechanism_count": 4,
+  "policy_count": 24,
+  "limitations": [
+    "Development diagnostic, not protected final evaluation.",
+    "Mechanism overlap with v2 training is intentional; policies and source cases are newly authored.",
+    "Two cases per policy are dependent; 48 rows are not 48 independent policies.",
+    "Never use these cases or derivatives for training or weight updates.",
+    "Labels passed same-agent separate-algorithm consistency audit, not independent authorship or external verification.",
+    "No tokenizer run; parent must audit the 256-token pair budget."
+  ]
+}

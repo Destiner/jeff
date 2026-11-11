@@ -1,0 +1,17 @@
+{
+  "actual_publication_checks": {
+    "pins": 47,
+    "links": 21
+  },
+  "all_match": true,
+  "artifact_links_resolve_from_main_checkout": true,
+  "earlier_link_check": "Failed only because it assumed a worktree-local artifacts directory. Shared artifacts are deliberately in canonical main root. No report link or artifact changed.",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e6-decoder-learning.md",
+    "sha256": "ba41f408a61288ba880e8cc76973ea5b396ef7a46dd6c944e08ddc1275c2a985"
+  },
+  "config": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e6-m6-v1.json",
+    "sha256": "74beb1c96222455d69e562e4a5136e6014e0990fb46b9f84f30c02a5b94fd00c"
+  }
+}

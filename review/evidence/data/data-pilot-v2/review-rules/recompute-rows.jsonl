@@ -1,0 +1,480 @@
+{"id": "data:pilot-v2:rule-a:g001:r01", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r02", "expected_text": "Reject: too many eligible signers", "target_text": "Reject: too many eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r03", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r04", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r05", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r06", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r07", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r08", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r09", "expected_text": "Reject: too many eligible signers", "target_text": "Reject: too many eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r10", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r11", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r12", "expected_text": "Reject: too many eligible signers", "target_text": "Reject: too many eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r13", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r14", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r15", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r16", "expected_text": "Reject: too many eligible signers", "target_text": "Reject: too many eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r17", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r18", "expected_text": "Reject: too many eligible signers", "target_text": "Reject: too many eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r19", "expected_text": "Authorize", "target_text": "Authorize", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g001:r20", "expected_text": "Reject: too few eligible signers", "target_text": "Reject: too few eligible signers", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r01", "expected_text": "Select candidate C", "target_text": "Select candidate C", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r02", "expected_text": "Select candidate B", "target_text": "Select candidate B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r03", "expected_text": "Select candidate Elm", "target_text": "Select candidate Elm", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r04", "expected_text": "Select candidate Elm", "target_text": "Select candidate Elm", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r05", "expected_text": "Select candidate R", "target_text": "Select candidate R", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r06", "expected_text": "Select candidate R", "target_text": "Select candidate R", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r07", "expected_text": "Select candidate G", "target_text": "Select candidate G", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r08", "expected_text": "Select candidate G", "target_text": "Select candidate G", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r09", "expected_text": "Select candidate Blue", "target_text": "Select candidate Blue", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r10", "expected_text": "Select candidate Gold", "target_text": "Select candidate Gold", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r11", "expected_text": "Select candidate South", "target_text": "Select candidate South", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r12", "expected_text": "Select candidate South", "target_text": "Select candidate South", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r13", "expected_text": "Select candidate L", "target_text": "Select candidate L", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r14", "expected_text": "Select candidate K", "target_text": "Select candidate K", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r15", "expected_text": "Select candidate Iris", "target_text": "Select candidate Iris", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r16", "expected_text": "Select candidate Iris", "target_text": "Select candidate Iris", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r17", "expected_text": "Select candidate Y", "target_text": "Select candidate Y", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r18", "expected_text": "Select candidate Y", "target_text": "Select candidate Y", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r19", "expected_text": "Select candidate Desk C", "target_text": "Select candidate Desk C", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g002:r20", "expected_text": "Select candidate Desk C", "target_text": "Select candidate Desk C", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r01", "expected_text": "4, 0, 0; unfilled 0", "target_text": "4, 0, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r02", "expected_text": "4, 3, 0; unfilled 0", "target_text": "4, 3, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r03", "expected_text": "2, 0, 0; unfilled 0", "target_text": "2, 0, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r04", "expected_text": "3, 5, 1; unfilled 0", "target_text": "3, 5, 1; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r05", "expected_text": "6, 1, 0; unfilled 0", "target_text": "6, 1, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r06", "expected_text": "6, 2, 5; unfilled 1", "target_text": "6, 2, 5; unfilled 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r07", "expected_text": "0, 5, 0; unfilled 0", "target_text": "0, 5, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r08", "expected_text": "0, 7, 2; unfilled 3", "target_text": "0, 7, 2; unfilled 3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r09", "expected_text": "2, 8, 0; unfilled 0", "target_text": "2, 8, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r10", "expected_text": "2, 8, 1; unfilled 0", "target_text": "2, 8, 1; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r11", "expected_text": "7, 0, 1; unfilled 0", "target_text": "7, 0, 1; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r12", "expected_text": "7, 0, 6; unfilled 5", "target_text": "7, 0, 6; unfilled 5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r13", "expected_text": "3, 3, 0; unfilled 0", "target_text": "3, 3, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r14", "expected_text": "3, 3, 2; unfilled 0", "target_text": "3, 3, 2; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r15", "expected_text": "3, 0, 0; unfilled 0", "target_text": "3, 0, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r16", "expected_text": "8, 4, 1; unfilled 0", "target_text": "8, 4, 1; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r17", "expected_text": "4, 0, 0; unfilled 0", "target_text": "4, 0, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r18", "expected_text": "4, 0, 6; unfilled 0", "target_text": "4, 0, 6; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r19", "expected_text": "6, 9, 0; unfilled 0", "target_text": "6, 9, 0; unfilled 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g003:r20", "expected_text": "6, 9, 2; unfilled 2", "target_text": "6, 9, 2; unfilled 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r01", "expected_text": "9000 millilitres", "target_text": "9000 millilitres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r02", "expected_text": "13500 millilitres", "target_text": "13500 millilitres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r03", "expected_text": "1200 centimetres", "target_text": "1200 centimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r04", "expected_text": "2800 centimetres", "target_text": "2800 centimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r05", "expected_text": "1080 seconds", "target_text": "1080 seconds", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r06", "expected_text": "2700 seconds", "target_text": "2700 seconds", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r07", "expected_text": "0.5 kilograms", "target_text": "0.5 kilograms", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r08", "expected_text": "1.5 kilograms", "target_text": "1.5 kilograms", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r09", "expected_text": "140 millimetres", "target_text": "140 millimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r10", "expected_text": "290 millimetres", "target_text": "290 millimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r11", "expected_text": "3 jug equivalents", "target_text": "3 jug equivalents", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r12", "expected_text": "5 jug equivalents", "target_text": "5 jug equivalents", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r13", "expected_text": "120 strips", "target_text": "120 strips", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r14", "expected_text": "240 strips", "target_text": "240 strips", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r15", "expected_text": "20 degrees B", "target_text": "20 degrees B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r16", "expected_text": "30 degrees B", "target_text": "30 degrees B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r17", "expected_text": "7500 grams", "target_text": "7500 grams", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r18", "expected_text": "20000 grams", "target_text": "20000 grams", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r19", "expected_text": "16 cup units", "target_text": "16 cup units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g004:r20", "expected_text": "32 cup units", "target_text": "32 cup units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r01", "expected_text": "\u00a332", "target_text": "\u00a332", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r02", "expected_text": "\u00a340", "target_text": "\u00a340", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r03", "expected_text": "\u00a312", "target_text": "\u00a312", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r04", "expected_text": "\u00a324", "target_text": "\u00a324", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r05", "expected_text": "\u00a376.5", "target_text": "\u00a376.5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r06", "expected_text": "\u00a3121.5", "target_text": "\u00a3121.5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r07", "expected_text": "\u00a30", "target_text": "\u00a30", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r08", "expected_text": "\u00a34", "target_text": "\u00a34", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r09", "expected_text": "\u00a30", "target_text": "\u00a30", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r10", "expected_text": "\u00a324", "target_text": "\u00a324", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r11", "expected_text": "\u00a316", "target_text": "\u00a316", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r12", "expected_text": "\u00a315", "target_text": "\u00a315", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r13", "expected_text": "\u00a342", "target_text": "\u00a342", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r14", "expected_text": "\u00a370", "target_text": "\u00a370", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r15", "expected_text": "\u00a318", "target_text": "\u00a318", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r16", "expected_text": "\u00a336", "target_text": "\u00a336", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r17", "expected_text": "\u00a35", "target_text": "\u00a35", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r18", "expected_text": "\u00a37", "target_text": "\u00a37", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r19", "expected_text": "\u00a340", "target_text": "\u00a340", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g005:r20", "expected_text": "\u00a345", "target_text": "\u00a345", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r01", "expected_text": "28 credits", "target_text": "28 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r02", "expected_text": "12 credits", "target_text": "12 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r03", "expected_text": "33 credits", "target_text": "33 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r04", "expected_text": "18 credits", "target_text": "18 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r05", "expected_text": "18 credits", "target_text": "18 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r06", "expected_text": "20 credits", "target_text": "20 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r07", "expected_text": "28 credits", "target_text": "28 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r08", "expected_text": "32 credits", "target_text": "32 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r09", "expected_text": "40 credits", "target_text": "40 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r10", "expected_text": "40 credits", "target_text": "40 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r11", "expected_text": "15 credits", "target_text": "15 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r12", "expected_text": "6 credits", "target_text": "6 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r13", "expected_text": "40 credits", "target_text": "40 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r14", "expected_text": "32 credits", "target_text": "32 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r15", "expected_text": "15 credits", "target_text": "15 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r16", "expected_text": "18 credits", "target_text": "18 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r17", "expected_text": "20 credits", "target_text": "20 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r18", "expected_text": "24 credits", "target_text": "24 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r19", "expected_text": "30 credits", "target_text": "30 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g006:r20", "expected_text": "30 credits", "target_text": "30 credits", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r01", "expected_text": "2.5 kilograms", "target_text": "2.5 kilograms", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r02", "expected_text": "2 kilograms", "target_text": "2 kilograms", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r03", "expected_text": "15 minutes", "target_text": "15 minutes", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r04", "expected_text": "10 minutes", "target_text": "10 minutes", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r05", "expected_text": "-2 degrees", "target_text": "-2 degrees", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r06", "expected_text": "-3 degrees", "target_text": "-3 degrees", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r07", "expected_text": "150 millimetres", "target_text": "150 millimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r08", "expected_text": "140 millimetres", "target_text": "140 millimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r09", "expected_text": "1.2 units", "target_text": "1.2 units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r10", "expected_text": "1 units", "target_text": "1 units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r11", "expected_text": "3.3 pounds", "target_text": "3.3 pounds", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r12", "expected_text": "3.2 pounds", "target_text": "3.2 pounds", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r13", "expected_text": "-2 units", "target_text": "-2 units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r14", "expected_text": "-4 units", "target_text": "-4 units", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r15", "expected_text": "75 litres", "target_text": "75 litres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r16", "expected_text": "50 litres", "target_text": "50 litres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r17", "expected_text": "4.25 centimetres", "target_text": "4.25 centimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r18", "expected_text": "4 centimetres", "target_text": "4 centimetres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r19", "expected_text": "300 metres", "target_text": "300 metres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g007:r20", "expected_text": "200 metres", "target_text": "200 metres", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r01", "expected_text": "A3 B2 A1 C1", "target_text": "A3 B2 A1 C1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r02", "expected_text": "A1 B2 A3", "target_text": "A1 B2 A3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r03", "expected_text": "2X-1Y-3X", "target_text": "2X-1Y-3X", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r04", "expected_text": "1Y-2X-2Y-1X", "target_text": "1Y-2X-2Y-1X", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r05", "expected_text": "P:2|Q:2|P:1", "target_text": "P:2|Q:2|P:1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r06", "expected_text": "Q:1|P:1|Q:3", "target_text": "Q:1|P:1|Q:3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r07", "expected_text": "R(3),G(1),R(1)", "target_text": "R(3),G(1),R(1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r08", "expected_text": "G(1),R(2),G(2)", "target_text": "G(1),R(2),G(2)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r09", "expected_text": "L2H1L2", "target_text": "L2H1L2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r10", "expected_text": "H1L2H3", "target_text": "H1L2H3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r11", "expected_text": "3E 1X 1E", "target_text": "3E 1X 1E", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r12", "expected_text": "1X 1E 3X", "target_text": "1X 1E 3X", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r13", "expected_text": "W:2,D:1,W:2", "target_text": "W:2,D:1,W:2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r14", "expected_text": "D:2,W:2,D:1", "target_text": "D:2,W:2,D:1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r15", "expected_text": "G(2) A(2) G(1)", "target_text": "G(2) A(2) G(1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r16", "expected_text": "A(1) G(2) A(3)", "target_text": "A(1) G(2) A(3)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r17", "expected_text": "M2/N3/M1", "target_text": "M2/N3/M1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r18", "expected_text": "N1/M1/N2", "target_text": "N1/M1/N2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r19", "expected_text": "2T|1S|2T", "target_text": "2T|1S|2T", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g008:r20", "expected_text": "2S|1T|3S", "target_text": "2S|1T|3S", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r01", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r02", "expected_text": "Infeasible: B first misses", "target_text": "Infeasible: B first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r03", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r04", "expected_text": "Infeasible: Roll first misses", "target_text": "Infeasible: Roll first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r05", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r06", "expected_text": "Infeasible: X first misses", "target_text": "Infeasible: X first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r07", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r08", "expected_text": "Infeasible: Coat first misses", "target_text": "Infeasible: Coat first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r09", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r10", "expected_text": "Infeasible: N first misses", "target_text": "Infeasible: N first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r11", "expected_text": "Infeasible: Note first misses", "target_text": "Infeasible: Note first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r12", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r13", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r14", "expected_text": "Infeasible: Gold first misses", "target_text": "Infeasible: Gold first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r15", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r16", "expected_text": "Infeasible: Drill first misses", "target_text": "Infeasible: Drill first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r17", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r18", "expected_text": "Infeasible: Bag first misses", "target_text": "Infeasible: Bag first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r19", "expected_text": "Feasible: all jobs meet deadlines", "target_text": "Feasible: all jobs meet deadlines", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g009:r20", "expected_text": "Infeasible: Room B first misses", "target_text": "Infeasible: Room B first misses", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r01", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r02", "expected_text": "Deny: requested permission vetoed", "target_text": "Deny: requested permission vetoed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r03", "expected_text": "Deny: requested permission ungranted", "target_text": "Deny: requested permission ungranted", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r04", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r05", "expected_text": "Deny: requested permission vetoed", "target_text": "Deny: requested permission vetoed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r06", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r07", "expected_text": "Deny: requested permission ungranted", "target_text": "Deny: requested permission ungranted", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r08", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r09", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r10", "expected_text": "Deny: requested permission vetoed", "target_text": "Deny: requested permission vetoed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r11", "expected_text": "Deny: requested permission ungranted", "target_text": "Deny: requested permission ungranted", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r12", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r13", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r14", "expected_text": "Deny: requested permission vetoed", "target_text": "Deny: requested permission vetoed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r15", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r16", "expected_text": "Deny: requested permission ungranted", "target_text": "Deny: requested permission ungranted", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r17", "expected_text": "Deny: requested permission vetoed", "target_text": "Deny: requested permission vetoed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r18", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r19", "expected_text": "Deny: requested permission ungranted", "target_text": "Deny: requested permission ungranted", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g010:r20", "expected_text": "Allow the full request", "target_text": "Allow the full request", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r01", "expected_text": "AB", "target_text": "AB", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r02", "expected_text": "ABD", "target_text": "ABD", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r03", "expected_text": "ATG", "target_text": "ATG", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r04", "expected_text": "ACT", "target_text": "ACT", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r05", "expected_text": "LMN", "target_text": "LMN", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r06", "expected_text": "RSP", "target_text": "RSP", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r07", "expected_text": "JKL", "target_text": "JKL", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g011:r08", "expected_text": "BABA", "target_text": "BABA", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r01", "expected_text": "Valid: balanced and properly nested", "target_text": "Valid: balanced and properly nested", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r02", "expected_text": "Invalid: wrong closing type", "target_text": "Invalid: wrong closing type", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r03", "expected_text": "Valid: balanced and properly nested", "target_text": "Valid: balanced and properly nested", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r04", "expected_text": "Invalid: unclosed opener", "target_text": "Invalid: unclosed opener", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r05", "expected_text": "Valid: balanced and properly nested", "target_text": "Valid: balanced and properly nested", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r06", "expected_text": "Invalid: closing with no opener", "target_text": "Invalid: closing with no opener", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r07", "expected_text": "Valid: balanced and properly nested", "target_text": "Valid: balanced and properly nested", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g012:r08", "expected_text": "Invalid: wrong closing type", "target_text": "Invalid: wrong closing type", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r01", "expected_text": "A1 B1 A2 A3 B2", "target_text": "A1 B1 A2 A3 B2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r02", "expected_text": "A1 B1 B2 A2 B3", "target_text": "A1 B1 B2 A2 B3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r03", "expected_text": "S1 N1 S2 S3 N2", "target_text": "S1 N1 S2 S3 N2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r04", "expected_text": "S1 N1 N2 N3 S2", "target_text": "S1 N1 N2 N3 S2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r05", "expected_text": "R1 B1 R2 B2 B3", "target_text": "R1 B1 R2 B2 B3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r06", "expected_text": "B1 B2 R1 R2 B3", "target_text": "B1 B2 R1 R2 B3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r07", "expected_text": "W1 E1 W2 W3 E2", "target_text": "W1 E1 W2 W3 E2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g013:r08", "expected_text": "W1 E1 E2 W2 E3", "target_text": "W1 E1 E2 W2 E3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r01", "expected_text": "Pass all constraints", "target_text": "Pass all constraints", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r02", "expected_text": "Fail constraints 1", "target_text": "Fail constraints 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r03", "expected_text": "Pass all constraints", "target_text": "Pass all constraints", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r04", "expected_text": "Fail constraints 1", "target_text": "Fail constraints 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r05", "expected_text": "Pass all constraints", "target_text": "Pass all constraints", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r06", "expected_text": "Fail constraints 2", "target_text": "Fail constraints 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r07", "expected_text": "Pass all constraints", "target_text": "Pass all constraints", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g014:r08", "expected_text": "Fail constraints 2, 3", "target_text": "Fail constraints 2, 3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r01", "expected_text": "Select candidate A", "target_text": "Select candidate A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r02", "expected_text": "Select candidate A", "target_text": "Select candidate A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r03", "expected_text": "Select candidate F", "target_text": "Select candidate F", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r04", "expected_text": "Select candidate E", "target_text": "Select candidate E", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r05", "expected_text": "Select candidate K", "target_text": "Select candidate K", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r06", "expected_text": "Select candidate M", "target_text": "Select candidate M", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r07", "expected_text": "Select candidate Pine", "target_text": "Select candidate Pine", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-a:g015:r08", "expected_text": "Select candidate Oak", "target_text": "Select candidate Oak", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r01", "expected_text": "Mon", "target_text": "Mon", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r02", "expected_text": "Tue", "target_text": "Tue", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r03", "expected_text": "Tue", "target_text": "Tue", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r04", "expected_text": "Wed", "target_text": "Wed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r05", "expected_text": "Sun", "target_text": "Sun", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r06", "expected_text": "Mon", "target_text": "Mon", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r07", "expected_text": "Sun", "target_text": "Sun", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r08", "expected_text": "Sat", "target_text": "Sat", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r09", "expected_text": "Wed", "target_text": "Wed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r10", "expected_text": "Fri", "target_text": "Fri", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r11", "expected_text": "Fri", "target_text": "Fri", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r12", "expected_text": "Thu", "target_text": "Thu", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r13", "expected_text": "Sat", "target_text": "Sat", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r14", "expected_text": "Thu", "target_text": "Thu", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r15", "expected_text": "Sun", "target_text": "Sun", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r16", "expected_text": "Sat", "target_text": "Sat", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r17", "expected_text": "Wed", "target_text": "Wed", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r18", "expected_text": "Thu", "target_text": "Thu", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r19", "expected_text": "Mon", "target_text": "Mon", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g001:r20", "expected_text": "Thu", "target_text": "Thu", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r01", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r02", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r03", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r04", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r05", "expected_text": "1", "target_text": "1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r06", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r07", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r08", "expected_text": "4", "target_text": "4", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r09", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r10", "expected_text": "4", "target_text": "4", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r11", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r12", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r13", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r14", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r15", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r16", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r17", "expected_text": "0", "target_text": "0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r18", "expected_text": "1", "target_text": "1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r19", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g002:r20", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r01", "expected_text": "Hall 4; Loft 3; Wing 2", "target_text": "Hall 4; Loft 3; Wing 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r02", "expected_text": "Hall 5; Loft 3; Wing 2", "target_text": "Hall 5; Loft 3; Wing 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r03", "expected_text": "Clay 1; Ink 1; Glass 2", "target_text": "Clay 1; Ink 1; Glass 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r04", "expected_text": "Clay 1; Ink 2; Glass 2", "target_text": "Clay 1; Ink 2; Glass 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r05", "expected_text": "News 2; Arts 3; Sport 2", "target_text": "News 2; Arts 3; Sport 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r06", "expected_text": "News 2; Arts 4; Sport 2", "target_text": "News 2; Arts 4; Sport 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r07", "expected_text": "North 0; South 2; West 2", "target_text": "North 0; South 2; West 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r08", "expected_text": "North 0; South 3; West 2", "target_text": "North 0; South 3; West 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r09", "expected_text": "Red 3; Blue 1; Gold 1", "target_text": "Red 3; Blue 1; Gold 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r10", "expected_text": "Red 3; Blue 1; Gold 2", "target_text": "Red 3; Blue 1; Gold 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r11", "expected_text": "Oak 3; Elm 1; Ash 4", "target_text": "Oak 3; Elm 1; Ash 4", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r12", "expected_text": "Oak 4; Elm 1; Ash 5", "target_text": "Oak 4; Elm 1; Ash 5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r13", "expected_text": "Audio 5; Video 0; Photo 1", "target_text": "Audio 5; Video 0; Photo 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r14", "expected_text": "Audio 5; Video 0; Photo 2", "target_text": "Audio 5; Video 0; Photo 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r15", "expected_text": "Dance 1; Drama 1; Music 1", "target_text": "Dance 1; Drama 1; Music 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r16", "expected_text": "Dance 1; Drama 1; Music 2", "target_text": "Dance 1; Drama 1; Music 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r17", "expected_text": "Brass 2; Strings 5; Winds 4", "target_text": "Brass 2; Strings 5; Winds 4", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r18", "expected_text": "Brass 2; Strings 6; Winds 5", "target_text": "Brass 2; Strings 6; Winds 5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r19", "expected_text": "Gate 3; Stage 3; Desk 1", "target_text": "Gate 3; Stage 3; Desk 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g003:r20", "expected_text": "Gate 3; Stage 3; Desk 2", "target_text": "Gate 3; Stage 3; Desk 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r01", "expected_text": "10 through 10", "target_text": "10 through 10", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r02", "expected_text": "25 through 25", "target_text": "25 through 25", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r03", "expected_text": "Empty", "target_text": "Empty", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r04", "expected_text": "9 through 9", "target_text": "9 through 9", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r05", "expected_text": "Empty", "target_text": "Empty", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r06", "expected_text": "11 through 11", "target_text": "11 through 11", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r07", "expected_text": "Empty", "target_text": "Empty", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r08", "expected_text": "-2 through 0", "target_text": "-2 through 0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r09", "expected_text": "0 through 23", "target_text": "0 through 23", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r10", "expected_text": "7 through 7", "target_text": "7 through 7", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r11", "expected_text": "3 through 7", "target_text": "3 through 7", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r12", "expected_text": "7 through 7", "target_text": "7 through 7", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r13", "expected_text": "Empty", "target_text": "Empty", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r14", "expected_text": "19 through 20", "target_text": "19 through 20", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r15", "expected_text": "-4 through -3", "target_text": "-4 through -3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r16", "expected_text": "-8 through -8", "target_text": "-8 through -8", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r17", "expected_text": "5 through 5", "target_text": "5 through 5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r18", "expected_text": "9 through 9", "target_text": "9 through 9", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r19", "expected_text": "5 through 5", "target_text": "5 through 5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g004:r20", "expected_text": "Empty", "target_text": "Empty", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r01", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r02", "expected_text": "Tie", "target_text": "Tie", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r03", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r04", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r05", "expected_text": "Tie", "target_text": "Tie", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r06", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r07", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r08", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r09", "expected_text": "Tie", "target_text": "Tie", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r10", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r11", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r12", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r13", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r14", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r15", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r16", "expected_text": "Tie", "target_text": "Tie", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r17", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r18", "expected_text": "Tie", "target_text": "Tie", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r19", "expected_text": "Vendor A", "target_text": "Vendor A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g005:r20", "expected_text": "Vendor B", "target_text": "Vendor B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r01", "expected_text": "(0, 0)", "target_text": "(0, 0)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r02", "expected_text": "(1, 2)", "target_text": "(1, 2)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r03", "expected_text": "(0, 1)", "target_text": "(0, 1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r04", "expected_text": "(-5, 2)", "target_text": "(-5, 2)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r05", "expected_text": "(3, 5)", "target_text": "(3, 5)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r06", "expected_text": "(0, 4)", "target_text": "(0, 4)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r07", "expected_text": "(0, 0)", "target_text": "(0, 0)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r08", "expected_text": "(-1, 4)", "target_text": "(-1, 4)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r09", "expected_text": "(1, 1)", "target_text": "(1, 1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r10", "expected_text": "(-5, 7)", "target_text": "(-5, 7)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r11", "expected_text": "(3, 0)", "target_text": "(3, 0)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r12", "expected_text": "(0, -3)", "target_text": "(0, -3)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r13", "expected_text": "(-2, -3)", "target_text": "(-2, -3)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r14", "expected_text": "(4, 1)", "target_text": "(4, 1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r15", "expected_text": "(1, 2)", "target_text": "(1, 2)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r16", "expected_text": "(-3, 0)", "target_text": "(-3, 0)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r17", "expected_text": "(0, -3)", "target_text": "(0, -3)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r18", "expected_text": "(3, 0)", "target_text": "(3, 0)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r19", "expected_text": "(0, 1)", "target_text": "(0, 1)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g006:r20", "expected_text": "(-3, 4)", "target_text": "(-3, 4)", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r01", "expected_text": "22", "target_text": "22", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r02", "expected_text": "33", "target_text": "33", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r03", "expected_text": "0", "target_text": "0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r04", "expected_text": "20", "target_text": "20", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r05", "expected_text": "7", "target_text": "7", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r06", "expected_text": "21", "target_text": "21", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r07", "expected_text": "7", "target_text": "7", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r08", "expected_text": "21", "target_text": "21", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r09", "expected_text": "20", "target_text": "20", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r10", "expected_text": "30", "target_text": "30", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r11", "expected_text": "0", "target_text": "0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r12", "expected_text": "18", "target_text": "18", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r13", "expected_text": "3", "target_text": "3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r14", "expected_text": "13", "target_text": "13", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r15", "expected_text": "0", "target_text": "0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r16", "expected_text": "9", "target_text": "9", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r17", "expected_text": "9", "target_text": "9", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r18", "expected_text": "23", "target_text": "23", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r19", "expected_text": "0", "target_text": "0", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g007:r20", "expected_text": "5", "target_text": "5", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r01", "expected_text": "70", "target_text": "70", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r02", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r03", "expected_text": "66", "target_text": "66", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r04", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r05", "expected_text": "30", "target_text": "30", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r06", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r07", "expected_text": "45", "target_text": "45", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r08", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r09", "expected_text": "51", "target_text": "51", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r10", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r11", "expected_text": "48", "target_text": "48", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r12", "expected_text": "118", "target_text": "118", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r13", "expected_text": "47", "target_text": "47", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r14", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r15", "expected_text": "22", "target_text": "22", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r16", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r17", "expected_text": "120", "target_text": "120", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r18", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r19", "expected_text": "21", "target_text": "21", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g008:r20", "expected_text": "No slot", "target_text": "No slot", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r01", "expected_text": "Amber", "target_text": "Amber", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r02", "expected_text": "Birch", "target_text": "Birch", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r03", "expected_text": "Tray K", "target_text": "Tray K", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r04", "expected_text": "Tray L", "target_text": "Tray L", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r05", "expected_text": "Coil P", "target_text": "Coil P", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r06", "expected_text": "Coil R", "target_text": "Coil R", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r07", "expected_text": "Bag Red", "target_text": "Bag Red", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r08", "expected_text": "Bag Green", "target_text": "Bag Green", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r09", "expected_text": "Pouch 1", "target_text": "Pouch 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r10", "expected_text": "Pouch 2", "target_text": "Pouch 2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r11", "expected_text": "Set D", "target_text": "Set D", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r12", "expected_text": "Set F", "target_text": "Set F", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r13", "expected_text": "Bundle U", "target_text": "Bundle U", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r14", "expected_text": "Bundle V", "target_text": "Bundle V", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r15", "expected_text": "Rack A", "target_text": "Rack A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r16", "expected_text": "Rack B", "target_text": "Rack B", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r17", "expected_text": "Pack N", "target_text": "Pack N", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r18", "expected_text": "Pack W", "target_text": "Pack W", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r19", "expected_text": "Roll 1", "target_text": "Roll 1", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g009:r20", "expected_text": "Roll 3", "target_text": "Roll 3", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r01", "expected_text": "Local", "target_text": "Local", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r02", "expected_text": "Freight", "target_text": "Freight", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r03", "expected_text": "Idle", "target_text": "Idle", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r04", "expected_text": "Ventilate", "target_text": "Ventilate", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r05", "expected_text": "Long", "target_text": "Long", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r06", "expected_text": "Revise", "target_text": "Revise", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r07", "expected_text": "Mist", "target_text": "Mist", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r08", "expected_text": "Soak", "target_text": "Soak", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r09", "expected_text": "Full", "target_text": "Full", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r10", "expected_text": "Half", "target_text": "Half", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r11", "expected_text": "Service", "target_text": "Service", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r12", "expected_text": "Stop", "target_text": "Stop", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r13", "expected_text": "Member", "target_text": "Member", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r14", "expected_text": "Junior", "target_text": "Junior", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r15", "expected_text": "Padded", "target_text": "Padded", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r16", "expected_text": "Padded cold", "target_text": "Padded cold", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r17", "expected_text": "Wait", "target_text": "Wait", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r18", "expected_text": "Enter", "target_text": "Enter", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r19", "expected_text": "Hold", "target_text": "Hold", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g010:r20", "expected_text": "Release", "target_text": "Release", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r01", "expected_text": "14", "target_text": "14", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r02", "expected_text": "16", "target_text": "16", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r03", "expected_text": "49", "target_text": "49", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r04", "expected_text": "46", "target_text": "46", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r05", "expected_text": "94", "target_text": "94", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r06", "expected_text": "89", "target_text": "89", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r07", "expected_text": "409", "target_text": "409", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g011:r08", "expected_text": "911", "target_text": "911", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r01", "expected_text": "10", "target_text": "10", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r02", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r03", "expected_text": "2", "target_text": "2", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r04", "expected_text": "12", "target_text": "12", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r05", "expected_text": "-9", "target_text": "-9", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r06", "expected_text": "16", "target_text": "16", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r07", "expected_text": "14", "target_text": "14", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g012:r08", "expected_text": "24", "target_text": "24", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r01", "expected_text": "A \u2192 B \u2192 C \u2192 D", "target_text": "A \u2192 B \u2192 C \u2192 D", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r02", "expected_text": "B \u2192 A \u2192 C \u2192 D", "target_text": "B \u2192 A \u2192 C \u2192 D", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r03", "expected_text": "Layout \u2192 Edit \u2192 Proof \u2192 Ship", "target_text": "Layout \u2192 Edit \u2192 Proof \u2192 Ship", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r04", "expected_text": "Proof \u2192 Layout \u2192 Edit \u2192 Ship", "target_text": "Proof \u2192 Layout \u2192 Edit \u2192 Ship", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r05", "expected_text": "Cut \u2192 Drill \u2192 Paint \u2192 Wrap", "target_text": "Cut \u2192 Drill \u2192 Paint \u2192 Wrap", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r06", "expected_text": "Drill \u2192 Cut \u2192 Paint \u2192 Wrap", "target_text": "Drill \u2192 Cut \u2192 Paint \u2192 Wrap", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r07", "expected_text": "Clean \u2192 Fetch \u2192 Index \u2192 Store", "target_text": "Clean \u2192 Fetch \u2192 Index \u2192 Store", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g013:r08", "expected_text": "Index \u2192 Clean \u2192 Fetch \u2192 Store", "target_text": "Index \u2192 Clean \u2192 Fetch \u2192 Store", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r01", "expected_text": "A", "target_text": "A", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r02", "expected_text": "C", "target_text": "C", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r03", "expected_text": "M", "target_text": "M", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r04", "expected_text": "N", "target_text": "N", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r05", "expected_text": "Red", "target_text": "Red", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r06", "expected_text": "Blue", "target_text": "Blue", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r07", "expected_text": "S", "target_text": "S", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g014:r08", "expected_text": "R", "target_text": "R", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r01", "expected_text": "Positions 2\u20133", "target_text": "Positions 2\u20133", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r02", "expected_text": "Positions 1\u20132", "target_text": "Positions 1\u20132", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r03", "expected_text": "Positions 3\u20135", "target_text": "Positions 3\u20135", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r04", "expected_text": "Positions 2\u20134", "target_text": "Positions 2\u20134", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r05", "expected_text": "Positions 3\u20136", "target_text": "Positions 3\u20136", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r06", "expected_text": "Positions 1\u20134", "target_text": "Positions 1\u20134", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r07", "expected_text": "Positions 2\u20133", "target_text": "Positions 2\u20133", "matches": true, "unique_expected_option": true, "source_correspondence": true}
+{"id": "data:pilot-v2:rule-b:g015:r08", "expected_text": "Positions 3\u20134", "target_text": "Positions 3\u20134", "matches": true, "unique_expected_option": true, "source_correspondence": true}

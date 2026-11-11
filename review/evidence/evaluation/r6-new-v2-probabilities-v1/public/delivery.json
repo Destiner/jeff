@@ -1,0 +1,21 @@
+{
+  "schema_version": "anonymous-export-delivery/1",
+  "completed_at": "2026-11-11T16:07:24.330081+00:00",
+  "status": "owner_reviewed_delivered",
+  "paired": {
+    "file": "paired.jsonl",
+    "sha256": "ca9d0f47401b753be87ef9c12648c771ef62783d1f8e646af89e1b55404f792d"
+  },
+  "export_receipt": {
+    "file": "receipt.json",
+    "sha256": "1b312883376325a045c27ff691e949c5ba3260f8fde29600461373f1f70f948e"
+  },
+  "owner_checks": [
+    "All240 rows have exact public allowlist; no text/target/correctness fields",
+    "Every case/option/source unit identifier is UUIDv4 or explicitly null; family is the only non-UUID categorical row string",
+    "Both probability vectors valid with no normalization; complete one-based reversed position arrays",
+    "Producer construction-cluster equality; immutable export/readme hashes match"
+  ],
+  "scope": "Preserved P3 NEW-v2 probabilities only. No new inference, raw case text/labels or private identity mapping supplied.",
+  "additional_spend_gbp": 0
+}

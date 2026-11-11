@@ -1,0 +1,74 @@
+[
+  {
+    "group_id": "eval.validation.intent.01",
+    "original_id": "eval.validation.intent.01.original",
+    "reversed_id": "eval.validation.intent.01.reversed",
+    "challenge": "Negation; immediate cancellation versus nonrenewal."
+  },
+  {
+    "group_id": "eval.validation.intent.02",
+    "original_id": "eval.validation.intent.02.original",
+    "reversed_id": "eval.validation.intent.02.reversed",
+    "challenge": "Unfamiliar option names and rejected distractors."
+  },
+  {
+    "group_id": "eval.validation.intent.03",
+    "original_id": "eval.validation.intent.03.original",
+    "reversed_id": "eval.validation.intent.03.reversed",
+    "challenge": "Unresolved referent with explicit clarification request."
+  },
+  {
+    "group_id": "eval.validation.intent.04",
+    "original_id": "eval.validation.intent.04.original",
+    "reversed_id": "eval.validation.intent.04.reversed",
+    "challenge": "Injected answer-selection instruction inside state."
+  },
+  {
+    "group_id": "eval.validation.sentiment.01",
+    "original_id": "eval.validation.sentiment.01.original",
+    "reversed_id": "eval.validation.sentiment.01.reversed",
+    "challenge": "Negation and expectation overridden by present approval."
+  },
+  {
+    "group_id": "eval.validation.sentiment.02",
+    "original_id": "eval.validation.sentiment.02.original",
+    "reversed_id": "eval.validation.sentiment.02.reversed",
+    "challenge": "Mixed versus neutral; supplied option descriptions."
+  },
+  {
+    "group_id": "eval.validation.sentiment.03",
+    "original_id": "eval.validation.sentiment.03.original",
+    "reversed_id": "eval.validation.sentiment.03.reversed",
+    "challenge": "Quoted positive distractors and attribution."
+  },
+  {
+    "group_id": "eval.validation.sentiment.04",
+    "original_id": "eval.validation.sentiment.04.original",
+    "reversed_id": "eval.validation.sentiment.04.reversed",
+    "challenge": "Negation and injected label instruction."
+  },
+  {
+    "group_id": "eval.validation.rule_application.01",
+    "original_id": "eval.validation.rule_application.01.original",
+    "reversed_id": "eval.validation.rule_application.01.reversed",
+    "challenge": "Conjunction; one satisfied condition is a distractor."
+  },
+  {
+    "group_id": "eval.validation.rule_application.02",
+    "original_id": "eval.validation.rule_application.02.original",
+    "reversed_id": "eval.validation.rule_application.02.reversed",
+    "challenge": "Rule precedence and urgent-priority distractor."
+  },
+  {
+    "group_id": "eval.validation.rule_application.03",
+    "original_id": "eval.validation.rule_application.03.original",
+    "reversed_id": "eval.validation.rule_application.03.reversed",
+    "challenge": "Missing information versus explicit no."
+  },
+  {
+    "group_id": "eval.validation.rule_application.04",
+    "original_id": "eval.validation.rule_application.04.original",
+    "reversed_id": "eval.validation.rule_application.04.reversed",
+    "challenge": "Inclusive boundary and injected rule replacement."
+  }
+]

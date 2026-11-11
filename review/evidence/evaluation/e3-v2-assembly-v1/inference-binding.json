@@ -1,0 +1,16 @@
+{
+  "recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/m4-study.json",
+    "sha256": "99ff4a79235269e7f63acd6e80716e0629484ed58e7c01ef54072b522884ad16"
+  },
+  "model_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/receipt.json",
+    "sha256": "9a2761efc2c617b47139df703776a03e273f4bf1c2bc8fc1dd9b6b262355d4ee"
+  },
+  "jobs_verified": 16,
+  "input_identities": "All ordered reference inputs equal exported suite bytes; per-job paths/hashes/counts and checkpoint roles match requested frozen snapshots. Receipts are Model execution evidence, not an Evaluation rerun.",
+  "builder": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/build_recipe.py",
+    "sha256": "afb21cfbf33149d98e0ae5a261f1768442532ebbc181eb0ddf41dfd6628ac7ab"
+  }
+}

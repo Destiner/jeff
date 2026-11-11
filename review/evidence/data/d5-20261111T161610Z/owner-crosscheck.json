@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-11T16:29:21.921572+00:00",
+  "rows": 1500,
+  "fit_agreement": {
+    "before": {
+      "matches": 805,
+      "mean_ce": 1.357723628623095
+    },
+    "after": {
+      "matches": 431,
+      "mean_ce": 1.3905920281410218
+    }
+  },
+  "uniform_ce": 1.3223828055602302,
+  "uniform_random_expected_agreement": 0.2694111111111098,
+  "first_position_agreement": 431,
+  "after_predicted_positions": {
+    "0": 1500
+  },
+  "after_ce_within_0_01_uniform": 0,
+  "after_correct_target_p_gt_half": 139,
+  "per_family": {
+    "intent": {
+      "before": {
+        "rows": 500,
+        "agreement": 442,
+        "mean_ce": 0.3961529250507128
+      },
+      "after": {
+        "rows": 500,
+        "agreement": 140,
+        "mean_ce": 1.3919378317594528
+      }
+    },
+    "rule_application": {
+      "before": {
+        "rows": 500,
+        "agreement": 184,
+        "mean_ce": 1.6571261154494714
+      },
+      "after": {
+        "rows": 500,
+        "agreement": 154,
+        "mean_ce": 1.3357126457691193
+      }
+    },
+    "sentiment": {
+      "before": {
+        "rows": 500,
+        "agreement": 179,
+        "mean_ce": 2.0198918453691004
+      },
+      "after": {
+        "rows": 500,
+        "agreement": 137,
+        "mean_ce": 1.4441256068944932
+      }
+    }
+  },
+  "qualification": "Owner arithmetic cross-check of saved TRAIN scalars only, not model replay; CE-derived p conditional on recorded unsmoothed CE."
+}

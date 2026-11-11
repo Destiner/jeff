@@ -1,0 +1,9 @@
+# Anonymous paired probability export
+
+240 NEW-v2 development decisions, two preserved P3 presentations per decision. No new inference or learning. Each row contains a random UUID case identity, task family, explicit anonymous scientific grouping units, K, ordered anonymous option identities and two probability vectors aligned to the ORIGINAL option identities. Position arrays are one-based positions of those same identities in each presentation; exact full reversal was checked against frozen label-free inputs before export. Public rows are randomly shuffled.
+
+All kind-specific UUIDs are stable within this export, not across exports. Null means not explicitly recorded; no identities are parsed from names. construction_cluster equals producer: the broadest observed recorded construction unit (6 overall, 2 per family). Distinct units and functional nesting, including null exclusions, are in receipt.json. These are explicit scientific grouping variables, not evidence of independent sampling. All producers share teacher/common-renderer dependence. Held-out producer is a conservative observed-cluster split, NOT guaranteed independence.
+
+Probabilities are the exact saved conditional answer-symbol values before any scorer normalization. JSON round trips preserve Python binary64 bit patterns; decimal spelling need not reproduce the source spelling. No epsilon, clipping, renormalization or invented full-vocabulary mass. These are not calibrated confidences. No text, targets, correctness, labels, rationales, raw identifiers or auxiliary scores are included.
+
+Pseudonymization is procedural, not an OS-security or non-reidentifiability guarantee. Join structure, family, option counts and probability fingerprints remain observable. Owner review is required before onward Research delivery. receipt.json is written last as the completion marker. Only this public directory is intended for onward delivery.

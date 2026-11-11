@@ -1,0 +1,73 @@
+{
+  "cost": {
+    "additional_spend": 0,
+    "currency": "GBP",
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "assignment_revision": "sentiment-a-frozen-assignments-r1",
+    "balancing": "Per split/class: shuffled near-uniform target slots, independently shuffled exactly uniform option-style and question-style schedules; other candidates independently shuffled.",
+    "class_names": {
+      "M": "mixed approval and criticism",
+      "N": "negative-only",
+      "P": "positive-only",
+      "U": "neutral/no evaluation"
+    },
+    "config_revision": "data-pilot-v2",
+    "generation_revision": "sentiment-a-generator-r1",
+    "hash_algorithm": "sha256",
+    "hashes": {
+      "generate.py": "8d4c8e9369a326455225b73587df52cf502d2c4f4bbc860f20db841763ac5939",
+      "group_assignments.json": "2f464d747cd5225578264d42e786958e460d819943027700271d44273efd9204",
+      "pilot-v2.json": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+      "source_cases.txt": "cc4a44a921a2c19f3203dbbec05c8ec617d6c59b434acd34789326cf8cfdacb4",
+      "train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+      "validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e"
+    },
+    "immutable_revision_available": false,
+    "job": "data-pilot-v2/sentiment-a",
+    "method": "Direct original synthetic scenario and label authoring by the active approved teacher; deterministic CPU-only serialization, candidate ordering and structural validation.",
+    "options_per_row": 4,
+    "position_numbering": "one-based in reports; zero-based internal implementation",
+    "rows_per_group": 1,
+    "sampling": {
+      "reason": "Harness sampling settings unavailable; no new API calls were made.",
+      "temperature": null,
+      "top_p": null
+    },
+    "seed": 271828,
+    "source_format": "Domain headers then class|subject|state; sequential lines bind to prewritten g001..g240 assignments.",
+    "source_revision": "sentiment-a-authored-r1",
+    "teacher_identity_source": "PI_PROVIDER=openai; PI_MODEL=gpt-sol observed in this session before authoring"
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "limitations": [
+    "All sentiment targets are teacher labels; author self-review is not independent correctness verification.",
+    "Immutable teacher revision and sampling parameters were unavailable.",
+    "No tokenizer or ML loads used; the parent CPU audit must verify the 256-token pair cap.",
+    "Only this private shard was checked for duplicates and lexical candidates; no parent rows, other producer content or evaluation data were inspected.",
+    "Independent scenario count refers to separately authored experiences, not statistically independent samples; all rows share one teacher and five candidate/question styles.",
+    "Historical boundaries checked against config domain reservations only, without opening historical content."
+  ],
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-sentiment-a-r1",
+  "teacher": {
+    "immutable_revision": null,
+    "model_alias": "gpt-sol",
+    "provider": "openai"
+  },
+  "usage_constraints": {
+    "features": "Only state, question and option texts are model inputs; IDs, labels, group and provenance are not features.",
+    "license": "No independent redistribution-license claim; applicable provider terms and downstream obligations remain in force.",
+    "origin": "Original synthetic text generated under the existing provider terms for this job.",
+    "privacy": "No private records or real customer data; fictional everyday experiences.",
+    "split_policy": "Frozen groups and domain allocation; validation for held-out measurement, not training updates."
+  }
+}

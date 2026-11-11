@@ -1,0 +1,35 @@
+{
+  "completed_at": "2026-11-11T13:06:58.091640+00:00",
+  "M5_outcomes_accessed": false,
+  "historical_source_blob_checks": [
+    {
+      "path_at_historical_commit": "src/jeff/training/train.py",
+      "sha256": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+      "matches_run_record": true
+    },
+    {
+      "path_at_historical_commit": "src/jeff/training/dataset.py",
+      "sha256": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "matches_run_record": true
+    },
+    {
+      "path_at_historical_commit": "src/jeff/model/scorer.py",
+      "sha256": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+      "matches_run_record": true
+    },
+    {
+      "path_at_historical_commit": "src/jeff/model/cross_encoder.py",
+      "sha256": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481",
+      "matches_run_record": true
+    }
+  ],
+  "files": {
+    "criterion.json": "a74b9ebf2cd7f52a0367422d7ca9db489154c7060516be2ca768e40f23e709c6",
+    "findings.md": "26e26c9d342428cae2274cb3f9b5aa9914e4a87edd8286c298e000ec74b268b4",
+    "freeze.py": "145b459f849851dfc63bc34459fcfc56eb41d74fb68213cf6ccd6223d5eaf9e4",
+    "historical-bindings.json": "8fc812ef3779a2de60eb400687baba7c3ffc5fd5ef994471c3a36fe55e83c54e"
+  },
+  "tracked_status": "",
+  "CPU_only": true,
+  "additional_actual_and_pending_GBP": 0
+}

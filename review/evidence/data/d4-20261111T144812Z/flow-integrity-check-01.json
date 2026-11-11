@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-11T15:09:20.620846+00:00",
+  "scope": "Two frozen manifests, three selected TRAIN shard payloads, two released D3 payloads; bytes hashed only, no additional semantic sampling.",
+  "checks": {
+    "data/data-pilot-v2/manifest.json": {
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+      "matches": true
+    },
+    "data/data-pilot-v1/rule_application/train.jsonl": {
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "matches": true
+    },
+    "data/data-pilot-v2/rule-a/train.jsonl": {
+      "sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "matches": true
+    },
+    "data/data-pilot-v2/rule-b/train.jsonl": {
+      "sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "matches": true
+    },
+    "data/data-d3-seen-rules-v1/release/manifest.json": {
+      "sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9",
+      "matches": true
+    },
+    "data/data-d3-seen-rules-v1/release/shards/geometry.jsonl": {
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+      "matches": true
+    },
+    "data/data-d3-seen-rules-v1/release/shards/ordering.jsonl": {
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+      "matches": true
+    }
+  },
+  "valid": true
+}

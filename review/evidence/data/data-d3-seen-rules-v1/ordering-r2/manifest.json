@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-d3-seen-rules-v1-ordering-r2",
+  "usage": "validation_only_never_train",
+  "parent_validation_sha256": "0c6302708f2c1a66da1123ec323c03a6fb2e31ca531d7b86b886082c1232da8e",
+  "shards": [
+    {
+      "path": "data/data-d3-seen-rules-v1/ordering-r2/validation.jsonl",
+      "split": "validation",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+      "rows": 48
+    }
+  ],
+  "files": {
+    "audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+    "audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+    "change_map.json": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623",
+    "distractor_constructions.json": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a",
+    "generation_review.md": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0",
+    "group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+    "metadata.json": "d7f5bd0d17cbc9d9c597fbc2034b483cdb865c23c46ae4d561a50ed502ef5f06",
+    "parent_refs.json": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2",
+    "revise.py": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7",
+    "source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+    "validation.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+    "validation_report.json": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290"
+  },
+  "freeze": "All payload files finalized before this manifest; manifest self-hash reported separately at handoff."
+}

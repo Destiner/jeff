@@ -1,0 +1,14 @@
+{
+  "schema_version": "m6.train.v1",
+  "command": "train",
+  "status": "failed",
+  "output_dir": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training",
+  "memory_samples": [],
+  "phase_seconds": {},
+  "presentations": 0,
+  "optimizer_steps": 0,
+  "extra_backwards": 0,
+  "memory_qualification": "observed MPS samples, NOT peaks; CPU lifetime RSS; never sum CPU and MPS",
+  "external_deadline_required": true,
+  "error": "incomplete unless a completed receipt.json/audit.json exists; inspect events.jsonl for hard termination"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "evaluation/0.1",
+  "source": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+    "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+  },
+  "reversed_inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+    "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1"
+  },
+  "pairs": 300,
+  "source_groups": 182,
+  "change": "Example ID suffix plus exact reversed option objects; all other reference fields unchanged"
+}

@@ -1,0 +1,1234 @@
+{
+  "task": "D4 independent artifact-only factual audit",
+  "started_utc": "2026-11-11T14:56:56.446280+00:00",
+  "finished_utc": "2026-11-11T14:56:56.469594+00:00",
+  "reviewer": {
+    "PI_PROVIDER": "openai",
+    "PI_MODEL": "gpt-sol",
+    "identity_basis": "Only PI_PROVIDER and PI_MODEL; alias, not immutable revision"
+  },
+  "scope": {
+    "selected_train_rows": 24,
+    "inherited": 4,
+    "new": 20,
+    "mechanism_source_groups": 14,
+    "explicit_new_policy_ids": [
+      "data:pilot-v2:rule-a:g001:p04",
+      "data:pilot-v2:rule-a:g002:p04",
+      "data:pilot-v2:rule-a:g003:p04",
+      "data:pilot-v2:rule-a:g005:p04",
+      "data:pilot-v2:rule-a:g007:p04",
+      "data:pilot-v2:rule-b:g002:p04",
+      "data:pilot-v2:rule-b:g005:p04",
+      "data:pilot-v2:rule-b:g006:p04",
+      "data:pilot-v2:rule-b:g008:p04",
+      "data:pilot-v2:rule-b:g010:p04"
+    ],
+    "historical_excluded_ids": 16,
+    "historical_overlap": 0,
+    "selection_and_shard_pins_verified": true,
+    "extra_semantic_samples": 0,
+    "blind_review_outputs_read": false,
+    "validation_rows_read": false,
+    "evaluation_heldout_probe_final_rows_read": false
+  },
+  "hash_definition": "input_sha256 = SHA256 UTF-8 canonical JSON ensure_ascii=False, sort_keys=True, separators=(comma,colon), containing schema_version,id,state,question,ordered options; no labels or provenance.",
+  "methods": {
+    "fresh_reasoning": "Explicit rendered-prose arithmetic/logic for each of 24; bounded parser/constants transcribed from actual policy text; manually checked structured policy/facts against prose. Not generic semantic parsing.",
+    "executable_consistency": "AST-extracted reviewed pure expected functions, plus pure rule-b rendering correspondence. Source algorithms share authorship with labels, so their agreement alone is not independent verification.",
+    "source_correspondence": "10/10 rule-a authored prose/facts joins and 10/10 rule-b pure rendered state/question/facts joins. Four inherited structured records manually matched to prose; no generator executed.",
+    "limits": "Purposive rules-only TRAIN sample; dependent paired policies and same-model provenance. No accuracy estimates or extrapolation to whole training; no tokenizer/model audit. Hashing full files is identity verification, not semantic expansion."
+  },
+  "summary": {
+    "n": 24,
+    "policies_explicit": 10,
+    "slots": {
+      "3": 6,
+      "1": 8,
+      "4": 3,
+      "2": 7
+    },
+    "by_choice_count": {
+      "3": {
+        "1": 5,
+        "2": 2,
+        "3": 3
+      },
+      "4": {
+        "3": 3,
+        "4": 3,
+        "2": 5,
+        "1": 3
+      }
+    },
+    "target_first": 8,
+    "target_unique_longest": 2,
+    "target_tied_longest": 14,
+    "target_unique_shortest": 3,
+    "target_tied_shortest": 15,
+    "numeric_comparable_n": 6,
+    "numeric_ranks": {
+      "1": 2,
+      "3": 4
+    }
+  },
+  "by_group": {
+    "data:pilot-v1:rule_application:g01": {
+      "n": 1,
+      "policies_explicit": 0,
+      "slots": {
+        "3": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "3": 1
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 1,
+      "target_tied_shortest": 0,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v1:rule_application:g04": {
+      "n": 1,
+      "policies_explicit": 0,
+      "slots": {
+        "1": 1
+      },
+      "by_choice_count": {
+        "3": {
+          "1": 1
+        }
+      },
+      "target_first": 1,
+      "target_unique_longest": 0,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 1,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v1:rule_application:g07": {
+      "n": 1,
+      "policies_explicit": 0,
+      "slots": {
+        "4": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "4": 1
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 1,
+      "target_tied_shortest": 0,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v1:rule_application:g10": {
+      "n": 1,
+      "policies_explicit": 0,
+      "slots": {
+        "2": 1
+      },
+      "by_choice_count": {
+        "3": {
+          "2": 1
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 1,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 0,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-a:g001": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "3": 1,
+        "2": 1
+      },
+      "by_choice_count": {
+        "3": {
+          "3": 1,
+          "2": 1
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 1,
+      "target_tied_shortest": 0,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-a:g002": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "1": 2
+      },
+      "by_choice_count": {
+        "3": {
+          "1": 2
+        }
+      },
+      "target_first": 2,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-a:g003": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "3": 1,
+        "2": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "3": 1,
+          "2": 1
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-a:g005": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "2": 2
+      },
+      "by_choice_count": {
+        "4": {
+          "2": 2
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 1,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 2,
+      "numeric_ranks": {
+        "1": 2
+      }
+    },
+    "data:pilot-v2:rule-a:g007": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "1": 1,
+        "4": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "1": 1,
+          "4": 1
+        }
+      },
+      "target_first": 1,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 2,
+      "numeric_ranks": {
+        "3": 2
+      }
+    },
+    "data:pilot-v2:rule-b:g002": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "2": 2
+      },
+      "by_choice_count": {
+        "4": {
+          "2": 2
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 2,
+      "numeric_ranks": {
+        "3": 2
+      }
+    },
+    "data:pilot-v2:rule-b:g005": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "1": 2
+      },
+      "by_choice_count": {
+        "3": {
+          "1": 2
+        }
+      },
+      "target_first": 2,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 0,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-b:g006": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "4": 1,
+        "1": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "4": 1,
+          "1": 1
+        }
+      },
+      "target_first": 1,
+      "target_unique_longest": 0,
+      "target_tied_longest": 1,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 1,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-b:g008": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "3": 1,
+        "1": 1
+      },
+      "by_choice_count": {
+        "4": {
+          "3": 1,
+          "1": 1
+        }
+      },
+      "target_first": 1,
+      "target_unique_longest": 1,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 1,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "data:pilot-v2:rule-b:g010": {
+      "n": 2,
+      "policies_explicit": 1,
+      "slots": {
+        "3": 2
+      },
+      "by_choice_count": {
+        "3": {
+          "3": 2
+        }
+      },
+      "target_first": 0,
+      "target_unique_longest": 0,
+      "target_tied_longest": 2,
+      "target_unique_shortest": 0,
+      "target_tied_shortest": 2,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    }
+  },
+  "by_stratum": {
+    "inherited_v1": {
+      "n": 4,
+      "policies_explicit": 0,
+      "slots": {
+        "3": 1,
+        "1": 1,
+        "4": 1,
+        "2": 1
+      },
+      "by_choice_count": {
+        "3": {
+          "1": 1,
+          "2": 1
+        },
+        "4": {
+          "3": 1,
+          "4": 1
+        }
+      },
+      "target_first": 1,
+      "target_unique_longest": 1,
+      "target_tied_longest": 0,
+      "target_unique_shortest": 2,
+      "target_tied_shortest": 1,
+      "numeric_comparable_n": 0,
+      "numeric_ranks": {}
+    },
+    "new_v2": {
+      "n": 20,
+      "policies_explicit": 10,
+      "slots": {
+        "3": 5,
+        "2": 6,
+        "1": 7,
+        "4": 2
+      },
+      "by_choice_count": {
+        "3": {
+          "3": 3,
+          "2": 1,
+          "1": 4
+        },
+        "4": {
+          "3": 2,
+          "2": 5,
+          "1": 3,
+          "4": 2
+        }
+      },
+      "target_first": 7,
+      "target_unique_longest": 1,
+      "target_tied_longest": 14,
+      "target_unique_shortest": 1,
+      "target_tied_shortest": 14,
+      "numeric_comparable_n": 6,
+      "numeric_ranks": {
+        "1": 2,
+        "3": 4
+      }
+    }
+  },
+  "repeated_unordered_choice_fingerprints": [
+    {
+      "sha256": "faa75053f97b09c70d65a679fd44c95e1780ad78f5fba923aaa6af740f128c90",
+      "n": 2,
+      "ids": [
+        "data:pilot-v2:rule-a:g001:r07",
+        "data:pilot-v2:rule-a:g001:r08"
+      ]
+    },
+    {
+      "sha256": "6d8c115292665d1d50a4dc8a585c637119372569bce888a9867091f87cea71e5",
+      "n": 2,
+      "ids": [
+        "data:pilot-v2:rule-a:g002:r07",
+        "data:pilot-v2:rule-a:g002:r08"
+      ]
+    },
+    {
+      "sha256": "a4f146ade3302a802e6d5a71a3723c43c524d8a9ea63f09a20d74fd78d462c57",
+      "n": 2,
+      "ids": [
+        "data:pilot-v2:rule-b:g005:r07",
+        "data:pilot-v2:rule-b:g005:r08"
+      ]
+    },
+    {
+      "sha256": "f8305d91e13760aa9cf2726de60fa2fd1b5dede6c1642cc905dbb8b8aeab6ef9",
+      "n": 2,
+      "ids": [
+        "data:pilot-v2:rule-b:g010:r07",
+        "data:pilot-v2:rule-b:g010:r08"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "type": "correctness",
+      "severity": "none",
+      "finding": "No genuine target/specification bug found in selected 24; all fresh rendered calculations and same-author helper computations match saved targets. No erratum or relabeling proposed."
+    },
+    {
+      "type": "dependence",
+      "finding": "All 10 new r07/r08 pairs share actual p04 scenario_id: 20 decisions, 10 policy instances, 10 mechanism/source groups. Four inherited controls add 4 source groups; no explicit scenario_id is stored for them. Total 14 source groups, not 24 independent policies. Treat inherited rows as four rendered control-policy instances only, not newly inferred provenance IDs."
+    },
+    {
+      "type": "reviewer_identity",
+      "finding": "Fresh reasoning is a separate review session, but reviewer alias equals disclosed source teacher alias openai/gpt-sol. Not independent-model or independent-provider verification; immutable revision unavailable."
+    },
+    {
+      "type": "shortcut",
+      "finding": "Selected rule-a:g002 winners are G in 2/2 and second candidate in state in 2/2. No winner strictly Pareto-dominates all rivals in either case (0/2); G dominates F in r08 only. Thus a universal dominance shortcut is not demonstrated, while a shared-policy candidate-name fingerprint is possible."
+    },
+    {
+      "type": "shortcut",
+      "finding": "Selected rule-a:g005 targets are numeric minimum 2/2; rule-a:g007 targets ascending rank 3 of 4 (second largest) 2/2; rule-b:g002 targets ascending rank 3 of 4 in 2/2. Each denominator is one shared policy pair; these are local construction signatures, not measured whole-training shortcuts."
+    },
+    {
+      "type": "options",
+      "finding": "All 24 option ID/text sets unique; manual review found distinct terminal returned outcomes. Vendor Tie options in two rate rows are unreachable under this p04 tie-return-A policy (2/2), but not a competing correct answer: question asks returned result, not whether raw rates are equal. Authorization too-many option is unreachable when only two eligible signers and required=2 (2/2). Unreachable distractors are local weakness, not label errors."
+    },
+    {
+      "type": "coverage",
+      "finding": "Mechanism coverage is not branch coverage. The chosen scheduling p04 has zero cooldown in 2/2 cases; neither measures positive cooldown arithmetic. Rounding pair covers positive tie/non-tie only (2/2), not negative tie behavior. No extra cases were generated or sampled."
+    }
+  ],
+  "records": [
+    {
+      "id": "data:pilot-v1:rule_application:g01:r07",
+      "input_sha256": "437f829a1a26e0604338b179fe0f2a1af33f2a8a1e4bd39cf2f7204f8650f56e",
+      "group_id": "data:pilot-v1:rule_application:g01",
+      "policy_id": null,
+      "stratum": "inherited_v1",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Route to Rapid bench.",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Route to Rapid bench.",
+      "fresh_reasoning": "Safety off; warranty off; urgent on. First matching rule is Rapid bench.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": null,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Route to Rapid bench.",
+      "target_slot_one_based": 3,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": true,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "848f500efccb968fa60864462e08271ff25a60cca0434d115bbf72a958cee488"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g04:r07",
+      "input_sha256": "ba6a24ca45152df09de3c3bfd71ce59625f1603dd003bf2a0a161db94b6b0f13",
+      "group_id": "data:pilot-v1:rule_application:g04",
+      "policy_id": null,
+      "stratum": "inherited_v1",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Duty belongs to Juno.",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Duty belongs to Juno.",
+      "fresh_reasoning": "Kestrel index 1; (1 - 4) mod 3 = 0, Juno. Backward sequence Juno, Lark, Kestrel, Juno.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": null,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Duty belongs to Juno.",
+      "target_slot_one_based": 1,
+      "option_count": 3,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "01512a8d90db3d8a2b2790e5717129014021281e0fcd345b3821673baf3a741f"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g07:r07",
+      "input_sha256": "5b90d4b379e972c71ef895cdb5a76e282bfda851552f9ed4dd806705b9b92f96",
+      "group_id": "data:pilot-v1:rule_application:g07",
+      "policy_id": null,
+      "stratum": "inherited_v1",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Conflicts: none.",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Conflicts: none.",
+      "fresh_reasoning": "Proposal [6,8); bookings [8,10), [10,12), [12,14). Every intersection has nonpositive length; endpoint 8 is not overlap.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": null,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Conflicts: none.",
+      "target_slot_one_based": 4,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": true,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "1fad5fde18443dd3fe5db2190dfa81ddaa7b4705a9263e6941745b34f871d2fe"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g10:r07",
+      "input_sha256": "f3eaee343a4b453c254131a7725d0f02a4201fb8b63a89d96e4c8bb9d9d80c56",
+      "group_id": "data:pilot-v1:rule_application:g10",
+      "policy_id": null,
+      "stratum": "inherited_v1",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Final state: occupied.",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Final state: occupied.",
+      "fresh_reasoning": "occupied -> open -> occupied; exit opens, enter occupies.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": null,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Final state: occupied.",
+      "target_slot_one_based": 2,
+      "option_count": 3,
+      "target_first": false,
+      "target_unique_longest": true,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "e756e89a89b9b37946ebf237f224529adb8546ae1e17f648513325b01454894c"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r07",
+      "input_sha256": "45b38b62d06b4a9d3f74deb5dc7f7b1ae331f9d37f06fa8d2ec6eb91c6445426",
+      "group_id": "data:pilot-v2:rule-a:g001",
+      "policy_id": "data:pilot-v2:rule-a:g001:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Authorize",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Authorize",
+      "fresh_reasoning": "2 distinct eligible signers versus exactly 2; duplicate legal signature and intern do not add eligible distinct signers.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Authorize",
+      "target_slot_one_based": 3,
+      "option_count": 3,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": true,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "faa75053f97b09c70d65a679fd44c95e1780ad78f5fba923aaa6af740f128c90"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r08",
+      "input_sha256": "59e5996f2e9decb4e2b0a3dab2e89c4ecb7e04eabac5c042dcd0ab1d32837de6",
+      "group_id": "data:pilot-v2:rule-a:g001",
+      "policy_id": "data:pilot-v2:rule-a:g001:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Reject: too few eligible signers",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Reject: too few eligible signers",
+      "fresh_reasoning": "1 distinct eligible signers versus exactly 2; duplicate legal signature and intern do not add eligible distinct signers.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Reject: too few eligible signers",
+      "target_slot_one_based": 2,
+      "option_count": 3,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "faa75053f97b09c70d65a679fd44c95e1780ad78f5fba923aaa6af740f128c90"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r07",
+      "input_sha256": "0061b0679ffe85e8dd36057ff9abc249eb9553ac334cf9dc84a069038ab0adb0",
+      "group_id": "data:pilot-v2:rule-a:g002",
+      "policy_id": "data:pilot-v2:rule-a:g002:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Select candidate G",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Select candidate G",
+      "fresh_reasoning": "F and G tie on aisle distance 2; G battery 60 > 40, so machine IDs never enter.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Select candidate G",
+      "target_slot_one_based": 1,
+      "option_count": 3,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": {
+        "candidate_count": 3,
+        "ordered_pairs_checked": 6,
+        "strict_pareto_dominates": [],
+        "winner_state_position_one_based": 2
+      },
+      "choice_fingerprint": "6d8c115292665d1d50a4dc8a585c637119372569bce888a9867091f87cea71e5"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r08",
+      "input_sha256": "24ead62bb94f5dc6260eeb545b3eee63ed28c7a75408ee25c412ba576516b443",
+      "group_id": "data:pilot-v2:rule-a:g002",
+      "policy_id": "data:pilot-v2:rule-a:g002:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Select candidate G",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Select candidate G",
+      "fresh_reasoning": "F and G tie on distance 1 and battery 55; G machine ID 4 < 8. H loses on distance despite higher battery.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Select candidate G",
+      "target_slot_one_based": 1,
+      "option_count": 3,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": {
+        "candidate_count": 3,
+        "ordered_pairs_checked": 6,
+        "strict_pareto_dominates": [
+          [
+            "G",
+            "F"
+          ]
+        ],
+        "winner_state_position_one_based": 2
+      },
+      "choice_fingerprint": "6d8c115292665d1d50a4dc8a585c637119372569bce888a9867091f87cea71e5"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r07",
+      "input_sha256": "375f158a146651411ed9dafa6591a8737cfe652040d4bcad05abf108eb0372b0",
+      "group_id": "data:pilot-v2:rule-a:g003",
+      "policy_id": "data:pilot-v2:rule-a:g003:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "0, 5, 0; unfilled 0",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "0, 5, 0; unfilled 0",
+      "fresh_reasoning": "P quarantined: take 0. M has 7, N has 2; demand 5 gives issued [0, 5, 0], residual 0.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "0, 5, 0; unfilled 0",
+      "target_slot_one_based": 3,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "cc1801945fb63f2ee39adeb45ba6bf29e4160f3757e55fab8cf47f721aed9a06"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r08",
+      "input_sha256": "f24c4196e3070112da8848708833efa4f6ed7a0ef990f93731d394a90183977f",
+      "group_id": "data:pilot-v2:rule-a:g003",
+      "policy_id": "data:pilot-v2:rule-a:g003:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "0, 7, 2; unfilled 3",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "0, 7, 2; unfilled 3",
+      "fresh_reasoning": "P quarantined: take 0. M has 7, N has 2; demand 12 gives issued [0, 7, 2], residual 3.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "0, 7, 2; unfilled 3",
+      "target_slot_one_based": 2,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "5c190fc470dd1af963dfff7b004198c1c86d78df3063fda4aff60285392e1609"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r07",
+      "input_sha256": "fdf5c4e683a5338743f10973dc2c64c2b032a75ca728f4742bb1ea99c94c70a4",
+      "group_id": "data:pilot-v2:rule-a:g005",
+      "policy_id": "data:pilot-v2:rule-a:g005:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "£0",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "£0",
+      "fresh_reasoning": "12 × (1 - 50/100) - 8, floored at zero = 0. Percent first, not fixed first.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "£0",
+      "target_slot_one_based": 2,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 1,
+        "choices": 4,
+        "target_value": 0
+      },
+      "dominance": null,
+      "choice_fingerprint": "cbcb46fa1ddb5dd949d134cd275514f8664da80c859cabd3f59ed6d58afc833b"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r08",
+      "input_sha256": "cb5369d32718a1a48c82dba858d7383972c94ddd42956ca3e58d5b2c2ebae21e",
+      "group_id": "data:pilot-v2:rule-a:g005",
+      "policy_id": "data:pilot-v2:rule-a:g005:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "£4",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "£4",
+      "fresh_reasoning": "24 × (1 - 50/100) - 8, floored at zero = 4. Percent first, not fixed first.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "£4",
+      "target_slot_one_based": 2,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 1,
+        "choices": 4,
+        "target_value": 4
+      },
+      "dominance": null,
+      "choice_fingerprint": "34ce720c72ea808a0b6f7b36adab055802814ecb26359b7a64a25dc371e8ba86"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r07",
+      "input_sha256": "1cf56f2bad11214e74d934f8379375d481f7eb8893d56953adc431b19fafb21f",
+      "group_id": "data:pilot-v2:rule-a:g007",
+      "policy_id": "data:pilot-v2:rule-a:g007:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "150 millimetres",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "150 millimetres",
+      "fresh_reasoning": "Adjacent multiples 140, 150; distances 5, 5. Choose nearest, larger on equality: 150.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "150 millimetres",
+      "target_slot_one_based": 1,
+      "option_count": 4,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 3,
+        "choices": 4,
+        "target_value": 150
+      },
+      "dominance": null,
+      "choice_fingerprint": "14a9eb7ff2d50c23d195236102486d3c548533e4ddde46b3d0d1befa367affb5"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r08",
+      "input_sha256": "52fda0ef8fa9d73433452bd2078654f50a66e6e3c0ab20df3bab4cff36c23ff8",
+      "group_id": "data:pilot-v2:rule-a:g007",
+      "policy_id": "data:pilot-v2:rule-a:g007:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "140 millimetres",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "140 millimetres",
+      "fresh_reasoning": "Adjacent multiples 140, 150; distances 4, 6. Choose nearest, larger on equality: 140.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "140 millimetres",
+      "target_slot_one_based": 4,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 3,
+        "choices": 4,
+        "target_value": 140
+      },
+      "dominance": null,
+      "choice_fingerprint": "cdfee1bd1df32711ba9988b48d0b37c420260578da7ce3dd3d51ff842c2da4fb"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r07",
+      "input_sha256": "7d42291a13783d6c14cca300614127caf9510c1d2fe3b356cac409deffe377a1",
+      "group_id": "data:pilot-v2:rule-b:g002",
+      "policy_id": "data:pilot-v2:rule-b:g002:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "3",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "3",
+      "fresh_reasoning": "Net need 5; usable/pack 5; ceil=1; max(minimum 3, ceil 1)=3.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "3",
+      "target_slot_one_based": 2,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 3,
+        "choices": 4,
+        "target_value": 3
+      },
+      "dominance": null,
+      "choice_fingerprint": "9774e9e6f31da2f257800fb3909ad59e2d57608029938122a2b214fbf5272c5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r08",
+      "input_sha256": "6d0fa348c94a7b5b13b978ad29c3e75a121e4396999d839ecf444d6416a6c5b2",
+      "group_id": "data:pilot-v2:rule-b:g002",
+      "policy_id": "data:pilot-v2:rule-b:g002:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "4",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "4",
+      "fresh_reasoning": "Net need 16; usable/pack 5; ceil=4; max(minimum 3, ceil 4)=4.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "4",
+      "target_slot_one_based": 2,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": {
+        "ascending_target_rank": 3,
+        "choices": 4,
+        "target_value": 4
+      },
+      "dominance": null,
+      "choice_fingerprint": "d1cd602ab3e1b89a474d8b4922ca7f551a2574a46dd55acc3c0b7192ed7f1ada"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r07",
+      "input_sha256": "3766bbc6583b0bb20fb8b1c888cf1f2289d05d08c69f9b11b8f7fb855e882360",
+      "group_id": "data:pilot-v2:rule-b:g005",
+      "policy_id": "data:pilot-v2:rule-b:g005:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Vendor A",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Vendor A",
+      "fresh_reasoning": "A=20/4, B=30/6; cross-product difference 0. Equal rates; explicit tie returns Vendor A, not the Tie distractor.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Vendor A",
+      "target_slot_one_based": 1,
+      "option_count": 3,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "a4f146ade3302a802e6d5a71a3723c43c524d8a9ea63f09a20d74fd78d462c57"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r08",
+      "input_sha256": "33dffd662294c6f16c56bcbdb1b3611f8f46ff3f6249bb5fd6b31aa40f131999",
+      "group_id": "data:pilot-v2:rule-b:g005",
+      "policy_id": "data:pilot-v2:rule-b:g005:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Vendor B",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Vendor B",
+      "fresh_reasoning": "A=19/4, B=30/6; cross-product difference -6. B has the higher rate.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Vendor B",
+      "target_slot_one_based": 1,
+      "option_count": 3,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "a4f146ade3302a802e6d5a71a3723c43c524d8a9ea63f09a20d74fd78d462c57"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r07",
+      "input_sha256": "e318b5f34471907216e5fba1610c37483feba2ee3f428a1a8cb08c37e75d24ec",
+      "group_id": "data:pilot-v2:rule-b:g006",
+      "policy_id": "data:pilot-v2:rule-b:g006:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "(0, 0)",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "(0, 0)",
+      "fresh_reasoning": "(2,-3) + (-2,3) = (0,0); reflect x sign only -> (0, 0).",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "(0, 0)",
+      "target_slot_one_based": 4,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "ee0c46c5b6ca08068bc9d6268dac28509d6ed70e3d22fc9d5cabbab4e48ba965"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r08",
+      "input_sha256": "ca000bfbe8b1768f3888a74ee142b24eadd034c6fbac8aa8ff89dcbf7d36debb",
+      "group_id": "data:pilot-v2:rule-b:g006",
+      "policy_id": "data:pilot-v2:rule-b:g006:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "(-1, 4)",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "(-1, 4)",
+      "fresh_reasoning": "(3,1) + (-2,3) = (1,4); reflect x sign only -> (-1, 4).",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "(-1, 4)",
+      "target_slot_one_based": 1,
+      "option_count": 4,
+      "target_first": true,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "0b1c935f748c4a1a52c7f82407f115a0e8ab159e783e426034bbd5ace6b3a1ef"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r07",
+      "input_sha256": "6d6509f51ed83c2ebe6991d7c666b83d9b78a4eda230686ebbd5a9e65e0aefd3",
+      "group_id": "data:pilot-v2:rule-b:g008",
+      "policy_id": "data:pilot-v2:rule-b:g008:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "45",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "45",
+      "fresh_reasoning": "Existing [15,45); duration 15, gap 0. Listed [45, 46, 60]; legal listed starts [45, 46, 60]. Touching 45 is legal; starts below 45 here overlap.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "45",
+      "target_slot_one_based": 3,
+      "option_count": 4,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "ad280ff823904eea09186312a1971da1f75589cec1a8ad762d38b599f8dd7e5e"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r08",
+      "input_sha256": "fb0ddf1e87d0638db08207604ad9b00fc0a53572ab92ecdf664560c702270b4d",
+      "group_id": "data:pilot-v2:rule-b:g008",
+      "policy_id": "data:pilot-v2:rule-b:g008:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "No slot",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "No slot",
+      "fresh_reasoning": "Existing [15,45); duration 15, gap 0. Listed [30, 40, 44]; legal listed starts []. Touching 45 is legal; starts below 45 here overlap.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "No slot",
+      "target_slot_one_based": 1,
+      "option_count": 4,
+      "target_first": true,
+      "target_unique_longest": true,
+      "target_tied_longest": false,
+      "target_unique_shortest": false,
+      "target_tied_shortest": false,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "b7c023d644be70c9c32aafbc69c14b16d455531ddebc489d3745fd92d2cd22b7"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r07",
+      "input_sha256": "266d38899703c3843a732e1a91fcf963d4cb9485390764049eb581223c011e9b",
+      "group_id": "data:pilot-v2:rule-b:g010",
+      "policy_id": "data:pilot-v2:rule-b:g010:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Mist",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Mist",
+      "fresh_reasoning": "moisture=4: <4 is False; else heat=8 >=8 is True; select Mist.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Mist",
+      "target_slot_one_based": 3,
+      "option_count": 3,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "f8305d91e13760aa9cf2726de60fa2fd1b5dede6c1642cc905dbb8b8aeab6ef9"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r08",
+      "input_sha256": "767a9284b2c8aa0ae1ce8d45d62eee63cd5f3e46cde9e92fc20f22f8cc06e5b0",
+      "group_id": "data:pilot-v2:rule-b:g010",
+      "policy_id": "data:pilot-v2:rule-b:g010:p04",
+      "stratum": "new_v2",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "existing_row_equal": true,
+      "structured_helper_expected": "Soak",
+      "structured_helper_matches": true,
+      "fresh_rendered_expected": "Soak",
+      "fresh_reasoning": "moisture=3: <4 is True; select Soak without evaluating the else branch.",
+      "fresh_matches": true,
+      "source_rendering_correspondence": true,
+      "manual_fact_to_text_review": "consistent: reviewed selected structured facts and policy against rendered state",
+      "options_unique": true,
+      "options_disjoint": "distinct terminal outcomes or exact complete result tuples; Tie is interpreted as a returned answer, not pre-tiebreak rate equality",
+      "target_text": "Soak",
+      "target_slot_one_based": 3,
+      "option_count": 3,
+      "target_first": false,
+      "target_unique_longest": false,
+      "target_tied_longest": true,
+      "target_unique_shortest": false,
+      "target_tied_shortest": true,
+      "numeric": null,
+      "dominance": null,
+      "choice_fingerprint": "f8305d91e13760aa9cf2726de60fa2fd1b5dede6c1642cc905dbb8b8aeab6ef9"
+    }
+  ],
+  "bugs": [],
+  "resources": {
+    "network": false,
+    "models": false,
+    "dependencies_changed": false,
+    "software_tests_lint": false,
+    "git_or_mailbox": false,
+    "spend_GBP": 0,
+    "pending_spend_GBP": 0
+  },
+  "sourcehashes_file": "sourcehashes.json"
+}

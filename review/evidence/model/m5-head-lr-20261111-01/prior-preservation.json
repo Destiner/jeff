@@ -1,0 +1,361 @@
+{
+  "created_at": "2026-11-11T13:10:25.871858+00:00",
+  "references": [
+    {
+      "path": "model/m4-readiness-20261111-01/preserved-candidates-before.json",
+      "sha256": "2e4a54a8ec96f1c6f971b8d468fac50c285b1a677a676a1fb8bc92a7e23292c6"
+    },
+    {
+      "path": "model/m4-v2-20261111-01/checkpoint-inventory.json",
+      "sha256": "856a300705b45ba59690e37d56acf649963578b1225a523c8e9308f9bc5e4d85"
+    }
+  ],
+  "verified_files": 69,
+  "files": [
+    {
+      "path": "model/pilot-256-20261111-01/baseline/checkpoint.json",
+      "sha256": "a0d98827264f4390e9cc193f2290491a423714e63a5add3f06b84dcd35fd2dbc",
+      "bytes": 23138
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9",
+      "bytes": 611
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/encoder/model.safetensors",
+      "sha256": "1377e9af0ca0b016a9f2aa584d6fc71ab3ea6804fae21ef9fb1416e2944057ac",
+      "bytes": 90864192
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/head.safetensors",
+      "sha256": "6d2409c1788c104c5655617751bebacf805cd43186c71d5e243b9a620db78123",
+      "bytes": 1676
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c",
+      "bytes": 1464
+    },
+    {
+      "path": "model/pilot-256-20261111-01/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/checkpoint.json",
+      "sha256": "60673aa534ce95496a533f04596ebb456b473da4dbf16afe7c76308f7cbacedd",
+      "bytes": 75932
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9",
+      "bytes": 611
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/encoder/model.safetensors",
+      "sha256": "4f50e43611dd133d8cb43b1d907145899e93194ee745ac7c11391173c6bbacef",
+      "bytes": 90864192
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/head.safetensors",
+      "sha256": "1f3c3485bb335858ebe3a4b8462ac02858175de28d2c3dee215e5872d76c598a",
+      "bytes": 1676
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c",
+      "bytes": 1464
+    },
+    {
+      "path": "model/pilot-256-20261111-01/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/pilot-256-20261111-01/dataset-manifest.json",
+      "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+      "bytes": 1304
+    },
+    {
+      "path": "model/pilot-256-20261111-01/run.json",
+      "sha256": "d426ab994e8ed9bc8e85d9764fa3c205ce4f67e89292cbb434aef19e59bf5889",
+      "bytes": 67598
+    },
+    {
+      "path": "model/pilot-256-20261111-01/summary.json",
+      "sha256": "ddbba00d06f337808df6a7ec633ffd3c5c71008be7c224655e3e0107857d7540",
+      "bytes": 25557
+    },
+    {
+      "path": "model/pilot-256-20261111-01/token-budget.json",
+      "sha256": "a81af8725417873b272ab848c2a456807c07149eacc9022a32a61c3941169adc",
+      "bytes": 15334
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/checkpoint.json",
+      "sha256": "7bde6a7661583f6f68fa83076f23ca090bb02e9d5ec4045127ba6fe70b8a245c",
+      "bytes": 25971
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+      "bytes": 787
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/encoder/model.safetensors",
+      "sha256": "a6e1fd85181a93a58bc33f65700f2ba34da3af2667f85cc57bcdf0f9f0092200",
+      "bytes": 90866412
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0",
+      "bytes": 1272
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/checkpoint.json",
+      "sha256": "06f19558d9ec8fb90d157c215af0e8617bf1639896b52844006f94de20dc0c7d",
+      "bytes": 81877
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+      "bytes": 787
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/encoder/model.safetensors",
+      "sha256": "81cec8179b508ca2dd6ecec7f00b78b19087b6deab91363349681460be30df42",
+      "bytes": 90866412
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0",
+      "bytes": 1272
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/dataset-manifest.json",
+      "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+      "bytes": 1304
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/retention-details.json",
+      "sha256": "93dae5c17bf2a21bb27d0b8261cbc6f70dbf897b63b76f4ae0a83b7b3aa3c8ff",
+      "bytes": 478
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/run.json",
+      "sha256": "bcfae7d5b62f740a64389a503b8ea58a61eb58259e87dba30bee73b42f9d7245",
+      "bytes": 73099
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/summary.json",
+      "sha256": "505eba500c8b61830c806b394fa76687f9a0c186df65d6d990c338443b0d86aa",
+      "bytes": 17631
+    },
+    {
+      "path": "model/msmarco-256-20261111-01/token-budget.json",
+      "sha256": "ebc1bedbe236f253573e5999f8adc40257309e251e549c172bf1ebfc6b5620d2",
+      "bytes": 1397
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/checkpoint.json",
+      "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187",
+      "bytes": 27729
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9",
+      "bytes": 611
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/encoder/model.safetensors",
+      "sha256": "1377e9af0ca0b016a9f2aa584d6fc71ab3ea6804fae21ef9fb1416e2944057ac",
+      "bytes": 90864192
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/head.safetensors",
+      "sha256": "6d2409c1788c104c5655617751bebacf805cd43186c71d5e243b9a620db78123",
+      "bytes": 1676
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c",
+      "bytes": 1464
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/checkpoint.json",
+      "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6",
+      "bytes": 206528
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9",
+      "bytes": 611
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/encoder/model.safetensors",
+      "sha256": "7448d2384b80376ed803ba80b58c5e193ced8dded1313feae4a7e8105350c71a",
+      "bytes": 90864192
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/head.safetensors",
+      "sha256": "b7d0867f3040cdec67331fa6fa15fa36c054bcf9e0a4bacb70e98c14b71d184a",
+      "bytes": 1676
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c",
+      "bytes": 1464
+    },
+    {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/checkpoint.json",
+      "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32",
+      "bytes": 30233
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+      "bytes": 787
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/encoder/model.safetensors",
+      "sha256": "a6e1fd85181a93a58bc33f65700f2ba34da3af2667f85cc57bcdf0f9f0092200",
+      "bytes": 90866412
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0",
+      "bytes": 1272
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/checkpoint.json",
+      "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438",
+      "bytes": 212169
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+      "bytes": 787
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/encoder/model.safetensors",
+      "sha256": "9456a8765e506d10993d5f585fe845cf07649fded2d9ceb0d2078f536b58c062",
+      "bytes": 90866412
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0",
+      "bytes": 1272
+    },
+    {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    }
+  ]
+}

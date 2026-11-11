@@ -1,0 +1,196 @@
+{
+  "schema_version": "e5-p3-control-review.v1",
+  "created_at": "2026-11-11T14:28:46.565779+00:00",
+  "scope": "CPU stdlib-only artifact/source review; no ML/tokenizer imports, tokenization replay, inference, tests, lint, syntax checks, network, labels or references",
+  "git_revision": "8b03a390d2164cf9495aabcffe0f993b7a4fa9c0",
+  "git_status": "",
+  "checks": {
+    "config_exact_audit": true,
+    "runtime_manifest_exact_audit": true,
+    "E5_field_mapping_exact": true,
+    "300_exact_reversals_including_unchanged_decision_id": false,
+    "300_exact_text_and_option_reversals_with_expected_id_suffix": true,
+    "12_exact_probe_reversal_pairs": true,
+    "upstream_identity": true,
+    "published_template_hash_matches": true,
+    "template_declares_assistant_boundary": true,
+    "no_special_token_strings_in_task_text": true,
+    "clean_frozen_git_revision": true
+  },
+  "code_pins": {
+    "src/jeff/runtime/qwen_challenger.py": {
+      "sha256": "08e02641c25ef5afd6c51cc82dbdc4c9c2c8d35ebd345016e34d4119b2ecb833",
+      "matches_audit": true,
+      "matches_git_blob": true
+    },
+    "configs/runtime/p3-qwen.json": {
+      "sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+      "matches_audit": true,
+      "matches_git_blob": true
+    }
+  },
+  "suites": [
+    {
+      "name": "v2-original",
+      "rows": 300,
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "identity_matches": true,
+      "strict_fields": true,
+      "recorded_token_evidence_matches": true,
+      "lengths": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "length_summary_matches": true
+    },
+    {
+      "name": "v2-reversed",
+      "rows": 300,
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "identity_matches": true,
+      "strict_fields": true,
+      "recorded_token_evidence_matches": true,
+      "lengths": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "length_summary_matches": true
+    },
+    {
+      "name": "probes-paired",
+      "rows": 24,
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "identity_matches": true,
+      "strict_fields": true,
+      "recorded_token_evidence_matches": true,
+      "lengths": {
+        "count": 24,
+        "min": 98,
+        "max": 124,
+        "p50": 107,
+        "p95": 124
+      },
+      "length_summary_matches": true
+    }
+  ],
+  "asset_metadata_checks": [
+    {
+      "name": "config.json",
+      "bytes": 659,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 242,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 7031645,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 7305,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 2776833,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 1671839,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 988097824,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "weight_bytes_read": false,
+      "published_lfs_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+      "recorded_lfs_verified": true,
+      "lfs_pin_matches": true
+    },
+    {
+      "name": "README.md",
+      "bytes": 4917,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    },
+    {
+      "name": "LICENSE",
+      "bytes": 11343,
+      "stat_size_matches": true,
+      "official_metadata_matches": true,
+      "audit_sha_matches_download": true,
+      "local_sha256_matches": true,
+      "git_blob_matches": true
+    }
+  ],
+  "evidence_hashes": {
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-input-binding-v1/inputs.json": "6e61e68dc1805d7797d14c62db2a7a36c21a8265bf672525f1ef691e17365baa",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/inputs.json": "77c57b75b64a0b306c8c851bb2d3a023bddd5d237334cd288316013c26d2927a",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit/audit.json": "d90446114a51af995db436d69362714d904cb641d50b3d993ddaf997a99db8e4",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/manifest.json": "7741a686ef6f0cc211438961223fb089e5f3a62da17c582cca27b021ce6191b5",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/receipt.json": "615b3e99c65a6cce593ddad3f30d8e8a58a43ce82ade68e170734cbcdf531381",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/public-api-response.json": "510d13d0d0eb27ed723c7913d14668941a9ff0a0b220f80a48911f80507a7021",
+    "/Users/destiner/Code/jeff/artifacts/handoffs/release/20261111T1422-P3-frozen-preflight-slot-request.md": "9f16ce8304b4b7c41f7db4d2d3427661ce95b3ca99054a3e60ae1a653d5e9fbc",
+    "/Users/destiner/Code/jeff/artifacts/handoffs/evaluation/20261111-e5-P3-frozen-inputs-request.md": "6953c17811ffb41e6e59bd8928646dcf106f5c0cd3b3621d3edc897ec60e7a5e"
+  },
+  "token_boundary_qualification": "Recorded all-row audit corroborated against frozen implementation; not independently retokenized. Exact-prefix/one-token assertion is executed by owner audit, not stored as full token sequences.",
+  "freeze_chronology": "Contemporaneous 14:22 handoff claims pre-outcome freeze/no model loaded; hashes bind bytes, not chronology; no cryptographic timestamp proof.",
+  "execution_receipt_available": false,
+  "last_execution_receipt_check_at": "2026-11-11T14:30:48Z",
+  "blocking_findings": [],
+  "nonblocking_findings": [
+    "Token boundaries corroborated from owner audit and source, not independently retokenized",
+    "Freeze chronology is a contemporaneous claim, not cryptographic timestamp proof",
+    "Memory/time guards are cooperative and measurements have distinct limited scopes",
+    "Hard process death can prevent normal inner coverage/failure receipt",
+    "Conditional symbol confidence and order/token bias require qualified interpretation",
+    "Different capacity/pretraining/prompt/runtime preclude causal architecture attribution"
+  ],
+  "resources": {
+    "ML_jobs_started": 0,
+    "background_jobs_started": 0,
+    "actual_additional_gbp": 0,
+    "pending_additional_gbp": 0
+  }
+}

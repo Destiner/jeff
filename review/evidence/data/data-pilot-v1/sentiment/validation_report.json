@@ -1,0 +1,63 @@
+{
+  "scope": "Only this sentiment shard plus its preassigned config; no other shards or final/evaluation content inspected",
+  "status": "pass",
+  "errors": [],
+  "checks": [
+    "JSONL parsing",
+    "contract fields and types",
+    "row counts",
+    "local namespaced ID uniqueness",
+    "2-6 unique informative nonempty options",
+    "one supplied target per row",
+    "split-pure files",
+    "30 reserved groups with four rows each",
+    "group isolation and frozen allocation",
+    "teacher provenance fields",
+    "normalized exact state duplicate scan",
+    "pairwise token-set Jaccard state similarity at 0.60 threshold",
+    "target-position distributions",
+    "SHA-256 of completed shards"
+  ],
+  "files": {
+    "train.jsonl": {
+      "rows": 100,
+      "sha256": "e918409e29cfef87ff8f830ffd0650849ec9d8ebdf5dd608e73935ca488e0d58"
+    },
+    "validation.jsonl": {
+      "rows": 20,
+      "sha256": "1e845bda5e465f5188d56ae4a82b8a6c7c96376df1be3439f6a0249b46a84d0f"
+    }
+  },
+  "rows": 120,
+  "groups": 30,
+  "target_positions_by_split_and_option_count": {
+    "train": {
+      "4": {
+        "1": 3,
+        "2": 3,
+        "3": 2,
+        "4": 2
+      },
+      "3": {
+        "2": 30,
+        "3": 30,
+        "1": 30
+      }
+    },
+    "validation": {
+      "4": {
+        "3": 1,
+        "4": 1
+      },
+      "3": {
+        "3": 6,
+        "1": 6,
+        "2": 6
+      }
+    }
+  },
+  "normalized_exact_state_duplicates": 0,
+  "near_duplicate_candidates": [],
+  "semantic_status": "No independent semantic validation; target sentiment is teacher-authored. Duplicate heuristic is lexical, not semantic.",
+  "global_uniqueness_limit": "Uniqueness checked within this shard only; parent must check combined shards."
+}

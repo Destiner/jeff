@@ -1,0 +1,26 @@
+{
+  "schema_version": "evaluation/0.1",
+  "source_dataset_id": "data-d3-seen-rules-v1",
+  "source_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/manifest.json",
+    "sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9"
+  },
+  "validation_sources": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/geometry.jsonl",
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+      "rows": 48
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/ordering.jsonl",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+      "rows": 48
+    }
+  ],
+  "reference": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+    "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+  },
+  "rows": 96,
+  "scope": "Validation shard hashes/counts/splits and combined references checked; train content untouched. Cross-split deduplication remains Data-owned."
+}

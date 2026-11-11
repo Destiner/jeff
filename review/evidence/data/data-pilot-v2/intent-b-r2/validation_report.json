@@ -1,0 +1,1395 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-b-r2",
+  "status": "cpu_lineage_and_structural_checks_passed",
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40,
+    "total": 240,
+    "independent_scenarios": 240,
+    "by_domain": {
+      "sewing machine servicing": 10,
+      "upholstery cleaning": 10,
+      "dog walking": 10,
+      "dance lessons": 10,
+      "window glazing": 10,
+      "allotment compost delivery": 10,
+      "baking classes": 10,
+      "tax document retrieval": 10,
+      "aquarium supplies": 10,
+      "printer consumables": 10,
+      "community noticeboards": 10,
+      "home security installation": 10,
+      "e-bike battery repairs": 10,
+      "house removal quotations": 10,
+      "childcare attendance records": 10,
+      "tabletop gaming events": 10,
+      "shoe repairs": 10,
+      "fishing licence administration": 10,
+      "home internet radio": 10,
+      "reusable packaging returns": 10,
+      "drone flight registration": 10,
+      "heritage walking tours": 10,
+      "ice rink skate sharpening": 10,
+      "braille transcription service": 10
+    }
+  },
+  "checks": {
+    "parent_source_export_state_and_target_match": 240,
+    "parent_states_questions_splits_groups_arities_ordered_option_ids_targets_slots_preserved": 240,
+    "revised_ids_correctly_namespaced_and_unique_within_parent_plus_revision": 240,
+    "teacher_label_basis_and_parent_id_recorded": 240,
+    "exact_state_duplicates": 0,
+    "normalized_state_duplicates": 0,
+    "exact_ordered_input_duplicates": 0,
+    "exact_option_order_invariant_input_duplicates": 0,
+    "within_row_duplicate_option_texts": 0,
+    "cross_split_group_overlap": 0,
+    "group_assignments_byte_identical": true,
+    "all_option_sets_changed": true,
+    "parent_bytes_unchanged_at_end": true
+  },
+  "diagnostic_definitions": {
+    "characters": "Python len(text), Unicode codepoints.",
+    "words": "Lowercase Unicode regex \\w+(?:['’\\-]\\w+)*; hyphenated/apostrophized words retained.",
+    "first_extremum": "First supplied option wins ties, matching parent review convention.",
+    "rank": "Competition rank: 1 + number of options strictly longer (descending) or shorter (ascending). Ties share ranks.",
+    "chance": "Mean reciprocal arity for the applicable subset. Not a fitted null or significance claim."
+  },
+  "original": {
+    "train": {
+      "all": {
+        "rows": 200,
+        "arity_chance": 0.2910000000000004,
+        "target_slots_zero_based": {
+          "0": 57,
+          "1": 59,
+          "2": 59,
+          "3": 24,
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 105,
+            "first_min_target": 26,
+            "unique_max_target": 102,
+            "unique_min_target": 20,
+            "among_max_target": 114,
+            "among_min_target": 28,
+            "max_tie_rows": 17,
+            "min_tie_rows": 22,
+            "target_rank_descending_competition": {
+              "1": 114,
+              "2": 55,
+              "3": 25,
+              "4": 5,
+              "6": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 28,
+              "2": 47,
+              "3": 75,
+              "4": 50
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 56,
+              "3_options/rank_2": 30,
+              "3_options/rank_3": 14,
+              "4_options/rank_1": 58,
+              "4_options/rank_2": 24,
+              "4_options/rank_3": 11,
+              "4_options/rank_4": 5,
+              "5_options/rank_2": 1,
+              "6_options/rank_6": 1
+            },
+            "mean_target": 27.225,
+            "mean_rival": 23.60238568588469
+          },
+          "words": {
+            "first_max_target": 78,
+            "first_min_target": 42,
+            "unique_max_target": 41,
+            "unique_min_target": 10,
+            "among_max_target": 142,
+            "among_min_target": 81,
+            "max_tie_rows": 117,
+            "min_tie_rows": 109,
+            "target_rank_descending_competition": {
+              "1": 142,
+              "2": 37,
+              "3": 18,
+              "4": 2,
+              "5": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 81,
+              "2": 62,
+              "3": 35,
+              "4": 22
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 73,
+              "3_options/rank_2": 19,
+              "3_options/rank_3": 8,
+              "4_options/rank_1": 69,
+              "4_options/rank_2": 18,
+              "4_options/rank_3": 9,
+              "4_options/rank_4": 2,
+              "5_options/rank_3": 1,
+              "6_options/rank_5": 1
+            },
+            "mean_target": 4.055,
+            "mean_rival": 3.783300198807157
+          }
+        }
+      },
+      "3": {
+        "rows": 100,
+        "arity_chance": 0.3333333333333329,
+        "target_slots_zero_based": {
+          "0": 33,
+          "1": 34,
+          "2": 33
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 53,
+            "first_min_target": 19,
+            "unique_max_target": 52,
+            "unique_min_target": 14,
+            "among_max_target": 56,
+            "among_min_target": 20,
+            "max_tie_rows": 5,
+            "min_tie_rows": 12,
+            "target_rank_descending_competition": {
+              "1": 56,
+              "2": 30,
+              "3": 14
+            },
+            "target_rank_ascending_competition": {
+              "1": 20,
+              "2": 28,
+              "3": 52
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 56,
+              "3_options/rank_2": 30,
+              "3_options/rank_3": 14
+            },
+            "mean_target": 27.01,
+            "mean_rival": 23.81
+          },
+          "words": {
+            "first_max_target": 42,
+            "first_min_target": 26,
+            "unique_max_target": 19,
+            "unique_min_target": 8,
+            "among_max_target": 73,
+            "among_min_target": 46,
+            "max_tie_rows": 61,
+            "min_tie_rows": 52,
+            "target_rank_descending_competition": {
+              "1": 73,
+              "2": 19,
+              "3": 8
+            },
+            "target_rank_ascending_competition": {
+              "1": 46,
+              "2": 35,
+              "3": 19
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 73,
+              "3_options/rank_2": 19,
+              "3_options/rank_3": 8
+            },
+            "mean_target": 4.03,
+            "mean_rival": 3.81
+          }
+        }
+      },
+      "4": {
+        "rows": 98,
+        "arity_chance": 0.25,
+        "target_slots_zero_based": {
+          "0": 24,
+          "1": 25,
+          "2": 25,
+          "3": 24
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 52,
+            "first_min_target": 6,
+            "unique_max_target": 50,
+            "unique_min_target": 5,
+            "among_max_target": 58,
+            "among_min_target": 7,
+            "max_tie_rows": 11,
+            "min_tie_rows": 9,
+            "target_rank_descending_competition": {
+              "1": 58,
+              "2": 24,
+              "3": 11,
+              "4": 5
+            },
+            "target_rank_ascending_competition": {
+              "1": 7,
+              "2": 19,
+              "3": 22,
+              "4": 50
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 58,
+              "4_options/rank_2": 24,
+              "4_options/rank_3": 11,
+              "4_options/rank_4": 5
+            },
+            "mean_target": 27.53061224489796,
+            "mean_rival": 23.401360544217688
+          },
+          "words": {
+            "first_max_target": 36,
+            "first_min_target": 15,
+            "unique_max_target": 22,
+            "unique_min_target": 2,
+            "among_max_target": 69,
+            "among_min_target": 33,
+            "max_tie_rows": 55,
+            "min_tie_rows": 55,
+            "target_rank_descending_competition": {
+              "1": 69,
+              "2": 18,
+              "3": 9,
+              "4": 2
+            },
+            "target_rank_ascending_competition": {
+              "1": 33,
+              "2": 27,
+              "3": 16,
+              "4": 22
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 69,
+              "4_options/rank_2": 18,
+              "4_options/rank_3": 9,
+              "4_options/rank_4": 2
+            },
+            "mean_target": 4.1020408163265305,
+            "mean_rival": 3.7653061224489797
+          }
+        }
+      },
+      "5": {
+        "rows": 1,
+        "arity_chance": 0.2,
+        "target_slots_zero_based": {
+          "2": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "2": 1
+            },
+            "target_rank_ascending_competition": {
+              "3": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_2": 1
+            },
+            "mean_target": 25.0,
+            "mean_rival": 24.75
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 1,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 1,
+            "max_tie_rows": 1,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "3": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_3": 1
+            },
+            "mean_target": 3.0,
+            "mean_rival": 3.5
+          }
+        }
+      },
+      "6": {
+        "rows": 1,
+        "arity_chance": 0.16666666666666666,
+        "target_slots_zero_based": {
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 1,
+            "unique_max_target": 0,
+            "unique_min_target": 1,
+            "among_max_target": 0,
+            "among_min_target": 1,
+            "max_tie_rows": 1,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "6": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_6": 1
+            },
+            "mean_target": 21.0,
+            "mean_rival": 26.2
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 1,
+            "max_tie_rows": 0,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "5": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_5": 1
+            },
+            "mean_target": 3.0,
+            "mean_rival": 4.0
+          }
+        }
+      }
+    },
+    "validation": {
+      "all": {
+        "rows": 40,
+        "arity_chance": 0.2883333333333334,
+        "target_slots_zero_based": {
+          "0": 11,
+          "1": 11,
+          "2": 12,
+          "3": 4,
+          "4": 1,
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 25,
+            "first_min_target": 2,
+            "unique_max_target": 25,
+            "unique_min_target": 2,
+            "among_max_target": 28,
+            "among_min_target": 2,
+            "max_tie_rows": 3,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 28,
+              "2": 10,
+              "3": 1,
+              "4": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 2,
+              "2": 8,
+              "3": 16,
+              "4": 14
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 15,
+              "3_options/rank_2": 4,
+              "3_options/rank_3": 1,
+              "4_options/rank_1": 12,
+              "4_options/rank_2": 5,
+              "4_options/rank_4": 1,
+              "5_options/rank_1": 1,
+              "6_options/rank_2": 1
+            },
+            "mean_target": 27.5,
+            "mean_rival": 23.116504854368934
+          },
+          "words": {
+            "first_max_target": 14,
+            "first_min_target": 5,
+            "unique_max_target": 6,
+            "unique_min_target": 3,
+            "among_max_target": 34,
+            "among_min_target": 12,
+            "max_tie_rows": 32,
+            "min_tie_rows": 21,
+            "target_rank_descending_competition": {
+              "1": 34,
+              "2": 2,
+              "3": 2,
+              "4": 2
+            },
+            "target_rank_ascending_competition": {
+              "1": 12,
+              "2": 14,
+              "3": 12,
+              "4": 2
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 19,
+              "3_options/rank_3": 1,
+              "4_options/rank_1": 13,
+              "4_options/rank_2": 2,
+              "4_options/rank_3": 1,
+              "4_options/rank_4": 2,
+              "5_options/rank_1": 1,
+              "6_options/rank_1": 1
+            },
+            "mean_target": 4.025,
+            "mean_rival": 3.650485436893204
+          }
+        }
+      },
+      "3": {
+        "rows": 20,
+        "arity_chance": 0.3333333333333332,
+        "target_slots_zero_based": {
+          "0": 6,
+          "1": 7,
+          "2": 7
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 13,
+            "first_min_target": 1,
+            "unique_max_target": 13,
+            "unique_min_target": 1,
+            "among_max_target": 15,
+            "among_min_target": 1,
+            "max_tie_rows": 2,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 15,
+              "2": 4,
+              "3": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1,
+              "2": 6,
+              "3": 13
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 15,
+              "3_options/rank_2": 4,
+              "3_options/rank_3": 1
+            },
+            "mean_target": 27.35,
+            "mean_rival": 23.625
+          },
+          "words": {
+            "first_max_target": 10,
+            "first_min_target": 2,
+            "unique_max_target": 5,
+            "unique_min_target": 1,
+            "among_max_target": 19,
+            "among_min_target": 8,
+            "max_tie_rows": 15,
+            "min_tie_rows": 11,
+            "target_rank_descending_competition": {
+              "1": 19,
+              "3": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 8,
+              "2": 7,
+              "3": 5
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 19,
+              "3_options/rank_3": 1
+            },
+            "mean_target": 4.1,
+            "mean_rival": 3.7
+          }
+        }
+      },
+      "4": {
+        "rows": 18,
+        "arity_chance": 0.25,
+        "target_slots_zero_based": {
+          "0": 5,
+          "1": 4,
+          "2": 5,
+          "3": 4
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 12,
+            "first_min_target": 1,
+            "unique_max_target": 12,
+            "unique_min_target": 1,
+            "among_max_target": 12,
+            "among_min_target": 1,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 12,
+              "2": 5,
+              "4": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1,
+              "2": 2,
+              "3": 3,
+              "4": 12
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 12,
+              "4_options/rank_2": 5,
+              "4_options/rank_4": 1
+            },
+            "mean_target": 27.88888888888889,
+            "mean_rival": 22.944444444444443
+          },
+          "words": {
+            "first_max_target": 4,
+            "first_min_target": 3,
+            "unique_max_target": 1,
+            "unique_min_target": 2,
+            "among_max_target": 13,
+            "among_min_target": 4,
+            "max_tie_rows": 15,
+            "min_tie_rows": 8,
+            "target_rank_descending_competition": {
+              "1": 13,
+              "2": 2,
+              "3": 1,
+              "4": 2
+            },
+            "target_rank_ascending_competition": {
+              "1": 4,
+              "2": 7,
+              "3": 6,
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 13,
+              "4_options/rank_2": 2,
+              "4_options/rank_3": 1,
+              "4_options/rank_4": 2
+            },
+            "mean_target": 3.888888888888889,
+            "mean_rival": 3.611111111111111
+          }
+        }
+      },
+      "5": {
+        "rows": 1,
+        "arity_chance": 0.2,
+        "target_slots_zero_based": {
+          "4": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 1,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_1": 1
+            },
+            "mean_target": 28.0,
+            "mean_rival": 23.0
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 1,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_1": 1
+            },
+            "mean_target": 5.0,
+            "mean_rival": 3.75
+          }
+        }
+      },
+      "6": {
+        "rows": 1,
+        "arity_chance": 0.16666666666666666,
+        "target_slots_zero_based": {
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "2": 1
+            },
+            "target_rank_ascending_competition": {
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_2": 1
+            },
+            "mean_target": 23.0,
+            "mean_rival": 21.0
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 1,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "3": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_1": 1
+            },
+            "mean_target": 4.0,
+            "mean_rival": 3.6
+          }
+        }
+      }
+    }
+  },
+  "revision": {
+    "train": {
+      "all": {
+        "rows": 200,
+        "arity_chance": 0.2910000000000004,
+        "target_slots_zero_based": {
+          "0": 57,
+          "1": 59,
+          "2": 59,
+          "3": 24,
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 49,
+            "first_min_target": 67,
+            "unique_max_target": 44,
+            "unique_min_target": 61,
+            "among_max_target": 56,
+            "among_min_target": 76,
+            "max_tie_rows": 20,
+            "min_tie_rows": 30,
+            "target_rank_descending_competition": {
+              "1": 56,
+              "2": 57,
+              "3": 58,
+              "4": 28,
+              "6": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 76,
+              "2": 58,
+              "3": 49,
+              "4": 16,
+              "5": 1
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 37,
+              "3_options/rank_2": 31,
+              "3_options/rank_3": 32,
+              "4_options/rank_1": 18,
+              "4_options/rank_2": 26,
+              "4_options/rank_3": 26,
+              "4_options/rank_4": 28,
+              "5_options/rank_1": 1,
+              "6_options/rank_6": 1
+            },
+            "mean_target": 38.98,
+            "mean_rival": 39.62823061630219
+          },
+          "words": {
+            "first_max_target": 50,
+            "first_min_target": 65,
+            "unique_max_target": 28,
+            "unique_min_target": 38,
+            "among_max_target": 91,
+            "among_min_target": 103,
+            "max_tie_rows": 91,
+            "min_tie_rows": 91,
+            "target_rank_descending_competition": {
+              "1": 91,
+              "2": 51,
+              "3": 40,
+              "4": 18
+            },
+            "target_rank_ascending_competition": {
+              "1": 103,
+              "2": 51,
+              "3": 34,
+              "4": 12
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 54,
+              "3_options/rank_2": 26,
+              "3_options/rank_3": 20,
+              "4_options/rank_1": 36,
+              "4_options/rank_2": 24,
+              "4_options/rank_3": 20,
+              "4_options/rank_4": 18,
+              "5_options/rank_1": 1,
+              "6_options/rank_2": 1
+            },
+            "mean_target": 6.0,
+            "mean_rival": 6.141153081510934
+          }
+        }
+      },
+      "3": {
+        "rows": 100,
+        "arity_chance": 0.3333333333333329,
+        "target_slots_zero_based": {
+          "0": 33,
+          "1": 34,
+          "2": 33
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 31,
+            "first_min_target": 37,
+            "unique_max_target": 27,
+            "unique_min_target": 32,
+            "among_max_target": 37,
+            "among_min_target": 43,
+            "max_tie_rows": 12,
+            "min_tie_rows": 16,
+            "target_rank_descending_competition": {
+              "1": 37,
+              "2": 31,
+              "3": 32
+            },
+            "target_rank_ascending_competition": {
+              "1": 43,
+              "2": 30,
+              "3": 27
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 37,
+              "3_options/rank_2": 31,
+              "3_options/rank_3": 32
+            },
+            "mean_target": 38.92,
+            "mean_rival": 39.405
+          },
+          "words": {
+            "first_max_target": 30,
+            "first_min_target": 34,
+            "unique_max_target": 17,
+            "unique_min_target": 20,
+            "among_max_target": 54,
+            "among_min_target": 58,
+            "max_tie_rows": 43,
+            "min_tie_rows": 45,
+            "target_rank_descending_competition": {
+              "1": 54,
+              "2": 26,
+              "3": 20
+            },
+            "target_rank_ascending_competition": {
+              "1": 58,
+              "2": 25,
+              "3": 17
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 54,
+              "3_options/rank_2": 26,
+              "3_options/rank_3": 20
+            },
+            "mean_target": 5.97,
+            "mean_rival": 6.105
+          }
+        }
+      },
+      "4": {
+        "rows": 98,
+        "arity_chance": 0.25,
+        "target_slots_zero_based": {
+          "0": 24,
+          "1": 25,
+          "2": 25,
+          "3": 24
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 17,
+            "first_min_target": 29,
+            "unique_max_target": 16,
+            "unique_min_target": 28,
+            "among_max_target": 18,
+            "among_min_target": 32,
+            "max_tie_rows": 8,
+            "min_tie_rows": 14,
+            "target_rank_descending_competition": {
+              "1": 18,
+              "2": 26,
+              "3": 26,
+              "4": 28
+            },
+            "target_rank_ascending_competition": {
+              "1": 32,
+              "2": 28,
+              "3": 22,
+              "4": 16
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 18,
+              "4_options/rank_2": 26,
+              "4_options/rank_3": 26,
+              "4_options/rank_4": 28
+            },
+            "mean_target": 39.03061224489796,
+            "mean_rival": 39.79931972789116
+          },
+          "words": {
+            "first_max_target": 20,
+            "first_min_target": 31,
+            "unique_max_target": 11,
+            "unique_min_target": 18,
+            "among_max_target": 36,
+            "among_min_target": 45,
+            "max_tie_rows": 47,
+            "min_tie_rows": 45,
+            "target_rank_descending_competition": {
+              "1": 36,
+              "2": 24,
+              "3": 20,
+              "4": 18
+            },
+            "target_rank_ascending_competition": {
+              "1": 45,
+              "2": 25,
+              "3": 17,
+              "4": 11
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 36,
+              "4_options/rank_2": 24,
+              "4_options/rank_3": 20,
+              "4_options/rank_4": 18
+            },
+            "mean_target": 6.030612244897959,
+            "mean_rival": 6.1768707482993195
+          }
+        }
+      },
+      "5": {
+        "rows": 1,
+        "arity_chance": 0.2,
+        "target_slots_zero_based": {
+          "2": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 1,
+            "first_min_target": 0,
+            "unique_max_target": 1,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "5": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_1": 1
+            },
+            "mean_target": 42.0,
+            "mean_rival": 34.5
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 1,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_1": 1
+            },
+            "mean_target": 6.0,
+            "mean_rival": 5.25
+          }
+        }
+      },
+      "6": {
+        "rows": 1,
+        "arity_chance": 0.16666666666666666,
+        "target_slots_zero_based": {
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 1,
+            "unique_max_target": 0,
+            "unique_min_target": 1,
+            "among_max_target": 0,
+            "among_min_target": 1,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "6": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_6": 1
+            },
+            "mean_target": 37.0,
+            "mean_rival": 42.6
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "2": 1
+            },
+            "target_rank_ascending_competition": {
+              "2": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_2": 1
+            },
+            "mean_target": 6.0,
+            "mean_rival": 6.2
+          }
+        }
+      }
+    },
+    "validation": {
+      "all": {
+        "rows": 40,
+        "arity_chance": 0.2883333333333334,
+        "target_slots_zero_based": {
+          "0": 11,
+          "1": 11,
+          "2": 12,
+          "3": 4,
+          "4": 1,
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 11,
+            "first_min_target": 10,
+            "unique_max_target": 9,
+            "unique_min_target": 10,
+            "among_max_target": 12,
+            "among_min_target": 10,
+            "max_tie_rows": 3,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "1": 12,
+              "2": 14,
+              "3": 9,
+              "4": 4,
+              "5": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 10,
+              "2": 14,
+              "3": 12,
+              "4": 3,
+              "6": 1
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 6,
+              "3_options/rank_2": 9,
+              "3_options/rank_3": 5,
+              "4_options/rank_1": 5,
+              "4_options/rank_2": 5,
+              "4_options/rank_3": 4,
+              "4_options/rank_4": 4,
+              "5_options/rank_5": 1,
+              "6_options/rank_1": 1
+            },
+            "mean_target": 40.525,
+            "mean_rival": 40.689320388349515
+          },
+          "words": {
+            "first_max_target": 9,
+            "first_min_target": 15,
+            "unique_max_target": 4,
+            "unique_min_target": 7,
+            "among_max_target": 12,
+            "among_min_target": 23,
+            "max_tie_rows": 13,
+            "min_tie_rows": 18,
+            "target_rank_descending_competition": {
+              "1": 12,
+              "2": 17,
+              "3": 6,
+              "4": 5
+            },
+            "target_rank_ascending_competition": {
+              "1": 23,
+              "2": 10,
+              "3": 5,
+              "4": 1,
+              "6": 1
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 5,
+              "3_options/rank_2": 12,
+              "3_options/rank_3": 3,
+              "4_options/rank_1": 6,
+              "4_options/rank_2": 5,
+              "4_options/rank_3": 3,
+              "4_options/rank_4": 4,
+              "5_options/rank_4": 1,
+              "6_options/rank_1": 1
+            },
+            "mean_target": 5.925,
+            "mean_rival": 6.223300970873787
+          }
+        }
+      },
+      "3": {
+        "rows": 20,
+        "arity_chance": 0.3333333333333332,
+        "target_slots_zero_based": {
+          "0": 6,
+          "1": 7,
+          "2": 7
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 6,
+            "first_min_target": 5,
+            "unique_max_target": 5,
+            "unique_min_target": 5,
+            "among_max_target": 6,
+            "among_min_target": 5,
+            "max_tie_rows": 1,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 6,
+              "2": 9,
+              "3": 5
+            },
+            "target_rank_ascending_competition": {
+              "1": 5,
+              "2": 10,
+              "3": 5
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 6,
+              "3_options/rank_2": 9,
+              "3_options/rank_3": 5
+            },
+            "mean_target": 40.5,
+            "mean_rival": 41.0
+          },
+          "words": {
+            "first_max_target": 4,
+            "first_min_target": 7,
+            "unique_max_target": 2,
+            "unique_min_target": 3,
+            "among_max_target": 5,
+            "among_min_target": 12,
+            "max_tie_rows": 4,
+            "min_tie_rows": 10,
+            "target_rank_descending_competition": {
+              "1": 5,
+              "2": 12,
+              "3": 3
+            },
+            "target_rank_ascending_competition": {
+              "1": 12,
+              "2": 6,
+              "3": 2
+            },
+            "arity_and_descending_rank": {
+              "3_options/rank_1": 5,
+              "3_options/rank_2": 12,
+              "3_options/rank_3": 3
+            },
+            "mean_target": 5.85,
+            "mean_rival": 6.325
+          }
+        }
+      },
+      "4": {
+        "rows": 18,
+        "arity_chance": 0.25,
+        "target_slots_zero_based": {
+          "0": 5,
+          "1": 4,
+          "2": 5,
+          "3": 4
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 4,
+            "first_min_target": 4,
+            "unique_max_target": 3,
+            "unique_min_target": 4,
+            "among_max_target": 5,
+            "among_min_target": 4,
+            "max_tie_rows": 2,
+            "min_tie_rows": 1,
+            "target_rank_descending_competition": {
+              "1": 5,
+              "2": 5,
+              "3": 4,
+              "4": 4
+            },
+            "target_rank_ascending_competition": {
+              "1": 4,
+              "2": 4,
+              "3": 7,
+              "4": 3
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 5,
+              "4_options/rank_2": 5,
+              "4_options/rank_3": 4,
+              "4_options/rank_4": 4
+            },
+            "mean_target": 40.27777777777778,
+            "mean_rival": 40.7037037037037
+          },
+          "words": {
+            "first_max_target": 4,
+            "first_min_target": 8,
+            "unique_max_target": 1,
+            "unique_min_target": 4,
+            "among_max_target": 6,
+            "among_min_target": 11,
+            "max_tie_rows": 8,
+            "min_tie_rows": 8,
+            "target_rank_descending_competition": {
+              "1": 6,
+              "2": 5,
+              "3": 3,
+              "4": 4
+            },
+            "target_rank_ascending_competition": {
+              "1": 11,
+              "2": 3,
+              "3": 3,
+              "4": 1
+            },
+            "arity_and_descending_rank": {
+              "4_options/rank_1": 6,
+              "4_options/rank_2": 5,
+              "4_options/rank_3": 3,
+              "4_options/rank_4": 4
+            },
+            "mean_target": 5.833333333333333,
+            "mean_rival": 6.055555555555555
+          }
+        }
+      },
+      "5": {
+        "rows": 1,
+        "arity_chance": 0.2,
+        "target_slots_zero_based": {
+          "4": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 0,
+            "first_min_target": 1,
+            "unique_max_target": 0,
+            "unique_min_target": 1,
+            "among_max_target": 0,
+            "among_min_target": 1,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "5": 1
+            },
+            "target_rank_ascending_competition": {
+              "1": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_5": 1
+            },
+            "mean_target": 38.0,
+            "mean_rival": 41.25
+          },
+          "words": {
+            "first_max_target": 0,
+            "first_min_target": 0,
+            "unique_max_target": 0,
+            "unique_min_target": 0,
+            "among_max_target": 0,
+            "among_min_target": 0,
+            "max_tie_rows": 1,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "4": 1
+            },
+            "target_rank_ascending_competition": {
+              "2": 1
+            },
+            "arity_and_descending_rank": {
+              "5_options/rank_4": 1
+            },
+            "mean_target": 7.0,
+            "mean_rival": 7.25
+          }
+        }
+      },
+      "6": {
+        "rows": 1,
+        "arity_chance": 0.16666666666666666,
+        "target_slots_zero_based": {
+          "5": 1
+        },
+        "lengths": {
+          "characters": {
+            "first_max_target": 1,
+            "first_min_target": 0,
+            "unique_max_target": 1,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "6": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_1": 1
+            },
+            "mean_target": 48.0,
+            "mean_rival": 37.6
+          },
+          "words": {
+            "first_max_target": 1,
+            "first_min_target": 0,
+            "unique_max_target": 1,
+            "unique_min_target": 0,
+            "among_max_target": 1,
+            "among_min_target": 0,
+            "max_tie_rows": 0,
+            "min_tie_rows": 0,
+            "target_rank_descending_competition": {
+              "1": 1
+            },
+            "target_rank_ascending_competition": {
+              "6": 1
+            },
+            "arity_and_descending_rank": {
+              "6_options/rank_1": 1
+            },
+            "mean_target": 8.0,
+            "mean_rival": 6.4
+          }
+        }
+      }
+    }
+  },
+  "output_sha256": {
+    "train.jsonl": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+    "validation.jsonl": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+    "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac"
+  },
+  "metadata_sha256": "51537f546efc614fcdeb351c215f6a714c858cf9826a33856c49818df2f066ed",
+  "source_and_script_sha256": {
+    "authored_choices.txt": "a6881ef1b1cbbb5b658a138f1241b548b103e1ab4d83142001eb585873a6d6ab",
+    "target_refinements.json": "f1c225992daf05ded95e71776e872dcea84f97f4fa695e47986d36efb3ab4366",
+    "source_mappings.json": "c9bf45a35bd428f49f55ec31d5503337529bfe563efcee5f89e639b6c4a5b254",
+    "apply_revision.py": "f654dca8303e4691805953d97f16117fc302a251412a47b1e7d3538b84e3734d"
+  },
+  "parent_sha256": {
+    "train.jsonl": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+    "validation.jsonl": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c",
+    "metadata.json": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+    "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+    "source_cases.txt": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+    "generate.py": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0"
+  },
+  "limitations": [
+    "Semantic preservation is author judgment, not independently verified correctness; parent must separately inspect all revised labels.",
+    "Immutable teacher revision and sampling settings unavailable; alias records actual current environment.",
+    "No tokenizer/model loaded; no token budget certification.",
+    "Only this parent shard and read-only review-intent/review.md inspected; no historical or cross-producer global uniqueness certification.",
+    "Length and state-word overlap may remain predictive; no shortcut-free claim. Explicit parent scope cues remain unchanged."
+  ],
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}

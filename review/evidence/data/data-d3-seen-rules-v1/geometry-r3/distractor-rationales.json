@@ -1,0 +1,293 @@
+{
+  "coverage": "All 36 wrong cooldown options, including retained options and none choices",
+  "options": [
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "option_id": "o1",
+      "text": "09:12",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 09:00–09:12: start must be at least 09:20 after it, or session plus reset must finish by 09:00 before it (would finish 09:32).",
+      "construction": "Omit the preceding booking’s 8-minute cooldown; use its session end."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "option_id": "o2",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 09:20 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "option_id": "o4",
+      "text": "09:19",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 09:00–09:12: start must be at least 09:20 after it, or session plus reset must finish by 09:00 before it (would finish 09:39).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "option_id": "o1",
+      "text": "10:08",
+      "feasible": false,
+      "why_wrong": "Infeasible: session plus recovery ends 10:28 after closing 10:20.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "option_id": "o2",
+      "text": "10:01",
+      "feasible": false,
+      "why_wrong": "Infeasible: session plus recovery ends 10:21 after closing 10:20.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "option_id": "o3",
+      "text": "09:52",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 09:00–09:45: start must be at least 09:53 after it, or session plus reset must finish by 09:00 before it (would finish 10:12).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "option_id": "o1",
+      "text": "13:26",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 13:50–14:10: start must be at least 14:15 after it, or session plus reset must finish by 13:50 before it (would finish 13:51).",
+      "construction": "Treat allowed equality as strict and move one minute past reset; this misses reset before the next booking."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "option_id": "o2",
+      "text": "14:15",
+      "feasible": false,
+      "why_wrong": "Infeasible: session ends 14:35 after closing 14:30.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "option_id": "o3",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 13:25 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "option_id": "o2",
+      "text": "13:44",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 13:00–13:40: start must be at least 13:45 after it, or session plus reset must finish by 13:00 before it (would finish 14:09).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "option_id": "o3",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 14:10 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "option_id": "o4",
+      "text": "14:11",
+      "feasible": false,
+      "why_wrong": "Infeasible: session ends 14:31 after closing 14:30.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "option_id": "o2",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 08:20 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "option_id": "o3",
+      "text": "08:19",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 08:00–08:07: start must be at least 08:20 after it, or session plus reset must finish by 08:00 before it (would finish 08:39).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "option_id": "o4",
+      "text": "09:00",
+      "feasible": false,
+      "why_wrong": "Infeasible: session plus recovery ends 09:20 after closing 09:15.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "option_id": "o1",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 08:55 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "option_id": "o2",
+      "text": "08:38",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 08:00–08:38: start must be at least 08:51 after it, or session plus reset must finish by 08:00 before it (would finish 08:58).",
+      "construction": "Omit the preceding survey’s 13-minute recovery and use its stated end."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "option_id": "o4",
+      "text": "08:50",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 08:00–08:38: start must be at least 08:51 after it, or session plus reset must finish by 08:00 before it (would finish 09:10).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "option_id": "o2",
+      "text": "10:31",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 11:00–11:18: start must be at least 11:30 after it, or session plus reset must finish by 11:00 before it (would finish 11:01).",
+      "construction": "Treat allowed equality as strict and move one minute later; this misses ventilation before the next booking."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "option_id": "o3",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 10:30 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "option_id": "o4",
+      "text": "11:30",
+      "feasible": true,
+      "why_wrong": "Feasible but later than offered 10:30; the question asks earliest listed, not any feasible start.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "option_id": "o2",
+      "text": "11:23",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 10:00–11:12: start must be at least 11:24 after it, or session plus reset must finish by 10:00 before it (would finish 11:53).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "option_id": "o3",
+      "text": "11:42",
+      "feasible": true,
+      "why_wrong": "Feasible but later than offered 11:25; the question asks earliest listed, not any feasible start.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "option_id": "o4",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 11:25 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "option_id": "o2",
+      "text": "15:39",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 15:00–15:25: start must be at least 15:40 after it, or session plus reset must finish by 15:00 before it (would finish 16:19).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "option_id": "o3",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 15:40 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "option_id": "o4",
+      "text": "15:25",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 15:00–15:25: start must be at least 15:40 after it, or session plus reset must finish by 15:00 before it (would finish 16:05).",
+      "construction": "Omit the preceding trial’s 15-minute cooldown and use its session end."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "option_id": "o1",
+      "text": "16:20",
+      "feasible": true,
+      "why_wrong": "Feasible but later than offered 16:05; the question asks earliest listed, not any feasible start.",
+      "construction": "Use the latest legal start at closing minus duration minus cooldown; feasible but not earliest listed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "option_id": "o2",
+      "text": "16:21",
+      "feasible": false,
+      "why_wrong": "Infeasible: session plus recovery ends 17:01 after closing 17:00.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "option_id": "o4",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 16:05 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "option_id": "o1",
+      "text": "18:56",
+      "feasible": true,
+      "why_wrong": "Feasible but later than offered 18:16; the question asks earliest listed, not any feasible start.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "option_id": "o3",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 18:16 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "option_id": "o4",
+      "text": "18:15",
+      "feasible": false,
+      "why_wrong": "Infeasible: conflicts with 18:00–18:10: start must be at least 18:16 after it, or session plus reset must finish by 18:00 before it (would finish 18:31).",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "option_id": "o1",
+      "text": "No listed start fits",
+      "feasible": null,
+      "why_wrong": "False: the offered 19:00 satisfies all booking, reset and closing constraints.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "option_id": "o3",
+      "text": "19:04",
+      "feasible": false,
+      "why_wrong": "Infeasible: session ends 19:14 after closing 19:10.",
+      "construction": "Subtract reset (6 minutes), rather than session duration (10 minutes), from closing."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "option_id": "o4",
+      "text": "19:01",
+      "feasible": false,
+      "why_wrong": "Infeasible: session ends 19:11 after closing 19:10.",
+      "construction": "Retained parent alternative; constraint rationale recomputed."
+    }
+  ]
+}

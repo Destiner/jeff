@@ -1,0 +1,49 @@
+{
+  "command": "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python -B /Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/review.py",
+  "checks": 24797,
+  "failed_checks": [],
+  "all_11_predictors_per_stratum": true,
+  "quality_reports_checked": 33,
+  "order_reports_checked": 33,
+  "position": [
+    {
+      "stratum": "inherited-v1",
+      "n": 120,
+      "input_position_counts": {
+        "0": 120
+      },
+      "ties": 0,
+      "raw_margin_min": 0.11095423996448517,
+      "raw_margin_max": 0.31027595698833466,
+      "raw_confidence_min": 0.32083582878112793,
+      "raw_confidence_max": 0.5524890422821045
+    },
+    {
+      "stratum": "new-v2",
+      "n": 480,
+      "input_position_counts": {
+        "0": 480
+      },
+      "ties": 0,
+      "raw_margin_min": 0.10249418020248413,
+      "raw_margin_max": 0.31096412241458893,
+      "raw_confidence_min": 0.29401078820228577,
+      "raw_confidence_max": 0.5527017116546631
+    },
+    {
+      "stratum": "probes",
+      "n": 24,
+      "input_position_counts": {
+        "0": 24
+      },
+      "ties": 0,
+      "raw_margin_min": 0.14396056532859802,
+      "raw_margin_max": 0.45655760169029236,
+      "raw_confidence_min": 0.4057137370109558,
+      "raw_confidence_max": 0.7282788157463074
+    }
+  ],
+  "recomputed": "All raw assembled per-option records joined to frozen references; independent normalized NLL/summed Brier, input-order top choice/ties, family/unit means, paired gain/loss contributions, choice flips, both/either/neither, TV/max changes; all compared with core per-case/group artifacts.",
+  "checked_authoritative": "Reviewed E3 metadata ancestry; grouped membership identities; control/TRAIN/P4 lineage reviews read, not repeated tensor/execution audits.",
+  "limits": "No weights/models/inference/tests/lint/network/final access; only new review artifacts. Source grouping dimensions overlap. No causal identification or significance claim."
+}

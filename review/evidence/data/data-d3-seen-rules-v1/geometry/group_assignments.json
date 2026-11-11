@@ -1,0 +1,172 @@
+{
+  "groups": {
+    "data:d3-seen-rules-v1:packs:p01": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p01",
+      "policy_domain": "tactile trail marker procurement",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:packs:p02": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p02",
+      "policy_domain": "percussion mallet sleeve orders",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:packs:p03": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p03",
+      "policy_domain": "pollution sampler filter refills",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:packs:p04": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p04",
+      "policy_domain": "mosaic spacer replenishment",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:packs:p05": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p05",
+      "policy_domain": "windsock clip purchases",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:packs:p06": {
+      "split": "validation",
+      "mechanism_id": "packs",
+      "policy_instance_id": "data:d3-seen-rules-v1:packs:p06",
+      "policy_domain": "costume reflector stock",
+      "training_group_id": "data:pilot-v2:rule-b:g002"
+    },
+    "data:d3-seen-rules-v1:rates:p01": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p01",
+      "policy_domain": "portable fog collector trials",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:rates:p02": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p02",
+      "policy_domain": "caption correction throughput",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:rates:p03": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p03",
+      "policy_domain": "sailcloth offcut utilisation",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:rates:p04": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p04",
+      "policy_domain": "snowmelt filtration trials",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:rates:p05": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p05",
+      "policy_domain": "seedling shelter ventilation",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:rates:p06": {
+      "split": "validation",
+      "mechanism_id": "rates",
+      "policy_instance_id": "data:d3-seen-rules-v1:rates:p06",
+      "policy_domain": "tile salvage crew efficiency",
+      "training_group_id": "data:pilot-v2:rule-b:g005"
+    },
+    "data:d3-seen-rules-v1:coordinates:p01": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p01",
+      "policy_domain": "tapestry loom pattern registration",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:coordinates:p02": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p02",
+      "policy_domain": "theatre follow-spot calibration",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:coordinates:p03": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p03",
+      "policy_domain": "raised relief map orientation",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:coordinates:p04": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p04",
+      "policy_domain": "kite camera overlay alignment",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:coordinates:p05": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p05",
+      "policy_domain": "ceramic decal placement",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:coordinates:p06": {
+      "split": "validation",
+      "mechanism_id": "coordinates",
+      "policy_instance_id": "data:d3-seen-rules-v1:coordinates:p06",
+      "policy_domain": "miniature railway control grid",
+      "training_group_id": "data:pilot-v2:rule-b:g006"
+    },
+    "data:d3-seen-rules-v1:cooldown:p01": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p01",
+      "policy_domain": "ultraviolet curing booth bookings",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    },
+    "data:d3-seen-rules-v1:cooldown:p02": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p02",
+      "policy_domain": "oral-history recording booth reset",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    },
+    "data:d3-seen-rules-v1:cooldown:p03": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p03",
+      "policy_domain": "thermographic scanner recovery",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    },
+    "data:d3-seen-rules-v1:cooldown:p04": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p04",
+      "policy_domain": "ceramic spray-room ventilation",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    },
+    "data:d3-seen-rules-v1:cooldown:p05": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p05",
+      "policy_domain": "sail testing tunnel cooldown",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    },
+    "data:d3-seen-rules-v1:cooldown:p06": {
+      "split": "validation",
+      "mechanism_id": "cooldown",
+      "policy_instance_id": "data:d3-seen-rules-v1:cooldown:p06",
+      "policy_domain": "acoustic dome reset scheduling",
+      "training_group_id": "data:pilot-v2:rule-b:g008"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v1-sentiment-r2",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "revision_author": "openai/gpt-astra (exposed session alias; revision unknown)",
+  "source": "Original synthetic teacher rows in ../sentiment; unchanged state, groups and labels",
+  "parent_shard_hashes": {
+    "train.jsonl": "e918409e29cfef87ff8f830ffd0650849ec9d8ebdf5dd608e73935ca488e0d58",
+    "validation.jsonl": "1e845bda5e465f5188d56ae4a82b8a6c7c96376df1be3439f6a0249b46a84d0f"
+  },
+  "parent_metadata": "../sentiment/metadata.json",
+  "generation_settings": {
+    "method": "deterministic formatting correction; no new semantic labels",
+    "seed": 20261111,
+    "options": "all four mutually exclusive descriptions for every row",
+    "question": "single neutral template, same original subject"
+  },
+  "reason": "Original question templates perfectly tracked sentiment class; mixed-choice availability also tracked the target. Remove both avoidable shortcuts before pilot publication.",
+  "row_counts": {
+    "train": 100,
+    "validation": 20
+  },
+  "usage_constraints": "Original synthetic content under existing provider terms; no independently cleared redistribution license, external datasets or private records.",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "limitations": [
+    "Teacher labels are not independently verified",
+    "Explicit sentiment wording and small English-only synthetic coverage remain",
+    "No claim that every possible shortcut is removed"
+  ],
+  "generator": "python -m jeff.data.prepare_sentiment --source <original-sentiment> --output <new-directory>"
+}

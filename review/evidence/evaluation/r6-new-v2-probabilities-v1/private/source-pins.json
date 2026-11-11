@@ -1,0 +1,21 @@
+{
+  "sha256_by_absolute_path": {
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e5-p3-v1.json": "89ae270c69ba8c80043bbe0d478960499e1cd9d464c7c36003de981727901bf1",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json": "3e0d34c2d52a38d324041cb0154acc16ce41d6ffd1f121c328da9b3da99afd87",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-release-identity-review-v1/validation-source-units-reviewed.json": "bbb16873176515a24b76caa6b628cce5bfb5bec28ab26e635f6a862615d0ee3a",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-original.jsonl": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-reversed.jsonl": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/inputs.jsonl": "a3b65924d7ea3ed9b638457d42d7274ddcdad5a0d40ad5c87fd975da0a2846e0",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl": "3f122ed8b56d12ced0a62037f4917344d4830c3fb906a153b0afebf13dbe7a58",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json": "13fafff508d5f9aaf1f316e5c74638c0d82e40d2b6a6ecf60d67a1153238ea98"
+  },
+  "exporter_sha256": "a809c56a799f65c8ec8f9c976033822a060743b9f1f6f00abf227fbc82456e20",
+  "reviewed_source_units_pin_basis": "SHA256 captured before processing; manifest identity matched pinned E5 released manifest; explicit reviewed metadata used without target/reference access.",
+  "authorization": [
+    "Leader R6support7ea66844",
+    "Research request e013187a"
+  ]
+}

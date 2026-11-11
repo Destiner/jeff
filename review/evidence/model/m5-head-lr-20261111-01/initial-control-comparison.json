@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-11T13:05:23.787903+00:00",
+  "all_initial_parameter_record_hashes_match": true,
+  "matching_parameters": 105,
+  "base_model_metadata_equal": true,
+  "config_differences": {
+    "output_dir": [
+      "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01",
+      "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/training"
+    ],
+    "head_learning_rate": [
+      0.0005,
+      2e-05
+    ]
+  },
+  "initial_validation_metrics_equal": true,
+  "budget": {
+    "steps": 225,
+    "examples_seen": 900,
+    "epochs": 3
+  },
+  "scope": "Recorded source/initial-tensor hash comparability; baseline prediction comparison follows; no independent tensor verification or deterministic MPS claim."
+}

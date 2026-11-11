@@ -1,0 +1,19 @@
+{
+  "schema_version": "evaluation/0.1",
+  "examples": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+    "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+  },
+  "inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+  },
+  "rows": 96,
+  "label_free_fields": [
+    "schema_version",
+    "id",
+    "state",
+    "question",
+    "options"
+  ]
+}

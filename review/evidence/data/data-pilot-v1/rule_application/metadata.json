@@ -1,0 +1,225 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v1-rule-application-r1",
+  "generation_job": "data-pilot-v1/rule_application/original-rule-job-r1",
+  "created_utc": "2026-11-11T10:29:30.666547+00:00",
+  "task_family": "rule_application",
+  "source_identity": {
+    "kind": "original synthetic agent-authored rule specifications and hand-selected structured cases, with Python CPU rendering and truth calculation",
+    "teacher_provider": "openai",
+    "teacher_model": "gpt-sol",
+    "identity_basis": "Actual PI_PROVIDER and PI_MODEL environment values exposed to this session; aliases only.",
+    "immutable_teacher_revision": null,
+    "teacher_temperature": null,
+    "unknowns": "Immutable model revision, sampling temperature, token usage, and original provider training-data provenance are not exposed.",
+    "source_revision": "original-rule-job-r1",
+    "group_revision": "rule-application-pilot-r1",
+    "external_datasets": [],
+    "private_real_data_used": false
+  },
+  "generation_settings": {
+    "authoring": "Existing agent text generation only. Rule statements, case facts and two independent executable algorithms were authored by the same agent session.",
+    "execution": "Local standard-library Python CPU only; no network, model loading, inference jobs, APIs, or separately billed generation.",
+    "python_version": "3.9.6",
+    "randomness": "None; explicitly curated cases, fixed ordering, SHA-256-derived opaque option IDs.",
+    "target_rotation": "Independent deterministic round-robin counters per split and option count. At most one count difference between populated target positions for a given split/choice count.",
+    "rows_per_group": 10,
+    "option_count_range_observed": [
+      2,
+      5
+    ],
+    "regeneration_command": "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/generate.py",
+    "audit_command": "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/audit.py",
+    "do_not_rerun_in_published_directory": "Published shards are frozen; copy generator and frozen assignment to a new owned version directory to regenerate."
+  },
+  "groups": {
+    "data:pilot-v1:rule_application:g01": {
+      "split": "train",
+      "domain": "fictional repair desk",
+      "mechanism": "ordered first-match routing with overrides",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g02": {
+      "split": "train",
+      "domain": "fictional equipment rental",
+      "mechanism": "progressive marginal band charge accumulation",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g03": {
+      "split": "train",
+      "domain": "fictional cargo dispatch",
+      "mechanism": "ordered greedy capacity admission with skip-and-continue",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g04": {
+      "split": "train",
+      "domain": "fictional observatory rota",
+      "mechanism": "modular cyclic indexing with signed displacement",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g05": {
+      "split": "train",
+      "domain": "fictional seed quality scoring",
+      "mechanism": "signed weighted sum and score classification",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g06": {
+      "split": "train",
+      "domain": "fictional exhibition badge reconciliation",
+      "mechanism": "symmetric difference of entitlement sets",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g07": {
+      "split": "train",
+      "domain": "fictional room reservation",
+      "mechanism": "half-open temporal interval intersection",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g08": {
+      "split": "train",
+      "domain": "fictional message switchboard",
+      "mechanism": "longest matching prefix selection",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g09": {
+      "split": "train",
+      "domain": "fictional parcel seal checking",
+      "mechanism": "position-weighted modular checksum",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g10": {
+      "split": "train",
+      "domain": "fictional workshop access controller",
+      "mechanism": "finite state transition execution",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g11": {
+      "split": "validation",
+      "domain": "fictional irrigation network",
+      "mechanism": "transitive directed graph reachability",
+      "revision": "r1"
+    },
+    "data:pilot-v1:rule_application:g12": {
+      "split": "validation",
+      "domain": "fictional club election",
+      "mechanism": "Condorcet winner from strict pairwise ballot majorities",
+      "revision": "r1"
+    }
+  },
+  "split_policy": "Ten rows per mechanism. All related cases and renderings stay in the preallocated split. Validation holds out complete graph-reachability and pairwise-election mechanisms, not renamed numeric thresholds.",
+  "row_counts": {
+    "train": 100,
+    "validation": 20,
+    "total": 120
+  },
+  "source_group_counts": {
+    "train": 10,
+    "validation": 2,
+    "total": 12
+  },
+  "label_strategy": {
+    "provenance_kind": "programmatic",
+    "label_basis": "rule_verified",
+    "rows_independently_rule_checked": 120,
+    "generation_implementation": "generate.py computes rule results and creates meaningful choice text, then rotates the target position.",
+    "audit_implementation": "audit.py does not import generate.py. It reconstructs expected answer text from audit_cases.jsonl with separately implemented semantics, locates exactly one matching supplied choice, then compares its opaque ID with target_id.",
+    "algorithm_separation_examples": {
+      "fees": "per-hour summation vs closed band formula",
+      "cyclic_indexing": "modulo vs deque step rotation",
+      "intervals": "endpoint inequality vs minute-set intersection",
+      "graph": "frontier traversal vs all-pairs transitive closure",
+      "ballots": "candidate rank comparisons vs accumulated pairwise matrix",
+      "checksum": "weighted sum modulo vs repeated bounded modular additions"
+    },
+    "scope_limit": "Executable checking is genuine but not independent authorship. The same teacher created the rule semantics, structured facts and verifier. No claim of independent natural-language correctness or independent teacher corroboration."
+  },
+  "review": {
+    "structural_and_rule_audit": "validation_report.json; 120/120 passed",
+    "text_spot_review": {
+      "count": 24,
+      "selection": "r01 and r10 of each of g01 through g12",
+      "method": "Same agent read rendered state, question, all choices and marked target; checked alignment with explicit policy, boundaries, mutually exclusive result descriptions.",
+      "finding": "No ambiguity or target mismatch found in inspected rows. This is self-review, not independent correctness evidence."
+    },
+    "exact_input_duplicates": 0,
+    "cross_split_group_overlap": 0,
+    "target_position_counts": {
+      "train:4_choices": {
+        "0": 17,
+        "1": 17,
+        "2": 17,
+        "3": 16
+      },
+      "train:3_choices": {
+        "0": 10,
+        "1": 10,
+        "2": 9
+      },
+      "train:5_choices": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "train:2_choices": {
+        "0": 1
+      },
+      "validation:4_choices": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 4
+      },
+      "validation:3_choices": {
+        "0": 1,
+        "1": 1
+      },
+      "validation:5_choices": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    "outcome_balance": "Routing 2/3/3/2; score decisions 3 reject/3 hold/4 release; controller 3 locked/4 open/3 occupied; election 5 elected/5 nobody. Other mechanisms use multiple exact numeric/set/destination results; see full outcome counts in validation_report.json.",
+    "not_executed": [
+      "software tests",
+      "linting",
+      "model evaluation",
+      "semantic near-duplicate embedding analysis",
+      "network calls"
+    ]
+  },
+  "usage_and_license": {
+    "origin": "Original synthetic usage constraints: generated via existing approved provider access, with no external dataset or private real data.",
+    "terms": "Use remains subject to the applicable existing provider/account terms and project permissions. No separately asserted redistribution license; no claim of public-domain, CC0, or independently cleared blanket redistribution rights.",
+    "additional_spend_gbp": 0,
+    "pending_spend_gbp": 0,
+    "existing_access_cost": "Existing session access; not separately metered here. £0 additional and £0 pending spend."
+  },
+  "limitations": [
+    "Only 12 generator groups, including two held-out validation mechanisms with 10 dependent cases each. Effective independent validation diversity is approximately two mechanisms, not 20 unrelated tasks.",
+    "Graph reachability and Condorcet pairwise majority are completely held-out mechanisms, but generic language, arithmetic and set concepts are necessarily shared across groups.",
+    "Within-group text is template-based. Explicit parameters, policies, inputs, edge cases and target outcomes vary; this is not broad linguistic or real-world coverage.",
+    "All examples use deliberately explicit, small, unambiguous fictional policies; no missing-data or adversarial ambiguity coverage.",
+    "Some distractors are easier than others, and tiny 2-, 3- and 5-choice subsets cannot cover all target positions.",
+    "Structured facts are audited, not independently parsed from natural language. A shared specification or rendering mistake could survive both algorithms.",
+    "Opaque IDs and all audit/provenance/label metadata must stay out of model inputs.",
+    "No final data or evaluation artifacts were accessed. No passage_entailment generated."
+  ],
+  "files": {
+    "train": "train.jsonl",
+    "validation": "validation.jsonl",
+    "assignments": "group_assignments.json",
+    "generation_script": "generate.py",
+    "audit_script": "audit.py",
+    "audit_facts": "audit_cases.jsonl",
+    "validation_report": "validation_report.json",
+    "note": "generation_review.md"
+  },
+  "file_sha256": {
+    "train.jsonl": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+    "validation.jsonl": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+    "group_assignments.json": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773",
+    "audit_cases.jsonl": "165dc88ce9482e5f244ed021c08a0bfb102ee86c73640030d2a8a3e8a1902183",
+    "generate.py": "980ca40458ddeb62897b32d25722857b9a280f86e6ec4a2f33d7a80a2ca5cd2c",
+    "audit.py": "adfa34a095b811773f5ccd5ef16e2d437a035eed95784c3da512f76f9e08c3a2"
+  }
+}

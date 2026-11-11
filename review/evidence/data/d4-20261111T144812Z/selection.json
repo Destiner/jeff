@@ -1,0 +1,310 @@
+{
+  "task": "D4",
+  "selected_at": "2026-11-11T14:51:44.636506+00:00",
+  "manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+  "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "selector_sha256": "ae35c38be114316d8a600a3a32c9c4c5654d1f5cb9adc70e59ba2e0c60004f49",
+  "recipe": "4 inherited rows: ordinal7 from v1 groups01/04/07/10. 20 new rows: ordinals7/8 from rule-a groups001/002/003/005/007 and rule-b002/005/006/008/010. Metadata-only selection, no outcomes or target conditioning.",
+  "reason": "Paired later-policy cases on eight D3-seen mechanisms plus authorization/conditional branches, with four inherited rule controls; avoids the16 earlier D3 novelty examples.",
+  "decisions": 24,
+  "source_mechanism_groups": 14,
+  "inherited_decisions": 4,
+  "new_decisions": 20,
+  "exclusions": {
+    "d3_review_sha256": "b7ee1c8ff77744b2c06a3346e715257a0fcba1b499220d12861d0b885404add3",
+    "already_inspected_ids": [
+      "data:pilot-v2:rule-a:g002:r01",
+      "data:pilot-v2:rule-a:g002:r02",
+      "data:pilot-v2:rule-a:g003:r01",
+      "data:pilot-v2:rule-a:g003:r02",
+      "data:pilot-v2:rule-a:g005:r01",
+      "data:pilot-v2:rule-a:g005:r02",
+      "data:pilot-v2:rule-a:g007:r01",
+      "data:pilot-v2:rule-a:g007:r02",
+      "data:pilot-v2:rule-b:g002:r01",
+      "data:pilot-v2:rule-b:g002:r02",
+      "data:pilot-v2:rule-b:g005:r01",
+      "data:pilot-v2:rule-b:g005:r02",
+      "data:pilot-v2:rule-b:g006:r01",
+      "data:pilot-v2:rule-b:g006:r02",
+      "data:pilot-v2:rule-b:g008:r01",
+      "data:pilot-v2:rule-b:g008:r02"
+    ],
+    "overlap": 0
+  },
+  "shards": {
+    "data/data-pilot-v1/rule_application/train.jsonl": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+    "data/data-pilot-v2/rule-a/train.jsonl": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+    "data/data-pilot-v2/rule-b/train.jsonl": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669"
+  },
+  "selection": [
+    {
+      "id": "data:pilot-v1:rule_application:g01:r07",
+      "group_id": "data:pilot-v1:rule_application:g01",
+      "mechanism": "ordered first-match routing with overrides",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "shard_sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "ordinal_one_based": 7,
+      "stratum": "inherited_v1",
+      "assignment_sha256": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g04:r07",
+      "group_id": "data:pilot-v1:rule_application:g04",
+      "mechanism": "modular cyclic indexing with signed displacement",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "shard_sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "ordinal_one_based": 7,
+      "stratum": "inherited_v1",
+      "assignment_sha256": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g07:r07",
+      "group_id": "data:pilot-v1:rule_application:g07",
+      "mechanism": "half-open temporal interval intersection",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "shard_sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "ordinal_one_based": 7,
+      "stratum": "inherited_v1",
+      "assignment_sha256": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773"
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g10:r07",
+      "group_id": "data:pilot-v1:rule_application:g10",
+      "mechanism": "finite state transition execution",
+      "shard": "data/data-pilot-v1/rule_application/train.jsonl",
+      "shard_sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "ordinal_one_based": 7,
+      "stratum": "inherited_v1",
+      "assignment_sha256": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r07",
+      "group_id": "data:pilot-v2:rule-a:g001",
+      "mechanism": "exact-count authorization",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r08",
+      "group_id": "data:pilot-v2:rule-a:g001",
+      "mechanism": "exact-count authorization",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r07",
+      "group_id": "data:pilot-v2:rule-a:g002",
+      "mechanism": "lexicographic tuple ranking",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r08",
+      "group_id": "data:pilot-v2:rule-a:g002",
+      "mechanism": "lexicographic tuple ranking",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r07",
+      "group_id": "data:pilot-v2:rule-a:g003",
+      "mechanism": "FIFO stock batch issuing",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r08",
+      "group_id": "data:pilot-v2:rule-a:g003",
+      "mechanism": "FIFO stock batch issuing",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r07",
+      "group_id": "data:pilot-v2:rule-a:g005",
+      "mechanism": "ordered fixed and percentage discount composition",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r08",
+      "group_id": "data:pilot-v2:rule-a:g005",
+      "mechanism": "ordered fixed and percentage discount composition",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r07",
+      "group_id": "data:pilot-v2:rule-a:g007",
+      "mechanism": "nearest rounding with explicit half-up ties",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r08",
+      "group_id": "data:pilot-v2:rule-a:g007",
+      "mechanism": "nearest rounding with explicit half-up ties",
+      "shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "shard_sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r07",
+      "group_id": "data:pilot-v2:rule-b:g002",
+      "mechanism": "ceiling pack count with minimum purchase",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r08",
+      "group_id": "data:pilot-v2:rule-b:g002",
+      "mechanism": "ceiling pack count with minimum purchase",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r07",
+      "group_id": "data:pilot-v2:rule-b:g005",
+      "mechanism": "rate comparison by cross multiplication",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r08",
+      "group_id": "data:pilot-v2:rule-b:g005",
+      "mechanism": "rate comparison by cross multiplication",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r07",
+      "group_id": "data:pilot-v2:rule-b:g006",
+      "mechanism": "ordered coordinate transformations",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r08",
+      "group_id": "data:pilot-v2:rule-b:g006",
+      "mechanism": "ordered coordinate transformations",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r07",
+      "group_id": "data:pilot-v2:rule-b:g008",
+      "mechanism": "cooldown-constrained appointment scheduling",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r08",
+      "group_id": "data:pilot-v2:rule-b:g008",
+      "mechanism": "cooldown-constrained appointment scheduling",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r07",
+      "group_id": "data:pilot-v2:rule-b:g010",
+      "mechanism": "nested conditional expression evaluation",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 7,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r08",
+      "group_id": "data:pilot-v2:rule-b:g010",
+      "mechanism": "nested conditional expression evaluation",
+      "shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "shard_sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "ordinal_one_based": 8,
+      "stratum": "new_v2",
+      "assignment_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    }
+  ],
+  "display_order_seed": 20261111144812,
+  "display_order": [
+    "data:pilot-v1:rule_application:g10:r07",
+    "data:pilot-v2:rule-a:g005:r08",
+    "data:pilot-v2:rule-b:g010:r07",
+    "data:pilot-v2:rule-a:g001:r08",
+    "data:pilot-v2:rule-a:g007:r07",
+    "data:pilot-v2:rule-a:g002:r08",
+    "data:pilot-v2:rule-b:g005:r07",
+    "data:pilot-v1:rule_application:g07:r07",
+    "data:pilot-v2:rule-b:g006:r07",
+    "data:pilot-v2:rule-b:g005:r08",
+    "data:pilot-v2:rule-a:g007:r08",
+    "data:pilot-v2:rule-a:g001:r07",
+    "data:pilot-v2:rule-b:g010:r08",
+    "data:pilot-v2:rule-b:g002:r07",
+    "data:pilot-v2:rule-b:g002:r08",
+    "data:pilot-v1:rule_application:g04:r07",
+    "data:pilot-v2:rule-a:g002:r07",
+    "data:pilot-v2:rule-a:g005:r07",
+    "data:pilot-v2:rule-b:g006:r08",
+    "data:pilot-v2:rule-a:g003:r07",
+    "data:pilot-v1:rule_application:g01:r07",
+    "data:pilot-v2:rule-b:g008:r07",
+    "data:pilot-v2:rule-b:g008:r08",
+    "data:pilot-v2:rule-a:g003:r08"
+  ],
+  "limits": "Purposive small rules-only sample; paired cases and shared teacher are dependent. Not a whole-dataset estimate or independent ground truth."
+}

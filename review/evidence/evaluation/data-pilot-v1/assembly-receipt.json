@@ -1,0 +1,31 @@
+{
+  "schema_version": "evaluation/0.1",
+  "source_dataset_id": "data-pilot-v1",
+  "source_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180"
+  },
+  "validation_sources": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "rows": 20
+    }
+  ],
+  "reference": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+    "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+  },
+  "rows": 60,
+  "scope": "Validation shard hashes/counts/splits and combined references checked; train content untouched. Cross-split deduplication remains Data-owned."
+}

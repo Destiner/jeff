@@ -1,0 +1,42 @@
+[
+  {
+    "path": "checkpoint.json",
+    "bytes": 27729,
+    "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+  },
+  {
+    "path": "encoder/config.json",
+    "bytes": 611,
+    "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+  },
+  {
+    "path": "encoder/model.safetensors",
+    "bytes": 90864192,
+    "sha256": "1377e9af0ca0b016a9f2aa584d6fc71ab3ea6804fae21ef9fb1416e2944057ac"
+  },
+  {
+    "path": "head.safetensors",
+    "bytes": 1676,
+    "sha256": "6d2409c1788c104c5655617751bebacf805cd43186c71d5e243b9a620db78123"
+  },
+  {
+    "path": "tokenizer/special_tokens_map.json",
+    "bytes": 695,
+    "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+  },
+  {
+    "path": "tokenizer/tokenizer.json",
+    "bytes": 711649,
+    "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+  },
+  {
+    "path": "tokenizer/tokenizer_config.json",
+    "bytes": 1464,
+    "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+  },
+  {
+    "path": "tokenizer/vocab.txt",
+    "bytes": 231508,
+    "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  }
+]

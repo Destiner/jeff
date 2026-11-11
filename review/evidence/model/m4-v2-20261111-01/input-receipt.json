@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-11T11:56:25.778970+00:00",
+  "inputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "rows": 300
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "rows": 300
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/inputs.jsonl",
+      "sha256": "a3b65924d7ea3ed9b638457d42d7274ddcdad5a0d40ad5c87fd975da0a2846e0",
+      "rows": 240
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl",
+      "sha256": "3f122ed8b56d12ced0a62037f4917344d4830c3fb906a153b0afebf13dbe7a58",
+      "rows": 240
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/inputs.jsonl",
+      "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1",
+      "rows": 60
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "rows": 24
+    }
+  ],
+  "input_list_sha256": "c4c91dda664233b5e1d9ce430e391be12e6a12e823a08884e892cbc4811a9a9b",
+  "release_request": "handoffs/evaluation/20261111-e3-released-inputs-M4-request.md",
+  "exclusion_receipt": "handoffs/evaluation/20261111-e3-released-identity-rebind-complete-v1.md"
+}

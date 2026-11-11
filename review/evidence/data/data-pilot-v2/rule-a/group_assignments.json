@@ -1,0 +1,79 @@
+{
+  "groups": {
+    "data:pilot-v2:rule-a:g001": {
+      "split": "train",
+      "mechanism": "exact-count authorization",
+      "scenario_plan": "Ten independently stated authorization policies; paired cases contrast exact counts with too few or too many eligible signers; roles, exclusions and duplicate signatures vary."
+    },
+    "data:pilot-v2:rule-a:g002": {
+      "split": "train",
+      "mechanism": "lexicographic tuple ranking",
+      "scenario_plan": "Ten tuple-ranking policies with explicit priority directions; paired candidate sets force first-key, second-key and final-key decisions."
+    },
+    "data:pilot-v2:rule-a:g003": {
+      "split": "train",
+      "mechanism": "FIFO stock batch issuing",
+      "scenario_plan": "Ten FIFO inventory policies with dated batches and paired demands crossing a batch boundary or exactly exhausting stock."
+    },
+    "data:pilot-v2:rule-a:g004": {
+      "split": "train",
+      "mechanism": "two-stage unit conversion",
+      "scenario_plan": "Ten two-stage measurement policies across mass, volume, distance and time; paired quantities expose stage order and intermediate units."
+    },
+    "data:pilot-v2:rule-a:g005": {
+      "split": "train",
+      "mechanism": "ordered fixed and percentage discount composition",
+      "scenario_plan": "Ten price policies with explicitly ordered fixed and percentage reductions; paired purchases vary order applicability and zero floors."
+    },
+    "data:pilot-v2:rule-a:g006": {
+      "split": "train",
+      "mechanism": "capped daily accrual",
+      "scenario_plan": "Ten accrual policies with daily caps, optional per-day eligibility and total ceilings; paired daily records straddle caps."
+    },
+    "data:pilot-v2:rule-a:g007": {
+      "split": "train",
+      "mechanism": "nearest rounding with explicit half-up ties",
+      "scenario_plan": "Ten rounding policies with explicit half-up ties and distinct units/grids; paired amounts cover tie and non-tie boundaries."
+    },
+    "data:pilot-v2:rule-a:g008": {
+      "split": "train",
+      "mechanism": "run-length encoding",
+      "scenario_plan": "Ten explicit run-length codecs with different separators and symbol streams; paired cases distinguish adjacent runs from total frequency."
+    },
+    "data:pilot-v2:rule-a:g009": {
+      "split": "train",
+      "mechanism": "earliest-deadline scheduling feasibility",
+      "scenario_plan": "Ten single-machine scheduling policies with deadlines, durations and starting times; paired schedules contrast equality feasibility and misses."
+    },
+    "data:pilot-v2:rule-a:g010": {
+      "split": "train",
+      "mechanism": "permission union with explicit veto",
+      "scenario_plan": "Ten permission policies defining role-grant unions and overriding vetoes; paired requests contrast missing grants with vetoed and granted access."
+    },
+    "data:pilot-v2:rule-a:g011": {
+      "split": "validation",
+      "mechanism": "longest common contiguous substring",
+      "scenario_plan": "Four longest-common-contiguous-substring policies on short symbol strings; paired comparisons distinguish contiguous overlap from subsequences."
+    },
+    "data:pilot-v2:rule-a:g012": {
+      "split": "validation",
+      "mechanism": "bracket-stack validation",
+      "scenario_plan": "Four bracket-validation policies with explicit bracket alphabets and ignored characters; paired cases contrast nesting, crossing and unmatched stacks."
+    },
+    "data:pilot-v2:rule-a:g013": {
+      "split": "validation",
+      "mechanism": "stable merge of sorted queues",
+      "scenario_plan": "Four stable-merge policies on labelled sorted queues; paired cases exercise unequal keys, ties and queue exhaustion."
+    },
+    "data:pilot-v2:rule-a:g014": {
+      "split": "validation",
+      "mechanism": "bit-vector parity constraints",
+      "scenario_plan": "Four bit-parity policies with specified bit positions and even/odd requirements; paired vectors distinguish joint satisfaction from partial satisfaction."
+    },
+    "data:pilot-v2:rule-a:g015": {
+      "split": "validation",
+      "mechanism": "highest median measurement selection",
+      "scenario_plan": "Four median-ranking policies with odd/even samples and explicit tie breaks; paired candidate sets distinguish medians from maxima and means."
+    }
+  }
+}

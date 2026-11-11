@@ -1,0 +1,1600 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-pilot-v1",
+  "review_type": "independent-session teacher spot review and CPU dataset validation; not correctness proof",
+  "reviewer": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai",
+    "immutable_revision": null
+  },
+  "cost": {
+    "additional_gbp": 0,
+    "pending_gbp": 0,
+    "network_api_model_calls": 0,
+    "note": "Existing reviewer session only; no additional model inference, network, paid work or compute purchase."
+  },
+  "disposition": "No observed must-fix label or dataset-integrity issue; handoff with documented quality/scope/code risks.",
+  "findings_count": 7,
+  "must_fix_count": 0,
+  "label_disagreement_count": 0,
+  "label_disagreements_require_resolution_before_handoff": false,
+  "integrity": {
+    "shards": 6,
+    "rows": 360,
+    "counts": {
+      "train/intent": 100,
+      "train/rule_application": 100,
+      "train/sentiment": 100,
+      "validation/intent": 20,
+      "validation/rule_application": 20,
+      "validation/sentiment": 20
+    },
+    "groups": {
+      "train/intent": 25,
+      "train/rule_application": 10,
+      "train/sentiment": 25,
+      "validation/intent": 5,
+      "validation/rule_application": 2,
+      "validation/sentiment": 5
+    },
+    "total_groups": 72,
+    "train_groups": 60,
+    "validation_groups": 12,
+    "manifest_shard_hashes_match": true,
+    "provenance_artifact_hashes_checked": 17,
+    "provenance_artifact_hashes_all_match": true,
+    "preassigned_group_split_matches": true,
+    "group_counts_match_pilot_quotas": true,
+    "validation_errors": [],
+    "normalized_input_duplicates": 0,
+    "cross_split_group_overlap": 0,
+    "likely_duplicate_pairs": 163,
+    "all_likely_within_group": true,
+    "duplicate_pairs_per_group": {
+      "data:pilot-v1:rule_application:g01": 45,
+      "data:pilot-v1:rule_application:g02": 6,
+      "data:pilot-v1:rule_application:g04": 3,
+      "data:pilot-v1:rule_application:g05": 4,
+      "data:pilot-v1:rule_application:g06": 45,
+      "data:pilot-v1:rule_application:g07": 2,
+      "data:pilot-v1:rule_application:g09": 8,
+      "data:pilot-v1:rule_application:g10": 45,
+      "data:pilot-v1:rule_application:g12": 5
+    },
+    "lead_duplicate_pairs_exactly_reproduced": true,
+    "producer_files_unchanged": true,
+    "hash_snapshot": "checks.json:producer_snapshot_before/after",
+    "assignment_config_hash": "Recorded by producer but not independently recomputed: assignment config outside allowed inputs."
+  },
+  "review_sample": {
+    "total": 48,
+    "intent": {
+      "train": 6,
+      "validation": 6
+    },
+    "sentiment": {
+      "train": 6,
+      "validation": 6
+    },
+    "rule_application": {
+      "train": 20,
+      "validation": 4,
+      "per_mechanism": 2
+    },
+    "teacher_agreement_count": 48,
+    "label_hidden_assessments": 47,
+    "prior_exposed_label_assessments": 1,
+    "independent_ground_truth_count": 0,
+    "scope": "Independent-session teacher spot review, not independent ground truth or correctness proof. Selected inputs were rendered without targets. Before selection, audit helper logic and revision-map excerpt were read. Sentiment g01:r01 class P was exposed in that excerpt: its decision is ordinary teacher review, not blind. Remaining 47 selected target labels had not been displayed; mechanism knowledge is not independent rule authorship. No external model/API invoked."
+  },
+  "sentiment_revision": {
+    "rows": 120,
+    "state_split_group_subject_preserved": true,
+    "class_preserved_against_parent_and_map": true,
+    "all_four_classes_every_row": true,
+    "neutral_question_every_row": true,
+    "parent_hashes_match": true,
+    "map_unique_published_ids": true,
+    "detail": "supplement.json and checks.json"
+  },
+  "rule_reproduction": {
+    "rows": 120,
+    "matching": 120,
+    "audit_case_ids_unique_and_cover_published_rule_rows": true,
+    "method": "runpy.run_path(audit.py) with non-main run name, call expected(mechanism, facts), require exactly one matching option text and compare its ID with target. Producer main not run.",
+    "limitations": "Same teacher generated generator and audit; facts not independently extracted from natural language. Only selected row text was solved before target comparison; all-target reproduction is consistency, not proof.",
+    "results": [
+      {
+        "id": "data:pilot-v1:rule_application:g01:r01",
+        "expected_text": "Route to Safety bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r02",
+        "expected_text": "Route to Warranty bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r03",
+        "expected_text": "Route to Rapid bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r04",
+        "expected_text": "Route to General bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r05",
+        "expected_text": "Route to Warranty bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r06",
+        "expected_text": "Route to Warranty bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r07",
+        "expected_text": "Route to Rapid bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r08",
+        "expected_text": "Route to Safety bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r09",
+        "expected_text": "Route to General bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g01:r10",
+        "expected_text": "Route to Rapid bench.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r01",
+        "expected_text": "Charge 0 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r02",
+        "expected_text": "Charge 6 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r03",
+        "expected_text": "Charge 22 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r04",
+        "expected_text": "Charge 28 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r05",
+        "expected_text": "Charge 8 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r06",
+        "expected_text": "Charge 46 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r07",
+        "expected_text": "Charge 0 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r08",
+        "expected_text": "Charge 32 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r09",
+        "expected_text": "Charge 16 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g02:r10",
+        "expected_text": "Charge 35 credits.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r01",
+        "expected_text": "Load Amber, Cedar.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r02",
+        "expected_text": "Load Elm, Flint.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r03",
+        "expected_text": "Load nothing.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r04",
+        "expected_text": "Load Jade, Kite, Lime.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r05",
+        "expected_text": "Load Moss, Opal.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r06",
+        "expected_text": "Load nothing.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r07",
+        "expected_text": "Load Sage, Umber.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r08",
+        "expected_text": "Load Wave.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r09",
+        "expected_text": "Load Ash, Bramble.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g03:r10",
+        "expected_text": "Load Echo, Glow.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r01",
+        "expected_text": "Duty belongs to Aster.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r02",
+        "expected_text": "Duty belongs to Aster.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r03",
+        "expected_text": "Duty belongs to Noon.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r04",
+        "expected_text": "Duty belongs to Evening.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r05",
+        "expected_text": "Duty belongs to Ivy.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r06",
+        "expected_text": "Duty belongs to Ivy.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r07",
+        "expected_text": "Duty belongs to Juno.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r08",
+        "expected_text": "Duty belongs to Poppy.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r09",
+        "expected_text": "Duty belongs to Topaz.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g04:r10",
+        "expected_text": "Duty belongs to Xenia.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r01",
+        "expected_text": "Reject batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r02",
+        "expected_text": "Release batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r03",
+        "expected_text": "Release batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r04",
+        "expected_text": "Hold batch for review.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r05",
+        "expected_text": "Hold batch for review.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r06",
+        "expected_text": "Release batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r07",
+        "expected_text": "Reject batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r08",
+        "expected_text": "Reject batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r09",
+        "expected_text": "Hold batch for review.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g05:r10",
+        "expected_text": "Release batch.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r01",
+        "expected_text": "Issue amber, coral.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r02",
+        "expected_text": "Issue dune, elm.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r03",
+        "expected_text": "Issue no badges.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r04",
+        "expected_text": "Issue gold, hazel.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r05",
+        "expected_text": "Issue jade, khaki.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r06",
+        "expected_text": "Issue lime, mauve, navy, ochre.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r07",
+        "expected_text": "Issue pink, teal.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r08",
+        "expected_text": "Issue no badges.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r09",
+        "expected_text": "Issue no badges.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g06:r10",
+        "expected_text": "Issue zinc.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r01",
+        "expected_text": "Conflicts: none.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r02",
+        "expected_text": "Conflicts: Booking 1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r03",
+        "expected_text": "Conflicts: Booking 1, Booking 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r04",
+        "expected_text": "Conflicts: Booking 1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r05",
+        "expected_text": "Conflicts: Booking 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r06",
+        "expected_text": "Conflicts: Booking 1, Booking 2, Booking 3.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r07",
+        "expected_text": "Conflicts: none.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r08",
+        "expected_text": "Conflicts: Booking 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r09",
+        "expected_text": "Conflicts: Booking 1, Booking 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g07:r10",
+        "expected_text": "Conflicts: Booking 2, Booking 3.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r01",
+        "expected_text": "Send to Cedar.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r02",
+        "expected_text": "Send to Moss.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r03",
+        "expected_text": "Send to Fallback.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r04",
+        "expected_text": "Send to Dell.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r05",
+        "expected_text": "Send to Ash.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r06",
+        "expected_text": "Send to Rock.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r07",
+        "expected_text": "Send to Vale.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r08",
+        "expected_text": "Send to Fern.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r09",
+        "expected_text": "Send to Gale.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g08:r10",
+        "expected_text": "Send to Fallback.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r01",
+        "expected_text": "Print seal value 1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r02",
+        "expected_text": "Print seal value 0.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r03",
+        "expected_text": "Print seal value 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r04",
+        "expected_text": "Print seal value 3.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r05",
+        "expected_text": "Print seal value 0.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r06",
+        "expected_text": "Print seal value 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r07",
+        "expected_text": "Print seal value 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r08",
+        "expected_text": "Print seal value 1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r09",
+        "expected_text": "Print seal value 2.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g09:r10",
+        "expected_text": "Print seal value 6.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r01",
+        "expected_text": "Final state: open.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r02",
+        "expected_text": "Final state: occupied.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r03",
+        "expected_text": "Final state: open.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r04",
+        "expected_text": "Final state: locked.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r05",
+        "expected_text": "Final state: locked.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r06",
+        "expected_text": "Final state: open.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r07",
+        "expected_text": "Final state: occupied.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r08",
+        "expected_text": "Final state: locked.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r09",
+        "expected_text": "Final state: open.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g10:r10",
+        "expected_text": "Final state: occupied.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r01",
+        "expected_text": "Water reaches B, C.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r02",
+        "expected_text": "Water reaches no other junctions.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r03",
+        "expected_text": "Water reaches J, L, M.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r04",
+        "expected_text": "Water reaches no other junctions.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r05",
+        "expected_text": "Water reaches T, U, V.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r06",
+        "expected_text": "Water reaches W, Y.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r07",
+        "expected_text": "Water reaches B1, D1, E1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r08",
+        "expected_text": "Water reaches F1, G1, H1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r09",
+        "expected_text": "Water reaches M1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g11:r10",
+        "expected_text": "Water reaches Q1.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r01",
+        "expected_text": "Elect Ari.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r02",
+        "expected_text": "Elect nobody under this rule.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r03",
+        "expected_text": "Elect nobody under this rule.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r04",
+        "expected_text": "Elect Lou.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r05",
+        "expected_text": "Elect Nia.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r06",
+        "expected_text": "Elect Sol.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r07",
+        "expected_text": "Elect nobody under this rule.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r08",
+        "expected_text": "Elect Xiu.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r09",
+        "expected_text": "Elect nobody under this rule.",
+        "matches": true
+      },
+      {
+        "id": "data:pilot-v1:rule_application:g12:r10",
+        "expected_text": "Elect nobody under this rule.",
+        "matches": true
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "quality_risk",
+      "must_fix": false,
+      "title": "Legitimate parameter variation, but substantial template redundancy",
+      "detail": "163 trigram-Jaccard >= .65 pairs reproduced exactly; all within rule groups, none cross-split. All 163 pairs have distinct structured facts and the same mechanism; no identical-fact target conflicts. Read strongest/weakest flagged pairs per each of 9 groups (18 displays, 17 unique pairs). Priority changes, zero/boundary tariffs, modular wraps, score thresholds, empty symmetric differences, endpoint overlaps, weighted remainders, ignored events and voting ties are meaningful cases. Same outcome on different facts is not a conflict. 135 pairs come from routing, set reconciliation and state-machine groups alone. No clear quota-only filler found in sampled pairs, but redundancy lowers effective diversity; motive and semantic nonredundancy of every pair are not established."
+    },
+    {
+      "id": "F2",
+      "severity": "quality_risk",
+      "must_fix": false,
+      "title": "Cross-family domain overlap is real; copied source scenarios not established",
+      "detail": "No exact normalized full-input duplicate, no repeated state/question warning, no cross-family trigram pair >= .65; maximum cross-family state similarity .035714. Manual scenario comparison found intent train dog boarding g09 versus sentiment validation boarding g26, and intent train astronomy g17 versus sentiment validation observatory g27. Events differ (extend booking or borrow telescope versus lost blanket or queue criticism); no shared named source/entity/event is established. Seed desk, bike workshop and pottery also recur across families. Current group isolation is source-group isolation, not topic-disjoint isolation. Do not claim cross-family domain-disjoint validation or semantic deduplication completeness."
+    },
+    {
+      "id": "F3",
+      "severity": "quality_risk",
+      "must_fix": false,
+      "title": "Sentiment revision fixes published template/candidate shortcuts; explicit cues remain",
+      "detail": "All 120 revisions preserve original state, split, group, subject and teacher target class; source-to-revision map covers 120 unique published IDs. Each revised row has exactly all four semantic classes and the neutral subject-specific question. Parent hashes match. Original sentiment shards are excluded from manifest and reviewed only as parent lineage, not as published data. Revised states still often say delighted, disappointed, mixed, or explicitly state both views; neutral examples are strongly factual. Clean synthetic English and limited candidate paraphrases remain easy lexical shortcuts. Provenance source strings intentionally change to revision lineage, while original teacher identity and label basis remain; full provenance-object equality is therefore false, not a class-preservation failure."
+    },
+    {
+      "id": "F4",
+      "severity": "scope_limit",
+      "must_fix": false,
+      "title": "Validation is small and mechanism-held-out, not coverage-complete",
+      "detail": "72 isolated groups: 60 train and 12 validation. Rule groups 1–10 train; 11–12 validation (reachability and pairwise voting). Therefore rule validation does not measure held-out examples of all trained mechanisms. Forty-eight selected rows agree with published targets, but only two per mechanism; shortest/longest heuristic selected two rejects in score group and two empty results in symmetric-difference group. Boundary examples include zero hours, exact capacity, wraparound, overlap endpoints, zero remainder and pairwise ties; no comprehensive boundary coverage claim."
+    },
+    {
+      "id": "F5",
+      "severity": "code_risk",
+      "must_fix": false,
+      "title": "Assembler hardcodes teacher identity and zero accounting",
+      "detail": "Read-only source inspection: assemble.py sets teacher_alias=openai/gpt-sol and additional/pending spend to zero instead of deriving/checking producer metadata. This can materially misattribute later producers and hide later paid generation. Current manifest metadata/provenance identify those aliases and zero spend, so no demonstrated current dataset mismatch. Recommend deriving/validating those fields before using assembler with other producers. No tests or runtime assembly executed."
+    },
+    {
+      "id": "F6",
+      "severity": "code_risk",
+      "must_fix": false,
+      "title": "Assembler storage guard is incomplete for assignment subpaths",
+      "detail": "assemble.py protects artifact_prefix through shard_path(), but directly joins assignment artifact_directory and published_directory afterward. Absolute or traversal subpaths can bypass prefix containment and evaluation/final guards before producer files are opened. Current published files are inside the allowed pilot directory and were independently checked; no exploit or forbidden read attempted. Enforce the same containment/excluded-storage guard on every resolved source/published path before accepting less-trusted configs. validate.py itself checks manifest shard paths before reads; no material bug found for the current valid dataset."
+    },
+    {
+      "id": "F7",
+      "severity": "scope_limit",
+      "must_fix": false,
+      "title": "Label-hidden teacher review is not independent correctness evidence",
+      "detail": "Label-free selected_inputs.jsonl was written first and 48 rationales frozen in precomparison_decisions.json before target comparison. Sentiment g01:r01 class P had already appeared in the revision-map excerpt, so row 13 is ordinary teacher review, not blind. Other 47 selected target labels had not been displayed when assessed; audit semantics were already read. Same exposed model alias as original teacher, different session; immutable revisions unknown. All 120 rule targets reproduced using the published expected() helper (the script has no expected_result symbol), not an independently authored solver or independently parsed text. Text spot-check helps fidelity assessment but proves neither generator nor facts correct."
+    }
+  ],
+  "row_reviews": [
+    {
+      "row": 1,
+      "choice_index": 0,
+      "rationale": "Keeping the same loan longer requests renewal, not reservation or a fine payment.",
+      "id": "data:pilot-v1:intent:g01:r01",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g01",
+      "assessed_answer": "Extend the loan on the current book.",
+      "published_answer": "Extend the loan on the current book.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 2,
+      "choice_index": 2,
+      "rationale": "Repair already happened; the question asks collection readiness rather than initial repair or price.",
+      "id": "data:pilot-v1:intent:g06:r02",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g06",
+      "assessed_answer": "Check whether the repaired bicycle is ready for collection.",
+      "published_answer": "Check whether the repaired bicycle is ready for collection.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 3,
+      "choice_index": 0,
+      "rationale": "User reports third-party dumped tyres, explicitly denying ownership; removal reporting fits.",
+      "id": "data:pilot-v1:intent:g11:r03",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g11",
+      "assessed_answer": "Report dumped tyres outside the recycling centre.",
+      "published_answer": "Report dumped tyres outside the recycling centre.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 4,
+      "choice_index": 1,
+      "rationale": "The request is for meeting date and joining details, not casting a vote.",
+      "id": "data:pilot-v1:intent:g15:r04",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g15",
+      "assessed_answer": "Provide the member voting meeting's date and access details.",
+      "published_answer": "Provide the member voting meeting's date and access details.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 5,
+      "choice_index": 2,
+      "rationale": "Offering time and asking to sign up is volunteer registration, not paid employment or donation.",
+      "id": "data:pilot-v1:intent:g20:r01",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g20",
+      "assessed_answer": "Register the user as a volunteer for Sunday's cleanup.",
+      "published_answer": "Register the user as a volunteer for Sunday's cleanup.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 6,
+      "choice_index": 0,
+      "rationale": "Compare larger data allowances while retaining number; cancellation and number change contradict request.",
+      "id": "data:pilot-v1:intent:g25:r02",
+      "family": "intent",
+      "split": "train",
+      "group_id": "data:pilot-v1:intent:g25",
+      "assessed_answer": "Compare plans with more data while retaining the phone number.",
+      "published_answer": "Compare plans with more data while retaining the phone number.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 7,
+      "choice_index": 0,
+      "rationale": "A novice explicitly requests the beginner session; no purchase, cancellation or swarm report.",
+      "id": "data:pilot-v1:intent:g26:r01",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g26",
+      "assessed_answer": "Register for the beginner hive-handling session.",
+      "published_answer": "Register for the beginner hive-handling session.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 8,
+      "choice_index": 2,
+      "rationale": "A prebooking question asks whether dogs are allowed aboard, explicitly not kennelling.",
+      "id": "data:pilot-v1:intent:g27:r02",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g27",
+      "assessed_answer": "Provide the boat hire company's policy on dogs aboard.",
+      "published_answer": "Provide the boat hire company's policy on dogs aboard.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 9,
+      "choice_index": 2,
+      "rationale": "Unopened mistaken pea packet should be exchanged for broad beans, not diagnosed as a failed crop.",
+      "id": "data:pilot-v1:intent:g28:r03",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g28",
+      "assessed_answer": "Exchange the unopened pea seed packet for broad bean seeds.",
+      "published_answer": "Exchange the unopened pea seed packet for broad bean seeds.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 10,
+      "choice_index": 1,
+      "rationale": "Remove only the dated shift; cancel-all and membership-ending options violate the limited scope.",
+      "id": "data:pilot-v1:intent:g28:r04",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g28",
+      "assessed_answer": "Remove the volunteer from the seed-desk shift on the 18th.",
+      "published_answer": "Remove the volunteer from the seed-desk shift on the 18th.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 11,
+      "choice_index": 0,
+      "rationale": "The explicit request is the required induction, not unrestricted access or equipment purchase.",
+      "id": "data:pilot-v1:intent:g29:r01",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g29",
+      "assessed_answer": "Book the laser cutter safety induction.",
+      "published_answer": "Book the laser cutter safety induction.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 12,
+      "choice_index": 1,
+      "rationale": "Needs step-free accommodation information before choosing lodging, not a medical appointment.",
+      "id": "data:pilot-v1:intent:g30:r02",
+      "family": "intent",
+      "split": "validation",
+      "group_id": "data:pilot-v1:intent:g30",
+      "assessed_answer": "Provide accessibility information about festival lodging options.",
+      "published_answer": "Provide accessibility information about festival lodging options.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 13,
+      "choice_index": 1,
+      "rationale": "Creamy, enjoyed every sip, would reorder: positive only. Parent-map P class previously exposed; not blind.",
+      "id": "data:pilot-v1:sentiment-r2:g01:r01",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g01",
+      "assessed_answer": "The stated attitude toward this subject is favorable only, not a combination of praise and criticism.",
+      "published_answer": "The stated attitude toward this subject is favorable only, not a combination of praise and criticism.",
+      "agrees": true,
+      "mode": "ordinary_teacher_review_prior_label_exposure",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 14,
+      "choice_index": 0,
+      "rationale": "Machine number, duration and card payment are factual; no expressed evaluative stance.",
+      "id": "data:pilot-v1:sentiment-r2:g06:r02",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g06",
+      "assessed_answer": "Descriptive only: no evaluative attitude toward the named subject is stated.",
+      "published_answer": "Descriptive only: no evaluative attitude toward the named subject is stated.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 15,
+      "choice_index": 1,
+      "rationale": "Delighted with noise cancellation and no discomfort is praise of the asked subject; no stated criticism.",
+      "id": "data:pilot-v1:sentiment-r2:g11:r03",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g11",
+      "assessed_answer": "Positive only: the writer expresses approval or satisfaction, with no stated criticism of the specified subject.",
+      "published_answer": "Positive only: the writer expresses approval or satisfaction, with no stated criticism of the specified subject.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 16,
+      "choice_index": 3,
+      "rationale": "Seat is broken and uncomfortable; excellent film refers to a different subject and must not turn seat sentiment mixed.",
+      "id": "data:pilot-v1:sentiment-r2:g15:r04",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g15",
+      "assessed_answer": "The stated attitude toward this subject is unfavorable only, not a combination of praise and criticism.",
+      "published_answer": "The stated attitude toward this subject is unfavorable only, not a combination of praise and criticism.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 17,
+      "choice_index": 3,
+      "rationale": "Asked about overall family swim: enjoyable activities and uncomfortable crowding explicitly coexist.",
+      "id": "data:pilot-v1:sentiment-r2:g20:r01",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g20",
+      "assessed_answer": "Both praise and criticism of the named subject are stated; neither side should be discarded.",
+      "published_answer": "Both praise and criticism of the named subject are stated; neither side should be discarded.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 18,
+      "choice_index": 3,
+      "rationale": "Untraceable lost bowl and very disappointed collection system express only dissatisfaction.",
+      "id": "data:pilot-v1:sentiment-r2:g25:r02",
+      "family": "sentiment",
+      "split": "train",
+      "group_id": "data:pilot-v1:sentiment:g25",
+      "assessed_answer": "Negative only: the writer expresses criticism or dissatisfaction, with no stated praise of the specified subject.",
+      "published_answer": "Negative only: the writer expresses criticism or dissatisfaction, with no stated praise of the specified subject.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 19,
+      "choice_index": 0,
+      "rationale": "Lost blanket, no attempt to find it and upset handling: negative only for belongings handling.",
+      "id": "data:pilot-v1:sentiment-r2:g26:r01",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g26",
+      "assessed_answer": "The stated attitude toward this subject is unfavorable only, not a combination of praise and criticism.",
+      "published_answer": "The stated attitude toward this subject is unfavorable only, not a combination of praise and criticism.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 20,
+      "choice_index": 1,
+      "rationale": "Overall talk experience includes praised content and criticised room temperature; both must count.",
+      "id": "data:pilot-v1:sentiment-r2:g27:r02",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g27",
+      "assessed_answer": "Both praise and criticism of the named subject are stated; neither side should be discarded.",
+      "published_answer": "Both praise and criticism of the named subject are stated; neither side should be discarded.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 21,
+      "choice_index": 2,
+      "rationale": "Early closure and explicit unhappiness are criticism of desk reliability with no praise.",
+      "id": "data:pilot-v1:sentiment-r2:g28:r03",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g28",
+      "assessed_answer": "Unfavorable toward the named subject, with no stated praise of that subject.",
+      "published_answer": "Unfavorable toward the named subject, with no stated praise of that subject.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 22,
+      "choice_index": 2,
+      "rationale": "Storage duration and ticket details express no evaluation.",
+      "id": "data:pilot-v1:sentiment-r2:g28:r04",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g28",
+      "assessed_answer": "No positive or negative attitude toward this subject is expressed.",
+      "published_answer": "No positive or negative attitude toward this subject is expressed.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 23,
+      "choice_index": 2,
+      "rationale": "Clear hearing-aid audio, no buzz and delighted clarity: favorable only.",
+      "id": "data:pilot-v1:sentiment-r2:g29:r01",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g29",
+      "assessed_answer": "Favorable toward the named subject, with no stated criticism of that subject.",
+      "published_answer": "Favorable toward the named subject, with no stated criticism of that subject.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 24,
+      "choice_index": 3,
+      "rationale": "Packet quantities and venue describe the exchange without approval or criticism.",
+      "id": "data:pilot-v1:sentiment-r2:g30:r02",
+      "family": "sentiment",
+      "split": "validation",
+      "group_id": "data:pilot-v1:sentiment:g30",
+      "assessed_answer": "No positive or negative attitude toward this subject is expressed.",
+      "published_answer": "No positive or negative attitude toward this subject is expressed.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 25,
+      "choice_index": 0,
+      "rationale": "All flags on; first listed safety rule wins regardless of later warranty/urgent matches.",
+      "id": "data:pilot-v1:rule_application:g01:r01",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g01",
+      "assessed_answer": "Route to Safety bench.",
+      "published_answer": "Route to Safety bench.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 26,
+      "choice_index": 0,
+      "rationale": "Every flag off triggers no rule, so default General bench.",
+      "id": "data:pilot-v1:rule_application:g01:r09",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g01",
+      "assessed_answer": "Route to General bench.",
+      "published_answer": "Route to General bench.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 27,
+      "choice_index": 0,
+      "rationale": "Zero used hours, explicitly no minimum, so zero credits.",
+      "id": "data:pilot-v1:rule_application:g02:r01",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g02",
+      "assessed_answer": "Charge 0 credits.",
+      "published_answer": "Charge 0 credits.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 28,
+      "choice_index": 2,
+      "rationale": "Marginal charge: 2*3 + 1*7 + 2*11 = 35, not a single-rate charge.",
+      "id": "data:pilot-v1:rule_application:g02:r10",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g02",
+      "assessed_answer": "Charge 35 credits.",
+      "published_answer": "Charge 35 credits.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 29,
+      "choice_index": 0,
+      "rationale": "Skip overweight Dune 9; Elm 3 plus Flint 5 exactly fits capacity 8.",
+      "id": "data:pilot-v1:rule_application:g03:r02",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g03",
+      "assessed_answer": "Load Elm, Flint.",
+      "published_answer": "Load Elm, Flint.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 30,
+      "choice_index": 1,
+      "rationale": "Accept Sage 6; skip Tide 5; accept Umber 4; no capacity for Vale 1.",
+      "id": "data:pilot-v1:rule_application:g03:r07",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g03",
+      "assessed_answer": "Load Sage, Umber.",
+      "published_answer": "Load Sage, Umber.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 31,
+      "choice_index": 1,
+      "rationale": "Five forward steps in a three-person cycle equals two: Vega to Xenia.",
+      "id": "data:pilot-v1:rule_application:g04:r10",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g04",
+      "assessed_answer": "Duty belongs to Xenia.",
+      "published_answer": "Duty belongs to Xenia.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 32,
+      "choice_index": 2,
+      "rationale": "Ten backward steps in five slots makes two complete wraps, leaving Topaz.",
+      "id": "data:pilot-v1:rule_application:g04:r09",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g04",
+      "assessed_answer": "Duty belongs to Topaz.",
+      "published_answer": "Duty belongs to Topaz.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 33,
+      "choice_index": 2,
+      "rationale": "Score -1 is below reject threshold 3.",
+      "id": "data:pilot-v1:rule_application:g05:r01",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g05",
+      "assessed_answer": "Reject batch.",
+      "published_answer": "Reject batch.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 34,
+      "choice_index": 2,
+      "rationale": "Score 2*1 + 5*0 - 4*2 = -6, below -2, so reject.",
+      "id": "data:pilot-v1:rule_application:g05:r07",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g05",
+      "assessed_answer": "Reject batch.",
+      "published_answer": "Reject batch.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 35,
+      "choice_index": 1,
+      "rationale": "Fern appears on both sets, hence symmetric difference empty.",
+      "id": "data:pilot-v1:rule_application:g06:r03",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g06",
+      "assessed_answer": "Issue no badges.",
+      "published_answer": "Issue no badges.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 36,
+      "choice_index": 0,
+      "rationale": "Lists contain the same set in reverse order, so no badges survive.",
+      "id": "data:pilot-v1:rule_application:g06:r09",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g06",
+      "assessed_answer": "Issue no badges.",
+      "published_answer": "Issue no badges.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 37,
+      "choice_index": 1,
+      "rationale": "Proposal touches both existing endpoints only; positive overlap is explicitly required.",
+      "id": "data:pilot-v1:rule_application:g07:r01",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g07",
+      "assessed_answer": "Conflicts: none.",
+      "published_answer": "Conflicts: none.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 38,
+      "choice_index": 2,
+      "rationale": "07–10 overlaps 08–09 and 09–10, but only touches 06–07 and 10–11.",
+      "id": "data:pilot-v1:rule_application:g07:r10",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g07",
+      "assessed_answer": "Conflicts: Booking 2, Booking 3.",
+      "published_answer": "Conflicts: Booking 2, Booking 3.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 39,
+      "choice_index": 1,
+      "rationale": "Single-character message v matches only prefix v, routed to Vale.",
+      "id": "data:pilot-v1:rule_application:g08:r07",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g08",
+      "assessed_answer": "Send to Vale.",
+      "published_answer": "Send to Vale.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 40,
+      "choice_index": 0,
+      "rationale": "pinwheel matches p, pi and pin; longest pin routes to Rock.",
+      "id": "data:pilot-v1:rule_application:g08:r06",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g08",
+      "assessed_answer": "Send to Rock.",
+      "published_answer": "Send to Rock.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 41,
+      "choice_index": 1,
+      "rationale": "Weighted sum 5*3+5*1=20; remainder mod 5 is zero, not its complement.",
+      "id": "data:pilot-v1:rule_application:g09:r05",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g09",
+      "assessed_answer": "Print seal value 0.",
+      "published_answer": "Print seal value 0.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 42,
+      "choice_index": 0,
+      "rationale": "Weighted sum 1*2+9*1+0*2+2*1=13; remainder mod 4 is one.",
+      "id": "data:pilot-v1:rule_application:g09:r08",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g09",
+      "assessed_answer": "Print seal value 1.",
+      "published_answer": "Print seal value 1.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 43,
+      "choice_index": 1,
+      "rationale": "Badge takes locked directly to open.",
+      "id": "data:pilot-v1:rule_application:g10:r01",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g10",
+      "assessed_answer": "Final state: open.",
+      "published_answer": "Final state: open.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 44,
+      "choice_index": 1,
+      "rationale": "Occupied ignores close; exit opens; badge is ignored in open; enter returns to occupied.",
+      "id": "data:pilot-v1:rule_application:g10:r10",
+      "family": "rule_application",
+      "split": "train",
+      "group_id": "data:pilot-v1:rule_application:g10",
+      "assessed_answer": "Final state: occupied.",
+      "published_answer": "Final state: occupied.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 45,
+      "choice_index": 0,
+      "rationale": "From A follow A to B to C; D is disconnected.",
+      "id": "data:pilot-v1:rule_application:g11:r01",
+      "family": "rule_application",
+      "split": "validation",
+      "group_id": "data:pilot-v1:rule_application:g11",
+      "assessed_answer": "Water reaches B, C.",
+      "published_answer": "Water reaches B, C.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 46,
+      "choice_index": 1,
+      "rationale": "From C1 reach B1 and D1 then E1; A1 cannot be reached by reversing its arrow.",
+      "id": "data:pilot-v1:rule_application:g11:r07",
+      "family": "rule_application",
+      "split": "validation",
+      "group_id": "data:pilot-v1:rule_application:g11",
+      "assessed_answer": "Water reaches B1, D1, E1.",
+      "published_answer": "Water reaches B1, D1, E1.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 47,
+      "choice_index": 0,
+      "rationale": "Ari beats Bea and Cy by 3 votes to 2 in both comparisons.",
+      "id": "data:pilot-v1:rule_application:g12:r01",
+      "family": "rule_application",
+      "split": "validation",
+      "group_id": "data:pilot-v1:rule_application:g12",
+      "assessed_answer": "Elect Ari.",
+      "published_answer": "Elect Ari.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    },
+    {
+      "row": 48,
+      "choice_index": 1,
+      "rationale": "Cyclic equal ballot blocks provide no candidate beating every rival strictly; opposite pairs tie, so elect nobody.",
+      "id": "data:pilot-v1:rule_application:g12:r10",
+      "family": "rule_application",
+      "split": "validation",
+      "group_id": "data:pilot-v1:rule_application:g12",
+      "assessed_answer": "Elect nobody under this rule.",
+      "published_answer": "Elect nobody under this rule.",
+      "agrees": true,
+      "mode": "label_hidden_teacher_assessment",
+      "confidence": "high",
+      "mutually_exclusive_choices": "yes under stated question scope",
+      "statement_target_fidelity": "supported by direct text spot-check"
+    }
+  ],
+  "commands_executed": [
+    "printf 'PI_MODEL=%s\\nPI_PROVIDER=%s\\n' \"$PI_MODEL\" \"$PI_PROVIDER\"; find /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1 -maxdepth 3 -type f | sort",
+    "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/review/prepare_review.py",
+    "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/review/validate_review.py",
+    "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/review/supplement.py",
+    "python3 /Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/review/finalize_review.py"
+  ],
+  "read_tool_calls": [
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/AGENTS.md",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/docs/contracts.md",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/audit.py",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/revision_map.json",
+      "scope": "first 85 lines shown before selection; full file subsequently parsed"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/provenance.json",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/validate.py",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/assemble.py",
+      "scope": "full"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/validation.json",
+      "scope": "first 100 lines displayed; full file subsequently parsed for duplicate comparison"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/metadata.json",
+      "scope": "full"
+    }
+  ],
+  "boundaries": {
+    "evaluation_or_final_data_inspected": false,
+    "tiny_dataset_used": false,
+    "git_used": false,
+    "checkout_edited": false,
+    "tests_or_lint_run": false,
+    "producer_scripts_main_run": false,
+    "new_files_only_under": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/review",
+    "additional_notes": "Python scripts are retained as exact executable record. No package install, bytecode import of producer modules, models, API or network. Source code/instructions were read only as expressly permitted."
+  },
+  "supporting_artifacts": [
+    "selected_inputs.jsonl",
+    "selection.json",
+    "precomparison_decisions.json",
+    "checks.json",
+    "supplement.json",
+    "prepare_review.py",
+    "validate_review.py",
+    "supplement.py",
+    "finalize_review.py"
+  ]
+}

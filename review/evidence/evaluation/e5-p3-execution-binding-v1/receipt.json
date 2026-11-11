@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-11-11T14:45:49.224436+00:00",
+  "status": "bound_for_independent_scoring",
+  "audit": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json",
+    "sha256": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a"
+  },
+  "run": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/receipt.json",
+    "sha256": "602069d9eed481cc8ca902e91bb446e31569014e36545f839f046d2e43c3ad4c"
+  },
+  "process": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/process-02-receipt.json",
+    "sha256": "b23d42f0a3baec507ab74f63334ba086adf9085e8dc453cdec5112e53e78fa58"
+  },
+  "source": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/release/src/jeff/runtime/qwen_challenger.py",
+    "sha256": "325d3a6b8e5577bba3b885fe8b61d5551305b456e2586d3949b2c45c649438d5"
+  },
+  "config": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/release/configs/runtime/p3-qwen.json",
+    "sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f"
+  },
+  "predictions": [
+    {
+      "name": "v2-original",
+      "input": {
+        "name": "v2-original",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+        "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-original.jsonl",
+        "sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5"
+      },
+      "rows": 300
+    },
+    {
+      "name": "v2-reversed",
+      "input": {
+        "name": "v2-reversed",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+        "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-reversed.jsonl",
+        "sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78"
+      },
+      "rows": 300
+    },
+    {
+      "name": "probes-paired",
+      "input": {
+        "name": "probes-paired",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "rows": 24,
+        "unique_ids": 24,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/probes-paired.jsonl",
+        "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+      },
+      "rows": 24
+    }
+  ],
+  "initial_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-control-review-v1/receipt.json",
+    "sha256": "4f4d85e9de8bf6a8892c884efebf8464fbf37610080f96229bb562eeffe058b4"
+  },
+  "superseded_audit": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit/audit.json",
+    "sha256": "d90446114a51af995db436d69362714d904cb641d50b3d993ddaf997a99db8e4"
+  },
+  "failed_preload_attempt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run/receipt.json",
+    "sha256": "83e4d9a16b92c0eda519dd8f80c48dade4cdb8e46768dca7456ff6ba6d2d9b21"
+  },
+  "only_changed_evidence_fields": [
+    "source_sha256",
+    "git_revision"
+  ],
+  "failed_attempt_observation": {
+    "type": "KeyError",
+    "message": "'config_path'",
+    "retry": false
+  },
+  "limitations": [
+    "Initial bounded source review missed an audit-envelope field-access bug. Observed attempt failed before model construction with no suites or predictions; error and source-only correction retained.",
+    "Reviewed Git diff is only audit evidence-envelope lookup; config/prompt/model/input/tokenization fields unchanged. Fresh audit and new Model grant precede successful process per contemporaneous published records, not cryptographic proof.",
+    "No weights or tokenizer loaded by Evaluation; published runtime receipts are not independent loaded-tensor attestation.",
+    "Quality scoring follows this binding; no recipe search or selection threshold."
+  ]
+}

@@ -1,0 +1,1244 @@
+[
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "field": "options.o2.text",
+    "old": "Amber 4; Chalk 1; Indigo 18",
+    "new": "Amber 0; Chalk 3; Indigo 20"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "field": "options.o3.text",
+    "old": "Amber 9; Chalk 14; Indigo 0",
+    "new": "Amber 3; Chalk 0; Indigo 20"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "field": "options.o1.text",
+    "old": "Amber 7; Chalk 13; Indigo 8",
+    "new": "Amber 0; Chalk 8; Indigo 20"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "field": "options.o3.text",
+    "old": "Amber 5; Chalk 14; Indigo 9",
+    "new": "Amber 12; Chalk 0; Indigo 16"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "field": "options.o1.text",
+    "old": "East 38; North 1; West 36",
+    "new": "East 0; North 15; West 60"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "field": "options.o2.text",
+    "old": "East 30; North 26; West 19",
+    "new": "East 15; North 0; West 60"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "field": "options.o1.text",
+    "old": "East 45; North 3; West 34",
+    "new": "East 22; North 0; West 60"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "field": "options.o3.text",
+    "old": "East 29; North 9; West 44",
+    "new": "East 45; North 0; West 37"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+    "field": "options.o2.text",
+    "old": "Ink 3; Moss 2; Rust 14",
+    "new": "Ink 4; Moss 0; Rust 15"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "field": "options.o2.text",
+    "old": "Ink 0; Moss 2; Rust 5",
+    "new": "Ink 0; Moss 0; Rust 7"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "field": "options.o3.text",
+    "old": "Ink 1; Moss 5; Rust 1",
+    "new": "Ink 7; Moss 0; Rust 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "field": "options.o2.text",
+    "old": "Glow 5; Halo 5; Spark 7",
+    "new": "Glow 0; Halo 8; Spark 9"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "field": "options.o3.text",
+    "old": "Glow 0; Halo 9; Spark 8",
+    "new": "Glow 0; Halo 10; Spark 7"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "field": "options.o1.text",
+    "old": "Glow 1; Halo 8; Spark 1",
+    "new": "Glow 1; Halo 0; Spark 9"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "field": "options.o3.text",
+    "old": "Glow 0; Halo 3; Spark 7",
+    "new": "Glow 0; Halo 10; Spark 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "field": "options.o1.text",
+    "old": "Brass 5; Iron 12; Steel 1",
+    "new": "Brass 4; Iron 14; Steel 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "field": "options.o2.text",
+    "old": "Brass 8; Iron 7; Steel 3",
+    "new": "Brass 9; Iron 9; Steel 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "field": "options.o1.text",
+    "old": "Brass 5; Iron 14; Steel 1",
+    "new": "Brass 0; Iron 11; Steel 9"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "field": "options.o2.text",
+    "old": "Brass 7; Iron 13; Steel 0",
+    "new": "Brass 6; Iron 14; Steel 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "field": "options.o1.text",
+    "old": "Frost 2; Polar 5; Snow 7",
+    "new": "Frost 12; Polar 0; Snow 2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "field": "options.o2.text",
+    "old": "Frost 4; Polar 3; Snow 7",
+    "new": "Frost 0; Polar 0; Snow 14"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "field": "options.o1.text",
+    "old": "Frost 1; Polar 0; Snow 3",
+    "new": "Frost 0; Polar 0; Snow 4"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "field": "options.o3.text",
+    "old": "Frost 3; Polar 0; Snow 1",
+    "new": "Frost 4; Polar 0; Snow 0"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "field": "options.o2.text",
+    "old": "£60.40",
+    "new": "£78.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "field": "options.o4.text",
+    "old": "£63.40",
+    "new": "£52.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "field": "options.o2.text",
+    "old": "£103.40",
+    "new": "£100.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "field": "options.o3.text",
+    "old": "£100.00",
+    "new": "£108.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "field": "options.o4.text",
+    "old": "£100.40",
+    "new": "£92.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p01:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "field": "options.o1.text",
+    "old": "£94.35",
+    "new": "£102.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "field": "options.o2.text",
+    "old": "£94.00",
+    "new": "£94.35"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "field": "options.o4.text",
+    "old": "£91.00",
+    "new": "£111.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "field": "options.o2.text",
+    "old": "£159.00",
+    "new": "£170.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "field": "options.o3.text",
+    "old": "£162.00",
+    "new": "£154.70"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p02:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "field": "options.o3.text",
+    "old": "£161.00",
+    "new": "£155.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "field": "options.o4.text",
+    "old": "£158.00",
+    "new": "£150.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "field": "options.o1.text",
+    "old": "£218.00",
+    "new": "£211.25"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "field": "options.o3.text",
+    "old": "£221.00",
+    "new": "£250.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "field": "options.o4.text",
+    "old": "£211.25",
+    "new": "£295.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p03:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "field": "options.o1.text",
+    "old": "£52.20",
+    "new": "£50.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "field": "options.o2.text",
+    "old": "£53.80",
+    "new": "£48.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "field": "options.o3.text",
+    "old": "£50.80",
+    "new": "£51.60"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "field": "options.o2.text",
+    "old": "£86.80",
+    "new": "£85.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "field": "options.o3.text",
+    "old": "£88.20",
+    "new": "£93.60"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "field": "options.o4.text",
+    "old": "£89.80",
+    "new": "£88.20"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p04:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "field": "options.o1.text",
+    "old": "£73.00",
+    "new": "£67.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "field": "options.o4.text",
+    "old": "£67.80",
+    "new": "£80.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "field": "options.o1.text",
+    "old": "£103.80",
+    "new": "£135.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "field": "options.o2.text",
+    "old": "£109.00",
+    "new": "£118.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "field": "options.o4.text",
+    "old": "£106.00",
+    "new": "£120.00"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p05:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "field": "options.o1.text",
+    "old": "£55.60",
+    "new": "£59.40"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "field": "options.o2.text",
+    "old": "£58.80",
+    "new": "£56.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "field": "options.o4.text",
+    "old": "£58.60",
+    "new": "£54.40"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "field": "options.o1.text",
+    "old": "£109.60",
+    "new": "£113.40"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "field": "options.o2.text",
+    "old": "£112.80",
+    "new": "£118.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "field": "options.o3.text",
+    "old": "£112.60",
+    "new": "£112.80"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:discount:p06:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "field": "options.o1.text",
+    "old": "2.2 g",
+    "new": "2.0 g"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "field": "options.o3.text",
+    "old": "2.5 g",
+    "new": "2.2 g"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "field": "options.o2.text",
+    "old": "2.4 g",
+    "new": "2.5 g"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "field": "options.o3.text",
+    "old": "2.5 g",
+    "new": "3.0 g"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "field": "options.o4.text",
+    "old": "2.2 g",
+    "new": "2.4 g"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "field": "options.o1.text",
+    "old": "35 kPa",
+    "new": "43 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "field": "options.o2.text",
+    "old": "40 kPa",
+    "new": "42 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "field": "options.o4.text",
+    "old": "50 kPa",
+    "new": "40 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "field": "options.o1.text",
+    "old": "40 kPa",
+    "new": "50 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "field": "options.o2.text",
+    "old": "50 kPa",
+    "new": "48 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "field": "options.o4.text",
+    "old": "35 kPa",
+    "new": "47 kPa"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "field": "options.o1.text",
+    "old": "1.19 ppt",
+    "new": "1.30 ppt"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "field": "options.o2.text",
+    "old": "1.20 ppt",
+    "new": "1.00 ppt"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "field": "options.o3.text",
+    "old": "1.22 ppt",
+    "new": "1.20 ppt"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "field": "options.o1.text",
+    "old": "1.20 ppt",
+    "new": "1.25 ppt"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "field": "options.o4.text",
+    "old": "1.23 ppt",
+    "new": "1.20 ppt"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "field": "options.o3.text",
+    "old": "140 kg",
+    "new": "125 kg"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "field": "options.o4.text",
+    "old": "150 kg",
+    "new": "100 kg"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "field": "options.o1.text",
+    "old": "120 kg",
+    "new": "140 kg"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "field": "options.o2.text",
+    "old": "140 kg",
+    "new": "100 kg"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "field": "options.o3.text",
+    "old": "150 kg",
+    "new": "135 kg"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "field": "options.o1.text",
+    "old": "7.0 mm",
+    "new": "8.0 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "field": "options.o2.text",
+    "old": "8.0 mm",
+    "new": "7.3 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "field": "options.o3.text",
+    "old": "8.5 mm",
+    "new": "7.0 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "field": "options.o2.text",
+    "old": "8.5 mm",
+    "new": "7.8 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "field": "options.o3.text",
+    "old": "9.0 mm",
+    "new": "7.5 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "field": "options.o4.text",
+    "old": "7.5 mm",
+    "new": "7.0 mm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "field": "options.o1.text",
+    "old": "16 cm",
+    "new": "10 cm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "field": "options.o3.text",
+    "old": "18 cm",
+    "new": "19 cm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "field": "options.o4.text",
+    "old": "22 cm",
+    "new": "18 cm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "field": "options.o2.text",
+    "old": "24 cm",
+    "new": "25 cm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "field": "options.o4.text",
+    "old": "18 cm",
+    "new": "21 cm"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "field": "provenance.source",
+    "old": "data-d3-seen-rules-v1-ordering-original-731904",
+    "new": "data-d3-seen-rules-v1-ordering-r2"
+  },
+  {
+    "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+    "field": "provenance.teacher_model",
+    "old": {
+      "provider": "openai",
+      "model_alias": "gpt-sol"
+    },
+    "new": "openai/gpt-sol"
+  }
+]

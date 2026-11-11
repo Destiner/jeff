@@ -1,0 +1,406 @@
+{
+  "frozen_at": "2026-11-11T11:21:31.723019+00:00",
+  "target_exposure_before_freeze": false,
+  "judgments": [
+    {
+      "id": "data:pilot-v2:sentiment-a:g001:r01",
+      "chosen_option_id": "c4b641e47bac09151",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Quiet shutoff and one-handed pouring benefit the parent; no kettle fault.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g023:r01",
+      "chosen_option_id": "c5aa76e23aa765c97",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Inventory and contents order only; no judgment of the puzzle book.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g045:r01",
+      "chosen_option_id": "cf61ab67e0c63d4c5",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Reach under sofa avoids lifting; grateful back implies approval, not criticism of vacuum.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g067:r01",
+      "chosen_option_id": "c2cb42c123d274e31",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer reports facts about the subject without evaluating it.",
+      "semantic_class": "neutral",
+      "reason": "Packing locations do not evaluate the sleep mask.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g089:r01",
+      "chosen_option_id": "c0366052f3dfcd2fa",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The writer expresses approval of the subject, without offering any criticism of it.",
+      "semantic_class": "positive",
+      "reason": "Accessible raised switch is valued; no lamp defect.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g112:r01",
+      "chosen_option_id": "ccc65599889fa0892",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The writer conveys approval of the subject while also expressing criticism of it.",
+      "semantic_class": "mixed",
+      "reason": "Head support praised; leaking and interrupted sleep criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g134:r01",
+      "chosen_option_id": "c29de8e621381459a",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is faulted, and no praise for it is expressed.",
+      "semantic_class": "negative",
+      "reason": "Tray access is worse than bags; no praise for insert.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g156:r01",
+      "chosen_option_id": "c112bff8148f2c89a",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer expresses both approval and criticism of the subject.",
+      "semantic_class": "mixed",
+      "reason": "Cleanability explicitly appreciated; collapsed perch criticised. Negative overall conclusion does not erase praise.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g178:r01",
+      "chosen_option_id": "cf946c0bff74bed95",
+      "chosen_option_position": 3,
+      "chosen_option_text": "Criticism is expressed about the subject without any accompanying approval.",
+      "semantic_class": "negative",
+      "reason": "Bleed-through ruins pages and makes notebook unusable for these pens.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g200:r01",
+      "chosen_option_id": "c9399492a6819e6ab",
+      "chosen_option_position": 3,
+      "chosen_option_text": "Praise for the item alongside a complaint about it.",
+      "semantic_class": "mixed",
+      "reason": "Cooling appreciated; drooping hinge requires readjustment.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g201:r01",
+      "chosen_option_id": "c98ebb621b8b9d55b",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Dry contents after immersion earn trust; prior expectation of dampness is not an actual bag fault.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g205:r01",
+      "chosen_option_id": "c017096799a72d04a",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Approval of the item, with no complaint about it.",
+      "semantic_class": "positive",
+      "reason": "Clear sleeve avoids unpacking; expected inconvenience was avoided, not a criticism.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g210:r01",
+      "chosen_option_id": "cb69da704a782cb97",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is faulted, and no praise for it is expressed.",
+      "semantic_class": "negative",
+      "reason": "Seam leaks and double-bagging required. Saying closure is not the problem localises defect rather than praising closure.",
+      "ambiguity": "Low: absence of closure defect is not an affirmative commendation; negative preferred over mixed.",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g214:r01",
+      "chosen_option_id": "c78402ed33bc6e669",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer criticises the subject and offers no approval.",
+      "semantic_class": "negative",
+      "reason": "Heavy rim causes wrist pain and interrupts sewing; no benefit asserted.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g218:r01",
+      "chosen_option_id": "c820562696ec383f8",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Criticism is expressed about the subject without any accompanying approval.",
+      "semantic_class": "negative",
+      "reason": "Distortion spoils geometry and prevents intended use.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g223:r01",
+      "chosen_option_id": "c7c57e053f84a308d",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Leg settings and diary record only.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g227:r01",
+      "chosen_option_id": "cf7aca9d85394551c",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer reports facts about the subject without evaluating it.",
+      "semantic_class": "neutral",
+      "reason": "Routine storage and folding feet are not approval.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g231:r01",
+      "chosen_option_id": "cc038f33aac483d61",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Seating and other chairs reported without judging capacity or comfort.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g236:r01",
+      "chosen_option_id": "c39f1475985ed8212",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer expresses both approval and criticism of the subject.",
+      "semantic_class": "mixed",
+      "reason": "Level adjustment praised; splinters criticised despite negative overall conclusion.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g240:r01",
+      "chosen_option_id": "ccbc36b4307e204a0",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise for the item alongside a complaint about it.",
+      "semantic_class": "mixed",
+      "reason": "Compact fit welcomed; finger pinching criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g134:r01",
+      "chosen_option_id": "c47547",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Afternoon shade implies useful comfort; sunken support causes sliding. Both concern park amenity.",
+      "ambiguity": "Low: shade is implicit amenity approval rather than explicit praise; mixed preferred.",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g178:r01",
+      "chosen_option_id": "c85493",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Moisture checks explicitly valued; unlatched door is criticism of service.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g004:r01",
+      "chosen_option_id": "c28958",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise and criticism of the named subject are expressed.",
+      "semantic_class": "mixed",
+      "reason": "Useful explanation praised; dismissed question criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g094:r01",
+      "chosen_option_id": "c32659",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Reliable early delivery praised; bent crossword handling criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g027:r01",
+      "chosen_option_id": "c64004",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The writer reports information without any judgment about the subject.",
+      "semantic_class": "neutral",
+      "reason": "Track receipt and file identification without quality judgment.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g125:r01",
+      "chosen_option_id": "c84580",
+      "chosen_option_position": 2,
+      "chosen_option_text": "An approving assessment without any complaints about the subject.",
+      "semantic_class": "positive",
+      "reason": "Assistant found missing volume and checked rather than guessing; implied service praise.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g020:r01",
+      "chosen_option_id": "c66534",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Favourable and unfavourable judgments about the named subject appear.",
+      "semantic_class": "mixed",
+      "reason": "Accurate tracking praised; crushed presentation folders criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g192:r01",
+      "chosen_option_id": "c43048",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The subject is criticised, not praised.",
+      "semantic_class": "negative",
+      "reason": "Omitted negation reverses safety instruction; serious implied criticism, not neutral transcription facts.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g049:r01",
+      "chosen_option_id": "c97020",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise for the named subject, with no criticism expressed.",
+      "semantic_class": "positive",
+      "reason": "Storm resistance and careful bracing earn confidence; neither/nor negate defects, not praise.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g070:r01",
+      "chosen_option_id": "c49658",
+      "chosen_option_position": 3,
+      "chosen_option_text": "A critical assessment without any compliments about the subject.",
+      "semantic_class": "negative",
+      "reason": "Unidentified allergen forced abandoned meal; implied criticism of provider.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g208:r01",
+      "chosen_option_id": "c90535",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Favourable and unfavourable judgments about the named subject appear.",
+      "semantic_class": "mixed",
+      "reason": "Crisp symbol reproduction praised; missing north arrow criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g222:r01",
+      "chosen_option_id": "c29032",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Criticism of the named subject, with no praise expressed.",
+      "semantic_class": "negative",
+      "reason": "Dismissed welfare question overshadows visit; desire to watch flight does not praise provider.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g239:r01",
+      "chosen_option_id": "c56015",
+      "chosen_option_position": 3,
+      "chosen_option_text": "A factual account without any judgments about the subject.",
+      "semantic_class": "neutral",
+      "reason": "Hours changed and other facilities unchanged; no expressed appraisal of longer session.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g209:r01",
+      "chosen_option_id": "c43442",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Only favourable judgments about the named subject are given.",
+      "semantic_class": "positive",
+      "reason": "Retained fine detail enables discrimination; blurred OTHER proofs are not criticism of Contour Press.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g235:r01",
+      "chosen_option_id": "c30970",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer approves of the subject and voices no objections.",
+      "semantic_class": "positive",
+      "reason": "Instruction finally enables clear comparison; previous blurred edges not attributed as provider fault.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g211:r01",
+      "chosen_option_id": "c66383",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer approves of the subject and voices no objections.",
+      "semantic_class": "positive",
+      "reason": "Instruction enables weaving; feared uneven warp is avoided, not actual fault.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g224:r01",
+      "chosen_option_id": "c84071",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Clear handling demonstration praised; banner obstructs landings.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g228:r01",
+      "chosen_option_id": "c74798",
+      "chosen_option_position": 1,
+      "chosen_option_text": "An assessment with compliments and complaints about the subject.",
+      "semantic_class": "mixed",
+      "reason": "Close feather observation is valued opportunity; loud microphone criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g212:r01",
+      "chosen_option_id": "c92068",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Criticism of the named subject, with no praise expressed.",
+      "semantic_class": "negative",
+      "reason": "Cracked rental part damages thread; inspection failure criticised.",
+      "ambiguity": "none material",
+      "must_fix": null
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g233:r01",
+      "chosen_option_id": "c23336",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described, not evaluated.",
+      "semantic_class": "neutral",
+      "reason": "Booking time/equipment/access only; availability not independently praise.",
+      "ambiguity": "none material",
+      "must_fix": null
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-d3-seen-rules-v1",
+  "artifact_prefix": "data/data-d3-seen-rules-v1",
+  "split": "validation",
+  "stratum": "seen_mechanism_new_policy",
+  "intentional_mechanism_overlap": true,
+  "permanently_training_excluded": true,
+  "group_namespace": "data:d3-seen-rules-v1:",
+  "policies_per_mechanism": 6,
+  "cases_per_policy": 2,
+  "expected_decisions": 96,
+  "expected_policy_groups": 48,
+  "training_manifest": "data/data-pilot-v2/manifest.json",
+  "training_manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "historical_manifests": ["data/data-pilot-v1/manifest.json", "data/data-tiny-v1/manifest.json"],
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "target_pair_token_budget": 256,
+  "choice_protocol": "Plausible mutually exclusive outcomes; label-independent seeded balanced target slots within arity, independently shuffled distractors and any candidate listing. No publication-order target cycles or fixed correct-length rank.",
+  "authoring_policy": "All policy/source groups fixed here before case authoring. Each group p01..p06 follows the ordered policy_domains below; case IDs c01/c02. New original policies and facts only, no old row text or labels provided to producers. No diagnostic row or derivative may ever be used for weight updates.",
+  "mechanisms": [
+    {
+      "id": "lexicographic", "producer": "ordering",
+      "name": "lexicographic tuple ranking",
+      "training_group_id": "data:pilot-v2:rule-a:g002",
+      "training_shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "policy_domains": ["reef restoration shipment routing", "oral history digitisation queue", "avalanche sensor inspection priority", "community kiln firing reservations", "accessible ferry ramp allocation", "pollinator corridor planting bids"]
+    },
+    {
+      "id": "fifo", "producer": "ordering",
+      "name": "FIFO stock batch issuing",
+      "training_group_id": "data:pilot-v2:rule-a:g003",
+      "training_shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "policy_domains": ["mosaic tessera stock allocation", "rainwater cistern withdrawals", "reclaimed felt roll issuing", "bioluminescent paint stock", "stage counterweight inventory", "reusable ice-pack dispatch"]
+    },
+    {
+      "id": "discount", "producer": "ordering",
+      "name": "ordered fixed and percentage discount composition",
+      "training_group_id": "data:pilot-v2:rule-a:g005",
+      "training_shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "policy_domains": ["community planetarium workshop fees", "restored map printing quote", "canopy shelter installation credits", "repairable toy kit invoices", "wildlife sketching course fees", "reusable exhibition plinth hire"]
+    },
+    {
+      "id": "rounding", "producer": "ordering",
+      "name": "nearest rounding with explicit half-up ties",
+      "training_group_id": "data:pilot-v2:rule-a:g007",
+      "training_shard": "data/data-pilot-v2/rule-a/train.jsonl",
+      "policy_domains": ["lichen sample mass recording", "embossing pressure dial settings", "canal salinity reporting", "concert rig load display", "heritage tile thickness log", "orbital model distance labels"]
+    },
+    {
+      "id": "packs", "producer": "geometry",
+      "name": "ceiling pack count with minimum purchase",
+      "training_group_id": "data:pilot-v2:rule-b:g002",
+      "training_shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "policy_domains": ["tactile trail marker procurement", "percussion mallet sleeve orders", "pollution sampler filter refills", "mosaic spacer replenishment", "windsock clip purchases", "costume reflector stock"]
+    },
+    {
+      "id": "rates", "producer": "geometry",
+      "name": "rate comparison by cross multiplication",
+      "training_group_id": "data:pilot-v2:rule-b:g005",
+      "training_shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "policy_domains": ["portable fog collector trials", "caption correction throughput", "sailcloth offcut utilisation", "snowmelt filtration trials", "seedling shelter ventilation", "tile salvage crew efficiency"]
+    },
+    {
+      "id": "coordinates", "producer": "geometry",
+      "name": "ordered coordinate transformations",
+      "training_group_id": "data:pilot-v2:rule-b:g006",
+      "training_shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "policy_domains": ["tapestry loom pattern registration", "theatre follow-spot calibration", "raised relief map orientation", "kite camera overlay alignment", "ceramic decal placement", "miniature railway control grid"]
+    },
+    {
+      "id": "cooldown", "producer": "geometry",
+      "name": "cooldown-constrained appointment scheduling",
+      "training_group_id": "data:pilot-v2:rule-b:g008",
+      "training_shard": "data/data-pilot-v2/rule-b/train.jsonl",
+      "policy_domains": ["ultraviolet curing booth bookings", "oral-history recording booth reset", "thermographic scanner recovery", "ceramic spray-room ventilation", "sail testing tunnel cooldown", "acoustic dome reset scheduling"]
+    }
+  ]
+}

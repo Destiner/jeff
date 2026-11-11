@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "strand": "R5 decision learning",
+  "access_date": "2026-11-11",
+  "evidence_policy": "Passages read from primary-source HTML; quotations are short excerpts. Local proposals and arithmetic are not published Jeff results.",
+  "search_coverage": {"calls": 3, "queries": 8, "failed_queries": 6, "successful_queries": 2, "successful_queries_with_results": 1},
+  "fetch_coverage": {"calls": 4, "url_fetches": 10, "primary_papers_used": 5, "official_implementation_readmes_fetched": 2, "metadata_page": 1, "irrelevant_papers_discarded": 2, "stored_content_retrieval_calls": 9},
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "url": "https://arxiv.org/html/1503.02531",
+      "authors_year": "Hinton, Vinyals, Dean; 2015",
+      "method_data_model_scale": "Temperature-softened class-probability distillation mixed with hard labels. MNIST: 60,000 cases, two-hidden-layer 1,200-unit teacher and 800-unit student. Speech: about 85M parameter networks, 10-model ensemble, about 2,000 hours/700M frames.",
+      "claims": [
+        {"claim": "Soft targets can encode relationships between wrong classes and support sample-efficient transfer.", "locator": "Section 1, paragraph beginning An obvious way", "passage": "When the soft targets have high entropy, they provide much more information per training case than hard targets", "limits": "Conditional mechanism and published fixed-class experiments, not a guarantee with 2–6 dynamic options or teacher mistakes."},
+        {"claim": "Use same temperature for teacher and student; compensate soft-loss scale with T squared when combining losses.", "locator": "Section 2, Distillation", "passage": "The same high temperature is used when training the distilled model", "additional_passage": "it is important to multiply them by T² when using both hard and soft targets", "limits": "Not evidence that any chosen T or mixing weight is optimal for Jeff; no calibration result."},
+        {"claim": "Logit matching equivalence needs centered logits; limited student capacity can favor intermediate temperatures.", "locator": "Section 2.1, final paragraph", "passage": "provided the logits are zero-meaned separately for each transfer case", "additional_passage": "when the distilled model is much too small to capture all of the knowledege in the cumbersome model, intermediate temperatures work best", "limits": "High-temperature approximation, fixed class spaces. Hidden-state or vocabulary matching across Qwen and MiniLM is not established."},
+        {"claim": "MNIST distilled small model reduces reported test errors from 146 to 74, versus teacher 67.", "locator": "Section 3, first paragraph", "passage": "it achieved 74 test errors", "limits": "Different domain and scales. Other missing-class illustrations tune bias on test performance and should not be copied as a held-out methodology."}
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+      "url": "https://arxiv.org/html/2305.02301",
+      "authors_year": "Hsieh et al.; 2023",
+      "method_data_model_scale": "Separate label-generation and rationale-generation tasks with prefixes. PaLM 540B teacher; T5 220M data-efficiency experiments and 220M/770M/11B scale experiments; e-SNLI, ANLI, CommonsenseQA, SVAMP. GPT-NeoX 20B teacher ablation.",
+      "claims": [
+        {"claim": "Studied rationale gains rely on auxiliary generation in training, but rationale generation need not be performed at deployment.", "locator": "Section 3.2, Multi-task learning with rationales, equations 3–4", "passage": "instead of using rationales as additional model inputs, we frame learning with rationales as a multi-task problem", "additional_passage": "the rationale ... is not required in the test time", "limits": "Not a scalar-encoder auxiliary task; does not show adding rationale text to TRAIN input and dropping it at inference works."},
+        {"claim": "A 220M T5 using 12.5 percent of e-SNLI outperforms standard finetuning using the full source dataset.", "locator": "Section 4.1 and Figure 4", "passage": "by using only 12.5% of the full e-SNLI dataset", "limits": "A percentage of a benchmark dataset, not proof of gains on 1,500 Jeff decisions. HTML duplicates inline math in extraction; percentages are normalized in this ledger."},
+        {"claim": "Rationale-label concatenation can be harmful relative to label-only finetuning.", "locator": "Section 4.4, Multi-task training is much more effective than single-task rationale and label joint prediction", "passage": "single-task training with LLM-rationales can at times leads to worse performance than standard finetuning, e.g., on ANLI and CQA", "limits": "Specific student/teacher/tasks, not proof all joint CoT finetuning fails."},
+        {"claim": "Teacher quality and task data matter; smaller GPT-NeoX teacher gives smaller lifts, and SVAMP gap required extra unlabeled examples in the reported setup.", "locator": "Section 4.4 teacher-size ablation; Section 4.2 unlabeled data augmentation", "passage": "the performance lift is smaller when rationales are extracted from the 20B GPT-NeoX model", "additional_passage": "ASDiv dataset contains a total of 2,305 examples", "limits": "Qwen0.5B is much smaller than even this teacher ablation. SVAMP result used 11B student; no 22M generative evidence."}
+      ],
+      "official_implementation": {
+        "url": "https://raw.githubusercontent.com/google-research/distilling-step-by-step/main/README.md",
+        "locator": "Args usages: label_type, alpha, model_type",
+        "passage": "Loss = alpha * label_prediction_loss + (1 - alpha) * rationale_generation_loss",
+        "claim": "Official implementation distinguishes ground-truth and LLM labels, and task-prefix multitask from standard training.",
+        "limits": "README inspected, no code run or dependency adopted. Alpha 0.5 is their recommendation, not a Jeff optimum. Main branch is unpinned."
+      }
+    },
+    {
+      "id": "S3",
+      "title": "Leveraging Large Language Models for Multiple Choice Question Answering",
+      "url": "https://arxiv.org/html/2210.12353",
+      "authors_year": "Robinson, Rytting, Wingate; 2023",
+      "method_data_model_scale": "Jointly present choices and score answer symbols. Symbol-binding evaluation uses 100 OpenBookQA cases/all 24 orders; models span 1.5B GPT-2 to 178B Jurassic-1. Codex/Davinci broad evaluation covers 20 datasets; exact Codex size not established here.",
+      "claims": [
+        {"claim": "Answer-symbol scoring is a reasonable decoder decision interface, avoids variable answer-text likelihood normalization, but is only a proxy for correctness probability.", "locator": "Section 3, Cloze vs. Multiple Choice Prompting", "passage": "The probabilities of these symbols therefore serve as a proxy for each answer's probability", "limits": "Requires actual symbol binding; no Qwen0.5B evidence or calibration guarantee. Conditional allowed-symbol normalization is distinct from full-vocabulary mass."},
+        {"claim": "Multiple-choice-symbol binding differs strongly across models and invariance need not imply accuracy.", "locator": "Section 4, Challenge of Multiple Choice Symbol Binding", "passage": "PPA measures order invariance irrespective of model ability to perform a task", "additional_passage": "GPT-2, CodeParrot, and Instruct (Curie) all have PPA scores close to the 25% baseline", "limits": "Historical checkpoints, 100-case subset. Not proof of Qwen failure. Exhaustive permutations are costly and not a new task recommendation."},
+        {"claim": "Prompt scoring superiority is model dependent rather than universal.", "locator": "Section 5.1, Models", "passage": "choosing answer options based on cloze prompts ... performs best for GPT-3, MCP always performs best for Instruct and Codex", "limits": "Three-task direct comparison; wider 20-task evidence uses selected Codex. Does not establish decoder architecture superiority over Jeff's fine-tuned encoder."}
+      ],
+      "official_implementation": {"url": "https://raw.githubusercontent.com/BYU-PCCL/leveraging-llms-for-mcqa/main/README.md", "locator": "Repository README", "claim": "Official code resource fetched as an auxiliary cross-reference.", "passage": null, "limits": "No material algorithmic claim rests on this README; no implementation executed. Main branch unpinned."}
+    },
+    {
+      "id": "S4",
+      "title": "Finetuned Language Models Are Zero-Shot Learners",
+      "url": "https://arxiv.org/html/2109.01652",
+      "authors_year": "Wei et al.; 2021/2022",
+      "method_data_model_scale": "Instruction tuning on 62 NLP datasets with held-out task clusters; main 137B language model; scale ablation 422M, 2B, 8B, 68B, 137B.",
+      "claims": [
+        {"claim": "Instruction tuning can hurt unseen-task performance at smaller scales in an early FLAN recipe.", "locator": "Section 4.2, Scaling laws", "passage": "for the 8B and smaller models ... instruction tuning actually hurts performance on held-out tasks", "limits": "Capacity explanation is speculative; S5 gives counterevidence with other recipes. Do not infer a universal 8B cutoff or inability of small pretrained models to learn instructions."},
+        {"claim": "Broad instruction tuning here is far outside a one-run local intervention.", "locator": "Section 2 training setup", "passage": "This instruction tuning takes around 60 hours on a TPUv3 with 128 cores", "limits": "Historical 137B experiment cost, not a laptop estimate or requirement for all instruction tuning."}
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "Designing Data and Methods for Effective Instruction Tuning (Flan Collection)",
+      "url": "https://arxiv.org/html/2301.13688",
+      "authors_year": "Longpre et al.; 2023",
+      "method_data_model_scale": "Most ablations T5-XL 3B; scaling spans T5 Small/Base/Large/XL/XXL and task counts 8,25,50,100,200,400,800,all 1873. Text also says 1836; source inconsistency preserved. Held-in QA/NLI, CoT, held-out MMLU and BBH.",
+      "claims": [
+        {"claim": "Later instruction recipes show gains at smaller T5 scales, so the early FLAN result is not a universal small-model prohibition.", "locator": "Section 3.3, Scaling Small Models to 1.8k+ Tasks", "passage": "both Held-In and Held-Out tasks appear to benefit from adding hundreds of finetuning tasks", "additional_passage": "only T5-Small appears to exceed its Held-Out task performance before 1836 tasks", "limits": "Not 22M MiniLM or 1,500-example Jeff evidence. Held-in performance peaks around 200 tasks then can fall; diversity/quality matter."},
+        {"claim": "Source mixture balancing matters in an instruction-tuning setting and motivates a controlled exposure-weighting hypothesis, not a known Jeff cure.", "locator": "Section 3.5 and Table 1 in Section 3.1", "passage": "the mixture weighting deserves as much attention to optimize results", "numerical_locator": "Table 1: MMLU zero-shot 50.3 full model versus 45.4 without mixture balancing", "limits": "3B T5 study; weights chosen partly with practitioner intuition. Equal-source weighting of Jeff's correlated/noisy sources could hurt; no guarantee of independent-rule transfer."}
+      ]
+    }
+  ],
+  "unsupported_equivalences_rejected": [
+    "Verbal confidence or generated probability JSON equals true token/option probabilities",
+    "Teacher agreement equals independently verified truth",
+    "Published small generative student equals 22M scalar encoder",
+    "Rationale distillation gains require generating rationales at deployment",
+    "Rationale distillation gains demonstrate scalar-only supervision can absorb the same procedures",
+    "Qwen0.5B comparison outcomes or teacher qualification are already known",
+    "Probability normalization implies calibration"
+  ],
+  "scope_exclusions": ["No raw Evaluation, probe, final, or TRAIN rows inspected", "No model load/inference/training", "No new labels/datasets/dependencies", "No paid APIs/compute/services or uploads", "No tests/lint", "No tracked edits, merges, commits, or mailbox posts"]
+}

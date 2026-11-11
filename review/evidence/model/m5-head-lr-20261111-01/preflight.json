@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-11-11T13:04:38.579967+00:00",
+  "historical_source": "e37b0f3e7f2e3162abca87a76883eb81300603e0",
+  "current_source": "4031e7e9d371f15a53c3bae9d5db14478ace6fdb",
+  "source_files": [
+    {
+      "path": "pyproject.toml",
+      "historical_sha256": "b6569daecbe621d2dae3acab74106f649e85f5f105d38cc4af93b5de1440e5f5",
+      "current_sha256": "b6569daecbe621d2dae3acab74106f649e85f5f105d38cc4af93b5de1440e5f5"
+    },
+    {
+      "path": "src/jeff/__init__.py",
+      "historical_sha256": "e0c8689b12945c9a7aad1e6bbb98d9b08396bf45ae4308a6e9eea2d2afa4990c",
+      "current_sha256": "e0c8689b12945c9a7aad1e6bbb98d9b08396bf45ae4308a6e9eea2d2afa4990c"
+    },
+    {
+      "path": "src/jeff/model/__init__.py",
+      "historical_sha256": "681669482af6adb4d80f58bafdae4e935f22787f7b17d828f512f9c4426678d6",
+      "current_sha256": "681669482af6adb4d80f58bafdae4e935f22787f7b17d828f512f9c4426678d6"
+    },
+    {
+      "path": "src/jeff/model/cross_encoder.py",
+      "historical_sha256": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481",
+      "current_sha256": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481"
+    },
+    {
+      "path": "src/jeff/model/predict.py",
+      "historical_sha256": "c4b58a81122982d4e7e6ada6e03c4648c229d813d34b0bedb9432e7da6a908ad",
+      "current_sha256": "c4b58a81122982d4e7e6ada6e03c4648c229d813d34b0bedb9432e7da6a908ad"
+    },
+    {
+      "path": "src/jeff/model/scorer.py",
+      "historical_sha256": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+      "current_sha256": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c"
+    },
+    {
+      "path": "src/jeff/training/__init__.py",
+      "historical_sha256": "4a3ba992b5430c4b799f559c5ffcb97a73de427f8f832da0c2b04e9364a273c6",
+      "current_sha256": "4a3ba992b5430c4b799f559c5ffcb97a73de427f8f832da0c2b04e9364a273c6"
+    },
+    {
+      "path": "src/jeff/training/dataset.py",
+      "historical_sha256": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "current_sha256": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311"
+    },
+    {
+      "path": "src/jeff/training/train.py",
+      "historical_sha256": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+      "current_sha256": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9"
+    },
+    {
+      "path": "uv.lock",
+      "historical_sha256": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4",
+      "current_sha256": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4"
+    }
+  ],
+  "manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+  "manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+  "shards": [
+    {
+      "path": "data/data-pilot-v1/intent/train.jsonl",
+      "split": "train",
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/intent/validation.jsonl",
+      "split": "validation",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "rows": 20
+    },
+    {
+      "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "split": "train",
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "split": "validation",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "rows": 20
+    },
+    {
+      "path": "data/data-pilot-v1/rule_application/train.jsonl",
+      "split": "train",
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "rows": 100
+    },
+    {
+      "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+      "split": "validation",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "rows": 20
+    }
+  ],
+  "versions": {
+    "torch": "2.15.0",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "python": "3.12.16",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "mps_fallback": null,
+  "inputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-baselines-v1/inputs.jsonl",
+      "sha256": "2ad601da94172ebd5080fbfa67898a911042e61355f2e03e81bc64cb6a380fb1",
+      "rows": 60
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-baselines-v1/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "rows": 24
+    }
+  ],
+  "scope": "Relevant source/locks/runtime metadata equivalent; unrelated current Git history differs; no binary identity or MPS determinism claim."
+}

@@ -1,0 +1,3 @@
+# E6 execution preparation v3
+
+Procedural policy-pin adaptation only. The first v2 invocation stopped at AGENTS.md dependency drift before scoring or creating an output namespace. Full scan found only AGENTS.md and docs/coordination.md changed: bounded continuation/R6 and parallel negative-TRAIN-fit diagnosis authority, not E6 scientific criteria. This lock binds current operational authority and preserves all94 scientific/data/code dependencies unchanged. Runner bytes are identical to v2. Original preregistration and v1/v2 are retained. This preparation is post-TRAIN-outcome, not represented as a new predeclaration. No new run, scoring criterion, data, fallback or experiment is authorized. See previous-attempt.json and policy-changes.diff.

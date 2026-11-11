@@ -1,0 +1,105 @@
+{
+  "schema_version": "r6-source-ledger-1",
+  "task": "R6 focused reversal identifiability and four-cell diagnostic method review",
+  "artifact": "findings.md",
+  "review_date_utc": "2026-11-11",
+  "status": "public-source and mathematical review only; no diagnostic execution or data analysis",
+  "primary_source_count": 2,
+  "retrieval": {
+    "method": "targeted web search followed by public arXiv HTML retrieval and bounded passage reads",
+    "search_response_id": "mwcaydlkxt5nfd",
+    "fetch_response_id": "mwcayhm1ngz8rc",
+    "note": "Response IDs are session retrieval references, not portable evidence; URLs and verbatim excerpts below are portable. Only targeted sections were reviewed, not an exhaustive paper audit. No model assets were fetched."
+  },
+  "sources": [
+    {
+      "id": "Z24",
+      "title": "Large Language Models Are Not Robust Multiple Choice Selectors",
+      "authors": ["Chujie Zheng", "Hao Zhou", "Jie Zhou", "Minlie Huang"],
+      "venue": "ICLR 2024",
+      "publication_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/54dd9e0cff6d9214e20d97eb2a3bae49-Abstract-Conference.html",
+      "reviewed_version_url": "https://arxiv.org/html/2309.03882v3",
+      "version_note": "Version-specific arXiv HTML is the source of quoted passages. Search also returned the earlier v1 title; v1 was not used as the reviewed text.",
+      "passages": [
+        {
+          "section": "2.4 What Causes Selection Bias?",
+          "url": "https://arxiv.org/html/2309.03882v3#S2.SS4",
+          "quote": "One challenge here is that option IDs are bound with options’ ordering positions, e.g., the ID B is naturally tied with the second-presented option.",
+          "supports": "Default ordinal letters confound label identity and displayed position.",
+          "limits": "Does not identify which mechanism explains this project's Qwen outputs."
+        },
+        {
+          "section": "2.4 What Causes Selection Bias?; ID-shuffling ablation",
+          "url": "https://arxiv.org/html/2309.03882v3#S2.SS4",
+          "quote": "But this ablation will obviously impair the naturalness and quality of the MCQ prompt, and may consequently degrade model performance",
+          "supports": "Changing label assignment also changes prompt familiarity; do not interpret reversed alphabet prompts as a pure mechanistic intervention.",
+          "limits": "The paper studied shuffled IDs; the exact descending-letter intervention is our proposed diagnostic, not their measured result."
+        },
+        {
+          "section": "3.1 Permutation-based Debiasing Baseline and Formulation",
+          "url": "https://arxiv.org/html/2309.03882v3#S3.SS1",
+          "quote": "ensures one pairing between each option ID",
+          "supports": "Their cyclic design covers every ID/content pairing; reversal alone does not.",
+          "limits": "This short exact phrase is part of the cyclic-permutation discussion. The formal construction and equation (1), not the excerpt alone, establish the coverage. It does not establish invariance or correction validity for R6."
+        },
+        {
+          "section": "3.2 Prediction Probability Decomposition; equations (2)-(3)",
+          "url": "https://arxiv.org/html/2309.03882v3#S3.SS2",
+          "quote": "For tractable derivation, we reasonably assume that",
+          "supports": "The decomposition relies on assumptions, including invariance of the debiased content distribution to option order and prior independence of the option permutation.",
+          "limits": "The formal assumptions are in the surrounding paragraph and equation (3). This source permits a question-dependent prior; R6's cross-case fixed b is a stronger additional assumption."
+        },
+        {
+          "section": "3.2 Prediction Probability Decomposition",
+          "url": "https://arxiv.org/html/2309.03882v3#S3.SS2",
+          "quote": "due to the natural binding between option IDs and options’ ordering positions",
+          "supports": "The source's prior combines token and position bias rather than separately identifying them.",
+          "limits": "Does not prove either component is static in the proposed packet."
+        }
+      ],
+      "not_used_for": ["Qwen0.5B empirical claims", "a calibrated or corrected probability claim", "authorization to apply PriDe", "complete bias identification from reversal"]
+    },
+    {
+      "id": "R23",
+      "title": "Leveraging Large Language Models for Multiple Choice Question Answering",
+      "authors": ["Joshua Robinson", "Christopher Michael Rytting", "David Wingate"],
+      "venue": "ICLR 2023",
+      "reviewed_version_url": "https://arxiv.org/html/2210.12353v3",
+      "version_note": "ICLR 2023 paper; the arXiv identifier begins in 2022. Version-specific HTML supplied the reviewed passages.",
+      "passages": [
+        {
+          "section": "3 Cloze vs. Multiple Choice Prompting",
+          "url": "https://arxiv.org/html/2210.12353v3#S3",
+          "quote": "The probabilities of these symbols therefore serve as a proxy for each answer’s probability.",
+          "supports": "Symbol-token scoring differs from option-text likelihood scoring.",
+          "limits": "Proxy answer scores are not established calibrated correctness, and normalized symbol probabilities do not determine full-vocabulary valid-letter mass. The latter is our algebraic observation."
+        },
+        {
+          "section": "4 The Challenge of Multiple Choice Symbol Binding",
+          "url": "https://arxiv.org/html/2210.12353v3#S4",
+          "quote": "Importantly, PPA measures order invariance irrespective of model ability to perform a task. If a model performs poorly on a task but answers consistently across possible orders of answer options it will still have a high PPA.",
+          "supports": "Consistency/order invariance is distinct from task accuracy; descriptive contrast fidelity should not be sold as correctness.",
+          "limits": "Their PPA uses all permutations; R6's two/four-cell contrast diagnostic is not exhaustive-permutation PPA."
+        }
+      ],
+      "not_used_for": ["Qwen0.5B empirical claims", "causal attribution to code training or model size", "a calibration claim", "calling a two-order flip rate exhaustive PPA"]
+    }
+  ],
+  "original_analysis_not_source_claims": [
+    "Centered paired log ratios identify gamma_j=b_j-b_mirror under invariant per-case content utility.",
+    "Mirror-symmetric bias changes can be absorbed into case-specific utilities; antisymmetric b is gamma/2.",
+    "The four-cell letter mapping and alpha/beta contrasts, residual sign pattern and residual identifiability limits.",
+    "One source-held-out constrained descriptive fit, hierarchical source/group/case/option weights, fidelity summaries and zero-handling protocol.",
+    "Conditional option probabilities cannot recover full-vocabulary valid-letter probability mass.",
+    "No accuracy, correction, calibration or exclusive causal inference follows from descriptive fit."
+  ],
+  "access_and_action_limits": {
+    "data_access": "none; no new data/export access, labels, Evaluation/probe/D3/final content or TRAIN case selection",
+    "code_or_model_execution": "none; no model imports, loads, inference, training, tokenizer construction or downloads of model assets",
+    "filesystem_writes": "only the two requested disjoint method artifacts",
+    "tracked_edits_commits_merges_mailbox": "none",
+    "new_dependencies_paid_work_background_jobs_tests_lint": "none",
+    "execution_owner_if_packet_later_runs": "Runtime under an explicit Model scheduling grant; at most 48 preselected TRAIN cases x 4 conditions, frozen P3 only",
+    "frozen_experiment": "M6/P4/E6 unchanged"
+  }
+}

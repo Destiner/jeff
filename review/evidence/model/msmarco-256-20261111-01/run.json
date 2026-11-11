@@ -1,0 +1,1970 @@
+{
+  "schema_version": "0.1",
+  "status": "completed",
+  "started_at": "2026-11-11T11:03:16.578712+00:00",
+  "config": {
+    "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "output_dir": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01",
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "architecture": "retained_cross_encoder",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "max_length": 256,
+    "seed": 42,
+    "max_steps": null,
+    "threads": 4
+  },
+  "argv": [
+    "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py",
+    "--dataset-manifest",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01",
+    "--architecture",
+    "retained_cross_encoder",
+    "--model-id",
+    "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "--revision",
+    "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "--device",
+    "mps",
+    "--epochs",
+    "3",
+    "--batch-size",
+    "4",
+    "--max-length",
+    "256",
+    "--learning-rate",
+    "2e-5",
+    "--head-learning-rate",
+    "5e-4",
+    "--seed",
+    "42",
+    "--threads",
+    "4"
+  ],
+  "invocation_cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "output_dir": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-20261111-01",
+  "code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "e37b0f3e7f2e3162abca87a76883eb81300603e0",
+    "dirty": false,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/cross_encoder.py": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481"
+    }
+  },
+  "invocation_cwd_code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "e37b0f3e7f2e3162abca87a76883eb81300603e0",
+    "dirty": false
+  },
+  "artifacts": {
+    "baseline": "baseline",
+    "checkpoint": "checkpoint",
+    "manifest": "dataset-manifest.json",
+    "run": "run.json"
+  },
+  "costs": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."
+  },
+  "limitations": [
+    "No calibration claim",
+    "No final-evaluation data used",
+    "Fresh-process checkpoint reload is a separate lead-owned step"
+  ],
+  "dataset": {
+    "schema_version": "0.1",
+    "dataset_id": "data-pilot-v1",
+    "manifest_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+    "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+    "shards": [
+      {
+        "path": "data/data-pilot-v1/intent/train.jsonl",
+        "split": "train",
+        "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/intent/validation.jsonl",
+        "split": "validation",
+        "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+        "split": "train",
+        "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+        "split": "validation",
+        "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/train.jsonl",
+        "split": "train",
+        "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+        "rows": 100,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl"
+      },
+      {
+        "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+        "split": "validation",
+        "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+        "rows": 20,
+        "resolved_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl"
+      }
+    ],
+    "counts": {
+      "train": 300,
+      "validation": 60
+    },
+    "families": {
+      "train": {
+        "intent": 100,
+        "sentiment": 100,
+        "rule_application": 100
+      },
+      "validation": {
+        "intent": 20,
+        "sentiment": 20,
+        "rule_application": 20
+      }
+    },
+    "label_basis": {
+      "train": {
+        "teacher": 200,
+        "rule_verified": 100
+      },
+      "validation": {
+        "teacher": 40,
+        "rule_verified": 20
+      }
+    },
+    "likely_content_duplicates": [],
+    "frozen_manifest": "dataset-manifest.json"
+  },
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "versions": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2"
+    },
+    "torch_version": "2.15.0",
+    "hardware": {
+      "machine": "arm64",
+      "processor": "arm",
+      "cpu_count": 10,
+      "hw.model": "Mac17,3",
+      "machdep.cpu.brand_string": "Apple M5",
+      "hw.memsize": "25769803776"
+    },
+    "device": "mps",
+    "torch_threads": 4,
+    "mps_built": true,
+    "mps_available": true,
+    "mps_fallback_environment": null
+  },
+  "seed_policy": "Python random + torch CPU + MPS when selected; not a guarantee of bitwise deterministic MPS kernels",
+  "base_model": {
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "resolved_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "architecture": "retained_cross_encoder",
+    "tokenizer_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "max_length": 256,
+    "temperature": 1.0,
+    "head_initialization": "pretrained",
+    "baseline": "pretrained backbone with retained pretrained ranking head"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "backbone_learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "full_backbone_finetuning": true,
+    "backbone_parameter_count": 22713216,
+    "head_parameter_count": 385
+  },
+  "metrics": {
+    "validation_before": {
+      "count": 60,
+      "loss": 1.0268779975594953,
+      "top1_target_agreement": 0.5,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    },
+    "validation_after": {
+      "count": 60,
+      "loss": 0.7937007967576695,
+      "top1_target_agreement": 0.6666666666666666,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    }
+  },
+  "weights": {
+    "hash_format": "sha256 of canonical contiguous CPU tensor torch.save serialization",
+    "before": {
+      "classifier_model.bert.embeddings.word_embeddings.weight": "e62d760c7f83473cfee7745375aaeba65638dd6bc0f9a8cd5a27b8f73e875af4",
+      "classifier_model.bert.embeddings.position_embeddings.weight": "48ae98ce23a004b45847a35acc05ff6351b5a75dc95beb1df33ef8db6cb8e5ac",
+      "classifier_model.bert.embeddings.token_type_embeddings.weight": "09890879073f5d5b3fc8d7b4dc8ecbeeb4da04e85f7cadeed8c7fe9f65c9dcc4",
+      "classifier_model.bert.embeddings.LayerNorm.weight": "590b565e082cb2bda77d25b66eb70f32dae0e5726f40cda89048c298354e8ef9",
+      "classifier_model.bert.embeddings.LayerNorm.bias": "a7a643fc29e5f8260d7781bc2fee4ead882a65ece0c1b9c5d28d3086d9ac8ce5",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.weight": "a0033724755b67545652d4822f5bfefdac26c32912b6d074063a0d435c6ae292",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.bias": "ec129fdb58e0f70589ad43d9ae22b857d09939a98b8fb71a98d395fb41f2aba1",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.weight": "73791298e4c468e8563eab92093476bac1366d390243f6645f0870ddafa4296b",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.bias": "fb197bbf6447fcc61a318df3ed9064d6aa9ce7559575da84061f1f3c237e24b1",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.weight": "72391a271ef51ad29ab371e8a6c9c3ff730018c0d04b5209be984a2dd0c3fce2",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.bias": "d7766e87b567e2bdf42e6dedcd8ba5a68e2326e1eacd07c608b0c29d07031f27",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.weight": "4265dfab185caaa8b60a865ffffd91542ebcedee82925bfc09d1eb28478c73d4",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.bias": "a39936cda37b4818ab7ab5cc977a6110093cd4457efed32e2f5ad2642da475b9",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.weight": "a9722322b41465026956bd2a7620c9ddeb1236fd6b482be3f51777365c2c69df",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.bias": "e2514a426afc1cbf17013d2e8badead99c387f00406d34d2006accfe1eca9530",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.weight": "4b59b1e68e595af88c3b780ea3cd588ec9b65a09622b94388518ee1c6854ef8f",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.bias": "aacb172c525ec7b70d60dc41e7f644f36b1883841ff8d5bfdbfb986f84aba90a",
+      "classifier_model.bert.encoder.layer.0.output.dense.weight": "a6ca8375c79428d7bc714eace6b34d7891e1723a8eb0676a7ecafeb07b9211d1",
+      "classifier_model.bert.encoder.layer.0.output.dense.bias": "5a928bcb43fd3dfc3044cb8320e5b21b36420c028906f8da9c29d67be4b56691",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.weight": "2d4fc9f08ee453b89ec1d73a311057eafc38834b6000dd2fcf6826026dade2e2",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.bias": "539411231b7ccb8bdf1050282b2383630999745278e2edf3582b33e501962ba4",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.weight": "9546df26736d91668ea94fce323b708b48bdfab2e23211d0e3274cafb6edab4c",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.bias": "4be5f7306fa05a367d8f8c96fa80b62899dd92a3232a0e3c68dc9d02132d3cb1",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.weight": "f2b852448f53fb6350ddfed679afbc1dc93c6b71d328fb1b541cd8af2eee6f89",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.bias": "fe3d33407e4d3ede4759c17cc553e06186b5328fa57063a1fc11846fa2a25c47",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.weight": "1bd0405f32159c8297d595fd08748ac218ba991e80c956eb8820e750929a3237",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.bias": "0195f224a5313ba5dadd93c81fcf534f589bbe0d0e2ac5d982a9995ede21b2a7",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.weight": "7883aac10b9d578933a904f25963126690628a1c13698d0b6ca4c8da5ddeb0ac",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.bias": "111cd035e1e2ff57593502a262e671bd6b717b2eb9b400a4ed332a4c005b3b0b",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.weight": "d1c98f4b1048fb97dc8564b569adb083ba8c12639a6c3465e6d6e7d51ad31c60",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.bias": "a735cc3813f900e26ef9418c5cf3317f4f20c95dd66aae584ef2aacf7a39242f",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.weight": "9b91e02a090ad27f252c8de736e32830fd56d3a87b3037bf89ba457be78e2b78",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.bias": "dcef694fe4268e95709878afec6ad783eb2635c8f6d152faecff4ea129b59f65",
+      "classifier_model.bert.encoder.layer.1.output.dense.weight": "c8c7cba672cd44c5c9a4fad00d4b396d300664e60f3d15b425302205721e9220",
+      "classifier_model.bert.encoder.layer.1.output.dense.bias": "330360d45220d091a24f2edf087880330ff92d004e37a71994bfc90bced9c0b3",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.weight": "60351f949833ee5c0879112f5062e50779104b31ee399d00a20f91f7d61dfe57",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.bias": "63e527d5da6d263f8fe952379d090fb8d5570ebff7ab5785e625b9084d7ee64d",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.weight": "31186a2403a0d84bd3237f832dc295d0f69dbc1fcb7cfe03b1bd4f9f885e5c84",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.bias": "7b73ddb5b74b483e5b449a5a378721fe16bbc98a558670a8cf3b1c27a12d991f",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.weight": "883074ecaefbb6884cc1b06f7d6f46080443bdfc7c2a40d824e775aae4b81504",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.bias": "33b53fb4335dd6049786eaaefb73bd90565c273b3dde129dc1e0d34cc51ed20c",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.weight": "2920091e3f0decfd4859d60c7cad76c485d7466085f4dd7483163b52d15baa74",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.bias": "856dc23953c19c797241a687a2630bd6e8804d08e3b8c224a344bc5a3baaa2e0",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.weight": "f2b406fb84bd43896e6b233fa5eb30d684bd088d652141e6837032815ac68b17",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.bias": "f45da3a92e0b973c710568c40f8c8ce174d349f2a487079c03d6d1504c0fdd63",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.weight": "8922832b9206a124f67ff4a45c0ef51967a54bbbf8246a5b00a27cd19f83603f",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.bias": "eedc061a3e120f8dc5bc36fbc77bd40e23f809702cc8594c93c6cbf9721d604d",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.weight": "d80e25476bb0153d0ddb98f2a8a126adc92f8cba012a3fba28bbfb7aed22292c",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.bias": "f6090a22e149e124fea707051af6b292b5e309011af07d0d6aacc70bac560485",
+      "classifier_model.bert.encoder.layer.2.output.dense.weight": "6dd4d413f1dbbc749d08db222a2208f22443313a8cda92a28ac3d9034bbfcc6b",
+      "classifier_model.bert.encoder.layer.2.output.dense.bias": "b6716b1310c8e0bd3774d2541035a74e68af9907aaa3ff9e39a2bbfe7f801e03",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.weight": "a618a520cb03f2ea4d2462256ae1daef7f12b8d35746e323f9ee3bfbf81dd8d6",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.bias": "26b2ad9d09dfba92f202d0caae29729eb653ffd38d35385a2092fec964134f7d",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.weight": "121fb20cf1b7bf7ef3a38d61cfb2040205e4d50bce510c06e4bb42c6f4dfb929",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.bias": "d83a4806bac1302a5294a40b4a2df5284d04ec7be12877364424a688379bb6f0",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.weight": "bf8fa778ea2d28308a8fa9e9b80aefcf151edb657fe43dacd2f1b109520cdfd0",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.bias": "bee60897fa63cf0364f286eb95c4923e3a90dec18154b485f173d4e8e9486f27",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.weight": "fd7339cfb239212a138869a901097115e245948b33f09911d821ad747b467aed",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.bias": "eb5b3c1f9bace5c170980c6cb09c0a2b5f595ad32a929576ab1c485cc42eb03b",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.weight": "867dd6276ee17e9b2ddb34b90db1d6adf7fe16a62d0108c57bd5122a62b0fafb",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.bias": "58a2758f4543b2556510bc7256fc5910651ccacdf90486fbf027e1677e7cfcd0",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.weight": "953a60392298f24e4c1131ad97bb8d8c947002ba1d28dd833b3cc6208a588c32",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.bias": "a0bc6f94c63f04daaf94dea0eae6093caa4751c967962f3b304133ccda5c5f9f",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.weight": "bbb27f628aedbeca81d5dd0a1d350785e7709bca9a3d740679e87020ffaf56f1",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.bias": "8eb0d79def92f8da64d4a57447fcbef28e339f0ffc38fd8a660d45d5e48d0abb",
+      "classifier_model.bert.encoder.layer.3.output.dense.weight": "bab0bb78770583179afe6a5ef783db41fcc3054c426e94f714fd69ea991900e5",
+      "classifier_model.bert.encoder.layer.3.output.dense.bias": "8e1afe5aeaf38b6a9f889e4bd5d01fb83870ca258c9bc17171fd781cfc5aad3b",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.weight": "8d736c423372760ff6317a10c922045e8de38ed734d7b26a1a1daa6ca3b3536e",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.bias": "e15d6e4e82babece639e3994890a306ba9919cad9a30fa00c22de18c6bfa04f6",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.weight": "d5c838d063bf03d245272a727cd85d94165032ece264aff5468e5e1a5e9297a6",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.bias": "1b5e9f83c5ad89089a5db9f2eacb6c71bdaab4612f1db15404376dd7dd6a4ef5",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.weight": "a4279de7810e5fcfde420be8bf2568de8562dfadb4b9235150822b070472b3fd",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.bias": "564194bbcf71112aed3c626308ffd0534bc5dd15eaa9c4c40e5a8cb48dfb290b",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.weight": "259e9aa9e749b43430a7c775dc87cef05a6f51c7d75ecaa9d94dbedd66ca5b1e",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.bias": "180a48ea8f6b5567ac1b9453e3c112ddbe5b5d7a17558f1888615c77b5e21993",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.weight": "8a8704496e0117a6eba64c644b0b7febcb448a1373a0359034fee7a0c569cbcc",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.bias": "ca8c6f3adefe25ac46c3d4801e99ab94a5710840d7ce9c9e195e6c7332bad40d",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.weight": "c3b492ca8a7d507f3bc04f4f74fe9bcfe2dc6eb973cfbce7bb241946553f4766",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.bias": "01523cd6cd601ab8c6dfc72edb330c51d923eafe1f694e0f74dc043c925571ca",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.weight": "394e06fb6234b795cdd8fc953db9892fb44bbba455ce92110786c350f11b7240",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.bias": "5fe09d69016c10cfc15399bfd35fd65832baacad22ae55c7ea30f59de58e5b83",
+      "classifier_model.bert.encoder.layer.4.output.dense.weight": "9debfafedfa100cc6cb589121df00826e69d90f42ee0702c1da3ada869da32ae",
+      "classifier_model.bert.encoder.layer.4.output.dense.bias": "e39f65a2ed648efe9c8f0024f19452a888f13dad19e3d918943d2e2f2e322dc5",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.weight": "44e10f542ec8822c816a96fd3b9947bb842563a8dbd7d9e82cdcd1ef1cd592da",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.bias": "beb9a424e2056fffa9ee99fa66c33a0b628bded35ab303c1852f65dc6aa541e6",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.weight": "64de14dc6b425d83a5b2dd972dba0e8a6012fbd7261f1b9c7037d1e41ab60601",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.bias": "e00dbc915cd9d147ce7c1afdec5e24968781ef02f60688acde4f10e698d63afd",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.weight": "471fb015a8709eebb2d271551c6d9b6255ef71a12b1a16927eb1fd7ec7f5e707",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.bias": "32ed948a0abbbe25238255cfef0af82667f0a26c7c39026b69ff860075b7128e",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.weight": "65f1b98f3434e568cecdbbfe384b096c75bf6ac70418c9b3f9a37200424f70ba",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.bias": "dd80c16d8028b4dfbf91116700147858c830e0ee1b99e436e8ca40c881cb3bf9",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.weight": "c87514149dbe0f48277a9212320045f5d2f3a1c9fa268751e84fed0db3eba1b1",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.bias": "a130d0eafc61825a5f88999291a078aea1353e89f0f3ada38e80c8abd4b0f2e0",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.weight": "4a08107517d5fae78645c71fe39643ad7b5625ae1c3fecf3eea017594ab911a0",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.bias": "694c18befee7e64c054a1912e34dfe33c559b7dcd4d7c747fbcab20d6ca810f5",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.weight": "d6c6d064cc8f9f7cdb7b125833823dff912447211675e7de329e5903eb52ac01",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.bias": "4ab9f36abe5846f175ac1d199274bdb1c1dc7b06c721538da6bd755760d7c101",
+      "classifier_model.bert.encoder.layer.5.output.dense.weight": "e42d56ac0c574cb690e222c42740ae3329bc923101dc1cba27e21e709e204686",
+      "classifier_model.bert.encoder.layer.5.output.dense.bias": "9fac3ddaae7f70900648ead30c12b3b99d9ac5fcc7b5857faaa6323e6d4724cf",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.weight": "49b3728ae40055ef9616af4d45e4feddde1d6bdcbab680b8448c9404bc74c3ec",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.bias": "d89fdca6205dbc62b1a123139423ab5e7a3e1a229e4eb54039181c30fb0bac3d",
+      "classifier_model.bert.pooler.dense.weight": "2bb40739368c9d663e8b811d952e3dd4839d9604826ddc6f0b897294a59c1027",
+      "classifier_model.bert.pooler.dense.bias": "9a96b9fdef820e8627c1854ad668b50a17f8078c22891f79b9b42923b20d0925",
+      "classifier_model.classifier.weight": "d171c8735cd4177f5ccbd129a4eb6ef7e143735429925867c2fc0a3277d8e7bd",
+      "classifier_model.classifier.bias": "b69c466bbf2884c224a0daa38c990c4c7bcd408328bc7b08c1df1f4fc86badb3"
+    },
+    "pretrained_head_provenance": {
+      "loaded": {
+        "weight": "d171c8735cd4177f5ccbd129a4eb6ef7e143735429925867c2fc0a3277d8e7bd",
+        "bias": "b69c466bbf2884c224a0daa38c990c4c7bcd408328bc7b08c1df1f4fc86badb3"
+      },
+      "baseline": {
+        "weight": "d171c8735cd4177f5ccbd129a4eb6ef7e143735429925867c2fc0a3277d8e7bd",
+        "bias": "b69c466bbf2884c224a0daa38c990c4c7bcd408328bc7b08c1df1f4fc86badb3"
+      },
+      "unchanged_before_baseline_save": true
+    },
+    "after": {
+      "classifier_model.bert.embeddings.word_embeddings.weight": "7edede1215af5d73851ef13c7e8c1ecd17d016323f9ebf6d66f5af6f13fe4cd9",
+      "classifier_model.bert.embeddings.position_embeddings.weight": "18af116463d1bf29559dc4a1a275e01e8effb85072d5a48fb5f40e14042f32b1",
+      "classifier_model.bert.embeddings.token_type_embeddings.weight": "abed380b7d26011efd72b0e74c5cf5c2ec0fab2b72b90f0afee52f87c24aa801",
+      "classifier_model.bert.embeddings.LayerNorm.weight": "0559138f4f40bf125256862f8fe57027ba5c98afd2eee5bea000ebab6e7b8e8a",
+      "classifier_model.bert.embeddings.LayerNorm.bias": "f6826cebc0f63a09eac453b7630942ec0ab801a09144b9490071629c9fb3e800",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.weight": "4e57e8f7a6f5f261856a6ee0e04d033e0d64c397893b5e971a0efb5658a30293",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.bias": "989c3917eba1bae916338270ae53bec02a444638e729bf6f00d28a0b3c9ba043",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.weight": "6c410af31ab55bbbec0cbcd91c80c109bd6bedcde0fa557ea7a7dc9f89898d18",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.bias": "feb4a165c3c92b92802cd20be09bd8a2c25813e0cae3105923d278e5811ff0f8",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.weight": "e50f9dfb0e763db745cf03729e0fd5c1c04695ba7e5679d7c9237c14f68d742b",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.bias": "4699510ff2b9ad5185d08e9da9097a966b2c5d01ea2df585e8b664a5409e74e8",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.weight": "e6f8496dd5a51969747aa2ce25b030b9a952ca74bea86fc29384cc830eb7bdb5",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.bias": "6e004a9dd80501738a026c42e8e22cb1fd7a1836befc7de21747377d4fe8fc6e",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.weight": "f197691de06615f7f1b049071152bfd2008134115b0ec7c53860e4ae35e24d8d",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.bias": "106acbd6f31dd8760286e86735eb0f4a90b21c16b58cfeb1143cd82b2c9d3ae6",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.weight": "8f858ae4b08de1f00a02e52b04f6cdb947fab34b5d37128953254d9a0ce68d3c",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.bias": "b3c3432bdd41cb6eedd36148dadcd55266291a4bf566956c5e4b08b7ea0dae89",
+      "classifier_model.bert.encoder.layer.0.output.dense.weight": "ff5faa3cea46942b837b1b2e5b0ec309a6455d7ba19cd31d8e652c59f58d5b11",
+      "classifier_model.bert.encoder.layer.0.output.dense.bias": "63c510860837c6237472f2d40c32c4de9f4e5eb70736d4446d4ce00d363e42d1",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.weight": "2fd3a06c539fcb60ba14ef97a1b7b7827ced61422e29e03e556b7b318daa81ba",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.bias": "68514dd1868fdee543993be0bfdc5655b5468ac42c7f51e5c42aba34bfd7314b",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.weight": "451f0b546591cb5beaee5620037d028165b30a9c8a57e613cd9816f3ca71eadf",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.bias": "88f992babcdf515616b3497c56adcfd318bf71b5f68024956974d065b541e6da",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.weight": "612ede1a1bad11ac7fcad35c6aa6ca415a0ca25fcece16835d2ba6b0b3830cbb",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.bias": "a06c36d4a39b04b4300abf36efad59e2ab58eea335353fa3e2d6d3beb1e5f94d",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.weight": "6349a7061bd9ee8454df237bcb9831d0c479ce788bc12eb6cfc53f5b69e19cc9",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.bias": "9819989f2e1d724752e50d79a933da40af462db7a7202512c40117d68b98bf98",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.weight": "6bedd7272d6301510edeef53a3e9e2ee37f18df21252260283ffd8652144e734",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.bias": "c9eed2ee7a66af7d7ffd0befec28a58783c76746c7b6ede7e41e082f8347545f",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.weight": "4287f9054eb7951e24f528441c38e3cb3d1e4342aeb6d42055e22f2ea4b9c22d",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.bias": "991f81fee06ad5af18d18836c36d9a75ed8dc0da91ac0f34ab0a6799456965a9",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.weight": "8e9857b60ed34f76962ca7cf9f1ab242ad03006ed7d06571721c5fc8720d640d",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.bias": "2718ec8667d7065008c2de20482f323cc08ef52bd9e8b0cacd341e03b5313a5f",
+      "classifier_model.bert.encoder.layer.1.output.dense.weight": "d5a58675e9bbc8ca9a74881d1c23e571dfb33d7a1f9e9b3eea118c1a3b0bbe63",
+      "classifier_model.bert.encoder.layer.1.output.dense.bias": "103e19106b3d8c6077c6848d90a7e3eb6c6c30b15c1193a0479ead2a403956cf",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.weight": "a33bd3c4b1758580ee5bc2fe32a4c003eadb83fa1175809fe5d080b482e1ba50",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.bias": "3785f187df3118c6106106e43e50a7b1c0fa58dd88b89eb3498a43db252a78a1",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.weight": "464e14e6b298fd25eed840abfd4150b4be583cb5aa2264b5987d2f14a5464c7f",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.bias": "3d9a3c932a0c11bab88039c471757a8bc3387f0fe3b79adfd4c903174f72905f",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.weight": "25a826b3b643924cc15d854a0f88ded864861b2499259bc6503720f193bd1e10",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.bias": "aa70638045486b77696d1095d7b6db6f7a51c766f6a56310f3479d5e5eeec645",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.weight": "6d3fb36140c6aed1384fa299158708ccec2cdf963dd235c66da6c6e64e720328",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.bias": "80cd93aba707ee92a8cf83cbfadeedbb8caaf3a274882e325dbaa4ecb1d2edb6",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.weight": "ce24acb4ce3016f48b5e7a90b1d5dc6e314ecd2caff6da34ff2aa5acf62740f2",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.bias": "8e8fa4e5bef01d46404b6b6936df88ae4b334c2a724cd23bf5b903f67255c32c",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.weight": "664bd8234951b38fd9c28310684322b18844a57e72a19912a5a4eb7c2ff3567c",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.bias": "61e46d7abef6ef0fad9ae847385b0b3e48c298daae7a9dcc40027e967ac1d19d",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.weight": "ab06a3db278799ed6caf2a4ba64c03baf2f39aa38fd413aa2d0f9280f70f41c5",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.bias": "710f7d4384cea06da921d85648d888a2be435a88cdb1dbd97da718a6e4374c16",
+      "classifier_model.bert.encoder.layer.2.output.dense.weight": "28aba247dfbe159e63b10ade1420bbe62f8ea3f6d6fd3682e9f2ec0c06d939f7",
+      "classifier_model.bert.encoder.layer.2.output.dense.bias": "13ffc8e7b76c995ae0113d90578232267ec45d63d62631f33da2c7fc0e39d660",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.weight": "2b52c7d01e6313d9a03ec1b602f19eb08f3deec38b25e5186baefe4cc72a26fd",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.bias": "93bae06843d7f0dabacc4af81443c09cd207fd50f318cb2d16147be41b5da663",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.weight": "1473bf39d7aacc63f14cef6c8a89781104d18f14e34e4bc446a55acb6907ca33",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.bias": "f838b9cc6a04b3905ebcac74d4ecb7511420cb080be13f161bf7b4c6e79d666e",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.weight": "6767589f3ba15e84b19af59f88bdbe36a26fad11de5e2d699a08204ecdcc1a0a",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.bias": "581f124bf167dbc24baac224695b2190820654d35f47b083eea4189f578551a8",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.weight": "8f69d1a573fe49aca54653178db76e2b0405df8a62b36b38da738171a2eec7ca",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.bias": "5b3c0a13bb672180658030381ef06943f0f04f34ab60ddb038938693ad0f211d",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.weight": "3f44cd84947fb0a18429c6340646875023638d71af9cc5992da4effd6fcd040a",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.bias": "926ce3887d58fd99c8ce4f48cb953237d1e0067b6886503df2c480e015267b43",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.weight": "5e18699d09e5585361986456d6ad34fb4eac1e09e659d224b531d93cafdcffa2",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.bias": "0cd967c7740ae3e0885f0fe514aded605d46bc7feb6491a47861c37294cd577a",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.weight": "35ca0b1c89519cc0a89804e9f4949260e7b738173aee383c3adf34d9125b5485",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.bias": "b4409aaa7e78370d563791bf2722775f1deb0f7e0fd01d466722d1323e07135f",
+      "classifier_model.bert.encoder.layer.3.output.dense.weight": "5abae96d82b6401be1a552cb648f2164df80d151029b82901101a6337d57abc4",
+      "classifier_model.bert.encoder.layer.3.output.dense.bias": "620ffec1303d9d8609a0df7cc4e3c27bb94155278d8f75fae10fe65f29448a8a",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.weight": "ed9e5fd6bfda3396918bb68367c717953a10771828390939d64925837f26bc48",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.bias": "464fcaae6a39772ade541544537839deca19afa988ed5b38bb6267cdb169e32e",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.weight": "e149b55b5d483caeef0289976479490f268d90e7af7048d473165824c09e2b35",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.bias": "c9ae0d486549518f0f83acedbec822e1441cebe818c366c0dcb04e7dd7d32473",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.weight": "34c69cc3c5261d898ae08351f8d8ac73996152b4902a7db62a839f29c7daf472",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.bias": "bca27c8c064b855858ae62a64803d7ac9327dd81ca749ed7ae85594ba0a577cc",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.weight": "3ac4fb7037d7c526c94f60cb2d72a13cbd8a879b7c6c3251dcd09449ab025d2e",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.bias": "152de09b8bb517a167f5a9e44a59cbb4e0f0b41c98687d0287c1ebbd33c5db41",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.weight": "bbf9871eea3d3d47f242ac37f69e327317763bfc3f860e286a99a9dacc776959",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.bias": "9654c41afd4dd6d532be46411973423e7a3e9726c0d9eb614af63c99e9d56014",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.weight": "60d148f871cacd0726f81abf5f58c2ce0259a2434e904b41dd14e8fc8c2fd4da",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.bias": "d67872aba6c7fe8145ca260351bf4b97c0ffd4aa4b567c63d36552eba2ab83c2",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.weight": "294f6bd7585ccc4c1a47efa880795fbb452e8fcf46132a936a2a34b6fb98862e",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.bias": "1e2fe792845ca2abe4daf8bd42a40f90ac06adcacabb8608ad1196e3f7e48ca0",
+      "classifier_model.bert.encoder.layer.4.output.dense.weight": "5c44a4da5bc69dda8083031673f15b8bff46f197d20ed40795fadf4869f4b79b",
+      "classifier_model.bert.encoder.layer.4.output.dense.bias": "e43f8814751c08c6911e90120c402d92980fca179df2abe2069fd9c29baae74d",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.weight": "860a10a01726b7193fb1b376b2bc97ae8629382bdc960630813de43bd4e034b3",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.bias": "c713f4b06b3e4ad57ab2135a8c7d964ac88aac795569a08f4c7b526d0335d359",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.weight": "74b9b4b6152078d3108b408297043cb7ea31ea742387c83f874b0f15b8d107fe",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.bias": "0718c0422fe8752923231004a1aa5db63935bae8b8e04e4c8e170201136a4d75",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.weight": "aad0a846499310d84b68fb1c2cf564897dff2740a7db2f66752e93059e6c1685",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.bias": "70560ac7b3a01e5ba566aeded3ad8384d76054d3f372fa71d45aefa73149abc5",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.weight": "ee0cf39f60dbd35d34703134d841b863ffe5da0c4ee9eae95c5a4fef80812e7e",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.bias": "1f94b8b556ac1c8c4eed7e507a554381ae67b6174aa258ae03d00812594ee37d",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.weight": "73ff3a89ef65ee92ba496b7297f8a39c7cd90ec724f03edeb7579feb7872ca56",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.bias": "916c4ca7569e75ca3dd8dd63ff5947b18bb9922adf645d5c391816099d984335",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.weight": "07b33ecf81cf49b08c1b6766f971f225d06f1daeb105eeed0cac9e3ee7a0a19f",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.bias": "a71bdceb4f6dfcae84b0c8e297d225b167eac74876878b089a8c9fc666c24d94",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.weight": "eb3cac982e50c4744af0bed56761587ab9dcdd626e7c9d4b98c1d77de535b63a",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.bias": "0deaf9ac5913ed5bd229a9c63a47466af72a2f68030b610dfcc4dab92a760b66",
+      "classifier_model.bert.encoder.layer.5.output.dense.weight": "77d13ab1a68df903298c3b144cedbbcc0cbd0e63dff5f6b09af4dcaedf7880c6",
+      "classifier_model.bert.encoder.layer.5.output.dense.bias": "7331afc9a4be4ab0ecbd68ff0fdf48807a59ca500984902d29e980c687b87372",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.weight": "f0e6b3b165cfb13bf8930ef81dd420fec420e8c8a44aace2d46a8a8594b358aa",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.bias": "4af2f57007465f425506249af0ace97a45d150aa7cf1816f71fc4dd3eaf11643",
+      "classifier_model.bert.pooler.dense.weight": "18c83ea7baa502492aa70cfb47331742a791a1cf993077304ac19ac101e6d52c",
+      "classifier_model.bert.pooler.dense.bias": "bd73da46bfe892270dd0975fd5a87e6fb4fa011a7012e38b9b0de9a604e76cb5",
+      "classifier_model.classifier.weight": "8ec493569a889a318c3e3b57c9d69c2b73a75f5b66be7e9c4389621e7bda9343",
+      "classifier_model.classifier.bias": "8a2cdf04a7882cb8d5ecf9442703191c5eaa049509c8cb8bf5ec26204d3ccd36"
+    },
+    "changed_parameter_names": [
+      "classifier_model.bert.embeddings.word_embeddings.weight",
+      "classifier_model.bert.embeddings.position_embeddings.weight",
+      "classifier_model.bert.embeddings.token_type_embeddings.weight",
+      "classifier_model.bert.embeddings.LayerNorm.weight",
+      "classifier_model.bert.embeddings.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.0.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.0.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.0.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.0.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.0.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.0.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.0.output.dense.weight",
+      "classifier_model.bert.encoder.layer.0.output.dense.bias",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.0.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.1.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.1.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.1.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.1.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.1.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.1.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.1.output.dense.weight",
+      "classifier_model.bert.encoder.layer.1.output.dense.bias",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.1.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.2.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.2.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.2.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.2.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.2.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.2.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.2.output.dense.weight",
+      "classifier_model.bert.encoder.layer.2.output.dense.bias",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.2.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.3.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.3.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.3.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.3.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.3.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.3.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.3.output.dense.weight",
+      "classifier_model.bert.encoder.layer.3.output.dense.bias",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.3.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.4.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.4.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.4.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.4.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.4.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.4.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.4.output.dense.weight",
+      "classifier_model.bert.encoder.layer.4.output.dense.bias",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.4.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.weight",
+      "classifier_model.bert.encoder.layer.5.attention.self.query.bias",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.weight",
+      "classifier_model.bert.encoder.layer.5.attention.self.key.bias",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.weight",
+      "classifier_model.bert.encoder.layer.5.attention.self.value.bias",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.weight",
+      "classifier_model.bert.encoder.layer.5.attention.output.dense.bias",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.5.attention.output.LayerNorm.bias",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.weight",
+      "classifier_model.bert.encoder.layer.5.intermediate.dense.bias",
+      "classifier_model.bert.encoder.layer.5.output.dense.weight",
+      "classifier_model.bert.encoder.layer.5.output.dense.bias",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.weight",
+      "classifier_model.bert.encoder.layer.5.output.LayerNorm.bias",
+      "classifier_model.bert.pooler.dense.weight",
+      "classifier_model.bert.pooler.dense.bias",
+      "classifier_model.classifier.weight",
+      "classifier_model.classifier.bias"
+    ],
+    "changed_parameter_count": 105,
+    "representative_differences": {
+      "backbone": {
+        "name": "classifier_model.bert.embeddings.word_embeddings.weight",
+        "l2_difference": 0.2457895278930664,
+        "l2_before": 138.0359649658203
+      },
+      "head": {
+        "name": "classifier_model.classifier.weight",
+        "l2_difference": 0.15826921164989471,
+        "l2_before": 0.6397854089736938
+      }
+    },
+    "backbone_changed": true,
+    "head_changed": true
+  },
+  "training": {
+    "steps": 225,
+    "examples_seen": 900,
+    "epochs_completed": 3,
+    "loss_history": [
+      {
+        "step": 1,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.573988437652588
+      },
+      {
+        "step": 2,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3931028842926025
+      },
+      {
+        "step": 3,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.8234909772872925
+      },
+      {
+        "step": 4,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4441828727722168
+      },
+      {
+        "step": 5,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.9606631398200989
+      },
+      {
+        "step": 6,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.5142921209335327
+      },
+      {
+        "step": 7,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.214333415031433
+      },
+      {
+        "step": 8,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0166912078857422
+      },
+      {
+        "step": 9,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1827621459960938
+      },
+      {
+        "step": 10,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8187516927719116
+      },
+      {
+        "step": 11,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1460257768630981
+      },
+      {
+        "step": 12,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.5597548484802246
+      },
+      {
+        "step": 13,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8826996088027954
+      },
+      {
+        "step": 14,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1012516021728516
+      },
+      {
+        "step": 15,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3679466247558594
+      },
+      {
+        "step": 16,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.230654001235962
+      },
+      {
+        "step": 17,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.052457332611084
+      },
+      {
+        "step": 18,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.5962324738502502
+      },
+      {
+        "step": 19,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.5566892623901367
+      },
+      {
+        "step": 20,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4862565994262695
+      },
+      {
+        "step": 21,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3435722589492798
+      },
+      {
+        "step": 22,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0568315982818604
+      },
+      {
+        "step": 23,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2616304159164429
+      },
+      {
+        "step": 24,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6775966286659241
+      },
+      {
+        "step": 25,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.5696886777877808
+      },
+      {
+        "step": 26,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0503584146499634
+      },
+      {
+        "step": 27,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2948510646820068
+      },
+      {
+        "step": 28,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.426403284072876
+      },
+      {
+        "step": 29,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4832818508148193
+      },
+      {
+        "step": 30,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4255329370498657
+      },
+      {
+        "step": 31,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8847439885139465
+      },
+      {
+        "step": 32,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8533864617347717
+      },
+      {
+        "step": 33,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6353249549865723
+      },
+      {
+        "step": 34,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1094694137573242
+      },
+      {
+        "step": 35,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6815981268882751
+      },
+      {
+        "step": 36,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6369157433509827
+      },
+      {
+        "step": 37,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1985042095184326
+      },
+      {
+        "step": 38,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0724958181381226
+      },
+      {
+        "step": 39,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6613531112670898
+      },
+      {
+        "step": 40,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.4007587730884552
+      },
+      {
+        "step": 41,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2636271715164185
+      },
+      {
+        "step": 42,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0276362895965576
+      },
+      {
+        "step": 43,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6120656132698059
+      },
+      {
+        "step": 44,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.1475077867507935
+      },
+      {
+        "step": 45,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3329827785491943
+      },
+      {
+        "step": 46,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.6329357624053955
+      },
+      {
+        "step": 47,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.7547532916069031
+      },
+      {
+        "step": 48,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.4398550987243652
+      },
+      {
+        "step": 49,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.465406060218811
+      },
+      {
+        "step": 50,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 2.1013076305389404
+      },
+      {
+        "step": 51,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.266993522644043
+      },
+      {
+        "step": 52,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.5985714197158813
+      },
+      {
+        "step": 53,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.737535297870636
+      },
+      {
+        "step": 54,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.942437469959259
+      },
+      {
+        "step": 55,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0527714490890503
+      },
+      {
+        "step": 56,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.9804050326347351
+      },
+      {
+        "step": 57,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.2021490335464478
+      },
+      {
+        "step": 58,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8318049907684326
+      },
+      {
+        "step": 59,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.4624074697494507
+      },
+      {
+        "step": 60,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0707582235336304
+      },
+      {
+        "step": 61,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.4278557300567627
+      },
+      {
+        "step": 62,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.0735702514648438
+      },
+      {
+        "step": 63,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.9286743402481079
+      },
+      {
+        "step": 64,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.3099720478057861
+      },
+      {
+        "step": 65,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8763467669487
+      },
+      {
+        "step": 66,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.8512477874755859
+      },
+      {
+        "step": 67,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.323099136352539
+      },
+      {
+        "step": 68,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.6663809418678284
+      },
+      {
+        "step": 69,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.93531733751297
+      },
+      {
+        "step": 70,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.8599050045013428
+      },
+      {
+        "step": 71,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 1.5822829008102417
+      },
+      {
+        "step": 72,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.9994049072265625
+      },
+      {
+        "step": 73,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.66512531042099
+      },
+      {
+        "step": 74,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.5572086572647095
+      },
+      {
+        "step": 75,
+        "epoch": 1,
+        "examples": 4,
+        "loss": 0.7156499028205872
+      },
+      {
+        "step": 76,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5357853770256042
+      },
+      {
+        "step": 77,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1092182397842407
+      },
+      {
+        "step": 78,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.736850380897522
+      },
+      {
+        "step": 79,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9512079954147339
+      },
+      {
+        "step": 80,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3511496782302856
+      },
+      {
+        "step": 81,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.588597297668457
+      },
+      {
+        "step": 82,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.4233794212341309
+      },
+      {
+        "step": 83,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.4773108959197998
+      },
+      {
+        "step": 84,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6314845681190491
+      },
+      {
+        "step": 85,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0660579204559326
+      },
+      {
+        "step": 86,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6813023090362549
+      },
+      {
+        "step": 87,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8809170722961426
+      },
+      {
+        "step": 88,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8486855030059814
+      },
+      {
+        "step": 89,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.170323133468628
+      },
+      {
+        "step": 90,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.064677357673645
+      },
+      {
+        "step": 91,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9267700910568237
+      },
+      {
+        "step": 92,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9716850519180298
+      },
+      {
+        "step": 93,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7092700004577637
+      },
+      {
+        "step": 94,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0829553604125977
+      },
+      {
+        "step": 95,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.5657137632369995
+      },
+      {
+        "step": 96,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9693572521209717
+      },
+      {
+        "step": 97,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0830299854278564
+      },
+      {
+        "step": 98,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7456979751586914
+      },
+      {
+        "step": 99,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0774039030075073
+      },
+      {
+        "step": 100,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8563543558120728
+      },
+      {
+        "step": 101,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.730981171131134
+      },
+      {
+        "step": 102,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5473183393478394
+      },
+      {
+        "step": 103,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.042944073677063
+      },
+      {
+        "step": 104,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9522491693496704
+      },
+      {
+        "step": 105,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1343368291854858
+      },
+      {
+        "step": 106,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6420300602912903
+      },
+      {
+        "step": 107,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.4468892216682434
+      },
+      {
+        "step": 108,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.167773723602295
+      },
+      {
+        "step": 109,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0401051044464111
+      },
+      {
+        "step": 110,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.25514546036720276
+      },
+      {
+        "step": 111,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3286117315292358
+      },
+      {
+        "step": 112,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8020912408828735
+      },
+      {
+        "step": 113,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0656147003173828
+      },
+      {
+        "step": 114,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2932312488555908
+      },
+      {
+        "step": 115,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.6369985938072205
+      },
+      {
+        "step": 116,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.8489816188812256
+      },
+      {
+        "step": 117,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9895108342170715
+      },
+      {
+        "step": 118,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5768121480941772
+      },
+      {
+        "step": 119,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7762386798858643
+      },
+      {
+        "step": 120,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7284665107727051
+      },
+      {
+        "step": 121,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9210601449012756
+      },
+      {
+        "step": 122,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7672058343887329
+      },
+      {
+        "step": 123,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.08641517162323
+      },
+      {
+        "step": 124,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.2848368883132935
+      },
+      {
+        "step": 125,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.19171246886253357
+      },
+      {
+        "step": 126,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1632845401763916
+      },
+      {
+        "step": 127,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0521725416183472
+      },
+      {
+        "step": 128,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.44969823956489563
+      },
+      {
+        "step": 129,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9175378680229187
+      },
+      {
+        "step": 130,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.089629888534546
+      },
+      {
+        "step": 131,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9609229564666748
+      },
+      {
+        "step": 132,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5503630638122559
+      },
+      {
+        "step": 133,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1541399955749512
+      },
+      {
+        "step": 134,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.447547197341919
+      },
+      {
+        "step": 135,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.0116918087005615
+      },
+      {
+        "step": 136,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.017351340502500534
+      },
+      {
+        "step": 137,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7301578521728516
+      },
+      {
+        "step": 138,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.3100332021713257
+      },
+      {
+        "step": 139,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.4940621852874756
+      },
+      {
+        "step": 140,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7983434796333313
+      },
+      {
+        "step": 141,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.1596736907958984
+      },
+      {
+        "step": 142,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.849143385887146
+      },
+      {
+        "step": 143,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.6296814680099487
+      },
+      {
+        "step": 144,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 1.5037298202514648
+      },
+      {
+        "step": 145,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.5664735436439514
+      },
+      {
+        "step": 146,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.9389535188674927
+      },
+      {
+        "step": 147,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7768120765686035
+      },
+      {
+        "step": 148,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.4011879563331604
+      },
+      {
+        "step": 149,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7462520599365234
+      },
+      {
+        "step": 150,
+        "epoch": 2,
+        "examples": 4,
+        "loss": 0.7172205448150635
+      },
+      {
+        "step": 151,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8174817562103271
+      },
+      {
+        "step": 152,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9714440703392029
+      },
+      {
+        "step": 153,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.328317254781723
+      },
+      {
+        "step": 154,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5016509890556335
+      },
+      {
+        "step": 155,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7228046655654907
+      },
+      {
+        "step": 156,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.4871666133403778
+      },
+      {
+        "step": 157,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6593320369720459
+      },
+      {
+        "step": 158,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.871699869632721
+      },
+      {
+        "step": 159,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7735413908958435
+      },
+      {
+        "step": 160,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.4211924076080322
+      },
+      {
+        "step": 161,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1506259441375732
+      },
+      {
+        "step": 162,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.17843423783779144
+      },
+      {
+        "step": 163,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6823704242706299
+      },
+      {
+        "step": 164,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7176254391670227
+      },
+      {
+        "step": 165,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9697871208190918
+      },
+      {
+        "step": 166,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.990554690361023
+      },
+      {
+        "step": 167,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5951883792877197
+      },
+      {
+        "step": 168,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.6264917850494385
+      },
+      {
+        "step": 169,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5112369656562805
+      },
+      {
+        "step": 170,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.20857621729373932
+      },
+      {
+        "step": 171,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.4483921527862549
+      },
+      {
+        "step": 172,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8568151593208313
+      },
+      {
+        "step": 173,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7294384241104126
+      },
+      {
+        "step": 174,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.751327633857727
+      },
+      {
+        "step": 175,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.32255348563194275
+      },
+      {
+        "step": 176,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.271230697631836
+      },
+      {
+        "step": 177,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.5838404893875122
+      },
+      {
+        "step": 178,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.313057541847229
+      },
+      {
+        "step": 179,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9345475435256958
+      },
+      {
+        "step": 180,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8842395544052124
+      },
+      {
+        "step": 181,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.6439807415008545
+      },
+      {
+        "step": 182,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6387768983840942
+      },
+      {
+        "step": 183,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8023958206176758
+      },
+      {
+        "step": 184,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8036824464797974
+      },
+      {
+        "step": 185,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9288402795791626
+      },
+      {
+        "step": 186,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9141647815704346
+      },
+      {
+        "step": 187,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.3496236503124237
+      },
+      {
+        "step": 188,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.07241737097501755
+      },
+      {
+        "step": 189,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8574427366256714
+      },
+      {
+        "step": 190,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7982097864151001
+      },
+      {
+        "step": 191,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.1936736106872559
+      },
+      {
+        "step": 192,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.3334253430366516
+      },
+      {
+        "step": 193,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.981737494468689
+      },
+      {
+        "step": 194,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.726918637752533
+      },
+      {
+        "step": 195,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.6130460500717163
+      },
+      {
+        "step": 196,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7511149048805237
+      },
+      {
+        "step": 197,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.3479108512401581
+      },
+      {
+        "step": 198,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7710378766059875
+      },
+      {
+        "step": 199,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0239176750183105
+      },
+      {
+        "step": 200,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9766814708709717
+      },
+      {
+        "step": 201,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.03618583828210831
+      },
+      {
+        "step": 202,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7413746118545532
+      },
+      {
+        "step": 203,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7475517392158508
+      },
+      {
+        "step": 204,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9959612488746643
+      },
+      {
+        "step": 205,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.4398747682571411
+      },
+      {
+        "step": 206,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9668049216270447
+      },
+      {
+        "step": 207,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8675771355628967
+      },
+      {
+        "step": 208,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0578185319900513
+      },
+      {
+        "step": 209,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7611152529716492
+      },
+      {
+        "step": 210,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.222798228263855
+      },
+      {
+        "step": 211,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.3371412754058838
+      },
+      {
+        "step": 212,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0036261081695557
+      },
+      {
+        "step": 213,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.2741195857524872
+      },
+      {
+        "step": 214,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7929714918136597
+      },
+      {
+        "step": 215,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.2805519104003906
+      },
+      {
+        "step": 216,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.8261030912399292
+      },
+      {
+        "step": 217,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.4324631690979004
+      },
+      {
+        "step": 218,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.45178985595703125
+      },
+      {
+        "step": 219,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.498690664768219
+      },
+      {
+        "step": 220,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.224668025970459
+      },
+      {
+        "step": 221,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.0132676362991333
+      },
+      {
+        "step": 222,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.9505136013031006
+      },
+      {
+        "step": 223,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 0.7725392580032349
+      },
+      {
+        "step": 224,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.5617458820343018
+      },
+      {
+        "step": 225,
+        "epoch": 3,
+        "examples": 4,
+        "loss": 1.5103861093521118
+      }
+    ],
+    "epoch_history": [
+      {
+        "epoch": 1,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.0712330289681753
+      },
+      {
+        "epoch": 2,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.9226508010923863
+      },
+      {
+        "epoch": 3,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.847701377471288
+      }
+    ],
+    "stopped_by_max_steps": false
+  },
+  "runtime": {
+    "elapsed_seconds": 24.968686875421554,
+    "elapsed_scope": "through both checkpoint saves, before run.json write",
+    "memory": {
+      "cpu_max_rss_bytes": 1312587776,
+      "cpu_max_rss_raw": 1312587776,
+      "cpu_max_rss_raw_unit": "bytes",
+      "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+      "mps_current_allocated_bytes": 374384128,
+      "mps_driver_allocated_bytes": 2256502784,
+      "mps_measurement": "point-in-time, not peak"
+    }
+  },
+  "completed_at": "2026-11-11T11:03:41.547152+00:00"
+}

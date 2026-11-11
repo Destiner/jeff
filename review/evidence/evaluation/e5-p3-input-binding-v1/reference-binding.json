@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-11-11T14:12:10.951877+00:00",
+  "inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-input-binding-v1/inputs.json",
+    "sha256": "6e61e68dc1805d7797d14c62db2a7a36c21a8265bf672525f1ef691e17365baa"
+  },
+  "reference_bindings": [
+    {
+      "name": "v2-original",
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+        "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+      },
+      "matched_inputs": 300
+    },
+    {
+      "name": "v2-reversed",
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "sha256": "06b13a5697992140dfd807cef68985d3bfbfec88eec3b7131436d16322a454ad"
+      },
+      "matched_inputs": 300
+    },
+    {
+      "name": "probes-paired",
+      "reference": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "matched_inputs": 24
+    }
+  ],
+  "source_inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inference-inputs.json",
+    "sha256": "c4c91dda664233b5e1d9ce430e391be12e6a12e823a08884e892cbc4811a9a9b"
+  },
+  "code": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/common.py",
+    "sha256": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+  },
+  "no_model_loads": true,
+  "additional_spend_gbp": 0
+}

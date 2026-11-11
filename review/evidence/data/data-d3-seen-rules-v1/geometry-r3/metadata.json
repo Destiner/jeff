@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-d3-seen-rules-v1-geometry-r3",
+  "job_id": "data-d3-seen-rules-v1-geometry-r3",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "usage_constraints": {
+    "usage": "validation_only_never_train",
+    "permanently_training_excluded": true,
+    "origin": "Original synthetic content authored under existing provider terms; no private records used; no additional redistribution license asserted."
+  },
+  "row_counts": {
+    "validation": 48
+  },
+  "group_counts": {
+    "validation": 24
+  },
+  "mechanism_count": 4,
+  "policy_count": 24,
+  "revision_author": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai"
+  },
+  "reason": "Bounded incorrect cooldown offered-start repair; source starts facts explicitly updated; no relabeling.",
+  "field_scope": {
+    "validation.jsonl": "incorrect cooldown options[].text",
+    "audit_cases.jsonl": "cooldown facts.starts",
+    "source_cases.jsonl": "cooldown facts.starts and source distractors if present"
+  },
+  "parent": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2",
+  "parent_hashes": {
+    "audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "audit_cases.jsonl": "36c958bd2d5518fd3af6238bae88c6bf0cc5bdc5465f395f0bb8020f8d11c79b",
+    "generation_review.md": "d25da8040b4e31703a035d60c14355b3ea7efc9ba4dc11ea539701fb683c8d6c",
+    "group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "metadata.json": "c5fea73b62e76cce54d25616dea9b7e681efea6a9413b7c48b251bddd0c7610f",
+    "revision.py": "e0f7cc84dacb5f9f4513d38ff43c2735e07848b12dc393f556f0e9711aa6b80d",
+    "revision_map.json": "6c3b8b94a956e96da3d8ae5a54e7ca6df8bf65b9d57e1a739f82e31c6a8cb653",
+    "source_cases.jsonl": "955b762f49d66e0865c774b2c3b321c3721fb9b94625e7ad3be4fe937a902bd5",
+    "validation.jsonl": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2",
+    "validation_report.json": "ab2c3fae8be9c2f4a122092a196d25245007c72114de8089712b426af39d975b"
+  },
+  "generation_settings": {
+    "method": "Deterministic bounded repair from hashed r2 parents and preselected rank plan; no model predictions",
+    "source_revision": "geometry-r3",
+    "script": "revise.py",
+    "hashes": {
+      "audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+      "audit_cases.jsonl": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e",
+      "change-map.json": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456",
+      "diagnostics.json": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555",
+      "distractor-rationales.json": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166",
+      "generation_review.md": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9",
+      "group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+      "rank-plan.json": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+      "revise.py": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf",
+      "source_cases.jsonl": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6",
+      "validation.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+      "validation_report.json": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d"
+    }
+  },
+  "limitations": [
+    "Same-agent pure solver and text reconstruction consistency, not independent verification or authorship.",
+    "Known reviewer-exposed quality issue repaired before publication; this is not untouched validation. No model predictions informed repair.",
+    "Balanced marginal clock ranks do not establish shortcut freedom; paired templates, boundary times, minute-neighbor cues, equal-length times versus long none text, target slots and rare none targets remain.",
+    "Some later choices are feasible but wrong only because an earlier listed start works; rank-one choices at tight between-booking boundaries can have only infeasible later alternatives.",
+    "No new cases, policy expansion, targets, model calls or generation after this bounded repair. Freeze is final for this task.",
+    "No tests, lint, build, tokenizer, model inference, network, API calls, Git, mailbox or spending performed. Validation-only, never train."
+  ],
+  "parent_lineage": {
+    "direct_parent": "geometry-r2",
+    "inherited_parent": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry",
+    "review_trigger": "second-earliest clock prior hit 11/12 including all 11 non-none targets"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "e6-inputs/1",
+  "inputs": [
+    {
+      "name": "v2-original",
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "rows": 300,
+      "unique_ids": 300,
+      "strict_label_free": true
+    },
+    {
+      "name": "v2-reversed",
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "rows": 300,
+      "unique_ids": 300,
+      "strict_label_free": true
+    },
+    {
+      "name": "probes-paired",
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "rows": 24,
+      "unique_ids": 24,
+      "strict_label_free": true
+    }
+  ],
+  "total_presentations": 624,
+  "reuse": "Byte-identical E5 inputs; no D3 or extra reversal. Only these input files enter ML inference."
+}

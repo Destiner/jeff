@@ -1,0 +1,98 @@
+{
+  "completed_at": "2026-11-11T16:17:22.157729+00:00",
+  "status": "bound_for_independent_E6_scoring",
+  "audit": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/audit/audit.json",
+    "sha256": "40a7e9953cd8d9852563ebbc32e3c03c2b51eae870f0213ac0547233b9b26801"
+  },
+  "run": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/receipt.json",
+    "sha256": "6f164b6c1b9feb6d09e6eed6afacf8e709e7968017aad6b2ab8f3ac5310255e8"
+  },
+  "process": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/process-receipt.json",
+    "sha256": "a55570868eea6565d7ed41209cdbe8c3b0537edd56da104e8ad0c79bdb54535e"
+  },
+  "delivery": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/delivery-summary.json",
+    "sha256": "435e84db493dff8258d49bbaf4df255aa930323e0ed6e1e5507d2ce018def071"
+  },
+  "manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint-manifest.json",
+    "sha256": "1fe8f6d169301c76698b78b8d7b067c4b10868fb755324896352d1f61310960f"
+  },
+  "source_run": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/receipt.json",
+    "sha256": "893c6a1b154734133d49ce41036a05bef2b5830c3615070b3547d56aebff1657"
+  },
+  "predictions": [
+    {
+      "name": "v2-original",
+      "input": {
+        "name": "v2-original",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+        "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/v2-original.jsonl",
+        "sha256": "4de4808d98c8b39a703e95df0a2a539f248de0fb22dc7c9cb9fdcd11dcf90a72"
+      },
+      "rows": 300
+    },
+    {
+      "name": "v2-reversed",
+      "input": {
+        "name": "v2-reversed",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+        "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "rows": 300,
+        "unique_ids": 300,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/v2-reversed.jsonl",
+        "sha256": "82f2657c8c9a0908953169fccc917eb117d219faea01a0f824df6eeb14fab615"
+      },
+      "rows": 300
+    },
+    {
+      "name": "probes-paired",
+      "input": {
+        "name": "probes-paired",
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+        "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "rows": 24,
+        "unique_ids": 24,
+        "strict_label_free": true
+      },
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run/probes-paired.jsonl",
+        "sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+      },
+      "rows": 24
+    }
+  ],
+  "same_P3_fields": [
+    "config",
+    "config_sha256",
+    "chat_template_sha256",
+    "suites",
+    "environment"
+  ],
+  "runtime_code": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/release/src/jeff/runtime/qwen_challenger.py",
+    "sha256": "cb07ceaf8af6cf1b06b08d11aff7a234031877428eb0aa27e37ad609eef731a5"
+  },
+  "manifest_validator_code": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/release/src/jeff/runtime/qwen_checkpoint.py",
+    "sha256": "e5fa5fe33c8cc2b87da98fa7aded21e98c8d1781449faf74a9a2a25660b5e62c"
+  },
+  "limitations": [
+    "Runtime owns actual trained-weight byte validation and load; Evaluation did not reread giant tensor bytes or witness historical loaded tensors.",
+    "Complete recorded token/prompt audits and configuration equal P3, with separate trained-byte identity and original base lineage.",
+    "Receipt hashes bind local evidence, not authenticated execution or cryptographic time. No learned-quality or calibration claim before independent scoring."
+  ]
+}

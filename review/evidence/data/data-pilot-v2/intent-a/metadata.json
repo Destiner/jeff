@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-a-r1",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "generation_revision": "intent-a-r1",
+    "source_revision": "source-cases-r1",
+    "assignment_revision": "pilot-v2.json/intent-a frozen g001-g240",
+    "assignment_config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+    "contract_sha256": "259772f47ed6aa432b71f9ba351cf332304c432b49c8536accc73ba676a9eeb6",
+    "artifact_sha256": {
+      "group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "authoring_record.json": "25af7c25e123728747329ea9e7691eef2b7e1522e51dc0a0cb99ad85f90af19d",
+      "source_cases.txt": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+      "generate.py": "fa2cb79449482b9acef7feb2eef9ac2d55b507c156b911d2d23fbb327ad2b684",
+      "generation_review.md": "911a02f7423e3a1a72649dd621f52eb91172f77566e1829babda0864508b28ef",
+      "train.jsonl": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633",
+      "validation.jsonl": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435"
+    },
+    "method": "Direct agent-authored independent requests and rival intents; CPU serialization and shuffled choices only.",
+    "seed": 741903,
+    "sampling": {
+      "temperature": null,
+      "top_p": null,
+      "note": "Harness settings unavailable; no API calls made."
+    },
+    "source_format": "One authored group per line: short group ID|state|teacher target text|rival texts. Correct source choice is first; exported positions are balanced and randomized.",
+    "question": "What is the primary intent of this request?",
+    "position_method": "Seeded shuffled balanced schedules independently within split and option count; independently shuffled rivals.",
+    "rows_per_group": 1,
+    "parent_rows_included": 0
+  },
+  "usage_constraints": {
+    "origin": "Original synthetic text generated using existing approved agent access under existing provider terms.",
+    "redistribution": "No independent redistribution-license claim; subject to applicable provider terms.",
+    "privacy": "No private customer or company records used.",
+    "features": "Only state, question and option text are model inputs. IDs, targets, provenance and assignments are metadata.",
+    "validation": "Validation labels are for validation only, not weight updates."
+  },
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "limitations": [
+    "Teacher-authored labels and same-session semantic review are not independently verified correctness.",
+    "Immutable teacher revision and provider sampling parameters were not exposed.",
+    "No tokenizer or ML was loaded; the parent must audit the 256-token pair budget.",
+    "Historical shards and other producer data were not inspected; global deduplication remains a parent gate.",
+    "Domains and singleton scenario plans are distinct; generic request categories intentionally recur."
+  ]
+}

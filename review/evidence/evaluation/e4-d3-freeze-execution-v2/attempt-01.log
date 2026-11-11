@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 380, in <module>
+    main()
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 167, in main
+    pin(plan_path, provenance["plan_sha256"])
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 92, in pin
+    require(expected is None or item["sha256"] == expected, f"Hash mismatch: {path}")
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 37, in require
+    raise ValueError(message)
+ValueError: Hash mismatch: /Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/authoring-plan.json

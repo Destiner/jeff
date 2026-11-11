@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "jeff-data-pilot-v1-sentiment-agent-r1",
+  "task_family": "sentiment",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null,
+    "revision_status": "Not exposed by the agent environment"
+  },
+  "source": {
+    "generation_job": "jeff-data-pilot-v1-sentiment-agent-r1",
+    "kind": "original synthetic agent-authored reviews and teacher labels",
+    "source_group_revision": "sentiment-domains-r1",
+    "mechanism_revision": "agent-review-situations-r1",
+    "group_assignments": "group_assignments.json",
+    "generator": "generate.py"
+  },
+  "generation_settings": {
+    "method": "Existing agent text generation; Python renders fixed authored cases and deterministic option rotation",
+    "temperature": null,
+    "top_p": null,
+    "sampling_seed": null,
+    "unknown_settings": "Teacher sampling parameters and immutable model revision were not exposed",
+    "option_order": "For 3 options global row index modulo 3; for every tenth row 4 options with four-way rotation; other option order alternates",
+    "external_datasets": false,
+    "network_generation": false,
+    "model_execution": false
+  },
+  "usage_constraints": {
+    "origin": "Original synthetic situations, no external datasets or private real records",
+    "terms": "Generated through existing provider access and subject to existing provider terms; no separately asserted redistribution license",
+    "provider_terms_independently_reviewed": false
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0,
+    "existing_access": "Existing agent access only; no additional billed calls or compute"
+  },
+  "row_counts": {
+    "train": 100,
+    "validation": 20
+  },
+  "group_counts": {
+    "train": 25,
+    "validation": 5
+  },
+  "class_counts": {
+    "train": {
+      "P": 25,
+      "N": 25,
+      "U": 25,
+      "M": 25
+    },
+    "validation": {
+      "N": 5,
+      "U": 5,
+      "M": 5,
+      "P": 5
+    }
+  },
+  "option_count_distribution": {
+    "4": 12,
+    "3": 108
+  },
+  "label_strategy": "Teacher-authored target labels; no executable semantic rule audit and no independent correctness verification",
+  "limitations": [
+    "Small synthetic English-only pilot; not representative of natural review frequency or writing styles",
+    "Explicit evaluative language and explicit mixed conclusions make some cases easier than ordinary reviews",
+    "Same teacher authored and reviewed the labels; self-review is not independent verification",
+    "Distinct validation domains do not eliminate shared phrasing or sentiment vocabulary across splits",
+    "Each group deliberately covers favorable, unfavorable, factual-neutral, and mixed situations; balanced authoring is not a real-world class prior",
+    "Mixed cases receive a mixed option; most other 3-option cases use positive, negative, neutral. This candidate-set pattern is an authoring shortcut, not proof of generalization",
+    "No sarcasm, implicit emotion, cultural variation, or genuinely unresolved ambiguity is represented"
+  ]
+}

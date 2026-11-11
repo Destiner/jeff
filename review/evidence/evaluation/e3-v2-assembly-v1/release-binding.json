@@ -1,0 +1,19 @@
+{
+  "publication": {
+    "path": "/Users/destiner/Code/jeff/artifacts/handoffs/data/008-v2-published-evaluation-model.md",
+    "sha256": "845cfd628c26f7b149e698f565b899f9f171c0026180e3d570581eb21007c90f"
+  },
+  "manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+    "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+  },
+  "provenance": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/provenance.json",
+    "sha256": "a55a3bc0ba76958e6e2b81ef8288c4d2fa008f18bd2ff106a8cb8b0321a4c5e3"
+  },
+  "new_source_allowlist": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/new-sources.json",
+    "sha256": "a618015f84769e005e93837d7be47e24ed95c6eb2d0c897a92b5b6fce2083b0f"
+  },
+  "basis": "Data008 publishes byte-identical r3 manifest; exact observed source allowlist inherited from verified r3 preparation; separate released producer metadata/assignment audit pending."
+}

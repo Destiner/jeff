@@ -1,0 +1,7 @@
+{
+  "parent_id": "data:pilot-v2:sentiment-b:g011:r01",
+  "old_state": "Quill Parcel sandwiched my tracing sheets between rigid boards. Not a crease survived the journey, so I could use every sheet for the drawing.",
+  "new_state": "Quill Parcel sandwiched my tracing sheets between rigid boards. Every sheet arrived uncreased, so I could use them all for the drawing.",
+  "reason": "Describe uncreased arrival, not unexplained removal of existing creases",
+  "target": "Unchanged positive-only teacher judgment"
+}

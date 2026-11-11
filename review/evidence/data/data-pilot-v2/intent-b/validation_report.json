@@ -1,0 +1,232 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-b-r1",
+  "status": "structural_checks_passed",
+  "scope": "This private shard only; teacher labels not independently verified.",
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "domain_counts": {
+    "train": 20,
+    "validation": 4
+  },
+  "independent_scenarios": 240,
+  "checks": {
+    "contract_fields_and_targets": "pass",
+    "unique_row_and_option_ids": "pass",
+    "one_row_per_frozen_group": "pass",
+    "frozen_domain_order_and_split": "pass",
+    "exact_state_duplicates": 0,
+    "normalized_state_duplicates": 0,
+    "exact_canonical_input_duplicates": 0,
+    "cross_split_group_overlap": 0,
+    "reserved_domain_assignments_absent_from_training": "pass",
+    "balanced_positions_by_split_option_count": "pass"
+  },
+  "target_position_counts_zero_based": {
+    "train/3_options": [
+      33,
+      34,
+      33
+    ],
+    "train/4_options": [
+      24,
+      25,
+      25,
+      24
+    ],
+    "train/5_options": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "train/6_options": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "validation/3_options": [
+      6,
+      7,
+      7
+    ],
+    "validation/4_options": [
+      5,
+      4,
+      5,
+      4
+    ],
+    "validation/5_options": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "validation/6_options": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "length_and_overlap_diagnostics": {
+    "train/3_options": {
+      "rows": 100,
+      "unique_longest_target": 20,
+      "unique_shortest_target": 8,
+      "target_unique_max_state_word_overlap": 37,
+      "mean_target_words": 4.04,
+      "mean_distractor_words": 3.815
+    },
+    "train/4_options": {
+      "rows": 98,
+      "unique_longest_target": 25,
+      "unique_shortest_target": 2,
+      "target_unique_max_state_word_overlap": 38,
+      "mean_target_words": 4.143,
+      "mean_distractor_words": 3.782
+    },
+    "train/5_options": {
+      "rows": 1,
+      "unique_longest_target": 0,
+      "unique_shortest_target": 0,
+      "target_unique_max_state_word_overlap": 0,
+      "mean_target_words": 3.0,
+      "mean_distractor_words": 3.5
+    },
+    "train/6_options": {
+      "rows": 1,
+      "unique_longest_target": 0,
+      "unique_shortest_target": 0,
+      "target_unique_max_state_word_overlap": 1,
+      "mean_target_words": 3.0,
+      "mean_distractor_words": 4.0
+    },
+    "validation/3_options": {
+      "rows": 20,
+      "unique_longest_target": 7,
+      "unique_shortest_target": 1,
+      "target_unique_max_state_word_overlap": 6,
+      "mean_target_words": 4.2,
+      "mean_distractor_words": 3.725
+    },
+    "validation/4_options": {
+      "rows": 18,
+      "unique_longest_target": 1,
+      "unique_shortest_target": 2,
+      "target_unique_max_state_word_overlap": 8,
+      "mean_target_words": 3.889,
+      "mean_distractor_words": 3.63
+    },
+    "validation/5_options": {
+      "rows": 1,
+      "unique_longest_target": 0,
+      "unique_shortest_target": 0,
+      "target_unique_max_state_word_overlap": 1,
+      "mean_target_words": 5.0,
+      "mean_distractor_words": 3.75
+    },
+    "validation/6_options": {
+      "rows": 1,
+      "unique_longest_target": 0,
+      "unique_shortest_target": 0,
+      "target_unique_max_state_word_overlap": 1,
+      "mean_target_words": 4.0,
+      "mean_distractor_words": 3.6
+    }
+  },
+  "max_words": {
+    "state": 28,
+    "question": 5,
+    "option": 6,
+    "state_question_single_option": 38
+  },
+  "cross_split_lexical_top10": [
+    {
+      "jaccard": 0.2174,
+      "train_id": "data:pilot-v2:intent-b:g175:r01",
+      "validation_id": "data:pilot-v2:intent-b:g208:r01"
+    },
+    {
+      "jaccard": 0.1667,
+      "train_id": "data:pilot-v2:intent-b:g167:r01",
+      "validation_id": "data:pilot-v2:intent-b:g208:r01"
+    },
+    {
+      "jaccard": 0.16,
+      "train_id": "data:pilot-v2:intent-b:g076:r01",
+      "validation_id": "data:pilot-v2:intent-b:g208:r01"
+    },
+    {
+      "jaccard": 0.1538,
+      "train_id": "data:pilot-v2:intent-b:g155:r01",
+      "validation_id": "data:pilot-v2:intent-b:g208:r01"
+    },
+    {
+      "jaccard": 0.1481,
+      "train_id": "data:pilot-v2:intent-b:g197:r01",
+      "validation_id": "data:pilot-v2:intent-b:g235:r01"
+    },
+    {
+      "jaccard": 0.1481,
+      "train_id": "data:pilot-v2:intent-b:g164:r01",
+      "validation_id": "data:pilot-v2:intent-b:g223:r01"
+    },
+    {
+      "jaccard": 0.1429,
+      "train_id": "data:pilot-v2:intent-b:g175:r01",
+      "validation_id": "data:pilot-v2:intent-b:g226:r01"
+    },
+    {
+      "jaccard": 0.1429,
+      "train_id": "data:pilot-v2:intent-b:g040:r01",
+      "validation_id": "data:pilot-v2:intent-b:g240:r01"
+    },
+    {
+      "jaccard": 0.1429,
+      "train_id": "data:pilot-v2:intent-b:g014:r01",
+      "validation_id": "data:pilot-v2:intent-b:g226:r01"
+    },
+    {
+      "jaccard": 0.1429,
+      "train_id": "data:pilot-v2:intent-b:g013:r01",
+      "validation_id": "data:pilot-v2:intent-b:g202:r01"
+    }
+  ],
+  "deferred_to_parent": [
+    "256-token audit",
+    "historical and cross-producer duplicate/split audit",
+    "separate-session teacher spot review"
+  ],
+  "revisions": {
+    "generation_revision": "intent-b-generator-r1",
+    "source_revision": "intent-b-source-r1",
+    "assignment_revision": "intent-b-assignment-r1",
+    "sha256": {
+      "generate.py": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0",
+      "source_cases.txt": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+      "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac"
+    },
+    "config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b"
+  },
+  "output_sha256": {
+    "train.jsonl": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+    "validation.jsonl": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c"
+  },
+  "metadata_sha256": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}

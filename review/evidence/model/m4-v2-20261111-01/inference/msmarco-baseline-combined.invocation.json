@@ -1,0 +1,36 @@
+{
+  "job": "msmarco-baseline-combined",
+  "suite": "combined",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-baseline-combined.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+    "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "rows": 300
+  },
+  "started_at": "2026-11-11T12:00:13.388623+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/empty-reload-cache/msmarco-baseline-combined",
+  "offline_environment": true,
+  "timeout_seconds": 120
+}

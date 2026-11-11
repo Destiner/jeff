@@ -1,0 +1,11 @@
+{
+  "dataset_id": "D4-audit-only-selected24-old-TRAIN",
+  "shards": [
+    {
+      "path": "selected-reference.jsonl",
+      "split": "train",
+      "rows": 24,
+      "sha256": "05480736ce2d48b9652f54f7637c6cfd3d01c0dd4c3487148cc0194d84d2c74b"
+    }
+  ]
+}

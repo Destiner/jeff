@@ -1,0 +1,1204 @@
+{
+  "groups": {
+    "data:pilot-v2:intent-b:g001": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "stalled handwheel repair"
+    },
+    "data:pilot-v2:intent-b:g002": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "replace broken foot pedal"
+    },
+    "data:pilot-v2:intent-b:g003": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "needle fitting guidance"
+    },
+    "data:pilot-v2:intent-b:g004": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "reschedule collection only"
+    },
+    "data:pilot-v2:intent-b:g005": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "service invoice copy"
+    },
+    "data:pilot-v2:intent-b:g006": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "cancel unused service slot"
+    },
+    "data:pilot-v2:intent-b:g007": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "bobbin tension diagnosis"
+    },
+    "data:pilot-v2:intent-b:g008": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "maintenance price estimate"
+    },
+    "data:pilot-v2:intent-b:g009": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "warranty claim progress"
+    },
+    "data:pilot-v2:intent-b:g010": {
+      "split": "train",
+      "domain": "sewing machine servicing",
+      "scenario_plan": "add overlocker to home visit"
+    },
+    "data:pilot-v2:intent-b:g011": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "spot treatment not full clean"
+    },
+    "data:pilot-v2:intent-b:g012": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "drying time advice"
+    },
+    "data:pilot-v2:intent-b:g013": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "correct service address"
+    },
+    "data:pilot-v2:intent-b:g014": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "receipt not reimbursement"
+    },
+    "data:pilot-v2:intent-b:g015": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "report colour bleed"
+    },
+    "data:pilot-v2:intent-b:g016": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "request fabric suitability check"
+    },
+    "data:pilot-v2:intent-b:g017": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "cancel sofa appointment"
+    },
+    "data:pilot-v2:intent-b:g018": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "quote for dining chairs"
+    },
+    "data:pilot-v2:intent-b:g019": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "repeat clean under guarantee"
+    },
+    "data:pilot-v2:intent-b:g020": {
+      "split": "train",
+      "domain": "upholstery cleaning",
+      "scenario_plan": "decline protection spray and request deodorising"
+    },
+    "data:pilot-v2:intent-b:g021": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "shift one midday walk"
+    },
+    "data:pilot-v2:intent-b:g022": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "meet unfamiliar walker"
+    },
+    "data:pilot-v2:intent-b:g023": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "pause walks during recovery"
+    },
+    "data:pilot-v2:intent-b:g024": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "replace lost key"
+    },
+    "data:pilot-v2:intent-b:g025": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "retrieve route log"
+    },
+    "data:pilot-v2:intent-b:g026": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "refund missed visit"
+    },
+    "data:pilot-v2:intent-b:g027": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "solo rather than pack walk"
+    },
+    "data:pilot-v2:intent-b:g028": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "add second household dog"
+    },
+    "data:pilot-v2:intent-b:g029": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "update emergency contact"
+    },
+    "data:pilot-v2:intent-b:g030": {
+      "split": "train",
+      "domain": "dog walking",
+      "scenario_plan": "instructions for booking portal"
+    },
+    "data:pilot-v2:intent-b:g031": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "move to beginner level"
+    },
+    "data:pilot-v2:intent-b:g032": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "replace dance partner name"
+    },
+    "data:pilot-v2:intent-b:g033": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "request practice recording"
+    },
+    "data:pilot-v2:intent-b:g034": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "book private wedding session"
+    },
+    "data:pilot-v2:intent-b:g035": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "refund cancelled workshop"
+    },
+    "data:pilot-v2:intent-b:g036": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "ask shoe requirements"
+    },
+    "data:pilot-v2:intent-b:g037": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "pause subscription after injury"
+    },
+    "data:pilot-v2:intent-b:g038": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "access attendance certificate"
+    },
+    "data:pilot-v2:intent-b:g039": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "report inaccessible studio"
+    },
+    "data:pilot-v2:intent-b:g040": {
+      "split": "train",
+      "domain": "dance lessons",
+      "scenario_plan": "decline audition and join social class"
+    },
+    "data:pilot-v2:intent-b:g041": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "repair hinge not pane"
+    },
+    "data:pilot-v2:intent-b:g042": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "replace cracked glass"
+    },
+    "data:pilot-v2:intent-b:g043": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "condensation warranty inspection"
+    },
+    "data:pilot-v2:intent-b:g044": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "change installation date"
+    },
+    "data:pilot-v2:intent-b:g045": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "obtain safety certificate"
+    },
+    "data:pilot-v2:intent-b:g046": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "quote secondary glazing"
+    },
+    "data:pilot-v2:intent-b:g047": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "temporary boarding request"
+    },
+    "data:pilot-v2:intent-b:g048": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "correct invoice tax detail"
+    },
+    "data:pilot-v2:intent-b:g049": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "learn cleaning method"
+    },
+    "data:pilot-v2:intent-b:g050": {
+      "split": "train",
+      "domain": "window glazing",
+      "scenario_plan": "cancel measuring visit"
+    },
+    "data:pilot-v2:intent-b:g051": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "change compost grade"
+    },
+    "data:pilot-v2:intent-b:g052": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "reduce delivery quantity"
+    },
+    "data:pilot-v2:intent-b:g053": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "move drop point"
+    },
+    "data:pilot-v2:intent-b:g054": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "find delivery status"
+    },
+    "data:pilot-v2:intent-b:g055": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "obtain weight ticket"
+    },
+    "data:pilot-v2:intent-b:g056": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "report contaminated load"
+    },
+    "data:pilot-v2:intent-b:g057": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "refund missing bags"
+    },
+    "data:pilot-v2:intent-b:g058": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "ask spreading guidance"
+    },
+    "data:pilot-v2:intent-b:g059": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "book sack collection"
+    },
+    "data:pilot-v2:intent-b:g060": {
+      "split": "train",
+      "domain": "allotment compost delivery",
+      "scenario_plan": "cancel recurring order"
+    },
+    "data:pilot-v2:intent-b:g061": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "switch dietary class"
+    },
+    "data:pilot-v2:intent-b:g062": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "add helper not seat"
+    },
+    "data:pilot-v2:intent-b:g063": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "retrieve ingredient list"
+    },
+    "data:pilot-v2:intent-b:g064": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "reschedule existing course"
+    },
+    "data:pilot-v2:intent-b:g065": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "claim duplicate charge"
+    },
+    "data:pilot-v2:intent-b:g066": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "ask oven requirements"
+    },
+    "data:pilot-v2:intent-b:g067": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "book advanced session"
+    },
+    "data:pilot-v2:intent-b:g068": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "obtain attendance proof"
+    },
+    "data:pilot-v2:intent-b:g069": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "report missing online link"
+    },
+    "data:pilot-v2:intent-b:g070": {
+      "split": "train",
+      "domain": "baking classes",
+      "scenario_plan": "decline kit and request recipe"
+    },
+    "data:pilot-v2:intent-b:g071": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "retrieve prior return"
+    },
+    "data:pilot-v2:intent-b:g072": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "recover portal access"
+    },
+    "data:pilot-v2:intent-b:g073": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "correct download recipient"
+    },
+    "data:pilot-v2:intent-b:g074": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "request certified copy"
+    },
+    "data:pilot-v2:intent-b:g075": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "check missing employer statement"
+    },
+    "data:pilot-v2:intent-b:g076": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "get fee receipt"
+    },
+    "data:pilot-v2:intent-b:g077": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "stop postal copies"
+    },
+    "data:pilot-v2:intent-b:g078": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "ask retention period"
+    },
+    "data:pilot-v2:intent-b:g079": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "request accessible format"
+    },
+    "data:pilot-v2:intent-b:g080": {
+      "split": "train",
+      "domain": "tax document retrieval",
+      "scenario_plan": "remove duplicate archive record"
+    },
+    "data:pilot-v2:intent-b:g081": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "exchange wrong hose diameter"
+    },
+    "data:pilot-v2:intent-b:g082": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "seek filter setup steps"
+    },
+    "data:pilot-v2:intent-b:g083": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "replace faulty heater"
+    },
+    "data:pilot-v2:intent-b:g084": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "track live plant order"
+    },
+    "data:pilot-v2:intent-b:g085": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "cancel recurring food shipment"
+    },
+    "data:pilot-v2:intent-b:g086": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "request compatibility advice"
+    },
+    "data:pilot-v2:intent-b:g087": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "retrieve purchase receipt"
+    },
+    "data:pilot-v2:intent-b:g088": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "report leaking seal"
+    },
+    "data:pilot-v2:intent-b:g089": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "change delivery recipient"
+    },
+    "data:pilot-v2:intent-b:g090": {
+      "split": "train",
+      "domain": "aquarium supplies",
+      "scenario_plan": "quote bulk substrate"
+    },
+    "data:pilot-v2:intent-b:g091": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "refill instead of replace"
+    },
+    "data:pilot-v2:intent-b:g092": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "return incompatible cartridge"
+    },
+    "data:pilot-v2:intent-b:g093": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "request installation instructions"
+    },
+    "data:pilot-v2:intent-b:g094": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "cancel subscription renewal"
+    },
+    "data:pilot-v2:intent-b:g095": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "correct paper pack quantity"
+    },
+    "data:pilot-v2:intent-b:g096": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "retrieve tax invoice"
+    },
+    "data:pilot-v2:intent-b:g097": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "report premature ink warning"
+    },
+    "data:pilot-v2:intent-b:g098": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "track delayed toner"
+    },
+    "data:pilot-v2:intent-b:g099": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "quote office stock supply"
+    },
+    "data:pilot-v2:intent-b:g100": {
+      "split": "train",
+      "domain": "printer consumables",
+      "scenario_plan": "update recycling pickup"
+    },
+    "data:pilot-v2:intent-b:g101": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "remove expired advert"
+    },
+    "data:pilot-v2:intent-b:g102": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "correct event time only"
+    },
+    "data:pilot-v2:intent-b:g103": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "request posting permission"
+    },
+    "data:pilot-v2:intent-b:g104": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "report covered safety notice"
+    },
+    "data:pilot-v2:intent-b:g105": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "find lost notice original"
+    },
+    "data:pilot-v2:intent-b:g106": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "ask print dimensions"
+    },
+    "data:pilot-v2:intent-b:g107": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "reserve display space"
+    },
+    "data:pilot-v2:intent-b:g108": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "challenge rejected advert"
+    },
+    "data:pilot-v2:intent-b:g109": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "unsubscribe from digest"
+    },
+    "data:pilot-v2:intent-b:g110": {
+      "split": "train",
+      "domain": "community noticeboards",
+      "scenario_plan": "request accessible notice version"
+    },
+    "data:pilot-v2:intent-b:g111": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "relocate sensor not replace"
+    },
+    "data:pilot-v2:intent-b:g112": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "request alarm training"
+    },
+    "data:pilot-v2:intent-b:g113": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "change installation entry contact"
+    },
+    "data:pilot-v2:intent-b:g114": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "report false alarm"
+    },
+    "data:pilot-v2:intent-b:g115": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "quote extra camera"
+    },
+    "data:pilot-v2:intent-b:g116": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "obtain installation certificate"
+    },
+    "data:pilot-v2:intent-b:g117": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "cancel monitoring renewal"
+    },
+    "data:pilot-v2:intent-b:g118": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "reset app access"
+    },
+    "data:pilot-v2:intent-b:g119": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "repair doorbell wiring"
+    },
+    "data:pilot-v2:intent-b:g120": {
+      "split": "train",
+      "domain": "home security installation",
+      "scenario_plan": "decline upgrade and book inspection"
+    },
+    "data:pilot-v2:intent-b:g121": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "repair connector not battery swap"
+    },
+    "data:pilot-v2:intent-b:g122": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "request range diagnosis"
+    },
+    "data:pilot-v2:intent-b:g123": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "ask safe storage advice"
+    },
+    "data:pilot-v2:intent-b:g124": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "track bench repair"
+    },
+    "data:pilot-v2:intent-b:g125": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "correct collection address"
+    },
+    "data:pilot-v2:intent-b:g126": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "claim repair warranty"
+    },
+    "data:pilot-v2:intent-b:g127": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "retrieve diagnostic report"
+    },
+    "data:pilot-v2:intent-b:g128": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "quote cell replacement"
+    },
+    "data:pilot-v2:intent-b:g129": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "cancel unstarted repair"
+    },
+    "data:pilot-v2:intent-b:g130": {
+      "split": "train",
+      "domain": "e-bike battery repairs",
+      "scenario_plan": "arrange battery disposal"
+    },
+    "data:pilot-v2:intent-b:g131": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "revise inventory only"
+    },
+    "data:pilot-v2:intent-b:g132": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "request in person survey"
+    },
+    "data:pilot-v2:intent-b:g133": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "clarify packing inclusion"
+    },
+    "data:pilot-v2:intent-b:g134": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "compare stair surcharge"
+    },
+    "data:pilot-v2:intent-b:g135": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "withdraw quotation request"
+    },
+    "data:pilot-v2:intent-b:g136": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "correct move date"
+    },
+    "data:pilot-v2:intent-b:g137": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "retrieve quote document"
+    },
+    "data:pilot-v2:intent-b:g138": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "ask quote validity"
+    },
+    "data:pilot-v2:intent-b:g139": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "add temporary storage pricing"
+    },
+    "data:pilot-v2:intent-b:g140": {
+      "split": "train",
+      "domain": "house removal quotations",
+      "scenario_plan": "decline full service ask van only"
+    },
+    "data:pilot-v2:intent-b:g141": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "retrieve attendance summary"
+    },
+    "data:pilot-v2:intent-b:g142": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "correct mistaken absence"
+    },
+    "data:pilot-v2:intent-b:g143": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "change report email"
+    },
+    "data:pilot-v2:intent-b:g144": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "ask attendance code meaning"
+    },
+    "data:pilot-v2:intent-b:g145": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "request signed hours statement"
+    },
+    "data:pilot-v2:intent-b:g146": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "report missing portal day"
+    },
+    "data:pilot-v2:intent-b:g147": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "stop automatic weekly report"
+    },
+    "data:pilot-v2:intent-b:g148": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "separate sibling records"
+    },
+    "data:pilot-v2:intent-b:g149": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "export date range"
+    },
+    "data:pilot-v2:intent-b:g150": {
+      "split": "train",
+      "domain": "childcare attendance records",
+      "scenario_plan": "restrict authorised access"
+    },
+    "data:pilot-v2:intent-b:g151": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "switch game table"
+    },
+    "data:pilot-v2:intent-b:g152": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "book newcomer tutorial"
+    },
+    "data:pilot-v2:intent-b:g153": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "cancel tournament place"
+    },
+    "data:pilot-v2:intent-b:g154": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "request accessibility seating"
+    },
+    "data:pilot-v2:intent-b:g155": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "retrieve event receipt"
+    },
+    "data:pilot-v2:intent-b:g156": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "report code of conduct breach"
+    },
+    "data:pilot-v2:intent-b:g157": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "ask miniature eligibility"
+    },
+    "data:pilot-v2:intent-b:g158": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "replace teammate name"
+    },
+    "data:pilot-v2:intent-b:g159": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "join waitlist"
+    },
+    "data:pilot-v2:intent-b:g160": {
+      "split": "train",
+      "domain": "tabletop gaming events",
+      "scenario_plan": "decline competitive format book casual session"
+    },
+    "data:pilot-v2:intent-b:g161": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "repair sole not replace shoes"
+    },
+    "data:pilot-v2:intent-b:g162": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "request stretch service"
+    },
+    "data:pilot-v2:intent-b:g163": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "quote zip replacement"
+    },
+    "data:pilot-v2:intent-b:g164": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "track repair readiness"
+    },
+    "data:pilot-v2:intent-b:g165": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "correct return address"
+    },
+    "data:pilot-v2:intent-b:g166": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "claim failed repair"
+    },
+    "data:pilot-v2:intent-b:g167": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "obtain payment receipt"
+    },
+    "data:pilot-v2:intent-b:g168": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "ask suede care method"
+    },
+    "data:pilot-v2:intent-b:g169": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "cancel dye treatment"
+    },
+    "data:pilot-v2:intent-b:g170": {
+      "split": "train",
+      "domain": "shoe repairs",
+      "scenario_plan": "retrieve forgotten insoles"
+    },
+    "data:pilot-v2:intent-b:g171": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "renew expiring permit"
+    },
+    "data:pilot-v2:intent-b:g172": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "correct holder address"
+    },
+    "data:pilot-v2:intent-b:g173": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "replace lost licence"
+    },
+    "data:pilot-v2:intent-b:g174": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "ask river coverage"
+    },
+    "data:pilot-v2:intent-b:g175": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "request payment receipt"
+    },
+    "data:pilot-v2:intent-b:g176": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "refund duplicate purchase"
+    },
+    "data:pilot-v2:intent-b:g177": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "check application status"
+    },
+    "data:pilot-v2:intent-b:g178": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "cancel auto renewal"
+    },
+    "data:pilot-v2:intent-b:g179": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "change licence start date"
+    },
+    "data:pilot-v2:intent-b:g180": {
+      "split": "train",
+      "domain": "fishing licence administration",
+      "scenario_plan": "learn online application steps"
+    },
+    "data:pilot-v2:intent-b:g181": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "restore saved stations"
+    },
+    "data:pilot-v2:intent-b:g182": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "add station URL"
+    },
+    "data:pilot-v2:intent-b:g183": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "repair speaker socket"
+    },
+    "data:pilot-v2:intent-b:g184": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "ask multiroom compatibility"
+    },
+    "data:pilot-v2:intent-b:g185": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "cancel premium service"
+    },
+    "data:pilot-v2:intent-b:g186": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "retrieve subscription invoice"
+    },
+    "data:pilot-v2:intent-b:g187": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "change sleep timer guidance"
+    },
+    "data:pilot-v2:intent-b:g188": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "replace faulty remote"
+    },
+    "data:pilot-v2:intent-b:g189": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "report station stream outage"
+    },
+    "data:pilot-v2:intent-b:g190": {
+      "split": "train",
+      "domain": "home internet radio",
+      "scenario_plan": "decline new hardware request setup help"
+    },
+    "data:pilot-v2:intent-b:g191": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "schedule crate collection"
+    },
+    "data:pilot-v2:intent-b:g192": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "recover missing deposit"
+    },
+    "data:pilot-v2:intent-b:g193": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "ask washing instructions"
+    },
+    "data:pilot-v2:intent-b:g194": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "correct container count"
+    },
+    "data:pilot-v2:intent-b:g195": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "change return location"
+    },
+    "data:pilot-v2:intent-b:g196": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "report damaged lid"
+    },
+    "data:pilot-v2:intent-b:g197": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "obtain return confirmation"
+    },
+    "data:pilot-v2:intent-b:g198": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "extend loan period"
+    },
+    "data:pilot-v2:intent-b:g199": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "cancel duplicate pickup"
+    },
+    "data:pilot-v2:intent-b:g200": {
+      "split": "train",
+      "domain": "reusable packaging returns",
+      "scenario_plan": "request smaller reusable box"
+    },
+    "data:pilot-v2:intent-b:g201": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "register first drone"
+    },
+    "data:pilot-v2:intent-b:g202": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "correct owner address"
+    },
+    "data:pilot-v2:intent-b:g203": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "replace certificate download"
+    },
+    "data:pilot-v2:intent-b:g204": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "check renewal status"
+    },
+    "data:pilot-v2:intent-b:g205": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "cancel duplicate registration"
+    },
+    "data:pilot-v2:intent-b:g206": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "ask weight category rule"
+    },
+    "data:pilot-v2:intent-b:g207": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "transfer ownership"
+    },
+    "data:pilot-v2:intent-b:g208": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "request payment receipt"
+    },
+    "data:pilot-v2:intent-b:g209": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "change operator contact email"
+    },
+    "data:pilot-v2:intent-b:g210": {
+      "split": "validation",
+      "domain": "drone flight registration",
+      "scenario_plan": "seek application guidance not submission"
+    },
+    "data:pilot-v2:intent-b:g211": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "book step free tour"
+    },
+    "data:pilot-v2:intent-b:g212": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "change ticket date only"
+    },
+    "data:pilot-v2:intent-b:g213": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "request refund for cancellation"
+    },
+    "data:pilot-v2:intent-b:g214": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "ask route duration"
+    },
+    "data:pilot-v2:intent-b:g215": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "replace participant name"
+    },
+    "data:pilot-v2:intent-b:g216": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "retrieve booking confirmation"
+    },
+    "data:pilot-v2:intent-b:g217": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "report guide no show"
+    },
+    "data:pilot-v2:intent-b:g218": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "reserve private tour"
+    },
+    "data:pilot-v2:intent-b:g219": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "decline evening walk ask daytime options"
+    },
+    "data:pilot-v2:intent-b:g220": {
+      "split": "validation",
+      "domain": "heritage walking tours",
+      "scenario_plan": "request audio accessibility information"
+    },
+    "data:pilot-v2:intent-b:g221": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "request hollow adjustment"
+    },
+    "data:pilot-v2:intent-b:g222": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "repair nicked blade"
+    },
+    "data:pilot-v2:intent-b:g223": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "check sharpening completion"
+    },
+    "data:pilot-v2:intent-b:g224": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "cancel duplicate appointment"
+    },
+    "data:pilot-v2:intent-b:g225": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "ask edge maintenance method"
+    },
+    "data:pilot-v2:intent-b:g226": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "obtain receipt"
+    },
+    "data:pilot-v2:intent-b:g227": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "change dropoff time only"
+    },
+    "data:pilot-v2:intent-b:g228": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "quote team sharpening"
+    },
+    "data:pilot-v2:intent-b:g229": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "report uneven edges after service"
+    },
+    "data:pilot-v2:intent-b:g230": {
+      "split": "validation",
+      "domain": "ice rink skate sharpening",
+      "scenario_plan": "decline rental skates book sharpening"
+    },
+    "data:pilot-v2:intent-b:g231": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "request embossed copy"
+    },
+    "data:pilot-v2:intent-b:g232": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "correct transcription error"
+    },
+    "data:pilot-v2:intent-b:g233": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "ask turnaround estimate"
+    },
+    "data:pilot-v2:intent-b:g234": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "change delivery address"
+    },
+    "data:pilot-v2:intent-b:g235": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "obtain service invoice"
+    },
+    "data:pilot-v2:intent-b:g236": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "cancel unstarted order"
+    },
+    "data:pilot-v2:intent-b:g237": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "request digital braille file"
+    },
+    "data:pilot-v2:intent-b:g238": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "ask source file requirements"
+    },
+    "data:pilot-v2:intent-b:g239": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "restrict confidential handling"
+    },
+    "data:pilot-v2:intent-b:g240": {
+      "split": "validation",
+      "domain": "braille transcription service",
+      "scenario_plan": "decline large print request braille quote"
+    }
+  }
+}

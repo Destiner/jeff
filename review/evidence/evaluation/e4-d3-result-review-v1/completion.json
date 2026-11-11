@@ -1,0 +1,99 @@
+{
+  "status": "no_blockers",
+  "owner_binding": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-owner-binding-v1/receipt.json",
+    "sha256": "ca6b1f5beacb8ba37078aee9d455e19ad7b86625c91e99982229865f946e2611"
+  },
+  "supplement": {
+    "status": "complete",
+    "boundary": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    "reference": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+      "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+    },
+    "inputs": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    "corpus": {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment/train.jsonl",
+      "sha256": "e918409e29cfef87ff8f830ffd0650849ec9d8ebdf5dd608e73935ca488e0d58"
+    },
+    "rows": 100,
+    "groups": 25,
+    "hits": {
+      "id": 0,
+      "group": 0,
+      "exact:ordered_input": 0,
+      "exact:orderfree_decision": 0,
+      "exact:state": 0,
+      "nfc_outerstrip:ordered_input": 0,
+      "nfc_outerstrip:orderfree_decision": 0,
+      "nfc_outerstrip:state": 0
+    },
+    "semantic_clearance": false,
+    "scope": "Supplement to immutable boundary; original superseded sentiment TRAIN bytes, no inference"
+  },
+  "final_rechecked_pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/superseded-sentiment-train-exclusion.json",
+      "sha256": "881b583f130a61a08707564f34999b12e559588de5d0bff8a9b3bf45d0d9c608"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e4-d3-seen-rules.md",
+      "sha256": "56e0e1902b86e97c4e131f8da8309ca0d8b844a39396fc7c8e45fb67a192e097"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e4-d3-v1.json",
+      "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/audit.json",
+      "sha256": "df302382e355d655d2cb2cde8bfd5293a06648a87e65ab8be91d6d830fc08811"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/comparison-reproduced.json",
+      "sha256": "652d21c03342bc835260f1ed28b161b5fc4f2b59ddce0a8efd4abf6e613dcb5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/comparison.json",
+      "sha256": "652d21c03342bc835260f1ed28b161b5fc4f2b59ddce0a8efd4abf6e613dcb5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/completion.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/independent-metrics.json",
+      "sha256": "2382a696641c567ede30f072d6ba66a91f18c157bbc1bc1562d4832a84b75014"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/review.md",
+      "sha256": "729b3382af44538c03b9e13afeed1f611c3a85b4568e67b2bfd441da55211dd1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/review.py",
+      "sha256": "45069478c4796d57c7bc932eaf88b0cae774cbacc9caead7c6916f206bc09ecd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/shared-report-reproduced.md",
+      "sha256": "96a8e6733e64ac1929416079c36368875897888a260ed0c8bf650015b042eeaf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-result-review-v1/shared-report.md",
+      "sha256": "b06b734320a7781717ce56b324b6c8ea41814edfaff0f40f4619570cb0c90b60"
+    }
+  ],
+  "workers_launched": 0,
+  "workers_running": 0,
+  "build_deferred_to_owner": true
+}

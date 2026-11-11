@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "e3-v2-freeze-v1-new-v2",
+  "shards": [
+    {
+      "path": "evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+      "split": "validation",
+      "rows": 240,
+      "sha256": "847cf4cb43df058a44366c7f3acbcebdb7faaea756fe21de8cc80cd5f90796eb"
+    }
+  ]
+}

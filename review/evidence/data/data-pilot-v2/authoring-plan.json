@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-pilot-v2",
+  "artifact_prefix": "data/data-pilot-v2",
+  "parent_manifest": "data/data-pilot-v1/manifest.json",
+  "parent_manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+  "preserve_parent_shards": true,
+  "expected_total_rows": {"train": 1500, "validation": 300},
+  "expected_new_rows_per_producer": {"train": 200, "validation": 40},
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "target_pair_token_budget": 256,
+  "boundary_policy": "Carry all v1 shards unchanged. Never move tiny/v1 validation examples, scenarios or derivatives to training. Keep graph reachability and Condorcet mechanisms validation-only. All new related variants share a preassigned group. Broad mathematical primitives and generic intent categories are not claimed disjoint.",
+  "avoid_new_training_domains": ["community apiary", "canal boat hire", "seed library", "makerspace laser cutting", "choir festival", "pet boarding", "observatory sessions", "luggage storage", "hearing-loop reviews", "seed exchanges"],
+  "assignments": [
+    {
+      "producer": "intent-a", "task_family": "intent", "group_namespace": "data:pilot-v2:intent-a:",
+      "group_number_ranges": {"train": [1, 200], "validation": [201, 240]}, "rows_per_group": 1,
+      "train_domains": ["home broadband support", "online course enrolment", "recipe newsletter subscriptions", "appliance repair", "commuter ferry support", "parking permits", "road maintenance reporting", "coworking desks", "fitness studio membership", "veterinary consultations", "passport photo shop", "event venue bookings", "mobile banking app access", "transit smartcards", "costume hire", "energy billing", "furniture assembly", "sports equipment hire", "hair appointments", "bookshop preorders"],
+      "validation_domains": ["maritime weather bulletin subscriptions", "antique appraisal bookings", "language exam certification", "climbing route information"]
+    },
+    {
+      "producer": "intent-b", "task_family": "intent", "group_namespace": "data:pilot-v2:intent-b:",
+      "group_number_ranges": {"train": [1, 200], "validation": [201, 240]}, "rows_per_group": 1,
+      "train_domains": ["sewing machine servicing", "upholstery cleaning", "dog walking", "dance lessons", "window glazing", "allotment compost delivery", "baking classes", "tax document retrieval", "aquarium supplies", "printer consumables", "community noticeboards", "home security installation", "e-bike battery repairs", "house removal quotations", "childcare attendance records", "tabletop gaming events", "shoe repairs", "fishing licence administration", "home internet radio", "reusable packaging returns"],
+      "validation_domains": ["drone flight registration", "heritage walking tours", "ice rink skate sharpening", "braille transcription service"]
+    },
+    {
+      "producer": "sentiment-a", "task_family": "sentiment", "group_namespace": "data:pilot-v2:sentiment-a:",
+      "group_number_ranges": {"train": [1, 200], "validation": [201, 240]}, "rows_per_group": 1,
+      "train_domains": ["electric kettles", "rain jackets", "puzzle books", "standing desks", "vacuum cleaners", "ceramic mugs", "sleep masks", "reusable shopping bags", "desk lamps", "kitchen scales", "toothbrushes", "travel pillows", "camera straps", "board game inserts", "window blinds", "bird feeders", "running socks", "notebooks", "shower heads", "portable fans"],
+      "validation_domains": ["kayak dry bags", "embroidery hoops", "violin shoulder rests", "folding picnic benches"]
+    },
+    {
+      "producer": "sentiment-b", "task_family": "sentiment", "group_namespace": "data:pilot-v2:sentiment-b:",
+      "group_number_ranges": {"train": [1, 200], "validation": [201, 240]}, "rows_per_group": 1,
+      "train_domains": ["guided cooking sessions", "stationery delivery", "podcast editing", "language dictionary apps", "garden fencing installation", "document scanning", "meal preparation kits", "tailoring fittings", "car wash visits", "local newspaper delivery", "online art lessons", "skateboard repairs", "charity shop purchases", "public park seating", "food market stalls", "photobook binding", "rehearsal room acoustics", "indoor plant watering services", "furniture restoration", "video caption editing"],
+      "validation_domains": ["orienteering map printing", "weaving loom rental", "falconry demonstrations", "community darkroom sessions"]
+    },
+    {
+      "producer": "rule-a", "task_family": "rule_application", "group_namespace": "data:pilot-v2:rule-a:",
+      "group_number_ranges": {"train": [1, 10], "validation": [11, 15]},
+      "rows_per_group_by_split": {"train": 20, "validation": 8},
+      "train_mechanisms": ["exact-count authorization", "lexicographic tuple ranking", "FIFO stock batch issuing", "two-stage unit conversion", "ordered fixed and percentage discount composition", "capped daily accrual", "nearest rounding with explicit half-up ties", "run-length encoding", "earliest-deadline scheduling feasibility", "permission union with explicit veto"],
+      "validation_mechanisms": ["longest common contiguous substring", "bracket-stack validation", "stable merge of sorted queues", "bit-vector parity constraints", "highest median measurement selection"]
+    },
+    {
+      "producer": "rule-b", "task_family": "rule_application", "group_namespace": "data:pilot-v2:rule-b:",
+      "group_number_ranges": {"train": [1, 10], "validation": [11, 15]},
+      "rows_per_group_by_split": {"train": 20, "validation": 8},
+      "train_mechanisms": ["calendar weekday progression", "ceiling pack count with minimum purchase", "proportional integer allocation with remainder", "range intersection clipping", "rate comparison by cross multiplication", "ordered coordinate transformations", "fixed batch yield after specified losses", "cooldown-constrained appointment scheduling", "exact symbol multiset matching", "nested conditional expression evaluation"],
+      "validation_mechanisms": ["subtractive Roman numeral parsing", "postfix arithmetic stack execution", "directed precedence topological ordering", "nearest Hamming codeword", "maximum consecutive-window mean"]
+    }
+  ],
+  "quality_gates": ["contract and hashes", "unchanged parent shards and all historical split boundaries", "no duplicate IDs or exact canonical inputs", "cross-split lexical candidates reviewed", "independent scenario and domain counts reported separately", "target/candidate/position shortcuts quantified", "rule targets audited against separately implemented semantics", "CPU tokenizer audit at 256", "separate-session teacher spot review"]
+}

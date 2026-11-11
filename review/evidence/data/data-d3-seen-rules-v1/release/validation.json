@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.1",
+  "manifest": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release.pending-f4ert8zc/validation-input.json",
+  "errors": [],
+  "warnings": [],
+  "likely_duplicates": [
+    {
+      "left": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "right": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "similarity": 0.6596,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "right": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "similarity": 0.7021,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "right": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "similarity": 0.7255,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "right": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "similarity": 0.7255,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "right": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "similarity": 0.7143,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "right": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "similarity": 0.6604,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p01:c01",
+      "right": "data:d3-seen-rules-v1:discount:p01:c02",
+      "similarity": 0.8636,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p02:c01",
+      "right": "data:d3-seen-rules-v1:discount:p02:c02",
+      "similarity": 0.8723,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p03:c01",
+      "right": "data:d3-seen-rules-v1:discount:p03:c02",
+      "similarity": 0.88,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p04:c01",
+      "right": "data:d3-seen-rules-v1:discount:p04:c02",
+      "similarity": 0.8868,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p05:c01",
+      "right": "data:d3-seen-rules-v1:discount:p05:c02",
+      "similarity": 0.8824,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:discount:p06:c01",
+      "right": "data:d3-seen-rules-v1:discount:p06:c02",
+      "similarity": 0.8846,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "similarity": 0.8235,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "similarity": 0.7714,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "similarity": 0.8182,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "similarity": 0.7879,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "similarity": 0.8235,
+      "same_group": true,
+      "cross_split": false
+    },
+    {
+      "left": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "right": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "similarity": 0.7879,
+      "same_group": true,
+      "cross_split": false
+    }
+  ],
+  "shards": [
+    {
+      "path": "data/data-d3-seen-rules-v1/release.pending-f4ert8zc/shards/geometry.jsonl",
+      "rows": 48,
+      "split": "validation"
+    },
+    {
+      "path": "data/data-d3-seen-rules-v1/release.pending-f4ert8zc/shards/ordering.jsonl",
+      "rows": 48,
+      "split": "validation"
+    }
+  ],
+  "manifest_sha256": "17c319fd40d316ddabcb3872e9863ae5ad4e4487b3317e3b0848c6c457a21cc1",
+  "dataset_id": "data-d3-seen-rules-v1",
+  "valid": true,
+  "rows": 96,
+  "counts": {
+    "validation/rule_application": 96
+  },
+  "groups": {
+    "validation/rule_application": 48
+  },
+  "option_counts": {
+    "validation/rule_application/3": 23,
+    "validation/rule_application/4": 73
+  },
+  "target_positions_zero_based": {
+    "validation/rule_application/3-choices/0": 8,
+    "validation/rule_application/3-choices/1": 8,
+    "validation/rule_application/3-choices/2": 7,
+    "validation/rule_application/4-choices/0": 19,
+    "validation/rule_application/4-choices/1": 18,
+    "validation/rule_application/4-choices/2": 18,
+    "validation/rule_application/4-choices/3": 18
+  },
+  "label_basis": {
+    "validation/rule_verified": 96
+  },
+  "duplicate_method": "Full-input NFC/outer-whitespace canonicalization preserving signs, brackets, case and internal spaces; order-independent choices. Heuristic state NFKC/casefold word-trigram Jaccard >=0.65; no semantic completeness claim",
+  "likely_duplicate_counts": {
+    "within_group": 18
+  },
+  "publication_manifest_sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9",
+  "scope": "Captured shard bytes validated in staging; published paths reference exactly the same hashes and counts after atomic directory rename."
+}

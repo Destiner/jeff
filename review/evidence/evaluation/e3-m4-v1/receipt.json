@@ -1,0 +1,1797 @@
+{
+  "schema_version": "e3-study/1",
+  "status": "released-validation",
+  "input_pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/m4-study.json",
+      "sha256": "99ff4a79235269e7f63acd6e80716e0629484ed58e7c01ef54072b522884ad16"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/receipt.json",
+      "sha256": "c2c265bcccccad0df01912b60bc48fef606da06b68bfb2ae2fe21480d9a6f295"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/receipt.json",
+      "sha256": "9a2761efc2c617b47139df703776a03e273f4bf1c2bc8fc1dd9b6b262355d4ee"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/historical-reuse.json",
+      "sha256": "f2dc8a51af0119c8650d6c418e9ac8b95901ed68f0f51b03a8b60c129aad0bb5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-release-identity-review-v1/reconciled-evidence.json",
+      "sha256": "c34a3cc2e3a97157f0899199cc53a6adacb66d5ae5bb527d64ae21e986865d34"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+      "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+      "sha256": "06b13a5697992140dfd807cef68985d3bfbfec88eec3b7131436d16322a454ad"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+      "sha256": "89711041d3a955243b913ded73fe6cbd92e1e9dacb621aeac02e233c0c8bde93"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-baseline-combined.jsonl",
+      "sha256": "408326dbfd80ed4e7818d7270e71ba78a0ae0e57708c432b9c903bb291ad3a02"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-baseline-reversed.jsonl",
+      "sha256": "95d15ca273a36615377f30cd340505ab46733a3b0040815a95408d20abc4c705"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-checkpoint-combined.jsonl",
+      "sha256": "cd7caf547d43e1b0aa30d0db60a7de7ea0c301ace0cd824c51b04f4b720180f9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-checkpoint-reversed.jsonl",
+      "sha256": "73f272a99d931363fd4ad99d6fd6ccffbb58ebc13110e855a68a78695ef03a2b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-baseline-combined.jsonl",
+      "sha256": "c7f5bbd3813a1104ac01deb4c66e550645be143009aba6e92ee7d74145269978"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-baseline-reversed.jsonl",
+      "sha256": "1ca798161e5d83c4a5298420d691280ec4ccfb586c16cb7348f346279f3d0780"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-checkpoint-combined.jsonl",
+      "sha256": "ffa16328d2d7b9224cd784bfd2c19445f5301949a41ee890233b7c6bcadcbe48"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-checkpoint-reversed.jsonl",
+      "sha256": "9b93f4c12633910fbf1ab1d47d1a4fdeb3033f389b2c52046c1436fdd31e9939"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl",
+      "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/data-pilot-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m2-new.jsonl",
+      "sha256": "6503c7f4238ab2db4cfe48ae7514b362c8ad1a9bc1b2dce15ad15555f3631f35"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/inputs.jsonl",
+      "sha256": "a3b65924d7ea3ed9b638457d42d7274ddcdad5a0d40ad5c87fd975da0a2846e0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-256-paired-predictions.jsonl",
+      "sha256": "47b98a73553fe0d8fbd534b8b1f256c343c743c686d42b6df3ab91f81021f394"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+      "sha256": "a855e69bdf9b3acb63cd2cca9dbf391fc61968394d86909508bbcd1c73746678"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m2-new-reversed.jsonl",
+      "sha256": "d1075d1093f27805c6d10e7e8959da14c2368dca2e9c525e7343518a5ad43824"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl",
+      "sha256": "3f122ed8b56d12ced0a62037f4917344d4830c3fb906a153b0afebf13dbe7a58"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-original-predictions.jsonl",
+      "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m3-new.jsonl",
+      "sha256": "80417e6515804703133e361581411f7129a4be1f6acaef85eab21bafb77a9b6f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e2-m3-v1/trained-msmarco-256-paired-predictions.jsonl",
+      "sha256": "407bead1f699ebe58cd8b81862fb154d1247039a4e96da0ef9038f0b1849efc2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/m3-new-reversed.jsonl",
+      "sha256": "9d6bf8e641d080a6c38f05dc9edf5418284c4e14a558429c0831c60e34cbc2ff"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+      "sha256": "13fafff508d5f9aaf1f316e5c74638c0d82e40d2b6a6ecf60d67a1153238ea98"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+      "sha256": "847cf4cb43df058a44366c7f3acbcebdb7faaea756fe21de8cc80cd5f90796eb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+      "sha256": "7a631e7d21f45be19e4464a1bfd7e95505dd0329b3c07d84071ae4d00581e682"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+      "sha256": "3e0d34c2d52a38d324041cb0154acc16ce41d6ffd1f121c328da9b3da99afd87"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+      "sha256": "f7e7b26e74e0fb33ef7745c6ef32bad366fba6d6eb190051135e8fceb3311895"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-baseline-probes.jsonl",
+      "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-checkpoint-probes.jsonl",
+      "sha256": "85706ef7077af88a2deb3f0f0941b5bd3e30a54b4687c27fab05d00623078c73"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-baseline-probes.jsonl",
+      "sha256": "af1fdce12ec02daa4118abda150a306dd6bb227e16e1ea8b0c8f6c7e471ce633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/msmarco-checkpoint-probes.jsonl",
+      "sha256": "2bc75b85e3b4e9998b8818e361d6278d11f5b7e89961b89f74c819194455ae3d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m2-e2-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/checkpoint-probes-predictions.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/study.py",
+      "sha256": "f164d687d6cbbdf344619054983b50d18cea6023db68045679841eb82371ac33"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/baseline.py",
+      "sha256": "cf1b9f8534c02d6bac662c24f20e45529bd81e595986c8bf9b35893926c8caa3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/common.py",
+      "sha256": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/compare.py",
+      "sha256": "924e3a6ed3aabb3e8ae5f5c899df845098a72b11a1d64accdd8449807e44398b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/score.py",
+      "sha256": "bd4c36e92cafe53b1cc7af3229052a187b60f99e69c0c95fee2f8fc0ea741f0c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/metrics.py",
+      "sha256": "0705d433f034200c36e57221807aa071d766f63ddc86e397f0586f30c3a92828"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/order.py",
+      "sha256": "1cef5a5d21d7fd3f482d413d05aaa0e25f955147e6190a5603c74e81c207ff3a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/render.py",
+      "sha256": "a57f4b8934451f567d042889e14c11ac341eff57eb5a43831a631a46e54f2ba9"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical.jsonl",
+        "--predictions",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start.jsonl",
+        "--predictions",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained.jsonl",
+        "--predictions",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start.jsonl",
+        "--predictions",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained.jsonl",
+        "--predictions",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained.jsonl",
+        "--predictions",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 8 prediction files on 300 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/comparison.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/comparison.json",
+        "sha256": "dda400470b2a797e1b7f51f31a224df4082974c576b7b9e6e75116b9b0106545"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order-report.json",
+        "sha256": "cdaf0901568676e1940be51214c4dd1662966b54a69d1157c640115635d199cc"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order-report.json",
+        "sha256": "ea486c47f0c447c1437a624d6239943df2df1f551147f1e5a11b62771529a342"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order-report.json",
+        "sha256": "7035ed0cfea16655c7a422dd768a52984901ab563c0630d4dcce87f7aadd9ae9"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order-report.json",
+        "sha256": "87d3d59cb139abfeecab2297471a46c3b76c0f8e80ce954c4070dca3c914cf40"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order-report.json",
+        "sha256": "a31a904b80754274a05b35de28a4572da4f2ecfb69062d9e88b32000c67415f5"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order-report.json",
+        "sha256": "045d09dde145afc18a614a49290694dc9930367fd2a9ae276b586416ac2317e8"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order-report.json",
+        "sha256": "ea30aeda73f80bb9f313a295c49cc16e4581571a5bf3552deb21b4816a9f2342"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 300 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order-report.json",
+        "sha256": "6c9dd474b89edea8cf83ca33d94522583c225c083395d462d02f381bd98b4933"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/comparison.json",
+        "--title",
+        "E3 released-validation: combined",
+        "--order",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order-report.json",
+        "--order",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order-report.json",
+        "--order",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order-report.json",
+        "--order",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order-report.json",
+        "--order",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order-report.json",
+        "--order",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order-report.json",
+        "--order",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order-report.json",
+        "--order",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order-report.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/report.md"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 8 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/report.md\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/report.md",
+        "sha256": "2d3bfd71b2e2da2a97edff58d80c8f029e7d4c4d842f1088a4b6e13cdb594d33"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical.jsonl",
+        "--predictions",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start.jsonl",
+        "--predictions",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained.jsonl",
+        "--predictions",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start.jsonl",
+        "--predictions",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained.jsonl",
+        "--predictions",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained.jsonl",
+        "--predictions",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 8 prediction files on 60 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/comparison.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/comparison.json",
+        "sha256": "a962b2dccfc5822d52fb88cf59d1844e58ed4c744b2694a3eff1bde85a884dae"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order-report.json",
+        "sha256": "0a47e479062b21ef838b5788203d53f0ed373573430a98998f100df9c390f5a9"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order-report.json",
+        "sha256": "b53aeb557817423d516216dc599521cd0a340229771358585edc37b8525cd11a"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order-report.json",
+        "sha256": "ca1fd9931f55b96abd9536c2fd6718f5fca01095af7215c5642bb0eba717e42f"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order-report.json",
+        "sha256": "17fdf4596a3d2d1c5e21b4b385fa2a165a38a82de491a3bf7e4ab103cb4b4943"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order-report.json",
+        "sha256": "f30a184e4586591e167719815b50ec6b05e4abca3e3ef412972e5d83db07d225"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order-report.json",
+        "sha256": "d3ff53a070a3e774be80d9f5cca39d364e1c2a6996d49c729219ef99627d288f"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order-report.json",
+        "sha256": "24f181e3b0fba49aa39b8a54f12b123dfc618546872fd09a7268b146d5592c43"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 60 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order-report.json",
+        "sha256": "e5acddebd03c43ece3c9d83c858324278ec1ed38f3afc4decba5dee63a73f414"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/comparison.json",
+        "--title",
+        "E3 released-validation: inherited-v1",
+        "--order",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order-report.json",
+        "--order",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order-report.json",
+        "--order",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order-report.json",
+        "--order",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order-report.json",
+        "--order",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order-report.json",
+        "--order",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order-report.json",
+        "--order",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order-report.json",
+        "--order",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order-report.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/report.md"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 8 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/report.md\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/report.md",
+        "sha256": "f237847964083ff2b5464d82b50abfed82e001dd98455eb174d17848ada6e96e"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical.jsonl",
+        "--predictions",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start.jsonl",
+        "--predictions",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained.jsonl",
+        "--predictions",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start.jsonl",
+        "--predictions",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained.jsonl",
+        "--predictions",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained.jsonl",
+        "--predictions",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 8 prediction files on 240 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/comparison.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/comparison.json",
+        "sha256": "d11612de6a44242175837241776ae911a3716cab15cd7072a42e7636ed119f12"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order-report.json",
+        "sha256": "0e2dbe2486130908edb0eec3f7302705322cb13907627ae4a8004fd0742c8991"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order-report.json",
+        "sha256": "bc467cfa039bbf9b58290cd0557568f32a6cd40955f0605d2a9a43d1ce242dbb"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order-report.json",
+        "sha256": "e4ad4dee80010e659c6b6c2ab8a0ab65091f1bfc2505ff45b1edc7ce4b182f8c"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order-report.json",
+        "sha256": "4a5acd6051b4b0bb75b8bf83605b61262d2905c66e04d7da161b9e0df2eb452a"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order-report.json",
+        "sha256": "44c97631ed24f583e44140adeaea1f0798e87b119ffcdee003fbb59428212a9a"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order-report.json",
+        "sha256": "e478858c7608e994608682c3af343f92de88726b18d3f90672e6767bb9ba1f4c"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order-report.json",
+        "sha256": "c643b4787482c82d902d326e130d27ab55b192ba13cf8ba0e3064e8af040b19e"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 240 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order-report.json",
+        "sha256": "2fcee56136a201c5358cac43b068ef97818ea87552f9ae3c89f96e93d4e9862f"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/comparison.json",
+        "--title",
+        "E3 released-validation: new-v2",
+        "--order",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order-report.json",
+        "--order",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order-report.json",
+        "--order",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order-report.json",
+        "--order",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order-report.json",
+        "--order",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order-report.json",
+        "--order",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order-report.json",
+        "--order",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order-report.json",
+        "--order",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order-report.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/report.md"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 8 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/report.md\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/report.md",
+        "sha256": "65f47f8291029f64f07787c45439f486656d4fdcee986ad16bf5c355f0f18dcb"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/comparison.json",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical.jsonl",
+        "--predictions",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start.jsonl",
+        "--predictions",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained.jsonl",
+        "--predictions",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start.jsonl",
+        "--predictions",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained.jsonl",
+        "--predictions",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained.jsonl",
+        "--predictions",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 8 prediction files on 24 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/comparison.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/comparison.json",
+        "sha256": "63fec27b164d613c5185f646d140db340c11050b8a81c83ec9c225aaf272732b"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order-report.json",
+        "sha256": "9219b0f451fa85b98e62e9d21dd84cee46770a5192167fdf6043330f39cf6273"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order-report.json",
+        "sha256": "bd8ba2f922ed24375282c3edd2c7e52a3d179e9f1adf06c4360643f621b710b8"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order-report.json",
+        "sha256": "7e822d2d8e27267b5e25c4c4418a46f2a8ec33db35effb8de257c60f41cc1d5b"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order-report.json",
+        "sha256": "6c83bcef93dc6a49fff224f1740354626bf32ee777f37001a73b25574e386c46"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order-report.json",
+        "sha256": "4e5ce52fe7b4fc2a6d5b62405e3aad55121c3f451b977e4e1a48e3fe5403f62d"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order-report.json",
+        "sha256": "0fd05c73806a600704da9f64fb17f7099f1f9f88fbeae32adaf31540b1a56227"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order-report.json",
+        "sha256": "47ab4bbb355c6b965cbe80fab318cfb62ddc33ce90d42ee9294f8b3bb8b76915"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.order",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "--pairs",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "--predictions",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order-report.json"
+      ],
+      "returncode": 0,
+      "stdout": "Analyzed 12 validation-only order pairs: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order-report.json\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order-report.json",
+        "sha256": "1c544a5096ebdea21e3b83e7c52f09196428d6ff548ca4709e9c22ad621a41a8"
+      }
+    },
+    {
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/comparison.json",
+        "--title",
+        "E3 released-validation: probes",
+        "--order",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order-report.json",
+        "--order",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order-report.json",
+        "--order",
+        "m4-minilm-random-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order-report.json",
+        "--order",
+        "m4-minilm-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order-report.json",
+        "--order",
+        "m4-msmarco-pretrained-start=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order-report.json",
+        "--order",
+        "m4-msmarco-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order-report.json",
+        "--order",
+        "m2-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order-report.json",
+        "--order",
+        "m3-v1-trained=/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order-report.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/report.md"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 8 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/report.md\n",
+      "stderr": "",
+      "output": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/report.md",
+        "sha256": "c6d33764cae52eb577a5706a84788f688184d1e09fcc272061aa90e743fc760b"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/comparison.json",
+      "sha256": "dda400470b2a797e1b7f51f31a224df4082974c576b7b9e6e75116b9b0106545"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order-report.json",
+      "sha256": "ea486c47f0c447c1437a624d6239943df2df1f551147f1e5a11b62771529a342"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical-order.jsonl",
+      "sha256": "c7752da4114dfaab7c174a83f78946c012358be4884cd3b54f2c494195cf1d39"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/lexical.jsonl",
+      "sha256": "23c5dc26369599400e2cc50048f31b66e79f19af8519d1763a69c578e9f31b4b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order-report.json",
+      "sha256": "ea30aeda73f80bb9f313a295c49cc16e4581571a5bf3552deb21b4816a9f2342"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained-order.jsonl",
+      "sha256": "d7adb2e050df8ab697505039126e3f5c8c90fb1ee8ea8f38fea20d980e293365"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m2-v1-trained.jsonl",
+      "sha256": "471ec71c4f3335a1be90dd1fb745c6cc33e654b5de297477dea7b52e29f7bbd2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order-report.json",
+      "sha256": "6c9dd474b89edea8cf83ca33d94522583c225c083395d462d02f381bd98b4933"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained-order.jsonl",
+      "sha256": "b868ae171332ab226619341567773fabfa8e0ba447f6e7cf3eca8192c41f1c12"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m3-v1-trained.jsonl",
+      "sha256": "8dea63bd679f22e60cafa97cdb9e98ba8c31ec0b98649751274cf9e8e69b5fcb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order-report.json",
+      "sha256": "7035ed0cfea16655c7a422dd768a52984901ab563c0630d4dcce87f7aadd9ae9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start-order.jsonl",
+      "sha256": "5cbe9f71ce6f7db8df4ee76b26c2cc6bd675bec72d6a09fa9ccd4f3e3a2b62df"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-random-start.jsonl",
+      "sha256": "408326dbfd80ed4e7818d7270e71ba78a0ae0e57708c432b9c903bb291ad3a02"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order-report.json",
+      "sha256": "87d3d59cb139abfeecab2297471a46c3b76c0f8e80ce954c4070dca3c914cf40"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained-order.jsonl",
+      "sha256": "591e0ab61d7211ca3f36bd5596496732dd0bb8a0379452423ce5ccbdd175e5a5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-minilm-trained.jsonl",
+      "sha256": "cd7caf547d43e1b0aa30d0db60a7de7ea0c301ace0cd824c51b04f4b720180f9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "a31a904b80754274a05b35de28a4572da4f2ecfb69062d9e88b32000c67415f5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "53bb619dd510a7369b68dea80b05376af2b11b48b5dc31983fdc7d9f0167ddca"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "c7f5bbd3813a1104ac01deb4c66e550645be143009aba6e92ee7d74145269978"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order-report.json",
+      "sha256": "045d09dde145afc18a614a49290694dc9930367fd2a9ae276b586416ac2317e8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained-order.jsonl",
+      "sha256": "01c0d5cca78ad7d7cf2c6f5f0f9a5821329f1c68ad134373b42fd2cd378bdd8e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/m4-msmarco-trained.jsonl",
+      "sha256": "ffa16328d2d7b9224cd784bfd2c19445f5301949a41ee890233b7c6bcadcbe48"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/report.md",
+      "sha256": "2d3bfd71b2e2da2a97edff58d80c8f029e7d4c4d842f1088a4b6e13cdb594d33"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order-report.json",
+      "sha256": "cdaf0901568676e1940be51214c4dd1662966b54a69d1157c640115635d199cc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform-order.jsonl",
+      "sha256": "1ffd793f2ba83741b7bc0f18304f94972635c6ac6aa1ea03f089f741b53a64c6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/combined/uniform.jsonl",
+      "sha256": "b20f4e9c9c482757702f5639ae893b32cafe9b5c85c543e08ae72711ed7b15e9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-001.json",
+      "sha256": "0382f66811b9bdeb0447e29754233dcdb160674a6da3c5adc0208024dbe958d2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-002.json",
+      "sha256": "bcaa81bca573cc8fedf36a2c9223788d5cfa3eee700d149abf0f1459c874606c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-003.json",
+      "sha256": "00b039f5c72aba1c4fb86430a8c5d20b4bf3b4d5ca8730b69be24445a57b0f13"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-004.json",
+      "sha256": "8307f6fe9779c3c8b920e9b38121c791cc8833032aefaf615213e382ea5625cb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-005.json",
+      "sha256": "0ba8314fb88edfbede2156c45c8bf3893cf76ba196290378178fcf8bdd6bde2a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-006.json",
+      "sha256": "5f8af59da14a503f69a0fd12d8bccde4daeeb80e6cd68e74479de5d625c15cdc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-007.json",
+      "sha256": "34a615292c978b12d0f4f1a076cc4198c10a76fedb0557f8de5e13b89812af88"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-008.json",
+      "sha256": "55adf370af03678e95ef3c50335b62de6632380db6dd3b388790d3ed355a120d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-009.json",
+      "sha256": "b7340e2a24fc2c759771c48b240089ddfa9312244d13fe9604574af043e25f81"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-010.json",
+      "sha256": "d5c5fe677001112cd1346d532d02d58345a1efd8cb6540f5e6287106663449c8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-011.json",
+      "sha256": "a2725b2959265e8f92c31211d138a0cad5e1e224ddec73e894522b3c6c2f7873"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-012.json",
+      "sha256": "dc08f12cd60ef0174c0ff3f0c253f2b96add915e8f753b47975180ed4fcfb08a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-013.json",
+      "sha256": "eb3adc78d1d50953dfeda610c48bfaaee2cd645391cc6ac94e50ff31385fe750"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-014.json",
+      "sha256": "7e599b7cfc4ebf0b466472bc4ee0462afc3cedc819f2cf8c6e8bf7b4a2c8c7a4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-015.json",
+      "sha256": "5850ebbf8ac33b183256dff70b045dc933cfdcf8bcc1db21bd2cdc735154bed6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-016.json",
+      "sha256": "30c06fa9ca859779022ee4a18721fd95be9847602ec029de9b281ee0a4290f59"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-017.json",
+      "sha256": "b3d052a5f0eccdaffb09b4b8bfb39217065012002ef537c0cbf9b1c34473f2c9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-018.json",
+      "sha256": "9d4375c7adad1251038b46494501d52a5cf39e4dd383240561aea402accb8474"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-019.json",
+      "sha256": "83e5102fee07186a3e923041c1753dfe645260a8838f3e5a3ae10a0adf46a92b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-020.json",
+      "sha256": "48eb8557bf8ef3222c660ec2ed48c46a56392a760648040cef7ba95c2e39d700"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-021.json",
+      "sha256": "c38b8517b2ccc125955adec29edf7c86acf4720911a0878e431beabb14467aae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-022.json",
+      "sha256": "c9be3074fab0709b1e8a8f2a8a9c0797b99265bb2f8b12ff3e2e78cdec3b9f15"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-023.json",
+      "sha256": "fb3de35b64b7f67f334f0a55cada7b91e99bdf8f44b3cda92def4421d8ffa8b6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-024.json",
+      "sha256": "64dd77578fb67ede3a32b05f89cc72e751f8b06002f621f963c10fb81cf49e8d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-025.json",
+      "sha256": "f0801c7c7a31713936a1e8bf1a5f521655dc05a53843067c951e27675af3a4b2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-026.json",
+      "sha256": "bd28b2c3cbda3848180443b3529080304810a4f3a9815689e9726731af23c2f8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-027.json",
+      "sha256": "21946642efe790138ba33d3fdb197d97129a22e80f7f4bb021c0c9f7daa812b9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-028.json",
+      "sha256": "afbccc03ebdbfd8ae375f9ec76340e83a4ecd64b420c57737434fd79548ace76"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-029.json",
+      "sha256": "d89569f6cebff86820bc2037e3bc1c3788673aa23a8285a8af7ef9403f2316a2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-030.json",
+      "sha256": "872cc09f10057e0d947db28bea076c77f0b14f270a5d32edbedf993796a61b90"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-031.json",
+      "sha256": "313710036761c88ff52c3fd95b5d47e5b4b222b05bb947370e38b90c18ee5b8c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-032.json",
+      "sha256": "43e72fa7fdf2b66f0fcc9c4168bdeae9c92f39b08156d523e983e9bfe30700d4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-033.json",
+      "sha256": "f052242f76870421bcfa8b58fe7b6d02d8610de8d917b4ce760123db69da2612"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-034.json",
+      "sha256": "7452dfa49ed700dcfacff71a2e3fffa20e94497fc5abb602b1d4712ecfeab93b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-035.json",
+      "sha256": "9023b4559c2eb9a386388558705a66843c9920070fe12434a82d0c27458236c2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-036.json",
+      "sha256": "2dbdb151ddc919da9ffca4b1f4d1acb7551e12a95d37d50f2c499f2253e26b23"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-037.json",
+      "sha256": "81421bff6ce229ac6d05ccf5a0eb239317bc345f8fd5043e7d1e8a51757a7a10"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-038.json",
+      "sha256": "744da2f7e3e6c539ff8214a748794079ada17f35d8f460aefee0ba3cc37cd2e2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-039.json",
+      "sha256": "6ad914744158024473d89aa67e1e209adba30a2905da882fe2fd59d1d158c486"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/command-040.json",
+      "sha256": "b6c4e2475987dd4623c71d669b2340be23a45e0c3dde7fae14fd1dec924bf425"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/config.json",
+      "sha256": "99ff4a79235269e7f63acd6e80716e0629484ed58e7c01ef54072b522884ad16"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/comparison.json",
+      "sha256": "a962b2dccfc5822d52fb88cf59d1844e58ed4c744b2694a3eff1bde85a884dae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order-report.json",
+      "sha256": "b53aeb557817423d516216dc599521cd0a340229771358585edc37b8525cd11a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical-order.jsonl",
+      "sha256": "fea66ff1333277086e490666b6262414fe3bc4fb7348e12635096c06bf64d213"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/lexical.jsonl",
+      "sha256": "d5f1422ae2ee6125f6826a39caf1d808fcd1afb999683f299d7ca3db7923ebd3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order-report.json",
+      "sha256": "24f181e3b0fba49aa39b8a54f12b123dfc618546872fd09a7268b146d5592c43"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained-order.jsonl",
+      "sha256": "47b98a73553fe0d8fbd534b8b1f256c343c743c686d42b6df3ab91f81021f394"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m2-v1-trained.jsonl",
+      "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order-report.json",
+      "sha256": "e5acddebd03c43ece3c9d83c858324278ec1ed38f3afc4decba5dee63a73f414"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained-order.jsonl",
+      "sha256": "407bead1f699ebe58cd8b81862fb154d1247039a4e96da0ef9038f0b1849efc2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m3-v1-trained.jsonl",
+      "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order-report.json",
+      "sha256": "ca1fd9931f55b96abd9536c2fd6718f5fca01095af7215c5642bb0eba717e42f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start-order.jsonl",
+      "sha256": "9401c39af4ad46420271e6124a9b19d1bf61841d292ca0e8ec5a257792cbd09b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-random-start.jsonl",
+      "sha256": "db306372b0111650a61041372c0c037461420cca1ea6d67602d13c4b7a5278d9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order-report.json",
+      "sha256": "17fdf4596a3d2d1c5e21b4b385fa2a165a38a82de491a3bf7e4ab103cb4b4943"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained-order.jsonl",
+      "sha256": "0a200aa003f8eb498769d1fc44a7070026969ef64c377bcde3e998527664e86a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-minilm-trained.jsonl",
+      "sha256": "35ed30e67d855ee5340f21e18720051fed23d125233f287a06e2bed6c40c8e2c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "f30a184e4586591e167719815b50ec6b05e4abca3e3ef412972e5d83db07d225"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "b3f5d28bc50a74e8e8378d2f72494f5eb7059884c33803c12e55be84070fda17"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "0f120f2b6fc4290cc067ed6eacce8a58c4ca9b76e605b4d2f681912fe2f0ddbf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order-report.json",
+      "sha256": "d3ff53a070a3e774be80d9f5cca39d364e1c2a6996d49c729219ef99627d288f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained-order.jsonl",
+      "sha256": "e02a61b67ae6ce993a8085069a87a8346be2f43ff0eaf25e4d040c3e7eb4a781"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/m4-msmarco-trained.jsonl",
+      "sha256": "bc558f28c1215b42ff9dcfe0d917449397cd1b005b297d647abd1986608e819f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/report.md",
+      "sha256": "f237847964083ff2b5464d82b50abfed82e001dd98455eb174d17848ada6e96e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order-report.json",
+      "sha256": "0a47e479062b21ef838b5788203d53f0ed373573430a98998f100df9c390f5a9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform-order.jsonl",
+      "sha256": "12ef9cb567b06afe42ba203cc22d7588f75bb4108ecef7734c3207c1911a39e7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/inherited-v1/uniform.jsonl",
+      "sha256": "067f7fd2b440ac0ab5e5115760def020feb18a2ad23cb723b2f972947cb07090"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/comparison.json",
+      "sha256": "d11612de6a44242175837241776ae911a3716cab15cd7072a42e7636ed119f12"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order-report.json",
+      "sha256": "bc467cfa039bbf9b58290cd0557568f32a6cd40955f0605d2a9a43d1ce242dbb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical-order.jsonl",
+      "sha256": "6b72151e9f478812a3a5a36e4b1b09b512a489e1fb81654dd138de6b33fb77e4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/lexical.jsonl",
+      "sha256": "47e33c838db4b659ffeb85d409099c33101e428df89b2341ff323eb087a2244e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order-report.json",
+      "sha256": "c643b4787482c82d902d326e130d27ab55b192ba13cf8ba0e3064e8af040b19e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained-order.jsonl",
+      "sha256": "7afada34a19f7c34dfa8c4994177749b5f91ad0876b8ddfda30f90a61e5e97aa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m2-v1-trained.jsonl",
+      "sha256": "6503c7f4238ab2db4cfe48ae7514b362c8ad1a9bc1b2dce15ad15555f3631f35"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order-report.json",
+      "sha256": "2fcee56136a201c5358cac43b068ef97818ea87552f9ae3c89f96e93d4e9862f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained-order.jsonl",
+      "sha256": "4bcdc7255f6b6acdb386ecdd57b4388d827bef0db6ea0e4941c3ba9718112e02"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m3-v1-trained.jsonl",
+      "sha256": "80417e6515804703133e361581411f7129a4be1f6acaef85eab21bafb77a9b6f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order-report.json",
+      "sha256": "e4ad4dee80010e659c6b6c2ab8a0ab65091f1bfc2505ff45b1edc7ce4b182f8c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start-order.jsonl",
+      "sha256": "26ec8428802f945a06d7d425207b9b3127dbf91ee1f13f8db3029bfb4506f810"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-random-start.jsonl",
+      "sha256": "ffbe95bc6020a4657b3c184942bae5eb73d00d1d0eabb0d39d5d5563983d0f12"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order-report.json",
+      "sha256": "4a5acd6051b4b0bb75b8bf83605b61262d2905c66e04d7da161b9e0df2eb452a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained-order.jsonl",
+      "sha256": "9e93721cddbb68be9d3d7bfedb373a667e394c4567aa77cf4b07a4270eb5079d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-minilm-trained.jsonl",
+      "sha256": "5e237af63c198c14b32055ecd66dc6e33c17aca1109e909875dacd943a430e28"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "44c97631ed24f583e44140adeaea1f0798e87b119ffcdee003fbb59428212a9a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "c501b9be876573914473820642784498394bf6300c2baef75e6a7094bcf7834d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "4e0a11541fc25440299c0ddedad001b2baab8fe51113bbafe606f92b6e8563cf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order-report.json",
+      "sha256": "e478858c7608e994608682c3af343f92de88726b18d3f90672e6767bb9ba1f4c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained-order.jsonl",
+      "sha256": "9a49bf609239901875c791bc7ffb12ca200812bcc685d839dfac283520802e41"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/m4-msmarco-trained.jsonl",
+      "sha256": "a7351b383f3cad72445c950228447537ed114c368526f08c2bab050f5219b670"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/report.md",
+      "sha256": "65f47f8291029f64f07787c45439f486656d4fdcee986ad16bf5c355f0f18dcb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order-report.json",
+      "sha256": "0e2dbe2486130908edb0eec3f7302705322cb13907627ae4a8004fd0742c8991"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform-order.jsonl",
+      "sha256": "c78a891f0d184ea5caf8d07cde94ff8f5501e2aa8d342f813f798c64b0b32e11"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/new-v2/uniform.jsonl",
+      "sha256": "218d31b980ff9f95ae087ddc63d1f97176828e0e450c2d5f70b399e011cd2053"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/comparison.json",
+      "sha256": "63fec27b164d613c5185f646d140db340c11050b8a81c83ec9c225aaf272732b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order-report.json",
+      "sha256": "bd8ba2f922ed24375282c3edd2c7e52a3d179e9f1adf06c4360643f621b710b8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical-order.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/lexical.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order-report.json",
+      "sha256": "47ab4bbb355c6b965cbe80fab318cfb62ddc33ce90d42ee9294f8b3bb8b76915"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained-order.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m2-v1-trained.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order-report.json",
+      "sha256": "1c544a5096ebdea21e3b83e7c52f09196428d6ff548ca4709e9c22ad621a41a8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained-order.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m3-v1-trained.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order-report.json",
+      "sha256": "7e822d2d8e27267b5e25c4c4418a46f2a8ec33db35effb8de257c60f41cc1d5b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start-order.jsonl",
+      "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-random-start.jsonl",
+      "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order-report.json",
+      "sha256": "6c83bcef93dc6a49fff224f1740354626bf32ee777f37001a73b25574e386c46"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained-order.jsonl",
+      "sha256": "85706ef7077af88a2deb3f0f0941b5bd3e30a54b4687c27fab05d00623078c73"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-minilm-trained.jsonl",
+      "sha256": "85706ef7077af88a2deb3f0f0941b5bd3e30a54b4687c27fab05d00623078c73"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "4e5ce52fe7b4fc2a6d5b62405e3aad55121c3f451b977e4e1a48e3fe5403f62d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "af1fdce12ec02daa4118abda150a306dd6bb227e16e1ea8b0c8f6c7e471ce633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "af1fdce12ec02daa4118abda150a306dd6bb227e16e1ea8b0c8f6c7e471ce633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order-report.json",
+      "sha256": "0fd05c73806a600704da9f64fb17f7099f1f9f88fbeae32adaf31540b1a56227"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained-order.jsonl",
+      "sha256": "2bc75b85e3b4e9998b8818e361d6278d11f5b7e89961b89f74c819194455ae3d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/m4-msmarco-trained.jsonl",
+      "sha256": "2bc75b85e3b4e9998b8818e361d6278d11f5b7e89961b89f74c819194455ae3d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/report.md",
+      "sha256": "c6d33764cae52eb577a5706a84788f688184d1e09fcc272061aa90e743fc760b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order-report.json",
+      "sha256": "9219b0f451fa85b98e62e9d21dd84cee46770a5192167fdf6043330f39cf6273"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform-order.jsonl",
+      "sha256": "9da4e7f50b20d2f3db5943eaab83fbc1479ca17c6e50613d89f0d79794a06139"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/probes/uniform.jsonl",
+      "sha256": "9da4e7f50b20d2f3db5943eaab83fbc1479ca17c6e50613d89f0d79794a06139"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-m4-v1/subsets.json",
+      "sha256": "10cfb27caa4f8768503dab0056218872e01d8b95b207b5365a8a4ab1b61f265e"
+    }
+  ],
+  "cost_gbp": 0,
+  "model_loads": 0,
+  "limitations": "Validation development only. Roles and optional reference/input attestations are caller claims, not checkpoint verification. No default promoted. Missing order sources mean no order conclusion. Raw records retained without probability normalization; only missing line terminators added. Unknown extras and unidentifiable records reach scorer. See subsets.json for every known-universe exclusion."
+}

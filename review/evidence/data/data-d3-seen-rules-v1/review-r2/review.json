@@ -1,0 +1,6279 @@
+{
+  "status": "pass_with_residual_limits",
+  "counts": {
+    "rows": 96,
+    "policies": 48,
+    "mechanisms": 8,
+    "blind_rows": 56,
+    "blind_agreement": 56
+  },
+  "checks": {
+    "snapshot_manifest_hash": 2,
+    "snapshot_row_count": 2,
+    "raw_revision_provenance_hash": 23,
+    "snapshot_raw_byte_identity": 2,
+    "pure_helper_parent_identity": 2,
+    "assignments_parent_identity": 2,
+    "structured_source_change_scope": 192,
+    "pure_expected_unique_target": 96,
+    "pure_rendered_correspondence": 96,
+    "source_audit_correspondence": 96,
+    "case_policy_mechanism_mapping": 96,
+    "seen_validation_usage": 96,
+    "labels_preserved": 96,
+    "ordered_option_ids_preserved": 96,
+    "row_change_scope": 96,
+    "recorded_parent_hash": 17,
+    "provenance_only_optional_fields": 48,
+    "changed_only_wrong_options": 87,
+    "frozen_blind_target_agreement": 56,
+    "96_rows_48_policies_8_seen": 1,
+    "two_cases_per_policy": 1,
+    "87_changed_distractor_texts": 1,
+    "per_distractor_rationale_and_value": 96,
+    "all_36_choice_sets_96_wrong_slots": 1,
+    "local_metadata_hash": 40,
+    "read_only_input_hash_preservation": 1
+  },
+  "failures": [],
+  "must_fix_findings": [],
+  "frozen_decisions_sha256": "4f01a433131b05dc2798d165e05c8a213b7bf71bb9496aba8235fc94cab3082f",
+  "frozen_decisions": {
+    "frozen_at": "2026-11-11T13:51:55.357289+00:00",
+    "method": "Direct semantic reasoning from id/state/question/options only; no target/source/generator/solver inspected before this freeze. Initial broad emission also exposed nonselected inputs only, not labels.",
+    "input_sha256": "56ddf6e9b8b661c792cbaab68a0f622f04632fa2530a4ef548e836c61df0795f",
+    "decisions": [
+      {
+        "id": "data:d3-seen-rules-v1:packs:p01:c01",
+        "answer_id": "o1",
+        "answer_text": "3 packs",
+        "rationale": "Deficit 19+5−8=16; ceil(16/8)=2, minimum 3.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:packs:p02:c02",
+        "answer_id": "o3",
+        "answer_text": "3 packs",
+        "rationale": "Deficit 37+6−(20−2)=25; ceil(25/12)=3.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:packs:p04:c01",
+        "answer_id": "o3",
+        "answer_text": "4 packs",
+        "rationale": "Deficit 94+16−(40−5)=75; ceil(75/25)=3, minimum 4.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:packs:p06:c02",
+        "answer_id": "o2",
+        "answer_text": "2 packs",
+        "rationale": "Final reserve explicitly 10; deficit 42+10−(25−5)=32; 2 packs.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rates:p01:c01",
+        "answer_id": "o3",
+        "answer_text": "Aster",
+        "rationale": "Aster and Bracken both 9, Clover 8; alphabetically earliest Aster.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rates:p02:c02",
+        "answer_id": "o1",
+        "answer_text": "Ivo",
+        "rationale": "Dara and Ivo both 4.5, Nuri 40/9 lower; alphabetically latest Ivo.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rates:p04:c01",
+        "answer_id": "o2",
+        "answer_text": "Birch",
+        "rationale": "Birch 19/11 < 7/4 = Cedar = Ash.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rates:p06:c02",
+        "answer_id": "o4",
+        "answer_text": "Blue",
+        "rationale": "Blue and Copper both 6.75, Amber 20/3 and Dove 6.5 lower; earliest Blue.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+        "answer_id": "o2",
+        "answer_text": "(-5,3)",
+        "rationale": "(2,5) → (5,3) → (−5,3).",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+        "answer_id": "o1",
+        "answer_text": "(4,2)",
+        "rationale": "(−2,6) → (6,−2) → (4,2).",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+        "answer_id": "o3",
+        "answer_text": "(-6,2)",
+        "rationale": "(5,4) → (2,6) → (−6,2).",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+        "answer_id": "o4",
+        "answer_text": "(-3,4)",
+        "rationale": "(1,−3) → (−1,−3) → (3,−4) → (−3,4).",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+        "answer_id": "o3",
+        "answer_text": "09:20",
+        "rationale": "09:20 follows cooldown; session+cooldown ends 09:40, touching next booking.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+        "answer_id": "o1",
+        "answer_text": "14:10",
+        "rationale": "13:44 too early; 14:10 ends 14:30 and final reset may overrun.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+        "answer_id": "o1",
+        "answer_text": "10:30",
+        "rationale": "10:30 follows ventilation and ends 10:48, leaving 12 min to 11:00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+        "answer_id": "o2",
+        "answer_text": "19:00",
+        "rationale": "18:53 too early; 19:00 ends 19:10 with final reset allowed later.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+        "answer_id": "o2",
+        "answer_text": "Cove",
+        "rationale": "Survival 92, hours 6 tie Shoal/Cove; lower cost 49 selects Cove.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+        "answer_id": "o3",
+        "answer_text": "Yew",
+        "rationale": "Damage 4, consent_age 19 tie Yew/Ash; 72 < 75 selects Yew.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+        "answer_id": "o1",
+        "answer_text": "Ochre",
+        "rationale": "Deadline 12, shelf_use 85 tie Willow/Ochre; request 28 < 31 selects Ochre.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+        "answer_id": "o1",
+        "answer_text": "Verge",
+        "rationale": "Native species 16; gap 49 tie Brook/Verge; grant 940 < 950 selects Verge.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+        "answer_id": "o1",
+        "answer_text": "Amber 12; Chalk 11; Indigo 0",
+        "rationale": "Amber 12 then Chalk 11; Indigo 0.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+        "answer_id": "o2",
+        "answer_text": "Amber 12; Chalk 16; Indigo 0",
+        "rationale": "Amber 12 then Chalk 16 exactly.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+        "answer_id": "o3",
+        "answer_text": "East 45; North 30; West 0",
+        "rationale": "North 30 then East 45 exactly.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+        "answer_id": "o2",
+        "answer_text": "East 45; North 30; West 7",
+        "rationale": "North 30, East 45, West 7.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+        "answer_id": "o1",
+        "answer_text": "Ink 0; Moss 8; Rust 11",
+        "rationale": "Moss 8 then Rust 11; Ink 0.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+        "answer_id": "o1",
+        "answer_text": "Ink 0; Moss 7; Rust 0",
+        "rationale": "Moss alone supplies 7.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+        "answer_id": "o1",
+        "answer_text": "Glow 6; Halo 10; Spark 1",
+        "rationale": "Glow 6, Halo 10, Spark 1.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+        "answer_id": "o2",
+        "answer_text": "Glow 6; Halo 4; Spark 0",
+        "rationale": "Glow 6 then Halo 4.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+        "answer_id": "o3",
+        "answer_text": "Brass 9; Iron 0; Steel 9",
+        "rationale": "Brass 9 then Steel 9.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+        "answer_id": "o3",
+        "answer_text": "Brass 9; Iron 2; Steel 9",
+        "rationale": "Brass 9, Steel 9, Iron 2.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+        "answer_id": "o3",
+        "answer_text": "Frost 9; Polar 5; Snow 0",
+        "rationale": "Polar 5 then Frost 9.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+        "answer_id": "o2",
+        "answer_text": "Frost 0; Polar 4; Snow 0",
+        "rationale": "Polar alone supplies 4.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c01",
+        "answer_id": "o3",
+        "answer_text": "£62.40",
+        "rationale": "(90−12)×0.8 = £62.40.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c02",
+        "answer_id": "o1",
+        "answer_text": "£102.40",
+        "rationale": "(140−12)×0.8 = £102.40.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c01",
+        "answer_id": "o3",
+        "answer_text": "£93.00",
+        "rationale": "120×0.85−9 = £93.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c02",
+        "answer_id": "o4",
+        "answer_text": "£161.00",
+        "rationale": "200×0.85−9 = £161.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c01",
+        "answer_id": "o2",
+        "answer_text": "£160.00",
+        "rationale": "(260−40)×0.75−5 = £160.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c02",
+        "answer_id": "o2",
+        "answer_text": "£220.00",
+        "rationale": "(340−40)×0.75−5 = £220.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c01",
+        "answer_id": "o4",
+        "answer_text": "£52.80",
+        "rationale": "(80×0.9−6)×0.8 = £52.80.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c02",
+        "answer_id": "o1",
+        "answer_text": "£88.80",
+        "rationale": "(130×0.9−6)×0.8 = £88.80.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c01",
+        "answer_id": "o3",
+        "answer_text": "£72.00",
+        "rationale": "(115−15)×0.9×0.8 = £72.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c02",
+        "answer_id": "o3",
+        "answer_text": "£108.00",
+        "rationale": "(165−15)×0.9×0.8 = £108.00.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c01",
+        "answer_id": "o3",
+        "answer_text": "£57.60",
+        "rationale": "(96×0.75−8)×0.9 = £57.60.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c02",
+        "answer_id": "o4",
+        "answer_text": "£111.60",
+        "rationale": "(176×0.75−8)×0.9 = £111.60.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+        "answer_id": "o4",
+        "answer_text": "2.4 g",
+        "rationale": "2.35 halfway between 2.3 and 2.4; choose 2.4 g.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+        "answer_id": "o1",
+        "answer_text": "2.3 g",
+        "rationale": "2.349 below midpoint 2.35; 2.3 g.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+        "answer_id": "o3",
+        "answer_text": "45 kPa",
+        "rationale": "42.5 halfway between 40 and 45; choose 45 kPa.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+        "answer_id": "o3",
+        "answer_text": "45 kPa",
+        "rationale": "47.4 below midpoint 47.5; 45 kPa.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+        "answer_id": "o4",
+        "answer_text": "1.21 ppt",
+        "rationale": "1.205 halfway; higher 1.21 ppt.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+        "answer_id": "o3",
+        "answer_text": "1.21 ppt",
+        "rationale": "1.2149 below midpoint 1.215; 1.21 ppt.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+        "answer_id": "o2",
+        "answer_text": "130 kg",
+        "rationale": "125 halfway; higher 130 kg.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+        "answer_id": "o4",
+        "answer_text": "130 kg",
+        "rationale": "134.9 below midpoint 135; 130 kg.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+        "answer_id": "o4",
+        "answer_text": "7.5 mm",
+        "rationale": "7.25 halfway; higher 7.5 mm.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+        "answer_id": "o1",
+        "answer_text": "8.0 mm",
+        "rationale": "7.76 above midpoint 7.75; 8.0 mm.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+        "answer_id": "o2",
+        "answer_text": "20 cm",
+        "rationale": "19 halfway; higher 20 cm.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+        "answer_id": "o1",
+        "answer_text": "20 cm",
+        "rationale": "20.99 below midpoint 21; 20 cm.",
+        "ambiguity": false,
+        "multiple_supported": false,
+        "missing_rule": false
+      }
+    ]
+  },
+  "expected_and_correspondence": [
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "expected_text": "3 packs",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c02",
+      "expected_text": "5 packs",
+      "target_text": "5 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "expected_text": "2 packs",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c02",
+      "expected_text": "3 packs",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "expected_text": "0 packs",
+      "target_text": "0 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c02",
+      "expected_text": "3 packs",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "expected_text": "4 packs",
+      "target_text": "4 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c02",
+      "expected_text": "5 packs",
+      "target_text": "5 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "expected_text": "2 packs",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c02",
+      "expected_text": "3 packs",
+      "target_text": "3 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "expected_text": "2 packs",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "expected_text": "2 packs",
+      "target_text": "2 packs",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "expected_text": "Aster",
+      "target_text": "Aster",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c02",
+      "expected_text": "Aster",
+      "target_text": "Aster",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "expected_text": "Ivo",
+      "target_text": "Ivo",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c02",
+      "expected_text": "Ivo",
+      "target_text": "Ivo",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "expected_text": "Bay",
+      "target_text": "Bay",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c02",
+      "expected_text": "Arc",
+      "target_text": "Arc",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "expected_text": "Birch",
+      "target_text": "Birch",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c02",
+      "expected_text": "Birch",
+      "target_text": "Birch",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "expected_text": "South",
+      "target_text": "South",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c02",
+      "expected_text": "North",
+      "target_text": "North",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "expected_text": "Dove",
+      "target_text": "Dove",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c02",
+      "expected_text": "Blue",
+      "target_text": "Blue",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "expected_text": "(-5,3)",
+      "target_text": "(-5,3)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+      "expected_text": "(1,0)",
+      "target_text": "(1,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "expected_text": "(-3,8)",
+      "target_text": "(-3,8)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "expected_text": "(4,2)",
+      "target_text": "(4,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "expected_text": "(7,2)",
+      "target_text": "(7,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+      "expected_text": "(1,-2)",
+      "target_text": "(1,-2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "expected_text": "(-6,2)",
+      "target_text": "(-6,2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+      "expected_text": "(0,0)",
+      "target_text": "(0,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "expected_text": "(-2,4)",
+      "target_text": "(-2,4)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "expected_text": "(4,-2)",
+      "target_text": "(4,-2)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "expected_text": "(0,0)",
+      "target_text": "(0,0)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "expected_text": "(-3,4)",
+      "target_text": "(-3,4)",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "expected_text": "09:20",
+      "target_text": "09:20",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "expected_text": "No listed start fits",
+      "target_text": "No listed start fits",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "expected_text": "13:25",
+      "target_text": "13:25",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "expected_text": "14:10",
+      "target_text": "14:10",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "expected_text": "08:20",
+      "target_text": "08:20",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "expected_text": "08:55",
+      "target_text": "08:55",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "expected_text": "10:30",
+      "target_text": "10:30",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "expected_text": "11:25",
+      "target_text": "11:25",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "expected_text": "15:40",
+      "target_text": "15:40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "expected_text": "16:05",
+      "target_text": "16:05",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "expected_text": "18:16",
+      "target_text": "18:16",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "expected_text": "19:00",
+      "target_text": "19:00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "expected_text": "Cove",
+      "target_text": "Cove",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "expected_text": "Lagoon",
+      "target_text": "Lagoon",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "expected_text": "Elm",
+      "target_text": "Elm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "expected_text": "Yew",
+      "target_text": "Yew",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "expected_text": "Gully",
+      "target_text": "Gully",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "expected_text": "Spur",
+      "target_text": "Spur",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "expected_text": "Ochre",
+      "target_text": "Ochre",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "expected_text": "Slate",
+      "target_text": "Slate",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "expected_text": "Tern",
+      "target_text": "Tern",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "expected_text": "Ibis",
+      "target_text": "Ibis",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "expected_text": "Hedge",
+      "target_text": "Hedge",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "expected_text": "Verge",
+      "target_text": "Verge",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "expected_text": "Amber 12; Chalk 11; Indigo 0",
+      "target_text": "Amber 12; Chalk 11; Indigo 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "expected_text": "Amber 12; Chalk 16; Indigo 0",
+      "target_text": "Amber 12; Chalk 16; Indigo 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "expected_text": "East 45; North 30; West 0",
+      "target_text": "East 45; North 30; West 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "expected_text": "East 45; North 30; West 7",
+      "target_text": "East 45; North 30; West 7",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "expected_text": "Ink 0; Moss 8; Rust 11",
+      "target_text": "Ink 0; Moss 8; Rust 11",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "expected_text": "Ink 0; Moss 7; Rust 0",
+      "target_text": "Ink 0; Moss 7; Rust 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "expected_text": "Glow 6; Halo 10; Spark 1",
+      "target_text": "Glow 6; Halo 10; Spark 1",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "expected_text": "Glow 6; Halo 4; Spark 0",
+      "target_text": "Glow 6; Halo 4; Spark 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "expected_text": "Brass 9; Iron 0; Steel 9",
+      "target_text": "Brass 9; Iron 0; Steel 9",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "expected_text": "Brass 9; Iron 2; Steel 9",
+      "target_text": "Brass 9; Iron 2; Steel 9",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "expected_text": "Frost 9; Polar 5; Snow 0",
+      "target_text": "Frost 9; Polar 5; Snow 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "expected_text": "Frost 0; Polar 4; Snow 0",
+      "target_text": "Frost 0; Polar 4; Snow 0",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "expected_text": "£62.40",
+      "target_text": "£62.40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "expected_text": "£102.40",
+      "target_text": "£102.40",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "expected_text": "£93.00",
+      "target_text": "£93.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "expected_text": "£161.00",
+      "target_text": "£161.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "expected_text": "£160.00",
+      "target_text": "£160.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "expected_text": "£220.00",
+      "target_text": "£220.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "expected_text": "£52.80",
+      "target_text": "£52.80",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "expected_text": "£88.80",
+      "target_text": "£88.80",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "expected_text": "£72.00",
+      "target_text": "£72.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "expected_text": "£108.00",
+      "target_text": "£108.00",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "expected_text": "£57.60",
+      "target_text": "£57.60",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "expected_text": "£111.60",
+      "target_text": "£111.60",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "expected_text": "2.4 g",
+      "target_text": "2.4 g",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "expected_text": "2.3 g",
+      "target_text": "2.3 g",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "expected_text": "45 kPa",
+      "target_text": "45 kPa",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "expected_text": "45 kPa",
+      "target_text": "45 kPa",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "expected_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "expected_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "expected_text": "130 kg",
+      "target_text": "130 kg",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "expected_text": "130 kg",
+      "target_text": "130 kg",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "expected_text": "7.5 mm",
+      "target_text": "7.5 mm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "expected_text": "8.0 mm",
+      "target_text": "8.0 mm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "expected_text": "20 cm",
+      "target_text": "20 cm",
+      "text_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "expected_text": "20 cm",
+      "target_text": "20 cm",
+      "text_correspondence": true
+    }
+  ],
+  "mappings": [
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p01",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p01",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p02",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p02",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p03",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p03",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p04",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p04",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p05",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p05",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:packs:p06",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:packs:p06",
+      "mechanism": "packs"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p01",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p01",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p02",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p02",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p03",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p03",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p04",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p04",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p05",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p05",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:rates:p06",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:rates:p06",
+      "mechanism": "rates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p01",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p01",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p02",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p02",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p03",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p03",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p04",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p04",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p05",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p05",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p06",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:coordinates:p06",
+      "mechanism": "coordinates"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p01",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p01",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p02",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p02",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p03",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p03",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p04",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p04",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p05",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p05",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p06",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:cooldown:p06",
+      "mechanism": "cooldown"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p01",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p01",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p02",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p02",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p03",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p03",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p04",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p04",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p05",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p05",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p06",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:lexicographic:p06",
+      "mechanism": "lexicographic"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p01",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p01",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p02",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p02",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p03",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p03",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p04",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p04",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p05",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p05",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p06",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:fifo:p06",
+      "mechanism": "fifo"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p01",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p01",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p02",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p02",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p03",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p03",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p04",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p04",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p05",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p05",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:discount:p06",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:discount:p06",
+      "mechanism": "discount"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p01",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p01",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p02",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p02",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p03",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p03",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p04",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p04",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p05",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p05",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p06",
+      "mechanism": "rounding"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "policy_group": "data:d3-seen-rules-v1:rounding:p06",
+      "mechanism": "rounding"
+    }
+  ],
+  "field_changes": [
+    {
+      "producer": "geometry",
+      "file": "source_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "fields": [
+        "context"
+      ]
+    },
+    {
+      "producer": "geometry",
+      "file": "audit_cases.jsonl",
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "fields": [
+        "context"
+      ]
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "option_id": "o2",
+      "old": "Amber 4; Chalk 1; Indigo 18",
+      "new": "Amber 0; Chalk 3; Indigo 20"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "option_id": "o3",
+      "old": "Amber 9; Chalk 14; Indigo 0",
+      "new": "Amber 3; Chalk 0; Indigo 20"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "option_id": "o1",
+      "old": "Amber 7; Chalk 13; Indigo 8",
+      "new": "Amber 0; Chalk 8; Indigo 20"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "option_id": "o3",
+      "old": "Amber 5; Chalk 14; Indigo 9",
+      "new": "Amber 12; Chalk 0; Indigo 16"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "option_id": "o1",
+      "old": "East 38; North 1; West 36",
+      "new": "East 0; North 15; West 60"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "option_id": "o2",
+      "old": "East 30; North 26; West 19",
+      "new": "East 15; North 0; West 60"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "option_id": "o1",
+      "old": "East 45; North 3; West 34",
+      "new": "East 22; North 0; West 60"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "option_id": "o3",
+      "old": "East 29; North 9; West 44",
+      "new": "East 45; North 0; West 37"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "option_id": "o2",
+      "old": "Ink 3; Moss 2; Rust 14",
+      "new": "Ink 4; Moss 0; Rust 15"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "option_id": "o2",
+      "old": "Ink 0; Moss 2; Rust 5",
+      "new": "Ink 0; Moss 0; Rust 7"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "option_id": "o3",
+      "old": "Ink 1; Moss 5; Rust 1",
+      "new": "Ink 7; Moss 0; Rust 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "option_id": "o2",
+      "old": "Glow 5; Halo 5; Spark 7",
+      "new": "Glow 0; Halo 8; Spark 9"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "option_id": "o3",
+      "old": "Glow 0; Halo 9; Spark 8",
+      "new": "Glow 0; Halo 10; Spark 7"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "option_id": "o1",
+      "old": "Glow 1; Halo 8; Spark 1",
+      "new": "Glow 1; Halo 0; Spark 9"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "option_id": "o3",
+      "old": "Glow 0; Halo 3; Spark 7",
+      "new": "Glow 0; Halo 10; Spark 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "option_id": "o1",
+      "old": "Brass 5; Iron 12; Steel 1",
+      "new": "Brass 4; Iron 14; Steel 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "option_id": "o2",
+      "old": "Brass 8; Iron 7; Steel 3",
+      "new": "Brass 9; Iron 9; Steel 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "option_id": "o1",
+      "old": "Brass 5; Iron 14; Steel 1",
+      "new": "Brass 0; Iron 11; Steel 9"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "option_id": "o2",
+      "old": "Brass 7; Iron 13; Steel 0",
+      "new": "Brass 6; Iron 14; Steel 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "option_id": "o1",
+      "old": "Frost 2; Polar 5; Snow 7",
+      "new": "Frost 12; Polar 0; Snow 2"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "option_id": "o2",
+      "old": "Frost 4; Polar 3; Snow 7",
+      "new": "Frost 0; Polar 0; Snow 14"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "option_id": "o1",
+      "old": "Frost 1; Polar 0; Snow 3",
+      "new": "Frost 0; Polar 0; Snow 4"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "option_id": "o3",
+      "old": "Frost 3; Polar 0; Snow 1",
+      "new": "Frost 4; Polar 0; Snow 0"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "option_id": "o2",
+      "old": "£60.40",
+      "new": "£78.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "option_id": "o4",
+      "old": "£63.40",
+      "new": "£52.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o2",
+      "old": "£103.40",
+      "new": "£100.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o3",
+      "old": "£100.00",
+      "new": "£108.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o4",
+      "old": "£100.40",
+      "new": "£92.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o1",
+      "old": "£94.35",
+      "new": "£102.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o2",
+      "old": "£94.00",
+      "new": "£94.35"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o4",
+      "old": "£91.00",
+      "new": "£111.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "option_id": "o2",
+      "old": "£159.00",
+      "new": "£170.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "option_id": "o3",
+      "old": "£162.00",
+      "new": "£154.70"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "option_id": "o3",
+      "old": "£161.00",
+      "new": "£155.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "option_id": "o4",
+      "old": "£158.00",
+      "new": "£150.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o1",
+      "old": "£218.00",
+      "new": "£211.25"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o3",
+      "old": "£221.00",
+      "new": "£250.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o4",
+      "old": "£211.25",
+      "new": "£295.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o1",
+      "old": "£52.20",
+      "new": "£50.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o2",
+      "old": "£53.80",
+      "new": "£48.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o3",
+      "old": "£50.80",
+      "new": "£51.60"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o2",
+      "old": "£86.80",
+      "new": "£85.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o3",
+      "old": "£88.20",
+      "new": "£93.60"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o4",
+      "old": "£89.80",
+      "new": "£88.20"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "option_id": "o1",
+      "old": "£73.00",
+      "new": "£67.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "option_id": "o4",
+      "old": "£67.80",
+      "new": "£80.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o1",
+      "old": "£103.80",
+      "new": "£135.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o2",
+      "old": "£109.00",
+      "new": "£118.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o4",
+      "old": "£106.00",
+      "new": "£120.00"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o1",
+      "old": "£55.60",
+      "new": "£59.40"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o2",
+      "old": "£58.80",
+      "new": "£56.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o4",
+      "old": "£58.60",
+      "new": "£54.40"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o1",
+      "old": "£109.60",
+      "new": "£113.40"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o2",
+      "old": "£112.80",
+      "new": "£118.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o3",
+      "old": "£112.60",
+      "new": "£112.80"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "option_id": "o1",
+      "old": "2.2 g",
+      "new": "2.0 g"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "option_id": "o3",
+      "old": "2.5 g",
+      "new": "2.2 g"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o2",
+      "old": "2.4 g",
+      "new": "2.5 g"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o3",
+      "old": "2.5 g",
+      "new": "3.0 g"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o4",
+      "old": "2.2 g",
+      "new": "2.4 g"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o1",
+      "old": "35 kPa",
+      "new": "43 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o2",
+      "old": "40 kPa",
+      "new": "42 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o4",
+      "old": "50 kPa",
+      "new": "40 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o1",
+      "old": "40 kPa",
+      "new": "50 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o2",
+      "old": "50 kPa",
+      "new": "48 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o4",
+      "old": "35 kPa",
+      "new": "47 kPa"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o1",
+      "old": "1.19 ppt",
+      "new": "1.30 ppt"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o2",
+      "old": "1.20 ppt",
+      "new": "1.00 ppt"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o3",
+      "old": "1.22 ppt",
+      "new": "1.20 ppt"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "option_id": "o1",
+      "old": "1.20 ppt",
+      "new": "1.25 ppt"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "option_id": "o4",
+      "old": "1.23 ppt",
+      "new": "1.20 ppt"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "option_id": "o3",
+      "old": "140 kg",
+      "new": "125 kg"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "option_id": "o4",
+      "old": "150 kg",
+      "new": "100 kg"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o1",
+      "old": "120 kg",
+      "new": "140 kg"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o2",
+      "old": "140 kg",
+      "new": "100 kg"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o3",
+      "old": "150 kg",
+      "new": "135 kg"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o1",
+      "old": "7.0 mm",
+      "new": "8.0 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o2",
+      "old": "8.0 mm",
+      "new": "7.3 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o3",
+      "old": "8.5 mm",
+      "new": "7.0 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o2",
+      "old": "8.5 mm",
+      "new": "7.8 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o3",
+      "old": "9.0 mm",
+      "new": "7.5 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o4",
+      "old": "7.5 mm",
+      "new": "7.0 mm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o1",
+      "old": "16 cm",
+      "new": "10 cm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o3",
+      "old": "18 cm",
+      "new": "19 cm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o4",
+      "old": "22 cm",
+      "new": "18 cm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "option_id": "o2",
+      "old": "24 cm",
+      "new": "25 cm"
+    },
+    {
+      "producer": "ordering",
+      "file": "validation.jsonl",
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "option_id": "o4",
+      "old": "18 cm",
+      "new": "21 cm"
+    }
+  ],
+  "distractor_review": [
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Amber 0; Chalk 3; Indigo 20",
+      "rule_error": {
+        "priority": [
+          "Indigo",
+          "Chalk",
+          "Amber"
+        ]
+      },
+      "description": "Exhaust batches in priority order Indigo, Chalk, Amber instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Amber 3; Chalk 0; Indigo 20",
+      "rule_error": {
+        "priority": [
+          "Indigo",
+          "Amber",
+          "Chalk"
+        ]
+      },
+      "description": "Exhaust batches in priority order Indigo, Amber, Chalk instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Amber 0; Chalk 8; Indigo 20",
+      "rule_error": {
+        "priority": [
+          "Indigo",
+          "Chalk",
+          "Amber"
+        ]
+      },
+      "description": "Exhaust batches in priority order Indigo, Chalk, Amber instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Amber 12; Chalk 0; Indigo 16",
+      "rule_error": {
+        "priority": [
+          "Amber",
+          "Indigo",
+          "Chalk"
+        ]
+      },
+      "description": "Exhaust batches in priority order Amber, Indigo, Chalk instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "East 0; North 15; West 60",
+      "rule_error": {
+        "priority": [
+          "West",
+          "North",
+          "East"
+        ]
+      },
+      "description": "Exhaust batches in priority order West, North, East instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "East 15; North 0; West 60",
+      "rule_error": {
+        "priority": [
+          "West",
+          "East",
+          "North"
+        ]
+      },
+      "description": "Exhaust batches in priority order West, East, North instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "East 22; North 0; West 60",
+      "rule_error": {
+        "priority": [
+          "West",
+          "East",
+          "North"
+        ]
+      },
+      "description": "Exhaust batches in priority order West, East, North instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "East 45; North 0; West 37",
+      "rule_error": {
+        "priority": [
+          "East",
+          "West",
+          "North"
+        ]
+      },
+      "description": "Exhaust batches in priority order East, West, North instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Ink 4; Moss 0; Rust 15",
+      "rule_error": {
+        "priority": [
+          "Rust",
+          "Ink",
+          "Moss"
+        ]
+      },
+      "description": "Exhaust batches in priority order Rust, Ink, Moss instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Ink 11; Moss 8; Rust 0",
+      "rule_error": {
+        "priority": [
+          "Moss",
+          "Ink",
+          "Rust"
+        ]
+      },
+      "description": "Exhaust batches in priority order Moss, Ink, Rust instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Ink 0; Moss 0; Rust 7",
+      "rule_error": {
+        "priority": [
+          "Rust",
+          "Ink",
+          "Moss"
+        ]
+      },
+      "description": "Exhaust batches in priority order Rust, Ink, Moss instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Ink 7; Moss 0; Rust 0",
+      "rule_error": {
+        "priority": [
+          "Ink",
+          "Moss",
+          "Rust"
+        ]
+      },
+      "description": "Exhaust batches in priority order Ink, Moss, Rust instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Glow 0; Halo 8; Spark 9",
+      "rule_error": {
+        "priority": [
+          "Spark",
+          "Halo",
+          "Glow"
+        ]
+      },
+      "description": "Exhaust batches in priority order Spark, Halo, Glow instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Glow 0; Halo 10; Spark 7",
+      "rule_error": {
+        "priority": [
+          "Halo",
+          "Spark",
+          "Glow"
+        ]
+      },
+      "description": "Exhaust batches in priority order Halo, Spark, Glow instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Glow 1; Halo 0; Spark 9",
+      "rule_error": {
+        "priority": [
+          "Spark",
+          "Glow",
+          "Halo"
+        ]
+      },
+      "description": "Exhaust batches in priority order Spark, Glow, Halo instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Glow 0; Halo 10; Spark 0",
+      "rule_error": {
+        "priority": [
+          "Halo",
+          "Spark",
+          "Glow"
+        ]
+      },
+      "description": "Exhaust batches in priority order Halo, Spark, Glow instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Brass 4; Iron 14; Steel 0",
+      "rule_error": {
+        "priority": [
+          "Iron",
+          "Brass",
+          "Steel"
+        ]
+      },
+      "description": "Exhaust batches in priority order Iron, Brass, Steel instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Brass 9; Iron 9; Steel 0",
+      "rule_error": {
+        "priority": [
+          "Brass",
+          "Iron",
+          "Steel"
+        ]
+      },
+      "description": "Exhaust batches in priority order Brass, Iron, Steel instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Brass 0; Iron 11; Steel 9",
+      "rule_error": {
+        "priority": [
+          "Steel",
+          "Iron",
+          "Brass"
+        ]
+      },
+      "description": "Exhaust batches in priority order Steel, Iron, Brass instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Brass 6; Iron 14; Steel 0",
+      "rule_error": {
+        "priority": [
+          "Iron",
+          "Brass",
+          "Steel"
+        ]
+      },
+      "description": "Exhaust batches in priority order Iron, Brass, Steel instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Frost 12; Polar 0; Snow 2",
+      "rule_error": {
+        "priority": [
+          "Frost",
+          "Snow",
+          "Polar"
+        ]
+      },
+      "description": "Exhaust batches in priority order Frost, Snow, Polar instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "Frost 0; Polar 0; Snow 14",
+      "rule_error": {
+        "priority": [
+          "Snow",
+          "Polar",
+          "Frost"
+        ]
+      },
+      "description": "Exhaust batches in priority order Snow, Polar, Frost instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "Frost 0; Polar 0; Snow 4",
+      "rule_error": {
+        "priority": [
+          "Snow",
+          "Frost",
+          "Polar"
+        ]
+      },
+      "description": "Exhaust batches in priority order Snow, Frost, Polar instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "Frost 4; Polar 0; Snow 0",
+      "rule_error": {
+        "priority": [
+          "Frost",
+          "Polar",
+          "Snow"
+        ]
+      },
+      "description": "Exhaust batches in priority order Frost, Polar, Snow instead of increasing arrival number",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£60.00",
+      "rule_error": "reverse",
+      "description": "Reverse the two reductions",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£78.00",
+      "rule_error": "skip_percent",
+      "description": "Omit percentage reduction",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£52.80",
+      "rule_error": "double_fixed",
+      "description": "Apply the booking credit twice",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£100.00",
+      "rule_error": "reverse",
+      "description": "Reverse the two reductions",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£108.00",
+      "rule_error": "percent_as_cash",
+      "description": "Read 20 percent as a £20 credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£92.80",
+      "rule_error": "double_fixed",
+      "description": "Apply the booking credit twice",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£102.00",
+      "rule_error": "skip_fixed",
+      "description": "Omit voucher",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£94.35",
+      "rule_error": "reverse",
+      "description": "Deduct voucher before percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£111.00",
+      "rule_error": "skip_percent",
+      "description": "Omit trade reduction",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£162.35",
+      "rule_error": "reverse",
+      "description": "Deduct voucher before percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£170.00",
+      "rule_error": "skip_fixed",
+      "description": "Omit voucher",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£154.70",
+      "rule_error": "fixed_as_percent",
+      "description": "Read £9 voucher as a sequential 9 percent reduction",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£151.25",
+      "rule_error": "reverse",
+      "description": "Reverse all three steps",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£155.00",
+      "rule_error": "double_last_fixed",
+      "description": "Apply the final site credit twice",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£150.00",
+      "rule_error": "fixed_last",
+      "description": "Apply both fixed credits after percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£211.25",
+      "rule_error": "reverse",
+      "description": "Reverse all three steps",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£250.00",
+      "rule_error": "skip_first",
+      "description": "Omit installation credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£295.00",
+      "rule_error": "skip_percent",
+      "description": "Omit percentage reduction",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£50.00",
+      "rule_error": "original_base",
+      "description": "Calculate each percentage reduction from the original invoice",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£48.00",
+      "rule_error": "double_fixed",
+      "description": "Apply the fixed credit twice at its step",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£51.60",
+      "rule_error": "fixed_last",
+      "description": "Move fixed credit after both percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£85.00",
+      "rule_error": "add_percent",
+      "description": "Add percentage rates and apply them before fixed credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£93.60",
+      "rule_error": "skip_fixed",
+      "description": "Omit fixed credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£88.20",
+      "rule_error": "reverse",
+      "description": "Reverse all three steps",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£67.80",
+      "rule_error": "fixed_last",
+      "description": "Deduct fixed credit after both percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£70.00",
+      "rule_error": "add_percent",
+      "description": "Add membership and early-booking percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£80.00",
+      "rule_error": "skip_first_percent",
+      "description": "Omit membership percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£135.00",
+      "rule_error": "skip_last_percent",
+      "description": "Omit early-booking percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£118.80",
+      "rule_error": "skip_fixed",
+      "description": "Omit fixed credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£120.00",
+      "rule_error": "skip_first_percent",
+      "description": "Omit membership percentage",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£59.40",
+      "rule_error": "fixed_first",
+      "description": "Deduct reuse credit before both percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£56.80",
+      "rule_error": "fixed_last",
+      "description": "Deduct reuse credit after both percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "£54.40",
+      "rule_error": "add_percent",
+      "description": "Add percentage rates and apply before fixed credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "£113.40",
+      "rule_error": "fixed_first",
+      "description": "Deduct reuse credit before both percentages",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "£118.80",
+      "rule_error": "skip_fixed",
+      "description": "Omit reuse credit",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "£112.80",
+      "rule_error": "reverse",
+      "description": "Reverse all three steps",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "2.0 g",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "2.3 g",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "floor"
+      },
+      "description": "Use grid 0.1 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "2.2 g",
+      "rule_error": {
+        "grid": "0.2",
+        "mode": "floor"
+      },
+      "description": "Use grid 0.2 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "2.5 g",
+      "rule_error": {
+        "grid": "0.5",
+        "mode": "ceil"
+      },
+      "description": "Use grid 0.5 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "3.0 g",
+      "rule_error": {
+        "grid": "1",
+        "mode": "ceil"
+      },
+      "description": "Use grid 1 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "2.4 g",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "ceil"
+      },
+      "description": "Use grid 0.1 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "43 kPa",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "42 kPa",
+      "rule_error": {
+        "grid": "1",
+        "mode": "floor"
+      },
+      "description": "Use grid 1 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "40 kPa",
+      "rule_error": {
+        "grid": "5",
+        "mode": "tie_down"
+      },
+      "description": "Use grid 5 with tie_down instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "50 kPa",
+      "rule_error": {
+        "grid": "5",
+        "mode": "ceil"
+      },
+      "description": "Use grid 5 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "48 kPa",
+      "rule_error": {
+        "grid": "2",
+        "mode": "ceil"
+      },
+      "description": "Use grid 2 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "47 kPa",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "1.30 ppt",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "ceil"
+      },
+      "description": "Use grid 0.1 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "1.00 ppt",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "1.20 ppt",
+      "rule_error": {
+        "grid": "0.01",
+        "mode": "tie_down"
+      },
+      "description": "Use grid 0.01 with tie_down instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "1.25 ppt",
+      "rule_error": {
+        "grid": "0.05",
+        "mode": "ceil"
+      },
+      "description": "Use grid 0.05 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "1.22 ppt",
+      "rule_error": {
+        "grid": "0.01",
+        "mode": "ceil"
+      },
+      "description": "Use grid 0.01 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "1.20 ppt",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "120 kg",
+      "rule_error": {
+        "grid": "10",
+        "mode": "tie_down"
+      },
+      "description": "Use grid 10 with tie_down instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "125 kg",
+      "rule_error": {
+        "grid": "5",
+        "mode": "nearest"
+      },
+      "description": "Use grid 5 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "100 kg",
+      "rule_error": {
+        "grid": "100",
+        "mode": "nearest"
+      },
+      "description": "Use grid 100 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "140 kg",
+      "rule_error": {
+        "grid": "10",
+        "mode": "ceil"
+      },
+      "description": "Use grid 10 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "100 kg",
+      "rule_error": {
+        "grid": "100",
+        "mode": "nearest"
+      },
+      "description": "Use grid 100 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "135 kg",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "8.0 mm",
+      "rule_error": {
+        "grid": "1",
+        "mode": "ceil"
+      },
+      "description": "Use grid 1 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "7.3 mm",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "7.0 mm",
+      "rule_error": {
+        "grid": "0.5",
+        "mode": "tie_down"
+      },
+      "description": "Use grid 0.5 with tie_down instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "7.8 mm",
+      "rule_error": {
+        "grid": "0.1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 0.1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "7.5 mm",
+      "rule_error": {
+        "grid": "0.5",
+        "mode": "floor"
+      },
+      "description": "Use grid 0.5 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "7.0 mm",
+      "rule_error": {
+        "grid": "1",
+        "mode": "floor"
+      },
+      "description": "Use grid 1 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o1",
+      "slot": 1,
+      "text": "10 cm",
+      "rule_error": {
+        "grid": "10",
+        "mode": "floor"
+      },
+      "description": "Use grid 10 with floor instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "19 cm",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "18 cm",
+      "rule_error": {
+        "grid": "2",
+        "mode": "tie_down"
+      },
+      "description": "Use grid 2 with tie_down instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "option_id": "o2",
+      "slot": 2,
+      "text": "25 cm",
+      "rule_error": {
+        "grid": "5",
+        "mode": "ceil"
+      },
+      "description": "Use grid 5 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "option_id": "o3",
+      "slot": 3,
+      "text": "22 cm",
+      "rule_error": {
+        "grid": "2",
+        "mode": "ceil"
+      },
+      "description": "Use grid 2 with ceil instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "option_id": "o4",
+      "slot": 4,
+      "text": "21 cm",
+      "rule_error": {
+        "grid": "1",
+        "mode": "nearest"
+      },
+      "description": "Use grid 1 with nearest instead of the stated nearest/half-up grid",
+      "construction_matches": true,
+      "semantic_assessment": "Plausible explicit rule misapplication, not an additional supported answer."
+    }
+  ],
+  "choice_only": {
+    "original": {
+      "cooldown": {
+        "rows": 12,
+        "counts": {
+          "first": 5,
+          "shortest_first_tie": 6,
+          "shortest_fractional": 3.666666666666667,
+          "shortest_strict": 0,
+          "longest_first_tie": 1,
+          "longest_fractional": 1.0,
+          "longest_strict": 1,
+          "numeric_min": 0,
+          "numeric_max": 1,
+          "numeric_interior": 11,
+          "numeric_lower_median": 11
+        },
+        "target_slots": {
+          "3": 3,
+          "4": 2,
+          "1": 5,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "2": 11,
+          "4": 1
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              20,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              20,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+            "target_slot": 3,
+            "lengths": [
+              20,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              20,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      },
+      "coordinates": {
+        "rows": 12,
+        "counts": {
+          "first": 3,
+          "shortest_first_tie": 2,
+          "shortest_fractional": 3.083333333333333,
+          "shortest_strict": 1,
+          "longest_first_tie": 3,
+          "longest_fractional": 2.916666666666667,
+          "longest_strict": 1
+        },
+        "target_slots": {
+          "2": 3,
+          "4": 4,
+          "1": 3,
+          "3": 2
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              6,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              6,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              7,
+              7,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              6,
+              7,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        ]
+      },
+      "discount": {
+        "rows": 12,
+        "counts": {
+          "first": 2,
+          "shortest_first_tie": 2,
+          "shortest_fractional": 3.0,
+          "shortest_strict": 0,
+          "longest_first_tie": 2,
+          "longest_fractional": 3.0,
+          "longest_strict": 0,
+          "numeric_min": 0,
+          "numeric_max": 0,
+          "numeric_interior": 12,
+          "numeric_lower_median": 4,
+          "v_plus1_minus2_unique": 12,
+          "v_plus1_minus2_correct": 12
+        },
+        "target_slots": {
+          "3": 5,
+          "1": 2,
+          "4": 3,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "3": 8,
+          "2": 4
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:discount:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p02:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p04:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p04:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p05:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p06:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      },
+      "fifo": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 3,
+          "shortest_fractional": 4.0,
+          "shortest_strict": 1,
+          "longest_first_tie": 5,
+          "longest_fractional": 4.999999999999999,
+          "longest_strict": 3,
+          "most_zeros": 9,
+          "fewest_zeros": 1
+        },
+        "target_slots": {
+          "1": 4,
+          "2": 4,
+          "3": 4
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+            "target_slot": 1,
+            "lengths": [
+              28,
+              27,
+              27
+            ],
+            "zeros": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+            "target_slot": 2,
+            "lengths": [
+              27,
+              28,
+              27
+            ],
+            "zeros": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              26,
+              25
+            ],
+            "zeros": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+            "target_slot": 2,
+            "lengths": [
+              25,
+              25,
+              25
+            ],
+            "zeros": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+            "target_slot": 1,
+            "lengths": [
+              22,
+              22,
+              22
+            ],
+            "zeros": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              21,
+              21,
+              21
+            ],
+            "zeros": [
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              24,
+              23,
+              23
+            ],
+            "zeros": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              23,
+              23,
+              23
+            ],
+            "zeros": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              24,
+              24
+            ],
+            "zeros": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              25,
+              24
+            ],
+            "zeros": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+            "target_slot": 3,
+            "lengths": [
+              24,
+              24,
+              24
+            ],
+            "zeros": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              24,
+              24,
+              24
+            ],
+            "zeros": [
+              1,
+              2,
+              1
+            ]
+          }
+        ]
+      },
+      "lexicographic": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 4,
+          "shortest_fractional": 3.5000000000000004,
+          "shortest_strict": 1,
+          "longest_first_tie": 1,
+          "longest_fractional": 1.5,
+          "longest_strict": 1,
+          "first_displayed_candidate": 4
+        },
+        "target_slots": {
+          "2": 5,
+          "1": 4,
+          "3": 1,
+          "4": 2
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+            "target_slot": 2,
+            "lengths": [
+              3,
+              3,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              3,
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              4,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              4,
+              5,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              6,
+              5,
+              5
+            ]
+          }
+        ]
+      },
+      "packs": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 0,
+          "shortest_fractional": 0.75,
+          "shortest_strict": 0,
+          "longest_first_tie": 6,
+          "longest_fractional": 4.25,
+          "longest_strict": 0,
+          "numeric_min": 1,
+          "numeric_max": 3,
+          "numeric_interior": 8,
+          "numeric_lower_median": 5
+        },
+        "target_slots": {
+          "1": 4,
+          "4": 2,
+          "3": 4,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "4": 1,
+          "3": 5,
+          "2": 5,
+          "1": 1
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:packs:p01:c01",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              6,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p04:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p04:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p05:c01",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              6,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      },
+      "rates": {
+        "rows": 12,
+        "counts": {
+          "first": 2,
+          "shortest_first_tie": 5,
+          "shortest_fractional": 6.0,
+          "shortest_strict": 4,
+          "longest_first_tie": 1,
+          "longest_fractional": 2.0,
+          "longest_strict": 0,
+          "first_displayed_candidate": 3
+        },
+        "target_slots": {
+          "3": 3,
+          "1": 2,
+          "2": 6,
+          "4": 1
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:rates:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p01:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              4,
+              4,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              3,
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p04:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              4,
+              6,
+              4
+            ]
+          }
+        ]
+      },
+      "rounding": {
+        "rows": 12,
+        "counts": {
+          "first": 3,
+          "shortest_first_tie": 3,
+          "shortest_fractional": 3.0,
+          "shortest_strict": 0,
+          "longest_first_tie": 3,
+          "longest_fractional": 3.0,
+          "longest_strict": 0,
+          "numeric_min": 0,
+          "numeric_max": 0,
+          "numeric_interior": 12,
+          "numeric_lower_median": 7
+        },
+        "target_slots": {
+          "4": 4,
+          "1": 3,
+          "3": 3,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "3": 5,
+          "2": 7
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+            "target_slot": 3,
+            "lengths": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      }
+    },
+    "revised": {
+      "cooldown": {
+        "rows": 12,
+        "counts": {
+          "first": 5,
+          "shortest_first_tie": 6,
+          "shortest_fractional": 3.666666666666667,
+          "shortest_strict": 0,
+          "longest_first_tie": 1,
+          "longest_fractional": 1.0,
+          "longest_strict": 1,
+          "numeric_min": 0,
+          "numeric_max": 1,
+          "numeric_interior": 11,
+          "numeric_lower_median": 11
+        },
+        "target_slots": {
+          "3": 3,
+          "4": 2,
+          "1": 5,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "2": 11,
+          "4": 1
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              20,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              20,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+            "target_slot": 3,
+            "lengths": [
+              20,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              5,
+              5,
+              20
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              20,
+              5
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              20,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      },
+      "coordinates": {
+        "rows": 12,
+        "counts": {
+          "first": 3,
+          "shortest_first_tie": 2,
+          "shortest_fractional": 3.083333333333333,
+          "shortest_strict": 1,
+          "longest_first_tie": 3,
+          "longest_fractional": 2.916666666666667,
+          "longest_strict": 1
+        },
+        "target_slots": {
+          "2": 3,
+          "4": 4,
+          "1": 3,
+          "3": 2
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              6,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              6,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              5,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              7,
+              7,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              5,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              6,
+              7,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              5,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ]
+          }
+        ]
+      },
+      "discount": {
+        "rows": 12,
+        "counts": {
+          "first": 2,
+          "shortest_first_tie": 1,
+          "shortest_fractional": 3.0,
+          "shortest_strict": 0,
+          "longest_first_tie": 2,
+          "longest_fractional": 2.833333333333333,
+          "longest_strict": 0,
+          "numeric_min": 3,
+          "numeric_max": 2,
+          "numeric_interior": 7,
+          "numeric_lower_median": 2,
+          "v_plus1_minus2_unique": 0,
+          "v_plus1_minus2_correct": 0
+        },
+        "target_slots": {
+          "3": 5,
+          "1": 2,
+          "4": 3,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "3": 5,
+          "1": 3,
+          "2": 2,
+          "4": 2
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:discount:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              6,
+              7
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p02:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p04:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p04:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p05:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p06:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:discount:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 1
+          }
+        ]
+      },
+      "fifo": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 4,
+          "shortest_fractional": 4.666666666666666,
+          "shortest_strict": 2,
+          "longest_first_tie": 5,
+          "longest_fractional": 3.666666666666667,
+          "longest_strict": 1,
+          "most_zeros": 3,
+          "fewest_zeros": 6
+        },
+        "target_slots": {
+          "1": 4,
+          "2": 4,
+          "3": 4
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+            "target_slot": 1,
+            "lengths": [
+              28,
+              27,
+              27
+            ],
+            "zeros": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+            "target_slot": 2,
+            "lengths": [
+              27,
+              28,
+              28
+            ],
+            "zeros": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              25,
+              25
+            ],
+            "zeros": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+            "target_slot": 2,
+            "lengths": [
+              25,
+              25,
+              25
+            ],
+            "zeros": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+            "target_slot": 1,
+            "lengths": [
+              22,
+              22,
+              22
+            ],
+            "zeros": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              21,
+              21,
+              21
+            ],
+            "zeros": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              24,
+              23,
+              24
+            ],
+            "zeros": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              23,
+              23,
+              24
+            ],
+            "zeros": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              24,
+              24
+            ],
+            "zeros": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              25,
+              24
+            ],
+            "zeros": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+            "target_slot": 3,
+            "lengths": [
+              25,
+              25,
+              24
+            ],
+            "zeros": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              24,
+              24,
+              24
+            ],
+            "zeros": [
+              2,
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      "lexicographic": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 4,
+          "shortest_fractional": 3.5000000000000004,
+          "shortest_strict": 1,
+          "longest_first_tie": 1,
+          "longest_fractional": 1.5,
+          "longest_strict": 1,
+          "first_displayed_candidate": 4
+        },
+        "target_slots": {
+          "2": 5,
+          "1": 4,
+          "3": 1,
+          "4": 2
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+            "target_slot": 2,
+            "lengths": [
+              3,
+              3,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              3,
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              4,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              4,
+              5,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              4,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              4,
+              5,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              6,
+              5,
+              5
+            ]
+          }
+        ]
+      },
+      "packs": {
+        "rows": 12,
+        "counts": {
+          "first": 4,
+          "shortest_first_tie": 0,
+          "shortest_fractional": 0.75,
+          "shortest_strict": 0,
+          "longest_first_tie": 6,
+          "longest_fractional": 4.25,
+          "longest_strict": 0,
+          "numeric_min": 1,
+          "numeric_max": 3,
+          "numeric_interior": 8,
+          "numeric_lower_median": 5
+        },
+        "target_slots": {
+          "1": 4,
+          "4": 2,
+          "3": 4,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "4": 1,
+          "3": 5,
+          "2": 5,
+          "1": 1
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:packs:p01:c01",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p01:c02",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p03:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              6,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p04:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p04:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p05:c01",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              7,
+              7,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              7,
+              6,
+              7
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p06:c01",
+            "target_slot": 4,
+            "lengths": [
+              7,
+              6,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:packs:p06:c02",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              7,
+              7,
+              7
+            ],
+            "numeric_rank": 2
+          }
+        ]
+      },
+      "rates": {
+        "rows": 12,
+        "counts": {
+          "first": 2,
+          "shortest_first_tie": 5,
+          "shortest_fractional": 6.0,
+          "shortest_strict": 4,
+          "longest_first_tie": 1,
+          "longest_fractional": 2.0,
+          "longest_strict": 0,
+          "first_displayed_candidate": 3
+        },
+        "target_slots": {
+          "3": 3,
+          "1": 2,
+          "2": 6,
+          "4": 1
+        },
+        "numeric_ranks": {},
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:rates:p01:c01",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p01:c02",
+            "target_slot": 3,
+            "lengths": [
+              7,
+              6,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              4,
+              4,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p02:c02",
+            "target_slot": 1,
+            "lengths": [
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p03:c01",
+            "target_slot": 2,
+            "lengths": [
+              3,
+              3,
+              4,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p03:c02",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              3,
+              4,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p04:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p04:c02",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              3
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p05:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              4
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              4,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rates:p06:c02",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              4,
+              6,
+              4
+            ]
+          }
+        ]
+      },
+      "rounding": {
+        "rows": 12,
+        "counts": {
+          "first": 3,
+          "shortest_first_tie": 3,
+          "shortest_fractional": 3.0,
+          "shortest_strict": 0,
+          "longest_first_tie": 3,
+          "longest_fractional": 3.0,
+          "longest_strict": 0,
+          "numeric_min": 3,
+          "numeric_max": 5,
+          "numeric_interior": 4,
+          "numeric_lower_median": 2
+        },
+        "target_slots": {
+          "4": 4,
+          "1": 3,
+          "3": 3,
+          "2": 2
+        },
+        "numeric_ranks": {
+          "4": 5,
+          "1": 3,
+          "3": 2,
+          "2": 2
+        },
+        "per_row": [
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+            "target_slot": 4,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+            "target_slot": 3,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 1
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+            "target_slot": 4,
+            "lengths": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+            "target_slot": 3,
+            "lengths": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+            "target_slot": 2,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 2
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+            "target_slot": 4,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 3
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+            "target_slot": 1,
+            "lengths": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+            "target_slot": 2,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 4
+          },
+          {
+            "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+            "target_slot": 1,
+            "lengths": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "numeric_rank": 1
+          }
+        ]
+      }
+    },
+    "tie_rule": "First supplied option; length fractional credit also reported. Cooldown No listed start fits ordered after times for numeric-rank diagnostics only."
+  },
+  "hash_references": [
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "audit.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "audit_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "change_map.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "distractor_constructions.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "generation_review.md",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "group_assignments.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "metadata.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "parent_refs.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "revise.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "source_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "validation.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "file": "validation_report.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "audit.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "audit_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "change_map.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "distractor_constructions.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "generation_review.md",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "group_assignments.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "parent_refs.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "revise.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "source_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "validation.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "file": "validation_report.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "source_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "audit_cases.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "validation.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "group_assignments.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "audit.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "revision.py",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "revision_map.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "validation_report.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "file": "generation_review.md",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "case-metadata.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "exclusion.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "manifest.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "provenance.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "shards/geometry.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "shards/ordering.jsonl",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "validation-input.json",
+      "match": true
+    },
+    {
+      "record": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "file": "validation.json",
+      "match": true
+    }
+  ],
+  "input_hashes_preserved": true,
+  "input_file_count": 53,
+  "historical_record": "Original initial review finding remains 31/32 (as supplied by user); no historical review data opened. This r2 pass does not overwrite or retrospectively erase it.",
+  "limitations": [
+    "56 direct target-hidden judgments, not 96 independent text judgments; remaining 40 receive structured expected/correspondence checks.",
+    "Same teacher alias agreement is not independent groundtruth; pure helper recomputation is separate-algorithm consistency, not independent authorship.",
+    "96 rows / 48 paired policies / 8 intentionally seen mechanisms; not iid, unseen-mechanism, or final evidence.",
+    "Revised developmental candidate after exposed shortcut diagnostics; not untouched validation.",
+    "Wrong rounding grids are valid distractors but often eliminable by grid membership; coarse grids can be less attractive than neighboring-grid errors.",
+    "FIFO low-demand depletion signatures and discount numeric-rank priors remain. No optimization or rewriting performed."
+  ],
+  "commands": [
+    "Read AGENTS.md and docs/contracts.md with read tool.",
+    "python3 target-hidden projection (id/state/question/options only); broad initial projection followed by exact 56-row blind-inputs.jsonl.",
+    "python3 review-r2/freeze.py (run once before source/target inspection).",
+    "find candidate base -maxdepth 3 -type f (listing only after freeze).",
+    "read revised audit.py, revise.py, revision.py, distractor_constructions.json, provenance.json and case metadata.",
+    "python3 -B review-r2/check.py (two runs; first over-broad metadata recursion misresolved embedded parent hashes as revision hashes; reviewer script corrected to check explicit local maps, with parent refs separately checked. No input changed. Pure expected/stated/correspondence and extracted pure distractor functions only; no mains)."
+  ],
+  "boundaries": {
+    "tests": false,
+    "lint": false,
+    "git": false,
+    "mailbox": false,
+    "network": false,
+    "models": false,
+    "additional_spend_gbp": 0,
+    "evaluation_probe_final_data_access": false,
+    "writes": "New review-r2 files only"
+  }
+}

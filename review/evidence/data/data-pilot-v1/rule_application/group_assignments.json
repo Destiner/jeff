@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "assignment_revision": "rule-application-pilot-r1",
+  "source_config": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/pilot-v1.json",
+  "frozen_before_row_authoring": true,
+  "groups": {
+    "data:pilot-v1:rule_application:g01": {"split":"train","domain":"fictional repair desk","mechanism":"ordered first-match routing with overrides","revision":"r1"},
+    "data:pilot-v1:rule_application:g02": {"split":"train","domain":"fictional equipment rental","mechanism":"progressive marginal band charge accumulation","revision":"r1"},
+    "data:pilot-v1:rule_application:g03": {"split":"train","domain":"fictional cargo dispatch","mechanism":"ordered greedy capacity admission with skip-and-continue","revision":"r1"},
+    "data:pilot-v1:rule_application:g04": {"split":"train","domain":"fictional observatory rota","mechanism":"modular cyclic indexing with signed displacement","revision":"r1"},
+    "data:pilot-v1:rule_application:g05": {"split":"train","domain":"fictional seed quality scoring","mechanism":"signed weighted sum and score classification","revision":"r1"},
+    "data:pilot-v1:rule_application:g06": {"split":"train","domain":"fictional exhibition badge reconciliation","mechanism":"symmetric difference of entitlement sets","revision":"r1"},
+    "data:pilot-v1:rule_application:g07": {"split":"train","domain":"fictional room reservation","mechanism":"half-open temporal interval intersection","revision":"r1"},
+    "data:pilot-v1:rule_application:g08": {"split":"train","domain":"fictional message switchboard","mechanism":"longest matching prefix selection","revision":"r1"},
+    "data:pilot-v1:rule_application:g09": {"split":"train","domain":"fictional parcel seal checking","mechanism":"position-weighted modular checksum","revision":"r1"},
+    "data:pilot-v1:rule_application:g10": {"split":"train","domain":"fictional workshop access controller","mechanism":"finite state transition execution","revision":"r1"},
+    "data:pilot-v1:rule_application:g11": {"split":"validation","domain":"fictional irrigation network","mechanism":"transitive directed graph reachability","revision":"r1"},
+    "data:pilot-v1:rule_application:g12": {"split":"validation","domain":"fictional club election","mechanism":"Condorcet winner from strict pairwise ballot majorities","revision":"r1"}
+  },
+  "split_policy":"Ten rows per mechanism. All related cases and renderings stay in the preallocated split. Validation holds out complete graph-reachability and pairwise-election mechanisms, not renamed numeric thresholds."
+}

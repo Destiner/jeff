@@ -1,0 +1,38 @@
+{
+  "snapshot": "minilm-checkpoint",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+    "rows": 96
+  },
+  "checkpoint_inventory": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-inventory-before.json",
+    "sha256": "f4b83eed5583d1a2baf1e99d59113aef83e031cb6e577a8828b499a26194f174"
+  },
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-predictions.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/empty-reload-cache/minilm-checkpoint",
+  "offline_environment": true,
+  "started_at": "2026-11-11T14:30:30.542311+00:00"
+}

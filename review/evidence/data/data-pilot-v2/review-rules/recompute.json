@@ -1,0 +1,36 @@
+{
+  "rule-a": {
+    "rows": 240,
+    "audit_records": 240,
+    "matches": 240,
+    "unique_expected_options": 240,
+    "policy_instances": {
+      "train": 100,
+      "validation": 20
+    },
+    "mechanism_groups": {
+      "train": 10,
+      "validation": 5
+    },
+    "failures": [],
+    "metadata_hash_mismatches": [],
+    "method": "Imported existing pure expected(case), dictionary argument, no main/validate invoked. Reused same-author solver, not independent correctness verification."
+  },
+  "rule-b": {
+    "rows": 240,
+    "audit_records": 240,
+    "matches": 240,
+    "unique_expected_options": 240,
+    "policy_instances": {
+      "train": 100,
+      "validation": 20
+    },
+    "mechanism_groups": {
+      "train": 10,
+      "validation": 5
+    },
+    "failures": [],
+    "metadata_hash_mismatches": [],
+    "method": "Imported existing pure expected(case), dictionary argument, no main/validate invoked. Reused same-author solver, not independent correctness verification."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "m6.full-run-freeze.v1",
+  "frozen_at": "2026-11-11T15:48:30.252666+00:00",
+  "source_revision": "dafd5d235b53af341fbf539e4bf32dcf09a399f2",
+  "single_full_run": true,
+  "receipt_pins": {
+    "comparison-freeze.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/comparison-freeze.json",
+      "sha256": "5c24a089e3cb4025fb9fcdf4e10effb838d3fb7394eab96493d41b8598908e10"
+    },
+    "starting-comparison.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/starting-comparison.json",
+      "sha256": "abb30d9a2044fd129b576d96d00f4bc443aca4902971a774d5841af67c34b746"
+    },
+    "train-audit/audit.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit/audit.json",
+      "sha256": "16a5dd978f47e22ec4e0c0b71f99fd6d6ed4e9cb0698e3d2fe25b6ca274cb1e5"
+    },
+    "train-audit/schedule.jsonl": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit/schedule.jsonl",
+      "sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8"
+    },
+    "capacity/receipt.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/capacity/receipt.json",
+      "sha256": "995602986e42132057df12fd823b92e0fec8492daace4e958f8ababfc11d667a"
+    },
+    "capacity-process.json": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/capacity-process.json",
+      "sha256": "5fe0640793cb7e379ddf211339bf813578c88cd95f7f0c14348328d0129efa2a"
+    },
+    "implementation-review.md": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/implementation-review.md",
+      "sha256": "5ffc3704e8962e2d448584a42a6585ab0082b60ef2840a90dc25339fb90f168c"
+    },
+    "launch.py": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/launch.py",
+      "sha256": "aa1aa4c5b66f774160368e5276e5dcd2574fba5dfc467bf0422a21881a84b0d0"
+    }
+  },
+  "recipe": {
+    "schema_version": "m6.recipe.v1",
+    "seed": 42,
+    "train_rows": 1500,
+    "epochs": 1,
+    "microbatch": 1,
+    "accumulation": 4,
+    "updates": 375,
+    "optimizer": "AdamW",
+    "learning_rate": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "foreach": false,
+    "max_input_tokens": 1024,
+    "maximum_run_seconds": 2700,
+    "maximum_capacity_seconds": 600,
+    "max_cpu_rss_bytes": 17179869184,
+    "max_mps_driver_bytes": 17179869184,
+    "min_recommended_headroom_bytes": 2147483648
+  },
+  "schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+  "reset": "capacity process exited; training separately reloads original pinned bytes with fresh empty AdamW and reseeded Python/torchCPU/MPS42",
+  "capacity_projection": {
+    "estimated_total_seconds": 2100.3375834366307,
+    "within_cap": true,
+    "method": "capacity elapsed + 375 * slower longest-four update + 3000 * slowest eval + 120s save allowance",
+    "first_update_seconds": 2.89379875222221,
+    "steady_update_seconds": 1.9994605835527182,
+    "before_after_fit_seconds": 886.7652509361506,
+    "save_allowance_seconds": 120,
+    "qualification": "longest-input conservative extrapolation, not measured full-run time or a guarantee"
+  },
+  "slot": "Model exclusive from actual train invocation start for at most2700s; supervisor TERM at2690 then KILL at2700 if necessary; no competing loads. Guard failure does not authorize retry/fallback.",
+  "e6_observations": "Both-order inherited/new NLL/Brier, ruleflip/both-order correctness, intent/probe/family/source regressions; no composite/promotion criterion",
+  "trained_dev_owner": "Runtime P4 only; Model produces train-only fit,not a duplicate final624 pass"
+}

@@ -1,0 +1,934 @@
+checks 24797 discrepancies 0
+{
+  "inherited-v1": {
+    "original:m4-minilm-random-start": {
+      "n": 60,
+      "correct": 20,
+      "nll": 1.3782670112554563,
+      "brier": 0.7460364458197348,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-minilm-trained": {
+      "n": 60,
+      "correct": 34,
+      "nll": 0.9075537395730444,
+      "brier": 0.47813517225831287,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-pretrained-start": {
+      "n": 60,
+      "correct": 30,
+      "nll": 1.0268780321008346,
+      "brier": 0.5522226697822465,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-trained": {
+      "n": 60,
+      "correct": 42,
+      "nll": 0.7126207803955256,
+      "brier": 0.39334276603436075,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m2-v1-trained": {
+      "n": 60,
+      "correct": 35,
+      "nll": 0.8552875089589308,
+      "brier": 0.4615426781182788,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m3-v1-trained": {
+      "n": 60,
+      "correct": 40,
+      "nll": 0.7937008119799213,
+      "brier": 0.4219370710806585,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:uniform": {
+      "n": 60,
+      "correct": 17,
+      "nll": 1.3787648669871742,
+      "brier": 0.7461111111111111,
+      "ties": 60,
+      "zero_target": 0
+    },
+    "original:lexical": {
+      "n": 60,
+      "correct": 29,
+      "nll": 1.3237099779963926,
+      "brier": 0.7178050247683313,
+      "ties": 14,
+      "zero_target": 0
+    },
+    "original:qwen25-05b-instruct-frozen": {
+      "n": 60,
+      "correct": 35,
+      "nll": 1.1947069633399572,
+      "brier": 0.5991277783366675,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-fresh-start": {
+      "n": 60,
+      "correct": 35,
+      "nll": 1.1947069633399572,
+      "brier": 0.5991277783366675,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-v2-trained": {
+      "n": 60,
+      "correct": 17,
+      "nll": 1.4428841250027624,
+      "brier": 0.7780140524889627,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-random-start": {
+      "n": 60,
+      "correct": 20,
+      "nll": 1.3782670112554563,
+      "brier": 0.7460364458197348,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-trained": {
+      "n": 60,
+      "correct": 34,
+      "nll": 0.9075537395134471,
+      "brier": 0.4781351722189449,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-pretrained-start": {
+      "n": 60,
+      "correct": 30,
+      "nll": 1.0268780325539306,
+      "brier": 0.5522226699485064,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-trained": {
+      "n": 60,
+      "correct": 42,
+      "nll": 0.7126207808581771,
+      "brier": 0.39334276632117093,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m2-v1-trained": {
+      "n": 60,
+      "correct": 35,
+      "nll": 0.8552875089831481,
+      "brier": 0.46154267812238026,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m3-v1-trained": {
+      "n": 60,
+      "correct": 40,
+      "nll": 0.7937008119314423,
+      "brier": 0.42193707105382283,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:uniform": {
+      "n": 60,
+      "correct": 13,
+      "nll": 1.3787648669871742,
+      "brier": 0.7461111111111111,
+      "ties": 60,
+      "zero_target": 0
+    },
+    "reversed:lexical": {
+      "n": 60,
+      "correct": 31,
+      "nll": 1.3237099779963926,
+      "brier": 0.7178050247683313,
+      "ties": 14,
+      "zero_target": 0
+    },
+    "reversed:qwen25-05b-instruct-frozen": {
+      "n": 60,
+      "correct": 34,
+      "nll": 0.9667327593989279,
+      "brier": 0.5375414971109708,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-fresh-start": {
+      "n": 60,
+      "correct": 34,
+      "nll": 0.9667327593989279,
+      "brier": 0.5375414971109708,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-v2-trained": {
+      "n": 60,
+      "correct": 13,
+      "nll": 1.4725944080790105,
+      "brier": 0.8032525244815568,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "pairs:m4-minilm-random-start": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 20,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 40,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:m4-minilm-trained": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 34,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 26,
+      "tv": 3.065552406293328e-11,
+      "max_change": 1.8332970141976546e-09
+    },
+    "pairs:m4-msmarco-pretrained-start": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 30,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 30,
+      "tv": 5.588691410159207e-10,
+      "max_change": 1.436755189820893e-08
+    },
+    "pairs:m4-msmarco-trained": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 42,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 18,
+      "tv": 3.9016789751147677e-10,
+      "max_change": 1.087563120116819e-08
+    },
+    "pairs:m2-v1-trained": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 35,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 25,
+      "tv": 4.116784203179763e-11,
+      "max_change": 9.040254100867173e-10
+    },
+    "pairs:m3-v1-trained": {
+      "n": 60,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 60,
+      "both": 40,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 20,
+      "tv": 3.2734784442353595e-11,
+      "max_change": 9.87723458578671e-10
+    },
+    "pairs:uniform": {
+      "n": 60,
+      "flips": 60,
+      "flips_without_ties": 0,
+      "untied_pairs": 0,
+      "both": 0,
+      "original_only": 17,
+      "reversed_only": 13,
+      "neither": 30,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:lexical": {
+      "n": 60,
+      "flips": 14,
+      "flips_without_ties": 0,
+      "untied_pairs": 46,
+      "both": 26,
+      "original_only": 3,
+      "reversed_only": 5,
+      "neither": 26,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:qwen25-05b-instruct-frozen": {
+      "n": 60,
+      "flips": 19,
+      "flips_without_ties": 19,
+      "untied_pairs": 60,
+      "both": 28,
+      "original_only": 7,
+      "reversed_only": 6,
+      "neither": 19,
+      "tv": 0.24470962422143844,
+      "max_change": 0.7802682440592066
+    },
+    "pairs:m6-qwen-fresh-start": {
+      "n": 60,
+      "flips": 19,
+      "flips_without_ties": 19,
+      "untied_pairs": 60,
+      "both": 28,
+      "original_only": 7,
+      "reversed_only": 6,
+      "neither": 19,
+      "tv": 0.24470962422143844,
+      "max_change": 0.7802682440592066
+    },
+    "pairs:m6-qwen-v2-trained": {
+      "n": 60,
+      "flips": 60,
+      "flips_without_ties": 60,
+      "untied_pairs": 60,
+      "both": 0,
+      "original_only": 17,
+      "reversed_only": 13,
+      "neither": 30,
+      "tv": 0.19076029188404886,
+      "max_change": 0.3102045315644605
+    }
+  },
+  "new-v2": {
+    "original:m4-minilm-random-start": {
+      "n": 240,
+      "correct": 66,
+      "nll": 1.3324666070317808,
+      "brier": 0.7331399120951492,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-minilm-trained": {
+      "n": 240,
+      "correct": 132,
+      "nll": 0.8231153493699339,
+      "brier": 0.46011497435630294,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-pretrained-start": {
+      "n": 240,
+      "correct": 99,
+      "nll": 1.0585676282592658,
+      "brier": 0.5814922817963063,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-trained": {
+      "n": 240,
+      "correct": 141,
+      "nll": 0.9172583449489373,
+      "brier": 0.48139232154626016,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m2-v1-trained": {
+      "n": 240,
+      "correct": 107,
+      "nll": 1.1364271896063711,
+      "brier": 0.606944967469034,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m3-v1-trained": {
+      "n": 240,
+      "correct": 110,
+      "nll": 1.024843693611751,
+      "brier": 0.5552985587790379,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:uniform": {
+      "n": 240,
+      "correct": 65,
+      "nll": 1.3334632332543237,
+      "brier": 0.7336805555555556,
+      "ties": 240,
+      "zero_target": 0
+    },
+    "original:lexical": {
+      "n": 240,
+      "correct": 99,
+      "nll": 1.296867900931744,
+      "brier": 0.7128012383025367,
+      "ties": 121,
+      "zero_target": 0
+    },
+    "original:qwen25-05b-instruct-frozen": {
+      "n": 240,
+      "correct": 129,
+      "nll": 1.3123496306793034,
+      "brier": 0.6334920301590142,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-fresh-start": {
+      "n": 240,
+      "correct": 129,
+      "nll": 1.3123496306793034,
+      "brier": 0.6334920301590142,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-v2-trained": {
+      "n": 240,
+      "correct": 65,
+      "nll": 1.413320085491258,
+      "brier": 0.7792002173911162,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-random-start": {
+      "n": 240,
+      "correct": 66,
+      "nll": 1.33246660718849,
+      "brier": 0.7331399121958696,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-trained": {
+      "n": 240,
+      "correct": 132,
+      "nll": 0.8231153493287487,
+      "brier": 0.46011497433880144,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-pretrained-start": {
+      "n": 240,
+      "correct": 99,
+      "nll": 1.0585676284270864,
+      "brier": 0.5814922819106888,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-trained": {
+      "n": 240,
+      "correct": 141,
+      "nll": 0.9172583453589392,
+      "brier": 0.4813923218510378,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m2-v1-trained": {
+      "n": 240,
+      "correct": 107,
+      "nll": 1.1364271892144295,
+      "brier": 0.6069449672127115,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m3-v1-trained": {
+      "n": 240,
+      "correct": 110,
+      "nll": 1.02484369352451,
+      "brier": 0.5552985587193146,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:uniform": {
+      "n": 240,
+      "correct": 65,
+      "nll": 1.3334632332543237,
+      "brier": 0.7336805555555556,
+      "ties": 240,
+      "zero_target": 0
+    },
+    "reversed:lexical": {
+      "n": 240,
+      "correct": 99,
+      "nll": 1.296867900931744,
+      "brier": 0.7128012383025367,
+      "ties": 121,
+      "zero_target": 0
+    },
+    "reversed:qwen25-05b-instruct-frozen": {
+      "n": 240,
+      "correct": 118,
+      "nll": 1.4106206775423604,
+      "brier": 0.6874023517504078,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-fresh-start": {
+      "n": 240,
+      "correct": 118,
+      "nll": 1.4106206775423604,
+      "brier": 0.6874023517504078,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-v2-trained": {
+      "n": 240,
+      "correct": 65,
+      "nll": 1.407130039288739,
+      "brier": 0.7781339061775513,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "pairs:m4-minilm-random-start": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 66,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 174,
+      "tv": 1.0401495556070876e-10,
+      "max_change": 1.927846682292511e-08
+    },
+    "pairs:m4-minilm-trained": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 132,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 108,
+      "tv": 1.336787413357262e-10,
+      "max_change": 1.915241298888759e-08
+    },
+    "pairs:m4-msmarco-pretrained-start": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 99,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 141,
+      "tv": 1.3823103851112502e-10,
+      "max_change": 1.6950660042258647e-08
+    },
+    "pairs:m4-msmarco-trained": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 141,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 99,
+      "tv": 3.02033038737255e-10,
+      "max_change": 1.9612502455412795e-08
+    },
+    "pairs:m2-v1-trained": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 107,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 133,
+      "tv": 3.198311275515826e-10,
+      "max_change": 1.9378048221607713e-08
+    },
+    "pairs:m3-v1-trained": {
+      "n": 240,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 240,
+      "both": 110,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 130,
+      "tv": 6.880205426033824e-11,
+      "max_change": 3.975218043628104e-09
+    },
+    "pairs:uniform": {
+      "n": 240,
+      "flips": 240,
+      "flips_without_ties": 0,
+      "untied_pairs": 0,
+      "both": 0,
+      "original_only": 65,
+      "reversed_only": 65,
+      "neither": 110,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:lexical": {
+      "n": 240,
+      "flips": 121,
+      "flips_without_ties": 0,
+      "untied_pairs": 119,
+      "both": 70,
+      "original_only": 29,
+      "reversed_only": 29,
+      "neither": 112,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:qwen25-05b-instruct-frozen": {
+      "n": 240,
+      "flips": 122,
+      "flips_without_ties": 122,
+      "untied_pairs": 240,
+      "both": 82,
+      "original_only": 47,
+      "reversed_only": 36,
+      "neither": 75,
+      "tv": 0.33049128000167705,
+      "max_change": 0.9476946468061195
+    },
+    "pairs:m6-qwen-fresh-start": {
+      "n": 240,
+      "flips": 122,
+      "flips_without_ties": 122,
+      "untied_pairs": 240,
+      "both": 82,
+      "original_only": 47,
+      "reversed_only": 36,
+      "neither": 75,
+      "tv": 0.33049128000167705,
+      "max_change": 0.9476946468061195
+    },
+    "pairs:m6-qwen-v2-trained": {
+      "n": 240,
+      "flips": 240,
+      "flips_without_ties": 240,
+      "untied_pairs": 240,
+      "both": 0,
+      "original_only": 65,
+      "reversed_only": 65,
+      "neither": 110,
+      "tv": 0.20696175342356724,
+      "max_change": 0.31096127785704164
+    }
+  },
+  "probes": {
+    "original:m4-minilm-random-start": {
+      "n": 12,
+      "correct": 1,
+      "nll": 1.0571073602915295,
+      "brier": 0.647165360931396,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-minilm-trained": {
+      "n": 12,
+      "correct": 6,
+      "nll": 1.0254562316765095,
+      "brier": 0.6284659457914562,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-pretrained-start": {
+      "n": 12,
+      "correct": 7,
+      "nll": 1.4537831267414358,
+      "brier": 0.6518403617711035,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m4-msmarco-trained": {
+      "n": 12,
+      "correct": 5,
+      "nll": 1.8764638613872384,
+      "brier": 0.7703126315523633,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m2-v1-trained": {
+      "n": 12,
+      "correct": 8,
+      "nll": 0.7104069053785301,
+      "brier": 0.4417280838650461,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m3-v1-trained": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.3607010406137758,
+      "brier": 0.65359764468405,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:uniform": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.0550082766877307,
+      "brier": 0.6458333333333334,
+      "ties": 12,
+      "zero_target": 0
+    },
+    "original:lexical": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.0470441093070695,
+      "brier": 0.6462891168734193,
+      "ties": 4,
+      "zero_target": 0
+    },
+    "original:qwen25-05b-instruct-frozen": {
+      "n": 12,
+      "correct": 9,
+      "nll": 0.6496209346007313,
+      "brier": 0.31772584808480825,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-fresh-start": {
+      "n": 12,
+      "correct": 9,
+      "nll": 0.6496209346007313,
+      "brier": 0.31772584808480825,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "original:m6-qwen-v2-trained": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.1754037610700838,
+      "brier": 0.7265042677709358,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-random-start": {
+      "n": 12,
+      "correct": 1,
+      "nll": 1.0571073602915295,
+      "brier": 0.647165360931396,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-minilm-trained": {
+      "n": 12,
+      "correct": 6,
+      "nll": 1.025456232202493,
+      "brier": 0.6284659461097656,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-pretrained-start": {
+      "n": 12,
+      "correct": 7,
+      "nll": 1.4537831273951038,
+      "brier": 0.6518403621004129,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m4-msmarco-trained": {
+      "n": 12,
+      "correct": 5,
+      "nll": 1.8764638632009785,
+      "brier": 0.770312632212571,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m2-v1-trained": {
+      "n": 12,
+      "correct": 8,
+      "nll": 0.7104069051720588,
+      "brier": 0.4417280835993045,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m3-v1-trained": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.3607010418770404,
+      "brier": 0.6535976452612459,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:uniform": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.0550082766877307,
+      "brier": 0.6458333333333334,
+      "ties": 12,
+      "zero_target": 0
+    },
+    "reversed:lexical": {
+      "n": 12,
+      "correct": 5,
+      "nll": 1.0470441093070695,
+      "brier": 0.6462891168734193,
+      "ties": 4,
+      "zero_target": 0
+    },
+    "reversed:qwen25-05b-instruct-frozen": {
+      "n": 12,
+      "correct": 11,
+      "nll": 0.41939804682879717,
+      "brier": 0.25124702010824174,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-fresh-start": {
+      "n": 12,
+      "correct": 11,
+      "nll": 0.41939804682879717,
+      "brier": 0.25124702010824174,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "reversed:m6-qwen-v2-trained": {
+      "n": 12,
+      "correct": 4,
+      "nll": 1.1720179296095796,
+      "brier": 0.7490541292765927,
+      "ties": 0,
+      "zero_target": 0
+    },
+    "pairs:m4-minilm-random-start": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 1,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 11,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:m4-minilm-trained": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 6,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 6,
+      "tv": 4.286548147686142e-10,
+      "max_change": 3.6281692095130325e-09
+    },
+    "pairs:m4-msmarco-pretrained-start": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 7,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 5,
+      "tv": 2.4140465783769233e-10,
+      "max_change": 1.636278224026455e-09
+    },
+    "pairs:m4-msmarco-trained": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 5,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 7,
+      "tv": 4.89210647351849e-10,
+      "max_change": 2.966538903415028e-09
+    },
+    "pairs:m2-v1-trained": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 8,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 4,
+      "tv": 5.754986117286384e-10,
+      "max_change": 6.90598334074366e-09
+    },
+    "pairs:m3-v1-trained": {
+      "n": 12,
+      "flips": 0,
+      "flips_without_ties": 0,
+      "untied_pairs": 12,
+      "both": 4,
+      "original_only": 0,
+      "reversed_only": 0,
+      "neither": 8,
+      "tv": 1.8214044248537897e-10,
+      "max_change": 2.185685299416207e-09
+    },
+    "pairs:uniform": {
+      "n": 12,
+      "flips": 12,
+      "flips_without_ties": 0,
+      "untied_pairs": 0,
+      "both": 0,
+      "original_only": 4,
+      "reversed_only": 4,
+      "neither": 4,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:lexical": {
+      "n": 12,
+      "flips": 4,
+      "flips_without_ties": 0,
+      "untied_pairs": 8,
+      "both": 3,
+      "original_only": 1,
+      "reversed_only": 2,
+      "neither": 6,
+      "tv": 0.0,
+      "max_change": 0.0
+    },
+    "pairs:qwen25-05b-instruct-frozen": {
+      "n": 12,
+      "flips": 2,
+      "flips_without_ties": 2,
+      "untied_pairs": 12,
+      "both": 9,
+      "original_only": 0,
+      "reversed_only": 2,
+      "neither": 1,
+      "tv": 0.25752708012711506,
+      "max_change": 0.9877294447366924
+    },
+    "pairs:m6-qwen-fresh-start": {
+      "n": 12,
+      "flips": 2,
+      "flips_without_ties": 2,
+      "untied_pairs": 12,
+      "both": 9,
+      "original_only": 0,
+      "reversed_only": 2,
+      "neither": 1,
+      "tv": 0.25752708012711506,
+      "max_change": 0.9877294447366924
+    },
+    "pairs:m6-qwen-v2-trained": {
+      "n": 12,
+      "flips": 12,
+      "flips_without_ties": 12,
+      "untied_pairs": 12,
+      "both": 0,
+      "original_only": 4,
+      "reversed_only": 4,
+      "neither": 4,
+      "tv": 0.31998856863846475,
+      "max_change": 0.4564138433850171
+    }
+  }
+}
+POSITION [{'stratum': 'inherited-v1', 'n': 120, 'input_position_counts': {0: 120}, 'ties': 0, 'raw_margin_min': 0.11095423996448517, 'raw_margin_max': 0.31027595698833466, 'raw_confidence_min': 0.32083582878112793, 'raw_confidence_max': 0.5524890422821045}, {'stratum': 'new-v2', 'n': 480, 'input_position_counts': {0: 480}, 'ties': 0, 'raw_margin_min': 0.10249418020248413, 'raw_margin_max': 0.31096412241458893, 'raw_confidence_min': 0.29401078820228577, 'raw_confidence_max': 0.5527017116546631}, {'stratum': 'probes', 'n': 24, 'input_position_counts': {0: 24}, 'ties': 0, 'raw_margin_min': 0.14396056532859802, 'raw_margin_max': 0.45655760169029236, 'raw_confidence_min': 0.4057137370109558, 'raw_confidence_max': 0.7282788157463074}]

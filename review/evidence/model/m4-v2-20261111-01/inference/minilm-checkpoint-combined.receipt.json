@@ -1,0 +1,44 @@
+{
+  "job": "minilm-checkpoint-combined",
+  "suite": "combined",
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-m",
+    "jeff.model.predict",
+    "--checkpoint",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint",
+    "--input",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+    "--output",
+    "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-checkpoint-combined.jsonl",
+    "--device",
+    "mps",
+    "--batch-size",
+    "4"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "checkpoint": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+    "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "rows": 300
+  },
+  "started_at": "2026-11-11T12:00:06.553916+00:00",
+  "fresh_process": true,
+  "initially_empty_hf_home": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/empty-reload-cache/minilm-checkpoint-combined",
+  "offline_environment": true,
+  "timeout_seconds": 120,
+  "exit_code": 0,
+  "process_wall_seconds": 2.6337183751165867,
+  "completed_at": "2026-11-11T12:00:09.187736+00:00",
+  "output": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/inference/minilm-checkpoint-combined.jsonl",
+    "sha256": "cd7caf547d43e1b0aa30d0db60a7de7ea0c301ace0cd824c51b04f4b720180f9",
+    "rows": 300
+  }
+}

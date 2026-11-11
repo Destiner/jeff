@@ -1,0 +1,2490 @@
+{
+  "schema_version": "0.1",
+  "revision": "data-d3-seen-rules-v1-ordering-r2",
+  "audit_type": "same_author_expected_and_rendered_consistency_no_independent_verification",
+  "rows": 48,
+  "groups": 24,
+  "expected_agreement": 48,
+  "rendered_text_fact_matches": 48,
+  "failure_count": 0,
+  "invariants": {
+    "all_facts_policy_state_question_ids_group_split_arity_order_target_preserved": 48
+  },
+  "parent_files_unchanged": true,
+  "row_hash_convention": "Exact UTF-8 JSONL row bytes excluding LF; full files hashed separately",
+  "row_hashes": [
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "parent_row_sha256": "a8b9216b642c8d12c3364f2aae554dd54e7e1b0867db60ce8b9b92edb8fcf91d",
+      "revised_row_sha256": "313382bc2d7b5146c85cdc320bf0dca1e4e5bdacb6d30ec8a29c1a87f797cabe"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "parent_row_sha256": "a005cfa1eb2815962287d150004796a30b956e2f78f8aca2482c6479f5e2a0c8",
+      "revised_row_sha256": "1d26c9d9721f8857ceee0c7dd2798c77c1e2acffa84d3de119a0ec55bd6e2a66"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "parent_row_sha256": "197f33305ef6c50a4bfaac08139ad66a8f1dd7931f99f1c883c282fb6713defa",
+      "revised_row_sha256": "a6d3e8c5f25b65cbf04e768af4f2a938b67b9094179414face6ad9b0b75594c0"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "parent_row_sha256": "576e65f74f027a9444f1ed85b01a4c4a8e17dfc5c9659d8a93ca7c4d5453d1c2",
+      "revised_row_sha256": "db0814865c24e1c7a3dde1b878c6e4db54d1f3a71ad8b6e3d442809cd97e15fe"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "parent_row_sha256": "919013d68c2a8b5462e0790f07d9f23873f23af93972af79bc186f783c18545c",
+      "revised_row_sha256": "42564998919a4863fb893ede783f028cea878516175f1eab5d8bf1b2e01502bf"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "parent_row_sha256": "c61001f7564e8399502e7e16461db8098b4f3984473e7d212ba0cd5ccbd58813",
+      "revised_row_sha256": "aee6439e27a03ab22b4cd3bb1e228d706c4adf0382ad4431261b8bce9426ec29"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "parent_row_sha256": "c103cc8a4610ad3877a7dd0cab129af4859fb5c4a463e82b78b5ea90236eb411",
+      "revised_row_sha256": "6e777249ee274515fbdd666398540efe372802ff478e8eb48547e29796ee37d6"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "parent_row_sha256": "8a134ecc380ee2b5917be496fd6d0ecca1b09a03de38787f62eb258c6821e5a1",
+      "revised_row_sha256": "a960d4a005d31c75e06c9e85cc37d3c844fbf4c381a9f332f4711da0e3b4b6df"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "parent_row_sha256": "64bda24a95b20c9efa21f088ace59b3874824f8485a1325156f25f2c928b9975",
+      "revised_row_sha256": "3aeb7734cb53f8ddaef501b02fe70d9b3688041431961efd6b9eaa6ff7ab386b"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "parent_row_sha256": "5df741207e8eb3ec6ff897a5ce30c3f9e15dcf37132c70bf8805a48661388220",
+      "revised_row_sha256": "835159ce918037191c3139600615b8bfe87705ddc1523078a49b7f72324d2d84"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "parent_row_sha256": "9423a2f1d96b56c1b5f0ff1e4299896c420570b3c591fd047b8de94d4ad04a31",
+      "revised_row_sha256": "03e1e0e4ad25c628f88833ab14a33e85c528d808af7788f962ce194d4b8ca478"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "parent_row_sha256": "ea8ab3874adb938ebde48493bfd3ee172e5b6698f29fc82e5bdfe90311eae8d5",
+      "revised_row_sha256": "5fc18f392b966a0c56a7269343b15651ad236f7787bc3650357d1c251daac0f0"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "parent_row_sha256": "f35013e8e50c6408a50433fc7d94b1b7aa81d258f8b5c463dc62739d6e0f20b6",
+      "revised_row_sha256": "fbdbddf832f20c2c89cc1ad57324ac9eb46bbe0107f96e9545e2f47908717a86"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "parent_row_sha256": "ac55e018d08212aa7e0faadb278e66f59c6e89502765e9f9c65324f8353a20d2",
+      "revised_row_sha256": "4ea7f50fc94f1f2c3fee001394feeebc1be828b318bd4fecb6106d7bc47e16a0"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "parent_row_sha256": "0d4c107c1ee8ee3d5e3fa219c2cfb662d219c264cd9fd7827250610a89b751d6",
+      "revised_row_sha256": "fcd7833ecfd8ac74339b119483a94cfa6f4ac151f1015bf2d5b651ea70aa7c3e"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "parent_row_sha256": "225d505a37600bb2b9b1d1c93c2a29d39ae946b35e37193158c113cdcb6acc17",
+      "revised_row_sha256": "8a875c45c6e551478dd50839cb329bfefce0bc771518bcd83ea6b65a7fb42148"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "parent_row_sha256": "7f112fafb485200639f907845fdec8f012f61c4788a254507acfbff124a8a3c3",
+      "revised_row_sha256": "a7b831f9616b0c555a93c60615115dec2a17687eca2ecd07570837d178d47756"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "parent_row_sha256": "ab8cc4c6762632435e3113913fc30da58aa3f51ec49d674bde87b2ddf647c190",
+      "revised_row_sha256": "aa90ddea420d19e73838e1a18c96d6f608135e287cf17619880d3ba651375df5"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "parent_row_sha256": "c08f30996dd14c145afff99af59eb364262ed9ca4fc5ac6a09bb0841630e9e9f",
+      "revised_row_sha256": "0b19a60261228bd2f86a54bc29382186eed1f7096f69269678e0d915436737c2"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "parent_row_sha256": "1c968c853ad6242a8f89aa9fb41a18fee90c03ba3f71d235a2eb6e229b2a7a02",
+      "revised_row_sha256": "4713738b47253cfa2f8f6a2139b6b2026bf77f23e0ef988f697f55885bf549b1"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "parent_row_sha256": "c5cc7c75a50edb92cc4689c70a902ac3c1b5467a6a6e6cd84e394ce7b7d67f6a",
+      "revised_row_sha256": "4630734dc2ad7459595f7c655e3888fe6ef3ed0b66a92325bf2d114831a0f107"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "parent_row_sha256": "03ac4371672edf78c73a8a38e6f0011d8abf448fee324fd61406f1f2cb4aa691",
+      "revised_row_sha256": "7d0189842f304c49bf37e56925a6a173bbdce6dd29b21c601b364285bc79ec99"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "parent_row_sha256": "a65de566853d1d698dea36b977326016bf817c51bca5fc21bcee507d73164bd2",
+      "revised_row_sha256": "15d5aa0a405d1c87e2f55b4d8f7e2e34ad119dd1a27d4d46bca58cb58dc2402c"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "parent_row_sha256": "f51279abfdbbdf1e84ab7c9a23c5a2ec5d1af877e5aaa153eff606a9ffccda66",
+      "revised_row_sha256": "77d86ab40d4ea061a7f202a860991ef55178368b80ce5b191d0a26bbbf131087"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "parent_row_sha256": "ea7fb695e5460e774c4d5663d3f65ad16e213ce75ea922f65fb6959debe13574",
+      "revised_row_sha256": "a881db8b3424997aee03d7fb9112d770256223fbcc83f4bd5483d5b79411891d"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "parent_row_sha256": "4a50a6c24c121fc33105a36394290c6f1733e91fc18ab6f9aea8d2d081bf7906",
+      "revised_row_sha256": "3852ca83584084bfc34b5558877d7e2b5923abad3cbbe2911bb99692a98f4ca4"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "parent_row_sha256": "7f735f344c1202ac089ac4e63aabaae102faf1ed74ffdcb2b1f6ebadd62545e1",
+      "revised_row_sha256": "c736dabb19bb6a7b7ff1b4affa03e9c87a19fa7ea2701864d46b0eaef6cfdfd3"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "parent_row_sha256": "4258fb20d82a75d029ac2acf8b4ec484bc65fb346ec7b60243cfd1867c330fb8",
+      "revised_row_sha256": "4864a45e8df03cdb64347d96d0335d9ccf5695114b7ff3f57f1a5870e9b74a7a"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "parent_row_sha256": "56e6be34cb7bfaf10d634d46498fbe0b7f7bc00dbb1b8cff611d5c9daafc77a4",
+      "revised_row_sha256": "f32a49b56f62d563e0d5dd409381b1793019260bec03c58bbfb2c069ec7eabe4"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "parent_row_sha256": "a6efcec91c68cac5f91bd2a2b1a4102a56b4278b75aa9b8e9338fb7fb34f13e9",
+      "revised_row_sha256": "9890ed44dedff34a9c7adb09b3116329f133f6713ba982b76473d65a98c73df9"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "parent_row_sha256": "470b3e000a09639391b9bbc62dbccb1755667a94f806bd1743d99aec6a7dc494",
+      "revised_row_sha256": "ae9119c11f1036f69d44df640471b8861a780b8f4186b48f8f5390f470cac137"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "parent_row_sha256": "b4fdfdcc57dd985fae7e8a36e3265d4029371faf0231875fca728e17daf6f4b6",
+      "revised_row_sha256": "5eecb0bd1e1f0c22e7b76033d9545220007e1ada7cdc649cfe6bdae121301ac0"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "parent_row_sha256": "855669c0214e6fde98f6b05b3aa4cc0a52b9f948c6c2b178287d92a6849d1af8",
+      "revised_row_sha256": "27cc64d36402bcf5b799779e2a95375aca1576124fa240b2be6a56ee71856fde"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "parent_row_sha256": "deab066f20d3993e97c8fab3b0604e4fd0551218032c811010f5d6f2f3bc7cf5",
+      "revised_row_sha256": "10942bdfa9bb4d6e338a2a375f9804636d49cd2788d9bb5dfa759abac8372533"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "parent_row_sha256": "99ed148c01ece2819154f1138ec03f3c19ff4f592aa914982a9075b33d47266d",
+      "revised_row_sha256": "b991ba5d49097719c818028978c06d97e669c0d02c4160d8a6206ceb930c7639"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "parent_row_sha256": "fde267341b856fc2b919d48d4d49111fad8c6e43d11f14edd157aba186fb4c93",
+      "revised_row_sha256": "f7bb85a11b0e192bb666e0d2a4de08eb347e36e517cd4b862cecef2a9b5b5104"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "parent_row_sha256": "37179b2356662cf7b887eb90bb1aedffcb088d1fc9a21a5062231482e8abc309",
+      "revised_row_sha256": "34294aee1e3c3bcaf47cf1dd2fd1e607c5e172821d58beb408c0089a3bb77619"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "parent_row_sha256": "b56589685db4977613c6b01f3df8d36ae838687f8530895a1419d1daa73947ae",
+      "revised_row_sha256": "6a6780b70b8edac88bd30847c05aa778dd979b4fb20557567e4024555ac42362"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "parent_row_sha256": "71f36151cfc7ed1076b4ba515a3b185b7751f4690096ddfaef21e5ceafffd770",
+      "revised_row_sha256": "5e8198d171e8b222d13ed501fe4c92a1f22c08c60e1286ae3493125129ee340c"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "parent_row_sha256": "937dffe2b5c1d81120b7692d5979135a1d07ddac3a5e6c0145dd118dd6b91e14",
+      "revised_row_sha256": "7960458e2f9d1317e81c8a246387d66422860fed17d816be2053c934d8228c33"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "parent_row_sha256": "07e0adea647aeaa0a3fa53e619537a37a4aef170f5f63cff9fc2f1d3bca32726",
+      "revised_row_sha256": "287be6587a68ad6abe513da20cc732726d635abcfc89902733820faefb6bf653"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "parent_row_sha256": "dfb857820c503f2999905e46063678f74792723a48d0bc5bcb397984997c4d56",
+      "revised_row_sha256": "5503c77bfa281c3af91a25739be37b9a6cb31250332e713c40260610eff9457f"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "parent_row_sha256": "784bb8fae8e749b9ed6c4b11b283b3d1646ef198509f7e1497ad43a9c2fd9c1b",
+      "revised_row_sha256": "b1259f78343309c81d4c5cbee4374cc5eb840954366dcf7e63dfaf6ae9cc587d"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "parent_row_sha256": "996505b6d539fecd5ed5239fc955e5b29bbf9ec31893075331a7ab5aeb357cf7",
+      "revised_row_sha256": "e431f607576441e19fe82c137bf8e2d177e1432a5a6a7d63102e43649fe59207"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "parent_row_sha256": "1be6f845fecc4226f0c4765e626c1343515484691896991fabd70986f83bba00",
+      "revised_row_sha256": "bfcc93156b092e8e062eac45c43a5460eb0c320c93afc381e9a9df095803b4b4"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "parent_row_sha256": "c240646c40b98b7f54ee2ca0d2b2fdcc9be5264a7e3ae234d04bb71cfbc250ef",
+      "revised_row_sha256": "49bfaa98b05a7b81d91e7ad4309900a0cf189e20b9c2bba3409a647c1e3d6fdc"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "parent_row_sha256": "8b21db31f4a4f6d222692e92f359579cf52e104a4ebf15ff03bc441d3cbbaf2a",
+      "revised_row_sha256": "a457a09d2a3b891a63b2aadfbbdcdb096e7628d7cd0f23e493123dd59b531b97"
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "parent_row_sha256": "3fb301047889d2a94c28517ba99fa3da8cdd76b080082c0b8201f6bdd3cc0093",
+      "revised_row_sha256": "a24e7a032959a6518d29ad717b7e8a6204799d524190567f0e5c1718c88c7209"
+    }
+  ],
+  "case_results": [
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+      "expected_text": "Cove",
+      "old_target_text": "Cove",
+      "target_text": "Cove",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+      "expected_text": "Lagoon",
+      "old_target_text": "Lagoon",
+      "target_text": "Lagoon",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+      "expected_text": "Elm",
+      "old_target_text": "Elm",
+      "target_text": "Elm",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+      "expected_text": "Yew",
+      "old_target_text": "Yew",
+      "target_text": "Yew",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+      "expected_text": "Gully",
+      "old_target_text": "Gully",
+      "target_text": "Gully",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+      "expected_text": "Spur",
+      "old_target_text": "Spur",
+      "target_text": "Spur",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+      "expected_text": "Ochre",
+      "old_target_text": "Ochre",
+      "target_text": "Ochre",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+      "expected_text": "Slate",
+      "old_target_text": "Slate",
+      "target_text": "Slate",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+      "expected_text": "Tern",
+      "old_target_text": "Tern",
+      "target_text": "Tern",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+      "expected_text": "Ibis",
+      "old_target_text": "Ibis",
+      "target_text": "Ibis",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+      "expected_text": "Hedge",
+      "old_target_text": "Hedge",
+      "target_text": "Hedge",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+      "expected_text": "Verge",
+      "old_target_text": "Verge",
+      "target_text": "Verge",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+      "expected_text": "Amber 12; Chalk 11; Indigo 0",
+      "old_target_text": "Amber 12; Chalk 11; Indigo 0",
+      "target_text": "Amber 12; Chalk 11; Indigo 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+      "expected_text": "Amber 12; Chalk 16; Indigo 0",
+      "old_target_text": "Amber 12; Chalk 16; Indigo 0",
+      "target_text": "Amber 12; Chalk 16; Indigo 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+      "expected_text": "East 45; North 30; West 0",
+      "old_target_text": "East 45; North 30; West 0",
+      "target_text": "East 45; North 30; West 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+      "expected_text": "East 45; North 30; West 7",
+      "old_target_text": "East 45; North 30; West 7",
+      "target_text": "East 45; North 30; West 7",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+      "expected_text": "Ink 0; Moss 8; Rust 11",
+      "old_target_text": "Ink 0; Moss 8; Rust 11",
+      "target_text": "Ink 0; Moss 8; Rust 11",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+      "expected_text": "Ink 0; Moss 7; Rust 0",
+      "old_target_text": "Ink 0; Moss 7; Rust 0",
+      "target_text": "Ink 0; Moss 7; Rust 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+      "expected_text": "Glow 6; Halo 10; Spark 1",
+      "old_target_text": "Glow 6; Halo 10; Spark 1",
+      "target_text": "Glow 6; Halo 10; Spark 1",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+      "expected_text": "Glow 6; Halo 4; Spark 0",
+      "old_target_text": "Glow 6; Halo 4; Spark 0",
+      "target_text": "Glow 6; Halo 4; Spark 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+      "expected_text": "Brass 9; Iron 0; Steel 9",
+      "old_target_text": "Brass 9; Iron 0; Steel 9",
+      "target_text": "Brass 9; Iron 0; Steel 9",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+      "expected_text": "Brass 9; Iron 2; Steel 9",
+      "old_target_text": "Brass 9; Iron 2; Steel 9",
+      "target_text": "Brass 9; Iron 2; Steel 9",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+      "expected_text": "Frost 9; Polar 5; Snow 0",
+      "old_target_text": "Frost 9; Polar 5; Snow 0",
+      "target_text": "Frost 9; Polar 5; Snow 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+      "expected_text": "Frost 0; Polar 4; Snow 0",
+      "old_target_text": "Frost 0; Polar 4; Snow 0",
+      "target_text": "Frost 0; Polar 4; Snow 0",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c01",
+      "expected_text": "£62.40",
+      "old_target_text": "£62.40",
+      "target_text": "£62.40",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p01:c02",
+      "expected_text": "£102.40",
+      "old_target_text": "£102.40",
+      "target_text": "£102.40",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c01",
+      "expected_text": "£93.00",
+      "old_target_text": "£93.00",
+      "target_text": "£93.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p02:c02",
+      "expected_text": "£161.00",
+      "old_target_text": "£161.00",
+      "target_text": "£161.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c01",
+      "expected_text": "£160.00",
+      "old_target_text": "£160.00",
+      "target_text": "£160.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p03:c02",
+      "expected_text": "£220.00",
+      "old_target_text": "£220.00",
+      "target_text": "£220.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c01",
+      "expected_text": "£52.80",
+      "old_target_text": "£52.80",
+      "target_text": "£52.80",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p04:c02",
+      "expected_text": "£88.80",
+      "old_target_text": "£88.80",
+      "target_text": "£88.80",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c01",
+      "expected_text": "£72.00",
+      "old_target_text": "£72.00",
+      "target_text": "£72.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p05:c02",
+      "expected_text": "£108.00",
+      "old_target_text": "£108.00",
+      "target_text": "£108.00",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c01",
+      "expected_text": "£57.60",
+      "old_target_text": "£57.60",
+      "target_text": "£57.60",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:discount:p06:c02",
+      "expected_text": "£111.60",
+      "old_target_text": "£111.60",
+      "target_text": "£111.60",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+      "expected_text": "2.4 g",
+      "old_target_text": "2.4 g",
+      "target_text": "2.4 g",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+      "expected_text": "2.3 g",
+      "old_target_text": "2.3 g",
+      "target_text": "2.3 g",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+      "expected_text": "45 kPa",
+      "old_target_text": "45 kPa",
+      "target_text": "45 kPa",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+      "expected_text": "45 kPa",
+      "old_target_text": "45 kPa",
+      "target_text": "45 kPa",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+      "expected_text": "1.21 ppt",
+      "old_target_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+      "expected_text": "1.21 ppt",
+      "old_target_text": "1.21 ppt",
+      "target_text": "1.21 ppt",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+      "expected_text": "130 kg",
+      "old_target_text": "130 kg",
+      "target_text": "130 kg",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+      "expected_text": "130 kg",
+      "old_target_text": "130 kg",
+      "target_text": "130 kg",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+      "expected_text": "7.5 mm",
+      "old_target_text": "7.5 mm",
+      "target_text": "7.5 mm",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+      "expected_text": "8.0 mm",
+      "old_target_text": "8.0 mm",
+      "target_text": "8.0 mm",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+      "expected_text": "20 cm",
+      "old_target_text": "20 cm",
+      "target_text": "20 cm",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+      "expected_text": "20 cm",
+      "old_target_text": "20 cm",
+      "target_text": "20 cm",
+      "agreement": true,
+      "rendered_text_fact_match": true
+    }
+  ],
+  "old": {
+    "by_mechanism": {
+      "lexicographic": {
+        "rows": 12,
+        "target_slots": {
+          "2": 5,
+          "1": 4,
+          "3": 1,
+          "4": 2
+        },
+        "first_choice_hits": 4,
+        "shortest_first_tie_hits": 4,
+        "longest_first_tie_hits": 1,
+        "shortest_fractional_credit": 3.5000000000000004,
+        "longest_fractional_credit": 1.5,
+        "unique_shortest_targets": 1,
+        "unique_longest_targets": 1,
+        "numeric_target_ranks": {},
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 0,
+        "numeric_interior_targets": 0,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {},
+        "numeric_target_last_digit": {}
+      },
+      "fifo": {
+        "rows": 12,
+        "target_slots": {
+          "1": 4,
+          "2": 4,
+          "3": 4
+        },
+        "first_choice_hits": 4,
+        "shortest_first_tie_hits": 3,
+        "longest_first_tie_hits": 5,
+        "shortest_fractional_credit": 4.0,
+        "longest_fractional_credit": 4.999999999999999,
+        "unique_shortest_targets": 1,
+        "unique_longest_targets": 3,
+        "numeric_target_ranks": {},
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 0,
+        "numeric_interior_targets": 0,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 9,
+        "fifo_fewest_zeros_first_tie_hits": 1,
+        "fifo_target_zero_counts": {
+          "1": 7,
+          "0": 3,
+          "2": 2
+        },
+        "numeric_decimal_places": {},
+        "numeric_target_last_digit": {}
+      },
+      "discount": {
+        "rows": 12,
+        "target_slots": {
+          "3": 5,
+          "1": 2,
+          "4": 3,
+          "2": 2
+        },
+        "first_choice_hits": 2,
+        "shortest_first_tie_hits": 2,
+        "longest_first_tie_hits": 2,
+        "shortest_fractional_credit": 3.0,
+        "longest_fractional_credit": 3.0,
+        "unique_shortest_targets": 0,
+        "unique_longest_targets": 0,
+        "numeric_target_ranks": {
+          "3": 8,
+          "2": 4
+        },
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 4,
+        "numeric_interior_targets": 12,
+        "discount_unique_v_plus1_minus2_candidates": 12,
+        "discount_unique_v_plus1_minus2_correct": 12,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {
+          "2": 48
+        },
+        "numeric_target_last_digit": {
+          "0": 12
+        }
+      },
+      "rounding": {
+        "rows": 12,
+        "target_slots": {
+          "4": 4,
+          "1": 3,
+          "3": 3,
+          "2": 2
+        },
+        "first_choice_hits": 3,
+        "shortest_first_tie_hits": 3,
+        "longest_first_tie_hits": 3,
+        "shortest_fractional_credit": 3.0,
+        "longest_fractional_credit": 3.0,
+        "unique_shortest_targets": 0,
+        "unique_longest_targets": 0,
+        "numeric_target_ranks": {
+          "3": 5,
+          "2": 7
+        },
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 7,
+        "numeric_interior_targets": 12,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {
+          "1": 16,
+          "0": 24,
+          "2": 8
+        },
+        "numeric_target_last_digit": {
+          "4": 1,
+          "3": 1,
+          "5": 3,
+          "1": 2,
+          "0": 5
+        }
+      }
+    },
+    "per_row": [
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          6,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 6
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          3,
+          3,
+          5,
+          3
+        ],
+        "target_character_length": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          3,
+          3,
+          3,
+          5
+        ],
+        "target_character_length": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          4,
+          4,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          4,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          4,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          4,
+          5,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          4,
+          5,
+          4,
+          4
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          5,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          6,
+          5,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          28,
+          27,
+          27
+        ],
+        "target_character_length": 28,
+        "option_zero_counts": [
+          1,
+          0,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          27,
+          28,
+          27
+        ],
+        "target_character_length": 28,
+        "option_zero_counts": [
+          0,
+          1,
+          0
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          26,
+          25
+        ],
+        "target_character_length": 25,
+        "option_zero_counts": [
+          0,
+          0,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          25,
+          25,
+          25
+        ],
+        "target_character_length": 25,
+        "option_zero_counts": [
+          0,
+          0,
+          0
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          22,
+          22,
+          22
+        ],
+        "target_character_length": 22,
+        "option_zero_counts": [
+          1,
+          0,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          21,
+          21,
+          21
+        ],
+        "target_character_length": 21,
+        "option_zero_counts": [
+          2,
+          1,
+          0
+        ],
+        "target_zero_count": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          24,
+          23,
+          23
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          0,
+          0,
+          1
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          23,
+          23,
+          23
+        ],
+        "target_character_length": 23,
+        "option_zero_counts": [
+          0,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          24,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          0,
+          0,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          25,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          0,
+          1,
+          0
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          24,
+          24,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          0,
+          0,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          24,
+          24,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          1,
+          2,
+          1
+        ],
+        "target_zero_count": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "60",
+          "302/5",
+          "312/5",
+          "317/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          3
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "512/5",
+          "517/5",
+          "100",
+          "502/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          1
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "1887/20",
+          "94",
+          "93",
+          "91"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": [
+          3
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "3247/20",
+          "159",
+          "162",
+          "161"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": [
+          4
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "605/4",
+          "160",
+          "161",
+          "158"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          2
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "218",
+          "220",
+          "221",
+          "845/4"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          2
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "261/5",
+          "269/5",
+          "254/5",
+          "264/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          4
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "444/5",
+          "434/5",
+          "441/5",
+          "449/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          1
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "73",
+          "70",
+          "72",
+          "339/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          3
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "519/5",
+          "109",
+          "108",
+          "106"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": [
+          3
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "278/5",
+          "294/5",
+          "288/5",
+          "293/5"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": [
+          3
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "548/5",
+          "564/5",
+          "563/5",
+          "558/5"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": [
+          4
+        ]
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "11/5",
+          "23/10",
+          "5/2",
+          "12/5"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "23/10",
+          "12/5",
+          "5/2",
+          "11/5"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "35",
+          "40",
+          "45",
+          "50"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "40",
+          "50",
+          "45",
+          "35"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "target_character_length": 8,
+        "numeric_values": [
+          "119/100",
+          "6/5",
+          "61/50",
+          "121/100"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "target_character_length": 8,
+        "numeric_values": [
+          "6/5",
+          "61/50",
+          "121/100",
+          "123/100"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "120",
+          "130",
+          "140",
+          "150"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "120",
+          "140",
+          "150",
+          "130"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "7",
+          "8",
+          "17/2",
+          "15/2"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "8",
+          "17/2",
+          "9",
+          "15/2"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "16",
+          "20",
+          "18",
+          "22"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "20",
+          "24",
+          "22",
+          "18"
+        ],
+        "target_numeric_rank": 2
+      }
+    ]
+  },
+  "new": {
+    "by_mechanism": {
+      "lexicographic": {
+        "rows": 12,
+        "target_slots": {
+          "2": 5,
+          "1": 4,
+          "3": 1,
+          "4": 2
+        },
+        "first_choice_hits": 4,
+        "shortest_first_tie_hits": 4,
+        "longest_first_tie_hits": 1,
+        "shortest_fractional_credit": 3.5000000000000004,
+        "longest_fractional_credit": 1.5,
+        "unique_shortest_targets": 1,
+        "unique_longest_targets": 1,
+        "numeric_target_ranks": {},
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 0,
+        "numeric_interior_targets": 0,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {},
+        "numeric_target_last_digit": {}
+      },
+      "fifo": {
+        "rows": 12,
+        "target_slots": {
+          "1": 4,
+          "2": 4,
+          "3": 4
+        },
+        "first_choice_hits": 4,
+        "shortest_first_tie_hits": 4,
+        "longest_first_tie_hits": 5,
+        "shortest_fractional_credit": 4.666666666666666,
+        "longest_fractional_credit": 3.666666666666667,
+        "unique_shortest_targets": 2,
+        "unique_longest_targets": 1,
+        "numeric_target_ranks": {},
+        "numeric_min_first_tie_hits": 0,
+        "numeric_max_first_tie_hits": 0,
+        "numeric_median_lower_hits": 0,
+        "numeric_interior_targets": 0,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 3,
+        "fifo_fewest_zeros_first_tie_hits": 6,
+        "fifo_target_zero_counts": {
+          "1": 7,
+          "0": 3,
+          "2": 2
+        },
+        "numeric_decimal_places": {},
+        "numeric_target_last_digit": {}
+      },
+      "discount": {
+        "rows": 12,
+        "target_slots": {
+          "3": 5,
+          "1": 2,
+          "4": 3,
+          "2": 2
+        },
+        "first_choice_hits": 2,
+        "shortest_first_tie_hits": 1,
+        "longest_first_tie_hits": 2,
+        "shortest_fractional_credit": 3.0,
+        "longest_fractional_credit": 2.833333333333333,
+        "unique_shortest_targets": 0,
+        "unique_longest_targets": 0,
+        "numeric_target_ranks": {
+          "3": 5,
+          "1": 3,
+          "2": 2,
+          "4": 2
+        },
+        "numeric_min_first_tie_hits": 3,
+        "numeric_max_first_tie_hits": 2,
+        "numeric_median_lower_hits": 2,
+        "numeric_interior_targets": 7,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {
+          "2": 48
+        },
+        "numeric_target_last_digit": {
+          "0": 12
+        }
+      },
+      "rounding": {
+        "rows": 12,
+        "target_slots": {
+          "4": 4,
+          "1": 3,
+          "3": 3,
+          "2": 2
+        },
+        "first_choice_hits": 3,
+        "shortest_first_tie_hits": 3,
+        "longest_first_tie_hits": 3,
+        "shortest_fractional_credit": 3.0,
+        "longest_fractional_credit": 3.0,
+        "unique_shortest_targets": 0,
+        "unique_longest_targets": 0,
+        "numeric_target_ranks": {
+          "4": 5,
+          "1": 3,
+          "3": 2,
+          "2": 2
+        },
+        "numeric_min_first_tie_hits": 3,
+        "numeric_max_first_tie_hits": 5,
+        "numeric_median_lower_hits": 2,
+        "numeric_interior_targets": 4,
+        "discount_unique_v_plus1_minus2_candidates": 0,
+        "discount_unique_v_plus1_minus2_correct": 0,
+        "fifo_most_zeros_first_tie_hits": 0,
+        "fifo_fewest_zeros_first_tie_hits": 0,
+        "fifo_target_zero_counts": {},
+        "numeric_decimal_places": {
+          "1": 16,
+          "0": 24,
+          "2": 8
+        },
+        "numeric_target_last_digit": {
+          "4": 1,
+          "3": 1,
+          "5": 3,
+          "1": 2,
+          "0": 5
+        }
+      }
+    },
+    "per_row": [
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p01:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          6,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 6
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p02:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          3,
+          3,
+          5,
+          3
+        ],
+        "target_character_length": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p02:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          3,
+          3,
+          3,
+          5
+        ],
+        "target_character_length": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p03:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          4,
+          4,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p03:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          4,
+          4,
+          5,
+          5
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p04:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          4,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p04:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          4,
+          5,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p05:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          5,
+          4,
+          4,
+          4
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p05:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          4,
+          5,
+          4,
+          4
+        ],
+        "target_character_length": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p06:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          5,
+          6,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:lexicographic:p06:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          6,
+          5,
+          5
+        ],
+        "target_character_length": 5
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          28,
+          27,
+          27
+        ],
+        "target_character_length": 28,
+        "option_zero_counts": [
+          1,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p01:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          27,
+          28,
+          28
+        ],
+        "target_character_length": 28,
+        "option_zero_counts": [
+          1,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          25,
+          25
+        ],
+        "target_character_length": 25,
+        "option_zero_counts": [
+          1,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p02:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          25,
+          25,
+          25
+        ],
+        "target_character_length": 25,
+        "option_zero_counts": [
+          1,
+          0,
+          1
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          22,
+          22,
+          22
+        ],
+        "target_character_length": 22,
+        "option_zero_counts": [
+          1,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p03:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          21,
+          21,
+          21
+        ],
+        "target_character_length": 21,
+        "option_zero_counts": [
+          2,
+          2,
+          2
+        ],
+        "target_zero_count": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c01",
+        "target_slot": 1,
+        "character_lengths": [
+          24,
+          23,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          0,
+          1,
+          1
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p04:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          23,
+          23,
+          24
+        ],
+        "target_character_length": 23,
+        "option_zero_counts": [
+          1,
+          1,
+          2
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          24,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          1,
+          1,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p05:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          25,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          1,
+          1,
+          0
+        ],
+        "target_zero_count": 0
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          25,
+          25,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          1,
+          2,
+          1
+        ],
+        "target_zero_count": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:fifo:p06:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          24,
+          24,
+          24
+        ],
+        "target_character_length": 24,
+        "option_zero_counts": [
+          2,
+          2,
+          2
+        ],
+        "target_zero_count": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "60",
+          "78",
+          "312/5",
+          "264/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          6
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "512/5",
+          "100",
+          "108",
+          "464/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          7,
+          6,
+          6,
+          7
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "102",
+          "1887/20",
+          "93",
+          "111"
+        ],
+        "target_numeric_rank": 1,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p02:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "3247/20",
+          "170",
+          "1547/10",
+          "161"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "605/4",
+          "160",
+          "155",
+          "150"
+        ],
+        "target_numeric_rank": 4,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p03:c02",
+        "target_slot": 2,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "845/4",
+          "220",
+          "250",
+          "295"
+        ],
+        "target_numeric_rank": 2,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "50",
+          "48",
+          "258/5",
+          "264/5"
+        ],
+        "target_numeric_rank": 4,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p04:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "444/5",
+          "85",
+          "468/5",
+          "441/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "339/5",
+          "70",
+          "72",
+          "80"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p05:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "135",
+          "594/5",
+          "108",
+          "120"
+        ],
+        "target_numeric_rank": 1,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "297/5",
+          "284/5",
+          "288/5",
+          "272/5"
+        ],
+        "target_numeric_rank": 3,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:discount:p06:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "target_character_length": 7,
+        "numeric_values": [
+          "567/5",
+          "594/5",
+          "564/5",
+          "558/5"
+        ],
+        "target_numeric_rank": 1,
+        "v_plus1_minus2_slots": []
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "2",
+          "23/10",
+          "11/5",
+          "12/5"
+        ],
+        "target_numeric_rank": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p01:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "23/10",
+          "5/2",
+          "3",
+          "12/5"
+        ],
+        "target_numeric_rank": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c01",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "43",
+          "42",
+          "45",
+          "40"
+        ],
+        "target_numeric_rank": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p02:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "50",
+          "48",
+          "45",
+          "47"
+        ],
+        "target_numeric_rank": 1
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "target_character_length": 8,
+        "numeric_values": [
+          "13/10",
+          "1",
+          "6/5",
+          "121/100"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p03:c02",
+        "target_slot": 3,
+        "character_lengths": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "target_character_length": 8,
+        "numeric_values": [
+          "5/4",
+          "61/50",
+          "121/100",
+          "6/5"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "120",
+          "130",
+          "125",
+          "100"
+        ],
+        "target_numeric_rank": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p04:c02",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "140",
+          "100",
+          "135",
+          "130"
+        ],
+        "target_numeric_rank": 2
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c01",
+        "target_slot": 4,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "8",
+          "73/10",
+          "7",
+          "15/2"
+        ],
+        "target_numeric_rank": 3
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p05:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "target_character_length": 6,
+        "numeric_values": [
+          "8",
+          "39/5",
+          "15/2",
+          "7"
+        ],
+        "target_numeric_rank": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c01",
+        "target_slot": 2,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "10",
+          "20",
+          "19",
+          "18"
+        ],
+        "target_numeric_rank": 4
+      },
+      {
+        "id": "data:d3-seen-rules-v1:rounding:p06:c02",
+        "target_slot": 1,
+        "character_lengths": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "target_character_length": 5,
+        "numeric_values": [
+          "20",
+          "25",
+          "22",
+          "21"
+        ],
+        "target_numeric_rank": 1
+      }
+    ]
+  },
+  "scope": "Choice-only descriptive CPU diagnostics; no predictions, model execution, training, held-out inference or independent text verification. No historical inputs accessed."
+}

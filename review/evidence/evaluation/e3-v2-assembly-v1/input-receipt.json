@@ -1,0 +1,19 @@
+{
+  "schema_version": "evaluation/0.1",
+  "examples": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+    "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+  },
+  "inputs": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+    "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917"
+  },
+  "rows": 300,
+  "label_free_fields": [
+    "schema_version",
+    "id",
+    "state",
+    "question",
+    "options"
+  ]
+}

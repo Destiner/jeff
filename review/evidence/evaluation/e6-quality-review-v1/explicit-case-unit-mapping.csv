@@ -1,0 +1,325 @@
+stratum,id,family,label_basis,source_group,producer,domain,mechanism,policy_instance
+inherited-v1,data:pilot-v1:intent:g26:r01,intent,teacher,data:pilot-v1:intent:g26,data-pilot-v1-intent-r1,allotment_beekeeping,allotment_beekeeping_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g26:r02,intent,teacher,data:pilot-v1:intent:g26,data-pilot-v1-intent-r1,allotment_beekeeping,allotment_beekeeping_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g26:r03,intent,teacher,data:pilot-v1:intent:g26,data-pilot-v1-intent-r1,allotment_beekeeping,allotment_beekeeping_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g26:r04,intent,teacher,data:pilot-v1:intent:g26,data-pilot-v1-intent-r1,allotment_beekeeping,allotment_beekeeping_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g27:r01,intent,teacher,data:pilot-v1:intent:g27,data-pilot-v1-intent-r1,canal_boat_hire,canal_boat_hire_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g27:r02,intent,teacher,data:pilot-v1:intent:g27,data-pilot-v1-intent-r1,canal_boat_hire,canal_boat_hire_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g27:r03,intent,teacher,data:pilot-v1:intent:g27,data-pilot-v1-intent-r1,canal_boat_hire,canal_boat_hire_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g27:r04,intent,teacher,data:pilot-v1:intent:g27,data-pilot-v1-intent-r1,canal_boat_hire,canal_boat_hire_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g28:r01,intent,teacher,data:pilot-v1:intent:g28,data-pilot-v1-intent-r1,seed_library,seed_library_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g28:r02,intent,teacher,data:pilot-v1:intent:g28,data-pilot-v1-intent-r1,seed_library,seed_library_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g28:r03,intent,teacher,data:pilot-v1:intent:g28,data-pilot-v1-intent-r1,seed_library,seed_library_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g28:r04,intent,teacher,data:pilot-v1:intent:g28,data-pilot-v1-intent-r1,seed_library,seed_library_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g29:r01,intent,teacher,data:pilot-v1:intent:g29,data-pilot-v1-intent-r1,makerspace_laser,makerspace_laser_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g29:r02,intent,teacher,data:pilot-v1:intent:g29,data-pilot-v1-intent-r1,makerspace_laser,makerspace_laser_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g29:r03,intent,teacher,data:pilot-v1:intent:g29,data-pilot-v1-intent-r1,makerspace_laser,makerspace_laser_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g29:r04,intent,teacher,data:pilot-v1:intent:g29,data-pilot-v1-intent-r1,makerspace_laser,makerspace_laser_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g30:r01,intent,teacher,data:pilot-v1:intent:g30,data-pilot-v1-intent-r1,choir_festival,choir_festival_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g30:r02,intent,teacher,data:pilot-v1:intent:g30,data-pilot-v1-intent-r1,choir_festival,choir_festival_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g30:r03,intent,teacher,data:pilot-v1:intent:g30,data-pilot-v1-intent-r1,choir_festival,choir_festival_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:intent:g30:r04,intent,teacher,data:pilot-v1:intent:g30,data-pilot-v1-intent-r1,choir_festival,choir_festival_explicit_primary_request_disambiguation_v1,
+inherited-v1,data:pilot-v1:sentiment-r2:g26:r01,sentiment,teacher,data:pilot-v1:sentiment:g26,data-pilot-v1-sentiment-r2,Pet boarding,pet-boarding-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g26:r02,sentiment,teacher,data:pilot-v1:sentiment:g26,data-pilot-v1-sentiment-r2,Pet boarding,pet-boarding-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g26:r03,sentiment,teacher,data:pilot-v1:sentiment:g26,data-pilot-v1-sentiment-r2,Pet boarding,pet-boarding-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g26:r04,sentiment,teacher,data:pilot-v1:sentiment:g26,data-pilot-v1-sentiment-r2,Pet boarding,pet-boarding-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g27:r01,sentiment,teacher,data:pilot-v1:sentiment:g27,data-pilot-v1-sentiment-r2,Public observatory sessions,observatory-night-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g27:r02,sentiment,teacher,data:pilot-v1:sentiment:g27,data-pilot-v1-sentiment-r2,Public observatory sessions,observatory-night-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g27:r03,sentiment,teacher,data:pilot-v1:sentiment:g27,data-pilot-v1-sentiment-r2,Public observatory sessions,observatory-night-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g27:r04,sentiment,teacher,data:pilot-v1:sentiment:g27,data-pilot-v1-sentiment-r2,Public observatory sessions,observatory-night-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g28:r01,sentiment,teacher,data:pilot-v1:sentiment:g28,data-pilot-v1-sentiment-r2,Short-term luggage storage,luggage-storage-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g28:r02,sentiment,teacher,data:pilot-v1:sentiment:g28,data-pilot-v1-sentiment-r2,Short-term luggage storage,luggage-storage-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g28:r03,sentiment,teacher,data:pilot-v1:sentiment:g28,data-pilot-v1-sentiment-r2,Short-term luggage storage,luggage-storage-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g28:r04,sentiment,teacher,data:pilot-v1:sentiment:g28,data-pilot-v1-sentiment-r2,Short-term luggage storage,luggage-storage-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g29:r01,sentiment,teacher,data:pilot-v1:sentiment:g29,data-pilot-v1-sentiment-r2,Venue hearing-loop systems,hearing-loop-experience,
+inherited-v1,data:pilot-v1:sentiment-r2:g29:r02,sentiment,teacher,data:pilot-v1:sentiment:g29,data-pilot-v1-sentiment-r2,Venue hearing-loop systems,hearing-loop-experience,
+inherited-v1,data:pilot-v1:sentiment-r2:g29:r03,sentiment,teacher,data:pilot-v1:sentiment:g29,data-pilot-v1-sentiment-r2,Venue hearing-loop systems,hearing-loop-experience,
+inherited-v1,data:pilot-v1:sentiment-r2:g29:r04,sentiment,teacher,data:pilot-v1:sentiment:g29,data-pilot-v1-sentiment-r2,Venue hearing-loop systems,hearing-loop-experience,
+inherited-v1,data:pilot-v1:sentiment-r2:g30:r01,sentiment,teacher,data:pilot-v1:sentiment:g30,data-pilot-v1-sentiment-r2,Community seed exchanges,seed-swap-event-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g30:r02,sentiment,teacher,data:pilot-v1:sentiment:g30,data-pilot-v1-sentiment-r2,Community seed exchanges,seed-swap-event-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g30:r03,sentiment,teacher,data:pilot-v1:sentiment:g30,data-pilot-v1-sentiment-r2,Community seed exchanges,seed-swap-event-review,
+inherited-v1,data:pilot-v1:sentiment-r2:g30:r04,sentiment,teacher,data:pilot-v1:sentiment:g30,data-pilot-v1-sentiment-r2,Community seed exchanges,seed-swap-event-review,
+inherited-v1,data:pilot-v1:rule_application:g11:r01,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r02,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r03,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r04,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r05,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r06,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r07,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r08,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r09,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g11:r10,rule_application,rule_verified,data:pilot-v1:rule_application:g11,data-pilot-v1-rule-application-r1,fictional irrigation network,transitive directed graph reachability,
+inherited-v1,data:pilot-v1:rule_application:g12:r01,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r02,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r03,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r04,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r05,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r06,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r07,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r08,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r09,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+inherited-v1,data:pilot-v1:rule_application:g12:r10,rule_application,rule_verified,data:pilot-v1:rule_application:g12,data-pilot-v1-rule-application-r1,fictional club election,Condorcet winner from strict pairwise ballot majorities,
+new-v2,data:pilot-v2:intent-a-r2:g201:r01,intent,teacher,data:pilot-v2:intent-a:g201,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g202:r01,intent,teacher,data:pilot-v2:intent-a:g202,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g203:r01,intent,teacher,data:pilot-v2:intent-a:g203,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g204:r01,intent,teacher,data:pilot-v2:intent-a:g204,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g205:r01,intent,teacher,data:pilot-v2:intent-a:g205,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g206:r01,intent,teacher,data:pilot-v2:intent-a:g206,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g207:r01,intent,teacher,data:pilot-v2:intent-a:g207,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g208:r01,intent,teacher,data:pilot-v2:intent-a:g208,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g209:r01,intent,teacher,data:pilot-v2:intent-a:g209,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g210:r01,intent,teacher,data:pilot-v2:intent-a:g210,data-pilot-v2-intent-a-r2,maritime weather bulletin subscriptions,,
+new-v2,data:pilot-v2:intent-a-r2:g211:r01,intent,teacher,data:pilot-v2:intent-a:g211,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g212:r01,intent,teacher,data:pilot-v2:intent-a:g212,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g213:r01,intent,teacher,data:pilot-v2:intent-a:g213,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g214:r01,intent,teacher,data:pilot-v2:intent-a:g214,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g215:r01,intent,teacher,data:pilot-v2:intent-a:g215,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g216:r01,intent,teacher,data:pilot-v2:intent-a:g216,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g217:r01,intent,teacher,data:pilot-v2:intent-a:g217,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g218:r01,intent,teacher,data:pilot-v2:intent-a:g218,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g219:r01,intent,teacher,data:pilot-v2:intent-a:g219,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g220:r01,intent,teacher,data:pilot-v2:intent-a:g220,data-pilot-v2-intent-a-r2,antique appraisal bookings,,
+new-v2,data:pilot-v2:intent-a-r2:g221:r01,intent,teacher,data:pilot-v2:intent-a:g221,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g222:r01,intent,teacher,data:pilot-v2:intent-a:g222,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g223:r01,intent,teacher,data:pilot-v2:intent-a:g223,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g224:r01,intent,teacher,data:pilot-v2:intent-a:g224,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g225:r01,intent,teacher,data:pilot-v2:intent-a:g225,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g226:r01,intent,teacher,data:pilot-v2:intent-a:g226,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g227:r01,intent,teacher,data:pilot-v2:intent-a:g227,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g228:r01,intent,teacher,data:pilot-v2:intent-a:g228,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g229:r01,intent,teacher,data:pilot-v2:intent-a:g229,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g230:r01,intent,teacher,data:pilot-v2:intent-a:g230,data-pilot-v2-intent-a-r2,language exam certification,,
+new-v2,data:pilot-v2:intent-a-r2:g231:r01,intent,teacher,data:pilot-v2:intent-a:g231,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g232:r01,intent,teacher,data:pilot-v2:intent-a:g232,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g233:r01,intent,teacher,data:pilot-v2:intent-a:g233,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g234:r01,intent,teacher,data:pilot-v2:intent-a:g234,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g235:r01,intent,teacher,data:pilot-v2:intent-a:g235,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g236:r01,intent,teacher,data:pilot-v2:intent-a:g236,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g237:r01,intent,teacher,data:pilot-v2:intent-a:g237,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g238:r01,intent,teacher,data:pilot-v2:intent-a:g238,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g239:r01,intent,teacher,data:pilot-v2:intent-a:g239,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-a-r2:g240:r01,intent,teacher,data:pilot-v2:intent-a:g240,data-pilot-v2-intent-a-r2,climbing route information,,
+new-v2,data:pilot-v2:intent-b-r2:g201:r01,intent,teacher,data:pilot-v2:intent-b:g201,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g202:r01,intent,teacher,data:pilot-v2:intent-b:g202,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g203:r01,intent,teacher,data:pilot-v2:intent-b:g203,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g204:r01,intent,teacher,data:pilot-v2:intent-b:g204,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g205:r01,intent,teacher,data:pilot-v2:intent-b:g205,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g206:r01,intent,teacher,data:pilot-v2:intent-b:g206,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g207:r01,intent,teacher,data:pilot-v2:intent-b:g207,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g208:r01,intent,teacher,data:pilot-v2:intent-b:g208,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g209:r01,intent,teacher,data:pilot-v2:intent-b:g209,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g210:r01,intent,teacher,data:pilot-v2:intent-b:g210,data-pilot-v2-intent-b-r2,drone flight registration,,
+new-v2,data:pilot-v2:intent-b-r2:g211:r01,intent,teacher,data:pilot-v2:intent-b:g211,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g212:r01,intent,teacher,data:pilot-v2:intent-b:g212,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g213:r01,intent,teacher,data:pilot-v2:intent-b:g213,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g214:r01,intent,teacher,data:pilot-v2:intent-b:g214,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g215:r01,intent,teacher,data:pilot-v2:intent-b:g215,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g216:r01,intent,teacher,data:pilot-v2:intent-b:g216,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g217:r01,intent,teacher,data:pilot-v2:intent-b:g217,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g218:r01,intent,teacher,data:pilot-v2:intent-b:g218,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g219:r01,intent,teacher,data:pilot-v2:intent-b:g219,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g220:r01,intent,teacher,data:pilot-v2:intent-b:g220,data-pilot-v2-intent-b-r2,heritage walking tours,,
+new-v2,data:pilot-v2:intent-b-r2:g221:r01,intent,teacher,data:pilot-v2:intent-b:g221,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g222:r01,intent,teacher,data:pilot-v2:intent-b:g222,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g223:r01,intent,teacher,data:pilot-v2:intent-b:g223,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g224:r01,intent,teacher,data:pilot-v2:intent-b:g224,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g225:r01,intent,teacher,data:pilot-v2:intent-b:g225,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g226:r01,intent,teacher,data:pilot-v2:intent-b:g226,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g227:r01,intent,teacher,data:pilot-v2:intent-b:g227,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g228:r01,intent,teacher,data:pilot-v2:intent-b:g228,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g229:r01,intent,teacher,data:pilot-v2:intent-b:g229,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g230:r01,intent,teacher,data:pilot-v2:intent-b:g230,data-pilot-v2-intent-b-r2,ice rink skate sharpening,,
+new-v2,data:pilot-v2:intent-b-r2:g231:r01,intent,teacher,data:pilot-v2:intent-b:g231,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g232:r01,intent,teacher,data:pilot-v2:intent-b:g232,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g233:r01,intent,teacher,data:pilot-v2:intent-b:g233,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g234:r01,intent,teacher,data:pilot-v2:intent-b:g234,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g235:r01,intent,teacher,data:pilot-v2:intent-b:g235,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g236:r01,intent,teacher,data:pilot-v2:intent-b:g236,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g237:r01,intent,teacher,data:pilot-v2:intent-b:g237,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g238:r01,intent,teacher,data:pilot-v2:intent-b:g238,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g239:r01,intent,teacher,data:pilot-v2:intent-b:g239,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:intent-b-r2:g240:r01,intent,teacher,data:pilot-v2:intent-b:g240,data-pilot-v2-intent-b-r2,braille transcription service,,
+new-v2,data:pilot-v2:sentiment-a:g201:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g201,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g202:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g202,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g203:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g203,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g204:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g204,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g205:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g205,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g206:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g206,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g207:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g207,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g208:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g208,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g209:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g209,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g210:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g210,data-pilot-v2-sentiment-a-r1,kayak dry bags,,
+new-v2,data:pilot-v2:sentiment-a:g211:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g211,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g212:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g212,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g213:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g213,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g214:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g214,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g215:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g215,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g216:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g216,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g217:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g217,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g218:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g218,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g219:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g219,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g220:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g220,data-pilot-v2-sentiment-a-r1,embroidery hoops,,
+new-v2,data:pilot-v2:sentiment-a:g221:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g221,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g222:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g222,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g223:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g223,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g224:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g224,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g225:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g225,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g226:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g226,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g227:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g227,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g228:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g228,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g229:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g229,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g230:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g230,data-pilot-v2-sentiment-a-r1,violin shoulder rests,,
+new-v2,data:pilot-v2:sentiment-a:g231:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g231,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g232:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g232,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g233:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g233,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g234:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g234,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g235:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g235,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g236:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g236,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g237:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g237,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g238:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g238,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g239:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g239,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-a:g240:r01,sentiment,teacher,data:pilot-v2:sentiment-a:g240,data-pilot-v2-sentiment-a-r1,folding picnic benches,,
+new-v2,data:pilot-v2:sentiment-b-r2:g208:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g208,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g206:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g206,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g226:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g226,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g230:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g230,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g222:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g222,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g217:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g217,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g214:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g214,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g223:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g223,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g201:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g201,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g239:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g239,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g225:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g225,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g229:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g229,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g213:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g213,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g209:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g209,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g236:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g236,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g205:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g205,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g237:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g237,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g235:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g235,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g219:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g219,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g240:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g240,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g210:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g210,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g221:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g221,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g211:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g211,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g215:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g215,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g204:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g204,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g238:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g238,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g224:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g224,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g202:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g202,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g218:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g218,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g234:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g234,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g228:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g228,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g203:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g203,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g216:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g216,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g220:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g220,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g227:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g227,data-pilot-v2-sentiment-b-r2,falconry demonstrations,,
+new-v2,data:pilot-v2:sentiment-b-r2:g212:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g212,data-pilot-v2-sentiment-b-r2,weaving loom rental,,
+new-v2,data:pilot-v2:sentiment-b-r2:g231:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g231,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g232:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g232,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:sentiment-b-r2:g207:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g207,data-pilot-v2-sentiment-b-r2,orienteering map printing,,
+new-v2,data:pilot-v2:sentiment-b-r2:g233:r01,sentiment,teacher,data:pilot-v2:sentiment-b:g233,data-pilot-v2-sentiment-b-r2,community darkroom sessions,,
+new-v2,data:pilot-v2:rule-a:g011:r01,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p01
+new-v2,data:pilot-v2:rule-a:g011:r02,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p01
+new-v2,data:pilot-v2:rule-a:g011:r03,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p02
+new-v2,data:pilot-v2:rule-a:g011:r04,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p02
+new-v2,data:pilot-v2:rule-a:g011:r05,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p03
+new-v2,data:pilot-v2:rule-a:g011:r06,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p03
+new-v2,data:pilot-v2:rule-a:g011:r07,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p04
+new-v2,data:pilot-v2:rule-a:g011:r08,rule_application,rule_verified,data:pilot-v2:rule-a:g011,data-pilot-v2-rule-a-r1,,longest common contiguous substring,data:pilot-v2:rule-a:g011:p04
+new-v2,data:pilot-v2:rule-a:g012:r01,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p01
+new-v2,data:pilot-v2:rule-a:g012:r02,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p01
+new-v2,data:pilot-v2:rule-a:g012:r03,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p02
+new-v2,data:pilot-v2:rule-a:g012:r04,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p02
+new-v2,data:pilot-v2:rule-a:g012:r05,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p03
+new-v2,data:pilot-v2:rule-a:g012:r06,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p03
+new-v2,data:pilot-v2:rule-a:g012:r07,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p04
+new-v2,data:pilot-v2:rule-a:g012:r08,rule_application,rule_verified,data:pilot-v2:rule-a:g012,data-pilot-v2-rule-a-r1,,bracket-stack validation,data:pilot-v2:rule-a:g012:p04
+new-v2,data:pilot-v2:rule-a:g013:r01,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p01
+new-v2,data:pilot-v2:rule-a:g013:r02,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p01
+new-v2,data:pilot-v2:rule-a:g013:r03,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p02
+new-v2,data:pilot-v2:rule-a:g013:r04,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p02
+new-v2,data:pilot-v2:rule-a:g013:r05,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p03
+new-v2,data:pilot-v2:rule-a:g013:r06,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p03
+new-v2,data:pilot-v2:rule-a:g013:r07,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p04
+new-v2,data:pilot-v2:rule-a:g013:r08,rule_application,rule_verified,data:pilot-v2:rule-a:g013,data-pilot-v2-rule-a-r1,,stable merge of sorted queues,data:pilot-v2:rule-a:g013:p04
+new-v2,data:pilot-v2:rule-a:g014:r01,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p01
+new-v2,data:pilot-v2:rule-a:g014:r02,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p01
+new-v2,data:pilot-v2:rule-a:g014:r03,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p02
+new-v2,data:pilot-v2:rule-a:g014:r04,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p02
+new-v2,data:pilot-v2:rule-a:g014:r05,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p03
+new-v2,data:pilot-v2:rule-a:g014:r06,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p03
+new-v2,data:pilot-v2:rule-a:g014:r07,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p04
+new-v2,data:pilot-v2:rule-a:g014:r08,rule_application,rule_verified,data:pilot-v2:rule-a:g014,data-pilot-v2-rule-a-r1,,bit-vector parity constraints,data:pilot-v2:rule-a:g014:p04
+new-v2,data:pilot-v2:rule-a:g015:r01,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p01
+new-v2,data:pilot-v2:rule-a:g015:r02,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p01
+new-v2,data:pilot-v2:rule-a:g015:r03,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p02
+new-v2,data:pilot-v2:rule-a:g015:r04,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p02
+new-v2,data:pilot-v2:rule-a:g015:r05,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p03
+new-v2,data:pilot-v2:rule-a:g015:r06,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p03
+new-v2,data:pilot-v2:rule-a:g015:r07,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p04
+new-v2,data:pilot-v2:rule-a:g015:r08,rule_application,rule_verified,data:pilot-v2:rule-a:g015,data-pilot-v2-rule-a-r1,,highest median measurement selection,data:pilot-v2:rule-a:g015:p04
+new-v2,data:pilot-v2:rule-b:g011:r01,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p01
+new-v2,data:pilot-v2:rule-b:g011:r02,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p01
+new-v2,data:pilot-v2:rule-b:g011:r03,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p02
+new-v2,data:pilot-v2:rule-b:g011:r04,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p02
+new-v2,data:pilot-v2:rule-b:g011:r05,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p03
+new-v2,data:pilot-v2:rule-b:g011:r06,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p03
+new-v2,data:pilot-v2:rule-b:g011:r07,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p04
+new-v2,data:pilot-v2:rule-b:g011:r08,rule_application,rule_verified,data:pilot-v2:rule-b:g011,data-pilot-v2-rule-b-r1,,subtractive Roman numeral parsing,data:pilot-v2:rule-b:g011:p04
+new-v2,data:pilot-v2:rule-b:g012:r01,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p01
+new-v2,data:pilot-v2:rule-b:g012:r02,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p01
+new-v2,data:pilot-v2:rule-b:g012:r03,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p02
+new-v2,data:pilot-v2:rule-b:g012:r04,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p02
+new-v2,data:pilot-v2:rule-b:g012:r05,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p03
+new-v2,data:pilot-v2:rule-b:g012:r06,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p03
+new-v2,data:pilot-v2:rule-b:g012:r07,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p04
+new-v2,data:pilot-v2:rule-b:g012:r08,rule_application,rule_verified,data:pilot-v2:rule-b:g012,data-pilot-v2-rule-b-r1,,postfix arithmetic stack execution,data:pilot-v2:rule-b:g012:p04
+new-v2,data:pilot-v2:rule-b:g013:r01,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p01
+new-v2,data:pilot-v2:rule-b:g013:r02,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p01
+new-v2,data:pilot-v2:rule-b:g013:r03,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p02
+new-v2,data:pilot-v2:rule-b:g013:r04,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p02
+new-v2,data:pilot-v2:rule-b:g013:r05,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p03
+new-v2,data:pilot-v2:rule-b:g013:r06,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p03
+new-v2,data:pilot-v2:rule-b:g013:r07,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p04
+new-v2,data:pilot-v2:rule-b:g013:r08,rule_application,rule_verified,data:pilot-v2:rule-b:g013,data-pilot-v2-rule-b-r1,,directed precedence topological ordering,data:pilot-v2:rule-b:g013:p04
+new-v2,data:pilot-v2:rule-b:g014:r01,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p01
+new-v2,data:pilot-v2:rule-b:g014:r02,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p01
+new-v2,data:pilot-v2:rule-b:g014:r03,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p02
+new-v2,data:pilot-v2:rule-b:g014:r04,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p02
+new-v2,data:pilot-v2:rule-b:g014:r05,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p03
+new-v2,data:pilot-v2:rule-b:g014:r06,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p03
+new-v2,data:pilot-v2:rule-b:g014:r07,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p04
+new-v2,data:pilot-v2:rule-b:g014:r08,rule_application,rule_verified,data:pilot-v2:rule-b:g014,data-pilot-v2-rule-b-r1,,nearest Hamming codeword,data:pilot-v2:rule-b:g014:p04
+new-v2,data:pilot-v2:rule-b:g015:r01,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p01
+new-v2,data:pilot-v2:rule-b:g015:r02,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p01
+new-v2,data:pilot-v2:rule-b:g015:r03,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p02
+new-v2,data:pilot-v2:rule-b:g015:r04,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p02
+new-v2,data:pilot-v2:rule-b:g015:r05,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p03
+new-v2,data:pilot-v2:rule-b:g015:r06,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p03
+new-v2,data:pilot-v2:rule-b:g015:r07,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p04
+new-v2,data:pilot-v2:rule-b:g015:r08,rule_application,rule_verified,data:pilot-v2:rule-b:g015,data-pilot-v2-rule-b-r1,,maximum consecutive-window mean,data:pilot-v2:rule-b:g015:p04
+probes,eval.validation.intent.01.original,intent,teacher,eval.validation.intent.01,,,,
+probes,eval.validation.intent.01.reversed,intent,teacher,eval.validation.intent.01,,,,
+probes,eval.validation.intent.02.original,intent,teacher,eval.validation.intent.02,,,,
+probes,eval.validation.intent.02.reversed,intent,teacher,eval.validation.intent.02,,,,
+probes,eval.validation.intent.03.original,intent,teacher,eval.validation.intent.03,,,,
+probes,eval.validation.intent.03.reversed,intent,teacher,eval.validation.intent.03,,,,
+probes,eval.validation.intent.04.original,intent,teacher,eval.validation.intent.04,,,,
+probes,eval.validation.intent.04.reversed,intent,teacher,eval.validation.intent.04,,,,
+probes,eval.validation.sentiment.01.original,sentiment,teacher,eval.validation.sentiment.01,,,,
+probes,eval.validation.sentiment.01.reversed,sentiment,teacher,eval.validation.sentiment.01,,,,
+probes,eval.validation.sentiment.02.original,sentiment,teacher,eval.validation.sentiment.02,,,,
+probes,eval.validation.sentiment.02.reversed,sentiment,teacher,eval.validation.sentiment.02,,,,
+probes,eval.validation.sentiment.03.original,sentiment,teacher,eval.validation.sentiment.03,,,,
+probes,eval.validation.sentiment.03.reversed,sentiment,teacher,eval.validation.sentiment.03,,,,
+probes,eval.validation.sentiment.04.original,sentiment,teacher,eval.validation.sentiment.04,,,,
+probes,eval.validation.sentiment.04.reversed,sentiment,teacher,eval.validation.sentiment.04,,,,
+probes,eval.validation.rule_application.01.original,rule_application,teacher,eval.validation.rule_application.01,,,,
+probes,eval.validation.rule_application.01.reversed,rule_application,teacher,eval.validation.rule_application.01,,,,
+probes,eval.validation.rule_application.02.original,rule_application,teacher,eval.validation.rule_application.02,,,,
+probes,eval.validation.rule_application.02.reversed,rule_application,teacher,eval.validation.rule_application.02,,,,
+probes,eval.validation.rule_application.03.original,rule_application,teacher,eval.validation.rule_application.03,,,,
+probes,eval.validation.rule_application.03.reversed,rule_application,teacher,eval.validation.rule_application.03,,,,
+probes,eval.validation.rule_application.04.original,rule_application,teacher,eval.validation.rule_application.04,,,,
+probes,eval.validation.rule_application.04.reversed,rule_application,teacher,eval.validation.rule_application.04,,,,

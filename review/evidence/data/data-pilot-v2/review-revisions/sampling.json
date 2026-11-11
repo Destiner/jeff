@@ -1,0 +1,4 @@
+{
+  "method": "Per producer, sort IDs within each split; select round(i*(n-1)/9), i=0..9. Exactly 10 train and 10 validation per producer. No label or metadata output; no parent/generator content inspected before freeze.",
+  "count": 40
+}

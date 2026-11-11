@@ -1,0 +1,19 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+       12.92 real         2.83 user         0.85 sys
+          3357491200  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              241650  page reclaims
+                 152  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2396  voluntary context switches
+               17507  involuntary context switches
+         44193442831  instructions retired
+         15395318881  cycles elapsed
+          4163471400  peak memory footprint

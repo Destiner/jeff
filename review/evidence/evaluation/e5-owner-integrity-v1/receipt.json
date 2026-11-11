@@ -1,0 +1,286 @@
+{
+  "completed_at": "2026-11-11T14:52:51.355050+00:00",
+  "completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/completion.json",
+    "sha256": "5a60452d6ee91cb6d5c23de265c9f72c089de58abc6025f0b27b5841532c2966"
+  },
+  "hash_declarations_rechecked": 228,
+  "actual_successful_commands": 38,
+  "scoring_reports_checked": 27,
+  "order_reports_checked": 27,
+  "independent_arithmetic": "Natural-log loss and summed Brier recomputed from actual shared-scored probability maps; correct counts/order choice consistency recounted. Not a software test suite or tokenizer/ML execution.",
+  "checks": [
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m4-minilm-random-start",
+      "rows": 60,
+      "correct": 20,
+      "log_loss": 1.3782670112554563,
+      "brier": 0.7460364458197348,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m4-minilm-trained",
+      "rows": 60,
+      "correct": 34,
+      "log_loss": 0.9075537395730444,
+      "brier": 0.47813517225831287,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m4-msmarco-pretrained-start",
+      "rows": 60,
+      "correct": 30,
+      "log_loss": 1.0268780321008346,
+      "brier": 0.5522226697822465,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m4-msmarco-trained",
+      "rows": 60,
+      "correct": 42,
+      "log_loss": 0.7126207803955256,
+      "brier": 0.39334276603436075,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m2-v1-trained",
+      "rows": 60,
+      "correct": 35,
+      "log_loss": 0.8552875089589308,
+      "brier": 0.4615426781182788,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "m3-v1-trained",
+      "rows": 60,
+      "correct": 40,
+      "log_loss": 0.7937008119799213,
+      "brier": 0.4219370710806585,
+      "order_pairs": 60,
+      "flips": 0
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "uniform",
+      "rows": 60,
+      "correct": 17,
+      "log_loss": 1.3787648669871742,
+      "brier": 0.7461111111111111,
+      "order_pairs": 60,
+      "flips": 60
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "lexical",
+      "rows": 60,
+      "correct": 29,
+      "log_loss": 1.3237099779963926,
+      "brier": 0.7178050247683313,
+      "order_pairs": 60,
+      "flips": 14
+    },
+    {
+      "stratum": "inherited-v1",
+      "predictor": "qwen25-05b-instruct-frozen",
+      "rows": 60,
+      "correct": 35,
+      "log_loss": 1.1947069633399572,
+      "brier": 0.5991277783366675,
+      "order_pairs": 60,
+      "flips": 19
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m4-minilm-random-start",
+      "rows": 240,
+      "correct": 66,
+      "log_loss": 1.3324666070317808,
+      "brier": 0.7331399120951492,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m4-minilm-trained",
+      "rows": 240,
+      "correct": 132,
+      "log_loss": 0.8231153493699339,
+      "brier": 0.46011497435630294,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m4-msmarco-pretrained-start",
+      "rows": 240,
+      "correct": 99,
+      "log_loss": 1.0585676282592658,
+      "brier": 0.5814922817963063,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m4-msmarco-trained",
+      "rows": 240,
+      "correct": 141,
+      "log_loss": 0.9172583449489373,
+      "brier": 0.48139232154626016,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m2-v1-trained",
+      "rows": 240,
+      "correct": 107,
+      "log_loss": 1.1364271896063711,
+      "brier": 0.606944967469034,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "m3-v1-trained",
+      "rows": 240,
+      "correct": 110,
+      "log_loss": 1.024843693611751,
+      "brier": 0.5552985587790379,
+      "order_pairs": 240,
+      "flips": 0
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "uniform",
+      "rows": 240,
+      "correct": 65,
+      "log_loss": 1.3334632332543237,
+      "brier": 0.7336805555555556,
+      "order_pairs": 240,
+      "flips": 240
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "lexical",
+      "rows": 240,
+      "correct": 99,
+      "log_loss": 1.296867900931744,
+      "brier": 0.7128012383025367,
+      "order_pairs": 240,
+      "flips": 121
+    },
+    {
+      "stratum": "new-v2",
+      "predictor": "qwen25-05b-instruct-frozen",
+      "rows": 240,
+      "correct": 129,
+      "log_loss": 1.3123496306793034,
+      "brier": 0.6334920301590142,
+      "order_pairs": 240,
+      "flips": 122
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m4-minilm-random-start",
+      "rows": 24,
+      "correct": 2,
+      "log_loss": 1.0571073602915295,
+      "brier": 0.647165360931396,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m4-minilm-trained",
+      "rows": 24,
+      "correct": 12,
+      "log_loss": 1.0254562319395013,
+      "brier": 0.6284659459506109,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m4-msmarco-pretrained-start",
+      "rows": 24,
+      "correct": 14,
+      "log_loss": 1.45378312706827,
+      "brier": 0.6518403619357581,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m4-msmarco-trained",
+      "rows": 24,
+      "correct": 10,
+      "log_loss": 1.8764638622941086,
+      "brier": 0.7703126318824672,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m2-v1-trained",
+      "rows": 24,
+      "correct": 16,
+      "log_loss": 0.7104069052752945,
+      "brier": 0.44172808373217526,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "m3-v1-trained",
+      "rows": 24,
+      "correct": 8,
+      "log_loss": 1.360701041245408,
+      "brier": 0.6535976449726478,
+      "order_pairs": 12,
+      "flips": 0
+    },
+    {
+      "stratum": "probes",
+      "predictor": "uniform",
+      "rows": 24,
+      "correct": 8,
+      "log_loss": 1.0550082766877307,
+      "brier": 0.6458333333333334,
+      "order_pairs": 12,
+      "flips": 12
+    },
+    {
+      "stratum": "probes",
+      "predictor": "lexical",
+      "rows": 24,
+      "correct": 9,
+      "log_loss": 1.0470441093070695,
+      "brier": 0.6462891168734193,
+      "order_pairs": 12,
+      "flips": 4
+    },
+    {
+      "stratum": "probes",
+      "predictor": "qwen25-05b-instruct-frozen",
+      "rows": 24,
+      "correct": 20,
+      "log_loss": 0.5345094907147643,
+      "brier": 0.28448643409652496,
+      "order_pairs": 12,
+      "flips": 2
+    }
+  ],
+  "model_loads": 0,
+  "spend_gbp": 0
+}

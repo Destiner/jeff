@@ -1,0 +1,44 @@
+[
+  {
+    "suite": "v2-original",
+    "rows": 300,
+    "unique_old": 300,
+    "unique_new": 300,
+    "bytes_equal": true,
+    "same_ids": true,
+    "max_absolute_probability_delta": 0.0,
+    "changed_top_sets": 0,
+    "ties_old_new": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "v2-reversed",
+    "rows": 300,
+    "unique_old": 300,
+    "unique_new": 300,
+    "bytes_equal": true,
+    "same_ids": true,
+    "max_absolute_probability_delta": 0.0,
+    "changed_top_sets": 0,
+    "ties_old_new": [
+      0,
+      0
+    ]
+  },
+  {
+    "suite": "probes-paired",
+    "rows": 24,
+    "unique_old": 24,
+    "unique_new": 24,
+    "bytes_equal": true,
+    "same_ids": true,
+    "max_absolute_probability_delta": 0.0,
+    "changed_top_sets": 0,
+    "ties_old_new": [
+      0,
+      0
+    ]
+  }
+]

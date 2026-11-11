@@ -1,0 +1,25 @@
+{
+  "schema_version": "evaluation/0.1",
+  "dataset_id": "evaluation-probes-v1",
+  "source_file": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/validation-probes-source-v1/cases.json",
+    "sha256": "3ac64fcc661daac78da32eac2ad24a923916121ab9991b9a5203e458373f97ef"
+  },
+  "source": "Original agent-authored fictional cases; separate curator workstream",
+  "teacher_model": "unknown",
+  "label_basis": "teacher",
+  "independently_verified": false,
+  "external_dataset": null,
+  "usage": "Generated output subject to applicable service terms; no third-party dataset license asserted",
+  "cost_gbp": 0,
+  "generation_settings": "Existing approved agent access; no paid API calls; manual compact-case serialization",
+  "families": {
+    "intent": 8,
+    "rule_application": 8,
+    "sentiment": 8
+  },
+  "groups": 12,
+  "reverse_pairs": true,
+  "structural_validation": "passed; unique IDs, option/target validity, one split, reserved family, provenance",
+  "final_gate": null
+}

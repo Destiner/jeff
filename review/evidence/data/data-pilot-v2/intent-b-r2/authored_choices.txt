@@ -1,0 +1,241 @@
+# intent-b-r2: sequential parent groups g001–g240; target first, then rivals in parent non-target slot order.
+Arrange repair of the jammed mechanism | Adjust the machine's thread tension | Service the machine's drive belt | Replace the sewing machine motor
+Order a matching replacement pedal | Repair the broken pedal casing | Book a machine control inspection
+Explain which way to fit the needle | Explain how to thread the needle | Explain how to set needle height | Arrange help fitting the needle
+Move collection to Thursday | Move the service appointment to Thursday | Change the collection address
+Resend the paid service invoice | Correct the service invoice details | Send the technician's service report | Confirm the service payment arrived
+Cancel next week's service slot | Postpone the service until a machine is available | Remove the machine from the customer record
+Diagnose the loops beneath the fabric | Explain how to adjust bobbin tension | Inspect the bobbin case for replacement | Adjust the machine for decorative stitching
+Estimate basic cleaning and lubrication | Book a basic cleaning service | Estimate a mechanical fault repair
+Check the accepted warranty claim | Request the warranty decision letter | Check the collected machine's return date | Submit evidence supporting the claim
+Add overlocker servicing to the visit | Substitute the overlocker for the sewing machine | Add an overlocker repair assessment | Arrange a separate overlocker service visit
+Book treatment of the armchair's coffee stain | Book cleaning of the whole armchair | Assess the armchair fabric for staining
+Explain when the cleaned sofa can be used | Explain how to ventilate the damp sofa | Check whether the sofa needs redrying | Arrange a moisture inspection of the sofa
+Correct the booked address to flat 8 | Change the cleaning appointment date | Add flat 8 to the billing address
+Send yesterday's cleaning receipt | Send the cleaning completion report | Correct the cleaning invoice address | Confirm the cleaning payment cleared
+Investigate dye damage after cleaning | Arrange removal of the transferred dye | Assess the cushion for colourfastness
+Assess cleaning suitability for unlabelled velvet | Quote for cleaning the velvet chair | Identify the chair's upholstery material | Book a preliminary cleaning visit | Recommend home care for velvet
+Cancel Friday's sofa cleaning | Postpone the sofa cleaning appointment | Remove the sofa from a multi-item booking
+Quote for cleaning six chair seats | Quote for cleaning six complete chairs | Book cleaning for the fabric seats | Explain how to prepare chairs for cleaning
+Book the guaranteed stain follow-up | Request a refund for the stain treatment | Arrange an assessment of the returned stain
+Add footstool odour removal to the booking | Replace the booked treatment with deodorising | Add odour treatment for the whole suite | Ask for footstool deodorising instructions
+Move Tuesday's walk to the afternoon | Move every midday walk to afternoons | Add an afternoon walk on Tuesday
+Arrange a meeting with the covering walker | Request the covering walker's references | Request a different replacement walker | Arrange a supervised first walk
+Pause walks until the 18th, then resume | Reduce walks during the recovery period | End walks after the current booking period
+Resolve the lost spare key and its replacement | Change the walker's key collection procedure | Report a problem entering the house | Arrange a replacement emergency contact
+Send yesterday's route and duration log | Send the planned route for the next walk | Confirm yesterday's pickup and return times
+Refund Friday's missed walk to the card | Credit the missed walk to the account | Arrange a replacement walk for Friday | Investigate why Friday's walker did not arrive
+Switch to solo walks at the same frequency | Keep group walks with a smaller group | Reduce the number of group outings
+Add the second dog to the existing service | Create a separate walking plan for the new dog | Replace the dog on the current plan | Arrange an introduction for the second dog
+Update the emergency contact to the sister | Change the authorised pickup contact | Update the account's billing contact
+Show where to pause walks online | Explain how to change regular walk dates | Set a holiday pause on the account | Explain how to cancel the walking plan
+Transfer to the beginner class, retaining membership | Add beginner classes to the current membership | Pause membership until a beginner course starts | Arrange a class-level assessment
+Change the second attendee's name to Amir | Transfer both workshop places to Amir | Add Amir as another workshop attendee
+Provide access to the lesson's practice recording | Send written notes for the missed step | Arrange practice time in the studio | Book a refresher session for the step
+Book a private wedding-dance lesson for two | Book two places in a wedding-dance group | Reserve the studio for independent practice
+Refund Saturday's cancelled workshop | Credit the workshop fee to membership | Move the workshop place to another date | Refund the remaining membership balance
+Explain the tap class footwear requirements | Check whether the existing trainers are suitable | Provide a list of recommended tap shoes
+Pause the subscription for six weeks, then resume | Reduce the subscription during recovery | Cancel the subscription at the next renewal | Transfer unused classes to another member
+Issue the completed course's attendance certificate | Send the completed course's payment receipt | Confirm the next course's enrolment
+Report the locked accessible entrance at the class | Request access instructions for the entrance | Arrange accessible entry for a future class | Request a refund for the missed class
+Book the non-performing social dance session | Book a non-performing place at the audition | Join the next social dance course waitlist
+Arrange repair of the sagging hinge | Adjust the opening panel's latch | Replace the opening panel's frame | Inspect the window's sealed glass unit
+Quote to replace only the cracked pane | Quote to replace the kitchen window unit | Book repair of the kitchen pane
+Arrange a guarantee inspection of the sealed panes | Request guarantee paperwork for the installation | Quote for replacing the misted sealed unit | Explain how to reduce room condensation
+Move installation to Wednesday if available | Move the glazing survey to Wednesday | Reserve Wednesday for glass delivery
+Supply the completed glazing compliance certificate | Supply the glazing installation invoice | Send the window guarantee documentation | Arrange a compliance inspection of the glazing
+Estimate secondary glazing inside the sash windows | Estimate replacement double-glazed sash units | Book a survey for secondary glazing
+Arrange temporary boarding of the shattered opening | Book urgent permanent glass replacement | Arrange removal of the remaining broken glass | Quote for an emergency replacement frame
+Correct the company tax number on the invoice | Correct the customer name on the invoice | Issue a credit note for the glazing bill
+Explain safe cleaning of the coated glass | Recommend a professional coated-glass cleaning service | Explain how to remove damaged glass coating | Assess the coating for cleaning damage
+Cancel tomorrow's measuring visit | Postpone tomorrow's measuring visit | Cancel the glazing installation appointment
+Change to peat-free green compost, keeping bags and date | Reduce the manure blend bag quantity | Change to loose peat-free compost delivery
+Reduce Friday's order to six sacks | Split the ten sacks over two deliveries | Cancel the remaining compost order | Change six sacks to another compost type
+Change tomorrow's unloading point to the east gate | Change the allotment's billing address | Arrange delivery to the shed by smaller vehicle
+Trace the overdue compost delivery | Request a replacement compost delivery | Check the next available delivery slot | Report a failed delivery attempt
+Send the load's weighbridge ticket | Send the compost delivery invoice | Confirm the number of bags delivered
+Investigate and resolve glass contamination in the load | Arrange a routine compost quality assessment | Request the compost's composition certificate | Replace the regular compost blend
+Refund the two undelivered bags | Deliver the two outstanding bags | Refund all eight bags in the order
+Explain application depth around established fruit bushes | Explain how to prepare soil before planting | Advise on storing unopened compost sacks | Calculate compost quantity for new fruit beds
+Arrange collection of the empty reusable sacks | Arrange a compost delivery with sack exchange | Explain where to return the empty sacks
+Stop future monthly deliveries, retaining the completed charge | Pause monthly deliveries until next spring | Reduce the quantity of each monthly load | Cancel the charge for the latest load
+Transfer the booking to a dairy-free class | Adapt the booked class's ingredients | Cancel and refund the bread class place
+Add an accompanying helper at the workstation | Book the helper a separate student place | Transfer the booking into the helper's name | Request a workstation near the support worker
+Send the booked class's ingredient list | Send the class's equipment checklist | Explain the class's dietary substitution policy
+Move the existing pastry booking to next month | Add a place on next month's pastry course | Transfer the booking to another attendee | Hold the current place for a future date
+Refund only the duplicate session charge | Refund and cancel the baking session | Apply the extra payment to another class
+Explain whether the online lesson requires oven steam | Explain how to prepare the sourdough ingredients | Recommend an oven for the online lesson | Send setup instructions for the lesson platform
+Book the advanced viennoiserie workshop | Book a repeat introductory baking course | Arrange assessment for advanced workshop entry
+Send signed evidence of cake-course attendance | Send the cake-course payment invoice | Send the cake-course completion recipes | Confirm the cake-course booking details
+Provide access to the paid live session | Resend the session's equipment requirements | Transfer the booking to a later session
+Send the recipe from the attended class | Send the class's ingredients shopping list | Arrange delivery of the class ingredients kit | Provide access to a future live class
+Retrieve the return filed two years ago | Retrieve the latest filed tax return | Prepare a copy with amended tax figures
+Restore access to the tax archive portal | Reset the password on the tax filing service | Resend a tax document's download link | Send paper copies of archived returns
+Send the existing download link to the accountant | Add the accountant as an archive account user | Change the archive account's login email
+Supply a certified copy of the filed return | Send an ordinary copy of the filed return | Issue a statement confirming filing occurred | Amend the return before sending a copy
+Locate the uploaded employer statement attachment | Retrieve the return containing the attachment | Draft a replacement employer statement
+Send the paid retrieval fee receipt | Send the tax document retrieval confirmation | Send another copy of the retrieved return | Correct the retrieval fee invoice
+Stop postal copies while retaining online access | Stop automatic document retrieval requests | Remove old records from the online archive
+Explain how long filed returns are retained | Explain the process for deleting archived returns | List the dates of the archived returns | Explain how to download archived returns
+Supply accessible text of the scanned return | Supply a higher-resolution scan of the return | Read out the return's tax calculation
+Remove only the duplicate statement entry | Merge the two statements into a revised record | Remove both copies of the statement | Replace the statement with a new upload
+Exchange the hose for the correct diameter | Replace the hose with the same model | Supply an adapter for the delivered hose
+Explain assembly of the delivered filter | Send a clearer filter parts list | Arrange filter installation assistance | Replace a missing filter component
+Replace the faulty heater under warranty | Arrange a warranty assessment of the heater | Refund the non-working aquarium heater
+Trace the delayed live-plant shipment | Arrange another live-plant shipment | Cancel the outstanding live-plant order | Explain how to revive plants after transit
+Stop monthly food shipments, keeping the filter order | Pause monthly food deliveries for one month | Cancel all outstanding aquarium supply orders
+Check filter compatibility without adapters | Recommend adapters for the external filter | Quote for the filter and tank fittings | Confirm availability of the external filter
+Resend the test kit purchase receipt | Send the test kit warranty certificate | Confirm the test kit's delivery date
+Resolve the recently purchased pump's leaking seal | Explain how to maintain the pump seal | Arrange a routine pump performance check | Supply a replacement pump hose
+Change the delivery recipient to the neighbour | Change the delivery address to the neighbour's | Change the billing contact to the neighbour
+Quote for substrate for twelve tanks | Place a bulk substrate order for twelve tanks | Recommend substrate types for the tanks | Quote for regular substrate deliveries
+Arrange refilling of the existing cartridge | Exchange the empty cartridge for a refilled one | Supply ink for self-refilling the cartridge
+Return the incompatible unopened toner for a refund | Exchange the toner for a compatible model | Check compatibility of the ordered printer model | Arrange collection for toner recycling
+Explain how to fit the correct ribbon | Check the ribbon's printer compatibility | Replace the ribbon's retaining clips
+Disable renewal, keeping this month's paid deliveries | Cancel the ink plan's remaining deliveries | Pause ink deliveries until next month | Reduce the renewed plan's ink allowance
+Reduce paper to twelve reams, keeping toner and date | Split the twenty paper reams across deliveries | Reduce the toner quantity in the order
+Send the tax invoice for the toner delivery | Send the toner delivery confirmation | Correct the toner order's billing reference | Issue a credit note for the toner
+Investigate the premature empty-ink warning | Explain how to check the cartridge's ink level | Replace the nearly full ink cartridge
+Trace Monday's dispatched toner shipment | Arrange a replacement toner shipment | Change the toner shipment's delivery address | Confirm the next toner dispatch date
+Quote for quarterly toner and paper supplies | Set up a quarterly supply contract | Recommend a quarterly stock quantity
+Move recycling collection to reception, keeping the date | Move the recycling collection to another day | Add more cartridges to the collection | Change the ink delivery point to reception
+Remove the expired jumble-sale notice | Extend the jumble-sale notice's display period | Archive a copy of the displayed poster
+Correct the event time to 7 pm only | Change the event's display start date | Replace the poster with revised venue details | Withdraw the notice pending a correction
+Explain whether residents may post a free skills swap | Explain how to submit the skills-swap poster | Reserve a panel for the skills-swap notice
+Report the flyer covering the evacuation notice | Request approval to post a safety notice | Replace the evacuation notice with a new copy | Report incorrect wording on the sales flyer
+Return the original artwork submitted last week | Send a copy of the submitted artwork | Confirm where the artwork is displayed
+Give the noticeboard frame's paper dimensions | Explain the noticeboard's mounting requirements | Quote for printing a correctly sized poster | Reserve a frame for the prepared poster
+Reserve a panel for the week before the cleanup | Publish the cleanup notice immediately | Extend an existing cleanup notice's display
+Request reconsideration of the commercial-content rejection | Ask how to rewrite the notice for eligibility | Submit the notice as paid advertising | Withdraw the rejected notice permanently
+Stop the weekly email, keeping the printed notice | Reduce the board-update email frequency | Remove the printed notice from display
+Supply the council notice in an accessible format | Enlarge the printed notice on the board | Explain the council notice's display period | Send a photograph of the displayed notice
+Relocate the working motion sensor | Reposition the cupboard around the sensor | Add another sensor covering the obstruction
+Explain how to set the alarm's night mode | Configure the night mode on the user's behalf | Send the alarm installation completion report | Check the keypad for an operating fault
+Change the engineer's arrival contact to the brother | Change the alarm account's emergency contact | Change the installation booking's address
+Investigate the repeated false activations | Adjust the alarm's nightly activation schedule | Arrange a routine alarm maintenance visit | Replace the downstairs motion sensor
+Quote for one additional driveway camera | Book installation of the driveway camera | Assess the driveway camera's coverage needs
+Send the alarm installation certificate | Send the installation payment invoice | Send the alarm operating instructions | Arrange an insurer's system inspection
+Stop monitoring renewal, retaining the alarm hardware | Downgrade monitoring at the next renewal | Cancel monitoring during the current term
+Restore access to the existing security app account | Register the phone as a new alarm system | Reset the alarm's sensor configuration | Change the account's emergency contact
+Repair the doorbell wiring affected by installation | Inspect the alarm's door-entry sensor | Replace the doorbell with a wireless unit
+Book inspection of the existing loose connections | Arrange a premium camera upgrade survey | Quote for replacement connection cables | Explain how to check the connections at home
+Repair the loose external battery connector | Replace the complete battery pack | Inspect the bike's charging socket
+Diagnose the battery's reduced range | Quote for replacing the battery cells | Assess the bicycle motor's performance | Book battery recycling and collection
+Explain safe storage charge and temperature | Explain how to recharge after storage | Arrange a workshop battery storage check
+Check progress on the existing battery repair | Confirm receipt of the battery at the workshop | Request the completed repair's dispatch tracking | Amend the battery repair specification | Ask for the battery diagnostic measurements | Approve the quoted battery repair cost
+Change the repaired battery's return address to work | Change the battery collection address to work | Change the repair invoice's billing address
+Handle the returning fault under the repair guarantee | Arrange a fresh paid charging-fault repair | Request a refund for the original repair | Diagnose whether the charger is faulty
+Send the battery diagnostic bench report | Send the battery repair payment receipt | Send the repair completion confirmation
+Estimate replacement of the worn cells | Quote for a complete replacement battery pack | Authorise the workshop to replace the cells | Arrange a diagnostic cell assessment
+Cancel the unstarted job, leaving the battery unmodified | Suspend the repair pending a later decision | Cancel collection of the repaired battery
+Arrange safe recycling of the irreparable battery | Request another battery repair assessment | Arrange collection for warranty inspection | Quote for a replacement battery pack
+Remove the piano from the quotation inventory | Remove the piano's packing charge only | Arrange separate transport for the piano
+Arrange an estimator's visit before quoting | Arrange a removal team's pre-move visit | Request photographs of the narrow staircase | Confirm a removal booking subject to survey
+Explain whether quoted packing includes dish wrapping | Add dish wrapping to the quoted service | Quote for cartons without packing assistance
+Explain the quoted stairs surcharge | Remove the stairs surcharge from the estimate | Compare the two quotes' overall prices | Arrange a survey of the staircase
+Withdraw the estimate request and stop firm contacts | Pause contact until a later moving date | Withdraw just the lowest-priced quotation
+Correct the proposed move date to the 21st | Move the estimator's visit to the 21st | Change the quotation's destination address | Cancel the original quotation request
+Resend the unaccepted estimate as a document | Confirm acceptance of the emailed quotation | Send a payment invoice for the move
+Explain how long the quoted price is valid | Extend the quote's existing validity period | Reserve the proposed moving date | Explain the booking deposit requirements
+Add an optional price for a week's storage | Reserve a week's storage with the removal firm | Change the destination to a storage unit
+Quote for van and driver only, with self-loading | Quote for van and driver with loading help | Remove packing materials from the full package | Accept the full-service removal quotation
+Send last month's attendance summary | Send last month's childcare fee statement | Correct last month's attendance entries
+Check and correct Tuesday's disputed absence | Change Tuesday's booked childcare hours | Send Tuesday's sign-in sheet as evidence | Mark the child present for future Tuesdays
+Change the email for future attendance reports | Change the authorised collection contact | Resend the latest report to the old email
+Explain the L code in Thursday's record | Correct Thursday's attendance code | Explain Thursday's childcare fee calculation | Send a signed statement for Thursday
+Issue a signed statement of actual attended hours | Send the invoice for booked childcare hours | Send an unsigned attendance summary
+Investigate Wednesday's missing portal attendance | Enter an absence for the missing Wednesday | Restore access to the attendance portal | Change Wednesday's future session booking
+Stop weekly emails, retaining records and portal access | Delete previously emailed attendance reports | Disable attendance viewing in the portal
+Separate attendance totals for the two children | Correct the recorded times for both children | Create separate portal accounts for the children | Separate the children's childcare fee invoices
+Export attendance for 3–28 March only | Export the complete March attendance record | Send the annual attendance summary
+Revoke the former contact's access to attendance records | Remove that person's collection permission only | Close all shared family portal access | Delete the former contact's attendance downloads
+Transfer the ticket to the cooperative game table | Add a cooperative game to the existing ticket | Transfer the ticket to another attendee
+Book the guided newcomer session | Book an unranked competition entry | Arrange individual strategy coaching | Reserve a spectator place at the introduction
+Cancel Sunday's tournament entry | Transfer Sunday's entry to another player | Postpone the entry to the next tournament
+Arrange wheelchair-accessible seating at the same game | Transfer the ticket to an accessible game session | Reserve an additional companion's seat | Request directions to the accessible entrance
+Send the receipt for Saturday's ticket | Send confirmation of Saturday's attendance | Send the original ticket booking confirmation
+Report the player's repeated abusive conduct | Request a review of the game's result | Ask the organiser to clarify the conduct rules | Request a different table assignment
+Explain whether unpainted miniatures are eligible | Explain the event's miniature size restrictions | Recommend a miniature painting service
+Replace the withdrawn teammate with Noor | Add Noor as an additional team member | Create a separate entry for Noor
+Add the player to the campaign session waitlist | Reserve a place at another campaign session | Request an extra place in the full session | Register interest in future campaign dates
+Reserve a place at casual open play | Reserve an unranked place in the league | Join the casual evening's waiting list
+Arrange resoling of the existing shoes | Repair the separating upper seams | Reattach the existing heels
+Stretch the shoes across the toes | Stretch the shoes along their length | Adjust the heel fit with inserts | Replace the worn shoe soles
+Estimate the cost of replacing the boot zip | Book replacement of the boot zip | Explain how to free the zip slider
+Check whether Thursday's shoe repair is ready | Request tracking for a posted shoe repair | Confirm the agreed shoe repair specification | Change the shoe repair collection date
+Redirect the repaired boots to the office | Change the boots' repair invoice address | Upgrade the boots' return postal service
+Correct the loose heel under the workmanship guarantee | Quote for a new paid heel repair | Request a refund for the heel repair | Arrange a general boot condition assessment
+Send proof of payment for the completed repair | Send the shoe repair completion notice | Correct the name on the repair invoice
+Explain home removal of salt marks from suede | Quote for professional suede cleaning | Recommend a suede recolouring treatment | Explain how to waterproof suede shoes
+Cancel only recolouring, retaining sole repair | Cancel sole repair, retaining recolouring | Postpone both boot repair treatments
+Locate and return the insoles left at the counter | Trace the parcel containing the repaired shoes | Supply replacement insoles for the shoes | Confirm which insoles fit the repaired shoes
+Renew the annual permit for another year | Replace the current annual permit document | Extend the current permit to a different category
+Update the holder's address, keeping type and dates | Transfer the permit to a new holder | Change the permit's geographic coverage | Renew the permit with a new start date
+Replace the lost paper licence | Renew the existing fishing permission | Send a receipt for the licence payment
+Explain coverage of the eastern river stretch | Quote for an additional river permit | Change the permit's covered river area | Confirm the permit's current expiry date
+Resend the licence payment receipt | Resend the current licence document | Confirm the licence's validity period
+Refund the duplicate purchase, keeping one licence active | Cancel and refund both annual licences | Apply the second payment to next year's licence | Transfer the duplicate licence to another holder
+Check last week's existing application status | Submit another fishing licence application | Request a replacement issued licence
+Disable renewal, retaining permission until expiry | Cancel the current permit immediately | Pause the current licence's validity | Renew the permit for a shorter period
+Correct the pending application's start date | Change the issued licence's expiry date | Withdraw and replace the pending application
+Explain the category and catchment form fields | Complete and submit the licence form | Check the pending application's category | Explain how to pay a licence fee
+Restore the radio's lost station presets | Restore the radio's wireless network settings | Reset the radio to factory defaults
+Add the local station using its stream address | Request the station's addition to the directory | Replace a saved station with another directory entry | Report a broken link for the local station
+Arrange repair of the headphone socket | Replace the radio's headphones | Investigate the radio's speaker connection
+Check synchronized playback with the kitchen radio | Explain how to pair this radio with a speaker | Order another radio for the kitchen | Arrange setup of a multiroom system
+Stop premium renewal, retaining free radio use | Downgrade premium access during the current term | Deregister the radio from the account
+Resend the annual service invoice | Send confirmation of the service renewal | Correct the subscription billing address | Send the radio purchase receipt
+Explain how to set a nightly 30-minute sleep timer | Set the radio's timer remotely | Explain how to schedule a morning alarm
+Send a working replacement remote | Arrange repair of the remote control | Replace the radio and its remote | Explain how to pair the existing remote
+Investigate the Harbour Talk stream specifically | Restore all the radio's saved stations | Check the radio's router connection
+Help connect the existing radio to the router | Transfer settings to a newer radio | Reset the existing radio's station presets | Arrange repair of the radio's wireless module
+Book collection of the empty delivery crates | Add crate returns to the next grocery delivery | Change an existing crate collection appointment
+Trace the deposit missing after the accepted return | Check whether the packaging return was accepted | Arrange another collection of the containers | Correct the card used for future deposits
+Explain whether returned tubs need rinsing or dishwashing | Explain how to pack the tubs for collection | Explain the deposit refund timetable
+Correct the recorded return from five containers to six | Book collection of the outstanding sixth container | Dispute the deposit amount per container | Cancel the recorded five-container return
+Change the planned return to shop drop-off | Change the return collection's home address | Arrange a different pickup time for the boxes
+Record the split lid as pre-existing damage | Request a replacement lid before return | Dispute an already charged damage fee | Report a lid missing from the delivery
+Send written confirmation of the completed crate return | Send the original crate delivery record | Send confirmation of the deposit payment
+Extend the insulated box loan until Monday | Move the collection to an earlier time tomorrow | Convert the insulated box loan to a purchase | Request another insulated box for the weekend
+Cancel the later duplicate pickup only | Cancel both pickups for the batch | Move the original pickup to the later slot
+Use a smaller reusable box next delivery | Use smaller disposable packaging next delivery | Reduce the quantity in the next delivery | Exchange the current box immediately
+Start a first operator registration | Renew an existing operator registration | Register an additional drone on an existing record
+Update the active operator record's postal address | Update the drone's registered details | Register a new operator at the address | Change the operator account's contact email
+Reissue a usable approved certificate file | Restart the operator registration application | Correct the details printed on the certificate
+Check progress of the paid pending renewal | Make another operator renewal payment | Request proof of the renewal payment | Report an error in the renewed certificate
+Withdraw only the later duplicate application | Withdraw both operator applications | Merge the two operator registration references
+Explain the category for the 248-gram camera drone | Explain the operator renewal requirements | Submit the drone's operator registration | Check a pending category application
+Record transfer of the sold drone's ownership | Change the seller's operator contact address | Remove the drone without recording a new owner
+Send the completed registration's transaction receipt | Send the approved registration certificate | Confirm the registration's approval date | Correct the registration fee invoice
+Replace the operator account's contact email | Change the operator record's postal address | Transfer the operator account to a new owner
+Guide completion of operator details without submission | Complete and submit the operator details | Explain how to pay the registration fee | Check an existing operator application's status
+Book a place on the advertised step-free tour | Request step-free assistance on the standard tour | Ask for details of the step-free route
+Move both tickets to Sunday on the same route | Add two Sunday tickets to the existing booking | Move the Saturday tickets to another route | Change the names on the two booked tickets
+Refund the cancelled heritage walk ticket | Issue credit for a future heritage walk | Transfer the ticket to another departure
+Explain the old-town walk's total duration | Explain the walk's distance and terrain | Quote for a shorter private walk | Reserve a place on the old-town walk
+Replace one participant with their cousin | Add the cousin as another participant | Cancel the absent guest's ticket
+Resend the existing heritage booking confirmation | Resend the heritage ticket payment receipt | Create a replacement heritage walk reservation | Change the booking's contact email
+Investigate the guide's failure to arrive | Request a refund for the missed walk | Reschedule the group onto another walk
+Arrange an exclusive Tuesday tour for twelve | Reserve twelve places on a public Tuesday walk | Quote for a private tour on another day | Arrange a private guide-training session | Send a route for a self-guided club walk
+Show available daytime heritage departures | Reserve a place on a daytime departure | Transfer an existing evening booking to daytime
+Explain hearing-device compatibility with the guide's audio | Arrange a hearing-accessible tour booking | Request a written transcript of the tour | Explain the tour's step-free access arrangements
+Adjust the existing blades to a shallower hollow | Sharpen the blades to a deeper hollow | Correct the blades' edge alignment | Repair a nick in one blade edge | Adjust the blade holder's mounting position | Replace the blades with a different profile
+Repair the nick in the damaged blade edge | Book routine sharpening of both skates | Replace the damaged blade assembly
+Check whether tag 47 is ready to collect | Confirm the hollow requested for tag 47 | Change tag 47's collection appointment | Ask for the sharpening job's price
+Cancel Friday's duplicate, keeping Thursday's appointment | Cancel both appointments for the same skates | Move Thursday's appointment to Friday
+Explain drying and protection between sharpenings | Explain when the blades next need sharpening | Recommend blade guards for storage
+Send the receipt for yesterday's sharpening | Send yesterday's sharpening specification | Arrange a repeat sharpening of the blades | Correct the sharpening job's invoice details
+Move drop-off to 4 pm, keeping the collection day | Move the collection time to 4 pm | Change the sharpening appointment's service date
+Quote for sharpening the team's twenty pairs | Reserve workshop time for twenty pairs | Quote for replacing the team's blades | Ask for the team's preferred blade hollow
+Investigate unequal edges after yesterday's sharpening | Assess whether the blade hollow is suitable | Arrange a routine blade alignment check
+Book sharpening for the customer's own skates | Book rental skates for the session | Arrange inspection of the customer's skate boots | Change the booked rink session time
+Order an embossed copy of the completed transcription | Order a large-print copy of the document | Revise the existing braille transcription
+Restore the omitted paragraph in the braille version | Add a new paragraph to the source document | Request a new transcription cost estimate | Change the braille document's layout
+Estimate transcription time for a twenty-page booklet | Reserve a production slot for the booklet | Estimate the booklet's transcription price
+Redirect the embossed order to the college library desk | Change the embossed volumes to a digital file | Divide the volumes into smaller embossed editions | Change the order's invoice address
+Send the completed transcription's invoice | Send the transcription delivery confirmation | Send a quote for the completed material
+Cancel the transcription order before work begins | Hold the transcription order for a later date | Cancel delivery of the completed transcription | Change the pending transcription's output format
+Supply the completed transcription as a digital braille file | Send a digital scan of the embossed pages | Send the transcription as a large-print file
+Explain acceptable source file formats | Explain available braille output file formats | Quote for converting the source document | Start transcription of the prepared document
+Restrict access to staff handling this order | Remove confidential passages from the document | Delete the order and its source files
+Quote for braille transcription, awaiting approval to start | Quote for producing a large-print edition | Begin braille transcription immediately | Explain braille transcription's source requirements

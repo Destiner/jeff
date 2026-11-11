@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "coverage": {
+    "pairs": 240,
+    "rows": 240,
+    "vectors": 480,
+    "original_presentations": 240,
+    "reversed_presentations": 240,
+    "option_identities": 920,
+    "probability_values": 1840,
+    "missing_pairs": 0,
+    "missing_options": 0,
+    "family_rows": {
+      "intent": 80,
+      "rule_application": 80,
+      "sentiment": 80
+    },
+    "K_rows": {
+      "3": 55,
+      "4": 175,
+      "5": 5,
+      "6": 5
+    }
+  },
+  "grouping": {
+    "units": {
+      "source_group": {
+        "distinct_nonnull": 170,
+        "null_rows": 0
+      },
+      "domain": {
+        "distinct_nonnull": 16,
+        "null_rows": 80
+      },
+      "policy_instance": {
+        "distinct_nonnull": 40,
+        "null_rows": 160
+      },
+      "mechanism": {
+        "distinct_nonnull": 10,
+        "null_rows": 160
+      },
+      "producer": {
+        "distinct_nonnull": 6,
+        "null_rows": 0
+      }
+    },
+    "nesting": {
+      "source_group->producer": {
+        "observed_child_units": 170,
+        "violating_child_units": 0,
+        "excluded_null_rows": 0,
+        "functional_on_observed": true
+      },
+      "domain->producer": {
+        "observed_child_units": 16,
+        "violating_child_units": 0,
+        "excluded_null_rows": 80,
+        "functional_on_observed": true
+      },
+      "policy_instance->producer": {
+        "observed_child_units": 40,
+        "violating_child_units": 0,
+        "excluded_null_rows": 160,
+        "functional_on_observed": true
+      },
+      "mechanism->producer": {
+        "observed_child_units": 10,
+        "violating_child_units": 0,
+        "excluded_null_rows": 160,
+        "functional_on_observed": true
+      },
+      "policy_instance->mechanism": {
+        "observed_child_units": 40,
+        "violating_child_units": 0,
+        "excluded_null_rows": 160,
+        "functional_on_observed": true
+      }
+    }
+  },
+  "source_pins": {
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e5-p3-v1.json": "89ae270c69ba8c80043bbe0d478960499e1cd9d464c7c36003de981727901bf1",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json": "3e0d34c2d52a38d324041cb0154acc16ce41d6ffd1f121c328da9b3da99afd87",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-release-identity-review-v1/validation-source-units-reviewed.json": "bbb16873176515a24b76caa6b628cce5bfb5bec28ab26e635f6a862615d0ee3a",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-original.jsonl": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/v2-reversed.jsonl": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/inputs.jsonl": "a3b65924d7ea3ed9b638457d42d7274ddcdad5a0d40ad5c87fd975da0a2846e0",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/reversed-inputs.jsonl": "3f122ed8b56d12ced0a62037f4917344d4830c3fb906a153b0afebf13dbe7a58",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json": "13fafff508d5f9aaf1f316e5c74638c0d82e40d2b6a6ecf60d67a1153238ea98"
+  },
+  "exporter_sha256": "a809c56a799f65c8ec8f9c976033822a060743b9f1f6f00abf227fbc82456e20",
+  "mapping_sha256": "0e55e73af90af9d6234b597f9f43634a7c281e242546eac1f8bfda4671de27ec",
+  "public_schema_sha256": "3340af7af5d1ee1c3cc62e55ec7f2a846d660890818ba67302da1d5a0ad18c43",
+  "paired_sha256": "ca9d0f47401b753be87ef9c12648c771ef62783d1f8e646af89e1b55404f792d",
+  "readme_sha256": "e345a5ff1041f30c87aae715d40d3aa1a9e55123cb0ed9897abeaaf52ddbb794",
+  "raw_bitwise_values_checked": 1840,
+  "forbidden_distinct_strings_checked": 3062,
+  "exact_reversal_all_development_pairs": 300,
+  "strict_label_free_full_inputs": true,
+  "read_targets_or_labeled_references": false,
+  "validation_kind": "actual export data/privacy validation; no software tests or lint",
+  "python_executable": "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python3.12",
+  "python_version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+  "public_receipt_content_sha256": "1b312883376325a045c27ff691e949c5ba3260f8fde29600461373f1f70f948e"
+}

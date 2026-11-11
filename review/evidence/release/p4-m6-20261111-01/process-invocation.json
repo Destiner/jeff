@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Users/destiner/Code/jeff/.worktrees/release/.venv/bin/python",
+    "-m",
+    "jeff.runtime.qwen_challenger",
+    "predict",
+    "--audit-dir",
+    "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/audit",
+    "--model-dir",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run",
+    "--device",
+    "mps"
+  ],
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "HOME": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/run-home",
+    "HF_HOME": "/Users/destiner/Code/jeff/artifacts/release/p4-m6-20261111-01/empty-hf-cache",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4"
+  },
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/release",
+  "started_at": "2026-11-11T16:10:46.886945+00:00",
+  "wrapper_pid": 86734,
+  "timeout_seconds": 300,
+  "termination_grace_seconds": 10,
+  "timing_scope": "External wall includes interpreter/import/hash-tokenization preflight/model load/startup/full pass/output."
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-a-r2",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "parent": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a",
+    "metadata_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/metadata.json",
+    "sha256": {
+      "train.jsonl": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633",
+      "validation.jsonl": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435",
+      "metadata.json": "9bf5fa4dffb96c01185af86352f84ff18e98c84332bfa8db3c6d3947dc063972",
+      "source_cases.txt": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+      "group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba"
+    }
+  },
+  "revision_purpose": "Replace length-revealing and remote choices with concise, workflow-adjacent contrasts without changing requested actions.",
+  "semantic_scope": "All 240 choice sets reauthored directly. Original states, questions, split, group_id, task_family, arity, ordered option IDs, target ID and target slot are unchanged. Targets express the same requested action, retaining consequential timing, conditions and partial-action scope; no new facts are asserted about the scenario. Only choice texts, example ID prefix and provenance change.",
+  "generation_settings": {
+    "method": "Direct approved-agent teacher authoring of each complete choice set; stdlib CPU mapping and serialization only.",
+    "sampling": {
+      "temperature": null,
+      "top_p": null,
+      "note": "Harness sampling settings unavailable; no additional model/API calls."
+    },
+    "option_order": "Parent order unchanged; no diagnostic-driven reshuffling or relabeling.",
+    "source_mapping": "choice_mappings.json",
+    "authored_source": "choices.txt",
+    "generation_scripts": [
+      "apply.py",
+      "validate.py"
+    ],
+    "artifact_sha256": {
+      "choices.txt": "a4819b97cb2d7c4a515d3bacee94ad14e30f30edb2f5580b73091aee7243c727",
+      "choice_mappings.json": "e8b0003ffe48b6dd10a149a4708020b3cf00f4cb1c391a45c1bc35a28d48b25d",
+      "apply.py": "d4a15ff091035fd516edca09ea8f3aafb2e3295c9d8f0805f9bee5640e73495c",
+      "validate.py": "ee6a252082d4efd354e3588489ee286c33d34546259121ead6ba66a3e33f6f3a",
+      "train.jsonl": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9",
+      "validation.jsonl": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba"
+    }
+  },
+  "usage_constraints": {
+    "origin": "Synthetic parent scenarios and direct revision through existing approved agent access; applicable provider terms remain in force.",
+    "privacy": "No private company or customer records used.",
+    "features": "Only state, question and option text are model inputs; all lineage and labels are metadata.",
+    "validation": "Validation rows are for validation only, never weight updates.",
+    "replacement": "Use this revision instead of the parent, not alongside its same-group rows."
+  },
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "limitations": [
+    "Same-teacher semantic self-review, not independent correctness verification.",
+    "No immutable teacher revision or sampling parameters exposed.",
+    "No model/tokenizer load; downstream token-budget audit remains necessary.",
+    "Deduplication scope is this shard and its parent lineage only."
+  ]
+}

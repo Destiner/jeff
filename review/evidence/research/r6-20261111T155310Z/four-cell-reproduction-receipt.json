@@ -1,0 +1,14 @@
+{
+  "all_scientific_results_exact_equal": true,
+  "compared_sections": [
+    "validation",
+    "counts_by_K",
+    "summaries",
+    "mass",
+    "heterogeneity",
+    "cases"
+  ],
+  "model_rerun": false,
+  "estimator_or_weight_change": false,
+  "initial_prototype_failure": "pre-metric semantic-vs-display binding error; previous standalone receipt overwritten with embedded previous-attempt summary; final script exclusive output directory"
+}

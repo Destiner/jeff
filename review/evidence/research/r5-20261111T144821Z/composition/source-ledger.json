@@ -1,0 +1,96 @@
+{
+  "strand": "R5 composition",
+  "created_date": "2026-11-11",
+  "scope": "Original-source passages; published results are not guarantees for Jeff. No local model measurements.",
+  "counts": {"web_search_calls": 2, "search_queries": 6, "fetch_content_calls": 4, "requested_fetch_urls": 9, "get_search_content_calls": 9, "original_research_sources_used": 5},
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks",
+      "authors_year": "Lake and Baroni, 2018",
+      "url": "https://arxiv.org/html/1711.00350",
+      "official_url": "https://proceedings.mlr.press/v80/lake18a.html",
+      "method_scale": "20,910 grammar-generated commands; SRN/LSTM/GRU seq2seq architecture grid, 100,000 training presentations, five initializations; best-overall 2-layer 200-unit LSTM.",
+      "evidence": [
+        {"claim": "Training fit can coexist with poor compositional transfer.", "locator": "Section 3 final paragraph; Section 4 Experiments 1-3", "passage": "Training accuracy was above 99.5% for the overall-best network in each of the key experiments"},
+        {"claim": "Best-overall random split reaches 99.7%.", "locator": "Section 4 Experiment 1", "passage": "The best-overall network achieved 99.7% correct."},
+        {"claim": "Length transfer fails despite familiar elements; not only a search issue.", "locator": "Section 4 Experiment 2", "passage": "The overall-best model achieves 13.8% accuracy.", "additional_passage": "Now the training set contains all 16,990 commands requiring sequences of up to 22 actions, whereas the test set includes all remaining commands (3,920, requiring action sequences of lengths from 24 to 48)."},
+        {"claim": "Transfer differs dramatically between primitive contexts.", "locator": "Section 4 Experiment 3", "passage": "The overall-best model achieved 90.0% accuracy.", "additional_passage": "The overall-best model reached 0.08% accuracy.", "interpretation": "First quote is turn-left composition; second is jump composition. These are not separate Jeff conditions."}
+      ],
+      "limits": "Synthetic finite nonrecursive grammar; recurrent generative models without MiniLM pretraining; output generation differs from choice ranking; composition and length shifts are entangled. Best-overall and experiment-specific best architecture results must not be conflated.",
+      "jeff_relevance": "Separate train fit, policy transfer, composition and length. A high training or random-split score is insufficient evidence of systematic execution."
+    },
+    {
+      "id": "S2",
+      "title": "Measuring Compositional Generalization: A Comprehensive Method on Realistic Data",
+      "authors_year": "Keysers et al., 2020",
+      "url": "https://arxiv.org/html/1912.09713",
+      "method_scale": "CFQ239,357 questions with compositional derivations; LSTM+attention, Transformer, Universal Transformer; 35,000 steps each, five replications. Appendix E specifies widths512/128/256 and layers2/2/6; no exact parameter-count claim.",
+      "evidence": [
+        {"claim": "DBCA isolates new compounds while controlling atom distributions.", "locator": "Section 2, concluding split criterion", "passage": "splits with maximum compound divergence and low atom divergence", "numeric_locator": "Same paragraph specifies atom divergence <=0.02."},
+        {"claim": "CFQ random-split accuracy badly overstates MCD transfer for these baselines.", "locator": "Section 5 Table 4", "passage": "LSTM+attention 97.4 ±0.3 14.9 ±1.1", "additional_passage": "Transformer 98.5 ±0.2 17.9 ±0.9", "numeric_context": "CFQ Random / MCD columns, percent. Universal Transformer98.0±0.3 /18.9±1.4."},
+        {"claim": "Comparable training controls were used across splits.", "locator": "Section 5.1", "passage": "In particular the number of training steps is kept constant to remove this factor of variation.", "additional_passage": "we replicate each experiment 5 times and report the resulting mean accuracy with 95% confidence intervals."}
+      ],
+      "limits": "Supervised semantic parsing with known derivations, not arbitrary candidate scoring; formal atom/compound definitions do not exist automatically from Jeff group IDs. Authors note output-length split is worse than expected from compound divergence because distribution shifts in other ways.",
+      "jeff_relevance": "D3 is not an MCD/unseen-composition benchmark. Define transfer unit before variants and distinguish source policies from named mechanisms."
+    },
+    {
+      "id": "S3",
+      "title": "Good-Enough Compositional Data Augmentation",
+      "authors_year": "Andreas, ACL2020",
+      "url": "https://arxiv.org/html/1904.09545",
+      "official_url": "https://aclanthology.org/2020.acl-main.676/",
+      "method_scale": "Model-agnostic fragment substitution using shared environments; SCAN one-layer LSTM encoder-decoder with embedding64/hidden512, attention and bidirectional encoder; 10 seeds. SCAN jump12,620+395 examples; GeoQuery880 total and SQL-query training695+1,055 augmented.",
+      "evidence": [
+        {"claim": "Positive published intervention evidence exists for compositional augmentation.", "locator": "Abstract; Section 3 method; Section 4 diagnostics", "passage": "it reduces error rate by as much as 87% on diagnostic tasks from the scan dataset and 16% on a semantic parsing task.", "additional_passage": "the original jump split has 12620 training examples; geca generates an additional 395 using 395 distinct templates and 6 distinct fragments."},
+        {"claim": "Augmentation can directly synthesize evaluation examples even without seeing the evaluation set.", "locator": "Section 4 Analysis: dataset statistics", "passage": "After applying geca, 5% of test examples for the add primitive condition and 1% of examples for the add template condition are automatically synthesized."},
+        {"claim": "The procedure is not generally semantically safe.", "locator": "Section 3 Linguistic notes; Section 5 Analysis: examples", "passage": "it is, as a statement of a general linguistic principle, obviously wrong.", "additional_passage": "the corresponding SQL expression would fail to execute."},
+        {"claim": "Augmentation does not universally improve transfer.", "locator": "Section 5 Table 3 caption", "passage": "In both cases a model trained with geca performs indistinguishably from a the baseline model.", "context": "Negative Scholar dataset results; query and question splits."},
+        {"claim": "An unrestricted generic implementation can be expensive.", "locator": "Section 3 Implementation", "passage": "Space requirements might still be considerable", "context": "Paper gives naive O(t^3 f^3) and indexed O(f t^2 e) runtime; bounded typed Jeff producer is proposed instead, not a claim to implement GECA. Neither cost was measured locally."}
+      ],
+      "limits": "Controlled substitutions, not arbitrary paraphrase generation; synthetic-test overlap weakens extrapolation claims; some semantically invalid examples are useful for their benchmark objective but unacceptable as blindly trusted Jeff rule labels. HTML table cells were not fully extracted; no unobserved exact benchmark accuracy reconstructed.",
+      "jeff_relevance": "Small verified training-only policy variants are plausible; independently recompute target after semantic edits, split root policies before variants, prohibit D3/probe/final derivatives."
+    },
+    {
+      "id": "S4",
+      "title": "Show Your Work: Scratchpads for Intermediate Computation with Language Models",
+      "authors_year": "Nye et al., 2021",
+      "url": "https://arxiv.org/html/2112.00114",
+      "method_scale": "Pretrained dense decoder-only models2M-137B; addition2M-1B,100k examples,5k steps,batch32,train1-8 digits/test9-10. Python experiments~137B,context1024/generation512. MBPP374 training programs×3 cases; MBPP-aug~17k extra sampled programs.",
+      "evidence": [
+        {"claim": "Intermediate states are generated outputs at inference, not oracle input rationales.", "locator": "Section 2 Method", "passage": "At test time, the model will be given only the input and will be required to predict the target"},
+        {"claim": "Scratchpad training has positive length-transfer evidence on bounded addition.", "locator": "Section 3 Addition, Results", "passage": "On the out-of-distribution tasks (9-10 digit addition), we find that models trained without scratchpad completely fail, while models trained with scratchpad show consistent improvement as a function of model size."},
+        {"claim": "Intermediate supervision can lose to answer-only learning in a very-low-data regime.", "locator": "Section 5.2.1", "passage": "Neither the scratchpad model or the direct execution model achieve good performance (5% and 10% output accuracy, respectively), and direct execution outperforms the scratchpad model."},
+        {"claim": "Augmented program data has opposite effects depending on supervision form.", "locator": "Section 5.2.2 and Table 1 caption", "passage": "significantly improves performance for the scratchpad model, while it harms the direct execution model."},
+        {"claim": "Reported MBPP tasks are selected for trace-length feasibility.", "locator": "Section 5.2 introduction", "passage": "This leaves a subset of 212 test tasks.", "context": "From500 tasks, only tasks whose three traces fit the generation window are evaluated."}
+      ],
+      "limits": "Task-specific verified states, different inference computation, much larger data/model scales in Python; bounded9-10-digit extrapolation is not unbounded length generalization. Trace correctness and answer correctness are separately evaluated. Some few-shot synthetic tracing scores use a modified variable-name criterion; not used here for a quantitative recommendation.",
+      "jeff_relevance": "A single-pass22M encoder cannot inherit scratchpad computation just by consuming a teacher explanation during training. Auxiliary state-choice supervision is a hypothesis, not the original generative method."
+    },
+    {
+      "id": "S5",
+      "title": "Learning to Execute",
+      "authors_year": "Zaremba and Sutskever, 2014",
+      "url": "https://arxiv.org/html/1410.4615",
+      "method_scale": "Two-layer400-cell LSTM, approximately2.5M parameters, random initialization; character-level restricted synthetic program execution, addition/copying. Curriculum across program nesting and integer length; copy experiments up to20 epochs×0.5M samples.",
+      "evidence": [
+        {"claim": "Naive easy-to-hard ordering is not automatically beneficial.", "locator": "Section 4 Naive curriculum strategy", "passage": "sometimes it gives even worse performance than baseline."},
+        {"claim": "Mixed curricula retain exposure to difficult examples.", "locator": "Section 4 Mixed and combined strategies", "passage": "the combined strategy always exposes the network at least to some difficult examples", "additional_passage": "it always outperformed the naive strategy and would generally (but not always) outperform the mix strategy."},
+        {"claim": "Combined curriculum has positive program-evaluation results.", "locator": "Section 6.1 Figure 4 caption", "passage": "Overall, the combined strategy outperformed the baseline strategy in every setting."},
+        {"claim": "Published numerical accuracy is not autonomous sequence accuracy.", "locator": "Section 6 Important note on error rates", "passage": "We use teacher forcing when we compute the accuracy of our LSTMs.", "additional_passage": "which would almost surely result in lower numerical accuracies.", "context": "Second quote refers to generating the whole output without correct preceding digits."},
+        {"claim": "Program execution is explicitly restricted in computational complexity.", "locator": "Section 3 Program Subclass", "passage": "We impose restrictions on the operands of multiplication and on the ranges of for-loop", "context": "Limits operand and loop-range growth; not general unrestricted algorithm execution."}
+      ],
+      "limits": "Randomly initialized recurrent model and synthetic generation at large presentation budgets; no22M pretrained encoder evidence. Teacher-forced digit accuracy and restricted programs cannot establish general algorithmic exactness or unbounded length extrapolation.",
+      "jeff_relevance": "Keep mixed difficulty and hard-case exposure if proposing a curriculum; compare fixed presentation budgets and do not assume easy-to-hard is the right intervention."
+    }
+  ],
+  "excluded_or_failed_fetches": [
+    {"url": "https://proceedings.mlr.press/v80/lake18a/lake18a.pdf", "status": "Tiny placeholder only; no paper passages used from this response. Used arXiv HTML and official landing instead."},
+    {"url": "https://aclanthology.org/2020.acl-main.676.pdf", "status": "Tiny placeholder only; used arXiv HTML instead."},
+    {"url": "https://arxiv.org/html/1803.11171", "status": "Mistaken ID resolved to unrelated antenna paper; excluded completely."}
+  ],
+  "retrieval_receipts": {
+    "search_response_ids": ["mwc8kf6r8dotrz", "mwc8ly3vmn55dk"],
+    "fetch_response_ids": ["mwc8kjckpgxpua", "mwc8l5o0lap0je", "mwc8la8dbao3xs", "mwc8m2geuro0ag"]
+  }
+}

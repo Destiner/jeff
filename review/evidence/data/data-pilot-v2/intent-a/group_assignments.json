@@ -1,0 +1,1204 @@
+{
+  "groups": {
+    "data:pilot-v2:intent-a:g001": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "activation delay"
+    },
+    "data:pilot-v2:intent-a:g002": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "router restart guidance"
+    },
+    "data:pilot-v2:intent-a:g003": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "moving service"
+    },
+    "data:pilot-v2:intent-a:g004": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "billing error"
+    },
+    "data:pilot-v2:intent-a:g005": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "forgotten portal password"
+    },
+    "data:pilot-v2:intent-a:g006": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "outage status only"
+    },
+    "data:pilot-v2:intent-a:g007": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "package downgrade"
+    },
+    "data:pilot-v2:intent-a:g008": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "technician reschedule"
+    },
+    "data:pilot-v2:intent-a:g009": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "cancellation reversal"
+    },
+    "data:pilot-v2:intent-a:g010": {
+      "split": "train",
+      "domain": "home broadband support",
+      "scenario_plan": "address availability inquiry"
+    },
+    "data:pilot-v2:intent-a:g011": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "join waitlist"
+    },
+    "data:pilot-v2:intent-a:g012": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "transfer course level"
+    },
+    "data:pilot-v2:intent-a:g013": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "certificate name correction"
+    },
+    "data:pilot-v2:intent-a:g014": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "refund eligibility inquiry"
+    },
+    "data:pilot-v2:intent-a:g015": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "restore login"
+    },
+    "data:pilot-v2:intent-a:g016": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "accessibility request"
+    },
+    "data:pilot-v2:intent-a:g017": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "withdraw enrolment"
+    },
+    "data:pilot-v2:intent-a:g018": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "employer invoice"
+    },
+    "data:pilot-v2:intent-a:g019": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "prerequisite inquiry"
+    },
+    "data:pilot-v2:intent-a:g020": {
+      "split": "train",
+      "domain": "online course enrolment",
+      "scenario_plan": "recording access"
+    },
+    "data:pilot-v2:intent-a:g021": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "pause deliveries"
+    },
+    "data:pilot-v2:intent-a:g022": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "change email"
+    },
+    "data:pilot-v2:intent-a:g023": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "unsubscribe"
+    },
+    "data:pilot-v2:intent-a:g024": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "recover recipe issue"
+    },
+    "data:pilot-v2:intent-a:g025": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "dietary topic preference"
+    },
+    "data:pilot-v2:intent-a:g026": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "duplicate mailing"
+    },
+    "data:pilot-v2:intent-a:g027": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "gift subscription"
+    },
+    "data:pilot-v2:intent-a:g028": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "billing receipt"
+    },
+    "data:pilot-v2:intent-a:g029": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "browser view failure"
+    },
+    "data:pilot-v2:intent-a:g030": {
+      "split": "train",
+      "domain": "recipe newsletter subscriptions",
+      "scenario_plan": "frequency inquiry"
+    },
+    "data:pilot-v2:intent-a:g031": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "book dishwasher repair"
+    },
+    "data:pilot-v2:intent-a:g032": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "amend fault description"
+    },
+    "data:pilot-v2:intent-a:g033": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "warranty eligibility"
+    },
+    "data:pilot-v2:intent-a:g034": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "reschedule visit"
+    },
+    "data:pilot-v2:intent-a:g035": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "locate technician"
+    },
+    "data:pilot-v2:intent-a:g036": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "obtain estimate"
+    },
+    "data:pilot-v2:intent-a:g037": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "reject replacement offer"
+    },
+    "data:pilot-v2:intent-a:g038": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "unsafe washer report"
+    },
+    "data:pilot-v2:intent-a:g039": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "invoice correction"
+    },
+    "data:pilot-v2:intent-a:g040": {
+      "split": "train",
+      "domain": "appliance repair",
+      "scenario_plan": "request service report"
+    },
+    "data:pilot-v2:intent-a:g041": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "lost property"
+    },
+    "data:pilot-v2:intent-a:g042": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "sailing cancellation status"
+    },
+    "data:pilot-v2:intent-a:g043": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "amend destination"
+    },
+    "data:pilot-v2:intent-a:g044": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "fare refund"
+    },
+    "data:pilot-v2:intent-a:g045": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "step-free boarding inquiry"
+    },
+    "data:pilot-v2:intent-a:g046": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "season pass login"
+    },
+    "data:pilot-v2:intent-a:g047": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "duplicate charge"
+    },
+    "data:pilot-v2:intent-a:g048": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "timetable request"
+    },
+    "data:pilot-v2:intent-a:g049": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "bicycle space booking"
+    },
+    "data:pilot-v2:intent-a:g050": {
+      "split": "train",
+      "domain": "commuter ferry support",
+      "scenario_plan": "complaint about conduct"
+    },
+    "data:pilot-v2:intent-a:g051": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "change vehicle"
+    },
+    "data:pilot-v2:intent-a:g052": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "visitor allowance inquiry"
+    },
+    "data:pilot-v2:intent-a:g053": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "renew permit"
+    },
+    "data:pilot-v2:intent-a:g054": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "appeal penalty"
+    },
+    "data:pilot-v2:intent-a:g055": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "restore account"
+    },
+    "data:pilot-v2:intent-a:g056": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "report missing permit"
+    },
+    "data:pilot-v2:intent-a:g057": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "cancel future permit"
+    },
+    "data:pilot-v2:intent-a:g058": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "correct address"
+    },
+    "data:pilot-v2:intent-a:g059": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "payment receipt"
+    },
+    "data:pilot-v2:intent-a:g060": {
+      "split": "train",
+      "domain": "parking permits",
+      "scenario_plan": "enforcement report"
+    },
+    "data:pilot-v2:intent-a:g061": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "report pothole"
+    },
+    "data:pilot-v2:intent-a:g062": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "check work schedule"
+    },
+    "data:pilot-v2:intent-a:g063": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "correct report location"
+    },
+    "data:pilot-v2:intent-a:g064": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "close resolved report"
+    },
+    "data:pilot-v2:intent-a:g065": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "chase repair"
+    },
+    "data:pilot-v2:intent-a:g066": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "report debris"
+    },
+    "data:pilot-v2:intent-a:g067": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "request pedestrian detour information"
+    },
+    "data:pilot-v2:intent-a:g068": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "claim vehicle damage"
+    },
+    "data:pilot-v2:intent-a:g069": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "challenge closure notice"
+    },
+    "data:pilot-v2:intent-a:g070": {
+      "split": "train",
+      "domain": "road maintenance reporting",
+      "scenario_plan": "report broken drain cover"
+    },
+    "data:pilot-v2:intent-a:g071": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "reserve quiet desk"
+    },
+    "data:pilot-v2:intent-a:g072": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "extend existing booking"
+    },
+    "data:pilot-v2:intent-a:g073": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "cancel one desk"
+    },
+    "data:pilot-v2:intent-a:g074": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "regain entry access"
+    },
+    "data:pilot-v2:intent-a:g075": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "invoice company name"
+    },
+    "data:pilot-v2:intent-a:g076": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "report monitor fault"
+    },
+    "data:pilot-v2:intent-a:g077": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "ask phone call policy"
+    },
+    "data:pilot-v2:intent-a:g078": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "tour inquiry"
+    },
+    "data:pilot-v2:intent-a:g079": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "reclaim left item"
+    },
+    "data:pilot-v2:intent-a:g080": {
+      "split": "train",
+      "domain": "coworking desks",
+      "scenario_plan": "change booking branch"
+    },
+    "data:pilot-v2:intent-a:g081": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "freeze membership"
+    },
+    "data:pilot-v2:intent-a:g082": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "cancel class only"
+    },
+    "data:pilot-v2:intent-a:g083": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "change debit date"
+    },
+    "data:pilot-v2:intent-a:g084": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "trial eligibility"
+    },
+    "data:pilot-v2:intent-a:g085": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "restore app login"
+    },
+    "data:pilot-v2:intent-a:g086": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "report equipment fault"
+    },
+    "data:pilot-v2:intent-a:g087": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "dispute late fee"
+    },
+    "data:pilot-v2:intent-a:g088": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "switch membership tier"
+    },
+    "data:pilot-v2:intent-a:g089": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "transfer unused session"
+    },
+    "data:pilot-v2:intent-a:g090": {
+      "split": "train",
+      "domain": "fitness studio membership",
+      "scenario_plan": "instructor feedback"
+    },
+    "data:pilot-v2:intent-a:g091": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "book preventive consult"
+    },
+    "data:pilot-v2:intent-a:g092": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "reschedule appointment"
+    },
+    "data:pilot-v2:intent-a:g093": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "obtain vaccination record"
+    },
+    "data:pilot-v2:intent-a:g094": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "estimate consultation fee"
+    },
+    "data:pilot-v2:intent-a:g095": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "update pet details"
+    },
+    "data:pilot-v2:intent-a:g096": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "refill process inquiry"
+    },
+    "data:pilot-v2:intent-a:g097": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "urgent symptom triage request"
+    },
+    "data:pilot-v2:intent-a:g098": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "decline procedure consent"
+    },
+    "data:pilot-v2:intent-a:g099": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "correct invoice"
+    },
+    "data:pilot-v2:intent-a:g100": {
+      "split": "train",
+      "domain": "veterinary consultations",
+      "scenario_plan": "portal access"
+    },
+    "data:pilot-v2:intent-a:g101": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "book photo appointment"
+    },
+    "data:pilot-v2:intent-a:g102": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "ask document specifications"
+    },
+    "data:pilot-v2:intent-a:g103": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "request digital file"
+    },
+    "data:pilot-v2:intent-a:g104": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "redo rejected photo"
+    },
+    "data:pilot-v2:intent-a:g105": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "change appointment size"
+    },
+    "data:pilot-v2:intent-a:g106": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "recover collection code"
+    },
+    "data:pilot-v2:intent-a:g107": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "invoice request"
+    },
+    "data:pilot-v2:intent-a:g108": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "remove stored image"
+    },
+    "data:pilot-v2:intent-a:g109": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "pickup status"
+    },
+    "data:pilot-v2:intent-a:g110": {
+      "split": "train",
+      "domain": "passport photo shop",
+      "scenario_plan": "accessibility accommodation"
+    },
+    "data:pilot-v2:intent-a:g111": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "reserve venue"
+    },
+    "data:pilot-v2:intent-a:g112": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "postpone booking"
+    },
+    "data:pilot-v2:intent-a:g113": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "seating capacity inquiry"
+    },
+    "data:pilot-v2:intent-a:g114": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "amend catering numbers"
+    },
+    "data:pilot-v2:intent-a:g115": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "refund deposit inquiry"
+    },
+    "data:pilot-v2:intent-a:g116": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "report inaccessible door"
+    },
+    "data:pilot-v2:intent-a:g117": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "request item recovery"
+    },
+    "data:pilot-v2:intent-a:g118": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "restore planner login"
+    },
+    "data:pilot-v2:intent-a:g119": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "change invoice payer"
+    },
+    "data:pilot-v2:intent-a:g120": {
+      "split": "train",
+      "domain": "event venue bookings",
+      "scenario_plan": "noise complaint"
+    },
+    "data:pilot-v2:intent-a:g121": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "reset app passcode"
+    },
+    "data:pilot-v2:intent-a:g122": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "unblock new device"
+    },
+    "data:pilot-v2:intent-a:g123": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "report suspected access"
+    },
+    "data:pilot-v2:intent-a:g124": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "find statement"
+    },
+    "data:pilot-v2:intent-a:g125": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "raise transfer limit inquiry"
+    },
+    "data:pilot-v2:intent-a:g126": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "change contact number"
+    },
+    "data:pilot-v2:intent-a:g127": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "dispute app fee"
+    },
+    "data:pilot-v2:intent-a:g128": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "disable push alerts"
+    },
+    "data:pilot-v2:intent-a:g129": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "restore hidden account"
+    },
+    "data:pilot-v2:intent-a:g130": {
+      "split": "train",
+      "domain": "mobile banking app access",
+      "scenario_plan": "close app profile only"
+    },
+    "data:pilot-v2:intent-a:g131": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "replace lost card"
+    },
+    "data:pilot-v2:intent-a:g132": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "refund duplicate topup"
+    },
+    "data:pilot-v2:intent-a:g133": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "check journey charge"
+    },
+    "data:pilot-v2:intent-a:g134": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "transfer balance"
+    },
+    "data:pilot-v2:intent-a:g135": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "enable auto topup"
+    },
+    "data:pilot-v2:intent-a:g136": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "disable auto topup only"
+    },
+    "data:pilot-v2:intent-a:g137": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "concession eligibility"
+    },
+    "data:pilot-v2:intent-a:g138": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "unlock online access"
+    },
+    "data:pilot-v2:intent-a:g139": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "correct registered name"
+    },
+    "data:pilot-v2:intent-a:g140": {
+      "split": "train",
+      "domain": "transit smartcards",
+      "scenario_plan": "report faulty reader"
+    },
+    "data:pilot-v2:intent-a:g141": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "reserve costume"
+    },
+    "data:pilot-v2:intent-a:g142": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "extend return date"
+    },
+    "data:pilot-v2:intent-a:g143": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "change size"
+    },
+    "data:pilot-v2:intent-a:g144": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "stain fee dispute"
+    },
+    "data:pilot-v2:intent-a:g145": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "collection opening hours"
+    },
+    "data:pilot-v2:intent-a:g146": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "return shipping label"
+    },
+    "data:pilot-v2:intent-a:g147": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "cancel accessory only"
+    },
+    "data:pilot-v2:intent-a:g148": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "request repair authorization"
+    },
+    "data:pilot-v2:intent-a:g149": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "recover deposit"
+    },
+    "data:pilot-v2:intent-a:g150": {
+      "split": "train",
+      "domain": "costume hire",
+      "scenario_plan": "availability inquiry"
+    },
+    "data:pilot-v2:intent-a:g151": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "submit meter reading"
+    },
+    "data:pilot-v2:intent-a:g152": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "dispute estimated bill"
+    },
+    "data:pilot-v2:intent-a:g153": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "change payment date"
+    },
+    "data:pilot-v2:intent-a:g154": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "report account login failure"
+    },
+    "data:pilot-v2:intent-a:g155": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "move closing reading date"
+    },
+    "data:pilot-v2:intent-a:g156": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "request tariff comparison"
+    },
+    "data:pilot-v2:intent-a:g157": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "refund credit"
+    },
+    "data:pilot-v2:intent-a:g158": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "correct meter serial"
+    },
+    "data:pilot-v2:intent-a:g159": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "request accessible bill"
+    },
+    "data:pilot-v2:intent-a:g160": {
+      "split": "train",
+      "domain": "energy billing",
+      "scenario_plan": "report power loss"
+    },
+    "data:pilot-v2:intent-a:g161": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "book assembly"
+    },
+    "data:pilot-v2:intent-a:g162": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "correct furniture model"
+    },
+    "data:pilot-v2:intent-a:g163": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "missing parts advice"
+    },
+    "data:pilot-v2:intent-a:g164": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "reschedule installer"
+    },
+    "data:pilot-v2:intent-a:g165": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "damage complaint"
+    },
+    "data:pilot-v2:intent-a:g166": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "request itemized quote"
+    },
+    "data:pilot-v2:intent-a:g167": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "cancel extra service"
+    },
+    "data:pilot-v2:intent-a:g168": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "retrieve assembly instructions"
+    },
+    "data:pilot-v2:intent-a:g169": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "pay outstanding invoice"
+    },
+    "data:pilot-v2:intent-a:g170": {
+      "split": "train",
+      "domain": "furniture assembly",
+      "scenario_plan": "accessibility arrangement"
+    },
+    "data:pilot-v2:intent-a:g171": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "reserve equipment"
+    },
+    "data:pilot-v2:intent-a:g172": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "change hire size"
+    },
+    "data:pilot-v2:intent-a:g173": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "extend rental"
+    },
+    "data:pilot-v2:intent-a:g174": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "report safety fault"
+    },
+    "data:pilot-v2:intent-a:g175": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "ask deposit amount"
+    },
+    "data:pilot-v2:intent-a:g176": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "cancel pickup only"
+    },
+    "data:pilot-v2:intent-a:g177": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "recover forgotten property"
+    },
+    "data:pilot-v2:intent-a:g178": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "dispute late return"
+    },
+    "data:pilot-v2:intent-a:g179": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "request delivery"
+    },
+    "data:pilot-v2:intent-a:g180": {
+      "split": "train",
+      "domain": "sports equipment hire",
+      "scenario_plan": "lost equipment procedure"
+    },
+    "data:pilot-v2:intent-a:g181": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "book haircut"
+    },
+    "data:pilot-v2:intent-a:g182": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "correct booked service"
+    },
+    "data:pilot-v2:intent-a:g183": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "reschedule stylist absence"
+    },
+    "data:pilot-v2:intent-a:g184": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "patch test information"
+    },
+    "data:pilot-v2:intent-a:g185": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "cancel colouring only"
+    },
+    "data:pilot-v2:intent-a:g186": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "restore booking account"
+    },
+    "data:pilot-v2:intent-a:g187": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "request quiet appointment"
+    },
+    "data:pilot-v2:intent-a:g188": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "invoice name correction"
+    },
+    "data:pilot-v2:intent-a:g189": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "complaint about result"
+    },
+    "data:pilot-v2:intent-a:g190": {
+      "split": "train",
+      "domain": "hair appointments",
+      "scenario_plan": "waitlist for stylist"
+    },
+    "data:pilot-v2:intent-a:g191": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "place preorder"
+    },
+    "data:pilot-v2:intent-a:g192": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "change edition"
+    },
+    "data:pilot-v2:intent-a:g193": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "change delivery address"
+    },
+    "data:pilot-v2:intent-a:g194": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "ask release date"
+    },
+    "data:pilot-v2:intent-a:g195": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "cancel duplicate only"
+    },
+    "data:pilot-v2:intent-a:g196": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "request payment receipt"
+    },
+    "data:pilot-v2:intent-a:g197": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "regain account access"
+    },
+    "data:pilot-v2:intent-a:g198": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "collect gift privately"
+    },
+    "data:pilot-v2:intent-a:g199": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "damaged arrival replacement"
+    },
+    "data:pilot-v2:intent-a:g200": {
+      "split": "train",
+      "domain": "bookshop preorders",
+      "scenario_plan": "availability of signed copies"
+    },
+    "data:pilot-v2:intent-a:g201": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "change bulletin sea area"
+    },
+    "data:pilot-v2:intent-a:g202": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "stop SMS only"
+    },
+    "data:pilot-v2:intent-a:g203": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "restore subscriber access"
+    },
+    "data:pilot-v2:intent-a:g204": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "inquire publication times"
+    },
+    "data:pilot-v2:intent-a:g205": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "report stale forecast"
+    },
+    "data:pilot-v2:intent-a:g206": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "pause holiday delivery"
+    },
+    "data:pilot-v2:intent-a:g207": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "retrieve missed bulletin"
+    },
+    "data:pilot-v2:intent-a:g208": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "correct vessel nickname"
+    },
+    "data:pilot-v2:intent-a:g209": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "subscription invoice"
+    },
+    "data:pilot-v2:intent-a:g210": {
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions",
+      "scenario_plan": "activate severe weather alerts"
+    },
+    "data:pilot-v2:intent-a:g211": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "book appraisal"
+    },
+    "data:pilot-v2:intent-a:g212": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "change object count"
+    },
+    "data:pilot-v2:intent-a:g213": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "inquire valuation fee"
+    },
+    "data:pilot-v2:intent-a:g214": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "request written report"
+    },
+    "data:pilot-v2:intent-a:g215": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "reschedule specialist"
+    },
+    "data:pilot-v2:intent-a:g216": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "withdraw sale consent"
+    },
+    "data:pilot-v2:intent-a:g217": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "restore portal login"
+    },
+    "data:pilot-v2:intent-a:g218": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "correct owner attribution"
+    },
+    "data:pilot-v2:intent-a:g219": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "item collection inquiry"
+    },
+    "data:pilot-v2:intent-a:g220": {
+      "split": "validation",
+      "domain": "antique appraisal bookings",
+      "scenario_plan": "report handling damage"
+    },
+    "data:pilot-v2:intent-a:g221": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "request certificate copy"
+    },
+    "data:pilot-v2:intent-a:g222": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "correct surname"
+    },
+    "data:pilot-v2:intent-a:g223": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "verify authenticity"
+    },
+    "data:pilot-v2:intent-a:g224": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "ask recognition abroad"
+    },
+    "data:pilot-v2:intent-a:g225": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "track certificate dispatch"
+    },
+    "data:pilot-v2:intent-a:g226": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "restore candidate login"
+    },
+    "data:pilot-v2:intent-a:g227": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "change postal destination"
+    },
+    "data:pilot-v2:intent-a:g228": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "request accessible format"
+    },
+    "data:pilot-v2:intent-a:g229": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "appeal grade only"
+    },
+    "data:pilot-v2:intent-a:g230": {
+      "split": "validation",
+      "domain": "language exam certification",
+      "scenario_plan": "authorize employer verification"
+    },
+    "data:pilot-v2:intent-a:g231": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "ask route difficulty"
+    },
+    "data:pilot-v2:intent-a:g232": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "inquire seasonal closure"
+    },
+    "data:pilot-v2:intent-a:g233": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "correct route description"
+    },
+    "data:pilot-v2:intent-a:g234": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "request descent directions"
+    },
+    "data:pilot-v2:intent-a:g235": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "locate topo download"
+    },
+    "data:pilot-v2:intent-a:g236": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "ask anchor condition"
+    },
+    "data:pilot-v2:intent-a:g237": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "report loose rock"
+    },
+    "data:pilot-v2:intent-a:g238": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "distinguish route variants"
+    },
+    "data:pilot-v2:intent-a:g239": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "inquire approach accessibility"
+    },
+    "data:pilot-v2:intent-a:g240": {
+      "split": "validation",
+      "domain": "climbing route information",
+      "scenario_plan": "request offline guide"
+    }
+  }
+}

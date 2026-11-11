@@ -1,0 +1,10 @@
+{
+  "status": "prepublication_copy_failure_preserved",
+  "stage": "executed/tracked recipe byte-equality check",
+  "error": "ValueError: Executed/tracked recipe differ",
+  "cause": "The tool's text preview truncated the 62144-byte executed recipe at its 50KB cap; that preview was inadvertently written as the tracked copy. The owner integrity check detected this before evidence index creation or integration.",
+  "recovery": "Copy the complete unchanged executed recipe bytes directly; preserve this failed attempt and repeat integrity verification in a fresh namespace.",
+  "scientific_outputs_changed": false,
+  "model_runs_added": 0,
+  "packaging_note": "The branch build after this failed check succeeded; packaging does not validate the evaluation configuration. A new build follows corrected integrity verification."
+}

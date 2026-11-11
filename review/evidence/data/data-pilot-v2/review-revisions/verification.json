@@ -1,0 +1,1071 @@
+{
+  "producers": {
+    "intent-a-r2": {
+      "counts": {
+        "rows": 240,
+        "state_identical": 240,
+        "question_identical": 240,
+        "group_id_identical": 240,
+        "split_identical": 240,
+        "schema_version_identical": 240,
+        "task_family_identical": 240,
+        "target_id_identical": 240,
+        "arity_identical": 240,
+        "ordered_option_ids_identical": 240,
+        "target_slot_identical": 240,
+        "option_sets_changed": 240,
+        "target_texts_changed": 240,
+        "option_texts_total": 953,
+        "option_texts_changed": 953,
+        "target_option_texts_changed": 240,
+        "rival_option_texts_changed": 713
+      },
+      "changed_fields": {
+        "id": 240,
+        "provenance": 240,
+        "options": 240
+      },
+      "structural_violations": [],
+      "state_changes": [],
+      "mapping_checks": {
+        "exact_mapping_rows": 240,
+        "authored_source_rows": 240
+      },
+      "mapping_violations": [],
+      "group_assignments_byte_identical": true,
+      "group_assignment_rows_match": true,
+      "cross_split_group_overlap": 0,
+      "row_counts": {
+        "train": 200,
+        "validation": 40
+      },
+      "metadata_row_counts_match": true,
+      "id_unique": true,
+      "parent_ids_bijective": true
+    },
+    "intent-b-r2": {
+      "counts": {
+        "rows": 240,
+        "state_identical": 240,
+        "question_identical": 240,
+        "group_id_identical": 240,
+        "split_identical": 240,
+        "schema_version_identical": 240,
+        "task_family_identical": 240,
+        "target_id_identical": 240,
+        "arity_identical": 240,
+        "ordered_option_ids_identical": 240,
+        "target_slot_identical": 240,
+        "option_sets_changed": 240,
+        "target_texts_changed": 239,
+        "option_texts_total": 846,
+        "option_texts_changed": 845,
+        "target_option_texts_changed": 239,
+        "rival_option_texts_changed": 606
+      },
+      "changed_fields": {
+        "id": 240,
+        "provenance": 240,
+        "options": 240
+      },
+      "structural_violations": [],
+      "state_changes": [],
+      "mapping_checks": {
+        "exact_mapping_rows": 240,
+        "authored_source_rows": 240,
+        "target_refinement_entries": 150
+      },
+      "mapping_violations": [],
+      "group_assignments_byte_identical": true,
+      "group_assignment_rows_match": true,
+      "cross_split_group_overlap": 0,
+      "row_counts": {
+        "train": 200,
+        "validation": 40
+      },
+      "metadata_row_counts_match": true,
+      "id_unique": true,
+      "parent_ids_bijective": true
+    },
+    "sentiment-b-r2": {
+      "counts": {
+        "rows": 240,
+        "state_identical": 239,
+        "question_identical": 240,
+        "group_id_identical": 240,
+        "split_identical": 240,
+        "schema_version_identical": 240,
+        "task_family_identical": 240,
+        "target_id_identical": 240,
+        "arity_identical": 240,
+        "ordered_option_ids_identical": 240,
+        "target_slot_identical": 240,
+        "option_texts_total": 960
+      },
+      "changed_fields": {
+        "id": 240,
+        "provenance": 240,
+        "state": 1
+      },
+      "structural_violations": [],
+      "state_changes": [
+        {
+          "id": "data:pilot-v2:sentiment-b-r2:g011:r01",
+          "parent_id": "data:pilot-v2:sentiment-b:g011:r01",
+          "old": "Quill Parcel sandwiched my tracing sheets between rigid boards. Not a crease survived the journey, so I could use every sheet for the drawing.",
+          "new": "Quill Parcel sandwiched my tracing sheets between rigid boards. Every sheet arrived uncreased, so I could use them all for the drawing."
+        }
+      ],
+      "mapping_checks": {},
+      "mapping_violations": [],
+      "group_assignments_byte_identical": true,
+      "group_assignment_rows_match": true,
+      "cross_split_group_overlap": 0,
+      "row_counts": {
+        "train": 200,
+        "validation": 40
+      },
+      "metadata_row_counts_match": true,
+      "id_unique": true,
+      "parent_ids_bijective": true
+    }
+  },
+  "sample_comparison": [
+    {
+      "id": "data:pilot-v2:intent-a-r2:g001:r01",
+      "chosen_option_id": "o5c85050f0440cf",
+      "chosen_slot_zero_based": 0,
+      "reason": "Overdue activation is the requested outcome; delivery, hardware replacement and moving an already-passed date do not express it.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o5c85050f0440cf",
+      "agrees": true,
+      "parent_target_text": "Resolve a delayed broadband activation",
+      "revised_target_text": "Resolve the overdue service activation",
+      "split": "train",
+      "domain": "home broadband support"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g023:r01",
+      "chosen_option_id": "obbe25a4c5590a8",
+      "chosen_slot_zero_based": 1,
+      "reason": "Permanent mailing-list removal, not a pause or reduced frequency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "obbe25a4c5590a8",
+      "agrees": true,
+      "parent_target_text": "Unsubscribe from recipe emails",
+      "revised_target_text": "Remove the subscriber from the recipe mailing list",
+      "split": "train",
+      "domain": "recipe newsletter subscriptions"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g045:r01",
+      "chosen_option_id": "o462f081cbf5dc5",
+      "chosen_slot_zero_based": 3,
+      "reason": "Asks about step-free vessel boarding, not booking assistance, fares, or shore access.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o462f081cbf5dc5",
+      "agrees": true,
+      "parent_target_text": "Explain step-free boarding access",
+      "revised_target_text": "Confirm whether wheelchair boarding is step-free",
+      "split": "train",
+      "domain": "commuter ferry support"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g067:r01",
+      "chosen_option_id": "o6f9041c64e5bb0",
+      "chosen_slot_zero_based": 2,
+      "reason": "Requests pedestrian diversion directions, not a blockage report or vehicle route.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o6f9041c64e5bb0",
+      "agrees": true,
+      "parent_target_text": "Request pedestrian diversion information",
+      "revised_target_text": "Explain the signed pedestrian diversion around the works",
+      "split": "train",
+      "domain": "road maintenance reporting"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g089:r01",
+      "chosen_option_id": "o1c7b8aae5c5774",
+      "chosen_slot_zero_based": 4,
+      "reason": "Transfer the purchased session to the partner, not refund, extension, new purchase or different trainer.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o1c7b8aae5c5774",
+      "agrees": true,
+      "parent_target_text": "Transfer an unused training session",
+      "revised_target_text": "Transfer the unused personal training session to the partner",
+      "split": "train",
+      "domain": "fitness studio membership"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g112:r01",
+      "chosen_option_id": "o9db21d8d8ed214",
+      "chosen_slot_zero_based": 0,
+      "reason": "Move the existing booking rather than add another or cancel without replacement.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o9db21d8d8ed214",
+      "agrees": true,
+      "parent_target_text": "Postpone the venue booking",
+      "revised_target_text": "Move the existing hall booking from March to May",
+      "split": "train",
+      "domain": "event venue bookings"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g134:r01",
+      "chosen_option_id": "o2e9257b5062337",
+      "chosen_slot_zero_based": 1,
+      "reason": "Transfer stored value; explicitly neither cash refund nor replacement of a failed card.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o2e9257b5062337",
+      "agrees": true,
+      "parent_target_text": "Transfer the smartcard balance",
+      "revised_target_text": "Move remaining credit from the old card to the new one",
+      "split": "train",
+      "domain": "transit smartcards"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g156:r01",
+      "chosen_option_id": "o2f3ed2777de2c2",
+      "chosen_slot_zero_based": 0,
+      "reason": "Compare tariffs before choosing; not applying a tariff or asking about exit fees.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o2f3ed2777de2c2",
+      "agrees": true,
+      "parent_target_text": "Request an energy tariff comparison",
+      "revised_target_text": "Compare available energy tariffs for the customer's usage",
+      "split": "train",
+      "domain": "energy billing"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g178:r01",
+      "chosen_option_id": "oe14e1ac58b8fb0",
+      "chosen_slot_zero_based": 1,
+      "reason": "Contest and remove a contradicted late fee; neither receipt replacement nor extension nor damage.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oe14e1ac58b8fb0",
+      "agrees": true,
+      "parent_target_text": "Dispute a late-return charge",
+      "revised_target_text": "Remove the late fee contradicted by the return receipt",
+      "split": "train",
+      "domain": "sports equipment hire"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g200:r01",
+      "chosen_option_id": "o31de3debacfd89",
+      "chosen_slot_zero_based": 2,
+      "reason": "Availability enquiry before deciding, expressly not a reservation or collection-list signup.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o31de3debacfd89",
+      "agrees": true,
+      "parent_target_text": "Ask about signed-copy availability",
+      "revised_target_text": "Check whether signed copies of the biography will be available",
+      "split": "train",
+      "domain": "bookshop preorders"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g201:r01",
+      "chosen_option_id": "oc311ea774914cf",
+      "chosen_slot_zero_based": 1,
+      "reason": "Replace the subscribed area while retaining the subscription, not add an area or change timing.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oc311ea774914cf",
+      "agrees": true,
+      "parent_target_text": "Change the bulletin coverage area",
+      "revised_target_text": "Switch future bulletins to the eastern shipping area",
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g205:r01",
+      "chosen_option_id": "oabf9be7266941d",
+      "chosen_slot_zero_based": 3,
+      "reason": "Stale forecast timestamp requires investigation. Resending after delivery failure is adjacent but delivery failure is not asserted.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oabf9be7266941d",
+      "agrees": true,
+      "parent_target_text": "Report an out-of-date weather bulletin",
+      "revised_target_text": "Investigate the bulletin containing yesterday's forecast timestamp",
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g210:r01",
+      "chosen_option_id": "o3226de1c19d367",
+      "chosen_slot_zero_based": 2,
+      "reason": "Add alerts alongside daily issues; neither replace nor merely increase routine frequency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o3226de1c19d367",
+      "agrees": true,
+      "parent_target_text": "Activate severe weather alerts",
+      "revised_target_text": "Add immediate severe-weather alerts alongside daily bulletins",
+      "split": "validation",
+      "domain": "maritime weather bulletin subscriptions"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g214:r01",
+      "chosen_option_id": "o6c94803a74ea63",
+      "chosen_slot_zero_based": 2,
+      "reason": "Obtain a formal written report of an existing appraisal; neither new verbal appraisal nor receipt nor revaluation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o6c94803a74ea63",
+      "agrees": true,
+      "parent_target_text": "Obtain a written appraisal report",
+      "revised_target_text": "Provide a written report from the completed chest appraisal",
+      "split": "validation",
+      "domain": "antique appraisal bookings"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g218:r01",
+      "chosen_option_id": "ob8362cfa894c5c",
+      "chosen_slot_zero_based": 0,
+      "reason": "Correct ownership attribution, explicitly retaining value; neither ownership transfer nor payer correction.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "ob8362cfa894c5c",
+      "agrees": true,
+      "parent_target_text": "Correct ownership details in the report",
+      "revised_target_text": "Correct the watch owner's attribution without changing value",
+      "split": "validation",
+      "domain": "antique appraisal bookings"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g223:r01",
+      "chosen_option_id": "o83bd8f5f26091e",
+      "chosen_slot_zero_based": 3,
+      "reason": "Authenticate the referenced certificate, not replace it, disclose full records or grant sharing permission.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o83bd8f5f26091e",
+      "agrees": true,
+      "parent_target_text": "Verify a certificate's authenticity",
+      "revised_target_text": "Confirm whether the referenced certificate was genuinely issued",
+      "split": "validation",
+      "domain": "language exam certification"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g227:r01",
+      "chosen_option_id": "odf0f067c40cee6",
+      "chosen_slot_zero_based": 0,
+      "reason": "Change pending postal destination only; not delay, digital format, or printed name.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "odf0f067c40cee6",
+      "agrees": true,
+      "parent_target_text": "Update the certificate mailing address",
+      "revised_target_text": "Change the mailing address before certificate dispatch",
+      "split": "validation",
+      "domain": "language exam certification"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g231:r01",
+      "chosen_option_id": "o0e9b724da99cdf",
+      "chosen_slot_zero_based": 3,
+      "reason": "Technical climbing difficulty is requested, not descent, restrictions or guided booking.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o0e9b724da99cdf",
+      "agrees": true,
+      "parent_target_text": "Ask about route difficulty",
+      "revised_target_text": "Explain the ridge route's technical climbing difficulty",
+      "split": "validation",
+      "domain": "climbing route information"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g236:r01",
+      "chosen_option_id": "o0f3bb0e3d154cd",
+      "chosen_slot_zero_based": 1,
+      "reason": "Recent reported anchor condition is requested; neither a new incident report nor a guided inspection. Wording appropriately avoids certification.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o0f3bb0e3d154cd",
+      "agrees": true,
+      "parent_target_text": "Ask about reported anchor condition",
+      "revised_target_text": "Provide recent reported condition information for the top anchors",
+      "split": "validation",
+      "domain": "climbing route information"
+    },
+    {
+      "id": "data:pilot-v2:intent-a-r2:g240:r01",
+      "chosen_option_id": "oe271d27d29d3c9",
+      "chosen_slot_zero_based": 2,
+      "reason": "Offline guide access is requested, not failure reporting or weather alerts.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oe271d27d29d3c9",
+      "agrees": true,
+      "parent_target_text": "Request offline access to the route guide",
+      "revised_target_text": "Explain how to save the route guide for offline use",
+      "split": "validation",
+      "domain": "climbing route information"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g001:r01",
+      "chosen_option_id": "o74ec4b1d20d59021",
+      "chosen_slot_zero_based": 0,
+      "reason": "Repair the jam is the primary outcome. Belt service and motor replacement are possible interventions, not established requested intents; tension is not supported.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o74ec4b1d20d59021",
+      "agrees": true,
+      "parent_target_text": "Arrange a mechanical repair",
+      "revised_target_text": "Arrange repair of the jammed mechanism",
+      "split": "train",
+      "domain": "sewing machine servicing"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g023:r01",
+      "chosen_option_id": "oa65669d34e0c5b0c",
+      "chosen_slot_zero_based": 2,
+      "reason": "Temporary suspension with a specified resumption date, not reduced walks or termination.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oa65669d34e0c5b0c",
+      "agrees": true,
+      "parent_target_text": "Pause walks temporarily",
+      "revised_target_text": "Pause until the 18th, then resume walks",
+      "split": "train",
+      "domain": "dog walking"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g045:r01",
+      "chosen_option_id": "od532681f0c3d6d6a",
+      "chosen_slot_zero_based": 3,
+      "reason": "Compliance certificate specifically requested; invoice explicitly inadequate, guarantee and new inspection are different.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "od532681f0c3d6d6a",
+      "agrees": true,
+      "parent_target_text": "Supply the compliance document",
+      "revised_target_text": "Supply the glazing compliance certificate",
+      "split": "train",
+      "domain": "window glazing"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g067:r01",
+      "chosen_option_id": "o0a45ef2f70b59190",
+      "chosen_slot_zero_based": 1,
+      "reason": "Book advanced workshop; neither repeat basics nor seek entry assessment.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o0a45ef2f70b59190",
+      "agrees": true,
+      "parent_target_text": "Enrol in the advanced workshop",
+      "revised_target_text": "Book the advanced viennoiserie workshop",
+      "split": "train",
+      "domain": "baking classes"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g089:r01",
+      "chosen_option_id": "o42bf5ff3c6c99672",
+      "chosen_slot_zero_based": 0,
+      "reason": "Recipient name changes, with address and billing explicitly unchanged.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o42bf5ff3c6c99672",
+      "agrees": true,
+      "parent_target_text": "Change the delivery recipient",
+      "revised_target_text": "Change the delivery recipient to the neighbour",
+      "split": "train",
+      "domain": "aquarium supplies"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g112:r01",
+      "chosen_option_id": "o5b5e3fb91dd7025f",
+      "chosen_slot_zero_based": 1,
+      "reason": "Wants instruction in night-mode operation, not delegated configuration, a completion report, or fault investigation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o5b5e3fb91dd7025f",
+      "agrees": true,
+      "parent_target_text": "Explain how to operate the alarm",
+      "revised_target_text": "Explain how to set the alarm's night mode",
+      "split": "train",
+      "domain": "home security installation"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g134:r01",
+      "chosen_option_id": "o7ced76e729535f9e",
+      "chosen_slot_zero_based": 1,
+      "reason": "Explanation of the surcharge, not removal, overall comparison or site survey.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o7ced76e729535f9e",
+      "agrees": true,
+      "parent_target_text": "Explain the stairs surcharge",
+      "revised_target_text": "Explain the quoted stairs surcharge",
+      "split": "train",
+      "domain": "house removal quotations"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g156:r01",
+      "chosen_option_id": "o31cbd29eea7ed239",
+      "chosen_slot_zero_based": 2,
+      "reason": "Report repeated abuse to conduct team; not result review, rule clarification or reassignment.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o31cbd29eea7ed239",
+      "agrees": true,
+      "parent_target_text": "Report a conduct violation",
+      "revised_target_text": "Report the player's repeated abuse",
+      "split": "train",
+      "domain": "tabletop gaming events"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g178:r01",
+      "chosen_option_id": "oc8e69f5fd19e71b4",
+      "chosen_slot_zero_based": 2,
+      "reason": "Disable future renewal while preserving current validity, not immediate cancellation or pause.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oc8e69f5fd19e71b4",
+      "agrees": true,
+      "parent_target_text": "Disable automatic renewal",
+      "revised_target_text": "Stop auto-renewal, keeping current validity",
+      "split": "train",
+      "domain": "fishing licence administration"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g200:r01",
+      "chosen_option_id": "odc44fd7e84411790",
+      "chosen_slot_zero_based": 3,
+      "reason": "Smaller reusable box next delivery, not disposable, quantity reduction or immediate exchange.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "odc44fd7e84411790",
+      "agrees": true,
+      "parent_target_text": "Change the reusable box size",
+      "revised_target_text": "Use a smaller reusable box next time",
+      "split": "train",
+      "domain": "reusable packaging returns"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g201:r01",
+      "chosen_option_id": "o2b67d8e59ddec3c6",
+      "chosen_slot_zero_based": 2,
+      "reason": "First operator registration, not renewal or adding hardware to an existing record.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o2b67d8e59ddec3c6",
+      "agrees": true,
+      "parent_target_text": "Begin a new operator registration",
+      "revised_target_text": "Start a first operator registration",
+      "split": "validation",
+      "domain": "drone flight registration"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g205:r01",
+      "chosen_option_id": "o98dd241ee57745d8",
+      "chosen_slot_zero_based": 2,
+      "reason": "Withdraw later duplicate only, not both or merge.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o98dd241ee57745d8",
+      "agrees": true,
+      "parent_target_text": "Cancel the duplicate application",
+      "revised_target_text": "Withdraw only the later duplicate application",
+      "split": "validation",
+      "domain": "drone flight registration"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g210:r01",
+      "chosen_option_id": "o77c0c5a8667243fa",
+      "chosen_slot_zero_based": 0,
+      "reason": "Guidance for completing operator details; user retains submission/payment. Other options alter stage or agency.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o77c0c5a8667243fa",
+      "agrees": true,
+      "parent_target_text": "Provide registration instructions",
+      "revised_target_text": "Explain operator details; leave submission to me",
+      "split": "validation",
+      "domain": "drone flight registration"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g214:r01",
+      "chosen_option_id": "of4ef5f890b76bd88",
+      "chosen_slot_zero_based": 0,
+      "reason": "Total walking duration enquiry, not distance, private alternative or reservation.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "of4ef5f890b76bd88",
+      "agrees": true,
+      "parent_target_text": "Explain the tour duration",
+      "revised_target_text": "Explain the old-town walk's total duration",
+      "split": "validation",
+      "domain": "heritage walking tours"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g218:r01",
+      "chosen_option_id": "oab3083f8c08df76d",
+      "chosen_slot_zero_based": 4,
+      "reason": "Private Tuesday tour for twelve, not public places, another date, training or self-guidance.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oab3083f8c08df76d",
+      "agrees": true,
+      "parent_target_text": "Arrange a private group tour",
+      "revised_target_text": "Book a private Tuesday tour for twelve",
+      "split": "validation",
+      "domain": "heritage walking tours"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g223:r01",
+      "chosen_option_id": "o887f87ee651298ef",
+      "chosen_slot_zero_based": 3,
+      "reason": "Readiness status of tagged sharpening job, not specification, appointment or price.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o887f87ee651298ef",
+      "agrees": true,
+      "parent_target_text": "Check sharpening completion",
+      "revised_target_text": "Check whether tag 47 is ready to collect",
+      "split": "validation",
+      "domain": "ice rink skate sharpening"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g227:r01",
+      "chosen_option_id": "ofb4cd46f057ba6eb",
+      "chosen_slot_zero_based": 2,
+      "reason": "Change drop-off time only, not collection or service date.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "ofb4cd46f057ba6eb",
+      "agrees": true,
+      "parent_target_text": "Change the drop-off time",
+      "revised_target_text": "Move drop-off to 4 pm only",
+      "split": "validation",
+      "domain": "ice rink skate sharpening"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g231:r01",
+      "chosen_option_id": "oe843e049277e1ff9",
+      "chosen_slot_zero_based": 1,
+      "reason": "Physical embossing of correct transcription, not large print or editing.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "oe843e049277e1ff9",
+      "agrees": true,
+      "parent_target_text": "Order an embossed copy",
+      "revised_target_text": "Order embossing of the correct transcription",
+      "split": "validation",
+      "domain": "braille transcription service"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g236:r01",
+      "chosen_option_id": "o09265f26dc783214",
+      "chosen_slot_zero_based": 2,
+      "reason": "Cancel pending transcription before work, not hold, cancel completed delivery or change format.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o09265f26dc783214",
+      "agrees": true,
+      "parent_target_text": "Cancel the unstarted order",
+      "revised_target_text": "Cancel transcription before work starts",
+      "split": "validation",
+      "domain": "braille transcription service"
+    },
+    {
+      "id": "data:pilot-v2:intent-b-r2:g240:r01",
+      "chosen_option_id": "o77296ea62c88d734",
+      "chosen_slot_zero_based": 0,
+      "reason": "Quote for braille with production awaiting approval, not large print, immediate work or input requirements.",
+      "ambiguity": null,
+      "mustfix": false,
+      "rivals_review": "Plausible neighboring tasks; distinguishable as primary requested intents, not a claim that every downstream action is incompatible.",
+      "target_id": "o77296ea62c88d734",
+      "agrees": true,
+      "parent_target_text": "Quote for braille transcription",
+      "revised_target_text": "Quote for braille; await production approval",
+      "split": "validation",
+      "domain": "braille transcription service"
+    }
+  ],
+  "hash_checks": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/train.jsonl",
+      "expected": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633",
+      "actual": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633",
+      "match": true,
+      "origin": "intent-a-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/validation.jsonl",
+      "expected": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435",
+      "actual": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435",
+      "match": true,
+      "origin": "intent-a-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/metadata.json",
+      "expected": "9bf5fa4dffb96c01185af86352f84ff18e98c84332bfa8db3c6d3947dc063972",
+      "actual": "9bf5fa4dffb96c01185af86352f84ff18e98c84332bfa8db3c6d3947dc063972",
+      "match": true,
+      "origin": "intent-a-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/source_cases.txt",
+      "expected": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+      "actual": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+      "match": true,
+      "origin": "intent-a-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/group_assignments.json",
+      "expected": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "actual": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "match": true,
+      "origin": "intent-a-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/choices.txt",
+      "expected": "a4819b97cb2d7c4a515d3bacee94ad14e30f30edb2f5580b73091aee7243c727",
+      "actual": "a4819b97cb2d7c4a515d3bacee94ad14e30f30edb2f5580b73091aee7243c727",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/choice_mappings.json",
+      "expected": "e8b0003ffe48b6dd10a149a4708020b3cf00f4cb1c391a45c1bc35a28d48b25d",
+      "actual": "e8b0003ffe48b6dd10a149a4708020b3cf00f4cb1c391a45c1bc35a28d48b25d",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/apply.py",
+      "expected": "d4a15ff091035fd516edca09ea8f3aafb2e3295c9d8f0805f9bee5640e73495c",
+      "actual": "d4a15ff091035fd516edca09ea8f3aafb2e3295c9d8f0805f9bee5640e73495c",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validate.py",
+      "expected": "ee6a252082d4efd354e3588489ee286c33d34546259121ead6ba66a3e33f6f3a",
+      "actual": "ee6a252082d4efd354e3588489ee286c33d34546259121ead6ba66a3e33f6f3a",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "expected": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9",
+      "actual": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "expected": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "actual": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/group_assignments.json",
+      "expected": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "actual": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "match": true,
+      "origin": "intent-a-r2 generation_settings.artifact_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/train.jsonl",
+      "expected": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+      "actual": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/validation.jsonl",
+      "expected": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c",
+      "actual": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/metadata.json",
+      "expected": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+      "actual": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/group_assignments.json",
+      "expected": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "actual": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/source_cases.txt",
+      "expected": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+      "actual": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/generate.py",
+      "expected": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0",
+      "actual": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0",
+      "match": true,
+      "origin": "intent-b-r2 parent.sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/authored_choices.txt",
+      "expected": "a6881ef1b1cbbb5b658a138f1241b548b103e1ab4d83142001eb585873a6d6ab",
+      "actual": "a6881ef1b1cbbb5b658a138f1241b548b103e1ab4d83142001eb585873a6d6ab",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.source_and_script_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/target_refinements.json",
+      "expected": "f1c225992daf05ded95e71776e872dcea84f97f4fa695e47986d36efb3ab4366",
+      "actual": "f1c225992daf05ded95e71776e872dcea84f97f4fa695e47986d36efb3ab4366",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.source_and_script_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/source_mappings.json",
+      "expected": "c9bf45a35bd428f49f55ec31d5503337529bfe563efcee5f89e639b6c4a5b254",
+      "actual": "c9bf45a35bd428f49f55ec31d5503337529bfe563efcee5f89e639b6c4a5b254",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.source_and_script_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/apply_revision.py",
+      "expected": "f654dca8303e4691805953d97f16117fc302a251412a47b1e7d3538b84e3734d",
+      "actual": "f654dca8303e4691805953d97f16117fc302a251412a47b1e7d3538b84e3734d",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.source_and_script_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "expected": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+      "actual": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.output_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "expected": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "actual": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.output_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/group_assignments.json",
+      "expected": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "actual": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "match": true,
+      "origin": "intent-b-r2 generation_settings.output_sha256"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl",
+      "expected": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+      "actual": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+      "match": true,
+      "origin": "sentiment-b-r2 parent_hashes"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl",
+      "expected": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac",
+      "actual": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac",
+      "match": true,
+      "origin": "sentiment-b-r2 parent_hashes"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/revise.py",
+      "expected": "2662d2cdb10da8293cc54140858c54a444c1e38e7d4b2f8a39ba807accfad147",
+      "actual": "2662d2cdb10da8293cc54140858c54a444c1e38e7d4b2f8a39ba807accfad147",
+      "match": true,
+      "origin": "sentiment-b-r2 script_sha256"
+    }
+  ],
+  "manifest_checks": [
+    {
+      "path": "data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    },
+    {
+      "path": "data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    },
+    {
+      "path": "data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    },
+    {
+      "path": "data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    },
+    {
+      "path": "data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    },
+    {
+      "path": "data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "hash_matches": true,
+      "rows_match": true,
+      "split_matches": true
+    }
+  ],
+  "sentiment_class_coverage": {
+    "counts": {
+      "train": {
+        "M": 50,
+        "U": 50,
+        "P": 50,
+        "N": 50
+      },
+      "validation": {
+        "M": 10,
+        "N": 10,
+        "U": 10,
+        "P": 10
+      }
+    },
+    "source_states_match_parent": true,
+    "class_to_target_texts": {
+      "M": [
+        "An assessment with compliments and complaints about the subject.",
+        "Favourable and unfavourable judgments about the named subject appear.",
+        "Praise and criticism of the named subject are expressed.",
+        "The subject receives praise and criticism.",
+        "The writer appreciates certain aspects and also objects to others."
+      ],
+      "U": [
+        "A factual account without any judgments about the subject.",
+        "Facts about the named subject, with no judgment expressed.",
+        "Factual information about the named subject, with judgment withheld.",
+        "The subject is described, not evaluated.",
+        "The writer reports information without any judgment about the subject."
+      ],
+      "P": [
+        "An approving assessment without any complaints about the subject.",
+        "Only favourable judgments about the named subject are given.",
+        "Praise for the named subject, with no criticism expressed.",
+        "The subject is praised, not criticised.",
+        "The writer approves of the subject and voices no objections."
+      ],
+      "N": [
+        "A critical assessment without any compliments about the subject.",
+        "Criticism of the named subject, with no praise expressed.",
+        "Only unfavourable judgments about the named subject are given.",
+        "The subject is criticised, not praised.",
+        "The writer objects to the subject and offers no praise."
+      ]
+    },
+    "note": "Class mappings are checked for coverage and unchanged options/targets, not relabeled independently."
+  },
+  "sentiment_g011": {
+    "schema_version": "0.1",
+    "id": "data:pilot-v2:sentiment-b-r2:g011:r01",
+    "state": "Quill Parcel sandwiched my tracing sheets between rigid boards. Every sheet arrived uncreased, so I could use them all for the drawing.",
+    "question": "What evaluation of Quill Parcel appears here?",
+    "options": [
+      {
+        "id": "c15288",
+        "text": "Facts about the named subject, with no judgment expressed."
+      },
+      {
+        "id": "c76112",
+        "text": "Criticism of the named subject, with no praise expressed."
+      },
+      {
+        "id": "c29162",
+        "text": "Praise and criticism of the named subject are expressed."
+      },
+      {
+        "id": "c20117",
+        "text": "Praise for the named subject, with no criticism expressed."
+      }
+    ],
+    "target_id": "c20117",
+    "group_id": "data:pilot-v2:sentiment-b:g011",
+    "task_family": "sentiment",
+    "split": "train",
+    "provenance": {
+      "kind": "teacher",
+      "source": "data-pilot-v2-sentiment-b-r2/from/data-pilot-v2-sentiment-b-r1/sentiment-b-source-s1;source_sha256=a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8;case=data:pilot-v2:sentiment-b:g011",
+      "label_basis": "teacher",
+      "teacher_model": "gpt-sol",
+      "parent_id": "data:pilot-v2:sentiment-b:g011:r01"
+    }
+  },
+  "sentiment_provenance_checks": {
+    "all_parent_source_prefixed": true,
+    "all_other_provenance_fields_retained": true,
+    "teacher_metadata_retained": true
+  },
+  "candidate_scope": {
+    "shards_total": 18,
+    "revised_shards_checked": 6,
+    "other_shards_not_opened": true,
+    "only_train_validation_entries": true
+  },
+  "preservation": {
+    "files": 53,
+    "all_unchanged": true,
+    "changed_paths": [],
+    "frozen_judgments_sha256": "9ab59724f0aa64b98f2dad278b89ccdf833b5cd2624b408520da3127d4df7d7a"
+  }
+}

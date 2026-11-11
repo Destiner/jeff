@@ -1,0 +1,823 @@
+{
+  "completed_at": "2026-11-11T14:35:04.792254+00:00",
+  "files": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/bindings.json",
+      "sha256": "821608283da2467ec6fd42c565f264beceba0c537e2bb65b776af13d92bc2f90"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/preflight.json",
+      "sha256": "15e7a79bced4b2be7b40c4b0e10f89c0f43e130d875c93b746cdb04da277c566"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/receipt.json",
+      "sha256": "b8ad423e15e2e0b1909aa73532265d549979b8b5de32b4c1b233da5cfe37e177"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/execute.py",
+      "sha256": "af090f6bba6164ceb7a369b0d1e0b54e6a0c7b10c72297e1a0f0d9f7f9c2fe37"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/manifest.json",
+      "sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/d3-seen-rules-v1.json",
+      "sha256": "a03280d92d913445464263d2dd9c3430f0b35a30d441a83e1404932287b90000"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/assemble.py",
+      "sha256": "4c4f2cd6a120b944693b93efc16e6033686890973b7bdade9523de38a0577149"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/audit.py",
+      "sha256": "d794bbcf6e084a86a776cdbd4935727923db0734263c05991b96c8f296596824"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/freeze_diagnostic.py",
+      "sha256": "4c865c3fb7cbcb8c53d2abd380656729f891b5474ecf4c1c6e57337bdb082940"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/src/jeff/data/validate.py",
+      "sha256": "b06329a6423aa199c9d9b7a45216253fdc9708fd6439aa8a5a79eddb4b018ee0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/code-review-r2/review.md",
+      "sha256": "d99a0f4d48ec0efcf30c17aeea1ad13ee6bfd3cae449da5abcfb5b89a9dff8e2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/code-review/review.md",
+      "sha256": "4646570e366ad17872334c0c45435c0412b6cd7b7cb2630a6d7d1c6567fe198f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/audit.py",
+      "sha256": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/audit_cases.jsonl",
+      "sha256": "36c958bd2d5518fd3af6238bae88c6bf0cc5bdc5465f395f0bb8020f8d11c79b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/generation_review.md",
+      "sha256": "d25da8040b4e31703a035d60c14355b3ea7efc9ba4dc11ea539701fb683c8d6c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/group_assignments.json",
+      "sha256": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/metadata.json",
+      "sha256": "c5fea73b62e76cce54d25616dea9b7e681efea6a9413b7c48b251bddd0c7610f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/revision.py",
+      "sha256": "e0f7cc84dacb5f9f4513d38ff43c2735e07848b12dc393f556f0e9711aa6b80d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/revision_map.json",
+      "sha256": "6c3b8b94a956e96da3d8ae5a54e7ca6df8bf65b9d57e1a739f82e31c6a8cb653"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/source_cases.jsonl",
+      "sha256": "955b762f49d66e0865c774b2c3b321c3721fb9b94625e7ad3be4fe937a902bd5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/validation.jsonl",
+      "sha256": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r2/validation_report.json",
+      "sha256": "ab2c3fae8be9c2f4a122092a196d25245007c72114de8089712b426af39d975b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/audit.py",
+      "sha256": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/audit_cases.jsonl",
+      "sha256": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/change-map.json",
+      "sha256": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/diagnostics.json",
+      "sha256": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/distractor-rationales.json",
+      "sha256": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/freeze.json",
+      "sha256": "9afdaeefd09f7d8f245ab0f17d77e7e78ff24c6b8b5db296e15e114b5d838bf0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/generation_review.md",
+      "sha256": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/group_assignments.json",
+      "sha256": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/metadata.json",
+      "sha256": "fdbc8acb03e2d81c4066ba7ea2c6c01a7037c62d027af7354782bf1d0d1d20d4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/rank-plan.json",
+      "sha256": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/revise.py",
+      "sha256": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/source_cases.jsonl",
+      "sha256": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/validation.jsonl",
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/geometry-r3/validation_report.json",
+      "sha256": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/audit.py",
+      "sha256": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/audit_cases.jsonl",
+      "sha256": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/change_map.json",
+      "sha256": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/distractor_constructions.json",
+      "sha256": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/generation_review.md",
+      "sha256": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/group_assignments.json",
+      "sha256": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/manifest.json",
+      "sha256": "708aed3cd5b3898cde3c9b10610f2586db899026297a441cf5a6e1862f9535a1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/metadata.json",
+      "sha256": "d7f5bd0d17cbc9d9c597fbc2034b483cdb865c23c46ae4d561a50ed502ef5f06"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/parent_refs.json",
+      "sha256": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/revise.py",
+      "sha256": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/source_cases.jsonl",
+      "sha256": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/validation.jsonl",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering-r2/validation_report.json",
+      "sha256": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/case-metadata.json",
+      "sha256": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/exclusion.json",
+      "sha256": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/freeze.json",
+      "sha256": "78faa47e9102d65fb27380e50ce1cbf1fa1ad07bc6d984089e28a3c7165763a9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/manifest.json",
+      "sha256": "78a45bee3edc2c152202d3bdec1f0e7f9c8ec111f457904207ebeea16c6cef07"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/provenance.json",
+      "sha256": "b0bf6788f33da8b89164acfc8d10ed950074859f0cd056a9f2301221928f2211"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/shards/geometry.jsonl",
+      "sha256": "8699ef69adf504a4b8b9e58031431614db699999680c756ec2f8c4258603e1a2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/shards/ordering.jsonl",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/validation-input.json",
+      "sha256": "c25b9d558b2f6027a90cfdf70624cd3085f447a8cc2740cb57e07186a2a2c9fc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r2/validation.json",
+      "sha256": "c76ab7f512575e51ba5fc20852f7d64bae106d00661fe9f104dcbceb7dcf698f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/case-metadata.json",
+      "sha256": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/exclusion.json",
+      "sha256": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/freeze.json",
+      "sha256": "7b4f781f97bcd76755d0fd4bdfaa8ca354f202634fe2e51720f9378284dc3755"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/manifest.json",
+      "sha256": "3751605a81260dc4c90a836df1e76e2236c8af54ad3833882dff6f17de835b56"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/provenance.json",
+      "sha256": "66512f072c1ff88f754dbfad84748229798964c91eb02d3d3a3df0d7a2952e9e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/shards/geometry.jsonl",
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/shards/ordering.jsonl",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/validation-input.json",
+      "sha256": "e4538acdbc2e2f5d6d2aabe6309e0c78abd21ce854c0ce8edf1cf8e0b6fd487e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/validation.json",
+      "sha256": "4b474ff006ac64e31782cb16a00abbfdae1530eba65d845be14d8fe6d9fc419e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/case-metadata.json",
+      "sha256": "20527deacdede6000b2b3c53fd7cc79b01816922e77d516243b2d8899f347075"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/exclusion.json",
+      "sha256": "f6516aeab930014a6933c33114cf5fb586407087fed29c9cdcec4802a41022d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/freeze.json",
+      "sha256": "eedf92d622c62324c23bb4481f794e8026aca555806566770d8b0e86d3067fa7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/manifest.json",
+      "sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/provenance.json",
+      "sha256": "37d3946406dc5225f904908b6f93b30db6bd382611cc81255e1085260fad5b39"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/geometry.jsonl",
+      "sha256": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/ordering.jsonl",
+      "sha256": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/validation-input.json",
+      "sha256": "17c319fd40d316ddabcb3872e9863ae5ad4e4487b3317e3b0848c6c457a21cc1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/validation.json",
+      "sha256": "e5f04e3004412b23e4ed2457e3b5d39f05b925ca721a764a31dbf46622ba2579"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/blind-inputs.jsonl",
+      "sha256": "56ddf6e9b8b661c792cbaab68a0f622f04632fa2530a4ef548e836c61df0795f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/check-output.json",
+      "sha256": "cb29275c401ce601336e923f7415fc8ff397c011bc13d7ffb20769496f228609"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/check.py",
+      "sha256": "32c8dddfd8944cc78e48f0178c4f59c86a62a5c9dbff578bc739a28503a1a7c3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/freeze.py",
+      "sha256": "89988f30345023c9c264731318f47cc92388f9723ead646dd1331290ac7ae836"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/frozen-decisions.json",
+      "sha256": "4f01a433131b05dc2798d165e05c8a213b7bf71bb9496aba8235fc94cab3082f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/input-hashes-after.json",
+      "sha256": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/input-hashes-before.json",
+      "sha256": "48849f25c70d91658c68b60d7ae588e12631e6e0af6ca6f8647a5921f696a490"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/review.json",
+      "sha256": "4453907c24ece026a7858df9f7c2e2f4517c7c4c6857a1b9967153a5786b6a2f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/review.md",
+      "sha256": "3d009d216a2a542271799dcf1349533a7c322f65a7e3c28e021d3fa06b5a6b1f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r3/review.json",
+      "sha256": "04af4cc16fe55e114d349e87104ad57cd4287d9751537ee317b5aa7d44eb9a0b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review/review.json",
+      "sha256": "b7ee1c8ff77744b2c06a3346e715257a0fcba1b499220d12861d0b885404add3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/token-budget-r3.json",
+      "sha256": "69228844066a3d5469323f7ef35296592b35acfc46d0e1397dc5e6a7fcae675a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl",
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+      "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl",
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment/validation.jsonl",
+      "sha256": "1e845bda5e465f5188d56ae4a82b8a6c7c96376df1be3439f6a0249b46a84d0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "sha256": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "sha256": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/train.jsonl",
+      "sha256": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a/validation.jsonl",
+      "sha256": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "sha256": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "sha256": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/train.jsonl",
+      "sha256": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/validation.jsonl",
+      "sha256": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json",
+      "sha256": "345e935b46ca3d1226dfd603208bf5d1e1e16982d425319f678e34447b0c9483"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/group_assignments.json",
+      "sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/metadata.json",
+      "sha256": "132f716f5a1c3f9b82ea27ee813520dc48f44d8fe7472113d42f738325ef2af3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/train.jsonl",
+      "sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/validation.jsonl",
+      "sha256": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/group_assignments.json",
+      "sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/metadata.json",
+      "sha256": "b571d9ed92743cee9ea37c6dc00e6955fc275665cee5e2645a2d1a4c846758e8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/train.jsonl",
+      "sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/validation.jsonl",
+      "sha256": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl",
+      "sha256": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl",
+      "sha256": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "sha256": "0c2d5441102fb0623dec43265f3d9dc44b025c92b788138344cdc1447ac1ab20"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl",
+      "sha256": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl",
+      "sha256": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/manifest.json",
+      "sha256": "a0c62a16355fc98e3a43f2d71f94a0a43208971aa9b090f3cd44dbb60a8a06ca"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/train.jsonl",
+      "sha256": "52414edd7121ce99fc58a33f5f56b262c99f17348739a8da7b85e7dd6365eea4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-tiny-v1/validation.jsonl",
+      "sha256": "6854d9e86516ba3af759fdd003c41b594fc0005e827860158cec8039e242d65e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-readiness-v1/mechanism-mapping.json",
+      "sha256": "4e37d9106c479d358db34757ce927a057aeb89fd4349d5c2aef3f65271feaa8f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/manifest.json",
+      "sha256": "d10ecec74bafca5baf33e603f8d6dafe3947d9a77c6d5ec4635cf4cafeac0bf0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+      "sha256": "a855e69bdf9b3acb63cd2cca9dbf391fc61968394d86909508bbcd1c73746678"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/manifest.json",
+      "sha256": "df0d68e164aa5a17aaca503f8b22d7b0426eee27abb11c074539cb067a980758"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/handoffs/data/013-d3-frozen-ready-evaluation-model.md",
+      "sha256": "baac547b8c88b022f12b85ac58eceba4a9801de4fd01ee2e244664aceeb58ba1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/dataset-manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/run.json",
+      "sha256": "19ef47fc47c34de79838b1b8a2ee5830b197e1bb6a8153144bfc16c8b5f285a0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/dataset-manifest.json",
+      "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/run.json",
+      "sha256": "0e10cf02f38ce81c655f6e304eea2e1bd12f75bf166142e48955075143ad6f77"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-receipt.json",
+      "sha256": "55a6ff56fcb28d1c695a16f058e3fe397a91117e32258858c2bb2f49fec7e3ff"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-predictions.jsonl",
+      "sha256": "c0f9322dddf8e1f15f0139c804ab3c25f61be978e8f9d1f260b1486410f15500"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-inventory-before.json",
+      "sha256": "9cff9e17285d790e1b7f2cd7086ac5b7f396053f65460478fd8ac66f50a8feed"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-inventory-after.json",
+      "sha256": "9cff9e17285d790e1b7f2cd7086ac5b7f396053f65460478fd8ac66f50a8feed"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-invocation.json",
+      "sha256": "0690fec9f8b22bc77ccf9e725b61d95dfe056aa3602627f9eccd2c7df4d3223b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/checkpoint.json",
+      "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/checkpoint.json",
+      "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-receipt.json",
+      "sha256": "9d76c3396b5a86ee5eeb286493cfe2b43b29dbf1a6c997b8c8bfdf015cd57df9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-predictions.jsonl",
+      "sha256": "1d7f4a850d836f1091a07aebe1f0e22cbcac4d33e1503debfc97603837ecd01f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-inventory-before.json",
+      "sha256": "f4b83eed5583d1a2baf1e99d59113aef83e031cb6e577a8828b499a26194f174"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-inventory-after.json",
+      "sha256": "f4b83eed5583d1a2baf1e99d59113aef83e031cb6e577a8828b499a26194f174"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-invocation.json",
+      "sha256": "ebcaee8f33115e3712fb99059b50aa7a9e9435261729043898797f782dc4e114"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/checkpoint.json",
+      "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/checkpoint.json",
+      "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/encoder/config.json",
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-receipt.json",
+      "sha256": "67ce0bf586e4ab03c04b1cafdbb3f2a145f63e63aae6bb90f5908af712937e0d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-predictions.jsonl",
+      "sha256": "18a6768fb5a1596a2ca55cceaf58792efa65554897183f767e617c595d256076"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-inventory-before.json",
+      "sha256": "56754daf67a374e1698ea4b5606d0da64fc8a2c1af5b37ee6548714723fe5928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-inventory-after.json",
+      "sha256": "56754daf67a374e1698ea4b5606d0da64fc8a2c1af5b37ee6548714723fe5928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-invocation.json",
+      "sha256": "12ac8a6a2fdea93fa567946165591d192a518ffda09f92ae18ba224a60054354"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/checkpoint.json",
+      "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/checkpoint.json",
+      "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-receipt.json",
+      "sha256": "765d3249679516a4a936b20b4e1a1acecd6b86d769cfc39f797ccc6382fe772d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-predictions.jsonl",
+      "sha256": "ff9656e94d63f437f56638e088c2edca8b0326f016a605334baff677b5936c28"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-inventory-before.json",
+      "sha256": "f9a3b11c8f67a6e2d9e13c5fb809572b710c04d11414d5049bee6319300cb094"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-inventory-after.json",
+      "sha256": "f9a3b11c8f67a6e2d9e13c5fb809572b710c04d11414d5049bee6319300cb094"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-invocation.json",
+      "sha256": "249c818ccef1c728a949450a19bf3a83abc5c7f7a08372a1bf13941cd39795c3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/checkpoint.json",
+      "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/checkpoint.json",
+      "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/encoder/config.json",
+      "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/special_tokens_map.json",
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/tokenizer.json",
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/tokenizer_config.json",
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/tokenizer/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/boundary.json",
+      "sha256": "6202826900d634440598d370fc1cef0972c65aab45bcff92a2f2cceb95adc06e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-owner-binding-v1/receipt.json",
+      "sha256": "ca6b1f5beacb8ba37078aee9d455e19ad7b86625c91e99982229865f946e2611"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/score_d3.py",
+      "sha256": "dd9d4c00e2d426c2dd66d5023a8acb5a4f0e5ee33b9e2d5879b6aeb7c8c181e9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+      "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+      "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/units.json",
+      "sha256": "ad0004ceca3474182da0dd9b86c33415b22fb9a0ecb823343a865add33fce788"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/baseline/checkpoint.json",
+      "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint/checkpoint.json",
+      "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/baseline/checkpoint.json",
+      "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint/checkpoint.json",
+      "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/baseline.py",
+      "sha256": "cf1b9f8534c02d6bac662c24f20e45529bd81e595986c8bf9b35893926c8caa3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/compare.py",
+      "sha256": "924e3a6ed3aabb3e8ae5f5c899df845098a72b11a1d64accdd8449807e44398b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/metrics.py",
+      "sha256": "0705d433f034200c36e57221807aa071d766f63ddc86e397f0586f30c3a92828"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/render.py",
+      "sha256": "a57f4b8934451f567d042889e14c11ac341eff57eb5a43831a631a46e54f2ba9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/common.py",
+      "sha256": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/src/jeff/evaluation/score.py",
+      "sha256": "bd4c36e92cafe53b1cc7af3229052a187b60f99e69c0c95fee2f8fc0ea741f0c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/recipe.json",
+      "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-scoring-v2/prepare-receipt.json",
+      "sha256": "82581835707d5b786d6ff108ed00c0a69e46308e6881e12f56c86e9c4f1ef196"
+    }
+  ],
+  "all_unchanged": true,
+  "tensor_bytes_rehashed": false
+}

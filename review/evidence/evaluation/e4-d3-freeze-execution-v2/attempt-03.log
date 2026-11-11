@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 380, in <module>
+    main()
+  File "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-freeze-execution-v2/freeze.py", line 277, in main
+    pin(oldpath.parent / "group_assignments.json", train_metadata["generation_settings"]["source_and_script_sha256"]["group_assignments.json"])
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_and_script_sha256'

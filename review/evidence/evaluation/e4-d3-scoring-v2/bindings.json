@@ -1,0 +1,30 @@
+{
+  "minilm_start": {
+    "receipt": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-receipt.json",
+      "sha256": "55a6ff56fcb28d1c695a16f058e3fe397a91117e32258858c2bb2f49fec7e3ff"
+    },
+    "prediction_path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-predictions.jsonl"
+  },
+  "minilm_trained": {
+    "receipt": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-receipt.json",
+      "sha256": "9d76c3396b5a86ee5eeb286493cfe2b43b29dbf1a6c997b8c8bfdf015cd57df9"
+    },
+    "prediction_path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-predictions.jsonl"
+  },
+  "msmarco_start": {
+    "receipt": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-receipt.json",
+      "sha256": "67ce0bf586e4ab03c04b1cafdbb3f2a145f63e63aae6bb90f5908af712937e0d"
+    },
+    "prediction_path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-predictions.jsonl"
+  },
+  "msmarco_trained": {
+    "receipt": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-receipt.json",
+      "sha256": "765d3249679516a4a936b20b4e1a1acecd6b86d769cfc39f797ccc6382fe772d"
+    },
+    "prediction_path": "/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-predictions.jsonl"
+  }
+}

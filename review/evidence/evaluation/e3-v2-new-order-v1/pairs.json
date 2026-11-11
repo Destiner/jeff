@@ -1,0 +1,1442 @@
+[
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g201:r01",
+    "group_id": "data:pilot-v2:intent-a:g201",
+    "original_id": "data:pilot-v2:intent-a-r2:g201:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g201:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g202:r01",
+    "group_id": "data:pilot-v2:intent-a:g202",
+    "original_id": "data:pilot-v2:intent-a-r2:g202:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g202:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g203:r01",
+    "group_id": "data:pilot-v2:intent-a:g203",
+    "original_id": "data:pilot-v2:intent-a-r2:g203:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g203:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g204:r01",
+    "group_id": "data:pilot-v2:intent-a:g204",
+    "original_id": "data:pilot-v2:intent-a-r2:g204:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g204:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g205:r01",
+    "group_id": "data:pilot-v2:intent-a:g205",
+    "original_id": "data:pilot-v2:intent-a-r2:g205:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g205:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g206:r01",
+    "group_id": "data:pilot-v2:intent-a:g206",
+    "original_id": "data:pilot-v2:intent-a-r2:g206:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g206:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g207:r01",
+    "group_id": "data:pilot-v2:intent-a:g207",
+    "original_id": "data:pilot-v2:intent-a-r2:g207:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g207:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g208:r01",
+    "group_id": "data:pilot-v2:intent-a:g208",
+    "original_id": "data:pilot-v2:intent-a-r2:g208:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g208:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g209:r01",
+    "group_id": "data:pilot-v2:intent-a:g209",
+    "original_id": "data:pilot-v2:intent-a-r2:g209:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g209:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g210:r01",
+    "group_id": "data:pilot-v2:intent-a:g210",
+    "original_id": "data:pilot-v2:intent-a-r2:g210:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g210:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g211:r01",
+    "group_id": "data:pilot-v2:intent-a:g211",
+    "original_id": "data:pilot-v2:intent-a-r2:g211:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g211:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g212:r01",
+    "group_id": "data:pilot-v2:intent-a:g212",
+    "original_id": "data:pilot-v2:intent-a-r2:g212:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g212:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g213:r01",
+    "group_id": "data:pilot-v2:intent-a:g213",
+    "original_id": "data:pilot-v2:intent-a-r2:g213:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g213:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g214:r01",
+    "group_id": "data:pilot-v2:intent-a:g214",
+    "original_id": "data:pilot-v2:intent-a-r2:g214:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g214:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g215:r01",
+    "group_id": "data:pilot-v2:intent-a:g215",
+    "original_id": "data:pilot-v2:intent-a-r2:g215:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g215:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g216:r01",
+    "group_id": "data:pilot-v2:intent-a:g216",
+    "original_id": "data:pilot-v2:intent-a-r2:g216:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g216:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g217:r01",
+    "group_id": "data:pilot-v2:intent-a:g217",
+    "original_id": "data:pilot-v2:intent-a-r2:g217:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g217:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g218:r01",
+    "group_id": "data:pilot-v2:intent-a:g218",
+    "original_id": "data:pilot-v2:intent-a-r2:g218:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g218:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g219:r01",
+    "group_id": "data:pilot-v2:intent-a:g219",
+    "original_id": "data:pilot-v2:intent-a-r2:g219:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g219:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g220:r01",
+    "group_id": "data:pilot-v2:intent-a:g220",
+    "original_id": "data:pilot-v2:intent-a-r2:g220:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g220:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g221:r01",
+    "group_id": "data:pilot-v2:intent-a:g221",
+    "original_id": "data:pilot-v2:intent-a-r2:g221:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g221:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g222:r01",
+    "group_id": "data:pilot-v2:intent-a:g222",
+    "original_id": "data:pilot-v2:intent-a-r2:g222:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g222:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g223:r01",
+    "group_id": "data:pilot-v2:intent-a:g223",
+    "original_id": "data:pilot-v2:intent-a-r2:g223:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g223:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g224:r01",
+    "group_id": "data:pilot-v2:intent-a:g224",
+    "original_id": "data:pilot-v2:intent-a-r2:g224:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g224:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g225:r01",
+    "group_id": "data:pilot-v2:intent-a:g225",
+    "original_id": "data:pilot-v2:intent-a-r2:g225:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g225:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g226:r01",
+    "group_id": "data:pilot-v2:intent-a:g226",
+    "original_id": "data:pilot-v2:intent-a-r2:g226:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g226:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g227:r01",
+    "group_id": "data:pilot-v2:intent-a:g227",
+    "original_id": "data:pilot-v2:intent-a-r2:g227:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g227:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g228:r01",
+    "group_id": "data:pilot-v2:intent-a:g228",
+    "original_id": "data:pilot-v2:intent-a-r2:g228:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g228:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g229:r01",
+    "group_id": "data:pilot-v2:intent-a:g229",
+    "original_id": "data:pilot-v2:intent-a-r2:g229:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g229:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g230:r01",
+    "group_id": "data:pilot-v2:intent-a:g230",
+    "original_id": "data:pilot-v2:intent-a-r2:g230:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g230:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g231:r01",
+    "group_id": "data:pilot-v2:intent-a:g231",
+    "original_id": "data:pilot-v2:intent-a-r2:g231:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g231:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g232:r01",
+    "group_id": "data:pilot-v2:intent-a:g232",
+    "original_id": "data:pilot-v2:intent-a-r2:g232:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g232:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g233:r01",
+    "group_id": "data:pilot-v2:intent-a:g233",
+    "original_id": "data:pilot-v2:intent-a-r2:g233:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g233:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g234:r01",
+    "group_id": "data:pilot-v2:intent-a:g234",
+    "original_id": "data:pilot-v2:intent-a-r2:g234:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g234:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g235:r01",
+    "group_id": "data:pilot-v2:intent-a:g235",
+    "original_id": "data:pilot-v2:intent-a-r2:g235:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g235:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g236:r01",
+    "group_id": "data:pilot-v2:intent-a:g236",
+    "original_id": "data:pilot-v2:intent-a-r2:g236:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g236:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g237:r01",
+    "group_id": "data:pilot-v2:intent-a:g237",
+    "original_id": "data:pilot-v2:intent-a-r2:g237:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g237:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g238:r01",
+    "group_id": "data:pilot-v2:intent-a:g238",
+    "original_id": "data:pilot-v2:intent-a-r2:g238:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g238:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g239:r01",
+    "group_id": "data:pilot-v2:intent-a:g239",
+    "original_id": "data:pilot-v2:intent-a-r2:g239:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g239:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-a-r2:g240:r01",
+    "group_id": "data:pilot-v2:intent-a:g240",
+    "original_id": "data:pilot-v2:intent-a-r2:g240:r01",
+    "reversed_id": "data:pilot-v2:intent-a-r2:g240:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g201:r01",
+    "group_id": "data:pilot-v2:intent-b:g201",
+    "original_id": "data:pilot-v2:intent-b-r2:g201:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g201:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g202:r01",
+    "group_id": "data:pilot-v2:intent-b:g202",
+    "original_id": "data:pilot-v2:intent-b-r2:g202:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g202:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g203:r01",
+    "group_id": "data:pilot-v2:intent-b:g203",
+    "original_id": "data:pilot-v2:intent-b-r2:g203:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g203:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g204:r01",
+    "group_id": "data:pilot-v2:intent-b:g204",
+    "original_id": "data:pilot-v2:intent-b-r2:g204:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g204:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g205:r01",
+    "group_id": "data:pilot-v2:intent-b:g205",
+    "original_id": "data:pilot-v2:intent-b-r2:g205:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g205:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g206:r01",
+    "group_id": "data:pilot-v2:intent-b:g206",
+    "original_id": "data:pilot-v2:intent-b-r2:g206:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g206:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g207:r01",
+    "group_id": "data:pilot-v2:intent-b:g207",
+    "original_id": "data:pilot-v2:intent-b-r2:g207:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g207:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g208:r01",
+    "group_id": "data:pilot-v2:intent-b:g208",
+    "original_id": "data:pilot-v2:intent-b-r2:g208:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g208:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g209:r01",
+    "group_id": "data:pilot-v2:intent-b:g209",
+    "original_id": "data:pilot-v2:intent-b-r2:g209:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g209:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g210:r01",
+    "group_id": "data:pilot-v2:intent-b:g210",
+    "original_id": "data:pilot-v2:intent-b-r2:g210:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g210:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g211:r01",
+    "group_id": "data:pilot-v2:intent-b:g211",
+    "original_id": "data:pilot-v2:intent-b-r2:g211:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g211:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g212:r01",
+    "group_id": "data:pilot-v2:intent-b:g212",
+    "original_id": "data:pilot-v2:intent-b-r2:g212:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g212:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g213:r01",
+    "group_id": "data:pilot-v2:intent-b:g213",
+    "original_id": "data:pilot-v2:intent-b-r2:g213:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g213:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g214:r01",
+    "group_id": "data:pilot-v2:intent-b:g214",
+    "original_id": "data:pilot-v2:intent-b-r2:g214:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g214:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g215:r01",
+    "group_id": "data:pilot-v2:intent-b:g215",
+    "original_id": "data:pilot-v2:intent-b-r2:g215:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g215:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g216:r01",
+    "group_id": "data:pilot-v2:intent-b:g216",
+    "original_id": "data:pilot-v2:intent-b-r2:g216:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g216:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g217:r01",
+    "group_id": "data:pilot-v2:intent-b:g217",
+    "original_id": "data:pilot-v2:intent-b-r2:g217:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g217:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g218:r01",
+    "group_id": "data:pilot-v2:intent-b:g218",
+    "original_id": "data:pilot-v2:intent-b-r2:g218:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g218:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g219:r01",
+    "group_id": "data:pilot-v2:intent-b:g219",
+    "original_id": "data:pilot-v2:intent-b-r2:g219:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g219:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g220:r01",
+    "group_id": "data:pilot-v2:intent-b:g220",
+    "original_id": "data:pilot-v2:intent-b-r2:g220:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g220:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g221:r01",
+    "group_id": "data:pilot-v2:intent-b:g221",
+    "original_id": "data:pilot-v2:intent-b-r2:g221:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g221:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g222:r01",
+    "group_id": "data:pilot-v2:intent-b:g222",
+    "original_id": "data:pilot-v2:intent-b-r2:g222:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g222:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g223:r01",
+    "group_id": "data:pilot-v2:intent-b:g223",
+    "original_id": "data:pilot-v2:intent-b-r2:g223:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g223:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g224:r01",
+    "group_id": "data:pilot-v2:intent-b:g224",
+    "original_id": "data:pilot-v2:intent-b-r2:g224:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g224:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g225:r01",
+    "group_id": "data:pilot-v2:intent-b:g225",
+    "original_id": "data:pilot-v2:intent-b-r2:g225:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g225:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g226:r01",
+    "group_id": "data:pilot-v2:intent-b:g226",
+    "original_id": "data:pilot-v2:intent-b-r2:g226:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g226:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g227:r01",
+    "group_id": "data:pilot-v2:intent-b:g227",
+    "original_id": "data:pilot-v2:intent-b-r2:g227:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g227:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g228:r01",
+    "group_id": "data:pilot-v2:intent-b:g228",
+    "original_id": "data:pilot-v2:intent-b-r2:g228:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g228:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g229:r01",
+    "group_id": "data:pilot-v2:intent-b:g229",
+    "original_id": "data:pilot-v2:intent-b-r2:g229:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g229:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g230:r01",
+    "group_id": "data:pilot-v2:intent-b:g230",
+    "original_id": "data:pilot-v2:intent-b-r2:g230:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g230:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g231:r01",
+    "group_id": "data:pilot-v2:intent-b:g231",
+    "original_id": "data:pilot-v2:intent-b-r2:g231:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g231:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g232:r01",
+    "group_id": "data:pilot-v2:intent-b:g232",
+    "original_id": "data:pilot-v2:intent-b-r2:g232:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g232:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g233:r01",
+    "group_id": "data:pilot-v2:intent-b:g233",
+    "original_id": "data:pilot-v2:intent-b-r2:g233:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g233:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g234:r01",
+    "group_id": "data:pilot-v2:intent-b:g234",
+    "original_id": "data:pilot-v2:intent-b-r2:g234:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g234:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g235:r01",
+    "group_id": "data:pilot-v2:intent-b:g235",
+    "original_id": "data:pilot-v2:intent-b-r2:g235:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g235:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g236:r01",
+    "group_id": "data:pilot-v2:intent-b:g236",
+    "original_id": "data:pilot-v2:intent-b-r2:g236:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g236:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g237:r01",
+    "group_id": "data:pilot-v2:intent-b:g237",
+    "original_id": "data:pilot-v2:intent-b-r2:g237:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g237:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g238:r01",
+    "group_id": "data:pilot-v2:intent-b:g238",
+    "original_id": "data:pilot-v2:intent-b-r2:g238:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g238:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g239:r01",
+    "group_id": "data:pilot-v2:intent-b:g239",
+    "original_id": "data:pilot-v2:intent-b-r2:g239:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g239:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:intent-b-r2:g240:r01",
+    "group_id": "data:pilot-v2:intent-b:g240",
+    "original_id": "data:pilot-v2:intent-b-r2:g240:r01",
+    "reversed_id": "data:pilot-v2:intent-b-r2:g240:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g201:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g201",
+    "original_id": "data:pilot-v2:sentiment-a:g201:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g201:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g202:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g202",
+    "original_id": "data:pilot-v2:sentiment-a:g202:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g202:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g203:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g203",
+    "original_id": "data:pilot-v2:sentiment-a:g203:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g203:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g204:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g204",
+    "original_id": "data:pilot-v2:sentiment-a:g204:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g204:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g205:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g205",
+    "original_id": "data:pilot-v2:sentiment-a:g205:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g205:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g206:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g206",
+    "original_id": "data:pilot-v2:sentiment-a:g206:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g206:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g207:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g207",
+    "original_id": "data:pilot-v2:sentiment-a:g207:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g207:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g208:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g208",
+    "original_id": "data:pilot-v2:sentiment-a:g208:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g208:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g209:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g209",
+    "original_id": "data:pilot-v2:sentiment-a:g209:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g209:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g210:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g210",
+    "original_id": "data:pilot-v2:sentiment-a:g210:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g210:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g211:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g211",
+    "original_id": "data:pilot-v2:sentiment-a:g211:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g211:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g212:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g212",
+    "original_id": "data:pilot-v2:sentiment-a:g212:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g212:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g213:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g213",
+    "original_id": "data:pilot-v2:sentiment-a:g213:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g213:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g214:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g214",
+    "original_id": "data:pilot-v2:sentiment-a:g214:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g214:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g215:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g215",
+    "original_id": "data:pilot-v2:sentiment-a:g215:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g215:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g216:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g216",
+    "original_id": "data:pilot-v2:sentiment-a:g216:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g216:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g217:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g217",
+    "original_id": "data:pilot-v2:sentiment-a:g217:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g217:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g218:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g218",
+    "original_id": "data:pilot-v2:sentiment-a:g218:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g218:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g219:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g219",
+    "original_id": "data:pilot-v2:sentiment-a:g219:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g219:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g220:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g220",
+    "original_id": "data:pilot-v2:sentiment-a:g220:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g220:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g221:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g221",
+    "original_id": "data:pilot-v2:sentiment-a:g221:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g221:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g222:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g222",
+    "original_id": "data:pilot-v2:sentiment-a:g222:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g222:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g223:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g223",
+    "original_id": "data:pilot-v2:sentiment-a:g223:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g223:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g224:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g224",
+    "original_id": "data:pilot-v2:sentiment-a:g224:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g224:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g225:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g225",
+    "original_id": "data:pilot-v2:sentiment-a:g225:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g225:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g226:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g226",
+    "original_id": "data:pilot-v2:sentiment-a:g226:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g226:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g227:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g227",
+    "original_id": "data:pilot-v2:sentiment-a:g227:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g227:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g228:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g228",
+    "original_id": "data:pilot-v2:sentiment-a:g228:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g228:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g229:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g229",
+    "original_id": "data:pilot-v2:sentiment-a:g229:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g229:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g230:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g230",
+    "original_id": "data:pilot-v2:sentiment-a:g230:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g230:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g231:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g231",
+    "original_id": "data:pilot-v2:sentiment-a:g231:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g231:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g232:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g232",
+    "original_id": "data:pilot-v2:sentiment-a:g232:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g232:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g233:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g233",
+    "original_id": "data:pilot-v2:sentiment-a:g233:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g233:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g234:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g234",
+    "original_id": "data:pilot-v2:sentiment-a:g234:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g234:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g235:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g235",
+    "original_id": "data:pilot-v2:sentiment-a:g235:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g235:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g236:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g236",
+    "original_id": "data:pilot-v2:sentiment-a:g236:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g236:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g237:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g237",
+    "original_id": "data:pilot-v2:sentiment-a:g237:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g237:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g238:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g238",
+    "original_id": "data:pilot-v2:sentiment-a:g238:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g238:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g239:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g239",
+    "original_id": "data:pilot-v2:sentiment-a:g239:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g239:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-a:g240:r01",
+    "group_id": "data:pilot-v2:sentiment-a:g240",
+    "original_id": "data:pilot-v2:sentiment-a:g240:r01",
+    "reversed_id": "data:pilot-v2:sentiment-a:g240:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g208:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g208",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g208:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g208:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g206:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g206",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g206:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g206:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g226:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g226",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g226:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g226:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g230:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g230",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g230:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g230:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g222:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g222",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g222:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g222:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g217:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g217",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g217:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g217:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g214:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g214",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g214:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g214:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g223:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g223",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g223:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g223:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g201:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g201",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g201:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g201:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g239:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g239",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g239:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g239:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g225:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g225",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g225:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g225:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g229:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g229",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g229:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g229:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g213:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g213",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g213:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g213:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g209:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g209",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g209:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g209:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g236:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g236",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g236:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g236:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g205:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g205",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g205:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g205:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g237:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g237",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g237:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g237:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g235:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g235",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g235:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g235:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g219:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g219",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g219:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g219:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g240:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g240",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g240:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g240:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g210:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g210",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g210:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g210:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g221:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g221",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g221:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g221:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g211:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g211",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g211:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g211:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g215:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g215",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g215:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g215:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g204:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g204",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g204:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g204:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g238:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g238",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g238:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g238:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g224:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g224",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g224:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g224:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g202:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g202",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g202:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g202:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g218:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g218",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g218:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g218:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g234:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g234",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g234:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g234:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g228:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g228",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g228:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g228:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g203:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g203",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g203:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g203:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g216:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g216",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g216:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g216:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g220:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g220",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g220:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g220:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g227:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g227",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g227:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g227:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g212:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g212",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g212:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g212:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g231:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g231",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g231:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g231:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g232:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g232",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g232:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g232:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g207:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g207",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g207:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g207:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:sentiment-b-r2:g233:r01",
+    "group_id": "data:pilot-v2:sentiment-b:g233",
+    "original_id": "data:pilot-v2:sentiment-b-r2:g233:r01",
+    "reversed_id": "data:pilot-v2:sentiment-b-r2:g233:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r01",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r01",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r02",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r02",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r03",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r03",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r04",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r04",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r05",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r05",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r06",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r06",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r07",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r07",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g011:r08",
+    "group_id": "data:pilot-v2:rule-a:g011",
+    "original_id": "data:pilot-v2:rule-a:g011:r08",
+    "reversed_id": "data:pilot-v2:rule-a:g011:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r01",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r01",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r02",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r02",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r03",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r03",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r04",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r04",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r05",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r05",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r06",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r06",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r07",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r07",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g012:r08",
+    "group_id": "data:pilot-v2:rule-a:g012",
+    "original_id": "data:pilot-v2:rule-a:g012:r08",
+    "reversed_id": "data:pilot-v2:rule-a:g012:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r01",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r01",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r02",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r02",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r03",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r03",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r04",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r04",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r05",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r05",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r06",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r06",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r07",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r07",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g013:r08",
+    "group_id": "data:pilot-v2:rule-a:g013",
+    "original_id": "data:pilot-v2:rule-a:g013:r08",
+    "reversed_id": "data:pilot-v2:rule-a:g013:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r01",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r01",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r02",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r02",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r03",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r03",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r04",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r04",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r05",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r05",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r06",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r06",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r07",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r07",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g014:r08",
+    "group_id": "data:pilot-v2:rule-a:g014",
+    "original_id": "data:pilot-v2:rule-a:g014:r08",
+    "reversed_id": "data:pilot-v2:rule-a:g014:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r01",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r01",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r02",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r02",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r03",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r03",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r04",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r04",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r05",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r05",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r06",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r06",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r07",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r07",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-a:g015:r08",
+    "group_id": "data:pilot-v2:rule-a:g015",
+    "original_id": "data:pilot-v2:rule-a:g015:r08",
+    "reversed_id": "data:pilot-v2:rule-a:g015:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r01",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r01",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r02",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r02",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r03",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r03",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r04",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r04",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r05",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r05",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r06",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r06",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r07",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r07",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g011:r08",
+    "group_id": "data:pilot-v2:rule-b:g011",
+    "original_id": "data:pilot-v2:rule-b:g011:r08",
+    "reversed_id": "data:pilot-v2:rule-b:g011:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r01",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r01",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r02",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r02",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r03",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r03",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r04",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r04",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r05",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r05",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r06",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r06",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r07",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r07",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g012:r08",
+    "group_id": "data:pilot-v2:rule-b:g012",
+    "original_id": "data:pilot-v2:rule-b:g012:r08",
+    "reversed_id": "data:pilot-v2:rule-b:g012:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r01",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r01",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r02",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r02",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r03",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r03",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r04",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r04",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r05",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r05",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r06",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r06",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r07",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r07",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g013:r08",
+    "group_id": "data:pilot-v2:rule-b:g013",
+    "original_id": "data:pilot-v2:rule-b:g013:r08",
+    "reversed_id": "data:pilot-v2:rule-b:g013:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r01",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r01",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r02",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r02",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r03",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r03",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r04",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r04",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r05",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r05",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r06",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r06",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r07",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r07",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g014:r08",
+    "group_id": "data:pilot-v2:rule-b:g014",
+    "original_id": "data:pilot-v2:rule-b:g014:r08",
+    "reversed_id": "data:pilot-v2:rule-b:g014:r08.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r01",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r01",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r01.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r02",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r02",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r02.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r03",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r03",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r03.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r04",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r04",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r04.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r05",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r05",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r05.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r06",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r06",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r06.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r07",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r07",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r07.evaluation-reversed-v1"
+  },
+  {
+    "pair_id": "data:pilot-v2:rule-b:g015:r08",
+    "group_id": "data:pilot-v2:rule-b:g015",
+    "original_id": "data:pilot-v2:rule-b:g015:r08",
+    "reversed_id": "data:pilot-v2:rule-b:g015:r08.evaluation-reversed-v1"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "original": {
+    "historical": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-original-predictions.jsonl",
+    "historical_sha256": "cef650f002f9a7850c9f913b1e1d8dc169cc1b03db4a08ae10fafdf0a4935eb0",
+    "current": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-original-predictions.jsonl",
+    "current_sha256": "cef650f002f9a7850c9f913b1e1d8dc169cc1b03db4a08ae10fafdf0a4935eb0",
+    "byte_identical": true,
+    "max_absolute_probability_difference": 0.0,
+    "rows": 60
+  },
+  "probes": {
+    "historical": "/Users/destiner/Code/jeff/artifacts/model/msmarco-256-inference-20261111-01/baseline-probes-predictions.jsonl",
+    "historical_sha256": "263276ab7578cf62a363b6e4aec8f7510f532d30840b84d5cfc1cdb8bf12ef95",
+    "current": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/inference/baseline-probes-predictions.jsonl",
+    "current_sha256": "263276ab7578cf62a363b6e4aec8f7510f532d30840b84d5cfc1cdb8bf12ef95",
+    "byte_identical": true,
+    "max_absolute_probability_difference": 0.0,
+    "rows": 24
+  }
+}

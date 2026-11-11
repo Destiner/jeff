@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-source-unit-analysis-v1/summarize.py",
+    "--units",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e3-release-identity-review-v1/validation-source-units-reviewed.json",
+    "--comparison",
+    "inherited-v1=/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/comparison.json",
+    "--comparison",
+    "new-v2=/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/comparison.json",
+    "--comparison",
+    "probes=/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/comparison.json",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/source-units"
+  ],
+  "returncode": 0,
+  "stdout": "{\"output_dir\": \"/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/source-units\", \"strata\": [\"inherited-v1\", \"new-v2\", \"probes\"], \"files\": [\"summary.json\", \"summary.md\"]}\n",
+  "stderr": ""
+}

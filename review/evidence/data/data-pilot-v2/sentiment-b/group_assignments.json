@@ -1,0 +1,1204 @@
+{
+  "groups": {
+    "data:pilot-v2:sentiment-b:g001": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "folding dumplings"
+    },
+    "data:pilot-v2:sentiment-b:g002": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "allergen substitution"
+    },
+    "data:pilot-v2:sentiment-b:g003": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "class timetable"
+    },
+    "data:pilot-v2:sentiment-b:g004": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "bread fermentation"
+    },
+    "data:pilot-v2:sentiment-b:g005": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "knife grip adaptation"
+    },
+    "data:pilot-v2:sentiment-b:g006": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "burnt caramel instruction"
+    },
+    "data:pilot-v2:sentiment-b:g007": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "ingredient station numbering"
+    },
+    "data:pilot-v2:sentiment-b:g008": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "pasta pacing"
+    },
+    "data:pilot-v2:sentiment-b:g009": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "sauce rescue"
+    },
+    "data:pilot-v2:sentiment-b:g010": {
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "scenario_plan": "shared hob access"
+    },
+    "data:pilot-v2:sentiment-b:g011": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "flat packed tracing sheets"
+    },
+    "data:pilot-v2:sentiment-b:g012": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "ink bottle leakage"
+    },
+    "data:pilot-v2:sentiment-b:g013": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "parcel dimensions"
+    },
+    "data:pilot-v2:sentiment-b:g014": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "pencil substitution notice"
+    },
+    "data:pilot-v2:sentiment-b:g015": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "rainproof wrapping"
+    },
+    "data:pilot-v2:sentiment-b:g016": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "missing order component"
+    },
+    "data:pilot-v2:sentiment-b:g017": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "delivery address update"
+    },
+    "data:pilot-v2:sentiment-b:g018": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "paper texture and cutting"
+    },
+    "data:pilot-v2:sentiment-b:g019": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "dispatch receipt"
+    },
+    "data:pilot-v2:sentiment-b:g020": {
+      "split": "train",
+      "domain": "stationery delivery",
+      "scenario_plan": "folder corners and parcel tracking"
+    },
+    "data:pilot-v2:sentiment-b:g021": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "remote guest level matching"
+    },
+    "data:pilot-v2:sentiment-b:g022": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "deleted qualifying sentence"
+    },
+    "data:pilot-v2:sentiment-b:g023": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "episode export settings"
+    },
+    "data:pilot-v2:sentiment-b:g024": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "breath removal and clipped laughter"
+    },
+    "data:pilot-v2:sentiment-b:g025": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "repairing a chair squeak"
+    },
+    "data:pilot-v2:sentiment-b:g026": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "music drowning speech"
+    },
+    "data:pilot-v2:sentiment-b:g027": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "speaker track inventory"
+    },
+    "data:pilot-v2:sentiment-b:g028": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "chapter markers and names"
+    },
+    "data:pilot-v2:sentiment-b:g029": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "quiet speaker clarity"
+    },
+    "data:pilot-v2:sentiment-b:g030": {
+      "split": "train",
+      "domain": "podcast editing",
+      "scenario_plan": "unapproved outro replacement"
+    },
+    "data:pilot-v2:sentiment-b:g031": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "regional pronunciation search"
+    },
+    "data:pilot-v2:sentiment-b:g032": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "wrong verb example"
+    },
+    "data:pilot-v2:sentiment-b:g033": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "offline pack update"
+    },
+    "data:pilot-v2:sentiment-b:g034": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "word history and sync"
+    },
+    "data:pilot-v2:sentiment-b:g035": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "inflection lookup"
+    },
+    "data:pilot-v2:sentiment-b:g036": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "search keyboard reset"
+    },
+    "data:pilot-v2:sentiment-b:g037": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "entry count change"
+    },
+    "data:pilot-v2:sentiment-b:g038": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "audio clarity and speed control"
+    },
+    "data:pilot-v2:sentiment-b:g039": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "interface language switch"
+    },
+    "data:pilot-v2:sentiment-b:g040": {
+      "split": "train",
+      "domain": "language dictionary apps",
+      "scenario_plan": "bookmark recovery and tagging"
+    },
+    "data:pilot-v2:sentiment-b:g041": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "sloping ground alignment"
+    },
+    "data:pilot-v2:sentiment-b:g042": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "blocked access gate"
+    },
+    "data:pilot-v2:sentiment-b:g043": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "panel delivery schedule"
+    },
+    "data:pilot-v2:sentiment-b:g044": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "privacy and loose latch"
+    },
+    "data:pilot-v2:sentiment-b:g045": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "root preservation"
+    },
+    "data:pilot-v2:sentiment-b:g046": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "exposed nail ends"
+    },
+    "data:pilot-v2:sentiment-b:g047": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "boundary length record"
+    },
+    "data:pilot-v2:sentiment-b:g048": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "stain finish and debris"
+    },
+    "data:pilot-v2:sentiment-b:g049": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "storm stability"
+    },
+    "data:pilot-v2:sentiment-b:g050": {
+      "split": "train",
+      "domain": "garden fencing installation",
+      "scenario_plan": "unannounced hedge removal"
+    },
+    "data:pilot-v2:sentiment-b:g051": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "faint pencil annotations"
+    },
+    "data:pilot-v2:sentiment-b:g052": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "cropped margin notes"
+    },
+    "data:pilot-v2:sentiment-b:g053": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "file delivery inventory"
+    },
+    "data:pilot-v2:sentiment-b:g054": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "image sharpness and page order"
+    },
+    "data:pilot-v2:sentiment-b:g055": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "fragile foldout handling"
+    },
+    "data:pilot-v2:sentiment-b:g056": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "search text corrupting surnames"
+    },
+    "data:pilot-v2:sentiment-b:g057": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "collection receipt"
+    },
+    "data:pilot-v2:sentiment-b:g058": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "colour accuracy and file size"
+    },
+    "data:pilot-v2:sentiment-b:g059": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "scan resolution instruction"
+    },
+    "data:pilot-v2:sentiment-b:g060": {
+      "split": "train",
+      "domain": "document scanning",
+      "scenario_plan": "receipts legibility and skew"
+    },
+    "data:pilot-v2:sentiment-b:g061": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "portioning for solo cook"
+    },
+    "data:pilot-v2:sentiment-b:g062": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "split sauce pouch"
+    },
+    "data:pilot-v2:sentiment-b:g063": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "weekly menu change"
+    },
+    "data:pilot-v2:sentiment-b:g064": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "spice balance and chopping estimate"
+    },
+    "data:pilot-v2:sentiment-b:g065": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "leftover ingredient use"
+    },
+    "data:pilot-v2:sentiment-b:g066": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "undercooked bean directions"
+    },
+    "data:pilot-v2:sentiment-b:g067": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "storage date labels"
+    },
+    "data:pilot-v2:sentiment-b:g068": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "vegetable freshness and packaging"
+    },
+    "data:pilot-v2:sentiment-b:g069": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "late supper assembly"
+    },
+    "data:pilot-v2:sentiment-b:g070": {
+      "split": "train",
+      "domain": "meal preparation kits",
+      "scenario_plan": "unmarked nut garnish"
+    },
+    "data:pilot-v2:sentiment-b:g071": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "sleeve mobility adjustment"
+    },
+    "data:pilot-v2:sentiment-b:g072": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "pin damage"
+    },
+    "data:pilot-v2:sentiment-b:g073": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "appointment duration"
+    },
+    "data:pilot-v2:sentiment-b:g074": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "jacket shoulders and lining"
+    },
+    "data:pilot-v2:sentiment-b:g075": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "uneven posture allowance"
+    },
+    "data:pilot-v2:sentiment-b:g076": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "trouser hem measurement"
+    },
+    "data:pilot-v2:sentiment-b:g077": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "fitting location update"
+    },
+    "data:pilot-v2:sentiment-b:g078": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "waist fit and pocket angle"
+    },
+    "data:pilot-v2:sentiment-b:g079": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "garment collection time"
+    },
+    "data:pilot-v2:sentiment-b:g080": {
+      "split": "train",
+      "domain": "tailoring fittings",
+      "scenario_plan": "collar correction and appointment delay"
+    },
+    "data:pilot-v2:sentiment-b:g081": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "salt removal beneath arches"
+    },
+    "data:pilot-v2:sentiment-b:g082": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "wax streaks"
+    },
+    "data:pilot-v2:sentiment-b:g083": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "service lane allocation"
+    },
+    "data:pilot-v2:sentiment-b:g084": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "clean glass and wet seat"
+    },
+    "data:pilot-v2:sentiment-b:g085": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "care around loose trim"
+    },
+    "data:pilot-v2:sentiment-b:g086": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "scratched bonnet"
+    },
+    "data:pilot-v2:sentiment-b:g087": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "receipt itemisation"
+    },
+    "data:pilot-v2:sentiment-b:g088": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "wheel finish and queue"
+    },
+    "data:pilot-v2:sentiment-b:g089": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "tree sap removal"
+    },
+    "data:pilot-v2:sentiment-b:g090": {
+      "split": "train",
+      "domain": "car wash visits",
+      "scenario_plan": "unreturned floor mat"
+    },
+    "data:pilot-v2:sentiment-b:g091": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "dry paper during storm"
+    },
+    "data:pilot-v2:sentiment-b:g092": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "repeated wrong doorway"
+    },
+    "data:pilot-v2:sentiment-b:g093": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "edition date change"
+    },
+    "data:pilot-v2:sentiment-b:g094": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "timely arrival and bent supplements"
+    },
+    "data:pilot-v2:sentiment-b:g095": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "temporary mobility accommodation"
+    },
+    "data:pilot-v2:sentiment-b:g096": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "unreadable soaked copy"
+    },
+    "data:pilot-v2:sentiment-b:g097": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "route start notification"
+    },
+    "data:pilot-v2:sentiment-b:g098": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "correct issue and noisy gate"
+    },
+    "data:pilot-v2:sentiment-b:g099": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "holiday pause record"
+    },
+    "data:pilot-v2:sentiment-b:g100": {
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "scenario_plan": "sports insert and doorstep placement"
+    },
+    "data:pilot-v2:sentiment-b:g101": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "demonstrating brush pressure"
+    },
+    "data:pilot-v2:sentiment-b:g102": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "invisible charcoal marks"
+    },
+    "data:pilot-v2:sentiment-b:g103": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "video length update"
+    },
+    "data:pilot-v2:sentiment-b:g104": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "perspective explanation and rushed exercise"
+    },
+    "data:pilot-v2:sentiment-b:g105": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "feedback on colour values"
+    },
+    "data:pilot-v2:sentiment-b:g106": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "unanswered glazing question"
+    },
+    "data:pilot-v2:sentiment-b:g107": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "lesson file formats"
+    },
+    "data:pilot-v2:sentiment-b:g108": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "camera detail and missing materials list"
+    },
+    "data:pilot-v2:sentiment-b:g109": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "caption placement"
+    },
+    "data:pilot-v2:sentiment-b:g110": {
+      "split": "train",
+      "domain": "online art lessons",
+      "scenario_plan": "critique specificity and interrupting timer"
+    },
+    "data:pilot-v2:sentiment-b:g111": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "bearing seizure repair"
+    },
+    "data:pilot-v2:sentiment-b:g112": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "uneven wheel installation"
+    },
+    "data:pilot-v2:sentiment-b:g113": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "parts collection record"
+    },
+    "data:pilot-v2:sentiment-b:g114": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "smooth steering and loose hardware"
+    },
+    "data:pilot-v2:sentiment-b:g115": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "saving original graphic"
+    },
+    "data:pilot-v2:sentiment-b:g116": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "grip tape covering bolt holes"
+    },
+    "data:pilot-v2:sentiment-b:g117": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "deck width record"
+    },
+    "data:pilot-v2:sentiment-b:g118": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "axle alignment and rough edge"
+    },
+    "data:pilot-v2:sentiment-b:g119": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "repair completion notice"
+    },
+    "data:pilot-v2:sentiment-b:g120": {
+      "split": "train",
+      "domain": "skateboard repairs",
+      "scenario_plan": "truck stability and quoted cost"
+    },
+    "data:pilot-v2:sentiment-b:g121": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "tested secondhand radio"
+    },
+    "data:pilot-v2:sentiment-b:g122": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "concealed cracked casserole"
+    },
+    "data:pilot-v2:sentiment-b:g123": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "donation stock arrival"
+    },
+    "data:pilot-v2:sentiment-b:g124": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "coat warmth and broken zip"
+    },
+    "data:pilot-v2:sentiment-b:g125": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "staff locating matching volume"
+    },
+    "data:pilot-v2:sentiment-b:g126": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "stained tablecloth folded inward"
+    },
+    "data:pilot-v2:sentiment-b:g127": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "purchase receipt listing"
+    },
+    "data:pilot-v2:sentiment-b:g128": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "toy completeness and sharp corner"
+    },
+    "data:pilot-v2:sentiment-b:g129": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "record playback"
+    },
+    "data:pilot-v2:sentiment-b:g130": {
+      "split": "train",
+      "domain": "charity shop purchases",
+      "scenario_plan": "incorrect marked shoe sizes"
+    },
+    "data:pilot-v2:sentiment-b:g131": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "bench height for standing"
+    },
+    "data:pilot-v2:sentiment-b:g132": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "splintered armrest"
+    },
+    "data:pilot-v2:sentiment-b:g133": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "bench relocation notice"
+    },
+    "data:pilot-v2:sentiment-b:g134": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "shade and uneven supports"
+    },
+    "data:pilot-v2:sentiment-b:g135": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "space beside mobility aid"
+    },
+    "data:pilot-v2:sentiment-b:g136": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "drainage onto seat"
+    },
+    "data:pilot-v2:sentiment-b:g137": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "seat numbering map"
+    },
+    "data:pilot-v2:sentiment-b:g138": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "back support and hot metal"
+    },
+    "data:pilot-v2:sentiment-b:g139": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "new plaque installation"
+    },
+    "data:pilot-v2:sentiment-b:g140": {
+      "split": "train",
+      "domain": "public park seating",
+      "scenario_plan": "view and wobbling base"
+    },
+    "data:pilot-v2:sentiment-b:g141": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "explaining sour cherry uses"
+    },
+    "data:pilot-v2:sentiment-b:g142": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "stale flatbread"
+    },
+    "data:pilot-v2:sentiment-b:g143": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "stall trading hours"
+    },
+    "data:pilot-v2:sentiment-b:g144": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "fresh herbs and crushed stems"
+    },
+    "data:pilot-v2:sentiment-b:g145": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "custom grind for cafetiere"
+    },
+    "data:pilot-v2:sentiment-b:g146": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "unmarked chilli addition"
+    },
+    "data:pilot-v2:sentiment-b:g147": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "produce origin sign"
+    },
+    "data:pilot-v2:sentiment-b:g148": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "cheese flavour and excess rind"
+    },
+    "data:pilot-v2:sentiment-b:g149": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "bread slice thickness"
+    },
+    "data:pilot-v2:sentiment-b:g150": {
+      "split": "train",
+      "domain": "food market stalls",
+      "scenario_plan": "incorrect change"
+    },
+    "data:pilot-v2:sentiment-b:g151": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "layflat panorama"
+    },
+    "data:pilot-v2:sentiment-b:g152": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "detached endpaper"
+    },
+    "data:pilot-v2:sentiment-b:g153": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "spine title record"
+    },
+    "data:pilot-v2:sentiment-b:g154": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "stitching and cover alignment"
+    },
+    "data:pilot-v2:sentiment-b:g155": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "thick paper accommodation"
+    },
+    "data:pilot-v2:sentiment-b:g156": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "trimmed captions"
+    },
+    "data:pilot-v2:sentiment-b:g157": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "binding material specification"
+    },
+    "data:pilot-v2:sentiment-b:g158": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "colourful cloth and glue smell"
+    },
+    "data:pilot-v2:sentiment-b:g159": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "order page count update"
+    },
+    "data:pilot-v2:sentiment-b:g160": {
+      "split": "train",
+      "domain": "photobook binding",
+      "scenario_plan": "page opening and spine lettering"
+    },
+    "data:pilot-v2:sentiment-b:g161": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "quiet flute audibility"
+    },
+    "data:pilot-v2:sentiment-b:g162": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "persistent bass boom"
+    },
+    "data:pilot-v2:sentiment-b:g163": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "room dimension record"
+    },
+    "data:pilot-v2:sentiment-b:g164": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "vocal clarity and handclap flutter"
+    },
+    "data:pilot-v2:sentiment-b:g165": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "string quartet separation"
+    },
+    "data:pilot-v2:sentiment-b:g166": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "sound masking count in"
+    },
+    "data:pilot-v2:sentiment-b:g167": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "panel placement record"
+    },
+    "data:pilot-v2:sentiment-b:g168": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "dry percussion and boxy cello"
+    },
+    "data:pilot-v2:sentiment-b:g169": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "spoken cues audibility"
+    },
+    "data:pilot-v2:sentiment-b:g170": {
+      "split": "train",
+      "domain": "rehearsal room acoustics",
+      "scenario_plan": "ringing overtone at piano"
+    },
+    "data:pilot-v2:sentiment-b:g171": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "adjusting dormant orchid care"
+    },
+    "data:pilot-v2:sentiment-b:g172": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "standing water in saucer"
+    },
+    "data:pilot-v2:sentiment-b:g173": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "visit date log"
+    },
+    "data:pilot-v2:sentiment-b:g174": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "healthy fern and dripped floor"
+    },
+    "data:pilot-v2:sentiment-b:g175": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "separating succulent schedule"
+    },
+    "data:pilot-v2:sentiment-b:g176": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "watering dormant bulbs"
+    },
+    "data:pilot-v2:sentiment-b:g177": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "plant location list"
+    },
+    "data:pilot-v2:sentiment-b:g178": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "soil checks and unlatched door"
+    },
+    "data:pilot-v2:sentiment-b:g179": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "key return record"
+    },
+    "data:pilot-v2:sentiment-b:g180": {
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "scenario_plan": "leaf recovery and mineral residue"
+    },
+    "data:pilot-v2:sentiment-b:g181": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "repairing rocking chair joint"
+    },
+    "data:pilot-v2:sentiment-b:g182": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "sanding through veneer"
+    },
+    "data:pilot-v2:sentiment-b:g183": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "wood species record"
+    },
+    "data:pilot-v2:sentiment-b:g184": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "table finish and stiff drawer"
+    },
+    "data:pilot-v2:sentiment-b:g185": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "retaining original tool marks"
+    },
+    "data:pilot-v2:sentiment-b:g186": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "staining over active split"
+    },
+    "data:pilot-v2:sentiment-b:g187": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "collection time record"
+    },
+    "data:pilot-v2:sentiment-b:g188": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "new cane and uneven colour"
+    },
+    "data:pilot-v2:sentiment-b:g189": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "removable finish choice"
+    },
+    "data:pilot-v2:sentiment-b:g190": {
+      "split": "train",
+      "domain": "furniture restoration",
+      "scenario_plan": "wobbly repaired leg"
+    },
+    "data:pilot-v2:sentiment-b:g191": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "identifying offscreen speaker"
+    },
+    "data:pilot-v2:sentiment-b:g192": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "missing safety word"
+    },
+    "data:pilot-v2:sentiment-b:g193": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "caption file inventory"
+    },
+    "data:pilot-v2:sentiment-b:g194": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "accurate names and crowded lines"
+    },
+    "data:pilot-v2:sentiment-b:g195": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "preserving interrupted sentence"
+    },
+    "data:pilot-v2:sentiment-b:g196": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "captions revealing punchline early"
+    },
+    "data:pilot-v2:sentiment-b:g197": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "language track update"
+    },
+    "data:pilot-v2:sentiment-b:g198": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "sound descriptions and blocked diagram"
+    },
+    "data:pilot-v2:sentiment-b:g199": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "export frame rate record"
+    },
+    "data:pilot-v2:sentiment-b:g200": {
+      "split": "train",
+      "domain": "video caption editing",
+      "scenario_plan": "readable line breaks and typo"
+    },
+    "data:pilot-v2:sentiment-b:g201": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "legible contour detail"
+    },
+    "data:pilot-v2:sentiment-b:g202": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "smudged control circles"
+    },
+    "data:pilot-v2:sentiment-b:g203": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "print run inventory"
+    },
+    "data:pilot-v2:sentiment-b:g204": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "water resistance and folded legend"
+    },
+    "data:pilot-v2:sentiment-b:g205": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "colour separation at dusk"
+    },
+    "data:pilot-v2:sentiment-b:g206": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "wrong scale reproduction"
+    },
+    "data:pilot-v2:sentiment-b:g207": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "paper dimensions record"
+    },
+    "data:pilot-v2:sentiment-b:g208": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "clear symbols and clipped north arrow"
+    },
+    "data:pilot-v2:sentiment-b:g209": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "fine vegetation marks"
+    },
+    "data:pilot-v2:sentiment-b:g210": {
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "scenario_plan": "missing course overprint"
+    },
+    "data:pilot-v2:sentiment-b:g211": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "tension adjustment lesson"
+    },
+    "data:pilot-v2:sentiment-b:g212": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "cracked heddle"
+    },
+    "data:pilot-v2:sentiment-b:g213": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "rental duration record"
+    },
+    "data:pilot-v2:sentiment-b:g214": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "smooth treadles and worn reed"
+    },
+    "data:pilot-v2:sentiment-b:g215": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "narrow doorway assembly"
+    },
+    "data:pilot-v2:sentiment-b:g216": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "missing tie up cords"
+    },
+    "data:pilot-v2:sentiment-b:g217": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "loom serial record"
+    },
+    "data:pilot-v2:sentiment-b:g218": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "even shed and awkward return slot"
+    },
+    "data:pilot-v2:sentiment-b:g219": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "extension date record"
+    },
+    "data:pilot-v2:sentiment-b:g220": {
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "scenario_plan": "working brake and rough beam"
+    },
+    "data:pilot-v2:sentiment-b:g221": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "explaining bird choice"
+    },
+    "data:pilot-v2:sentiment-b:g222": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "rushed welfare question"
+    },
+    "data:pilot-v2:sentiment-b:g223": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "demonstration schedule"
+    },
+    "data:pilot-v2:sentiment-b:g224": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "clear handling and blocked view"
+    },
+    "data:pilot-v2:sentiment-b:g225": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "changing flight for wind"
+    },
+    "data:pilot-v2:sentiment-b:g226": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "baiting without explanation"
+    },
+    "data:pilot-v2:sentiment-b:g227": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "bird roster change"
+    },
+    "data:pilot-v2:sentiment-b:g228": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "close observation and loud microphone"
+    },
+    "data:pilot-v2:sentiment-b:g229": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "safe viewing distance"
+    },
+    "data:pilot-v2:sentiment-b:g230": {
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "scenario_plan": "inaccurate habitat explanation"
+    },
+    "data:pilot-v2:sentiment-b:g231": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "recovering dense negative print"
+    },
+    "data:pilot-v2:sentiment-b:g232": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "contaminated developer tray"
+    },
+    "data:pilot-v2:sentiment-b:g233": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "enlarger booking record"
+    },
+    "data:pilot-v2:sentiment-b:g234": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "focus coaching and timer fault"
+    },
+    "data:pilot-v2:sentiment-b:g235": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "guidance for contact sheets"
+    },
+    "data:pilot-v2:sentiment-b:g236": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "unannounced light exposure"
+    },
+    "data:pilot-v2:sentiment-b:g237": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "chemical batch record"
+    },
+    "data:pilot-v2:sentiment-b:g238": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "clean prints and crowded drying rack"
+    },
+    "data:pilot-v2:sentiment-b:g239": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "session duration update"
+    },
+    "data:pilot-v2:sentiment-b:g240": {
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "scenario_plan": "contrast advice and dirty easel"
+    }
+  }
+}

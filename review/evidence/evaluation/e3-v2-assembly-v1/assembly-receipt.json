@@ -1,0 +1,61 @@
+{
+  "schema_version": "evaluation/0.1",
+  "source_dataset_id": "data-pilot-v2",
+  "source_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+    "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+  },
+  "validation_sources": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/validation.jsonl",
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/validation.jsonl",
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "rows": 20
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "sha256": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "sha256": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl",
+      "sha256": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/validation.jsonl",
+      "sha256": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e",
+      "rows": 40
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/validation.jsonl",
+      "sha256": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138",
+      "rows": 40
+    }
+  ],
+  "reference": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/validation.jsonl",
+    "sha256": "32a6da46c188ee635384891d460bd58894f6dd7109abcc2eadce37b2a90328b6"
+  },
+  "rows": 300,
+  "scope": "Validation shard hashes/counts/splits and combined references checked; train content untouched. Cross-split deduplication remains Data-owned."
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-d3-seen-rules-v1-ordering-r2",
+  "source_job": "data-d3-seen-rules-v1-ordering-r2",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "seed": 731904,
+    "method": "Deterministic standard-library CPU choice-only r2; explicit rule misapplications; unchanged pure expected/stated audit",
+    "source_revision": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+    "assignment_revision": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+    "config_revision": {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/d3-seen-rules-v1.json",
+      "sha256": "c622b1d943f02d38dd66561dd63d663f6c4f4f314f5bef0d831bb2617cee3132"
+    },
+    "source_authoring_revision": "78c3a09b36e2ce2652b42a0e9464346753c2abd1ba238c00b6d413bc5f21a918",
+    "harness_sampling": {
+      "temperature": "unknown",
+      "top_p": "unknown",
+      "sampling_seed": "unknown",
+      "immutable_teacher_revision": "not exposed"
+    },
+    "choice_shuffle": "Existing target slots and ordered option IDs unchanged; wrong constructions ID-SHA256 shuffled within wrong slots only",
+    "hashes": {
+      "audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+      "audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+      "change_map.json": "c0cca09d959bdae90ef1b45df8f3fab47c741df89af9f2ce539f7c441fd2b623",
+      "distractor_constructions.json": "630424809403b1f9ceef8979ddcc5984862135990f2e1702139f0f6bde18d90a",
+      "generation_review.md": "3c73ef8396f881c96f530480eae367f159554e2d1bb53b02a5e67c56444fbad0",
+      "group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+      "parent_refs.json": "96b7146820d78da115e926809bf2eea2c2598d738ab04be077a3daf5d921c1a2",
+      "revise.py": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7",
+      "source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+      "validation.jsonl": "dad4cfb15b36898068413241e1589dd2a235cb77381a7b3537f39d4c7b289252",
+      "validation_report.json": "84a24580ee6b5c0a491583472fd49389cbd57afd3c7b3c47ed95edee21a11290"
+    },
+    "parent_generation_settings": {
+      "seed": 731904,
+      "method": "original agent-authored structured policies; deterministic Python rendering and programmatic arithmetic; same-agent separate-algorithm audit",
+      "source_revision": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+      "assignment_revision": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+      "config_revision": {
+        "path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/d3-seen-rules-v1.json",
+        "sha256": "c622b1d943f02d38dd66561dd63d663f6c4f4f314f5bef0d831bb2617cee3132"
+      },
+      "source_authoring_revision": "78c3a09b36e2ce2652b42a0e9464346753c2abd1ba238c00b6d413bc5f21a918",
+      "harness_sampling": {
+        "temperature": "unknown",
+        "top_p": "unknown",
+        "sampling_seed": "unknown",
+        "immutable_teacher_revision": "not exposed"
+      },
+      "choice_shuffle": "Seeded balanced target positions randomly assigned within arity; separate distractor and candidate-list shuffles. Ordered procedures and arrival ranks unchanged.",
+      "hashes": {
+        "validation.jsonl": "0c6302708f2c1a66da1123ec323c03a6fb2e31ca531d7b86b886082c1232da8e",
+        "source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+        "audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+        "group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+        "author_sources.py": "78c3a09b36e2ce2652b42a0e9464346753c2abd1ba238c00b6d413bc5f21a918",
+        "generator.py": "37b0d3c4f762ccf888d853a943d8ce6ac3c4f0498afcd7a9701ea1b166ca3e69",
+        "audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+        "validation_report.json": "76687cf7e67acedf2657403394415e19116a8c1027835a8f8e869541dfea5f99",
+        "generation_review.md": "1f81ffd5b0c4ed7d34f8d16536a98a47f37ef2cad33b5516d5ff68232ac5bd19",
+        "finalize_metadata.py": "fcc6ebec3ab6dbd276fbbcb360641098a2b224f0154967050062b28f4c8896dc"
+      }
+    },
+    "revision_script": "revise.py",
+    "revision_script_sha256": "956d3f97b90434451685f8b3e052a1758626d2df3824c822471d380bb41f0eb7"
+  },
+  "usage_constraints": {
+    "split": "validation",
+    "usage": "validation_only_never_train",
+    "permanently_training_excluded": true,
+    "derivatives_never_train": true,
+    "material": "Original synthetic content under existing provider terms; no private records; no additional redistribution licence asserted."
+  },
+  "row_counts": {
+    "validation": 48
+  },
+  "group_counts": {
+    "validation": 24
+  },
+  "mechanism_count": 4,
+  "policy_count": 24,
+  "mechanisms": [
+    "lexicographic",
+    "fifo",
+    "discount",
+    "rounding"
+  ],
+  "novelty": {
+    "stratum": "seen_mechanism_new_policy",
+    "intentional_training_mechanism_overlap": true,
+    "historical_rows_inspected": false,
+    "new_source_policy_groups": 24,
+    "empirical_historical_text_comparison": false
+  },
+  "verification": {
+    "kind": "same_author_expected_and_rendered_consistency",
+    "agreement_rows": 48,
+    "rendered_text_fact_matches": 48,
+    "failures": 0,
+    "independent_authorship": false,
+    "report": "validation_report.json",
+    "review": "generation_review.md",
+    "tokenizer_audit": "not performed; no model/tokenizer jobs"
+  },
+  "limitations": [
+    "Development diagnostic, not final evaluation.",
+    "Seen mechanisms intentionally overlap v2 train; policy instances and source cases newly authored.",
+    "Paired dependence: two cases share each authored policy.",
+    "Permanently validation-only; never train, including derivatives.",
+    "Same-agent audit and semantic review, not independent authorship or external validation.",
+    "Templates and author commonality may create residual shortcuts; no empirical comparison with historical rows.",
+    "Whitespace state length is not tokenizer length; parent owns 256-token audit.",
+    "Teacher is the exposed alias only; immutable revision and harness sampling settings unknown.",
+    "Revised after exposed choice-only weaknesses; not untouched validation.",
+    "Residual shortcut measurements descriptive, 12 cases per mechanism; no independence claim.",
+    "Pure copied audit helpers used; copied authoring main is parent-only and must not be run as r2 validator.",
+    "No independent verification of rendered text correctness."
+  ],
+  "revision_author": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "parent": {
+    "directory": "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/ordering",
+    "metadata_sha256": "1a30b55dfeddf420600b204f5c9640a5ba3eb60ea3e3e0cc1f59d19a89b27b84",
+    "validation_sha256": "0c6302708f2c1a66da1123ec323c03a6fb2e31ca531d7b86b886082c1232da8e",
+    "all_refs": "parent_refs.json"
+  },
+  "changed_field_scope": [
+    "options[].text where id != target_id (discount, rounding, fifo only)",
+    "provenance.source (all rows)",
+    "provenance.teacher_model equivalent object-to-string normalization (all rows)"
+  ],
+  "preserved_meanings": [
+    "all states/questions/policy and source facts",
+    "all IDs/group/split/arity/ordered option IDs",
+    "all correct target IDs, slots and exact texts",
+    "all named policy group assignments",
+    "expected(case) semantics and audit cases",
+    "validation_only_never_train"
+  ]
+}

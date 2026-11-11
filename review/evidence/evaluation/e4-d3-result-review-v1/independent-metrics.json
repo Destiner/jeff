@@ -1,0 +1,3580 @@
+{
+  "runs": {
+    "minilm_start": {
+      "overall": {
+        "agreement_valid": 0.28125,
+        "agreement_all": 0.28125,
+        "coverage": 1.0,
+        "log_loss": 1.3168596880207917,
+        "brier": 0.7297168837483841,
+        "ece": 0.0101362627007498
+      },
+      "correct": 27,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": false,
+          "confidence": 0.2516716904190917,
+          "log_loss": 1.3856761391953907,
+          "brier": 0.7496954966386407
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.2508253753185272,
+          "log_loss": 1.3841927654778539,
+          "brier": 0.7489501292336231
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": false,
+          "confidence": 0.2508955039217398,
+          "log_loss": 1.3899609640568624,
+          "brier": 0.751832232411116
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.25113983819753655,
+          "log_loss": 1.3849081286472456,
+          "brier": 0.7493098422287034
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": true,
+          "confidence": 0.3346445659014841,
+          "log_loss": 1.0946863077221622,
+          "brier": 0.6640472508956689
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": true,
+          "confidence": 0.33487357691307135,
+          "log_loss": 1.0940022007327503,
+          "brier": 0.6635904475808999
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": false,
+          "confidence": 0.2511489466175123,
+          "log_loss": 1.3863545934291603,
+          "brier": 0.7500326488877177
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.2510257661342621,
+          "log_loss": 1.3830629363805795,
+          "brier": 0.7483850825742859
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": false,
+          "confidence": 0.25099986417591774,
+          "log_loss": 1.3892592700801445,
+          "brier": 0.7514820961748958
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": true,
+          "confidence": 0.3349328140894417,
+          "log_loss": 1.0938253222277958,
+          "brier": 0.6634718636516159
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": false,
+          "confidence": 0.2508580163376932,
+          "log_loss": 1.3919361798678935,
+          "brier": 0.752816242830786
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": false,
+          "confidence": 0.25088487560243156,
+          "log_loss": 1.3923239885375196,
+          "brier": 0.7530094152568557
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": true,
+          "confidence": 0.33410855132017875,
+          "log_loss": 1.09628933485515,
+          "brier": 0.6651172458241975
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": true,
+          "confidence": 0.3341876069959285,
+          "log_loss": 1.0960527461058813,
+          "brier": 0.6649597737432349
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": false,
+          "confidence": 0.33510828018188477,
+          "log_loss": 1.0965809407964118,
+          "brier": 0.6653206842045805
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": false,
+          "confidence": 0.3348821003770202,
+          "log_loss": 1.0963900461813834,
+          "brier": 0.6651917185911856
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": false,
+          "confidence": 0.2527486459239914,
+          "log_loss": 1.3945290875155425,
+          "brier": 0.7541179143647778
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2540065754945147,
+          "log_loss": 1.394674698459127,
+          "brier": 0.7542024156254841
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": false,
+          "confidence": 0.33579444885253906,
+          "log_loss": 1.0990818450747173,
+          "brier": 0.6669910236997794
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.33563737060800963,
+          "log_loss": 1.1006650620453744,
+          "brier": 0.6680421803821692
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": false,
+          "confidence": 0.3346343438218338,
+          "log_loss": 1.0959945142921486,
+          "brier": 0.6649263830637967
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": false,
+          "confidence": 0.33458069963993725,
+          "log_loss": 1.0957413835363687,
+          "brier": 0.6647573194156474
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.251315716673668,
+          "log_loss": 1.3947446352807704,
+          "brier": 0.754214037830232
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": true,
+          "confidence": 0.2508841194344181,
+          "log_loss": 1.3827641220154145,
+          "brier": 0.7482375527923177
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": true,
+          "confidence": 0.2510801405358398,
+          "log_loss": 1.3819831058076169,
+          "brier": 0.7478418485398158
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": false,
+          "confidence": 0.25134282555154486,
+          "log_loss": 1.3885495702686506,
+          "brier": 0.751129372411272
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": true,
+          "confidence": 0.25109583139419556,
+          "log_loss": 1.3819206143335603,
+          "brier": 0.7478116765586496
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": false,
+          "confidence": 0.25096040964126587,
+          "log_loss": 1.3920825984446528,
+          "brier": 0.7528892432322767
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25049080698219517,
+          "log_loss": 1.3875295656298117,
+          "brier": 0.7506176524886634
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2510114945622011,
+          "log_loss": 1.386889317929514,
+          "brier": 0.7502988233059382
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": true,
+          "confidence": 0.2506419532287994,
+          "log_loss": 1.383729839403359,
+          "brier": 0.7487175101945465
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.2519755921963514,
+          "log_loss": 1.3883940065483524,
+          "brier": 0.7510539621016299
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": false,
+          "confidence": 0.2517540790402007,
+          "log_loss": 1.3901674964275668,
+          "brier": 0.7519378110113896
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": false,
+          "confidence": 0.2507052607519063,
+          "log_loss": 1.384881344072897,
+          "brier": 0.7492945332594592
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": false,
+          "confidence": 0.2509291060961117,
+          "log_loss": 1.38841912348698,
+          "brier": 0.7510625421572342
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": false,
+          "confidence": 0.25071416425917287,
+          "log_loss": 1.3861471037801227,
+          "brier": 0.7499273282414207
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": true,
+          "confidence": 0.2500925213043379,
+          "log_loss": 1.3859243443671818,
+          "brier": 0.7498150373568431
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": true,
+          "confidence": 0.25041382017217995,
+          "log_loss": 1.3846404488983266,
+          "brier": 0.7491731550021841
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.250148966917334,
+          "log_loss": 1.3866092424422802,
+          "brier": 0.7501574608392533
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": false,
+          "confidence": 0.250264067222481,
+          "log_loss": 1.385794328644233,
+          "brier": 0.7497501289463222
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": false,
+          "confidence": 0.25045180320739746,
+          "log_loss": 1.386335966027416,
+          "brier": 0.7500211060635613
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.2504793517505833,
+          "log_loss": 1.386824640328554,
+          "brier": 0.7502657986304517
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": true,
+          "confidence": 0.25026440620422363,
+          "log_loss": 1.3852372951940928,
+          "brier": 0.7494714164279106
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": false,
+          "confidence": 0.2503298260320697,
+          "log_loss": 1.385798677647453,
+          "brier": 0.7497524193825873
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": false,
+          "confidence": 0.2509137988090515,
+          "log_loss": 1.3867791835986312,
+          "brier": 0.7502435494202548
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": false,
+          "confidence": 0.25037550926208496,
+          "log_loss": 1.3867940920971256,
+          "brier": 0.7502500675772747
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.25038735566214587,
+          "log_loss": 1.3858006585585287,
+          "brier": 0.7497533935732061
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": false,
+          "confidence": 0.25014447793149236,
+          "log_loss": 1.3864286743033414,
+          "brier": 0.7500671985422179
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.2513384745721645,
+          "log_loss": 1.3849860905465896,
+          "brier": 0.7493509461154234
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": true,
+          "confidence": 0.25124913079665406,
+          "log_loss": 1.3813102791306404,
+          "brier": 0.7475067522033249
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": true,
+          "confidence": 0.2517086863517761,
+          "log_loss": 1.379482866702236,
+          "brier": 0.7465916969558659
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.251642815719759,
+          "log_loss": 1.380301020258621,
+          "brier": 0.7470044186378572
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.2525746263947282,
+          "log_loss": 1.3832575752743559,
+          "brier": 0.7484921892824575
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": false,
+          "confidence": 0.25276450043042,
+          "log_loss": 1.3942899871886876,
+          "brier": 0.7539975798272209
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": true,
+          "confidence": 0.2513570785522461,
+          "log_loss": 1.3808807271066346,
+          "brier": 0.7472927814970132
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.251395974329054,
+          "log_loss": 1.3864744876797392,
+          "brier": 0.7500976039123866
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": true,
+          "confidence": 0.2533799447622887,
+          "log_loss": 1.3728651588116922,
+          "brier": 0.7432629054609503
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": false,
+          "confidence": 0.25325237572555054,
+          "log_loss": 1.3848383712102532,
+          "brier": 0.7492927160667392
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.2529702597694215,
+          "log_loss": 1.3903192221091527,
+          "brier": 0.7520206529923832
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": true,
+          "confidence": 0.252802945757,
+          "log_loss": 1.3751449642575462,
+          "brier": 0.7444050948863365
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": true,
+          "confidence": 0.33404700952628225,
+          "log_loss": 1.0964735488247008,
+          "brier": 0.6652401016302089
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": false,
+          "confidence": 0.33377827204595373,
+          "log_loss": 1.099029131186311,
+          "brier": 0.6669448146847807
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": false,
+          "confidence": 0.3335877259496532,
+          "log_loss": 1.0994871607768932,
+          "brier": 0.6672498107423556
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": true,
+          "confidence": 0.33372700214385986,
+          "log_loss": 1.0974319790760318,
+          "brier": 0.6658795752367084
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": false,
+          "confidence": 0.333971222222709,
+          "log_loss": 1.0985303952419871,
+          "brier": 0.6666129189359766
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": false,
+          "confidence": 0.3335571189654732,
+          "log_loss": 1.0986054043555402,
+          "brier": 0.6666621783067832
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": false,
+          "confidence": 0.33465777842150796,
+          "log_loss": 1.09740950504571,
+          "brier": 0.6658692213312256
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.3347944419024718,
+          "log_loss": 1.1037423048211692,
+          "brier": 0.6700830238514824
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.3346496622159976,
+          "log_loss": 1.0948202575411525,
+          "brier": 0.6641438537403959
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": true,
+          "confidence": 0.3341805338859558,
+          "log_loss": 1.0960739114174523,
+          "brier": 0.6649755169784424
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": true,
+          "confidence": 0.33549232271359425,
+          "log_loss": 1.0921562059511671,
+          "brier": 0.6623560629592311
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": false,
+          "confidence": 0.33343228697776794,
+          "log_loss": 1.0986899565363228,
+          "brier": 0.6667184590353354
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": true,
+          "confidence": 0.25017819926939305,
+          "log_loss": 1.3855818179615005,
+          "brier": 0.7496436623519792
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": false,
+          "confidence": 0.2512418590300998,
+          "log_loss": 1.3844007423736393,
+          "brier": 0.7490558905714804
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": false,
+          "confidence": 0.2520549520237758,
+          "log_loss": 1.3874815854177012,
+          "brier": 0.7505993937789094
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": false,
+          "confidence": 0.2502845302308956,
+          "log_loss": 1.3854654551122654,
+          "brier": 0.7495856201219955
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": false,
+          "confidence": 0.2502309866146302,
+          "log_loss": 1.3875587636515647,
+          "brier": 0.750631976870014
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": false,
+          "confidence": 0.2502116747105863,
+          "log_loss": 1.3862663920327187,
+          "brier": 0.749986209788915
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": false,
+          "confidence": 0.2506074346692478,
+          "log_loss": 1.3863332092022789,
+          "brier": 0.7500200136612695
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": false,
+          "confidence": 0.250478599227646,
+          "log_loss": 1.386129612549906,
+          "brier": 0.7499182855209293
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": false,
+          "confidence": 0.25018497183092064,
+          "log_loss": 1.386641365039354,
+          "brier": 0.7501736125090068
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": true,
+          "confidence": 0.25208894520335307,
+          "log_loss": 1.3779732965892748,
+          "brier": 0.7458280413038891
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": true,
+          "confidence": 0.2501830272458357,
+          "log_loss": 1.3855625199976018,
+          "brier": 0.7496340800765042
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": false,
+          "confidence": 0.25046927850922357,
+          "log_loss": 1.3874131250521387,
+          "brier": 0.7505593878393509
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.25080177935367165,
+          "log_loss": 1.3848881739665153,
+          "brier": 0.7492991123557355
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": true,
+          "confidence": 0.2504766881465912,
+          "log_loss": 1.3843894240787413,
+          "brier": 0.7490473152928114
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.2504994347840379,
+          "log_loss": 1.3848198463189918,
+          "brier": 0.749262961614956
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.25109275801341596,
+          "log_loss": 1.3900549811410576,
+          "brier": 0.7518789110308625
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": false,
+          "confidence": 0.25066722925500695,
+          "log_loss": 1.3896864261548783,
+          "brier": 0.7516943405769684
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.2508515269071774,
+          "log_loss": 1.3880565149036173,
+          "brier": 0.7508829928224932
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.25116537892560503,
+          "log_loss": 1.3896202073081616,
+          "brier": 0.7516628848410739
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.252045992792338,
+          "log_loss": 1.389332535240339,
+          "brier": 0.7515224755220917
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.25087953735349494,
+          "log_loss": 1.385107815272724,
+          "brier": 0.7494093586891184
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": true,
+          "confidence": 0.25082095336224347,
+          "log_loss": 1.3830159276117033,
+          "brier": 0.7483614341466478
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.25272085886119516,
+          "log_loss": 1.3889287920701971,
+          "brier": 0.7513257585391976
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.2516131326075455,
+          "log_loss": 1.3798625591446427,
+          "brier": 0.7467822115812156
+        }
+      }
+    },
+    "minilm_trained": {
+      "overall": {
+        "agreement_valid": 0.3229166666666667,
+        "agreement_all": 0.3229166666666667,
+        "coverage": 1.0,
+        "log_loss": 1.3428235283463337,
+        "brier": 0.7431145660641721,
+        "ece": 0.026157783617935543
+      },
+      "correct": 31,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": true,
+          "confidence": 0.3437365838328513,
+          "log_loss": 1.0678796596128886,
+          "brier": 0.5770714936722732
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.44824729346123515,
+          "log_loss": 1.712765251189235,
+          "brier": 0.9428347668267569
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": true,
+          "confidence": 0.35655396114128945,
+          "log_loss": 1.031269686931927,
+          "brier": 0.5557819798547784
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.4096359847540262,
+          "log_loss": 1.2798217437227912,
+          "brier": 0.7377365138309366
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": false,
+          "confidence": 0.37838567028131065,
+          "log_loss": 1.3230363040184292,
+          "brier": 0.8076842965210351
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": false,
+          "confidence": 0.3725295960903168,
+          "log_loss": 1.243352436089082,
+          "brier": 0.7600886077985738
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": true,
+          "confidence": 0.29327407042273773,
+          "log_loss": 1.2266477132390974,
+          "brier": 0.6680528705681164
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.3227020502090454,
+          "log_loss": 1.6329417541509221,
+          "brier": 0.8753101502614822
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": true,
+          "confidence": 0.4122505012825281,
+          "log_loss": 0.886124101575847,
+          "brier": 0.46252065815333043
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": false,
+          "confidence": 0.49693925687851737,
+          "log_loss": 1.322746825902904,
+          "brier": 0.8411209738285877
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": true,
+          "confidence": 0.2992752701260069,
+          "log_loss": 1.2063914932438013,
+          "brier": 0.6569770738567053
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": true,
+          "confidence": 0.2984316647052765,
+          "log_loss": 1.2092143013182626,
+          "brier": 0.6610117913876099
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": false,
+          "confidence": 0.35689296254834646,
+          "log_loss": 1.2183453350613995,
+          "brier": 0.7440625975280654
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": false,
+          "confidence": 0.36574396780824375,
+          "log_loss": 1.0971741094623582,
+          "brier": 0.6678396467202337
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": false,
+          "confidence": 0.39283707099181836,
+          "log_loss": 1.2118454990389258,
+          "brier": 0.7434198719768094
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": false,
+          "confidence": 0.37951358021755277,
+          "log_loss": 1.2919502511552892,
+          "brier": 0.7895850807445436
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": false,
+          "confidence": 0.274662907799141,
+          "log_loss": 1.4104620541966169,
+          "brier": 0.7628730878138843
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": true,
+          "confidence": 0.27548427621204896,
+          "log_loss": 1.2892247256584057,
+          "brier": 0.6998985653965095
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": false,
+          "confidence": 0.3573639988899231,
+          "log_loss": 1.0376297103676653,
+          "brier": 0.6277873740270863
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.35484031900287627,
+          "log_loss": 1.1421098163328,
+          "brier": 0.69576080814286
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": false,
+          "confidence": 0.401568740606308,
+          "log_loss": 1.3072652625368026,
+          "brier": 0.8008419431773834
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": true,
+          "confidence": 0.3416730063655076,
+          "log_loss": 1.0739011210337641,
+          "brier": 0.650221939133347
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.2820850992824167,
+          "log_loss": 1.4114401014732587,
+          "brier": 0.7660491343368555
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": true,
+          "confidence": 0.2784235858447428,
+          "log_loss": 1.2786116348404377,
+          "brier": 0.6957497916476107
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": false,
+          "confidence": 0.2781046877596993,
+          "log_loss": 1.31922856551577,
+          "brier": 0.7175144210844989
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": false,
+          "confidence": 0.2786363876272324,
+          "log_loss": 1.4208753867930417,
+          "brier": 0.7684825852653496
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": false,
+          "confidence": 0.2950325608253479,
+          "log_loss": 1.6765695749374747,
+          "brier": 0.8842709153777544
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": true,
+          "confidence": 0.2973474739401027,
+          "log_loss": 1.2128538781065719,
+          "brier": 0.6630408951224653
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": false,
+          "confidence": 0.26621238790676666,
+          "log_loss": 1.3536283063410603,
+          "brier": 0.734833840552423
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2635014771000211,
+          "log_loss": 1.3720735129726838,
+          "brier": 0.7434001638287586
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": false,
+          "confidence": 0.27035741226482746,
+          "log_loss": 1.4230339362540971,
+          "brier": 0.7686918137633113
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.27303109386655966,
+          "log_loss": 1.3671653651937365,
+          "brier": 0.7420377596483
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": false,
+          "confidence": 0.28831433820256086,
+          "log_loss": 1.3355723228227436,
+          "brier": 0.7281890100260069
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": false,
+          "confidence": 0.32038081647100497,
+          "log_loss": 1.4163133920878583,
+          "brier": 0.7731487194074282
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": true,
+          "confidence": 0.2659030377523469,
+          "log_loss": 1.3246235563819226,
+          "brier": 0.7199491788310796
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": true,
+          "confidence": 0.28651192784309387,
+          "log_loss": 1.2499751107337824,
+          "brier": 0.6817133063897121
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": false,
+          "confidence": 0.44547516107559204,
+          "log_loss": 1.6516329891012596,
+          "brier": 0.9175468640789486
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": true,
+          "confidence": 0.45583993196487427,
+          "log_loss": 0.7856135574847564,
+          "brier": 0.39606540738185414
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.3507296055990222,
+          "log_loss": 1.629131491521555,
+          "brier": 0.871950049459899
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": false,
+          "confidence": 0.4039306345530327,
+          "log_loss": 1.6188822317483607,
+          "brier": 0.886056488446591
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": false,
+          "confidence": 0.35058220852778915,
+          "log_loss": 1.5877778163631586,
+          "brier": 0.8549514270821177
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.41930940891127355,
+          "log_loss": 1.8214424773904074,
+          "brier": 0.9692547711791654
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": false,
+          "confidence": 0.5247979681968992,
+          "log_loss": 1.8807502516783012,
+          "brier": 1.0458233793621499
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": false,
+          "confidence": 0.42257041200575757,
+          "log_loss": 1.770233348646132,
+          "brier": 0.949867205301571
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": false,
+          "confidence": 0.38586674185197345,
+          "log_loss": 1.6057944733080265,
+          "brier": 0.8732695485661872
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": false,
+          "confidence": 0.3698148296690656,
+          "log_loss": 1.5646376290200745,
+          "brier": 0.8508715119934416
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.3894940432755364,
+          "log_loss": 1.5730208460566601,
+          "brier": 0.8620235437614031
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": false,
+          "confidence": 0.36862629102727335,
+          "log_loss": 1.6844378703307332,
+          "brier": 0.8995217870347881
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.29037916227610167,
+          "log_loss": 1.5159497240461024,
+          "brier": 0.8134275602018929
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": true,
+          "confidence": 0.27397919517693503,
+          "log_loss": 1.294703105488082,
+          "brier": 0.7041038033880246
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": true,
+          "confidence": 0.26932279650433083,
+          "log_loss": 1.3118446317842933,
+          "brier": 0.7119862734750855
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.26920047402381897,
+          "log_loss": 1.3770444329591145,
+          "brier": 0.7459597060384247
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.2936051233650017,
+          "log_loss": 1.3783575007201363,
+          "brier": 0.7491295892133165
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": false,
+          "confidence": 0.3028012306332955,
+          "log_loss": 1.4852013531550905,
+          "brier": 0.805947423154483
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": true,
+          "confidence": 0.2655687371726146,
+          "log_loss": 1.3258815747362125,
+          "brier": 0.7204031295034119
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.2841368317604065,
+          "log_loss": 1.5216436096597197,
+          "brier": 0.8154645654636048
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": true,
+          "confidence": 0.2834908154986191,
+          "log_loss": 1.2605755531693867,
+          "brier": 0.6873525676218943
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": false,
+          "confidence": 0.272513623945212,
+          "log_loss": 1.5259897273240697,
+          "brier": 0.8169334287661563
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.26461740539618117,
+          "log_loss": 1.4655951172905837,
+          "brier": 0.7887106412082172
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": true,
+          "confidence": 0.2698732098899248,
+          "log_loss": 1.3098030232773639,
+          "brier": 0.7111563483131267
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": false,
+          "confidence": 0.34549334536552323,
+          "log_loss": 1.1296531161997796,
+          "brier": 0.687298221715765
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": true,
+          "confidence": 0.4057724411094986,
+          "log_loss": 0.9019627663916555,
+          "brier": 0.5296596536723366
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": true,
+          "confidence": 0.4019524931325765,
+          "log_loss": 0.9114213736336066,
+          "brier": 0.5369366077917552
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": true,
+          "confidence": 0.35797022926629957,
+          "log_loss": 1.027305454513318,
+          "brier": 0.6186650684728534
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": false,
+          "confidence": 0.3832010157465481,
+          "log_loss": 0.9861169125678774,
+          "brier": 0.5993710206411931
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": true,
+          "confidence": 0.3634602129459381,
+          "log_loss": 1.0120854434437092,
+          "brier": 0.6078313716632362
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": true,
+          "confidence": 0.4569140374660492,
+          "log_loss": 0.783260007606137,
+          "brier": 0.44335691906359465
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.4105354845523834,
+          "log_loss": 1.3386128218579665,
+          "brier": 0.8199708025671786
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.4070330262184143,
+          "log_loss": 0.8998275356131841,
+          "brier": 0.5524700511201157
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": true,
+          "confidence": 0.5562297536066247,
+          "log_loss": 0.586573844174673,
+          "brier": 0.3002667055152701
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": false,
+          "confidence": 0.43673020601272583,
+          "log_loss": 1.3846259891080366,
+          "brier": 0.8504838800950179
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": false,
+          "confidence": 0.34660253843053945,
+          "log_loss": 1.0795441690765053,
+          "brier": 0.654437412894645
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": true,
+          "confidence": 0.3359993548392961,
+          "log_loss": 1.0906460391419188,
+          "brier": 0.607278119348255
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": true,
+          "confidence": 0.4588283266214406,
+          "log_loss": 0.7790791549583421,
+          "brier": 0.4099371831802914
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": false,
+          "confidence": 0.3883545870343411,
+          "log_loss": 1.304371447809386,
+          "brier": 0.7397922110607374
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": false,
+          "confidence": 0.31846432928847285,
+          "log_loss": 1.8508159049640867,
+          "brier": 0.949468695014168
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": false,
+          "confidence": 0.35185743426851734,
+          "log_loss": 1.5231868693502637,
+          "brier": 0.8315539808360853
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": false,
+          "confidence": 0.3450010418891907,
+          "log_loss": 1.7364783709646812,
+          "brier": 0.913744108714448
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": true,
+          "confidence": 0.34248619843171524,
+          "log_loss": 1.0715239186415213,
+          "brier": 0.5845461221353684
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": false,
+          "confidence": 0.3656133144152148,
+          "log_loss": 1.4102751154854998,
+          "brier": 0.7836667164703452
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": true,
+          "confidence": 0.2795455968515397,
+          "log_loss": 1.2745898624776006,
+          "brier": 0.6927942667725776
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": false,
+          "confidence": 0.29406945582913807,
+          "log_loss": 1.4942430165096743,
+          "brier": 0.8039954133447655
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": false,
+          "confidence": 0.34133689141289403,
+          "log_loss": 1.6307629994216513,
+          "brier": 0.8708989299866677
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": true,
+          "confidence": 0.28046739937267895,
+          "log_loss": 1.2712977840441404,
+          "brier": 0.6903389873734255
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.37035089179350594,
+          "log_loss": 1.9918194880312274,
+          "brier": 1.0072224958156282
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": true,
+          "confidence": 0.3529174468107173,
+          "log_loss": 1.0415211111247713,
+          "brier": 0.5627058145808441
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.46402129316456875,
+          "log_loss": 2.090390857692516,
+          "brier": 1.070886563074145
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.36451087488266454,
+          "log_loss": 1.4720849703071273,
+          "brier": 0.8172607341059118
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": false,
+          "confidence": 0.30906989249378763,
+          "log_loss": 1.4241451884607694,
+          "brier": 0.7777001048137528
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.31942434546758286,
+          "log_loss": 1.357820008440681,
+          "brier": 0.7434316033419415
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.38991950705287637,
+          "log_loss": 1.5642488679840483,
+          "brier": 0.8589058996303084
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.29337308247943344,
+          "log_loss": 1.3536128866655661,
+          "brier": 0.7400374080792596
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.34810396510207703,
+          "log_loss": 1.2814364776514495,
+          "brier": 0.7184492300739991
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": false,
+          "confidence": 0.3708279077585353,
+          "log_loss": 1.982531221786398,
+          "brier": 1.005192545098135
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.4492531582935703,
+          "log_loss": 1.6332319102067347,
+          "brier": 0.9125773087909455
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.40254528530076994,
+          "log_loss": 0.9099476783882768,
+          "brier": 0.48253553880734174
+        }
+      }
+    },
+    "msmarco_start": {
+      "overall": {
+        "agreement_valid": 0.3125,
+        "agreement_all": 0.3125,
+        "coverage": 1.0,
+        "log_loss": 1.347340246736404,
+        "brier": 0.7487295618884601,
+        "ece": 0.052032901271562154
+      },
+      "correct": 30,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": false,
+          "confidence": 0.2629318456968115,
+          "log_loss": 1.3634678586243245,
+          "brier": 0.738837281891474
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.2657878319684317,
+          "log_loss": 1.4413698858611288,
+          "brier": 0.7773104541698387
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": true,
+          "confidence": 0.27134081721305847,
+          "log_loss": 1.3043796201617703,
+          "brier": 0.7084138245951839
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.2758664694328956,
+          "log_loss": 1.368590794438309,
+          "brier": 0.7422477884399983
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": true,
+          "confidence": 0.3975929201366627,
+          "log_loss": 0.9223266108555829,
+          "brier": 0.545298947961355
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": false,
+          "confidence": 0.35034486651420593,
+          "log_loss": 1.0599843382498213,
+          "brier": 0.6417809801036025
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": false,
+          "confidence": 0.2596592980521708,
+          "log_loss": 1.366567692312047,
+          "brier": 0.7404263078429999
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.2549071832028871,
+          "log_loss": 1.4206663626499922,
+          "brier": 0.7670050934300761
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": false,
+          "confidence": 0.27660569960781484,
+          "log_loss": 1.3564635106616956,
+          "brier": 0.7384419615099622
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": true,
+          "confidence": 0.35860394588732397,
+          "log_loss": 1.025536714281783,
+          "brier": 0.6191217598233715
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": true,
+          "confidence": 0.2589958464500813,
+          "log_loss": 1.3509432542834643,
+          "brier": 0.7321658125011967
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": true,
+          "confidence": 0.26165247604377784,
+          "log_loss": 1.340738083018259,
+          "brier": 0.727332926719253
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": true,
+          "confidence": 0.3599315774461157,
+          "log_loss": 1.0218413282458543,
+          "brier": 0.6161987176706787
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": true,
+          "confidence": 0.3548743830583806,
+          "log_loss": 1.035991402666369,
+          "brier": 0.6244117946936992
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": true,
+          "confidence": 0.35421163030370745,
+          "log_loss": 1.0378607187582805,
+          "brier": 0.6255684865587392
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": false,
+          "confidence": 0.34774879657473556,
+          "log_loss": 1.1348442785535222,
+          "brier": 0.6907439953181813
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": true,
+          "confidence": 0.25992564916167554,
+          "log_loss": 1.3473596536251151,
+          "brier": 0.730300207633314
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2807173556410084,
+          "log_loss": 1.3837897688008394,
+          "brier": 0.7524513656962006
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": false,
+          "confidence": 0.36104475375876566,
+          "log_loss": 1.0594165444407502,
+          "brier": 0.6426467427630507
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.3462546559420433,
+          "log_loss": 1.0645719005991503,
+          "brier": 0.6444810469509058
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": true,
+          "confidence": 0.334427813721532,
+          "log_loss": 1.095334226225858,
+          "brier": 0.6644817526139599
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": false,
+          "confidence": 0.33535523221955393,
+          "log_loss": 1.0941308372479084,
+          "brier": 0.663691041338786
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.2880854139366186,
+          "log_loss": 1.5362769092509725,
+          "brier": 0.8223146011869302
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": true,
+          "confidence": 0.2777085776161293,
+          "log_loss": 1.2811829970796855,
+          "brier": 0.6962049249455924
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": false,
+          "confidence": 0.2755485639303067,
+          "log_loss": 1.3160070988418777,
+          "brier": 0.717961341605862
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": true,
+          "confidence": 0.2594089210033417,
+          "log_loss": 1.3493496167761834,
+          "brier": 0.7314088816416575
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": false,
+          "confidence": 0.2714417834365102,
+          "log_loss": 1.4400983052578378,
+          "brier": 0.7768592043813438
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": false,
+          "confidence": 0.2677568237149242,
+          "log_loss": 1.406209574220204,
+          "brier": 0.7603060458404068
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25272865577169323,
+          "log_loss": 1.3884422544622432,
+          "brier": 0.7510911627829501
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2542435190939379,
+          "log_loss": 1.4004003717368405,
+          "brier": 0.7570401677850352
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": false,
+          "confidence": 0.2732401355052075,
+          "log_loss": 1.3831730333356091,
+          "brier": 0.7497192788727969
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.27354468264909493,
+          "log_loss": 1.4311751090155962,
+          "brier": 0.7727452968582019
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": false,
+          "confidence": 0.2539666332895552,
+          "log_loss": 1.3788122220100867,
+          "brier": 0.7462870044781312
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": true,
+          "confidence": 0.25346249719653274,
+          "log_loss": 1.3725394069482335,
+          "brier": 0.7431085834196656
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": false,
+          "confidence": 0.2603244742702771,
+          "log_loss": 1.359172637297943,
+          "brier": 0.7365558432988579
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": false,
+          "confidence": 0.26247525606267536,
+          "log_loss": 1.3611981549774974,
+          "brier": 0.7378587689037518
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": false,
+          "confidence": 0.30079066305174434,
+          "log_loss": 1.492073165330851,
+          "brier": 0.8038353130786985
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": false,
+          "confidence": 0.25510647512813694,
+          "log_loss": 1.3694251078860817,
+          "brier": 0.7416471348558513
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.2865139586704069,
+          "log_loss": 1.4452471224083334,
+          "brier": 0.7804328788632174
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": false,
+          "confidence": 0.27607867533085756,
+          "log_loss": 1.4226132040741375,
+          "brier": 0.7687554062972634
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": false,
+          "confidence": 0.3382635616221167,
+          "log_loss": 1.526039483204753,
+          "brier": 0.8256155694652391
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.3028561861174162,
+          "log_loss": 1.4411640934516627,
+          "brier": 0.7804618504832538
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": false,
+          "confidence": 0.25290948152542114,
+          "log_loss": 1.398306881498435,
+          "brier": 0.7560040839652893
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": false,
+          "confidence": 0.2767291573233275,
+          "log_loss": 1.3311577777810666,
+          "brier": 0.7269030252965158
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": false,
+          "confidence": 0.2741711086783804,
+          "log_loss": 1.4557503743072655,
+          "brier": 0.7846370290086102
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": true,
+          "confidence": 0.2586286962032318,
+          "log_loss": 1.3523618512709221,
+          "brier": 0.7330650910077008
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.2862196351951252,
+          "log_loss": 1.448179375816374,
+          "brier": 0.781777891094661
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": true,
+          "confidence": 0.26795113485978744,
+          "log_loss": 1.3169506477086255,
+          "brier": 0.7176027239955041
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.26445727358204396,
+          "log_loss": 1.3638652821931523,
+          "brier": 0.739778299892695
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": true,
+          "confidence": 0.26431601228684276,
+          "log_loss": 1.330609875450516,
+          "brier": 0.7222469859692094
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": true,
+          "confidence": 0.30807278245145214,
+          "log_loss": 1.1774192172640248,
+          "brier": 0.638375460880861
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.31851365687677774,
+          "log_loss": 1.4705860643132294,
+          "brier": 0.7966876907379699
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.3117422070580063,
+          "log_loss": 1.5266025474180247,
+          "brier": 0.8211871357961928
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": true,
+          "confidence": 0.2824507054262599,
+          "log_loss": 1.264251237687839,
+          "brier": 0.6886821367580302
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": false,
+          "confidence": 0.2941055508224502,
+          "log_loss": 1.4074828048759056,
+          "brier": 0.7632505349238561
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.26472939857560107,
+          "log_loss": 1.3880347656734429,
+          "brier": 0.7512028133830218
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": false,
+          "confidence": 0.27642981962428304,
+          "log_loss": 1.417458272901188,
+          "brier": 0.766382628750168
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": true,
+          "confidence": 0.2724810161447222,
+          "log_loss": 1.3001863328295489,
+          "brier": 0.7060621217393325
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.3202050876586871,
+          "log_loss": 1.5327602294212297,
+          "brier": 0.8253971178404447
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": true,
+          "confidence": 0.3063583167302107,
+          "log_loss": 1.1829998923734824,
+          "brier": 0.6420585310595791
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": false,
+          "confidence": 0.3371271688602218,
+          "log_loss": 1.100718071333682,
+          "brier": 0.6680934940236103
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": false,
+          "confidence": 0.33889520168304443,
+          "log_loss": 1.0980269933635225,
+          "brier": 0.6663404713737666
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": false,
+          "confidence": 0.3389485680430274,
+          "log_loss": 1.1202055839597704,
+          "brier": 0.680992386179746
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": true,
+          "confidence": 0.3343869745731354,
+          "log_loss": 1.0954563501655858,
+          "brier": 0.6645630478855384
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": true,
+          "confidence": 0.3355140686035156,
+          "log_loss": 1.0920913902051166,
+          "brier": 0.6623223175465984
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": false,
+          "confidence": 0.33578828977907565,
+          "log_loss": 1.095957864766785,
+          "brier": 0.6649126736537806
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": false,
+          "confidence": 0.3358050584793091,
+          "log_loss": 1.09910948518492,
+          "brier": 0.6670095032956826
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.34336163570399175,
+          "log_loss": 1.1168493172873915,
+          "brier": 0.678867383063706
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.33562078071770723,
+          "log_loss": 1.1121438887793849,
+          "brier": 0.6756570851909434
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": false,
+          "confidence": 0.34223195910453796,
+          "log_loss": 1.1429748419661414,
+          "brier": 0.6959146629010124
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": false,
+          "confidence": 0.3622787892818451,
+          "log_loss": 1.1826167151583107,
+          "brier": 0.7219454053002092
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": false,
+          "confidence": 0.33805209398269653,
+          "log_loss": 1.119906123711954,
+          "brier": 0.6807893783612524
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": true,
+          "confidence": 0.3165086351264403,
+          "log_loss": 1.1504047545901792,
+          "brier": 0.6301083949862
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": true,
+          "confidence": 0.35562421281825546,
+          "log_loss": 1.0338806876203206,
+          "brier": 0.5571398581433175
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": false,
+          "confidence": 0.2904973030090332,
+          "log_loss": 1.4666898166518278,
+          "brier": 0.7909333198994353
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": true,
+          "confidence": 0.25441641373683255,
+          "log_loss": 1.368782930191669,
+          "brier": 0.7413006493310073
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": true,
+          "confidence": 0.30320513248443604,
+          "log_loss": 1.1933456976380765,
+          "brier": 0.6490894446692903
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": false,
+          "confidence": 0.2541235089302063,
+          "log_loss": 1.3751810683049133,
+          "brier": 0.7445201817174425
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": false,
+          "confidence": 0.3275077987835973,
+          "log_loss": 1.456064270233627,
+          "brier": 0.7918963600206695
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": false,
+          "confidence": 0.26535671949386597,
+          "log_loss": 1.4237061082973816,
+          "brier": 0.7687163133239259
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": true,
+          "confidence": 0.26627429923006446,
+          "log_loss": 1.3232283014090156,
+          "brier": 0.7181257209184195
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": false,
+          "confidence": 0.2750028833748629,
+          "log_loss": 1.6743598245499993,
+          "brier": 0.8804116497535562
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": false,
+          "confidence": 0.2814296567866104,
+          "log_loss": 1.4468517586052019,
+          "brier": 0.7810396102758191
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": true,
+          "confidence": 0.25960148426879315,
+          "log_loss": 1.3486075766462313,
+          "brier": 0.7310713249786757
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.35987784087111835,
+          "log_loss": 1.6139743548575072,
+          "brier": 0.8685679228150301
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": false,
+          "confidence": 0.2915388178023167,
+          "log_loss": 1.4007511125950856,
+          "brier": 0.7601182164445914
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.6962491222005402,
+          "log_loss": 2.3055406237773615,
+          "brier": 1.3167526607521691
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.5955848319673848,
+          "log_loss": 2.006648619434044,
+          "brier": 1.1406004007157184
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": true,
+          "confidence": 0.26134193333002825,
+          "log_loss": 1.3419256396906818,
+          "brier": 0.7275610232936799
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.271796315908432,
+          "log_loss": 1.3482355036693552,
+          "brier": 0.7317670256128745
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.7566866560536122,
+          "log_loss": 2.4354155901325383,
+          "brier": 1.4175766419298081
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.492488965615959,
+          "log_loss": 1.6179469008239238,
+          "brier": 0.9337127763541287
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.36781965350298523,
+          "log_loss": 1.2330770039409895,
+          "brier": 0.7027976271457318
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": false,
+          "confidence": 0.3699733454724157,
+          "log_loss": 2.2220969850662438,
+          "brier": 1.0685753595439478
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.7399276395093557,
+          "log_loss": 2.270110933572652,
+          "brier": 1.3640791457019208
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.5769253969192505,
+          "log_loss": 0.5500423156006566,
+          "brier": 0.2392996528187834
+        }
+      }
+    },
+    "msmarco_trained": {
+      "overall": {
+        "agreement_valid": 0.2708333333333333,
+        "agreement_all": 0.2708333333333333,
+        "coverage": 1.0,
+        "log_loss": 1.3552017711379147,
+        "brier": 0.752642004045784,
+        "ece": 0.06381823368344533
+      },
+      "correct": 26,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": true,
+          "confidence": 0.266083691508825,
+          "log_loss": 1.323944389953568,
+          "brier": 0.719456295882084
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.2548787631821448,
+          "log_loss": 1.4038673076526185,
+          "brier": 0.7587532415638694
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": true,
+          "confidence": 0.26742595832684574,
+          "log_loss": 1.3189125422613694,
+          "brier": 0.7165631145643256
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.2538169806979456,
+          "log_loss": 1.3975576692804486,
+          "brier": 0.7556241861159669
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": true,
+          "confidence": 0.3486318186333234,
+          "log_loss": 1.0537388745787146,
+          "brier": 0.6364923832456229
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": false,
+          "confidence": 0.3379463952167748,
+          "log_loss": 1.0861497206679505,
+          "brier": 0.6584223758199591
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": true,
+          "confidence": 0.2616653857379579,
+          "log_loss": 1.340688745148771,
+          "brier": 0.727319365969629
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.2573675253595043,
+          "log_loss": 1.4098205223015141,
+          "brier": 0.7617152087390329
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": false,
+          "confidence": 0.2623934565064366,
+          "log_loss": 1.3442721375593998,
+          "brier": 0.7298992871867308
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": false,
+          "confidence": 0.35264647885283956,
+          "log_loss": 1.0579566597711287,
+          "brier": 0.6406672515068732
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": false,
+          "confidence": 0.2547977940677939,
+          "log_loss": 1.3811338670711701,
+          "brier": 0.7475551070410191
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": false,
+          "confidence": 0.2597438395023346,
+          "log_loss": 1.3820903540612426,
+          "brier": 0.7482634753683204
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": false,
+          "confidence": 0.336203396320343,
+          "log_loss": 1.1019327074815328,
+          "brier": 0.6688891819852714
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": false,
+          "confidence": 0.34375637769699097,
+          "log_loss": 1.1113382553823878,
+          "brier": 0.6752618347867649
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": false,
+          "confidence": 0.3389778137207031,
+          "log_loss": 1.0882655274221686,
+          "brier": 0.659859912198165
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": false,
+          "confidence": 0.33944520354270935,
+          "log_loss": 1.1266358985108709,
+          "brier": 0.6852215423830952
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": true,
+          "confidence": 0.25705587097835925,
+          "log_loss": 1.3584618209112236,
+          "brier": 0.7360309921152335
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": true,
+          "confidence": 0.26414867448363677,
+          "log_loss": 1.3312431734285564,
+          "brier": 0.7221165558528884
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": true,
+          "confidence": 0.33396307629236804,
+          "log_loss": 1.096724842139391,
+          "brier": 0.6654091176153821
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.3426798479950473,
+          "log_loss": 1.10842711367245,
+          "brier": 0.6733129333452202
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": false,
+          "confidence": 0.3416936993598938,
+          "log_loss": 1.1375593561946344,
+          "brier": 0.6923833923272564
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": false,
+          "confidence": 0.3358573317527771,
+          "log_loss": 1.1018030034335173,
+          "brier": 0.6688000558465816
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.281410319272145,
+          "log_loss": 1.4919795579147916,
+          "brier": 0.8018031183709778
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": false,
+          "confidence": 0.2761547986934244,
+          "log_loss": 1.3696498922778118,
+          "brier": 0.743230069792704
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": true,
+          "confidence": 0.2521294057369232,
+          "log_loss": 1.377812808445273,
+          "brier": 0.7457553769437801
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": false,
+          "confidence": 0.2534255796712151,
+          "log_loss": 1.3816458422507678,
+          "brier": 0.7476940454009791
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": false,
+          "confidence": 0.25178565449480766,
+          "log_loss": 1.4062023374214094,
+          "brier": 0.7598880055525835
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": true,
+          "confidence": 0.25480021564961763,
+          "log_loss": 1.367275508935909,
+          "brier": 0.7404576928126512
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": true,
+          "confidence": 0.2529243676111479,
+          "log_loss": 1.3746647771951852,
+          "brier": 0.744179756937742
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": false,
+          "confidence": 0.2533402740955353,
+          "log_loss": 1.389488902780936,
+          "brier": 0.7516140423200959
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": false,
+          "confidence": 0.2531480864628579,
+          "log_loss": 1.3834600975802924,
+          "brier": 0.7486073938050657
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.2524885052064883,
+          "log_loss": 1.4027377347428316,
+          "brier": 0.7581786602249505
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": false,
+          "confidence": 0.2523495369709821,
+          "log_loss": 1.3803280819250314,
+          "brier": 0.7470278530396397
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": false,
+          "confidence": 0.2615711118132206,
+          "log_loss": 1.3853400546136432,
+          "brier": 0.7497367094844284
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": false,
+          "confidence": 0.25418821355980953,
+          "log_loss": 1.383287287672605,
+          "brier": 0.7485271635098122
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": false,
+          "confidence": 0.2526872233357198,
+          "log_loss": 1.381664367726986,
+          "brier": 0.7477025458283479
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": false,
+          "confidence": 0.4616003953456643,
+          "log_loss": 1.71452968370008,
+          "brier": 0.9496042075226047
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": true,
+          "confidence": 0.3339382608551305,
+          "log_loss": 1.0967991508310158,
+          "brier": 0.5915986648500718
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.4406870042868254,
+          "log_loss": 1.687112392440617,
+          "brier": 0.9283822985714361
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": false,
+          "confidence": 0.38409075140953064,
+          "log_loss": 1.580533672263521,
+          "brier": 0.8622462199980716
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": false,
+          "confidence": 0.4882814062875719,
+          "log_loss": 1.7742960524430906,
+          "brier": 0.9865006118474371
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.40829077424785304,
+          "log_loss": 1.6242569910714937,
+          "brier": 0.889292072433708
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": false,
+          "confidence": 0.5250248078245755,
+          "log_loss": 1.8439880785224292,
+          "brier": 1.0344841075333528
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": false,
+          "confidence": 0.43022231740420724,
+          "log_loss": 1.6659576973667676,
+          "brier": 0.915292036318014
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": false,
+          "confidence": 0.4009551643471273,
+          "log_loss": 1.6126728912343886,
+          "brier": 0.8816761335654637
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": false,
+          "confidence": 0.35995012283771133,
+          "log_loss": 1.5370933434421459,
+          "brier": 0.8361130324213017
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.4141786407067359,
+          "log_loss": 1.6323714374704335,
+          "brier": 0.8950156030414005
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": false,
+          "confidence": 0.3531039409801951,
+          "log_loss": 1.5312424519539893,
+          "brier": 0.8316431502752959
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.25614700866402723,
+          "log_loss": 1.4128503197535929,
+          "brier": 0.7632311387740022
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": false,
+          "confidence": 0.25995189338850816,
+          "log_loss": 1.4162251488390947,
+          "brier": 0.7649010344956074
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": true,
+          "confidence": 0.2674065311970273,
+          "log_loss": 1.3189851897919795,
+          "brier": 0.7156341878173584
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.27072522447593844,
+          "log_loss": 1.4097192893740726,
+          "brier": 0.7621542106684808
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.25879364820132184,
+          "log_loss": 1.3828379226294398,
+          "brier": 0.7483935213501719
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": false,
+          "confidence": 0.271716638105116,
+          "log_loss": 1.3988245425815373,
+          "brier": 0.7570643912458301
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": false,
+          "confidence": 0.2578862790218169,
+          "log_loss": 1.3709545582109823,
+          "brier": 0.742571953922551
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.26305101497699385,
+          "log_loss": 1.3822041579464996,
+          "brier": 0.748257587959511
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": false,
+          "confidence": 0.31054305104783025,
+          "log_loss": 1.4851337054512317,
+          "brier": 0.8024324209658835
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": true,
+          "confidence": 0.3132400466018908,
+          "log_loss": 1.1607854603256569,
+          "brier": 0.629388927790115
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.26427717198180434,
+          "log_loss": 1.4099223459731398,
+          "brier": 0.7620215845048383
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": false,
+          "confidence": 0.26617130240542736,
+          "log_loss": 1.388266670458009,
+          "brier": 0.7513704987581292
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": true,
+          "confidence": 0.33679197242236053,
+          "log_loss": 1.0882898317484935,
+          "brier": 0.6597674642160372
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": true,
+          "confidence": 0.33749696612358093,
+          "log_loss": 1.08619875797342,
+          "brier": 0.6584165246613285
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": true,
+          "confidence": 0.335294594308895,
+          "log_loss": 1.092745747593702,
+          "brier": 0.6627500764558298
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": true,
+          "confidence": 0.34293801614457414,
+          "log_loss": 1.0702055590951514,
+          "brier": 0.6475968797632564
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": true,
+          "confidence": 0.3439372181892395,
+          "log_loss": 1.0672961435286896,
+          "brier": 0.6457935763465041
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": false,
+          "confidence": 0.33849725127220154,
+          "log_loss": 1.0898106357994581,
+          "brier": 0.6608741332987247
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": true,
+          "confidence": 0.34165918827056885,
+          "log_loss": 1.0739415643058627,
+          "brier": 0.6502649995419123
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.33759617805480957,
+          "log_loss": 1.106324933906188,
+          "brier": 0.671816279567544
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.3340759773827798,
+          "log_loss": 1.097433080496946,
+          "brier": 0.665882060770749
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": false,
+          "confidence": 0.3434676229953766,
+          "log_loss": 1.105789977887234,
+          "brier": 0.6716031150571506
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": false,
+          "confidence": 0.34789254224620636,
+          "log_loss": 1.1431691058763216,
+          "brier": 0.6961421452756235
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": true,
+          "confidence": 0.3373814720695772,
+          "log_loss": 1.0865410242204807,
+          "brier": 0.6586038902995335
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": false,
+          "confidence": 0.2667439063413115,
+          "log_loss": 1.3635685930142607,
+          "brier": 0.7401217528300059
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": false,
+          "confidence": 0.26436078154503134,
+          "log_loss": 1.404132826684105,
+          "brier": 0.7591305278023694
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": true,
+          "confidence": 0.2697601616382599,
+          "log_loss": 1.3102220049759883,
+          "brier": 0.7118115530683702
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": true,
+          "confidence": 0.25704485561020457,
+          "log_loss": 1.3585046738681898,
+          "brier": 0.7361014147471548
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": true,
+          "confidence": 0.263385194686717,
+          "log_loss": 1.3341376997313872,
+          "brier": 0.7234939489498706
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": true,
+          "confidence": 0.2535790763262052,
+          "log_loss": 1.3720795664230603,
+          "brier": 0.7429188284259035
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": false,
+          "confidence": 0.29587622701199556,
+          "log_loss": 1.4505420429396223,
+          "brier": 0.7839652519638654
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": false,
+          "confidence": 0.2547785867552686,
+          "log_loss": 1.413806689908677,
+          "brier": 0.7636395977586339
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": true,
+          "confidence": 0.2591221448386674,
+          "log_loss": 1.350455726758031,
+          "brier": 0.7319116925221165
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": false,
+          "confidence": 0.2600348255033072,
+          "log_loss": 1.4394260732276583,
+          "brier": 0.7761979412162824
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": false,
+          "confidence": 0.2523631190278853,
+          "log_loss": 1.3912448238687547,
+          "brier": 0.7524779802950075
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": false,
+          "confidence": 0.25395562156704227,
+          "log_loss": 1.3888948182540592,
+          "brier": 0.7513225200278252
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.3004607766729362,
+          "log_loss": 1.5299278888794081,
+          "brier": 0.8207695894193153
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": false,
+          "confidence": 0.2623804314151085,
+          "log_loss": 1.3742886286048732,
+          "brier": 0.7442966611095501
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.4024470748340394,
+          "log_loss": 1.5883560818461506,
+          "brier": 0.872575787435254
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.41766341898346815,
+          "log_loss": 1.6740184904993678,
+          "brier": 0.9129089838195479
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": false,
+          "confidence": 0.2942761945302996,
+          "log_loss": 1.5885877760348224,
+          "brier": 0.8456305616113391
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.27765560150146484,
+          "log_loss": 1.4866054506245363,
+          "brier": 0.7997860403362851
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.5148776846360815,
+          "log_loss": 1.778395077147945,
+          "brier": 1.0058069590682623
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.3128524562501515,
+          "log_loss": 1.43812753620053,
+          "brier": 0.7808353477926535
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.2947881475867607,
+          "log_loss": 1.366835897370483,
+          "brier": 0.7437631132552923
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": false,
+          "confidence": 0.2953594106913052,
+          "log_loss": 1.5463998795757457,
+          "brier": 0.827542324934114
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.30770093661101067,
+          "log_loss": 1.4621176147586668,
+          "brier": 0.7909905956339727
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.29959524124257625,
+          "log_loss": 1.2053229111682364,
+          "brier": 0.6544334270043842
+        }
+      }
+    },
+    "uniform": {
+      "overall": {
+        "agreement_valid": 0.28125,
+        "agreement_all": 0.28125,
+        "coverage": 1.0,
+        "log_loss": 1.3173705312616515,
+        "brier": 0.7300347222222222,
+        "ece": 0.01128472222222223
+      },
+      "correct": 27,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        }
+      }
+    },
+    "lexical": {
+      "overall": {
+        "agreement_valid": 0.25,
+        "agreement_all": 0.25,
+        "coverage": 1.0,
+        "log_loss": 1.31911496650676,
+        "brier": 0.7309119411011653,
+        "ece": 0.0331432084314888
+      },
+      "correct": 24,
+      "cases": {
+        "data:d3-seen-rules-v1:packs:p01:c01": {
+          "correct": true,
+          "confidence": 0.2704695314541302,
+          "log_loss": 1.3075958249172452,
+          "brier": 0.7110575374935217
+        },
+        "data:d3-seen-rules-v1:packs:p01:c02": {
+          "correct": false,
+          "confidence": 0.2630203592109399,
+          "log_loss": 1.4397810453805806,
+          "brier": 0.7767188374378075
+        },
+        "data:d3-seen-rules-v1:packs:p02:c01": {
+          "correct": true,
+          "confidence": 0.2705148669197856,
+          "log_loss": 1.3074282213194417,
+          "brier": 0.7095314125134107
+        },
+        "data:d3-seen-rules-v1:packs:p02:c02": {
+          "correct": false,
+          "confidence": 0.2707581362491808,
+          "log_loss": 1.4143621159741597,
+          "brier": 0.76441329112684
+        },
+        "data:d3-seen-rules-v1:packs:p03:c01": {
+          "correct": false,
+          "confidence": 0.3568895864332597,
+          "log_loss": 1.1345860337680367,
+          "brier": 0.6910552653567547
+        },
+        "data:d3-seen-rules-v1:packs:p03:c02": {
+          "correct": false,
+          "confidence": 0.3568895864332597,
+          "log_loss": 1.1345860337680367,
+          "brier": 0.6910552653567547
+        },
+        "data:d3-seen-rules-v1:packs:p04:c01": {
+          "correct": false,
+          "confidence": 0.26933974808817573,
+          "log_loss": 1.311781692253707,
+          "brier": 0.7131052372246651
+        },
+        "data:d3-seen-rules-v1:packs:p04:c02": {
+          "correct": false,
+          "confidence": 0.2628813479677569,
+          "log_loss": 1.4391946216398857,
+          "brier": 0.7764264124373796
+        },
+        "data:d3-seen-rules-v1:packs:p05:c01": {
+          "correct": true,
+          "confidence": 0.2633124406812525,
+          "log_loss": 1.3344139645218163,
+          "brier": 0.7240840029450625
+        },
+        "data:d3-seen-rules-v1:packs:p05:c02": {
+          "correct": false,
+          "confidence": 0.3574275652554129,
+          "log_loss": 1.135422910225179,
+          "brier": 0.6916316966066188
+        },
+        "data:d3-seen-rules-v1:packs:p06:c01": {
+          "correct": false,
+          "confidence": 0.26316397031256733,
+          "log_loss": 1.4403872351500353,
+          "brier": 0.7770211010826952
+        },
+        "data:d3-seen-rules-v1:packs:p06:c02": {
+          "correct": false,
+          "confidence": 0.2700527262133221,
+          "log_loss": 1.4133952638058374,
+          "brier": 0.7639046332469966
+        },
+        "data:d3-seen-rules-v1:rates:p01:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p01:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p02:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p02:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p04:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p04:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p05:c01": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p05:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:rates:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rates:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c01": {
+          "correct": false,
+          "confidence": 0.26801093777488844,
+          "log_loss": 1.3167274867112242,
+          "brier": 0.7152756999683466
+        },
+        "data:d3-seen-rules-v1:coordinates:p01:c02": {
+          "correct": false,
+          "confidence": 0.27744096935909834,
+          "log_loss": 1.4235684476919865,
+          "brier": 0.7692979886385549
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c01": {
+          "correct": false,
+          "confidence": 0.2873194510679005,
+          "log_loss": 1.535835746897371,
+          "brier": 0.8220504859084548
+        },
+        "data:d3-seen-rules-v1:coordinates:p02:c02": {
+          "correct": true,
+          "confidence": 0.2673066549933731,
+          "log_loss": 1.3193587590526417,
+          "brier": 0.7165847712414923
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c01": {
+          "correct": false,
+          "confidence": 0.25852329019918097,
+          "log_loss": 1.3527694916098627,
+          "brier": 0.7338251773114716
+        },
+        "data:d3-seen-rules-v1:coordinates:p03:c02": {
+          "correct": true,
+          "confidence": 0.25836382773463196,
+          "log_loss": 1.3533865024196714,
+          "brier": 0.7341117879032313
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c01": {
+          "correct": false,
+          "confidence": 0.25807029826783184,
+          "log_loss": 1.3545232572684678,
+          "brier": 0.7346409600339175
+        },
+        "data:d3-seen-rules-v1:coordinates:p04:c02": {
+          "correct": false,
+          "confidence": 0.2669841434240888,
+          "log_loss": 1.4566487737581355,
+          "brier": 0.7851221313595778
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c01": {
+          "correct": true,
+          "confidence": 0.2761087188386504,
+          "log_loss": 1.286960581991015,
+          "brier": 0.7010088299898332
+        },
+        "data:d3-seen-rules-v1:coordinates:p05:c02": {
+          "correct": false,
+          "confidence": 0.2858113912149847,
+          "log_loss": 1.3910982060417003,
+          "brier": 0.7547980665074723
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:coordinates:p06:c02": {
+          "correct": false,
+          "confidence": 0.27561116731326,
+          "log_loss": 1.288764220658975,
+          "brier": 0.7018839833945116
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c01": {
+          "correct": false,
+          "confidence": 0.271752593885912,
+          "log_loss": 1.3840971708824517,
+          "brier": 0.7498962092491306
+        },
+        "data:d3-seen-rules-v1:cooldown:p01:c02": {
+          "correct": true,
+          "confidence": 0.28509641663434276,
+          "log_loss": 1.254927851945225,
+          "brier": 0.6814495113454095
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c01": {
+          "correct": false,
+          "confidence": 0.28345972671386654,
+          "log_loss": 1.4319331136069633,
+          "brier": 0.7737992222249331
+        },
+        "data:d3-seen-rules-v1:cooldown:p02:c02": {
+          "correct": false,
+          "confidence": 0.28376900990047144,
+          "log_loss": 1.432364840846771,
+          "brier": 0.7740331346398585
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c01": {
+          "correct": false,
+          "confidence": 0.2772103911049337,
+          "log_loss": 1.455748650080553,
+          "brier": 0.7848919449206005
+        },
+        "data:d3-seen-rules-v1:cooldown:p03:c02": {
+          "correct": false,
+          "confidence": 0.27798973064853266,
+          "log_loss": 1.4577636477486462,
+          "brier": 0.7859079068596083
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c01": {
+          "correct": false,
+          "confidence": 0.28875304002890745,
+          "log_loss": 1.4393478564246855,
+          "brier": 0.7778377575012478
+        },
+        "data:d3-seen-rules-v1:cooldown:p04:c02": {
+          "correct": false,
+          "confidence": 0.2882904729068834,
+          "log_loss": 1.4386977070455265,
+          "brier": 0.7774818623584993
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c01": {
+          "correct": false,
+          "confidence": 0.27772262950929266,
+          "log_loss": 1.4570728810500186,
+          "brier": 0.7855596063149004
+        },
+        "data:d3-seen-rules-v1:cooldown:p05:c02": {
+          "correct": false,
+          "confidence": 0.3038708678048721,
+          "log_loss": 1.460832389762158,
+          "brier": 0.7897833390673147
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c01": {
+          "correct": false,
+          "confidence": 0.2854530728652243,
+          "log_loss": 1.4347188941518485,
+          "brier": 0.7753112757442655
+        },
+        "data:d3-seen-rules-v1:cooldown:p06:c02": {
+          "correct": false,
+          "confidence": 0.27854769949871067,
+          "log_loss": 1.3601924696047365,
+          "brier": 0.738253997421679
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c01": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p05:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:lexicographic:p06:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c01": {
+          "correct": false,
+          "confidence": 0.3407053923861313,
+          "log_loss": 1.1438527325884293,
+          "brier": 0.6964809864059262
+        },
+        "data:d3-seen-rules-v1:fifo:p01:c02": {
+          "correct": true,
+          "confidence": 0.3407053923861313,
+          "log_loss": 1.076737127067027,
+          "brier": 0.6522486320891383
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c01": {
+          "correct": true,
+          "confidence": 0.3476489776140339,
+          "log_loss": 1.0565619932898915,
+          "brier": 0.6383427846120229
+        },
+        "data:d3-seen-rules-v1:fifo:p02:c02": {
+          "correct": true,
+          "confidence": 0.3476489776140339,
+          "log_loss": 1.0565619932898915,
+          "brier": 0.6383427846120229
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c01": {
+          "correct": true,
+          "confidence": 0.3405160776710604,
+          "log_loss": 1.077292936677457,
+          "brier": 0.6526107288885394
+        },
+        "data:d3-seen-rules-v1:fifo:p03:c02": {
+          "correct": true,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c01": {
+          "correct": true,
+          "confidence": 0.36155240064346567,
+          "log_loss": 1.0173482945174597,
+          "brier": 0.6114230056861827
+        },
+        "data:d3-seen-rules-v1:fifo:p04:c02": {
+          "correct": false,
+          "confidence": 0.3447380211159898,
+          "log_loss": 1.127964588328884,
+          "brier": 0.6861766105509015
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c01": {
+          "correct": false,
+          "confidence": 0.33616811949537984,
+          "log_loss": 1.090143888514065,
+          "brier": 0.6610453104180809
+        },
+        "data:d3-seen-rules-v1:fifo:p05:c02": {
+          "correct": true,
+          "confidence": 0.3557170706058707,
+          "log_loss": 1.0336196095968557,
+          "brier": 0.6226507396630208
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c01": {
+          "correct": false,
+          "confidence": 0.34487720004561967,
+          "log_loss": 1.1283245385162186,
+          "brier": 0.6864151286308392
+        },
+        "data:d3-seen-rules-v1:fifo:p06:c02": {
+          "correct": false,
+          "confidence": 0.3333333333333333,
+          "log_loss": 1.0986122886681098,
+          "brier": 0.6666666666666667
+        },
+        "data:d3-seen-rules-v1:discount:p01:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p02:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p02:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p03:c01": {
+          "correct": false,
+          "confidence": 0.27341901529432544,
+          "log_loss": 1.4180176184427586,
+          "brier": 0.7663439438993581
+        },
+        "data:d3-seen-rules-v1:discount:p03:c02": {
+          "correct": false,
+          "confidence": 0.27341901529432544,
+          "log_loss": 1.4180176184427586,
+          "brier": 0.7663439438993581
+        },
+        "data:d3-seen-rules-v1:discount:p04:c01": {
+          "correct": true,
+          "confidence": 0.2727407792916095,
+          "log_loss": 1.2992334612873022,
+          "brier": 0.705207965473834
+        },
+        "data:d3-seen-rules-v1:discount:p04:c02": {
+          "correct": false,
+          "confidence": 0.2727407792916095,
+          "log_loss": 1.4170845914850603,
+          "brier": 0.7658500435847926
+        },
+        "data:d3-seen-rules-v1:discount:p05:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p05:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p06:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:discount:p06:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c01": {
+          "correct": false,
+          "confidence": 0.2687951423736656,
+          "log_loss": 1.4292757958609013,
+          "brier": 0.7716149334354451
+        },
+        "data:d3-seen-rules-v1:rounding:p01:c02": {
+          "correct": true,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c01": {
+          "correct": false,
+          "confidence": 0.2786495195727371,
+          "log_loss": 1.425242445247371,
+          "brier": 0.770194073010823
+        },
+        "data:d3-seen-rules-v1:rounding:p02:c02": {
+          "correct": false,
+          "confidence": 0.2780259540928283,
+          "log_loss": 1.4243783769005394,
+          "brier": 0.7697312415323032
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c01": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p03:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c01": {
+          "correct": false,
+          "confidence": 0.2786495195727371,
+          "log_loss": 1.425242445247371,
+          "brier": 0.770194073010823
+        },
+        "data:d3-seen-rules-v1:rounding:p04:c02": {
+          "correct": false,
+          "confidence": 0.25,
+          "log_loss": 1.3862943611198906,
+          "brier": 0.75
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c01": {
+          "correct": false,
+          "confidence": 0.26441774057679485,
+          "log_loss": 1.330225075763882,
+          "brier": 0.7219960038197692
+        },
+        "data:d3-seen-rules-v1:rounding:p05:c02": {
+          "correct": false,
+          "confidence": 0.26441774057679485,
+          "log_loss": 1.4456951296018072,
+          "brier": 0.7796669661269486
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c01": {
+          "correct": false,
+          "confidence": 0.2786495195727371,
+          "log_loss": 1.425242445247371,
+          "brier": 0.770194073010823
+        },
+        "data:d3-seen-rules-v1:rounding:p06:c02": {
+          "correct": true,
+          "confidence": 0.2780259540928283,
+          "log_loss": 1.2800408096031328,
+          "brier": 0.6949953639514279
+        }
+      }
+    }
+  },
+  "pairs": {
+    "minilm_trained": {
+      "cases": {
+        "total_cases": 96,
+        "common_valid": 96,
+        "unpaired": 0,
+        "wins": 19,
+        "losses": 15,
+        "both_correct": 12,
+        "both_wrong": 50
+      },
+      "full_policy_2_of_2": {
+        "wins": 4,
+        "losses": 3,
+        "both_correct": 0,
+        "both_wrong": 41,
+        "incomplete": 0
+      },
+      "start_complete": 3,
+      "trained_complete": 4
+    },
+    "msmarco_trained": {
+      "cases": {
+        "total_cases": 96,
+        "common_valid": 96,
+        "unpaired": 0,
+        "wins": 15,
+        "losses": 19,
+        "both_correct": 11,
+        "both_wrong": 51
+      },
+      "full_policy_2_of_2": {
+        "wins": 5,
+        "losses": 3,
+        "both_correct": 0,
+        "both_wrong": 40,
+        "incomplete": 0
+      },
+      "start_complete": 3,
+      "trained_complete": 5
+    }
+  }
+}

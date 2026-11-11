@@ -1,0 +1,32 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "--extra",
+    "model",
+    "python",
+    "-B",
+    "-m",
+    "jeff.training.qwen_decision",
+    "audit",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit"
+  ],
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/model",
+  "maximum_seconds": 300,
+  "started_at": "2026-11-11T15:47:00.883694+00:00",
+  "env_keys": [
+    "HF_HOME",
+    "HF_HUB_OFFLINE",
+    "HOME",
+    "JEFF_ARTIFACTS_DIR",
+    "LANG",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "TOKENIZERS_PARALLELISM",
+    "TRANSFORMERS_OFFLINE"
+  ],
+  "initially_empty_home": "/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/train-audit-home",
+  "automatic_retry": false
+}

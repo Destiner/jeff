@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-11T16:24:55.282011+00:00",
+  "runner": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v2/run.py",
+  "attempted_output": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v2/execution-01",
+  "returncode": 1,
+  "error": "ValueError: Pinned dependency changed: /Users/destiner/Code/jeff/.worktrees/evaluation/AGENTS.md",
+  "failure_stage": "dependency verification, before reading runtime prediction files or creating output directory",
+  "output_exists": false,
+  "all_changed_dependencies": [
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/AGENTS.md",
+      "previous_sha256": "8b155574784f83630e9128e4236af2a0dd4f0bbf4dafd6a87c0967a237e523ef",
+      "current_sha256": "3cbc41719ef2c77b890aa37f9b809154e43679770b240db8c15792a29e8dd464"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/coordination.md",
+      "previous_sha256": "98faac491d47dba4a440f5b6d704ef6bac0630ec8572476a3c781efb06d68ac7",
+      "current_sha256": "2150f689086facfc75bbaed7009dfde548796e94fd2e2fecb4da156fa444fd71"
+    }
+  ],
+  "interpretation": "Pre-outcome preparation pinned mutable operational authority documents. This was a provenance mismatch, not a model/scorer execution or learning failure. Prior preparations and pins retained."
+}

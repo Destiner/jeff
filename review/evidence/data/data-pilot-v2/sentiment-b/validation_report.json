@@ -1,0 +1,339 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-sentiment-b-r1",
+  "status": "passed_structural_checks",
+  "checks": {
+    "required_row_counts": true,
+    "teacher_provenance_only": true,
+    "schema_and_target_membership": true,
+    "global_namespaced_unique_ids_within_shard": true,
+    "one_row_per_frozen_group": true,
+    "frozen_group_split_compliance": true,
+    "exact_state_duplicates": 0,
+    "canonical_input_duplicates": 0,
+    "cross_split_group_overlap": 0,
+    "all_four_categories_always_available": true,
+    "forbidden_label_words_in_states": 0,
+    "named_subject_in_every_question": true,
+    "ten_cases_per_domain": true
+  },
+  "splits": {
+    "train": {
+      "rows": 200,
+      "groups": 200,
+      "domains": 20,
+      "class_counts": {
+        "positive-only": 50,
+        "negative-only": 50,
+        "neutral/no evaluation": 50,
+        "mixed praise and criticism": 50
+      },
+      "target_positions_by_class_1_based_columns": {
+        "positive-only": [
+          13,
+          13,
+          12,
+          12
+        ],
+        "negative-only": [
+          12,
+          13,
+          13,
+          12
+        ],
+        "neutral/no evaluation": [
+          12,
+          12,
+          13,
+          13
+        ],
+        "mixed praise and criticism": [
+          13,
+          12,
+          12,
+          13
+        ]
+      },
+      "target_position_totals": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "option_count": 4,
+      "correct_option_length_diagnostics_words": {
+        "positive-only": {
+          "rows": 50,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 50
+        },
+        "negative-only": {
+          "rows": 50,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 50
+        },
+        "neutral/no evaluation": {
+          "rows": 50,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 50
+        },
+        "mixed praise and criticism": {
+          "rows": 50,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 50
+        }
+      },
+      "candidate_style_counts_by_class": {
+        "positive-only": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "negative-only": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "neutral/no evaluation": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "mixed praise and criticism": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        }
+      },
+      "question_form_counts_by_class": {
+        "positive-only": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "negative-only": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "neutral/no evaluation": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        },
+        "mixed praise and criticism": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10
+        }
+      }
+    },
+    "validation": {
+      "rows": 40,
+      "groups": 40,
+      "domains": 4,
+      "class_counts": {
+        "positive-only": 10,
+        "negative-only": 10,
+        "neutral/no evaluation": 10,
+        "mixed praise and criticism": 10
+      },
+      "target_positions_by_class_1_based_columns": {
+        "positive-only": [
+          3,
+          3,
+          2,
+          2
+        ],
+        "negative-only": [
+          2,
+          3,
+          3,
+          2
+        ],
+        "neutral/no evaluation": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "mixed praise and criticism": [
+          3,
+          2,
+          2,
+          3
+        ]
+      },
+      "target_position_totals": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "option_count": 4,
+      "correct_option_length_diagnostics_words": {
+        "positive-only": {
+          "rows": 10,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 10
+        },
+        "negative-only": {
+          "rows": 10,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 10
+        },
+        "neutral/no evaluation": {
+          "rows": 10,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 10
+        },
+        "mixed praise and criticism": {
+          "rows": 10,
+          "uniquely_longest_correct": 0,
+          "tied_or_unique_longest_correct": 10
+        }
+      },
+      "candidate_style_counts_by_class": {
+        "positive-only": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "negative-only": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "neutral/no evaluation": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "mixed praise and criticism": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        }
+      },
+      "question_form_counts_by_class": {
+        "positive-only": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "negative-only": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "neutral/no evaluation": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "mixed praise and criticism": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        }
+      }
+    }
+  },
+  "word_counts": {
+    "state_min": 20,
+    "state_max": 30,
+    "question_max": 10,
+    "option_max": 10
+  },
+  "cross_split_lexical_method": "Lowercase word-set Jaccard over states; top eight diagnostic candidates, not an independence guarantee.",
+  "cross_split_lexical_candidates": [
+    {
+      "jaccard": 0.23077,
+      "train_id": "data:pilot-v2:sentiment-b:g083:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g233:r01"
+    },
+    {
+      "jaccard": 0.21429,
+      "train_id": "data:pilot-v2:sentiment-b:g113:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g213:r01"
+    },
+    {
+      "jaccard": 0.20588,
+      "train_id": "data:pilot-v2:sentiment-b:g017:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g219:r01"
+    },
+    {
+      "jaccard": 0.20513,
+      "train_id": "data:pilot-v2:sentiment-b:g113:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g203:r01"
+    },
+    {
+      "jaccard": 0.2,
+      "train_id": "data:pilot-v2:sentiment-b:g187:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g213:r01"
+    },
+    {
+      "jaccard": 0.19512,
+      "train_id": "data:pilot-v2:sentiment-b:g085:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g225:r01"
+    },
+    {
+      "jaccard": 0.19512,
+      "train_id": "data:pilot-v2:sentiment-b:g079:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g213:r01"
+    },
+    {
+      "jaccard": 0.19048,
+      "train_id": "data:pilot-v2:sentiment-b:g163:r01",
+      "validation_id": "data:pilot-v2:sentiment-b:g233:r01"
+    }
+  ],
+  "hashes_sha256": {
+    "plan_groups.py": "6e0908d476a4637a08e44bcd312459de97dd979a501d973af86c6f60c8f2fee9",
+    "group_assignments.json": "0b1a24d06881e27dff29dfec59c7441c81198458eb7a6481e1fb38accc859c2d",
+    "source_cases.txt": "a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8",
+    "generate.py": "355504ae6a80a36b0aff898d38652ebdb06517bcd6b6d8fd4046abca730603bb",
+    "train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+    "validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac",
+    "metadata.json": "1ab10bd51520d1ea4f270b8b5e21b40ba666b2f5293a94347fd2caed0ca552a8"
+  },
+  "not_performed": [
+    "Independent label review",
+    "Historical corpus content comparison (prohibited)",
+    "CPU tokenizer cap audit (parent responsibility)",
+    "Model evaluation",
+    "Software tests or linting"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "initial_evidence_sha256": "12f8bdcc66ccacac8e2ca67b144217234ae2e7ee4d9b54416274a5083ea88f87",
+  "reconciliation_script_sha256": "cecaabaee8f80ea15bf7a5d74505bc9f24e9816872812b22b15486e9b4b36e76",
+  "manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "provenance_sha256": "a55a3bc0ba76958e6e2b81ef8288c4d2fa008f18bd2ff106a8cb8b0321a4c5e3",
+  "initial_diagnostics": 240,
+  "resolved_redundant_output_hash_diagnostics": 240,
+  "reconstruction": [
+    {
+      "split": "train",
+      "rows": 200,
+      "released_sha256": "0c2d5441102fb0623dec43265f3d9dc44b025c92b788138344cdc1447ac1ab20",
+      "reconstructed_sha256": "0c2d5441102fb0623dec43265f3d9dc44b025c92b788138344cdc1447ac1ab20",
+      "byte_identical": true
+    },
+    {
+      "split": "validation",
+      "rows": 40,
+      "released_sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e",
+      "reconstructed_sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e",
+      "byte_identical": true
+    }
+  ],
+  "unresolved_errors": [],
+  "qualifications": [
+    "sentiment-b-r2 metadata has parent hashes, not redundant output hashes; complete frozen output bytes reproduced without executing producer code.",
+    "Initial diagnostics and artifacts preserved, not silently erased.",
+    "No semantic clearance or independent teacher revision/correctness verification."
+  ]
+}

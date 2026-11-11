@@ -1,0 +1,20 @@
+{
+  "qualification": "Conditional algebra from same-row unsmoothed CE, not retained probabilities/new model output. Binary complement is identifiable; vectors for k>2 are not reconstructed.",
+  "id": "data:pilot-v1:rule_application:g06:r08",
+  "option_ids": [
+    "a49aae2e9c4c",
+    "1c3a60c9f725"
+  ],
+  "target_position": 1,
+  "predicted_position": 0,
+  "saved_ce": 1.3063764572143555,
+  "ce_derived_target_p": 0.2707995344219926,
+  "ce_derived_other_p": 0.7292004655780073,
+  "ce_derived_top_two_margin": 0.45840093115601477,
+  "strict_winner": true,
+  "winner_matches_recorded_argmax": true,
+  "correct_strict_certificates_from_p_gt_half": 139,
+  "total_certified_after_strict_winners_at_least": 140,
+  "unknown_after_tie_status_rows": 1360,
+  "source_sha256": "a099822f30a234b0b3d2ff588888d712897bf5b1af4cbb878369cc23e619ca84"
+}

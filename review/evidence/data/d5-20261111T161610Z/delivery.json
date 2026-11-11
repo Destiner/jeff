@@ -1,0 +1,20 @@
+{
+  "task": "D5",
+  "started_at": "2026-11-11T16:16:10Z",
+  "delivered_at": "2026-11-11T16:35:08Z",
+  "elapsed_minutes": 18.966666666666665,
+  "lead_report": "7fc6050f-8874-47c6-89db-30d51fa9703e",
+  "model_report": "cbd7a25c-90d2-4bca-a7aa-c91e08cc0a8d",
+  "evaluation_report": "ec24acba-1ca0-4cbf-9a96-4502d0d5222d",
+  "rows": 1500,
+  "recorded_mapping_mismatches": 0,
+  "active_data_jobs": 0,
+  "active_data_subagents": 0,
+  "completed_subagents": 3,
+  "production_code_fixes": 0,
+  "tracked_changes": false,
+  "worktree_head": "9d275045b33f16fd4585b7dc353930b403853107",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "continuation_cutoff": "2026-11-11T17:05:08Z"
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_sha256": "d74bfda56fc18c89c4a40852dd46d9ec8bce1c907c9ebc8cbc979f23d9047ca9",
+  "checks": {
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/case-metadata.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/exclusion.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/manifest.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/provenance.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/geometry.jsonl": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/shards/ordering.jsonl": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/validation-input.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/release/validation.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/token-budget-r3.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r2/review.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review/review.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/code-review-r2/review.md": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/code-review/review.md": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/review-r3/review.json": true,
+    "/Users/destiner/Code/jeff/artifacts/data/data-d3-seen-rules-v1/pre-review-r3/manifest.json": true,
+    "freeze_diagnostic.py": true,
+    "audit.py": true,
+    "assemble.py": true,
+    "validate.py": true,
+    "config": true,
+    "manifest_mirror": true,
+    "provenance_mirror": true
+  },
+  "valid": true
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-b-r2",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "method": "Existing approved agent directly authored all 240 option sets and semantic target refinements; deterministic CPU application only.",
+    "source_revision": "intent-b-r2",
+    "sampling_parameters": null,
+    "immutable_sampling_details": "Unavailable from agent environment.",
+    "option_order": "Parent ordered option IDs and target slots retained exactly; authored rivals assigned in parent non-target slot order.",
+    "source_and_script_sha256": {
+      "authored_choices.txt": "a6881ef1b1cbbb5b658a138f1241b548b103e1ab4d83142001eb585873a6d6ab",
+      "target_refinements.json": "f1c225992daf05ded95e71776e872dcea84f97f4fa695e47986d36efb3ab4366",
+      "source_mappings.json": "c9bf45a35bd428f49f55ec31d5503337529bfe563efcee5f89e639b6c4a5b254",
+      "apply_revision.py": "f654dca8303e4691805953d97f16117fc302a251412a47b1e7d3538b84e3734d"
+    },
+    "output_sha256": {
+      "train.jsonl": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+      "validation.jsonl": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac"
+    },
+    "regenerate": "In a fresh sibling output directory containing the three authored/script inputs, run python3 apply_revision.py; verify an existing freeze with --verify.",
+    "parent_rows_read": 240
+  },
+  "usage_constraints": {
+    "origin": "Original synthetic requests and labels generated under existing provider terms.",
+    "redistribution": "No independent redistribution-license claim; subject to applicable provider terms.",
+    "privacy": "No private records or real customer documents used.",
+    "features": "Only state, question, and option texts are model inputs; exclude IDs and provenance."
+  },
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40,
+    "total": 240,
+    "independent_scenarios": 240,
+    "by_domain": {
+      "sewing machine servicing": 10,
+      "upholstery cleaning": 10,
+      "dog walking": 10,
+      "dance lessons": 10,
+      "window glazing": 10,
+      "allotment compost delivery": 10,
+      "baking classes": 10,
+      "tax document retrieval": 10,
+      "aquarium supplies": 10,
+      "printer consumables": 10,
+      "community noticeboards": 10,
+      "home security installation": 10,
+      "e-bike battery repairs": 10,
+      "house removal quotations": 10,
+      "childcare attendance records": 10,
+      "tabletop gaming events": 10,
+      "shoe repairs": 10,
+      "fishing licence administration": 10,
+      "home internet radio": 10,
+      "reusable packaging returns": 10,
+      "drone flight registration": 10,
+      "heritage walking tours": 10,
+      "ice rink skate sharpening": 10,
+      "braille transcription service": 10
+    }
+  },
+  "parent": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b",
+    "metadata_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b/metadata.json",
+    "sha256": {
+      "train.jsonl": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+      "validation.jsonl": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c",
+      "metadata.json": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+      "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "source_cases.txt": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+      "generate.py": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0"
+    }
+  },
+  "revision_purpose": "Replace weak and length-revealing choices with concise targets and plausible same-workflow alternatives.",
+  "semantic_scope": "Only option text, example namespace, and provenance revised. Every original teacher requested action is intended to remain unchanged. State, question, schema, family, split, group IDs, arities, ordered option IDs, target IDs and slots are byte/value-preserved. No real-world factual assertions added to state. Alternative options are hypothetical actions, not asserted events.",
+  "limitations": [
+    "Semantic preservation is author judgment, not independently verified correctness; parent must separately inspect all revised labels.",
+    "Immutable teacher revision and sampling settings unavailable; alias records actual current environment.",
+    "No tokenizer/model loaded; no token budget certification.",
+    "Only this parent shard and read-only review-intent/review.md inspected; no historical or cross-producer global uniqueness certification.",
+    "Length and state-word overlap may remain predictive; no shortcut-free claim. Explicit parent scope cues remain unchanged."
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "row_keys": [
+    "K",
+    "case_id",
+    "construction_cluster",
+    "domain",
+    "mechanism",
+    "option_ids",
+    "original_p",
+    "original_positions",
+    "policy_instance",
+    "producer",
+    "reversed_p",
+    "reversed_positions",
+    "source_group",
+    "task_family"
+  ],
+  "receipt_exact_structure_and_types": {
+    "schema_version": "str",
+    "status": "str",
+    "created_utc": "str",
+    "coverage": {
+      "pairs": "int",
+      "rows": "int",
+      "vectors": "int",
+      "original_presentations": "int",
+      "reversed_presentations": "int",
+      "option_identities": "int",
+      "probability_values": "int",
+      "missing_pairs": "int",
+      "missing_options": "int",
+      "family_rows": {
+        "intent": "int",
+        "rule_application": "int",
+        "sentiment": "int"
+      },
+      "K_rows": {
+        "3": "int",
+        "4": "int",
+        "5": "int",
+        "6": "int"
+      }
+    },
+    "grouping": {
+      "units": {
+        "source_group": {
+          "distinct_nonnull": "int",
+          "null_rows": "int"
+        },
+        "domain": {
+          "distinct_nonnull": "int",
+          "null_rows": "int"
+        },
+        "policy_instance": {
+          "distinct_nonnull": "int",
+          "null_rows": "int"
+        },
+        "mechanism": {
+          "distinct_nonnull": "int",
+          "null_rows": "int"
+        },
+        "producer": {
+          "distinct_nonnull": "int",
+          "null_rows": "int"
+        }
+      },
+      "nesting": {
+        "source_group->producer": {
+          "observed_child_units": "int",
+          "violating_child_units": "int",
+          "excluded_null_rows": "int",
+          "functional_on_observed": "bool"
+        },
+        "domain->producer": {
+          "observed_child_units": "int",
+          "violating_child_units": "int",
+          "excluded_null_rows": "int",
+          "functional_on_observed": "bool"
+        },
+        "policy_instance->producer": {
+          "observed_child_units": "int",
+          "violating_child_units": "int",
+          "excluded_null_rows": "int",
+          "functional_on_observed": "bool"
+        },
+        "mechanism->producer": {
+          "observed_child_units": "int",
+          "violating_child_units": "int",
+          "excluded_null_rows": "int",
+          "functional_on_observed": "bool"
+        },
+        "policy_instance->mechanism": {
+          "observed_child_units": "int",
+          "violating_child_units": "int",
+          "excluded_null_rows": "int",
+          "functional_on_observed": "bool"
+        }
+      }
+    },
+    "by_family": {
+      "intent": {
+        "rows": "int",
+        "units": {
+          "source_group": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "domain": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "policy_instance": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "mechanism": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "producer": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          }
+        },
+        "nesting": {
+          "source_group->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "domain->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "mechanism->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->mechanism": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          }
+        }
+      },
+      "rule_application": {
+        "rows": "int",
+        "units": {
+          "source_group": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "domain": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "policy_instance": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "mechanism": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "producer": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          }
+        },
+        "nesting": {
+          "source_group->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "domain->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "mechanism->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->mechanism": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          }
+        }
+      },
+      "sentiment": {
+        "rows": "int",
+        "units": {
+          "source_group": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "domain": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "policy_instance": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "mechanism": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          },
+          "producer": {
+            "distinct_nonnull": "int",
+            "null_rows": "int"
+          }
+        },
+        "nesting": {
+          "source_group->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "domain->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "mechanism->producer": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          },
+          "policy_instance->mechanism": {
+            "observed_child_units": "int",
+            "violating_child_units": "int",
+            "excluded_null_rows": "int",
+            "functional_on_observed": "bool"
+          }
+        }
+      }
+    },
+    "construction_cluster_kind": "str",
+    "exact_reversal_verified_pairs": "int",
+    "full_development_input_presentations_verified": "int",
+    "normalization": {
+      "convention": "str",
+      "renormalized": "bool",
+      "epsilon_added": "bool",
+      "clipped": "bool",
+      "zero_values": "int",
+      "max_absolute_sum_error_fsum": "float",
+      "mean_absolute_sum_error_fsum": "float",
+      "vectors_with_nonzero_sum_error": "int",
+      "full_vocabulary_mass": "str"
+    },
+    "source_sha256": {
+      "original_predictions": "str",
+      "reversed_predictions": "str",
+      "released_manifest": "str"
+    },
+    "exporter_sha256": "str",
+    "paired_sha256": "str",
+    "readme_sha256": "str",
+    "limitations": [
+      "str",
+      "str",
+      "str"
+    ],
+    "privacy_validation": {
+      "recursive_row_allowlist": "bool",
+      "input_string_and_raw_unit_leakage_checks": "bool",
+      "raw_probability_bitwise_equality": "bool",
+      "mapping_and_nesting_roundtrip": "bool",
+      "random_uuid_v4_ids": "bool",
+      "random_row_order": "bool"
+    },
+    "owner_review_required": "bool"
+  }
+}

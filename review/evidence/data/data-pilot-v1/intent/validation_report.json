@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "row_counts": {
+    "train": 100,
+    "validation": 20
+  },
+  "group_counts": {
+    "train": 25,
+    "validation": 5
+  },
+  "checks_executed": [
+    "JSON parse and split-pure file counts",
+    "Exact required row fields and schema/task-family values",
+    "Globally namespaced unique row IDs within this shard",
+    "String state and nonempty question/options",
+    "2-6 options, unique opaque option IDs and unique option texts per row",
+    "Exactly one target option",
+    "Teacher kind/label basis, actual exposed teacher alias and job source",
+    "Exact frozen group membership, four rows per group and split isolation",
+    "No exact normalized duplicate states or canonical full-input duplicates",
+    "Per-split per-arity target position frequency spread at most one",
+    "All-pairs normalized state SequenceMatcher scan at threshold 0.80"
+  ],
+  "option_count_distribution": {
+    "3": 30,
+    "4": 60,
+    "5": 30
+  },
+  "target_positions_zero_based": {
+    "train:3": {
+      "0": 9,
+      "1": 8,
+      "2": 8
+    },
+    "train:4": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "train:5": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "validation:4": {
+      "0": 3,
+      "1": 3,
+      "2": 2,
+      "3": 2
+    },
+    "validation:3": {
+      "0": 2,
+      "1": 2,
+      "2": 1
+    },
+    "validation:5": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  "exact_duplicate_count": 0,
+  "near_duplicate_state_pairs_threshold_0_80": [],
+  "sha256": {
+    "train.jsonl": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+    "validation.jsonl": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514"
+  },
+  "scope": "Only this intent shard and its own frozen assignments were inspected. No parent assembly checks, other shards, final data, software tests, linting or model inference.",
+  "semantic_review": "Authoring teacher reviewed all requests/options for one explicit primary action and plausible alternatives; not independent correctness verification."
+}

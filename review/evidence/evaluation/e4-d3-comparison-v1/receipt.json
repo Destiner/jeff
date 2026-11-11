@@ -1,0 +1,133 @@
+{
+  "completed_at": "2026-11-11T14:35:04.792801+00:00",
+  "status": "completed",
+  "commands": [
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "jeff.evaluation.baseline",
+        "--input",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "--method",
+        "uniform",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform.jsonl",
+        "--receipt",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform-receipt.json"
+      ],
+      "returncode": 0,
+      "stdout": "Wrote 96 uniform predictions: /Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform.jsonl\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "jeff.evaluation.baseline",
+        "--input",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "--method",
+        "lexical",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical.jsonl",
+        "--receipt",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical-receipt.json"
+      ],
+      "returncode": 0,
+      "stdout": "Wrote 96 lexical predictions: /Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical.jsonl\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "jeff.evaluation.compare",
+        "--examples",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/comparison.json",
+        "--predictions",
+        "minilm_start=/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-baseline-predictions.jsonl",
+        "--predictions",
+        "minilm_trained=/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/minilm-checkpoint-predictions.jsonl",
+        "--predictions",
+        "msmarco_start=/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-baseline-predictions.jsonl",
+        "--predictions",
+        "msmarco_trained=/Users/destiner/Code/jeff/artifacts/model/m4-d3-inference-20261111-01/msmarco-checkpoint-predictions.jsonl",
+        "--predictions",
+        "uniform=/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform.jsonl",
+        "--predictions",
+        "lexical=/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "Compared 6 prediction files on 96 examples: /Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/comparison.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "jeff.evaluation.render",
+        "--comparison",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/comparison.json",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/shared-report.md",
+        "--title",
+        "D3 originals: six predictors"
+      ],
+      "returncode": 0,
+      "stdout": "Rendered 6 predictors: /Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/shared-report.md\n",
+      "stderr": ""
+    }
+  ],
+  "errors": [],
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/comparison.json",
+      "sha256": "652d21c03342bc835260f1ed28b161b5fc4f2b59ddce0a8efd4abf6e613dcb5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/execution-pins.json",
+      "sha256": "fd5355bb9100638b260229ddcaaa9bc023d33983e7e8ed744b39e282f965da56"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical-receipt.json",
+      "sha256": "43dd51051dc8d1c374ab3d852000f172482f2783b7e37740138defc8fbab23ab"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical.jsonl",
+      "sha256": "40518fca610deb01cfb24d44862b3209a1b88edc914728c355d429b5d23385eb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/report.json",
+      "sha256": "68bba3f94f5bf26142c421504b883f85318d89fee10a221cc007f861eee83aa4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/report.md",
+      "sha256": "b956299809ccfd84503b27fe1793bcfd3e49b3d466dfab9bd6bf0e307da8ab4f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/shared-report.md",
+      "sha256": "4277d6f0f8805a2bdb69b127ef11f321db6e0bcbab8244e5f19fa0a4495c6663"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/source-recheck.json",
+      "sha256": "5e44c79c2d3b84cb36161975109b9ce3a38761c84254e1361bbee4bcd926f536"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform-receipt.json",
+      "sha256": "9ef04e495f8239b97968f0d213748a70fee75f09dca1494f69b44da6a84337e4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform.jsonl",
+      "sha256": "c7dd4af618e1fd56edf315e15c4a0b88f17899137b006f04b9ecdd2c203d9309"
+    }
+  ],
+  "cost_gbp": 0,
+  "inference": false
+}

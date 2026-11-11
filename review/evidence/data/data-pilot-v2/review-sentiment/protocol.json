@@ -1,0 +1,7 @@
+{
+  "started_at": "2026-11-11T11:20:56.809872+00:00",
+  "PI_MODEL": "gpt-sol",
+  "PI_PROVIDER": "openai",
+  "selection": "round(i*(n-1)/9) for i=0..9 per producer/split; no label inspection",
+  "prior_exposure": "Read AGENTS.md, contracts.md, candidate manifest and user-supplied audit assertions only. No source rows, labels or generators inspected before sample."
+}

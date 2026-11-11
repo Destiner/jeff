@@ -1,0 +1,79 @@
+{
+  "groups": {
+    "data:pilot-v2:rule-b:g001": {
+      "split": "train",
+      "mechanism": "calendar weekday progression",
+      "scenario_plan": "Ten calendar policies with inclusive/exclusive day counting, working-day sets and forward/backward offsets; two dates per policy."
+    },
+    "data:pilot-v2:rule-b:g002": {
+      "split": "train",
+      "mechanism": "ceiling pack count with minimum purchase",
+      "scenario_plan": "Ten packaging policies with net requirement, spares, reusable stock and minimum order conventions; two boundary orders each."
+    },
+    "data:pilot-v2:rule-b:g003": {
+      "split": "train",
+      "mechanism": "proportional integer allocation with remainder",
+      "scenario_plan": "Ten proportional allocations with different eligibility, remainder recipient and tie rules; two budgets each."
+    },
+    "data:pilot-v2:rule-b:g004": {
+      "split": "train",
+      "mechanism": "range intersection clipping",
+      "scenario_plan": "Ten clipping policies with open/closed integer intervals and domain bounds; two requested intervals each."
+    },
+    "data:pilot-v2:rule-b:g005": {
+      "split": "train",
+      "mechanism": "rate comparison by cross multiplication",
+      "scenario_plan": "Ten rational-rate comparisons with higher/lower preference and explicit tie outcomes; two measurements each."
+    },
+    "data:pilot-v2:rule-b:g006": {
+      "split": "train",
+      "mechanism": "ordered coordinate transformations",
+      "scenario_plan": "Ten ordered coordinate policies using reflection, translation, rotation and scaling; two points each."
+    },
+    "data:pilot-v2:rule-b:g007": {
+      "split": "train",
+      "mechanism": "fixed batch yield after specified losses",
+      "scenario_plan": "Ten batch-output policies with per-batch versus total losses and rejection conventions; two batch counts each."
+    },
+    "data:pilot-v2:rule-b:g008": {
+      "split": "train",
+      "mechanism": "cooldown-constrained appointment scheduling",
+      "scenario_plan": "Ten cooldown appointment policies with finish-to-start gaps and exact-boundary conventions; two requests each."
+    },
+    "data:pilot-v2:rule-b:g009": {
+      "split": "train",
+      "mechanism": "exact symbol multiset matching",
+      "scenario_plan": "Ten exact multiset policies with explicit ignored symbols, case conventions and alternatives; two inventory strings each."
+    },
+    "data:pilot-v2:rule-b:g010": {
+      "split": "train",
+      "mechanism": "nested conditional expression evaluation",
+      "scenario_plan": "Ten nested branch policies across independent operational contexts with differing priorities and boundary predicates; two cases each."
+    },
+    "data:pilot-v2:rule-b:g011": {
+      "split": "validation",
+      "mechanism": "subtractive Roman numeral parsing",
+      "scenario_plan": "Four explicitly specified Roman parsing policies, including adjacent subtraction and symbol limits; two numerals each."
+    },
+    "data:pilot-v2:rule-b:g012": {
+      "split": "validation",
+      "mechanism": "postfix arithmetic stack execution",
+      "scenario_plan": "Four postfix arithmetic policies including subtraction/division operand ordering and negative values; two expressions each."
+    },
+    "data:pilot-v2:rule-b:g013": {
+      "split": "validation",
+      "mechanism": "directed precedence topological ordering",
+      "scenario_plan": "Four directed precedence schedules with explicit ready-node tie choices; two edge sets each; validation only."
+    },
+    "data:pilot-v2:rule-b:g014": {
+      "split": "validation",
+      "mechanism": "nearest Hamming codeword",
+      "scenario_plan": "Four binary codebooks with Hamming minimization and explicit tie rules; two received words each."
+    },
+    "data:pilot-v2:rule-b:g015": {
+      "split": "validation",
+      "mechanism": "maximum consecutive-window mean",
+      "scenario_plan": "Four consecutive-window policies with fixed width and explicit ties; two sequences each."
+    }
+  }
+}

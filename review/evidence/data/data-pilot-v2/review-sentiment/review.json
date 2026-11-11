@@ -1,0 +1,1429 @@
+{
+  "review": "Jeff v2 sentiment semantic/data review",
+  "completed_at": "2026-11-11T11:23:19.431387+00:00",
+  "candidate_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json",
+  "scope": "480 new sentiment rows only; candidate manifest totals 1800 including historical rows. No historical content read.",
+  "identity": {
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai",
+    "immutable_revision": null,
+    "independence": "Separate-session target-hidden judgments; same exposed alias/provider as both producers. Not independent ground truth."
+  },
+  "protocol": {
+    "started_at": "2026-11-11T11:20:56.809872+00:00",
+    "PI_MODEL": "gpt-sol",
+    "PI_PROVIDER": "openai",
+    "selection": "round(i*(n-1)/9) for i=0..9 per producer/split; no label inspection",
+    "prior_exposure": "Read AGENTS.md, contracts.md, candidate manifest and user-supplied audit assertions only. No source rows, labels or generators inspected before sample."
+  },
+  "freeze_sha256": "ba8fc8d253fa343a00860d158dff6ffac8974b5463b78c11a97349076bee3dc1",
+  "selection": {
+    "sentiment-a/train": {
+      "rows": 10,
+      "classes": {
+        "positive": 3,
+        "neutral": 2,
+        "mixed": 3,
+        "negative": 2
+      },
+      "domains": [
+        "bird feeders",
+        "board game inserts",
+        "desk lamps",
+        "electric kettles",
+        "notebooks",
+        "portable fans",
+        "puzzle books",
+        "sleep masks",
+        "travel pillows",
+        "vacuum cleaners"
+      ],
+      "indices": [
+        0,
+        22,
+        44,
+        66,
+        88,
+        111,
+        133,
+        155,
+        177,
+        199
+      ]
+    },
+    "sentiment-a/validation": {
+      "rows": 10,
+      "classes": {
+        "positive": 2,
+        "negative": 3,
+        "neutral": 3,
+        "mixed": 2
+      },
+      "domains": [
+        "embroidery hoops",
+        "folding picnic benches",
+        "kayak dry bags",
+        "violin shoulder rests"
+      ],
+      "indices": [
+        0,
+        4,
+        9,
+        13,
+        17,
+        22,
+        26,
+        30,
+        35,
+        39
+      ]
+    },
+    "sentiment-b/train": {
+      "rows": 10,
+      "classes": {
+        "mixed": 5,
+        "neutral": 1,
+        "positive": 2,
+        "negative": 2
+      },
+      "domains": [
+        "charity shop purchases",
+        "garden fencing installation",
+        "guided cooking sessions",
+        "indoor plant watering services",
+        "local newspaper delivery",
+        "meal preparation kits",
+        "podcast editing",
+        "public park seating",
+        "stationery delivery",
+        "video caption editing"
+      ],
+      "indices": [
+        0,
+        22,
+        44,
+        66,
+        88,
+        111,
+        133,
+        155,
+        177,
+        199
+      ]
+    },
+    "sentiment-b/validation": {
+      "rows": 10,
+      "classes": {
+        "mixed": 3,
+        "negative": 2,
+        "neutral": 2,
+        "positive": 3
+      },
+      "domains": [
+        "community darkroom sessions",
+        "falconry demonstrations",
+        "orienteering map printing",
+        "weaving loom rental"
+      ],
+      "indices": [
+        0,
+        4,
+        9,
+        13,
+        17,
+        22,
+        26,
+        30,
+        35,
+        39
+      ]
+    }
+  },
+  "sample_comparison": {
+    "rows": 40,
+    "matching_frozen_choices": 40,
+    "interpretation": "Agreement count only; no correctness accuracy, confidence estimate or calibration claim."
+  },
+  "author_or_user_claims_not_reexecuted": [
+    "User reports full structural checks and token audit passed, and canonicalizer corrected to preserve signs/brackets/case.",
+    "Producers claim separately authored experiences, balanced schedules, and same-teacher self-review."
+  ],
+  "checks_executed": [
+    "40 target-hidden choices frozen before reading targets, source annotations, metadata or generators.",
+    "Post-freeze semantic scan of all 480 annotated source cases, weaker evidence than blind sample.",
+    "Standard-library audit of actual JSONL option classes, source label/state alignment, exact subject questions, assignment split, class/style/position/domain counts across all 480.",
+    "Generator constants read via AST only; producer scripts never imported or executed.",
+    "SHA-256 before/after of candidate manifest and four sentiment shards; compare four shard hashes with manifest.",
+    "Exact and whitespace-only case/punctuation-preserving state uniqueness across 480."
+  ],
+  "not_executed": [
+    "Full structural validation rerun",
+    "Tokenizer/token audit",
+    "Historical overlap or non-sentiment content review",
+    "Model load, training or inference",
+    "Network/API requests",
+    "Tests/lint",
+    "Git operations or checkout edits"
+  ],
+  "balance": {
+    "sentiment-a": {
+      "splits": {
+        "train": {
+          "rows": 200,
+          "domains": {
+            "electric kettles": 10,
+            "rain jackets": 10,
+            "puzzle books": 10,
+            "standing desks": 10,
+            "vacuum cleaners": 10,
+            "ceramic mugs": 10,
+            "sleep masks": 10,
+            "reusable shopping bags": 10,
+            "desk lamps": 10,
+            "kitchen scales": 10,
+            "toothbrushes": 10,
+            "travel pillows": 10,
+            "camera straps": 10,
+            "board game inserts": 10,
+            "window blinds": 10,
+            "bird feeders": 10,
+            "running socks": 10,
+            "notebooks": 10,
+            "shower heads": 10,
+            "portable fans": 10
+          },
+          "classes": {
+            "P": 50,
+            "N": 50,
+            "U": 50,
+            "M": 50
+          },
+          "target_positions": {
+            "1": 50,
+            "2": 50,
+            "3": 50,
+            "4": 50
+          },
+          "by_class": {
+            "P": {
+              "position": {
+                "1": 13,
+                "2": 13,
+                "3": 12,
+                "4": 12
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "N": {
+              "position": {
+                "1": 12,
+                "2": 12,
+                "3": 13,
+                "4": 13
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "U": {
+              "position": {
+                "1": 13,
+                "2": 12,
+                "3": 13,
+                "4": 12
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "M": {
+              "position": {
+                "1": 12,
+                "2": 13,
+                "3": 12,
+                "4": 13
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            }
+          }
+        },
+        "validation": {
+          "rows": 40,
+          "domains": {
+            "kayak dry bags": 10,
+            "embroidery hoops": 10,
+            "violin shoulder rests": 10,
+            "folding picnic benches": 10
+          },
+          "classes": {
+            "P": 10,
+            "N": 10,
+            "U": 10,
+            "M": 10
+          },
+          "target_positions": {
+            "1": 10,
+            "4": 10,
+            "2": 10,
+            "3": 10
+          },
+          "by_class": {
+            "P": {
+              "position": {
+                "1": 3,
+                "2": 3,
+                "3": 2,
+                "4": 2
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "N": {
+              "position": {
+                "1": 2,
+                "2": 2,
+                "3": 3,
+                "4": 3
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "U": {
+              "position": {
+                "1": 3,
+                "2": 2,
+                "3": 3,
+                "4": 2
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "M": {
+              "position": {
+                "1": 2,
+                "2": 3,
+                "3": 2,
+                "4": 3
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            }
+          }
+        }
+      },
+      "failures": [],
+      "source_cases": 240,
+      "source_headings": 24
+    },
+    "sentiment-b": {
+      "splits": {
+        "train": {
+          "rows": 200,
+          "domains": {
+            "public park seating": 10,
+            "stationery delivery": 10,
+            "tailoring fittings": 10,
+            "video caption editing": 10,
+            "rehearsal room acoustics": 10,
+            "photobook binding": 10,
+            "language dictionary apps": 10,
+            "online art lessons": 10,
+            "podcast editing": 10,
+            "car wash visits": 10,
+            "guided cooking sessions": 10,
+            "garden fencing installation": 10,
+            "meal preparation kits": 10,
+            "skateboard repairs": 10,
+            "furniture restoration": 10,
+            "charity shop purchases": 10,
+            "food market stalls": 10,
+            "indoor plant watering services": 10,
+            "local newspaper delivery": 10,
+            "document scanning": 10
+          },
+          "classes": {
+            "M": 50,
+            "U": 50,
+            "P": 50,
+            "N": 50
+          },
+          "target_positions": {
+            "1": 50,
+            "3": 50,
+            "4": 50,
+            "2": 50
+          },
+          "by_class": {
+            "P": {
+              "position": {
+                "1": 13,
+                "2": 13,
+                "3": 12,
+                "4": 12
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "N": {
+              "position": {
+                "1": 12,
+                "2": 13,
+                "3": 13,
+                "4": 12
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "U": {
+              "position": {
+                "1": 12,
+                "2": 12,
+                "3": 13,
+                "4": 13
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            },
+            "M": {
+              "position": {
+                "1": 13,
+                "2": 12,
+                "3": 12,
+                "4": 13
+              },
+              "style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              },
+              "question_style": {
+                "0": 10,
+                "1": 10,
+                "2": 10,
+                "3": 10,
+                "4": 10
+              }
+            }
+          }
+        },
+        "validation": {
+          "rows": 40,
+          "domains": {
+            "orienteering map printing": 10,
+            "falconry demonstrations": 10,
+            "weaving loom rental": 10,
+            "community darkroom sessions": 10
+          },
+          "classes": {
+            "M": 10,
+            "N": 10,
+            "U": 10,
+            "P": 10
+          },
+          "target_positions": {
+            "1": 10,
+            "4": 10,
+            "3": 10,
+            "2": 10
+          },
+          "by_class": {
+            "P": {
+              "position": {
+                "1": 3,
+                "2": 3,
+                "3": 2,
+                "4": 2
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "N": {
+              "position": {
+                "1": 2,
+                "2": 3,
+                "3": 3,
+                "4": 2
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "U": {
+              "position": {
+                "1": 2,
+                "2": 2,
+                "3": 3,
+                "4": 3
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            },
+            "M": {
+              "position": {
+                "1": 3,
+                "2": 2,
+                "3": 2,
+                "4": 3
+              },
+              "style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "question_style": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              }
+            }
+          }
+        }
+      },
+      "failures": [],
+      "source_cases": 240,
+      "source_headings": 24
+    },
+    "combined": {
+      "rows": 480,
+      "distinct_exact_states": 480,
+      "distinct_case_and_punctuation_preserving_whitespace_normalized_states": 480
+    }
+  },
+  "scenario_assessment": {
+    "source_events": 480,
+    "unique_states": 480,
+    "domain_blocks": 48,
+    "events_per_domain": 10,
+    "semantic_assessment": "All 48 domain blocks were read post-freeze. Different incidents/attributes/uses, not sets of four polarity rewrites of one event. Count 480 separately described events; do not equate with statistically independent scenarios. Shared schemas, expectation reversals, service success/failure and ten-case domain scaffolds remain.",
+    "repeated_four_polarity_event_sets_identified": 0,
+    "limitations": "Judgment-based source scan, not a formal semantic clustering or external independence proof."
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "medium",
+      "row_id": "data:pilot-v2:sentiment-b:g011:r01",
+      "stage": "post-freeze label-visible source scan; outside 40-row sample",
+      "issue": "Not a crease survived the journey says creases disappeared, not that shipment avoided creasing. This reverses the likely intended negation and makes the delivery account incoherent with protective rigid boards.",
+      "chosen_option": "Positive remains plausible on a literal crease-removal reading; no blinded choice exists for this row.",
+      "comparison": "Source P; not a confirmed incorrect class, but defective semantic evidence.",
+      "ambiguity": "Likely intended Not a crease appeared / Not a sheet was creased; present wording does not say that.",
+      "must_fix": "Re-author the sentence to describe uncreased arrival unambiguously and publish a new producer revision; do not silently flip the target or modify frozen artifacts."
+    }
+  ],
+  "samples": [
+    {
+      "id": "data:pilot-v2:sentiment-a:g001:r01",
+      "chosen_option_id": "c4b641e47bac09151",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Quiet shutoff and one-handed pouring benefit the parent; no kettle fault.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "electric kettles",
+      "comparison": {
+        "producer_target_id": "c4b641e47bac09151",
+        "producer_target_text": "The subject is praised, and no fault with it is expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g023:r01",
+      "chosen_option_id": "c5aa76e23aa765c97",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Inventory and contents order only; no judgment of the puzzle book.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "puzzle books",
+      "comparison": {
+        "producer_target_id": "c5aa76e23aa765c97",
+        "producer_target_text": "The subject is described without any praise or criticism of it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g045:r01",
+      "chosen_option_id": "cf61ab67e0c63d4c5",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Reach under sofa avoids lifting; grateful back implies approval, not criticism of vacuum.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "vacuum cleaners",
+      "comparison": {
+        "producer_target_id": "cf61ab67e0c63d4c5",
+        "producer_target_text": "The subject is praised, and no fault with it is expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g067:r01",
+      "chosen_option_id": "c2cb42c123d274e31",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer reports facts about the subject without evaluating it.",
+      "semantic_class": "neutral",
+      "reason": "Packing locations do not evaluate the sleep mask.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "sleep masks",
+      "comparison": {
+        "producer_target_id": "c2cb42c123d274e31",
+        "producer_target_text": "The writer reports facts about the subject without evaluating it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g089:r01",
+      "chosen_option_id": "c0366052f3dfcd2fa",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The writer expresses approval of the subject, without offering any criticism of it.",
+      "semantic_class": "positive",
+      "reason": "Accessible raised switch is valued; no lamp defect.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "desk lamps",
+      "comparison": {
+        "producer_target_id": "c0366052f3dfcd2fa",
+        "producer_target_text": "The writer expresses approval of the subject, without offering any criticism of it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g112:r01",
+      "chosen_option_id": "ccc65599889fa0892",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The writer conveys approval of the subject while also expressing criticism of it.",
+      "semantic_class": "mixed",
+      "reason": "Head support praised; leaking and interrupted sleep criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "travel pillows",
+      "comparison": {
+        "producer_target_id": "ccc65599889fa0892",
+        "producer_target_text": "The writer conveys approval of the subject while also expressing criticism of it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g134:r01",
+      "chosen_option_id": "c29de8e621381459a",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is faulted, and no praise for it is expressed.",
+      "semantic_class": "negative",
+      "reason": "Tray access is worse than bags; no praise for insert.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "board game inserts",
+      "comparison": {
+        "producer_target_id": "c29de8e621381459a",
+        "producer_target_text": "The subject is faulted, and no praise for it is expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g156:r01",
+      "chosen_option_id": "c112bff8148f2c89a",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer expresses both approval and criticism of the subject.",
+      "semantic_class": "mixed",
+      "reason": "Cleanability explicitly appreciated; collapsed perch criticised. Negative overall conclusion does not erase praise.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "bird feeders",
+      "comparison": {
+        "producer_target_id": "c112bff8148f2c89a",
+        "producer_target_text": "The writer expresses both approval and criticism of the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g178:r01",
+      "chosen_option_id": "cf946c0bff74bed95",
+      "chosen_option_position": 3,
+      "chosen_option_text": "Criticism is expressed about the subject without any accompanying approval.",
+      "semantic_class": "negative",
+      "reason": "Bleed-through ruins pages and makes notebook unusable for these pens.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "notebooks",
+      "comparison": {
+        "producer_target_id": "cf946c0bff74bed95",
+        "producer_target_text": "Criticism is expressed about the subject without any accompanying approval.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g200:r01",
+      "chosen_option_id": "c9399492a6819e6ab",
+      "chosen_option_position": 3,
+      "chosen_option_text": "Praise for the item alongside a complaint about it.",
+      "semantic_class": "mixed",
+      "reason": "Cooling appreciated; drooping hinge requires readjustment.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "train",
+      "domain": "portable fans",
+      "comparison": {
+        "producer_target_id": "c9399492a6819e6ab",
+        "producer_target_text": "Praise for the item alongside a complaint about it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g201:r01",
+      "chosen_option_id": "c98ebb621b8b9d55b",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject is praised, and no fault with it is expressed.",
+      "semantic_class": "positive",
+      "reason": "Dry contents after immersion earn trust; prior expectation of dampness is not an actual bag fault.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "comparison": {
+        "producer_target_id": "c98ebb621b8b9d55b",
+        "producer_target_text": "The subject is praised, and no fault with it is expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g205:r01",
+      "chosen_option_id": "c017096799a72d04a",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Approval of the item, with no complaint about it.",
+      "semantic_class": "positive",
+      "reason": "Clear sleeve avoids unpacking; expected inconvenience was avoided, not a criticism.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "comparison": {
+        "producer_target_id": "c017096799a72d04a",
+        "producer_target_text": "Approval of the item, with no complaint about it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g210:r01",
+      "chosen_option_id": "cb69da704a782cb97",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is faulted, and no praise for it is expressed.",
+      "semantic_class": "negative",
+      "reason": "Seam leaks and double-bagging required. Saying closure is not the problem localises defect rather than praising closure.",
+      "ambiguity": "Low: absence of closure defect is not an affirmative commendation; negative preferred over mixed.",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "kayak dry bags",
+      "comparison": {
+        "producer_target_id": "cb69da704a782cb97",
+        "producer_target_text": "The subject is faulted, and no praise for it is expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g214:r01",
+      "chosen_option_id": "c78402ed33bc6e669",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer criticises the subject and offers no approval.",
+      "semantic_class": "negative",
+      "reason": "Heavy rim causes wrist pain and interrupts sewing; no benefit asserted.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "comparison": {
+        "producer_target_id": "c78402ed33bc6e669",
+        "producer_target_text": "The writer criticises the subject and offers no approval.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g218:r01",
+      "chosen_option_id": "c820562696ec383f8",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Criticism is expressed about the subject without any accompanying approval.",
+      "semantic_class": "negative",
+      "reason": "Distortion spoils geometry and prevents intended use.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "embroidery hoops",
+      "comparison": {
+        "producer_target_id": "c820562696ec383f8",
+        "producer_target_text": "Criticism is expressed about the subject without any accompanying approval.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g223:r01",
+      "chosen_option_id": "c7c57e053f84a308d",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Leg settings and diary record only.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "comparison": {
+        "producer_target_id": "c7c57e053f84a308d",
+        "producer_target_text": "The subject is described without any praise or criticism of it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g227:r01",
+      "chosen_option_id": "cf7aca9d85394551c",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer reports facts about the subject without evaluating it.",
+      "semantic_class": "neutral",
+      "reason": "Routine storage and folding feet are not approval.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "violin shoulder rests",
+      "comparison": {
+        "producer_target_id": "cf7aca9d85394551c",
+        "producer_target_text": "The writer reports facts about the subject without evaluating it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g231:r01",
+      "chosen_option_id": "cc038f33aac483d61",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The subject is described without any praise or criticism of it.",
+      "semantic_class": "neutral",
+      "reason": "Seating and other chairs reported without judging capacity or comfort.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "comparison": {
+        "producer_target_id": "cc038f33aac483d61",
+        "producer_target_text": "The subject is described without any praise or criticism of it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g236:r01",
+      "chosen_option_id": "c39f1475985ed8212",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer expresses both approval and criticism of the subject.",
+      "semantic_class": "mixed",
+      "reason": "Level adjustment praised; splinters criticised despite negative overall conclusion.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "comparison": {
+        "producer_target_id": "c39f1475985ed8212",
+        "producer_target_text": "The writer expresses both approval and criticism of the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-a:g240:r01",
+      "chosen_option_id": "ccbc36b4307e204a0",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise for the item alongside a complaint about it.",
+      "semantic_class": "mixed",
+      "reason": "Compact fit welcomed; finger pinching criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-a",
+      "split": "validation",
+      "domain": "folding picnic benches",
+      "comparison": {
+        "producer_target_id": "ccbc36b4307e204a0",
+        "producer_target_text": "Praise for the item alongside a complaint about it.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g134:r01",
+      "chosen_option_id": "c47547",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Afternoon shade implies useful comfort; sunken support causes sliding. Both concern park amenity.",
+      "ambiguity": "Low: shade is implicit amenity approval rather than explicit praise; mixed preferred.",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "public park seating",
+      "comparison": {
+        "producer_target_id": "c47547",
+        "producer_target_text": "The subject receives praise and criticism.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g178:r01",
+      "chosen_option_id": "c85493",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Moisture checks explicitly valued; unlatched door is criticism of service.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "indoor plant watering services",
+      "comparison": {
+        "producer_target_id": "c85493",
+        "producer_target_text": "The subject receives praise and criticism.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g004:r01",
+      "chosen_option_id": "c28958",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise and criticism of the named subject are expressed.",
+      "semantic_class": "mixed",
+      "reason": "Useful explanation praised; dismissed question criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "guided cooking sessions",
+      "comparison": {
+        "producer_target_id": "c28958",
+        "producer_target_text": "Praise and criticism of the named subject are expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g094:r01",
+      "chosen_option_id": "c32659",
+      "chosen_option_position": 1,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Reliable early delivery praised; bent crossword handling criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "local newspaper delivery",
+      "comparison": {
+        "producer_target_id": "c32659",
+        "producer_target_text": "The subject receives praise and criticism.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g027:r01",
+      "chosen_option_id": "c64004",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The writer reports information without any judgment about the subject.",
+      "semantic_class": "neutral",
+      "reason": "Track receipt and file identification without quality judgment.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "podcast editing",
+      "comparison": {
+        "producer_target_id": "c64004",
+        "producer_target_text": "The writer reports information without any judgment about the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g125:r01",
+      "chosen_option_id": "c84580",
+      "chosen_option_position": 2,
+      "chosen_option_text": "An approving assessment without any complaints about the subject.",
+      "semantic_class": "positive",
+      "reason": "Assistant found missing volume and checked rather than guessing; implied service praise.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "charity shop purchases",
+      "comparison": {
+        "producer_target_id": "c84580",
+        "producer_target_text": "An approving assessment without any complaints about the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g020:r01",
+      "chosen_option_id": "c66534",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Favourable and unfavourable judgments about the named subject appear.",
+      "semantic_class": "mixed",
+      "reason": "Accurate tracking praised; crushed presentation folders criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "stationery delivery",
+      "comparison": {
+        "producer_target_id": "c66534",
+        "producer_target_text": "Favourable and unfavourable judgments about the named subject appear.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g192:r01",
+      "chosen_option_id": "c43048",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The subject is criticised, not praised.",
+      "semantic_class": "negative",
+      "reason": "Omitted negation reverses safety instruction; serious implied criticism, not neutral transcription facts.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "video caption editing",
+      "comparison": {
+        "producer_target_id": "c43048",
+        "producer_target_text": "The subject is criticised, not praised.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g049:r01",
+      "chosen_option_id": "c97020",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Praise for the named subject, with no criticism expressed.",
+      "semantic_class": "positive",
+      "reason": "Storm resistance and careful bracing earn confidence; neither/nor negate defects, not praise.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "garden fencing installation",
+      "comparison": {
+        "producer_target_id": "c97020",
+        "producer_target_text": "Praise for the named subject, with no criticism expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g070:r01",
+      "chosen_option_id": "c49658",
+      "chosen_option_position": 3,
+      "chosen_option_text": "A critical assessment without any compliments about the subject.",
+      "semantic_class": "negative",
+      "reason": "Unidentified allergen forced abandoned meal; implied criticism of provider.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "train",
+      "domain": "meal preparation kits",
+      "comparison": {
+        "producer_target_id": "c49658",
+        "producer_target_text": "A critical assessment without any compliments about the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g208:r01",
+      "chosen_option_id": "c90535",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Favourable and unfavourable judgments about the named subject appear.",
+      "semantic_class": "mixed",
+      "reason": "Crisp symbol reproduction praised; missing north arrow criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "comparison": {
+        "producer_target_id": "c90535",
+        "producer_target_text": "Favourable and unfavourable judgments about the named subject appear.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g222:r01",
+      "chosen_option_id": "c29032",
+      "chosen_option_position": 1,
+      "chosen_option_text": "Criticism of the named subject, with no praise expressed.",
+      "semantic_class": "negative",
+      "reason": "Dismissed welfare question overshadows visit; desire to watch flight does not praise provider.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "comparison": {
+        "producer_target_id": "c29032",
+        "producer_target_text": "Criticism of the named subject, with no praise expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g239:r01",
+      "chosen_option_id": "c56015",
+      "chosen_option_position": 3,
+      "chosen_option_text": "A factual account without any judgments about the subject.",
+      "semantic_class": "neutral",
+      "reason": "Hours changed and other facilities unchanged; no expressed appraisal of longer session.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "comparison": {
+        "producer_target_id": "c56015",
+        "producer_target_text": "A factual account without any judgments about the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g209:r01",
+      "chosen_option_id": "c43442",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Only favourable judgments about the named subject are given.",
+      "semantic_class": "positive",
+      "reason": "Retained fine detail enables discrimination; blurred OTHER proofs are not criticism of Contour Press.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "orienteering map printing",
+      "comparison": {
+        "producer_target_id": "c43442",
+        "producer_target_text": "Only favourable judgments about the named subject are given.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g235:r01",
+      "chosen_option_id": "c30970",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The writer approves of the subject and voices no objections.",
+      "semantic_class": "positive",
+      "reason": "Instruction finally enables clear comparison; previous blurred edges not attributed as provider fault.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "comparison": {
+        "producer_target_id": "c30970",
+        "producer_target_text": "The writer approves of the subject and voices no objections.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g211:r01",
+      "chosen_option_id": "c66383",
+      "chosen_option_position": 3,
+      "chosen_option_text": "The writer approves of the subject and voices no objections.",
+      "semantic_class": "positive",
+      "reason": "Instruction enables weaving; feared uneven warp is avoided, not actual fault.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "comparison": {
+        "producer_target_id": "c66383",
+        "producer_target_text": "The writer approves of the subject and voices no objections.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g224:r01",
+      "chosen_option_id": "c84071",
+      "chosen_option_position": 2,
+      "chosen_option_text": "The subject receives praise and criticism.",
+      "semantic_class": "mixed",
+      "reason": "Clear handling demonstration praised; banner obstructs landings.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "comparison": {
+        "producer_target_id": "c84071",
+        "producer_target_text": "The subject receives praise and criticism.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g228:r01",
+      "chosen_option_id": "c74798",
+      "chosen_option_position": 1,
+      "chosen_option_text": "An assessment with compliments and complaints about the subject.",
+      "semantic_class": "mixed",
+      "reason": "Close feather observation is valued opportunity; loud microphone criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "falconry demonstrations",
+      "comparison": {
+        "producer_target_id": "c74798",
+        "producer_target_text": "An assessment with compliments and complaints about the subject.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g212:r01",
+      "chosen_option_id": "c92068",
+      "chosen_option_position": 2,
+      "chosen_option_text": "Criticism of the named subject, with no praise expressed.",
+      "semantic_class": "negative",
+      "reason": "Cracked rental part damages thread; inspection failure criticised.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "weaving loom rental",
+      "comparison": {
+        "producer_target_id": "c92068",
+        "producer_target_text": "Criticism of the named subject, with no praise expressed.",
+        "matches_frozen_choice": true
+      }
+    },
+    {
+      "id": "data:pilot-v2:sentiment-b:g233:r01",
+      "chosen_option_id": "c23336",
+      "chosen_option_position": 4,
+      "chosen_option_text": "The subject is described, not evaluated.",
+      "semantic_class": "neutral",
+      "reason": "Booking time/equipment/access only; availability not independently praise.",
+      "ambiguity": "none material",
+      "must_fix": null,
+      "producer": "sentiment-b",
+      "split": "validation",
+      "domain": "community darkroom sessions",
+      "comparison": {
+        "producer_target_id": "c23336",
+        "producer_target_text": "The subject is described, not evaluated.",
+        "matches_frozen_choice": true
+      }
+    }
+  ],
+  "hash_preservation": {
+    "before": {
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json": "345e935b46ca3d1226dfd603208bf5d1e1e16982d425319f678e34447b0c9483",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+    },
+    "after": {
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json": "345e935b46ca3d1226dfd603208bf5d1e1e16982d425319f678e34447b0c9483",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+      "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+    },
+    "all_unchanged": true,
+    "manifest_and_four_reviewed_shards_match_manifest": true
+  },
+  "disposition": "One wording must-fix before semantic sign-off; no confirmed target mismatch in the 40 blind judgments. Full-source scan did not establish a forced incorrect positive/negative target.",
+  "additional_paid_spend_gbp": 0
+}

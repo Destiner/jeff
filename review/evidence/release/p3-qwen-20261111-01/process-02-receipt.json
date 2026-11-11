@@ -1,0 +1,40 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Users/destiner/Code/jeff/.worktrees/release/.venv/bin/python",
+    "-m",
+    "jeff.runtime.qwen_challenger",
+    "predict",
+    "--audit-dir",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02",
+    "--model-dir",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download/model",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02",
+    "--device",
+    "mps"
+  ],
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "HOME": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-home-02",
+    "HF_HOME": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/empty-hf-cache",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "VECLIB_MAXIMUM_THREADS": "4"
+  },
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/release",
+  "started_at": "2026-11-11T14:40:52.161619+00:00",
+  "wrapper_pid": 40471,
+  "timeout_seconds": 1300,
+  "timing_scope": "Includes time wrapper/interpreter/import/preflight/model load/startup/steady pass/output.",
+  "child_pid": 40473,
+  "returncode": 0,
+  "wall_seconds": 38.27064758306369,
+  "completed_at": "2026-11-11T14:41:30.432060+00:00"
+}

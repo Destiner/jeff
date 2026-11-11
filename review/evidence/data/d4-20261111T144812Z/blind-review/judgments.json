@@ -1,0 +1,252 @@
+{
+  "review_kind": "target-hidden rendered-input judgment, not ground truth",
+  "input_path": "/Users/destiner/Code/jeff/artifacts/data/d4-20261111T144812Z/blind-inputs.jsonl",
+  "input_sha256": "c550b997ccfd352cf3844b6411bc10c0f4b13d1693826bbd6b5123acfd32920d",
+  "started_at_utc": "2026-11-11T14:53:33Z",
+  "identity": {"PI_PROVIDER": "openai", "PI_MODEL": "gpt-sol"},
+  "scope": "24 supplied TRAIN decision projections only; AGENTS.md and docs/contracts.md read for instructions. IDs used solely to attach judgments, not to solve. No saved targets available or requested.",
+  "independence_limit": "Fresh same-alias judgment is not independent human or model-family verification.",
+  "immutability": "Initial frozen judgments; do not revise after target disclosure or downstream comparison.",
+  "judgments": [
+    {
+      "id": "data:pilot-v1:rule_application:g10:r07",
+      "chosen_option_id": "2ae8f95c20fc",
+      "chosen_option_text": "Final state: occupied.",
+      "rationale": "Start occupied; exit makes open; enter from open makes occupied.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "All three controller states are offered; initial and final coincide, so an ignore-events shortcut succeeds here but is not a competing interpretation."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r08",
+      "chosen_option_id": "24c9b952c1c5f4",
+      "chosen_option_text": "£4",
+      "rationale": "£24 × 0.5 = £12; max(0, £12 − £8) = £4.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Order and zero floor are explicit; reverse-order calculation yields the offered £8 distractor."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r07",
+      "chosen_option_id": "o43d2e40ffa10",
+      "chosen_option_text": "Mist",
+      "rationale": "4 < 4 is false; in the else branch, 8 >= 8 is true, selecting Mist.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Boundary comparisons are explicit and all branch outputs appear."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r08",
+      "chosen_option_id": "e6690485cdfef2",
+      "chosen_option_text": "Reject: too few eligible signers",
+      "rationale": "Only records officer is eligible among the received signatures; intern is ignored. Distinct eligible count 1 < 2.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Too many eligible signers is structurally impossible with only two eligible identities and deduplication, weakening one distractor. Authorize versus too few still requires counting eligible signatures."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r07",
+      "chosen_option_id": "0443c8b6de927c",
+      "chosen_option_text": "150 millimetres",
+      "rationale": "145 is 5 from both 140 and 150; the stated tie rule selects the numerically larger 150.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "140 is not defensible under the explicit tie rule, irrespective of external rounding conventions. 130 and 160 are not nearest multiples."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r08",
+      "chosen_option_id": "7e7c609634f6c2",
+      "chosen_option_text": "Select candidate G",
+      "rationale": "F and G tie at minimum distance 1 and battery 55; G has machine ID 4 < F's 8. H loses on distance 2.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "All candidate names offered. Tuple field order and each preference direction are explicit."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r07",
+      "chosen_option_id": "o3691051ca4d5",
+      "chosen_option_text": "Vendor A",
+      "rationale": "20/4 = 5 and 30/6 = 5 litres per minute. Equality invokes the explicit return-Vendor-A rule.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Tie describes the raw comparison but is not a defensible policy output: the question asks which result follows and equality explicitly returns A. The Tie distractor is globally impossible under this policy."
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g07:r07",
+      "chosen_option_id": "08f3e4cf91d0",
+      "chosen_option_text": "Conflicts: none.",
+      "rationale": "Proposal [06:00,08:00) only touches Booking 1 at 08:00 and is wholly before Bookings 2 and 3. No positive overlap exists.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Endpoint behavior and same-day timing are supplied, so inclusive-end scheduling is not an alternative. Some options are easy to eliminate using chronology alone."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r07",
+      "chosen_option_id": "o2de94effbf24",
+      "chosen_option_text": "(0, 0)",
+      "rationale": "(2, −3) + (−2, 3) = (0, 0); replacing x by −x leaves (0, 0).",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "The second operation is a no-op at this intermediate point. Addition alone finds the answer, so this row cannot establish execution of reflection. Other distractors are not plausible single-step sign errors."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g005:r08",
+      "chosen_option_id": "ocb4c7ea5696d",
+      "chosen_option_text": "Vendor B",
+      "rationale": "19/4 = 4.75 < 30/6 = 5 litres per minute; the larger ratio is Vendor B's.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Tie is never a final output under the given equality rule. Comparing numerators alone also happens to select B here; that shortcut is not evidence of full ratio reasoning."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g007:r08",
+      "chosen_option_id": "91059a3732d6fc",
+      "chosen_option_text": "140 millimetres",
+      "rationale": "144 is 4 from 140 and 6 from 150; 140 is nearest, with no tie.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "120 and 130 are easily eliminated. This non-tie case does not exercise the stated tie convention."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g001:r07",
+      "chosen_option_id": "179c9f58ed39a2",
+      "chosen_option_text": "Authorize",
+      "rationale": "Deduplicating received eligible signatures gives {records officer, legal officer}, exactly 2 distinct eligible signers, satisfying the authorization rule.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Raw signature count 3 would select too many, contrary to explicit deduplication. Too many distinct eligible signers is impossible with the given eligibility list."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g010:r08",
+      "chosen_option_id": "o74e81ab228a9",
+      "chosen_option_text": "Soak",
+      "rationale": "3 < 4 is true; choose Soak directly. Heat is not evaluated for selecting the other branch.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Only one branch applies explicitly. This is an easy first-branch case, not an ambiguity."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r07",
+      "chosen_option_id": "o4c5dc8d31315",
+      "chosen_option_text": "3",
+      "rationale": "Usable units per pack = 5 − 0 = 5. Demand would need ceil(5/5) = 1 pack, but the mandatory minimum makes max(3,1) = 3.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Choices 0 and 2 violate the explicit minimum. Of the remaining 3 and 6, 3 is visibly enough. The capacity-only answer 1 is absent, so the full pack calculation is not needed."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g002:r08",
+      "chosen_option_id": "o405cbb6d0415",
+      "chosen_option_text": "4",
+      "rationale": "Each pack contributes 5 usable units. ceil(16/5) = 4, exceeding the minimum 3; 3 packs supply only 15.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "3 is a meaningful minimum-only distractor. Zero unusable, reserve, and starting stock make those parts of the general policy unexercised."
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g04:r07",
+      "chosen_option_id": "ca0ffc265f53",
+      "chosen_option_text": "Duty belongs to Juno.",
+      "rationale": "Backward from Kestrel: Juno (1), Lark (2), Kestrel (3), Juno (4). Equivalently 4 mod 3 = 1 backward step.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Direction, starting point, wrap, and step meaning are explicit; all duties are offered."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g002:r07",
+      "chosen_option_id": "ce111cc2c8c1ca",
+      "chosen_option_text": "Select candidate G",
+      "rationale": "F and G share minimum distance 2; G wins their battery comparison, 60 > 40. H's distance 3 loses before battery is considered.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Machine ID is not reached. H is a meaningful highest-battery-only distractor; F has lower machine ID than G but loses earlier."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g005:r07",
+      "chosen_option_id": "bca3acfc4b3ee2",
+      "chosen_option_text": "£0",
+      "rationale": "£12 × 0.5 = £6; the fixed reduction would yield −£2, clamped to £0 by the nonnegative-price rule.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "£2 can arise from reversing the two reductions or taking an absolute value; neither is permitted. No negative answer is offered, so the floor is less directly discriminated."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g006:r08",
+      "chosen_option_id": "of6e46d503e11",
+      "chosen_option_text": "(-1, 4)",
+      "rationale": "(3,1) + (−2,3) = (1,4); reflecting x gives (−1,4).",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "(1,4) catches omission of reflection, but reversing the specified operations would give (−5,4), which is absent. Only the correct option has a negative x, making sign-only elimination effective."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r07",
+      "chosen_option_id": "20ffc23971707e",
+      "chosen_option_text": "0, 5, 0; unfilled 0",
+      "rationale": "P is quarantined and contributes 0. M is the earliest usable batch and supplies all demand 5 of its 7 units. N contributes 0; demand remaining 0.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Both 0,3,2 and 0,5,0 satisfy quarantine and total demand, so earliest-usable priority is needed to distinguish these options. Listed reporting order is explicit."
+    },
+    {
+      "id": "data:pilot-v1:rule_application:g01:r07",
+      "chosen_option_id": "a4716340f1cd",
+      "chosen_option_text": "Route to Rapid bench.",
+      "rationale": "Safety and warranty flags are off, so their rules fail. Urgent is on; the first matching rule routes to Rapid bench.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Only one flag is on, so simple active-flag lookup succeeds without implementing first-match precedence. This row does not discriminate precedence handling."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r07",
+      "chosen_option_id": "oe953e02b73e4",
+      "chosen_option_text": "45",
+      "rationale": "Start 45 gives interval 45–60, touching existing 15–45 only at its endpoint. Gap is 0, satisfying minimum 0. It is earlier than 46 and 60.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Touching and cooldown are explicitly settled. All listed starts are legal, so choosing the smallest listed start succeeds without checking overlap or cooldown."
+    },
+    {
+      "id": "data:pilot-v2:rule-b:g008:r08",
+      "chosen_option_id": "obf3e44efc6be",
+      "chosen_option_text": "No slot",
+      "rationale": "Durations 15 yield 30–45, 40–55, and 44–59. Each overlaps existing 15–45 for positive duration (15, 5, and 1 minutes respectively). No listed start is legal.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Every candidate start lies strictly inside the existing interval. This permits a start-inside shortcut and does not exercise endpoint or cooldown subtleties."
+    },
+    {
+      "id": "data:pilot-v2:rule-a:g003:r08",
+      "chosen_option_id": "c223f0868b467a",
+      "chosen_option_text": "0, 7, 2; unfilled 3",
+      "rationale": "Skip quarantined P; exhaust M's 7 then N's 2 usable units. Total supplied 9; unfilled demand 12 − 9 = 3. Report P,M,N as 0,7,2.",
+      "assessment": "unique",
+      "alternative_defensible_answers": [],
+      "missing_conventions": [],
+      "construction_note": "Demand exceeds all usable stock, so FIFO priority does not affect quantities. Quarantine filtering plus using all usable stock suffices."
+    }
+  ]
+}

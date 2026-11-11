@@ -1,0 +1,45 @@
+{
+  "schema_version": "evaluation/0.1",
+  "method": "lexical",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+  },
+  "predictions": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/lexical.jsonl",
+    "sha256": "40518fca610deb01cfb24d44862b3209a1b88edc914728c355d429b5d23385eb"
+  },
+  "rows": 96,
+  "definition": "softmax of set-token cosine overlap, temperature 1; lowercase ASCII word tokens; fixed stopwords",
+  "stopwords": [
+    "a",
+    "an",
+    "and",
+    "as",
+    "at",
+    "be",
+    "by",
+    "do",
+    "does",
+    "for",
+    "from",
+    "how",
+    "in",
+    "is",
+    "it",
+    "of",
+    "on",
+    "or",
+    "should",
+    "that",
+    "the",
+    "this",
+    "to",
+    "what",
+    "which",
+    "with"
+  ],
+  "tie_break": "first option in reference input order",
+  "training": "none",
+  "cost_gbp": 0
+}

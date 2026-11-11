@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-b-r1",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "generation_revision": "intent-b-generator-r1",
+    "source_revision": "intent-b-source-r1",
+    "assignment_revision": "intent-b-assignment-r1",
+    "sha256": {
+      "generate.py": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0",
+      "source_cases.txt": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+      "group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac"
+    },
+    "config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+    "method": "Existing approved agent authors every scenario and teacher label; deterministic CPU compilation only.",
+    "seed": 731947,
+    "sampling_parameters": null,
+    "immutable_sampling_details": "Unavailable from agent environment",
+    "option_order": "Balanced per split and option count; shuffled target slots independent of case content; distractors shuffled separately.",
+    "option_ids": "Independent deterministic opaque 64-bit identifiers",
+    "question": "What does the customer want?",
+    "task_family": "intent",
+    "rows_per_group": 1,
+    "parent_rows_read": 0,
+    "output_sha256": {
+      "train.jsonl": "0a0a9bbd453ae050e9364b9174f2c54e2191eba48aa679f2058efed2d497e1e7",
+      "validation.jsonl": "7f849e8b21082c64635e1b3620cb787f4393af02e6ce2dceb22c4de90948dd7c"
+    }
+  },
+  "usage_constraints": {
+    "origin": "Original synthetic requests and labels generated under existing provider terms.",
+    "redistribution": "No independent redistribution-license claim; subject to applicable provider terms.",
+    "privacy": "No private records or real customer documents used.",
+    "features": "Only state, question, and option texts are model inputs; exclude IDs and provenance."
+  },
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40,
+    "total": 240,
+    "independent_scenarios": 240,
+    "by_domain": {
+      "sewing machine servicing": 10,
+      "upholstery cleaning": 10,
+      "dog walking": 10,
+      "dance lessons": 10,
+      "window glazing": 10,
+      "allotment compost delivery": 10,
+      "baking classes": 10,
+      "tax document retrieval": 10,
+      "aquarium supplies": 10,
+      "printer consumables": 10,
+      "community noticeboards": 10,
+      "home security installation": 10,
+      "e-bike battery repairs": 10,
+      "house removal quotations": 10,
+      "childcare attendance records": 10,
+      "tabletop gaming events": 10,
+      "shoe repairs": 10,
+      "fishing licence administration": 10,
+      "home internet radio": 10,
+      "reusable packaging returns": 10,
+      "drone flight registration": 10,
+      "heritage walking tours": 10,
+      "ice rink skate sharpening": 10,
+      "braille transcription service": 10
+    }
+  },
+  "limitations": [
+    "All labels are teacher-authored; same-session review is not independent correctness verification.",
+    "Teacher immutable revision and sampling configuration unavailable.",
+    "No tokenizer or model loaded; parent must perform the 256-token audit.",
+    "No historical examples or evaluation data inspected; parent must check historical overlap and aggregate uniqueness.",
+    "Lexical overlap and explicit scope phrases may remain predictive; this is not a claim of shortcut-free data.",
+    "Ten scenarios per domain provide limited coverage of that domain."
+  ]
+}

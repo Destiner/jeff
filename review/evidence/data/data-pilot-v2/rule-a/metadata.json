@@ -1,0 +1,78 @@
+{
+  "cost": {
+    "additional_spend": 0,
+    "currency": "GBP",
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "assignment_config": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/pilot-v2.json",
+    "assignment_config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+    "assignment_revision": "group_assignments-r1",
+    "audit_revision": "audit-r1",
+    "candidate_name_and_listing_seed": 174031,
+    "generation_revision": "r1",
+    "git_revision": null,
+    "git_revision_reason": "No Git access or checkout modification authorized.",
+    "job": "data-pilot-v2-rule-a-r1",
+    "label_promotion": "teacher to rule_verified only after 240/240 separate-algorithm expected-answer comparisons; same agent, not independent authorship.",
+    "method": "Same-agent original synthetic policy authoring; deterministic standard-library Python rendering and separate-algorithm structured-fact audit.",
+    "option_seed": 813502,
+    "output_sha256": {
+      "train.jsonl": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "validation.jsonl": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e"
+    },
+    "sampling": {
+      "other": "Existing agent sampling unavailable",
+      "temperature": null,
+      "top_p": null
+    },
+    "source_and_script_sha256": {
+      "audit.py": "61ce55fc555d2e62bdf6345f2650331c4931befccde289cb4674522cb3f64ccd",
+      "audit_cases.jsonl": "11f39423a352a0bdaf25f85b9421e119aa495cbd00de82c69905d18594f8271f",
+      "author_cases.py": "229c7f233085022cf8c6c1e91ab02f56d7b0dd2c05f36d1fd488ad2f0a8551ec",
+      "finalize.py": "ab494f8d275ff6a74e90bf39b193c21499440855ea282919aff7db357060578b",
+      "generate.py": "ec296c9428632a5a5f39b4f724f09369d698046edbebec952998b60b8276c6ed",
+      "generation_review.md": "c7ebfa43352427c083822620d62fc269a9d879d81ecdb193651614190e3099c0",
+      "group_assignments.json": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "source_cases.jsonl": "75a0a757f71473f46b207272a2b02c6bbe74eabb81604c54edd762b801f5d85b"
+    },
+    "source_revision": "source_cases-r1",
+    "token_cap_audit": "Deferred to parent CPU audit using actual model tokenizer/format at 256.",
+    "tokenizer_used": false
+  },
+  "group_counts": {
+    "train": 10,
+    "unit": "mechanism",
+    "validation": 5
+  },
+  "limitations": [
+    "Same-agent separate algorithms, not independent authorship or independently verified correctness.",
+    "Prose/fact fidelity is self-review plus exact source rendering joins; audit does not parse natural language.",
+    "120 policy instances are not 120 independent mechanisms; templates share algorithms within 15 frozen groups.",
+    "No tokenizer audit, cross-shard deduplication, parent-row inspection or separate-session teacher spot review performed.",
+    "Class priors and candidate length signals remain and are quantified in validation_report.json.",
+    "Immutable teacher revision and sampling settings unavailable."
+  ],
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-rule-a-r1",
+  "teacher": {
+    "immutable_revision": null,
+    "model_alias": "gpt-sol",
+    "provider": "openai"
+  },
+  "true_policy_counts": {
+    "cases_per_policy": 2,
+    "train": 100,
+    "validation": 20
+  },
+  "usage_constraints": {
+    "model_features": "Only state, question and option text. IDs, labels and provenance are not model inputs.",
+    "origin": "Original synthetic; no private records or external dataset rows.",
+    "splits": "Training mechanisms g001\u2013g010; held-out validation mechanisms g011\u2013g015. Related policy cases stay in their assigned mechanism group.",
+    "terms": "Generated under existing provider terms; no independent redistribution-license claim."
+  }
+}

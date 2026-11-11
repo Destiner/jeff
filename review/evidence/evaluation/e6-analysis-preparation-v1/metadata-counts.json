@@ -1,0 +1,183 @@
+{
+  "collected_at": "2026-11-11T15:37:54.332197+00:00",
+  "inputs": [
+    {
+      "name": "v2-original",
+      "rows": 300,
+      "unique_ids": 300,
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+      "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917"
+    },
+    {
+      "name": "v2-reversed",
+      "rows": 300,
+      "unique_ids": 300,
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+      "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1"
+    },
+    {
+      "name": "probes-paired",
+      "rows": 24,
+      "unique_ids": 24,
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+      "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"
+    }
+  ],
+  "total_presentations": 624,
+  "strata": {
+    "inherited-v1": {
+      "reference_rows": 60,
+      "pairs": 60,
+      "retained_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained",
+        "uniform",
+        "lexical",
+        "qwen25-05b-instruct-frozen"
+      ],
+      "future_predictor_count": 11,
+      "families": {
+        "intent": {
+          "rows": 20,
+          "source_groups": 5,
+          "domain_known_units": 5,
+          "domain_unknown_rows": 0,
+          "mechanism_known_units": 5,
+          "mechanism_unknown_rows": 0,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 20
+        },
+        "rule_application": {
+          "rows": 20,
+          "source_groups": 2,
+          "domain_known_units": 2,
+          "domain_unknown_rows": 0,
+          "mechanism_known_units": 2,
+          "mechanism_unknown_rows": 0,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 20
+        },
+        "sentiment": {
+          "rows": 20,
+          "source_groups": 5,
+          "domain_known_units": 5,
+          "domain_unknown_rows": 0,
+          "mechanism_known_units": 5,
+          "mechanism_unknown_rows": 0,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 20
+        }
+      }
+    },
+    "new-v2": {
+      "reference_rows": 240,
+      "pairs": 240,
+      "retained_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained",
+        "uniform",
+        "lexical",
+        "qwen25-05b-instruct-frozen"
+      ],
+      "future_predictor_count": 11,
+      "families": {
+        "intent": {
+          "rows": 80,
+          "source_groups": 80,
+          "domain_known_units": 8,
+          "domain_unknown_rows": 0,
+          "mechanism_known_units": 0,
+          "mechanism_unknown_rows": 80,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 80
+        },
+        "rule_application": {
+          "rows": 80,
+          "source_groups": 10,
+          "domain_known_units": 0,
+          "domain_unknown_rows": 80,
+          "mechanism_known_units": 10,
+          "mechanism_unknown_rows": 0,
+          "policy_instance_known_units": 40,
+          "policy_instance_unknown_rows": 0
+        },
+        "sentiment": {
+          "rows": 80,
+          "source_groups": 80,
+          "domain_known_units": 8,
+          "domain_unknown_rows": 0,
+          "mechanism_known_units": 0,
+          "mechanism_unknown_rows": 80,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 80
+        }
+      }
+    },
+    "probes": {
+      "reference_rows": 24,
+      "pairs": 12,
+      "retained_predictors": [
+        "m4-minilm-random-start",
+        "m4-minilm-trained",
+        "m4-msmarco-pretrained-start",
+        "m4-msmarco-trained",
+        "m2-v1-trained",
+        "m3-v1-trained",
+        "uniform",
+        "lexical",
+        "qwen25-05b-instruct-frozen"
+      ],
+      "future_predictor_count": 11,
+      "families": {
+        "intent": {
+          "rows": 8,
+          "source_groups": 4,
+          "domain_known_units": 0,
+          "domain_unknown_rows": 8,
+          "mechanism_known_units": 0,
+          "mechanism_unknown_rows": 8,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 8
+        },
+        "rule_application": {
+          "rows": 8,
+          "source_groups": 4,
+          "domain_known_units": 0,
+          "domain_unknown_rows": 8,
+          "mechanism_known_units": 0,
+          "mechanism_unknown_rows": 8,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 8
+        },
+        "sentiment": {
+          "rows": 8,
+          "source_groups": 4,
+          "domain_known_units": 0,
+          "domain_unknown_rows": 8,
+          "mechanism_known_units": 0,
+          "mechanism_unknown_rows": 8,
+          "policy_instance_known_units": 0,
+          "policy_instance_unknown_rows": 8
+        }
+      }
+    }
+  },
+  "outcomes_inspected": {
+    "M6_training": false,
+    "M6_start": false,
+    "P4_trained": false
+  },
+  "runner_executed": false,
+  "tests_lint_syntax_checks": false,
+  "train_rows_read": false,
+  "model_loads": 0,
+  "paid_gbp": 0
+}

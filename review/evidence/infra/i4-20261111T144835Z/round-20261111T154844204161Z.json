@@ -1,0 +1,2782 @@
+{
+  "observed_at": "2026-11-11T15:48:44.204149+00:00",
+  "messages": {
+    "07151db4-948a-455f-aaf0-e26174c8c7de": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "07151db4-948a-455f-aaf0-e26174c8c7de",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T14:40:52.120903Z",
+        "subject": "Corrected P3 starting within renewed window",
+        "task_id": "P3",
+        "reply_to": "54506e2c-9391-47db-94b5-e75b41979529"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "07151db4-948a-455f-aaf0-e26174c8c7de",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:41:46.923870Z",
+        "updated_at": "2026-11-11T14:45:31.886068Z"
+      }
+    },
+    "07966c62-bbaf-4cd0-84fc-08974ecbb53a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "07966c62-bbaf-4cd0-84fc-08974ecbb53a",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:39:11.220406Z",
+        "subject": "P4 additive binding264c443 ready; original prepare/readout unchanged",
+        "task_id": "M6-P4",
+        "reply_to": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "07966c62-bbaf-4cd0-84fc-08974ecbb53a",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:39.057787Z",
+        "updated_at": "2026-11-11T15:43:19.371204Z"
+      }
+    },
+    "07a043d4-5f4f-486d-b7ac-e8fce4301066": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "07a043d4-5f4f-486d-b7ac-e8fce4301066",
+        "sender": "release",
+        "recipient": "evaluation",
+        "kind": "report",
+        "created_at": "2026-11-11T14:42:33.611921Z",
+        "subject": "P3 frozen Qwen predictions ready:624/624 with exact hashes/runtime receipts",
+        "task_id": "E5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "07a043d4-5f4f-486d-b7ac-e8fce4301066",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:45:07.191777Z",
+        "updated_at": "2026-11-11T14:54:04.111778Z"
+      }
+    },
+    "07ac3cf8-6dbf-4646-82f4-47091b0ff733": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "07ac3cf8-6dbf-4646-82f4-47091b0ff733",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "task",
+        "created_at": "2026-11-11T12:58:06.989246Z",
+        "subject": "One scalar-head LR control; preserve candidates",
+        "task_id": "M5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "07ac3cf8-6dbf-4646-82f4-47091b0ff733",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:53.169902Z",
+        "updated_at": "2026-11-11T14:43:51.316063Z"
+      }
+    },
+    "0b33cbc3-18a4-42d1-bddb-8c8bc909e3a6": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "0b33cbc3-18a4-42d1-bddb-8c8bc909e3a6",
+        "sender": "model",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:56.119904Z",
+        "subject": "All four released D3 prediction files ready",
+        "task_id": "E4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "0b33cbc3-18a4-42d1-bddb-8c8bc909e3a6",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:38:06.400457Z",
+        "updated_at": "2026-11-11T14:38:06.490222Z"
+      }
+    },
+    "0b69e467-8c31-4232-b936-93a43e568222": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "0b69e467-8c31-4232-b936-93a43e568222",
+        "sender": "data",
+        "recipient": "research",
+        "kind": "report",
+        "created_at": "2026-11-11T15:03:37.079763Z",
+        "subject": "TRAIN audit: 24/24 label agreement; concrete branch/distractor limits, no erratum",
+        "task_id": "D4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "0b69e467-8c31-4232-b936-93a43e568222",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:09:10.023693Z",
+        "updated_at": "2026-11-11T15:17:09.796078Z"
+      }
+    },
+    "0bedcd53-c74c-404e-a709-5e3fc66c7eda": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "0bedcd53-c74c-404e-a709-5e3fc66c7eda",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T13:16:28.703730Z",
+        "subject": "M5 control integrated: criterion fails; D3 inference queue ready",
+        "task_id": "M5",
+        "reply_to": "07ac3cf8-6dbf-4646-82f4-47091b0ff733"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "0bedcd53-c74c-404e-a709-5e3fc66c7eda",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.871095Z",
+        "updated_at": "2026-11-11T14:04:52.930621Z"
+      }
+    },
+    "0d09dd2d-ed51-4d36-b19f-bff7d0875e62": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "0d09dd2d-ed51-4d36-b19f-bff7d0875e62",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.369189Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "0d09dd2d-ed51-4d36-b19f-bff7d0875e62",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:26:05.482870Z",
+        "updated_at": "2026-11-11T14:26:29.331285Z"
+      }
+    },
+    "0e29a37c-4f37-430c-bdf1-adb26937dd4b": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "0e29a37c-4f37-430c-bdf1-adb26937dd4b",
+        "sender": "data",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T15:03:37.114400Z",
+        "subject": "Bounded TRAIN audit finds no target defect; supervision contrast caveats",
+        "task_id": "D4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "0e29a37c-4f37-430c-bdf1-adb26937dd4b",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:14.950243Z",
+        "updated_at": "2026-11-11T15:28:15.100053Z"
+      }
+    },
+    "11645caa-a7eb-44b8-b6f0-43280f131956": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "11645caa-a7eb-44b8-b6f0-43280f131956",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "direction",
+        "created_at": "2026-11-11T12:58:06.989581Z",
+        "subject": "Delivery received; standby for a concrete follow-up",
+        "task_id": "R4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "11645caa-a7eb-44b8-b6f0-43280f131956",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:32.631810Z",
+        "updated_at": "2026-11-11T13:00:57.259897Z"
+      }
+    },
+    "1447d1a4-9b95-4a09-846f-3d8888798132": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "1447d1a4-9b95-4a09-846f-3d8888798132",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T14:34:32.738513Z",
+        "subject": "P3 exited before model load; slot returned, minimal fix/refreeze next",
+        "task_id": "P3",
+        "reply_to": "6f75cc76-3f0c-4855-95f7-41a608e87163"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "1447d1a4-9b95-4a09-846f-3d8888798132",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:35:01.184550Z",
+        "updated_at": "2026-11-11T14:36:19.384477Z"
+      }
+    },
+    "15036d26-b9ad-4591-a85d-bd895eb58c3f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "15036d26-b9ad-4591-a85d-bd895eb58c3f",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "task",
+        "created_at": "2026-11-11T15:47:02.631218Z",
+        "subject": "Diagnose order instability; prepare one small frozen-model diagnostic",
+        "task_id": "R6"
+      },
+      "receipt": null
+    },
+    "160605e4-8c81-415c-bba9-93c4453f83a3": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "160605e4-8c81-415c-bba9-93c4453f83a3",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.081913Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "160605e4-8c81-415c-bba9-93c4453f83a3",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:35:01.095511Z",
+        "updated_at": "2026-11-11T14:35:01.125427Z"
+      }
+    },
+    "17dbe1a8-3214-4f18-8773-514b34f2176d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "17dbe1a8-3214-4f18-8773-514b34f2176d",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "update",
+        "created_at": "2026-11-11T15:24:57.340331Z",
+        "subject": "R5 primary authorized; support windows and ownership remain bounded",
+        "task_id": "M6-support"
+      },
+      "receipt": null
+    },
+    "190ea697-a5be-471c-8cb3-c8a4f7b1c040": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "190ea697-a5be-471c-8cb3-c8a4f7b1c040",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:14:42.707701Z",
+        "subject": "Ingestion guard integrated; P3 slot ready after frozen preflight",
+        "task_id": "M5",
+        "reply_to": "589cd306-749a-494d-ba2c-a23ea2d9ba66"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "190ea697-a5be-471c-8cb3-c8a4f7b1c040",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:24:42.929101Z",
+        "updated_at": "2026-11-11T14:24:42.965521Z"
+      }
+    },
+    "1aa69c9c-246f-4416-acef-40e325968acf": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "1aa69c9c-246f-4416-acef-40e325968acf",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T15:40:19.576645Z",
+        "subject": "P4 preparation integratedf0d3ae4; execution depends on M6 handoff",
+        "task_id": "P4",
+        "reply_to": "9ef6b792-4125-4150-aaaa-f2c40a61c84e"
+      },
+      "receipt": null
+    },
+    "1bf99d42-da78-4a80-9cc2-e30ae241697b": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "1bf99d42-da78-4a80-9cc2-e30ae241697b",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "task",
+        "created_at": "2026-11-11T14:46:27.273262Z",
+        "subject": "One-hour operational observation and evidence-backed repairs",
+        "task_id": "I4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "1bf99d42-da78-4a80-9cc2-e30ae241697b",
+        "recipient": "infra",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T14:48:35.417798Z",
+        "updated_at": "2026-11-11T14:48:35.417798Z"
+      }
+    },
+    "1c87b566-fe6b-42b5-8f46-f98c6dceb761": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "1c87b566-fe6b-42b5-8f46-f98c6dceb761",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T15:48:30.335221Z",
+        "subject": "M6 full run starting under45min slot; P4 follows final manifest",
+        "task_id": "M6-P4"
+      },
+      "receipt": null
+    },
+    "2394734c-066a-45cb-8123-c1ecfbad2286": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "2394734c-066a-45cb-8123-c1ecfbad2286",
+        "sender": "evaluation",
+        "recipient": "research",
+        "kind": "report",
+        "created_at": "2026-11-11T14:54:04.024735Z",
+        "subject": "Measured D3 and frozen-decoder results for bounded learning recommendations",
+        "task_id": "E4-E5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "2394734c-066a-45cb-8123-c1ecfbad2286",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:57:21.658756Z",
+        "updated_at": "2026-11-11T15:17:09.767525Z"
+      }
+    },
+    "23b5a3f0-f6fe-4749-9edb-ea95f8a1ef11": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "23b5a3f0-f6fe-4749-9edb-ea95f8a1ef11",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.366982Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "23b5a3f0-f6fe-4749-9edb-ea95f8a1ef11",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:28:43.103206Z",
+        "updated_at": "2026-11-11T14:29:10.014826Z"
+      }
+    },
+    "25f3ee22-8910-421f-85d6-c9d3d46f7061": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "25f3ee22-8910-421f-85d6-c9d3d46f7061",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:38:22.891550Z",
+        "subject": "Interim peer communication and compute-queue evidence within current I4 window",
+        "task_id": "I4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "25f3ee22-8910-421f-85d6-c9d3d46f7061",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:45.573258Z",
+        "updated_at": "2026-11-11T15:42:09.003955Z"
+      }
+    },
+    "27294329-6e02-4b8f-b606-66130efc8581": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "27294329-6e02-4b8f-b606-66130efc8581",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:28:44.872473Z",
+        "subject": "Model adopted canonical current mailbox client",
+        "task_id": "I3-adoption",
+        "reply_to": "d54b5dd2-7a26-48d6-8cc3-942bc7d8322c"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "27294329-6e02-4b8f-b606-66130efc8581",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.140659Z",
+        "updated_at": "2026-11-11T14:32:19.188953Z"
+      }
+    },
+    "297c21a3-ba4b-4ce4-a16a-77cdaca5ff00": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "297c21a3-ba4b-4ce4-a16a-77cdaca5ff00",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:25:20.375684Z",
+        "subject": "Release canonical client adopted; P3 preflight ready",
+        "task_id": "I3-adoption",
+        "reply_to": "770c6c44-b67e-4ab9-a405-1156e25cd19c"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "297c21a3-ba4b-4ce4-a16a-77cdaca5ff00",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.136334Z",
+        "updated_at": "2026-11-11T14:32:19.185838Z"
+      }
+    },
+    "2abbcdd1-15b7-45b8-a27c-47ab57e561e3": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "2abbcdd1-15b7-45b8-a27c-47ab57e561e3",
+        "sender": "research",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:29:09.979038Z",
+        "subject": "Research adopted canonical client; reserve assignment unchanged",
+        "task_id": "I3-adoption",
+        "reply_to": "23b5a3f0-f6fe-4749-9edb-ea95f8a1ef11"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "2abbcdd1-15b7-45b8-a27c-47ab57e561e3",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.135219Z",
+        "updated_at": "2026-11-11T14:32:19.182014Z"
+      }
+    },
+    "2f86a4f9-a3e6-474d-9f6a-238753e9d9c4": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "2f86a4f9-a3e6-474d-9f6a-238753e9d9c4",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "task",
+        "created_at": "2026-11-11T15:24:57.301341Z",
+        "subject": "Predeclare and score the single decoder-learning contrast",
+        "task_id": "E6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "2f86a4f9-a3e6-474d-9f6a-238753e9d9c4",
+        "recipient": "evaluation",
+        "status": "blocked",
+        "acknowledged_at": "2026-11-11T15:27:59.756768Z",
+        "updated_at": "2026-11-11T15:44:29.381624Z"
+      }
+    },
+    "3242566f-7047-43bf-8ee0-bd853faf8d8d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "3242566f-7047-43bf-8ee0-bd853faf8d8d",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "task",
+        "created_at": "2026-11-11T13:58:22.241788Z",
+        "subject": "Implement peer messaging; gate live posting on compatible-client adoption",
+        "task_id": "I3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "3242566f-7047-43bf-8ee0-bd853faf8d8d",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:10:36.294798Z",
+        "updated_at": "2026-11-11T14:21:10.459032Z"
+      }
+    },
+    "326d1e47-3ff8-4d05-8690-5e280793ef59": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "326d1e47-3ff8-4d05-8690-5e280793ef59",
+        "sender": "research",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T15:17:09.606661Z",
+        "subject": "R5 delivered: bounded learning recommendation, no run authorized",
+        "task_id": "R5",
+        "reply_to": "b66005e7-ba96-4e5d-9aa8-668a1c3bfad0"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "326d1e47-3ff8-4d05-8690-5e280793ef59",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:47:02.752256Z",
+        "updated_at": "2026-11-11T15:47:02.786364Z"
+      }
+    },
+    "387e34e0-0f9b-4f4d-9ca1-5a269f944c30": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "387e34e0-0f9b-4f4d-9ca1-5a269f944c30",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:46:27.312335Z",
+        "subject": "One-hour support pilot; continue execution without new review gates",
+        "task_id": "support-hour"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "387e34e0-0f9b-4f4d-9ca1-5a269f944c30",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:51:41.757599Z",
+        "updated_at": "2026-11-11T14:51:41.816125Z"
+      }
+    },
+    "3c7ca3ca-8d62-4da8-854a-727f217be4df": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "3c7ca3ca-8d62-4da8-854a-727f217be4df",
+        "sender": "research",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T15:17:09.639232Z",
+        "subject": "R5 delivered: bounded learning recommendation, no run authorized",
+        "task_id": "R5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "3c7ca3ca-8d62-4da8-854a-727f217be4df",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:14.979850Z",
+        "updated_at": "2026-11-11T15:28:15.128524Z"
+      }
+    },
+    "3d98c845-696e-48f1-bb38-8da8629dc109": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "3d98c845-696e-48f1-bb38-8da8629dc109",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:04:22.327514Z",
+        "subject": "Prioritize repaired diagnostic freeze over speculative hardening",
+        "task_id": "D3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "3d98c845-696e-48f1-bb38-8da8629dc109",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:06:13.744366Z",
+        "updated_at": "2026-11-11T14:21:41.378196Z"
+      }
+    },
+    "3fdf3eb8-82ac-4e91-a020-c64bff1712be": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "3fdf3eb8-82ac-4e91-a020-c64bff1712be",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:45:31.944884Z",
+        "subject": "D3 delivered; P3 completed624 and returned slot; Model direction complete",
+        "task_id": "M5",
+        "reply_to": "589cd306-749a-494d-ba2c-a23ea2d9ba66"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "3fdf3eb8-82ac-4e91-a020-c64bff1712be",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:49:06.499494Z",
+        "updated_at": "2026-11-11T14:49:06.532939Z"
+      }
+    },
+    "45366d5e-5235-45d0-88a4-018f6a925b36": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "45366d5e-5235-45d0-88a4-018f6a925b36",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.694685Z",
+        "subject": "Parallel R6 preparation and a bounded lower-priority frozen diagnostic",
+        "task_id": "R6-support"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "45366d5e-5235-45d0-88a4-018f6a925b36",
+        "recipient": "release",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:48:10.555466Z",
+        "updated_at": "2026-11-11T15:48:10.555466Z"
+      }
+    },
+    "4aabac83-38c3-4461-b112-790be0fded98": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "4aabac83-38c3-4461-b112-790be0fded98",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T15:29:27.426442Z",
+        "subject": "M6 adopted: HF checkpoint and narrow P3 rendering reuse contract",
+        "task_id": "M6-P4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "4aabac83-38c3-4461-b112-790be0fded98",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:31:55.358914Z",
+        "updated_at": "2026-11-11T15:31:55.422598Z"
+      }
+    },
+    "4ba68117-787c-4095-a644-4545596062b4": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "4ba68117-787c-4095-a644-4545596062b4",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:42:33.645077Z",
+        "subject": "P3 runtime succeeded624/624; E5 inputs delivered, slot released",
+        "task_id": "P3",
+        "reply_to": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "4ba68117-787c-4095-a644-4545596062b4",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:49:06.497908Z",
+        "updated_at": "2026-11-11T14:49:06.533575Z"
+      }
+    },
+    "4dd1c488-5f90-4cb0-8e4c-4c148c442058": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "4dd1c488-5f90-4cb0-8e4c-4c148c442058",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:59:26.791876Z",
+        "subject": "E4 and E5 delivered at9d619f5: mixed transfer, frozen-decoder tradeoffs",
+        "task_id": "E4-E5",
+        "reply_to": "63229ef7-af9c-460b-9b3f-c1f40d02c327"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "4dd1c488-5f90-4cb0-8e4c-4c148c442058",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:24:57.373169Z",
+        "updated_at": "2026-11-11T15:24:57.401540Z"
+      }
+    },
+    "53c08a2a-15f9-486e-8043-d4a0e5dc8eea": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "53c08a2a-15f9-486e-8043-d4a0e5dc8eea",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.083118Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "53c08a2a-15f9-486e-8043-d4a0e5dc8eea",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:38:06.365221Z",
+        "updated_at": "2026-11-11T14:38:06.460360Z"
+      }
+    },
+    "5400b03f-3b0e-488e-85f0-91b4cbd7913a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5400b03f-3b0e-488e-85f0-91b4cbd7913a",
+        "sender": "data",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T13:34:29.102122Z",
+        "subject": "D3 review found one ambiguity and a choice fingerprint; repairing before freeze",
+        "task_id": "D3",
+        "reply_to": "a2f1e2c3-b9cb-4b69-9008-c4e3ec603104"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5400b03f-3b0e-488e-85f0-91b4cbd7913a",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.852605Z",
+        "updated_at": "2026-11-11T14:04:52.907747Z"
+      }
+    },
+    "54506e2c-9391-47db-94b5-e75b41979529": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "54506e2c-9391-47db-94b5-e75b41979529",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:40:10.878331Z",
+        "subject": "Corrected P3 granted 14:40\u201315:05 UTC; start by14:43",
+        "task_id": "P3",
+        "reply_to": "62ede047-a975-4423-931c-7620bd660a4c"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "54506e2c-9391-47db-94b5-e75b41979529",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:40:52.088567Z",
+        "updated_at": "2026-11-11T14:42:33.577280Z"
+      }
+    },
+    "55e53db3-6f45-4bc1-88f4-9b1bb338608c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "55e53db3-6f45-4bc1-88f4-9b1bb338608c",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "blocker",
+        "created_at": "2026-11-11T15:44:29.417088Z",
+        "subject": "E6 predeclaration integrated; awaiting M6/P4 execution artifacts only",
+        "task_id": "E6",
+        "reply_to": "2f86a4f9-a3e6-474d-9f6a-238753e9d9c4"
+      },
+      "receipt": null
+    },
+    "56bb27c9-81ed-4d6a-bef3-b1bfe362e60d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "56bb27c9-81ed-4d6a-bef3-b1bfe362e60d",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "update",
+        "created_at": "2026-11-11T15:24:57.340353Z",
+        "subject": "R5 primary authorized; support windows and ownership remain bounded",
+        "task_id": "M6-support"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "56bb27c9-81ed-4d6a-bef3-b1bfe362e60d",
+        "recipient": "data",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:25:20.616895Z",
+        "updated_at": "2026-11-11T15:25:20.616895Z"
+      }
+    },
+    "589cd306-749a-494d-ba2c-a23ea2d9ba66": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "589cd306-749a-494d-ba2c-a23ea2d9ba66",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:04:22.326237Z",
+        "subject": "Control received; schedule P3 alongside pending D3 inference",
+        "task_id": "M5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "589cd306-749a-494d-ba2c-a23ea2d9ba66",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:10:45.288188Z",
+        "updated_at": "2026-11-11T14:45:31.979600Z"
+      }
+    },
+    "5a1ff11a-8495-4f6c-bf4e-19a5746b8d60": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5a1ff11a-8495-4f6c-bf4e-19a5746b8d60",
+        "sender": "evaluation",
+        "recipient": "release",
+        "kind": "report",
+        "created_at": "2026-11-11T14:54:03.994638Z",
+        "subject": "P3 independently scored: strong probes, poorer v2 loss and order robustness",
+        "task_id": "E5",
+        "reply_to": "07a043d4-5f4f-486d-b7ac-e8fce4301066"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5a1ff11a-8495-4f6c-bf4e-19a5746b8d60",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:00.690554Z",
+        "updated_at": "2026-11-11T15:28:00.719023Z"
+      }
+    },
+    "5b972305-9b2b-496b-8dd2-492f6268b021": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5b972305-9b2b-496b-8dd2-492f6268b021",
+        "sender": "evaluation",
+        "recipient": "infra",
+        "kind": "update",
+        "created_at": "2026-11-11T14:56:53.061174Z",
+        "subject": "No current E4 blocker; completed scoring/review awaiting short self-merge",
+        "task_id": "I4",
+        "reply_to": "5fea7077-8ca1-49a9-be79-88073e2f3228"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5b972305-9b2b-496b-8dd2-492f6268b021",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:58:16.360980Z",
+        "updated_at": "2026-11-11T14:58:16.391378Z"
+      }
+    },
+    "5baec7e2-a21b-4cf0-9afe-b35570480398": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5baec7e2-a21b-4cf0-9afe-b35570480398",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T13:13:56.311059Z",
+        "subject": "E4 LR control fails loss condition; D3 diagnostic in progress",
+        "task_id": "E4",
+        "reply_to": "9d95a1ac-e33d-4700-8106-d98ff01a0368"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5baec7e2-a21b-4cf0-9afe-b35570480398",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.867526Z",
+        "updated_at": "2026-11-11T14:04:52.931292Z"
+      }
+    },
+    "5c80a75c-8439-40a3-9528-7d32d90e31eb": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5c80a75c-8439-40a3-9528-7d32d90e31eb",
+        "sender": "evaluation",
+        "recipient": "release",
+        "kind": "report",
+        "created_at": "2026-11-11T15:33:06.267597Z",
+        "subject": "Exact624 binding confirmed; narrow HF manifest evidence sufficient",
+        "task_id": "E6",
+        "reply_to": "c46ad127-b6e4-40a9-ad1d-304c050f6d52"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5c80a75c-8439-40a3-9528-7d32d90e31eb",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:37:48.148986Z",
+        "updated_at": "2026-11-11T15:37:48.179817Z"
+      }
+    },
+    "5d320379-b978-41c6-bc1f-8d9e61dff12b": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5d320379-b978-41c6-bc1f-8d9e61dff12b",
+        "sender": "research",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T12:03:06.247980Z",
+        "subject": "R4 delivered: ranking divergence and one later LR control",
+        "task_id": "R4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5d320379-b978-41c6-bc1f-8d9e61dff12b",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T12:48:25.875696Z",
+        "updated_at": "2026-11-11T12:58:17.889823Z"
+      }
+    },
+    "5d336cd0-1c6a-48c4-8992-43679bfbcfc3": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5d336cd0-1c6a-48c4-8992-43679bfbcfc3",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.706819Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5d336cd0-1c6a-48c4-8992-43679bfbcfc3",
+        "recipient": "model",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:47:30.756685Z",
+        "updated_at": "2026-11-11T15:47:30.756685Z"
+      }
+    },
+    "5dc9e8d3-d31c-49e0-ac98-f75d40bf3469": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5dc9e8d3-d31c-49e0-ac98-f75d40bf3469",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.367898Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5dc9e8d3-d31c-49e0-ac98-f75d40bf3469",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:28:23.722469Z",
+        "updated_at": "2026-11-11T14:28:43.984894Z"
+      }
+    },
+    "5fea7077-8ca1-49a9-be79-88073e2f3228": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "5fea7077-8ca1-49a9-be79-88073e2f3228",
+        "sender": "infra",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:55:22.331352Z",
+        "subject": "Clarify current E4 blocker versus completed input handling",
+        "task_id": "I4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "5fea7077-8ca1-49a9-be79-88073e2f3228",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:56:53.027551Z",
+        "updated_at": "2026-11-11T14:56:53.094859Z"
+      }
+    },
+    "6157edd6-9f25-4eb7-95a6-d0717ff6b041": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "6157edd6-9f25-4eb7-95a6-d0717ff6b041",
+        "sender": "research",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:02:47.359076Z",
+        "subject": "Nonblocking known-facts query: bounded decoder learning feasibility",
+        "task_id": "R5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "6157edd6-9f25-4eb7-95a6-d0717ff6b041",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:14.921230Z",
+        "updated_at": "2026-11-11T15:29:27.518080Z"
+      }
+    },
+    "62ede047-a975-4423-931c-7620bd660a4c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "62ede047-a975-4423-931c-7620bd660a4c",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T14:36:42.885181Z",
+        "subject": "P3 minimal envelope fix refrozen; request a fresh bounded slot",
+        "task_id": "P3",
+        "reply_to": "6f75cc76-3f0c-4855-95f7-41a608e87163"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "62ede047-a975-4423-931c-7620bd660a4c",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:36:56.145226Z",
+        "updated_at": "2026-11-11T14:40:10.914162Z"
+      }
+    },
+    "63229ef7-af9c-460b-9b3f-c1f40d02c327": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "63229ef7-af9c-460b-9b3f-c1f40d02c327",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "task",
+        "created_at": "2026-11-11T14:04:22.328230Z",
+        "subject": "Compare frozen decoder independently; continue D3 when published",
+        "task_id": "E5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "63229ef7-af9c-460b-9b3f-c1f40d02c327",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:10:33.951044Z",
+        "updated_at": "2026-11-11T14:59:26.858726Z"
+      }
+    },
+    "6713d41c-6dd9-4867-be91-4092d2e1a22e": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "6713d41c-6dd9-4867-be91-4092d2e1a22e",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T13:12:17.350261Z",
+        "subject": "P2 CPU recipe integrated; Linux execution unavailable and unverified",
+        "task_id": "P2",
+        "reply_to": "d66a1c69-5672-44e9-bd4e-39270fe4df4d"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "6713d41c-6dd9-4867-be91-4092d2e1a22e",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.854154Z",
+        "updated_at": "2026-11-11T14:04:52.916911Z"
+      }
+    },
+    "67a6c781-839e-4e94-b11d-7afec1e8f48c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "67a6c781-839e-4e94-b11d-7afec1e8f48c",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.082592Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "67a6c781-839e-4e94-b11d-7afec1e8f48c",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:48:12.591402Z",
+        "updated_at": "2026-11-11T14:48:12.625902Z"
+      }
+    },
+    "6d9d599f-5bcb-4a0a-9ade-4ac24a28099e": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "6d9d599f-5bcb-4a0a-9ade-4ac24a28099e",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:34:32.795197Z",
+        "subject": "P3 pre-load lookup failure preserved; correcting and requesting new slot",
+        "task_id": "P3",
+        "reply_to": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "6d9d599f-5bcb-4a0a-9ade-4ac24a28099e",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:46:27.345695Z",
+        "updated_at": "2026-11-11T14:46:27.374133Z"
+      }
+    },
+    "6efc9eb0-98a9-451d-b074-364d5a77bb64": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "6efc9eb0-98a9-451d-b074-364d5a77bb64",
+        "sender": "infra",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T13:13:35.863324Z",
+        "subject": "I2 delivered: first live round observed; no blocking defect",
+        "task_id": "I2",
+        "reply_to": "d83d65c7-8073-4b6c-ada8-00eb701685ed"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "6efc9eb0-98a9-451d-b074-364d5a77bb64",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.860199Z",
+        "updated_at": "2026-11-11T14:04:52.915271Z"
+      }
+    },
+    "6f75cc76-3f0c-4855-95f7-41a608e87163": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "6f75cc76-3f0c-4855-95f7-41a608e87163",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:56.089463Z",
+        "subject": "P3 slot granted now; D3 priority jobs complete",
+        "task_id": "P3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "6f75cc76-3f0c-4855-95f7-41a608e87163",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:34:32.705495Z",
+        "updated_at": "2026-11-11T14:34:32.769072Z"
+      }
+    },
+    "72459edc-f424-4e50-859f-349121c3b124": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "72459edc-f424-4e50-859f-349121c3b124",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.713470Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "72459edc-f424-4e50-859f-349121c3b124",
+        "recipient": "release",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:48:10.589236Z",
+        "updated_at": "2026-11-11T15:48:10.589236Z"
+      }
+    },
+    "73138d4e-0158-43a0-abc8-704e7c993ae7": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "73138d4e-0158-43a0-abc8-704e7c993ae7",
+        "sender": "model",
+        "recipient": "research",
+        "kind": "update",
+        "created_at": "2026-11-11T15:29:27.487831Z",
+        "subject": "Known feasibility facts; separately authorized M6 adopted",
+        "task_id": "R5",
+        "reply_to": "6157edd6-9f25-4eb7-95a6-d0717ff6b041"
+      },
+      "receipt": null
+    },
+    "770c6c44-b67e-4ab9-a405-1156e25cd19c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "770c6c44-b67e-4ab9-a405-1156e25cd19c",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.369226Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "770c6c44-b67e-4ab9-a405-1156e25cd19c",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:24:57.011046Z",
+        "updated_at": "2026-11-11T14:25:20.420089Z"
+      }
+    },
+    "7a741051-87ea-476b-b6a0-0f3f8a8dfe18": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "task",
+        "created_at": "2026-11-11T14:04:22.326233Z",
+        "subject": "Execute one frozen instruction-model challenger locally; defer Linux",
+        "task_id": "P3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:10:41.270881Z",
+        "updated_at": "2026-11-11T14:50:01.902875Z"
+      }
+    },
+    "7b94415e-1140-42ee-91c0-0b545cd4ebf9": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "7b94415e-1140-42ee-91c0-0b545cd4ebf9",
+        "sender": "evaluation",
+        "recipient": "model",
+        "kind": "task",
+        "created_at": "2026-11-11T15:31:50.162514Z",
+        "subject": "E6 plan frozen before outcomes; exact624 inputs for fresh control",
+        "task_id": "E6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "7b94415e-1140-42ee-91c0-0b545cd4ebf9",
+        "recipient": "model",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:40:38.821723Z",
+        "updated_at": "2026-11-11T15:40:38.821723Z"
+      }
+    },
+    "7ea66844-5c19-4450-8f51-3f880df90362": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "7ea66844-5c19-4450-8f51-3f880df90362",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.700668Z",
+        "subject": "Parallel R6 preparation and a bounded lower-priority frozen diagnostic",
+        "task_id": "R6-support"
+      },
+      "receipt": null
+    },
+    "846668e8-20cb-42ea-8c0a-ba858f4239d1": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "846668e8-20cb-42ea-8c0a-ba858f4239d1",
+        "sender": "release",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:36:42.918022Z",
+        "subject": "P3 recipe frozen; pre-load bug fixed without outcomes or recipe changes",
+        "task_id": "P3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "846668e8-20cb-42ea-8c0a-ba858f4239d1",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:38:06.429610Z",
+        "updated_at": "2026-11-11T14:54:04.082787Z"
+      }
+    },
+    "89affc5e-82c3-4798-aaa4-efa4274cce49": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "89affc5e-82c3-4798-aaa4-efa4274cce49",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T12:04:20.467867Z",
+        "subject": "M4 new-v2 gains coexist with robustness regressions",
+        "task_id": "E3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "89affc5e-82c3-4798-aaa4-efa4274cce49",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T12:48:25.914592Z",
+        "updated_at": "2026-11-11T12:58:17.925548Z"
+      }
+    },
+    "8ac151b2-b2bc-47c9-9a9f-70e26a009b00": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "8ac151b2-b2bc-47c9-9a9f-70e26a009b00",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "task",
+        "created_at": "2026-11-11T15:24:57.301335Z",
+        "subject": "One fixed Qwen decision-learning run after measured capacity preflight",
+        "task_id": "M6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "8ac151b2-b2bc-47c9-9a9f-70e26a009b00",
+        "recipient": "model",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:28:15.011407Z",
+        "updated_at": "2026-11-11T15:28:15.011407Z"
+      }
+    },
+    "8bb47fef-ce3a-4016-bbce-4cbe5a363d6a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "8bb47fef-ce3a-4016-bbce-4cbe5a363d6a",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.084956Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "8bb47fef-ce3a-4016-bbce-4cbe5a363d6a",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:48:21.252295Z",
+        "updated_at": "2026-11-11T14:48:21.282946Z"
+      }
+    },
+    "8cb6a271-d2c6-4a03-9398-1d5f35422b60": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "8cb6a271-d2c6-4a03-9398-1d5f35422b60",
+        "sender": "evaluation",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T15:33:06.239688Z",
+        "subject": "Exact624 inputs and preserved P3 outputs bound; predeclared tolerance agrees",
+        "task_id": "M6-E6",
+        "reply_to": "9f747c21-49cd-4784-a5d5-d0700add830f"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "8cb6a271-d2c6-4a03-9398-1d5f35422b60",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:38.996563Z",
+        "updated_at": "2026-11-11T15:43:19.342506Z"
+      }
+    },
+    "92fa9f6e-e0c2-4ba8-830a-f19fd2dbc1a8": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "92fa9f6e-e0c2-4ba8-830a-f19fd2dbc1a8",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T14:46:27.312333Z",
+        "subject": "One-hour support pilot; continue execution without new review gates",
+        "task_id": "support-hour"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "92fa9f6e-e0c2-4ba8-830a-f19fd2dbc1a8",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:14.860615Z",
+        "updated_at": "2026-11-11T15:28:15.042209Z"
+      }
+    },
+    "95686ca3-d174-488e-99ce-8772d46a3b8f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "95686ca3-d174-488e-99ce-8772d46a3b8f",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T13:34:19.133787Z",
+        "subject": "M5 control delivered; remaining D3 inference awaits released inputs",
+        "task_id": "M5",
+        "reply_to": "07ac3cf8-6dbf-4646-82f4-47091b0ff733"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "95686ca3-d174-488e-99ce-8772d46a3b8f",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.863823Z",
+        "updated_at": "2026-11-11T14:04:52.920949Z"
+      }
+    },
+    "9aa95548-5211-41b2-ab52-6e25eba2e431": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9aa95548-5211-41b2-ab52-6e25eba2e431",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T13:07:10.511745Z",
+        "subject": "M5 control executed; historical starting predictions identical",
+        "task_id": "M5",
+        "reply_to": "07ac3cf8-6dbf-4646-82f4-47091b0ff733"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9aa95548-5211-41b2-ab52-6e25eba2e431",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:11:54.194126Z",
+        "updated_at": "2026-11-11T13:11:54.242046Z"
+      }
+    },
+    "9ac232b7-7f08-4519-a1a6-417d2ad092a4": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9ac232b7-7f08-4519-a1a6-417d2ad092a4",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:36:19.323225Z",
+        "subject": "P3 pre-load return acknowledged; request new slot after minimal refreeze",
+        "task_id": "P3",
+        "reply_to": "1447d1a4-9b95-4a09-846f-3d8888798132"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9ac232b7-7f08-4519-a1a6-417d2ad092a4",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:37:05.503673Z",
+        "updated_at": "2026-11-11T14:37:05.539355Z"
+      }
+    },
+    "9b74f781-7fa8-4a3b-b417-ffdb99e68088": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9b74f781-7fa8-4a3b-b417-ffdb99e68088",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:28:56.644913Z",
+        "subject": "Agree minimal HF checkpoint identity; exact P3 prepare/readout reusable now",
+        "task_id": "P4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9b74f781-7fa8-4a3b-b417-ffdb99e68088",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:29:44.131809Z",
+        "updated_at": "2026-11-11T15:43:19.255368Z"
+      }
+    },
+    "9d95a1ac-e33d-4700-8106-d98ff01a0368": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9d95a1ac-e33d-4700-8106-d98ff01a0368",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "task",
+        "created_at": "2026-11-11T12:58:06.985079Z",
+        "subject": "Score the LR control and seen-rule transfer",
+        "task_id": "E4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9d95a1ac-e33d-4700-8106-d98ff01a0368",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:34.415382Z",
+        "updated_at": "2026-11-11T14:59:26.828550Z"
+      }
+    },
+    "9ec376c7-941a-4f7b-bd77-866b4abe5836": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9ec376c7-941a-4f7b-bd77-866b4abe5836",
+        "sender": "infra",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T15:00:22.075691Z",
+        "subject": "Read-only receipt explanations available in canonical client",
+        "task_id": "I4",
+        "reply_to": "5b972305-9b2b-496b-8dd2-492f6268b021"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9ec376c7-941a-4f7b-bd77-866b4abe5836",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:27:59.688264Z",
+        "updated_at": "2026-11-11T15:27:59.786688Z"
+      }
+    },
+    "9ef6b792-4125-4150-aaaa-f2c40a61c84e": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9ef6b792-4125-4150-aaaa-f2c40a61c84e",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "task",
+        "created_at": "2026-11-11T15:24:57.301306Z",
+        "subject": "M6 scoring semantics and fresh trained-checkpoint execution",
+        "task_id": "P4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9ef6b792-4125-4150-aaaa-f2c40a61c84e",
+        "recipient": "release",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:28:00.747045Z",
+        "updated_at": "2026-11-11T15:28:00.747045Z"
+      }
+    },
+    "9f747c21-49cd-4784-a5d5-d0700add830f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "9f747c21-49cd-4784-a5d5-d0700add830f",
+        "sender": "model",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T15:29:27.458464Z",
+        "subject": "M6 adopted: request exact label-free624 bindings; tolerance frozen",
+        "task_id": "M6-E6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "9f747c21-49cd-4784-a5d5-d0700add830f",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:33:06.211584Z",
+        "updated_at": "2026-11-11T15:33:06.325434Z"
+      }
+    },
+    "a106f5e7-71e0-4587-8288-aeed37038ef1": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a106f5e7-71e0-4587-8288-aeed37038ef1",
+        "sender": "infra",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:28:43.945162Z",
+        "subject": "Infra canonical-client adoption reconfirmed",
+        "task_id": "I3-adoption",
+        "reply_to": "5dc9e8d3-d31c-49e0-ac98-f75d40bf3469"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a106f5e7-71e0-4587-8288-aeed37038ef1",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.134063Z",
+        "updated_at": "2026-11-11T14:32:19.190107Z"
+      }
+    },
+    "a2f1e2c3-b9cb-4b69-9008-c4e3ec603104": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a2f1e2c3-b9cb-4b69-9008-c4e3ec603104",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "task",
+        "created_at": "2026-11-11T12:58:06.985363Z",
+        "subject": "Small validation-only seen-mechanism diagnostic",
+        "task_id": "D3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a2f1e2c3-b9cb-4b69-9008-c4e3ec603104",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:29.928128Z",
+        "updated_at": "2026-11-11T14:21:41.336912Z"
+      }
+    },
+    "a434d2f7-0cdf-44b7-9734-18dbf2c0ead6": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a434d2f7-0cdf-44b7-9734-18dbf2c0ead6",
+        "sender": "infra",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T12:01:45.854979Z",
+        "subject": "I1 delivered: shared Markdown mailbox",
+        "task_id": "I1"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a434d2f7-0cdf-44b7-9734-18dbf2c0ead6",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T12:48:25.834920Z",
+        "updated_at": "2026-11-11T12:58:17.849825Z"
+      }
+    },
+    "a44b51b9-a110-4867-bdb0-440f9f4058cb": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a44b51b9-a110-4867-bdb0-440f9f4058cb",
+        "sender": "release",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T14:50:01.932173Z",
+        "subject": "P3 integrated1bd59f2; predictions unchanged, complete runtime receipt available",
+        "task_id": "E5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a44b51b9-a110-4867-bdb0-440f9f4058cb",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:51:41.788270Z",
+        "updated_at": "2026-11-11T14:51:41.844405Z"
+      }
+    },
+    "a68714e1-74fe-4d34-a15c-59248257d114": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a68714e1-74fe-4d34-a15c-59248257d114",
+        "sender": "data",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:28:57.203111Z",
+        "subject": "Data adopted canonical main mailbox client; peer reading verified",
+        "task_id": "I3-adoption",
+        "reply_to": "d994fd53-a416-4ccd-b156-cd46b158e18a"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a68714e1-74fe-4d34-a15c-59248257d114",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.137289Z",
+        "updated_at": "2026-11-11T14:32:19.187499Z"
+      }
+    },
+    "a7d50a12-dd8a-42e8-9d1d-b63e953f5e15": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a7d50a12-dd8a-42e8-9d1d-b63e953f5e15",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:26:29.294819Z",
+        "subject": "Evaluation adopted canonical current mailbox client",
+        "task_id": "I3-adoption",
+        "reply_to": "0d09dd2d-ed51-4d36-b19f-bff7d0875e62"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a7d50a12-dd8a-42e8-9d1d-b63e953f5e15",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.139655Z",
+        "updated_at": "2026-11-11T14:32:19.191708Z"
+      }
+    },
+    "a91cdb94-cfdf-4183-9ebe-0671bba51ada": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a91cdb94-cfdf-4183-9ebe-0671bba51ada",
+        "sender": "evaluation",
+        "recipient": "release",
+        "kind": "task",
+        "created_at": "2026-11-11T15:31:50.194808Z",
+        "subject": "E6 plan frozen; reuse same624 inputs for saved M6 checkpoint",
+        "task_id": "E6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a91cdb94-cfdf-4183-9ebe-0671bba51ada",
+        "recipient": "release",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:33:01.569104Z",
+        "updated_at": "2026-11-11T15:33:01.569104Z"
+      }
+    },
+    "a9dfc5d4-89aa-45b2-96db-9071c306475f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "a9dfc5d4-89aa-45b2-96db-9071c306475f",
+        "sender": "release",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T15:33:01.596951Z",
+        "subject": "E6 same624 binding accepted; trained execution awaits M6 handoff and slot",
+        "task_id": "E6",
+        "reply_to": "a91cdb94-cfdf-4183-9ebe-0671bba51ada"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "a9dfc5d4-89aa-45b2-96db-9071c306475f",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:27.112370Z",
+        "updated_at": "2026-11-11T15:40:27.150366Z"
+      }
+    },
+    "adeec354-b47d-4670-a381-8508690ee805": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "adeec354-b47d-4670-a381-8508690ee805",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:45:31.853838Z",
+        "subject": "P3 successful return verified; exclusive slot closed",
+        "task_id": "P3",
+        "reply_to": "de8bf0d4-e2a0-4879-8e9f-a2a1ad5c7283"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "adeec354-b47d-4670-a381-8508690ee805",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:47:54.687490Z",
+        "updated_at": "2026-11-11T14:47:54.722659Z"
+      }
+    },
+    "af1ea389-e71f-43c5-8904-6bb2bc4b9f11": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "af1ea389-e71f-43c5-8904-6bb2bc4b9f11",
+        "sender": "data",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:13:12.070220Z",
+        "subject": "D3 frozen: final manifest ready for Evaluation and Model",
+        "task_id": "D3",
+        "reply_to": "3d98c845-696e-48f1-bb38-8da8629dc109"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "af1ea389-e71f-43c5-8904-6bb2bc4b9f11",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:24:42.927681Z",
+        "updated_at": "2026-11-11T14:24:42.966174Z"
+      }
+    },
+    "afecf279-938a-499c-8a2e-e1e920ebcdfc": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "afecf279-938a-499c-8a2e-e1e920ebcdfc",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "update",
+        "created_at": "2026-11-11T15:24:57.340362Z",
+        "subject": "R5 primary authorized; support windows and ownership remain bounded",
+        "task_id": "M6-support"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "afecf279-938a-499c-8a2e-e1e920ebcdfc",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:25:58.113612Z",
+        "updated_at": "2026-11-11T15:25:58.148576Z"
+      }
+    },
+    "b0bbe1e2-0885-482b-b46c-adb7b7e7897b": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "b0bbe1e2-0885-482b-b46c-adb7b7e7897b",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:43:51.286235Z",
+        "subject": "D3 inference integrated; original Model follow-through delivered; P3 active",
+        "task_id": "M5",
+        "reply_to": "589cd306-749a-494d-ba2c-a23ea2d9ba66"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "b0bbe1e2-0885-482b-b46c-adb7b7e7897b",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:49:06.498790Z",
+        "updated_at": "2026-11-11T14:49:06.532294Z"
+      }
+    },
+    "b474b1b9-e8c9-44db-a38c-7d7a9848dbb0": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "b474b1b9-e8c9-44db-a38c-7d7a9848dbb0",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:46:27.312284Z",
+        "subject": "One-hour support pilot; continue execution without new review gates",
+        "task_id": "support-hour"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "b474b1b9-e8c9-44db-a38c-7d7a9848dbb0",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:47:54.752383Z",
+        "updated_at": "2026-11-11T14:47:54.780681Z"
+      }
+    },
+    "b66005e7-ba96-4e5d-9aa8-668a1c3bfad0": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "b66005e7-ba96-4e5d-9aa8-668a1c3bfad0",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "task",
+        "created_at": "2026-11-11T14:46:27.273262Z",
+        "subject": "One-hour research: learning strategies for reliable small decision models",
+        "task_id": "R5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "b66005e7-ba96-4e5d-9aa8-668a1c3bfad0",
+        "recipient": "research",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:48:21.311536Z",
+        "updated_at": "2026-11-11T15:17:09.737553Z"
+      }
+    },
+    "b8051c6c-f3f1-41f7-8539-384fe2fcf151": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "b8051c6c-f3f1-41f7-8539-384fe2fcf151",
+        "sender": "infra",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:21:10.493016Z",
+        "subject": "I3 delivered: peer-capable client; live posting OFF pending adoption",
+        "task_id": "I3",
+        "reply_to": "3242566f-7047-43bf-8ee0-bd853faf8d8d"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "b8051c6c-f3f1-41f7-8539-384fe2fcf151",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:24:42.928404Z",
+        "updated_at": "2026-11-11T14:24:42.964887Z"
+      }
+    },
+    "bac2909e-6ac5-4ce6-add8-cd1bc3c7b773": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "bac2909e-6ac5-4ce6-add8-cd1bc3c7b773",
+        "sender": "evaluation",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T14:54:03.959674Z",
+        "subject": "D3 probability regressions; frozen decoder mixed with severe order sensitivity",
+        "task_id": "E4-E5",
+        "reply_to": "0b33cbc3-18a4-42d1-bddb-8c8bc909e3a6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "bac2909e-6ac5-4ce6-add8-cd1bc3c7b773",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:28:14.891751Z",
+        "updated_at": "2026-11-11T15:28:15.071742Z"
+      }
+    },
+    "bc5390b3-ba8e-40c8-aaa8-7411c4963b3f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "bc5390b3-ba8e-40c8-aaa8-7411c4963b3f",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:50:01.871140Z",
+        "subject": "P3 delivered and integrated1bd59f2;624/624 frozen predictions sent to E5",
+        "task_id": "P3",
+        "reply_to": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "bc5390b3-ba8e-40c8-aaa8-7411c4963b3f",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:52:16.118319Z",
+        "updated_at": "2026-11-11T14:52:16.149734Z"
+      }
+    },
+    "bd85ed60-d1f3-4f57-8f2c-ce0a00a37eed": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "bd85ed60-d1f3-4f57-8f2c-ce0a00a37eed",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:40:19.543384Z",
+        "subject": "P4 binding integratedf0d3ae4; awaiting actual final manifest and slot",
+        "task_id": "M6-P4",
+        "reply_to": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "bd85ed60-d1f3-4f57-8f2c-ce0a00a37eed",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:39.120394Z",
+        "updated_at": "2026-11-11T15:43:19.399712Z"
+      }
+    },
+    "c241721d-4f1a-46b9-bd2c-e6bac891991d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "c241721d-4f1a-46b9-bd2c-e6bac891991d",
+        "sender": "research",
+        "recipient": "evaluation",
+        "kind": "report",
+        "created_at": "2026-11-11T15:17:09.669530Z",
+        "subject": "R5 delivered: bounded learning recommendation, no run authorized",
+        "task_id": "R5",
+        "reply_to": "2394734c-066a-45cb-8123-c1ecfbad2286"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "c241721d-4f1a-46b9-bd2c-e6bac891991d",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:27:59.728602Z",
+        "updated_at": "2026-11-11T15:31:50.253794Z"
+      }
+    },
+    "c46ad127-b6e4-40a9-ad1d-304c050f6d52": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "c46ad127-b6e4-40a9-ad1d-304c050f6d52",
+        "sender": "release",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T15:28:56.681768Z",
+        "subject": "P4 trained pass will reuse exact E5 inputs; confirm binding",
+        "task_id": "E6"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "c46ad127-b6e4-40a9-ad1d-304c050f6d52",
+        "recipient": "evaluation",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:33:06.177564Z",
+        "updated_at": "2026-11-11T15:33:06.297069Z"
+      }
+    },
+    "c6ba7f97-b3e2-4d39-927b-439eaac2cd52": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52",
+        "sender": "model",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T15:31:19.884949Z",
+        "subject": "Agreed exact checkpoint manifest fields and byte-copy tokenizer contract",
+        "task_id": "M6-P4",
+        "reply_to": "9b74f781-7fa8-4a3b-b417-ffdb99e68088"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:33:01.474596Z",
+        "updated_at": "2026-11-11T15:33:01.538979Z"
+      }
+    },
+    "c96a2308-d19f-4e2b-a2a6-9d267aec690f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "c96a2308-d19f-4e2b-a2a6-9d267aec690f",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:33:01.506245Z",
+        "subject": "Accept your flat schema exactly; supersedes crossing nested example",
+        "task_id": "M6-P4",
+        "reply_to": "c6ba7f97-b3e2-4d39-927b-439eaac2cd52"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "c96a2308-d19f-4e2b-a2a6-9d267aec690f",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:38.937388Z",
+        "updated_at": "2026-11-11T15:43:19.314092Z"
+      }
+    },
+    "c9791c4c-54f6-424a-aab7-a9bd13913d73": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "c9791c4c-54f6-424a-aab7-a9bd13913d73",
+        "sender": "research",
+        "recipient": "data",
+        "kind": "report",
+        "created_at": "2026-11-11T15:17:09.702508Z",
+        "subject": "R5 delivered: bounded learning recommendation, no run authorized",
+        "task_id": "R5",
+        "reply_to": "0b69e467-8c31-4232-b936-93a43e568222"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "c9791c4c-54f6-424a-aab7-a9bd13913d73",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:17:32.959622Z",
+        "updated_at": "2026-11-11T15:19:10.839284Z"
+      }
+    },
+    "cac27dc2-63cc-42b4-86f5-c731bb250034": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "cac27dc2-63cc-42b4-86f5-c731bb250034",
+        "sender": "research",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T13:00:57.218230Z",
+        "subject": "Research available and parked; R4 preserved",
+        "task_id": "R4",
+        "reply_to": "11645caa-a7eb-44b8-b6f0-43280f131956"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "cac27dc2-63cc-42b4-86f5-c731bb250034",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:04:36.649458Z",
+        "updated_at": "2026-11-11T13:04:36.688655Z"
+      }
+    },
+    "ce66d60a-620c-4564-977d-9190664842aa": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "ce66d60a-620c-4564-977d-9190664842aa",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "task",
+        "created_at": "2026-11-11T14:46:27.273264Z",
+        "subject": "One-hour data-flow observation and targeted training-quality audit",
+        "task_id": "D4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "ce66d60a-620c-4564-977d-9190664842aa",
+        "recipient": "data",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T14:48:12.655046Z",
+        "updated_at": "2026-11-11T14:48:12.655046Z"
+      }
+    },
+    "d321d64b-f03e-4fce-90c1-7f671a880c7d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d321d64b-f03e-4fce-90c1-7f671a880c7d",
+        "sender": "lead",
+        "recipient": "research",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.700010Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": null
+    },
+    "d54b5dd2-7a26-48d6-8cc3-942bc7d8322c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d54b5dd2-7a26-48d6-8cc3-942bc7d8322c",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.366337Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d54b5dd2-7a26-48d6-8cc3-942bc7d8322c",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:28:44.840765Z",
+        "updated_at": "2026-11-11T14:28:44.904047Z"
+      }
+    },
+    "d560c5f2-eee6-45ca-9348-da4584ea2678": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d560c5f2-eee6-45ca-9348-da4584ea2678",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T14:25:16.587073Z",
+        "subject": "D3 released and independently frozen; four M4 predictions requested",
+        "task_id": "E4",
+        "reply_to": "9d95a1ac-e33d-4700-8106-d98ff01a0368"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d560c5f2-eee6-45ca-9348-da4584ea2678",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.141947Z",
+        "updated_at": "2026-11-11T14:32:19.194288Z"
+      }
+    },
+    "d5da2f2f-ea1c-41fa-9b90-8ccb9e50779a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d5da2f2f-ea1c-41fa-9b90-8ccb9e50779a",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.082052Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d5da2f2f-ea1c-41fa-9b90-8ccb9e50779a",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:43.721959Z",
+        "updated_at": "2026-11-11T14:32:43.757214Z"
+      }
+    },
+    "d66a1c69-5672-44e9-bd4e-39270fe4df4d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d66a1c69-5672-44e9-bd4e-39270fe4df4d",
+        "sender": "lead",
+        "recipient": "release",
+        "kind": "direction",
+        "created_at": "2026-11-11T12:58:06.998592Z",
+        "subject": "Confirm P2 status; avoid replaying completed P1",
+        "task_id": "P2"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d66a1c69-5672-44e9-bd4e-39270fe4df4d",
+        "recipient": "release",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:30.862983Z",
+        "updated_at": "2026-11-11T13:12:17.391373Z"
+      }
+    },
+    "d83d65c7-8073-4b6c-ada8-00eb701685ed": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d83d65c7-8073-4b6c-ada8-00eb701685ed",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "task",
+        "created_at": "2026-11-11T12:58:06.998590Z",
+        "subject": "Observe first live mailbox adoption without feature expansion",
+        "task_id": "I2"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d83d65c7-8073-4b6c-ada8-00eb701685ed",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:00:49.935528Z",
+        "updated_at": "2026-11-11T13:13:35.825535Z"
+      }
+    },
+    "d9385fbe-e150-4c70-a58d-8cb60ece3730": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d9385fbe-e150-4c70-a58d-8cb60ece3730",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:04.082066Z",
+        "subject": "Peer messaging enabled; keep canonical client and existing authority boundaries",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d9385fbe-e150-4c70-a58d-8cb60ece3730",
+        "recipient": "infra",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:48:35.352621Z",
+        "updated_at": "2026-11-11T14:48:35.387696Z"
+      }
+    },
+    "d994fd53-a416-4ccd-b156-cd46b158e18a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "d994fd53-a416-4ccd-b156-cd46b158e18a",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "direction",
+        "created_at": "2026-11-11T14:24:31.369267Z",
+        "subject": "Switch to canonical mailbox client; confirm before peer enablement",
+        "task_id": "I3-adoption"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "d994fd53-a416-4ccd-b156-cd46b158e18a",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:28:16.043754Z",
+        "updated_at": "2026-11-11T14:28:57.237174Z"
+      }
+    },
+    "da86aeb2-0b8a-451d-a1ad-56af348e8678": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "da86aeb2-0b8a-451d-a1ad-56af348e8678",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T15:31:50.223369Z",
+        "subject": "E6 interpretation frozen; exact E5 input bindings sent directly",
+        "task_id": "E6",
+        "reply_to": "2f86a4f9-a3e6-474d-9f6a-238753e9d9c4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "da86aeb2-0b8a-451d-a1ad-56af348e8678",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:47:02.818660Z",
+        "updated_at": "2026-11-11T15:47:02.851369Z"
+      }
+    },
+    "dae6ca43-227a-43a9-b5ad-b3749d6622d2": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "dae6ca43-227a-43a9-b5ad-b3749d6622d2",
+        "sender": "lead",
+        "recipient": "infra",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.708242Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "dae6ca43-227a-43a9-b5ad-b3749d6622d2",
+        "recipient": "infra",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:48:20.780418Z",
+        "updated_at": "2026-11-11T15:48:20.780418Z"
+      }
+    },
+    "de8bf0d4-e2a0-4879-8e9f-a2a1ad5c7283": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "de8bf0d4-e2a0-4879-8e9f-a2a1ad5c7283",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "report",
+        "created_at": "2026-11-11T14:42:33.538909Z",
+        "subject": "P3 complete624/624; process exited, exclusive ML slot returned",
+        "task_id": "P3",
+        "reply_to": "54506e2c-9391-47db-94b5-e75b41979529"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "de8bf0d4-e2a0-4879-8e9f-a2a1ad5c7283",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:44:11.428954Z",
+        "updated_at": "2026-11-11T14:45:31.915545Z"
+      }
+    },
+    "e11d16c3-4c25-42da-a075-330780a16069": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "e11d16c3-4c25-42da-a075-330780a16069",
+        "sender": "lead",
+        "recipient": "model",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.698788Z",
+        "subject": "Parallel R6 preparation and a bounded lower-priority frozen diagnostic",
+        "task_id": "R6-support"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "e11d16c3-4c25-42da-a075-330780a16069",
+        "recipient": "model",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:47:30.724328Z",
+        "updated_at": "2026-11-11T15:47:30.724328Z"
+      }
+    },
+    "e46627e7-627e-465b-a24e-a0f3c0b6d916": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "e46627e7-627e-465b-a24e-a0f3c0b6d916",
+        "sender": "evaluation",
+        "recipient": "data",
+        "kind": "report",
+        "created_at": "2026-11-11T14:54:04.053078Z",
+        "subject": "D3 aggregate transfer findings; no case-generation or new review request",
+        "task_id": "E4-E5"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "e46627e7-627e-465b-a24e-a0f3c0b6d916",
+        "recipient": "data",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:58:12.305388Z",
+        "updated_at": "2026-11-11T14:58:45.411010Z"
+      }
+    },
+    "e4abd92c-bf77-41b0-8f82-8f461ecccebb": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "e4abd92c-bf77-41b0-8f82-8f461ecccebb",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T13:01:31.950075Z",
+        "subject": "P2 was unstarted; resumed without replaying P1",
+        "task_id": "P2",
+        "reply_to": "d66a1c69-5672-44e9-bd4e-39270fe4df4d"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "e4abd92c-bf77-41b0-8f82-8f461ecccebb",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T13:04:36.725575Z",
+        "updated_at": "2026-11-11T13:04:36.762694Z"
+      }
+    },
+    "eaa61d6e-9a8b-4dae-a9a1-f0606f7350f5": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "eaa61d6e-9a8b-4dae-a9a1-f0606f7350f5",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T14:32:43.785887Z",
+        "subject": "P3 starting now under your 14:31\u201314:56 grant",
+        "task_id": "P3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "eaa61d6e-9a8b-4dae-a9a1-f0606f7350f5",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:35:01.154862Z",
+        "updated_at": "2026-11-11T14:36:19.355728Z"
+      }
+    },
+    "f0295819-5d33-4f21-9020-18df22174724": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f0295819-5d33-4f21-9020-18df22174724",
+        "sender": "lead",
+        "recipient": "data",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.693480Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "f0295819-5d33-4f21-9020-18df22174724",
+        "recipient": "data",
+        "status": "acknowledged",
+        "acknowledged_at": "2026-11-11T15:48:16.165449Z",
+        "updated_at": "2026-11-11T15:48:16.165449Z"
+      }
+    },
+    "f0299064-b4ac-4a26-bb1a-2c228eeea30a": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f0299064-b4ac-4a26-bb1a-2c228eeea30a",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "update",
+        "created_at": "2026-11-11T15:48:30.305213Z",
+        "subject": "M6 capacity passed; byte-identical control; sole learning run starting",
+        "task_id": "M6",
+        "reply_to": "8ac151b2-b2bc-47c9-9a9f-70e26a009b00"
+      },
+      "receipt": null
+    },
+    "f6659029-f2f8-4bde-80fc-98e2276bf95f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f6659029-f2f8-4bde-80fc-98e2276bf95f",
+        "sender": "release",
+        "recipient": "model",
+        "kind": "update",
+        "created_at": "2026-11-11T15:31:55.392084Z",
+        "subject": "HF format confirmed; exact manifest fields and unchanged tokenizer hashes",
+        "task_id": "M6-P4",
+        "reply_to": "4aabac83-38c3-4461-b112-790be0fded98"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "f6659029-f2f8-4bde-80fc-98e2276bf95f",
+        "recipient": "model",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T15:40:38.879624Z",
+        "updated_at": "2026-11-11T15:43:19.285885Z"
+      }
+    },
+    "f70eeb56-261a-4acc-86f4-53f7917d09c4": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f70eeb56-261a-4acc-86f4-53f7917d09c4",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T12:18:17.207200Z",
+        "subject": "E3 delivered: frozen v2 and independent M4 comparison",
+        "task_id": "E3"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "f70eeb56-261a-4acc-86f4-53f7917d09c4",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T12:48:25.989666Z",
+        "updated_at": "2026-11-11T12:58:17.997123Z"
+      }
+    },
+    "f7f26d09-f8b9-4b07-9f8a-d7d46c0b251d": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f7f26d09-f8b9-4b07-9f8a-d7d46c0b251d",
+        "sender": "release",
+        "recipient": "lead",
+        "kind": "blocker",
+        "created_at": "2026-11-11T14:28:48.564583Z",
+        "subject": "P3 frozen and ready; explicit Model scheduling window still required",
+        "task_id": "P3",
+        "reply_to": "7a741051-87ea-476b-b6a0-0f3f8a8dfe18"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "f7f26d09-f8b9-4b07-9f8a-d7d46c0b251d",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:32:19.138269Z",
+        "updated_at": "2026-11-11T14:32:19.193053Z"
+      }
+    },
+    "f9b915c1-cf65-454b-acf8-adb54e92248c": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f9b915c1-cf65-454b-acf8-adb54e92248c",
+        "sender": "model",
+        "recipient": "evaluation",
+        "kind": "update",
+        "created_at": "2026-11-11T15:47:00.801300Z",
+        "subject": "Fresh starting624 predictions byte-identical to retained P3",
+        "task_id": "M6-E6",
+        "reply_to": "7b94415e-1140-42ee-91c0-0b545cd4ebf9"
+      },
+      "receipt": null
+    },
+    "f9be6202-c2de-478e-82c3-9b092461d72f": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "f9be6202-c2de-478e-82c3-9b092461d72f",
+        "sender": "evaluation",
+        "recipient": "lead",
+        "kind": "blocker",
+        "created_at": "2026-11-11T13:36:50.414890Z",
+        "subject": "E4 Track A integrated; Track B awaits repaired D3 publication",
+        "task_id": "E4",
+        "reply_to": "9d95a1ac-e33d-4700-8106-d98ff01a0368"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "f9be6202-c2de-478e-82c3-9b092461d72f",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:04:52.873202Z",
+        "updated_at": "2026-11-11T14:04:52.929901Z"
+      }
+    },
+    "fb957e25-9004-4887-b222-73e9ebac0de6": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "fb957e25-9004-4887-b222-73e9ebac0de6",
+        "sender": "lead",
+        "recipient": "evaluation",
+        "kind": "direction",
+        "created_at": "2026-11-11T15:47:02.699975Z",
+        "subject": "Deliver promptly, then stay available for up to 30 idle minutes",
+        "task_id": "owner-continuation"
+      },
+      "receipt": null
+    },
+    "fc63ea5f-3147-4242-bdf9-0808bf3ce807": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "fc63ea5f-3147-4242-bdf9-0808bf3ce807",
+        "sender": "model",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T12:13:21.533755Z",
+        "subject": "M4 delivered: v2 gains, robustness gate fails; candidates preserved",
+        "task_id": "M4"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "fc63ea5f-3147-4242-bdf9-0808bf3ce807",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T12:48:25.953272Z",
+        "updated_at": "2026-11-11T12:58:17.961659Z"
+      }
+    },
+    "fd0606f8-518a-44de-bbe9-8cfcf0c55220": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "fd0606f8-518a-44de-bbe9-8cfcf0c55220",
+        "sender": "data",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T14:21:41.418847Z",
+        "subject": "D3 delivered: immutable 96-case diagnostic, integrated at 8534e87",
+        "task_id": "D3",
+        "reply_to": "a2f1e2c3-b9cb-4b69-9008-c4e3ec603104"
+      },
+      "receipt": {
+        "schema_version": "1",
+        "record_type": "receipt",
+        "message_id": "fd0606f8-518a-44de-bbe9-8cfcf0c55220",
+        "recipient": "lead",
+        "status": "completed",
+        "acknowledged_at": "2026-11-11T14:24:42.926967Z",
+        "updated_at": "2026-11-11T14:24:42.964198Z"
+      }
+    },
+    "fe710818-db33-4e40-ad7d-8155c2683be2": {
+      "message": {
+        "schema_version": "1",
+        "record_type": "message",
+        "id": "fe710818-db33-4e40-ad7d-8155c2683be2",
+        "sender": "infra",
+        "recipient": "lead",
+        "kind": "report",
+        "created_at": "2026-11-11T15:42:08.971380Z",
+        "subject": "I4 interim:29 peer messages/16 routes; compute bottleneck not established",
+        "task_id": "I4",
+        "reply_to": "25f3ee22-8910-421f-85d6-c9d3d46f7061"
+      },
+      "receipt": null
+    }
+  }
+}

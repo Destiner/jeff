@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "cases": 48,
+  "expected_rows": 192,
+  "written_rows": 192,
+  "forward_attempts": 192,
+  "completed_forwards": 192,
+  "coverage": 1.0,
+  "error": null,
+  "process_runtime_seconds": 12.642685583326966,
+  "cold_load_seconds": 0.5167036661878228,
+  "first_forward_seconds": 0.09682999970391393,
+  "cpu_lifetime_maxrss_bytes": 3357491200,
+  "mps_observed_driver_max_bytes": 2768977920,
+  "process": {
+    "started_at": "2026-11-11T16:22:50.929631+00:00",
+    "completed_at": "2026-11-11T16:23:03.909725+00:00",
+    "returncode": 0,
+    "wall_seconds": 12.979705292265862,
+    "combined_audit_predict_wall_seconds": 13.867752459365875,
+    "wrapper_pid": 93634,
+    "child_pid": 93635,
+    "timeout": null
+  },
+  "output_sha256": "c9068e41915629f9419066941124c74fd7f181e93c840ca05e807d9e0056494d",
+  "receipt_sha256": "9c0e1e530bd88d0ce08f55fc26c82efdbc83dca50c20efd8748979d0d1799c7a"
+}

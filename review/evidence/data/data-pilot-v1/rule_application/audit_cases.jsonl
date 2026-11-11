@@ -1,0 +1,120 @@
+{"id": "data:pilot-v1:rule_application:g01:r01", "mechanism": 1, "facts": {"order": ["safety", "warranty", "urgent"], "active": {"safety": true, "warranty": true, "urgent": true}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r02", "mechanism": 1, "facts": {"order": ["warranty", "safety", "urgent"], "active": {"safety": true, "warranty": true, "urgent": false}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r03", "mechanism": 1, "facts": {"order": ["urgent", "safety", "warranty"], "active": {"safety": true, "warranty": false, "urgent": true}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r04", "mechanism": 1, "facts": {"order": ["safety", "urgent", "warranty"], "active": {"safety": false, "warranty": false, "urgent": false}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r05", "mechanism": 1, "facts": {"order": ["warranty", "urgent", "safety"], "active": {"safety": false, "warranty": true, "urgent": true}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r06", "mechanism": 1, "facts": {"order": ["urgent", "warranty", "safety"], "active": {"safety": true, "warranty": true, "urgent": false}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r07", "mechanism": 1, "facts": {"order": ["safety", "warranty", "urgent"], "active": {"safety": false, "warranty": false, "urgent": true}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r08", "mechanism": 1, "facts": {"order": ["urgent", "safety", "warranty"], "active": {"safety": true, "warranty": false, "urgent": false}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r09", "mechanism": 1, "facts": {"order": ["warranty", "safety", "urgent"], "active": {"safety": false, "warranty": false, "urgent": false}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g01:r10", "mechanism": 1, "facts": {"order": ["warranty", "urgent", "safety"], "active": {"safety": true, "warranty": false, "urgent": true}, "routes": {"safety": "Safety bench", "warranty": "Warranty bench", "urgent": "Rapid bench"}, "default": "General bench"}}
+{"id": "data:pilot-v1:rule_application:g02:r01", "mechanism": 2, "facts": {"first_end": 3, "second_end": 7, "rates": [2, 4, 6], "hours": 0}}
+{"id": "data:pilot-v1:rule_application:g02:r02", "mechanism": 2, "facts": {"first_end": 3, "second_end": 7, "rates": [2, 4, 6], "hours": 3}}
+{"id": "data:pilot-v1:rule_application:g02:r03", "mechanism": 2, "facts": {"first_end": 3, "second_end": 7, "rates": [2, 4, 6], "hours": 7}}
+{"id": "data:pilot-v1:rule_application:g02:r04", "mechanism": 2, "facts": {"first_end": 3, "second_end": 7, "rates": [2, 4, 6], "hours": 8}}
+{"id": "data:pilot-v1:rule_application:g02:r05", "mechanism": 2, "facts": {"first_end": 2, "second_end": 5, "rates": [1, 3, 5], "hours": 4}}
+{"id": "data:pilot-v1:rule_application:g02:r06", "mechanism": 2, "facts": {"first_end": 4, "second_end": 6, "rates": [3, 5, 8], "hours": 9}}
+{"id": "data:pilot-v1:rule_application:g02:r07", "mechanism": 2, "facts": {"first_end": 1, "second_end": 4, "rates": [0, 2, 7], "hours": 1}}
+{"id": "data:pilot-v1:rule_application:g02:r08", "mechanism": 2, "facts": {"first_end": 2, "second_end": 8, "rates": [4, 4, 9], "hours": 8}}
+{"id": "data:pilot-v1:rule_application:g02:r09", "mechanism": 2, "facts": {"first_end": 5, "second_end": 9, "rates": [2, 6, 10], "hours": 6}}
+{"id": "data:pilot-v1:rule_application:g02:r10", "mechanism": 2, "facts": {"first_end": 2, "second_end": 3, "rates": [3, 7, 11], "hours": 5}}
+{"id": "data:pilot-v1:rule_application:g03:r01", "mechanism": 3, "facts": {"capacity": 7, "items": [["Amber", 5], ["Birch", 4], ["Cedar", 2]]}}
+{"id": "data:pilot-v1:rule_application:g03:r02", "mechanism": 3, "facts": {"capacity": 8, "items": [["Dune", 9], ["Elm", 3], ["Flint", 5]]}}
+{"id": "data:pilot-v1:rule_application:g03:r03", "mechanism": 3, "facts": {"capacity": 5, "items": [["Gale", 6], ["Haze", 7], ["Iris", 8]]}}
+{"id": "data:pilot-v1:rule_application:g03:r04", "mechanism": 3, "facts": {"capacity": 9, "items": [["Jade", 2], ["Kite", 3], ["Lime", 4]]}}
+{"id": "data:pilot-v1:rule_application:g03:r05", "mechanism": 3, "facts": {"capacity": 6, "items": [["Moss", 4], ["Nook", 3], ["Opal", 1]]}}
+{"id": "data:pilot-v1:rule_application:g03:r06", "mechanism": 3, "facts": {"capacity": 0, "items": [["Pine", 1], ["Quay", 2], ["Reed", 3]]}}
+{"id": "data:pilot-v1:rule_application:g03:r07", "mechanism": 3, "facts": {"capacity": 10, "items": [["Sage", 6], ["Tide", 5], ["Umber", 4], ["Vale", 1]]}}
+{"id": "data:pilot-v1:rule_application:g03:r08", "mechanism": 3, "facts": {"capacity": 4, "items": [["Wave", 4], ["Yarn", 1], ["Zinc", 2]]}}
+{"id": "data:pilot-v1:rule_application:g03:r09", "mechanism": 3, "facts": {"capacity": 11, "items": [["Ash", 3], ["Bramble", 8], ["Cove", 2]]}}
+{"id": "data:pilot-v1:rule_application:g03:r10", "mechanism": 3, "facts": {"capacity": 6, "items": [["Dell", 7], ["Echo", 2], ["Fern", 5], ["Glow", 4]]}}
+{"id": "data:pilot-v1:rule_application:g04:r01", "mechanism": 4, "facts": {"cycle": ["Aster", "Beryl", "Cobalt"], "start": 0, "shift": 0}}
+{"id": "data:pilot-v1:rule_application:g04:r02", "mechanism": 4, "facts": {"cycle": ["Aster", "Beryl", "Cobalt"], "start": 2, "shift": 1}}
+{"id": "data:pilot-v1:rule_application:g04:r03", "mechanism": 4, "facts": {"cycle": ["Dawn", "Evening", "Night", "Noon"], "start": 0, "shift": -1}}
+{"id": "data:pilot-v1:rule_application:g04:r04", "mechanism": 4, "facts": {"cycle": ["Dawn", "Evening", "Night", "Noon"], "start": 3, "shift": 6}}
+{"id": "data:pilot-v1:rule_application:g04:r05", "mechanism": 4, "facts": {"cycle": ["Elm", "Fir", "Gum", "Holly", "Ivy"], "start": 1, "shift": -7}}
+{"id": "data:pilot-v1:rule_application:g04:r06", "mechanism": 4, "facts": {"cycle": ["Elm", "Fir", "Gum", "Holly", "Ivy"], "start": 4, "shift": 10}}
+{"id": "data:pilot-v1:rule_application:g04:r07", "mechanism": 4, "facts": {"cycle": ["Juno", "Kestrel", "Lark"], "start": 1, "shift": -4}}
+{"id": "data:pilot-v1:rule_application:g04:r08", "mechanism": 4, "facts": {"cycle": ["Maple", "Nutmeg", "Olive", "Poppy"], "start": 2, "shift": 9}}
+{"id": "data:pilot-v1:rule_application:g04:r09", "mechanism": 4, "facts": {"cycle": ["Quartz", "Ruby", "Slate", "Topaz", "Umber"], "start": 3, "shift": -10}}
+{"id": "data:pilot-v1:rule_application:g04:r10", "mechanism": 4, "facts": {"cycle": ["Vega", "Willow", "Xenia"], "start": 0, "shift": 5}}
+{"id": "data:pilot-v1:rule_application:g05:r01", "mechanism": 5, "facts": {"weights": [2, 3, 1], "counts": [0, 0, 1], "low": 3, "high": 7}}
+{"id": "data:pilot-v1:rule_application:g05:r02", "mechanism": 5, "facts": {"weights": [2, 3, 1], "counts": [2, 1, 0], "low": 3, "high": 7}}
+{"id": "data:pilot-v1:rule_application:g05:r03", "mechanism": 5, "facts": {"weights": [2, 3, 1], "counts": [2, 2, 1], "low": 3, "high": 7}}
+{"id": "data:pilot-v1:rule_application:g05:r04", "mechanism": 5, "facts": {"weights": [4, 1, 2], "counts": [1, 0, 2], "low": 0, "high": 4}}
+{"id": "data:pilot-v1:rule_application:g05:r05", "mechanism": 5, "facts": {"weights": [1, 4, 3], "counts": [0, 2, 1], "low": 4, "high": 6}}
+{"id": "data:pilot-v1:rule_application:g05:r06", "mechanism": 5, "facts": {"weights": [3, 2, 2], "counts": [3, 0, 0], "low": 2, "high": 8}}
+{"id": "data:pilot-v1:rule_application:g05:r07", "mechanism": 5, "facts": {"weights": [2, 5, 4], "counts": [1, 0, 2], "low": -2, "high": 5}}
+{"id": "data:pilot-v1:rule_application:g05:r08", "mechanism": 5, "facts": {"weights": [1, 2, 1], "counts": [1, 1, 1], "low": 5, "high": 9}}
+{"id": "data:pilot-v1:rule_application:g05:r09", "mechanism": 5, "facts": {"weights": [5, 1, 3], "counts": [0, 0, 0], "low": 0, "high": 3}}
+{"id": "data:pilot-v1:rule_application:g05:r10", "mechanism": 5, "facts": {"weights": [2, 2, 5], "counts": [2, 3, 1], "low": 2, "high": 5}}
+{"id": "data:pilot-v1:rule_application:g06:r01", "mechanism": 6, "facts": {"east": ["amber", "blue"], "west": ["blue", "coral"]}}
+{"id": "data:pilot-v1:rule_application:g06:r02", "mechanism": 6, "facts": {"east": [], "west": ["dune", "elm"]}}
+{"id": "data:pilot-v1:rule_application:g06:r03", "mechanism": 6, "facts": {"east": ["fern"], "west": ["fern"]}}
+{"id": "data:pilot-v1:rule_application:g06:r04", "mechanism": 6, "facts": {"east": ["gold", "hazel", "iris"], "west": ["iris"]}}
+{"id": "data:pilot-v1:rule_application:g06:r05", "mechanism": 6, "facts": {"east": ["jade", "khaki"], "west": []}}
+{"id": "data:pilot-v1:rule_application:g06:r06", "mechanism": 6, "facts": {"east": ["lime", "mauve"], "west": ["navy", "ochre"]}}
+{"id": "data:pilot-v1:rule_application:g06:r07", "mechanism": 6, "facts": {"east": ["pink", "rose", "silver"], "west": ["rose", "silver", "teal"]}}
+{"id": "data:pilot-v1:rule_application:g06:r08", "mechanism": 6, "facts": {"east": [], "west": []}}
+{"id": "data:pilot-v1:rule_application:g06:r09", "mechanism": 6, "facts": {"east": ["umber", "violet", "white"], "west": ["white", "violet", "umber"]}}
+{"id": "data:pilot-v1:rule_application:g06:r10", "mechanism": 6, "facts": {"east": ["yellow"], "west": ["yellow", "zinc"]}}
+{"id": "data:pilot-v1:rule_application:g07:r01", "mechanism": 7, "facts": {"request": [9, 11], "slots": [[7, 9], [11, 13]], "labels": ["Booking 1", "Booking 2"]}}
+{"id": "data:pilot-v1:rule_application:g07:r02", "mechanism": 7, "facts": {"request": [9, 12], "slots": [[8, 10], [12, 14]], "labels": ["Booking 1", "Booking 2"]}}
+{"id": "data:pilot-v1:rule_application:g07:r03", "mechanism": 7, "facts": {"request": [13, 15], "slots": [[10, 14], [14, 17]], "labels": ["Booking 1", "Booking 2"]}}
+{"id": "data:pilot-v1:rule_application:g07:r04", "mechanism": 7, "facts": {"request": [8, 9], "slots": [[8, 9], [10, 11]], "labels": ["Booking 1", "Booking 2"]}}
+{"id": "data:pilot-v1:rule_application:g07:r05", "mechanism": 7, "facts": {"request": [16, 18], "slots": [[9, 16], [17, 19]], "labels": ["Booking 1", "Booking 2"]}}
+{"id": "data:pilot-v1:rule_application:g07:r06", "mechanism": 7, "facts": {"request": [10, 13], "slots": [[9, 12], [11, 14], [12, 13]], "labels": ["Booking 1", "Booking 2", "Booking 3"]}}
+{"id": "data:pilot-v1:rule_application:g07:r07", "mechanism": 7, "facts": {"request": [6, 8], "slots": [[8, 10], [10, 12], [12, 14]], "labels": ["Booking 1", "Booking 2", "Booking 3"]}}
+{"id": "data:pilot-v1:rule_application:g07:r08", "mechanism": 7, "facts": {"request": [12, 14], "slots": [[10, 12], [12, 13], [14, 16]], "labels": ["Booking 1", "Booking 2", "Booking 3"]}}
+{"id": "data:pilot-v1:rule_application:g07:r09", "mechanism": 7, "facts": {"request": [15, 17], "slots": [[14, 16], [16, 18], [19, 20]], "labels": ["Booking 1", "Booking 2", "Booking 3"]}}
+{"id": "data:pilot-v1:rule_application:g07:r10", "mechanism": 7, "facts": {"request": [7, 10], "slots": [[6, 7], [8, 9], [9, 10], [10, 11]], "labels": ["Booking 1", "Booking 2", "Booking 3", "Booking 4"]}}
+{"id": "data:pilot-v1:rule_application:g08:r01", "mechanism": 8, "facts": {"rules": [["a", "Amber"], ["ab", "Birch"], ["abc", "Cedar"]], "message": "abcd"}}
+{"id": "data:pilot-v1:rule_application:g08:r02", "mechanism": 8, "facts": {"rules": [["m", "Moss"], ["mn", "Nook"], ["mno", "Opal"]], "message": "mx"}}
+{"id": "data:pilot-v1:rule_application:g08:r03", "mechanism": 8, "facts": {"rules": [["s", "Sage"], ["st", "Tide"], ["sto", "Umber"]], "message": "xsto"}}
+{"id": "data:pilot-v1:rule_application:g08:r04", "mechanism": 8, "facts": {"rules": [["c", "Cove"], ["cat", "Dell"], ["ca", "Echo"]], "message": "cat"}}
+{"id": "data:pilot-v1:rule_application:g08:r05", "mechanism": 8, "facts": {"rules": [["r", "Reed"], ["ra", "Ash"], ["rab", "Bramble"]], "message": "razz"}}
+{"id": "data:pilot-v1:rule_application:g08:r06", "mechanism": 8, "facts": {"rules": [["p", "Pine"], ["pi", "Quay"], ["pin", "Rock"]], "message": "pinwheel"}}
+{"id": "data:pilot-v1:rule_application:g08:r07", "mechanism": 8, "facts": {"rules": [["v", "Vale"], ["va", "Wave"], ["val", "Yarn"]], "message": "v"}}
+{"id": "data:pilot-v1:rule_application:g08:r08", "mechanism": 8, "facts": {"rules": [["z", "Zinc"], ["ze", "Elm"], ["zen", "Fern"]], "message": "zenith"}}
+{"id": "data:pilot-v1:rule_application:g08:r09", "mechanism": 8, "facts": {"rules": [["l", "Lime"], ["lu", "Gale"], ["lux", "Haze"]], "message": "lumen"}}
+{"id": "data:pilot-v1:rule_application:g08:r10", "mechanism": 8, "facts": {"rules": [["k", "Kite"], ["ko", "Iris"], ["kor", "Jade"]], "message": "okor"}}
+{"id": "data:pilot-v1:rule_application:g09:r01", "mechanism": 9, "facts": {"digits": [1, 2, 3], "weights": [1, 1, 1], "modulus": 5}}
+{"id": "data:pilot-v1:rule_application:g09:r02", "mechanism": 9, "facts": {"digits": [0, 0, 0], "weights": [2, 1, 2], "modulus": 7}}
+{"id": "data:pilot-v1:rule_application:g09:r03", "mechanism": 9, "facts": {"digits": [9, 1, 4], "weights": [1, 3, 2], "modulus": 6}}
+{"id": "data:pilot-v1:rule_application:g09:r04", "mechanism": 9, "facts": {"digits": [2, 7, 1, 3], "weights": [1, 2, 1, 2], "modulus": 4}}
+{"id": "data:pilot-v1:rule_application:g09:r05", "mechanism": 9, "facts": {"digits": [5, 5], "weights": [3, 1], "modulus": 5}}
+{"id": "data:pilot-v1:rule_application:g09:r06", "mechanism": 9, "facts": {"digits": [4, 0, 2], "weights": [2, 3, 4], "modulus": 7}}
+{"id": "data:pilot-v1:rule_application:g09:r07", "mechanism": 9, "facts": {"digits": [8, 3, 6], "weights": [1, 2, 3], "modulus": 6}}
+{"id": "data:pilot-v1:rule_application:g09:r08", "mechanism": 9, "facts": {"digits": [1, 9, 0, 2], "weights": [2, 1, 2, 1], "modulus": 4}}
+{"id": "data:pilot-v1:rule_application:g09:r09", "mechanism": 9, "facts": {"digits": [3, 3, 3], "weights": [1, 2, 1], "modulus": 5}}
+{"id": "data:pilot-v1:rule_application:g09:r10", "mechanism": 9, "facts": {"digits": [7, 2], "weights": [2, 3], "modulus": 7}}
+{"id": "data:pilot-v1:rule_application:g10:r01", "mechanism": 10, "facts": {"initial": "locked", "events": ["badge"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r02", "mechanism": 10, "facts": {"initial": "locked", "events": ["badge", "enter"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r03", "mechanism": 10, "facts": {"initial": "open", "events": ["close", "badge"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r04", "mechanism": 10, "facts": {"initial": "occupied", "events": ["badge", "exit", "close"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r05", "mechanism": 10, "facts": {"initial": "locked", "events": ["enter", "close"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r06", "mechanism": 10, "facts": {"initial": "open", "events": ["badge", "enter", "exit"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r07", "mechanism": 10, "facts": {"initial": "occupied", "events": ["exit", "enter"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r08", "mechanism": 10, "facts": {"initial": "locked", "events": ["badge", "close", "enter"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r09", "mechanism": 10, "facts": {"initial": "open", "events": ["enter", "exit", "close", "badge"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g10:r10", "mechanism": 10, "facts": {"initial": "occupied", "events": ["close", "exit", "badge", "enter"], "transitions": {"locked": {"badge": "open"}, "open": {"enter": "occupied", "close": "locked"}, "occupied": {"exit": "open"}}}}
+{"id": "data:pilot-v1:rule_application:g11:r01", "mechanism": 11, "facts": {"nodes": ["A", "B", "C", "D"], "edges": [["A", "B"], ["B", "C"]], "start": "A"}}
+{"id": "data:pilot-v1:rule_application:g11:r02", "mechanism": 11, "facts": {"nodes": ["E", "F", "G", "H"], "edges": [["E", "F"], ["G", "F"], ["H", "G"]], "start": "F"}}
+{"id": "data:pilot-v1:rule_application:g11:r03", "mechanism": 11, "facts": {"nodes": ["J", "K", "L", "M"], "edges": [["J", "K"], ["K", "J"], ["K", "L"], ["L", "M"]], "start": "K"}}
+{"id": "data:pilot-v1:rule_application:g11:r04", "mechanism": 11, "facts": {"nodes": ["N", "P", "Q", "R"], "edges": [["P", "N"], ["P", "Q"], ["Q", "R"]], "start": "N"}}
+{"id": "data:pilot-v1:rule_application:g11:r05", "mechanism": 11, "facts": {"nodes": ["S", "T", "U", "V"], "edges": [["S", "T"], ["S", "U"], ["U", "V"]], "start": "S"}}
+{"id": "data:pilot-v1:rule_application:g11:r06", "mechanism": 11, "facts": {"nodes": ["W", "X", "Y", "Z"], "edges": [["W", "X"], ["X", "Y"], ["Y", "W"]], "start": "X"}}
+{"id": "data:pilot-v1:rule_application:g11:r07", "mechanism": 11, "facts": {"nodes": ["A1", "B1", "C1", "D1", "E1"], "edges": [["A1", "B1"], ["C1", "B1"], ["C1", "D1"], ["D1", "E1"]], "start": "C1"}}
+{"id": "data:pilot-v1:rule_application:g11:r08", "mechanism": 11, "facts": {"nodes": ["F1", "G1", "H1", "J1"], "edges": [["G1", "F1"], ["H1", "G1"], ["J1", "H1"]], "start": "J1"}}
+{"id": "data:pilot-v1:rule_application:g11:r09", "mechanism": 11, "facts": {"nodes": ["K1", "L1", "M1", "N1"], "edges": [["K1", "L1"], ["L1", "M1"], ["N1", "M1"]], "start": "L1"}}
+{"id": "data:pilot-v1:rule_application:g11:r10", "mechanism": 11, "facts": {"nodes": ["P1", "Q1", "R1", "S1"], "edges": [["P1", "P1"], ["P1", "Q1"], ["R1", "S1"]], "start": "P1"}}
+{"id": "data:pilot-v1:rule_application:g12:r01", "mechanism": 12, "facts": {"names": ["Ari", "Bea", "Cy"], "ballots": [[3, ["Ari", "Bea", "Cy"]], [2, ["Bea", "Cy", "Ari"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r02", "mechanism": 12, "facts": {"names": ["Dee", "Eli", "Fay"], "ballots": [[2, ["Dee", "Eli", "Fay"]], [2, ["Eli", "Fay", "Dee"]], [2, ["Fay", "Dee", "Eli"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r03", "mechanism": 12, "facts": {"names": ["Gus", "Hal", "Ida"], "ballots": [[2, ["Gus", "Hal", "Ida"]], [2, ["Hal", "Gus", "Ida"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r04", "mechanism": 12, "facts": {"names": ["Jen", "Kai", "Lou"], "ballots": [[1, ["Jen", "Kai", "Lou"]], [4, ["Lou", "Kai", "Jen"]], [1, ["Kai", "Jen", "Lou"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r05", "mechanism": 12, "facts": {"names": ["Mae", "Nia", "Oli"], "ballots": [[3, ["Nia", "Oli", "Mae"]], [2, ["Mae", "Nia", "Oli"]], [1, ["Oli", "Nia", "Mae"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r06", "mechanism": 12, "facts": {"names": ["Paz", "Ren", "Sol"], "ballots": [[2, ["Paz", "Sol", "Ren"]], [4, ["Sol", "Ren", "Paz"]], [1, ["Ren", "Paz", "Sol"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r07", "mechanism": 12, "facts": {"names": ["Tao", "Una", "Val"], "ballots": [[1, ["Tao", "Una", "Val"]], [1, ["Una", "Val", "Tao"]], [1, ["Val", "Tao", "Una"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r08", "mechanism": 12, "facts": {"names": ["Wes", "Xiu", "Yan"], "ballots": [[3, ["Xiu", "Wes", "Yan"]], [2, ["Yan", "Xiu", "Wes"]], [2, ["Wes", "Xiu", "Yan"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r09", "mechanism": 12, "facts": {"names": ["Ada", "Bo", "Cal", "Dom"], "ballots": [[4, ["Dom", "Ada", "Cal", "Bo"]], [3, ["Ada", "Bo", "Cal", "Dom"]], [2, ["Cal", "Dom", "Bo", "Ada"]]]}}
+{"id": "data:pilot-v1:rule_application:g12:r10", "mechanism": 12, "facts": {"names": ["Em", "Flo", "Gil", "Han"], "ballots": [[2, ["Em", "Flo", "Gil", "Han"]], [2, ["Flo", "Gil", "Han", "Em"]], [2, ["Gil", "Han", "Em", "Flo"]], [2, ["Han", "Em", "Flo", "Gil"]]]}}

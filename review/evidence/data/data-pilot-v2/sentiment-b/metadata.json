@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-sentiment-b-r1",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "generation_revision": "sentiment-b-generation-r1",
+    "source_revision": "sentiment-b-source-s1",
+    "assignment_revision": "sentiment-b-assignments-a1",
+    "seed": 670129,
+    "method": "Existing approved agent authored 240 standalone synthetic experiences and teacher labels; deterministic standard-library Python assembly only.",
+    "sampling_parameters": null,
+    "sampling_parameters_status": "Not exposed by the existing agent session.",
+    "group_namespace": "data:pilot-v2:sentiment-b:",
+    "rows_per_group": 1,
+    "assignment_frozen_before_source_authoring": true,
+    "configuration": "configs/data/pilot-v2.json; exact sentiment-b entry",
+    "hashes_sha256": {
+      "plan_groups.py": "6e0908d476a4637a08e44bcd312459de97dd979a501d973af86c6f60c8f2fee9",
+      "group_assignments.json": "0b1a24d06881e27dff29dfec59c7441c81198458eb7a6481e1fb38accc859c2d",
+      "source_cases.txt": "a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8",
+      "generate.py": "355504ae6a80a36b0aff898d38652ebdb06517bcd6b6d8fd4046abca730603bb",
+      "train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+      "validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+    },
+    "option_order": "Independent seeded per-class schedules; class positions differ by at most one; split totals exactly balanced.",
+    "candidate_and_question_styles": "Five complete styles and five question forms, independently scheduled; equal frequencies within every class and split.",
+    "teacher_identity_environment": [
+      "PI_PROVIDER",
+      "PI_MODEL"
+    ]
+  },
+  "usage_constraints": "Original synthetic content under existing provider terms; no independent redistribution-license claim. No private records or external source text. Train rows for training; validation rows held out from weight updates. IDs, provenance, and metadata are not model features.",
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40,
+    "total": 240
+  },
+  "limitations": [
+    "Labels are teacher judgments; author self-review is not independent correctness verification.",
+    "The environment exposes an alias, not an immutable model revision; sampling parameters are unavailable.",
+    "No tokenizer or ML stack was loaded. Parent must audit the 256-token cap.",
+    "No parent, other producer, or evaluation examples were read; historical overlap checks are limited to configured reserved domains.",
+    "Independent events are author-designed synthetic scenarios, not independently collected real-world observations."
+  ]
+}

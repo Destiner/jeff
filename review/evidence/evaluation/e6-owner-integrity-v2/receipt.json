@@ -1,0 +1,687 @@
+{
+  "completed_at": "2026-11-11T16:40:55.378348+00:00",
+  "output_hashes_checked": 158,
+  "all_match": true,
+  "executed_recipe_equals_tracked_copy": true,
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/E6-inherited-v1.md",
+      "sha256": "7c8092f8377ee88be7f1d917e6d78d007510e2fca79ed4a280f32b72a39708e0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/E6-new-v2.md",
+      "sha256": "3e36044a1ffff7618f5f2777d2c727ab676c2a5f324f82ea632c91fefcc88ea0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/E6-probes.md",
+      "sha256": "434ed1f5041034576b4ec49054246c27a4dfda5535f18f74012b14db4e922b66"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/command-1.json",
+      "sha256": "5c576126f740d1c66abe4dcf4e8fe95584dd8907bde3773b3e5e3e6cee1e7584"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/command-2.json",
+      "sha256": "f61cc318cb3004b125c62eb47b37202bd5f0376f10f3779be3bd695d82e68f0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/command-3.json",
+      "sha256": "10cc0aa5a35580fa5580e3e063bb1ff46d2de297e19c94a247fead21475fe92e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/command-4.json",
+      "sha256": "107bef8b2c0e5f0250dda233bf5ebdd5faf1c99d46129b2a4a936063018276e5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/fresh-start-vs-p3-exact-differences.json",
+      "sha256": "5a436e264d72c1bfc44560b8d1a078a1de46b000a4cc2a94c6d5cd0808788c77"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/grouped-both-order-summary.json",
+      "sha256": "3905582056aa6b35f8b973ec97ead8824e96c9f57b69961ad8a71475f2e5f373"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/preflight.json",
+      "sha256": "aa12a79faab9cb3b222d5adcc8182b660511ca504499afb62fecaeeff09e61eb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/recipe.json",
+      "sha256": "74beb1c96222455d69e562e4a5136e6014e0990fb46b9f84f30c02a5b94fd00c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-001.json",
+      "sha256": "8a50d7cc9c320e6378c23c34fe90cf84160c4301e17e4902cc42397240d9f0fd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-002.json",
+      "sha256": "ac2be71e67c4a506b8b430e4be6ffeaaffff7690d4239262c3dbba29dfb3af74"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-003.json",
+      "sha256": "7e6143c923c557eb4470d549ab6780d2d4c4da5869c2d27f09027097cfa1db8e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-004.json",
+      "sha256": "c8bb7ba1241896a85bc60af4f9d4e7a5f097ebd083016b4153ea2978c08e337d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-005.json",
+      "sha256": "f3824dae9b8071b91b5bdb893e6ffeb270274b0a0002a75b4ba65bb23983ba76"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-006.json",
+      "sha256": "3139a663a8c5d67a343113b11556161714656ce03ece67e61d27612416764bf1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-007.json",
+      "sha256": "fe481b11ee7cdca9640f918dfd6bb214a36cade671678692a2d966d48a6b7fc1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-008.json",
+      "sha256": "6cb84554d8bbb55ace25e6d7148a952cfb5162ea29c8d10149676e4193ce606e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-009.json",
+      "sha256": "0decb3e1a90a5e9489874a07172202cefca48c3e86ff72770f7e8474c5b22fc4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-010.json",
+      "sha256": "a3d121e1c9bd4fcf473b5433605609043d0aafb9a9121b11b75baee679252c98"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-011.json",
+      "sha256": "7aa8f376fed4d261a2325037d71ff5ca901db333c702fc6048beff434f6a5345"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-012.json",
+      "sha256": "cbafc3b23f6bad1fb2a64f6507094c21d80c0017fd375d184c34e7dbd72e5ae1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-013.json",
+      "sha256": "a0f731544c0e0770f988168753818da833e1e319048b7b457c3b79f05e646d07"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-014.json",
+      "sha256": "f139ab51490717b2bd4b4bc381083fbf37ade521af2f691cf3f04fc74efae701"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-015.json",
+      "sha256": "0091d4585adbb73a14ab08bd7881f8783191e67ff528664170db692497549de6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-016.json",
+      "sha256": "a3f5899adc76c81e7d6c5abee82eee71637a5d53210dfd62f1338cd49380ec6f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-017.json",
+      "sha256": "16a7a54a473bd1df3d1ab26fef9308f6a36eeea6c2ce6a87f0d1847db0a52e67"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-018.json",
+      "sha256": "9e4f81be7a3b3d556554dd91a65fdc39c772fbda9d35dbe8ce9a91f93524a120"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-019.json",
+      "sha256": "54c03a0bd602208a7cf213218a2308f815318a5c57dc5fb10684c57778bc7c26"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-020.json",
+      "sha256": "522bf3d1a3f9d3aa7b7761fb42f6bda930040612ab8a8c794bdfcf562dc6d3a9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-021.json",
+      "sha256": "c996ca7e17f98a5949081ab092f6084e55f157e461970aa780f175e4f16c273c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-022.json",
+      "sha256": "266c1f1039d62206a0418bb9cf7c93b393512d2a47b1adc6c997f247c3fc2a1a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-023.json",
+      "sha256": "3160af9a56e87bcecf24734ecd0ea69fcd3a8aec681c9f6e1c2c59beca210544"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-024.json",
+      "sha256": "47f6595bb864460569f89b465a858933bbda41bcee310d2b29d96330e1096852"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-025.json",
+      "sha256": "932d9a709559400a172d8681924b93f88a1686ef0fa395d626ab620f32d5b750"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-026.json",
+      "sha256": "61027fa1df8001228e6fa16a96863abe3cc1fbd4f5202f75dbd357d7dce28435"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-027.json",
+      "sha256": "f0e9fec4bc33a92ab9248118794518dcc1156c41770fc97f7f79cfcfffc9c36a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-028.json",
+      "sha256": "85455be4b1aec2fc77db52ec9de420ae77b4982d167b9b3f9cbf3868a94eba04"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-029.json",
+      "sha256": "6d8afccbdeb98d591a61cd58375b563494c8c0f6ff5ffa347d0be9946fa17144"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-030.json",
+      "sha256": "92a57de1406eca487c753fcc25f18e672cef6eeb417deed39dff26bf5227b6a4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-031.json",
+      "sha256": "4fb5479ad8ced71d5fd952e4cf246d57cf3685530c9aefb656ba415d25a6e66d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-032.json",
+      "sha256": "98a93c5b6bff0f2cea15344aa2ab64aec29b534ab057cd44a1ae84d844037484"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-033.json",
+      "sha256": "7f6c350a2df78e752385a21ee1437973cb7a8579e4e8411aeeed86fc536ca7c2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-034.json",
+      "sha256": "85f8eece208ab7cb104cbdc5f0e6b2d0b68cc073f76cbc9502f529f0ef4d3f4a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-035.json",
+      "sha256": "14efa6c120c029c67003ab86d7f9f52a01f939021fa4e0f4af8c8854cdcd1f91"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-036.json",
+      "sha256": "66956dd92769bafac0efdebbb43a4585b191bf955ece5732c19d07e346d9e077"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-037.json",
+      "sha256": "01768b76af3b8e0b53c19069e1b38e37d9d8f660667ab8df1bd0be2c2abfe343"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-038.json",
+      "sha256": "3b306fd5acdbb1e56ed47b9f7ec48fea754472dca23b664d198046c7a00a0f22"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/command-039.json",
+      "sha256": "51669934dd2a050f9daa965351632fcf5143faacea2d03b748cb6868a8df479a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/config.json",
+      "sha256": "74beb1c96222455d69e562e4a5136e6014e0990fb46b9f84f30c02a5b94fd00c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/comparison.json",
+      "sha256": "98e34c30b1413fafb6c5024125fb4847cf1ca55569d6754ff42edb3344a1f116"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/lexical-order-report.json",
+      "sha256": "9b2b8cb49afcfd512bcd0c7adbcf0221cd332aae09cf12ee81d79e18759315ed"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/lexical-order.jsonl",
+      "sha256": "fea66ff1333277086e490666b6262414fe3bc4fb7348e12635096c06bf64d213"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/lexical.jsonl",
+      "sha256": "d5f1422ae2ee6125f6826a39caf1d808fcd1afb999683f299d7ca3db7923ebd3"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m2-v1-trained-order-report.json",
+      "sha256": "fdd7f48de5a474610a0a65607da8e82208a89d5e11cf7ecdf7980a75c625394a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m2-v1-trained-order.jsonl",
+      "sha256": "47b98a73553fe0d8fbd534b8b1f256c343c743c686d42b6df3ab91f81021f394"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m2-v1-trained.jsonl",
+      "sha256": "d68120806b90fadb9e70428cdaf8eb2842834c2be085d412c12bdebc8cb067b7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m3-v1-trained-order-report.json",
+      "sha256": "db7d19a9fb9f818f1b717ae91ea328a964954d5c2167b372f2b07bb88d5737e1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m3-v1-trained-order.jsonl",
+      "sha256": "407bead1f699ebe58cd8b81862fb154d1247039a4e96da0ef9038f0b1849efc2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m3-v1-trained.jsonl",
+      "sha256": "06c6062cdc8a15b9692db08b5539edcce18be74727137b7dbb9763802b78d837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-random-start-order-report.json",
+      "sha256": "669cb98c5c2116b233130fe1ba66c7c3537fa20337c6695a1e4d8ffc1f1608a1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-random-start-order.jsonl",
+      "sha256": "9401c39af4ad46420271e6124a9b19d1bf61841d292ca0e8ec5a257792cbd09b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-random-start.jsonl",
+      "sha256": "db306372b0111650a61041372c0c037461420cca1ea6d67602d13c4b7a5278d9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-trained-order-report.json",
+      "sha256": "484b8dab82e1b118f789c0095d28c9cf6b673c31a4d308a3de14b65da9ac69d6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-trained-order.jsonl",
+      "sha256": "0a200aa003f8eb498769d1fc44a7070026969ef64c377bcde3e998527664e86a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-minilm-trained.jsonl",
+      "sha256": "35ed30e67d855ee5340f21e18720051fed23d125233f287a06e2bed6c40c8e2c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "e452e4fda18901048a6018d6b2a7dc126e62cec9a9b102bdf3465f0935c516fe"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "b3f5d28bc50a74e8e8378d2f72494f5eb7059884c33803c12e55be84070fda17"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "0f120f2b6fc4290cc067ed6eacce8a58c4ca9b76e605b4d2f681912fe2f0ddbf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-trained-order-report.json",
+      "sha256": "605f8aa6817799f83ba0985d00a6d5304134820ea2450453fbf08a7a4dc14398"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-trained-order.jsonl",
+      "sha256": "e02a61b67ae6ce993a8085069a87a8346be2f43ff0eaf25e4d040c3e7eb4a781"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m4-msmarco-trained.jsonl",
+      "sha256": "bc558f28c1215b42ff9dcfe0d917449397cd1b005b297d647abd1986608e819f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-fresh-start-order-report.json",
+      "sha256": "03ac4495ffdafd7d9285e472bc8d70c1b57f456a73e0641bbf7ce94b4349b3b6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-fresh-start-order.jsonl",
+      "sha256": "62d1587bcb33b83cced088b54e80f837f35148424c6a1293d7fd40122f49e260"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-fresh-start.jsonl",
+      "sha256": "62ec08d6b6623cd30facd14438d09162bac91785a80cdff8396067128e26ed0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-v2-trained-order-report.json",
+      "sha256": "a5153ae58db00d48d7f539aff3f343960b706a6ec64ae63e85212b0c93bb1f7b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-v2-trained-order.jsonl",
+      "sha256": "56d30ebb439647c7ba750d3cc5fb3e4fa422f6132dac436c94b320badffc4504"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/m6-qwen-v2-trained.jsonl",
+      "sha256": "745f65e513efe5bdaa0a0001ee82ad71417b88043054a57ae9d559066e706cb0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "d1c0c439ac951eca8c9dfdeaa254ba46fbb1f0d1b077b135aacbd6a43f453a2a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen-order.jsonl",
+      "sha256": "62d1587bcb33b83cced088b54e80f837f35148424c6a1293d7fd40122f49e260"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen.jsonl",
+      "sha256": "62ec08d6b6623cd30facd14438d09162bac91785a80cdff8396067128e26ed0f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/report.md",
+      "sha256": "2972c30ed2e710558ad500db4006df483373386d66d015f370eb26a6ff003ae7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/uniform-order-report.json",
+      "sha256": "a0a0e9f310a203ee84ececdff47ff15ddcafd2f333ae5e97946139f01c4d506f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/uniform-order.jsonl",
+      "sha256": "12ef9cb567b06afe42ba203cc22d7588f75bb4108ecef7734c3207c1911a39e7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/inherited-v1/uniform.jsonl",
+      "sha256": "067f7fd2b440ac0ab5e5115760def020feb18a2ad23cb723b2f972947cb07090"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/comparison.json",
+      "sha256": "3eabe2dbcdafe3962ba601b041bb70d837542649283d9a38a8079725b039f0e9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/lexical-order-report.json",
+      "sha256": "1f420842c1727fd565ec22a15cdc9cf8b2df5f015a07a85933bd44f4a3873ac8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/lexical-order.jsonl",
+      "sha256": "6b72151e9f478812a3a5a36e4b1b09b512a489e1fb81654dd138de6b33fb77e4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/lexical.jsonl",
+      "sha256": "47e33c838db4b659ffeb85d409099c33101e428df89b2341ff323eb087a2244e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m2-v1-trained-order-report.json",
+      "sha256": "debad9b3b922dc2491f879afdab318047bfa69179b51710971b92cf37d3c0f6a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m2-v1-trained-order.jsonl",
+      "sha256": "7afada34a19f7c34dfa8c4994177749b5f91ad0876b8ddfda30f90a61e5e97aa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m2-v1-trained.jsonl",
+      "sha256": "6503c7f4238ab2db4cfe48ae7514b362c8ad1a9bc1b2dce15ad15555f3631f35"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m3-v1-trained-order-report.json",
+      "sha256": "0101ecfb4faebf748386775d99dc41d36ef56a65c321e891d016613e8e45094d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m3-v1-trained-order.jsonl",
+      "sha256": "4bcdc7255f6b6acdb386ecdd57b4388d827bef0db6ea0e4941c3ba9718112e02"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m3-v1-trained.jsonl",
+      "sha256": "80417e6515804703133e361581411f7129a4be1f6acaef85eab21bafb77a9b6f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-random-start-order-report.json",
+      "sha256": "3967332a1f0d0bc2620a2b1f73d3c71dda8c9016ff8e506cff460d3f76eae857"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-random-start-order.jsonl",
+      "sha256": "26ec8428802f945a06d7d425207b9b3127dbf91ee1f13f8db3029bfb4506f810"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-random-start.jsonl",
+      "sha256": "ffbe95bc6020a4657b3c184942bae5eb73d00d1d0eabb0d39d5d5563983d0f12"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-trained-order-report.json",
+      "sha256": "f56807a089a160791fec9384fdcaf794631feb3ecab7b30e02e86d2dbac50284"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-trained-order.jsonl",
+      "sha256": "9e93721cddbb68be9d3d7bfedb373a667e394c4567aa77cf4b07a4270eb5079d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-minilm-trained.jsonl",
+      "sha256": "5e237af63c198c14b32055ecd66dc6e33c17aca1109e909875dacd943a430e28"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "292db21182fb883253d6aa27cb3f26c6882d0545890068328e915d191ca3e687"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "c501b9be876573914473820642784498394bf6300c2baef75e6a7094bcf7834d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "4e0a11541fc25440299c0ddedad001b2baab8fe51113bbafe606f92b6e8563cf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-trained-order-report.json",
+      "sha256": "540378afe60c2c21b56b33cd4d4fc801bc9af6080587f87de60c20e4b5b47fa4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-trained-order.jsonl",
+      "sha256": "9a49bf609239901875c791bc7ffb12ca200812bcc685d839dfac283520802e41"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m4-msmarco-trained.jsonl",
+      "sha256": "a7351b383f3cad72445c950228447537ed114c368526f08c2bab050f5219b670"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-fresh-start-order-report.json",
+      "sha256": "509eb3e35526dc7d79e91d9d49ebe6c64e12bac8ccc0edaa63f18ca718baab25"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-fresh-start-order.jsonl",
+      "sha256": "84954ad77530eff74dd2d0825728910118354ba4e5119a47aa040846fab20546"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-fresh-start.jsonl",
+      "sha256": "7e37d62969e112d42e0bb02ce9179484bafef23e3d640050c958f2c218a1d684"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-v2-trained-order-report.json",
+      "sha256": "705b98f9f5cd1d0a22ef9e90d9f1ec607edbeae5247606e41e5ef77f8958cfc4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-v2-trained-order.jsonl",
+      "sha256": "dd584b7bd8c8deec1ddcf7c21fb60d05c28c49a35ff08cf9f9f09db7250672fc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/m6-qwen-v2-trained.jsonl",
+      "sha256": "854fe579e9359e15cbf782bff5e4a5273b3194f9fbd21bb4a812317f9b73261b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "15648e21cf02292fad2211c33a8b400c564ca18e0ffa3797f2e44f6d56ef2ba9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/qwen25-05b-instruct-frozen-order.jsonl",
+      "sha256": "84954ad77530eff74dd2d0825728910118354ba4e5119a47aa040846fab20546"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/qwen25-05b-instruct-frozen.jsonl",
+      "sha256": "7e37d62969e112d42e0bb02ce9179484bafef23e3d640050c958f2c218a1d684"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/report.md",
+      "sha256": "08f9f58d805566d7eb0ba6fe65772fdfdd5a6f23704f2400c7cbfc9553583200"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/uniform-order-report.json",
+      "sha256": "78e471aada3581d8afa9d181edcfda67e2d8505ad919337d9c1e590bf6f6e5da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/uniform-order.jsonl",
+      "sha256": "c78a891f0d184ea5caf8d07cde94ff8f5501e2aa8d342f813f798c64b0b32e11"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/new-v2/uniform.jsonl",
+      "sha256": "218d31b980ff9f95ae087ddc63d1f97176828e0e450c2d5f70b399e011cd2053"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/comparison.json",
+      "sha256": "7ba0a7b3ba081ccedfec0834ebf2e8e3e7425734666b80ee00d46a13a44dbefc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/lexical-order-report.json",
+      "sha256": "81b74d485f4ac81fbb6e1a529d1772d45cd8f58c3505d9f64367d953e7dd1e61"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/lexical-order.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/lexical.jsonl",
+      "sha256": "d4528677735f3f26eb413228dfb53aa0ef6e7c75f6cfddba3874cd17045a2831"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m2-v1-trained-order-report.json",
+      "sha256": "ccba2f2215b137291a2398e0a309f438f9cb3b5d8adc59ac0407829d0779b0bb"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m2-v1-trained-order.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m2-v1-trained.jsonl",
+      "sha256": "25986194e64b36998f69809077a4e660a87c4296c34a608943f70fa14ef6dda4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m3-v1-trained-order-report.json",
+      "sha256": "23a5b07abd0deda03380b5499a7d34dfb6958ec9cfafbcfe97a726ade8055ed0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m3-v1-trained-order.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m3-v1-trained.jsonl",
+      "sha256": "22ca5641c9dc0c194150d5c49efe3339a843b625e2e55545df8ef5285d1844d0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-random-start-order-report.json",
+      "sha256": "c58ae1649698bd96b19da8c289d94ec360effe0eaff60dff7cccbdafbf3eb131"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-random-start-order.jsonl",
+      "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-random-start.jsonl",
+      "sha256": "116e6daee94571c5eb4a3b4510ca68bf634d1e2a0550ec98f39c4a4e098fdd7d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-trained-order-report.json",
+      "sha256": "59f5e1d38f9c7aa2bca4a921674a3b500751342a77b3248b2aea31edd8c8c697"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-trained-order.jsonl",
+      "sha256": "85706ef7077af88a2deb3f0f0941b5bd3e30a54b4687c27fab05d00623078c73"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-minilm-trained.jsonl",
+      "sha256": "85706ef7077af88a2deb3f0f0941b5bd3e30a54b4687c27fab05d00623078c73"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "891599425a62e17b1953f441b27fde01c87cd4c4d66cd831396a1cd41a6fd941"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-pretrained-start-order.jsonl",
+      "sha256": "af1fdce12ec02daa4118abda150a306dd6bb227e16e1ea8b0c8f6c7e471ce633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-pretrained-start.jsonl",
+      "sha256": "af1fdce12ec02daa4118abda150a306dd6bb227e16e1ea8b0c8f6c7e471ce633"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-trained-order-report.json",
+      "sha256": "2871de95a4bfe34a185b42866ff325165ebfc1927fa6bf98093203023a3c3629"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-trained-order.jsonl",
+      "sha256": "2bc75b85e3b4e9998b8818e361d6278d11f5b7e89961b89f74c819194455ae3d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m4-msmarco-trained.jsonl",
+      "sha256": "2bc75b85e3b4e9998b8818e361d6278d11f5b7e89961b89f74c819194455ae3d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-fresh-start-order-report.json",
+      "sha256": "a22351c260c678054614e92ec5b903547547f6e206d0d01c082e72145789e283"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-fresh-start-order.jsonl",
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-fresh-start.jsonl",
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-v2-trained-order-report.json",
+      "sha256": "706474562fad59ea628c19d171d3356584f488b5e35f14f0a13e7ded5442cb89"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-v2-trained-order.jsonl",
+      "sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/m6-qwen-v2-trained.jsonl",
+      "sha256": "ab733d795319166f1947459a29220875aefddd2ba0ba170062d5fce0d4ad018e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "4d4d38532c206357d68ce3cbade09326d6463b3967a51697530e3b545212f126"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/qwen25-05b-instruct-frozen-order.jsonl",
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/qwen25-05b-instruct-frozen.jsonl",
+      "sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/report.md",
+      "sha256": "5015fcadb5be1818e1c32ac41abc4ed55951def5dd19b788a9a8799874096867"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/uniform-order-report.json",
+      "sha256": "cc37d8fdf163a69983d96afa6d5acc0e64299f772560d37e3932ca76284baa9d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/uniform-order.jsonl",
+      "sha256": "9da4e7f50b20d2f3db5943eaab83fbc1479ca17c6e50613d89f0d79794a06139"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/probes/uniform.jsonl",
+      "sha256": "9da4e7f50b20d2f3db5943eaab83fbc1479ca17c6e50613d89f0d79794a06139"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/receipt.json",
+      "sha256": "cf006ad0c5d84d283bf2d79c7b36605ef2b89c9da524fca61313736e7b09f337"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-analysis-preparation-v3/execution-01/study/subsets.json",
+      "sha256": "c58fda9a3afc87fd1a397d3f1fee132d94a8551253be2f7f220c72618a622d9b"
+    }
+  ],
+  "independent_quality_evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/report-candidate.md",
+      "sha256": "274c951a2496f760d73e2b7a0d2db9c8ceeea5da7c356a6dacc6995e95ebd7bd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/appendix.md",
+      "sha256": "2e4b77ef8141d178df638076d875058ddefeeaed740cabdae4a02cbbabf6c011"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/numbers.json",
+      "sha256": "b10d34f05b4d7b6338c19638cb5ce5bc6312aa5045d13fe1b973929ed190c51b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/paired-gains-losses.csv",
+      "sha256": "6d7cf1e99b49302e92ca109cb9554420815c0ed3d6e1a308b81afd4f0bf11059"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/explicit-case-unit-mapping.csv",
+      "sha256": "7eaf30da1d1cc3e3e375bb89cab293273965da624ea6b20f766c261779230f5f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/receipt.json",
+      "sha256": "10ffacad37efd9d9c901a1f4623d428494a30c85f7a7a676923a9c28e41ba632"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/source-pins.json",
+      "sha256": "a09820d60fce1d587ea0239b51b8d23ea7639a4be26b926ac5be4127ca57a749"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/direct-frozen-input-receipt.json",
+      "sha256": "aa901242cc47e5685e0e3c088b26fd5b16cf73c965ce06e53e34902197812f37"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/review.py",
+      "sha256": "253c8b3c8dde00c7e6de8ab0ae59086d4d06c088e6bd7ea0e5eccc50ae5f6f96"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-quality-review-v1/synthesize.py",
+      "sha256": "f5f70a1026e63e13d4b1bfa26e80d7d1f1b7e0da369a6010251de5bc49f2f37c"
+    }
+  ],
+  "preserved_copy_failure": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e6-owner-integrity-v1/failure.json",
+    "sha256": "4a086b39e0aa798411ded9ebe2e5d7a8a98342e62d3a08419d306bec7c345a01"
+  },
+  "scope": "Actual artifact integrity and real analysis, not software tests. No model/tokenizer/weights/final access."
+}

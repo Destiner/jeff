@@ -1,0 +1,15 @@
+{
+  "original_python": "3.9.6",
+  "reproduction_python": "3.12",
+  "method_change": false,
+  "differences": "CLI path handling, accurate invocation receipt and less misleading heldout heading only",
+  "all_scientific_results_exact_equal": true,
+  "compared_sections": [
+    "descriptives",
+    "log_coverage",
+    "fits",
+    "heldout_by_K",
+    "heldout_by_source",
+    "heldout_equal_K_macro"
+  ]
+}

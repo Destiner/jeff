@@ -1,0 +1,26 @@
+{
+  "revision": "geometry-r3",
+  "final": true,
+  "sha256": {
+    "audit.py": "ed532a10f42fae48cf0a5331d43633408220b7912c70b93d4021d324074ac9d1",
+    "audit_cases.jsonl": "07b3a776fd2a5b8dcfcbc8c9d935fbaaab269f10e22c8b238b04d40b72fda83e",
+    "change-map.json": "51e7d0a969f01657cf8419574f068f578d2c3159427ebc616aa2d3b906df7456",
+    "diagnostics.json": "e0bfc00c52353cf1d5024a675bde2535d2ddab80b239390232218680ee901555",
+    "distractor-rationales.json": "cc85acdebd10dd3e2320479daf1ba4bb089ffab512f5bfe634c2ecc1d7af8166",
+    "generation_review.md": "30d9660262f9e2e4502b7bcb501d57745feeab3950c45b77680e773ffa7226b9",
+    "group_assignments.json": "aa6a93ba2d1266bbcfa34f97f9201cfbe1bbdeceeb84f7baea99ee211e573308",
+    "metadata.json": "fdbc8acb03e2d81c4066ba7ea2c6c01a7037c62d027af7354782bf1d0d1d20d4",
+    "rank-plan.json": "a95f2b13f047f993353e5dfa194e5e7f8ee5966b957fc88804be5848576de061",
+    "revise.py": "8a9be8400be2aacd9885a75404be57eee9ab01b729e9b30385110ec449596eaf",
+    "source_cases.jsonl": "6124db6cb114f8a2a6f730bcde51be52fbd28807addf304f9fb52aabc43e32e6",
+    "validation.jsonl": "d25e92e9478108b2f994fb37d12b866cc6e32e59759b5c3baeebdf181d00f4d3",
+    "validation_report.json": "45fd512b86b2e78bf27729ba4510224305bf7a14a8ef83dc3234f240d76dc87d"
+  },
+  "parent_files_unchanged": true,
+  "additional_generation_permitted": false,
+  "cost_GBP": {
+    "additional": 0,
+    "pending": 0
+  },
+  "independence_claim": false
+}

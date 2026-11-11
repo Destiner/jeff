@@ -1,0 +1,20 @@
+The tokenizer you are loading from '/Users/destiner/Code/jeff/artifacts/model/m6-qwen-20261111-01/training/checkpoint' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+`torch_dtype` is deprecated! Use `dtype` instead!
+       40.49 real         5.26 user         1.08 sys
+           554598400  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               55166  page reclaims
+                8441  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 338  voluntary context switches
+               29094  involuntary context switches
+         81525742048  instructions retired
+         26612999145  cycles elapsed
+          3143828608  peak memory footprint

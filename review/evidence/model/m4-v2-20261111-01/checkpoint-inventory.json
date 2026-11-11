@@ -1,0 +1,176 @@
+{
+  "created_at": "2026-11-11T12:08:39.566923+00:00",
+  "timing": "Post-inference file inventory; inference-time receipts identify paths, not a pre-load file hash attestation.",
+  "checkpoints": {
+    "minilm-baseline": {
+      "path": "model/m4-v2-20261111-01/minilm/baseline",
+      "files": [
+        {
+          "path": "checkpoint.json",
+          "bytes": 27729,
+          "sha256": "46491d9d32a18ed943f0569c4d8b7a63e672956a3364a22cf9149648fd03c187"
+        },
+        {
+          "path": "encoder/config.json",
+          "bytes": 611,
+          "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+        },
+        {
+          "path": "encoder/model.safetensors",
+          "bytes": 90864192,
+          "sha256": "1377e9af0ca0b016a9f2aa584d6fc71ab3ea6804fae21ef9fb1416e2944057ac"
+        },
+        {
+          "path": "head.safetensors",
+          "bytes": 1676,
+          "sha256": "6d2409c1788c104c5655617751bebacf805cd43186c71d5e243b9a620db78123"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 695,
+          "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+        },
+        {
+          "path": "tokenizer/tokenizer.json",
+          "bytes": 711649,
+          "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 1464,
+          "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+        },
+        {
+          "path": "tokenizer/vocab.txt",
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      ]
+    },
+    "minilm-checkpoint": {
+      "path": "model/m4-v2-20261111-01/minilm/checkpoint",
+      "files": [
+        {
+          "path": "checkpoint.json",
+          "bytes": 206528,
+          "sha256": "e273a4a12efff7f48f101e7d1e3032c0f4a82ecea14f95c28ecc1317c31a3bd6"
+        },
+        {
+          "path": "encoder/config.json",
+          "bytes": 611,
+          "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+        },
+        {
+          "path": "encoder/model.safetensors",
+          "bytes": 90864192,
+          "sha256": "7448d2384b80376ed803ba80b58c5e193ced8dded1313feae4a7e8105350c71a"
+        },
+        {
+          "path": "head.safetensors",
+          "bytes": 1676,
+          "sha256": "b7d0867f3040cdec67331fa6fa15fa36c054bcf9e0a4bacb70e98c14b71d184a"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 695,
+          "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+        },
+        {
+          "path": "tokenizer/tokenizer.json",
+          "bytes": 711649,
+          "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 1464,
+          "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+        },
+        {
+          "path": "tokenizer/vocab.txt",
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      ]
+    },
+    "msmarco-baseline": {
+      "path": "model/m4-v2-20261111-01/msmarco/baseline",
+      "files": [
+        {
+          "path": "checkpoint.json",
+          "bytes": 30233,
+          "sha256": "56d27ebe49c1455be3adbc848a0de70daef1154d14f264398eb26868d7b00e32"
+        },
+        {
+          "path": "encoder/config.json",
+          "bytes": 787,
+          "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b"
+        },
+        {
+          "path": "encoder/model.safetensors",
+          "bytes": 90866412,
+          "sha256": "a6e1fd85181a93a58bc33f65700f2ba34da3af2667f85cc57bcdf0f9f0092200"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 695,
+          "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+        },
+        {
+          "path": "tokenizer/tokenizer.json",
+          "bytes": 711649,
+          "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 1272,
+          "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+        },
+        {
+          "path": "tokenizer/vocab.txt",
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      ]
+    },
+    "msmarco-checkpoint": {
+      "path": "model/m4-v2-20261111-01/msmarco/checkpoint",
+      "files": [
+        {
+          "path": "checkpoint.json",
+          "bytes": 212169,
+          "sha256": "d06209d848b29a01f61dc21f13edc9d7024b867b7cf54826eb60895c9344b438"
+        },
+        {
+          "path": "encoder/config.json",
+          "bytes": 787,
+          "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b"
+        },
+        {
+          "path": "encoder/model.safetensors",
+          "bytes": 90866412,
+          "sha256": "9456a8765e506d10993d5f585fe845cf07649fded2d9ceb0d2078f536b58c062"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 695,
+          "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+        },
+        {
+          "path": "tokenizer/tokenizer.json",
+          "bytes": 711649,
+          "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 1272,
+          "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+        },
+        {
+          "path": "tokenizer/vocab.txt",
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      ]
+    }
+  }
+}

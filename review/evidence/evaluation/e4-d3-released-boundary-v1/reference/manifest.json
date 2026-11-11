@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "evaluation-e4-d3-seen-rules-v1",
+  "shards": [
+    {
+      "path": "evaluation/e4-d3-released-boundary-v1/reference/validation.jsonl",
+      "split": "validation",
+      "rows": 96,
+      "sha256": "6d5d8ce3ea1b85f131b5926c4fe724083b7e03c6e6360adfe4f4a0dc3c97d3ae"
+    }
+  ]
+}

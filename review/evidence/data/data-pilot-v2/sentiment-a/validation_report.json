@@ -1,0 +1,363 @@
+{
+  "additional_spend_gbp": 0,
+  "checks": {
+    "assignment_hash_unchanged_during_generation": true,
+    "balanced_classes": true,
+    "balanced_target_positions_per_class_split_option_count": true,
+    "casefold_whitespace_normalized_state_duplicates": 0,
+    "contract_fields_types_and_values": true,
+    "domain_allocation_matches_config": true,
+    "exact_canonical_input_duplicates": 0,
+    "exact_requested_counts": true,
+    "exact_state_duplicates": 0,
+    "exactly_one_supplied_target": true,
+    "forbidden_answer_label_words_in_states": 0,
+    "four_mutually_exclusive_categories_every_row": true,
+    "no_reserved_training_domains": true,
+    "one_row_per_frozen_group": true,
+    "opaque_option_ids_unique": true,
+    "provenance_job_and_teacher_present": true,
+    "question_and_option_style_counts_independent_of_class": true,
+    "split_group_isolation": true,
+    "unique_namespaced_row_ids": true,
+    "unique_namespaced_singleton_groups": true
+  },
+  "counts": {
+    "train": {
+      "by_class": {
+        "mixed approval and criticism": {
+          "mean_target_words": 10.8,
+          "option_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "question_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "rows": 50,
+          "target_positions_1_based": {
+            "1": 12,
+            "2": 13,
+            "3": 12,
+            "4": 13
+          },
+          "target_tied_longest_words": 10,
+          "target_unique_longest_words": 10
+        },
+        "negative-only": {
+          "mean_target_words": 10.4,
+          "option_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "question_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "rows": 50,
+          "target_positions_1_based": {
+            "1": 12,
+            "2": 12,
+            "3": 13,
+            "4": 13
+          },
+          "target_tied_longest_words": 10,
+          "target_unique_longest_words": 10
+        },
+        "neutral/no evaluation": {
+          "mean_target_words": 10.6,
+          "option_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "question_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "rows": 50,
+          "target_positions_1_based": {
+            "1": 13,
+            "2": 12,
+            "3": 13,
+            "4": 12
+          },
+          "target_tied_longest_words": 10,
+          "target_unique_longest_words": 10
+        },
+        "positive-only": {
+          "mean_target_words": 10.6,
+          "option_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "question_style_counts": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10,
+            "4": 10
+          },
+          "rows": 50,
+          "target_positions_1_based": {
+            "1": 13,
+            "2": 13,
+            "3": 12,
+            "4": 12
+          },
+          "target_tied_longest_words": 10,
+          "target_unique_longest_words": 10
+        }
+      },
+      "class_counts": {
+        "mixed approval and criticism": 50,
+        "negative-only": 50,
+        "neutral/no evaluation": 50,
+        "positive-only": 50
+      },
+      "domain_counts": {
+        "bird feeders": 10,
+        "board game inserts": 10,
+        "camera straps": 10,
+        "ceramic mugs": 10,
+        "desk lamps": 10,
+        "electric kettles": 10,
+        "kitchen scales": 10,
+        "notebooks": 10,
+        "portable fans": 10,
+        "puzzle books": 10,
+        "rain jackets": 10,
+        "reusable shopping bags": 10,
+        "running socks": 10,
+        "shower heads": 10,
+        "sleep masks": 10,
+        "standing desks": 10,
+        "toothbrushes": 10,
+        "travel pillows": 10,
+        "vacuum cleaners": 10,
+        "window blinds": 10
+      },
+      "groups": 200,
+      "independently_authored_scenarios": 200,
+      "rows": 200,
+      "target_positions_1_based": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50
+      }
+    },
+    "validation": {
+      "by_class": {
+        "mixed approval and criticism": {
+          "mean_target_words": 10.8,
+          "option_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "question_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "rows": 10,
+          "target_positions_1_based": {
+            "1": 2,
+            "2": 3,
+            "3": 2,
+            "4": 3
+          },
+          "target_tied_longest_words": 2,
+          "target_unique_longest_words": 2
+        },
+        "negative-only": {
+          "mean_target_words": 10.4,
+          "option_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "question_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "rows": 10,
+          "target_positions_1_based": {
+            "1": 2,
+            "2": 2,
+            "3": 3,
+            "4": 3
+          },
+          "target_tied_longest_words": 2,
+          "target_unique_longest_words": 2
+        },
+        "neutral/no evaluation": {
+          "mean_target_words": 10.6,
+          "option_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "question_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "rows": 10,
+          "target_positions_1_based": {
+            "1": 3,
+            "2": 2,
+            "3": 3,
+            "4": 2
+          },
+          "target_tied_longest_words": 2,
+          "target_unique_longest_words": 2
+        },
+        "positive-only": {
+          "mean_target_words": 10.6,
+          "option_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "question_style_counts": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2
+          },
+          "rows": 10,
+          "target_positions_1_based": {
+            "1": 3,
+            "2": 3,
+            "3": 2,
+            "4": 2
+          },
+          "target_tied_longest_words": 2,
+          "target_unique_longest_words": 2
+        }
+      },
+      "class_counts": {
+        "mixed approval and criticism": 10,
+        "negative-only": 10,
+        "neutral/no evaluation": 10,
+        "positive-only": 10
+      },
+      "domain_counts": {
+        "embroidery hoops": 10,
+        "folding picnic benches": 10,
+        "kayak dry bags": 10,
+        "violin shoulder rests": 10
+      },
+      "groups": 40,
+      "independently_authored_scenarios": 40,
+      "rows": 40,
+      "target_positions_1_based": {
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 10
+      }
+    }
+  },
+  "hashes": {
+    "generate.py": "8d4c8e9369a326455225b73587df52cf502d2c4f4bbc860f20db841763ac5939",
+    "group_assignments.json": "2f464d747cd5225578264d42e786958e460d819943027700271d44273efd9204",
+    "metadata.json": "5d96c4fe5798ea484e2a585a517f9276e016348f1ec1995649d347cb3f63d324",
+    "pilot-v2.json": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+    "source_cases.txt": "cc4a44a921a2c19f3203dbbec05c8ec617d6c59b434acd34789326cf8cfdacb4",
+    "train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+    "validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e"
+  },
+  "job": "data-pilot-v2/sentiment-a",
+  "lengths_whitespace_not_tokens": {
+    "max_state_question_single_option_words": 59,
+    "option_words": {
+      "max": 14,
+      "min": 8
+    },
+    "question_words": {
+      "max": 11,
+      "mean": 8.725,
+      "min": 7
+    },
+    "state_words": {
+      "max": 37,
+      "mean": 30.104,
+      "min": 23
+    }
+  },
+  "not_performed": [
+    "Independent or separate-session label verification",
+    "Tokenizer-based 256-token audit",
+    "Cross-producer or parent-content duplicate audit",
+    "Model training or inference",
+    "Software tests or linting",
+    "Network/API requests or new ML loads"
+  ],
+  "own_shard_cross_split_lexical_screen": {
+    "candidate_count": 0,
+    "candidates": [],
+    "highest_pair": {
+      "train_id": "data:pilot-v2:sentiment-a:g080:r01",
+      "validation_id": "data:pilot-v2:sentiment-a:g204:r01"
+    },
+    "maximum_similarity": 0.1724,
+    "method": "Content-word set Jaccard excluding listed stopwords and each row subject words; all 8000 local train/validation pairs.",
+    "scope": "This shard only. Lexical screening does not prove absence of semantic derivatives.",
+    "threshold": 0.45
+  },
+  "pending_spend_gbp": 0,
+  "schema_version": "0.1",
+  "semantic_review": {
+    "focus": [
+      "Neutral rows make no evaluative claim about the question subject.",
+      "Mixed rows contain approval and a substantive complaint about the same subject.",
+      "Criticism of old/other products and rejected expectations are not transferred onto the named subject.",
+      "Removed an incidental capacity commendation from a negative bag case before serialization.",
+      "Revised the small-cup kettle complaint to condensation from its lid, keeping it distinct from the separate minimum-fill waste scenario."
+    ],
+    "independent_verification": false,
+    "method": "Same-teacher authoring review of all 240 cases against four-category definitions; no separate teacher call."
+  },
+  "status": "passed_structural_checks",
+  "validation_revision": "sentiment-a-generator-r1"
+}

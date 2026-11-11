@@ -1,5 +1,7 @@
 # Jeff
 
+**Private review snapshot:** start with [the evidence guide and five independent review prompts](review/README.md). The original overview below predates some later experiments.
+
 A small text decision model, trained with help from an agent swarm.
 
 Give Jeff context, a question, and possible answers. It returns probabilities over those answers, rather than generating a response.

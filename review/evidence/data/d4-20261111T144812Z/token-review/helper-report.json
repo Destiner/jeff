@@ -1,0 +1,37 @@
+{
+  "kind": "token_budget_data_audit",
+  "created_at": "2026-11-11T15:05:48.853090+00:00",
+  "dataset_id": "D4-audit-only-selected24-old-TRAIN",
+  "manifest": "/Users/destiner/Code/jeff/artifacts/data/d4-20261111T144812Z/token-review/subset-manifest.json",
+  "manifest_sha256": "42e43a80a3e10ea2564d4fdf780a3fca5bcffb904aaad25fe7ba4acb017ef01b",
+  "rows": 24,
+  "split_counts": {
+    "train": 24
+  },
+  "tokenizer_source": "existing pinned local tokenizer JSON; no model load",
+  "tokenizer_sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+  "tokenizers_version": "0.22.2",
+  "script_sha256": "7d8c99b19cd779abd6babfb92df6af8b31587c69c504c819fb3b398ff534e27c",
+  "format": "(State:\\n{state}\\nQuestion:\\n{question}, Candidate:\\n{option.text})",
+  "truncation": "longest_first, right; exact Rust tokenizer, no model execution",
+  "full_pair_tokens": {
+    "min": 53,
+    "p50": 69,
+    "p95": 105,
+    "max": 113
+  },
+  "budgets": {
+    "256": {
+      "candidate_pairs": 86,
+      "over_budget_pairs": 0,
+      "question_loss_pairs": 0,
+      "candidate_loss_pairs": 0,
+      "affected": []
+    }
+  },
+  "limitations": [
+    "Token-budget evidence only; no model accuracy, latency or peak-memory measurement.",
+    "Budgets share examples and are not independent evaluation samples.",
+    "No claim about unseen longer inputs or reserved final evaluation."
+  ]
+}

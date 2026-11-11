@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-d3-seen-rules-v1-ordering",
+  "source_job": "data-d3-seen-rules-v1-ordering-original-731904",
+  "teacher": {
+    "provider": "openai",
+    "model_alias": "gpt-sol",
+    "immutable_revision": null
+  },
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "generation_settings": {
+    "seed": 731904,
+    "method": "original agent-authored structured policies; deterministic Python rendering and programmatic arithmetic; same-agent separate-algorithm audit",
+    "source_revision": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+    "assignment_revision": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+    "config_revision": {
+      "path": "/Users/destiner/Code/jeff/.worktrees/data/configs/data/d3-seen-rules-v1.json",
+      "sha256": "c622b1d943f02d38dd66561dd63d663f6c4f4f314f5bef0d831bb2617cee3132"
+    },
+    "source_authoring_revision": "78c3a09b36e2ce2652b42a0e9464346753c2abd1ba238c00b6d413bc5f21a918",
+    "harness_sampling": {
+      "temperature": "unknown",
+      "top_p": "unknown",
+      "sampling_seed": "unknown",
+      "immutable_teacher_revision": "not exposed"
+    },
+    "choice_shuffle": "Seeded balanced target positions randomly assigned within arity; separate distractor and candidate-list shuffles. Ordered procedures and arrival ranks unchanged.",
+    "hashes": {
+      "validation.jsonl": "0c6302708f2c1a66da1123ec323c03a6fb2e31ca531d7b86b886082c1232da8e",
+      "source_cases.jsonl": "047c8a79f1702f0df1df75b222dc1696965839a9fa73dd1dd41a8f5f7134c0a4",
+      "audit_cases.jsonl": "161e4b694efdb9a8796eab91b7514cdcc2f4871eb8d223d28e61ade2ef0788b3",
+      "group_assignments.json": "974553c291c943f199799f5d3850a2f4fd914ca0056cf78d75ad69ec4b729eb1",
+      "author_sources.py": "78c3a09b36e2ce2652b42a0e9464346753c2abd1ba238c00b6d413bc5f21a918",
+      "generator.py": "37b0d3c4f762ccf888d853a943d8ce6ac3c4f0498afcd7a9701ea1b166ca3e69",
+      "audit.py": "2bc8f44dd74184f1e81a22bc7428b5ff5474560f3f436a6215f0d7b3581865ce",
+      "validation_report.json": "76687cf7e67acedf2657403394415e19116a8c1027835a8f8e869541dfea5f99",
+      "generation_review.md": "1f81ffd5b0c4ed7d34f8d16536a98a47f37ef2cad33b5516d5ff68232ac5bd19",
+      "finalize_metadata.py": "fcc6ebec3ab6dbd276fbbcb360641098a2b224f0154967050062b28f4c8896dc"
+    }
+  },
+  "usage_constraints": {
+    "split": "validation",
+    "usage": "validation_only_never_train",
+    "permanently_training_excluded": true,
+    "derivatives_never_train": true,
+    "material": "Original synthetic content under existing provider terms; no private records; no additional redistribution licence asserted."
+  },
+  "row_counts": {
+    "validation": 48
+  },
+  "group_counts": {
+    "validation": 24
+  },
+  "mechanism_count": 4,
+  "policy_count": 24,
+  "mechanisms": [
+    "lexicographic",
+    "fifo",
+    "discount",
+    "rounding"
+  ],
+  "novelty": {
+    "stratum": "seen_mechanism_new_policy",
+    "intentional_training_mechanism_overlap": true,
+    "historical_rows_inspected": false,
+    "new_source_policy_groups": 24,
+    "empirical_historical_text_comparison": false
+  },
+  "verification": {
+    "algorithmic_checks": 584,
+    "failures": 0,
+    "agreement_rows": 48,
+    "semantic_self_review_policies": 24,
+    "semantic_self_review_cases": 24,
+    "independent_authorship": false,
+    "kind": "same_agent_separate_algorithm_consistency",
+    "report": "validation_report.json",
+    "review": "generation_review.md",
+    "tokenizer_audit": "not performed; parent responsibility"
+  },
+  "limitations": [
+    "Development diagnostic, not final evaluation.",
+    "Seen mechanisms intentionally overlap v2 train; policy instances and source cases newly authored.",
+    "Paired dependence: two cases share each authored policy.",
+    "Permanently validation-only; never train, including derivatives.",
+    "Same-agent audit and semantic review, not independent authorship or external validation.",
+    "Templates and author commonality may create residual shortcuts; no empirical comparison with historical rows.",
+    "Whitespace state length is not tokenizer length; parent owns 256-token audit.",
+    "Teacher is the exposed alias only; immutable revision and harness sampling settings unknown."
+  ]
+}

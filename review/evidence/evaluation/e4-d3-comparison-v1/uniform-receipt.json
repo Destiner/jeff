@@ -1,0 +1,18 @@
+{
+  "schema_version": "evaluation/0.1",
+  "method": "uniform",
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+  },
+  "predictions": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-comparison-v1/uniform.jsonl",
+    "sha256": "c7dd4af618e1fd56edf315e15c4a0b88f17899137b006f04b9ecdd2c203d9309"
+  },
+  "rows": 96,
+  "definition": "p=1/K",
+  "stopwords": [],
+  "tie_break": "first option in reference input order",
+  "training": "none",
+  "cost_gbp": 0
+}

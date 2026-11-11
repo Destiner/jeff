@@ -1,0 +1,6 @@
+{
+  "PI_MODEL": "gpt-sol",
+  "PI_PROVIDER": "openai",
+  "previous_exposure": "No prior session context or source/target exposure. Before selection saw manifest, first-row IDs/group/provenance and file names only; labels parsed by selection script but never displayed. No generators/audit code read before decisions.",
+  "selection": "Two per mechanism group: rotated shortest/longest quartiles, deterministic length/hash sort; no target-based outcome selection."
+}

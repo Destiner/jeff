@@ -1,0 +1,15 @@
+{
+  "scope": "label-free output identity/coverage/finite scores/normalization only; no quality/causal analysis",
+  "presentations": 192,
+  "option_probabilities": 740,
+  "conditions": {
+    "O0L0": 48,
+    "O0L1": 48,
+    "O1L0": 48,
+    "O1L1": 48
+  },
+  "maximum_sum_error": 1.3702083379030228e-07,
+  "first_forward_retained_once": true,
+  "receipt_sha256": "9c0e1e530bd88d0ce08f55fc26c82efdbc83dca50c20efd8748979d0d1799c7a",
+  "predictions_sha256": "c9068e41915629f9419066941124c74fd7f181e93c840ca05e807d9e0056494d"
+}

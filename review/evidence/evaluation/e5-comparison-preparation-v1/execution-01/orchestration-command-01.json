@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+    "-m",
+    "jeff.evaluation.study",
+    "--config",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/recipe.json",
+    "--output-dir",
+    "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study"
+  ],
+  "returncode": 0,
+  "stdout": "Completed released-validation study: /Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/receipt.json\n",
+  "stderr": ""
+}

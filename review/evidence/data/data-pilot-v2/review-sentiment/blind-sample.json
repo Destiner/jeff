@@ -1,0 +1,922 @@
+[
+  {
+    "id": "data:pilot-v2:sentiment-a:g001:r01",
+    "state": "The baby finally slept through a feed preparation. The electric kettle stopped before its rumble woke her, and I could pour one-handed without waking the rest of the house.",
+    "question": "What attitude does the writer express toward the electric kettle?",
+    "options": [
+      {
+        "id": "c4b641e47bac09151",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c314e9d9377812f75",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      },
+      {
+        "id": "c9591e853ed4a6027",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c14aa149d1ad32b87",
+        "text": "The subject is described without any praise or criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g023:r01",
+    "state": "The puzzle book contains thirty number grids and twelve word puzzles. The contents page puts the number grids first, followed by the word section and then the solutions.",
+    "question": "What assessment is given of the puzzle book?",
+    "options": [
+      {
+        "id": "ca7fdda8bd5657cf0",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "ca62c4a7e6c460ead",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c75b07fab24073404",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      },
+      {
+        "id": "c5aa76e23aa765c97",
+        "text": "The subject is described without any praise or criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g045:r01",
+    "state": "I assumed I would have to move the sofa again. The vacuum cleaner reached under it and brought out the crumbs without shifting any furniture. My back is grateful for that.",
+    "question": "What assessment is given of the vacuum cleaner?",
+    "options": [
+      {
+        "id": "cf61ab67e0c63d4c5",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c06292a3469c9d419",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      },
+      {
+        "id": "c5c97253c877e3670",
+        "text": "The subject is described without any praise or criticism of it."
+      },
+      {
+        "id": "ca8bfd4af0f657786",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g067:r01",
+    "state": "I packed the sleep mask in the inside pocket of my overnight bag. Earplugs went in the same pocket and the charger went outside.",
+    "question": "How does the writer regard the sleep mask?",
+    "options": [
+      {
+        "id": "c4509af6cb8003619",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "c2cb42c123d274e31",
+        "text": "The writer reports facts about the subject without evaluating it."
+      },
+      {
+        "id": "c07c63e2035562e36",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      },
+      {
+        "id": "cb2d0a5b094ebd277",
+        "text": "The writer expresses both approval and criticism of the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g089:r01",
+    "state": "I can find the desk lamp's raised switch in the dark without fumbling for my glasses. That small detail means I can check a page and get back to sleep without a fuss.",
+    "question": "What attitude does the writer express toward the desk lamp?",
+    "options": [
+      {
+        "id": "c63741edf1b58a849",
+        "text": "The writer expresses both approval and criticism of the subject."
+      },
+      {
+        "id": "c79c446aa38cb153f",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "c8409c45f2df4092e",
+        "text": "The writer reports facts about the subject without evaluating it."
+      },
+      {
+        "id": "c0366052f3dfcd2fa",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g112:r01",
+    "state": "The travel pillow supports my head well enough to nap sitting up. Its inflatable core leaks slowly, though, so I wake having to pump it back up. The interruption defeats a longer rest.",
+    "question": "What attitude does the writer express toward the travel pillow?",
+    "options": [
+      {
+        "id": "ccc65599889fa0892",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c10cd13f9f1a93b59",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c0531c8d6f0a396f7",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      },
+      {
+        "id": "c72c1515f2404c1e5",
+        "text": "The subject is described without any praise or criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g134:r01",
+    "state": "The board game insert buries the card tray beneath two fixed crosspieces. Getting a deck out means tipping the entire box. That is worse than keeping the cards in bags.",
+    "question": "How does the writer regard the board game insert?",
+    "options": [
+      {
+        "id": "c7f18f126a9de1dd3",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c576751ec2f73f2e9",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "cdfcd2cad294c0170",
+        "text": "The subject is described without any praise or criticism of it."
+      },
+      {
+        "id": "c29de8e621381459a",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g156:r01",
+    "state": "The bird feeder comes apart far enough to scrub every seed channel, which I appreciate. One perch has already collapsed under a sparrow, however. Cleanliness does not make up for that flimsy fitting.",
+    "question": "What stance is conveyed toward the bird feeder?",
+    "options": [
+      {
+        "id": "c4a6b4f18f643ebaa",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "c112bff8148f2c89a",
+        "text": "The writer expresses both approval and criticism of the subject."
+      },
+      {
+        "id": "c564a526ee7a99841",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      },
+      {
+        "id": "c5b3d2192768904fe",
+        "text": "The writer reports facts about the subject without evaluating it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g178:r01",
+    "state": "Ink passes straight through the notebook's paper onto the next sheet. Even a quick shopping list ruins the page beneath. It is no use for the pens I carry.",
+    "question": "What stance is conveyed toward the notebook?",
+    "options": [
+      {
+        "id": "ce95b6634c3f717e7",
+        "text": "Approval is expressed about the subject without any accompanying criticism."
+      },
+      {
+        "id": "cbc0a85be504d8940",
+        "text": "The subject is described without any approval or criticism expressed."
+      },
+      {
+        "id": "cf946c0bff74bed95",
+        "text": "Criticism is expressed about the subject without any accompanying approval."
+      },
+      {
+        "id": "c327cfa8b5681c035",
+        "text": "Approval and criticism are both expressed about the named subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g200:r01",
+    "state": "The portable fan cooled me while I kept score outdoors, and I appreciated having it there. Its tilt hinge kept drooping towards my knees, though. I spent too much of the match readjusting it.",
+    "question": "How is the portable fan evaluated in this account?",
+    "options": [
+      {
+        "id": "c5f39dade20f6d71b",
+        "text": "Information about the item, without judging its merits."
+      },
+      {
+        "id": "cba3285c660d0de93",
+        "text": "Criticism of the item, with no expression of approval for anything about it."
+      },
+      {
+        "id": "c9399492a6819e6ab",
+        "text": "Praise for the item alongside a complaint about it."
+      },
+      {
+        "id": "cbc6f5074ab44f043",
+        "text": "Approval of the item, with no complaint about it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g201:r01",
+    "state": "After practising a wet exit, I opened the kayak dry bag expecting damp clothes. Everything inside was ready to wear, even after the swim back to shore. It has earned my trust for spare layers.",
+    "question": "What attitude does the writer express toward the kayak dry bag?",
+    "options": [
+      {
+        "id": "c98ebb621b8b9d55b",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c8a636d1f4ae4da45",
+        "text": "The subject is described without any praise or criticism of it."
+      },
+      {
+        "id": "c9511d9d0ec9b3d79",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c894e65f6d3b7d753",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g205:r01",
+    "state": "I expected to unpack everything to check the route card. The kayak dry bag's clear outer sleeve let me read it from the cockpit. That spared a lot of awkward rummaging on the water.",
+    "question": "How is the kayak dry bag evaluated in this account?",
+    "options": [
+      {
+        "id": "c017096799a72d04a",
+        "text": "Approval of the item, with no complaint about it."
+      },
+      {
+        "id": "c8457b9dd2e2e9ece",
+        "text": "Praise for the item alongside a complaint about it."
+      },
+      {
+        "id": "cda61a728f80622f8",
+        "text": "Information about the item, without judging its merits."
+      },
+      {
+        "id": "c4da679a3149771d3",
+        "text": "Criticism of the item, with no expression of approval for anything about it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g210:r01",
+    "state": "Water seeps through the kayak dry bag's base seam whenever it sits on the wet cockpit floor. The top closure is not the problem. I have ended up double-bagging the contents to compensate.",
+    "question": "How does the writer regard the kayak dry bag?",
+    "options": [
+      {
+        "id": "c18d4536e196013eb",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c1b0e297b23590b3d",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c25a95e715f4869ad",
+        "text": "The subject is described without any praise or criticism of it."
+      },
+      {
+        "id": "cb69da704a782cb97",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g214:r01",
+    "state": "The embroidery hoop's heavy rim makes my wrist ache before I finish a small section. I keep putting the work down to rest. That is not how I wanted to spend an evening sewing.",
+    "question": "How is the embroidery hoop evaluated in this account?",
+    "options": [
+      {
+        "id": "c3b64eea9b8c38a94",
+        "text": "The writer expresses both approval and criticism of the subject."
+      },
+      {
+        "id": "c78402ed33bc6e669",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "c74720932c256c720",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      },
+      {
+        "id": "ca9a01b69e8c6bc7b",
+        "text": "The writer reports facts about the subject without evaluating it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g218:r01",
+    "state": "The embroidery hoop distorts into an oval as soon as I tighten its clamp. My transferred circles stretch with it. I cannot use it for the geometric panel I bought it to stitch.",
+    "question": "How does the writer regard the embroidery hoop?",
+    "options": [
+      {
+        "id": "cf38bc435911455ec",
+        "text": "The subject is described without any approval or criticism expressed."
+      },
+      {
+        "id": "c820562696ec383f8",
+        "text": "Criticism is expressed about the subject without any accompanying approval."
+      },
+      {
+        "id": "ced2a9ee76be885e3",
+        "text": "Approval is expressed about the subject without any accompanying criticism."
+      },
+      {
+        "id": "c972868ec0852cf76",
+        "text": "Approval and criticism are both expressed about the named subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g223:r01",
+    "state": "I set the violin shoulder rest's left leg one notch higher than the right. I noted both positions in my practice diary before putting the instrument away.",
+    "question": "What stance is conveyed toward the violin shoulder rest?",
+    "options": [
+      {
+        "id": "cb56232271c7eabc2",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c2de18dd687c36746",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      },
+      {
+        "id": "c9814974069057084",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "c7c57e053f84a308d",
+        "text": "The subject is described without any praise or criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g227:r01",
+    "state": "The violin shoulder rest goes into the case's upper compartment after practice. I fold both feet inward and place the cleaning cloth beside it.",
+    "question": "How does the writer regard the violin shoulder rest?",
+    "options": [
+      {
+        "id": "c56ab9f545b81e95a",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      },
+      {
+        "id": "c505644250acf14cc",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "cf7aca9d85394551c",
+        "text": "The writer reports facts about the subject without evaluating it."
+      },
+      {
+        "id": "c185a799d8762c255",
+        "text": "The writer expresses both approval and criticism of the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g231:r01",
+    "state": "We unfolded the folding picnic bench beside the lunch table and seated three people on it. The remaining guests used the chairs brought in the second car.",
+    "question": "What stance is conveyed toward the folding picnic bench?",
+    "options": [
+      {
+        "id": "c9b1a2ee9d14435c7",
+        "text": "The subject is praised, and no fault with it is expressed."
+      },
+      {
+        "id": "c8824f0f8fdc7cae3",
+        "text": "The writer conveys approval of the subject while also expressing criticism of it."
+      },
+      {
+        "id": "cc038f33aac483d61",
+        "text": "The subject is described without any praise or criticism of it."
+      },
+      {
+        "id": "c2a1b6fc53083a08b",
+        "text": "The subject is faulted, and no praise for it is expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g236:r01",
+    "state": "The folding picnic bench adjusts well enough to sit level on our uneven lawn. Splinters along the seat edge catch my trousers, however. Its useful legs do not excuse that unfinished surface.",
+    "question": "What stance is conveyed toward the folding picnic bench?",
+    "options": [
+      {
+        "id": "c36208ce225d6b304",
+        "text": "The writer criticises the subject and offers no approval."
+      },
+      {
+        "id": "c0b6a8244e16d34c0",
+        "text": "The writer reports facts about the subject without evaluating it."
+      },
+      {
+        "id": "c39f1475985ed8212",
+        "text": "The writer expresses both approval and criticism of the subject."
+      },
+      {
+        "id": "caef75d4e40cfa3b3",
+        "text": "The writer expresses approval of the subject, without offering any criticism of it."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-a:g240:r01",
+    "state": "The folding picnic bench fits our small boot without removing the parcel shelf, a welcome convenience. Folding its legs pinches my fingers unless I use gloves, though. Packing should not require protective clothing.",
+    "question": "What stance is conveyed toward the folding picnic bench?",
+    "options": [
+      {
+        "id": "c65a62e81cf4942e4",
+        "text": "Criticism of the item, with no expression of approval for anything about it."
+      },
+      {
+        "id": "ccbc36b4307e204a0",
+        "text": "Praise for the item alongside a complaint about it."
+      },
+      {
+        "id": "c1f0e4f24044f55f0",
+        "text": "Approval of the item, with no complaint about it."
+      },
+      {
+        "id": "c50f6a32432bba96a",
+        "text": "Information about the item, without judging its merits."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g134:r01",
+    "state": "Willow Park's oak bench stays shaded through the afternoon. One support has sunk, though, so sitting there means constantly sliding towards the lower end.",
+    "question": "What attitude does the writer express toward Willow Park?",
+    "options": [
+      {
+        "id": "c47547",
+        "text": "The subject receives praise and criticism."
+      },
+      {
+        "id": "c96438",
+        "text": "The subject is described, not evaluated."
+      },
+      {
+        "id": "c98771",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c41916",
+        "text": "The subject is criticised, not praised."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g178:r01",
+    "state": "Leaf Steward checks moisture below the surface before deciding to water, which I value. They failed to latch the balcony door after reaching the hanging pots.",
+    "question": "Which description fits the account of Leaf Steward?",
+    "options": [
+      {
+        "id": "c85493",
+        "text": "The subject receives praise and criticism."
+      },
+      {
+        "id": "c21434",
+        "text": "The subject is described, not evaluated."
+      },
+      {
+        "id": "c66931",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c45540",
+        "text": "The subject is criticised, not praised."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g004:r01",
+    "state": "Saffron Table explained fermentation clearly enough for me to diagnose my dough, but the instructor dismissed my question about storing the starter.",
+    "question": "What evaluation of Saffron Table appears here?",
+    "options": [
+      {
+        "id": "c96075",
+        "text": "Criticism of the named subject, with no praise expressed."
+      },
+      {
+        "id": "c28958",
+        "text": "Praise and criticism of the named subject are expressed."
+      },
+      {
+        "id": "c86764",
+        "text": "Praise for the named subject, with no criticism expressed."
+      },
+      {
+        "id": "c54673",
+        "text": "Facts about the named subject, with no judgment expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g094:r01",
+    "state": "Morning Fold arrives before breakfast without fail, but the folded supplements are always bent across the crossword. The timing is right; the handling needs care.",
+    "question": "How does the writer evaluate Morning Fold?",
+    "options": [
+      {
+        "id": "c32659",
+        "text": "The subject receives praise and criticism."
+      },
+      {
+        "id": "c70371",
+        "text": "The subject is criticised, not praised."
+      },
+      {
+        "id": "c41731",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c14886",
+        "text": "The subject is described, not evaluated."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g027:r01",
+    "state": "Wavecut Audio received three speaker tracks and one music track for this episode. Its file list identifies the host, two guests, and the closing theme.",
+    "question": "Which description fits the account of Wavecut Audio?",
+    "options": [
+      {
+        "id": "c14885",
+        "text": "The writer appreciates certain aspects and also objects to others."
+      },
+      {
+        "id": "c52247",
+        "text": "The writer objects to the subject and offers no praise."
+      },
+      {
+        "id": "c39456",
+        "text": "The writer approves of the subject and voices no objections."
+      },
+      {
+        "id": "c64004",
+        "text": "The writer reports information without any judgment about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g125:r01",
+    "state": "Second Chapter Shop's assistant found the missing volume that completed the set I was buying. She checked the shelf rather than sending me away with a guess.",
+    "question": "Which description fits the account of Second Chapter Shop?",
+    "options": [
+      {
+        "id": "c24302",
+        "text": "A critical assessment without any compliments about the subject."
+      },
+      {
+        "id": "c84580",
+        "text": "An approving assessment without any complaints about the subject."
+      },
+      {
+        "id": "c99444",
+        "text": "An assessment with compliments and complaints about the subject."
+      },
+      {
+        "id": "c47763",
+        "text": "A factual account without any judgments about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g020:r01",
+    "state": "Quill Parcel's tracking showed each handover accurately. The folders themselves arrived with crushed corners, which spoilt their use as presentation covers.",
+    "question": "What attitude does the writer express toward Quill Parcel?",
+    "options": [
+      {
+        "id": "c66534",
+        "text": "Favourable and unfavourable judgments about the named subject appear."
+      },
+      {
+        "id": "c18088",
+        "text": "Factual information about the named subject, with judgment withheld."
+      },
+      {
+        "id": "c67579",
+        "text": "Only unfavourable judgments about the named subject are given."
+      },
+      {
+        "id": "c35199",
+        "text": "Only favourable judgments about the named subject are given."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g192:r01",
+    "state": "Caption Grove dropped the word 'not' from the safety instruction. The captions tell viewers to do exactly what the speaker warns against doing.",
+    "question": "What attitude does the writer express toward Caption Grove?",
+    "options": [
+      {
+        "id": "c16476",
+        "text": "The subject is described, not evaluated."
+      },
+      {
+        "id": "c40316",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c43048",
+        "text": "The subject is criticised, not praised."
+      },
+      {
+        "id": "c59635",
+        "text": "The subject receives praise and criticism."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g049:r01",
+    "state": "After the overnight gale, Boundary Craft's new panels had neither shifted nor loosened. The careful bracing has earned my confidence.",
+    "question": "What evaluation of Boundary Craft appears here?",
+    "options": [
+      {
+        "id": "c78052",
+        "text": "Criticism of the named subject, with no praise expressed."
+      },
+      {
+        "id": "c97020",
+        "text": "Praise for the named subject, with no criticism expressed."
+      },
+      {
+        "id": "c61938",
+        "text": "Praise and criticism of the named subject are expressed."
+      },
+      {
+        "id": "c21959",
+        "text": "Facts about the named subject, with no judgment expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g070:r01",
+    "state": "Pantry Path packed a nut garnish without identifying it on the recipe card. I had to abandon the meal rather than risk serving it to my guest.",
+    "question": "How does the writer evaluate Pantry Path?",
+    "options": [
+      {
+        "id": "c98614",
+        "text": "An approving assessment without any complaints about the subject."
+      },
+      {
+        "id": "c69246",
+        "text": "A factual account without any judgments about the subject."
+      },
+      {
+        "id": "c49658",
+        "text": "A critical assessment without any compliments about the subject."
+      },
+      {
+        "id": "c71851",
+        "text": "An assessment with compliments and complaints about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g208:r01",
+    "state": "Contour Press reproduced the small rock symbols crisply. They clipped off the north arrow, leaving the map less useful for the navigation practice we planned.",
+    "question": "What evaluation of Contour Press appears here?",
+    "options": [
+      {
+        "id": "c90535",
+        "text": "Favourable and unfavourable judgments about the named subject appear."
+      },
+      {
+        "id": "c22273",
+        "text": "Only favourable judgments about the named subject are given."
+      },
+      {
+        "id": "c43427",
+        "text": "Only unfavourable judgments about the named subject are given."
+      },
+      {
+        "id": "c95827",
+        "text": "Factual information about the named subject, with judgment withheld."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g222:r01",
+    "state": "At Talon Field, the presenter cut off my question about rest periods with a joke. The unanswered welfare concern overshadowed the flight I had come to watch.",
+    "question": "How does the writer evaluate Talon Field?",
+    "options": [
+      {
+        "id": "c29032",
+        "text": "Criticism of the named subject, with no praise expressed."
+      },
+      {
+        "id": "c12771",
+        "text": "Praise and criticism of the named subject are expressed."
+      },
+      {
+        "id": "c18489",
+        "text": "Praise for the named subject, with no criticism expressed."
+      },
+      {
+        "id": "c49122",
+        "text": "Facts about the named subject, with no judgment expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g239:r01",
+    "state": "Silver Tray Room has extended the Sunday session from two hours to three. The opening time, booking desk, and number of enlargers remain unchanged.",
+    "question": "Which description fits the account of Silver Tray Room?",
+    "options": [
+      {
+        "id": "c37839",
+        "text": "An assessment with compliments and complaints about the subject."
+      },
+      {
+        "id": "c31417",
+        "text": "An approving assessment without any complaints about the subject."
+      },
+      {
+        "id": "c56015",
+        "text": "A factual account without any judgments about the subject."
+      },
+      {
+        "id": "c59741",
+        "text": "A critical assessment without any compliments about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g209:r01",
+    "state": "Contour Press retained the tiny vegetation boundaries that other proofs had blurred. I could distinguish the narrow runnable strip from the dense growth beside it.",
+    "question": "What attitude does the writer express toward Contour Press?",
+    "options": [
+      {
+        "id": "c27173",
+        "text": "Only unfavourable judgments about the named subject are given."
+      },
+      {
+        "id": "c43442",
+        "text": "Only favourable judgments about the named subject are given."
+      },
+      {
+        "id": "c55981",
+        "text": "Favourable and unfavourable judgments about the named subject appear."
+      },
+      {
+        "id": "c18452",
+        "text": "Factual information about the named subject, with judgment withheld."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g235:r01",
+    "state": "Silver Tray Room showed me how to keep the film flat for a contact sheet. I could finally compare the frames without blurred edges hiding the differences.",
+    "question": "What evaluation of Silver Tray Room appears here?",
+    "options": [
+      {
+        "id": "c59014",
+        "text": "The writer appreciates certain aspects and also objects to others."
+      },
+      {
+        "id": "c30970",
+        "text": "The writer approves of the subject and voices no objections."
+      },
+      {
+        "id": "c15846",
+        "text": "The writer objects to the subject and offers no praise."
+      },
+      {
+        "id": "c69579",
+        "text": "The writer reports information without any judgment about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g211:r01",
+    "state": "Shuttle Hire showed me how to adjust tension on the actual loom I took home. I could start weaving without fighting the uneven warp I had feared.",
+    "question": "How is Shuttle Hire assessed in this account?",
+    "options": [
+      {
+        "id": "c51054",
+        "text": "The writer appreciates certain aspects and also objects to others."
+      },
+      {
+        "id": "c77268",
+        "text": "The writer reports information without any judgment about the subject."
+      },
+      {
+        "id": "c66383",
+        "text": "The writer approves of the subject and voices no objections."
+      },
+      {
+        "id": "c58950",
+        "text": "The writer objects to the subject and offers no praise."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g224:r01",
+    "state": "Talon Field demonstrated the handling steps clearly enough to follow from a distance. They placed the perch behind a banner, blocking my view of each landing.",
+    "question": "What attitude does the writer express toward Talon Field?",
+    "options": [
+      {
+        "id": "c46226",
+        "text": "The subject is described, not evaluated."
+      },
+      {
+        "id": "c84071",
+        "text": "The subject receives praise and criticism."
+      },
+      {
+        "id": "c46862",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c97560",
+        "text": "The subject is criticised, not praised."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g228:r01",
+    "state": "Talon Field let us observe the bird's feather structure at close range. The presenter's booming microphone made the spoken explanation uncomfortable to listen to.",
+    "question": "How is Talon Field assessed in this account?",
+    "options": [
+      {
+        "id": "c74798",
+        "text": "An assessment with compliments and complaints about the subject."
+      },
+      {
+        "id": "c28819",
+        "text": "A critical assessment without any compliments about the subject."
+      },
+      {
+        "id": "c70212",
+        "text": "An approving assessment without any complaints about the subject."
+      },
+      {
+        "id": "c35006",
+        "text": "A factual account without any judgments about the subject."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g212:r01",
+    "state": "Shuttle Hire supplied a cracked heddle that caught and frayed the warp. I lost thread before identifying a fault that should have been checked before rental.",
+    "question": "Which description fits the account of Shuttle Hire?",
+    "options": [
+      {
+        "id": "c47590",
+        "text": "Facts about the named subject, with no judgment expressed."
+      },
+      {
+        "id": "c92068",
+        "text": "Criticism of the named subject, with no praise expressed."
+      },
+      {
+        "id": "c44164",
+        "text": "Praise and criticism of the named subject are expressed."
+      },
+      {
+        "id": "c97566",
+        "text": "Praise for the named subject, with no criticism expressed."
+      }
+    ]
+  },
+  {
+    "id": "data:pilot-v2:sentiment-b:g233:r01",
+    "state": "Silver Tray Room's booking assigns enlarger three from six until eight. The confirmation lists a thirty-five-millimetre carrier and access to the shared wash sink.",
+    "question": "How is Silver Tray Room assessed in this account?",
+    "options": [
+      {
+        "id": "c79508",
+        "text": "The subject is praised, not criticised."
+      },
+      {
+        "id": "c77534",
+        "text": "The subject receives praise and criticism."
+      },
+      {
+        "id": "c62157",
+        "text": "The subject is criticised, not praised."
+      },
+      {
+        "id": "c23336",
+        "text": "The subject is described, not evaluated."
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "suites": [
+    {
+      "name": "v2-original",
+      "rows": 300,
+      "options": 1160,
+      "max_probability_sum_error": 1.3131648302078247e-07,
+      "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+      "output_sha256": "a9fe8f71e9194f269ec2ae926adebad1d45fed3618e0d4e10b83c19d5b3a14f5"
+    },
+    {
+      "name": "v2-reversed",
+      "rows": 300,
+      "options": 1160,
+      "max_probability_sum_error": 1.341104507446289e-07,
+      "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+      "output_sha256": "533ccb206619c9fb9e0a2a8067a5a463386d025500e43ad11540977215609d78"
+    },
+    {
+      "name": "probes-paired",
+      "rows": 24,
+      "options": 70,
+      "max_probability_sum_error": 6.151094567030668e-08,
+      "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+      "output_sha256": "5d53748678ad63ec0910a54fea18965e4e4e0fe938fd3caf58474a742bd09058"
+    }
+  ],
+  "scope": "Label-free output contract and identity validation only, not quality scoring."
+}

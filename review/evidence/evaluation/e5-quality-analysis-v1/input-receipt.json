@@ -1,0 +1,170 @@
+{
+  "scope": "CPU extraction of existing scored outcomes only; no scoring/ML",
+  "inputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/comparison.json",
+      "sha256": "11cfe8996afbc5e6d6a1e0f5f644679dd5348fc571a2a4c1fdfe043f303d2632",
+      "bytes": 5492414
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/comparison.json",
+      "sha256": "04a0b0c6ea7de97a40f80ff0cbbd059c024cb8b4fc7acefb1fb7709ea5cb0b76",
+      "bytes": 52096464
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/comparison.json",
+      "sha256": "6231de042b8320d9fbd51691055761f58f054377582f63428b94a65d6f323e4d",
+      "bytes": 4970855
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/source-units/summary.json",
+      "sha256": "0ce082546cde308e1ed1ae6b6e508ffa9470a241666ca925417e7e374f5b40ce",
+      "bytes": 15984896
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-release-identity-review-v1/validation-source-units-reviewed.json",
+      "sha256": "bbb16873176515a24b76caa6b628cce5bfb5bec28ab26e635f6a862615d0ee3a",
+      "bytes": 1205915
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/exact-order-margins.json",
+      "sha256": "966ca1b5f6a7410ff76b7de30e6d98074898a35b4433382ff05c278d2ac0752e",
+      "bytes": 2676121
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m4-minilm-random-start-order-report.json",
+      "sha256": "ba8f5e9732ac65e8b1c58594604ada5c1c729678e3f56f007c5d0b834d699040",
+      "bytes": 218963
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m4-minilm-trained-order-report.json",
+      "sha256": "76555f319f542d39a1887ca9838253dc55ff2f71fada24c62f6e6cc81812d347",
+      "bytes": 221024
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "61e00b3277748c44fb9561d38b1f4fc3183bfc58f60dc8f0348ccfa82cd0ae9d",
+      "bytes": 220533
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m4-msmarco-trained-order-report.json",
+      "sha256": "ef2a721d5506988cab76dc14ad77ef41bb942b9f8bd95edef2dff9ae955761eb",
+      "bytes": 221417
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m2-v1-trained-order-report.json",
+      "sha256": "5f4da2136890a8babaf68c476864eb657d0fa9c906955b073dbfba82737678fb",
+      "bytes": 221256
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/m3-v1-trained-order-report.json",
+      "sha256": "9cab4e798f40479bc24a3290be8aa1d5997e92e989982605aa4dc525c0b6fc48",
+      "bytes": 221472
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/uniform-order-report.json",
+      "sha256": "62188ee830b6417aaa1c8f92f0ea61db417942699c850846791253f97b1b13cf",
+      "bytes": 208250
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/lexical-order-report.json",
+      "sha256": "8928e8c00f975013ddc8988fa5c9112338e683dca0c8c02efef8f3f2031abf2b",
+      "bytes": 219446
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "010d9e6861edca3770cf644942aae6016f6fb138b6b6cf323fb7bd60446461dc",
+      "bytes": 224196
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m4-minilm-random-start-order-report.json",
+      "sha256": "f7752cc28268d8ea71f4f4b30038abdaa7388693732d38f195122d044005b979",
+      "bytes": 1176326
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m4-minilm-trained-order-report.json",
+      "sha256": "3d2f2437718599a92e4c6a6085e35e81cd488bb013f32e9263ddaac8077ae362",
+      "bytes": 1180159
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "dcd2257f203753a17f66abe1b8690c4e1e4ab4fd31021eaf2db56c92d378ae16",
+      "bytes": 1179270
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m4-msmarco-trained-order-report.json",
+      "sha256": "1d2c3bcfebf48b2a0a3edf3c0160044d17c8355d024c550ab710dc3d79824514",
+      "bytes": 1180048
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m2-v1-trained-order-report.json",
+      "sha256": "ec24fa67507b99cb202c74a259be39afc042195edca5bf19cb197454f4dcd0b6",
+      "bytes": 1178971
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/m3-v1-trained-order-report.json",
+      "sha256": "5e8676c2ac8214cbbcfd5480fce11d772a1dbf214402d375e36ce6ca7f5c50d3",
+      "bytes": 1179007
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/uniform-order-report.json",
+      "sha256": "6c22f701ae6d8fd2208737893e2ee1f76d2218c65c43db87fbb7acc58ae8270c",
+      "bytes": 1132707
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/lexical-order-report.json",
+      "sha256": "c9cac72db5ac161dc070284b1137b7fbb6262ef86f7b9037aa75f4c3c7d6403d",
+      "bytes": 1158815
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "5b68ab0fee137719c1dcc989b8cb1fc8447e7cc840db14ddecb05f73eddac5bd",
+      "bytes": 1195114
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m4-minilm-random-start-order-report.json",
+      "sha256": "423cefea737b843d2dc9f7884f5eceb984aabef31816888ceacc0f4e3b64d414",
+      "bytes": 110865
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m4-minilm-trained-order-report.json",
+      "sha256": "ba67c2fd67ee398c1fc7acb035f35c7e62da994e0d9fbca518b1251de2fdbafd",
+      "bytes": 111494
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m4-msmarco-pretrained-start-order-report.json",
+      "sha256": "b30c1b385fbb209b56441072dffea55337ef6c994ec70c43025ea1c230563f1a",
+      "bytes": 112011
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m4-msmarco-trained-order-report.json",
+      "sha256": "da0e0710e981722cbd4797d6d74274aac8050290ef46edfdd51e001e7181367f",
+      "bytes": 111609
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m2-v1-trained-order-report.json",
+      "sha256": "e2d21e8a51007c5470d04da60695ab8fae4c85e0b9af08c5f46293dab34b9cc5",
+      "bytes": 111744
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/m3-v1-trained-order-report.json",
+      "sha256": "af1a650bc71bc044536ccbb82951eb96f8ebcc5c94004a5bea25b7a8dc98493a",
+      "bytes": 111659
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/uniform-order-report.json",
+      "sha256": "05c5807d6e24c39b6da44b70af41f52ceb0b78d01a4582f2cd6d7727d8679549",
+      "bytes": 109891
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/lexical-order-report.json",
+      "sha256": "6ad923bd5c2ec31eff12a8a3f2b7b8f41e388bf029b5b3c311535afedf1a7046",
+      "bytes": 110831
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/qwen25-05b-instruct-frozen-order-report.json",
+      "sha256": "e82516ca7d21e5fc11c6cead2518fc6ff2196f76dd0aab189b0778f0383dd560",
+      "bytes": 112646
+    }
+  ]
+}

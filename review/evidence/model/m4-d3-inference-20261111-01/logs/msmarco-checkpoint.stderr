@@ -1,0 +1,2 @@
+device=mps
+predictions=96 duration_seconds=0.617

@@ -1,0 +1,272 @@
+{
+  "schema_version": "0.1",
+  "shard_id": "data-pilot-v2-intent-a-r1",
+  "status": "passed_local_structural_checks",
+  "row_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "group_counts": {
+    "train": 200,
+    "validation": 40
+  },
+  "independent_scenarios": {
+    "train": 200,
+    "validation": 40,
+    "basis": "240 individually authored singleton source cases and prewritten scenario plans, no variants."
+  },
+  "domain_counts": {
+    "train": {
+      "home broadband support": 10,
+      "online course enrolment": 10,
+      "recipe newsletter subscriptions": 10,
+      "appliance repair": 10,
+      "commuter ferry support": 10,
+      "parking permits": 10,
+      "road maintenance reporting": 10,
+      "coworking desks": 10,
+      "fitness studio membership": 10,
+      "veterinary consultations": 10,
+      "passport photo shop": 10,
+      "event venue bookings": 10,
+      "mobile banking app access": 10,
+      "transit smartcards": 10,
+      "costume hire": 10,
+      "energy billing": 10,
+      "furniture assembly": 10,
+      "sports equipment hire": 10,
+      "hair appointments": 10,
+      "bookshop preorders": 10
+    },
+    "validation": {
+      "maritime weather bulletin subscriptions": 10,
+      "antique appraisal bookings": 10,
+      "language exam certification": 10,
+      "climbing route information": 10
+    }
+  },
+  "checks": {
+    "schema_required_fields": true,
+    "targets_present_exactly_once": true,
+    "unique_row_ids": true,
+    "unique_option_ids_per_row": true,
+    "singleton_groups_unique": true,
+    "cross_split_group_overlap": 0,
+    "exact_canonical_state_duplicates": 0,
+    "exact_canonical_input_duplicates": 0,
+    "frozen_group_domain_and_split_assignments": true,
+    "ten_scenarios_per_assigned_domain": true,
+    "training_reserved_domain_overlap": [],
+    "positions_balanced_within_split_and_option_count": true,
+    "no_parent_rows_included": true
+  },
+  "target_position_counts_1_based": {
+    "train/4": {
+      "1": 25,
+      "2": 25,
+      "3": 25,
+      "4": 25
+    },
+    "train/3": {
+      "1": 20,
+      "2": 20,
+      "3": 20
+    },
+    "train/5": {
+      "1": 5,
+      "2": 6,
+      "3": 6,
+      "4": 5,
+      "5": 5
+    },
+    "train/6": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 3
+    },
+    "validation/4": {
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "validation/3": {
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "validation/5": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1,
+      "5": 1
+    },
+    "validation/6": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 1
+    }
+  },
+  "option_count_distribution": {
+    "train": {
+      "4": 100,
+      "3": 60,
+      "5": 27,
+      "6": 13
+    },
+    "validation": {
+      "4": 20,
+      "3": 12,
+      "5": 4,
+      "6": 4
+    }
+  },
+  "target_length_shortcuts": {
+    "train": {
+      "target_tied_or_unique_longest": 142,
+      "target_unique_longest": 70,
+      "rows": 200
+    },
+    "validation": {
+      "target_tied_or_unique_longest": 29,
+      "target_unique_longest": 11,
+      "rows": 40
+    }
+  },
+  "word_length_summary_not_token_counts": {
+    "state_words": {
+      "min": 21,
+      "max": 32,
+      "mean": 26.25
+    },
+    "question_words": {
+      "min": 8,
+      "max": 8,
+      "mean": 8
+    },
+    "option_words": {
+      "min": 2,
+      "max": 8,
+      "mean": 4.236
+    },
+    "target_words": {
+      "min": 3,
+      "max": 8,
+      "mean": 4.667
+    },
+    "rival_words": {
+      "min": 2,
+      "max": 7,
+      "mean": 4.091
+    }
+  },
+  "cross_split_state_lexical_scan": {
+    "method": "Content-word set Jaccard, this shard only; no historical data read.",
+    "pairs_scanned": 8000,
+    "pairs_at_or_above_0_5": 0,
+    "top_candidates": [
+      {
+        "jaccard": 0.3182,
+        "train_id": "data:pilot-v2:intent-a:g100:r01",
+        "validation_id": "data:pilot-v2:intent-a:g217:r01"
+      },
+      {
+        "jaccard": 0.2174,
+        "train_id": "data:pilot-v2:intent-a:g055:r01",
+        "validation_id": "data:pilot-v2:intent-a:g217:r01"
+      },
+      {
+        "jaccard": 0.2143,
+        "train_id": "data:pilot-v2:intent-a:g021:r01",
+        "validation_id": "data:pilot-v2:intent-a:g206:r01"
+      },
+      {
+        "jaccard": 0.2,
+        "train_id": "data:pilot-v2:intent-a:g024:r01",
+        "validation_id": "data:pilot-v2:intent-a:g207:r01"
+      },
+      {
+        "jaccard": 0.1935,
+        "train_id": "data:pilot-v2:intent-a:g105:r01",
+        "validation_id": "data:pilot-v2:intent-a:g212:r01"
+      },
+      {
+        "jaccard": 0.1923,
+        "train_id": "data:pilot-v2:intent-a:g085:r01",
+        "validation_id": "data:pilot-v2:intent-a:g203:r01"
+      },
+      {
+        "jaccard": 0.1852,
+        "train_id": "data:pilot-v2:intent-a:g186:r01",
+        "validation_id": "data:pilot-v2:intent-a:g217:r01"
+      },
+      {
+        "jaccard": 0.1852,
+        "train_id": "data:pilot-v2:intent-a:g013:r01",
+        "validation_id": "data:pilot-v2:intent-a:g229:r01"
+      },
+      {
+        "jaccard": 0.1724,
+        "train_id": "data:pilot-v2:intent-a:g100:r01",
+        "validation_id": "data:pilot-v2:intent-a:g226:r01"
+      },
+      {
+        "jaccard": 0.16,
+        "train_id": "data:pilot-v2:intent-a:g107:r01",
+        "validation_id": "data:pilot-v2:intent-a:g209:r01"
+      },
+      {
+        "jaccard": 0.16,
+        "train_id": "data:pilot-v2:intent-a:g051:r01",
+        "validation_id": "data:pilot-v2:intent-a:g227:r01"
+      },
+      {
+        "jaccard": 0.1481,
+        "train_id": "data:pilot-v2:intent-a:g165:r01",
+        "validation_id": "data:pilot-v2:intent-a:g220:r01"
+      }
+    ]
+  },
+  "teacher_semantic_review": {
+    "kind": "same_session_self_review",
+    "independently_verified": false,
+    "details_file": "generation_review.md"
+  },
+  "tokenizer_audit": "Not performed: prohibited ML/tokenizer loads; parent CPU audit pending.",
+  "cost": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "pending_spend": 0
+  },
+  "revisions": {
+    "generation_revision": "intent-a-r1",
+    "source_revision": "source-cases-r1",
+    "assignment_revision": "pilot-v2.json/intent-a frozen g001-g240",
+    "assignment_config_sha256": "d3189d43a4de66574bf5a08776ad6d3f6020fa08c28814e4254cecb3b2a8499b",
+    "contract_sha256": "259772f47ed6aa432b71f9ba351cf332304c432b49c8536accc73ba676a9eeb6",
+    "artifact_sha256": {
+      "group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "authoring_record.json": "25af7c25e123728747329ea9e7691eef2b7e1522e51dc0a0cb99ad85f90af19d",
+      "source_cases.txt": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+      "generate.py": "fa2cb79449482b9acef7feb2eef9ac2d55b507c156b911d2d23fbb327ad2b684",
+      "generation_review.md": "911a02f7423e3a1a72649dd621f52eb91172f77566e1829babda0864508b28ef",
+      "train.jsonl": "fca3d4a861bee0db05d3946aa8bc661c88c94075d03f88d1621d3e97c1a15633",
+      "validation.jsonl": "2bd798758a318c7aa6c3110d9490e2d980f38de0fef4ea9ef75ba4183d7ba435"
+    }
+  },
+  "metadata_sha256": "9bf5fa4dffb96c01185af86352f84ff18e98c84332bfa8db3c6d3947dc063972",
+  "limitations": [
+    "Teacher-authored labels and same-session semantic review are not independently verified correctness.",
+    "Immutable teacher revision and provider sampling parameters were not exposed.",
+    "No tokenizer or ML was loaded; the parent must audit the 256-token pair budget.",
+    "Historical shards and other producer data were not inspected; global deduplication remains a parent gate.",
+    "Domains and singleton scenario plans are distinct; generic request categories intentionally recur."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "before": {
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json": "345e935b46ca3d1226dfd603208bf5d1e1e16982d425319f678e34447b0c9483",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+  },
+  "after": {
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/pre-review-r2/manifest.json": "345e935b46ca3d1226dfd603208bf5d1e1e16982d425319f678e34447b0c9483",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/validation.jsonl": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/train.jsonl": "85c130429c3fb6a4806acd3310fae00d771096290867f1912f0f17c6fe969701",
+    "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b/validation.jsonl": "900667a488230532498554bbfaeb9b56db58d77e33f83b4dae1b728a9161edac"
+  },
+  "all_unchanged": true,
+  "manifest_and_four_reviewed_shards_match_manifest": true
+}

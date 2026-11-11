@@ -1,0 +1,342 @@
+{
+  "review_type": "Same-agent semantic self-review, not independent review or independent authorship",
+  "scope": "Read all 48 generated states, questions and choice sets; checked rules, facts, target semantics, distractor distinctions and ordered procedures. Re-read changed rendered pack/scheduling states after corrections. Parent will separately review.",
+  "policies": {
+    "data:d3-seen-rules-v1:packs:p01": {
+      "case_id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p01:c01",
+        "data:d3-seen-rules-v1:packs:p01:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "3 packs",
+        "5 packs"
+      ],
+      "semantic_notes": "Stock 8 against demand+reserve 24 leaves 16: two packs cover it, but minimum 3 binds. Storm case leaves 33 and requires 5; damaged stock is excluded."
+    },
+    "data:d3-seen-rules-v1:packs:p02": {
+      "case_id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p02:c01",
+        "data:d3-seen-rules-v1:packs:p02:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "2 packs",
+        "3 packs"
+      ],
+      "semantic_notes": "The touring order is mandatory even though accepted stock 22 exceeds target 18: buy 2. School loan deficit is 43-18=25, requiring 3 packs of 12."
+    },
+    "data:d3-seen-rules-v1:packs:p03": {
+      "case_id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p03:c01",
+        "data:d3-seen-rules-v1:packs:p03:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "0 packs",
+        "3 packs"
+      ],
+      "semantic_notes": "Cancelled survey leaves exactly 20 accepted filters for target 20: zero packs. Pollution episode target 40 minus accepted 19 leaves 21: three packs."
+    },
+    "data:d3-seen-rules-v1:packs:p04": {
+      "case_id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p04:c01",
+        "data:d3-seen-rules-v1:packs:p04:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "4 packs",
+        "5 packs"
+      ],
+      "semantic_notes": "Repair deficit 110-35=75 would use 3 packs, but minimum 4 binds. Reopened mural deficit 164-63=101 exceeds four packs by one, so buy 5."
+    },
+    "data:d3-seen-rules-v1:packs:p05": {
+      "case_id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p05:c01",
+        "data:d3-seen-rules-v1:packs:p05:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "2 packs",
+        "3 packs"
+      ],
+      "semantic_notes": "Frame replacement deficit 17-5=12 exactly fits 2 packs. New mast deficit 24-11=13 crosses that boundary and needs 3."
+    },
+    "data:d3-seen-rules-v1:packs:p06": {
+      "case_id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:packs:p06:c01",
+        "data:d3-seen-rules-v1:packs:p06:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "2 packs",
+        "2 packs"
+      ],
+      "semantic_notes": "Parade deficit 33-16=17 and touring deficit 52-20=32 both need 2 packs. The second is an exact multiple, not a forced answer flip."
+    },
+    "data:d3-seen-rules-v1:rates:p01": {
+      "case_id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p01:c01",
+        "data:d3-seen-rules-v1:rates:p01:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "Aster",
+        "Aster"
+      ],
+      "semantic_notes": "Ridge rates are 9,8,9; Aster wins the exact tie with Bracken alphabetically. Coastal Aster 103/12 beats Bracken 94/11 by cross products 1133>1128, and beats Clover."
+    },
+    "data:d3-seen-rules-v1:rates:p02": {
+      "case_id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p02:c01",
+        "data:d3-seen-rules-v1:rates:p02:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "Ivo",
+        "Ivo"
+      ],
+      "semantic_notes": "Rehearsal Ivo 41/7 beats 35/6 and 70/12 narrowly (246>245). Archive Dara and Ivo tie at 4.5, so alphabetically latest Ivo wins. Same identity for different reasons."
+    },
+    "data:d3-seen-rules-v1:rates:p03": {
+      "case_id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p03:c01",
+        "data:d3-seen-rules-v1:rates:p03:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "Bay",
+        "Arc"
+      ],
+      "semantic_notes": "Batch Bay 0.66 exceeds Cove 0.65 and both 0.60 layouts. Narrow roll Arc and Bay tie at 0.70; earliest Arc wins despite Bay recovering more raw area."
+    },
+    "data:d3-seen-rules-v1:rates:p04": {
+      "case_id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p04:c01",
+        "data:d3-seen-rules-v1:rates:p04:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "Birch",
+        "Birch"
+      ],
+      "semantic_notes": "Lower minutes/litre is better: Birch 19/11 beats 7/4. Sediment trials tie Ash and Birch at 1.5, and latest-name Birch wins."
+    },
+    "data:d3-seen-rules-v1:rates:p05": {
+      "case_id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p05:c01",
+        "data:d3-seen-rules-v1:rates:p05:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "South",
+        "North"
+      ],
+      "semantic_notes": "Full-speed South clears 9.1 per minute versus East 9 and North 80/9. Low-speed East and North tie at 7, so latest North wins."
+    },
+    "data:d3-seen-rules-v1:rates:p06": {
+      "case_id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:rates:p06:c01",
+        "data:d3-seen-rules-v1:rates:p06:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "Dove",
+        "Blue"
+      ],
+      "semantic_notes": "Dove 83/12 exceeds Copper 62/9 since 747>744, and the other crews. Scaffold Blue and Copper tie at 6.75; earliest Blue wins. Crew-hours are explicit totals."
+    },
+    "data:d3-seen-rules-v1:coordinates:p01": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p01:c01",
+        "data:d3-seen-rules-v1:coordinates:p01:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(-5,3)",
+        "(1,0)"
+      ],
+      "semantic_notes": "Loom operations map (2,5) to (5,3) to (-5,3). Repair (-4,2) maps to (-1,0) then (1,0), crossing an axis. Order and signs match text."
+    },
+    "data:d3-seen-rules-v1:coordinates:p02": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p02:c01",
+        "data:d3-seen-rules-v1:coordinates:p02:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(-3,8)",
+        "(4,2)"
+      ],
+      "semantic_notes": "Balcony (4,-1) swaps to (-1,4) then translates to (-3,8). Floor (-2,6) becomes (6,-2) then (4,2). Shift is applied after swap."
+    },
+    "data:d3-seen-rules-v1:coordinates:p03": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p03:c01",
+        "data:d3-seen-rules-v1:coordinates:p03:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(7,2)",
+        "(1,-2)"
+      ],
+      "semantic_notes": "Ridge (3,2) becomes (2,-3), then (7,-2), then (7,2). Valley (-1,-4) becomes (-4,1), then (1,2), then (1,-2). Final mirror is consequential."
+    },
+    "data:d3-seen-rules-v1:coordinates:p04": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p04:c01",
+        "data:d3-seen-rules-v1:coordinates:p04:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(-6,2)",
+        "(0,0)"
+      ],
+      "semantic_notes": "Beach (5,4) shifts to (2,6) before turning to (-6,2). Inland (3,-2) shifts to origin and remains (0,0). Alternatives distinguish reversed order and omitted step."
+    },
+    "data:d3-seen-rules-v1:coordinates:p05": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p05:c01",
+        "data:d3-seen-rules-v1:coordinates:p05:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(-2,4)",
+        "(4,-2)"
+      ],
+      "semantic_notes": "Rim (7,4) reflects to (7,-4), swaps to (-4,7), shifts to (-2,4). Handle (1,-2) becomes (1,2), (2,1), then (4,-2)."
+    },
+    "data:d3-seen-rules-v1:coordinates:p06": {
+      "case_id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:coordinates:p06:c01",
+        "data:d3-seen-rules-v1:coordinates:p06:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "(0,0)",
+        "(-3,4)"
+      ],
+      "semantic_notes": "Signal (4,1) reflects to (-4,1), shifts to origin, remains origin after turn. Siding (1,-3) becomes (-1,-3), then (3,-4), then (-3,4)."
+    },
+    "data:d3-seen-rules-v1:cooldown:p01": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p01:c01",
+        "data:d3-seen-rules-v1:cooldown:p01:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "09:20",
+        "No listed start fits"
+      ],
+      "semantic_notes": "09:20 starts exactly after prior cooldown and its new cooldown ends at 09:40, exactly the next booking. Urgent case 09:52 is one minute early; 10:01 and 10:08 overrun closing with cooldown. Fixed duration now explicitly applies only to new bookings."
+    },
+    "data:d3-seen-rules-v1:cooldown:p02": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p02:c01",
+        "data:d3-seen-rules-v1:cooldown:p02:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "13:25",
+        "14:10"
+      ],
+      "semantic_notes": "13:25 follows the prior reset and its session+reset ends exactly 13:50. The interpreter case allows 14:10 ending at closing; 13:44 violates prior reset and 14:11 overruns. Extended existing session uses stated end time."
+    },
+    "data:d3-seen-rules-v1:cooldown:p03": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p03:c01",
+        "data:d3-seen-rules-v1:cooldown:p03:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "08:20",
+        "08:55"
+      ],
+      "semantic_notes": "08:20 is the exact recovery boundary and finishes its recovery at the next survey start 08:40. Extended-survey 08:55 finishes new recovery exactly at 09:15; 08:50 is early and 08:56 too late. Existing duration scope clarified."
+    },
+    "data:d3-seen-rules-v1:cooldown:p04": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p04:c01",
+        "data:d3-seen-rules-v1:cooldown:p04:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "10:30",
+        "11:25"
+      ],
+      "semantic_notes": "10:30 is earliest, with 18+12 minutes to the next booking at 11:00. Delayed case requires start at least 11:24, so listed 11:25 beats also-valid 11:42; no artificial requirement to select the closing-boundary start."
+    },
+    "data:d3-seen-rules-v1:cooldown:p05": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p05:c01",
+        "data:d3-seen-rules-v1:cooldown:p05:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "15:40",
+        "16:05"
+      ],
+      "semantic_notes": "15:40 is exact earlier cooldown endpoint, with trial+cooldown finishing at next start 16:20. After long trial, 16:05 is valid; 16:04 is too early and 16:21 finishes cooldown 17:01. Existing end-time wording corrected."
+    },
+    "data:d3-seen-rules-v1:cooldown:p06": {
+      "case_id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "case_ids": [
+        "data:d3-seen-rules-v1:cooldown:p06:c01",
+        "data:d3-seen-rules-v1:cooldown:p06:c02"
+      ],
+      "reviewed_rendered_text": true,
+      "verdict": "consistent",
+      "manual_answer_texts": [
+        "18:16",
+        "19:00"
+      ],
+      "semantic_notes": "18:16 is exact reset endpoint and fits before 18:40. Late case earliest resource availability is 18:54, but only 19:00 among listed starts fits: it ends exactly at 19:10 and final reset may extend later."
+    }
+  }
+}

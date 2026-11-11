@@ -1,0 +1,346 @@
+{
+  "schema_version": "0.1",
+  "audit_kind": "same_agent_separate_algorithm_consistency_not_independent_authorship",
+  "rows_checked": 48,
+  "policy_groups": 24,
+  "mechanisms": {
+    "packs": 12,
+    "rates": 12,
+    "coordinates": 12,
+    "cooldown": 12
+  },
+  "checks": [
+    "Exact targets versus pure expected(case), after generation",
+    "Unique expected option and all distinct options",
+    "Full rendered state/question correspondence to structured facts",
+    "Source and audit fact equality",
+    "Contract, namespace, provenance, split and frozen group assignment checks",
+    "Balanced randomized target positions within arity",
+    "Positive denominators and valid stock",
+    "Same-agent semantic reading of rendered text: at least one case per policy"
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "authoring_self_review_corrections": [
+    "Four scheduling policies initially implied fixed durations for existing bookings while their second cases used extended existing sessions. Before label verification, wording was corrected to scope the fixed duration to new sessions and explicitly honor stated existing end times. No numeric facts or answers changed.",
+    "Three pack distractor sets were revised before audit to include legitimate maximum answers rather than making every positive answer an interior quantity.",
+    "Stock rendering changed to a count label to avoid singular/plural mismatch."
+  ],
+  "target_position_counts": {
+    "4": {
+      "1": 10,
+      "4": 9,
+      "3": 9,
+      "2": 9
+    },
+    "3": {
+      "2": 4,
+      "1": 4,
+      "3": 3
+    }
+  },
+  "answer_length_diagnostics": {
+    "shortest_including_ties": 29,
+    "longest_including_ties": 23,
+    "strict_shortest": 5,
+    "strict_longest": 2
+  },
+  "rate_winner_candidate_listing_positions": {
+    "3": 5,
+    "2": 4,
+    "1": 3
+  },
+  "max_state_words": 67,
+  "tokenizer_check": "Not run; parent owns 256-token pair audit.",
+  "cases": [
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c01",
+      "expected_answer": "3 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p01:c02",
+      "expected_answer": "5 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c01",
+      "expected_answer": "2 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p02:c02",
+      "expected_answer": "3 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c01",
+      "expected_answer": "0 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p03:c02",
+      "expected_answer": "3 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c01",
+      "expected_answer": "4 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p04:c02",
+      "expected_answer": "5 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c01",
+      "expected_answer": "2 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p05:c02",
+      "expected_answer": "3 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c01",
+      "expected_answer": "2 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:packs:p06:c02",
+      "expected_answer": "2 packs",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c01",
+      "expected_answer": "Aster",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p01:c02",
+      "expected_answer": "Aster",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c01",
+      "expected_answer": "Ivo",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p02:c02",
+      "expected_answer": "Ivo",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c01",
+      "expected_answer": "Bay",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p03:c02",
+      "expected_answer": "Arc",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c01",
+      "expected_answer": "Birch",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p04:c02",
+      "expected_answer": "Birch",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c01",
+      "expected_answer": "South",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p05:c02",
+      "expected_answer": "North",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c01",
+      "expected_answer": "Dove",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:rates:p06:c02",
+      "expected_answer": "Blue",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c01",
+      "expected_answer": "(-5,3)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p01:c02",
+      "expected_answer": "(1,0)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c01",
+      "expected_answer": "(-3,8)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p02:c02",
+      "expected_answer": "(4,2)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c01",
+      "expected_answer": "(7,2)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p03:c02",
+      "expected_answer": "(1,-2)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c01",
+      "expected_answer": "(-6,2)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p04:c02",
+      "expected_answer": "(0,0)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c01",
+      "expected_answer": "(-2,4)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p05:c02",
+      "expected_answer": "(4,-2)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c01",
+      "expected_answer": "(0,0)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:coordinates:p06:c02",
+      "expected_answer": "(-3,4)",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c01",
+      "expected_answer": "09:20",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p01:c02",
+      "expected_answer": "No listed start fits",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c01",
+      "expected_answer": "13:25",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p02:c02",
+      "expected_answer": "14:10",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c01",
+      "expected_answer": "08:20",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p03:c02",
+      "expected_answer": "08:55",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c01",
+      "expected_answer": "10:30",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p04:c02",
+      "expected_answer": "11:25",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c01",
+      "expected_answer": "15:40",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p05:c02",
+      "expected_answer": "16:05",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c01",
+      "expected_answer": "18:16",
+      "matched": true,
+      "text_fact_correspondence": true
+    },
+    {
+      "id": "data:d3-seen-rules-v1:cooldown:p06:c02",
+      "expected_answer": "19:00",
+      "matched": true,
+      "text_fact_correspondence": true
+    }
+  ],
+  "label_basis": "rule_verified"
+}

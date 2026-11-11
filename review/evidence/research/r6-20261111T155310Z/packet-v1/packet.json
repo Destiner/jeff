@@ -1,0 +1,215 @@
+{
+  "cases": 48,
+  "conditions": [
+    "O0L0",
+    "O0L1",
+    "O1L0",
+    "O1L1"
+  ],
+  "config": {
+    "path": "config.json",
+    "sha256": "128d550e355af4772a8f996ccb1f49675e5ba6bdc61d2ed7a1c84e11c4b6090f"
+  },
+  "excluded_shards_manifest_only_not_opened": [
+    {
+      "path": "data/data-pilot-v1/intent/validation.jsonl",
+      "rows": 20,
+      "sha256": "5f327a2c907889b7082218de6a05e4b3ba337c80821db24837528dba3b29d514",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v1/sentiment-r2/validation.jsonl",
+      "rows": 20,
+      "sha256": "e103a14f51cf91b817c4f889729bdf737fc4fc36b6cdfa763c3e6a7b262e1c0f",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v1/rule_application/validation.jsonl",
+      "rows": 20,
+      "sha256": "cf06f2f3e4adce3a02e3a87519c567a10bea6e9404619616030527d73e2ea589",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/intent-a-r2/validation.jsonl",
+      "rows": 40,
+      "sha256": "14035d90219ea2c5d687a6736d4b3a0c8d2a41ddd7b8b2bc94c2d34f575b6cca",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/intent-b-r2/validation.jsonl",
+      "rows": 40,
+      "sha256": "b622e9fe28ada680e847f0b183d9cc32ac3e5a6272905f7d09a060a26e932b14",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/sentiment-a/validation.jsonl",
+      "rows": 40,
+      "sha256": "8b47c2670db8085b7242282e88b195fa89f07ce570acd337dd5a037adab9bc3e",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/sentiment-b-r2/validation.jsonl",
+      "rows": 40,
+      "sha256": "b739a2e7c56e6d8ec28aa0450276d339e4f53936c71e6b27436a2e5d22ff409e",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/rule-a/validation.jsonl",
+      "rows": 40,
+      "sha256": "642086ef7a1caee2976af81b081b1acd397656a4d0b4e54a90157596f907136e",
+      "split": "validation"
+    },
+    {
+      "path": "data/data-pilot-v2/rule-b/validation.jsonl",
+      "rows": 40,
+      "sha256": "ee7d4c6fc3999d6ecd4a87e74a123729ef37ff4a0e5d5ea2ca64a32bdffb8138",
+      "split": "validation"
+    }
+  ],
+  "input": {
+    "path": "inputs.jsonl",
+    "rows": 192,
+    "sha256": "178708cd6a620c395d29131a0eb0bad65f66f8a71e608950f7282a4e9e2ed061"
+  },
+  "p3": {
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "config_path": "/Users/destiner/Code/jeff/configs/runtime/p3-qwen.json",
+    "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+    "current_runtime_source_path": "/Users/destiner/Code/jeff/src/jeff/runtime/qwen_challenger.py",
+    "current_runtime_source_sha256": "cb07ceaf8af6cf1b06b08d11aff7a234031877428eb0aa27e37ad609eef731a5",
+    "frozen_code_revision": "49823af30d6b394a147c7b8a9f5c676526a439f3",
+    "frozen_source_sha256": "325d3a6b8e5577bba3b885fe8b61d5551305b456e2586d3949b2c45c649438d5",
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "pin_provenance": "manifests/releases/p3-qwen-20261111-01.json",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "system_prompt": "You are a decision assistant. Choose exactly one of the listed options. Reply with only its letter.",
+    "user_template": "State:\n{state}\n\nQuestion:\n{question}\n\nOptions:\n{options}"
+  },
+  "rendering": {
+    "answer_mapping": "next-token scores in displayed options order, using each option.letter; softmax T=1; join via option.id",
+    "chat": "official pinned tokenizer.apply_chat_template; tokenize=False; add_generation_prompt=True; encode(add_special_tokens=False); no truncation",
+    "model_prompt_fields": [
+      "state",
+      "question",
+      "options[].text",
+      "options[].letter"
+    ],
+    "option_line": "{letter}. {text}",
+    "original_position": "zero-based released TRAIN option index",
+    "separator": "\n"
+  },
+  "resource_bounds": {
+    "max_cpu_rss_bytes": 8589934592,
+    "max_mps_driver_bytes": 8589934592,
+    "maximum_run_seconds": 300,
+    "memory_limits_are_nonadditive": true
+  },
+  "runtime_requirements": [
+    "Model grant; Runtime execution only; unchanged frozen P3, not M6 checkpoint",
+    "Verify all packet hashes; do not pass this packet to stock three-suite P3 reader",
+    "Verify pinned chat-template digest, full prompt <=1024 tokens, special-token exclusion and single-token answer boundaries before model execution",
+    "Honor supplied letters, never regenerate ascending symbols; no ids/metadata in prompts",
+    "No generation, training, prompt search, downloads or extra diagnostic presentations",
+    "startup_rows=3 means first three actual records; retain their predictions, do not repeat them as warmup; <=192 total forwards",
+    "300-second total process bound includes audit/tokenization/load/inference; no fallback, retries or extra startup forwards",
+    "Record runner source/config/assets/environment and actual resource/time evidence separately; do not mutate packet"
+  ],
+  "schema_version": "r6.order-packet.v1",
+  "selection": {
+    "path": "selection.json",
+    "sha256": "8e008f2c39e37529d32942b15eaba5e5b13cc0b9b3766f6d9b12722f15304a8f"
+  },
+  "source": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/research/experiments/research/prepare_order_packet.py",
+    "sha256": "0b674aa2f07f48e62df4b47181987f5d75e0ab5a0b18a569b2c1d72c644ec2a1"
+  },
+  "split": "train",
+  "status": "prepared_not_executed",
+  "train_manifest": {
+    "path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+    "sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac"
+  },
+  "train_sources": [
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/intent/train.jsonl",
+      "allocation_path": "data/data-pilot-v1/intent/group_assignments.json",
+      "allocation_sha256": "9831ff3d6a17977243ac556f4bcea64cd920176b319773ee112c569db6e13175",
+      "path": "data/data-pilot-v1/intent/train.jsonl",
+      "rows": 100,
+      "sha256": "119ef093712012886ddc66f02e2635e082bf9b905fb79aaf7440c2547692c589",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/intent-a-r2/group_assignments.json",
+      "allocation_sha256": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+      "path": "data/data-pilot-v2/intent-a-r2/train.jsonl",
+      "rows": 200,
+      "sha256": "77cb6b5436415aee55bd0449590f9586a73a148f3270b9ac116348cbba79cae9",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/intent-b-r2/group_assignments.json",
+      "allocation_sha256": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+      "path": "data/data-pilot-v2/intent-b-r2/train.jsonl",
+      "rows": 200,
+      "sha256": "d551a90e504b7ad6ab0a535c953514edbf9bfc87a91d536f8dcd8b6958a3385c",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "allocation_path": "data/data-pilot-v1/sentiment-r2/group_assignments.json",
+      "allocation_sha256": "90d050aa3ae28fd8eda5d50705f2c639ee1c383177ca0ea3baba5f50d7fac5b3",
+      "path": "data/data-pilot-v1/sentiment-r2/train.jsonl",
+      "rows": 100,
+      "sha256": "4c1b9513186ef8a7749b67450e890f9d9bd7e44b74c160c7576f0607eac6256b",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-a/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/sentiment-a/group_assignments.json",
+      "allocation_sha256": "2f464d747cd5225578264d42e786958e460d819943027700271d44273efd9204",
+      "path": "data/data-pilot-v2/sentiment-a/train.jsonl",
+      "rows": 200,
+      "sha256": "0d0cdced2810ba68bbd1d1a672d65f940ee8f0e5798ce7967bd522fd577a549b",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/sentiment-b-r2/group_assignments.json",
+      "allocation_sha256": "0b1a24d06881e27dff29dfec59c7441c81198458eb7a6481e1fb38accc859c2d",
+      "path": "data/data-pilot-v2/sentiment-b-r2/train.jsonl",
+      "rows": 200,
+      "sha256": "0c2d5441102fb0623dec43265f3d9dc44b025c92b788138344cdc1447ac1ab20",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/rule_application/train.jsonl",
+      "allocation_path": "data/data-pilot-v1/rule_application/group_assignments.json",
+      "allocation_sha256": "58988ce2a56fe86f864c9002d5d04747cb7c2fbde97361dbca80ac0cdb3d9773",
+      "path": "data/data-pilot-v1/rule_application/train.jsonl",
+      "rows": 100,
+      "sha256": "24c9b8684c1d35589d44a00685ce53b33f6bf0da4f7dc9a28e3a1f1fddb41a5d",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-a/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/rule-a/group_assignments.json",
+      "allocation_sha256": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+      "path": "data/data-pilot-v2/rule-a/train.jsonl",
+      "rows": 200,
+      "sha256": "5716c4c263fc82607ecae10eede1bdd5dad3d884ef650c89de0d264f8eb01a9f",
+      "split": "train"
+    },
+    {
+      "absolute_path": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/rule-b/train.jsonl",
+      "allocation_path": "data/data-pilot-v2/rule-b/group_assignments.json",
+      "allocation_sha256": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+      "path": "data/data-pilot-v2/rule-b/train.jsonl",
+      "rows": 200,
+      "sha256": "549b1cfe8a3b3981c18b26f003cf9699881227c51b10ed7daa60068603ad7669",
+      "split": "train"
+    }
+  ]
+}
