@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+AGENTS.local.md
+.worktrees/
+.scratch/
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
+artifacts/
