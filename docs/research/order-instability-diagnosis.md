@@ -99,6 +99,8 @@ The diagnostic saved actual allowed-letter full-vocabulary mass. Source-balanced
 
 **Unchanged execution:** M6 already uses training-only option permutations; R6 neither amends that recipe nor replaces E6's evaluation criteria. Do not infer that arbitrary descending-letter augmentation would help merely because it exposes weakness. No further experiment, corrective predictor, temperature fit or default promotion is proposed by this delivery.
 
+**Late parallel E6 notice, not an R6 input:** Evaluation's16:34UTC report `4168ffc8-8b6f-4c1d-b725-8fdd68e44e85` says the trained M6 checkpoint chose input position0 on all624 development presentations, with no ties and zero both-order agreement. It also preserves a slight new-reversed NLL improvement and other proper-score exceptions; not every metric worsened. R6's frozen-model behavior must not be presented as a causal explanation for that separately trained collapse. Neither R6 analyzer consumed M6 outcomes, and no new experiment follows from this notice.
+
 Remaining unknowns include complete symmetric biases, pure token versus position effects, general label×position interactions, why descending lettering changes behavior, accuracy of any putative correction, and transfer beyond these authored sources. Position changes alter surrounding content order; letter changes alter alphabet naturalness. No residual proves a particular reasoning failure.
 
 ## 5. Sources, reproduction and verification
