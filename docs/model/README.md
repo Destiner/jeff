@@ -8,7 +8,7 @@ This deliberately small provisional model proves training/save/reload before a l
 
 ## Latest learning contrast: full-parameter Qwen
 
-M6 completed its one authorized1500-TRAIN/375-update run, but fixed-schedule TRAIN fit regressed:805→431agreements/1500, CE1.357724→1.390592, with every final recorded argmax at position0. Preserve the negative final checkpoint; no retry, default promotion or causal claim. Fresh starting624predictions are byte-identical to frozen P3. Runtime P4 owns independent final-checkpoint reload/development inference; Evaluation E6 owns held-out interpretation. See [M6 results](m6-qwen-results.md), [frozen plan](m6-qwen-plan.md), and [run/evidence index](m6-qwen-run.json).
+M6 completed its one authorized1500-TRAIN/375-update run, but fixed-schedule TRAIN fit regressed:805→431agreements/1500, CE1.357724→1.390592, with every final recorded argmax at position0. Preserve the negative final checkpoint; no retry, default promotion or causal claim. Fresh starting624predictions are byte-identical to frozen P3. Runtime P4 completed independent final-checkpoint reload; E6 finds all624development choices strictly select input position0, with no both-order success. A small new-reversed NLL improvement does not offset the broad failure; full exceptions remain in the report. See [M6 results](m6-qwen-results.md), [frozen plan](m6-qwen-plan.md), and [run/evidence index](m6-qwen-run.json).
 
 ## Historical control: scalar-head learning rate
 
