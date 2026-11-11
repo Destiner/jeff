@@ -236,8 +236,9 @@ def memory(torch, device, stage):
 def predict(args, receipt, start):
     audit = load(args.audit_dir / "audit.json")
     require(audit["status"] == "complete", "incomplete audit")
-    current, suites = evidence(Path(audit["config_path"]), Path(audit["input_manifest_path"]), args.model_dir)
-    require(current == audit["evidence"], "code/config/input/model/tokenization/environment changed since audit")
+    frozen = audit["evidence"]
+    current, suites = evidence(Path(frozen["config_path"]), Path(frozen["input_manifest_path"]), args.model_dir)
+    require(current == frozen, "code/config/input/model/tokenization/environment changed since audit")
     cfg = current["config"]
     require(args.device == cfg["device"], "device must match the pre-outcome frozen recipe")
     require(not current["git_status"], "prediction requires the clean frozen code revision")
