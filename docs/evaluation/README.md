@@ -1,5 +1,7 @@
 # File-based evaluation
 
+Latest independent results: [corrected 256-token pilot and retained-head cross-encoder](pilot-e2-m3.md), including the material cross-encoder probe regression, complete source-group tables, and order analysis.
+
 Runtime dependencies: Python standard library only (project Python 3.12/uv). No imports from Data, Model, or Training. No model downloads, software tests, or linting.
 
 Shared packaging from approved main `1f64aea` is incorporated: run `uv sync --locked`, then `uv run --locked python -m`. Initial pre-packaging tiny runs used `PYTHONPATH=src python3` (3.9.6); subsequent curation/pilot/model comparisons use project Python 3.12. No ML extras are needed.

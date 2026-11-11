@@ -1,0 +1,370 @@
+{
+  "schema_version": "evaluation-report/0.1",
+  "report_id": "evaluation-e2-m3-v1",
+  "report_revision": 2,
+  "dataset_id": "data-pilot-v1",
+  "final_evaluation_used": false,
+  "artifacts_root_env": "JEFF_ARTIFACTS_DIR",
+  "reports": {
+    "report.md": {
+      "path": "evaluation/e2-m3-v2/report.md",
+      "sha256": "5193440e5ac5d62f9eb52b7631caeddd664ce872a3f87f2473c6d8b2f7148745"
+    },
+    "probes-report.md": {
+      "path": "evaluation/e2-m3-v2/probes-report.md",
+      "sha256": "136bf5554a1644243b5167e071ca795d8d3d6019fa8802d4c6ba3690b800146d"
+    },
+    "comparison.json": {
+      "path": "evaluation/e2-m3-v2/comparison.json",
+      "sha256": "9bb44ddf308f051fc440f21364b69b905e48bac5567137d21f6e65be726ef69d"
+    },
+    "probes-comparison.json": {
+      "path": "evaluation/e2-m3-v2/probes-comparison.json",
+      "sha256": "ab0e22c6ab0f9e14b8eba34d24691efeca1e65e5beed0cc1c5af625901ae7aac"
+    },
+    "recipe.json": {
+      "path": "evaluation/e2-m3-v2/recipe.json",
+      "sha256": "a456847c240dec875822df8672676ebdee4614c765363405e228c1569887b805"
+    },
+    "control-audit.json": {
+      "path": "evaluation/e2-m3-v2/control-audit.json",
+      "sha256": "54a4ef5d38f073f2c66334aa9ed71ab71e02f8c5b68cacbdc6e7e492109201a5"
+    },
+    "order/lexical.json": {
+      "path": "evaluation/e2-m3-v2/order/lexical.json",
+      "sha256": "91d1dc82a1cfc749f41cac3ddb4698bc84d8032604ca6892b1cddf5788b8800b"
+    },
+    "order/pretrained-msmarco-256.json": {
+      "path": "evaluation/e2-m3-v2/order/pretrained-msmarco-256.json",
+      "sha256": "e5a79a87a4db63ac2d44d97c9444a80ba7268fbd8ee8009ad55357585621795e"
+    },
+    "order/random-head-256.json": {
+      "path": "evaluation/e2-m3-v2/order/random-head-256.json",
+      "sha256": "fc016e2937d850e0552c064694875add94c23e427ca40fe3c89de983d3811d59"
+    },
+    "order/trained-256.json": {
+      "path": "evaluation/e2-m3-v2/order/trained-256.json",
+      "sha256": "f1d3c57c3886e593a0209a1a7a91ce654848b3dc4e6a3eec7be8ddc4539a3596"
+    },
+    "order/trained-msmarco-256.json": {
+      "path": "evaluation/e2-m3-v2/order/trained-msmarco-256.json",
+      "sha256": "e8c38760ad3eb63a6df13dd9e2ef9cae4860b271ed6a23a7e1343f18e8656e53"
+    },
+    "order/uniform.json": {
+      "path": "evaluation/e2-m3-v2/order/uniform.json",
+      "sha256": "3170adc22f3b39c7c9bc7e28fb907a641fe94a89688df919ee350b2ac9a066d5"
+    },
+    "probe-order/lexical.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/lexical.json",
+      "sha256": "21a27d66213f0eebe3d8d7a60f06d5c42734ee174ec88e60de9605ccfafa2bea"
+    },
+    "probe-order/pretrained-msmarco-256.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/pretrained-msmarco-256.json",
+      "sha256": "a7309ac56b961913856bf591c65aee855821404788952b85c8bc5ded46e6791b"
+    },
+    "probe-order/random-head-128.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/random-head-128.json",
+      "sha256": "8aa0a9be4e47e1b0f38010e98afad7bfd94248fda2816031ec4960a94d74ae7b"
+    },
+    "probe-order/random-head-256.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/random-head-256.json",
+      "sha256": "18429674120de0ff02f5d4c2c026ee95508e56d3e1c6d58b6d285588cd1e774b"
+    },
+    "probe-order/trained-128.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/trained-128.json",
+      "sha256": "6014db287f987301f839cd1947a6b243089e5079068a6c27298d3a275fee3fbb"
+    },
+    "probe-order/trained-256.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/trained-256.json",
+      "sha256": "4e63402f4b44fbc3d1928a76e6d1fe2d22727b575b76180267c26a4a993ced8b"
+    },
+    "probe-order/trained-msmarco-256.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/trained-msmarco-256.json",
+      "sha256": "46743a88018f93b8e4b9158bacf750d98bbcbc649465241cb327d57d91ba3b46"
+    },
+    "probe-order/uniform.json": {
+      "path": "evaluation/e2-m3-v2/probe-order/uniform.json",
+      "sha256": "f6800d2860b04977f3536500700af886699fb29666f9c8dbc1a1daac2ab4b3c0"
+    }
+  },
+  "comparisons": {
+    "comparison.json": {
+      "reference": {
+        "path": "evaluation/data-pilot-v1/validation.jsonl",
+        "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+      },
+      "runs": {
+        "uniform": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 17,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 1.3787648669871742,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "lexical": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 29,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 1.3237099779963926,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "random-head-128": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 19,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 1.3782227513558474,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-128": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 36,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 0.8434007226573849,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "random-head-256": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 20,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 1.3782670112554563,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-256": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 35,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 0.8552875089589308,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "pretrained-msmarco-256": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 30,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 1.0268780369494432,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-msmarco-256": {
+          "examples": 60,
+          "groups": 12,
+          "valid": 60,
+          "agreement_count": 40,
+          "agreement_name": "reference_label_agreement",
+          "log_loss": 0.7937008119799213,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        }
+      }
+    },
+    "probes-comparison.json": {
+      "reference": {
+        "path": "evaluation/probes-v1/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "runs": {
+        "uniform": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 8,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.0550082766877307,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "lexical": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 9,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.0470441093070695,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "random-head-128": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 2,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.0571073602915295,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-128": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 16,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 0.7104060713395438,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "random-head-256": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 2,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.0571073602915295,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-256": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 16,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 0.7104069052752945,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "pretrained-msmarco-256": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 14,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.4537831337093712,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        },
+        "trained-msmarco-256": {
+          "examples": 24,
+          "groups": 12,
+          "valid": 24,
+          "agreement_count": 8,
+          "agreement_name": "teacher_agreement",
+          "log_loss": 1.360701041245408,
+          "failures": {
+            "missing": 0,
+            "invalid": 0,
+            "duplicate": 0
+          },
+          "extra_ids": 0,
+          "unidentifiable_records": 0
+        }
+      }
+    }
+  },
+  "model_run_records": {
+    "pilot-20261111-01": {
+      "path": "model/pilot-20261111-01/run.json",
+      "sha256": "8c3f308560699162908f93227a8f01546290cd7e255e1acc277efab18e2b41bd"
+    },
+    "pilot-256-20261111-01": {
+      "path": "model/pilot-256-20261111-01/run.json",
+      "sha256": "d426ab994e8ed9bc8e85d9764fa3c205ce4f67e89292cbb434aef19e59bf5889"
+    },
+    "msmarco-256-20261111-01": {
+      "path": "model/msmarco-256-20261111-01/run.json",
+      "sha256": "bcfae7d5b62f740a64389a503b8ea58a61eb58259e87dba30bee73b42f9d7245"
+    }
+  },
+  "implementation_source_sha256": {
+    "src/jeff/evaluation/common.py": "782ca069f13ad7527467e8158153307c7c03d0d9b34c823e09e3344209122e61",
+    "src/jeff/evaluation/metrics.py": "0705d433f034200c36e57221807aa071d766f63ddc86e397f0586f30c3a92828",
+    "src/jeff/evaluation/compare.py": "924e3a6ed3aabb3e8ae5f5c899df845098a72b11a1d64accdd8449807e44398b",
+    "src/jeff/evaluation/order.py": "1cef5a5d21d7fd3f482d413d05aaa0e25f955147e6190a5603c74e81c207ff3a",
+    "src/jeff/evaluation/reverse.py": "c31424a66a5d856067f5f9cd5407380295b3f0b96889e4cb3c5c2d56badc5e21",
+    "src/jeff/evaluation/render.py": "a57f4b8934451f567d042889e14c11ac341eff57eb5a43831a631a46e54f2ba9"
+  }
+}
