@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1",
+  "decision": "LD002",
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "device": "mps",
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate": 0.00002,
+  "head_learning_rate": 0.0005,
+  "max_length": 256,
+  "seed": 42,
+  "max_steps": null,
+  "threads": 4,
+  "notes": "Controlled repeat of minilm-pilot.json: only max_length changes from 128 to 256. Reference CLI settings, not automatically loaded. All prior artifacts retained."
+}
