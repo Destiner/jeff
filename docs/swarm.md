@@ -15,7 +15,7 @@ Do not write or run software tests or linting. Verification below means actual b
 | Data review | Structural checks, duplicates, label spot checks | Independent shard reports |
 | Evaluation | Baselines, validation cases, failure analysis | Versioned metrics and evaluation inputs |
 | Experiments | Controlled changes to data or training | Resource queue and immutable run records |
-| Packaging | Reproducible setup, artifact loading, optional demo | Stable inference contract |
+| Release / Runtime | Portable checkpoint bundles, isolated installation, actual cold-start inference | Existing inference contract and Model-owned compute scheduling |
 
 ## Task contract
 

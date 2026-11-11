@@ -15,6 +15,7 @@ The main session owns cross-workstream direction, shared contracts, root packagi
 | Data | `worker/data`, `.worktrees/data` | `src/jeff/data/`, `configs/data/`, `manifests/data/`, `docs/data/` |
 | Evaluation | `worker/evaluation`, `.worktrees/evaluation` | `src/jeff/evaluation/`, `configs/evaluation/`, `manifests/evaluation/`, `docs/evaluation/` |
 | Research | `worker/research`, `.worktrees/research` | `docs/research/`, `experiments/research/` |
+| Release / Runtime | `worker/release`, `.worktrees/release` | `src/jeff/runtime/`, `configs/runtime/`, `scripts/release/`, `manifests/releases/`, `docs/runtime/` |
 
 Create/manage your own isolated workspaces. Do not edit other owners' files or share a mutable checkout between subagents. Subagents return bounded contributions to their owner; only workstream owners merge to main.
 
@@ -26,6 +27,8 @@ Root dependencies and shared interfaces still need the lead; cross-team implemen
 - **Evaluation E3:** E1/E2 are completed and self-integrated. Coordinate with Data D2 to freeze v2 reference subsets and label-free inputs, explicitly separating inherited-v1 rows/groups from newly authored v2 rows/groups; keep existing independent validation probes separate. Confirm strata from provenance/identities, not filenames alone. Reuse current tooling to compare M4 starting/trained candidates and simple baselines on identical references, with per-family/source-group coverage, log loss, and option-order evidence. Publish input requests directly to Model and consume existing predictions where valid rather than duplicate inference. Preserved v1-trained candidates may be included as additional references if useful, labeled distinctly from fresh pretrained starts. Keep final data sealed. Deliver a concise reproducible comparison with regressions visible; do not silently choose a new default.
 - **Model M4:** M2 and M3 are completed and self-integrated. Start a data-focused robustness comparison when Data publishes frozen v2 inputs. Use the already supported all-MiniLM and retained-head cross-encoder paths; retain both prior candidates and do not promote M3 by pilot score alone. Initially allow at most one v2 training run per architecture, with fresh respective pretrained initialization, the same v2 split, seed, token budget, and training-step budget across architectures; record any justified recipe differences. Publish baselines, trained checkpoints, and fresh predictions for Evaluation's v2/inherited/probe strata. Check full token lengths before training; do not silently reuse 256 if v2 needs more. Keep prior validation groups/derivatives out of training. This compares candidates on new data; it is not a pure data-only causal ablation against v1. While waiting for data, fulfill peer inference requests and prepare the comparison. No Qwen, new dependencies, dataset edits, paid jobs, or final-data access.
 - **Research R3:** R1/R2 are completed and self-integrated. Perform a 30–45-minute advisory audit of Data's frozen v2 candidate shards as available: answer-text/length shortcuts, independent source-group/mechanism breadth, known validation exclusion, and inherited-v1 versus new-v2 strata. Reuse existing CPU audit tooling and Data's quality findings. Compare like-for-like diagnostics with v1 and communicate material findings directly to Data/Model. Do not introduce a mandatory sign-off gate, mutate data/labels, inspect final evaluation, or repeat the entire completed v1 investigation.
+
+- **Release P1:** new fifth team; create its own isolated workspace and follow [the Release/Runtime owner brief](briefs/release.md). Export an existing M2 checkpoint into a portable immutable local bundle with inventory/hashes, provenance, dependency instructions, and applicable licenses. Demonstrate real cold-start inference outside the checkout with an empty model cache and no remote model fetch, scheduling the load directly with Model. Reuse the existing inference implementation. Exercise M3 compatibility if practical, without choosing a new default. No UI, training, shared dependency/checkpoint-format changes, final-data access, paid services, or external upload/publication. Deliver owned tooling/docs/manifests and actual runtime evidence.
 
 These are current objectives, not a requirement to wait for lead approval after each internal subtask. Complete, self-review, merge eligible changes, and report delivery. If an objective is exhausted and no useful in-scope follow-up exists, ask for direction rather than inventing unrelated features.
 
@@ -56,14 +59,14 @@ Group before generating variants. Never put validation failures or their paraphr
 ## Compute and spending
 
 - Model owns and schedules the local ML slot. Other owners send it inference requests directly; no lead relay needed.
-- Other owners may run lightweight CPU data processing/scoring. Do not independently load large models or launch competing ML jobs.
+- Other owners may run lightweight CPU data processing/scoring and release packaging/hashing. Do not independently load models or launch competing ML jobs. Release requests its cold-start inference slot directly from Model; Model may execute it or grant a bounded slot explicitly.
 - Shared extra-spend ceiling is £50. Current paid allocations remain £0 per owner. Existing approved agent access is available; separately billed API calls/services or rented compute need a lead allocation.
 - Owners cannot each treat the £50 total as their personal budget. Track actual and pending spend in handoffs.
 - All prior checkpoint/data artifacts remain immutable. Preserve a working version while experimenting.
 
 ## Artifact sharing
 
-Use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. Data writes under `data/`, Model under `model/`, Evaluation under `evaluation/`, Research under `research/`; use unique IDs.
+Use `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`. Data writes under `data/`, Model under `model/`, Evaluation under `evaluation/`, Research under `research/`, Release under `release/`; use unique IDs.
 
 Publish intermediate outputs and nonblocking requests in append-only `handoffs/<team>/<id>.md`. Check relevant public handoffs when inputs are needed. Files are not automatically monitored, and Timur is not expected to relay routine milestones.
 
