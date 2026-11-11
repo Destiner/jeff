@@ -1,0 +1,121 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-pilot-v2",
+  "assignment_config_sha256": "4e604648450ad3ff674a769f76f64d78e4d96ed74ca9af6ada92a23382921840",
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "sources": [
+    {
+      "task_family": "intent",
+      "metadata_path": "data/data-pilot-v2/intent-a-r2/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/intent-a/authoring_record.json": "25af7c25e123728747329ea9e7691eef2b7e1522e51dc0a0cb99ad85f90af19d",
+        "data/data-pilot-v2/intent-a/generate.py": "fa2cb79449482b9acef7feb2eef9ac2d55b507c156b911d2d23fbb327ad2b684",
+        "data/data-pilot-v2/intent-a/group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+        "data/data-pilot-v2/intent-a/metadata.json": "9bf5fa4dffb96c01185af86352f84ff18e98c84332bfa8db3c6d3947dc063972",
+        "data/data-pilot-v2/intent-a/source_cases.txt": "c5af92a79add2fef14cdb93531858d476ae1813fc4cfd62e7829bfc33fb6fe66",
+        "data/data-pilot-v2/intent-a/validation_report.json": "32950e47e402639897f7a92c295f938a99a2fc12bd0072ebb92d3bf23d6f8c7c",
+        "data/data-pilot-v2/intent-a-r2/apply.py": "d4a15ff091035fd516edca09ea8f3aafb2e3295c9d8f0805f9bee5640e73495c",
+        "data/data-pilot-v2/intent-a-r2/choice_mappings.json": "e8b0003ffe48b6dd10a149a4708020b3cf00f4cb1c391a45c1bc35a28d48b25d",
+        "data/data-pilot-v2/intent-a-r2/choices.txt": "a4819b97cb2d7c4a515d3bacee94ad14e30f30edb2f5580b73091aee7243c727",
+        "data/data-pilot-v2/intent-a-r2/group_assignments.json": "dbab24c2d96c1e021a90e22a0c2ccf6a7e409a2fa53b9ddc85d19f20274cb8ba",
+        "data/data-pilot-v2/intent-a-r2/metadata.json": "7e38d760ee0c3fd26832553779265615ea158163a1fae0c82ec96e90a00901dd",
+        "data/data-pilot-v2/intent-a-r2/validate.py": "ee6a252082d4efd354e3588489ee286c33d34546259121ead6ba66a3e33f6f3a",
+        "data/data-pilot-v2/intent-a-r2/validation_report.json": "67c356de6fb76d46c2f5f5d14e6ef4f3b6322367abe7b9bee4aabb90d525053d"
+      },
+      "label_basis": "teacher"
+    },
+    {
+      "task_family": "intent",
+      "metadata_path": "data/data-pilot-v2/intent-b-r2/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/intent-b/generate.py": "4b90ac43e2b7b7e8cb5b6efcb7626c29919f312d5d6ccfc71ef3417701cc6cb0",
+        "data/data-pilot-v2/intent-b/group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+        "data/data-pilot-v2/intent-b/metadata.json": "2db9e09ac189049d93f86ead8ec9f30f437f267d3b55d577107cfe0d9f311559",
+        "data/data-pilot-v2/intent-b/source_cases.txt": "3fbd9b5b32194f6c21110383a681626f756e0d9458131e8bdfd25946d4d58e31",
+        "data/data-pilot-v2/intent-b/validation_report.json": "706ef66a82290c0ebe4705d6cdd1b32025b15a5d786372f5d374a3d462f63b09",
+        "data/data-pilot-v2/intent-b-r2/apply_revision.py": "f654dca8303e4691805953d97f16117fc302a251412a47b1e7d3538b84e3734d",
+        "data/data-pilot-v2/intent-b-r2/authored_choices.txt": "a6881ef1b1cbbb5b658a138f1241b548b103e1ab4d83142001eb585873a6d6ab",
+        "data/data-pilot-v2/intent-b-r2/group_assignments.json": "95081b403116ef3ddf0f1124e673c036db7bfbf987afe44d054f8404c45f84ac",
+        "data/data-pilot-v2/intent-b-r2/metadata.json": "51537f546efc614fcdeb351c215f6a714c858cf9826a33856c49818df2f066ed",
+        "data/data-pilot-v2/intent-b-r2/source_mappings.json": "c9bf45a35bd428f49f55ec31d5503337529bfe563efcee5f89e639b6c4a5b254",
+        "data/data-pilot-v2/intent-b-r2/target_refinements.json": "f1c225992daf05ded95e71776e872dcea84f97f4fa695e47986d36efb3ab4366",
+        "data/data-pilot-v2/intent-b-r2/validation_report.json": "652717d9a265f25bfbd4b25b938dfc14c20f051be6e34abf5611c3e9ad8d71c0"
+      },
+      "label_basis": "teacher"
+    },
+    {
+      "task_family": "sentiment",
+      "metadata_path": "data/data-pilot-v2/sentiment-a/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/sentiment-a/generate.py": "8d4c8e9369a326455225b73587df52cf502d2c4f4bbc860f20db841763ac5939",
+        "data/data-pilot-v2/sentiment-a/group_assignments.json": "2f464d747cd5225578264d42e786958e460d819943027700271d44273efd9204",
+        "data/data-pilot-v2/sentiment-a/metadata.json": "5d96c4fe5798ea484e2a585a517f9276e016348f1ec1995649d347cb3f63d324",
+        "data/data-pilot-v2/sentiment-a/source_cases.txt": "cc4a44a921a2c19f3203dbbec05c8ec617d6c59b434acd34789326cf8cfdacb4",
+        "data/data-pilot-v2/sentiment-a/validation_report.json": "02d91d66a467c50bd11e2523607a0e6acffdd096a4f73e1dbcf12bbde93fc88f"
+      },
+      "label_basis": "teacher"
+    },
+    {
+      "task_family": "sentiment",
+      "metadata_path": "data/data-pilot-v2/sentiment-b-r2/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/sentiment-b/generate.py": "355504ae6a80a36b0aff898d38652ebdb06517bcd6b6d8fd4046abca730603bb",
+        "data/data-pilot-v2/sentiment-b/group_assignments.json": "0b1a24d06881e27dff29dfec59c7441c81198458eb7a6481e1fb38accc859c2d",
+        "data/data-pilot-v2/sentiment-b/metadata.json": "1ab10bd51520d1ea4f270b8b5e21b40ba666b2f5293a94347fd2caed0ca552a8",
+        "data/data-pilot-v2/sentiment-b/plan_groups.py": "6e0908d476a4637a08e44bcd312459de97dd979a501d973af86c6f60c8f2fee9",
+        "data/data-pilot-v2/sentiment-b/source_cases.txt": "a4d16aa593648d56dbf3972ba9ae42305e96b9a60ec7045e37e45651f913a6e8",
+        "data/data-pilot-v2/sentiment-b/validation_report.json": "b278edc6bf0601c27573551feea7fa7b0f4ea2b7c2939482e95437b15b86a49a",
+        "data/data-pilot-v2/sentiment-b-r2/group_assignments.json": "0b1a24d06881e27dff29dfec59c7441c81198458eb7a6481e1fb38accc859c2d",
+        "data/data-pilot-v2/sentiment-b-r2/metadata.json": "811e92d98ece0c40c4a09736dda9f1b263b690c65b0d0ae3029404c4ae68675a",
+        "data/data-pilot-v2/sentiment-b-r2/revise.py": "2662d2cdb10da8293cc54140858c54a444c1e38e7d4b2f8a39ba807accfad147",
+        "data/data-pilot-v2/sentiment-b-r2/revision.json": "3685f47eb2dd28214c6ea8a31210b10e593c3fa23d701dae6f267b360e56fcad"
+      },
+      "label_basis": "teacher"
+    },
+    {
+      "task_family": "rule_application",
+      "metadata_path": "data/data-pilot-v2/rule-a/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/rule-a/audit.py": "61ce55fc555d2e62bdf6345f2650331c4931befccde289cb4674522cb3f64ccd",
+        "data/data-pilot-v2/rule-a/audit_cases.jsonl": "11f39423a352a0bdaf25f85b9421e119aa495cbd00de82c69905d18594f8271f",
+        "data/data-pilot-v2/rule-a/author_cases.py": "229c7f233085022cf8c6c1e91ab02f56d7b0dd2c05f36d1fd488ad2f0a8551ec",
+        "data/data-pilot-v2/rule-a/finalize.py": "ab494f8d275ff6a74e90bf39b193c21499440855ea282919aff7db357060578b",
+        "data/data-pilot-v2/rule-a/generate.py": "ec296c9428632a5a5f39b4f724f09369d698046edbebec952998b60b8276c6ed",
+        "data/data-pilot-v2/rule-a/group_assignments.json": "24ce6eccbe50a103eb91d76f3acbc1ea6f03bac80bc54d9b87f7c9914180aa70",
+        "data/data-pilot-v2/rule-a/metadata.json": "132f716f5a1c3f9b82ea27ee813520dc48f44d8fe7472113d42f738325ef2af3",
+        "data/data-pilot-v2/rule-a/source_cases.jsonl": "75a0a757f71473f46b207272a2b02c6bbe74eabb81604c54edd762b801f5d85b",
+        "data/data-pilot-v2/rule-a/validation_report.json": "964d34e8022a0acfecacdf9b699f2a67d3af702d62c5eeb71cbfbeb73a920a8a"
+      },
+      "label_basis": "rule_verified"
+    },
+    {
+      "task_family": "rule_application",
+      "metadata_path": "data/data-pilot-v2/rule-b/metadata.json",
+      "teacher_alias": "openai/gpt-sol (immutable revision unavailable)",
+      "artifact_sha256": {
+        "data/data-pilot-v2/rule-b/audit.py": "c306991ec8e91d63e32ef7afe551efef6548dd690bea69854187cee4364e2914",
+        "data/data-pilot-v2/rule-b/audit_cases.jsonl": "209c175ef75fa221e95af8169e0899bdb4c66b3d6756403981adb67cbe8a0078",
+        "data/data-pilot-v2/rule-b/author.py": "e80df716a3b725717a0e48aed1e0f614c588a9bf6640bcb765b5ad557ee91cd1",
+        "data/data-pilot-v2/rule-b/authoring_cases.jsonl": "1e94023569036fb8fb2c4db1d3c71dd3bb4f705a15fce9fa88194d02c01b16ca",
+        "data/data-pilot-v2/rule-b/generate.py": "e5686935da7de5e26c11acc10976c60d67eb3bbd05f2744bcdca99a929cceca7",
+        "data/data-pilot-v2/rule-b/group_assignments.json": "8faf379756a21be82650cf37b8907c46c5cb181a049940e9952b081a2ba4bd5b",
+        "data/data-pilot-v2/rule-b/metadata.json": "b571d9ed92743cee9ea37c6dc00e6955fc275665cee5e2645a2d1a4c846758e8",
+        "data/data-pilot-v2/rule-b/validate.py": "9a45ed00ff9c2b59edd06a328b826e4115366b7fed793af9983d4cdf144bd862",
+        "data/data-pilot-v2/rule-b/validation_report.json": "e689768e55066e2b3e89d772be9e6ccb04c5ca17c1abc21cba3aba3155324675"
+      },
+      "label_basis": "rule_verified"
+    }
+  ],
+  "parent": {
+    "manifest": "data/data-pilot-v1/manifest.json",
+    "sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180",
+    "dataset_id": "data-pilot-v1",
+    "shards_preserved": 6
+  }
+}
