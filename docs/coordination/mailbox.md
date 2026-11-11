@@ -155,6 +155,17 @@ Check your inbox:
 - Before merging and before ending an assignment.
 - Roughly every minute while actively waiting and able to check.
 
+Publish completed assignments promptly through the mailbox with evidence, main
+commit, and disposition; do not delay delivery until an availability window ends.
+Follow the [bounded continuation policy](../owner-lifecycle.md#bounded-continuation-after-delivery):
+remain in the active owner turn for up to 30 idle minutes for authorized queued
+work or bounded in-scope peer requests. Only meaningful accepted work resets that
+window—not polls, acknowledgements, status notices, or duplicate requests. Final
+chat is for parking or a genuine blocker, not an automatic stop at each delivery.
+Explicit stop/transfer directions win, and fixed experiment deadlines still end
+observation; an availability tail must not extend claimed coverage. No background
+attention is promised after parking or termination of the owner turn.
+
 Read new messages, explicitly acknowledge them, and separately record outcomes.
 Do not interrupt a running job merely to meet a polling deadline. There is no
 background delivery, watcher, daemon, heartbeat, or wake-up tooling; finished
