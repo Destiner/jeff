@@ -4,8 +4,8 @@
   "scope": "Execution evidence only; original frozen P3, not M6; separate from P4/E6 and Research analysis",
   "artifact_root": "/Users/destiner/Code/jeff/artifacts",
   "evidence_root": "release/r6-order-20261111-01",
-  "packet_main_commit": "deb9c5b",
-  "independent_research_delivery": "da549dd3",
+  "packet_main_commit": "deb9c5b7e11ee5ed218aa802e83b0b288d5d6b1d",
+  "predictions_handoff_to_research": "da549dd3-c86d-4096-a55a-a6b0a72fe904",
   "grant_id": "ab6fcab8-bd4d-4105-9883-4187ab2629b9",
   "grant_returned": true,
   "summary": {

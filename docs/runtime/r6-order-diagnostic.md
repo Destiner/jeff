@@ -1,6 +1,6 @@
 # R6 frozen-P3 diagnostic execution
 
-Runtime completed Research's frozen diagnostic once, using original P3, **not M6-trained weights**. This records execution, identity and coverage only; Research analysis and independent predictions delivery (`da549dd3`) remain separate from P4/E6. Frozen packet main commit: `deb9c5b`. No shared Runtime code or Research runner was changed.
+Runtime completed Research's frozen diagnostic once, using original P3, **not M6-trained weights**. This records execution, identity and coverage only. Predictions were delivered to Research (`da549dd3`) for independent analysis, separate from P4/E6. Frozen packet main commit: `deb9c5b`. No shared Runtime code or Research runner was changed.
 
 ## Result and bounds
 
@@ -30,4 +30,4 @@ Original model: `Qwen/Qwen2.5-0.5B-Instruct`, revision `7ae557604adf67be50417f59
 
 ## Limits
 
-Fresh HOME/HF cache and local-only/offline flags are not OS network denial. Recorded load `0.5167036661878228 s` and first-forward `0.09682999970391393 s` are not cold-storage or comparative speed evidence. This task did not install dependencies, scan weights, access TRAIN source or reference/final/probe content, change defaults, assess quality/causes, or authorize another attempt. Packaging success is not inference portability evidence. Research analysis may proceed independently; parent reviews/integrates this report.
+Fresh HOME/HF cache and local-only/offline flags are not OS network denial. Recorded load `0.5167036661878228 s` and first-forward `0.09682999970391393 s` are not cold-storage or comparative speed evidence. The reporting step did not rescan weights or execute another model pass. Runtime did not install dependencies, open TRAIN source shards or reference/final/probe content, change defaults, assess quality/causes, or authorize another attempt. Packaging success is not inference portability evidence. Research analysis proceeds independently.
