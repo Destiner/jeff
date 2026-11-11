@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "evaluation-data-pilot-v1",
+  "shards": [
+    {
+      "path": "evaluation/data-pilot-v1/validation.jsonl",
+      "split": "validation",
+      "rows": 60,
+      "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+    }
+  ]
+}

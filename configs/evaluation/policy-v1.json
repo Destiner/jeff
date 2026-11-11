@@ -1,0 +1,16 @@
+{
+  "schema_version": "evaluation/0.1",
+  "probability_sum_absolute_tolerance": 0.000001,
+  "log_loss": "natural log, no clipping; zero target probability => positive infinity",
+  "tie_break": "first reference option",
+  "confidence_bins": 5,
+  "baseline_methods": [
+    "uniform",
+    "lexical"
+  ],
+  "baseline_lexical_temperature": 1,
+  "final_release": "checkpoint/configuration frozen before label-free export",
+  "reserved_final_family": "passage_entailment",
+  "paid_allocation_gbp": 0,
+  "note": "Descriptive policy record; runtime constants are not dynamically loaded from this file."
+}

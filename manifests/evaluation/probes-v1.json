@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "evaluation-probes-v1",
+  "shards": [
+    {
+      "path": "evaluation/probes-v1/validation.jsonl",
+      "split": "validation",
+      "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da",
+      "rows": 24
+    }
+  ]
+}

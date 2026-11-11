@@ -28,6 +28,25 @@ The integrator alone edits root files, `src/jeff/__init__.py`, shared contracts,
 
 Do not wait for a perfect dataset or a definitive architecture survey. A small real run is the critical path.
 
+## Lead decision LD002: research accepted; correct input loss first
+
+Research commits through `59f70cf` are integrated into main. Lead independently reran both research scripts on published non-final artifacts and built the integrated package. The pilot audit reproduces 45 question-truncated pairs at 128 tokens and zero at 256, covering 360 decisions / 1,412 pairs. Review artifacts: `artifacts/lead/research-review-FjOJ4y/`. The tiny 1/3 → 0/3 result also reproduces but cannot select an architecture.
+
+- **Model M2:** preserve the existing all-MiniLM architecture and all prior artifacts. Run one fresh `data-pilot-v1` comparison at `--max-length 256`, changing no other experimental factor: same base revision, initialization seed, data, epochs, learning rates, and batch size as `pilot-20261111-01`. Save the matching pre-training baseline, trained checkpoint, and fresh-process predictions on the same validation inputs. Publish artifacts for Evaluation; report once the bounded run and comparison are complete. The old 128-token result is retained with its truncation limitation, not overwritten.
+- **Evaluation:** use the same labels and examples for the corrected baseline/trained comparison, report per-family changes and reference-label provenance, and keep final evaluation untouched. This remains within the existing evaluation remit.
+- **Research R2:** next bounded task is a 30–45-minute generalization/shortcut audit of published `data-pilot-v1` train/validation data. Quantify independent source groups versus rows, template/near-duplicate overlap, answer-position or option-text shortcuts, and rule-mechanism coverage. Identify concrete limitations in what pilot gains can establish. Recommend at most three prioritized data improvements. Do not generate a replacement dataset or change labels, production code, shared contracts, or task-family reservations. Existing research-owned paths remain the only allowed edits; CPU-only, no ML jobs, no paid spend, no final-evaluation access.
+- **Architecture:** retained-head MS MARCO cross-encoder is a candidate for a later controlled experiment, not an adopted replacement. No Qwen implementation, new dependencies, or extra training runs are authorized by this decision.
+
+Model retains the local ML slot; Research uses lightweight CPU analysis only. All paid allocations remain zero. Workers incorporate the latest lead-approved main commit at a safe point and report completed tasks only, except genuine blockers.
+
+## Lead decision LD003: initial model implementation accepted
+
+Model's completed commit `2f85624` is accepted for integration, independently of its active M2 follow-up. Review used an immutable snapshot under `artifacts/lead/model-review-2f85624-uiv8mD/`, including a read-only training review. No new blocking defect was found. The known truncation limitation remains assigned to M2.
+
+Lead independently recomputed saved prediction metrics across all 60 validation rows: intent 6/20 → 20/20, sentiment 6/20 → 11/20, rules 7/20 → 5/20; aggregate 19/60 → 36/60 and log loss 1.378223 → 0.843401. Evidence is under `artifacts/lead/model-evaluation-2f85624-SEE0Za/`. This reproduced scoring, not training or checkpoint reload. The latter evidence remains Model's actual recorded executions.
+
+The integrated model package builds. Lead did not acquire the ML slot or start another model load/run while M2 was assigned. Model continues that existing task without a new assignment or duplicated run. Data/Evaluation code integration and a full integrated end-to-end run remain separate work; local checkpoints/data are not yet distributed with the repository.
+
 ## Initial task reservation
 
 - Training families: `intent`, `sentiment`, `rule_application`.
