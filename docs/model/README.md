@@ -6,6 +6,10 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
+## Latest comparison: frozen v2
+
+M4 completed one fresh-pretrained v2 run per supported architecture under matched controls, with saved baselines/checkpoints and fresh offline inference. Both improve on newly authored validation versus their own starts, but **neither passes the predeclared inherited/probe robustness gate**. Preserve M2/M3 and the new candidates; no default promotion. See [M4 results](m4-v2-results.md), [frozen plan](m4-v2-plan.md), and [run/provenance index](m4-v2-run.json).
+
 ## Formatting and probabilities
 
 For each candidate, encode this text pair:
@@ -73,7 +77,7 @@ These checks do not prove semantic label correctness or catch every paraphrase l
 
 Each immutable run contains:
 
-- `baseline/`: pretrained encoder plus **random initialized scoring head**, explicitly a weak baseline.
+- `baseline/`: all-MiniLM has a pretrained encoder plus an explicitly **random-initialized scoring head**, a weak baseline; MS MARCO instead retains its pretrained ranking head.
 - `checkpoint/`: trained encoder and head. Both checkpoint directories include safetensors, tokenizer files, exact original base revision, formatting, truncation, and probability settings.
 - `dataset-manifest.json`: frozen manifest; shards remain separately referenced by verified hashes.
 - `run.json`: arguments, seed, dataset identity, code revision/dirty flag and source hashes, environment/device, optimizer configuration, train losses, validation agreement/log loss, before/after parameter hashes and representative L2 changes, elapsed time, memory and spend.

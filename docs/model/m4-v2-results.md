@@ -58,6 +58,11 @@ robustness versus its corresponding v1-trained predecessor; no promotion.** Spec
   (tie-break baseline, not learned reasoning). These 80 cases represent 40 policy instances /
   10 mechanism groups; there is no seen-mechanism rule-validation comparator.
 
+All four M4 snapshots preserve selected option IDs on 300/300 complete reversal pairs
+(and on the 240-new/60-inherited subsets), plus 12/12 existing probe pairs, without ties.
+Largest E3-normalized probability movement across the four combined reports is about 1.96e-8.
+This is one-permutation consistency, not correctness or broad order invariance.
+
 ## Controls, reload and resources
 
 Both exact-tokenizer final-release audits cover all 1800 rows / 6848 fully serialized
@@ -77,7 +82,10 @@ MPS seed setting does not guarantee bitwise determinism.
 each with an initially empty unique HF_HOME: 12 M4 baseline/trained outputs across
 combined/reversed/probes (300/300/24 rows), plus four preserved M2/M3 new/reversed outputs
 (240 each). Existing inherited/probe M2/M3 predictions were reused, not rerun.
-Per-job receipts bind commands, inputs, outputs and checkpoint roles; E3 rehashed them.
+Per-job receipts bind commands, inputs, outputs and checkpoint paths/roles; E3 rehashed them.
+`R/checkpoint-inventory.json` pins 30 files across the four new snapshots **after inference**;
+it is not a pre-load hash attestation. `R/preserved-candidates-after.json` confirms all 39
+inventoried M2/M3 files remain byte-identical. Compact record: [m4-v2-run.json](m4-v2-run.json).
 Trainer `run.json` alone is not fresh-reload evidence. Reload process walls: 1.568–3.024 s,
 including startup/inference, not per-example latency.
 
@@ -110,7 +118,7 @@ curator. Same-alias author/reviewer, source/domain concentration and residual le
 shortcuts limit interpretation. Reused development sets, one seed and correlated groups prevent
 broad generalization or calibration claims. Changed data mixture **and updates** versus v1
 preclude broad data-only causality. Hash/group exclusion checks do not prove semantic isolation.
-Reserved final data stayed sealed; this documentation task did not load models or tokenizers.
+Reserved final data stayed sealed. No software tests or linters were run.
 
 One next recommendation: retain current candidates/default and, only if separately authorized,
 pre-register one bounded lower-head-LR comparison as suggested by Research R4, retaining these
