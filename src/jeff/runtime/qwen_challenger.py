@@ -6,7 +6,7 @@ python -m jeff.runtime.qwen_challenger predict --audit-dir AUDIT --model-dir MOD
     --output-dir NEW --device mps
 
 Inputs: {"schema_version":"p3.inputs.v1","datasets":[{"name":"validation",
-"path":"inputs.jsonl","sha256":"...","rows":300}, ...]} (exactly four suites).
+"path":"inputs.jsonl","sha256":"...","rows":300}, ...]} (exactly three suites).
 Paths are relative to the manifest. Local asset identity is an owner download
 attestation, not independently authenticated against the remote repository.
 Audit hashes weights but never loads them; place the complete pinned download
@@ -93,7 +93,8 @@ def configuration(path):
              "user_template": USER, "symbols": "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "device": "mps",
              "dtype": "float32", "batch_size": 1, "threads": 4, "temperature": 1.0,
              "startup_rows": 3, "maximum_run_seconds": 1200, "attention": "sdpa",
-             "use_cache": False, "logits_to_keep": 1}
+             "use_cache": False, "logits_to_keep": 1,
+             "max_cpu_rss_bytes": 8589934592, "max_mps_driver_bytes": 8589934592}
     require(all(cfg.get(k) == v for k, v in fixed.items()), "unsupported recipe controls")
     require(type(cfg["max_input_tokens"]) is int and 1 <= cfg["max_input_tokens"] <= 2048,
             "cap must be frozen at at most 2048 before prediction")
@@ -118,8 +119,8 @@ def read_inputs(path):
     manifest = load(path)
     require(set(manifest) == {"schema_version", "datasets"} and
             manifest["schema_version"] == "p3.inputs.v1", "input manifest schema")
-    require(isinstance(manifest["datasets"], list) and len(manifest["datasets"]) == 4,
-            "exactly four label-free development suites required")
+    require(isinstance(manifest["datasets"], list) and len(manifest["datasets"]) == 3,
+            "exactly three label-free development suites required")
     suites, names = [], set()
     for entry in manifest["datasets"]:
         require(set(entry) == {"name", "path", "sha256", "rows"}, "dataset entry fields")
@@ -238,6 +239,8 @@ def predict(args, receipt, start):
     current, suites = evidence(Path(audit["config_path"]), Path(audit["input_manifest_path"]), args.model_dir)
     require(current == audit["evidence"], "code/config/input/model/tokenization/environment changed since audit")
     cfg = current["config"]
+    require(args.device == cfg["device"], "device must match the pre-outcome frozen recipe")
+    require(not current["git_status"], "prediction requires the clean frozen code revision")
     receipt["suites"] = [{"name": name, "status": "not_started", "expected_rows": len(rows),
                          "written_rows": 0, "coverage": 0.0,
                          "expected_input_tokens": sum(len(p) for p, _ in encoded),
@@ -254,6 +257,12 @@ def predict(args, receipt, start):
 
     def deadline():
         require(time.monotonic() - start < cfg["maximum_run_seconds"], "maximum total run time exceeded")
+        rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        rss_bytes = rss if sys.platform == "darwin" else rss * 1024
+        require(rss_bytes <= cfg["max_cpu_rss_bytes"], "CPU lifetime RSS guard exceeded")
+        if args.device == "mps":
+            require(torch.mps.driver_allocated_memory() <= cfg["max_mps_driver_bytes"],
+                    "MPS driver allocation guard exceeded")
 
     def sync():
         if args.device == "mps":
@@ -262,7 +271,8 @@ def predict(args, receipt, start):
     deadline()
     load_start = time.monotonic()
     model = AutoModelForCausalLM.from_pretrained(str(args.model_dir), local_files_only=True,
-        trust_remote_code=False, torch_dtype=torch.float32, attn_implementation=cfg["attention"])
+        trust_remote_code=False, use_safetensors=True, torch_dtype=torch.float32,
+        attn_implementation=cfg["attention"])
     require("logits_to_keep" in inspect.signature(model.forward).parameters,
             "last-token-only projection unsupported; full-prompt logits prohibited")
     model.requires_grad_(False).eval().to(args.device)

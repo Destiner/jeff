@@ -13,6 +13,8 @@
   "temperature": 1.0,
   "startup_rows": 3,
   "maximum_run_seconds": 1200,
+  "max_cpu_rss_bytes": 8589934592,
+  "max_mps_driver_bytes": 8589934592,
   "attention": "sdpa",
   "use_cache": false,
   "logits_to_keep": 1,
