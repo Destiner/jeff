@@ -4,6 +4,7 @@
 !.env.example
 AGENTS.local.md
 .worktrees/
+/.coord/
 .scratch/
 .venv/
 __pycache__/

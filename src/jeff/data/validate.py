@@ -17,6 +17,11 @@ def normalized(text):
     return " ".join(re.findall(r"\w+", unicodedata.normalize("NFKC", text).casefold()))
 
 
+def canonical_text(text):
+    # Signs, brackets, case and internal spacing can be the rule's task data.
+    return unicodedata.normalize("NFC", text).strip()
+
+
 def load_json(text):
     def unique(pairs):
         result = {}
@@ -74,7 +79,7 @@ def row_errors(row, split):
             if isinstance(option.get("id"), str):
                 option_ids.append(option["id"])
             if isinstance(option.get("text"), str):
-                texts.append(normalized(option["text"]))
+                texts.append(canonical_text(option["text"]))
         if len(option_ids) != len(set(option_ids)):
             errors.append("duplicate option IDs")
         if len(texts) != len(set(texts)):
@@ -172,9 +177,9 @@ def validate(manifest_path, artifact_root):
         provenance[split + "/" + row["provenance"]["label_basis"]] += 1
         if len(row["options"]) > 6:
             warnings.append(row_id + ": more than six choices (valid contract, outside pilot target)")
-        context = (normalized(row["state"]), normalized(row["question"]))
-        content = context + (tuple(sorted(normalized(o["text"]) for o in row["options"])),)
-        target = normalized(row["options"][position]["text"])
+        context = (canonical_text(row["state"]), canonical_text(row["question"]))
+        content = context + (tuple(sorted(canonical_text(o["text"]) for o in row["options"])),)
+        target = canonical_text(row["options"][position]["text"])
         if content in exact:
             prior, prior_target = exact[content]
             errors.append(f"exact normalized input duplicate: {prior} / {row_id}")
@@ -206,7 +211,7 @@ def validate(manifest_path, artifact_root):
     report.update(valid=not errors, rows=len(rows), counts=dict(sorted(counts.items())),
                   groups=dict(sorted(group_counts.items())), option_counts=dict(sorted(options.items())),
                   target_positions_zero_based=dict(sorted(positions.items())), label_basis=dict(sorted(provenance.items())),
-                  duplicate_method="NFKC/casefold word-normalized full inputs, order-independent choices; state word-trigram Jaccard >=0.65; no embedding/semantic completeness claim",
+                  duplicate_method="Full-input NFC/outer-whitespace canonicalization preserving signs, brackets, case and internal spaces; order-independent choices. Heuristic state NFKC/casefold word-trigram Jaccard >=0.65; no semantic completeness claim",
                   likely_duplicate_counts=dict(Counter("cross_split" if p["cross_split"] else "within_group" if p["same_group"] else "cross_group_same_split" for p in report["likely_duplicates"])))
     return report
 

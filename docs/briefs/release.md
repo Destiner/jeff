@@ -17,7 +17,13 @@ Allowed tracked edits:
 
 Use unique immutable `artifacts/release/<id>/` outputs and `artifacts/handoffs/release/<id>.md` notes. Do not change Model's scorer/checkpoint format, trainer, Data/Evaluation code, labels, root packaging/lockfile, or shared contracts. Coordinate necessary changes with their owners. Root README changes can be proposed to the lead without blocking your owned documentation.
 
-## Initial mission P1
+## Current mission P2
+
+P1 below is completed and self-integrated at `900f5ef`; do not rerun its four macOS calls or replace its immutable bundles. Current assignment is the 30–45-minute Linux CPU installation follow-up in coordination. Resolve the CUDA-heavy dependency-export limitation using a separate pinned CPU recipe/support artifact. Demonstrate one existing M2 bundle on an already available local Linux/container runtime if possible, with a Model-approved runtime slot.
+
+No new container-engine/VM installation, remote-machine use, paid services, root dependency changes, or checkpoint-format changes are authorized. If the platform is unavailable, document the exact execution gap and prepared recipe rather than claiming Linux support. Existing macOS evidence remains valid only for its recorded platform. Publication/license uncertainties remain unresolved; do not upload artifacts or choose a project license.
+
+## Completed mission P1
 
 Deliver one reusable local checkpoint-export path plus an actual cold-start execution:
 
