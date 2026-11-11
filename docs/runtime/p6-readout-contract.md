@@ -24,7 +24,7 @@ Only v2 requests `output_loading_info=True` and requires all four diagnostic lis
 
 P6 requires the same300original +300reversed +24already-paired presentations, with the existing first3unscored startup rows: **627 attempted and completed model forwards**, no canary or second backbone pass. The existing template, option-ID mapping, conditional T1 softmax, FP32/MPS/SDPA, batch1/four threads, cap1024, no cache and last-token-only projection remain unchanged. Paired probes are not reversed again. Attempt counters increment immediately before the actual model call; failures do not grant a retry.
 
-The owner supervisor bounds each granted execution to TERM at300seconds and KILL after at most10seconds, including imports, repeated evidence validation, loading/proof/startup and scoring. Internal8GiB CPU lifetime-RSS and MPS-driver guards remain separate; their scopes overlap and must not be added. MPS observations are samples, not true peaks. Fresh HOME/cache and offline/local-only settings are not OS network denial or fully offline installation.
+The owner supervisor bounds each granted execution to TERM at300seconds and KILL after at most10seconds, including imports, repeated evidence validation, loading/proof/startup and scoring. Internal8GiB CPU lifetime-RSS and MPS-driver guards remain separate, with the activation's>=2GiB recommended MPS headroom guard; their scopes overlap and must not be added. MPS observations are samples, not true peaks. Fresh HOME/cache and offline/local-only settings are not OS network denial or fully offline installation.
 
 ## Interpretation and failure boundary
 

@@ -1,0 +1,362 @@
+{
+  "schema_version": "jeff.release.p6.v1",
+  "status": "fresh-process explicit v2 checkpoint inference complete; independent scoring owned by E8",
+  "forwards": {
+    "maximum": 627,
+    "expected_startup": 3,
+    "expected_suite_rows": [
+      300,
+      300,
+      24
+    ],
+    "attempted": 627,
+    "completed": 627
+  },
+  "strict_loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "readout_proof_sha256": "8e5706c2b3c458bb28fc84d6f956936c639fb1363a5aacd30f34895e7b6d8260",
+  "readout_proof_seconds": 1.4376032501459122,
+  "readout_cpu_storage": {
+    "input": {
+      "device": "cpu",
+      "dtype": "float32",
+      "shape": [
+        151936,
+        896
+      ],
+      "stride": [
+        896,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_token": 15950184352,
+      "storage_bytes": 544538624,
+      "tensor_bytes": 544538624
+    },
+    "output": {
+      "device": "cpu",
+      "dtype": "float32",
+      "shape": [
+        151936,
+        896
+      ],
+      "stride": [
+        896,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_token": 15405645728,
+      "storage_bytes": 544538624,
+      "tensor_bytes": 544538624
+    },
+    "input_output_disjoint": true,
+    "storage_identity_semantics": "disjoint CPU backing byte intervals"
+  },
+  "readout_mps_storage": {
+    "input": {
+      "device": "mps:0",
+      "dtype": "float32",
+      "shape": [
+        151936,
+        896
+      ],
+      "stride": [
+        896,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_token": 51756633600,
+      "storage_bytes": 544538624,
+      "tensor_bytes": 544538624
+    },
+    "output": {
+      "device": "mps:0",
+      "dtype": "float32",
+      "shape": [
+        151936,
+        896
+      ],
+      "stride": [
+        896,
+        1
+      ],
+      "storage_offset": 0,
+      "storage_token": 51745182528,
+      "storage_bytes": 544538624,
+      "tensor_bytes": 544538624
+    },
+    "input_output_disjoint": true,
+    "storage_identity_semantics": "distinct opaque allocator-owned MTLBuffer handles"
+  },
+  "executable_sources": {
+    "pyproject.toml": "b6569daecbe621d2dae3acab74106f649e85f5f105d38cc4af93b5de1440e5f5",
+    "uv.lock": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4",
+    "src/jeff/__init__.py": "e0c8689b12945c9a7aad1e6bbb98d9b08396bf45ae4308a6e9eea2d2afa4990c",
+    "src/jeff/runtime/__init__.py": "d818c71be90cc28efffd008b346c8857f8239a68fadf2882a4adb46e9c306314",
+    "src/jeff/model/__init__.py": "681669482af6adb4d80f58bafdae4e935f22787f7b17d828f512f9c4426678d6",
+    "src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+    "src/jeff/model/qwen_readout_proof.py": "bee847b66ce01450cba21e64e577d753de63f066af002ea60c3c396308928ce0",
+    "src/jeff/runtime/qwen_challenger.py": "e42d7420cb5eb66c451c450e029bc08d9ce792e8e1b956f9c7fe95a959639e43",
+    "src/jeff/runtime/qwen_checkpoint.py": "75467364b1baf41a94ebdb91ba0cf0603f2464f80de223024fb192abbfa19174",
+    "src/jeff/runtime/qwen_readout.py": "2ffcd43fdb8a065d6e4df07275ecff51c42a79f2443e30763632ea7923c808bc",
+    "src/jeff/runtime/qwen_safetensors.py": "7936d1eac9c51c4078105b3fbe172cf4d63f27fed78dd33cb86fc0cc00894448"
+  },
+  "reload_qualification": "Actual reloaded MPS identities/storage verified without forwards; producer frozen/optimizer/START/FINAL claims remain historical attestations.",
+  "comparison_gap": "No fresh small-head-versus-stock numeric comparison on every development input; exact reload identities plus producer same-hidden-state FINAL binding.",
+  "frozen_runtime_code_revision": "9eeef9cea87fbd0bda7700127e88db95c7b97f9a",
+  "runtime_source_sha256": "e42d7420cb5eb66c451c450e029bc08d9ce792e8e1b956f9c7fe95a959639e43",
+  "runtime_validator_source_sha256": "75467364b1baf41a94ebdb91ba0cf0603f2464f80de223024fb192abbfa19174",
+  "config_sha256": "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "trained_checkpoint_manifest_path": "/Users/destiner/Code/jeff/artifacts/model/m8-qwen-readout-20261111-01/training/checkpoint-manifest.json",
+  "trained_checkpoint_manifest_sha256": "d558079b06d77b0245dfcc239afbd505b532f54d7506bbd31bf5f29a40eba43d",
+  "checkpoint_id": "m8-qwen-readout-20261111-01/training-checkpoint",
+  "run_id": "m8-qwen-readout-20261111-01/training",
+  "kind": "trained",
+  "base_lineage": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "trained_weights": {
+    "sha256": "419f8f96205b3b2bd76f58727562e637a4830bc1f13aa12133a4a2589548f80a",
+    "bytes": 2520702368
+  },
+  "training_code_revision": "ab55ad5ddaec7843c21b1caada9dbccb6240b5d4",
+  "training_data_manifest_sha256": "d97e965b7332ec8ae933c1f5bbf261816fb0db47b2fc06b347b053aabd2066ac",
+  "training_recipe_sha256": "c8e19b351b3f45555c91702cbc22e84c8e36019c5332665cb772ce3730556f84",
+  "training_schedule_sha256": "7fa68f68c5cab98d23af8d9e9be8c305b74e30a588eb68eea6e98f783a2418e8",
+  "source_run_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m8-qwen-readout-20261111-01/training/receipt.json",
+    "sha256": "06f742a2bf8c3e2d6a33c9dd64bb8f02744f271e24f13f7289f021bc674542fa"
+  },
+  "environment": {
+    "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "packages": {
+      "torch": "2.15.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "validation": {
+    "scope": "Label-free output contract/identity validation only; no reference labels or quality scoring.",
+    "suites": [
+      {
+        "name": "v2-original",
+        "rows": 300,
+        "options": 1160,
+        "maximum_sum_error": 1.271828296012245e-7,
+        "input_sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+        "output_sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951"
+      },
+      {
+        "name": "v2-reversed",
+        "rows": 300,
+        "options": 1160,
+        "maximum_sum_error": 1.2665987014770508e-7,
+        "input_sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+        "output_sha256": "6e50885a7bb967c103defcc735d48a8c7292280654bd93aaf6d2a8b32cc2514d"
+      },
+      {
+        "name": "probes-paired",
+        "rows": 24,
+        "options": 70,
+        "maximum_sum_error": 1.1920928955078125e-7,
+        "input_sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+        "output_sha256": "db1b6b869f245a93f5a8a4cc0e80b0fcd4d3ceec3808d3f6959e0a723d32af7c"
+      }
+    ]
+  },
+  "presentations": 624,
+  "options": 2390,
+  "process_wall_seconds": 36.2459877920337,
+  "model_load_seconds": 0.6531154583208263,
+  "startup": {
+    "rows": 3,
+    "forward_seconds": [
+      0.09921333286911249,
+      0.044443709310144186,
+      0.04888020874932408
+    ],
+    "elapsed_seconds": 0.19848999986425042
+  },
+  "suite_wall_seconds": 31.0946934572421,
+  "suites": [
+    {
+      "name": "v2-original",
+      "status": "complete",
+      "expected_rows": 300,
+      "written_rows": 300,
+      "coverage": 1,
+      "expected_input_tokens": 39949,
+      "input_length_distribution": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "elapsed_seconds": 14.6608852497302,
+      "rows_per_second": 20.462611560616423,
+      "input_tokens_per_second": 2724.869564116885,
+      "latency_seconds": {
+        "count": 300,
+        "min": 0.03774112509563565,
+        "max": 0.07384754111990333,
+        "p50": 0.049206041265279055,
+        "p95": 0.056887374725192785
+      },
+      "output_sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951"
+    },
+    {
+      "name": "v2-reversed",
+      "status": "complete",
+      "expected_rows": 300,
+      "written_rows": 300,
+      "coverage": 1,
+      "expected_input_tokens": 39949,
+      "input_length_distribution": {
+        "count": 300,
+        "min": 94,
+        "max": 220,
+        "p50": 133,
+        "p95": 171
+      },
+      "input_tokens": 39949,
+      "elapsed_seconds": 15.328758374787867,
+      "rows_per_second": 19.571056746085063,
+      "input_tokens_per_second": 2606.1471531645075,
+      "latency_seconds": {
+        "count": 300,
+        "min": 0.04025041591376066,
+        "max": 0.07407662505283952,
+        "p50": 0.05166079103946686,
+        "p95": 0.05968866590410471
+      },
+      "output_sha256": "6e50885a7bb967c103defcc735d48a8c7292280654bd93aaf6d2a8b32cc2514d"
+    },
+    {
+      "name": "probes-paired",
+      "status": "complete",
+      "expected_rows": 24,
+      "written_rows": 24,
+      "coverage": 1,
+      "expected_input_tokens": 2638,
+      "input_length_distribution": {
+        "count": 24,
+        "min": 98,
+        "max": 124,
+        "p50": 107,
+        "p95": 124
+      },
+      "input_tokens": 2638,
+      "elapsed_seconds": 1.1050498327240348,
+      "rows_per_second": 21.718477564797336,
+      "input_tokens_per_second": 2387.2226589973075,
+      "latency_seconds": {
+        "count": 24,
+        "min": 0.04318049969151616,
+        "max": 0.047704166267067194,
+        "p50": 0.04478658316656947,
+        "p95": 0.047683625016361475
+      },
+      "output_sha256": "db1b6b869f245a93f5a8a4cc0e80b0fcd4d3ceec3808d3f6959e0a723d32af7c"
+    }
+  ],
+  "cpu_lifetime_maxrss_bytes": 484114432,
+  "native_time_maximum_rss_bytes": 501563392,
+  "mps_observed_samples": [
+    {
+      "stage": "after_load",
+      "current_allocated_bytes": 2567200512,
+      "driver_allocated_bytes": 2760327168
+    },
+    {
+      "stage": "after_readout_proof",
+      "current_allocated_bytes": 2567200512,
+      "driver_allocated_bytes": 2760572928
+    },
+    {
+      "stage": "after_startup",
+      "current_allocated_bytes": 2567200512,
+      "driver_allocated_bytes": 2768961536
+    },
+    {
+      "stage": "end",
+      "current_allocated_bytes": 2567200512,
+      "driver_allocated_bytes": 2768961536
+    },
+    {
+      "stage": "process_end",
+      "current_allocated_bytes": 0,
+      "driver_allocated_bytes": 2768961536
+    }
+  ],
+  "memory_qualification": "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory; native process footprint is separate OS accounting, not a true MPS/unified-memory peak; do not sum overlapping metrics.",
+  "completed_at": "2026-11-11T22:24:36.105443+00:00",
+  "additional_spend_gbp": 0,
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01",
+  "artifacts": {
+    "audit/audit.json": {
+      "bytes": 633663,
+      "sha256": "968a709b472d1e492fae81a19f30ae5fee2fe86231a5edf9f347b760cbd8e219"
+    },
+    "run/receipt.json": {
+      "bytes": 769922,
+      "sha256": "c9171efb12e6c6501352a12fe16c20415c83b499f2b20c823030e29b5183e610"
+    },
+    "process-invocation.json": {
+      "bytes": 1908,
+      "sha256": "c1030475a404446a2bbc9a556f36cc8dac97b017ce1286be2b62124ca6ae1509"
+    },
+    "process-receipt.json": {
+      "bytes": 2098,
+      "sha256": "086cd85bb670ee5914c0dd11926c6d06d6980667569f415afa75241e49f2e207"
+    },
+    "process.stderr.log": {
+      "bytes": 1235,
+      "sha256": "98144dd315fad1b3bbd3c1e27a09f304aa9c08bd039697341d48b450eb68abc3"
+    },
+    "launch.py": {
+      "bytes": 4764,
+      "sha256": "be94c524c0c273adf4c3af57d4e6b74941052389a6d752ef614bc871b03459f1"
+    },
+    "run/v2-original.jsonl": {
+      "bytes": 105824,
+      "sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951"
+    },
+    "run/v2-reversed.jsonl": {
+      "bytes": 112787,
+      "sha256": "6e50885a7bb967c103defcc735d48a8c7292280654bd93aaf6d2a8b32cc2514d"
+    },
+    "run/probes-paired.jsonl": {
+      "bytes": 6246,
+      "sha256": "db1b6b869f245a93f5a8a4cc0e80b0fcd4d3ceec3808d3f6959e0a723d32af7c"
+    }
+  },
+  "macos_peak_process_footprint_bytes": 3145516232,
+  "decisions_per_second": 20.067732806501343,
+  "preparation_main_commit": "9b2ecf60a5b78a8e5b6473ab8bcc6f519c857d62",
+  "execution_commit": "9eeef9cea87fbd0bda7700127e88db95c7b97f9a",
+  "reservation_id": "da3eabb7-53fe-4f23-93b9-9dbbbaa53bd8",
+  "activation_id": "29d92b09-e22f-4db6-a6d5-5724b4a341c0",
+  "evaluation_delivery_id": "0cff1986-4371-491c-9dc9-761e57c017f8",
+  "slot_return_id": "c42507ca-87c2-4d90-9169-7273344d68fd",
+  "started_at": "2026-11-11T22:23:59.859099+00:00",
+  "minimum_observed_recommended_headroom_bytes": 16300703744,
+  "recommended_headroom_qualification": "Sampled recommended MPS maximum minus driver allocation; not physical system free memory.",
+  "outcome": "Fresh reload and full coverage verified; independent E8 quality interpretation pending at delivery.",
+  "limitations": [
+    "No fresh small-head-versus-stock numeric comparison on every development input; exact reload identities plus producer same-hidden-state FINAL binding.",
+    "Actual reloaded MPS identities/storage verified without forwards; producer frozen/optimizer/START/FINAL claims remain historical attestations.",
+    "CPU process-lifetime ru_maxrss; MPS observed samples and their maxima are NOT peak memory; native process footprint is separate OS accounting, not a true MPS/unified-memory peak; do not sum overlapping metrics.",
+    "No OS network denial, cache flush, mapping trace, Linux execution, fully offline installation, speedup or default promotion claim."
+  ]
+}
