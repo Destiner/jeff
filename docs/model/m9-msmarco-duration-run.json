@@ -1,0 +1,590 @@
+{
+  "schema_version": "m9.publication-index.v1",
+  "scope": "Docs-only postrun publication; Model/P7 complete, independent E9 quality pending; no new execution or scoring",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01",
+  "evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/checkpoint-ready.json",
+      "sha256": "75efbf3b4925b3d7464a225d1adf83f6e836e7374b8285857dbf96b224e12424"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/freeze-context.json",
+      "sha256": "8525aee08b9868561b218cbc79dc2f9ab0e8ea910b3972e23a8dc2242a3e8867"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/freeze.json",
+      "sha256": "10afa6aad06c0c88350b139b0862f048c877313f6d530fb1e7d5496c2da3affc"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/branch.json",
+      "sha256": "703572a6c86d446495f3fc7a49fc7fdcf7cb609015025d96e395fd2cd38d3135"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/initial-fit-statistics.json",
+      "sha256": "bb16e9a4623e4ec19dbc23c85a0dec5c813490232a1e39c66f8f4d5edae1e0cd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/final-fit-statistics.json",
+      "sha256": "ff38cd82bf54be1397dc5b7c04c25a38e5e49f52816a62db40411f9292e2ae98"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/R9/first-look.md",
+      "sha256": "6f74b5e6af0d80d6eb803406cea40f5db82fc9981de3e429c33d5aaeeda9d7fd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/R9/artifact-review.json",
+      "sha256": "254b2448b0e83d20413d069d2b74bbd50af4df20d7db58a31ed966aa01db5ff5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/R9/artifact-review.md",
+      "sha256": "269ba27f80e83b9078a6732601a1f7bd1f0461bdfef8cfec854c75b61b29f88d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/training/run.json",
+      "sha256": "d50013f9236c69ae47d0b5212a0f607ae461c8bd92a28e25cc2a1d9a162067ee"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-inputs.jsonl",
+      "sha256": "526db177b4d90056534a1dc08044fd2c78fa3c4c6bd175b309046f3b78abd593"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-reference.jsonl",
+      "sha256": "f65d681588e3af9769b93d9fa6f3171f0fe4a45c59ba5f2ee4c15fd7f6a5b5f8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-minilm-process.json",
+      "sha256": "a206b53be863431e41f5e9597bcd5cea743ecbb65f9b8c1ccbd4e4293ae4c0aa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-minilm-invocation.json",
+      "sha256": "4fe949c9587736ff7f2199bf976550d26ab9c3f9a010bfe4d2347c3e2ecb4ab8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-msmarco-process.json",
+      "sha256": "87d85f6cc94f8e0f7e37e489b4a1d5850627b524eb798d644e7727a55b97a203"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-msmarco-invocation.json",
+      "sha256": "d0b480608917773119f825741cb2f187463442f0ef1eb1b80554f24c78687651"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-process.json",
+      "sha256": "83e7a42acc041ff95331e8d0152d2b300ad2960897231de495e7d9d3ff09098b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-invocation.json",
+      "sha256": "6cdb919ddf55329f6e537022194132dc4958114f89ea598e1e6111ddcb88d344"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-final-process.json",
+      "sha256": "bf8d4f4bd257763e0e395d09458c2eb5719ec46b55d4bf791627b8e6441ce718"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-final-invocation.json",
+      "sha256": "59ce9bd04dd07dac774ac1c396b61bc5346725d463e55338ec577ee7389fed6f"
+    }
+  ],
+  "source": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "b072c8ba7a4e411b73d9efa8a9062793f016545c",
+    "dirty": false,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "8519792d1d42fad471e1456d6671e75a9ac1a2d2a2190b2cc0d56d265cec31ed",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "fa68b1bab848d9cab4a9ed467420c347b0bb9d17069c82a5bd0ef3ee8648cae6",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/cross_encoder.py": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481"
+    }
+  },
+  "checkpoint": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/training/checkpoint",
+    "format": "unchanged existing encoder checkpoint; this file is an inventory/handoff, not a new loader contract",
+    "files": {
+      "checkpoint.json": {
+        "sha256": "09c74c0374cbd46e97c608e7da8c6eb201f2f5b95370c2e347ca42320658c164",
+        "bytes": 708116
+      },
+      "encoder/config.json": {
+        "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+        "bytes": 787
+      },
+      "encoder/model.safetensors": {
+        "sha256": "38908e2ce25cb02ed59f752e42fcc6dd5e67134fe8f98fb1297c40900fdcc255",
+        "bytes": 90866412
+      },
+      "tokenizer/special_tokens_map.json": {
+        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+        "bytes": 695
+      },
+      "tokenizer/tokenizer.json": {
+        "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+        "bytes": 711649
+      },
+      "tokenizer/tokenizer_config.json": {
+        "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0",
+        "bytes": 1272
+      },
+      "tokenizer/vocab.txt": {
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+        "bytes": 231508
+      }
+    }
+  },
+  "recipe": {
+    "config": {
+      "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+      "output_dir": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/training",
+      "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "architecture": "retained_cross_encoder",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "device": "mps",
+      "epochs": 12,
+      "batch_size": 4,
+      "learning_rate": 2e-05,
+      "head_learning_rate": 0.0005,
+      "max_length": 256,
+      "seed": 42,
+      "max_steps": 4500,
+      "threads": 4,
+      "m9_resource_guards": true,
+      "m9_initial_run": "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/run.json",
+      "m9_initial_run_sha256": "0e10cf02f38ce81c655f6e304eea2e1bd12f75bf166142e48955075143ad6f77"
+    },
+    "optimizer": {
+      "name": "AdamW",
+      "backbone_learning_rate": 2e-05,
+      "head_learning_rate": 0.0005,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "full_backbone_finetuning": true,
+      "backbone_parameter_count": 22713216,
+      "head_parameter_count": 385
+    },
+    "gradient_clipping": false,
+    "scheduler": null,
+    "duration_change": {
+      "epochs": [
+        3,
+        12
+      ],
+      "updates": [
+        1125,
+        4500
+      ],
+      "presentations": [
+        4500,
+        18000
+      ]
+    },
+    "fresh_original_base_not_m4_resume": true,
+    "shuffle": "Original construction retained; not independently replayed",
+    "attempts": 1,
+    "rescues": 0
+  },
+  "branch": {
+    "threshold": "MS MARCO sentiment OR rules <450/500",
+    "condition_met": true,
+    "qualification": "TRAIN diagnostic not product quality bar"
+  },
+  "fit": {
+    "m4_minilm": {
+      "intent": {
+        "count": 500,
+        "agreements": 497,
+        "mean_ce_from_saved_probabilities": 0.024200209160158137,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "overall": {
+        "count": 1500,
+        "agreements": 1083,
+        "mean_ce_from_saved_probabilities": 0.6662501787096631,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 348,
+        "mean_ce_from_saved_probabilities": 0.8145035316110666,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 238,
+        "mean_ce_from_saved_probabilities": 1.1600467953577642,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      }
+    },
+    "m4_msmarco": {
+      "intent": {
+        "count": 500,
+        "agreements": 499,
+        "mean_ce_from_saved_probabilities": 0.018850714496087065,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "overall": {
+        "count": 1500,
+        "agreements": 985,
+        "mean_ce_from_saved_probabilities": 0.7260234476360354,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 301,
+        "mean_ce_from_saved_probabilities": 0.9214850444612066,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 185,
+        "mean_ce_from_saved_probabilities": 1.2377345839508127,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      }
+    },
+    "m9_msmarco": {
+      "intent": {
+        "count": 500,
+        "agreements": 500,
+        "mean_ce_from_saved_probabilities": 0.00035738032749052333,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "overall": {
+        "count": 1500,
+        "agreements": 1314,
+        "mean_ce_from_saved_probabilities": 0.28905732895274766,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 500,
+        "mean_ce_from_saved_probabilities": 0.006220119521202806,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 314,
+        "mean_ce_from_saved_probabilities": 0.8605944870095498,
+        "zero_target_probability_rows": 0,
+        "top_ties": 0
+      }
+    }
+  },
+  "same_id_change": {
+    "gains": 361,
+    "losses": 32,
+    "choice_changes": 434,
+    "all_losses_family": "rule_application"
+  },
+  "saved_vector_review": {
+    "vectors": 4500,
+    "identity_options_targets_match": true,
+    "finite_positive_normalized": true,
+    "strict_maxima": true,
+    "normalization_absolute_tolerance": 1e-06,
+    "statistics_absolute_tolerance": 1e-12,
+    "ce": "Mean -ln(saved target probability), no clipping/renormalization",
+    "position_grouping": "family x arity, population SD denominator N; no pooling arities",
+    "details": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/R9/artifact-review.json",
+      "sha256": "254b2448b0e83d20413d069d2b74bbd50af4df20d7db58a31ed966aa01db5ff5"
+    }
+  },
+  "training_summary": {
+    "steps": 4500,
+    "examples_seen": 18000,
+    "epochs_completed": 12,
+    "stopped_by_max_steps": true,
+    "online_loss_entries": 4500,
+    "online_losses_finite_reviewed": true,
+    "complete_epoch_records": 12,
+    "initial_hashes_matching_m4_metadata": 105,
+    "changed_hashes_in_metadata": 105,
+    "qualification": "Historical training attestations, not independent tensor/update replay; first-update marker precedes step"
+  },
+  "intrinsic_validation": {
+    "validation_before": {
+      "count": 300,
+      "loss": 1.052229678207077,
+      "top1_target_agreement": 0.43,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    },
+    "validation_after": {
+      "count": 300,
+      "loss": 0.694205556895237,
+      "top1_target_agreement": 0.6933333333333334,
+      "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."
+    }
+  },
+  "validation_qualification": "Unchanged original 300 validation, not selector or independent E9",
+  "processes": {
+    "fit-minilm": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--extra",
+        "model",
+        "python",
+        "-B",
+        "-m",
+        "jeff.model.predict",
+        "--checkpoint",
+        "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/minilm/checkpoint",
+        "--input",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-inputs.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-minilm.jsonl",
+        "--device",
+        "mps",
+        "--batch-size",
+        "4",
+        "--m9-resource-guards"
+      ],
+      "automatic_retry": false,
+      "success": true,
+      "returncode": 0,
+      "timeout": false,
+      "process_wall_seconds": 6.989023332949728,
+      "process_group_absent": true,
+      "max_sampled_process_rss_bytes": 493273088
+    },
+    "fit-msmarco": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--extra",
+        "model",
+        "python",
+        "-B",
+        "-m",
+        "jeff.model.predict",
+        "--checkpoint",
+        "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/checkpoint",
+        "--input",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-inputs.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-msmarco.jsonl",
+        "--device",
+        "mps",
+        "--batch-size",
+        "4",
+        "--m9-resource-guards"
+      ],
+      "automatic_retry": false,
+      "success": true,
+      "returncode": 0,
+      "timeout": false,
+      "process_wall_seconds": 6.2620470421388745,
+      "process_group_absent": true,
+      "max_sampled_process_rss_bytes": 492339200
+    },
+    "train": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--extra",
+        "model",
+        "python",
+        "-B",
+        "-m",
+        "jeff.training.train",
+        "--dataset-manifest",
+        "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v2/manifest.json",
+        "--output-dir",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/training",
+        "--model-id",
+        "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "--architecture",
+        "retained_cross_encoder",
+        "--revision",
+        "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "--device",
+        "mps",
+        "--epochs",
+        "12",
+        "--batch-size",
+        "4",
+        "--learning-rate",
+        "2e-05",
+        "--head-learning-rate",
+        "0.0005",
+        "--max-length",
+        "256",
+        "--seed",
+        "42",
+        "--max-steps",
+        "4500",
+        "--threads",
+        "4",
+        "--m9-resource-guards",
+        "--m9-initial-run",
+        "/Users/destiner/Code/jeff/artifacts/model/m4-v2-20261111-01/msmarco/run.json",
+        "--m9-initial-run-sha256",
+        "0e10cf02f38ce81c655f6e304eea2e1bd12f75bf166142e48955075143ad6f77"
+      ],
+      "automatic_retry": false,
+      "success": true,
+      "returncode": 0,
+      "timeout": false,
+      "process_wall_seconds": 292.3927754997276,
+      "process_group_absent": true,
+      "max_sampled_process_rss_bytes": 2525675520
+    },
+    "fit-final": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "--extra",
+        "model",
+        "python",
+        "-B",
+        "-m",
+        "jeff.model.predict",
+        "--checkpoint",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/training/checkpoint",
+        "--input",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/train-inputs.jsonl",
+        "--output",
+        "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/fit-final.jsonl",
+        "--device",
+        "mps",
+        "--batch-size",
+        "4",
+        "--m9-resource-guards"
+      ],
+      "automatic_retry": false,
+      "success": true,
+      "returncode": 0,
+      "timeout": false,
+      "process_wall_seconds": 6.316124500241131,
+      "process_group_absent": true,
+      "max_sampled_process_rss_bytes": 493191168
+    }
+  },
+  "aggregate_model_ml_seconds": 311.9599703750573,
+  "aggregate_model_and_p7_ml_seconds": 316.05845020804554,
+  "unused_aggregate_seconds": 883.9415497919545,
+  "resource_qualification": "External max_sampled_process_rss_bytes is sampled per-process RSS, not R9 derived tree sum or physical usage. Internal lifetime HWM and sampled driver/headroom differ in scope; strict guards do not guarantee continuous peaks.",
+  "processes_and_groups_absent": true,
+  "unchanged_frozen_pins": 73,
+  "preparation": {
+    "started_at": "2026-11-11T22:11:57Z",
+    "first_fit": "2026-11-11T22:51:58Z",
+    "seconds": 2401,
+    "bound_seconds": 2700,
+    "implementation_window_end": "2026-11-11T22:56:57Z"
+  },
+  "p7": {
+    "status": "complete_verified_closed",
+    "original_start_by": "2026-11-11T23:12:00Z",
+    "original_disposition": "Missed before ANY ML/binding; preflight-unstarted preserved",
+    "renewed_handoff": "2026-11-11T23:15:00Z",
+    "renewed_start_by": "2026-11-11T23:30:00Z",
+    "reservation": "c00b7ab7-78f1-484d-a4fe-e6e05a099f86",
+    "reservation_consumed": true,
+    "decisions": 624,
+    "batches": 156,
+    "batch_size": 4,
+    "threads": 4,
+    "startup_or_canary": 0,
+    "aggregate_cap_seconds": 1200,
+    "actual_return": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m9-msmarco-duration-20261111-01/p7-return.json",
+      "sha256": "651f85c614610f2a662b6ae2ab9f74cf26de13e9ba0155062b044c38738bdb2c"
+    },
+    "maximum_seconds": 120,
+    "process_wall_seconds": 4.098479832988232,
+    "evidence": {
+      "schema_version": "m9.p7-return.v1",
+      "status": "verified and closed",
+      "checked_at": "2026-11-11T23:21:21.883919+00:00",
+      "reservation": "c00b7ab7-78f1-484d-a4fe-e6e05a099f86",
+      "renewed_activation": "9d8031ae-5960-4daa-add3-a48c8c9bee9d",
+      "original_activation": "112718ad-c5ec-4ea1-999f-ac1f53415656",
+      "process": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/process-receipt.json",
+        "sha256": "73effd842dc46a3760b2ab45eec96f1a585b9557f719647e66833698eb4b3aba"
+      },
+      "run_receipt": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/receipt.json",
+        "sha256": "5ffcec25d221440aa8b14d1c7e85ea4577f44627842e82c7370863884ddae8c6"
+      },
+      "binding": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/binding.json",
+        "sha256": "a49a0934ea45febea4817a1a602ca6391d608bfe518d6a39ae0125ab48224f69"
+      },
+      "delivery_summary": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/delivery-summary.json",
+        "sha256": "ee9730a9d3165348e68d07c9327143d483b3dea6876c60a4a474bdccbfb2313e"
+      },
+      "expired_unstarted_preflight": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/preflight-unstarted.json",
+        "sha256": "fe8f7d9b6c698d16ab975b1af36f14a3b0c4b080cfc52c83b6c55d6994fee935"
+      },
+      "outputs": [
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+          "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+          "rows": 300
+        },
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-reversed.jsonl",
+          "sha256": "20237f96c1c1e2bccb819029e7a262ee476a03bb92f14ae843ca4da48d3eb5f7",
+          "rows": 300
+        },
+        {
+          "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/probes-paired.jsonl",
+          "sha256": "b5fcb19fa66f0145ca5e497856d158e779b373e7faaf7361319705c36e02ceba",
+          "rows": 24
+        }
+      ],
+      "processes_and_group_absent": true,
+      "process_wall_seconds": 4.098479832988232,
+      "model_ml_seconds": 311.9599703750573,
+      "total_model_and_p7_ml_seconds": 316.05845020804554,
+      "unused_aggregate_seconds": 883.9415497919545,
+      "batch_size": 4,
+      "attempted_batches": 156,
+      "completed_batches": 156,
+      "decisions": 624,
+      "startup_or_canary": 0,
+      "source_revision": "b072c8ba7a4e411b73d9efa8a9062793f016545c",
+      "memory": {
+        "lifetime_peak_rss_bytes": 499187712,
+        "max_sampled_driver_bytes": 1108017152,
+        "minimum_sampled_headroom_bytes": 17961648128,
+        "samples": 317
+      },
+      "qualification": "CPU metadata/hash/coverage closure, not held-out scoring or independent tensor/update replay. Unused budget does not authorize extra work."
+    }
+  },
+  "e9": {
+    "status": "independent_quality_pending"
+  },
+  "costs": {
+    "currency": "GBP",
+    "additional_spend": 0,
+    "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."
+  },
+  "limitations": [
+    "No promotion/significance/calibration/architectural-capacity inference",
+    "TRAIN supplied-target agreement is not held-out correctness",
+    "Incomplete rule fitting and all 32 rule losses remain material",
+    "Existing seven-file encoder contract unchanged"
+  ]
+}

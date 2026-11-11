@@ -6,7 +6,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest executed contrast: frozen-base Qwen readout
+## Latest fit diagnostic: fresh MS MARCO duration contrast
+
+M9 first measured both preserved M4 encoders on full TRAIN, then activated the predeclared fresh-original-base 12-epoch MS MARCO arm. TRAIN agreement improves 985 → 1,314/1,500, CE 0.726023 → 0.2890573; rules remain incomplete at 314/500, including 32 lost prior agreements. P7 fresh execution is complete and its slot closed; independent E9 quality is **pending**; no promotion or architectural-capacity inference. See [M9 results](m9-msmarco-duration-results.md) and [pinned run index](m9-msmarco-duration-run.json).
+
+## Prior executed contrast: frozen-base Qwen readout
 
 M8 completed one 1,500-presentation/375-update six-row-readout run: TRAIN teacher agreement 805 → 804 and CE 1.357724 → 1.332200. P6 strict fresh reload completed (627 forwards including 3 startup rows); **independent E8 outcome remains PENDING**, not a held-out quality claim or default promotion. See [M8 results](m8-qwen-readout-results.md) and [pinned run index / positional appendix](m8-qwen-readout-run.json). The [readiness note](m8-readout-readiness.md) is preserved as a historical assessment, preceding execution under the lead grant.
 
