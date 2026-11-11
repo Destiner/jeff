@@ -1,8 +1,8 @@
-# M7: lower-LR TRAIN-fit results
+# M7: lower-LR results — independent E7 outcome is mixed
 
 M7 completed its **one authorized full training attempt** on 2026-11-11 at 17:11:09.986592 UTC: 1,500 training presentations, 375 AdamW updates, no extra backwards, wrapper exit 0 and no timeout. Aggregate deterministic TRAIN agreement improved from 805 to 1,130/1,500 and CE from 1.357724 to 0.530299. Intent and sentiment improved; rule agreement regressed and 472/500 final rule predictions selected input position 0.
 
-**This is TRAIN fitting, not an end-to-end learning or held-out transfer claim.** Runtime P5 completed the one fresh-process 624-presentation reload/inference pass; Evaluation E7's independent held-out comparison remains pending in this report. No promotion, retry or default change follows from successful execution or these TRAIN results.
+**TRAIN fitting and development transfer are separate evidence.** Runtime P5 completed the one fresh-process 624-presentation reload/inference pass; independent [E7](../evaluation/e7-low-lr-learning.md) now reports a **mixed** outcome against original P3, failed M6 and retained encoders. No promotion, retry or default change follows.
 
 ## Controlled execution
 
@@ -47,7 +47,7 @@ Wrapper wall time was **738.520718 s** (16:58:51.463597–17:11:09.986592 UTC); 
 
 CPU lifetime high-water RSS was 3,380,641,792 bytes. Maximum sampled MPS current allocation was 8,740,772,096 bytes; maximum sampled MPS driver allocation was 11,861,164,032 bytes. Minimum sampled recommended-working-set headroom was 7,208,501,248 bytes. MPS samples are **not peaks**. CPU lifetime RSS and MPS allocations are overlapping, nonadditive scopes: never sum them as total memory. The run retained separate 16 GiB CPU-RSS / MPS-driver limits and at least 2 GiB recommended headroom; samples and phase guard records do not guarantee unsampled peaks. Process metadata, sampling stages and exact timings are retained in the evidence index and source artifacts. Additional actual/pending spend: £0.
 
-## Saved checkpoint and next evidence
+## Saved checkpoint and reload evidence
 
 Artifact root: `/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01/`.
 
@@ -65,4 +65,23 @@ A separate fresh CPU-only artifact reviewer approved 52 checks and 56 streaming 
 
 P5 completed exactly one offline fresh-process 300 original + 300 reversed + 24 already-paired pass, with three separate fixed startup rows, at 17:18:29.486849–17:19:08.558254 UTC: exit 0, external 39.071046 s, 624 predictions / 2,390 probabilities. Model checked the published output hashes, unique IDs/counts and successful receipts and confirmed wrapper/child 22652/22653 absent. The bounded grant is closed; there was no duplicate inference. Artifact `p5-return.json` (SHA256 `30b4f58e8bcdfba45a3a4f0c1912ef8668a34edb722f4d111c75859a5697b963`) links the three outputs and actual process receipt under `artifacts/release/p5-m7-20261111-01/`; Runtime owns its fuller reload/resource evidence.
 
-See the [machine-readable run index](m7-qwen-low-lr-run.json). E7 must compare original P3 first, failed M6 separately, and retained encoders on the frozen units, proper scores, ties/stability, rule both-order success and family/source retention. Beating failed M6 alone is insufficient. No new cases, protected final access, calibration/significance claim or automatic promotion is authorized here.
+See the [machine-readable run index](m7-qwen-low-lr-run.json) for original execution evidence and the independent publication pins below.
+
+## Independent E7: gains with persistent rule failure
+
+The authoritative [E7 report](../evaluation/e7-low-lr-learning.md) and [evidence manifest](../../manifests/evaluation/e7-m7-report-v1.json) were published by `ac9046ba9496918f38fedf7cceb396f6b0d36162` and integrated on main at `52d277465b16cd0c0c57117ed2de499049f4ea0f`. This follow-through reads existing public aggregates; it adds no inference or scoring.
+
+| Population | Order | Agreement, P3 → M7 | NLL, P3 → M7 | Summed Brier, P3 → M7 |
+| --- | --- | --- | --- | --- |
+| Inherited (60 cases / 12 source groups) | Original | 35 → 45/60 | 1.194707 → 0.576872 | 0.599128 → 0.314785 |
+| Inherited | Reversed | 34 → 44/60 | 0.966733 → 0.552224 | 0.537541 → 0.297745 |
+| New (240 cases / 170 source groups) | Original | 129 → 171/240 | 1.312350 → 0.669211 | 0.633492 → 0.352959 |
+| New | Reversed | 118 → 170/240 | 1.410621 → 0.618564 | 0.687402 → 0.337570 |
+
+New intent both-order agreement rises 64 → 75/80 and sentiment 14 → 63/80. Rules move the other way: both-correct 4 → 0/80, flips 65 → 80/80. All 200 inherited/new rule presentations strictly choose actual input position 0; all 624 M7 development presentations have unique maxima. New-rule NLL/Brier improve against P3 but remain worse than M6 and uniform in both orientations. Inherited reversed-rule proper scores worsen against P3, and inherited rules remain worse than M6/uniform in both orientations. Original probe-rule proper scores also worsen against P3/M6/uniform. Thus broad gains are not improvement on every metric or family.
+
+The 24 curated probe presentations are 12 existing pairs, not another reversal pass. Agreement rises 20 → 21/24 and both-correct stays 9/12, but only seven old successes survive: two sentiment gains offset two rule losses; flips rise 2 → 3/12. E7 retains the exact membership, all predictors, family/source units and rule-policy/mechanism exceptions rather than interpreting equal net counts as full retention.
+
+This is one seed on correlated development reused through E5/E6, not untouched final evidence. Reversals and overlapping source units are not independent trials. Intent/sentiment teacher references measure teacher agreement; released rule_verified labels retain their programmatic-consistency and same-alias limits, while probe rules remain teacher-only. Reliability is descriptive, not calibration or significance. Missing M6 TRAIN vectors remain unknown; neither LR isolation nor telemetry identifies a native execution or architecture root cause. No automatic promotion, new data, calibration, R7 execution or further learning is authorized. Historical execution attestation limits and all prior failures remain intact.
+
+Publication SHA256: report `3c6d2ab0a68fd636b99a5cfa5719add405569cc5d9f167a41f6e04eb0d28800c`; manifest `b201f870c12c49f11c483abcb70f149a031d12101ddb88aabba9a9ed5142db2d`. The run index records these verified small-publication pins without replacing original execution, checkpoint or P5 provenance.

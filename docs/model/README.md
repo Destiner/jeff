@@ -8,7 +8,7 @@ This deliberately small provisional model proves training/save/reload before a l
 
 ## Latest learning contrast: full-parameter Qwen
 
-M7 reset to original P3 and changed only AdamW LR 2e-5 → 2e-6 on the exact M6 schedule. Its one completed run improved TRAIN agreement 805 → 1,130/1,500 and CE 1.357724 → 0.530299, but rule agreement fell 184 → 176/500 with 472 final rule selections at position 0. P5 completed the fresh-process 624-presentation reload/inference pass; independent E7 held-out comparison is pending here. This is not an end-to-end learning claim or promotion. See [M7 results](m7-qwen-low-lr-results.md), [frozen plan](m7-qwen-low-lr-plan.md), and [run index](m7-qwen-low-lr-run.json).
+M7 reset to original P3 and changed only AdamW LR 2e-5 → 2e-6 on the exact M6 schedule. Its one completed run improved TRAIN agreement 805 → 1,130/1,500 and CE 1.357724 → 0.530299, but rule agreement fell 184 → 176/500 with 472 final rule selections at position 0. P5 completed the fresh-process 624-presentation reload/inference pass. Independent [E7](../evaluation/e7-low-lr-learning.md) is **mixed**: substantive intent/sentiment and broad proper-score gains against original P3, but new-rule both-order successes fall 4 → 0/80 and all 80 rule pairs flip. Probe both-correct stays 9/12 while losing two old rule successes. This is correlated, reused development evidence, not untouched-final generalization, calibrated confidence, a root-cause diagnosis or automatic promotion. See [M7 results](m7-qwen-low-lr-results.md), [frozen plan](m7-qwen-low-lr-plan.md), and [run index](m7-qwen-low-lr-run.json).
 
 ### Historical M6 contrast
 
