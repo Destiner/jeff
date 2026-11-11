@@ -4,6 +4,7 @@ import argparse
 import contextlib
 from datetime import datetime, timezone
 import hashlib
+import importlib
 import importlib.metadata
 import io
 import json
@@ -27,6 +28,8 @@ def parser():
     result.add_argument("--dataset-manifest", required=True)
     result.add_argument("--output-dir", required=True)
     result.add_argument("--model-id", default="sentence-transformers/all-MiniLM-L6-v2")
+    result.add_argument("--architecture", choices=("mean_pool_scalar", "retained_cross_encoder"),
+                        default="mean_pool_scalar")
     result.add_argument("--revision", required=True, help="Immutable 40-hex base/tokenizer revision")
     result.add_argument("--device", choices=("auto", "cpu", "mps"), default="auto")
     result.add_argument("--epochs", type=int, default=3)
@@ -178,6 +181,12 @@ def train_run(args, output, record, started):
     from jeff.model.scorer import CandidateScorer, validate_decision
     import jeff.model.scorer as scorer_module
 
+    scorer_class = CandidateScorer
+    if args.architecture == "retained_cross_encoder":
+        from jeff.model.cross_encoder import RetainedCrossEncoder
+        scorer_class = RetainedCrossEncoder
+    selected_scorer_module = importlib.import_module(scorer_class.__module__)
+
     for name in ("epochs", "batch_size", "max_length", "threads"):
         if getattr(args, name) <= 0:
             raise ValueError(f"{name} must be positive")
@@ -211,15 +220,22 @@ def train_run(args, output, record, started):
     record["seed_policy"] = "Python random + torch CPU + MPS when selected; not a guarantee of bitwise deterministic MPS kernels"
     record["code"]["source_sha256"] = {
         str(path): hashlib.sha256(path.read_bytes()).hexdigest()
-        for path in (Path(__file__), Path(__file__).with_name("dataset.py"), Path(scorer_module.__file__))
+        for path in (Path(__file__), Path(__file__).with_name("dataset.py"),
+                     Path(scorer_module.__file__), Path(selected_scorer_module.__file__))
     }
 
-    model = CandidateScorer.from_pretrained(
+    model = scorer_class.from_pretrained(
         args.model_id, args.revision, max_length=args.max_length, device=str(device)
     )
+    loaded_head_hashes = None
+    if args.architecture == "retained_cross_encoder":
+        if model.head_initialization != "pretrained":
+            raise ValueError("Retained cross-encoder requires a pretrained ranking head")
+        loaded_head_hashes = parameter_hashes(torch, model.head)
     model.to(device)
-    # A baseline must not silently inherit a previously trained scoring head.
-    model.head.reset_parameters()
+    if args.architecture == "mean_pool_scalar":
+        # Preserve the original random-head baseline only for the mean-pool scorer.
+        model.head.reset_parameters()
     model.temperature = 1.0
     model.backbone.requires_grad_(True)
     model.head.requires_grad_(True)
@@ -248,9 +264,13 @@ def train_run(args, output, record, started):
         representatives[group] = (parameter_names[id(parameter)], parameter.detach().cpu().clone())
     record["base_model"] = {
         "model_id": model.model_id, "revision": model.revision,
+        "resolved_revision": model.resolved_revision, "architecture": args.architecture,
         "tokenizer_revision": model.revision, "max_length": model.max_length,
         "temperature": model.temperature,
-        "baseline": "pretrained backbone with explicitly reset randomly initialized linear scoring head",
+        "head_initialization": "pretrained" if loaded_head_hashes is not None else "random",
+        "baseline": ("pretrained backbone with retained pretrained ranking head"
+                     if loaded_head_hashes is not None else
+                     "pretrained backbone with explicitly reset randomly initialized linear scoring head"),
     }
     record["optimizer"] = {
         "name": "AdamW", "backbone_learning_rate": args.learning_rate,
@@ -269,6 +289,14 @@ def train_run(args, output, record, started):
         "elapsed_seconds_at_checkpoint": time.monotonic() - started,
         "memory_at_checkpoint": memory(torch, device),
     }
+    if loaded_head_hashes is not None:
+        baseline_head_hashes = parameter_hashes(torch, model.head)
+        if model.head_initialization != "pretrained" or baseline_head_hashes != loaded_head_hashes:
+            raise ValueError("Retained pretrained ranking head changed before baseline save")
+        record["weights"]["pretrained_head_provenance"] = {
+            "loaded": loaded_head_hashes, "baseline": baseline_head_hashes,
+            "unchanged_before_baseline_save": True,
+        }
     model.save_checkpoint(output / "baseline", metadata=baseline_metadata)
     optimizer = torch.optim.AdamW(
         [{"params": backbone_parameters, "lr": args.learning_rate},

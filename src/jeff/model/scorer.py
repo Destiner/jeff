@@ -6,12 +6,16 @@ import json
 import math
 import shutil
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import torch
 from safetensors.torch import load_file, save_file
 from torch import nn
 from torch.nn.utils.rnn import pad_sequence
 from transformers import AutoConfig, AutoModel, AutoTokenizer
+
+if TYPE_CHECKING:
+    from .cross_encoder import RetainedCrossEncoder
 
 _ARCHITECTURE = "jeff.joint_encoder_mean_pool_scalar.v1"
 _FORMAT = {
@@ -204,7 +208,7 @@ class CandidateScorer(nn.Module):
             raise
 
 
-def load_checkpoint(path: str | Path, device: str = "cpu") -> CandidateScorer:
+def load_checkpoint(path: str | Path, device: str = "cpu") -> CandidateScorer | RetainedCrossEncoder:
     """Load only local safe weights and built-in Transformers implementations."""
     target = resolve_device(device)
     root = Path(path)
@@ -214,6 +218,10 @@ def load_checkpoint(path: str | Path, device: str = "cpu") -> CandidateScorer:
     if root.is_symlink() or any(item.is_symlink() for item in root.rglob("*")):
         raise ValueError("checkpoint must not contain symbolic links")
     config = _read_json(root / "checkpoint.json")
+    if config.get("architecture") == "jeff.pretrained_cross_encoder_scalar.v1":
+        from .cross_encoder import load_retained_checkpoint
+
+        return load_retained_checkpoint(root, config, device=str(target))
     expected = {
         "schema_version", "architecture", "input_formatting", "max_length", "temperature",
         "model_id", "revision", "resolved_revision", "hidden_size", "metadata",

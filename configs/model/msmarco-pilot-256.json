@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1",
+  "architecture": "retained_cross_encoder",
+  "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "device": "mps",
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate": 0.00002,
+  "head_learning_rate": 0.0005,
+  "max_length": 256,
+  "seed": 42,
+  "threads": 4,
+  "expected_steps": 225,
+  "notes": "M3 retained native BERT pooler/dropout/scalar head. External choice cross-entropy over raw logits; no HF regression labels or sigmoid. Reference CLI settings, not automatically loaded. Frozen data-pilot-v1."
+}
