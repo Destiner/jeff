@@ -119,5 +119,6 @@ revision `264c44349c3eee73e539a200645abe7d9c50169c`. The
 [P4 execution report](p4-trained-checkpoint.md) records exact checkpoint and
 output identities, timing, memory and offline qualifications. This is completed
 runtime verification, not proof of learning: Model reported TRAIN-fit regression
-and first-position degeneration; independent held-out scoring belongs to E6.
+and position 0 for every recorded post-fit argmax, without establishing tie
+status or cause; independent held-out scoring belongs to E6.
 No Runtime label scoring or promotion is implied.

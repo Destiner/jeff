@@ -157,13 +157,13 @@
   "grant_status": "returned; Runtime wrapper/child exited",
   "identity_qualification": "Manifest path/hash qualify short producer IDs; base revision is lineage, not trained byte identity. Hashes copied from recorded evidence, no new weight scan.",
   "coverage_qualification": "300 original + 300 reversed + 24 already-paired; 3 startup rows separate.",
-  "memory_storage_qualification": "FP32 safetensors mmap; OS caches not flushed. Lifetime RSS is not total unified memory or evidence of memory advantage. No cold-storage claim.",
+  "memory_storage_qualification": "FP32 safetensors loading can use memory mapping; no storage/mapping trace collected; OS caches not flushed. Lifetime RSS is not total unified memory or evidence of memory advantage. No cold-storage claim.",
   "offline_qualification": "Existing local_files_only loader and offline environment; new HOME and empty HF cache, cache remained empty; not OS network denial or offline installation.",
   "heldout_quality": {
     "owner": "Evaluation E6",
     "status": "external scoring; no Runtime label access or scoring",
     "delivery_handoff": "6e22b1f8",
-    "model_report": "TRAIN-fit regression and first-position degeneration",
+    "model_report": "TRAIN-fit regression; every recorded post-fit argmax at position0. These counts establish neither tie status nor cause.",
     "decision": "No successful-learner, calibration or promotion claim."
   },
   "report": "docs/runtime/p4-trained-checkpoint.md"

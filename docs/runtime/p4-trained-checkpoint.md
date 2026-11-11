@@ -6,9 +6,9 @@ One actual fresh process accepted and reloaded the saved M6 trained checkpoint
 and completed **624/624 development presentations and 2,390/2,390 option
 probabilities**, exit 0. This establishes local read-only checkpoint acceptance,
 reload and output-contract coverage, **not successful learning or promotion**.
-Model reported TRAIN-fit regression and first-position degeneration. Runtime did
-not open TRAIN rows, reference labels or protected final data and did not score
-quality. E6 independently owns held-out scoring; outputs were delivered under
+Model reported TRAIN-fit regression and position 0 for every recorded post-fit
+argmax; those counts establish neither tie status nor cause. Runtime did not
+open TRAIN rows, reference labels or protected final data and did not score quality. E6 independently owns held-out scoring; outputs were delivered under
 handoff `6e22b1f8`. No E6 quality result is asserted here, and normalized
 probabilities are not evidence of calibration.
 
@@ -41,17 +41,17 @@ hashes are provenance bindings, not independent verification of training quality
 ## Actual execution and coverage
 
 The external process ran **2026-11-11 16:10:46.886945–16:11:27.420722 UTC**,
-wall **40.52782383421436 s**. This includes interpreter/import, hash/tokenization
+wall **40.527824 s**. This includes interpreter/import, hash/tokenization
 preflight, model load, startup, full pass and output. Local saved-model load was
-0.7096073748543859 s. Three fixed startup rows were separate from coverage.
+0.709607 s. Three fixed startup rows were separate from coverage.
 
 | Suite | Presentations | Probabilities | Full-suite seconds | Forward latency p50 / p95 (s) |
 | --- | ---: | ---: | ---: | ---: |
-| v2-original | 300/300 | 1,160 | 17.09163008304313 | 0.056224165949970484 / 0.06624379102140665 |
-| v2-reversed | 300/300 | 1,160 | 18.424006334040314 | 0.06085362518206239 / 0.0741504579782486 |
-| probes-paired (already paired) | 24/24 | 70 | 1.3028197912499309 | 0.05383095797151327 / 0.05760437482967973 |
+| v2-original | 300/300 | 1,160 | 17.091630 | 0.056224 / 0.066244 |
+| v2-reversed | 300/300 | 1,160 | 18.424006 | 0.060854 / 0.074150 |
+| probes-paired (already paired) | 24/24 | 70 | 1.302820 | 0.053831 / 0.057604 |
 
-The full suite took 36.81845620833337 s, 16.948021841794816 decisions/s.
+The full suite took 36.818456 s, 16.948022 decisions/s.
 The probes were not doubled again. Label-free `output-validation.json` checks
 schema, IDs, option coverage, finite probabilities and normalization; maximum
 sum errors were 1.341104507446289e-7, 1.043081283569336e-7 and
@@ -71,8 +71,9 @@ exited and no Runtime Model process remained. Additional actual/pending spend:
   Current allocated bytes at load/startup/end were 2,013,552,384 B.
 - Native macOS peak process footprint: **3,143,828,608 B**, a separate OS metric,
   not a true MPS/unified-memory peak. These metrics overlap: do not sum them.
-- FP32 safetensors were memory-mapped; OS caches were not flushed. Fresh process
-  and empty application caches do not demonstrate cold-storage performance.
+- FP32 safetensors loading can use memory mapping; no storage/mapping trace was
+  collected and OS caches were not flushed. A fresh process and empty application
+  caches do not demonstrate cold-storage performance.
 - The existing loader used local-files-only plus offline environment flags,
   a new empty HF cache and HOME; the HF cache remained empty. This is not an
   OS-level network-denial demonstration or fully offline installation evidence.
