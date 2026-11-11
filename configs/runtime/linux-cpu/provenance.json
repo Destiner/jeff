@@ -1,0 +1,33 @@
+{
+  "status": "metadata-checked recipe; not installed or executed on Linux",
+  "target": "CPython 3.12 / Linux x86_64 / glibc >= 2.28",
+  "stack": {
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.6",
+    "safetensors": "0.8.0"
+  },
+  "root_uv_lock_sha256": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4",
+  "torch_index": "https://download.pytorch.org/whl/cpu/torch/",
+  "torch_wheel": "https://download-r2.pytorch.org/whl/cpu/torch-2.15.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+  "torch_wheel_sha256": "0955c7e3446326293f48af18fad67872fa31dee5a36a87690eb9e5be8b465be3",
+  "torch_metadata_sha256": "8bbf94c86c3be6cf586385861d476b78cb66d19b67fef49ece4f7d68ca428cc3",
+  "torch_requires_dist": [
+    "filelock",
+    "typing-extensions>=4.13.0",
+    "setuptools>=77.0.3",
+    "sympy>=1.13.3",
+    "networkx>=2.5.1",
+    "jinja2",
+    "fsspec>=0.8.5",
+    "optree>=0.13.0; extra == \"optree\"",
+    "opt-einsum>=3.3; extra == \"opt-einsum\"",
+    "pyyaml; extra == \"pyyaml\""
+  ],
+  "applicable_cuda_nvidia_triton_requirements": [],
+  "dependency_check": "All selected wheel Requires-Python and applicable Requires-Dist checked against locked versions for target, no extras; no resolver or wheel-content verification.",
+  "dependency_count": 25,
+  "non_torch_sources": "Exact versions, URLs and wheel SHA256 from unchanged uv.lock; public PEP 658 wheel metadata checked separately.",
+  "evidence": "artifacts/release/p2-linux-cpu-20261111-01/recipe-investigation/",
+  "execution_gap": "Host and Tart sandbox are Darwin; no available authorized Linux runtime. No installation, model import, inference or Linux execution performed.",
+  "requirements_sha256": "f2df19722404e0750e5e3b1a18b95fb5f5c96131e1d54b0951c4de5ce2778eb6"
+}
