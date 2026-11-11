@@ -1,0 +1,88 @@
+{
+  "schema_version": "evaluation/e4-m5-index/1",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts",
+  "status": "Track A delivered; Track B separate",
+  "criterion_copy_sha256": "a74b9ebf2cd7f52a0367422d7ca9db489154c7060516be2ca768e40f23e709c6",
+  "artifacts": [
+    {
+      "path": "evaluation/e4-m5-preregister-v1/criterion.json",
+      "sha256": "a74b9ebf2cd7f52a0367422d7ca9db489154c7060516be2ca768e40f23e709c6"
+    },
+    {
+      "path": "evaluation/e4-m5-preregister-v1/receipt.json",
+      "sha256": "3784d84056af4771ece37f3df807ae15cf58591d38f70539ee551e3fbe65a243"
+    },
+    {
+      "path": "evaluation/e4-m5-preregister-v1/historical-bindings.json",
+      "sha256": "8fc812ef3779a2de60eb400687baba7c3ffc5fd5ef994471c3a36fe55e83c54e"
+    },
+    {
+      "path": "evaluation/e4-m5-control-review-v1/receipt.json",
+      "sha256": "d24e9cbc6093bb3e2165ab6216c31d4fbf415c66f08d8ab74e25374f676377b6"
+    },
+    {
+      "path": "evaluation/e4-m5-control-review-v1/findings.md",
+      "sha256": "669ead2555411d72163218d11d9b603e21534b0c8f5d5765675a1d73fc011588"
+    },
+    {
+      "path": "evaluation/e4-m5-execution-v1/run.py",
+      "sha256": "6cf6e071950960a81fdb59fd7feea5a8c0e1614c3f2de6898e8d1b706d464f98"
+    },
+    {
+      "path": "evaluation/e4-m5-execution-v1/criterion.py",
+      "sha256": "288f238e066bcf6f2675f26de8e858008facd492b951cead8ed752a712621109"
+    },
+    {
+      "path": "evaluation/e4-m5-comparison-v1/receipt.json",
+      "sha256": "cf9436873eb1f329aa6690cf0b278a42134673d4a47d12f3b38416984316c4e3"
+    },
+    {
+      "path": "evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+      "sha256": "74bf9d75c540bceb5bf2bbeb5a48b0dacc67a2b9d8fe9bf14cc0e37d0deb60b3"
+    },
+    {
+      "path": "evaluation/e4-m5-comparison-v1/pilot/report.md",
+      "sha256": "4761c0b92da1fb39b69b8185a89fc52dede58c4384cd1b2f761c0737ecd9c6da"
+    },
+    {
+      "path": "evaluation/e4-m5-comparison-v1/probes/comparison.json",
+      "sha256": "5ee579ac9f043df1de602201788571ed220f02183f3394c2941e37c304a549ed"
+    },
+    {
+      "path": "evaluation/e4-m5-comparison-v1/probes/report.md",
+      "sha256": "46956187cb4f28d84f129a70463323a4da00bf89aff98eeb8ecbeffe53df6a2e"
+    },
+    {
+      "path": "evaluation/e4-m5-result-v1/result.json",
+      "sha256": "2a90294ccccd6307ed05a6064b8c7288932e04fdad001e66fecdcfcedb30dfca"
+    },
+    {
+      "path": "evaluation/e4-m5-result-v1/report.md",
+      "sha256": "d0a5a86ea00f801060ef33634fe7005dce8e9ff4af647f35ad3c3cfa4ce34741"
+    },
+    {
+      "path": "model/m5-head-lr-20261111-01/training/run.json",
+      "sha256": "7ef824fb8417c63d87625adaa64fe58e921bc20579b53198ab80ba813107ece3"
+    },
+    {
+      "path": "model/m5-head-lr-20261111-01/inference/receipt.json",
+      "sha256": "42376824ed133d03e244084c4c047394d182c5d521a11a05c5e788076039febc"
+    }
+  ],
+  "summary": {
+    "coverage": "7predictors xpilot60/probe24 full valid, no issues",
+    "controls_comparable": true,
+    "criterion_pass": false,
+    "recovered_eligible_groups": [
+      "eval.validation.sentiment.04"
+    ],
+    "newly_wrong_groups": [],
+    "probe_macro_loss_historical": 1.360701041245408,
+    "probe_macro_loss_m5": 1.3847732520228302,
+    "pilot_loss_m5": 0.7945249517640895,
+    "pilot_loss_ceiling": 0.8437008119799213
+  },
+  "default_promoted": false,
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0
+}
