@@ -1,0 +1,122 @@
+{
+  "schema_version": "evaluation-report-index/1",
+  "task": "E5-P3",
+  "status": "completed-development-comparison",
+  "created_at": "2026-11-11T14:55:45.090565+00:00",
+  "recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e5-p3-v1.json",
+    "sha256": "89ae270c69ba8c80043bbe0d478960499e1cd9d464c7c36003de981727901bf1"
+  },
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e5-frozen-decoder.md",
+    "sha256": "357605ad49a6564e22107a7679c286c09f8583353edecc25f7d42ce512edf008"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-input-binding-v1/inputs.json",
+      "sha256": "6e61e68dc1805d7797d14c62db2a7a36c21a8265bf672525f1ef691e17365baa"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-input-binding-v1/reference-binding.json",
+      "sha256": "10767bec65a2e0241a71344f127e20e20402d088d6dcac46bf525d356d56fd84"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-control-review-v1/receipt.json",
+      "sha256": "4f4d85e9de8bf6a8892c884efebf8464fbf37610080f96229bb562eeffe058b4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-p3-execution-binding-v1/receipt.json",
+      "sha256": "8e5d0f96870a31d9a98c9ce1d9f2523c892c8bf23d7cff37559f11183bec4acf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-owner-integrity-v1/receipt.json",
+      "sha256": "a188ef004ef81dec12613e1ed355053745fff5a7f8cddf791514e5f5b29434ae"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/run.py",
+      "sha256": "a5d8918993e1e2ce96912d096d2eb3bb5d335f1ff083ac3ca65c4c35e0baccee"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/preparation-lock.json",
+      "sha256": "7420473a27706296f0272cb0e231395fc0d4937f3bb9a97ea5eea8b1f06f621b"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/recipe.json",
+      "sha256": "89ae270c69ba8c80043bbe0d478960499e1cd9d464c7c36003de981727901bf1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/completion.json",
+      "sha256": "5a60452d6ee91cb6d5c23de265c9f72c089de58abc6025f0b27b5841532c2966"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/receipt.json",
+      "sha256": "02a874debc54a8e4c280361741259599ad6ac41fc30a5cad6654ac51dcdebfa1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/source-units/summary.json",
+      "sha256": "0ce082546cde308e1ed1ae6b6e508ffa9470a241666ca925417e7e374f5b40ce"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/exact-order-margins.json",
+      "sha256": "966ca1b5f6a7410ff76b7de30e6d98074898a35b4433382ff05c278d2ac0752e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-quality-analysis-v1/extracted-evidence.json",
+      "sha256": "43f4e77acefe9a926c31f0c0208b0f1b2c5eb8fb90c0a62bc0b4d01503c23d40"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-quality-analysis-v1/input-receipt.json",
+      "sha256": "59f303af1123376c92a0536cd4d3356b73ed8aa4c2274ace042622e181aef1c8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/inherited-v1/comparison.json",
+      "sha256": "11cfe8996afbc5e6d6a1e0f5f644679dd5348fc571a2a4c1fdfe043f303d2632"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/new-v2/comparison.json",
+      "sha256": "04a0b0c6ea7de97a40f80ff0cbbd059c024cb8b4fc7acefb1fb7709ea5cb0b76"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e5-comparison-preparation-v1/execution-01/study/probes/comparison.json",
+      "sha256": "6231de042b8320d9fbd51691055761f58f054377582f63428b94a65d6f323e4d"
+    }
+  ],
+  "final_evaluation_access": false,
+  "default_promoted": false,
+  "evaluation_model_loads": 0,
+  "additional_spend_gbp": 0,
+  "pending_spend_gbp": 0,
+  "strata": {
+    "inherited-v1": {
+      "rows": 60,
+      "groups": 12
+    },
+    "new-v2": {
+      "rows": 240,
+      "groups": 170
+    },
+    "probes": {
+      "presentations": 24,
+      "paired_groups": 12
+    }
+  },
+  "runtime_evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/audit-02/audit.json",
+      "sha256": "8e0dc65beb1c9dd5a21b2c4170853bc78bf14116429a9311c28e568c129d870a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run-02/receipt.json",
+      "sha256": "602069d9eed481cc8ca902e91bb446e31569014e36545f839f046d2e43c3ad4c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/process-02-receipt.json",
+      "sha256": "b23d42f0a3baec507ab74f63334ba086adf9085e8dc453cdec5112e53e78fa58"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/run/receipt.json",
+      "sha256": "83e4d9a16b92c0eda519dd8f80c48dade4cdb8e46768dca7456ff6ba6d2d9b21"
+    }
+  ],
+  "interpretation": "Practical systems comparison, not architecture ablation. Conditional answer-symbol probabilities; no calibration claim. Reversals repeat cases. Future learning recommendation is not execution authorization."
+}
