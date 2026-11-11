@@ -40,6 +40,7 @@ def parser():
     result.add_argument("--seed", type=int, default=42)
     result.add_argument("--max-steps", type=int)
     result.add_argument("--threads", type=int, default=4)
+    result.add_argument("--m9-resource-guards", action="store_true")
     return result
 
 
@@ -121,7 +122,9 @@ def memory(torch, device):
     return result
 
 
-def parameter_hashes(torch, model):
+def parameter_hashes(torch, model, guards=None):
+    if guards is not None:
+        guards.check("before_parameter_hashes")
     hashes = {}
     for name, parameter in model.named_parameters():
         stream = io.BytesIO()
@@ -131,6 +134,8 @@ def parameter_hashes(torch, model):
             raise ValueError(f"Nonfinite model parameter: {name}")
         torch.save(tensor, stream)
         hashes[name] = hashlib.sha256(stream.getvalue()).hexdigest()
+    if guards is not None:
+        guards.check("after_parameter_hashes")
     return hashes
 
 
@@ -160,23 +165,27 @@ def batch_loss(torch, model, rows, device):
     return loss, logits, targets
 
 
-def evaluate(torch, model, rows, batch_size, device):
+def evaluate(torch, model, rows, batch_size, device, guards=None):
     if not rows:
         return {"count": 0, "loss": None, "top1_target_agreement": None}
     model.eval()
     loss_sum, correct = 0.0, 0
     with torch.no_grad():
         for offset in range(0, len(rows), batch_size):
+            if guards is not None:
+                guards.check("before_evaluation_batch")
             batch = rows[offset:offset + batch_size]
             loss, logits, targets = batch_loss(torch, model, batch, device)
             loss_sum += loss.item() * len(batch)
             correct += (logits.argmax(dim=1) == targets).sum().item()
+            if guards is not None:
+                guards.check("after_evaluation_batch")
     return {"count": len(rows), "loss": loss_sum / len(rows),
             "top1_target_agreement": correct / len(rows),
             "interpretation": "Agreement with supplied targets; teacher labels are not independent correctness. No calibration claim."}
 
 
-def train_run(args, output, record, started):
+def train_run(args, output, record, started, guards=None):
     import torch
     from jeff.model.scorer import CandidateScorer, validate_decision
     import jeff.model.scorer as scorer_module
@@ -214,6 +223,8 @@ def train_run(args, output, record, started):
         raise ValueError("MPS requested but unavailable; refusing silent CPU fallback")
     device = torch.device("mps" if args.device == "auto" and torch.backends.mps.is_available()
                           else "cpu" if args.device == "auto" else args.device)
+    if guards is not None:
+        guards.bind(torch, device)
     if device.type == "mps":
         torch.mps.manual_seed(args.seed)
     record["environment"] = environment(torch, device)
@@ -227,11 +238,13 @@ def train_run(args, output, record, started):
     model = scorer_class.from_pretrained(
         args.model_id, args.revision, max_length=args.max_length, device=str(device)
     )
+    if guards is not None:
+        guards.check("after_load")
     loaded_head_hashes = None
     if args.architecture == "retained_cross_encoder":
         if model.head_initialization != "pretrained":
             raise ValueError("Retained cross-encoder requires a pretrained ranking head")
-        loaded_head_hashes = parameter_hashes(torch, model.head)
+        loaded_head_hashes = parameter_hashes(torch, model.head, guards)
     model.to(device)
     if args.architecture == "mean_pool_scalar":
         # Preserve the original random-head baseline only for the mean-pool scorer.
@@ -252,7 +265,7 @@ def train_run(args, output, record, started):
     if set(map(id, model.parameters())) != set(map(id, backbone_parameters + head_parameters)):
         raise ValueError("Unexpected parameters outside the backbone/head optimizer groups")
 
-    baseline_hashes = parameter_hashes(torch, model)
+    baseline_hashes = parameter_hashes(torch, model, guards)
     parameter_names = {id(parameter): name for name, parameter in model.named_parameters()}
     group_names = {
         "backbone": {parameter_names[id(parameter)] for parameter in backbone_parameters},
@@ -279,7 +292,7 @@ def train_run(args, output, record, started):
         "backbone_parameter_count": sum(p.numel() for p in backbone_parameters),
         "head_parameter_count": sum(p.numel() for p in head_parameters),
     }
-    record["metrics"] = {"validation_before": evaluate(torch, model, rows["validation"], args.batch_size, device)}
+    record["metrics"] = {"validation_before": evaluate(torch, model, rows["validation"], args.batch_size, device, guards)}
     record["weights"] = {"hash_format": "sha256 of canonical contiguous CPU tensor torch.save serialization",
                          "before": baseline_hashes}
     record["training"] = {"steps": 0, "examples_seen": 0, "epochs_completed": 0,
@@ -290,14 +303,18 @@ def train_run(args, output, record, started):
         "memory_at_checkpoint": memory(torch, device),
     }
     if loaded_head_hashes is not None:
-        baseline_head_hashes = parameter_hashes(torch, model.head)
+        baseline_head_hashes = parameter_hashes(torch, model.head, guards)
         if model.head_initialization != "pretrained" or baseline_head_hashes != loaded_head_hashes:
             raise ValueError("Retained pretrained ranking head changed before baseline save")
         record["weights"]["pretrained_head_provenance"] = {
             "loaded": loaded_head_hashes, "baseline": baseline_head_hashes,
             "unchanged_before_baseline_save": True,
         }
+    if guards is not None:
+        guards.check("before_baseline_save")
     model.save_checkpoint(output / "baseline", metadata=baseline_metadata)
+    if guards is not None:
+        guards.check("after_baseline_save")
     optimizer = torch.optim.AdamW(
         [{"params": backbone_parameters, "lr": args.learning_rate},
          {"params": head_parameters, "lr": args.head_learning_rate}],
@@ -310,11 +327,18 @@ def train_run(args, output, record, started):
         model.train()
         total_loss, count = 0.0, 0
         for offset in range(0, len(order), args.batch_size):
+            if guards is not None:
+                guards.check("before_training_batch")
             batch = [rows["train"][index] for index in order[offset:offset + args.batch_size]]
             optimizer.zero_grad(set_to_none=True)
             loss, _, _ = batch_loss(torch, model, batch, device)
             loss.backward()
+            if guards is not None:
+                guards.check("before_optimizer_step")
+                guards.first_update()
             optimizer.step()
+            if guards is not None:
+                guards.check("after_training_batch")
             value = loss.item()
             training["steps"] += 1
             training["examples_seen"] += len(batch)
@@ -334,7 +358,7 @@ def train_run(args, output, record, started):
 
     if device.type == "mps":
         torch.mps.synchronize()
-    after_hashes = parameter_hashes(torch, model)
+    after_hashes = parameter_hashes(torch, model, guards)
     changed = [name for name in baseline_hashes if baseline_hashes[name] != after_hashes[name]]
     record["weights"].update({"after": after_hashes, "changed_parameter_names": changed,
                                "changed_parameter_count": len(changed)})
@@ -353,14 +377,22 @@ def train_run(args, output, record, started):
         raise ValueError("Training did not change both backbone and head; refusing a completed run")
     if any(not math.isfinite(item["l2_difference"]) for item in differences.values()):
         raise ValueError("Nonfinite parameter difference after training")
-    record["metrics"]["validation_after"] = evaluate(torch, model, rows["validation"], args.batch_size, device)
+    record["metrics"]["validation_after"] = evaluate(torch, model, rows["validation"], args.batch_size, device, guards)
     record["runtime"] = {"elapsed_seconds": time.monotonic() - started,
                          "elapsed_scope": "through validation and weight verification, before trained checkpoint save",
                          "memory": memory(torch, device)}
-    model.save_checkpoint(output / "checkpoint", metadata={"stage": "trained", "run": record})
+    if guards is not None:
+        guards.check("before_trained_save")
+    checkpoint_path = output / ("checkpoint.partial" if guards is not None else "checkpoint")
+    model.save_checkpoint(checkpoint_path, metadata={"stage": "trained", "run": record})
+    if guards is not None:
+        guards.check("after_trained_save")
     record["runtime"]["elapsed_seconds"] = time.monotonic() - started
     record["runtime"]["elapsed_scope"] = "through both checkpoint saves, before run.json write"
     record["runtime"]["memory"] = memory(torch, device)
+    if guards is not None:
+        guards.finish()
+        checkpoint_path.rename(output / "checkpoint")
     record["status"] = "completed"
     record["completed_at"] = datetime.now(timezone.utc).isoformat()
     write_json(output / "run.json", record)
@@ -395,11 +427,23 @@ def main(argv=None):
                   "scope": "Local training process only; no paid jobs or teacher calls. Dataset generation costs and sunk hardware/electricity are excluded."},
         "limitations": ["No calibration claim", "No final-evaluation data used", "Fresh-process checkpoint reload is a separate lead-owned step"],
     }
+    guards = None
     try:
+        if args.m9_resource_guards:
+            from jeff.model.resource_guards import ResourceGuards
+            guards = ResourceGuards(output / "m9-resources")
+            record["m9_resources"] = {"events": "m9-resources.jsonl",
+                                      "summary": "m9-resources.summary.json",
+                                      "first_update_marker": "m9-resources.first-update-attempt.json"}
         # Reserve stdout for exactly one machine-readable result, including HF chatter.
         with contextlib.redirect_stdout(sys.stderr):
-            summary = train_run(args, output, record, started)
+            summary = train_run(args, output, record, started, guards)
     except (Exception, KeyboardInterrupt) as exc:
+        if guards is not None:
+            try:
+                guards.finish(error=exc)
+            except Exception as guard_error:
+                record["guard_close_error"] = str(guard_error)
         record.update({"status": "failed", "failed_at": datetime.now(timezone.utc).isoformat(),
                        "elapsed_seconds": time.monotonic() - started,
                        "error_type": type(exc).__name__, "error": str(exc),
