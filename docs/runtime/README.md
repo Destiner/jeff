@@ -1,4 +1,4 @@
-# Portable local Jeff runtime
+# Jeff release and experimental runtime
 
 P1 exports the existing **M2** checkpoint without changing its weights, tokenizer, settings, loader or probabilities. The same exporter also handles **M3**, separately identified; neither packaging nor the demo selects a better model. No UI, model server or new framework is introduced.
 
@@ -10,6 +10,17 @@ P1 exports the existing **M2** checkpoint without changing its weights, tokenize
 - `scripts/release/cold_start.py`: macOS evidence harness invoking the **existing** `jeff.model.predict` CLI. Requires a prior explicit Model slot, an externally installed Python/environment, copied bundles and a UTC start deadline. It is not an inference implementation or a software test suite.
 - [`BUNDLE-README.md`](BUNDLE-README.md): short macOS CPU install/run instructions included in each delivered bundle.
 - [`p1-results.md`](p1-results.md): executed evidence, hashes, qualifications and failures. `manifests/releases/` stores the small inventory/runtime receipts; large bundles are ignored artifacts, never Git objects.
+
+## Frozen instruction-model challenger (P3)
+
+The [P3 execution report](p3-frozen-challenger.md) records one frozen
+Qwen2.5-0.5B-Instruct FP32/MPS comparison: **624/624** label-free development
+predictions, with pre-outcome prompt/token-boundary/length checks and measured
+runtime/memory. `jeff.runtime.qwen_challenger` is a separate experimental
+adapter, not a model/default migration. Evaluation E5 owns quality comparisons;
+conditional answer-symbol probabilities are not calibrated confidence. The
+pre-load implementation failure and explicitly authorized corrected pass are
+both preserved. No training or root dependency change was made.
 
 ## Linux CPU follow-up (P2)
 
@@ -76,7 +87,7 @@ After installation, run the full inventory verifier in the bundled instructions.
 
 ## Scope and rights
 
-Demonstrated only on macOS arm64 / Python 3.12 / CPU. Hash-pinned requirements preserve universal platform markers; do **not** treat this file as a Linux CPU installation recipe because its Linux branch includes CUDA packages. No dependency wheelhouse or Python installer is bundled. Installations can download packages; empty model caches and offline inference do not imply fully offline installation.
+P1 bundle execution was demonstrated only on macOS arm64 / Python 3.12 / CPU; P3's separate experimental MPS execution is documented above. Hash-pinned requirements preserve universal platform markers; do **not** treat this file as a Linux CPU installation recipe because its Linux branch includes CUDA packages. No dependency wheelhouse or Python installer is bundled. Installations can download packages; empty model caches and offline inference do not imply fully offline installation.
 
 The Apache-2.0 text and pinned upstream cards are checked in under `configs/runtime/licenses/`; provenance identifies the source URLs. Neither upstream pinned repository supplied a LICENSE/NOTICE file. Our adjacent notice describes fine-tuned weights/generated configuration without changing source checkpoint bytes. Jeff code/new head licensing and synthetic-data provider/account rights are not cleared for redistribution, and dependency-license auditing is not complete. No upload/publication is authorized.
 

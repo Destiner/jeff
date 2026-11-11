@@ -1,0 +1,23 @@
+{
+  "schema_version": "p3.config.v1",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "system_prompt": "You are a decision assistant. Choose exactly one of the listed options. Reply with only its letter.",
+  "user_template": "State:\n{state}\n\nQuestion:\n{question}\n\nOptions:\n{options}",
+  "symbols": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "max_input_tokens": 1024,
+  "device": "mps",
+  "dtype": "float32",
+  "batch_size": 1,
+  "threads": 4,
+  "temperature": 1.0,
+  "startup_rows": 3,
+  "maximum_run_seconds": 1200,
+  "max_cpu_rss_bytes": 8589934592,
+  "max_mps_driver_bytes": 8589934592,
+  "attention": "sdpa",
+  "use_cache": false,
+  "logits_to_keep": 1,
+  "probability_semantics": "T=1 softmax conditional on supplied single-token option symbols; not full-vocabulary confidence or calibrated confidence",
+  "asset_allowlist": ["config.json", "generation_config.json", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "added_tokens.json", "vocab.json", "merges.txt", "chat_template.jinja", "model.safetensors", "README.md", "LICENSE", "LICENSE.txt", ".gitattributes"]
+}

@@ -52,4 +52,4 @@ E4 independent pipeline outputs: `artifacts/evaluation/e4-m5-comparison-v1/{pilo
 
 ## Inference-only follow-through
 
-D3 is a separate validation-only seen-mechanism/new-policy diagnostic. The remaining authorized queue is E4's frozen label-free D3 request on the four **existing M4** snapshots; no new training or diagnostic-based tuning. Keep its results separate from v2 unseen-mechanism validation and these probes. The M5 training allocation is exhausted.
+D3 is a separate validation-only seen-mechanism/new-policy diagnostic. E4's released label-free request is now delivered:96 original cases through each of the four **existing M4** snapshots, with fresh-process receipts and unchanged checkpoint inventories. See [D3 inference](d3-inference.md). No new training or diagnostic-based tuning; keep its results separate from v2 unseen-mechanism validation and these probes. The M5 training allocation remains exhausted.
