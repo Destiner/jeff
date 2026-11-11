@@ -1,0 +1,276 @@
+{
+  "schema_version": "model/m5-run-summary/1",
+  "criterion_result": {
+    "path": "evaluation/e4-m5-result-v1/result.json",
+    "sha256": "2a90294ccccd6307ed05a6064b8c7288932e04fdad001e66fecdcfcedb30dfca",
+    "passes": false,
+    "recovered_eligible_groups": 1,
+    "newly_wrong_groups": 0,
+    "failing_condition": "all12_group_macro_probe_loss_must_decrease"
+  },
+  "independent_evaluation": {
+    "pilot": {
+      "path": "evaluation/e4-m5-comparison-v1/pilot/comparison.json",
+      "sha256": "74bf9d75c540bceb5bf2bbeb5a48b0dacc67a2b9d8fe9bf14cc0e37d0deb60b3",
+      "results": {
+        "uniform": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 17,
+          "log_loss": 1.3787648669871742
+        },
+        "lexical": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 29,
+          "log_loss": 1.3237099779963926
+        },
+        "m3-pretrained-start": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 30,
+          "log_loss": 1.0268780369494432
+        },
+        "m3-historical-trained": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 40,
+          "log_loss": 0.7937008119799213
+        },
+        "m2-context": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 35,
+          "log_loss": 0.8552875089589308
+        },
+        "m5-pretrained-start": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 30,
+          "log_loss": 1.0268780369494432
+        },
+        "m5-low-head-lr": {
+          "status": "ok",
+          "rows": 60,
+          "groups": 12,
+          "correct": 40,
+          "log_loss": 0.7945249517640895
+        }
+      }
+    },
+    "probes": {
+      "path": "evaluation/e4-m5-comparison-v1/probes/comparison.json",
+      "sha256": "5ee579ac9f043df1de602201788571ed220f02183f3394c2941e37c304a549ed",
+      "results": {
+        "uniform": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 8,
+          "log_loss": 1.0550082766877307
+        },
+        "lexical": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 9,
+          "log_loss": 1.0470441093070695
+        },
+        "m3-pretrained-start": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 14,
+          "log_loss": 1.4537831337093712
+        },
+        "m3-historical-trained": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 8,
+          "log_loss": 1.360701041245408
+        },
+        "m2-context": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 16,
+          "log_loss": 0.7104069052752945
+        },
+        "m5-pretrained-start": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 14,
+          "log_loss": 1.4537831337093712
+        },
+        "m5-low-head-lr": {
+          "status": "ok",
+          "rows": 24,
+          "groups": 12,
+          "correct": 10,
+          "log_loss": 1.3847732520228302
+        }
+      }
+    }
+  },
+  "training_record": {
+    "path": "model/m5-head-lr-20261111-01/training/run.json",
+    "sha256": "7ef824fb8417c63d87625adaa64fe58e921bc20579b53198ab80ba813107ece3"
+  },
+  "historical_record": {
+    "path": "model/msmarco-256-20261111-01/run.json",
+    "sha256": "bcfae7d5b62f740a64389a503b8ea58a61eb58259e87dba30bee73b42f9d7245"
+  },
+  "preflight": {
+    "path": "model/m5-head-lr-20261111-01/preflight.json",
+    "sha256": "76357681c2f714ddc79da366df260378575684b59ea66e6d047c60a92eec2722"
+  },
+  "initial_control": {
+    "path": "model/m5-head-lr-20261111-01/initial-control-comparison.json",
+    "sha256": "e0bc3c56d9f6ca7ae071c0eabbfe06cd36da561a5f8668276cf5c3046f8ffa5e"
+  },
+  "starting_predictions": {
+    "path": "model/m5-head-lr-20261111-01/inference/starting-prediction-comparison.json",
+    "sha256": "f1ba304ccdfe2d4d9a9c123216e7d830ae4d0f2943a5ce7016aa55b714531db3"
+  },
+  "inference_receipt": {
+    "path": "model/m5-head-lr-20261111-01/inference/receipt.json",
+    "sha256": "42376824ed133d03e244084c4c047394d182c5d521a11a05c5e788076039febc"
+  },
+  "prior_preservation": {
+    "path": "model/m5-head-lr-20261111-01/prior-preservation.json",
+    "sha256": "26c7add4b8a11a8ad4ccc71caf086c72b57ea3853d33747b46b36a5122fd41be"
+  },
+  "code": {
+    "worktree": "/Users/destiner/Code/jeff/.worktrees/model",
+    "revision": "4031e7e9d371f15a53c3bae9d5db14478ace6fdb",
+    "dirty": false,
+    "source_sha256": {
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/train.py": "463f9cfac79652d24f1721a42517d5131fd6f78bb3f242e1c260ff2a1f501dc9",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/training/dataset.py": "3540ab36c31f459b7566b3d7554d579678505a435e30941e36c96a52d3c1c311",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/scorer.py": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+      "/Users/destiner/Code/jeff/.worktrees/model/src/jeff/model/cross_encoder.py": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481"
+    }
+  },
+  "base_model": {
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "resolved_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "architecture": "retained_cross_encoder",
+    "tokenizer_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "max_length": 256,
+    "temperature": 1.0,
+    "head_initialization": "pretrained",
+    "baseline": "pretrained backbone with retained pretrained ranking head"
+  },
+  "config": {
+    "dataset_manifest": "/Users/destiner/Code/jeff/artifacts/data/data-pilot-v1/manifest.json",
+    "output_dir": "/Users/destiner/Code/jeff/artifacts/model/m5-head-lr-20261111-01/training",
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "architecture": "retained_cross_encoder",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 2e-05,
+    "max_length": 256,
+    "seed": 42,
+    "max_steps": null,
+    "threads": 4
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "backbone_learning_rate": 2e-05,
+    "head_learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "full_backbone_finetuning": true,
+    "backbone_parameter_count": 22713216,
+    "head_parameter_count": 385
+  },
+  "training": {
+    "steps": 225,
+    "examples_seen": 900,
+    "epochs_completed": 3,
+    "stopped_by_max_steps": false,
+    "epoch_history": [
+      {
+        "epoch": 1,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 1.076983437538147
+      },
+      {
+        "epoch": 2,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.9264935525755088
+      },
+      {
+        "epoch": 3,
+        "complete": true,
+        "examples": 300,
+        "mean_loss": 0.8494521157443523
+      }
+    ]
+  },
+  "weight_changes": {
+    "updated_parameter_tensors": 105,
+    "representative_differences": {
+      "backbone": {
+        "name": "classifier_model.bert.embeddings.word_embeddings.weight",
+        "l2_difference": 0.24402843415737152,
+        "l2_before": 138.0359649658203
+      },
+      "head": {
+        "name": "classifier_model.classifier.weight",
+        "l2_difference": 0.007148626260459423,
+        "l2_before": 0.6397854089736938
+      }
+    },
+    "historical_representative_differences": {
+      "backbone": {
+        "name": "classifier_model.bert.embeddings.word_embeddings.weight",
+        "l2_difference": 0.2457895278930664,
+        "l2_before": 138.0359649658203
+      },
+      "head": {
+        "name": "classifier_model.classifier.weight",
+        "l2_difference": 0.15826921164989471,
+        "l2_before": 0.6397854089736938
+      }
+    }
+  },
+  "runtime": {
+    "elapsed_seconds": 18.325596292037517,
+    "elapsed_scope": "through both checkpoint saves, before run.json write",
+    "memory": {
+      "cpu_max_rss_bytes": 1369014272,
+      "cpu_max_rss_raw": 1369014272,
+      "cpu_max_rss_raw_unit": "bytes",
+      "cpu_max_rss_scope": "process lifetime high-water RSS; not accelerator peak",
+      "mps_current_allocated_bytes": 370411008,
+      "mps_driver_allocated_bytes": 2256502784,
+      "mps_measurement": "point-in-time, not peak"
+    }
+  },
+  "additional_spend_gbp": 0,
+  "limitations": [
+    "Source/lock and recorded runtime equivalence is not historical installed-binary identity or deterministic MPS.",
+    "Initial state equality corroborated by105recorded parameter hashes and byte-identical fresh starting predictions.",
+    "Before-inference checkpoint inventories plus recorded post-job equality, not separately saved post inventories.",
+    "Independent R4 outcome criterion owned by Evaluation E4; no default promotion."
+  ]
+}
