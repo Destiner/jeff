@@ -1,0 +1,186 @@
+I1 actual CLI demonstration — scratch board only
+Run started: 2026-11-11T11:57:16Z
+Checkout: /Users/destiner/Code/jeff/.worktrees/infra
+Base: 97d032433cf94e5647b664f578f4237613f9b500
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board init
+Using CPython 3.12.16
+Creating virtual environment at: .venv
+   Building jeff @ file:///Users/destiner/Code/jeff/.worktrees/infra
+      Built jeff @ file:///Users/destiner/Code/jeff/.worktrees/infra
+Installed 1 package in 0.69ms
+/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+(empty)
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board send --sender lead --recipient infra --kind direction --subject Scratch:\ read\ the\ protocol --task-id I1-DEMO --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/request.md
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	unread	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board read bb5317ad-e0eb-4cfe-9d8c-be73eccc962e
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "bb5317ad-e0eb-4cfe-9d8c-be73eccc962e",
+  "sender": "lead",
+  "recipient": "infra",
+  "kind": "direction",
+  "created_at": "2026-11-11T11:57:16.528184Z",
+  "subject": "Scratch: read the protocol",
+  "task_id": "I1-DEMO"
+}
+```
+
+# Scratch-only direction
+
+Read the mailbox protocol and report back on this isolated demonstration. This is not a live project assignment.
+
+Evidence: [protocol](/Users/destiner/Code/jeff/.worktrees/infra/docs/coordination/mailbox.md).
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board ack bb5317ad-e0eb-4cfe-9d8c-be73eccc962e --recipient infra
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	acknowledged-outstanding	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board send --sender infra --recipient lead --kind report --subject Scratch:\ protocol\ read --task-id I1-DEMO --reply-to bb5317ad-e0eb-4cfe-9d8c-be73eccc962e --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/report.md
+a94cc73f-8792-4f68-8893-dc4f60e771aa
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient lead
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+a94cc73f-8792-4f68-8893-dc4f60e771aa	unread	infra	2026-11-11T11:57:16.690566Z	Scratch: protocol read
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board read a94cc73f-8792-4f68-8893-dc4f60e771aa
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "a94cc73f-8792-4f68-8893-dc4f60e771aa",
+  "sender": "infra",
+  "recipient": "lead",
+  "kind": "report",
+  "created_at": "2026-11-11T11:57:16.690566Z",
+  "subject": "Scratch: protocol read",
+  "task_id": "I1-DEMO",
+  "reply_to": "bb5317ad-e0eb-4cfe-9d8c-be73eccc962e"
+}
+```
+
+# Scratch-only reply
+
+The protocol was read. This reply demonstrates owner → lead communication on the isolated I1 board; it is not a claim about another team's work.
+
+Evidence: [protocol](/Users/destiner/Code/jeff/.worktrees/infra/docs/coordination/mailbox.md). The actual command transcript is being recorded in docs/coordination/i1-cli.log.
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board ack a94cc73f-8792-4f68-8893-dc4f60e771aa --recipient lead
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient lead
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+a94cc73f-8792-4f68-8893-dc4f60e771aa	acknowledged-outstanding	infra	2026-11-11T11:57:16.690566Z	Scratch: protocol read
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board complete a94cc73f-8792-4f68-8893-dc4f60e771aa --recipient lead --note Read\ the\ scratch-only\ response\;\ no\ live\ work\ accepted.\ Reply\ ID:\ a94cc73f-8792-4f68-8893-dc4f60e771aa
+completed
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board complete bb5317ad-e0eb-4cfe-9d8c-be73eccc962e --recipient infra --note Protocol\ read\;\ scratch\ reply:\ a94cc73f-8792-4f68-8893-dc4f60e771aa
+completed
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+(empty)
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient lead --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+a94cc73f-8792-4f68-8893-dc4f60e771aa	completed	infra	2026-11-11T11:57:16.690566Z	Scratch: protocol read
+
+Two independent lead sends launched concurrently on the scratch board:
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board send --sender lead --recipient infra --kind direction --subject Scratch:\ blocked\ disposition --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/disposition.md
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board send --sender lead --recipient infra --kind direction --subject Scratch:\ declined\ disposition --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/disposition.md
+Blocked example ID: cd163f4a-df5f-41b6-89fa-bf2eb258f8ac
+Declined example ID: ece6f9ae-2237-4971-b1d3-a750a6cf1f11
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board read cd163f4a-df5f-41b6-89fa-bf2eb258f8ac
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "cd163f4a-df5f-41b6-89fa-bf2eb258f8ac",
+  "sender": "lead",
+  "recipient": "infra",
+  "kind": "direction",
+  "created_at": "2026-11-11T11:57:17.021739Z",
+  "subject": "Scratch: blocked disposition"
+}
+```
+
+# Scratch-only disposition exercise
+
+Demonstrate receipt handling on the isolated board. No real dependency, spending, or live task is created by this message.
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board ack cd163f4a-df5f-41b6-89fa-bf2eb258f8ac --recipient infra
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board block cd163f4a-df5f-41b6-89fa-bf2eb258f8ac --recipient infra --note Scratch-only\ simulated\ missing\ dependency\;\ not\ a\ real\ blocker.
+blocked
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board read ece6f9ae-2237-4971-b1d3-a750a6cf1f11
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "ece6f9ae-2237-4971-b1d3-a750a6cf1f11",
+  "sender": "lead",
+  "recipient": "infra",
+  "kind": "direction",
+  "created_at": "2026-11-11T11:57:17.022508Z",
+  "subject": "Scratch: declined disposition"
+}
+```
+
+# Scratch-only disposition exercise
+
+Demonstrate receipt handling on the isolated board. No real dependency, spending, or live task is created by this message.
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board ack ece6f9ae-2237-4971-b1d3-a750a6cf1f11 --recipient infra
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board decline ece6f9ae-2237-4971-b1d3-a750a6cf1f11 --recipient infra --note Scratch-only\ decline\;\ no\ live\ assignment\ declined.
+declined
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	blocked	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board complete cd163f4a-df5f-41b6-89fa-bf2eb258f8ac --recipient infra --note Scratch\ blocked-to-completed\ lifecycle\ demonstrated.
+completed
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board inbox --recipient infra --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i1-demo-HXYQus/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	completed	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+ece6f9ae-2237-4971-b1d3-a750a6cf1f11	declined	lead	2026-11-11T11:57:17.022508Z	Scratch: declined disposition
+
+No live messages were sent. All commands above succeeded.
