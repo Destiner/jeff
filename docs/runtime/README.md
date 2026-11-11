@@ -47,6 +47,16 @@ learned-row export and CPU/MPS storage identity without changing the scorer.
 E8 independently interprets quality; execution success is not promotion or a
 fresh small-head-versus-stock numerical comparison on every development input.
 
+## M9 retained-encoder reload (P7)
+
+The [P7 report](p7-m9-checkpoint.md) and [release manifest](../../manifests/releases/p7-m9-20261111-01.json)
+record one existing-scorer reload: 624/624 predictions, 156 batches and 2,390 valid
+option probabilities in 4.098479833 seconds, with zero startup rows or canaries.
+The missed original start window and Model's renewal of the same reservation are
+preserved. Outputs went directly to E9 and the slot was returned to Model;
+Model independently verified closure, while E9 interpretation remains pending.
+No new tracked Runtime implementation or default promotion follows.
+
 ## Linux CPU follow-up (P2)
 
 A separate [pinned Linux CPU recipe](../../configs/runtime/linux-cpu/README.md)
