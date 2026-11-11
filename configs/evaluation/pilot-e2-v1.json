@@ -1,0 +1,27 @@
+{
+  "schema_version": "evaluation/0.1",
+  "study": "E2 corrected pilot and M3 retained-head comparison",
+  "artifact_root_env": "JEFF_ARTIFACTS_DIR",
+  "examples": "evaluation/data-pilot-v1/validation.jsonl",
+  "original_input": "evaluation/pilot-baselines-v1/inputs.jsonl",
+  "simple_predictions": {
+    "uniform": "evaluation/pilot-baselines-v1/uniform.jsonl",
+    "lexical": "evaluation/pilot-baselines-v1/lexical.jsonl"
+  },
+  "corrected_model": {
+    "name": "all-MiniLM random-head initialization / full-finetuned",
+    "initial": "model/pilot-256-validation-20261111-01/baseline-predictions.jsonl",
+    "trained": "model/pilot-256-validation-20261111-01/checkpoint-predictions.jsonl"
+  },
+  "order": {
+    "examples": "evaluation/pilot-order-v1/validation.jsonl",
+    "pairs": "evaluation/pilot-order-v1/pairs.json",
+    "reversed_input": "evaluation/pilot-order-v1/reversed-inputs.jsonl",
+    "paired_input": "evaluation/pilot-order-v1/paired-inputs.jsonl"
+  },
+  "probe_examples": "evaluation/probes-v1/validation.jsonl",
+  "probe_input": "evaluation/probes-baselines-v1/inputs.jsonl",
+  "m3_starting_identity": "retained pretrained MS MARCO relevance head, not a random head",
+  "final_access": false,
+  "note": "Provenance/recipe descriptor; CLI arguments remain explicit. Use immutable new report outputs; discover M3 prediction paths from public Model handoffs."
+}

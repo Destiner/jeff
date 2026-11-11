@@ -28,8 +28,17 @@ def run():
         raise ValueError("At least two prediction files required")
     comparisons = []
     for left, right in combinations(reports, 2):
-        comparisons.append({"left_name": left, "right_name": right,
-                            **paired_comparison(reports[left]["outcomes"], reports[right]["outcomes"], len(examples))})
+        comparison = {"left_name": left, "right_name": right,
+                      **paired_comparison(reports[left]["outcomes"], reports[right]["outcomes"], len(examples))}
+        for field, label in (("task_family", "per_family"), ("group_id", "per_source_group")):
+            comparison[label] = {}
+            for value in sorted({row[field] for row in examples}):
+                comparison[label][value] = paired_comparison(
+                    [row for row in reports[left]["outcomes"] if row[field] == value],
+                    [row for row in reports[right]["outcomes"] if row[field] == value],
+                    sum(row[field] == value for row in examples),
+                )
+        comparisons.append(comparison)
     write_json(args.output, {"report_schema_version": "evaluation/0.1", "examples_file": fingerprint(args.examples),
                             "split": examples[0]["split"] if examples else None,
                             "runs": reports, "comparisons": comparisons})
