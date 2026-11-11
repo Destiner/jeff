@@ -16,6 +16,7 @@ The main session owns cross-workstream direction, shared contracts, root packagi
 | Evaluation | `worker/evaluation`, `.worktrees/evaluation` | `src/jeff/evaluation/`, `configs/evaluation/`, `manifests/evaluation/`, `docs/evaluation/` |
 | Research | `worker/research`, `.worktrees/research` | `docs/research/`, `experiments/research/` |
 | Release / Runtime | `worker/release`, `.worktrees/release` | `src/jeff/runtime/`, `configs/runtime/`, `scripts/release/`, `manifests/releases/`, `docs/runtime/` |
+| Infra | `worker/infra`, `.worktrees/infra` | `src/jeff/coordination/`, `docs/coordination/`, `docs/briefs/infra.md`; I1-only narrow mailbox additions to `.gitignore`, `AGENTS.md`, and this document |
 
 Create/manage your own isolated workspaces. Do not edit other owners' files or share a mutable checkout between subagents. Subagents return bounded contributions to their owner; only workstream owners merge to main.
 
@@ -31,6 +32,14 @@ Root dependencies and shared interfaces still need the lead; cross-team implemen
 - **Release P2:** P1 is delivered/self-integrated at `900f5ef`; both local bundles and macOS isolation evidence are preserved. Time-box a 30–45-minute Linux CPU installation follow-up because P1's universal dependency export includes CUDA dependencies on Linux. Prepare a pinned CPU-only install recipe/support artifact without changing root dependencies or checkpoint semantics. If an existing local Linux/container runtime is available, request a bounded execution slot from Model and demonstrate one M2 bundle inference there with remote model fetching disabled; capture actual package variants, platform, output coverage, and install/runtime requirements. Do not install a new container engine/VM, use remote machines, or launch paid services. If execution is unavailable, deliver the prepared recipe with exact unverified claims/blockers, not invented portability. Stay in existing Release paths; no UI, training, final-data access, external upload, or new license decisions.
 
 These are current objectives, not a requirement to wait for lead approval after each internal subtask. Complete, self-review, merge eligible changes, and report delivery. If an objective is exhausted and no useful in-scope follow-up exists, ask for direction rather than inventing unrelated features.
+
+## Markdown mailbox experiment (Infra I1)
+
+Infra owns the barebones [mailbox protocol and CLI](coordination/mailbox.md); see the [Infra brief](briefs/infra.md). The shared board is `/Users/destiner/Code/jeff/.coord/`, outside Git; all worktrees resolve to that same board. Explicit alternate boards support isolated demonstrations. No old assignments are imported or replayed.
+
+Only lead and owners post, initially lead ↔ team only: tasks/directions outbound, reports/meaningful updates/blockers inbound. Subagents report through their owner. Existing peer artifact handoffs, team objectives, shared contracts, ownership transfers, spending allocations, and the merge protocol below remain unchanged. Messages link evidence; they do not establish another task ledger or grant authority. Sender names are not authentication.
+
+Check at work boundaries and roughly every minute while actively waiting and able to check, as specified in `AGENTS.md` and the protocol. Explicit acknowledgement follows reading and is distinct from completion; blocked items remain outstanding. There is no watcher, wake-up tooling, background delivery, or automatic polling. Idle/finished sessions may need a manual nudge. No progress spam, credentials, or protected final content.
 
 ## Owner-thread rotation pilot
 
