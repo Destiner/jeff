@@ -1,0 +1,189 @@
+{
+  "bundle_id": "p1-m2-20261111-01",
+  "checkpoint": {
+    "architecture": "jeff.joint_encoder_mean_pool_scalar.v1",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "original_path_disclosure": {
+      "json_pointers": [
+        "/metadata/run/argv/0",
+        "/metadata/run/argv/2",
+        "/metadata/run/argv/4",
+        "/metadata/run/code/source_sha256/<absolute-path-key>",
+        "/metadata/run/code/worktree",
+        "/metadata/run/config/dataset_manifest",
+        "/metadata/run/config/output_dir",
+        "/metadata/run/dataset/artifact_root",
+        "/metadata/run/dataset/manifest_path",
+        "/metadata/run/dataset/shards/0/resolved_path",
+        "/metadata/run/dataset/shards/1/resolved_path",
+        "/metadata/run/dataset/shards/2/resolved_path",
+        "/metadata/run/dataset/shards/3/resolved_path",
+        "/metadata/run/dataset/shards/4/resolved_path",
+        "/metadata/run/dataset/shards/5/resolved_path",
+        "/metadata/run/invocation_cwd",
+        "/metadata/run/invocation_cwd_code/worktree",
+        "/metadata/run/output_dir"
+      ],
+      "note": "Original checkpoint JSON is preserved, including historical local paths; these are provenance, not bundled dependencies. Do not publish without reviewing privacy.",
+      "present": true
+    },
+    "resolved_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "settings": {
+      "hidden_size": 384,
+      "input_formatting": {
+        "first": "State:\n{state}\nQuestion:\n{question}",
+        "pooling": "attention_mask_mean",
+        "second": "Candidate:\n{text}",
+        "truncation": "longest_first"
+      },
+      "max_length": 256,
+      "temperature": 1.0
+    }
+  },
+  "code_revision": "82c327a7ba6def23e77123f3e768b31255feb2b5",
+  "exporter": {
+    "revision": "jeff.runtime.export.v1",
+    "source_sha256": {
+      "__init__.py": "d818c71be90cc28efffd008b346c8857f8239a68fadf2882a4adb46e9c306314",
+      "_bundle.py": "085b57fe972940b9fcf217db730fc7a7883b7e4f89357a370ea02af44161d372",
+      "export.py": "45cc732c39cdd912e744acf3b009d05845523b8dee4962df5a788974f2d99ecc",
+      "verify.py": "b0722797d409c56c3977ae1fbb483604072d8341d7c23ebc19d4c50aa6e34fc8"
+    }
+  },
+  "files": {
+    "README.md": {
+      "bytes": 4030,
+      "sha256": "4dcf3d82804bd1d6c43c177fb9050ea3478d0f409251b23c5003c46b3e7aca5d"
+    },
+    "checkpoint/checkpoint.json": {
+      "bytes": 75932,
+      "sha256": "60673aa534ce95496a533f04596ebb456b473da4dbf16afe7c76308f7cbacedd"
+    },
+    "checkpoint/encoder/config.json": {
+      "bytes": 611,
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9"
+    },
+    "checkpoint/encoder/model.safetensors": {
+      "bytes": 90864192,
+      "sha256": "4f50e43611dd133d8cb43b1d907145899e93194ee745ac7c11391173c6bbacef"
+    },
+    "checkpoint/head.safetensors": {
+      "bytes": 1676,
+      "sha256": "1f3c3485bb335858ebe3a4b8462ac02858175de28d2c3dee215e5872d76c598a"
+    },
+    "checkpoint/tokenizer/special_tokens_map.json": {
+      "bytes": 695,
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    "checkpoint/tokenizer/tokenizer.json": {
+      "bytes": 711649,
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    "checkpoint/tokenizer/tokenizer_config.json": {
+      "bytes": 1464,
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c"
+    },
+    "checkpoint/tokenizer/vocab.txt": {
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "demo/inputs.jsonl": {
+      "bytes": 1037,
+      "sha256": "bef4215cba818b432968d4edaf5a4c2eda2821bddf6bf40a52bd6e77e6db6486"
+    },
+    "licenses/APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "licenses/NOTICE.md": {
+      "bytes": 2208,
+      "sha256": "0723c1e19e9d9196c8aa35ac70c8c851d6f89ef19307b83521475d76f12eea80"
+    },
+    "licenses/upstream-model-card.md": {
+      "bytes": 10502,
+      "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0"
+    },
+    "package/jeff-0.1.0-py3-none-any.whl": {
+      "bytes": 61191,
+      "sha256": "191d6e3b8c051b6e5c21ab60b6d8733b563b2930c16d8a8bb1c4089773ec0e01"
+    },
+    "provenance.json": {
+      "bytes": 1857,
+      "sha256": "65608b8074dd94f3ef0a2dfb8d20f9545bb89707fde0d0fdc29afea121f8dfbf"
+    },
+    "requirements-macos-arm64-py312.txt": {
+      "bytes": 21245,
+      "sha256": "463e17a2f6f4bcecfb4dd0fd995d086083c25475be6379a90030f80c3c35636d"
+    }
+  },
+  "package": {
+    "name": "jeff",
+    "path": "package/jeff-0.1.0-py3-none-any.whl",
+    "provides_extra": [
+      "model"
+    ],
+    "requires_dist": [
+      "safetensors>=0.4; extra == 'model'",
+      "torch<3,>=2.6; extra == 'model'",
+      "transformers<5,>=4.48; extra == 'model'"
+    ],
+    "requires_python": "<3.13,>=3.12",
+    "version": "0.1.0"
+  },
+  "provenance": {
+    "candidate": "M2",
+    "checkpoint_metadata_note": "Save-time running snapshot and historical local paths are preserved; completed run receipt above supersedes job status. Paths are not runtime dependencies.",
+    "completed_at": "2026-11-11T10:48:07.916112+00:00",
+    "dataset": {
+      "counts": {
+        "train": 300,
+        "validation": 60
+      },
+      "dataset_id": "data-pilot-v1",
+      "label_basis": {
+        "train": {
+          "rule_verified": 100,
+          "teacher": 200
+        },
+        "validation": {
+          "rule_verified": 20,
+          "teacher": 40
+        }
+      },
+      "manifest_sha256": "62e9cf7538d93d377f401a89b887a988280bf1e97abc08159d6366063e9c0180"
+    },
+    "demo": "Three original synthetic, label-free decisions authored for runtime demonstration only; no accuracy claim.",
+    "license_text_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "project_and_provider_redistribution_rights": "not cleared; no publication authorized",
+    "root_uv_lock_sha256": "afc3b5afc7fa004937efc8277199d67e27059a80c513a72cf54018f17dadfdb4",
+    "source_run_id": "pilot-256-20261111-01",
+    "source_run_sha256": "d426ab994e8ed9bc8e85d9764fa3c205ce4f67e89292cbb434aef19e59bf5889",
+    "source_run_status": "completed",
+    "training_code_dirty": false,
+    "training_code_revision": "2f856242ddf0e915fd5f063d8068aa58bff4dee2",
+    "training_config": {
+      "batch_size": 4,
+      "device": "mps",
+      "epochs": 3,
+      "head_learning_rate": 0.0005,
+      "learning_rate": 2e-05,
+      "max_length": 256,
+      "max_steps": null,
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "seed": 42,
+      "threads": 4
+    },
+    "upstream_declared_license": "Apache-2.0",
+    "upstream_model_card_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/raw/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md"
+  },
+  "runtime": {
+    "inference": "Checkpoint contains local model/tokenizer weights; use the existing jeff.model.predict loader with offline flags. Export/verification does not execute inference.",
+    "installation": "Wheel and Python dependencies must be installed separately; dependency downloads may require network access. Dependency wheels are not bundled.",
+    "model_extra": "model",
+    "requirements_file": "requirements-macos-arm64-py312.txt",
+    "requirements_scope": "macOS arm64, Python 3.12; owner-prepared dependency pins"
+  },
+  "schema_version": "jeff.runtime.bundle.v1"
+}
