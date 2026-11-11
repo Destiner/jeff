@@ -4,7 +4,7 @@
 
 A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6-v2` at revision `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`, supplies language representations. A new shared scalar head scores each candidate. AdamW updates both the pretrained backbone and head using cross-entropy over the supplied options.
 
-This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. Research recommends later comparing a pretrained MS MARCO relevance head; the first loop does not claim that stronger baseline.
+This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
 ## Formatting and probabilities
 
