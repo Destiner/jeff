@@ -1,6 +1,6 @@
 {
   "schema_version": "m7.docs-results.v1",
-  "status": "training_and_reload_complete_independent_scoring_pending",
+  "status": "training_reload_and_independent_e7_complete_mixed",
   "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m7-qwen-low-lr-20261111-01",
   "plan": "m7-qwen-low-lr-plan.md",
   "source_revision": "574774d631d707de9398c80dc5b936d9563e386c",
@@ -429,8 +429,22 @@
     "sha256": "30b4f58e8bcdfba45a3a4f0c1912ef8668a34edb722f4d111c75859a5697b963",
     "no_duplicate_inference": true
   },
-  "pending": {
-    "E7": "independent frozen held-out comparison against original P3, failed M6 and retained encoders"
+  "E7": {
+    "status": "complete_measured_mixed_result",
+    "publication": {
+      "path": "docs/evaluation/e7-low-lr-learning.md",
+      "sha256": "3c6d2ab0a68fd636b99a5cfa5719add405569cc5d9f167a41f6e04eb0d28800c"
+    },
+    "manifest": {
+      "path": "manifests/evaluation/e7-m7-report-v1.json",
+      "sha256": "b201f870c12c49f11c483abcb70f149a031d12101ddb88aabba9a9ed5142db2d"
+    },
+    "publication_commit": "ac9046ba9496918f38fedf7cceb396f6b0d36162",
+    "main_integration_commit": "52d277465b16cd0c0c57117ed2de499049f4ea0f",
+    "summary": "Substantive intent/sentiment and broad proper-score gains against original P3, not merely recovery from M6; new-rule both-correct 4->0/80, flips 65->80/80. All 200 inherited/new rule presentations strictly select actual input position 0; all 624 M7 maxima are unique. Rule proper-score exceptions against P3, M6 and uniform remain in the authoritative report.",
+    "probe_summary": "Agreement 20->21/24; both-correct 9->9/12 with seven old successes retained, two sentiment gains and two rule losses; flips 2->3/12.",
+    "population_limits": "Inherited 60/12 source groups, new 240/170 source groups and probes 24/12 pairs remain separate. One seed on correlated reused development; reversals and overlapping source units are not independent evidence.",
+    "boundaries": "Teacher agreement is not independently verified truth; rule reference-basis limits remain. No calibration, significance, root-cause diagnosis, automatic promotion, final access or further learning authorization. Original execution and P5 pins are unchanged."
   },
   "qualifications": [
     "TRAIN fitting is not end-to-end learning or held-out transfer.",
