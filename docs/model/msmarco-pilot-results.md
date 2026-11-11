@@ -41,6 +41,24 @@ Research's published state-free longest-option diagnostic matches 18/20 intent v
 
 The new tokenizer audit found zero truncated or question/candidate-loss pairs at 256 across 360 decisions / 1,412 pairs (max 169 tokens). Input loss does not explain the remaining rule weakness.
 
+## Independent Evaluation: material probe regression
+
+E2 independently reproduced the pilot scores and evaluated the published adversarial validation probes: **24 presentations / 12 source groups**, with teacher labels (not final or independently certified truth).
+
+| Snapshot | Probe teacher agreement | Probe log loss |
+| --- | ---: | ---: |
+| M2 all-MiniLM trained, 256 | **16/24** | **0.710407** |
+| M3 retained pretrained head | 14/24 | 1.453783 |
+| M3 trained | **8/24** | 1.360701 |
+
+M3 trained probe families were intent 4/8, sentiment **0/8**, rules 4/8; M2 was 6/8, 6/8, 4/8. The pilot improvement coexists with a substantial probe regression. Probe log loss improves relative to M3's own start despite lower top-choice agreement; these metrics are not interchangeable. All probe files have complete valid coverage, so these are answer disagreements, not inference failures.
+
+E2 also found identical chosen option IDs across all 60 complete pilot reversal pairs for each M2/M3 snapshot and all 12 model probe pairs. Maximum individual probability change across the pilot model comparisons was approximately 1.44e-8. This follows the independent-pair architecture and does not establish correctness.
+
+Independent reports: `evaluation/e2-m3-v1/{comparison.json,report.md,probes-comparison.json,probes-report.md}` under the shared artifact root. Public findings: `handoffs/evaluation/20261111-e2-m3-independent-results.md`.
+
+**Keep both trained checkpoints. M3 is not an across-the-board replacement for M2.** Do not train on these validation cases or paraphrases to repair the regression. Future data changes need genuinely separate scenarios; no additional training was performed here.
+
 ## Delivery and compatibility evidence
 
 - Six separate offline MPS processes loaded the new baseline/trained checkpoints for original pilot60, reversed pilot60, and adversarial probe24 inputs. Evaluation owns independent scoring, source-group summaries and option-order analysis; only the exact label-free reverse/probe inputs were inspected here.
@@ -74,4 +92,4 @@ Under `JEFF_ARTIFACTS_DIR=/Users/destiner/Code/jeff/artifacts`:
 - `model/m2-e2-inference-20261111-01/`: backward-compatible M2 reverse/probe outputs.
 - `handoffs/model/20261111-m3-complete.md`: actual commands, exact commits/self-merge evidence and independent Evaluation report links when available.
 
-The package and default architecture are not silently switched to M3. Keep all matching starting/trained checkpoints and use Evaluation's grouped/probe findings before any deployment or further model/data decision.
+The package and default architecture are not silently switched to M3. Keep all matching starting/trained checkpoints; the independent probe regression specifically argues against selecting a replacement solely from the higher pilot score.
