@@ -1,0 +1,244 @@
+I3 scratch workflow phase 1: 2026-11-11T14:15:51Z
+
+Legacy e7e60f3 client reads copied I1 board:
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	completed	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+ece6f9ae-2237-4971-b1d3-a750a6cf1f11	declined	lead	2026-11-11T11:57:17.022508Z	Scratch: declined disposition
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board init
+/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board status
+{
+  "message_schema": "1",
+  "peer_reading": true,
+  "peer_posting": false,
+  "source": "/Users/destiner/Code/jeff/.worktrees/infra/src/jeff/coordination/mailbox.py",
+  "board": "/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board"
+}
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board read bb5317ad-e0eb-4cfe-9d8c-be73eccc962e
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "bb5317ad-e0eb-4cfe-9d8c-be73eccc962e",
+  "sender": "lead",
+  "recipient": "infra",
+  "kind": "direction",
+  "created_at": "2026-11-11T11:57:16.528184Z",
+  "subject": "Scratch: read the protocol",
+  "task_id": "I1-DEMO"
+}
+```
+
+# Scratch-only direction
+
+Read the mailbox protocol and report back on this isolated demonstration. This is not a live project assignment.
+
+Evidence: [protocol](/Users/destiner/Code/jeff/.worktrees/infra/docs/coordination/mailbox.md).
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient infra --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	completed	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+ece6f9ae-2237-4971-b1d3-a750a6cf1f11	declined	lead	2026-11-11T11:57:17.022508Z	Scratch: declined disposition
+
+Original message/receipt/board digests after new-client reads:
+--- /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/legacy-before.sha256	2026-11-11 14:15:07
++++ /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/legacy-after.sha256	2026-11-11 14:15:51
+@@ -1,9 +1,9 @@
+-aa14485ac25defa3be8104c8ef20bfd0b7d1f52cb62549f23c3f45207283288f  .scratch/i3-demo-J5TpK6/board/receipts/infra/cd163f4a-df5f-41b6-89fa-bf2eb258f8ac.md
+-84b9c85044470d638f502c73f33ff4874085635c7c0b83bc2485f9976c387db8  .scratch/i3-demo-J5TpK6/board/receipts/infra/ece6f9ae-2237-4971-b1d3-a750a6cf1f11.md
+-896c62417b5f85968819f871c1bb29fa91f7350649e0922eec7fe563ca40d99d  .scratch/i3-demo-J5TpK6/board/receipts/infra/bb5317ad-e0eb-4cfe-9d8c-be73eccc962e.md
+-55e241c7d726c7def1d21e5076c92f444e079aba1cac2e0f735103a5c16a91c7  .scratch/i3-demo-J5TpK6/board/receipts/lead/a94cc73f-8792-4f68-8893-dc4f60e771aa.md
+-1decd9c45525fa27b575cde625e28db723459fdd9c947a22bd6492b6f25dfaf6  .scratch/i3-demo-J5TpK6/board/messages/cd163f4a-df5f-41b6-89fa-bf2eb258f8ac.md
+-bf4e2cc832489216f6dd49c93cd84fc9215263ec2a907b265952fea558e210d7  .scratch/i3-demo-J5TpK6/board/messages/a94cc73f-8792-4f68-8893-dc4f60e771aa.md
+-00e4be338824d24b4e14c151f02fabc08ad0340f322986f7c120bde95c33a37d  .scratch/i3-demo-J5TpK6/board/messages/ece6f9ae-2237-4971-b1d3-a750a6cf1f11.md
+-8d87592445664181ae232dd1cb6da0b64359d9e5b5a0452233d5a967988c812b  .scratch/i3-demo-J5TpK6/board/messages/bb5317ad-e0eb-4cfe-9d8c-be73eccc962e.md
+-b2f1c741fa4a20529f7e3c1d2441caa518798894a62f979efd57be7a76fd8fb9  .scratch/i3-demo-J5TpK6/board/board.md
++aa14485ac25defa3be8104c8ef20bfd0b7d1f52cb62549f23c3f45207283288f .scratch/i3-demo-J5TpK6/board/receipts/infra/cd163f4a-df5f-41b6-89fa-bf2eb258f8ac.md
++84b9c85044470d638f502c73f33ff4874085635c7c0b83bc2485f9976c387db8 .scratch/i3-demo-J5TpK6/board/receipts/infra/ece6f9ae-2237-4971-b1d3-a750a6cf1f11.md
++896c62417b5f85968819f871c1bb29fa91f7350649e0922eec7fe563ca40d99d .scratch/i3-demo-J5TpK6/board/receipts/infra/bb5317ad-e0eb-4cfe-9d8c-be73eccc962e.md
++55e241c7d726c7def1d21e5076c92f444e079aba1cac2e0f735103a5c16a91c7 .scratch/i3-demo-J5TpK6/board/receipts/lead/a94cc73f-8792-4f68-8893-dc4f60e771aa.md
++1decd9c45525fa27b575cde625e28db723459fdd9c947a22bd6492b6f25dfaf6 .scratch/i3-demo-J5TpK6/board/messages/cd163f4a-df5f-41b6-89fa-bf2eb258f8ac.md
++bf4e2cc832489216f6dd49c93cd84fc9215263ec2a907b265952fea558e210d7 .scratch/i3-demo-J5TpK6/board/messages/a94cc73f-8792-4f68-8893-dc4f60e771aa.md
++00e4be338824d24b4e14c151f02fabc08ad0340f322986f7c120bde95c33a37d .scratch/i3-demo-J5TpK6/board/messages/ece6f9ae-2237-4971-b1d3-a750a6cf1f11.md
++8d87592445664181ae232dd1cb6da0b64359d9e5b5a0452233d5a967988c812b .scratch/i3-demo-J5TpK6/board/messages/bb5317ad-e0eb-4cfe-9d8c-be73eccc962e.md
++b2f1c741fa4a20529f7e3c1d2441caa518798894a62f979efd57be7a76fd8fb9 .scratch/i3-demo-J5TpK6/board/board.md
+I3 scratch workflow resumed: 2026-11-11T14:17:25Z
+
+The preceding digest diff was only one versus two spaces from awk, not changed bytes. Repeating with the original command format:
+No differences in the nine original message/receipt/board files.
+
+Peer send while disabled (expected refusal, no file published):
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board send --sender model --recipient data --kind task --task-id I3-DEMO --subject Scratch:\ peer\ request --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/peer-request.md
+mailbox: peer posting is disabled; lead must confirm client adoption and run enable-peers
+Disabled-send exit: 1
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient data --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+(empty)
+
+Scratch-only enablement, simulated lead role:
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board enable-peers --sender lead --confirm-adoption
+/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board/peer-posting.md
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board status
+{
+  "message_schema": "1",
+  "peer_reading": true,
+  "peer_posting": true,
+  "source": "/Users/destiner/Code/jeff/.worktrees/infra/src/jeff/coordination/mailbox.py",
+  "board": "/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board"
+}
+
+Legacy reader still reads old messages after separate marker creation:
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	completed	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+ece6f9ae-2237-4971-b1d3-a750a6cf1f11	declined	lead	2026-11-11T11:57:17.022508Z	Scratch: declined disposition
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board send --sender model --recipient data --kind task --task-id I3-DEMO --subject Scratch:\ peer\ request --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/peer-request.md
+48fcbefc-82a3-4ee7-aa15-ed95025f02e8
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient data
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+48fcbefc-82a3-4ee7-aa15-ed95025f02e8	unread	model	2026-11-11T14:17:26.165584Z	Scratch: peer request
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board read 48fcbefc-82a3-4ee7-aa15-ed95025f02e8
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "48fcbefc-82a3-4ee7-aa15-ed95025f02e8",
+  "sender": "model",
+  "recipient": "data",
+  "kind": "task",
+  "created_at": "2026-11-11T14:17:26.165584Z",
+  "subject": "Scratch: peer request",
+  "task_id": "I3-DEMO"
+}
+```
+
+# Scratch-only peer request
+
+Please inspect this demo handoff and reply with a notice. This is a simulated Model → Data request, not an assignment or priority/compute grant.
+
+Evidence: [mailbox protocol](/Users/destiner/Code/jeff/.worktrees/infra/docs/coordination/mailbox.md).
+I3 scratch workflow phase 2: 2026-11-11T14:18:04Z
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board ack 48fcbefc-82a3-4ee7-aa15-ed95025f02e8 --recipient data
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient data
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+48fcbefc-82a3-4ee7-aa15-ed95025f02e8	acknowledged-outstanding	model	2026-11-11T14:17:26.165584Z	Scratch: peer request
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board send --sender data --recipient model --kind report --task-id I3-DEMO --reply-to 48fcbefc-82a3-4ee7-aa15-ed95025f02e8 --subject Scratch:\ peer\ reply --body-file /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/peer-reply.md
+97b61f4d-68d3-4004-b74b-e281b6c25727
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient model
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+97b61f4d-68d3-4004-b74b-e281b6c25727	unread	data	2026-11-11T14:18:04.438657Z	Scratch: peer reply
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board read 97b61f4d-68d3-4004-b74b-e281b6c25727
+```json
+{
+  "schema_version": "1",
+  "record_type": "message",
+  "id": "97b61f4d-68d3-4004-b74b-e281b6c25727",
+  "sender": "data",
+  "recipient": "model",
+  "kind": "report",
+  "created_at": "2026-11-11T14:18:04.438657Z",
+  "subject": "Scratch: peer reply",
+  "task_id": "I3-DEMO",
+  "reply_to": "48fcbefc-82a3-4ee7-aa15-ed95025f02e8"
+}
+```
+
+# Scratch-only peer reply
+
+The demo handoff was read. This Data → Model reply demonstrates peer delivery notices; it makes no claim about real datasets or model work.
+
+Evidence: [protocol](/Users/destiner/Code/jeff/.worktrees/infra/docs/coordination/mailbox.md).
+
+Legacy e7e60f3 client reading an unrelated inbox after peer publication (expected refusal):
+mailbox: only lead ↔ team routing is allowed
+Legacy unrelated-inbox exit: 1
+
+New absolute launcher, called from legacy src with stale PYTHONPATH and Model VIRTUAL_ENV:
+{
+  "message_schema": "1",
+  "peer_reading": true,
+  "peer_posting": true,
+  "source": "/Users/destiner/Code/jeff/.worktrees/infra/src/jeff/coordination/mailbox.py",
+  "board": "/Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board"
+}
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+bb5317ad-e0eb-4cfe-9d8c-be73eccc962e	completed	lead	2026-11-11T11:57:16.528184Z	Scratch: read the protocol
+cd163f4a-df5f-41b6-89fa-bf2eb258f8ac	completed	lead	2026-11-11T11:57:17.021739Z	Scratch: blocked disposition
+ece6f9ae-2237-4971-b1d3-a750a6cf1f11	declined	lead	2026-11-11T11:57:17.022508Z	Scratch: declined disposition
+
+Default-board discovery from the same stale working directory (read-only live status):
+{
+  "message_schema": "1",
+  "peer_reading": true,
+  "peer_posting": false,
+  "source": "/Users/destiner/Code/jeff/.worktrees/infra/src/jeff/coordination/mailbox.py",
+  "board": "/Users/destiner/Code/jeff/.coord"
+}
+I3 scratch workflow phase 3: 2026-11-11T14:18:34Z
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board ack 97b61f4d-68d3-4004-b74b-e281b6c25727 --recipient model
+acknowledged
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient model
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+97b61f4d-68d3-4004-b74b-e281b6c25727	acknowledged-outstanding	data	2026-11-11T14:18:04.438657Z	Scratch: peer reply
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board complete 97b61f4d-68d3-4004-b74b-e281b6c25727 --recipient model --note Scratch\ peer\ reply\ read\;\ no\ real\ data/model\ claim\ accepted.
+completed
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board block 48fcbefc-82a3-4ee7-aa15-ed95025f02e8 --recipient data --note Scratch-only\ disposition\ example\;\ not\ a\ real\ blocker.
+blocked
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient data
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+48fcbefc-82a3-4ee7-aa15-ed95025f02e8	blocked	model	2026-11-11T14:17:26.165584Z	Scratch: peer request
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board complete 48fcbefc-82a3-4ee7-aa15-ed95025f02e8 --recipient data --note Scratch\ peer\ round\ trip\ complete\;\ reply\ 97b61f4d-68d3-4004-b74b-e281b6c25727.
+completed
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient model --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+97b61f4d-68d3-4004-b74b-e281b6c25727	completed	data	2026-11-11T14:18:04.438657Z	Scratch: peer reply
+
+$ uv run --locked python -m jeff.coordination --board /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board inbox --recipient data --all
+Board: /Users/destiner/Code/jeff/.worktrees/infra/.scratch/i3-demo-J5TpK6/board
+ID	STATE	FROM	CREATED (UTC)	SUBJECT
+48fcbefc-82a3-4ee7-aa15-ed95025f02e8	completed	model	2026-11-11T14:17:26.165584Z	Scratch: peer request
+
+Live board remains disabled (read-only check):
+{
+  "message_schema": "1",
+  "peer_reading": true,
+  "peer_posting": false,
+  "source": "/Users/destiner/Code/jeff/.worktrees/infra/src/jeff/coordination/mailbox.py",
+  "board": "/Users/destiner/Code/jeff/.coord"
+}

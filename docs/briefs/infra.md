@@ -2,16 +2,19 @@
 
 ## Objective and ownership
 
-I1 delivers a barebones Markdown mailbox for lead ↔ owner tasks/directions and
-reports/meaningful updates/blockers. See [protocol/usage](../coordination/mailbox.md)
-and [actual demonstration evidence](../coordination/i1-demo.md).
+I1/I2 are delivered. I3 adds direct owner-to-owner messaging with peer posting
+OFF until lead confirms compatible-client adoption and enables it. See
+[protocol/usage](../coordination/mailbox.md), [rollout](../coordination/i3-rollout.md),
+and [I3 demonstration evidence](../coordination/i3-demo.md).
 
 - Branch/worktree: `worker/infra`, `.worktrees/infra`, created from committed
   main `97d032433cf94e5647b664f578f4237613f9b500`; adopt rather than recreate.
 - Owned paths: `src/jeff/coordination/`, `docs/coordination/`, this brief.
 - I1 narrowly authorizes `/.coord/` in root `.gitignore`, mailbox/check-in
   instructions in `AGENTS.md`, and Infra ownership/mailbox registration in
-  `docs/coordination.md`. Other teams' objectives and merge rules are unchanged.
+  `docs/coordination.md`. I3 separately authorizes narrow mailbox/check-in and
+  adoption wording in `AGENTS.md` and `docs/coordination.md`. Other teams'
+  objectives and merge rules are unchanged.
 - No model, training, data, evaluation, or release/runtime edits; no dependency,
   `pyproject.toml`, budget, or shared ML-interface changes.
 - No tests/lint, model loading/training, paid services, database, web UI,
@@ -22,7 +25,8 @@ and [actual demonstration evidence](../coordination/i1-demo.md).
 The live board is `/Users/destiner/Code/jeff/.coord/`. Git common-directory
 resolution shares it across worktrees; `--board` selects an isolated alternative.
 Messages are immutable JSON-fenced Markdown with UUIDv4 IDs and validated
-lead ↔ team routing/references. Per-recipient receipts distinguish read
+participant routing/references. Updated readers understand peer records;
+new peer sends require the board's explicit lead enablement marker. Per-recipient receipts distinguish read
 acknowledgement from disposition and cannot regress closed work. Atomic
 publication and a local per-recipient file lock handle cooperating processes.
 
@@ -42,4 +46,6 @@ delivery report for lead to send.
 
 Follow [owner lifecycle](../owner-lifecycle.md) for replacement. After I1,
 request direction rather than expand this into an orchestration platform.
+For I3, leave live enablement and adoption collection to lead; use the absolute
+main-checkout launcher without changing an active ML environment.
 No ML slot or paid allocation is needed; no background process is installed.
