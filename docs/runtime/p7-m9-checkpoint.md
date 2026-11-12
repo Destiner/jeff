@@ -2,7 +2,7 @@
 
 **One fresh existing-scorer process delivered 624/624 development predictions and exactly 2,390 valid option probabilities in 4.098479833 seconds.** All 156 batches were attempted and completed, with zero startup rows, warmups or canaries. There was no inference retry, fallback or extra pass.
 
-Outputs went directly to E9 (`2cbf2b01-21ed-470f-9cd8-4ff7f64fa474`); Model received the slot return (`762f0bc0-3db2-4e2c-bb36-d1f10b2223f8`). The immediate handoff is `artifacts/handoffs/release/20261111T2318-P7-predictions-ready-slot-returned.md`. **Model independently verified closure; E9 interpretation remains pending.** Closure is recorded in `artifacts/model/m9-msmarco-duration-20261111-01/p7-return.json` (SHA-256 `651f85c614610f2a662b6ae2ab9f74cf26de13e9ba0155062b044c38738bdb2c`) and message `dd56a650-7816-45c9-8eb3-1e6e721f2561`. E9 owns held-out conclusions; Runtime success does not promote this checkpoint.
+Outputs went directly to E9 (`2cbf2b01-21ed-470f-9cd8-4ff7f64fa474`); Model received the slot return (`762f0bc0-3db2-4e2c-bb36-d1f10b2223f8`). The immediate handoff is `artifacts/handoffs/release/20261111T2318-P7-predictions-ready-slot-returned.md`. **Model independently verified closure; E9 is complete:** [independent duration report](../evaluation/e9-encoder-duration.md), main `1dde6fd`. Closure is recorded in `artifacts/model/m9-msmarco-duration-20261111-01/p7-return.json` (SHA-256 `651f85c614610f2a662b6ae2ab9f74cf26de13e9ba0155062b044c38738bdb2c`) and message `dd56a650-7816-45c9-8eb3-1e6e721f2561`. E9 owns held-out conclusions; Runtime success does not promote this checkpoint.
 
 ## Execution and scope
 

@@ -1,0 +1,120 @@
+{
+  "schema_version": "p8.release.v1",
+  "release_id": "p8-d3-20261112-01",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01",
+  "source_revision": "7e4819210c8c98aea2eb0111ad7a389cec4dccfe",
+  "packet": {
+    "path": "packet.json",
+    "sha256": "1d66feb26ec20c5d19fa3bab810ec62d3a46eeee53171183df3a16f50f8140d1",
+    "scope": "Exact executable/config/checkpoint bindings; retained, not duplicated or re-audited"
+  },
+  "process_receipt": {
+    "path": "process-receipt.json",
+    "sha256": "76e47f951a36035adc84762c12848d58c62f5e2d3f33e89c58bb08067a1261c3"
+  },
+  "input_sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928",
+  "aggregate_elapsed_seconds": 26.15052833314985,
+  "timing_scope": "All child imports, ML and audits; excludes post-hoc CPU output validation",
+  "phases": [
+    {
+      "name": "p3-audit",
+      "pid": 43825,
+      "returncode": 0,
+      "group_absent": true
+    },
+    {
+      "name": "p3-predict",
+      "pid": 43850,
+      "returncode": 0,
+      "group_absent": true
+    },
+    {
+      "name": "m7-audit",
+      "pid": 43927,
+      "returncode": 0,
+      "group_absent": true
+    },
+    {
+      "name": "m7-predict",
+      "pid": 43955,
+      "returncode": 0,
+      "group_absent": true
+    },
+    {
+      "name": "m9-predict",
+      "pid": 44015,
+      "returncode": 0,
+      "group_absent": true
+    }
+  ],
+  "presentations": {
+    "p3_with_startup": 99,
+    "m7_with_startup": 99,
+    "encoder_decisions": 96,
+    "total_decisions_and_startup": 294,
+    "encoder_native_calls": 24
+  },
+  "outputs": {
+    "p3": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/p3-run/d3-seen-rules.jsonl",
+      "sha256": "b04bfca42dd247f6551bb9bd0f9ea24bf1afca5cc71e527a5732ce9c935f4aa8",
+      "rows": 96,
+      "option_probabilities": 361,
+      "max_normalization_error": 1.1548399925231934E-7,
+      "receipt_sha256": "d702d8cd255025105edf23d28eefe9be5659dec875f2e7168232cbc004f9e56d"
+    },
+    "m7": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m7-run/d3-seen-rules.jsonl",
+      "sha256": "52089e6d36bd2e96e44e870071ac38c805fe1ac186218bcdb463c2b2ed242d68",
+      "rows": 96,
+      "option_probabilities": 361,
+      "max_normalization_error": 1.043081283569336E-7,
+      "receipt_sha256": "e65e7851f34011945a4c09578323014bb3edc16c84fd7b2682100f0666a33a96"
+    },
+    "m9": {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m9-run/d3-seen-rules96.jsonl",
+      "sha256": "4789fa03ae8303fd39acea1bad8578368629fc7b8f978857e363aaf906a84536",
+      "rows": 96,
+      "option_probabilities": 361,
+      "max_normalization_error": 1.043081283569336E-7,
+      "receipt_sha256": "9392a9ae73fb96466dea6d0898a0e541e4a3528c0a2648e0aed7f14ab6929780"
+    }
+  },
+  "handoff": "artifacts/handoffs/release/20261112T0129-P8-complete-slot-returned.md",
+  "delivery_message": "11327819-45cf-4233-9e84-2d1931a243dc",
+  "slot_return_message": "d4a47afc-1481-4a1a-9f84-3c3701690b3c",
+  "model_closure": {
+    "status": "verified and closed",
+    "path": "artifacts/model/night-20261112/p8-return.json",
+    "sha256": "0bfafb7860b8cfffe1c58972b5c00db397f035786d1f834283e9a2d17c728f69"
+  },
+  "e10": {
+    "status": "complete",
+    "report": "docs/evaluation/e10-seen-mechanisms.md",
+    "main_revision": "630aab0dfe22f107b147dee80db98e45a549ceb3"
+  },
+  "p9": "prepared_not_executed",
+  "outputs_immutable": true,
+  "child_receipts": {
+    "p3_audit": {
+      "path": "p3-audit/audit.json",
+      "sha256": "208ae79c11eec1325291988a979efc8f7215d02ebf198f374e0ba38b54816fcf"
+    },
+    "m7_audit": {
+      "path": "m7-audit/audit.json",
+      "sha256": "d22d054c7f55a6c603fbbc65c903d381f73a116ecb0a43ee5881b063d0ac9571"
+    },
+    "p3_predict": {
+      "path": "p3-run/receipt.json",
+      "sha256": "d702d8cd255025105edf23d28eefe9be5659dec875f2e7168232cbc004f9e56d"
+    },
+    "m7_predict": {
+      "path": "m7-run/receipt.json",
+      "sha256": "e65e7851f34011945a4c09578323014bb3edc16c84fd7b2682100f0666a33a96"
+    },
+    "m9_predict": {
+      "path": "m9-run/receipt.json",
+      "sha256": "9392a9ae73fb96466dea6d0898a0e541e4a3528c0a2648e0aed7f14ab6929780"
+    }
+  }
+}

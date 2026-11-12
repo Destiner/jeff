@@ -44,7 +44,7 @@ The [P6 report](p6-m8-checkpoint.md) records one strict fresh stock-HF reload:
 624/624 predictions, exactly627 total forwards including3 startup rows, in36.246s.
 The [explicit v2 contract](p6-readout-contract.md) binds actual frozen tensors,
 learned-row export and CPU/MPS storage identity without changing the scorer.
-E8 independently interprets quality; execution success is not promotion or a
+[E8 interpretation](../evaluation/e8-readout-scope.md) is complete (main `1dde6fd`); execution success is not promotion or a
 fresh small-head-versus-stock numerical comparison on every development input.
 
 ## M9 retained-encoder reload (P7)
@@ -54,8 +54,16 @@ record one existing-scorer reload: 624/624 predictions, 156 batches and 2,390 va
 option probabilities in 4.098479833 seconds, with zero startup rows or canaries.
 The missed original start window and Model's renewal of the same reservation are
 preserved. Outputs went directly to E9 and the slot was returned to Model;
-Model independently verified closure, while E9 interpretation remains pending.
-No new tracked Runtime implementation or default promotion follows.
+Model independently verified closure; [E9 interpretation](../evaluation/e9-encoder-duration.md)
+is complete (main `1dde6fd`). No new tracked Runtime implementation or default promotion follows.
+
+## D3 transfer execution (P8)
+
+The [P8 report](p8-d3-transfer.md) and [release manifest](../../manifests/releases/p8-d3-20261112-01.json)
+record the completed P3/M7/M9 chain: 96 D3 rows per arm, 294 total presentations,
+26.150528333 seconds, all five phases exit 0 and groups absent. E10 received outputs;
+Model independently verified closure; [E10 interpretation](../evaluation/e10-seen-mechanisms.md)
+is complete (main `630aab0`). P9 is prepared, not executed.
 
 ## Linux CPU follow-up (P2)
 
