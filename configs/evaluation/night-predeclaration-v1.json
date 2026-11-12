@@ -1,0 +1,40 @@
+{
+  "schema_version": "jeff.evaluation.night-predeclaration.v1",
+  "recorded_utc": "2026-11-12T01:25:38.369055+00:00",
+  "status": "prospective-criteria-and-unexecuted-preparation",
+  "pins": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/night-predeclared-v1/plan.md",
+      "bytes": 7989,
+      "sha256": "972c23762d20a73ec922fa337bb14348af832f2ecde4adeb0eabc0a47b44952f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/handoffs/lead/night-20261112/learning-queue-v1.md",
+      "bytes": 4646,
+      "sha256": "bfa39deed175c270917343411e7f767fadf211866c8f9e3337e7b8d90eeea3da"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/handoffs/lead/night-20261112/nli-screen.md",
+      "bytes": 3339,
+      "sha256": "e27361e3eb3293920106581caa2473e3f1ce18adc55a045cdb20690b82515e26"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/night-scoring-preparation-v1/preparation-lock.json",
+      "bytes": 41439,
+      "sha256": "37a5e0afbd4d17f1e059912c440494243042819d23d325aec996f42735d1e50c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-analysis-v1/recipe-all14.json",
+      "bytes": 80554,
+      "sha256": "f83ff6ef7d8e6d25fc076d66c62d329b8ed56d6627edd98a22507c875496f837"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/configs/evaluation/e4-d3-v1.json",
+      "bytes": 1895,
+      "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c"
+    }
+  ],
+  "owner_adoption": "E10/E11/E12 by01:03UTC, E14 at01:14UTC; corresponding lead predeclarations earlier; no new prediction consumed",
+  "execution": "No E10/E11/E12/E14 scoring executed here; preparation is source-reviewed only",
+  "actual_pending_extra_GBP": 0
+}
