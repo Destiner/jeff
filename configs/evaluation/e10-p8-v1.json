@@ -1,0 +1,50 @@
+{
+  "new": [
+    {
+      "name": "p3_frozen",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+      },
+      "receipt": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/p3-run/receipt.json",
+        "sha256": "d702d8cd255025105edf23d28eefe9be5659dec875f2e7168232cbc004f9e56d"
+      },
+      "prediction": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/p3-run/d3-seen-rules.jsonl",
+        "sha256": "b04bfca42dd247f6551bb9bd0f9ea24bf1afca5cc71e527a5732ce9c935f4aa8"
+      }
+    },
+    {
+      "name": "m7_seed42",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+      },
+      "receipt": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m7-run/receipt.json",
+        "sha256": "e65e7851f34011945a4c09578323014bb3edc16c84fd7b2682100f0666a33a96"
+      },
+      "prediction": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m7-run/d3-seen-rules.jsonl",
+        "sha256": "52089e6d36bd2e96e44e870071ac38c805fe1ac186218bcdb463c2b2ed242d68"
+      }
+    },
+    {
+      "name": "m9_duration12",
+      "input": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+        "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+      },
+      "receipt": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m9-run/receipt.json",
+        "sha256": "9392a9ae73fb96466dea6d0898a0e541e4a3528c0a2648e0aed7f14ab6929780"
+      },
+      "prediction": {
+        "path": "/Users/destiner/Code/jeff/artifacts/release/p8-d3-20261112-01/m9-run/d3-seen-rules96.jsonl",
+        "sha256": "4789fa03ae8303fd39acea1bad8578368629fc7b8f978857e363aaf906a84536"
+      }
+    }
+  ],
+  "prior": []
+}
