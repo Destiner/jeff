@@ -26,6 +26,14 @@ P7_SHA = "a49a0934ea45febea4817a1a602ca6391d608bfe518d6a39ae0125ab48224f69"
 INPUT_SHA = "77c57b75b64a0b306c8c851bb2d3a023bddd5d237334cd288316013c26d2927a"
 ROOT = Path(__file__).resolve().parents[3]
 RECIPE = ROOT / "configs/runtime/p12-nli.json"
+EXPLORATION_DIR = ROOT.parents[1] / "artifacts/evaluation/e13-exploration-inputs-v1"
+EXPLORATION_MANIFEST = ROOT.parents[1] / "artifacts/release/e13-later-exploration-20261112-01/bindings/p12-nli.inputs.json"
+EXPLORATION_HASHES = {
+    "native.jsonl": "1c8dca5c849faba518478c8676be37290d7722fde2f3edfe791d71e0ca23a074",
+    "reversed.jsonl": "5e115753f7ee2bc6193c1c9758ddf59f05f2bae35a79eb975678afb8ce8ed2d1",
+    "pairs.json": "7572cdb4b47273d877d803203d8ff38e74dcdbfb82cac2f1a63c01830a991c5f",
+    "inference-handoff.json": "256cb8ae133d3d8867446dad65a7f0b31e2dc9ee0b8eeb87850680a7c9a70867",
+}
 SUITES = (
     ("v2-original", 300, "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917"),
     ("v2-reversed", 300, "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1"),
@@ -201,7 +209,44 @@ def check_assets(binding, guard):
                        "serializer": header(model_dir / "model.safetensors")}
 
 
+def exploration_file(entry, guard, rows=False, filename=None):
+    require(isinstance(entry, dict) and set(entry) ==
+            ({"path", "sha256", "rows", "name"} if rows else {"path", "sha256"}), "e13_pin_fields")
+    require(isinstance(entry["path"], str) and isinstance(entry["sha256"], str) and
+            len(entry["sha256"]) == 64, "e13_pin_required")
+    path = Path(entry["path"])
+    expected = EXPLORATION_MANIFEST if filename is None else EXPLORATION_DIR / filename
+    require(path == expected, "e13_exact_path")
+    if filename is not None:
+        require(entry["sha256"] == EXPLORATION_HASHES[filename], "e13_frozen_identity")
+    require(path.is_absolute() and path.is_file() and
+            not any(p.is_symlink() for p in (path, *path.parents)) and
+            not any("final" in p.lower() or "reference" in p.lower() for p in path.parts),
+            "e13_input_path")
+    require(digest(path, guard) == entry["sha256"], "e13_input_hash")
+    return path
+
+
 def read_inputs(binding, guard):
+    if binding["schema_version"] == "e13.nli.binding.v1":
+        manifest_path = exploration_file(binding["input_manifest"], guard)
+        manifest = load(manifest_path)
+        require(set(manifest) == {"schema_version", "candidate", "validation_only_never_train",
+                                  "release", "pair_map", "datasets"} and
+                manifest["schema_version"] == "e13.exploration.inputs.v1" and
+                manifest["candidate"] == "p12-nli" and
+                manifest["validation_only_never_train"] is True, "e13_manifest")
+        exploration_file(manifest["release"], guard, filename="inference-handoff.json")
+        exploration_file(manifest["pair_map"], guard, filename="pairs.json")
+        require(isinstance(manifest["datasets"], list) and len(manifest["datasets"]) == 2,
+                "e13_datasets")
+        for entry, name, filename in zip(manifest["datasets"], ("e13-native", "e13-reversed"),
+                                         ("native.jsonl", "reversed.jsonl")):
+            exploration_file(entry, guard, rows=True, filename=filename)
+            require(entry["name"] == name and type(entry["rows"]) is int and
+                    entry["rows"] == 200, "e13_suite_identity")
+        require(manifest["datasets"][0]["rows"] == manifest["datasets"][1]["rows"], "e13_equal_rows")
+        return read_decisions(manifest, guard, external=True)
     p7 = pin(binding["p7_binding"], guard)
     require(binding["p7_binding"]["sha256"] == P7_SHA, "p7_binding_identity")
     old = load(p7)
@@ -213,10 +258,15 @@ def read_inputs(binding, guard):
     require(set(manifest) == {"schema_version", "datasets"} and
             manifest["schema_version"] == "p3.inputs.v1" and len(manifest["datasets"]) == 3,
             "input_manifest_fields")
+    return read_decisions(manifest, guard)
+
+
+def read_decisions(manifest, guard, external=False):
     suites, total_pairs = [], 0
-    for entry, expected in zip(manifest["datasets"], SUITES):
-        require(set(entry) == {"name", "rows", "sha256", "path"} and
-                (entry["name"], entry["rows"], entry["sha256"]) == expected, "input_suite_identity")
+    for index, entry in enumerate(manifest["datasets"]):
+        if not external:
+            require(set(entry) == {"name", "rows", "sha256", "path"} and
+                    (entry["name"], entry["rows"], entry["sha256"]) == SUITES[index], "input_suite_identity")
         path = Path(entry["path"])
         require(path.is_absolute() and not any("final" in p.lower() or "reference" in p.lower()
                                              for p in path.parts), "input_path")
@@ -232,6 +282,8 @@ def read_inputs(binding, guard):
                 require(isinstance(row["state"], str) and isinstance(row["question"], str) and
                         row["question"].strip(), "decision_text")
                 require(isinstance(row["options"], list) and len(row["options"]) >= 2, "options")
+                if external:
+                    require(len(row["options"]) == 2, "e13_exact_k2")
                 ids = set()
                 for option in row["options"]:
                     require(set(option) == {"id", "text"} and
@@ -244,7 +296,7 @@ def read_inputs(binding, guard):
                 guard()
         require(len(rows) == entry["rows"], "input_row_count")
         suites.append((entry, rows))
-    require(total_pairs == 2390, "candidate_pair_count")
+    require(total_pairs == (800 if external else 2390), "candidate_pair_count")
     return suites
 
 
@@ -282,20 +334,19 @@ def predict(args, receipt, journal, start):
         deadline()
         rss = int(subprocess.check_output(["/bin/ps", "-o", "rss=", "-p", str(os.getpid())],
                                          text=True, timeout=2).strip()) * 1024
-        vm = subprocess.check_output(["/usr/bin/vm_stat"], text=True, timeout=2)
-        lines = vm.splitlines()
-        page_size = int(lines[0].split("page size of ")[1].split(" bytes")[0])
-        pages = {line.split(":")[0]: int(line.split(":")[1].strip().rstrip("."))
-                 for line in lines[1:] if ":" in line}
-        headroom = (pages["Pages free"] + pages["Pages inactive"]) * page_size
-        driver = torch.mps.driver_allocated_memory() if torch is not None else 0
+        driver = torch.mps.driver_allocated_memory() if torch is not None else None
+        recommended = torch.mps.recommended_max_memory() if torch is not None else None
+        headroom = recommended - driver if torch is not None else None
         sample = {"stage": stage, "rss_bytes": rss, "peak_rss_bytes": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
-                  "driver_bytes": driver, "headroom_free_plus_inactive_bytes": headroom}
+                  "driver_bytes": driver, "mps_recommended_max_memory_bytes": recommended,
+                  "mps_recommended_minus_driver_bytes": headroom,
+                  "mps_guard": "checked" if torch is not None else "not_checked"}
         receipt["resources"].append(sample)
         record("resource", **sample)
         require(rss <= 8 * 1024**3 and sample["peak_rss_bytes"] <= 8 * 1024**3, "rss_guard")
-        require(driver <= 8 * 1024**3, "driver_guard")
-        require(headroom >= 2 * 1024**3, "headroom_guard")
+        if torch is not None:
+            require(driver <= 8 * 1024**3, "driver_guard")
+            require(headroom >= 2 * 1024**3, "recommended_headroom_guard")
         deadline()
 
     require(sys.platform == "darwin" and platform.machine() == "arm64", "apple_silicon_required")
@@ -312,9 +363,14 @@ def predict(args, receipt, journal, start):
     require(binding_path.stat().st_size <= 1024 * 1024, "binding_size")
     receipt["binding"] = {"path": str(binding_path), "sha256": digest(binding_path, deadline)}
     binding = load(binding_path)
-    require(set(binding) == {"schema_version", "model_id", "revision", "model_dir", "research_profile",
-                             "assets", "p7_binding", "input_manifest", "sources", "versions"} and
-            binding["schema_version"] == "p12.binding.v1", "binding_fields")
+    external = binding.get("schema_version") == "e13.nli.binding.v1"
+    fields = {"schema_version", "model_id", "revision", "model_dir", "research_profile",
+              "assets", "input_manifest", "sources", "versions"}
+    require(set(binding) == fields | ({"candidate"} if external else {"p7_binding"}) and
+            (binding["candidate"] == "p12-nli" if external else
+             binding["schema_version"] == "p12.binding.v1"), "binding_fields")
+    receipt["schema_version"] = "e13.nli.run.v1" if external else "p12.run.v1"
+    receipt["profile"] = binding["schema_version"]
     receipt["pins"] = binding
     record("binding", **receipt["binding"])
     require(set(binding["sources"]) == {"adapter", "recipe", "pyproject", "uv_lock", "roberta_model", "roberta_tokenizer"},
@@ -351,10 +407,29 @@ def predict(args, receipt, journal, start):
     for entry in binding["sources"].values():
         pin(entry, deadline)
     suites = read_inputs(binding, deadline)
+    if external:
+        receipt["exploration_inputs"] = load(binding["input_manifest"]["path"])
+    expected_decisions = sum(len(rows) for _, rows in suites)
+    expected_pairs = sum(len(row["options"]) for _, rows in suites for row in rows)
+    expected_forwards = sum((len(rows) + 3) // 4 for _, rows in suites)
+    if external:
+        require((expected_decisions, expected_pairs, expected_forwards) == (400, 800, 100),
+                "e13_exact_workload")
+    receipt["expected_counts"] = {"decisions": expected_decisions, "candidate_pairs": expected_pairs,
+                                  "native_forwards": expected_forwards, "startup_forwards": 0,
+                                  "suites": [{"name": entry["name"], "decisions": len(rows),
+                                              "candidate_pairs": sum(len(r["options"]) for r in rows),
+                                              "native_forwards": (len(rows) + 3) // 4}
+                                             for entry, rows in suites]}
+    receipt["effective_profile"] = {**recipe, **{key: receipt["expected_counts"][key]
+                                     for key in ("decisions", "candidate_pairs", "native_forwards")},
+                                     "schema_version": binding["schema_version"],
+                                     "resource_guard": "mps_recommended_minus_driver"}
     receipt["suites"] = [{**entry, "written_rows": 0, "written_probabilities": 0, "status": "unstarted"}
                          for entry, _ in suites]
     deadline()
     import torch
+    memory(torch, "after_torch_import_before_mps_allocation")
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
     from transformers.models.roberta.modeling_roberta import RobertaForSequenceClassification
     from transformers.models.roberta.tokenization_roberta_fast import RobertaTokenizerFast
@@ -399,7 +474,7 @@ def predict(args, receipt, journal, start):
     receipt["tokens"] = {"pairs": len(token_lengths), "min": min(token_lengths), "max": max(token_lengths),
                          "total_unpadded": sum(token_lengths), "overflow_pairs": sum(n > 512 for n in token_lengths),
                          "pair_lengths": token_lengths}
-    require(len(token_lengths) == 2390 and min(token_lengths) > 0 and max(token_lengths) <= 512,
+    require(len(token_lengths) == expected_pairs and min(token_lengths) > 0 and max(token_lengths) <= 512,
             "complete_pair_token_cap_no_scores")
     memory(torch, "before_model_load")
     receipt["model_load_attempted"] += 1
@@ -419,6 +494,7 @@ def predict(args, receipt, journal, start):
     require({name: list(p.shape) for name, p in model.named_parameters()} == expected_shapes() and
             sum(p.numel() for p in model.parameters()) == 124647170 and
             all(p.dtype == torch.float32 for p in model.parameters()), "actual_loaded_parameters")
+    memory(torch, "before_mps_model_allocation")
     model.requires_grad_(False).eval().to("mps")
     torch.mps.synchronize()
     memory(torch, "after_mps_model_load")
@@ -434,9 +510,10 @@ def predict(args, receipt, journal, start):
                 flat = [pair for pairs in batch_pairs for pair in pairs]
                 native = tokenizer.pad(flat, padding=True, return_tensors="pt")
                 require(native["input_ids"].shape[1] <= 512, "padded_token_cap")
+                memory(torch, "before_mps_batch_allocation")
                 native = {k: v.to("mps") for k, v in native.items()}
                 memory(torch, "before_forward")
-                require(receipt["native_attempted"] < 156, "forward_budget")
+                require(receipt["native_attempted"] < expected_forwards, "forward_budget")
                 deadline()
                 receipt["native_attempted"] += 1
                 receipt["pairs_attempted"] += len(flat)
@@ -475,10 +552,10 @@ def predict(args, receipt, journal, start):
                 del native, result
                 deadline()
         stats["status"] = "complete"
-    require(receipt["native_attempted"] == receipt["native_completed"] == 156 and
-            receipt["pairs_attempted"] == receipt["pairs_completed"] == 2390 and
-            sum(s["written_rows"] for s in receipt["suites"]) == 624 and
-            sum(s["written_probabilities"] for s in receipt["suites"]) == 2390, "final_exact_counts")
+    require(receipt["native_attempted"] == receipt["native_completed"] == expected_forwards and
+            receipt["pairs_attempted"] == receipt["pairs_completed"] == expected_pairs and
+            sum(s["written_rows"] for s in receipt["suites"]) == expected_decisions and
+            sum(s["written_probabilities"] for s in receipt["suites"]) == expected_pairs, "final_exact_counts")
     memory(torch, "end")
     deadline()
 

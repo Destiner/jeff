@@ -1,0 +1,27 @@
+{
+  "schema_version": "e13.encoder.binding.v1",
+  "candidate": "msmarco-start",
+  "allowed_candidates": ["msmarco-start", "m9", "m11"],
+  "static_controls": {
+    "device": "mps",
+    "dtype": "float32",
+    "threads": 4,
+    "temperature": 1.0,
+    "batch_decisions": 4,
+    "max_length": 256,
+    "startup_calls": 0,
+    "scorer_truncation_setting": "longest_first",
+    "precheck": "same tokenizer and source _FORMAT; truncation=False; reject overflow before forward",
+    "rss_limit_bytes": 8589934592,
+    "driver_limit_bytes": 8589934592,
+    "minimum_recommended_minus_driver_bytes": 2147483648
+  },
+  "max_seconds": null,
+  "model_activation": null,
+  "reservation": null,
+  "renewed_window_message": null,
+  "supervisor": {"path": null, "sha256": null},
+  "executable_sources": null,
+  "input_manifest": {"path": null, "sha256": null},
+  "expected": {"calls": null, "decisions": null, "pairs": null}
+}
