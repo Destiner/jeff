@@ -1,6 +1,6 @@
 {
   "schema_version": "m10.results-inventory.v1",
-  "status": "TRAIN complete; first P9 failed; explicit renewal pending",
+  "status": "TRAIN and repaired P9 complete; E11 development interpretation pending",
   "artifact_base": "/Users/destiner/Code/jeff/artifacts",
   "execution_revision": "a23c04cef0bff3e87deaffc3b8f5fed73ea818ee",
   "seed": 7,
@@ -275,9 +275,27 @@
   ],
   "p9_failed_return": "model/night-20261112/p9-failed-return.json",
   "p9_original_attempt": "release/p9-m10-20261112-01",
+  "p9_completed_attempt": "release/p9-m10-20261112-02",
+  "p9_verified_return": {
+    "path": "model/m10-qwen-seed7-20261112-02/p9-return.json",
+    "sha256": "5cb8abc88941c17290b9ace216d7b7d697c11d58d2363923642e0f476b23bbca",
+    "status": "verified and closed",
+    "forward_count": 627,
+    "startup_count": 3,
+    "scored_decisions": 624,
+    "option_probabilities": 2390,
+    "failed_attempt_seconds": 309.808853250,
+    "successful_attempt_conservative_seconds": 41,
+    "combined_p9_operational_seconds": 350.808853250,
+    "renewed_p9_total_ceiling_seconds": 619.808853250,
+    "model_plus_p9_charged_seconds": 1078.9593896237234,
+    "maximum_normalization_error": 1.394355422235094e-7,
+    "renewal_authority": "34cfc3b3-ee7f-465b-84ae-064aa922c18c",
+    "activation": "c0cba4dc-a8a5-46c3-910f-b7150fc65262"
+  },
   "additional_spend_gbp": {
     "actual": 0,
     "pending": 0
   },
-  "qualification": "Inventory copied from parent verification, not new weight attestation or loader contract. No vectors/per-row losses included. P9/E11 development and promotion not completed; initial draft is not a gate."
+  "qualification": "Inventory copied from parent verification, not new weight attestation or loader contract. No vectors/per-row losses included. P9 execution is complete; E11 independent development interpretation remains pending. No promotion or further execution authority."
 }

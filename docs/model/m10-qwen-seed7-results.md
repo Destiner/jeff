@@ -6,9 +6,8 @@ One actual learning attempt completed on 2026-11-12, 02:06:07–02:18:06 UTC.
 The nine-file v1 checkpoint is saved and unchanged. Parent streaming hashes and
 process/group absence are verified; this report does not decode or rehash weights.
 Independent E11 CPU TRAIN review completed 65/65 checks. P9 fresh reload and
-E11 development evaluation are **not complete**; no promotion follows.
-This initial draft is not a gate. Parent will add actual future P9 native closure
-before final review. Main M10 documentation is not yet integrated.
+all 624 development outputs are complete; its reservation is closed. Independent
+E11 development interpretation remains pending; no promotion follows.
 
 ## Controlled recipe
 
@@ -65,19 +64,28 @@ RSS max2,813,263,872B is a separate scope. These quantities are not additive;
 sampled MPS/current RSS observations are not guaranteed continuous peaks.
 Additional actual/pending spend: £0/£0.
 
-## P9 remains open
+## P9 fresh reload complete
 
 First P9 attempt failed at initial Transformers import: the launcher selected the
 orchestration-only root venv instead of Runtime's existing environment. Zero model
 or tokenizer construction and zero forwards; all recorded groups are absent.
-Charge the full outer309.808853250s despite the ~0.09s native child. Preserve
-`release/p9-m10-20261112-01/` and original packets; do not relabel failure as success.
-Explicit renewal remains pending in this evidence snapshot. Neither P9 nor E11
-development is delivered, and no remaining-time reuse or promotion is authorized.
+Its full outer309.808853250s remains charged despite the ~0.09s native child.
+Lead explicitly authorized one additional310s pre-import repair; only the existing
+Runtime interpreter and early-failure closure handling changed. Original root01,
+packets and failure receipts remain unchanged, separate from successful root02.
+
+The sole actual prediction completed 627 attempted/completed forwards: 3 existing
+startup checks plus 624 decisions/2,390 probabilities. Outer publication succeeded
+at40.756192s; Runtime conservatively charges41s, making P9's two-attempt total
+350.808853250s of the explicitly renewed619.808853250s allowance. Parent verified
+all output/input hashes, ordered IDs/options, 300/300/24 unique coverage and actual
+watchdog/supervisor/child group absence. Maximum normalization error1.39436e-7.
+This is label-free execution validation, not held-out scoring or promotion.
+Combined M10+P9 charged time is1078.9593896237234s; unused time grants no further work.
 
 ## Evidence
 
 Compact [run inventory](m10-qwen-seed7-run.json) references the actual root02,
 parent `checkpoint-ready.json`, independent `e11-m10-control-review-v1`, both
-02:21/03:01 handoffs and parent `p9-failed-return.json`. Large vectors, per-row
+delivery/renewal handoffs, `p9-failed-return.json` and root02 `p9-return.json`. Large vectors, per-row
 losses, private held-out data and weights are intentionally absent from this report.
