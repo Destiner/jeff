@@ -1,0 +1,11 @@
+{
+  "schema_version": "e13.exploration.inputs.v1",
+  "candidate": "p3",
+  "validation_only_never_train": true,
+  "release": {"path": null, "sha256": null},
+  "pair_map": {"path": null, "sha256": null},
+  "datasets": [
+    {"name": "e13-native", "path": null, "sha256": null, "rows": null},
+    {"name": "e13-reversed", "path": null, "sha256": null, "rows": null}
+  ]
+}

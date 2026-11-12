@@ -1,0 +1,56 @@
+{
+  "schema_version": "p11.runtime-publication.v1",
+  "release_id": "p11-m9-20261112-01",
+  "scope": "Existing local packaging, offline installation and three fixed TRAIN CPU portability observations only; no quality or promotion claim",
+  "canonical_evidence_root": "/Users/destiner/Code/jeff/artifacts/release/p11-m9-20261112-01",
+  "stage_root": "/private/tmp/jeff-p11-20261112-01",
+  "durable_handoff": {
+    "root": "/Users/destiner/Code/jeff/artifacts/lead/night-20261112/local-reference",
+    "infra_message_id": "592af6ac-5b2b-4fff-a9d1-f1c6c25db9e8",
+    "readme": "README.md",
+    "readme_sha256": "00c6aa766d71dc710e565e40ccb0fd3e9098bcff3bbbc315a17dbfc41910de5c",
+    "source_map": "source-map.json",
+    "source_map_sha256": "c6bae7bd7afecc51e72a74cfc8d2715b88888acc7c7057801249104cd994392f",
+    "receipt": "delivery.json",
+    "recipient_use": "Follow existing README and preserved recipient-addendum.md; extract unchanged archive into new writable directory, bind KIT/external compatible CPython3.12 PYTHON/new WORK explicitly. Historical sandbox paths are not relocatable policy; no replay authority."
+  },
+  "archive": {
+    "relative_to_durable_handoff": "jeff-p11-m9-offline-macos-arm64-py312.tar.gz",
+    "bytes": 255928739,
+    "sha256": "5e4a0cc8b1d5b69f8a33edd026be64ab3c854e699b79773a6d81b1e1e29e87a2",
+    "digest_source": "Existing packaging and Infra delivery receipts; not rehashed for publication"
+  },
+  "metadata": [
+    {"path": "/private/tmp/jeff-p11-20261112-01/kit/inventory.json", "sha256": "6d5c2102070eebf4a6ca647c9f3b70adbbe999881833b88e8e66e14a20bd7153"},
+    {"path": "/private/tmp/jeff-p11-20261112-01/kit/m9-bundle/manifest.json", "sha256": "878edf5360827eb050523ee4fb7bd977cf806cc29908a0852efed0c98552b87e"},
+    {"path": "/private/tmp/jeff-p11-20261112-01/kit/train-comparison-binding.json", "sha256": "1873ff67543dded71dfefc6d7ae829a739af06ce97a027d8c848ce15b07bec73"},
+    {"path": "/private/tmp/jeff-p11-20261112-01/smoke-run-02/parent.json", "sha256": "25d4d517fc104e295a123e148621313ef639e92745559d5c10f2d190fe221c6f"},
+    {"path": "/private/tmp/jeff-p11-20261112-01/smoke-run-02/child.json", "sha256": "d1cd49de1b89e223f6f4122992271c846e18881a7e3355fe7c222345666a2447"},
+    {"path": "/Users/destiner/Code/jeff/artifacts/model/night-20261112/p11-success-return.json", "sha256": "44f6ab636f0b4a718cea67d653c011d871c5cebc3631bb413fa82f30bd191bd7"}
+  ],
+  "execution": {
+    "backend": "CPU; unchanged M9 scorer cap256 temperature1 batch1",
+    "observed_host": "CPython3.12.16 macOS26.7.1 arm64",
+    "prerequisite": "External CPython3.12 with venv/ensurepip; macOS arm64 wheels require macOS>=14; no Python/environment/cache bundled",
+    "first_attempt": {"parent": "/private/tmp/jeff-p11-20261112-01/smoke-run-01/parent.json", "status": "failed after tokenizer/checkpoint load, before any forward; torch.ops synthetic _ops.py rejected", "native_elapsed_seconds": 7.68, "charge_seconds": 9, "loads": 1, "forwards": 0},
+    "repair": "Only exact torch.ops/classes virtual namespaces; exact defining class/singleton identity and synthetic filename checks with installed definer file origins; no blanket exemption",
+    "second_attempt": {"status": "success", "native_elapsed_seconds": 1.90, "charge_seconds": 3, "loads": 1, "forwards": 3},
+    "selection": "Deterministic minimum canonical ID per intent/sentiment/rule_application across pinned M9 TRAIN shards; fixed before execution, no outcome filtering",
+    "comparison": {"probability_maxabs_tolerance": 0.00001, "identical_complete_exact_maximum_top_sets_all_three": true, "cases": [
+      {"id": "data:pilot-v1:intent:g01:r01", "maxabs": 9.968061931431293e-10},
+      {"id": "data:pilot-v1:sentiment-r2:g01:r01", "maxabs": 2.7284841053187847e-11},
+      {"id": "data:pilot-v1:rule_application:g01:r01", "maxabs": 5.21540641784668e-7}
+    ]},
+    "physical_origin_records": 1338,
+    "virtual_origin_names": ["torch.ops", "torch.classes"],
+    "aggregate": {"loads": 2, "productive_forwards": 3, "charged_seconds": 12, "maximum_seconds": 120, "closed": true, "process_group_absent": true, "slot_returned": true, "unused_seconds_not_authority": 108}
+  },
+  "qualifications": [
+    "Original installation SIGABRT/root-metadata and ENOENT/cache-path plumbing failures retained; first post-load zero-forward failure and both one-shot latches retained",
+    "Module-file and exact virtual-definer origins, not all-native-binary or dynamic-library provenance; fileless modules disclosed",
+    "0444 files and 0555 directories are reversible accidental-edit protection, not WORM/authentication",
+    "License addendum and tqdm LICENCE enumeration correction are not blanket clearance; tokenizers vendor/source and project/publication rights qualifications remain",
+    "No all-input, relocated-other-host, cross-platform, quality, calibration or promotion certification; known rule-fitting/transfer and probe/source regressions retained",
+    "Publication reads metadata/receipts only, no new scoring, model/tokenizer imports, weights/archive reads, network, tests or lint; evidence and executed trees unchanged"
+  ]
+}

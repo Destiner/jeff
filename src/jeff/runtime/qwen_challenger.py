@@ -53,6 +53,16 @@ EXECUTION_INPUTS = {
 }
 
 
+E13_PROFILE = "e13.exploration.inputs.v1"
+E13_CHECKPOINTS = {
+    "m7": "70163c8567781bb7151b11c125999ea4bc6ec1ff52af52c52a205f9f4dbdd022",
+    "m10": "765d802270b8c0b090e9206c3e52f12e76ea7e224dbb4f07c9cc3c709aa6b15a",
+    "m12": "a3f6fd327bb52ecef730297eb0abb93f7a5a0d1b83e8fec276209b5ec6faf6a2",
+}
+E13_P3_DOWNLOAD = Path("/Users/destiner/Code/jeff/artifacts/release/p3-qwen-20261111-01/download")
+E13_P3_MANIFEST_SHA256 = "7741a686ef6f0cc211438961223fb089e5f3a62da17c582cca27b021ce6191b5"
+
+
 def require(condition, message):
     if not condition:
         raise ValueError(message)
@@ -130,12 +140,52 @@ def assets(model_dir, cfg):
     return {name: digest(path) for name, path in sorted(files.items())}
 
 
+def e13_path(path):
+    raw = Path(path).absolute()
+    require(".." not in raw.parts, "unsafe E13 path")
+    for part in (raw, *raw.parents):
+        require(not part.is_symlink(), "E13 symlink paths prohibited")
+    result = safe_path(raw)
+    require(result.exists(), "E13 path must exist")
+    return result
+
+
+def e13_descriptor(base, entry):
+    require(isinstance(entry, dict) and set(entry) == {"path", "sha256"},
+            "E13 metadata descriptor fields")
+    require(isinstance(entry["path"], str) and entry["path"].strip() and
+            isinstance(entry["sha256"], str) and
+            re.fullmatch(r"[0-9a-f]{64}", entry["sha256"]), "E13 descriptor path/hash")
+    source = e13_path(base / entry["path"])
+    require(source.is_file() and digest(source) == entry["sha256"], "E13 metadata hash mismatch")
+    return {"path": str(source), "sha256": entry["sha256"]}
+
+
 def read_inputs(path):
+    raw_path = path
     path = safe_path(path)
     manifest = load(path)
-    require(set(manifest) == {"schema_version", "datasets"} and
-            manifest["schema_version"] in ("p3.inputs.v1", *EXECUTION_INPUTS), "input manifest schema")
+    e13 = manifest.get("schema_version") == E13_PROFILE
+    if e13:
+        e13_path(raw_path)
+        require(set(manifest) == {"schema_version", "candidate", "release", "pair_map",
+                                 "validation_only_never_train", "datasets"}, "E13 manifest fields")
+        require(manifest["validation_only_never_train"] is True and
+                manifest["candidate"] in ("p3", *E13_CHECKPOINTS), "E13 marker/candidate")
+        for key in ("release", "pair_map"):
+            e13_descriptor(path.parent, manifest[key])
+    else:
+        require(set(manifest) == {"schema_version", "datasets"} and
+                manifest["schema_version"] in ("p3.inputs.v1", *EXECUTION_INPUTS), "input manifest schema")
     expected = EXECUTION_INPUTS.get(manifest["schema_version"])
+    if e13:
+        require(isinstance(manifest["datasets"], list) and len(manifest["datasets"]) == 2,
+                "E13 requires exactly native/reversed suites")
+        counts = [entry.get("rows") for entry in manifest["datasets"]]
+        require(all(type(n) is int and n == 200 for n in counts),
+                "E13 requires exactly 200 rows per orientation")
+        expected = tuple((name, counts[i], manifest["datasets"][i].get("sha256"))
+                         for i, name in enumerate(("e13-native", "e13-reversed")))
     require(isinstance(manifest["datasets"], list) and
             len(manifest["datasets"]) == (len(expected) if expected else 3),
             "pinned execution suites required" if expected else
@@ -150,7 +200,10 @@ def read_inputs(path):
         require(isinstance(name, str) and re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,79}", name)
                 and name not in names, "unsafe or duplicate dataset name")
         names.add(name)
-        source = safe_path(path.parent / entry["path"])
+        source = (e13_path(path.parent / entry["path"]) if e13 else
+                  safe_path(path.parent / entry["path"]))
+        if e13:
+            e13_descriptor(path.parent, {k: entry[k] for k in ("path", "sha256")})
         require(digest(source) == entry["sha256"], "input hash mismatch")
         require(type(entry["rows"]) is int and entry["rows"] > 0, "invalid row count")
         rows, seen = [], set()
@@ -167,6 +220,8 @@ def read_inputs(path):
                         and row["question"].strip(), "invalid decision text")
                 opts = row["options"]
                 require(isinstance(opts, list) and 2 <= len(opts) <= 26, "require 2..26 choices")
+                if e13:
+                    require(len(opts) == 2, "E13 requires K2 choices")
                 ids = set()
                 for opt in opts:
                     require(isinstance(opt, dict) and set(opt) == {"id", "text"} and
@@ -219,7 +274,29 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
 
     cfg = configuration(config_path)
     input_profile = load(manifest_path)["schema_version"]
-    execution_profile = input_profile in EXECUTION_INPUTS
+    e13 = input_profile == E13_PROFILE
+    execution_profile = input_profile in EXECUTION_INPUTS or e13
+    e13_metadata = None
+    if e13:
+        read_inputs(manifest_path)
+        manifest = load(manifest_path)
+        e13_metadata = {key: e13_descriptor(Path(manifest_path).parent, manifest[key])
+                        for key in ("release", "pair_map")}
+        candidate = manifest["candidate"]
+        e13_path(config_path)
+        e13_path(model_dir)
+        for asset in model_dir.rglob("*"):
+            e13_path(asset)
+        if candidate == "p3":
+            require(checkpoint_manifest is None and model_dir == E13_P3_DOWNLOAD / "model",
+                    "E13 P3 requires original retained directory, not a trained checkpoint")
+            download = e13_path(E13_P3_DOWNLOAD / "manifest.json")
+            require(digest(download) == E13_P3_MANIFEST_SHA256, "original P3 download manifest hash")
+            e13_metadata["p3_download"] = {"path": str(download), "sha256": digest(download)}
+        else:
+            require(checkpoint_manifest is not None, "E13 trained candidate manifest required")
+            require(digest(e13_path(checkpoint_manifest)) == E13_CHECKPOINTS[candidate],
+                    "E13 candidate checkpoint identity mismatch")
     if execution_profile:
         require(digest(config_path) == SCORING_SHA256,
                 "execution profiles require original P3 scoring config bytes")
@@ -231,21 +308,30 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
 
         binding, asset_hashes = validate_checkpoint(
             checkpoint_manifest, model_dir, config_path, cfg, require=require, load=load,
-            digest=digest, safe_path=safe_path, assets=assets)
+            digest=digest, safe_path=e13_path if e13 else safe_path, assets=assets)
     else:
         asset_hashes = assets(model_dir, cfg)
+    if e13 and candidate == "p3":
+        inventory = load(E13_P3_DOWNLOAD / "manifest.json")["files"]
+        require(asset_hashes == {Path(item["path"]).name: item["sha256"] for item in inventory},
+                "E13 P3 assets differ from original download")
     is_v2 = (binding is not None and
              binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v2")
+    # The E13 candidate pin above is mandatory before this v2 exception.
+    e13_m12_v2 = e13 and candidate == "m12" and is_v2
     if execution_profile:
         require(binding is None or
-                binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v1",
-                "execution profiles permit only original assets or trained v1 checkpoints")
+                binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v1" or
+                e13_m12_v2,
+                "execution profiles permit only original assets, trained v1, or E13 pinned M12 v2")
     if is_v2:
         from jeff.runtime import qwen_readout
 
     suites = read_inputs(manifest_path)
     if is_v2:
-        require(tuple(len(rows) for _, rows, _ in suites) == (300, 300, 24),
+        expected_rows = (200, 200) if e13_m12_v2 else (300, 300, 24)
+        require(tuple(len(rows) for _, rows, _ in suites) == expected_rows,
+                "E13 pinned M12 v2 requires 200/200 exploration suites" if e13_m12_v2 else
                 "v2 requires the frozen 300/300/24 development suites")
         require(cfg["startup_rows"] == 3, "v2 requires exactly three startup forwards")
     tokenizer = AutoTokenizer.from_pretrained(str(model_dir), local_files_only=True, trust_remote_code=False)
@@ -275,6 +361,8 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
             "input_manifest_sha256": digest(manifest_path),
             "model_assets": asset_hashes, "chat_template_sha256": text_hash(tokenizer.chat_template),
             "environment": environment(), "suites": reports}
+    if e13_metadata is not None:
+        proof["e13_metadata"] = e13_metadata
     if binding is not None:
         proof["trained_checkpoint"] = binding
     if is_v2:
@@ -312,14 +400,16 @@ def predict(args, receipt, start):
              current["trained_checkpoint"]["manifest"]["schema_version"] ==
              "jeff.qwen-trained-checkpoint.v2")
     input_profile = current["input_manifest"]["schema_version"]
-    execution_profile = input_profile in EXECUTION_INPUTS
+    e13 = input_profile == E13_PROFILE
+    execution_profile = input_profile in EXECUTION_INPUTS or e13
     bounded_execution = is_v2 or execution_profile
-    forward_maximum = 99 if input_profile == "p8.inputs.v1" else 627
+    forward_maximum = (3 + sum(len(rows) for _, rows, _ in suites) if e13 else
+                       99 if input_profile == "p8.inputs.v1" else 627)
     if is_v2:
         from jeff.runtime import qwen_readout
 
-        receipt["forwards"] = {"maximum": 627, "expected_startup": 3,
-                               "expected_suite_rows": [300, 300, 24],
+        receipt["forwards"] = {"maximum": forward_maximum, "expected_startup": 3,
+                               "expected_suite_rows": [len(rows) for _, rows, _ in suites],
                                "attempted": 0, "completed": 0}
         context_keys = {"git_revision", "git_status"}
         require({k: v for k, v in current.items() if k not in context_keys} ==
@@ -503,7 +593,7 @@ def predict(args, receipt, start):
     if bounded_execution:
         require(receipt["startup"]["rows"] == 3 and
                 receipt["forwards"]["attempted"] == receipt["forwards"]["completed"] == forward_maximum,
-                "v2 requires exactly 627 attempted and completed forwards" if is_v2 else
+                "v2 requires exactly 627 attempted and completed forwards" if is_v2 and not e13 else
                 f"execution profile requires exactly {forward_maximum} attempted and completed forwards")
     receipt["memory_samples"].append(memory(torch, args.device, "end"))
     deadline()
@@ -525,6 +615,11 @@ def main():
         cmd.add_argument("--model-dir", type=Path, required=True)
     args = parser.parse_args()
     start = time.monotonic()
+    profile_path = (args.inputs if args.command == "audit" else
+                    Path(load(args.audit_dir / "audit.json")["evidence"]["input_manifest_path"]))
+    if load(profile_path).get("schema_version") == E13_PROFILE:
+        e13_path(profile_path)
+        e13_path(args.model_dir)
     args.model_dir = safe_path(args.model_dir)
     args.audit_dir = args.audit_dir.resolve()
     directory = args.audit_dir if args.command == "audit" else args.output_dir.resolve()
@@ -534,7 +629,7 @@ def main():
     exit_code = 0
     try:
         if args.command == "audit":
-            proof, _ = evidence(args.config.resolve(), safe_path(args.inputs), args.model_dir,
+            proof, _ = evidence(args.config.resolve(), args.inputs, args.model_dir,
                                 checkpoint_manifest=args.checkpoint_manifest)
             receipt["evidence"] = proof
             receipt["status"] = "complete"

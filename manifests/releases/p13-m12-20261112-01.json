@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "release_id": "p13-m12-20261112-01",
+  "status": "completed; Model verified and closed",
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01",
+  "publication_scope": "Documentation of retained metadata only; no new scoring, inference, weight reads or historical replay.",
+  "model_closure": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m12-qwen-head-lr-20261112-01/p13-return.json",
+    "sha256": "f54af89f1a71ecc4d4ee32415bf676e4d7efd015b0b17877569a65390f95f2a1"
+  },
+  "receipt_descriptors": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/packet.json",
+      "sha256": "7e2e5a418d7946931d301ba6094ca998868c5fd423ec270beb0e154cb6606e40"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/delivery-summary.json",
+      "sha256": "3a87dbc0389eb6199300b599fd18a4a383dc81a4f1ec3b48f2beba9cb943a669"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/process-receipt.json",
+      "sha256": "0ae958378c44ef29d7e810b332f244ee13d2d997b27a97334d32ebdf873e5bd5"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/outer-receipt.json",
+      "sha256": "771f4d29a3a55030732993c9cab1477881a7a68d505a5710fb1e7e714b454723"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/outer-publication.json",
+      "sha256": "0e848759032d737edf8a2d2f0299e1799d8c79a63dd0f99877ed4353aebc1952"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/audit/audit.json",
+      "sha256": "8505d08fe549f7ead5345dea8a0066e441e8f86fb860c9c1ffd2cc0b4926a424"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/run/receipt.json",
+      "sha256": "563b524d8a91e4d96e8830302791845c453f11ea6647d9768c3e33f949d711f3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/run/v2-original.jsonl",
+      "sha256": "75c339f6fd77ef679070d2eec5a9dbaa8906d734d75f5c46140e54745af4f211",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/run/v2-reversed.jsonl",
+      "sha256": "6e6c8bfebd47fca8dd6a94e6637a75b61142364f939e082cab1b8c7d997d1de1",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p13-m12-20261112-01/run/probes-paired.jsonl",
+      "sha256": "da91662460144b33992b2abae1c1c20ece1a9a2b569c6d14f990a2f5d476d5c0",
+      "rows": 24,
+      "probabilities": 70
+    }
+  ],
+  "counts": {
+    "audits": 1,
+    "strict_v2_reloads": 1,
+    "decisions": 624,
+    "native_forward_attempted": 627,
+    "native_forward_completed": 627,
+    "probabilities": 2390,
+    "startup_calls": 3,
+    "d3_decisions": 0
+  },
+  "timing": {
+    "handoff_outer_seconds": 42.49650995898992,
+    "saved_outer_publication_seconds": 42.496176874730736,
+    "runtime_charge_seconds": 44,
+    "producer_seconds": 264.20991725102067,
+    "chain_seconds": 308.20991725102067,
+    "chain_ceiling_seconds": 900,
+    "runtime_cap_seconds": 310,
+    "model_cap_seconds": 590
+  },
+  "all_groups_absent": true,
+  "quality_references": [
+    "docs/evaluation/e15-head-learning-rate.md",
+    "docs/model/m12-head-lr-results.md"
+  ],
+  "qualifications": [
+    "Runtime completion is not quality, calibration or promotion evidence.",
+    "Receipt/output SHA descriptors are copied from existing Model closure metadata; prediction payloads and weights were not reread.",
+    "Source review and package build alone are not proof of native execution.",
+    "Unused budget grants no additional work; no retries, fallback or new experiment.",
+    "Sampled memory and lifetime RSS have different overlapping scopes; headroom is not physical free RAM.",
+    "Published handoff timing differs from saved outer-publication event; both imply the same conservative 44-second charge, not a speed benchmark.",
+    "M8 remains unchanged. Empty v2 loading diagnostics are retained Runtime evidence, not independent tensor replay.",
+    "Initial producer failure receipt is an incomplete-start sentinel, not the completed terminal result; tokenizer warning and controller review timing qualifications remain in Model/E15."
+  ],
+  "runtime_source_commit": "f75d72bd1487f9cf874aa48231233840881573fc",
+  "profile": "m12",
+  "recipe_head_lr": 0.0002,
+  "producer_native_calls_attempted": 4500,
+  "producer_native_calls_completed": 4500
+}
