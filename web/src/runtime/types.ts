@@ -6,7 +6,9 @@ export type Prediction = {
   schema_version: '0.1'; id: string;
   probabilities: { option_id: string; probability: number }[];
 };
-export type Progress = { stage: string; message: string };
+export type Progress = {
+  stage: string; message: string; receivedBytes?: number; totalBytes?: number;
+};
 export type RequestRecord = {
   url: string; startedMs: number; durationMs: number; bytes: number | null;
   status: number | null; error?: string; source: 'fetch' | 'resource';
