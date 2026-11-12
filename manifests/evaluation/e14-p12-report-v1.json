@@ -1,0 +1,66 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "milestone": "E14",
+  "status": "completed-independent-evaluation-with-resource-deviation",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e14-frozen-nli.md",
+    "bytes": 13137,
+    "sha256": "48507f5ba7b75b3bb54d10eee4bbe435daa84af58949fdce847ed3865061f940"
+  },
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e14-p12-v1.json",
+    "bytes": 7573,
+    "sha256": "63ff3dc6049030458809854997a30456c81ef4a003b05996659a098db738f299"
+  },
+  "all18_recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-scoring-preparation-v1/execution-01/recipe-all18.json",
+    "bytes": 101683,
+    "sha256": "3fefc509d9d7b1fe58ecba8420f2008e07fc35b1b9076a2d6379898e6de8240f"
+  },
+  "execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-scoring-preparation-v1/execution-01/completion.json",
+    "bytes": 58728,
+    "sha256": "56047d2ffe94a2f7b4cdf259b3ea1032f5f236ab711d8d2cc97c164039e994a1"
+  },
+  "source_adoption": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-source-binding-v1/receipt.json",
+    "bytes": 697,
+    "sha256": "05e4f2c9c2106426451f6e85f6241cdb93c0c5174174e2947c5a94c2260a675b"
+  },
+  "runtime_binding_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-p12-binding-v1/completion.json",
+    "bytes": 3384,
+    "sha256": "5ee381b1fa7e2f440cf6c6824df8e1b9c2128189be58ad6c2b77629e07636ab0"
+  },
+  "runtime_resource_qualification": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p12-nli-20261112-01/resource-qualification.json",
+    "bytes": 1037,
+    "sha256": "c7be59c7f6ca7cbfabdd7970c480962c0d6268f4745fe485d59643343a11fa2c"
+  },
+  "owner_resource_correction": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-resource-qualification-v1/receipt.json",
+    "bytes": 1274,
+    "sha256": "d08bbc071c266765863e00bfe832a9596f87401e0de9e2b96ac3b5f34dfebc34"
+  },
+  "quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-quality-review-v1/final-receipt.json",
+    "bytes": 6922,
+    "sha256": "7cbc99b288b31217ed689691b0d4cf4c1a81f9e762f182dae8f44584a8775209"
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e14-publication-v1/receipt.json",
+    "bytes": 130793,
+    "sha256": "5a9ad72df66a182ba6ac80094a4e2989c855fc558bce26537e7066a07da75c1e"
+  },
+  "retained_contexts": 17,
+  "new_presentations": 624,
+  "separate_native_populations": [
+    60,
+    240,
+    12
+  ],
+  "additional_actual_pending_GBP": 0,
+  "interpretation": "Frozen NLI37/60,126/240,7/12 bothorders, exactreversalvectors. Newchoices exceedoriginalMSSTART butproper scoresworsen; P3bothretention loses17new/twoprobe pairs. Strongtrainedcontexts betterbroadquality. No architecture/calibration/promotion/adaptation claim.",
+  "resource_deviation": "Required recommended MPSheadroom NOTmeasured/enforced; physicalfree+inactive notsubstitute. Qualifiedstoredinterpretation only. Oldsource/receiptsunchanged, norerun/pastprobe. FutureNLIneedsprospectiveguardfix+grant.",
+  "replay_limits": "Source-native0/1/z0-z1/T1 supported, no savedlogits/margins fornumericreadoutreplay; reconstructedtexthashes notruntimecapture; no independentweight/tensor/tokenizerload."
+}
