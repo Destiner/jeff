@@ -40,15 +40,18 @@ def json_line(value):
 
 
 def recipe_path(experiment="m6"):
-    require(experiment in {"m6", "m7", "m8"}, "unsupported experiment")
+    require(experiment in {"m6", "m7", "m8", "m10"}, "unsupported experiment")
     return {"m6": RECIPE, "m7": ROOT / "configs/model/m7-qwen-low-lr.json",
-            "m8": ROOT / "configs/model/m8-qwen-readout.json"}[experiment]
+            "m8": ROOT / "configs/model/m8-qwen-readout.json",
+            "m10": ROOT / "configs/model/m10-qwen-seed7.json"}[experiment]
 
 
 def recipe(experiment="m6"):
     cfg = read_json(recipe_path(experiment))
     fixed = FIXED if experiment == "m6" else {
         **FIXED, "schema_version": f"{experiment}.recipe.v1", "learning_rate": 2e-6}
+    if experiment == "m10":
+        fixed = {**fixed, "seed": 7, "maximum_run_seconds": 2400}
     require(set(cfg) == set(FIXED) | set(GUARDS), "unexpected recipe keys")
     require(all(type(cfg[k]) is type(v) and cfg[k] == v for k, v in fixed.items()),
             "only the fixed experiment recipe is supported")
@@ -68,10 +71,11 @@ def source_identity(experiment="m6"):
     paths = git("ls-files").splitlines()
     hashes = {name: p3.digest(ROOT / name) for name in paths if (ROOT / name).is_file()}
     result = {"root": str(ROOT), "revision": git("rev-parse", "HEAD"), "tracked_files": hashes}
-    if experiment == "m8":
+    if experiment in {"m8", "m10"}:
+        config = str(recipe_path(experiment).relative_to(ROOT))
         executable = {name: digest for name, digest in hashes.items()
                       if name.endswith(".py") or name in {"pyproject.toml", "uv.lock",
-                          "configs/model/m8-qwen-readout.json", "configs/runtime/p3-qwen.json"}}
+                          config, "configs/runtime/p3-qwen.json"}}
         result["tracked_files"] = executable
         result["operating_context"] = {name: digest for name, digest in hashes.items()
                                        if name not in executable}
@@ -79,7 +83,7 @@ def source_identity(experiment="m6"):
 
 
 def source_binding(source, experiment="m6"):
-    if experiment != "m8":
+    if experiment not in {"m8", "m10"}:
         return source
     return {key: source[key] for key in ("root", "tracked_files")}
 
@@ -192,7 +196,7 @@ def evidence(guard=None, experiment="m6"):
                                               trust_remote_code=False)
     require(isinstance(tokenizer.chat_template, str) and tokenizer.chat_template,
             "official chat template required")
-    rng = random.Random(42)
+    rng = random.Random(cfg["seed"])
     rng.shuffle(rows)
     schedule = []
     for index, row in enumerate(rows):
@@ -219,7 +223,8 @@ def evidence(guard=None, experiment="m6"):
         "chat_template_sha256": p3.text_hash(tokenizer.chat_template),
         "tokenizer_assets": {k: assets[k] for k in TOKENIZER_FILES if k in assets},
         "lengths": p3.distribution([r["input_tokens"] for r in schedule]),
-        "boundary_checks": 1500, "schedule_algorithm": "Random(42): shuffle rows then options once per row"}
+        "boundary_checks": 1500,
+        "schedule_algorithm": f"Random({cfg['seed']}): shuffle rows then options once per row"}
     require(source_binding(source_identity(experiment), experiment) == source_binding(source, experiment),
             "executable source changed during preflight")
     if experiment in {"m7", "m8"}:

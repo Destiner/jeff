@@ -1,4 +1,7 @@
-"""Fixed M6 / explicitly selected M7 lower-LR recipe; owner schedules fresh processes.
+"""Fixed M6 / explicitly selected M7 lower-LR or M10 seed7 recipe.
+
+M10 requires --experiment m10 on audit/train; no new capacity probe. See
+docs/model/m10-seed-replication-plan.md for the bounded owner CLI.
 
 M6 is the unchanged default CLI. M7 requires --experiment m7 on audit/train;
 capacity is prohibited for M7. See M7.md beside this module for the exact owner
@@ -40,6 +43,7 @@ import time
 
 from jeff.runtime import qwen_challenger as p3
 from jeff.training import qwen_data as data
+from jeff.training import qwen_seed as seed
 
 require = p3.require
 AUTHORIZATION = "M6-1500-375-seed42"
@@ -117,15 +121,16 @@ def load_model(monitor, receipt):
     data.runtime_environment()
     require(torch.backends.mps.is_available(), "MPS required; no fallback")
     torch.set_num_threads(4)
-    random.seed(42)
-    torch.manual_seed(42)
-    torch.mps.manual_seed(42)
+    rng_seed = monitor.cfg["seed"]
+    random.seed(rng_seed)
+    torch.manual_seed(rng_seed)
+    torch.mps.manual_seed(rng_seed)
     monitor.torch = torch
-    receipt["fresh_start"] = {"seed": 42, "base_model_id": p3.MODEL,
+    receipt["fresh_start"] = {"seed": rng_seed, "base_model_id": p3.MODEL,
         "base_revision": p3.REVISION, "model_dir": str(data.MODEL_DIR),
         "base_weight_sha256": receipt["identity"]["evidence"]["model_assets"]["model.safetensors"],
         "optimizer_state": "new empty AdamW; capacity state never reused",
-        "rng": "fresh process; random.seed/torch.manual_seed/torch.mps.manual_seed(42)"}
+        "rng": f"fresh process; random.seed/torch.manual_seed/torch.mps.manual_seed({rng_seed})"}
     with monitor.phase("load"):
         model, info = AutoModelForCausalLM.from_pretrained(
             str(data.MODEL_DIR), local_files_only=True, trust_remote_code=False,
@@ -219,7 +224,7 @@ def fit(torch, model, schedule, path, monitor, label):
                     "target_position": row["target_position"], "option_ids": row["option_ids"],
                     "family": row["family"], "source": row["provenance"]["source"],
                     "group_id": row["group_id"]}
-                if monitor.experiment == "m7":
+                if monitor.experiment in {"m7", "m10"}:
                     result.update(fit_observations(torch, logits, row))
                 stream.write(data.json_line(result))
                 stream.flush()
@@ -273,7 +278,7 @@ def fingerprints(model):
 
 
 def capacity(args, receipt, monitor, schedule):
-    require(monitor.experiment == "m6", "M7 capacity prohibited; no new learning probe")
+    require(monitor.experiment == "m6", "M7/M10 capacity prohibited; no new learning probe")
     cfg = receipt["identity"]["evidence"]["recipe"]
     longest = sorted(schedule, key=lambda r: (-r["input_tokens"], r["index"]))[:4]
     receipt["capacity_rows"] = [{"id": r["id"], "index": r["index"], "input_tokens": r["input_tokens"]}
@@ -347,7 +352,7 @@ def capacity(args, receipt, monitor, schedule):
 
 @contextmanager
 def gradient_stream(directory, experiment):
-    if experiment == "m7":
+    if experiment in {"m7", "m10"}:
         with (directory / "gradient-norms.jsonl").open("x") as stream:
             yield stream
     else:
@@ -355,7 +360,8 @@ def gradient_stream(directory, experiment):
 
 
 def train(args, receipt, monitor, schedule, directory):
-    authorization = AUTHORIZATION if args.experiment == "m6" else M7_AUTHORIZATION
+    authorization = {"m6": AUTHORIZATION, "m7": M7_AUTHORIZATION,
+                     "m10": seed.AUTHORIZATION}[args.experiment]
     require(args.authorize_run == authorization, "explicit single-run authorization required")
     require(len(args.comparison_freeze_sha256) == 64 and
             all(c in "0123456789abcdef" for c in args.comparison_freeze_sha256),
@@ -364,8 +370,13 @@ def train(args, receipt, monitor, schedule, directory):
     if args.experiment == "m7":
         receipt["authorization"] = M7_AUTHORIZATION
         receipt["treatment"] = "original P3; only AdamW LR 2e-5 -> 2e-6; no correctness repair"
+    if args.experiment == "m10":
+        receipt["authorization"] = seed.AUTHORIZATION
+        receipt["treatment"] = "original P3; M7 full-parameter replication; only seed42 -> seed7"
     capacity_path = data.safe_path(args.capacity_receipt)
-    if args.experiment == "m7":
+    if args.experiment == "m10":
+        receipt["capacity_reuse"] = seed.reuse_m7_capacity(capacity_path, receipt["identity"], schedule)
+    elif args.experiment == "m7":
         receipt["capacity_reuse"] = data.reuse_m6_capacity(capacity_path, receipt["identity"], schedule)
     else:
         capacity_receipt = data.read_json(capacity_path)
@@ -408,6 +419,8 @@ def train(args, receipt, monitor, schedule, directory):
                         "presentations": receipt["presentations"], "preclip_norm": norm}))
                     norms.flush()
                 with monitor.phase("train_optimizer_step"):
+                    if args.experiment == "m10" and receipt["optimizer_steps"] == 0:
+                        seed.first_update_attempt(directory, receipt)
                     optimizer.step()
                     receipt["optimizer_steps"] += 1
                 optimizer.zero_grad(set_to_none=True)
@@ -421,7 +434,7 @@ def train(args, receipt, monitor, schedule, directory):
             "training coverage/update count mismatch")
     with monitor.phase("final_optimizer_state"):
         receipt["adam_final_state"] = moment_evidence(torch, optimizer, parameters, expected_step=375)
-    if args.experiment == "m7":
+    if args.experiment in {"m7", "m10"}:
         norms_path = directory / "gradient-norms.jsonl"
         norms_path.chmod(0o444)
         receipt["gradient_norms"] = {"path": str(norms_path), "sha256": p3.digest(norms_path),
@@ -460,7 +473,12 @@ def train(args, receipt, monitor, schedule, directory):
         checkpoint.chmod(0o555)
     receipt["checkpoint_files"] = inventory
     receipt["tokenizer_assets"] = tokenizer_assets
-    require(data.source_identity() == receipt["identity"]["evidence"]["source"], "source changed during run")
+    if args.experiment == "m10":
+        require(data.source_binding(data.source_identity("m10"), "m10") ==
+                data.source_binding(receipt["identity"]["evidence"]["source"], "m10"),
+                "scientific source changed during run")
+    else:
+        require(data.source_identity() == receipt["identity"]["evidence"]["source"], "source changed during run")
     monitor.guard("train_complete")
 
 
@@ -490,17 +508,18 @@ def main():
     train_parser = commands.add_parser("train")
     for cmd in (audit_parser, capacity_parser, train_parser):
         cmd.add_argument("--output-dir", type=Path, required=True)
-        cmd.add_argument("--experiment", choices=("m6", "m7"), default="m6")
+        cmd.add_argument("--experiment", choices=("m6", "m7", "m10"), default="m6")
     for cmd in (capacity_parser, train_parser):
         cmd.add_argument("--audit-dir", type=Path, required=True)
     train_parser.add_argument("--capacity-receipt", type=Path, required=True)
     train_parser.add_argument("--authorize-run", required=True)
     train_parser.add_argument("--comparison-freeze-sha256", required=True)
     args = parser.parse_args()
-    require(not (args.experiment == "m7" and args.command == "capacity"),
-            "M7 capacity command prohibited; reuse pinned historical M6 evidence")
-    if args.experiment == "m7" and args.command == "train":
-        require(args.authorize_run == M7_AUTHORIZATION, "explicit M7 single-run authorization required")
+    require(not (args.experiment in {"m7", "m10"} and args.command == "capacity"),
+            "M7/M10 capacity command prohibited; reuse pinned historical evidence")
+    if args.experiment in {"m7", "m10"} and args.command == "train":
+        authorization = M7_AUTHORIZATION if args.experiment == "m7" else seed.AUTHORIZATION
+        require(args.authorize_run == authorization, "explicit experiment single-run authorization required")
     start = time.monotonic()
     directory = args.output_dir.expanduser().resolve()
     require(not any("final" in part.lower() for part in directory.parts), "final output path forbidden")
