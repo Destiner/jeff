@@ -1,0 +1,116 @@
+{
+  "schema": "evaluation.browser-b2.report/1",
+  "created_at": "2026-11-12T13:16:14.407717+00:00",
+  "report": "docs/evaluation/browser-b2.md",
+  "report_sha256": "18ac63cf4eda6818743a6b7027c0a1622b6dde628cd3fc826791718410aae97d",
+  "numeric_primary_owner": "research",
+  "functional_owner": "evaluation",
+  "numeric_reexecution_by_evaluation": false,
+  "m9": {
+    "decision": "bounded_pass",
+    "cases_per_phase": 3,
+    "options_per_phase": 11,
+    "phases": [
+      "initial-online",
+      "server-unavailable-fresh-navigation"
+    ],
+    "maximum_absolute_probability_drift_each_phase": 6.777156989767885e-07,
+    "probability_tolerance": 0.0001,
+    "same_top_choices_each_phase": 3,
+    "tokens_exact_each_phase": true,
+    "normalization_tolerance": 1e-06,
+    "required_cache_assets": 14,
+    "required_cache_bytes": 104050573,
+    "cache_version": "8200802812ae241dc07f6c6e",
+    "executed_source": "c377014c28c24249f9219d2c6cebd0dc8bd067c8",
+    "charged_seconds": 6,
+    "separate_allowance_seconds": 600
+  },
+  "qwen": {
+    "decision": "no_parity_result_not_accepted_for_normal_demo",
+    "original_tolerance": 0.01,
+    "actual_initialized": true,
+    "attempted_requests": 1,
+    "completed_predictions": 0,
+    "maximum_absolute_probability_drift": null,
+    "stop": "sampled memory pressure1->2, owned abort/disposal",
+    "physical_forward_completion": "unknown",
+    "charged_seconds": 26,
+    "separate_allowance_seconds": 1200,
+    "no_retry": true
+  },
+  "final_host": {
+    "owner": "infra",
+    "pid": 74636,
+    "url": "http://127.0.0.1:4173/",
+    "absolute_expiry": "2026-11-12T15:45:00Z",
+    "required_manifest_exact_match": true,
+    "durable_input_hash_checked": true,
+    "head_checked_at": "2026-11-12T13:14:01.488403+00:00",
+    "head_status": 200
+  },
+  "limitations": [
+    "Same three TRAIN examples, not six independent cases or fresh quality/calibration.",
+    "Cache readiness uses lengths/presence/marker/controller, not content digest validation.",
+    "Fresh navigation type=navigate; metadata captured later, separately from original phase.",
+    "Browser peak memory/global unrelated activity and causal pressure attribution unknown.",
+    "No wider/long-input/browser/rights claim; all historical/protected artifacts unchanged."
+  ],
+  "evidence": [
+    {
+      "path": "artifacts/evaluation/browser-b1-reference-v1/reference.json",
+      "bytes": 3178,
+      "sha256": "5b0e28132dc9db6369a35bb694ca8af7d324958dab778893484a5beb06453c8d"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b2-functional-v1/m9-functional-acceptance.json",
+      "bytes": 4310,
+      "sha256": "58e744c2a2eb3db58efb99e1e8a8f4f74d76452fc13755de57dfe448ef8aa656"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b2-functional-v1/final-host-check.json",
+      "bytes": 2411,
+      "sha256": "032974b903edc64adb373e14be6eb07e03ce959a1fc2b62c01ee5fb052c4e42a"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b2-functional-v1/qwen-stop-observation.json",
+      "bytes": 4180,
+      "sha256": "9e7a870f7f7d48aa40ad7a492a762ec7069e058a69bff52192de09314505f46a"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b2-functional-v1/qwen-pin-check-01.json",
+      "bytes": 1196,
+      "sha256": "1de396f4926cdd20d348468345a917c2f2208912d9719fa0b049130f38437e4d"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b2-cache-source-review-v1/review-JFTupr7H/report.md",
+      "bytes": 7567,
+      "sha256": "c0580c1655135c27dea2d26d4c60915f2d28221ce07d247da2a0b9d4f5a32333"
+    },
+    {
+      "path": "artifacts/research/b2-review-20261112T122925Z/review-summary.md",
+      "bytes": 4424,
+      "sha256": "cc4df87a1fe8a9d0c763bf31790bafc4959bcb1f57a74ad1ae4ed763d14490ae"
+    },
+    {
+      "path": "artifacts/research/b2-review-20261112T122925Z/m9-online/report.json",
+      "bytes": 1815,
+      "sha256": "d4ef8b38b526e41b045ebbfdf3a6f161b4a0c1d2a09054056c76cdd093501936"
+    },
+    {
+      "path": "artifacts/research/b2-review-20261112T122925Z/m9-offline/report.json",
+      "bytes": 1821,
+      "sha256": "eed709d4b7226403174d1e1aa8db234d56eed46fc45f56e2c9561382d3a753f3"
+    },
+    {
+      "path": "artifacts/infra/browser-b2-20261112-01/final-host-03.json",
+      "bytes": 1513,
+      "sha256": "de014145e7fe40400b9554d43d6c15e4120c7c280ccb2adfa60c0bdc345e6eb6"
+    },
+    {
+      "path": "artifacts/infra/browser-b2-20261112-01/integration.json",
+      "bytes": 567,
+      "sha256": "51627dcf47c443ea1087398d2cf2076650116e1013b425f17a1d76120a6dd964"
+    }
+  ]
+}
