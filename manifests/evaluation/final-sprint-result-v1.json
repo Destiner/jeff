@@ -22,7 +22,7 @@
     "fixed_train_fit": "adopted_model_aggregate_not_independently_rescored",
     "fixed_train_fit_evidence": "artifacts/model/final-sprint-20261112-01/train-fit-summary.json",
     "m13_deployability": "not_measured_not_pursued_after_scientific_failure",
-    "final_m9_application_acceptance": "separate_bounded_phase_not_certified_here",
+    "final_m9_application_acceptance": "unattempted_no_activation_model_window_closed",
     "publication_evidence_directory": "artifacts/evaluation/final-sprint-20261112-01/publication-results-v1"
   },
   "sdk": {
@@ -33,12 +33,29 @@
     "cap_seconds": 300,
     "grant": "closed"
   },
+  "final_application": {
+    "status": "unattempted_not_numerical_failure",
+    "actual_model_calls": 0,
+    "evaluation_comparator": "prepared_not_executed",
+    "model_activation": false,
+    "evidence": "artifacts/evaluation/final-sprint-20261112-01/final-app-closure-v1/receipt.json",
+    "reference_sha256": "7fab64e0ed2a740a6946e49d66c08975d3360eba46b91158bb9d7d610e4da291",
+    "served_source": "b7de809bd01bdd58902c2ea4ea2bc468f26e7c2b",
+    "served_manifest_version": "19876c1858b65fc905679d25",
+    "offline": "unattempted_unverified",
+    "publication_evidence_directory": "artifacts/evaluation/final-sprint-20261112-01/publication-closure-v1"
+  },
   "native_ledger": {
     "charged_seconds": 88,
     "cap_seconds": 1200,
     "grant": "closed"
   },
   "pins": [
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/final-app-closure-v1/receipt.json",
+      "bytes": 3239,
+      "sha256": "439acadfed341c03e9558d9ec2773c17f47f85b9f69130e3800d31b361c94efa"
+    },
     {
       "path": "artifacts/evaluation/final-sprint-20261112-01/independent-final-review-v1/report.md",
       "bytes": 653,
