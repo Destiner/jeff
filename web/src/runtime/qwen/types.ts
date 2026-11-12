@@ -1,5 +1,5 @@
 import type { Decision, Prediction, Progress, RequestRecord } from '../types';
-export type QwenProgress = Progress & { asset?: string; loadedBytes?: number; totalBytes?: number | null };
+export type QwenProgress = Progress & { asset?: string; receivedBytes?: number; totalBytes?: number };
 export type DeviceMetadata = {
   features: string[]; limits: { maxBufferSize: number; maxStorageBufferBindingSize: number };
   info: Record<string, string>; browserMemoryBytes: null;

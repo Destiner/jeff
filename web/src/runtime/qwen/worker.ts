@@ -28,7 +28,8 @@ const gpuKernels: Record<string, number> = {};
 const originalFetch = globalThis.fetch.bind(globalThis);
 let allowed = new Set<string>();
 const progress = (stage: string, asset: string, loadedBytes?: number, totalBytes?: number | null) =>
-  scope.postMessage({kind: 'progress', event: {stage, asset, message: asset, loadedBytes, totalBytes}});
+  scope.postMessage({kind: 'progress', event: {stage, asset, message: asset, receivedBytes: loadedBytes,
+    ...(totalBytes == null ? {} : {totalBytes})}});
 
 // Guard library fetches too; JSEP is fetched here before importing an owned blob URL.
 globalThis.fetch = async (input, init) => {
