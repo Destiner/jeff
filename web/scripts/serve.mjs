@@ -11,7 +11,7 @@ const securityHeaders = {
   'Cross-Origin-Resource-Policy': 'same-origin',
   'Content-Security-Policy': "default-src 'self'; script-src 'self' blob: 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
   'X-Content-Type-Options': 'nosniff',
-  // No persistent HTTP cache or offline-reload promise, including model assets.
+  // The service worker owns CacheAPI; HTTP caching remains disabled.
   'Cache-Control': 'no-store',
 };
 const mime = {
@@ -30,12 +30,24 @@ function options() {
   for (let i = 0; i < args.length; i += 2) {
     const flag = args[i];
     const value = args[i + 1];
-    if (!['--port', '--duration-seconds'].includes(flag) || seen.has(flag) || !/^\d+$/.test(value ?? '')) {
-      throw new Error('Usage: bun scripts/serve.mjs [--port 1..65535] [--duration-seconds 1..5400]');
+    if (!['--port', '--duration-seconds', '--stop-at'].includes(flag) || seen.has(flag) || !value) {
+      throw new Error('Usage: bun scripts/serve.mjs [--port 1..65535] [--duration-seconds 1..14400] [--stop-at UTC_ISO_TIMESTAMP]');
     }
     seen.add(flag);
+    if (flag === '--stop-at') {
+      const timestamp = Date.parse(value);
+      if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(value)
+        || !Number.isFinite(timestamp)
+        || new Date(timestamp).toISOString() !== (value.includes('.') ? value : value.replace('Z', '.000Z'))) {
+        throw new Error('Invalid --stop-at: use a UTC ISO timestamp');
+      }
+      if (timestamp <= Date.now()) throw new Error('--stop-at deadline has elapsed');
+      result.stopAt = timestamp;
+      continue;
+    }
+    if (!/^\d+$/.test(value)) throw new Error(`Invalid ${flag}`);
     const number = Number(value);
-    const max = flag === '--port' ? 65535 : 5400;
+    const max = flag === '--port' ? 65535 : 14400;
     if (!Number.isSafeInteger(number) || number < 1 || number > max) throw new Error(`Invalid ${flag}`);
     result[flag === '--port' ? 'port' : 'durationSeconds'] = number;
   }
@@ -43,7 +55,8 @@ function options() {
 }
 
 async function main() {
-  const { port, durationSeconds } = options();
+  const { port, durationSeconds, stopAt = Infinity } = options();
+  const deadline = Math.min(Date.now() + durationSeconds * 1000, stopAt);
   const dist = path.join(web, 'dist');
   if (!(await lstat(dist)).isDirectory() || await realpath(dist) !== dist) {
     throw new Error('web/dist must be a real directory without symlink ancestors');
@@ -51,6 +64,7 @@ async function main() {
   const index = await lstat(path.join(dist, 'index.html'));
   if (!index.isFile() || index.isSymbolicLink()) throw new Error('Build web/dist/index.html before serving');
 
+  if (deadline <= Date.now()) throw new Error('Serving deadline has elapsed');
   const server = Bun.serve({
     hostname: '127.0.0.1', port,
     async fetch(request) {
@@ -99,6 +113,7 @@ async function main() {
         // Payload size offered, not a claim of bytes received by the client.
         bytes = request.method === 'HEAD' ? 0 : stat.size;
         const headers = { ...securityHeaders, 'Content-Type': mime[path.extname(resolved).toLowerCase()] ?? 'application/octet-stream', 'Content-Length': String(stat.size) };
+        if (relative === 'sw.js') headers['Service-Worker-Allowed'] = '/';
         if (request.method === 'HEAD') return new Response(null, { headers });
         const stream = Readable.toWeb(handle.createReadStream());
         handle = undefined; // Stream owns and closes the file descriptor, including cancellation.
@@ -128,11 +143,11 @@ async function main() {
   };
   const onInterrupt = () => { void stop('SIGINT'); };
   const onTerminate = () => { void stop('SIGTERM'); };
-  const timer = setTimeout(() => { void stop('deadline'); }, durationSeconds * 1000);
+  const timer = setTimeout(() => { void stop('deadline'); }, Math.max(0, deadline - Date.now()));
   process.on('SIGINT', onInterrupt);
   process.on('SIGTERM', onTerminate);
   console.log(JSON.stringify({ event: 'started', url: `http://127.0.0.1:${server.port}`, pid: process.pid,
-    start: started.toISOString(), deadline: new Date(started.getTime() + durationSeconds * 1000).toISOString() }));
+    start: started.toISOString(), deadline: new Date(deadline).toISOString() }));
 }
 
 main().catch(error => { console.error(error.message); process.exitCode = 1; });
