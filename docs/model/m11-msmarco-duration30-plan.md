@@ -45,19 +45,24 @@ predictor. Retain all M9 artifacts unchanged.
    manifest/shards, base assets, original M4 reference and reused inputs, and
    branch evidence. It exclusively creates `freeze-context.json`, `freeze.json`.
    No automatic refreeze. Parent records their hashes.
-2. Parent invokes `python -B ROOT/launch.py train FREEZE_SHA BRANCH_SHA` once.
+2. After actual P8/M10/P9 returns, parent freezes the separate operational
+   `activation.json` with its real exclusive reservation and original process
+   evidence, using the exact schema in artifact `README.md`. Scientific preparation
+   does not itself grant a slot. Parent invokes
+   `python -B ROOT/launch.py train FREEZE_SHA ACTIVATION_SHA BRANCH_SHA` once.
    Atomic `.active-ml` lock precedes history/accounting; do not reclaim stale
    locks. Existing unresolved/failing receipts block all continuation. Fresh
    HOME, offline shared HF cache, locked uv, isolated owner source. No retry.
 3. Parent checks completed run, exactly 30 epochs/11,250 steps/45,000 examples,
    original hash match, intrinsic counts and resource receipts. On success only,
-   create `checkpoint-ready.json` with `checkpoint_bindings`: exactly seven
-   canonical absolute `{path, sha256}` entries under `training/checkpoint`
-   (checkpoint.json, encoder config/weights, four tokenizer files). No tensor
-   decoding is needed for this handoff. Check actual inventory exactly matches
-   the M9 format; include run/process/freeze provenance in the parent handoff.
-4. Parent invokes `python -B ROOT/launch.py fit-final FREEZE_SHA` once. Supervisor
-   verifies all seven pinned checkpoint files and completed train before reload.
+   create `checkpoint-ready-for-fit.json` with the exact artifact README schema:
+   six successful invocation/process/run/resource/controller/first-update evidence
+   bindings and exactly seven checkpoint file bindings. The external completed run
+   and native endpoint/start checks are required; embedded checkpoint metadata may
+   retain its historical running status. No tensor decoding is added.
+4. Parent invokes
+   `python -B ROOT/launch.py fit-final FREEZE_SHA ACTIVATION_SHA READY_SHA` once.
+   Supervisor verifies the bound successful training and seven files before reload.
    Parent computes TRAIN statistics from saved outputs separately, no inference
    replay. Preserve failed/partial outputs; no rescue save or publication.
 5. Parent hands frozen seven-file checkpoint, source/input pins, absence receipts
@@ -90,7 +95,7 @@ identity, time, incomplete-run or group-absence failures mean stop, not rescue.
 
 Only stdlib source/JSON parsing and small evidence hashing are permitted here;
 no native/project imports, weights/tokenizers decoding, forwards, tests, lint,
-dependency installation or scoring/schedule replay. Build is optional, not ML
+dependency installation or scoring/schedule replay. Owner package build passed; this is not ML
 verification. Parent still owns integration, independent review, actual freeze,
 ML authorization/serialization, output pinning, final-fit statistics, P10 and
 aggregate return accounting. No main merge/reset belongs to this preparation.
