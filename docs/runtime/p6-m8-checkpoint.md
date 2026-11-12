@@ -2,7 +2,7 @@
 
 **One fresh stock-HF reload passed strict identity/storage checks and produced624/624development predictions in36.246seconds.** Exactly627model forwards occurred:3existing unscored startup rows plus300original,300reversed and24already-paired presentations. All2390option probabilities passed the label-free output contract. No retry, extra canary or representation fallback occurred.
 
-Model received the slot return immediately (`c42507ca`), and Evaluation received outputs directly (`0cff1986`) before this report/integration. **E8 owns independent quality conclusions; none were available at delivery.** Model's TRAINagreement805→804/1500 and CE1.357724→1.332200 show limited adaptation, not held-out success or failure of feature capacity. No default promotion follows.
+Model received the slot return immediately (`c42507ca`), and Evaluation received outputs directly (`0cff1986`) before this report/integration. **E8 is complete:** [independent readout report](../evaluation/e8-readout-scope.md), main `1dde6fd`; none was available at Runtime delivery. Model's TRAINagreement805→804/1500 and CE1.357724→1.332200 show limited adaptation, not held-out success or failure of feature capacity. No default promotion follows.
 
 ## Actual execution
 
