@@ -2,11 +2,12 @@
 import { BertTokenizer, env } from '@huggingface/transformers';
 import * as ort from 'onnxruntime-web/wasm';
 import { validateDecision } from './types';
-import type { Decision, Metadata, RequestRecord, Result, WorkerReply, WorkerRequest } from './types';
+import type { Decision, Metadata, Progress, RequestRecord, Result, WorkerReply, WorkerRequest } from './types';
 
 const scope = self as unknown as DedicatedWorkerGlobalScope;
 const send = (reply: WorkerReply) => scope.postMessage(reply);
 const progress = (stage: string, message: string) => send({ kind: 'progress', event: { stage, message } });
+let assetProgress = new Map<string, Pick<Progress, 'stage' | 'message'>>();
 let session: ort.InferenceSession | undefined;
 let tokenizer: BertTokenizer | undefined;
 let special: { cls: number; sep: number; pad: number };
@@ -30,8 +31,49 @@ globalThis.fetch = async (input, init) => {
       ...init, cache: 'no-store', credentials: 'omit', redirect: 'error', mode: 'same-origin',
     });
     record.status = response.status;
-    // Read before returning so diagnostics describe completed body transfers, not just headers.
-    const body = await response.arrayBuffer();
+    const asset = assetProgress.get(url.href);
+    const length = response.headers.get('content-length');
+    const encoding = response.headers.get('content-encoding');
+    let totalBytes = length !== null && /^\d+$/.test(length) &&
+      (encoding === null || encoding.trim().toLowerCase() === 'identity') &&
+      Number.isSafeInteger(Number(length)) && Number(length) > 0 ? Number(length) : undefined;
+    let receivedBytes = 0;
+    const report = () => {
+      if (totalBytes !== undefined && receivedBytes > totalBytes) totalBytes = undefined;
+      if (asset) send({ kind: 'progress', event: {
+        ...asset, receivedBytes, ...(totalBytes === undefined ? {} : { totalBytes }),
+      } });
+    };
+    report();
+    // Count actual response-body bytes; a service worker/cache may supply them without network I/O.
+    let body: Uint8Array<ArrayBuffer>;
+    if (response.body) {
+      const reader = response.body.getReader();
+      const chunks: Uint8Array[] = [];
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          chunks.push(value);
+          receivedBytes += value.byteLength;
+          record.bytes = receivedBytes;
+          report();
+        }
+      } finally {
+        reader.releaseLock();
+      }
+      body = new Uint8Array(receivedBytes);
+      let offset = 0;
+      for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.byteLength; }
+    } else {
+      body = new Uint8Array(await response.arrayBuffer());
+      receivedBytes = body.byteLength;
+      report();
+    }
+    if (totalBytes !== undefined && receivedBytes !== totalBytes) {
+      totalBytes = undefined;
+      report();
+    }
     record.bytes = body.byteLength;
     record.durationMs = performance.now() - record.startedMs;
     if (!response.ok) throw new Error(`Asset HTTP ${response.status}: ${url.pathname}`);
@@ -68,6 +110,11 @@ async function initialize(assetBaseUrl: string): Promise<Metadata> {
   const wasmUrl = new URL('/ort/ort-wasm-simd-threaded.wasm', base).href;
   const mjsUrl = new URL('/ort/ort-wasm-simd-threaded.mjs', base).href;
   allowed = new Set([modelUrl, tokenizerUrl, configUrl, wasmUrl, mjsUrl]);
+  assetProgress = new Map([
+    [modelUrl, { stage: 'model', message: 'Reading local FP32 model asset' }],
+    [tokenizerUrl, { stage: 'tokenizer', message: 'Reading local BERT tokenizer asset' }],
+    [configUrl, { stage: 'tokenizer', message: 'Reading local BERT tokenizer configuration' }],
+  ]);
   env.allowRemoteModels = false;
   env.allowLocalModels = true;
   env.useBrowserCache = false;
@@ -116,7 +163,7 @@ async function initialize(assetBaseUrl: string): Promise<Metadata> {
   }
   tokenizer = new BertTokenizer(json, config);
   const tokenizerLoadMs = performance.now() - tokenizerStart;
-  progress('model', 'Fetching local FP32 model');
+  progress('model', 'Loading local FP32 model asset');
   const model = await (await fetch(modelUrl)).arrayBuffer();
   progress('session', 'Initializing single-thread WASM session');
   const modelStart = performance.now();
@@ -145,15 +192,8 @@ async function predict(input: Decision): Promise<Result> {
   for (const option of input.options) {
     const a = first.slice();
     const b = tokenizer.encode(`Candidate:\n${option.text}`, { add_special_tokens: false });
-    // HFJS 3.8.1 slices the assembled pair. Use tokenizers' fast longest_first length allocation instead.
-    // The originally longer sequence receives the odd token; equal original lengths favor B.
-    if (a.length + b.length > 253) {
-      const swap = a.length > b.length;
-      let shorter = Math.min(a.length, b.length);
-      let longer = shorter > 253 ? shorter : Math.max(shorter, 253 - shorter);
-      if (shorter + longer > 253) { shorter = 126; longer = 127; }
-      a.length = swap ? longer : shorter;
-      b.length = swap ? shorter : longer;
+    if (a.length + b.length + 3 > 256) {
+      throw new Error('Input exceeds the M9 limit of 256 tokens per encoded candidate pair; shorten the state, question or options');
     }
     input_ids.push([special.cls, ...a, special.sep, ...b, special.sep]);
     token_type_ids.push([...new Array(a.length + 2).fill(0), ...new Array(b.length + 1).fill(1)]);

@@ -1,6 +1,8 @@
 /node_modules/
 /dist/
+/dist-qwen/
 /public/models/
 /public/ort/
 /public/examples/
 /asset-manifest.local.json
+/offline-manifest.local.json

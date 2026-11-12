@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && bun scripts/build-offline.mjs",
+    "demo": "bun scripts/launch.mjs",
     "serve": "bun scripts/serve.mjs",
     "assets": "bun scripts/copy-assets.mjs"
   },

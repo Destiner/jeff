@@ -13,8 +13,9 @@ const PREDICT_MS = 60_000;
 const DISPOSE_MS = 5_000;
 
 export async function createEngine(options: {
-  assetBaseUrl: string; onProgress?: (event: Progress) => void;
+  assetBaseUrl: string; onProgress?: (event: Progress) => void; signal?: AbortSignal;
 }): Promise<Engine> {
+  if (options.signal?.aborted) throw new DOMException('Engine creation aborted', 'AbortError');
   const base = new URL(options.assetBaseUrl, location.href);
   if (base.origin !== location.origin || !['http:', 'https:'].includes(base.protocol) ||
       base.username || base.password || base.search || base.hash || !base.pathname.endsWith('/')) {
@@ -30,9 +31,11 @@ export async function createEngine(options: {
     resolve: (value: Metadata | Result | null) => void;
     reject: (error: Error) => void; timer: ReturnType<typeof setTimeout>;
   }>();
+  const abort = () => stop(new DOMException('Engine operation aborted', 'AbortError'));
   function stop(error: Error) {
     if (closed) return;
     closed = true;
+    options.signal?.removeEventListener('abort', abort);
     worker.terminate();
     for (const item of pending.values()) {
       clearTimeout(item.timer);
@@ -40,6 +43,8 @@ export async function createEngine(options: {
     }
     pending.clear();
   }
+  options.signal?.addEventListener('abort', abort, { once: true });
+  if (options.signal?.aborted) abort();
   worker.onerror = event => { event.preventDefault(); stop(new Error(event.message || 'Engine worker failed')); };
   worker.onmessageerror = () => stop(new Error('Engine worker message could not be decoded'));
   worker.onmessage = ({ data }: MessageEvent<WorkerReply>) => {

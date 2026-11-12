@@ -2,7 +2,7 @@ import { constants, createWriteStream } from 'node:fs';
 import { lstat, mkdir, open, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { Transform } from 'node:stream';
+import { Readable, Transform } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import { fileURLToPath } from 'node:url';
 
@@ -49,10 +49,34 @@ async function inspectPath(filename, allowMissing = false) {
   return stat;
 }
 
+// Positional reads leave descriptor lifetime with the caller, not a stream.
+async function* contents(handle) {
+  let position = 0;
+  while (true) {
+    const buffer = Buffer.allocUnsafe(1024 * 1024);
+    const { bytesRead } = await handle.read(buffer, 0, buffer.length, position);
+    if (!bytesRead) return;
+    position += bytesRead;
+    yield buffer.subarray(0, bytesRead);
+  }
+}
+
 async function digest(handle) {
   const hash = createHash('sha256');
-  for await (const chunk of handle.createReadStream({ start: 0, autoClose: false })) hash.update(chunk);
+  for await (const chunk of contents(handle)) hash.update(chunk);
   return hash.digest('hex');
+}
+
+async function openRegular(filename) {
+  const stat = await inspectPath(filename);
+  if (!stat.isFile() || stat.size === 0) throw new Error(`Expected nonempty regular file: ${filename}`);
+  const handle = await open(filename, constants.O_RDONLY | constants.O_NOFOLLOW | constants.O_NONBLOCK);
+  const opened = await handle.stat();
+  if (!opened.isFile() || opened.dev !== stat.dev || opened.ino !== stat.ino) {
+    await handle.close();
+    throw new Error(`File changed: ${filename}`);
+  }
+  return handle;
 }
 
 function validateInputs(buffer) {
@@ -100,12 +124,8 @@ async function main() {
   try {
     // All source/type/hash and destination checks precede the first write.
     for (const entry of entries) {
-      const stat = await inspectPath(entry.source);
-      if (!stat.isFile() || stat.size === 0) throw new Error(`Expected nonempty regular file: ${entry.source}`);
-      entry.handle = await open(entry.source, constants.O_RDONLY | constants.O_NOFOLLOW | constants.O_NONBLOCK);
-      const opened = await entry.handle.stat();
-      if (!opened.isFile() || opened.dev !== stat.dev || opened.ino !== stat.ino) throw new Error(`Source changed: ${entry.source}`);
-      entry.bytes = opened.size;
+      entry.handle = await openRegular(entry.source);
+      entry.bytes = (await entry.handle.stat()).size;
       entry.sha256 = await digest(entry.handle);
       entry.destination = path.join(publicRoot, entry.url.slice(1));
     }
@@ -113,12 +133,34 @@ async function main() {
     if (inputs.sha256 !== inputHash) throw new Error('P11 inputs SHA-256 does not match the frozen original');
     // Read only the explicit, hash-bound input file, never labels or references.
     const chunks = [];
-    for await (const chunk of inputs.handle.createReadStream({ start: 0, autoClose: false })) chunks.push(chunk);
+    for await (const chunk of contents(inputs.handle)) chunks.push(chunk);
     const inputBuffer = Buffer.concat(chunks);
     if (createHash('sha256').update(inputBuffer).digest('hex') !== inputHash) throw new Error('P11 inputs changed during validation');
     validateInputs(inputBuffer);
-    for (const destination of [...entries.map(entry => entry.destination), manifestPath]) {
-      if (await inspectPath(destination, true)) throw new Error(`Destination already exists: ${destination}`);
+    let priorManifest;
+    if (await inspectPath(manifestPath, true)) {
+      const handle = await openRegular(manifestPath);
+      try {
+        if ((await handle.stat()).size > 1024 * 1024) throw new Error('Asset manifest is too large');
+        priorManifest = JSON.parse(await handle.readFile('utf8'));
+      } finally { await handle.close(); }
+      // Keep the original provenance intact, including source locations and timestamps.
+      if (priorManifest.schema_version !== '0.1' || !Array.isArray(priorManifest.assets)
+        || priorManifest.assets.length !== entries.length
+        || entries.some(entry => {
+          const matches = priorManifest.assets.filter(asset => asset.url === entry.url);
+          return matches.length !== 1 || matches[0].bytes !== entry.bytes || matches[0].sha256 !== entry.sha256;
+        })) throw new Error('Existing asset manifest conflicts with this complete asset set; preserved unchanged');
+    }
+    for (const entry of entries) {
+      const stat = await inspectPath(entry.destination, true);
+      if (!stat) continue;
+      if (!stat.isFile() || stat.size !== entry.bytes) throw new Error(`Conflicting/partial destination preserved: ${entry.destination}`);
+      const handle = await openRegular(entry.destination);
+      try {
+        if (await digest(handle) !== entry.sha256) throw new Error(`Conflicting destination preserved: ${entry.destination}`);
+      } finally { await handle.close(); }
+      entry.reused = true;
     }
     for (const directory of new Set(entries.map(entry => path.dirname(entry.destination)))) {
       await inspectPath(directory, true);
@@ -126,6 +168,7 @@ async function main() {
       if (!(await inspectPath(directory)).isDirectory()) throw new Error(`Invalid output directory: ${directory}`);
     }
     for (const entry of entries) {
+      if (entry.reused) continue;
       await inspectPath(path.dirname(entry.destination));
       const hash = createHash('sha256');
       let bytes = 0;
@@ -136,7 +179,7 @@ async function main() {
           callback(null, chunk);
         },
       });
-      await pipeline(entry.handle.createReadStream({ start: 0, autoClose: false }), meter,
+      await pipeline(Readable.from(contents(entry.handle)), meter,
         createWriteStream(entry.destination, { flags: 'wx', mode: 0o644 }));
       if (bytes !== entry.bytes || hash.digest('hex') !== entry.sha256) throw new Error(`Source changed while copying: ${entry.source}`);
     }
@@ -146,16 +189,20 @@ async function main() {
       schema_version: '0.1', copied_at: copiedAt,
       assets: entries.map(({ source, url, bytes, sha256 }) => ({ source, url, bytes, sha256, copied_at: copiedAt })),
     };
-    await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, { flag: 'wx', mode: 0o644 });
-    console.log(JSON.stringify({ manifest: manifestPath, assets: entries.length, bytes: entries.reduce((sum, entry) => sum + entry.bytes, 0) }));
+    if (!priorManifest) {
+      await inspectPath(path.dirname(manifestPath));
+      await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, { flag: 'wx', mode: 0o644 });
+    }
+    console.log(JSON.stringify({ event: 'assets-ready', manifest: manifestPath, manifestPreserved: !!priorManifest,
+      assets: entries.map(({ url, bytes, sha256, reused }) => ({ url, bytes, sha256, action: reused ? 'reused' : 'copied' })),
+      bytes: entries.reduce((sum, entry) => sum + entry.bytes, 0) }));
   } finally {
     await Promise.all(entries.map(entry => entry.handle?.close().catch(() => {})));
   }
 }
 
 main().catch(error => {
-  // Preserve partial outputs as evidence. A retry requires a fresh destination,
-  // or explicit operator cleanup; never silently replace an earlier copy.
+  // Conflicts and interrupted partial outputs require explicit operator cleanup.
   console.error(`Asset copy failed: ${error.message}`);
   process.exitCode = 1;
 });
