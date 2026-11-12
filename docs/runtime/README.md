@@ -11,6 +11,17 @@ P1 exports the existing **M2** checkpoint without changing its weights, tokenize
 - [`BUNDLE-README.md`](BUNDLE-README.md): short macOS CPU install/run instructions included in each delivered bundle.
 - [`p1-results.md`](p1-results.md): executed evidence, hashes, qualifications and failures. `manifests/releases/` stores the small inventory/runtime receipts; large bundles are ignored artifacts, never Git objects.
 
+## Overnight execution and local handoff
+
+- [P10 / M11](p10-m11-checkpoint.md): 720 decisions through the existing encoder, including D3; execution is separate from E12's quality regressions.
+- [P11 portable M9](p11-portable-m9.md): offline installation and three fixed TRAIN CPU comparisons passed after one preserved post-load, zero-forward failure. Two loads, three productive forwards, 12/120 seconds charged. The durable recipient entry point is `artifacts/lead/night-20261112/local-reference/README.md`; this is a local reference, not a public release or general portability certificate.
+- [P12 frozen NLI](p12-frozen-nli.md): 624 decisions completed, but the required recommended-MPS-headroom guard was **not measured or enforced**. The qualification remains consequential.
+- [P13 / M12](p13-m12-checkpoint.md): strict v2 readout reload, 624 decisions plus three startup forwards; proper-score improvement does not erase choice/retention regressions.
+- [D8 tokenizer audit](d8-tokenizer-audit.md): all 800 pairs fit both caps after five preserved failed attempts. No model weights or forwards; Data/Evaluation selected the released populations.
+- [E13 external execution](e13-external-execution.md): all eight exploration predictors closed at 98/1,200 seconds; the separate four-raw, zero-optional confirmation closed at 45/900 seconds. Later NLI actually enforced the corrected recommended-minus-driver guard; it does not repair old P12. No further native authority remains.
+
+The current exploration consumers include the reviewed prospective guard correction. Executed source snapshots and confirmation's separate frozen registry remain retained; integrating source now does not change which revision ran. Evaluation owns scientific interpretation. No default migration, calibration claim, new inference, or additional spend follows from publication.
+
 ## Frozen instruction-model challenger (P3)
 
 The [P3 execution report](p3-frozen-challenger.md) records one frozen

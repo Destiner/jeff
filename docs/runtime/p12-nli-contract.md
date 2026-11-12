@@ -1,8 +1,13 @@
-# P12 — fixed frozen NLI adapter (source preparation only)
+# P12 — fixed frozen NLI adapter contract
 
 ## Status and interpretation
 
-This is **unexecuted source**, not runtime readiness or an evaluation result.
+This document began as an **unexecuted source-preparation contract**. The later
+[completed P12 report](p12-frozen-nli.md) supersedes its preparation-time status:
+624 decisions completed, but the required recommended-MPS-headroom guard was
+missing. The separate [E13 pass](e13-external-execution.md) used corrected future
+source; it neither repairs that historical deviation nor authorizes a replay.
+The original preparation scope and then-outstanding prerequisites follow.
 Only `src/jeff/runtime/nli_challenger.py`, `configs/runtime/p12-nli.json` and this
 contract are owned by this preparation. No ML/tokenizer import, weight decoding,
 installation, acquisition, inference, tests, lint, build, network or commit is
@@ -157,12 +162,17 @@ checks. **Parent must enforce an external whole-group wall limit including
 startup and finalization, with termination grace inside the grant.** Never treat
 the cooperative bound as proof of an external hard deadline.
 
-Before/after loads and each native forward, sampled current/peak process RSS and
-MPS driver allocation must each remain at most 8 GiB; estimated system headroom
-must be at least 2 GiB. Headroom is macOS `vm_stat` (free + inactive pages), not
-an allocation guarantee or swap-pressure audit. Driver values are samples, not
-continuous peaks; RSS high-water is `getrusage` on macOS. Sampling itself checks
-the clock. No memory reclaim trick, retry or CPU fallback is attempted.
+The required limits are separate: current/lifetime process RSS and MPS driver
+allocation at most 8 GiB, and `torch.mps.recommended_max_memory() -
+torch.mps.driver_allocated_memory()` at least 2 GiB. The original executed P12
+source instead checked macOS `vm_stat` free + inactive pages. That was the wrong
+metric: required headroom was neither measured nor enforced in that pass.
+Prospectively corrected source checks the actual MPS metric after Torch import,
+before MPS allocation and around forwards; pre-Torch headroom is explicitly
+not checked. E13 has actual evidence of that correction on its separate workload.
+Samples are not continuous peaks or allocation guarantees; RSS high-water uses
+`getrusage` on macOS, and overlapping scopes are not additive. No memory reclaim
+trick, retry or CPU fallback is authorized.
 
 ## Outputs and failure evidence
 
@@ -192,7 +202,7 @@ failure can occur after a durable attempt intent but before native entry. Counts
 therefore mean recorded attempts, not proof that a native call entered GPU code.
 There is no restart path.
 
-## Concrete outstanding blockers
+## Preparation-time blockers (historical)
 
 1. Acquisition owner's eight verified local assets and new frozen binding,
    including installed built-in source pins/version strings, are not supplied by

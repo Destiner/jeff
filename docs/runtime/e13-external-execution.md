@@ -16,7 +16,7 @@ Delivery summaries and batch receipts report exit zero, successful members, clea
 
 ## Cohort and timing qualifications
 
-All times below are UTC on 2026-11-12. The confirmation cutoff was 06:30; the FOUR RAW / ZERO OPTIONAL lock record was written at 06:32:54. No Evaluation quality had been received by the cutoff. The later exploration quality could not change that cohort. There were no means, optional confirmation predictors, retries, or unselected confirmation outputs.
+All times below are UTC on 2026-11-12. The confirmation cutoff was 06:30; the FOUR RAW / ZERO OPTIONAL lock record was written at 06:32:54. No Evaluation quality had been received by the cutoff. The later exploration quality could not change that cohort. There were no confirmation means, optional confirmation predictors, retries, or unselected confirmation outputs. Authorized exploration-only arithmetic remains a separate Evaluation activity.
 
 First-four source readiness was recorded at 06:18:49, but actual handoff was 06:21:24. That gap remains; the M9 batch notice arrived after return because of a polling gap. First exploration delivery metadata is timestamped 06:29:15.726481.
 
@@ -32,7 +32,7 @@ The supplied source-preparation bounds/accounting are 30 initial minutes spent, 
 
 Each phase used its exact four-file allowlist. Confirmation approval covered only the four approved final consumer files, not directories, sibling files, references, or any other final access. This publication read release summaries/readiness/receipts only, not confirmation inputs, prediction files, references, private folders, model weights, or tokenizer assets.
 
-Exploration consumer source versions were being integrated into main; the distinct frozen `f1fee32` confirmation worktree remains retained, not unified or replayed. This report changes neither executed source nor evidence. The later native NLI path has prospective correct 308 guard checks; that does not retrospectively repair the old P12 missing recommended-headroom guard. Old P12's 624-presentation evidence remains qualified.
+The owned source publication incorporates the executed exploration consumers; the distinct frozen `f1fee32` confirmation worktree remains retained, not unified or replayed. The integrated revision was not retroactively the execution source. This report changes neither executed source nor evidence. The later native NLI path has prospective correct 308 guard checks; that does not retrospectively repair the old P12 missing recommended-headroom guard. Old P12's 624-presentation evidence remains qualified.
 
 ## Canonical evidence and quality boundary
 
@@ -47,8 +47,10 @@ The [small publication manifest](../../manifests/releases/e13-external-20261112.
 - `e13-confirmation-return.json`: SHA-256 `6bfcfd29410d45eda94b4ea741d1d88d87e30941659f8c086ce355b8426bd44e`
 - Later-exploration closure: SHA-256 `d9491962b360a1cd4850376a71bae247ab2551a8651b073feca37d1faeb0d567`
 
-Quality belongs to Evaluation: `artifacts/evaluation/e13-confirmation-public-v1/report.md` and `artifacts/evaluation/e13-confirmation-public-v1/summary.json` are the only explicitly permitted aggregate-quality links. Neither was read for this runtime publication. Arithmetic review was pending at the supplied 07:33 snapshot; no later public resolution was checked. Runtime success does not resolve quality failures, establish generalization/calibration, or authorize promotion. All earlier failures and qualifications remain.
+Quality belongs to Evaluation. Its aggregate-only confirmation report and summary at `artifacts/evaluation/e13-confirmation-public-v1/` were delivered at 07:33 with arithmetic review pending. Evaluation message `69b89c0f-735d-45ce-8194-1d30296f42c9` at 07:46 supersedes that pending status: independent numeric reconstruction passed, including 9,600 bit-exact outcome fields, with **metadata and custody qualifications**. The 122,679 comparisons include failed literal assertions, not 122,679 passing checks. Locator rewrites/wrong-format assertions and stale failure headers remain in original evidence. A review inspection printed selected case content/IDs into its tool output contrary to confinement; harness logs remain unchanged. No perfect filesystem-only custody is claimed, and no scorer/native retry or cohort change followed.
+
+Only the specifically released aggregate files may be read: the two original confirmation files, `artifacts/evaluation/e13-confirmation-quality-v1/closure-report.md` and `closure-receipt.json`, and `artifacts/evaluation/e13-laterfour-analysis-v1/public-report.md`. These are file locators, not sibling/private-path permission. This Runtime update uses the explicit public handoff, not protected cases or a new quality calculation. Later exploration arithmetic review remained pending in that handoff. Runtime success does not establish generalization/calibration or authorize promotion.
 
 ## Publication verification
 
-Only this document and the named small manifest are owned by this publication. Packaging is checked with `UV_OFFLINE=1 uv build --no-sources`; a successful build is packaging evidence only. No tests, lint, network, imports of ML/tokenizer/model code, new experiment, source engineering, or main merge is part of this work.
+The isolated documentation drafts were built with `UV_OFFLINE=1 uv build --no-sources`, followed by bounded owner review and the integration build. These are packaging/publication checks, not a new native pass. No tests, lint, network, imports of ML/tokenizer/model code, or new experiment were performed for publication.
