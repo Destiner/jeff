@@ -1,16 +1,22 @@
 # Jeff release and experimental runtime
 
-P1 exports the existing **M2** checkpoint without changing its weights, tokenizer, settings, loader or probabilities. The same exporter also handles **M3**, separately identified; neither packaging nor the demo selects a better model. No UI, model server or new framework is introduced.
+## Current browser SDK and applications
+
+[Final SDK handoff](final-sdk.md): private `@jeff/sdk` 0.1.0 is built, separately packed/imported and independently accepted for six online Safari/WASM cases (24 values; maximum drift 8.87e-7). Three detailed calls matched exact saved token matrices; three plain calls remain token-unverified. Queue/chat/playground source and builds are delivered, but their new acceptance is **UNATTEMPTED** and new SDK/app offline inference **UNVERIFIED**. M9 remains selected after M13's retention rejection. See [SDK deployment](../../sdk/README.md) and [application setup](../../web/README.md); weights are not included in the public source or npm. A local model-only archive exists, with publication/licensing decisions still separate.
+
+The sections below retain historical execution identities and limitations; they are not grants or acceptance of the new SDK/application graph.
 
 ## Offline browser demo (BROWSER-B2)
 
-[Browser B2](browser-b2.md) adds explicit versioned offline preparation, actual byte progress, cancellation and short-input rejection. Both the online and server-unavailable new-document M9 phases passed independent three-case comparisons, with identical tokens/tops and maximum drift 6.78e-7. The final ordinary demo preserves that proved graph; use [the launcher instructions](../../web/README.md). The actual trained M10 WebGPU session initialized, but a sampled memory-pressure stop aborted its first request before any result returned: Qwen remains unverified and outside the normal demo. Model grants are closed; the finite Infra-owned static host expires at 15:45 UTC on 2026-11-12.
+[Browser B2](browser-b2.md) added explicit versioned offline preparation, actual byte progress, cancellation and short-input rejection. Its online and server-unavailable new-document M9 phases passed independent three-case comparisons, with identical tokens/tops and maximum drift 6.78e-7. B2's then-final ordinary demo preserved that proved graph; the current SDK/apps use a later graph and do not inherit its offline acceptance. The trained M10 WebGPU session initialized, but a sampled memory-pressure stop aborted its first request before any result returned: Qwen remains unverified and outside the normal demo. Those Model grants are closed. The historical Infra host had a scheduled 15:45 UTC expiry on 2026-11-12; this index does not claim an observed shutdown.
 
 ## Trained M9 in Safari (BROWSER-B1)
 
 [Browser feasibility](browser-b1.md) is a bounded **GO**: the trained FP32 M9 runs in a Safari WASM worker with local static assets and no inference server. All three original P11 TRAIN examples matched the retained CPU top choices and exact tokens; maximum probability drift was 6.78e-7 against the fixed 1e-4 limit. The [web app instructions](../../web/README.md) cover local installation, explicit asset staging and serving. This is not model-quality, long-input, offline-reload or all-browser certification. The 90,997,024-byte ONNX export and actual timing/closure evidence are linked in the report; no quantization or new training was performed.
 
-## Deliverables
+## Historical native bundle deliverables
+
+P1 exported existing **M2** and **M3** checkpoints without changing weights, tokenizer, settings, loader or probabilities. That original packaging work did not introduce a UI or select a better model.
 
 - `python -m jeff.runtime.export`: standard-library, allowlisted copy into a new read-only directory bundle. M2 has eight checkpoint files, M3 seven. Unexpected files, links, special files, overwrites and source changes during copying are rejected.
 - `python -m jeff.runtime.verify BUNDLE`: exact inventory, size and SHA-256 verification, checkpoint/package metadata consistency, and manifest sidecar verification. No model imports.
