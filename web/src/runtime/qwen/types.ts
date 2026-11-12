@@ -19,6 +19,7 @@ export type QwenResult = {
     optionMapping: { letter: string; tokenId: number; optionId: string; text: string }[];
     topOptionId: string; tiedOptionIds: string[]; tokenizerMs: number; inferenceMs: number; totalMs: number;
     requests: RequestRecord[]; device: DeviceMetadata;
+    observedGpuKernelsCumulative: Record<string, number>; placementQualification: string;
   };
 };
 export type Request = { id: number } & (

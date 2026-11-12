@@ -24,6 +24,7 @@ let dead = false;
 let normalDisposal = false;
 let runtimeModuleUrl: string | undefined;
 const requests: RequestRecord[] = [];
+const gpuKernels: Record<string, number> = {};
 const originalFetch = globalThis.fetch.bind(globalThis);
 let allowed = new Set<string>();
 const progress = (stage: string, asset: string, loadedBytes?: number, totalBytes?: number | null) =>
@@ -157,9 +158,13 @@ async function initialize(baseUrl: string): Promise<QwenMetadata> {
   const model = await bytes(new URL('model.onnx', base), modelEntry.bytes);
   progress('session-initialization', 'model.onnx');
   const modelStarted = performance.now();
+  ort.env.webgpu.profiling = { mode: 'default', ondata: data => {
+    const key = `${data.kernelType}:${data.inputsMetadata.map(input => input.dataType).join(',')}`;
+    gpuKernels[key] = (gpuKernels[key] ?? 0) + 1;
+  } };
+  // Shape bookkeeping may use CPU; do not select a whole-model WASM provider or retry another backend.
   session = await ort.InferenceSession.create(model, {
     executionProviders: ['webgpu'], graphOptimizationLevel: 'all',
-    extra: {session: {disable_cpu_ep_fallback: '1'}},
   });
   const modelLoadMs = performance.now() - modelStarted;
   check(same(session.inputNames, ['input_ids']) && same(session.outputNames, ['logits']), 'Loaded session names mismatch');
@@ -231,7 +236,9 @@ async function predict(input: Request & {kind: 'predict'}): Promise<QwenResult> 
     diagnostics: {backend: 'webgpu', renderedPrompt, promptTokenIds, answerTokenIds, logits, selectedLogits, k,
       optionMapping: row.options.map((o, i) => ({letter: LETTERS[i], tokenId: answerTokenIds[i], optionId: o.id, text: o.text})),
       topOptionId: tiedOptionIds[0], tiedOptionIds, tokenizerMs, inferenceMs, totalMs: performance.now() - started,
-      requests: requests.map(r => ({...r})), device: metadata.device}};
+      requests: requests.map(r => ({...r})), device: metadata.device,
+      observedGpuKernelsCumulative: {...gpuKernels},
+      placementQualification: 'WebGPU provider requested; cumulative profiler callbacks show observed GPU kernel types, not a complete CPU/GPU placement audit. Profiling overhead is included.'}};
 }
 async function dispose() {
   normalDisposal = true; dead = true;

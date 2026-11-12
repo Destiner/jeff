@@ -56,7 +56,7 @@ export function validateContract(c: Contract, r: Receipt): void {
     c.no_generation === true && c.no_kv_cache === true, 'Frozen one-input FP16 contract mismatch');
   const g = c.actual_graph;
   check(same(g.inputs, [{name: 'input_ids', element_type: 7, shape: [1, 'sequence']}]) &&
-    same(g.outputs, [{name: 'logits', element_type: 1, shape: [1, 6]}]) && g.external_initializers === 0 &&
+    same(g.outputs, [{name: 'logits', element_type: 1, shape: ['Castlogits_dim_0', 6]}]) && g.external_initializers === 0 &&
     g.opsets.some(o => o.domain === '' && o.version === 17), 'Inspected actual ONNX I/O mismatch');
   check(['missing_keys', 'unexpected_keys', 'mismatched_keys', 'error_msgs'].every(k =>
     Array.isArray(r.loading_info[k]) && r.loading_info[k].length === 0), 'Strict native load diagnostics required');

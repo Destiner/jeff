@@ -2,20 +2,25 @@ import type { Decision } from '../types';
 import type { QwenMetadata, QwenProgress, QwenResult, Reply, Request } from './types';
 export type { QwenMetadata, QwenProgress, QwenResult } from './types';
 
-export async function createQwenEngine({ assetBaseUrl, onProgress }: {
-  assetBaseUrl: string; onProgress?: (event: QwenProgress) => void;
+export async function createQwenEngine({ assetBaseUrl, onProgress, signal }: {
+  assetBaseUrl: string; onProgress?: (event: QwenProgress) => void; signal?: AbortSignal;
 }): Promise<{ metadata: QwenMetadata; predict(input: Decision): Promise<QwenResult>; dispose(): Promise<void> }> {
+  if (signal?.aborted) throw new DOMException('Qwen creation aborted', 'AbortError');
   const worker = new Worker(new URL('./worker.ts', import.meta.url), { type: 'module' });
   let nextId = 0;
   let closed = false;
   let disposing = false;
   const pending = new Map<number, { resolve(value: unknown): void; reject(error: Error): void; timer: ReturnType<typeof setTimeout> }>();
+  const abort = () => stop(new DOMException('Qwen operation aborted', 'AbortError'));
   const stop = (error: Error) => {
     closed = true;
+    signal?.removeEventListener('abort', abort);
     worker.terminate();
     for (const entry of pending.values()) { clearTimeout(entry.timer); entry.reject(error); }
     pending.clear();
   };
+  signal?.addEventListener('abort', abort, {once: true});
+  if (signal?.aborted) abort();
   worker.onerror = () => stop(new Error('Qwen worker failed; disposed, no retry'));
   worker.onmessageerror = () => stop(new Error('Qwen worker message failed; disposed'));
   worker.onmessage = ({ data }: MessageEvent<Reply>) => {
