@@ -1,6 +1,8 @@
 # File-based evaluation
 
-Latest raw contrast: [E11 seed replication](e11-seed-replication.md). M10 seed7 improves broad quality versus M7 seed42, but new-rule both-order agreement is only4/80, third-slot preference remains strong, and probe agreement falls21→19/24. Two seeds do not establish variance or authorize choosing the better seed.
+Latest raw contrast: [E12 thirty-epoch encoder](e12-encoder-duration30.md). TRAIN improves1314→1414/1500 versus M9, but new development falls165→162/240 and both proper scores worsen. D3 rises26→29/96 and2→5 complete policies while NLL/Brier worsen; three exact20-case TRAIN mechanism sets are fully fitted yet remain weak on new policies. Probe agreement/NLL improve, not Brier. No further duration arm or promotion.
+
+[E11 seed replication](e11-seed-replication.md). M10 seed7 improves broad quality versus M7 seed42, but new-rule both-order agreement is only4/80, third-slot preference remains strong, and probe agreement falls21→19/24. Two seeds do not establish variance or authorize choosing the better seed.
 
 Separate exploratory [E16 fixed reversal means](e16-reversal-mean.md) improve M7 new agreement171/170→182/240 but reduce M10 from182/178→177. Guaranteed proper-score improvements against the mean constituent loss are not choice gains, calibration or rule competence; deployment costs two forwards. Five candidates are measured; later authorized extensions remain separate.
 
