@@ -1,6 +1,8 @@
 # File-based evaluation
 
-Latest independent results: [E7 lower-LR learning](e7-low-lr-learning.md) is mixed. M7 improves inherited/new agreement and proper scores in both orders versus original P3 and both trained encoders, driven by intent/sentiment. New rules still flip80/80 and have zero both-order successes; unchanged9/12stable probe successes hide two lost rule pairs. No automatic promotion.
+Latest independent results: [E8 readout-scope contrast](e8-readout-scope.md) stays near original P3, far below M7 on broad quality, with new-rule both-correct4→6/80. [E9 encoder-duration contrast](e9-encoder-duration.md) improves new agreement141→165/240 in both orders, driven by sentiment, but rules regress21→17/80 despite stronger TRAIN fit. Exact probe retention, source regressions and proper-score exceptions remain explicit; no automatic promotion.
+
+Prior [E7 lower-LR learning](e7-low-lr-learning.md) is mixed. M7 improves inherited/new agreement and proper scores in both orders versus original P3 and both trained encoders, driven by intent/sentiment. New rules still flip80/80 and have zero both-order successes; unchanged9/12stable probe successes hide two lost rule pairs. No automatic promotion.
 
 Prior [E6 decoder learning](e6-decoder-learning.md) remains a negative result: all624 trained choices prefer the first input option without ties and no both-order successes remain. E7 is the separately authorized lower-LR contrast, not a redefinition of E6. Its [frozen interpretation](e7-plan.md) and [preparation boundary](e7-binding.md) remain preserved.
 

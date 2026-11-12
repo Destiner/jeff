@@ -1,0 +1,289 @@
+{
+  "schema_version": "e3-study/1",
+  "status": "released-validation",
+  "baselines": [],
+  "strata": {
+    "inherited-v1": {
+      "examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/inherited-v1/validation.jsonl",
+        "sha256": "8d4cd2e29f8b9a5dfd0b5ae4408b4f06b986eb2b2631868a0158d8dcdfc1559b"
+      },
+      "order_examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/validation.jsonl",
+        "sha256": "a855e69bdf9b3acb63cd2cca9dbf391fc61968394d86909508bbcd1c73746678"
+      },
+      "order_pairs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/pilot-order-v1/pairs.json",
+        "sha256": "13fafff508d5f9aaf1f316e5c74638c0d82e40d2b6a6ecf60d67a1153238ea98"
+      },
+      "predictors": {
+        "m8-qwen-readout-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-original.jsonl",
+                "sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951",
+                "bytes": 105824
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-original.jsonl",
+                "sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951",
+                "bytes": 105824
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            },
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-reversed.jsonl",
+                "sha256": "6e50885a7bb967c103defcc735d48a8c7292280654bd93aaf6d2a8b32cc2514d",
+                "bytes": 112787
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+                "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+                "bytes": 205324
+              }
+            }
+          ]
+        },
+        "m9-msmarco-duration-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+                "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+                "bytes": 106326
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+                "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+                "bytes": 106326
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            },
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-reversed.jsonl",
+                "sha256": "20237f96c1c1e2bccb819029e7a262ee476a03bb92f14ae843ca4da48d3eb5f7",
+                "bytes": 113245
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+                "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+                "bytes": 205324
+              }
+            }
+          ]
+        }
+      }
+    },
+    "new-v2": {
+      "examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/new-v2/validation.jsonl",
+        "sha256": "847cf4cb43df058a44366c7f3acbcebdb7faaea756fe21de8cc80cd5f90796eb"
+      },
+      "order_examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/validation.jsonl",
+        "sha256": "7a631e7d21f45be19e4464a1bfd7e95505dd0329b3c07d84071ae4d00581e682"
+      },
+      "order_pairs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-new-order-v1/pairs.json",
+        "sha256": "3e0d34c2d52a38d324041cb0154acc16ce41d6ffd1f121c328da9b3da99afd87"
+      },
+      "predictors": {
+        "m8-qwen-readout-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-original.jsonl",
+                "sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951",
+                "bytes": 105824
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-original.jsonl",
+                "sha256": "c3571534c9a2040829c2292f7c9b333541c9db40f840008f3c3d2f28fd2b6951",
+                "bytes": 105824
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            },
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/v2-reversed.jsonl",
+                "sha256": "6e50885a7bb967c103defcc735d48a8c7292280654bd93aaf6d2a8b32cc2514d",
+                "bytes": 112787
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+                "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+                "bytes": 205324
+              }
+            }
+          ]
+        },
+        "m9-msmarco-duration-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+                "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+                "bytes": 106326
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-original.jsonl",
+                "sha256": "3d3dffcf3af7147052fc20e1dbdd85bd1d852f2b3c50a70d3384baed1ad54f0d",
+                "bytes": 106326
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-assembly-v1/inputs.jsonl",
+                "sha256": "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917",
+                "bytes": 198424
+              }
+            },
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/v2-reversed.jsonl",
+                "sha256": "20237f96c1c1e2bccb819029e7a262ee476a03bb92f14ae843ca4da48d3eb5f7",
+                "bytes": 113245
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-order-v1/reversed-inputs.jsonl",
+                "sha256": "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1",
+                "bytes": 205324
+              }
+            }
+          ]
+        }
+      }
+    },
+    "probes": {
+      "examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "order_examples": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/validation.jsonl",
+        "sha256": "4258ba3945ab378518f56a7d3cb73138bbee1be04940f019f92ecdb7f96440da"
+      },
+      "order_pairs": {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/probes-v1/pairs.json",
+        "sha256": "f7e7b26e74e0fb33ef7745c6ef32bad366fba6d6eb190051135e8fceb3311895"
+      },
+      "predictors": {
+        "m8-qwen-readout-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/probes-paired.jsonl",
+                "sha256": "db1b6b869f245a93f5a8a4cc0e80b0fcd4d3ceec3808d3f6959e0a723d32af7c",
+                "bytes": 6246
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+                "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+                "bytes": 12388
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p6-m8-20261111-01/run/probes-paired.jsonl",
+                "sha256": "db1b6b869f245a93f5a8a4cc0e80b0fcd4d3ceec3808d3f6959e0a723d32af7c",
+                "bytes": 6246
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+                "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+                "bytes": 12388
+              }
+            }
+          ]
+        },
+        "m9-msmarco-duration-trained": {
+          "role": "v2-trained",
+          "sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/probes-paired.jsonl",
+                "sha256": "b5fcb19fa66f0145ca5e497856d158e779b373e7faaf7361319705c36e02ceba",
+                "bytes": 6256
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+                "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+                "bytes": 12388
+              }
+            }
+          ],
+          "order_sources": [
+            {
+              "predictions": {
+                "path": "/Users/destiner/Code/jeff/artifacts/release/p7-m9-20261111-01/run/probes-paired.jsonl",
+                "sha256": "b5fcb19fa66f0145ca5e497856d158e779b373e7faaf7361319705c36e02ceba",
+                "bytes": 6256
+              },
+              "source_inputs": {
+                "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e3-v2-freeze-v1/probes/inputs.jsonl",
+                "sha256": "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6",
+                "bytes": 12388
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

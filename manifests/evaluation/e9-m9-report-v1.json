@@ -1,0 +1,69 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "milestone": "E9",
+  "candidate": "m9-msmarco-duration-trained",
+  "status": "completed-independent-evaluation",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e9-encoder-duration.md",
+    "sha256": "430d80ecd89e12f8973b1f5137e0d7ee03a604709e08a7488370887a8967c40c",
+    "bytes": 11563
+  },
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e8-e9-new-predictors-v1.json",
+    "sha256": "15f43805f943cde2696d762930b8fc878d153b5fa8eb7bef30f8af20f6353f2a",
+    "bytes": 12702
+  },
+  "complete_context_recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-analysis-v1/recipe-all14.json",
+    "sha256": "f83ff6ef7d8e6d25fc076d66c62d329b8ed56d6627edd98a22507c875496f837",
+    "bytes": 80554
+  },
+  "execution_and_reuse": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-analysis-v1/prior-reuse-vs-executed.json",
+    "sha256": "36a0307b2ad49ada77ca6cd23e0509e75727ad35cd9b6e0f600374fe966625ed",
+    "bytes": 56313
+  },
+  "analysis": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-analysis-v1/delivery-receipt.json",
+    "sha256": "be298288cb3e1995940916bfa34e40d895d8030d0b25e358b9482becc56132a1",
+    "bytes": 50095
+  },
+  "numbers": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-analysis-v1/numbers.json",
+    "sha256": "18f455b449c4429424fc4f57e15dae58c32fba685901cf2dcd81d635a4e8ee88",
+    "bytes": 7423129
+  },
+  "quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-quality-review-v1/final-receipt.json",
+    "sha256": "b6e5fae800e36bf297aef3ebaf40dd892f22b91488823b957d867b0fd411a430",
+    "bytes": 1846
+  },
+  "controls": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e9-control-review-v1/receipt.json",
+    "sha256": "7f6396a833da596e9d34d547dee8055b28fca413ae585be43e00a3f9e8a491c7",
+    "bytes": 473540
+  },
+  "control_findings": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e9-control-review-v1/findings.md",
+    "sha256": "c5d98c0ea9c01709268fc35e29101ceddba2e0e02768454206cb04cf31bacf38",
+    "bytes": 11181
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e8-e9-owner-integrity-v1/receipt.json",
+    "sha256": "d6f56cb8d5396538c826f5b48bc8a8530513fa1f1d775e4add27f8310a12144e",
+    "bytes": 10841
+  },
+  "adoption": "After M8/P6 and M9/P7 outputs existed, 2026-11-12 approximately00:31-00:43UTC; unchanged lead predeclarations preceded execution. No unseen independent freeze claimed.",
+  "population": {
+    "inherited_original": 60,
+    "inherited_reversed": 60,
+    "new_original": 240,
+    "new_reversed": 240,
+    "already_paired_probes": 24,
+    "total_presentations": 624
+  },
+  "retained_predictors": 12,
+  "newly_scored_predictors": 2,
+  "interpretation": "Component-wise mixed findings; no automatic promotion, composite, significance, calibration or architecture-capacity claim. One seed/reused development; source and order dependence retained.",
+  "additional_actual_pending_GBP": 0
+}
