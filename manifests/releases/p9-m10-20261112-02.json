@@ -1,0 +1,161 @@
+{
+  "schema_version": "p9.runtime-evidence.v1",
+  "status": "runtime_complete_not_promotion",
+  "source_revision": "120bc288d3e955d9753053f5c95bca62c53e7d60",
+  "artifact_root": "artifacts/release/p9-m10-20261112-02",
+  "failed_artifact_root": "artifacts/release/p9-m10-20261112-01",
+  "counts": {
+    "prediction_rows": 624,
+    "option_probabilities": 2390,
+    "native_forwards": 627
+  },
+  "forwards": {
+    "maximum": 627,
+    "expected_startup": 3,
+    "expected_suite_rows": [
+      300,
+      300,
+      24
+    ],
+    "attempted": 627,
+    "completed": 627
+  },
+  "outputs": [
+    {
+      "name": "v2-original",
+      "path": "artifacts/release/p9-m10-20261112-02/run/v2-original.jsonl",
+      "sha256": "e6802bafef840f03cebd5f7235517f1cde698d33eb43bc71df39ca7a8a3e4f40",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "name": "v2-reversed",
+      "path": "artifacts/release/p9-m10-20261112-02/run/v2-reversed.jsonl",
+      "sha256": "36ff44a91ba99ffde594757bce9873c7802662c808ebc87ab5a6317957ef5117",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "name": "probes-paired",
+      "path": "artifacts/release/p9-m10-20261112-02/run/probes-paired.jsonl",
+      "sha256": "0f7401206eb5aed08eeac7eb240bd1b68751f2f363d51d55f1c168418050c072",
+      "rows": 24,
+      "probabilities": 70
+    }
+  ],
+  "timing": {
+    "failed_attempt_charge_seconds": 309.80885325,
+    "final_watchdog_observation_seconds": 40.75646716589108,
+    "successful_attempt_conservative_charge_seconds": 41,
+    "combined_charge_seconds": 350.80885325,
+    "renewed_total_allowance_seconds": 619.80885325,
+    "qualification": "Final watchdog observation rounded upward; not an external full post-exit wall measurement."
+  },
+  "authorization": {
+    "lead": "84dfaa52-7b76-4db5-88ed-0fcc083cbc6c",
+    "model": "c0cba4dc-a8a5-46c3-910f-b7150fc65262"
+  },
+  "direct_delivery": {
+    "model": "6b37439b-6910-4de9-bac6-8485eb30422e",
+    "evaluation": "1bb8ac84-6a80-40ea-bdc6-dd0b0e8494fd",
+    "lead": "420cb9c5-6e70-4773-8beb-a7221760291e"
+  },
+  "closure": {
+    "runtime_owner_recheck": "both_attempts_all_started_groups_absent",
+    "model_failed_attempt": "independent_receipt_available",
+    "model_successful_attempt": "independently_verified_and_closed_2026-11-12T03:15:26.315942+00:00"
+  },
+  "evaluation": "E11 pending actual delivery message; no Runtime scoring",
+  "resource_observations": {
+    "cpu_lifetime_maxrss_bytes": 553697280,
+    "mps_observed_maxima_bytes": {
+      "current_allocated_bytes": 2013552384,
+      "driver_allocated_bytes": 2768977920
+    },
+    "minimum_observed_recommended_headroom_bytes": 16300687360,
+    "process_runtime_seconds": 36.34930375032127
+  },
+  "resource_qualification": "CPU RSS and MPS overlap; nonadditive. MPS sampled maxima are not peak memory. No speedup or quality claim.",
+  "evidence": [
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/delivery-summary.json",
+      "sha256": "4a8df213e7ab5199778db94d2a8eee0301b2737a41ad0a280fc286a5ac4b60a1"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/prior-closure.json",
+      "sha256": "00b4866804017a9f4eddfadc5479a26dc65765b3f456cd21648861ff9e733026"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/audit.stderr.log",
+      "sha256": "4c2d9ba347cf1a890f1cbd9f0ceff0d1e99eb4e909baa06cfe5c0d2f9ce3dd64"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/predict.stderr.log",
+      "sha256": "6f9d5e209416e25338a3a7fdabc90c19f4ca99d056e0fcc9eabb715e99199a3f"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/environment-metadata.json",
+      "sha256": "16d90e9e34f231567f8e457f8d2e0f6e0d86d3ca5ca015a7ce35565a703f83d9"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-01/process-receipt.json",
+      "sha256": "dc8781c3ba87335d44aaa139e47e501b10a821ee89757a68b50edfc43dd4d598"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-01/outer-receipt.json",
+      "sha256": "b911997e7b3429cdf6736f0f528dae700c539c502558f058eada6fe14bcca73d"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-01/outer-publication.json",
+      "sha256": "1a832651e76e19e5dcc69cb0e7960d932168ecb83cff39b8f3f19326fb1626a6"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-01/audit/audit.json",
+      "sha256": "7a3e061a0ac1545d4c498340766627bbc7f19b3922d12356135c7106a4b8151a"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-01/audit.stderr.log",
+      "sha256": "b5313f41a5da56f47b2adf0f803a0834142a463f4000a3dd8f5f29153a7733fa"
+    },
+    {
+      "path": "artifacts/model/night-20261112/p9-failed-return.json",
+      "sha256": "4ff283b223398956e337f3d642cecbdcfa450b6901922a45ec8ea774dce0a6dc"
+    },
+    {
+      "path": "artifacts/model/m10-qwen-seed7-20261112-02/training/checkpoint-manifest.json",
+      "sha256": "765d802270b8c0b090e9206c3e52f12e76ea7e224dbb4f07c9cc3c709aa6b15a"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/packet.json",
+      "sha256": "7b944ca91bbb87efcc6cfc0962e8dd6ef680e9fec331f7170d15bf4d138671e2"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/audit/audit.json",
+      "sha256": "15830efd80ce719c1351edabd02b3ef54faa8443888e50f4986634af42605ac2"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/run/receipt.json",
+      "sha256": "c0a87ff8cb475c72420a795307bf5793b5339f7e9c9a956a3070b2baae742815"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/process-receipt.json",
+      "sha256": "5093b32df23548bfc86034791f8deeffcf5f824b4aee63da2fb23304c21c922d"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/outer-receipt.json",
+      "sha256": "fe4c81a66848a7d0bb14d75446e28d0362e37868881eee6cbdb9b3b0fd781b8e"
+    },
+    {
+      "path": "artifacts/release/p9-m10-20261112-02/outer-publication.json",
+      "sha256": "beca9aa46f749ad38140e6cb3bc9ba847869242a766afa0aa804cbc19aa25990"
+    },
+    {
+      "path": "artifacts/model/m10-qwen-seed7-20261112-02/p9-return.json",
+      "sha256": "5cb8abc88941c17290b9ace216d7b7d697c11d58d2363923642e0f476b23bbca"
+    },
+    {
+      "path": "artifacts/model/night-20261112/p9-m11-closure.json",
+      "sha256": "bf85f3aee69d184f59ce7a3dded31972406356325eb0814074396c04f0948d58"
+    }
+  ]
+}
