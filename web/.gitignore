@@ -1,5 +1,6 @@
 /node_modules/
 /dist/
+/dist-qwen/
 /public/models/
 /public/ort/
 /public/examples/
