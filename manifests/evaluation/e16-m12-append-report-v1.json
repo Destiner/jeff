@@ -1,0 +1,46 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "status": "completed-independent-evaluation",
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-e16-publication-v1/receipt.json",
+    "sha256": "6e42fcde0224933e8b7c8b4d3c80cdf75cbfe78dabf1479ef4094ccbb4995854",
+    "bytes": 287187
+  },
+  "additional_actual_pending_GBP": 0,
+  "milestone": "E16-M12-append",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e16-m12-reversal-mean.md",
+    "sha256": "e69cff2fda7a665f4404e160fd262b127a4b741807b6794bca740648626ba363",
+    "bytes": 5432
+  },
+  "append_binding": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e16-m12-append-v1.json",
+    "sha256": "2361e964885224101d0f63d38292245b86ed1c3ca2d07d48f27ab2dd1cb871f1",
+    "bytes": 1677
+  },
+  "execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m12-reversal-mean-v1/execution-01/completion.json",
+    "sha256": "7c8d3d8d3f5e5623a0fb33c15b77385977dc1e2af7c87508dc3892fb1eedff2c",
+    "bytes": 10759
+  },
+  "independent_raw_and_mean_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-quality-review-v1/final-receipt.json",
+    "sha256": "796dfe3e74139d25d09080e5bc052657db779399311827d69cf5cebf8f46452c",
+    "bytes": 5612
+  },
+  "initial_five_manifest": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/manifests/evaluation/e16-reversal-mean-report-v1.json",
+    "sha256": "600bcba45cb95e14156a969654c3a41b629f2e312cf07f2f9f957ecafcf01359",
+    "bytes": 2045
+  },
+  "separate_native_populations": [
+    60,
+    240,
+    12
+  ],
+  "new_score_calls": 3,
+  "new_native_vectors": 312,
+  "old_score_calls": 0,
+  "additional_forwards": 0,
+  "interpretation": "Newmean132improvesraw121/113butnotP3mean134orM8mean132;probesmean9belowrawnative10andP3/M8mean11. Proper-scoreconvexitydoesnotguaranteechoices/better-order/calibration;two-forwardserving/distinctoptionalcohortcandidate. E13extensionspending."
+}
