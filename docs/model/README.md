@@ -13,7 +13,7 @@ This deliberately small provisional model proves training/save/reload before a l
 
 ## Latest contrast: task-aligned M9 warm-start
 
-M13's sole fixed CPU FP32 run initializes from actual trained M9, uses fresh AdamW and exactly480 selected TRAIN rows for3epochs/360updates. All105 initial parameter hashes matched M9's endpoint. Fixed TRAINfit is466/480; no initial pass on this mixture was authorized, so this is not a measured fit gain. Fresh M13/M9 reserved64 outputs and M13-only retention240 are delivered; independent acceptance is pending and M9 remains default. Native chain closed at88/1200seconds with actual process return, no retry. See [results](m13-task-aligned-results.md) and [frozen plan](m13-task-aligned-plan.md).
+M13's sole fixed CPU FP32 run initializes from actual trained M9, uses fresh AdamW and exactly480 selected TRAIN rows for3epochs/360updates. All105 initial parameter hashes matched M9's endpoint. Fixed TRAINfit is466/480; no initial pass on this mixture was authorized, so this is not a measured fit gain. Fresh reserved primary agreement improves21→25/32 and both proper scores improve, but retained240 NLL increases.347647 and Brier.068104, failing the frozen conjunction despite only three net lost choices. M9 remains default; no M13 export or rescue. Independent review reconstructs608 saved vectors and5,940 comparisons with zero discrepancy, confirming rejection. Native chain closed at88/1200seconds with actual process return, no retry. See [results](m13-task-aligned-results.md) and [frozen plan](m13-task-aligned-plan.md).
 
 ## Prior contrast: stronger frozen-backbone head learning rate
 

@@ -1,6 +1,6 @@
 {
   "schema": "jeff.model.m13.run.v1",
-  "status": "native_complete_independent_acceptance_pending",
+  "status": "completed_not_promoted",
   "serving_default": "M9",
   "execution_source": "3cc10dbaea93592841e28fafe126f97f73145dc1",
   "source_integration": "a0c22164065e6ed3a3fbf24598926e3db306b8be",
@@ -183,10 +183,22 @@
     "additional_pending_gbp": 0
   },
   "acceptance": {
-    "status": "pending",
+    "status": "scientific_conjunction_failed_retain_M9",
     "primary_choices": 32,
     "primary_proper_cases": 30,
     "uncertain_sentiments": 2,
+    "primary_gates": "passed",
+    "retention_choice_gate": "passed",
+    "retention_proper_gate": "failed",
+    "independent_numeric_review": "passed_saved_arithmetic_608_vectors_5940_comparisons_max_delta_0",
+    "reported_at_utc": "2026-11-12T19:40:33.659397Z",
+    "public_result_path": "artifacts/evaluation/final-sprint-20261112-01/final-result-v1/result.json",
+    "public_result_sha256": "defea33c8a7d5ffac621cc84564390b3b5c900f63d6a5268a416ef278e529012",
+    "primary_preferred_M9_M13": [21, 25],
+    "retention_preferred_M9_M13": [165, 162],
+    "retention_nll_M9_M13": [0.6994204422058061, 1.0470677968181368],
+    "retention_brier_M9_M13": [0.35976638132880734, 0.42786992825627784],
+    "M13_deployability": "not_attempted_conditional_path_closed_after_scientific_failure",
     "references_read_by_model": false,
     "M13_exported": false,
     "M13_browser_executed": false
