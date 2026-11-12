@@ -101,8 +101,18 @@
   },
   "quality_links_only": [
     "artifacts/evaluation/e13-confirmation-public-v1/report.md",
-    "artifacts/evaluation/e13-confirmation-public-v1/summary.json"
+    "artifacts/evaluation/e13-confirmation-public-v1/summary.json",
+    "docs/evaluation/e13-exploration-firstfour.md",
+    "docs/evaluation/e13-exploration-laterfour.md",
+    "docs/evaluation/e13-confirmation-four-raw.md"
   ],
+  "final_quality_publication": {
+    "main_commit": "1efa5b25ee0328d6e329ef77cc702ca76a8d150d",
+    "delivery_message": "cb570c9d-4055-4a79-b060-3e312ada24e0",
+    "status": "independent-numerical-review-complete-with-operational-qualifications",
+    "scope": "eight exploration raw, five authorized exploration means, four raw confirmation",
+    "qualification": "Stale headers, failed locator/join assumptions, repeated arithmetic reviews and reviewer tool-output confinement failures retained; no scorer/native replay or cohort change. Runtime uses the explicit delivery, not a new calculation."
+  },
   "qualifications": [
     "Runtime evidence only: no quality, calibration, generalization, promotion, or whole-native-binary certification.",
     "Exact four-file phase allowlists; no broader final, sibling, directory, or reference permission.",
