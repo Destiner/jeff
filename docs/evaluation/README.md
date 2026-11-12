@@ -1,5 +1,7 @@
 # File-based evaluation
 
+[Final-sprint decision](final-sprint-results.md): **retain M9**. The sole M13 improves fresh primary agreement21→25/32 and both proper scores, but fails the frozen old-development probability-quality retention gates (NLL+.347647, Brier+.068104). Independent arithmetic checks608savedvectors with zero discrepancy. Tickets improve9→14/16; novel-taxonomy transfer falls7→6/16. M13 is retained as a trained, mixed scientific result—not promoted or exported. The separate six-case packed M9 SDK online proof passed; new production-app and offline claims are not inferred from it.
+
 [Final-sprint diagnostics](final-sprint-diagnostics.md): M9 retains the workspace advantage and matches13/16 direct-sentiment judgments versus the original encoder's7/16, with negative-class weakness and M10 order/proper-score tradeoffs preserved. The separate [prospective decision plan](final-sprint-plan.md) freezes primary-task, old-development retention and deployability gates before the sole M13 learning attempt; it does not report a promotion.
 
 [Browser B2 acceptance](browser-b2.md): the trained M9 passes the same three-case probability/token checks both online and after fresh app navigation with the static server unavailable. Qwen FP16 WebGPU initialized but was stopped on sampled memory pressure during its first request, returning no predictions; its parity gate is unmeasured and it is not accepted for normal-demo exposure. These are bounded portability/functional results, not new quality or calibration evidence.
