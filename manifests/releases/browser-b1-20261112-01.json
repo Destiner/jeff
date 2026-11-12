@@ -198,6 +198,9 @@
     "static_server_start_utc": "2026-11-12T11:04:19.939Z",
     "static_server_deadline_utc": "2026-11-12T12:05:49.939Z",
     "static_server_planned_shutdown_utc": "2026-11-12T11:49:31Z",
+    "static_server_actual_stop_utc": "2026-11-12T11:50:05.339Z",
+    "static_server_absence_confirmed_utc": "2026-11-12T11:50:05.343Z",
+    "post_proof_lifecycle": "Later11:21/11:22 asset GETs are outside the original proof; attribution/inference/global worker state unknown. Known task tab absent original window at11:55–11:56; no new page JavaScript, load, close or other-window inspection.",
     "server_owner": "infra",
     "server_current_liveness_verified": false,
     "python_inference_backend": false,
@@ -233,7 +236,7 @@
   },
   "remaining_gaps": [
     "Post-run UI changes built, not rerun; executed source identity remains distinct",
-    "Three-byte JSEP summary versus exact asset metadata discrepancy"
+    "Infra confirmed three-byte JSEP prose typo; original inventories/totals already correct, historical prose preserved"
   ],
   "not_claimed": [
     "all-input tokenization or trace certification",
