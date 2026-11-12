@@ -1,0 +1,22 @@
+{
+  "schema_version": "m12.recipe.v1",
+  "seed": 42,
+  "train_rows": 1500,
+  "epochs": 1,
+  "microbatch": 1,
+  "accumulation": 4,
+  "updates": 375,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0002,
+  "betas": [0.9, 0.999],
+  "epsilon": 0.00000001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "foreach": false,
+  "max_input_tokens": 1024,
+  "maximum_run_seconds": 590,
+  "maximum_capacity_seconds": 600,
+  "max_cpu_rss_bytes": 17179869184,
+  "max_mps_driver_bytes": 17179869184,
+  "min_recommended_headroom_bytes": 2147483648
+}

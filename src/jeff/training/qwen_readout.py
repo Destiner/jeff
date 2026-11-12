@@ -1,7 +1,7 @@
-"""M8 only: fresh-process audit/train; no capacity command or probe.
+"""M8/M12: fresh-process audit/train; no capacity command or probe.
 
 Owner must supervise the entire process and enforce the remaining aggregate
-2700-second budget, including zero-update plumbing attempts. See M8.md. Importing
+budget (M8: 2700s; M12: 590s), including audits/failed attempts. See M8.md. Importing
 this module does not import torch/transformers or load model/tokenizer assets.
 """
 
@@ -21,6 +21,7 @@ import time
 from jeff.model import qwen_readout_proof as proof
 from jeff.training import qwen_data as data
 from jeff.training import qwen_decision as legacy
+from jeff.training import qwen_head_lr as head_lr
 
 p3 = data.p3
 require = p3.require
@@ -38,8 +39,11 @@ def save_status(directory, receipt):
     path = directory / "status.json"
     temporary = directory / "status.json.tmp"
     with temporary.open("w") as stream:
-        stream.write(data.json_line({k: receipt[k] for k in (
-            "status", "presentations", "optimizer_steps", "optimizer_step_attempts")}))
+        status = {k: receipt[k] for k in (
+            "status", "presentations", "optimizer_steps", "optimizer_step_attempts")}
+        if "backbone_forwards" in receipt:
+            status["backbone_forwards"] = receipt["backbone_forwards"]
+        stream.write(data.json_line(status))
         stream.flush()
         os.fsync(stream.fileno())
     temporary.replace(path)
@@ -166,11 +170,19 @@ def frozen_facts(torch, model, original, head, optimizer):
             "projection_outside_backbone_no_grad": True}
 
 
-def hidden_state(torch, model, row):
+def hidden_state(torch, model, row, counts=None, phase=None):
     ids = torch.tensor([row["prompt_tokens"]], dtype=torch.long, device="mps")
     with torch.no_grad():
-        hidden = model.model(input_ids=ids, attention_mask=torch.ones_like(ids),
-                             use_cache=False).last_hidden_state[:, -1:, :]
+        if counts is None:
+            hidden = model.model(input_ids=ids, attention_mask=torch.ones_like(ids),
+                                 use_cache=False).last_hidden_state[:, -1:, :]
+        else:
+            mask = torch.ones_like(ids)
+            head_lr.attempt(counts, phase)
+            hidden = model.model(input_ids=ids, attention_mask=mask,
+                                 use_cache=False).last_hidden_state[:, -1:, :]
+            torch.mps.synchronize()
+            head_lr.complete(counts, phase)
     require(list(hidden.shape) == [1, 1, proof.HIDDEN_SIZE] and hidden.dtype == torch.float32,
             "wrong frozen last normalized hidden state")
     return hidden
@@ -234,10 +246,12 @@ def fit(torch, model, head, schedule, directory, monitor, label, reference=None)
     rows_path = directory / f"fit-{label}.jsonl"
     binding_path = directory / f"binding-{label}.jsonl"
     ce_sum, agreements = 0.0, 0
+    counts = monitor.receipt.get("backbone_forwards")
+    phase = "START" if label == "before" else "FINAL"
     with rows_path.open("x") as rows_stream, binding_path.open("x") as bindings, torch.no_grad():
         for index, row in enumerate(schedule):
             with monitor.phase(f"fit_{label}:forward"):
-                hidden = hidden_state(torch, model, row)
+                hidden = hidden_state(torch, model, row, counts, phase)
                 loss, logits = readout(torch, head, hidden, row)
                 result = fit_record(torch, row, loss, logits)
                 if reference is not None:
@@ -273,6 +287,8 @@ def fit(torch, model, head, schedule, directory, monitor, label, reference=None)
                     del full, allowed, stock_loss
             if (index + 1) % 100 == 0:
                 monitor.progress(phase=f"fit_{label}", fit_rows=index + 1)
+    if counts is not None:
+        head_lr.require_complete(counts, phase)
     require(stats["rows"] == 1500, "incomplete binding coverage")
     stats.update(status="complete", finite_full_coverage=True,
                  rowwise_proof={"path": str(binding_path), "sha256": p3.digest(binding_path)},
@@ -365,12 +381,14 @@ def save_checkpoint(model, directory, receipt, monitor):
 
 
 def train(args, receipt, monitor, schedule, directory):
-    require(args.authorize_run == AUTHORIZATION, "explicit one-attempt M8 authorization required")
+    authorization = head_lr.AUTHORIZATION if args.experiment == "m12" else AUTHORIZATION
+    require(args.authorize_run == authorization, "explicit one-attempt experiment authorization required")
     require(len(args.comparison_freeze_sha256) == 64 and
             all(c in "0123456789abcdef" for c in args.comparison_freeze_sha256), "comparison freeze SHA required")
     receipt["comparison_freeze_sha256"] = args.comparison_freeze_sha256
-    receipt["authorization"] = AUTHORIZATION
-    receipt["capacity_reuse"] = capacity_reuse(receipt["identity"], schedule)
+    receipt["authorization"] = authorization
+    reuse = head_lr.capacity_reuse if args.experiment == "m12" else capacity_reuse
+    receipt["capacity_reuse"] = reuse(receipt["identity"], schedule)
     reference = pinned_prefit(receipt, schedule)
     answer_ids = ordered_answers(schedule)
     torch, model, original = load_frozen_model(monitor, receipt)
@@ -388,6 +406,9 @@ def train(args, receipt, monitor, schedule, directory):
             optimizer = legacy.optimizer_for(torch, [head], monitor.cfg)
             scope_before = frozen_facts(torch, model, original, head, optimizer)
             receipt["parameters"] = scope_before
+            if args.experiment == "m12":
+                require(scope_before == receipt["capacity_reuse"]["historical_scope"],
+                        "M12 frozen scope differs from actual M8")
         with monitor.phase("original_tensor_proof"):
             before = proof.backbone_records(model, monitor.guard)
             output_before = proof.output_records(model.lm_head.weight, answer_ids, monitor.guard)
@@ -404,7 +425,7 @@ def train(args, receipt, monitor, schedule, directory):
         with (directory / "online.jsonl").open("x") as online, (directory / "gradient-norms.jsonl").open("x") as norms:
             for index, row in enumerate(schedule):
                 with monitor.phase("train_forward"):
-                    hidden = hidden_state(torch, model, row)
+                    hidden = hidden_state(torch, model, row, receipt.get("backbone_forwards"), "TRAIN")
                     loss, logits = readout(torch, head, hidden, row)
                     ce = float(loss.item())
                 with monitor.phase("train_backward"):
@@ -436,6 +457,8 @@ def train(args, receipt, monitor, schedule, directory):
                 monitor.guard("train_row_complete")
         require(receipt["optimizer_steps"] == receipt["optimizer_step_attempts"] == 375 and
                 receipt["presentations"] == 1500, "wrong learning coverage")
+        if "backbone_forwards" in receipt:
+            head_lr.require_complete(receipt["backbone_forwards"], "TRAIN")
         # Preserve the only learned state before any scope/export/FINAL operation.
         save_head(torch, head, initial, directory, receipt, monitor)
         receipt["gradient_norms"] = {"path": str(directory / "gradient-norms.jsonl"),
@@ -481,8 +504,8 @@ def train(args, receipt, monitor, schedule, directory):
                     "frozen flags or gradients changed after export/FINAL")
         del optimizer
         save_checkpoint(model, directory, receipt, monitor)
-        require(data.source_binding(data.source_identity("m8"), "m8") ==
-                data.source_binding(receipt["identity"]["evidence"]["source"], "m8"),
+        require(data.source_binding(data.source_identity(args.experiment), args.experiment) ==
+                data.source_binding(receipt["identity"]["evidence"]["source"], args.experiment),
                 "executable source changed during run")
         receipt["readout_proof_body"] = {
             "schema_version": proof.SCHEMA, "status": "complete",
@@ -524,6 +547,7 @@ def main():
     audit = commands.add_parser("audit")
     training = commands.add_parser("train")
     for command in (audit, training):
+        command.add_argument("--experiment", choices=("m8", "m12"), default="m8")
         command.add_argument("--output-dir", type=Path, required=True)
         command.add_argument("--supervisor-receipt", type=Path, required=True,
             help="prelaunch owner JSON attestation, copied/bound in output; external enforcement required")
@@ -535,11 +559,13 @@ def main():
     directory = args.output_dir.expanduser().resolve()
     require(not any("final" in part.lower() for part in directory.parts), "final output path forbidden")
     directory.mkdir(parents=True, exist_ok=False)
-    receipt = {"schema_version": f"m8.{args.command}.v1", "command": args.command,
+    receipt = {"schema_version": f"{args.experiment}.{args.command}.v1", "command": args.command,
         "status": "failed", "output_dir": str(directory), "memory_samples": [], "phase_seconds": {},
         "presentations": 0, "optimizer_steps": 0, "optimizer_step_attempts": 0,
         "extra_backwards": 0, "external_deadline_required": True,
         "memory_qualification": "CPU lifetime RSS and sampled MPS driver; not peaks, never sum scopes"}
+    if args.experiment == "m12" and args.command == "train":
+        receipt["backbone_forwards"] = head_lr.new_counts()
     p3.save(directory / "failure-receipt.json", {**receipt,
         "error": "incomplete start sentinel; not an actual completed zero-update receipt; inspect status/events"})
     save_status(directory, receipt)
@@ -551,11 +577,12 @@ def main():
 
     signal.signal(signal.SIGTERM, terminated)
     try:
-        monitor = legacy.Monitor(directory, receipt, start, 2700, "m8")
+        maximum_seconds = 590 if args.experiment == "m12" else 2700
+        monitor = legacy.Monitor(directory, receipt, start, maximum_seconds, args.experiment)
         with monitor.phase("supervisor_attestation"):
             supervisor_path = data.safe_path(args.supervisor_receipt)
             supervisor = data.read_json(supervisor_path)
-            require(supervisor.get("schema_version") == "m8.supervisor.v1" and
+            require(supervisor.get("schema_version") == f"{args.experiment}.supervisor.v1" and
                     supervisor.get("external_enforcement") is True and supervisor.get("automatic_retry") is False and
                     supervisor.get("fresh_process") is True and supervisor.get("command") == args.command and
                     supervisor.get("output_dir") == str(directory), "matching external supervisor required")
@@ -564,7 +591,7 @@ def main():
                     "external supervisor process identity required")
             os.kill(supervisor_pid, 0)
             remaining = supervisor.get("remaining_aggregate_seconds")
-            require(type(remaining) is int and 0 < remaining <= 2700 and
+            require(type(remaining) is int and 0 < remaining <= maximum_seconds and
                     type(supervisor.get("process_max_seconds")) is int and
                     0 < supervisor["process_max_seconds"] <= remaining,
                     "external process/remaining aggregate bound required")
@@ -574,12 +601,12 @@ def main():
             p3.save(directory / "supervisor.json", supervisor)
         with monitor.phase("revalidation"):
             if args.command == "audit":
-                evidence, schedule = data.evidence(monitor.guard, "m8")
+                evidence, schedule = data.evidence(monitor.guard, args.experiment)
                 text = data.schedule_text(schedule)
                 (directory / "schedule.jsonl").write_text(text, encoding="utf-8")
                 receipt.update(evidence=evidence, schedule_sha256=p3.text_hash(text))
             else:
-                identity, schedule = data.revalidate(args.audit_dir.resolve(), monitor.guard, "m8")
+                identity, schedule = data.revalidate(args.audit_dir.resolve(), monitor.guard, args.experiment)
                 receipt["identity"] = identity
                 # Full schedule/evidence stays with this run, not just the audit directory.
                 (directory / "schedule.jsonl").write_text(data.schedule_text(schedule), encoding="utf-8")
