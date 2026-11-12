@@ -1,0 +1,356 @@
+{
+  "schema_version": "jeff.final-sdk-release.v1",
+  "release_id": "final-sdk-20261112-01",
+  "status": "packed-sdk-online-accepted; offline-unverified; final-app-unattempted",
+  "date": "2026-11-12",
+  "publication": {
+    "report_owner": "release",
+    "report_locator": "docs/runtime/final-sdk.md",
+    "recorded_at": "2026-11-12T20:33:14.083900+00:00",
+    "integration_identity": "Recorded separately in final delivery handoff; not the executed SDK identity"
+  },
+  "provenance": {
+    "scope": "Explicit released SDK/app packets, receipts, source/served small bodies, review records; no private final/retention references",
+    "new_hashes_computed": true,
+    "evaluation_arithmetic_performed": false,
+    "case_texts_raw_scores_token_arrays_reproduced": false,
+    "large_assets": "Only retained exact M9 assets copied/hashed for separately authorized local model-only bundle; no load/export/inference"
+  },
+  "sdk": {
+    "name": "@jeff/sdk",
+    "version": "0.1.0",
+    "private": true,
+    "original_branch": "worker/release-sdk",
+    "skeleton_revisions": [
+      "16c386e",
+      "28baa7f"
+    ],
+    "api_revisions": [
+      "e1b8e55",
+      "4a1334d585bec2dd69aec9f07eb68e0fcc4c3771"
+    ],
+    "infra_cherry_pick": "9c34ac0",
+    "main_integrated": true,
+    "infra_sdk_web_build": "passed about 18:35; saved/supplied evidence, not rerun",
+    "first_packed_consumer_build_at": "2026-11-12T18:20:19Z",
+    "methods": [
+      "createEngine",
+      "predict",
+      "predictWithDiagnostics",
+      "dispose"
+    ],
+    "dependencies": {
+      "@huggingface/transformers": "3.8.1",
+      "onnxruntime-web": "1.22.0-dev.20250409-89f8206ba4"
+    },
+    "package_excludes": [
+      "weights",
+      "ORT runtime files/WASM",
+      "service worker",
+      "fixtures"
+    ],
+    "runtime_root_dependency_changes": false,
+    "root_lock_owner": "Infra",
+    "main_integration": "acfae4cc187287f47e45212f5284b569ca4aaf9c",
+    "executed_revision": "4a1334d585bec2dd69aec9f07eb68e0fcc4c3771",
+    "readme_only_owner": "b4ddfbd85e9562533fafc962d13f90dedfd197ba",
+    "readme_cherry_pick": "1ddd278"
+  },
+  "model": {
+    "descriptor": {
+      "schema_version": "jeff.browser-encoder.v1",
+      "id": "m9-msmarco-duration-20261111-01",
+      "label": "M9",
+      "checkpoint_sha256": "09c74c0374cbd46e97c608e7da8c6eb201f2f5b95370c2e347ca42320658c164",
+      "format": "state-question-candidate-v1",
+      "precision": "fp32",
+      "max_pair_tokens": 256,
+      "scoring": "softmax-t1",
+      "files": {
+        "model.onnx": {
+          "bytes": 90997024,
+          "sha256": "78fcd8a963d0ddd4d381200eb11f091a1e88ac80dab8d254cc3c6de1900ed1f1"
+        },
+        "tokenizer.json": {
+          "bytes": 711649,
+          "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+        },
+        "tokenizer_config.json": {
+          "bytes": 1272,
+          "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+        }
+      }
+    },
+    "identity_qualification": "Publisher-declared provenance, not signature/full-checkpoint verification",
+    "runtime_checks": "Byte length and SHA-256 of all three model/tokenizer buffers before use",
+    "scorer_rewrite": false,
+    "overlength": "reject",
+    "temperature": 1,
+    "cap": 256,
+    "m13": "Closed; independently rejected on retention proper-score conjunction. M9 retained; no M13 export/browser/retraining/rescue."
+  },
+  "packed_consumer": {
+    "binding": "artifacts/release/final-sdk-20261112-01/consumer-02/binding.json",
+    "packed_js_equals_current_dist": true,
+    "built_files": [
+      {
+        "name": "index-DCJsjafh.js",
+        "bytes": 4652
+      },
+      {
+        "name": "worker-DREf6NSt.js",
+        "bytes": 527652
+      },
+      {
+        "name": "index.html",
+        "bytes": 233
+      }
+    ],
+    "served_js_unchanged": true,
+    "served_html": "Infra added separate offline module; not identical consumer HTML",
+    "production_ui_acceptance": false
+  },
+  "online": {
+    "attempt": "online-02",
+    "browser": "Safari 27",
+    "started_at": "2026-11-12T19:12:04.439Z",
+    "ended_at": "2026-11-12T19:12:05.929Z",
+    "controller_closed_at": "2026-11-12T19:12:06.300334+00:00",
+    "initializations": 1,
+    "requests": 6,
+    "completed": 6,
+    "probabilities": 24,
+    "methods": [
+      "predict",
+      "predict",
+      "predict",
+      "predictWithDiagnostics",
+      "predictWithDiagnostics",
+      "predictWithDiagnostics"
+    ],
+    "extra_or_warmup_calls": 0,
+    "disposed": true,
+    "browser_finally_observed": true,
+    "known_task_inference_resources_returned": true,
+    "external_seconds": 2.1,
+    "charged_seconds": 4,
+    "receipt": "artifacts/release/final-sdk-20261112-01/online-02/receipt.json",
+    "controller": "artifacts/release/final-sdk-20261112-01/online-02/controller-return.json"
+  },
+  "evaluation": {
+    "status": "PASS numerical / ACCEPTED bounded functional saved-evidence review",
+    "message_id": "f29bdc72-824a-481e-8d94-6b5834828c41",
+    "reported_at": "2026-11-12T19:17:56Z",
+    "exact_artifact_root": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1",
+    "independent_saved_comparison": true,
+    "independent_operator_execution": false,
+    "cases": 6,
+    "probabilities": 24,
+    "maximum_as_recorded_drift": 8.866882249547459e-07,
+    "drift_gate": 0.0001,
+    "canonical_tops_exact": "6/6",
+    "sum_deviation_gate": 1e-06,
+    "inputs_ids_options_order_exact": true,
+    "detailed_cases": 3,
+    "exact_matrices": 9,
+    "exact_integers": 1668,
+    "plain_cases_token_status": "UNVERIFIED (3 cases)",
+    "retokenization": false,
+    "quality_or_calibration_claim": false,
+    "packet_root": "artifacts/evaluation/final-sprint-20261112-01/sdk-reference-v1",
+    "exact_released_packet": [
+      "README.md",
+      "reference.json",
+      "inputs.jsonl",
+      "predictions.jsonl",
+      "tokens.jsonl"
+    ],
+    "packet_metadata": {
+      "cases": 6,
+      "probabilities": 24
+    },
+    "binding_qualification": "Native same-pass rows are positional via reviewed call chain, not self-describing option IDs",
+    "functional_artifact_root": "artifacts/evaluation/final-sprint-20261112-01/sdk-functional-review-v1",
+    "review_pins": [
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/compare.py",
+        "bytes": 12333,
+        "sha256": "7e2f093c83bf937cf09596beca64f28a1def0f53b3ae127289dfd3077f08f45a"
+      },
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/source-pins.json",
+        "bytes": 2699,
+        "sha256": "a26838396604bb7d77bf43098a6e858b9e98612b4543658c2ba795d43e79fbcd"
+      },
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/result.json",
+        "bytes": 56330,
+        "sha256": "72450eacad8bfdd1959e7770ff8f5325b6338f5ad78dde2fefaea2282c33b8f3"
+      },
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/report.md",
+        "bytes": 1892,
+        "sha256": "e5324b2adbb3ca09f910856d5d28c37d96ec18b7adf5874e814c643f864d9a06"
+      },
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-functional-review-v1/report.md",
+        "bytes": 8807,
+        "sha256": "c310be2689d49fb3f4700a881d57c0e360ea66f787947c0286718910c05af7db"
+      },
+      {
+        "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-functional-review-v1/receipt.json",
+        "bytes": 7358,
+        "sha256": "d72f2ccd54a0cf30ed6503b3ac05b2078baad8e881dbc19bcf888f5c696357ce"
+      }
+    ]
+  },
+  "prebrowser_failure": {
+    "attempt": "online-01",
+    "at": "2026-11-12T19:07:42Z",
+    "external_seconds": 0.02,
+    "charged_seconds": 2,
+    "browser_contacted": false,
+    "original_closure_confirmed": false,
+    "explanation": "55s outer =45s stage+10s cleanup leaves no positive validation margin; no browser finally/factory invocation"
+  },
+  "authority": {
+    "original_issued_at": "2026-11-12T19:03:38.530309",
+    "deadline": "2026-11-12T19:15:00Z",
+    "renewal_id": "d3e2f108-cc50-4c95-9ba4-0603cf432559",
+    "renewal_issued_at": "2026-11-12T19:11:12.712543",
+    "only_stage_change": "45s to 40s",
+    "outer_cap_seconds": 55,
+    "cleanup_seconds": 10,
+    "same_sdk_refs_host": true,
+    "charged_total_seconds": 6,
+    "first_allocation_seconds": 120,
+    "first_unused_seconds": 114,
+    "shared_allocation_seconds": 300,
+    "shared_unused_seconds": 294,
+    "grants_closed": true,
+    "unused_balance_is_new_grant": false,
+    "original_activation_id": "9962e791-baf9-463e-8882-ce660eb95bb1"
+  },
+  "cache": {
+    "status": "complete",
+    "ready_at": "2026-11-12T19:12:37.991Z",
+    "assets": 10,
+    "bytes": 103406073,
+    "version": "0cf646f414d61b147cf6f064",
+    "matching_controller": true,
+    "qualification": "Presence/recorded lengths, not browser cryptographic integrity"
+  },
+  "offline": {
+    "attempted": false,
+    "fresh_navigation": false,
+    "verified": false,
+    "infra_stop_signal_at": "2026-11-12T19:14:04.712124",
+    "infra_absence_at": "2026-11-12T19:14:04.716081",
+    "errno": 61,
+    "runtime_read_at": "2026-11-12T19:14:20Z",
+    "latest_capped_start": "2026-11-12T19:14:05Z",
+    "cap_shortened": false,
+    "whole_machine_offline_claim": false
+  },
+  "return": {
+    "chain_summary_at": "2026-11-12T19:15:54.882553+00:00",
+    "owned_tab": "23",
+    "owned_tab_closed_control_released_at": "2026-11-12T19:16:48Z",
+    "user_tabs_touched": false,
+    "global_browser_absence_claim": false,
+    "host_new_pid": 81264,
+    "host_head_status": 200,
+    "host_head_at": "2026-11-12T19:17:30.530923",
+    "host_scheduled_expiry": "2026-11-12T23:15:00Z",
+    "expiry_observed": false
+  },
+  "resources_and_cost": {
+    "browser_rss": null,
+    "browser_peak": null,
+    "pressure": "Samples only, no continuous or 8GiB certification",
+    "actual_extra_gbp": 0,
+    "pending_extra_spend_authorized": false
+  },
+  "unresolved": [
+    "SDK/new-app offline inference unverified",
+    "Final production application inference acceptance unattempted; no actual grant",
+    "Plain-three SDK token equality unverified",
+    "Browser RSS/peak unknown",
+    "No general browser/deployment, quality/calibration certification",
+    "Public source omits weights; local model-only archive publication/licensing decisions separate"
+  ],
+  "final_app": {
+    "schema": "jeff.final-app-unattempted-return.v1",
+    "status": "UNATTEMPTED",
+    "activation": null,
+    "actual_ready_at": "2026-11-12T20:13:30.396205+00:00",
+    "model_read_ready_at": "2026-11-12T20:15:09Z",
+    "model_availability_ended_at": "2026-11-12T20:15:00Z",
+    "runtime_predictions": 0,
+    "runtime_model_initializations": 0,
+    "charged_seconds": 0,
+    "shared_charged_seconds": 6,
+    "shared_cap_seconds": 300,
+    "shared_grants_closed": true,
+    "source_revision": "b7de809bd01bdd58902c2ea4ea2bc468f26e7c2b",
+    "sdk_revision": "4a1334d585bec2dd69aec9f07eb68e0fcc4c3771",
+    "app_manifest_version": "19876c1858b65fc905679d25",
+    "reference_sha256": "7fab64e0ed2a740a6946e49d66c08975d3360eba46b91158bb9d7d610e4da291",
+    "owned_task_tabs": {
+      "created_handles": [
+        "tab_mwdevi54f9e1ea16e96_26",
+        "tab_mwdevi54f9e1ea16e96_27",
+        "tab_mwdevi54f9e1ea16e96_28"
+      ],
+      "closed": true,
+      "closure_observed_by": "2026-11-12T20:24:03Z",
+      "chronology": "First owned queue tab closed about20:22:57. Closing it shifted tab coordinates; two old handles correctly refused as stale. Relist20:23:15 showed exactly the two unique Runtime query-marked URLs, both non-selected, now handles29/30. Recovered ownership from original API creation+unique markers+index shift, closed in reverse order with allow_existing; both returned closed:true. No selected or unrelated tabs closed.",
+      "browser_control_released": true,
+      "global_browser_absence_claim": false
+    },
+    "host_owner": "Infra; no Runtime server stop/rebuild",
+    "future_host_expiry_observed": false,
+    "new_offline_inference": "UNATTEMPTED/UNVERIFIED",
+    "note": "Static readiness/source/packet preparation only; no activated controller or model pass. Model notification sent20:17:30 was read20:22:56; actual cleanup was not backdated. No active Runtime ML/helper remains; no automatic wake/monitoring. Prior packed-SDK proof is separate.",
+    "main_integration": "07c7d4fe1f39b95f95eaa6b77470e801e2ea200e",
+    "planned_calls": {
+      "queue": 2,
+      "chat": 2,
+      "playground": 2,
+      "simple": 4,
+      "detailed": 2,
+      "serial_engines": 3
+    },
+    "prepared_controller": "Unexecuted; one aggregate55s outer/40s stage, actual Model activation absent",
+    "readiness_file": "artifacts/release/final-app-20261112-01/preparation/readiness.json",
+    "source_binding": "artifacts/release/final-app-20261112-01/preparation/source-binding.json",
+    "small_served_bodies_matched": 15
+  },
+  "local_model_only_bundle": {
+    "archive": "m9-model-only.tar.gz",
+    "bytes": 83460462,
+    "sha256": "19efaf76ccb97264b9461288a8e7d221738370204e295779e74283c1e73d6592",
+    "allowlist": [
+      "model.onnx",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "model.json",
+      "notices/APACHE-2.0.txt",
+      "notices/upstream-model-card.md",
+      "README.md",
+      "NOTICES.md",
+      "MODIFICATIONS.md",
+      "manifest.json",
+      "SHA256SUMS"
+    ],
+    "member_count": 11,
+    "uncompressed_member_bytes": 91742413,
+    "completed_at": "2026-11-12T20:27:11.085630+00:00",
+    "actual_start": "2026-11-12T20:24:09Z",
+    "verification": "All four authorized source pins, copied file pins, descriptor pins and explicit archive member names/types/content hashes matched. No extraction, load or inference.",
+    "path": "artifacts/release/m9-model-handoff-20261112-01/m9-model-only.tar.gz",
+    "uploaded": false,
+    "publication_authorized": false,
+    "rights_status": "Pinned base card declares Apache-2.0; notices retained. First-party licensing, provider/account/training-output, upstream-corpus/deeper-base qualifications unresolved; no blanket clearance."
+  }
+}
