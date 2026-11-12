@@ -1,6 +1,7 @@
 # Model and training
 
-- [M10 seed7 results and evidence inventory](m10-qwen-seed7-results.md).
+- [M11 thirty-epoch results and evidence inventory](m11-msmarco-duration30-results.md).
+- [M10 seed7 results and E11/E16 follow-through](m10-qwen-seed7-results.md).
 
 ## The first genuine loop
 
@@ -8,13 +9,17 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest fit diagnostic: fresh MS MARCO duration contrast
+## Latest fit diagnostic: fresh thirty-epoch MS MARCO
 
-M9 first measured both preserved M4 encoders on full TRAIN, then activated the predeclared fresh-original-base 12-epoch MS MARCO arm. TRAIN agreement improves 985 → 1,314/1,500, CE 0.726023 → 0.2890573; rules remain incomplete at 314/500, including 32 lost prior agreements. P7 fresh execution is complete and its slot closed; independent E9 quality is **pending**; no promotion or architectural-capacity inference. See [M9 results](m9-msmarco-duration-results.md) and [pinned run index](m9-msmarco-duration-run.json).
+M11's fresh original-base30-total-epoch endpoint improves M9 TRAIN agreement1314→1414/1500 and rules314→414/500, with130rule gains/30losses. But [E12](../evaluation/e12-encoder-duration30.md) finds new-development165→162/240 and worse NLL/Brier. D3 gains26→29/96 while both proper scores worsen. Three small mapped TRAIN mechanism sets are now completely fitted without strong new-policy transfer. M11/P10 is closed; no promotion, further duration arm or architecture-limit claim. See [results](m11-msmarco-duration30-results.md) and [run index](m11-msmarco-duration30-run.json).
+
+### Prior twelve-epoch contrast
+
+M9 first measured both preserved M4 encoders on full TRAIN, then activated the predeclared fresh-original-base12-epoch MS MARCO arm. TRAIN agreement improves985→1314/1500, CE.726023→.2890573; rules remain incomplete at314/500, including32lost prior agreements. P7 is closed and [E9](../evaluation/e9-encoder-duration.md) complete: new-development165/240 in both orders, but rule-fit gains do not establish rule transfer. No promotion or architectural-capacity inference. See [M9 results](m9-msmarco-duration-results.md) and [pinned run index](m9-msmarco-duration-run.json).
 
 ## Prior executed contrast: frozen-base Qwen readout
 
-M8 completed one 1,500-presentation/375-update six-row-readout run: TRAIN teacher agreement 805 → 804 and CE 1.357724 → 1.332200. P6 strict fresh reload completed (627 forwards including 3 startup rows); **independent E8 outcome remains PENDING**, not a held-out quality claim or default promotion. See [M8 results](m8-qwen-readout-results.md) and [pinned run index / positional appendix](m8-qwen-readout-run.json). The [readiness note](m8-readout-readiness.md) is preserved as a historical assessment, preceding execution under the lead grant.
+M8 completed one 1,500-presentation/375-update six-row-readout run: TRAIN teacher agreement 805 → 804 and CE 1.357724 → 1.332200. P6 strict fresh reload completed (627 forwards including 3 startup rows); [independent E8](../evaluation/e8-readout-scope.md) is complete and finds limited change (new130/119 versus P3's129/118), not default promotion or feature-incapacity evidence. See [M8 results](m8-qwen-readout-results.md) and [pinned run index / positional appendix](m8-qwen-readout-run.json). The [readiness note](m8-readout-readiness.md) is preserved as a historical assessment, preceding execution under the lead grant.
 
 ## Prior learning contrast: full-parameter Qwen
 
