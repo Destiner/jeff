@@ -1,0 +1,46 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "additional_actual_pending_GBP": 0,
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-e16-publication-v1/receipt.json",
+    "sha256": "3578b4f627b57db5084bb5e047bc887eb25a221d0146b6b82bff7598a026cd4d",
+    "bytes": 86973
+  },
+  "milestone": "E16",
+  "status": "completed-five-candidate-slice-later-authorized-extensions-pending",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e16-reversal-mean.md",
+    "sha256": "02d1e418b1981329ce17bb68f62f2e40dc95e4678f4e187c490cefcc94fdc153",
+    "bytes": 12879
+  },
+  "rule_index": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e16-reversal-mean-v1.json",
+    "sha256": "e4993489668baf3cc492340a0833bcb535832ed36b2ff59bb3bbaba309f01f05",
+    "bytes": 2297
+  },
+  "initial_execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-reversal-mean-v1/execution-01/completion.json",
+    "sha256": "8bccba9520a6ef3dfb1d47acc1883efeb68adb9155dc88fa54464045b44dbdbe",
+    "bytes": 21942
+  },
+  "m10_execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m10-reversal-mean-v1/execution-01/completion.json",
+    "sha256": "7ee4cea938182359f55b4b1bda7c7aed23fb71fa1b8f0e08a5a11e8b000b26d9",
+    "bytes": 10809
+  },
+  "r13_initial_source_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/research/r13-20261112T025943Z/e16-source-review.md",
+    "sha256": "c667bbaa0be5c11b56636b45bf716b52d4c69054af6023f231ffab2e6605bc0c",
+    "bytes": 9620
+  },
+  "native_unique_references_per_candidate": 312,
+  "reported_separately": [
+    60,
+    240,
+    12
+  ],
+  "new_derived_vectors": 1560,
+  "new_scoring_calls": 15,
+  "extra_forwards": 0,
+  "interpretation": "M7 new agreement improves171/170\u2192182; M10 falls182/178\u2192177. Convexity losses do not imply better choices/semantic reasoning/calibration. Two-forward serving and first-input tie/optional-cohort qualifications retained."
+}

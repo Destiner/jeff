@@ -1,6 +1,10 @@
 # File-based evaluation
 
-Latest diagnostic: [E10 seen-mechanism transfer](e10-seen-mechanisms.md). M7 still chooses the first input option untied on all96 D3 cases. M9 ties its three-epoch agreement26/96 but worsens NLL/Brier and loses fully-correct policies. These are new policies on intentionally seen mechanisms, not another reversal or new-family test.
+Latest raw contrast: [E11 seed replication](e11-seed-replication.md). M10 seed7 improves broad quality versus M7 seed42, but new-rule both-order agreement is only4/80, third-slot preference remains strong, and probe agreement falls21→19/24. Two seeds do not establish variance or authorize choosing the better seed.
+
+Separate exploratory [E16 fixed reversal means](e16-reversal-mean.md) improve M7 new agreement171/170→182/240 but reduce M10 from182/178→177. Guaranteed proper-score improvements against the mean constituent loss are not choice gains, calibration or rule competence; deployment costs two forwards. Five candidates are measured; later authorized extensions remain separate.
+
+[E10 seen-mechanism transfer](e10-seen-mechanisms.md). M7 still chooses the first input option untied on all96 D3 cases. M9 ties its three-epoch agreement26/96 but worsens NLL/Brier and loses fully-correct policies. These are new policies on intentionally seen mechanisms, not another reversal or new-family test.
 
 [E8 readout-scope contrast](e8-readout-scope.md) stays near original P3, far below M7 on broad quality, with new-rule both-correct4→6/80. [E9 encoder-duration contrast](e9-encoder-duration.md) improves new agreement141→165/240 in both orders, driven by sentiment, but rules regress21→17/80 despite stronger TRAIN fit. Exact probe retention, source regressions and proper-score exceptions remain explicit; no automatic promotion.
 
@@ -14,7 +18,7 @@ E4's [historical LR control](e4-m5-lr-control.md) fails its frozen loss conditio
 
 Prior [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
 
-Prospective night work: [E10–E12/E14 comparisons](night-comparisons.md) and [E13 external-family phase protocol](e13-external-protocol.md). Preparation is not execution; E13's new confirmation boundary never opens original final24.
+Remaining night work follows [E10–E12/E14 criteria](night-comparisons.md) and the [E13 external-family phase protocol](e13-external-protocol.md). Preparation is not execution; E13's new confirmation boundary never opens original final24.
 
 E3 preparation: [protocol](e3-plan.md), [identity freeze](e3-freeze.md), and [pinned study recipe](e3-study.md).
 

@@ -1,0 +1,53 @@
+{
+  "schema": "jeff.evaluation.fixed-reversal-mean.v1",
+  "status": "five-completed-exploratory-candidates",
+  "adoption": "03:01UTC2026-11-12 before mean calculations, after earlier component outcomes; not an unseen-outcome freeze",
+  "rule": "Validate/normalize each existing exact native/reversed vector with existing scorer; align stable option IDs; arithmetic(p+q)/2; score native reference once",
+  "population_native_counts": {
+    "inherited": 60,
+    "new": 240,
+    "probes": 12
+  },
+  "initial_plan": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-reversal-mean-v1/plan.md",
+    "sha256": "f59cefdb8a9d9aa15b101ea723d2acab9bb6328fa22dc1fcc3e8e1f451d82f6d",
+    "bytes": 3070
+  },
+  "initial_completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-reversal-mean-v1/execution-01/completion.json",
+    "sha256": "8bccba9520a6ef3dfb1d47acc1883efeb68adb9155dc88fa54464045b44dbdbe",
+    "bytes": 21942
+  },
+  "m10_append": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m10-reversal-mean-v1/append-binding.json",
+    "sha256": "6201383aa50b386f14346a75455c68c355a4c8d3bd991be4e2fd92feb2bab164",
+    "bytes": 1587
+  },
+  "m10_completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m10-reversal-mean-v1/execution-01/completion.json",
+    "sha256": "7ee4cea938182359f55b4b1bda7c7aed23fb71fa1b8f0e08a5a11e8b000b26d9",
+    "bytes": 10809
+  },
+  "derived_models": [
+    "P3",
+    "M7",
+    "M8",
+    "M9-control",
+    "M10"
+  ],
+  "new_score_calls": 15,
+  "old_score_calls": 0,
+  "extra_forwards": 0,
+  "deployment_forward_presentations_per_request": 2,
+  "pending_not_executed": [
+    "M12",
+    "E13 exploration decoder extensions"
+  ],
+  "confirmation": "Each checkpoint+rule is distinct and consumes one optional slot if selected;06:30fixed cohort4mandatory+<=2optional; no unselected derived or extra raw-quality report; underlying paired pass only",
+  "limits": [
+    "Convexity improves loss against mean constituent loss, not argmax/better-order/uniform/calibration",
+    "Distribution/topset reversal-invariant; first-input exact-tie choice need not be",
+    "K>2 reversal orbit only; source/reversal dependence and reused development",
+    "No old result/criterion rewrite or automatic promotion"
+  ]
+}

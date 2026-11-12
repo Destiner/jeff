@@ -1,0 +1,54 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "additional_actual_pending_GBP": 0,
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-e16-publication-v1/receipt.json",
+    "sha256": "3578b4f627b57db5084bb5e047bc887eb25a221d0146b6b82bff7598a026cd4d",
+    "bytes": 86973
+  },
+  "milestone": "E11",
+  "status": "completed-independent-evaluation",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e11-seed-replication.md",
+    "sha256": "fe71d800c2869dc509f71b896b5a257c63c0cd0d4ad20329b309ee844a1c80b0",
+    "bytes": 11244
+  },
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e11-m10-v1.json",
+    "sha256": "cbad83f8cebc9041df278cb2c8cfa9142f2408a73437453953d55e4b7bfe62b0",
+    "bytes": 7458
+  },
+  "execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/night-scoring-preparation-v2/e11-execution-01/completion.json",
+    "sha256": "a3cf8075ea13e2b519a19088b575a0633a3a6ae26f770d4f0631518dd900d2ad",
+    "bytes": 51503
+  },
+  "quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-quality-review-v1/receipt.json",
+    "sha256": "35d989e885a52f09e4b435803b05a826736c199358991cece20e782e2f06a1e0",
+    "bytes": 3800
+  },
+  "train_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-m10-control-review-v1/receipt.json",
+    "sha256": "e0c4c61208acc6fc3034d54e4ca0990660671d7022cfdf65977bbb475233507f",
+    "bytes": 22468
+  },
+  "runtime_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-p9-binding-v1/receipt.json",
+    "sha256": "b67966c947c01d54922e660f3328d9252a0f3190b0d031c0e5f75e9ab8ecfbb4",
+    "bytes": 47867
+  },
+  "token_correspondence": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e11-owner-integrity-v1/token-correspondence.json",
+    "sha256": "d4d8a5347a3fa6247b77b3d24249364a1bbd43c1f207020bebef3188f7748d54",
+    "bytes": 1606
+  },
+  "preparation_repair": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/night-scoring-preparation-v2/previous-attempts.json",
+    "sha256": "e6686bda7adebcdb3a55ad65af9eb741252bdb7a5fadc9ec550244899d83a9b4",
+    "bytes": 1055
+  },
+  "unique_presentations": 624,
+  "retained_contexts": 14,
+  "interpretation": "Broad gains under second realized seed with severe rule/order failures and probe regressions; no variance estimate/better-seed selection/promotion. Actual v1 fresh reload not v2 strict diagnostic equivalence; tokenizer same624 correspondence does not certify general warning harmlessness."
+}
