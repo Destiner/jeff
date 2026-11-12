@@ -1,0 +1,119 @@
+{
+  "schema": "evaluation.final-sprint-publication/1",
+  "status": "independently_reviewed_final_scientific_decision",
+  "report": "docs/evaluation/final-sprint-results.md",
+  "canonical_artifact_root": "/Users/destiner/Code/jeff/artifacts",
+  "pin_resolution": "Paths are repository-root relative; resolve against canonical main, not worktree artifacts. No transitive payload validation.",
+  "decision": "retain_M9",
+  "admission": "passed",
+  "scientific_pass": false,
+  "gates": {
+    "primary_choice_gain": true,
+    "primary_domain_choice_nonloss": true,
+    "primary_proper_gain": true,
+    "primary_domain_proper_nonworsen": true,
+    "retention_choice": true,
+    "retention_proper": false
+  },
+  "promotion": "not_authorized",
+  "review": {
+    "independent_final_result_review": "passed_608_vectors_5940_comparisons_max_delta_zero",
+    "independent_final_result_review_evidence": "artifacts/evaluation/final-sprint-20261112-01/independent-final-review-v1/receipt.json",
+    "fixed_train_fit": "adopted_model_aggregate_not_independently_rescored",
+    "fixed_train_fit_evidence": "artifacts/model/final-sprint-20261112-01/train-fit-summary.json",
+    "m13_deployability": "not_measured_not_pursued_after_scientific_failure",
+    "final_m9_application_acceptance": "separate_bounded_phase_not_certified_here",
+    "publication_evidence_directory": "artifacts/evaluation/final-sprint-20261112-01/publication-results-v1"
+  },
+  "sdk": {
+    "scope": "M9_online_packed_sdk_proof_only",
+    "offline": "UNATTEMPTED",
+    "production_graph_accepted": false,
+    "charged_seconds": 6,
+    "cap_seconds": 300,
+    "grant": "closed"
+  },
+  "native_ledger": {
+    "charged_seconds": 88,
+    "cap_seconds": 1200,
+    "grant": "closed"
+  },
+  "pins": [
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/independent-final-review-v1/report.md",
+      "bytes": 653,
+      "sha256": "922b909d8bb23272a9593a313f68563f7843a54e3a639c0a6a72cdf7693c064a"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/independent-final-review-v1/receipt.json",
+      "bytes": 7409,
+      "sha256": "d1bada9f2640dbc3f2732b8607cabc4c037dedffdc74c40b54557cec1d1508be"
+    },
+    {
+      "path": "artifacts/model/final-sprint-20261112-01/train-fit-summary.json",
+      "bytes": 1685,
+      "sha256": "9a16bec10abe6dd5efbac95b078222bbbd7dbc8bc6f9ce0d897cb9f50a39cbf1"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/final-result-v1/result.json",
+      "bytes": 13225,
+      "sha256": "defea33c8a7d5ffac621cc84564390b3b5c900f63d6a5268a416ef278e529012"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/promotion-plan-v1.md",
+      "bytes": 6678,
+      "sha256": "286793e0701cc617ff08e5ad582b1f7c63ad4e0bb2d224bd6182f42e95c0a35b"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/reserved-freeze-v1.json",
+      "bytes": 675,
+      "sha256": "a99fdf5f1950950d81aeebb29ddce2233c3545c650a5e7ab3d346c0558647974"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/release-binding-v1.json",
+      "bytes": 3715,
+      "sha256": "8e3bdfa3986bb67e83669f9b5f47b57123c3c046b0a154ddeed96ee5e6867be9"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/m13-learning-binding-v1/report.md",
+      "bytes": 10375,
+      "sha256": "28ffaa7821f19c221c6fd6a367044c77dfd8454f955189171768cf4552cb7e6b"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/m13-learning-binding-v1/receipt.json",
+      "bytes": 33207,
+      "sha256": "6752b0eabd69a3bb9cc499b6e4cdf6560166846ae8abbfe029e0f5bc0d70e80a"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/m13-inference-binding-v1/report.md",
+      "bytes": 1866,
+      "sha256": "b3639ff1fe73b89d014dba5973155a1381852263ca15bd7cc319d9fb90c21c28"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/m13-inference-binding-v1/receipt.json",
+      "bytes": 2456,
+      "sha256": "2c236bb67e6a8e2683b2501337fe951bad985ef7ab1df1a8e68febe9258977d6"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/report.md",
+      "bytes": 1892,
+      "sha256": "e5324b2adbb3ca09f910856d5d28c37d96ec18b7adf5874e814c643f864d9a06"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-online-comparison-v1/result.json",
+      "bytes": 56330,
+      "sha256": "72450eacad8bfdd1959e7770ff8f5325b6338f5ad78dde2fefaea2282c33b8f3"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-functional-review-v1/report.md",
+      "bytes": 8807,
+      "sha256": "c310be2689d49fb3f4700a881d57c0e360ea66f787947c0286718910c05af7db"
+    },
+    {
+      "path": "artifacts/evaluation/final-sprint-20261112-01/sdk-functional-review-v1/receipt.json",
+      "bytes": 7358,
+      "sha256": "d72f2ccd54a0cf30ed6503b3ac05b2078baad8e881dbc19bcf888f5c696357ce"
+    }
+  ],
+  "scope": "Safe aggregate and public control artifacts only; no private case IDs, labels, vectors, weights or transitive payloads."
+}

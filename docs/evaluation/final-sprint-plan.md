@@ -1,5 +1,7 @@
 # Final-sprint prospective decision plan
 
+Subsequent [fixed-gate result](final-sprint-results.md): independently reviewed **retain M9**, because M13 fails retention proper scores. The prospective record below is preserved as written; its future-tense preparation is not current execution status.
+
 Prospective record, not execution authority or a result. The controlling [exact frozen plan](../../artifacts/evaluation/final-sprint-20261112-01/promotion-plan-v1.md) has SHA-256 `286793e0701cc617ff08e5ad582b1f7c63ad4e0bb2d224bd6182f42e95c0a35b`; [freeze receipt](../../artifacts/evaluation/final-sprint-20261112-01/promotion-plan-v1.receipt.json). This tracked summary does not replace or amend it. [Saved diagnostics](final-sprint-diagnostics.md) are exploratory, not final outcomes.
 
 ## Actual chronology (2026-11-12, UTC)
