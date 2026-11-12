@@ -1,8 +1,8 @@
 # Browser SDK and final application handoff
 
-**2026-11-12 · M9 · `@jeff/sdk` 0.1.0.** The separately packed SDK has an independently accepted, six-case **online Safari/WASM proof**. The production queue, chat and playground are implemented and built, but their newly planned browser acceptance is **UNATTEMPTED**. New SDK/application offline inference is **UNVERIFIED**. These are separate evidence boundaries; the historical B2 result does not fill either gap.
+**2026-11-12 · M9 · `@jeff/sdk` 0.1.0.** The separately packed SDK has an independently accepted, six-case **online Safari/WASM proof**. A later delivery phase completed six real production-button predictions in **Chromium**, with independent saved-vector comparison, captured manual queue routing and an edited demonstration. That phase had preserved interrupted attempts; it does not turn its failed controllers into passes. **New SDK/application offline inference remains UNVERIFIED.** See [current delivery, downloads and recording](submission-delivery.md). The original final-app preparation below remains closed **UNATTEMPTED**.
 
-Use the [SDK API/deployment guide](../../sdk/README.md) and [application setup](../../web/README.md). The package remains `private: true`, with no npm publication. Public source availability does not supply model weights, choose a first-party license, or make a fresh clone immediately runnable. The [machine-readable record](../../manifests/releases/final-sdk-20261112-01.json) contains identity and evidence pins. Large evidence and the local model archive remain ignored local artifacts, not files distributed with the public repository.
+Use the [SDK API/deployment guide](../../sdk/README.md) and [application setup](../../web/README.md). The package remains `private: true`, with no npm publication. Source visibility alone does not supply model weights or choose a first-party license. The separately authorized [M9 release](https://github.com/Destiner/jeff/releases/tag/m9-browser-v1) now supplies the compatible model archive/checksum; acquisition follows repository access. The [original machine-readable record](../../manifests/releases/final-sdk-20261112-01.json) retains its historical identity/evidence pins; the [delivery manifest](../../manifests/releases/submission-delivery-20261112-01.json) records the subsequent release and execution. Large raw evidence remains ignored, not distributed wholesale.
 
 ## API and deployment
 
@@ -84,7 +84,7 @@ Known inference closure was **19:12:06**; chain return was actually sent **19:15
 
 Browser RSS and peak remain **unknown**. Sampled normal pressure is not continuous monitoring, an 8GiB certification, MPS headroom, OOM diagnosis or global absence of user workers.
 
-## Final production applications: built, acceptance unattempted
+## Original production preparation: closed unattempted
 
 The user approved both comfortable layouts. Queue and chat are genuine lazy SDK consumers with separate manual actions; the generic editable playground remains available. Queue/chat capture-only `window.jeffApp` exposes successful in-memory raw histories, state and disposal, **not a separate prediction route**. History contains `{input,prediction,engineMetadata,wallMs}`; errors are not invented as successful records. There is one lazy engine per page, not one cross-page SPA engine.
 
@@ -96,9 +96,9 @@ The new frozen acceptance packet specified exactly two queue cases, two chat cas
 - Model picked up READY at **20:15:09**, after its **20:15** availability ended. **No activation was ever issued.** Runtime did not launch the controller, initialize a model or predict. New charge **0s**; shared ledger stays **6/300s closed**.
 - Runtime read the closure notices at **20:22:56**. All three owned preparation tabs were closed and control released by **20:24:03**. Closing the first shifted the other handles; stale close attempts were refused, then the two uniquely query-marked, non-selected task pages were rebound and closed. No selected/user/Infra tab was closed.
 
-The actual result is **UNATTEMPTED**, neither numerical/functional PASS nor FAIL. Static source readiness is not app inference acceptance; SDK proof and historical B2 offline proof cannot substitute. Preserved preparation is not a runnable grant or a guarantee of controller correctness. Future execution needs a new explicit bounded handoff and fresh readiness. See [Evaluation's closure](../evaluation/final-sprint-results.md).
+The actual result of that original phase is **UNATTEMPTED**, neither numerical/functional PASS nor FAIL. Static source readiness is not app inference acceptance; SDK proof and historical B2 offline proof cannot substitute. Preserved preparation is not a runnable grant or a guarantee of controller correctness. Future execution needs a new explicit bounded handoff and fresh readiness. See [Evaluation's closure](../evaluation/final-sprint-results.md).
 
-## Local model-only handoff
+## Historical local model-only handoff
 
 A separate authorized, **local-only** M9 archive was prepared without export, model execution, new dependencies or uploads:
 
@@ -108,6 +108,12 @@ A separate authorized, **local-only** M9 archive was prepared without export, mo
 - Flat SDK placement and the current web copier's nested tokenizer export layout are documented separately. The flat archive is not directly a `--model-dir` export layout; SDK/ORT/runtime installation remains separate.
 
 **No weight publication was performed or authorized by this preparation.** First-party licensing, applicable provider/account/training-output rights, upstream-corpus and deeper-base attribution decisions remain unresolved. Model-card licensing is not blanket legal clearance; source visibility is not weight-upload authority. The local bundle does not by itself make a public clone runnable or prove inference.
+
+## Subsequent authorized delivery
+
+The user later explicitly requested asset delivery, actual app execution and a recorded demo. A compatible, deterministic successor archive preserved the four payload bytes and added reviewed distribution notices/layout. It was uploaded as `m9-browser-v1`; the earlier local candidate was not overwritten. The owner subsequently made the repository private again, and delivery did not change visibility.
+
+The separate fresh-checkout production-button phase returned six Chromium predictions across two recording segments. Independent saved-output drift was **1.6874564367e-6**, with six matching native tops; plain calls do not establish token parity. A preceding Safari initialization returned no prediction, and the first Chromium controller failed after five completed predictions on resource-sample validation. Only the unattempted sixth input was explicitly authorized afterward. The original unattempted closure, failed controllers and new successful per-case evidence all remain distinct. Shared browser accounting ended **188/300 seconds closed**. No new offline phase or Qwen browser retry occurred. See [the full report](submission-delivery.md).
 
 ## Local evidence index
 
