@@ -1,0 +1,289 @@
+{
+  "schema_version": "evaluation.e13.executed-publication-config/1",
+  "status": "measured-independent-arithmetic-verified-operationally-qualified",
+  "phase": "exploration-laterfour",
+  "source_usage": "validation_only_never_train",
+  "families": {
+    "COPA": {
+      "native_split": "dev",
+      "cases": 100,
+      "detected_groups": 100
+    },
+    "WinoGrande": {
+      "native_split": "train_debiased",
+      "cases": 100,
+      "detected_groups": 100
+    }
+  },
+  "raw_predictors": [
+    "m10",
+    "m11",
+    "m12",
+    "p12-nli"
+  ],
+  "derived_predictors": [
+    "m10-mean",
+    "m12-mean"
+  ],
+  "underlying_cases": 200,
+  "raw_presentations": 1600,
+  "raw_probability_values": 3200,
+  "derived_vectors": 400,
+  "confirmation_supported": false,
+  "optional_slots": 0,
+  "commands_are_historical_metadata_only": true,
+  "executed_scoring": [
+    {
+      "candidate": "m10",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m10.owner-binding.json",
+        "be4aef3a0d86513045ee305405293a9058c918da6a9f0be50c358fc27e692edd"
+      ],
+      "started_at": "2026-11-12T07:41:07.496781+00:00",
+      "ended_at": "2026-11-12T07:41:07.545034+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "m11",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m11.owner-binding.json",
+        "3a480ac265a1e2b830f7c86ecda3912382bdbca95f4e485bd9e01822027f3a2e"
+      ],
+      "started_at": "2026-11-12T07:41:07.545514+00:00",
+      "ended_at": "2026-11-12T07:41:07.591571+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "m12",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m12.owner-binding.json",
+        "6f358fc49e6fd49a1d03f11f80d29cf2af825c7caad2485f77b4f36e2daf5ac6"
+      ],
+      "started_at": "2026-11-12T07:41:07.591972+00:00",
+      "ended_at": "2026-11-12T07:41:07.637140+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "p12-nli",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/p12-nli.owner-binding.json",
+        "1aa0d9694709fe41399750d794a2f8ddab83a320fd67b45edb2e5cac3747ea36"
+      ],
+      "started_at": "2026-11-12T07:41:07.637571+00:00",
+      "ended_at": "2026-11-12T07:41:07.683975+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "executed_means": [
+    {
+      "candidate": "m10",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/derive-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m10.mean-binding.json",
+        "b462cf6637480b8e00620aaa9afda86edc672ec3cc63a108dd4daeb65af08774"
+      ],
+      "started_at": "2026-11-12T07:41:12.185759+00:00",
+      "ended_at": "2026-11-12T07:41:12.248377+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "m12",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/derive-exploration.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m12.mean-binding.json",
+        "be70a8a37cf87c7a02eebb92b25299a7ffda2e170bb13352feca778e9c9b3148"
+      ],
+      "started_at": "2026-11-12T07:41:12.249375+00:00",
+      "ended_at": "2026-11-12T07:41:12.297942+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_pinlocks": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/pins.json",
+      "bytes": 5671,
+      "sha256": "3199dca9f1a8b77778ca817f5588eb9121ca06c9502d57293a22d2e8459f501e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/pins.json",
+      "bytes": 3298,
+      "sha256": "dca51feecd3c17a2a0773a7283f37ac3dac1948e8fcfc0a498073325a22a2b0d"
+    }
+  ],
+  "activation": "cab35438-c11f-4631-89e3-471d6b4abfbe",
+  "reservation": "E13-EXP-LATE4-20261112-0727",
+  "source_snapshot": "0d2edfe499ed1d45c5835efae54b95655c3a8771",
+  "analysis_timing": {
+    "actual_start": "2026-11-12T07:38:13.381208+00:00",
+    "deadline": "2026-11-12T07:46:13.381208+00:00",
+    "actual_end": "2026-11-12T07:42:51.524949+00:00",
+    "wall_seconds": 278.143741
+  },
+  "candidate_binding_pins_as_recorded_only": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m10.mean-binding.json",
+      "bytes": 1891,
+      "sha256": "b462cf6637480b8e00620aaa9afda86edc672ec3cc63a108dd4daeb65af08774"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m10.owner-binding.json",
+      "bytes": 374358,
+      "sha256": "be4aef3a0d86513045ee305405293a9058c918da6a9f0be50c358fc27e692edd"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m11.owner-binding.json",
+      "bytes": 374368,
+      "sha256": "3a480ac265a1e2b830f7c86ecda3912382bdbca95f4e485bd9e01822027f3a2e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m12.mean-binding.json",
+      "bytes": 1891,
+      "sha256": "be70a8a37cf87c7a02eebb92b25299a7ffda2e170bb13352feca778e9c9b3148"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/m12.owner-binding.json",
+      "bytes": 374370,
+      "sha256": "6f358fc49e6fd49a1d03f11f80d29cf2af825c7caad2485f77b4f36e2daf5ac6"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/p12-nli.owner-binding.json",
+      "bytes": 508519,
+      "sha256": "1aa0d9694709fe41399750d794a2f8ddab83a320fd67b45edb2e5cac3747ea36"
+    }
+  ],
+  "safe_evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/public-report.md",
+      "bytes": 7269,
+      "sha256": "f459482092363fbd77f4dd1e7c34d47ad32288b0546c13b982ad7c6674d91fa8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/aggregate-summary.json",
+      "bytes": 181398,
+      "sha256": "301e1b05f67d74296121aad15feb96f5181f46cf8746f00742ca622f9a5bec27"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/analysis-receipt.json",
+      "bytes": 18253,
+      "sha256": "69d2fe5ceec695b78bc759d856b8dba4dff36f8dc421b720592efa834526ed2f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/binding-review.json",
+      "bytes": 5655,
+      "sha256": "4559961b2c407bcb8934f16161a654491db5b05229b2e126bdddffe0a6a993a1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/supplemental-source-review.json",
+      "bytes": 3139,
+      "sha256": "ae9a533b2b52a7ff9faa9bf5accc2d3634b8941fde33623d8494c7750042e7e0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/raw-execution.json",
+      "bytes": 2359,
+      "sha256": "328fecd8f6669c4c58aa2cb02d9d480719ad6918ea899e2e90fdc778a5ff9912"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/mean-execution.json",
+      "bytes": 1169,
+      "sha256": "6f4a916fb603dae2915f559f8f86829d435aec5420fb5d5175778ea8928f4d82"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m10-v1/public-summary.json",
+      "bytes": 10194,
+      "sha256": "c8836d90c0c198f58ac07120c85b4c2bf9132037dec97a07304d8462fc48d9d9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m11-v1/public-summary.json",
+      "bytes": 10071,
+      "sha256": "a648c09c83df87b2fb862a497b5feb05629ba233f7881d5eb327c883e3722210"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m12-v1/public-summary.json",
+      "bytes": 10167,
+      "sha256": "269fd7cf284e4b01f16f88de088e23e6430c91ed731b23a9bcff2a1cc85a2aaf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-p12-nli-v1/public-summary.json",
+      "bytes": 10068,
+      "sha256": "791ca0fd317f75c595907bb9a75c3acbc32593a4b6a1158e3a2f2c22576bb4c7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-m10-v1/public-summary.json",
+      "bytes": 14573,
+      "sha256": "074efa0bca027d534312bfef36ca291b9a9abe1b5f22e15e1fd0d0dff21b5e33"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-m12-v1/public-summary.json",
+      "bytes": 14554,
+      "sha256": "7a997f49fcbcf72c854d7806055b86ef44492c140d4512d0eeddca02a9655e5c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+      "bytes": 20997,
+      "sha256": "48552ec731f74c98498de8be95cfd3d00f50d8bc05e36d22ebf78539ee3d5408"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/derive-exploration.py",
+      "bytes": 17090,
+      "sha256": "e2e035582212119f87f9798f271d4a9036a5c054d8e29a084506d814abb2219d"
+    }
+  ],
+  "metrics": {
+    "normalization_tolerance": 1e-06,
+    "normalize_by_actual_sum": true,
+    "clipping": false,
+    "nll": "natural log",
+    "brier": "sum over options",
+    "tie_break": "first input option"
+  },
+  "independent_arithmetic": "Verified 1600 raw and 400 mean vectors; zero arithmetic assertions failed; stale diagnostic headers and tool-output confinement failures retained",
+  "pin_scope": "Bounded safe files only; no private payload reads or complete private-pin review; no tensor or runtime recertification.",
+  "rules": {
+    "m10": "native-conditional-answer-symbol-T1",
+    "m11": "native-scalar-T1",
+    "m12": "native-conditional-answer-symbol-T1",
+    "p12-nli": "R10-head entailment z0 minus not_entailment z1; T1 softmax over options; literal LF rendering"
+  },
+  "nli": {
+    "backbone": "MoritzLaurer/roberta-base-zeroshot-v2.0-c",
+    "revision": "d825e740e0c59881cf0b0b1481ccf726b6d65341",
+    "complete_max_length": 512,
+    "observed_max_length": 62,
+    "complete_pairs": 800,
+    "batch_size": 4,
+    "calls": 100,
+    "recommended_headroom_guard_source_sha256": "988795a6e3603d65e530ca93ba2c2415fe690f98c20a4f7c94054d3dafa5790e",
+    "guard": "recommended_max_memory - driver_allocated_memory >= 2 GiB before/after load/forward",
+    "historical_P12_repaired": false,
+    "old624_read_or_replayed": false
+  },
+  "m12": "Consumer of strict v2 checkpoint/proof, not new science"
+}

@@ -1,5 +1,9 @@
 # File-based evaluation
 
+[E13 first-four exploration](e13-exploration-firstfour.md) reports severe decoder order sensitivity and adverse family-level tradeoffs; the three post-cutoff E16 means remain separate predictors with no confirmation admission. Independent first-four arithmetic found no covered discrepancies. The [later-four exploration append](e13-exploration-laterfour.md) adds M10/M11/M12/frozen NLI and exactly two more means without rescoring these results; its independent arithmetic is verified with metadata and tool-output confinement qualifications.
+
+Separate [E13 locked four-raw confirmation](e13-confirmation-four-raw.md) retains four mandatory raw predictors and zero optional: M7 loses COPA agreement/proper scores versus P3; M9 loses against the pretrained-ranking-head START in both families. Full coverage and order stability are not truth or calibration. Independent confirmation arithmetic is complete with stale-header, locator and tool-output confinement qualifications. All eight exploration raw profiles, five authorized exploration means and the separate four raw confirmation profiles are measured; none is automatically promoted.
+
 [E14 frozen native NLI](e14-frozen-nli.md) scores37/60 inherited,126/240 new and7/12 probe pairs, with exact reversal invariance but losses against meaningful starts and stronger trained contexts. New agreement exceeds original MS MARCO99/240 while both proper scores worsen; P3 loses17 previously both-correct new cases and two probe pairs. **P12's required recommended-MPS-headroom guard was not measured or enforced**; stored outputs are evaluated with that consequential qualification, not full resource compliance or promotion.
 
 Prior raw contrast: [E15 stronger-head-LR](e15-head-learning-rate.md). M12 lowers TRAIN/development probability losses versus the small-LR head, but new agreement falls130/119→121/113 of240, both-order successes86→75, and probes lose four previously both-correct pairs. Larger movement is not convergence or capacity evidence.
@@ -76,7 +80,7 @@ Lexical is a deliberately weak, label-blind baseline: lowercase ASCII word-token
 
 ## Isolation
 
-Final data and all final outputs stay under `evaluation/final/`. The scorer, comparer, and input exporter require explicit `--allow-final` and enforce that output root for labeled final inputs. This flag is a procedural gate, not authorization to tune on final results. Freeze selected checkpoint/configuration before any release. There is no final scoring in this milestone.
+Final data and all final outputs stay under `evaluation/final/`. The scorer, comparer, and input exporter require explicit `--allow-final` and enforce that output root for labeled final inputs. This flag is a procedural gate, not authorization to tune on final results. Freeze selected checkpoint/configuration before any release. The original E1 milestone did not score final data. E13's separately authorized, fixed-scope confirmation runner admits only its exact new files and four locked raw predictors; it does not weaken shared validators or open original final24.
 
 Label-free files inherently lose split metadata; baseline generation cannot enforce final isolation on them. Do not export final inputs early or run baselines on a sealed final set. Never pass final labels, rationales, cases, or detailed failures to Data/Model during tuning. `passage_entailment` remains final-only. See final-design.md.
 

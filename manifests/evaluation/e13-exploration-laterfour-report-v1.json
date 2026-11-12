@@ -1,0 +1,194 @@
+{
+  "phase": "exploration-laterfour",
+  "source_usage": "validation_only_never_train",
+  "families": {
+    "COPA": {
+      "native_split": "dev",
+      "cases": 100,
+      "detected_groups": 100
+    },
+    "WinoGrande": {
+      "native_split": "train_debiased",
+      "cases": 100,
+      "detected_groups": 100
+    }
+  },
+  "raw_predictors": [
+    "m10",
+    "m11",
+    "m12",
+    "p12-nli"
+  ],
+  "derived_predictors": [
+    "m10-mean",
+    "m12-mean"
+  ],
+  "underlying_cases": 200,
+  "raw_presentations": 1600,
+  "raw_probability_values": 3200,
+  "derived_vectors": 400,
+  "confirmation_supported": false,
+  "optional_slots": 0,
+  "pin_scope": "Bounded safe files only; no private payload reads or complete private-pin review; no tensor or runtime recertification.",
+  "schema_version": "evaluation.e13.publication-report/1",
+  "status": "measured-independent-arithmetic-verified-operationally-qualified",
+  "independent_arithmetic": {
+    "status": "arithmetic_verified_with_metadata_and_confinement_qualifications",
+    "raw_vectors": 1600,
+    "raw_values": 3200,
+    "mean_vectors": 400,
+    "mean_values": 800,
+    "saved_outcomes": 2000,
+    "failed_arithmetic_assertions": 0,
+    "formula_tolerance": 1e-12,
+    "operational_disposition": "Failed tool-output confinement, not an unqualified operational pass; prior v1 schema stop and three successful v2 review executions retained",
+    "evidence": [
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-quality-v2/report.md",
+        "bytes": 4350,
+        "sha256": "4d5cb179dc02850f1bcbc4248fb738f5785fbbe24854d8978c46d08a2211ab2f"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-quality-v2/receipt.json",
+        "bytes": 4663,
+        "sha256": "ec1103432500a8002eca9d53b48828fd431d4dddb9ee2d8f10dd2a2a0a3362f9"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-quality-v2/findings.json",
+        "bytes": 38270,
+        "sha256": "91dd39e8894c0402c29082953cbfedc772c0967080934cfaa431c94900c5bc15"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-quality-v2/pins.json",
+        "bytes": 14210,
+        "sha256": "5717f67278065e110711d32e7f5af9be9d5f19119ca14b6bed4eedf90d31fa4f"
+      }
+    ]
+  },
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e13-exploration-laterfour.md",
+    "bytes": 13536,
+    "sha256": "66cd2251f6f0d0a69d74ba8be8bdedaca8308cc3d28e7c993e5309c9ddcc2c2f"
+  },
+  "configuration": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e13-exploration-laterfour-v1.json",
+    "bytes": 11716,
+    "sha256": "0fef2fa38a38b27a641c4b307381010969ffbb93939239c58e6ff5a64ecc608b"
+  },
+  "safe_artifact_files": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/public-report.md",
+      "bytes": 7269,
+      "sha256": "f459482092363fbd77f4dd1e7c34d47ad32288b0546c13b982ad7c6674d91fa8"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/aggregate-summary.json",
+      "bytes": 181398,
+      "sha256": "301e1b05f67d74296121aad15feb96f5181f46cf8746f00742ca622f9a5bec27"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/analysis-receipt.json",
+      "bytes": 18253,
+      "sha256": "69d2fe5ceec695b78bc759d856b8dba4dff36f8dc421b720592efa834526ed2f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/binding-review.json",
+      "bytes": 5655,
+      "sha256": "4559961b2c407bcb8934f16161a654491db5b05229b2e126bdddffe0a6a993a1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/supplemental-source-review.json",
+      "bytes": 3139,
+      "sha256": "ae9a533b2b52a7ff9faa9bf5accc2d3634b8941fde33623d8494c7750042e7e0"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/raw-execution.json",
+      "bytes": 2359,
+      "sha256": "328fecd8f6669c4c58aa2cb02d9d480719ad6918ea899e2e90fdc778a5ff9912"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-laterfour-analysis-v1/mean-execution.json",
+      "bytes": 1169,
+      "sha256": "6f4a916fb603dae2915f559f8f86829d435aec5420fb5d5175778ea8928f4d82"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m10-v1/public-summary.json",
+      "bytes": 10194,
+      "sha256": "c8836d90c0c198f58ac07120c85b4c2bf9132037dec97a07304d8462fc48d9d9"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m11-v1/public-summary.json",
+      "bytes": 10071,
+      "sha256": "a648c09c83df87b2fb862a497b5feb05629ba233f7881d5eb327c883e3722210"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-m12-v1/public-summary.json",
+      "bytes": 10167,
+      "sha256": "269fd7cf284e4b01f16f88de088e23e6430c91ed731b23a9bcff2a1cc85a2aaf"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-p12-nli-v1/public-summary.json",
+      "bytes": 10068,
+      "sha256": "791ca0fd317f75c595907bb9a75c3acbc32593a4b6a1158e3a2f2c22576bb4c7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-m10-v1/public-summary.json",
+      "bytes": 14573,
+      "sha256": "074efa0bca027d534312bfef36ca291b9a9abe1b5f22e15e1fd0d0dff21b5e33"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-m12-v1/public-summary.json",
+      "bytes": 14554,
+      "sha256": "7a997f49fcbcf72c854d7806055b86ef44492c140d4512d0eeddca02a9655e5c"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/score-exploration.py",
+      "bytes": 20997,
+      "sha256": "48552ec731f74c98498de8be95cfd3d00f50d8bc05e36d22ebf78539ee3d5408"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/derive-exploration.py",
+      "bytes": 17090,
+      "sha256": "e2e035582212119f87f9798f271d4a9036a5c054d8e29a084506d814abb2219d"
+    }
+  ],
+  "runtime": {
+    "outer_seconds": 50.66,
+    "charged_seconds": 52,
+    "prior_exploration_charged_seconds": 46,
+    "cumulative_charged_seconds": 98,
+    "allowance_seconds": 1200,
+    "unused_seconds": 1102,
+    "unused_is_authority": false,
+    "calls": [
+      403,
+      100,
+      403,
+      100
+    ],
+    "startup_calls": [
+      3,
+      0,
+      3,
+      0
+    ],
+    "all_eight_calls": 2012,
+    "all_eight_startup_calls": 12,
+    "all_eight_presentations": 3200,
+    "all_eight_probability_values": 6400,
+    "confirmation_separate_charged_seconds": 45,
+    "confirmation_separate_allowance_seconds": 900
+  },
+  "source_pinlocks": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-scoring-preparation-v4/pins.json",
+      "bytes": 5671,
+      "sha256": "3199dca9f1a8b77778ca817f5588eb9121ca06c9502d57293a22d2e8459f501e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-e13-preparation-v1/pins.json",
+      "bytes": 3298,
+      "sha256": "dca51feecd3c17a2a0773a7283f37ac3dac1948e8fcfc0a498073325a22a2b0d"
+    }
+  ]
+}
