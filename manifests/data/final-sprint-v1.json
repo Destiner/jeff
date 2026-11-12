@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "data-final-sprint-v1",
+  "shards": [
+    {
+      "path": "data/data-final-sprint-v1/workspace-routing.train.jsonl",
+      "split": "train",
+      "sha256": "3df1a92f2d1e986a1fc86719dbd24324860005a325a2ca8034545708d9265843",
+      "rows": 80
+    },
+    {
+      "path": "data/data-final-sprint-v1/direct-sentiment.train.jsonl",
+      "split": "train",
+      "sha256": "f9feafe83fd770f908455723a6736834a017e4626a393e314ed0ddcc66603814",
+      "rows": 80
+    },
+    {
+      "path": "data/data-final-sprint-v1/software-ticket.train.jsonl",
+      "split": "train",
+      "sha256": "b59663c62703e0aeef840797323772c36b5c0b8b9b92089d9e6818d270475f95",
+      "rows": 80
+    },
+    {
+      "path": "data/data-final-sprint-v1/replay.train.jsonl",
+      "split": "train",
+      "sha256": "d3be619f4d6c3ea6b6ba460478cef569bb1b4105db441bbbf66b86a5a9b5f1cf",
+      "rows": 240
+    }
+  ],
+  "metadata": {
+    "provenance": {
+      "path": "data/data-final-sprint-v1/provenance.json",
+      "sha256": "df1a34acc917937ca7cf91c3e65d8ddacd61d45dcea95f3f2e4380334cd32c66"
+    },
+    "review": {
+      "path": "data/data-final-sprint-v1/review-summary.json",
+      "sha256": "7ada541e16bf491bb6c8e083bd87abc3d334a92397d666f0810c133657deeb65"
+    },
+    "author_records": {
+      "path": "data/data-final-sprint-v1/author-records.jsonl",
+      "sha256": "09dee91b14983512fe435bfa171ae81202479c705635b5c8f8f4a7d68caff204"
+    }
+  },
+  "authority_note": "Data release is not independent learning authority; Model scientific freeze, Evaluation freeze and resource guards still apply."
+}
