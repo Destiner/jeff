@@ -8,18 +8,18 @@ const web = fileURLToPath(new URL('../', import.meta.url));
 const log = event => console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...event }));
 
 function options() {
-  const result = { port: 4173, durationSeconds: 7200 };
+  const result = { port: 4174, durationSeconds: 7200 };
   const seen = new Set();
   const args = process.argv.slice(2);
   for (let i = 0; i < args.length; i += 2) {
     const flag = args[i];
     const value = args[i + 1];
-    if (!['--model-dir', '--inputs', '--port', '--duration-seconds', '--stop-at'].includes(flag)
+    if (!['--model-dir', '--descriptor', '--inputs', '--port', '--duration-seconds', '--stop-at'].includes(flag)
       || seen.has(flag) || !value) {
-      throw new Error('Usage: bun run demo [--model-dir ABSOLUTE_ASSETS_DIR] [--inputs ABSOLUTE_P11_JSONL] [--port 1..65535] [--duration-seconds 1..14400] [--stop-at UTC_ISO_TIMESTAMP]');
+      throw new Error('Usage: bun run demo [--model-dir ABSOLUTE_ASSETS_DIR] [--descriptor ABSOLUTE_MODEL_JSON] [--inputs ABSOLUTE_P11_JSONL] [--port 1..65535] [--duration-seconds 1..14400] [--stop-at UTC_ISO_TIMESTAMP]');
     }
     seen.add(flag);
-    if (flag === '--model-dir' || flag === '--inputs') {
+    if (flag === '--model-dir' || flag === '--descriptor' || flag === '--inputs') {
       if (!path.isAbsolute(value)) throw new Error(`${flag} requires an absolute path`);
       result[flag] = path.resolve(value);
     } else if (flag === '--stop-at') {
@@ -51,11 +51,12 @@ async function main() {
   });
   const canonical = path.dirname(stdout.trim());
   const modelDir = args['--model-dir'] ?? path.join(canonical, 'artifacts/release/browser-b1-20261112-01/export-01/assets');
-  const inputs = args['--inputs'] ?? path.join(canonical, 'artifacts/infra/browser-b2-20261112-01/p11-train.jsonl');
+  const descriptor = args['--descriptor'] ?? path.resolve(web, '../sdk/models/m9.json');
+  const inputs = args['--inputs'];
   // Never implicitly install, download, export, or import a model.
-  for (const dependency of ['@huggingface/transformers', 'onnxruntime-web', 'typescript', 'vite']) {
+  for (const dependency of ['@jeff/sdk', '@huggingface/transformers', 'onnxruntime-web', 'typescript', 'vite']) {
     try { await access(path.join(web, 'node_modules', dependency, 'package.json')); }
-    catch { throw new Error(`Missing dependency ${dependency}. In ${web}, install scoped dependencies with bun install --frozen-lockfile --ignore-scripts, then retry. No install was attempted.`); }
+    catch { throw new Error(`Missing dependency ${dependency}. In ${path.resolve(web, '..')}, install workspace dependencies with bun install --frozen-lockfile --ignore-scripts, then retry. No install was attempted.`); }
   }
 
   let child;
@@ -105,10 +106,11 @@ async function main() {
     }
   };
   try {
-    log({ event: 'launcher-started', pid: process.pid, web, canonical, modelDir, inputs,
+    log({ event: 'launcher-started', pid: process.pid, web, canonical, modelDir, descriptor, inputs,
       deadline: new Date(deadline).toISOString(), dependencies: 'required; no automatic install' });
-    await run('assets', ['scripts/copy-assets.mjs', '--model-dir', modelDir, '--inputs', inputs]);
-    await run('build', ['run', 'build']);
+    await run('assets', ['scripts/copy-assets.mjs', '--model-dir', modelDir, '--descriptor', descriptor,
+      ...(inputs ? ['--inputs', inputs] : [])]);
+    await run('build', ['run', '--cwd', path.resolve(web, '..'), 'build']);
     await run('serve', ['scripts/serve.mjs', '--port', String(args.port),
       '--duration-seconds', String(args.durationSeconds), '--stop-at', new Date(deadline).toISOString()]);
   } finally {

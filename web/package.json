@@ -4,12 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "tsc --noEmit && vite build && bun scripts/build-offline.mjs",
+    "build": "bun scripts/build.mjs",
     "demo": "bun scripts/launch.mjs",
     "serve": "bun scripts/serve.mjs",
     "assets": "bun scripts/copy-assets.mjs"
   },
   "dependencies": {
+    "@jeff/sdk": "workspace:*",
     "@huggingface/transformers": "3.8.1",
     "onnxruntime-web": "1.22.0-dev.20250409-89f8206ba4"
   },

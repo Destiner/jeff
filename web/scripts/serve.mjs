@@ -24,7 +24,7 @@ const mime = {
 };
 
 function options() {
-  const result = { port: 4173, durationSeconds: 1800 };
+  const result = { port: 4174, durationSeconds: 1800 };
   const seen = new Set();
   const args = process.argv.slice(2);
   for (let i = 0; i < args.length; i += 2) {

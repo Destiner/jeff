@@ -10,7 +10,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 [hidden] { display: none !important; }
-button, textarea { font: inherit; }
+button, textarea, select { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: default; opacity: .5; }
 a { color: inherit; }
@@ -33,6 +33,7 @@ textarea::placeholder { color: #858c83; }
 textarea:focus { border-color: #738b62; }
 :focus-visible { outline: 3px solid #b5c9a5; outline-offset: 3px; }
 #context, #question { margin-bottom: 24px; }
+#example { width: 100%; margin-bottom: 24px; padding: 10px; border: 1px solid #d4dcd0; border-radius: 7px; color: #28342f; background: #fff; font-size: 13px; }
 h2 { font-size: 18px; font-weight: 600; letter-spacing: -.3px; margin: 0 0 12px; }
 .choices-heading { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
 .choices-heading h2 { font-size: 13px; letter-spacing: 0; margin: 0; }

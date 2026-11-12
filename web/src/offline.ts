@@ -1,3 +1,5 @@
+import { model, modelLabel } from './model';
+
 export type OfflineStatus = {
   state: 'unsupported' | 'empty' | 'preparing' | 'ready' | 'error';
   message: string;
@@ -10,17 +12,16 @@ export type OfflineStatus = {
 
 type Asset = { url: string; bytes: number; sha256: string };
 type Manifest = { schema: 1; version: string; prepared: boolean; missing: string[]; assets: Asset[] };
-const prefix = 'jeff-m9-offline-v1-';
+const prefix = 'jeff-browser-offline-v2-';
 const required = [
-  '/models/m9/model.onnx', '/models/m9/tokenizer.json', '/models/m9/tokenizer_config.json',
-  '/models/m9/special_tokens_map.json', '/models/m9/vocab.txt', '/models/m9/config.json',
-  '/ort/ort-wasm-simd-threaded.wasm', '/ort/ort-wasm-simd-threaded.mjs', '/examples/p11-train.jsonl',
+  ...['model.json', 'model.onnx', 'tokenizer.json', 'tokenizer_config.json'].map(name => model.assetBaseUrl + name),
+  ...['ort-wasm-simd-threaded.wasm', 'ort-wasm-simd-threaded.mjs'].map(name => model.ortBaseUrl + name),
 ];
 let preparing = false;
 const supported = () => typeof navigator !== 'undefined' && window.isSecureContext &&
   'serviceWorker' in navigator && 'caches' in window;
 const unsupported = (): OfflineStatus => ({ state: 'unsupported', message: 'Offline storage requires CacheAPI and service workers on localhost or HTTPS.' });
-const empty = (): OfflineStatus => ({ state: 'empty', message: 'Prepare M9 for offline use.' });
+const empty = (): OfflineStatus => ({ state: 'empty', message: 'Prepare the apps and model for offline use.' });
 const errorStatus = (error: unknown): OfflineStatus => ({ state: 'error',
   message: `Offline storage: ${error instanceof Error ? error.message : String(error)}` });
 const marker = (version: string) => new URL(`/__jeff_offline_complete__/${version}`, location.origin).href;
@@ -49,14 +50,14 @@ function validate(value: unknown): Manifest {
   const seen = new Set<string>();
   for (const asset of m.assets) {
     if (!asset || typeof asset.url !== 'string' || /(?:qwen|m10|jsep)/i.test(asset.url) ||
-        !(required.includes(asset.url) || /^\/(?:index\.html|assets\/[\w.-]+\.(?:js|css))$/.test(asset.url)) ||
+        !(required.includes(asset.url) || /^\/(?:(?:index|chat|playground)\.html|assets\/[\w.-]+\.(?:js|css))$/.test(asset.url)) ||
         !Number.isSafeInteger(asset.bytes) || asset.bytes <= 0 || !/^[a-f0-9]{64}$/.test(asset.sha256) ||
         Object.keys(asset).some(key => !['url', 'bytes', 'sha256'].includes(key)) || seen.has(asset.url)) {
-      throw new Error('Invalid M9 offline asset descriptor.');
+      throw new Error('Invalid offline asset descriptor.');
     }
     seen.add(asset.url);
   }
-  if (!seen.has('/index.html') || !Number.isSafeInteger(totals(m).totalBytes) ||
+  if (['/index.html', '/chat.html', '/playground.html'].some(url => !seen.has(url)) || !Number.isSafeInteger(totals(m).totalBytes) ||
       (m.prepared && (m.missing.length > 0 || required.some(url => !seen.has(url))))) {
     throw new Error('Incomplete offline manifest.');
   }
@@ -87,10 +88,10 @@ async function localStatus(): Promise<OfflineStatus> {
     if (controlled(manifest)) {
       const base = totals(manifest);
       return { ...base, state: 'ready', loadedBytes: base.totalBytes, completedAssets: base.totalAssets,
-        message: 'M9 is available offline on this browser.' };
+        message: `App and ${modelLabel} saved on this browser.` };
     }
   }
-  return savedForPage ? { state: 'empty', message: 'M9 is saved, but this page is not controlled by its matching offline worker. Close all app tabs and reopen.' } : empty();
+  return savedForPage ? { state: 'empty', message: 'The model is saved, but this page is not controlled by its matching offline worker. Close all app tabs and reopen.' } : empty();
 }
 
 async function waitForInstall(manifest: Manifest, registration: ServiceWorkerRegistration): Promise<void> {
@@ -151,7 +152,7 @@ async function save(onStatus: (s: OfflineStatus) => void): Promise<void> {
       const report = (force = false) => {
         if (force || Date.now() - lastReport >= 100) {
           lastReport = Date.now();
-          onStatus({ ...base, state: 'preparing', loadedBytes, completedAssets, message: 'Saving M9 assets for offline use…' });
+          onStatus({ ...base, state: 'preparing', loadedBytes, completedAssets, message: 'Saving app and model assets for offline use…' });
         }
       };
       report(true);
