@@ -38,7 +38,13 @@ async function addApp(url) {
   for (const [, reference] of references) {
     const dependency = reference.startsWith('assets/') ? `/${reference}` :
       reference.startsWith('/') ? reference : posix.resolve(posix.dirname(url), reference);
-    if (!forbidden(dependency)) await addApp(dependency);
+    // Bundled libraries retain source/debug string literals that are not emitted imports.
+    if (!/^\/assets\/[\w.-]+\.(?:js|css)$/.test(dependency) || forbidden(dependency)) continue;
+    try {
+      if ((await stat(resolve(dist, `.${dependency}`))).isFile()) await addApp(dependency);
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+    }
   }
 }
 if (viteManifest) {
@@ -58,6 +64,9 @@ if (viteManifest) {
   }
 }
 for (const file of appFiles) await addApp(file);
+if (![...assets.keys()].some(url => /^\/assets\/worker-[\w-]+\.js$/.test(url))) {
+  throw new Error('The emitted M9 worker is missing from the offline app graph.');
+}
 let receipt;
 try {
   receipt = JSON.parse(await readFile(resolve(web, 'asset-manifest.local.json'), 'utf8'));

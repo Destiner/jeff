@@ -1,5 +1,6 @@
 import './style.css';
-import type { Decision, Prediction, createEngine } from './runtime/index';
+import { initializeOffline, prepareOffline, readOfflineStatus, type OfflineStatus } from './offline';
+import type { Decision, Prediction, Progress, createEngine } from './runtime/index';
 
 type Engine = Awaited<ReturnType<typeof createEngine>>;
 type Diagnostics = Awaited<ReturnType<Engine['predict']>>['diagnostics'];
@@ -10,7 +11,7 @@ type Receipt = {
   engineMetadata: Engine['metadata'];
   wallMs: number;
 };
-type Phase = 'idle' | 'loading' | 'running' | 'success' | 'error' | 'disposing';
+type Phase = 'idle' | 'loading' | 'running' | 'success' | 'error' | 'disposing' | 'saving-offline';
 type BrowserState = {
   phase: Phase;
   busy: boolean;
@@ -24,6 +25,7 @@ type BrowserBridge = {
   run(input?: Decision): Promise<Receipt>;
   readonly history: readonly Receipt[];
   dispose(): Promise<void>;
+  offline: { prepare(): Promise<OfflineStatus>; status(): Promise<OfflineStatus> };
   getState(): BrowserState;
 };
 
@@ -52,6 +54,17 @@ const backend = element<HTMLSpanElement>('backend');
 const results = element<HTMLElement>('results');
 const emptyResults = element<HTMLDivElement>('empty-results');
 const scores = element<HTMLOListElement>('scores');
+const modelProgress = element<HTMLProgressElement>('model-progress');
+const modelProgressText = element<HTMLParagraphElement>('model-progress-text');
+const offlineButton = element<HTMLButtonElement>('prepare-offline');
+const offlineStatusText = element<HTMLParagraphElement>('offline-status');
+const offlineProgress = element<HTMLProgressElement>('offline-progress');
+const offlineDetail = element<HTMLParagraphElement>('offline-detail');
+let offlineState: OfflineStatus = { state: 'empty', message: 'Checking offline storage…' };
+let cacheBusy = false;
+let operation = 0;
+let initializationAbort: AbortController | null = null;
+let disposalPromise: Promise<void> | null = null;
 let draft: Decision = {
   schema_version: '0.1', id: crypto.randomUUID(), state: '', question: '',
   options: [newOption(), newOption()],
@@ -69,7 +82,7 @@ function newOption(): Decision['options'][number] {
 }
 
 function assertIdle(): void {
-  if (busy) throw new Error('Jeff is busy. Wait for the current operation to finish.');
+  if (busy || cacheBusy) throw new Error('Jeff is busy. Wait for the current operation to finish.');
 }
 
 function validateDecision(input: Decision): void {
@@ -196,9 +209,58 @@ function loadDecision(input: Decision): void {
 
 function setBusy(value: boolean): void {
   busy = value;
-  fieldset.disabled = value;
-  form.setAttribute('aria-busy', String(value));
-  runButton.textContent = value ? 'Working…' : 'Run locally →';
+  fieldset.disabled = value || cacheBusy;
+  offlineButton.disabled = value || cacheBusy || offlineState.state === 'unsupported';
+  form.setAttribute('aria-busy', String(value || cacheBusy));
+  runButton.textContent = value ? 'Working…' : cacheBusy ? 'Saving offline…' : 'Run locally →';
+}
+
+function bytes(value: number): string { return `${(value / 1_000_000).toFixed(1)} MB`; }
+
+function updateProgress(bar: HTMLProgressElement, loaded?: number, total?: number): void {
+  if (typeof loaded === 'number' && Number.isFinite(loaded) && loaded >= 0 &&
+      typeof total === 'number' && Number.isFinite(total) && total > 0 && loaded <= total) {
+    bar.max = total;
+    bar.value = loaded;
+  } else {
+    bar.removeAttribute('value');
+  }
+}
+
+function loadingProgress(event: Progress): void {
+  status.textContent = event.message;
+  modelProgress.hidden = false;
+  updateProgress(modelProgress, event.receivedBytes, event.totalBytes);
+  modelProgressText.hidden = event.receivedBytes === undefined;
+  modelProgressText.textContent = event.receivedBytes === undefined ? '' :
+    `${bytes(event.receivedBytes)}${event.totalBytes === undefined ? ' read' : ` of ${bytes(event.totalBytes)} read`} · current asset`;
+}
+
+function renderOffline(value: OfflineStatus): void {
+  offlineState = clone(value);
+  offlineStatusText.textContent = value.message;
+  offlineProgress.hidden = value.state !== 'preparing';
+  updateProgress(offlineProgress, value.loadedBytes, value.totalBytes);
+  offlineButton.textContent = value.state === 'ready' ? 'Refresh offline copy' : 'Make M9 available offline';
+  offlineButton.disabled = busy || cacheBusy || value.state === 'unsupported';
+  offlineDetail.textContent = value.state === 'preparing' && value.loadedBytes !== undefined
+    ? `${bytes(value.loadedBytes)}${value.totalBytes === undefined ? ' saved' : ` of ${bytes(value.totalBytes)} saved`} · app and M9 assets only`
+    : 'Only app and model assets are saved. Your inputs and results stay in memory.';
+}
+
+async function saveOffline(): Promise<OfflineStatus> {
+  assertIdle();
+  cacheBusy = true;
+  phase = 'saving-offline';
+  setBusy(false);
+  try {
+    await prepareOffline(renderOffline);
+    return clone(offlineState);
+  } finally {
+    cacheBusy = false;
+    phase = result ? 'success' : 'idle';
+    setBusy(false);
+  }
 }
 
 function renderReceipt(receipt: Receipt): void {
@@ -236,6 +298,7 @@ function renderReceipt(receipt: Receipt): void {
 
 async function run(input?: Decision): Promise<Receipt> {
   assertIdle();
+  const current = ++operation;
   const started = performance.now();
   clearResult();
   clearError();
@@ -247,27 +310,36 @@ async function run(input?: Decision): Promise<Receipt> {
     if (!engine) {
       phase = 'loading';
       status.textContent = 'Loading M9 reference model…';
+      initializationAbort = new AbortController();
+      const signal = initializationAbort.signal;
       const { createEngine } = await import('./runtime/index');
-      engine = await createEngine({
-        assetBaseUrl: '/models/m9/',
-        onProgress: event => {
-          status.textContent = `${event.stage}: ${event.message}`;
-        },
-      });
+      if (signal.aborted || current !== operation) throw new Error('Model loading cancelled.');
+      const options = {
+        assetBaseUrl: '/models/m9/', signal,
+        onProgress: (event: Progress) => { if (current === operation) loadingProgress(event); },
+      };
+      const loaded = await createEngine(options);
+      if (current !== operation) { await loaded.dispose(); throw new Error('Model loading cancelled.'); }
+      engine = loaded;
+      initializationAbort = null;
       backend.textContent = `Backend: ${engine.metadata.backend} · ONNX session ${engine.metadata.modelLoadMs.toFixed(0)} ms`;
     }
+    const active = engine;
     phase = 'running';
+    modelProgress.hidden = true;
+    modelProgressText.hidden = true;
     status.textContent = 'Comparing your choices locally…';
-    const output = await engine.predict(clone(submitted));
+    const output = await active.predict(clone(submitted));
+    if (current !== operation) throw new Error('Comparison cancelled.');
     validatePrediction(submitted, output.prediction);
-    if (output.diagnostics.backend !== 'wasm' || engine.metadata.backend !== 'wasm') {
+    if (output.diagnostics.backend !== 'wasm' || active.metadata.backend !== 'wasm') {
       throw new Error('Unexpected runtime backend. No scores are shown.');
     }
     const receipt: Receipt = clone({
       input: submitted,
       prediction: output.prediction,
       diagnostics: output.diagnostics,
-      engineMetadata: engine.metadata,
+      engineMetadata: active.metadata,
       wallMs: performance.now() - started,
     });
     renderReceipt(receipt);
@@ -277,33 +349,61 @@ async function run(input?: Decision): Promise<Receipt> {
     status.textContent = 'Comparison complete. Executed locally with WASM.';
     return clone(receipt);
   } catch (error) {
-    clearResult();
-    showError(error);
+    if (current === operation) {
+      initializationAbort?.abort();
+      initializationAbort = null;
+      const failed = engine;
+      engine = null;
+      try { await failed?.dispose(); } catch (cleanupError) {
+        console.error('Model cleanup reported an error', cleanupError);
+      }
+      backend.textContent = 'Backend: not initialized';
+      clearResult();
+      showError(error);
+    }
     throw error;
   } finally {
-    setBusy(false);
+    if (current === operation) {
+      modelProgress.hidden = true;
+      modelProgressText.hidden = true;
+      setBusy(false);
+    }
   }
 }
 
 async function dispose(): Promise<void> {
-  assertIdle();
+  if (disposalPromise) return disposalPromise;
+  const pending = disposeCurrent();
+  disposalPromise = pending;
+  try { await pending; }
+  finally { if (disposalPromise === pending) disposalPromise = null; }
+}
+
+async function disposeCurrent(): Promise<void> {
+  const current = ++operation;
+  initializationAbort?.abort();
+  initializationAbort = null;
+  const closing = engine;
+  engine = null;
   setBusy(true);
   phase = 'disposing';
   clearError();
+  modelProgress.hidden = true;
+  modelProgressText.hidden = true;
   status.textContent = 'Releasing model…';
   try {
-    if (engine) await engine.dispose();
-    engine = null;
+    await closing?.dispose();
+    if (current !== operation) return;
     phase = 'idle';
     backend.textContent = 'Backend: not initialized';
     status.textContent = result
       ? 'Model released. Last comparison retained; run again to reload.'
       : 'Model released. Run locally to load it again.';
   } catch (error) {
-    showError(error);
+    if (current === operation) showError(error);
     throw error;
   } finally {
-    setBusy(false);
+    if (current === operation) setBusy(false);
   }
 }
 
@@ -323,14 +423,24 @@ form.addEventListener('submit', event => {
   void run().catch(() => {});
 });
 
+offlineButton.addEventListener('click', () => { void saveOffline().catch(error => {
+  renderOffline({ state: 'error', message: error instanceof Error ? error.message : String(error) });
+}); });
+
 window.jeffBrowser = {
   loadDecision,
   run,
   get history() { return clone(history); },
   dispose,
+  offline: { prepare: saveOffline, status: async () => {
+    const state = await readOfflineStatus();
+    renderOffline(state);
+    return clone(state);
+  } },
   getState: () => clone({
     phase, busy, input: draft, error: lastError,
     engineMetadata: engine?.metadata ?? null, result,
   }),
 };
 renderChoices();
+void initializeOffline(renderOffline);

@@ -32,7 +32,15 @@
             <div class="run-row"><button id="run" class="primary" type="submit">Run locally <span aria-hidden="true">→</span></button><span class="run-note">First run loads model assets.</span></div>
           </fieldset>
           <p id="status" class="status" role="status" aria-live="polite">Model not loaded.</p>
+          <progress id="model-progress" class="load-progress" aria-label="Model asset loading" hidden></progress>
+          <p id="model-progress-text" class="progress-detail" hidden></p>
           <p id="error" class="error" role="alert" hidden></p>
+          <div class="offline-controls">
+            <button id="prepare-offline" class="secondary" type="button">Make M9 available offline</button>
+            <p id="offline-status" class="status" role="status" aria-live="polite">Checking offline storage…</p>
+            <progress id="offline-progress" class="load-progress" aria-label="Saving offline assets" hidden></progress>
+            <p id="offline-detail" class="progress-detail">Only app and model assets are saved. Your inputs and results stay in memory.</p>
+          </div>
         </form>
         <aside class="results-panel" aria-labelledby="results-heading">
           <p class="eyebrow">The comparison</p>
