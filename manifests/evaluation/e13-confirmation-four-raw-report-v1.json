@@ -1,0 +1,194 @@
+{
+  "schema_version": "evaluation.e13.publication-report/1",
+  "status": "measured-independent-numerical-review-qualified",
+  "phase": "confirmation-four-raw",
+  "source_usage": "validation_only_never_train",
+  "families": {
+    "COPA": {
+      "cases": 100,
+      "detected_groups": 100
+    },
+    "WinoGrande": {
+      "cases": 100,
+      "detected_groups": 100
+    }
+  },
+  "raw_predictors": 4,
+  "optional_predictors": 0,
+  "underlying_cases": 200,
+  "presentations_per_predictor": 400,
+  "probability_values_per_predictor": 800,
+  "raw_presentations": 1600,
+  "raw_probability_values": 3200,
+  "rules": {
+    "p3": "native-conditional-answer-symbol-T1",
+    "m7": "native-conditional-answer-symbol-T1",
+    "msmarco-start": "native-scalar-T1",
+    "m9": "native-scalar-T1"
+  },
+  "metrics": {
+    "normalization_tolerance": 1e-06,
+    "normalize_by_actual_sum": true,
+    "clipping": false,
+    "nll": "mean negative natural log target probability",
+    "brier": "mean sum over both options",
+    "tie_break": "first input option",
+    "strict_both": "singleton target maximum in both orders"
+  },
+  "cutoff": {
+    "evidence_cutoff_utc": "2026-11-12T06:30:00+00:00",
+    "lead_published_at": "2026-11-12T06:32:54.025311+00:00",
+    "lead_message": "719f81b6-d8f2-42e2-bd54-7770c21cc9b2",
+    "no_quality_or_mean_result_at_cutoff": true,
+    "no_optional_substitution_from_post_cutoff_scores": true
+  },
+  "scope": "Phase-specific descriptive source-label agreement; no pooled headline, calibration, architecture-cause or promotion claim.",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e13-confirmation-four-raw.md",
+    "bytes": 12830,
+    "sha256": "faa1527b6c6656426fe95b3caa98b37d7d7d2f0ff1eed4bbf6a3168823fe7608"
+  },
+  "configuration": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e13-confirmation-four-raw-v1.json",
+    "bytes": 13049,
+    "sha256": "01fe8805cf5433c1e610be60858c88d6f9317347c7300a96127b6d5d0ff80da8"
+  },
+  "safe_artifact_files": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-public-v1/report.md",
+      "bytes": 4421,
+      "sha256": "24e4d707463d66cbba8f6d0909953c064d9631318ba55800ef9ab632f273230a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-public-v1/summary.json",
+      "bytes": 36300,
+      "sha256": "287e2803231805bbe9d4d9803ce8402c02855bbb1a7670ad6e1a621f0d59fa89"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/binding-review.json",
+      "bytes": 4254,
+      "sha256": "9b12ad423023c2ad003050044a229461200b17cb5443b7f4b0509f79a3669035"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/supplemental-review.json",
+      "bytes": 232,
+      "sha256": "b8092496cf9580750022cc82a5d35ecbbdf8f52076bcb862541d2b8dfe37d4c4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/scoring-execution.json",
+      "bytes": 2712,
+      "sha256": "2b144b3edc3dc8d6bc85054e8517ffe1384ad132d36a762f4f7eecca245f21a4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/session-end.json",
+      "bytes": 550,
+      "sha256": "6758a338ba3e87000b833c668e221f0f3b7917f26e590de6b5d9c1129f568160"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-owner-integrity-v1/receipt.json",
+      "bytes": 2719,
+      "sha256": "865297aa7703ceb1e1abef2e959129379bac47e2273cd5494a7c62e63fc70959"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-lock-adoption-v1/receipt.json",
+      "bytes": 1543,
+      "sha256": "38a622d98bc9991899e79f8226b0516e37bf4fa11ad48012f006962e19ff9e81"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/README.md",
+      "bytes": 1523,
+      "sha256": "6f2e6cfe9b8122cc57db73e0069860536ae8115e324d9e4a1d55f3f18f293d2e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/correction.json",
+      "bytes": 1047,
+      "sha256": "9dffed4190b04b79e0a060509d10ace56ffde01ecba5b08b907c431786a94b53"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/pins.json",
+      "bytes": 7779,
+      "sha256": "080769c495bdd36b043e3e190754636455a9dcad16d46b64fcc60502e16899b1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+      "bytes": 24520,
+      "sha256": "37f0af43d4f8e36e5198817510712ce6491ad5aad3b9182ef2e73d1140a901e2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/source.diff",
+      "bytes": 1279,
+      "sha256": "768624bed2758ce6ba7fd22ac6e233ebf91cf37cadd38f2ffc7a85b49e9bf273"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/e13-confirmation-20261112-01/delivery-summary.json",
+      "bytes": 4285,
+      "sha256": "e0d389ad680b673a19ae317df038f3ca7a4857d3be4c75398afe4cb592faed3f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-report.md",
+      "bytes": 5987,
+      "sha256": "fda3b0b6d4210248f754263377a203b76a5e3ad6fd1155b3d88b1488f6967c04"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-receipt.json",
+      "bytes": 5377,
+      "sha256": "90ce750a6cc8012410aad34b63bbfb3d2cff283bfcc2c7e8e3f1857a02aa1ad2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/review-receipt.json",
+      "bytes": 41273,
+      "sha256": "6204cd0987d44fcfcaf1dfad0603670f1f8129265865fdc47e2fe4eb9f6e62bd"
+    }
+  ],
+  "pin_scope": "Explicit safe file list only; byte/SHA-256 pins do not imply payload review or OS/tensor replay. Embedded paths were not followed.",
+  "runtime": {
+    "outer_seconds": 43.46,
+    "charged_seconds": 45,
+    "allowance_seconds": 900,
+    "unused_seconds": 855,
+    "unused_is_authority": false,
+    "calls": [
+      403,
+      403,
+      100,
+      100
+    ],
+    "startup_calls": [
+      3,
+      3,
+      0,
+      0
+    ]
+  },
+  "independent_arithmetic": {
+    "status": "numerical_pass_with_metadata_qualifications",
+    "vectors": 1600,
+    "values": 3200,
+    "numeric_outcome_fields_bit_exact": 9600,
+    "maximum_absolute_difference": 0.0,
+    "comparisons_checks_including_failed_assertions": 122679,
+    "all_checks_passing": false,
+    "original_safe_aggregate_pending_is_historical_immutable": true,
+    "custody_deviation": "Initial helper tool output disclosed selected case IDs/content contrary to confinement; harness logs unchanged; subsequent proof private. No continuous custody certification.",
+    "safe_closure_pins": [
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-report.md",
+        "bytes": 5987,
+        "sha256": "fda3b0b6d4210248f754263377a203b76a5e3ad6fd1155b3d88b1488f6967c04"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-receipt.json",
+        "bytes": 5377,
+        "sha256": "90ce750a6cc8012410aad34b63bbfb3d2cff283bfcc2c7e8e3f1857a02aa1ad2"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/review-receipt.json",
+        "bytes": 41273,
+        "sha256": "6204cd0987d44fcfcaf1dfad0603670f1f8129265865fdc47e2fe4eb9f6e62bd"
+      }
+    ]
+  },
+  "actual_activation": "35408451-4b31-4dee-85b1-ddac0e586dbc",
+  "runtime_revision": "f1fee32df63ac4bb359e09e63c93fb7f358b82f1",
+  "source_pinlock_sha256": "080769c495bdd36b043e3e190754636455a9dcad16d46b64fcc60502e16899b1"
+}

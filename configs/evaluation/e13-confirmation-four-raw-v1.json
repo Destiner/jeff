@@ -1,0 +1,296 @@
+{
+  "schema_version": "evaluation.e13.executed-publication-config/1",
+  "status": "executed-record-not-run-authority",
+  "phase": "confirmation-four-raw",
+  "source_usage": "validation_only_never_train",
+  "families": {
+    "COPA": {
+      "cases": 100,
+      "detected_groups": 100
+    },
+    "WinoGrande": {
+      "cases": 100,
+      "detected_groups": 100
+    }
+  },
+  "raw_predictors": 4,
+  "optional_predictors": 0,
+  "underlying_cases": 200,
+  "presentations_per_predictor": 400,
+  "probability_values_per_predictor": 800,
+  "raw_presentations": 1600,
+  "raw_probability_values": 3200,
+  "rules": {
+    "p3": "native-conditional-answer-symbol-T1",
+    "m7": "native-conditional-answer-symbol-T1",
+    "msmarco-start": "native-scalar-T1",
+    "m9": "native-scalar-T1"
+  },
+  "metrics": {
+    "normalization_tolerance": 1e-06,
+    "normalize_by_actual_sum": true,
+    "clipping": false,
+    "nll": "mean negative natural log target probability",
+    "brier": "mean sum over both options",
+    "tie_break": "first input option",
+    "strict_both": "singleton target maximum in both orders"
+  },
+  "cutoff": {
+    "evidence_cutoff_utc": "2026-11-12T06:30:00+00:00",
+    "lead_published_at": "2026-11-12T06:32:54.025311+00:00",
+    "lead_message": "719f81b6-d8f2-42e2-bd54-7770c21cc9b2",
+    "no_quality_or_mean_result_at_cutoff": true,
+    "no_optional_substitution_from_post_cutoff_scores": true
+  },
+  "scope": "Phase-specific descriptive source-label agreement; no pooled headline, calibration, architecture-cause or promotion claim.",
+  "split": "final",
+  "cwd": "/Users/destiner/Code/jeff/.worktrees/evaluation",
+  "commands_are_historical_metadata_only": true,
+  "executed_scoring": [
+    {
+      "candidate": "p3",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/p3.json",
+        "f14a50bad493b706705253fee5a73e5fa33fa544664ab90bfe181afd0d0ef61a"
+      ],
+      "started_at": "2026-11-12T07:30:34.181308+00:00",
+      "ended_at": "2026-11-12T07:30:34.245257+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "m7",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/m7.json",
+        "95215e4f5ac33b2ff8429a39d31b9d55972faf78ef5b063837600bf50c4f42a8"
+      ],
+      "started_at": "2026-11-12T07:30:34.246205+00:00",
+      "ended_at": "2026-11-12T07:30:34.300546+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "msmarco-start",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/msmarco-start.json",
+        "39bcf63604c951a90c905bd99115063c76177893ffe2adbe67a45bf19919b929"
+      ],
+      "started_at": "2026-11-12T07:30:34.301344+00:00",
+      "ended_at": "2026-11-12T07:30:34.354072+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "candidate": "m9",
+      "command": [
+        "/Users/destiner/Code/jeff/.worktrees/evaluation/.venv/bin/python",
+        "-B",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+        "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/m9.json",
+        "568c40e1db35c1c31a84397141029c5b8f156bd8aa1f97f8dcab57b10a6bd467"
+      ],
+      "started_at": "2026-11-12T07:30:34.354745+00:00",
+      "ended_at": "2026-11-12T07:30:34.407905+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_pinlocks": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/pins.json",
+      "bytes": 7779,
+      "sha256": "080769c495bdd36b043e3e190754636455a9dcad16d46b64fcc60502e16899b1"
+    }
+  ],
+  "safe_evidence": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-public-v1/report.md",
+      "bytes": 4421,
+      "sha256": "24e4d707463d66cbba8f6d0909953c064d9631318ba55800ef9ab632f273230a"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-public-v1/summary.json",
+      "bytes": 36300,
+      "sha256": "287e2803231805bbe9d4d9803ce8402c02855bbb1a7670ad6e1a621f0d59fa89"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/binding-review.json",
+      "bytes": 4254,
+      "sha256": "9b12ad423023c2ad003050044a229461200b17cb5443b7f4b0509f79a3669035"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/supplemental-review.json",
+      "bytes": 232,
+      "sha256": "b8092496cf9580750022cc82a5d35ecbbdf8f52076bcb862541d2b8dfe37d4c4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/scoring-execution.json",
+      "bytes": 2712,
+      "sha256": "2b144b3edc3dc8d6bc85054e8517ffe1384ad132d36a762f4f7eecca245f21a4"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-analysis-v1/session-end.json",
+      "bytes": 550,
+      "sha256": "6758a338ba3e87000b833c668e221f0f3b7917f26e590de6b5d9c1129f568160"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-owner-integrity-v1/receipt.json",
+      "bytes": 2719,
+      "sha256": "865297aa7703ceb1e1abef2e959129379bac47e2273cd5494a7c62e63fc70959"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-lock-adoption-v1/receipt.json",
+      "bytes": 1543,
+      "sha256": "38a622d98bc9991899e79f8226b0516e37bf4fa11ad48012f006962e19ff9e81"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/README.md",
+      "bytes": 1523,
+      "sha256": "6f2e6cfe9b8122cc57db73e0069860536ae8115e324d9e4a1d55f3f18f293d2e"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/correction.json",
+      "bytes": 1047,
+      "sha256": "9dffed4190b04b79e0a060509d10ace56ffde01ecba5b08b907c431786a94b53"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/pins.json",
+      "bytes": 7779,
+      "sha256": "080769c495bdd36b043e3e190754636455a9dcad16d46b64fcc60502e16899b1"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/score-confirmation.py",
+      "bytes": 24520,
+      "sha256": "37f0af43d4f8e36e5198817510712ce6491ad5aad3b9182ef2e73d1140a901e2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-scoring-preparation-v2/source.diff",
+      "bytes": 1279,
+      "sha256": "768624bed2758ce6ba7fd22ac6e233ebf91cf37cadd38f2ffc7a85b49e9bf273"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/e13-confirmation-20261112-01/delivery-summary.json",
+      "bytes": 4285,
+      "sha256": "e0d389ad680b673a19ae317df038f3ca7a4857d3be4c75398afe4cb592faed3f"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-report.md",
+      "bytes": 5987,
+      "sha256": "fda3b0b6d4210248f754263377a203b76a5e3ad6fd1155b3d88b1488f6967c04"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-receipt.json",
+      "bytes": 5377,
+      "sha256": "90ce750a6cc8012410aad34b63bbfb3d2cff283bfcc2c7e8e3f1857a02aa1ad2"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/review-receipt.json",
+      "bytes": 41273,
+      "sha256": "6204cd0987d44fcfcaf1dfad0603670f1f8129265865fdc47e2fe4eb9f6e62bd"
+    }
+  ],
+  "candidate_bindings": {
+    "p3": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/p3.json",
+      "sha256": "f14a50bad493b706705253fee5a73e5fa33fa544664ab90bfe181afd0d0ef61a",
+      "bytes": 415971
+    },
+    "m7": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/m7.json",
+      "sha256": "95215e4f5ac33b2ff8429a39d31b9d55972faf78ef5b063837600bf50c4f42a8",
+      "bytes": 415981
+    },
+    "msmarco-start": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/msmarco-start.json",
+      "sha256": "39bcf63604c951a90c905bd99115063c76177893ffe2adbe67a45bf19919b929",
+      "bytes": 416237
+    },
+    "m9": {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-bindings-v1/m9.json",
+      "sha256": "568c40e1db35c1c31a84397141029c5b8f156bd8aa1f97f8dcab57b10a6bd467",
+      "bytes": 415983
+    }
+  },
+  "source_pinlock_sha256": "080769c495bdd36b043e3e190754636455a9dcad16d46b64fcc60502e16899b1",
+  "actual_activation": "35408451-4b31-4dee-85b1-ddac0e586dbc",
+  "runtime_revision": "f1fee32df63ac4bb359e09e63c93fb7f358b82f1",
+  "private_reference_pins_as_recorded_only": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/references.jsonl",
+      "sha256": "9f28ccdf4a04a9b5b140ab31f4e6fcd94a1d1840b4303f73e21583462dfd1c68",
+      "bytes": 218008
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/native.jsonl",
+      "sha256": "cad6b11d59c4c9b9b15b6f18821c9b6aedb598672bcf0521601f75a574c543c0",
+      "bytes": 83014
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/reversed.jsonl",
+      "sha256": "90ece90b54c77d7a0e91cea6a2e9a3f078b0f9336c19c1ecb996957436b2473a",
+      "bytes": 87414
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/pairs.json",
+      "sha256": "8bff843747136848f1c1fe6ab662c9b7af17c5a24507fa289d527f0a4cac9747",
+      "bytes": 88403
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/admission.json",
+      "sha256": "1920c31abd0d17b0b52f34c512ec8224b38ccb511c1d3805a797e867dc8a4a7f",
+      "bytes": 357856
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/inference-handoff.json",
+      "sha256": "3607abf3e6677f6d38a84df5e1d2c6265eb4be4339b53b96ef98fe5b9ef8fd4e",
+      "bytes": 1405
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/evaluation/final/e13-external-v1/confirmation-inputs-v1/release-receipt.json",
+      "sha256": "a5bafb9afcaddb70c60f6716730099d1aef31835995166b5621169a5f363f3aa",
+      "bytes": 7656
+    }
+  ],
+  "private_pin_review": "Private pins recorded outside final only; no private payload read or rehash by publication task. Independent numerical review closed with metadata/custody qualifications; not tensor/source/runtime/OS certification.",
+  "independent_arithmetic": {
+    "status": "numerical_pass_with_metadata_qualifications",
+    "vectors": 1600,
+    "values": 3200,
+    "numeric_outcome_fields_bit_exact": 9600,
+    "maximum_absolute_difference": 0.0,
+    "comparisons_checks_including_failed_assertions": 122679,
+    "all_checks_passing": false,
+    "original_safe_aggregate_pending_is_historical_immutable": true,
+    "custody_deviation": "Initial helper tool output disclosed selected case IDs/content contrary to confinement; harness logs unchanged; subsequent proof private. No continuous custody certification.",
+    "safe_closure_pins": [
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-report.md",
+        "bytes": 5987,
+        "sha256": "fda3b0b6d4210248f754263377a203b76a5e3ad6fd1155b3d88b1488f6967c04"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/closure-receipt.json",
+        "bytes": 5377,
+        "sha256": "90ce750a6cc8012410aad34b63bbfb3d2cff283bfcc2c7e8e3f1857a02aa1ad2"
+      },
+      {
+        "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-confirmation-quality-v1/review-receipt.json",
+        "bytes": 41273,
+        "sha256": "6204cd0987d44fcfcaf1dfad0603670f1f8129265865fdc47e2fe4eb9f6e62bd"
+      }
+    ]
+  }
+}
