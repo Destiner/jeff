@@ -40,10 +40,11 @@ def json_line(value):
 
 
 def recipe_path(experiment="m6"):
-    require(experiment in {"m6", "m7", "m8", "m10"}, "unsupported experiment")
+    require(experiment in {"m6", "m7", "m8", "m10", "m12"}, "unsupported experiment")
     return {"m6": RECIPE, "m7": ROOT / "configs/model/m7-qwen-low-lr.json",
             "m8": ROOT / "configs/model/m8-qwen-readout.json",
-            "m10": ROOT / "configs/model/m10-qwen-seed7.json"}[experiment]
+            "m10": ROOT / "configs/model/m10-qwen-seed7.json",
+            "m12": ROOT / "configs/model/m12-qwen-head-lr.json"}[experiment]
 
 
 def recipe(experiment="m6"):
@@ -52,6 +53,8 @@ def recipe(experiment="m6"):
         **FIXED, "schema_version": f"{experiment}.recipe.v1", "learning_rate": 2e-6}
     if experiment == "m10":
         fixed = {**fixed, "seed": 7, "maximum_run_seconds": 2400}
+    if experiment == "m12":
+        fixed = {**fixed, **GUARDS, "learning_rate": 2e-4, "maximum_run_seconds": 590}
     require(set(cfg) == set(FIXED) | set(GUARDS), "unexpected recipe keys")
     require(all(type(cfg[k]) is type(v) and cfg[k] == v for k, v in fixed.items()),
             "only the fixed experiment recipe is supported")
@@ -71,7 +74,7 @@ def source_identity(experiment="m6"):
     paths = git("ls-files").splitlines()
     hashes = {name: p3.digest(ROOT / name) for name in paths if (ROOT / name).is_file()}
     result = {"root": str(ROOT), "revision": git("rev-parse", "HEAD"), "tracked_files": hashes}
-    if experiment in {"m8", "m10"}:
+    if experiment in {"m8", "m10", "m12"}:
         config = str(recipe_path(experiment).relative_to(ROOT))
         executable = {name: digest for name, digest in hashes.items()
                       if name.endswith(".py") or name in {"pyproject.toml", "uv.lock",
@@ -83,7 +86,7 @@ def source_identity(experiment="m6"):
 
 
 def source_binding(source, experiment="m6"):
-    if experiment not in {"m8", "m10"}:
+    if experiment not in {"m8", "m10", "m12"}:
         return source
     return {key: source[key] for key in ("root", "tracked_files")}
 
@@ -227,7 +230,7 @@ def evidence(guard=None, experiment="m6"):
         "schedule_algorithm": f"Random({cfg['seed']}): shuffle rows then options once per row"}
     require(source_binding(source_identity(experiment), experiment) == source_binding(source, experiment),
             "executable source changed during preflight")
-    if experiment in {"m7", "m8"}:
+    if experiment in {"m7", "m8", "m12"}:
         require_m6_schedule(schedule_text(schedule))
     return proof, schedule
 
@@ -334,7 +337,7 @@ def revalidate(audit_dir, guard=None, experiment="m6"):
     audit = read_json(audit_dir / "audit.json")
     require(audit["schema_version"] == f"{experiment}.audit.v1" and audit["status"] == "complete",
             "complete matching experiment audit required")
-    if experiment == "m8":
+    if experiment in {"m8", "m12"}:
         # Recheck immutable dependencies; consume the audited schedule, never reshuffle/replay it.
         text = (audit_dir / "schedule.jsonl").read_text(encoding="utf-8")
         require_m6_schedule(text)
