@@ -13,6 +13,8 @@ A workstream belongs to the project, not to one conversation. Fresh threads and 
 
 ## Bounded continuation after delivery
 
+**Temporary explicit user override:** from2026-11-12T00:30:36Z through08:30:36Z, all six owners remain active/available for the fixed night shift rather than parking after30idle minutes. Check the canonical inbox about every minute and publish useful results promptly; foreground waits are allowed. This is not a daemon or automatic resume. See `artifacts/handoffs/lead/night-20261112/shared.md`. Restore the default below at the fixed end; never abandon active supervision.
+
 Task completion is not automatically the end of an owner turn. This policy supersedes the earlier one-final-chat-per-assignment rule.
 
 1. Publish the delivery immediately in the mailbox, link artifacts/main commit, and record the task disposition. Do not delay useful results until an availability window ends.

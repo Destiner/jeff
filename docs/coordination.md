@@ -1,5 +1,9 @@
 # Workstream ownership and coordination
 
+## Active overnight exception — 2026-11-12 00:30:36–08:30:36 UTC
+
+Timur explicitly requests eight hours of active coordination while AFK, with all six teams monitoring and ready. During this fixed window, owners remain active after delivery and check the canonical inbox roughly every minute; the30-idle-minute parking rule is temporarily superseded, not reset by chatter. No daemon/automatic wake is created. Full initial authority and immediate priorities: `artifacts/handoffs/lead/night-20261112/shared.md`. E8/E9 scoring is ready now; R8/D8 prepare independent public-source exploration/confirmation families; Model/Runtime retain the single ML scheduler and prepare named follow-ons. No blanket new-learning/spend/publication grant. Original final remains sealed. At08:30:36UTC restore ordinary bounded continuation and publish exact handoff/job state; do not abandon a supervised process.
+
 ## LD004: delegated ownership, effective now
 
 Timur identified lead review as the bottleneck. Workstream owners now own their implementation, review, delivery, and in-scope merges to main. This supersedes earlier prompts/rules requiring lead approval for every merge or next task.
