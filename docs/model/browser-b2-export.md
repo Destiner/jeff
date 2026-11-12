@@ -1,9 +1,10 @@
 # BROWSER-B2: actual M10 → FP16 WebGPU scorer
 
-**Source-ready only.** No model load, tokenizer execution, native inference,
-conversion, ONNX export, browser execution, build, test or lint was performed
-while writing this module. Browser compatibility and numerical parity remain
-unmeasured. This is one route, not a quantization/backend experiment ladder.
+**Native export completed; browser acceptance is separate.** The single export
+at source `c99cc5d480017896d4a8302ac66e5ee3e84d9fbd` completed on
+2026-11-12 at 12:17:02 UTC. See [the retained execution record](browser-b2-results.md).
+This is one FP16 route, not a quantization/backend experiment ladder. Source-only
+preparation did not execute models; the later explicitly activated attempt did.
 
 ## Activation interface
 
@@ -84,7 +85,7 @@ rows and entered/completed counters are durably recorded in `receipt.json`.
 | Weights | Full trained M10 backbone and complete trained embedding converted to FP16; six rows copied **from the actual loaded trained output head** into FP16 projection |
 | Readout | Final-normalized backbone hidden state at the last input position → FP16 linear projection → float32 output cast |
 | Attention | Eager **export only**; dynamic 4-D additive causal mask and explicit position/cache positions; no KV cache |
-| Runtime transform | Slice first K output entries, stable FP32 T1 softmax, map back to original ordered option IDs |
+| Runtime transform | Slice first K output entries, stable T1 softmax using JavaScript Number arithmetic, map back to original ordered option IDs |
 
 Stock native Qwen applies its linear head to that same final-normalized hidden
 state. Selecting six rows computes exactly those six components in real
