@@ -36,7 +36,9 @@ Defaults resolve artifacts through Git's common directory, not the working direc
 - Export root: `artifacts/release/browser-b1-20261112-01/export-01/assets`.
 - Descriptor: tracked `sdk/models/m9.json`.
 
-These local artifacts are not downloaded by the command. A checkout without them needs an explicitly provided compatible export. Override with `--model-dir ABSOLUTE_EXPORT_ROOT --descriptor ABSOLUTE_MODEL_JSON`.
+These local artifacts are not downloaded by the command. A fresh public clone does **not** contain trained weights. It needs an explicitly provided compatible export: `--model-dir ABSOLUTE_EXPORT_ROOT --descriptor ABSOLUTE_MODEL_JSON`.
+
+A local prebuilt handoff is retained at `artifacts/infra/final-sprint-20261112-01/local-kit/`, with adjacent `jeff-local-kit-20261112.tar` (104,171,520B, SHA256 `8e6c8d04a0ebc4d92bed4b97336871d0adb5c0ef79bd886269fd8e2d31901ce4`). This ignored local artifact is **not a public download**. From its extracted directory, `bun web/scripts/serve.mjs --port 4174 --duration-seconds 7200` serves the exact built apps/model without installation, Python or rebuilding. Its separate15-second static launch, four HTTP byte checks and automatic exit were observed; no model inference was performed by that packaging check.
 
 `web/model-config.json` selects the label, asset/ORT base paths and expected model ID. The copier rejects a descriptor that differs from that selection or the supported FP32/256-token/state-question-candidate/T1 encoder contract. It verifies descriptor pins before copying only `model.json`, the model, two tokenizer files and two exact installed ORT files. Existing matching outputs/provenance are reused; conflicts/partials are preserved and rejected, not overwritten. Installed ORT symlinks are explicitly resolved for Bun's isolated linker; model/output paths still reject symlinks. Local provenance stays outside the served tree.
 
@@ -51,6 +53,8 @@ No P11 fixture is required for ordinary SDK/app use. The legacy optional `--inpu
 - Returned scores require exact option coverage, finite[0,1] values and sum deviation≤1e-6. The host does not clip or renormalize them. Exact ties remain explicit and input order is retained.
 - Queue/chat share a lazy session within each page; the SDK serializes its work. Page exit aborts the owned session. Back/forward restoration keeps in-memory UI while creating a fresh lazy session.
 - Ordinary user app use does not require the agents' internal experiment reservations.
+
+Queue/chat expose `window.jeffApp.history`, `.getState()` and `.dispose()` for in-memory inspection and owned-session cleanup. History is a cloned snapshot of successful SDK returns: exact input, raw prediction, engine metadata and wall time. There is no alternate prediction entry point, persistence or automatic execution. UI rendering/errors remain separate from raw receipts; state describes this page's session, not global browser memory.
 
 The playground retains a programmatic bridge for explicit local use:
 
@@ -76,6 +80,8 @@ Current final-sprint evidence:
 - The first controller attempt stopped before contacting the browser because of preflight time arithmetic;2seconds were charged. Explicitly renewed online execution charged4seconds. The closed chain total is6/300seconds; unused seconds authorize nothing.
 - Its scoped10-file cache became ready and the server actually stopped at19:14:04.712124UTC. Runtime received the stop after its latest capped start, so **fresh server-unavailable navigation/inference was not attempted**. New SDK/product-graph offline inference remains unverified. Historical B2 success does not fill that gap.
 
+A subsequent exact six-case final-app packet and capture-only consumer build (`b7de809`, required graph `19876c1858b65fc905679d25`) were prepared. The actual three-page readiness arrived late and Model issued no activation before its20:15 availability cutoff. **Final production-button/bridge inference was unattempted**, not passed or failed numerical parity. No new offline phase was activated. Prepared controls/references remain future handoff material, not standing permission to run.
+
 Local receipts: `artifacts/release/final-sdk-20261112-01/`; Infra staging/composition/lifecycle/build evidence: `artifacts/infra/final-sprint-20261112-01/`. Independent comparison was delivered by Evaluation in messagee5271405-8393-40b4-9f24-0fef8972b0b4. Later publication or UI builds are not retroactive execution provenance.
 
 ### Example and capability limits
@@ -84,8 +90,10 @@ The queue uses four curated S1 routine workspace inputs; both boundary inputs re
 
 S1 workspace agreement was9/12preferred and11/12acceptable across six cases/two renderings, not twelve independent cases. S2 M9 matched13/16 authored sentiment references, with negative-class agreement only2/4. These small synthetic development checks do not establish general accuracy, calibration or socially appropriate reactions. No protected64cases or targets are bundled.
 
+M9 remains the selected model. M13 completed its one learning endpoint and improved the small primary comparison, but independently checked retention probability-loss gates failed; it was not exported or substituted into selected screens. See [`docs/evaluation/final-sprint-results.md`](../docs/evaluation/final-sprint-results.md).
+
 The original B1/B2 M9 worktree, evidence and accepted historical server-unavailable proof remain separate; see [`docs/runtime/browser-b2.md`](../docs/runtime/browser-b2.md) and [`docs/evaluation/browser-b2.md`](../docs/evaluation/browser-b2.md). Qwen is not a normal app/SDK choice; its earlier initialized-but-pressure-stopped attempt returned no predictions or parity result and is not retried here.
 
 ## Notices
 
-`web/public/notices/` retains the bounded upstream notices and inventory from B2. It is not exhaustive binary attribution, a first-party redistribution grant, dataset/teacher/demo-text rights clearance or permission for public release. Current serving is local only.
+`web/public/notices/` retains the bounded upstream notices and inventory from B2. It is not exhaustive binary attribution, a first-party redistribution grant, dataset/teacher/demo-text rights clearance or permission for public release. Current serving is local only. The source repository was separately approved for public visibility; the ignored model-assets/local-kit artifacts were not approved for public upload.
