@@ -257,6 +257,8 @@ def execute(args, job):
 
     torch.set_num_threads(4)
     torch.set_num_interop_threads(4)
+    require(torch.get_num_threads() == torch.get_num_interop_threads() == 4, "four CPU threads required")
+    job.receipt["actual_threads"] = {"intraop": torch.get_num_threads(), "interop": torch.get_num_interop_threads()}
     job.stage("prepare_exact_three")
     tokenizer = AutoTokenizer.from_pretrained(str(CHECKPOINT), local_files_only=True, trust_remote_code=False)
     prepared = prepare(tokenizer, rows)
@@ -408,6 +410,31 @@ def execute(args, job):
     require(job.receipt["tracing_forwards"] == {"entered": 1, "completed": 1}, "exactly one tracing forward required")
     require(output.is_file() and 0 < output.stat().st_size < 2_000_000_000, "invalid single-file ONNX size")
     output.chmod(0o444)
+    job.stage("inspect_actual_onnx_metadata")
+    del wrapper, model, head, embedding, selected, example
+    import gc
+    gc.collect()
+    import onnx
+    graph = onnx.load(str(output), load_external_data=False)
+    def tensor_schema(value):
+        tensor = value.type.tensor_type
+        return {"name": value.name, "element_type": tensor.elem_type,
+                "shape": [d.dim_value if d.HasField("dim_value") else d.dim_param for d in tensor.shape.dim]}
+    graph_metadata = {"ir_version": graph.ir_version,
+                      "opsets": [{"domain": x.domain, "version": x.version} for x in graph.opset_import],
+                      "operators": sorted({n.domain + ":" + n.op_type for n in graph.graph.node}),
+                      "inputs": [tensor_schema(x) for x in graph.graph.input],
+                      "outputs": [tensor_schema(x) for x in graph.graph.output],
+                      "initializers": len(graph.graph.initializer),
+                      "external_initializers": sum(bool(x.external_data) for x in graph.graph.initializer)}
+    require(len(graph_metadata["inputs"]) == 1 and graph_metadata["inputs"][0]["name"] == "input_ids" and
+            graph_metadata["inputs"][0]["element_type"] == onnx.TensorProto.INT64 and
+            len(graph_metadata["outputs"]) == 1 and graph_metadata["outputs"][0]["name"] == "logits" and
+            graph_metadata["outputs"][0]["element_type"] == onnx.TensorProto.FLOAT and
+            graph_metadata["external_initializers"] == 0, "actual ONNX interface differs from frozen route")
+    job.receipt["export_contract"]["actual_graph"] = graph_metadata
+    del graph
+    gc.collect()
     job.stage("hash_new_onnx_once")
     job.inventory(output)
     contract_path = job.root / "export-contract.json"
