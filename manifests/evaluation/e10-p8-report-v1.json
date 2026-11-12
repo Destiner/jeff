@@ -1,0 +1,70 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "milestone": "E10",
+  "status": "completed-independent-evaluation",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e10-seen-mechanisms.md",
+    "sha256": "cff74d4649a8f1bb3eae86f7a0a31059a8d610eaf5e1e3b9227f8322a15bf8fc",
+    "bytes": 12446
+  },
+  "executed_bindings": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e10-p8-v1.json",
+    "sha256": "18a12e68fe8f11e2e87f6170ec6c762dee7aa4a7e56f932d0e85c25c56295993",
+    "bytes": 2121
+  },
+  "execution_receipt": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-d3-preparation-v1/execution-01/receipt.json",
+    "sha256": "101d8e25baf534fda5b520a87c41fda1cb12161b63e4eb4598e928a3454188a2",
+    "bytes": 2474
+  },
+  "source_preparation": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-d3-preparation-v1/preparation-lock.json",
+    "sha256": "807e40348ae2abbf66816823bdb0ba090b5d6ba3288693cde8eb0ad90d92cdad",
+    "bytes": 5923
+  },
+  "historical_recipe": {
+    "path": "/Users/destiner/Code/jeff/configs/evaluation/e4-d3-v1.json",
+    "sha256": "282eba8f6ecca691b0a0c30a750519f2405d6e62d44edaf8501d9054ca2db62c",
+    "bytes": 1895
+  },
+  "independent_arithmetic": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-analysis-v1/independent-audit-receipt.json",
+    "sha256": "fe063c7f1a370edc8ea520b87bcb77a922c2896436deeb348e220eacf19562c0",
+    "bytes": 174128
+  },
+  "analysis_completion": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-analysis-v1/review-completion.json",
+    "sha256": "a4b381da510c0af4c12bf10a7021d01b35727af7295dca7f27bd1b32cff801d9",
+    "bytes": 11273
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-owner-integrity-v1/receipt.json",
+    "sha256": "ecf3fc214f2d58449f9e643657281563448e06ce71fbc230c196fd8ab444da70",
+    "bytes": 9365
+  },
+  "runtime_binding": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-p8-binding-v1/receipt.json",
+    "sha256": "d898ba759c8e94816d2caceb5e3b5da6e3381eb99b7b2fec03ee0760444d213c",
+    "bytes": 22905
+  },
+  "aggregate_research_export": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e10-r11-aggregate-v1/receipt.json",
+    "sha256": "bb723ffa1a4741aa90d56f9f8cbf56c611838e3f848131e6c447d41152c58b5c",
+    "bytes": 329
+  },
+  "population": {
+    "original_cases": 96,
+    "policies": 48,
+    "intentionally_seen_mechanisms": 8,
+    "reversals": 0
+  },
+  "new_predictors": [
+    "p3_frozen",
+    "m7_seed42",
+    "m9_duration12"
+  ],
+  "retained_predictors": 6,
+  "adoption": "Lead predeclared before P8; owner adopted by01:03UTC before outcomes. Append preparation01:31-01:33 occurred after outputs existed without inspecting them. Source review was unexecuted, then actual scoring completed01:36:31.",
+  "interpretation": "Componentwise mixed proper-score exceptions with weak seen-mechanism transfer; no semantic/architecture/significance/calibration/promotion claim. Two cases/policy are not reversals.",
+  "additional_actual_pending_GBP": 0
+}
