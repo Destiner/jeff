@@ -1,0 +1,301 @@
+{
+  "schema_version": "m10.results-inventory.v1",
+  "status": "TRAIN and repaired P9 complete; E11 development interpretation pending",
+  "artifact_base": "/Users/destiner/Code/jeff/artifacts",
+  "execution_revision": "a23c04cef0bff3e87deaffc3b8f5fed73ea818ee",
+  "seed": 7,
+  "schedule_sha256": "207365e681aa22da7904f2c555cf4dd207b776c5ecc8f77a1ac141b17b3e3236",
+  "actual_root": "model/m10-qwen-seed7-20261112-02",
+  "preserved_preload_failure_root": "model/m10-qwen-seed7-20261112-01",
+  "checkpoint_format": "v1",
+  "checkpoint_files": {
+    "LICENSE": {
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    "README.md": {
+      "sha256": "b19c806a904db6dc878a0462e70b551f6b7ac78dfbb88c2eb966ca2b9109ae15",
+      "bytes": 4917
+    },
+    "config.json": {
+      "sha256": "e8d5e8d6aaf17311a89b78e3914fca868cc77312513a276b1701e22fb73d62a3",
+      "bytes": 1227
+    },
+    "generation_config.json": {
+      "sha256": "da7d43d773bb1c2606bbd062d9af2e8aa2b73de104b1f8f0a93e31bf3b1426a3",
+      "bytes": 242
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "model.safetensors": {
+      "sha256": "751ecdc0433b21d200af0e38966b5b28107dc9ff2267977f0eae2e936cb5131d",
+      "bytes": 1976163472
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    }
+  },
+  "parent_verified_pins": {
+    "train-process.json": "50e5542f332e16cbd75d69b9fd7bd36448d0edf2c74c36b9435457eca2194877",
+    "training/checkpoint-manifest.json": "765d802270b8c0b090e9206c3e52f12e76ea7e224dbb4f07c9cc3c709aa6b15a",
+    "training/receipt.json": "168dd50fc9b6907073562948726acbfa690ccae6f11d95ba987b31401a4819ea",
+    "training/fit-before.jsonl": "faede3bd2a1b1a48d59c34582f050a606d3f6e203fb9eb8932476d053a670946",
+    "training/fit-after.jsonl": "3981ea3178c77e935f7bc53c308e30a5715c5fc0e471960fff9ef855c80b671b",
+    "training/online.jsonl": "dc64ea1be15cc7bd525c7a97be9cb6042b2706ecc1d4d11a2e20afa52d1b2117",
+    "training/gradient-norms.jsonl": "f10c92e3b969b04cbc2f618998b1ba29ae9cca34ac857afd777aafbd5d03bb09",
+    "training/ATTEMPT.json": "b275064fc42f780653e885bcc69221e31dce78944a61b0b4bed9d43d7eda9758"
+  },
+  "parent_verification": "model/m10-qwen-seed7-20261112-02/checkpoint-ready.json",
+  "process": {
+    "schema_version": "m10.process.v1",
+    "invocation_id": "11f5a2973dda49abac531fd7b753d09a",
+    "job": "train",
+    "invocation_sha256": "739375669a30c1b510c5759577c6e35f2c17632ed690df3339fe33ccd81f0a0a",
+    "child_pid": 61309,
+    "returncode": 0,
+    "success": true,
+    "timeout": false,
+    "max_sampled_process_rss_bytes": 2813263872,
+    "max_sampled_rss_by_pid": {
+      "61309": 20185088,
+      "61312": 2813263872,
+      "61340": 3850240
+    },
+    "rss_limit_per_process_bytes": 17179869184,
+    "qualification": "Sampled current per-process RSS, never sum RSS or driver. Controller owns lifetime RSS, MPS driver <=16GiB and headroom >=2GiB. OS deadline targets, not realtime guarantees.",
+    "process_wall_seconds": 718.6951539576985,
+    "aggregate_process_seconds": 728.1505363737233,
+    "process_group_absent": true,
+    "pending_signal": null,
+    "completed_at": "2026-11-12T02:18:06.504461+00:00"
+  },
+  "producer_fit_summary": {
+    "fit_before": {
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 2084.590699602053,
+        "agreements": 777,
+        "predicted_position_counts": {
+          "2": 448,
+          "0": 408,
+          "3": 282,
+          "1": 352,
+          "5": 5,
+          "4": 5
+        },
+        "target_position_counts": {
+          "1": 387,
+          "0": 412,
+          "3": 253,
+          "2": 431,
+          "4": 16,
+          "5": 1
+        },
+        "mean_ce": 1.3897271330680354,
+        "agreement": 0.518
+      },
+      "by_family": {
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 1046.5131785284175,
+          "agreements": 174,
+          "predicted_position_counts": {
+            "2": 144,
+            "3": 90,
+            "0": 135,
+            "1": 131
+          },
+          "target_position_counts": {
+            "1": 121,
+            "0": 142,
+            "3": 121,
+            "2": 116
+          },
+          "mean_ce": 2.093026357056835,
+          "agreement": 0.348
+        },
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 860.245532877394,
+          "agreements": 167,
+          "predicted_position_counts": {
+            "0": 153,
+            "3": 119,
+            "1": 80,
+            "2": 148
+          },
+          "target_position_counts": {
+            "1": 135,
+            "3": 60,
+            "2": 170,
+            "0": 134,
+            "4": 1
+          },
+          "mean_ce": 1.720491065754788,
+          "agreement": 0.334
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 177.83198819624158,
+          "agreements": 436,
+          "predicted_position_counts": {
+            "1": 141,
+            "0": 120,
+            "2": 156,
+            "3": 73,
+            "5": 5,
+            "4": 5
+          },
+          "target_position_counts": {
+            "1": 131,
+            "0": 136,
+            "2": 145,
+            "3": 72,
+            "4": 15,
+            "5": 1
+          },
+          "mean_ce": 0.35566397639248315,
+          "agreement": 0.872
+        }
+      }
+    },
+    "fit_after": {
+      "overall": {
+        "rows": 1500,
+        "ce_sum": 624.0818759244926,
+        "agreements": 1214,
+        "predicted_position_counts": {
+          "1": 331,
+          "0": 310,
+          "2": 647,
+          "3": 196,
+          "4": 15,
+          "5": 1
+        },
+        "target_position_counts": {
+          "1": 387,
+          "0": 412,
+          "3": 253,
+          "2": 431,
+          "4": 16,
+          "5": 1
+        },
+        "mean_ce": 0.4160545839496617,
+        "agreement": 0.8093333333333333
+      },
+      "by_family": {
+        "sentiment": {
+          "rows": 500,
+          "ce_sum": 61.81059641574939,
+          "agreements": 483,
+          "predicted_position_counts": {
+            "1": 119,
+            "0": 146,
+            "3": 121,
+            "2": 114
+          },
+          "target_position_counts": {
+            "1": 121,
+            "0": 142,
+            "3": 121,
+            "2": 116
+          },
+          "mean_ce": 0.12362119283149878,
+          "agreement": 0.966
+        },
+        "rule_application": {
+          "rows": 500,
+          "ce_sum": 551.8965517557226,
+          "agreements": 233,
+          "predicted_position_counts": {
+            "1": 83,
+            "2": 388,
+            "0": 26,
+            "3": 3
+          },
+          "target_position_counts": {
+            "1": 135,
+            "3": 60,
+            "2": 170,
+            "0": 134,
+            "4": 1
+          },
+          "mean_ce": 1.1037931035114452,
+          "agreement": 0.466
+        },
+        "intent": {
+          "rows": 500,
+          "ce_sum": 10.37472775302058,
+          "agreements": 498,
+          "predicted_position_counts": {
+            "1": 129,
+            "0": 138,
+            "2": 145,
+            "3": 72,
+            "4": 15,
+            "5": 1
+          },
+          "target_position_counts": {
+            "1": 131,
+            "0": 136,
+            "2": 145,
+            "3": 72,
+            "4": 15,
+            "5": 1
+          },
+          "mean_ce": 0.020749455506041157,
+          "agreement": 0.996
+        }
+      }
+    }
+  },
+  "independent_evaluation": {
+    "root": "evaluation/e11-m10-control-review-v1",
+    "report": "findings.md",
+    "receipt": "receipt.json",
+    "check_count": 65,
+    "failed_check_count": 0,
+    "saved_vectors": 3000,
+    "development_status": "not complete"
+  },
+  "handoffs": [
+    "handoffs/model/20261112T0221-M10-checkpoint-P9-activated.md",
+    "handoffs/model/20261112T0301-P9-preload-failure-M12-tail.md"
+  ],
+  "p9_failed_return": "model/night-20261112/p9-failed-return.json",
+  "p9_original_attempt": "release/p9-m10-20261112-01",
+  "p9_completed_attempt": "release/p9-m10-20261112-02",
+  "p9_verified_return": {
+    "path": "model/m10-qwen-seed7-20261112-02/p9-return.json",
+    "sha256": "5cb8abc88941c17290b9ace216d7b7d697c11d58d2363923642e0f476b23bbca",
+    "status": "verified and closed",
+    "forward_count": 627,
+    "startup_count": 3,
+    "scored_decisions": 624,
+    "option_probabilities": 2390,
+    "failed_attempt_seconds": 309.808853250,
+    "successful_attempt_conservative_seconds": 41,
+    "combined_p9_operational_seconds": 350.808853250,
+    "renewed_p9_total_ceiling_seconds": 619.808853250,
+    "model_plus_p9_charged_seconds": 1078.9593896237234,
+    "maximum_normalization_error": 1.394355422235094e-7,
+    "renewal_authority": "34cfc3b3-ee7f-465b-84ae-064aa922c18c",
+    "activation": "c0cba4dc-a8a5-46c3-910f-b7150fc65262"
+  },
+  "additional_spend_gbp": {
+    "actual": 0,
+    "pending": 0
+  },
+  "qualification": "Inventory copied from parent verification, not new weight attestation or loader contract. No vectors/per-row losses included. P9 execution is complete; E11 independent development interpretation remains pending. No promotion or further execution authority."
+}
