@@ -1,6 +1,6 @@
-# Training data
+# Data
 
-The Data workstream owns only `src/jeff/data/`, `configs/data/`, `manifests/data/`, and `docs/data/`. Follow root `AGENTS.md` and contracts v0.1. Generated content is outside Git in `JEFF_ARTIFACTS_DIR/data/`; no final-evaluation data is consumed.
+The Data workstream owns only `src/jeff/data/`, `configs/data/`, `manifests/data/`, and `docs/data/`. Follow root `AGENTS.md` and contracts v0.1. Training content is outside Git in `JEFF_ARTIFACTS_DIR/data/`; ordinary Data tooling never consumes final-evaluation storage. D8 has a narrow, explicit construction-only exception for a new sealed external population, described below; it does not relax training or old-final guards.
 
 ## Published datasets
 
@@ -14,6 +14,12 @@ The Data workstream owns only `src/jeff/data/`, `configs/data/`, `manifests/data
 The shared root is `/Users/destiner/Code/jeff/artifacts`. Each dataset also has a standalone `manifest.json` below `data/<dataset-id>/` (D3 uses `data/data-d3-seen-rules-v1/release/manifest.json`), so Model need not merge data code to consume it. **Use the manifest, not a directory glob.** Original sentiment producer rows are retained for provenance but excluded in favor of corrected `sentiment-r2` rows. Do not concatenate tiny and pilot automatically.
 
 See [v1 quality and provenance](pilot-v1.md), [v2 delivery and limitations](pilot-v2.md), and [D3's separate diagnostic and limitations](d3-seen-rules-v1.md). D3 has 96 decisions across 48 new policies and eight deliberately trained mechanisms; it and all derivatives are permanently training-excluded. V2 contains v1: do not concatenate the two manifests. Report inherited versus new validation strata separately. Small hashed manifests/configuration live in Git; JSONL, authored source cases, generation scripts, group allocations, reviewer decisions, and detailed reports remain in artifact storage. The Git checkout alone does not contain the training rows.
+
+## Evaluation-only external populations
+
+[D8 source-preserving external populations](d8-external-v1.md) provide200exploration cases (`validation`) and200sealed confirmation cases (`final`), each100COPA/100WinoGrande. Both and all derivatives are permanently `validation_only_never_train`. Metadata mirrors are `manifests/data/d8-external-exploration-v1.json` and `manifests/data/d8-external-confirmation-v1.json`; use the separate canonical manifests in the D8 document, never concatenate them into training.
+
+D8's two new families are intentionally unsupported by the training validator. Evaluation alone emits stripped native/reversed consumer inputs; reference metadata is not inference authority. Source/label/rights/pretraining qualifications, fixed selection, actual audit evidence and protected access boundaries are in the D8 document. The examples and licenses remain in local artifact storage, not in Git.
 
 ## Setup, validation, build
 
@@ -63,4 +69,4 @@ Do not open Evaluation data to broaden this audit. Evaluation owns public-probe 
 
 ## Costs and scope
 
-Additional spend: **£0 actual, £0 pending**. Existing approved agent access only; subscription/token costs were not separately metered. No separately billed API or cloud jobs, no large models, and no Model compute slot used. Original synthetic English; no private records or external datasets. Existing provider terms apply; redistribution rights were not independently reviewed and no blanket public-domain/license claim is made.
+Additional spend: **£0 actual, £0 pending**. Existing approved agent access only; subscription/token costs were not separately metered. No separately billed API or cloud jobs. Pilot/D3 content is original synthetic English, not private records; existing provider terms apply and no blanket public-domain/license claim is made. D8 instead preserves approved public-source content with explicit attribution/rights qualifications and a separately scheduled Runtime tokenizer-only audit. Data performed no D8 model/tokenizer load or inference. Local source grants are not blanket public-redistribution clearance.

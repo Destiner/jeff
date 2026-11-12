@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "d8-external-exploration-v1",
+  "usage": "validation_only_never_train",
+  "sources": {
+    "copa-original": {
+      "revision": "14496936a3bed7b386aa8f517656d6f91e3fa77a",
+      "url": "https://raw.githubusercontent.com/asgordon/asgordon.github.io/14496936a3bed7b386aa8f517656d6f91e3fa77a/downloads/COPA-resources.tgz",
+      "license": "BSD-2-Clause",
+      "attribution": "Roemmele, Bejan and Gordon, Choice of Plausible Alternatives; University of Southern California copyright2010",
+      "license_evidence": "/Users/destiner/Code/jeff/artifacts/data/d8-20261112T004100Z/source-adapters/docs/copa-author-page.html"
+    },
+    "winogrande-1.1": {
+      "revision": "1.1;GCS generation1600272206460138",
+      "url": "https://storage.googleapis.com/ai2-mosaic/public/winogrande/winogrande_1.1.zip?generation=1600272206460138",
+      "license": "CC-BY-2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Sakaguchi, Le Bras, Bhagavatula and Choi, WinoGrande: An Adversarial Winograd Schema Challenge at Scale (2019/2020)",
+      "license_evidence": "/Users/destiner/Code/jeff/artifacts/data/d8-20261112T004100Z/public-sources/winogrande-1.1/release-README.md"
+    }
+  },
+  "shards": [
+    {
+      "path": "data/d8-external-v1/commonsense_causal_choice.jsonl",
+      "split": "validation",
+      "sha256": "07a48334821ee8f1ae90d9ac60edbef38ca80150bc32dbd8692befbc2d1b9fe0",
+      "rows": 100
+    },
+    {
+      "path": "data/d8-external-v1/coreference_cloze.jsonl",
+      "split": "validation",
+      "sha256": "054ccb43b154f798e4cbf9b505ef330cc771bf5c15393c0d9c0e8aa5d5862e7b",
+      "rows": 100
+    }
+  ]
+}
