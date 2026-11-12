@@ -1,6 +1,25 @@
 # Workstream ownership and coordination
 
-## Browser demo continuation — 2026-11-12
+## Final parallel sprint — 2026-11-12, dispatched17:45UTC
+
+**Current plan: [final sprint](final-sprint-20261112.md).** This supersedes the completed B1/B2/S1 task windows, not their retained evidence. Timur authorized parallel SDK/demos, failure diagnosis and preparation for one final improvement opportunity before23:59 London. Most owners require actual manual resume; dispatch is not execution.
+
+| Owner | Current bounded assignment |
+| --- | --- |
+| Runtime/Release | Extract private `sdk/` package, exact existing M9 worker/API/types, separate assets; real consumer build. |
+| Infra | Minimal dark request queue, Slack-style sentiment reactions and generic playground; root private JS workspace/single lock, thin SDK hosts. |
+| Model | Serialize original-encoder/M10 comparisons plus S2; jointly select at most one fixed-endpoint compatible encoder improvement; export/browser slots. |
+| Research | Focused code/data/transfer/literature diagnosis; ranked intervention, not an open-ended survey. |
+| Data | Prepare240fresh+240original-TRAIN replay examples; independent scenario groups and exclusion checks; no learning itself. |
+| Evaluation | S2 direct-sentiment16, diagnostic analysis, independent private64-case freeze and predeclared final/retention acceptance. |
+
+Decision18:45; data/evaluation ready19:15; last training start20:00; model freeze21:00; package/demo acceptance22:00; handoff22:30. SDK/UI progress does not wait for learning. Model remains sole ML scheduler. Native budgets600sdiagnostics,1200sonelearning/fit/evaluation,300sexport/browser; all bounded/no overlap. No tests/lint, paid external work, new model download, Qwen deployment retry, public upload or old protected-data reopening.
+
+New source boundaries: Runtime owns `sdk/**` and `web/src/runtime/**`; Infra owns remaining web plus narrowly root JS `package.json`/`bun.lock` and web-lock migration. Lead adds node_modules ignore; root Python packaging stays unchanged. Self-integration and operation-owned merge cleanup apply. New private evaluation stays under `artifacts/evaluation/final/final-sprint-20261112-01/private/`; only explicitly named stripped exports outside final go to Model.
+
+Local exact briefs: `artifacts/handoffs/lead/final-sprint-20261112-01/`. User must explicitly approve any gallery promotion; preview scaffolding is isolated, not committed as final UI. No fake live predictions or reliable Bug/Feature/game claims: S1 found those weak. Request-to-workspace routing is a promising small curated subset; the narrowed reaction task still needs S2.
+
+## Completed browser demo continuation — 2026-11-12
 
 Timur approved autonomous browser work while away for about two hours. Owners reported foreground availability starting around11:46; the B2 assignments were sent11:58. The shared delivery cutoff is **13:45UTC**, not a new training shift. Current local main-checkout authority is `artifacts/handoffs/lead/browser-20261112-02/shared.md` and each owner's brief in that directory. Long-input truncation work is explicitly outside the demo priority.
 
