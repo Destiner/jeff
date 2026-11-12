@@ -1,0 +1,119 @@
+{
+  "schema_version": "e13.external.runtime-publication.v1",
+  "release_id": "e13-external-20261112",
+  "status": "native-execution-closed",
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release",
+  "evidence_basis": "Existing release metadata and receipts; contextual timing/budget/closure details supplied by assignment. No scoring or protected content access.",
+  "document": "docs/runtime/e13-external-execution.md",
+  "common_batch_counts": {
+    "predictors": 4,
+    "scored_presentations": 1600,
+    "probabilities": 3200,
+    "startup_forwards": 6,
+    "physical_native_calls": 1006
+  },
+  "population": {
+    "exploration_cases": 200,
+    "copa_cases": 100,
+    "wino_cases": 100,
+    "orders": ["native", "reversed"],
+    "k": 2,
+    "confirmation_cases": 200,
+    "confirmation_population_separate": true
+  },
+  "phases": [
+    {
+      "phase": "exploration-first-four",
+      "source_commit": "490277de5b40f3c275ec7b3ba427722b1a006257",
+      "candidates": ["p3", "m7", "msmarco-start", "m9"],
+      "artifact_directory": "e13-exploration-20261112-01",
+      "delivery_summary": "e13-exploration-20261112-01/delivery-summary.json",
+      "batch_receipt": "e13-exploration-20261112-01/execution-01/batch-receipt.json",
+      "process_receipts": ["p3.process-receipt.json", "m7.process-receipt.json", "msmarco-start.process-receipt.json", "m9.process-receipt.json"],
+      "process_receipt_directory": "e13-exploration-20261112-01/execution-01",
+      "readiness": "e13-exploration-20261112-01/preparation/source-ready.json",
+      "outer_wall_seconds": 44.02,
+      "conservative_charge_seconds": 46,
+      "delivered_at": "2026-11-12T06:29:15.726481+00:00"
+    },
+    {
+      "phase": "confirmation",
+      "source_commit": "f1fee32df63ac4bb359e09e63c93fb7f358b82f1",
+      "pre_registration_source_commit": "aa98527e085b3f4871f4dbbf29f666fb43fd6e8d",
+      "source_transition": "Four approved literal descriptors registered; no executable code changed",
+      "actual_activation": "35408451-4b31-4dee-85b1-ddac0e586dbc",
+      "candidates": ["p3", "m7", "msmarco-start", "m9"],
+      "cohort": "FOUR RAW / ZERO OPTIONAL",
+      "cutoff_utc": "2026-11-12T06:30:00Z",
+      "lock_record_written_utc": "2026-11-12T06:32:54Z",
+      "quality_received_by_cutoff": false,
+      "artifact_directory": "e13-confirmation-20261112-01",
+      "delivery_summary": "e13-confirmation-20261112-01/delivery-summary.json",
+      "batch_receipt": "e13-confirmation-20261112-01/execution-01/batch-receipt.json",
+      "process_receipt_directory": "e13-confirmation-20261112-01/execution-01",
+      "process_receipts": ["p3.process-receipt.json", "m7.process-receipt.json", "msmarco-start.process-receipt.json", "m9.process-receipt.json"],
+      "readiness": "e13-confirmation-20261112-01/preparation/ready.json",
+      "source_readiness": "e13-confirmation-20261112-01/preparation/source-ready-awaiting-inputs.json",
+      "outer_wall_seconds": 43.46,
+      "conservative_charge_seconds": 45,
+      "delivered_at": "2026-11-12T07:09:26.742955+00:00"
+    },
+    {
+      "phase": "later-exploration",
+      "source_commit": "0d2edfe499ed1d45c5835efae54b95655c3a8771",
+      "candidates": ["m10", "m11", "m12", "p12-nli"],
+      "confirmation_eligible": false,
+      "artifact_directory": "e13-later-exploration-20261112-01",
+      "delivery_summary": "e13-later-exploration-20261112-01/delivery-summary.json",
+      "batch_receipt": "e13-later-exploration-20261112-01/execution-01/batch-receipt.json",
+      "process_receipt_directory": "e13-later-exploration-20261112-01/execution-01",
+      "process_receipts": ["m10.process-receipt.json", "m11.process-receipt.json", "m12.process-receipt.json", "p12-nli.process-receipt.json"],
+      "readiness": "e13-later-exploration-20261112-01/preparation/ready.json",
+      "historical_preparation_blockers": "e13-later-exploration-20261112-01/preparation/readiness.json",
+      "outer_wall_seconds": 50.66,
+      "conservative_charge_seconds": 52,
+      "delivered_at": "2026-11-12T07:32:35.223679+00:00"
+    }
+  ],
+  "all_eight_exploration_counts": {
+    "scored_presentations": 3200,
+    "probabilities": 6400,
+    "startup_forwards": 12,
+    "physical_native_calls": 2012
+  },
+  "budgets": {
+    "exploration": {"ceiling_seconds": 1200, "charged_seconds": 98, "unused_seconds": 1102},
+    "confirmation_separate": {"ceiling_seconds": 900, "charged_seconds": 45, "unused_seconds": 855},
+    "unused_time_is_authority": false,
+    "paid_spend_gbp": 0,
+    "source_preparation_minutes": {
+      "initial_spent": 30,
+      "first_four_spent": 10,
+      "confirmation_limit": 20,
+      "later_approximately_spent": 15,
+      "qualification": "Supplied bounds/accounting, not a measured minute log or uninterrupted coverage"
+    }
+  },
+  "closure_digests": {
+    "basis": "Supplied Model closure provenance; files not accessed or newly hashed",
+    "confirmation": {"name": "e13-confirmation-return.json", "sha256": "6bfcfd29410d45eda94b4ea741d1d88d87e30941659f8c086ce355b8426bd44e"},
+    "later_exploration": {"sha256": "d9491962b360a1cd4850376a71bae247ab2551a8651b073feca37d1faeb0d567"}
+  },
+  "quality_links_only": [
+    "artifacts/evaluation/e13-confirmation-public-v1/report.md",
+    "artifacts/evaluation/e13-confirmation-public-v1/summary.json"
+  ],
+  "qualifications": [
+    "Runtime evidence only: no quality, calibration, generalization, promotion, or whole-native-binary certification.",
+    "Exact four-file phase allowlists; no broader final, sibling, directory, or reference permission.",
+    "No retries, means, optional confirmation, or unselected confirmation outputs.",
+    "Receipt success/cleanup/absence are historical assertions; no live process inspection performed.",
+    "Sampled group RSS is not continuous peak; member publication-scoped times are not whole-batch duration.",
+    "First source freeze 06:18:49 versus actual handoff 06:21:24; M9 notice after return due to polling gap.",
+    "Confirmation ended around 07:08; direct delivery before quality at 07:33; summary timestamp is distinct.",
+    "Arithmetic review pending at supplied 07:33 snapshot; permitted aggregate quality files not read and later resolution not checked.",
+    "Exploration consumers being integrated into main; distinct frozen f1fee32 confirmation worktree retained, not unified or replayed.",
+    "Prospective native NLI correct 308 guard checks do not repair old P12 missing guard; old 624 evidence stays qualified.",
+    "Historical preparation blockers, earlier failures, attention gaps, and all scientific qualifications remain."
+  ]
+}
