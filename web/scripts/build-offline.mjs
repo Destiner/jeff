@@ -78,7 +78,7 @@ for (const url of required) {
       missing.push(`${url}: staged size differs from receipt`);
       continue;
     }
-    assets.set(url, { url, bytes: entry.bytes, sha256: entry.sha256, source: entry.source });
+    assets.set(url, { url, bytes: entry.bytes, sha256: entry.sha256 });
   } catch (error) {
     if (error.code !== 'ENOENT') throw error;
     missing.push(`${url}: not staged`);
@@ -90,6 +90,7 @@ const payload = { schema: 1, prepared: missing.length === 0, missing, assets: de
 // Includes worker implementation and compiled app bytes; staged large assets use their existing source identity.
 const version = hash(template + JSON.stringify(payload)).slice(0, 24);
 const manifest = { ...payload, version };
-await writeFile(resolve(dist, 'sw.js'), template.replace('/* OFFLINE_MANIFEST */', () => JSON.stringify(manifest)));
+await writeFile(resolve(dist, `sw-${version}.js`), template.replace('/* OFFLINE_MANIFEST */', () => JSON.stringify(manifest)));
+await writeFile(resolve(dist, 'offline-manifest.json'), `${JSON.stringify(manifest)}\n`);
 await writeFile(resolve(web, 'offline-manifest.local.json'), `${JSON.stringify(manifest, null, 2)}\n`);
 console.log(`Offline ${version}: ${manifest.prepared ? `${descriptors.length} required assets` : `not prepared (${missing.join('; ')})`}`);
