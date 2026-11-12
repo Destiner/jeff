@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "release_id": "p10-m11-20261112-01",
+  "status": "completed; Model verified and closed",
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01",
+  "publication_scope": "Documentation of retained metadata only; no new scoring, inference, weight reads or historical replay.",
+  "model_closure": {
+    "path": "/Users/destiner/Code/jeff/artifacts/model/m11-msmarco-duration30-20261112-01/p10-return.json",
+    "sha256": "6f13f859612074811f513a53cc845ab71a8e29252a278f27836a80db0efa4d40"
+  },
+  "receipt_descriptors": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/process-invocation.json",
+      "sha256": "be82ba88a30cc483040a818fb0ac463b81616d06f4bfaf1ec442ea3ddcdcaf26"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/process-receipt.json",
+      "sha256": "8e54f85ef45d5e5ac0fd1291f50242ca352e12e1ee2baaf003c67431eea4baf7"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/binding.json",
+      "sha256": "c1c0e9ca2bf368a8f6e361dddf63478cfa5556a1c69eda0c5521a8374ed85f2d"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/receipt.json",
+      "sha256": "920ec4cca97f13ec68c96c166f006c0b4b86ecc8d5d57828602fdb704dbeb190"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/delivery-summary.json",
+      "sha256": "435e3b92121ffb491d3a61e69a5ba79e647626740a0be0e0e91a8fe694e880db"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/v2-original.jsonl",
+      "sha256": "bd6478969c0bb76ac7f0c6a055d008f2f639ed7faea18c0eec65d39b57c8f8b4",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/v2-reversed.jsonl",
+      "sha256": "2b272bc82517377f489f6ebd88cb5fb3198b39dba02a27ae67f7033acfa8dd64",
+      "rows": 300,
+      "probabilities": 1160
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/probes-paired.jsonl",
+      "sha256": "b1482b963f67553e85e5c9c59774351f843df317b49e6b5fa99f26d2fb551b67",
+      "rows": 24,
+      "probabilities": 70
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/d3-seen-rules96.jsonl",
+      "sha256": "bac40c5e096647408ce8240a3fa33bf62fac0551f4815142b27a32c124182828",
+      "rows": 96,
+      "probabilities": 361
+    }
+  ],
+  "counts": {
+    "loads": 1,
+    "decisions": 720,
+    "native_forward_attempted": 180,
+    "native_forward_completed": 180,
+    "probabilities": 2751,
+    "startup_calls": 0,
+    "d3_decisions": 96
+  },
+  "timing": {
+    "parent_wall_seconds": 37.59575429186225,
+    "runtime_charge_seconds": 39,
+    "producer_seconds": 809.8467665826902,
+    "chain_seconds": 848.8467665826902,
+    "chain_ceiling_seconds": 1500,
+    "runtime_cap_seconds": 120
+  },
+  "all_groups_absent": true,
+  "quality_references": [
+    "docs/evaluation/e12-encoder-duration30.md",
+    "docs/model/m11-msmarco-duration30-results.md"
+  ],
+  "qualifications": [
+    "Runtime completion is not quality, calibration or promotion evidence.",
+    "Receipt/output SHA descriptors are copied from existing Model closure metadata; prediction payloads and weights were not reread.",
+    "Source review and package build alone are not proof of native execution.",
+    "Unused budget grants no additional work; no retries, fallback or new experiment.",
+    "Sampled memory and lifetime RSS have different overlapping scopes; headroom is not physical free RAM."
+  ]
+}
