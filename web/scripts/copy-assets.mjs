@@ -84,14 +84,19 @@ async function main() {
   const args = options();
   const modelRoot = args['--model-dir'];
   if (!(await inspectPath(modelRoot)).isDirectory()) throw new Error('Model export root must be a real directory');
-  const modelNames = ['model.onnx', 'tokenizer.json', 'tokenizer_config.json', 'special_tokens_map.json', 'vocab.txt', 'config.json'];
+  const modelFiles = [
+    ['model.onnx', 'model.onnx'],
+    ...['tokenizer.json', 'tokenizer_config.json', 'special_tokens_map.json', 'vocab.txt']
+      .map(name => [`tokenizer/${name}`, name]),
+    ['encoder/config.json', 'config.json'],
+  ];
   const ortRoot = path.join(web, 'node_modules', 'onnxruntime-web', 'dist');
   const entries = [
-    ...modelNames.map(name => ({ source: path.join(modelRoot, name), url: `/models/m9/${name}` })),
+    ...modelFiles.map(([source, name]) => ({ source: path.join(modelRoot, source), url: `/models/m9/${name}` })), 
     ...['ort-wasm-simd-threaded.wasm', 'ort-wasm-simd-threaded.mjs'].map(name => ({ source: path.join(ortRoot, name), url: `/ort/${name}` })),
     { source: args['--inputs'], url: '/examples/p11-train.jsonl' },
   ];
-  const manifestPath = path.join(publicRoot, 'asset-manifest.json');
+  const manifestPath = path.join(web, 'asset-manifest.local.json');
   try {
     // All source/type/hash and destination checks precede the first write.
     for (const entry of entries) {
