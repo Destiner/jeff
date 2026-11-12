@@ -4,7 +4,11 @@ import { dirname, resolve, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const web = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const dist = resolve(web, 'dist');
+const args = process.argv.slice(2);
+if (args.length && (args.length !== 2 || args[0] !== '--dist' || !/^dist(?:-[a-z0-9]+)?$/.test(args[1]))) {
+  throw new Error('Usage: bun scripts/build-offline.mjs [--dist dist-NAME]');
+}
+const dist = resolve(web, args[1] ?? 'dist');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const config = JSON.parse(await readFile(resolve(web, 'model-config.json'), 'utf8'));
 if (!/^\/models\/[a-z0-9-]+\/$/.test(config.assetBaseUrl) || config.ortBaseUrl !== '/ort/') throw new Error('Unsupported configured asset paths');

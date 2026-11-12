@@ -3,10 +3,12 @@ import { model, modelLabel } from './model';
 
 type Input = Pick<Decision, 'id' | 'state' | 'question' | 'options'>;
 type Slot = { controller: AbortController; promise: Promise<Engine>; engine?: Engine };
+type Receipt = { input: Decision; prediction: Prediction; engineMetadata: Engine['metadata']; wallMs: number };
 export function createSession(status: HTMLElement) {
   let slot: Slot | null = null;
   let closed = false;
   let requests = 0;
+  const history: Receipt[] = [];
   function show(message: string) { status.textContent = message; status.title = message; }
   show(`${modelLabel} · loads on demand`);
   function progress(event: Progress) {
@@ -34,6 +36,7 @@ export function createSession(status: HTMLElement) {
   }
   return {
     async predict(input: Input): Promise<Prediction> {
+      const started = performance.now();
       const submitted: Decision = { schema_version: '0.1', id: input.id, state: input.state,
         question: input.question, options: input.options.map(({id,text}) => ({id,text})) };
       const current = acquire();
@@ -43,6 +46,7 @@ export function createSession(status: HTMLElement) {
         if (slot === current) show('Comparing locally…');
         const prediction = await engine.predict(submitted);
         if (prediction.id !== submitted.id || prediction.schema_version !== '0.1') throw new Error('The model returned a mismatched decision.');
+        history.push(structuredClone({ input: submitted, prediction, engineMetadata: engine.metadata, wallMs: performance.now() - started }));
         return prediction;
       } catch (error) {
         if (slot === current) slot = null;
@@ -55,6 +59,9 @@ export function createSession(status: HTMLElement) {
         if (!requests && slot === current && current.engine) show(`${current.engine.metadata.model.label} · local`);
       }
     },
+    get history(): readonly Receipt[] { return structuredClone(history); },
+    getState: () => structuredClone({ closed, busy: requests > 0, initializing: !!slot && !slot.engine,
+      engineReady: !!slot?.engine, engineMetadata: slot?.engine?.metadata ?? null }),
     async dispose() {
       closed = true;
       const current = slot; slot = null;
@@ -63,4 +70,12 @@ export function createSession(status: HTMLElement) {
       try { await (await current.promise).dispose(); } catch { /* Abort terminates the owned worker synchronously. */ }
     },
   };
+}
+
+type Session = ReturnType<typeof createSession>;
+type Inspection = Pick<Session, 'history' | 'getState' | 'dispose'>;
+declare global { interface Window { jeffApp?: Inspection } }
+export function exposeSession(current: () => Session): void {
+  window.jeffApp = { get history() { return current().history; },
+    getState: () => current().getState(), dispose: () => current().dispose() };
 }
