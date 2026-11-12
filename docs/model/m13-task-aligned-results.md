@@ -2,7 +2,7 @@
 
 ## Decision
 
-The sole fixed endpoint and its fresh-process scoring are complete. Independent reserved-set/retention acceptance is pending; **M9 remains the serving default**. Training fit is not the promotion criterion. No further training, alternative initializer, checkpoint selection or retry is authorized.
+**M13 is not promoted; M9 remains the serving default.** Evaluation's frozen saved-data scoring passes the primary gates but fails the required retention proper-score gates. The sole fixed endpoint, fresh-process scoring and real saved checkpoint are retained as mixed/negative scientific evidence, not a failure to train. Independent saved-output numerical review confirms the result; no M13 export/browser work, retraining, alternate checkpoint, calibration or rescue is authorized.
 
 The [frozen plan](m13-task-aligned-plan.md) and [Research diagnosis](../research/final-transfer-diagnosis.md) distinguish task coverage from a proven scoring bug. M9 was selected for the declared workspace-routing/direct-sentiment tasks, despite original START's ticket/pooled diagnostic advantages and M9's S2 negative-class weakness. The joint decision was frozen at **18:36:52 UTC**, before the reserved64 freeze at18:50:56 and learning at19:21:06 on2026-11-12.
 
@@ -48,7 +48,24 @@ The prospective rule is [Evaluation's final-sprint plan](../evaluation/final-spr
 - Zero startup/canary/reversed calls. All suite boundaries are multiples of4; the original reserved/retention byte blocks are preserved, IDs are unique and outputs are split without reserialization or repair.
 - Exact ordered input/options/output coverage and finite[0,1] values passed. Maximum raw sum deviations: M13 `1.2548571248771623e-7`; M9 `8.940696716308594e-8`.
 
-Evaluation-only case-level outputs were delivered at19:28:53. Model did not inspect private references or duplicate held-out quality arithmetic. Operational completion is not yet a scientific or deployment pass.
+Evaluation-only case-level outputs were delivered at19:28:53. Model did not inspect private references or duplicate held-out quality arithmetic. Evaluation reported its single scoring invocation's result at19:40:33; source/admission review passed. Independent review was reported complete at19:50:31:608 saved vectors/per-case outcomes (64+64+240+240),4,664 exact and1,276 floating comparisons, maximum difference0 and no errors. All five other scientific gates pass; retention proper scores remain the sole failed gate. This is saved-data arithmetic, not a tensor or browser execution replay. Exact public review: `artifacts/evaluation/final-sprint-20261112-01/independent-final-review-v1/{report.md,receipt.json}`. The public aggregate is `artifacts/evaluation/final-sprint-20261112-01/final-result-v1/result.json`, SHA256 `defea33c8a7d5ffac621cc84564390b3b5c900f63d6a5268a416ef278e529012`.
+
+| Reserved domain | Preferred M9 → M13 | Acceptable M9 → M13 | NLL M9 → M13 | Brier M9 → M13 |
+|---|---:|---:|---:|---:|
+| Routing,16 cases |12 → 12|12 → 12|1.050891 → .976917|.460742 → .417256|
+| Sentiment,16 cases/proper14 |9 → 13|11 → 14|1.142487 → 1.013351|.594688 → .275986|
+| Tickets,16 cases |9 → 14|9 → 14|1.448066 → .595036|.696671 → .282487|
+| Novel taxonomy/transfer,16 cases |7 → 6|7 → 6|1.677480 → 1.864902|.903686 → .947392|
+
+Primary preferred agreement increases **21→25/32**, exactly four gains and zero losses; acceptable agreement23→26. Primary proper30 NLL1.093636→.993920 and Brier.523250→.351330 meet both required improvements and each primary-domain nonregression condition. The gains are sentiment gains; routing top choices are unchanged. Tickets improve, but novel-taxonomy transfer loses a choice and worsens both proper scores. These domains cannot rescue a failed required gate.
+
+**Reused-development retention fails:**165→162/240 preferred agreements (six gains/nine losses) stays within the count tolerance. NLL.699420→1.047068 increases **.347647**, exceeding the allowed.05; Brier.359766→.427870 increases **.068104**, exceeding.03. By family:
+
+- Intent78→77/80, NLL.099739→.128661/Brier.036343→.056908: within family limits.
+- Sentiment70→72/80, but NLL.399240→.551815 increases.152575, above.10; Brier.180991→.181286. Better top agreement does not rescue worse probability loss.
+- Rules17→13/80 (two gains/six losses) exactly meets the four-net-loss limit, but NLL1.599282→2.460728 and Brier.861966→1.045416 exceed the family proper-score limits by substantial margins.
+
+All admitted vectors are valid and untied. The frozen conjunction therefore rejects M13. This is not a near-tolerance exception or a failed browser parity result: M13 deployment was not attempted because scientific acceptance failed. The first aggregate's generic `deployability=pending_separate_package_browser_and_lifecycle_review` field is retained unchanged; subsequent owner direction closes that conditional path. AI-authored judgments and reused development data do not establish significance, calibration, general reliability or a causal diagnosis.
 
 ## Source, artifacts and operating evidence
 
