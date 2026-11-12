@@ -7,7 +7,8 @@ The nine-file v1 checkpoint is saved and unchanged. Parent streaming hashes and
 process/group absence are verified; this report does not decode or rehash weights.
 Independent E11 CPU TRAIN review completed 65/65 checks. P9 fresh reload and
 all 624 development outputs are complete; its reservation is closed. Independent
-E11 development interpretation remains pending; no promotion follows.
+[E11 development interpretation](../evaluation/e11-seed-replication.md) is complete
+and independently reviewed; the result remains mixed, with no promotion.
 
 ## Controlled recipe
 
@@ -82,6 +83,27 @@ all output/input hashes, ordered IDs/options, 300/300/24 unique coverage and act
 watchdog/supervisor/child group absence. Maximum normalization error1.39436e-7.
 This is label-free execution validation, not held-out scoring or promotion.
 Combined M10+P9 charged time is1078.9593896237234s; unused time grants no further work.
+
+## E11 development and separate E16 follow-through
+
+E11 new native/reversed agreement is182/178 of240, both-correct157, versus
+M7's171/170 and138both-correct. M10's new NLL is.525300/.522373 and Brier
+.288286/.282673. But new-rule both-correct remains only4/80, with69flips and
+120/160third-slot choices; inherited+new rules choose slot3 on156/200.
+Probe agreement is19/24 versus M7's21, although both retain9/12both-correct
+pairs. Versus original P3, M10 loses two rule pairs and gains two sentiment
+pairs. Two realized seeds are not a variance estimate or better-seed policy.
+
+The separately authorized [E16 fixed mean](../evaluation/e16-reversal-mean.md)
+is a distinct two-forward-derived candidate: M10 mean agreement177/240 is
+below native182, with11gains/16losses. It is not part of the raw E11 rule and
+does not generally improve answers. Proper-loss convexity is not calibration.
+
+E11's fresh-v1 reload review does not establish the v2 path's four-empty-list
+loading-diagnostic attestation. The frozen tokenizer emitted a regex warning;
+1248saved-token correspondences establish that all624prompt-token hashes,
+lengths and answer IDs match both P3 and M7, not that the warning is generally
+harmless on other texts. No tokenizer/dependency bytes or outputs were changed.
 
 ## Evidence
 

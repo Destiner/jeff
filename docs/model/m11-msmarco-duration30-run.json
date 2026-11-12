@@ -1,0 +1,733 @@
+{
+  "schema_version": "m11.results-inventory.v1",
+  "status": "M11/P10 complete and closed; E12 reviewed and integrated; no promotion",
+  "created_at": "2026-11-12T04:42:02.220296+00:00",
+  "execution_revision": "a23c04cef0bff3e87deaffc3b8f5fed73ea818ee",
+  "root": "artifacts/model/m11-msmarco-duration30-20261112-01",
+  "recipe": {
+    "base": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "fresh_original_base": true,
+    "epochs": 30,
+    "seed": 42,
+    "batch_size": 4,
+    "max_length": 256,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.0005,
+    "threads": 4,
+    "device": "mps",
+    "dtype": "float32",
+    "updates": 11250,
+    "presentations": 45000,
+    "continued_from_m9": false,
+    "endpoint_selection": false
+  },
+  "pins": {
+    "freeze.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/freeze.json",
+      "sha256": "ff75f60c41397bb379b023ab91329fd6731f9c4ee11a78c94e9dd9bfeffe8832"
+    },
+    "freeze-02.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/freeze-02.json",
+      "sha256": "c81fdddb5ffff1001ab68d2c9d697ffa8966f953e68d7d9b30fc72cde62e306a"
+    },
+    "activation.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/activation.json",
+      "sha256": "b25894ee0e641ca5604c982ab74e1b22b87d2b1ba1911c4febd7bb0c11b225cd"
+    },
+    "branch.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/branch.json",
+      "sha256": "1758c1e335a3b276954c2f383da08e6163e6fbf6bf158e246d022410905b164f"
+    },
+    "operational-amendment-02.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/operational-amendment-02.json",
+      "sha256": "d7bdd5943408bb70298cc6c522ce58c1113fe0298e7c3568b1cc5a46d0089463"
+    },
+    "train-invocation.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/train-invocation.json",
+      "sha256": "6c1afa1fd4145ff4bbc394d903cf31bec96c619985bd05230d4ba273290e252b"
+    },
+    "train-process.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/train-process.json",
+      "sha256": "dbe00c2f60c3d44c89580353ca652fcc0935eda5b752237fae18c4fc54d6fa6b"
+    },
+    "fit-final-invocation.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/fit-final-invocation.json",
+      "sha256": "461b661b91c55b6180a260660a899f4c555a886e2fa4cb7d15611b3cd9590eb5"
+    },
+    "fit-final-process.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/fit-final-process.json",
+      "sha256": "db6f191612bb3809ca925f4bb9d678d175b0196023ae539add3da3c7e7278f27"
+    },
+    "checkpoint-ready-for-fit.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/checkpoint-ready-for-fit.json",
+      "sha256": "e5e90363745d8591c32eb8d2f7a52ec2209f4f974f555c68b422ff6daa56088f"
+    },
+    "checkpoint-ready.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/checkpoint-ready.json",
+      "sha256": "857dcd2103d9d2da1aeb56d41f1ec652066599745e0a61437d72e79b547f37b9"
+    },
+    "training/run.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/training/run.json",
+      "sha256": "a0df53729f42e9b10b4b2f6081b5e6fd6a1f5897d71745f7e04ddc194761df5a"
+    },
+    "fit-final.jsonl": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/fit-final.jsonl",
+      "sha256": "aa464684c02289fd95fce747605f304d2414690038c16d0f8607d99fbf31580a"
+    },
+    "first-look.py": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/first-look.py",
+      "sha256": "d4735524876593f1e1f4ebcd1313ff2c79852a417a5a48e6f7ad6afcc09a33d8"
+    },
+    "first-look.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/first-look.json",
+      "sha256": "e5bd4c6edbc8f650130f9041576fb87cc4f9840ed254163f02cdf0f7db5a9449"
+    },
+    "first-look.md": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/first-look.md",
+      "sha256": "a2e36b19192ba08fdb56e5ddc3ddd8f0a40370b707c43454e0d2f8ba78e01351"
+    },
+    "artifact-review.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/artifact-review.json",
+      "sha256": "8b7deebc25715dd4f05be3b50ed4c92b115b44a64839e1e69df9889fa5aae881"
+    },
+    "artifact-review.md": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/artifact-review.md",
+      "sha256": "997d58459eef8f15d487f554c5aa41c3df0ffa79e15611faf8edb47606e93161"
+    },
+    "p10-return.json": {
+      "path": "artifacts/model/m11-msmarco-duration30-20261112-01/p10-return.json",
+      "sha256": "6f13f859612074811f513a53cc845ab71a8e29252a278f27836a80db0efa4d40"
+    }
+  },
+  "model_seconds": 809.8467665826902,
+  "p10_supervisor_seconds": 37.59575429186225,
+  "p10_conservative_charge_seconds": 39,
+  "aggregate_charged_seconds": 848.8467665826902,
+  "aggregate_ceiling_seconds": 1500,
+  "unused_not_authority_seconds": 651.1532334173098,
+  "p10_counts": {
+    "decisions": 720,
+    "batch_calls": 180,
+    "probabilities": 2751,
+    "startup_calls": 0
+  },
+  "train_fit": {
+    "M9": {
+      "fit": {
+        "overall": {
+          "rows": 1500,
+          "agreements": 1314,
+          "mean_ce": 0.28905732895274766,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 406,
+            "1": 409,
+            "2": 402,
+            "3": 267,
+            "4": 12,
+            "5": 4
+          }
+        },
+        "intent": {
+          "rows": 500,
+          "agreements": 500,
+          "mean_ce": 0.00035738032749052333,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 136,
+            "1": 138,
+            "2": 137,
+            "3": 73,
+            "4": 12,
+            "5": 4
+          }
+        },
+        "sentiment": {
+          "rows": 500,
+          "agreements": 500,
+          "mean_ce": 0.006220119521202806,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 125,
+            "1": 125,
+            "2": 125,
+            "3": 125,
+            "4": 0,
+            "5": 0
+          }
+        },
+        "rule_application": {
+          "rows": 500,
+          "agreements": 314,
+          "mean_ce": 0.8605944870095498,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 145,
+            "1": 146,
+            "2": 140,
+            "3": 69,
+            "4": 0,
+            "5": 0
+          }
+        }
+      },
+      "family_by_arity": [
+        {
+          "family": "intent",
+          "arity": 3,
+          "rows": 185,
+          "coordinate_mean": [
+            0.3352542907593844,
+            0.3351665860426959,
+            0.3295791249430379
+          ],
+          "coordinate_population_sd": [
+            0.4718711520882942,
+            0.4716532452204546,
+            0.46979518788888364
+          ],
+          "winner_position_counts": [
+            62,
+            62,
+            61
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 4,
+          "rows": 248,
+          "coordinate_mean": [
+            0.2501560428748754,
+            0.25404870688414805,
+            0.2499000590688947,
+            0.24589519249180788
+          ],
+          "coordinate_population_sd": [
+            0.4327878105125115,
+            0.4351834433109301,
+            0.4327569048241623,
+            0.4304403831419572
+          ],
+          "winner_position_counts": [
+            62,
+            63,
+            62,
+            61
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 5,
+          "rows": 53,
+          "coordinate_mean": [
+            0.18873643660625194,
+            0.20750374238324049,
+            0.22651853696626792,
+            0.18867090112426124,
+            0.18857040138698836
+          ],
+          "coordinate_population_sd": [
+            0.39122332939690524,
+            0.4054233532874268,
+            0.41844161489412823,
+            0.3912236778039784,
+            0.3910205559669401
+          ],
+          "winner_position_counts": [
+            10,
+            11,
+            12,
+            10,
+            10
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 6,
+          "rows": 14,
+          "coordinate_mean": [
+            0.14284018575460047,
+            0.14286957390985236,
+            0.14285726023347983,
+            0.14287483428478978,
+            0.14285616303190227,
+            0.2857019910603977
+          ],
+          "coordinate_population_sd": [
+            0.34988226221549573,
+            0.3499212537666444,
+            0.34992606052161945,
+            0.349918794205488,
+            0.34992392910382636,
+            0.45173192820520197
+          ],
+          "winner_position_counts": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 2,
+          "rows": 1,
+          "coordinate_mean": [
+            0.9874935746192932,
+            0.012506353668868542
+          ],
+          "coordinate_population_sd": [
+            0.0,
+            0.0
+          ],
+          "winner_position_counts": [
+            1,
+            0
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 3,
+          "rows": 209,
+          "coordinate_mean": [
+            0.3441605566024366,
+            0.3469074335603465,
+            0.30893200924079733
+          ],
+          "coordinate_population_sd": [
+            0.21189758367102446,
+            0.20790508936843663,
+            0.1868858045303554
+          ],
+          "winner_position_counts": [
+            73,
+            81,
+            55
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 4,
+          "rows": 287,
+          "coordinate_mean": [
+            0.2550646399891515,
+            0.2476622981154519,
+            0.2572159356183497,
+            0.24005713128445846
+          ],
+          "coordinate_population_sd": [
+            0.21436173328760932,
+            0.2071212481388608,
+            0.20357144406987127,
+            0.20013706799837097
+          ],
+          "winner_position_counts": [
+            70,
+            64,
+            84,
+            69
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 5,
+          "rows": 3,
+          "coordinate_mean": [
+            0.26597815317412216,
+            0.33398544834926724,
+            0.3458959373335044,
+            0.01942832364390294,
+            0.034712147588531174
+          ],
+          "coordinate_population_sd": [
+            0.274470736117828,
+            0.3338562170308605,
+            0.4259995275307649,
+            0.008708780036832087,
+            0.013728334730125294
+          ],
+          "winner_position_counts": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "family": "sentiment",
+          "arity": 4,
+          "rows": 500,
+          "coordinate_mean": [
+            0.25089707251377946,
+            0.2503693962190629,
+            0.24888232482049097,
+            0.24985120699856833
+          ],
+          "coordinate_population_sd": [
+            0.4311431001398763,
+            0.43108995413140144,
+            0.4303685354340576,
+            0.43070963945508073
+          ],
+          "winner_position_counts": [
+            125,
+            125,
+            125,
+            125
+          ]
+        }
+      ]
+    },
+    "M11": {
+      "fit": {
+        "overall": {
+          "rows": 1500,
+          "agreements": 1414,
+          "mean_ce": 0.12330948251125513,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 409,
+            "1": 408,
+            "2": 399,
+            "3": 268,
+            "4": 12,
+            "5": 4
+          }
+        },
+        "intent": {
+          "rows": 500,
+          "agreements": 500,
+          "mean_ce": 4.13376416793528e-05,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 136,
+            "1": 138,
+            "2": 137,
+            "3": 73,
+            "4": 12,
+            "5": 4
+          }
+        },
+        "sentiment": {
+          "rows": 500,
+          "agreements": 500,
+          "mean_ce": 5.233207861436174e-05,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 125,
+            "1": 125,
+            "2": 125,
+            "3": 125,
+            "4": 0,
+            "5": 0
+          }
+        },
+        "rule_application": {
+          "rows": 500,
+          "agreements": 414,
+          "mean_ce": 0.3698347778134716,
+          "ce_status": "finite",
+          "target_zero_count": 0,
+          "ties": 0,
+          "winner_position_counts": {
+            "0": 148,
+            "1": 145,
+            "2": 137,
+            "3": 70,
+            "4": 0,
+            "5": 0
+          }
+        }
+      },
+      "family_by_arity": [
+        {
+          "family": "intent",
+          "arity": 3,
+          "rows": 185,
+          "coordinate_mean": [
+            0.33513327484842853,
+            0.33513745429124575,
+            0.32972927795214146
+          ],
+          "coordinate_population_sd": [
+            0.4720218665987878,
+            0.472023411104853,
+            0.47010210565878807
+          ],
+          "winner_position_counts": [
+            62,
+            62,
+            61
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 4,
+          "rows": 248,
+          "coordinate_mean": [
+            0.25000328860533905,
+            0.254035043222632,
+            0.2499599959449258,
+            0.24600167392656952
+          ],
+          "coordinate_population_sd": [
+            0.4329937106808631,
+            0.43529511122948783,
+            0.43293418331964206,
+            0.43062774935368253
+          ],
+          "winner_position_counts": [
+            62,
+            63,
+            62,
+            61
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 5,
+          "rows": 53,
+          "coordinate_mean": [
+            0.18868200950893696,
+            0.20754706537148668,
+            0.22641728100555022,
+            0.18867822734006617,
+            0.18867542750223296
+          ],
+          "coordinate_population_sd": [
+            0.391250185124352,
+            0.4055455666811844,
+            0.4185070544108969,
+            0.3912482606432856,
+            0.39124313243349845
+          ],
+          "winner_position_counts": [
+            10,
+            11,
+            12,
+            10,
+            10
+          ]
+        },
+        {
+          "family": "intent",
+          "arity": 6,
+          "rows": 14,
+          "coordinate_mean": [
+            0.14285713205112113,
+            0.1428617963551336,
+            0.14285742023270437,
+            0.14285745132679142,
+            0.14285349145518028,
+            0.28571270956123135
+          ],
+          "coordinate_population_sd": [
+            0.3499261128506055,
+            0.34992437908965873,
+            0.34992679820619865,
+            0.34992688284617324,
+            0.34991803605425165,
+            0.4517507639163919
+          ],
+          "winner_position_counts": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 2,
+          "rows": 1,
+          "coordinate_mean": [
+            0.9999492168426514,
+            5.0746388296829537e-05
+          ],
+          "coordinate_population_sd": [
+            0.0,
+            0.0
+          ],
+          "winner_position_counts": [
+            1,
+            0
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 3,
+          "rows": 209,
+          "coordinate_mean": [
+            0.3616101195833477,
+            0.3441582845204742,
+            0.2942315957496887
+          ],
+          "coordinate_population_sd": [
+            0.3468150383599654,
+            0.33090124356287004,
+            0.3035309731350022
+          ],
+          "winner_position_counts": [
+            75,
+            75,
+            59
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 4,
+          "rows": 287,
+          "coordinate_mean": [
+            0.25724119591888084,
+            0.24124578778796346,
+            0.251464432541082,
+            0.25004857597534863
+          ],
+          "coordinate_population_sd": [
+            0.3685636476729763,
+            0.3535658936155585,
+            0.35776215401346756,
+            0.35970941582308824
+          ],
+          "winner_position_counts": [
+            71,
+            69,
+            77,
+            70
+          ]
+        },
+        {
+          "family": "rule_application",
+          "arity": 5,
+          "rows": 3,
+          "coordinate_mean": [
+            0.33336844412163674,
+            0.33331840369525406,
+            0.3331948570109186,
+            3.5284917127379835e-05,
+            8.306686140713282e-05
+          ],
+          "coordinate_population_sd": [
+            0.4711101231832578,
+            0.4711836976339141,
+            0.47112012435517286,
+            7.276430133485439e-06,
+            6.342466814313337e-05
+          ],
+          "winner_position_counts": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "family": "sentiment",
+          "arity": 4,
+          "rows": 500,
+          "coordinate_mean": [
+            0.2500118049601132,
+            0.24999562023798022,
+            0.24998895271394042,
+            0.25000362602211895
+          ],
+          "coordinate_population_sd": [
+            0.4329860975486998,
+            0.43297960246450656,
+            0.4329757025276028,
+            0.43298872095036167
+          ],
+          "winner_position_counts": [
+            125,
+            125,
+            125,
+            125
+          ]
+        }
+      ]
+    }
+  },
+  "same_id_train_changes": {
+    "overall": {
+      "gains": 130,
+      "losses": 30,
+      "changed_choices": 168
+    },
+    "intent": {
+      "gains": 0,
+      "losses": 0,
+      "changed_choices": 0
+    },
+    "sentiment": {
+      "gains": 0,
+      "losses": 0,
+      "changed_choices": 0
+    },
+    "rule_application": {
+      "gains": 130,
+      "losses": 30,
+      "changed_choices": 168
+    }
+  },
+  "e12": {
+    "revision": "41803f13afd52678d6ef83cf48ce93d2eba2a9c7",
+    "report": {
+      "path": "docs/evaluation/e12-encoder-duration30.md",
+      "sha256": "4bdd854f3b4b7a5d5f02a7d45438600a8c4a07f8b0365eb6d5b57cd7bb28a1d5"
+    },
+    "manifest": {
+      "path": "manifests/evaluation/e12-m11-report-v1.json",
+      "sha256": "80c32f23aceb34208d75a5a5c9a91adfd96d0a7c80e9eccd2e473c5b4cdb1cda"
+    },
+    "new_native_reversed_agreement": [
+      162,
+      162
+    ],
+    "new_both_correct": 162,
+    "new_proper_score_orientation": "native",
+    "new_nll": 0.860174719,
+    "new_brier": 0.411283631,
+    "new_family_agreements": {
+      "intent": 77,
+      "sentiment": 72,
+      "rule_application": 13
+    },
+    "inherited_agreement": 42,
+    "probe_both_correct": 9,
+    "d3_agreement": 29,
+    "d3_complete_policies": 5,
+    "d3_nll": 1.91438,
+    "d3_brier": 0.903707,
+    "display_precision": "Rounded public E12 values; exact values remain in its bound reports."
+  },
+  "r14_report": {
+    "path": "docs/research/m11-mechanism-fit-append.md",
+    "sha256": "c85b97b4e6401e4407f4a4de15cfe2b3a13edb415ca251bb3b778a4949a688df"
+  },
+  "spend_gbp": {
+    "actual": 0,
+    "pending": 0
+  },
+  "qualification": "Saved-artifact review and parent handoff verification, not independent tensor/update replay or label-truth verification. E12 owns held-out quality; no new scoring here. No vectors/private case content or weights embedded. Resource scopes nonadditive; unused budget grants no work."
+}
