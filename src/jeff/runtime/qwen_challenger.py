@@ -7,6 +7,8 @@ python -m jeff.runtime.qwen_challenger predict --audit-dir AUDIT --model-dir MOD
 
 Inputs: {"schema_version":"p3.inputs.v1","datasets":[{"name":"validation",
 "path":"inputs.jsonl","sha256":"...","rows":300}, ...]} (exactly three suites).
+Internal p8.inputs.v1/p9.inputs.v1 select only the pinned execution suites;
+they do not define checkpoint/scoring contracts or grant execution authority.
 Paths are relative to the manifest. Local asset identity is an owner download
 attestation, not independently authenticated against the remote repository.
 Audit hashes weights but never loads them; place the complete pinned download
@@ -37,6 +39,18 @@ MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
 REVISION = "7ae557604adf67be50417f59c2c2f167def9a775"
 SYSTEM = "You are a decision assistant. Choose exactly one of the listed options. Reply with only its letter."
 USER = "State:\n{state}\n\nQuestion:\n{question}\n\nOptions:\n{options}"
+SCORING_SHA256 = "2698ed67deead6cd3e234255fb0fc5182a990ac99d397e659a804d3562cce77f"
+# Internal execution inputs only; checkpoint and scoring contracts are unchanged.
+EXECUTION_INPUTS = {
+    "p8.inputs.v1": (
+        ("d3-seen-rules", 96, "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"),
+    ),
+    "p9.inputs.v1": (
+        ("v2-original", 300, "2103447bf8fbca3b43c09b0506b943179e96f7e774d7ae8363eddbf940970917"),
+        ("v2-reversed", 300, "ba266b3b77896d77a453b095da485b569f0cde2238d94493e0a4bcfb704c92f1"),
+        ("probes-paired", 24, "051a72824b9954b8a026507fe4819c37aefc0e72ec9e3af1d16c1c279f1932d6"),
+    ),
+}
 
 
 def require(condition, message):
@@ -120,12 +134,18 @@ def read_inputs(path):
     path = safe_path(path)
     manifest = load(path)
     require(set(manifest) == {"schema_version", "datasets"} and
-            manifest["schema_version"] == "p3.inputs.v1", "input manifest schema")
-    require(isinstance(manifest["datasets"], list) and len(manifest["datasets"]) == 3,
+            manifest["schema_version"] in ("p3.inputs.v1", *EXECUTION_INPUTS), "input manifest schema")
+    expected = EXECUTION_INPUTS.get(manifest["schema_version"])
+    require(isinstance(manifest["datasets"], list) and
+            len(manifest["datasets"]) == (len(expected) if expected else 3),
+            "pinned execution suites required" if expected else
             "exactly three label-free development suites required")
     suites, names = [], set()
-    for entry in manifest["datasets"]:
+    for index, entry in enumerate(manifest["datasets"]):
         require(set(entry) == {"name", "path", "sha256", "rows"}, "dataset entry fields")
+        if expected:
+            require((entry["name"], entry["rows"], entry["sha256"]) == expected[index],
+                    "execution suite name/order/rows/hash mismatch")
         name = entry["name"]
         require(isinstance(name, str) and re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,79}", name)
                 and name not in names, "unsafe or duplicate dataset name")
@@ -198,6 +218,13 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
     from transformers import AutoTokenizer
 
     cfg = configuration(config_path)
+    input_profile = load(manifest_path)["schema_version"]
+    execution_profile = input_profile in EXECUTION_INPUTS
+    if execution_profile:
+        require(digest(config_path) == SCORING_SHA256,
+                "execution profiles require original P3 scoring config bytes")
+        require(input_profile != "p9.inputs.v1" or checkpoint_manifest is not None,
+                "P9 requires a trained v1 checkpoint manifest")
     binding = None
     if checkpoint_manifest is not None:
         from jeff.runtime.qwen_checkpoint import validate_checkpoint
@@ -209,6 +236,10 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
         asset_hashes = assets(model_dir, cfg)
     is_v2 = (binding is not None and
              binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v2")
+    if execution_profile:
+        require(binding is None or
+                binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v1",
+                "execution profiles permit only original assets or trained v1 checkpoints")
     if is_v2:
         from jeff.runtime import qwen_readout
 
@@ -280,6 +311,10 @@ def predict(args, receipt, start):
     is_v2 = ("trained_checkpoint" in current and
              current["trained_checkpoint"]["manifest"]["schema_version"] ==
              "jeff.qwen-trained-checkpoint.v2")
+    input_profile = current["input_manifest"]["schema_version"]
+    execution_profile = input_profile in EXECUTION_INPUTS
+    bounded_execution = is_v2 or execution_profile
+    forward_maximum = 99 if input_profile == "p8.inputs.v1" else 627
     if is_v2:
         from jeff.runtime import qwen_readout
 
@@ -293,6 +328,10 @@ def predict(args, receipt, start):
         require(not current["executable_git_status"], "v2 executable sources must be clean and frozen")
         receipt["audit_git_context"] = {k: frozen[k] for k in context_keys}
     else:
+        if execution_profile:
+            receipt["forwards"] = {"maximum": forward_maximum, "expected_startup": 3,
+                                   "expected_suite_rows": [len(rows) for _, rows, _ in suites],
+                                   "attempted": 0, "completed": 0}
         require(current == frozen, "code/config/input/model/tokenization/environment changed since audit")
         require(not current["git_status"], "prediction requires the clean frozen code revision")
     require(args.device == cfg["device"], "device must match the pre-outcome frozen recipe")
@@ -318,11 +357,13 @@ def predict(args, receipt, start):
         if args.device == "mps":
             driver = torch.mps.driver_allocated_memory()
             require(driver <= cfg["max_mps_driver_bytes"], "MPS driver allocation guard exceeded")
-            if is_v2:
+            if bounded_execution:
                 headroom = torch.mps.recommended_max_memory() - driver
                 receipt["minimum_observed_recommended_headroom_bytes"] = min(
                     receipt.get("minimum_observed_recommended_headroom_bytes", headroom), headroom)
-                require(headroom >= 2 * 2**30, "v2 recommended MPS headroom below 2 GiB")
+                require(headroom >= 2 * 2**30,
+                        "v2 recommended MPS headroom below 2 GiB" if is_v2 else
+                        "execution profile recommended MPS headroom below 2 GiB")
 
     def sync():
         if args.device == "mps":
@@ -354,10 +395,18 @@ def predict(args, receipt, start):
         model = AutoModelForCausalLM.from_pretrained(str(args.model_dir), local_files_only=True,
             trust_remote_code=False, use_safetensors=True, torch_dtype=torch.float32,
             attn_implementation=cfg["attention"])
+    if execution_profile:
+        deadline()
+        receipt["memory_samples"].append(memory(torch, args.device, "after_cpu_load"))
     require("logits_to_keep" in inspect.signature(model.forward).parameters,
             "last-token-only projection unsupported; full-prompt logits prohibited")
-    model.requires_grad_(False).eval().to(args.device)
+    model.requires_grad_(False).eval()
+    if execution_profile:
+        deadline()
+    model.to(args.device)
     sync()
+    if execution_profile:
+        deadline()
     receipt["cold_load_seconds"] = time.monotonic() - load_start
     if is_v2:
         receipt["cold_load_seconds"] -= storage_seconds
@@ -382,15 +431,19 @@ def predict(args, receipt, start):
         sync()
         before = time.monotonic()
         with torch.inference_mode():
-            if is_v2:
+            if bounded_execution:
                 attention_mask = torch.ones_like(ids)
+                if execution_profile:
+                    deadline()
                 require(receipt["forwards"]["attempted"] < receipt["forwards"]["maximum"],
-                        "v2 forward budget exhausted")
+                        "v2 forward budget exhausted" if is_v2 else "execution profile forward budget exhausted")
                 receipt["forwards"]["attempted"] += 1
                 result = model(input_ids=ids, attention_mask=attention_mask,
                                use_cache=False, logits_to_keep=1)
                 sync()
                 receipt["forwards"]["completed"] += 1
+                if execution_profile:
+                    deadline()
             else:
                 result = model(input_ids=ids, attention_mask=torch.ones_like(ids),
                                use_cache=False, logits_to_keep=1)
@@ -405,8 +458,9 @@ def predict(args, receipt, start):
 
     startup_start = time.monotonic()
     startup = [encoded for _, _, encodings in suites for encoded in encodings][:cfg["startup_rows"]]
-    if is_v2:
-        require(len(startup) == 3, "v2 requires exactly three existing startup rows")
+    if bounded_execution:
+        require(len(startup) == 3, "v2 requires exactly three existing startup rows" if is_v2 else
+                "execution profile requires exactly three existing startup rows")
     receipt["startup"] = {"rows": 0, "forward_seconds": [], "elapsed_seconds": None}
     for encoded in startup:
         _, latency = forward(encoded)
@@ -446,10 +500,11 @@ def predict(args, receipt, start):
             if output.exists():
                 stats["output_sha256"] = digest(output)
                 output.chmod(0o444)
-    if is_v2:
+    if bounded_execution:
         require(receipt["startup"]["rows"] == 3 and
-                receipt["forwards"]["attempted"] == receipt["forwards"]["completed"] == 627,
-                "v2 requires exactly 627 attempted and completed forwards")
+                receipt["forwards"]["attempted"] == receipt["forwards"]["completed"] == forward_maximum,
+                "v2 requires exactly 627 attempted and completed forwards" if is_v2 else
+                f"execution profile requires exactly {forward_maximum} attempted and completed forwards")
     receipt["memory_samples"].append(memory(torch, args.device, "end"))
     deadline()
 
