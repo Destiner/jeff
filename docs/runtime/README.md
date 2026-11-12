@@ -63,7 +63,7 @@ The [P8 report](p8-d3-transfer.md) and [release manifest](../../manifests/releas
 record the completed P3/M7/M9 chain: 96 D3 rows per arm, 294 total presentations,
 26.150528333 seconds, all five phases exit 0 and groups absent. E10 received outputs;
 Model independently verified closure; [E10 interpretation](../evaluation/e10-seen-mechanisms.md)
-is complete (main `630aab0`). P9 is prepared, not executed.
+is complete (main `630aab0`). See the [P9 M10 checkpoint report](p9-m10-checkpoint.md) for subsequent execution evidence.
 
 ## Linux CPU follow-up (P2)
 
