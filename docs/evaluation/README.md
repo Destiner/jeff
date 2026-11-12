@@ -1,6 +1,8 @@
 # File-based evaluation
 
-Latest raw contrast: [E15 stronger-head-LR](e15-head-learning-rate.md). M12 lowers TRAIN/development probability losses versus the small-LR head, but new agreement falls130/119→121/113 of240, both-order successes86→75, and probes lose four previously both-correct pairs. Larger movement is not convergence or capacity evidence.
+[E14 frozen native NLI](e14-frozen-nli.md) scores37/60 inherited,126/240 new and7/12 probe pairs, with exact reversal invariance but losses against meaningful starts and stronger trained contexts. New agreement exceeds original MS MARCO99/240 while both proper scores worsen; P3 loses17 previously both-correct new cases and two probe pairs. **P12's required recommended-MPS-headroom guard was not measured or enforced**; stored outputs are evaluated with that consequential qualification, not full resource compliance or promotion.
+
+Prior raw contrast: [E15 stronger-head-LR](e15-head-learning-rate.md). M12 lowers TRAIN/development probability losses versus the small-LR head, but new agreement falls130/119→121/113 of240, both-order successes86→75, and probes lose four previously both-correct pairs. Larger movement is not convergence or capacity evidence.
 
 [E12 thirty-epoch encoder](e12-encoder-duration30.md). TRAIN improves1314→1414/1500 versus M9, but new development falls165→162/240 and both proper scores worsen. D3 rises26→29/96 and2→5 complete policies while NLL/Brier worsen; three exact20-case TRAIN mechanism sets are fully fitted yet remain weak on new policies. Probe agreement/NLL improve, not Brier. No further duration arm or promotion.
 
@@ -22,7 +24,7 @@ E4's [historical LR control](e4-m5-lr-control.md) fails its frozen loss conditio
 
 Prior [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
 
-Remaining night work follows [E10–E12/E14 criteria](night-comparisons.md) and the [E13 external-family phase protocol](e13-external-protocol.md). Preparation is not execution; E13's new confirmation boundary never opens original final24.
+Completed night comparisons retain their [E10–E12/E14 criteria](night-comparisons.md). Remaining external work follows the [E13 external-family phase protocol](e13-external-protocol.md). Preparation is not execution; E13's new confirmation boundary never opens original final24.
 
 E3 preparation: [protocol](e3-plan.md), [identity freeze](e3-freeze.md), and [pinned study recipe](e3-study.md).
 
