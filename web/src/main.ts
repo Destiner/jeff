@@ -254,7 +254,7 @@ async function run(input?: Decision): Promise<Receipt> {
           status.textContent = `${event.stage}: ${event.message}`;
         },
       });
-      backend.textContent = `Backend: ${engine.metadata.backend} · Model load ${engine.metadata.modelLoadMs.toFixed(0)} ms`;
+      backend.textContent = `Backend: ${engine.metadata.backend} · ONNX session ${engine.metadata.modelLoadMs.toFixed(0)} ms`;
     }
     phase = 'running';
     status.textContent = 'Comparing your choices locally…';
