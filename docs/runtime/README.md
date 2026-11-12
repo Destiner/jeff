@@ -2,6 +2,10 @@
 
 P1 exports the existing **M2** checkpoint without changing its weights, tokenizer, settings, loader or probabilities. The same exporter also handles **M3**, separately identified; neither packaging nor the demo selects a better model. No UI, model server or new framework is introduced.
 
+## Trained M9 in Safari (BROWSER-B1)
+
+[Browser feasibility](browser-b1.md) is a bounded **GO**: the trained FP32 M9 runs in a Safari WASM worker with local static assets and no inference server. All three original P11 TRAIN examples matched the retained CPU top choices and exact tokens; maximum probability drift was 6.78e-7 against the fixed 1e-4 limit. The [web app instructions](../../web/README.md) cover local installation, explicit asset staging and serving. This is not model-quality, long-input, offline-reload or all-browser certification. The 90,997,024-byte ONNX export and actual timing/closure evidence are linked in the report; no quantization or new training was performed.
+
 ## Deliverables
 
 - `python -m jeff.runtime.export`: standard-library, allowlisted copy into a new read-only directory bundle. M2 has eight checkpoint files, M3 seven. Unexpected files, links, special files, overwrites and source changes during copying are rejected.

@@ -1,0 +1,278 @@
+{
+  "schema_version": "browser-b1.evidence-publication.v1",
+  "release_id": "browser-b1-20261112-01",
+  "publication_status": "bounded_go",
+  "acceptance": {
+    "status": "pass",
+    "binding_revision_reported": "5b0e2813",
+    "p11_actual_cpu_revision_reported": "55e0284c",
+    "max_absolute_probability_difference_limit": 0.0001,
+    "probability_sum_tolerance": 1e-06,
+    "require_identical_top_ids": true,
+    "require_exact_all_token_arrays": true,
+    "require_full_option_identity_coverage_and_finite_probabilities": true,
+    "result": {
+      "max_absolute_probability_difference": 6.777156989767885e-07,
+      "top_choices_matched": 3,
+      "probabilities": 11,
+      "padded_token_positions": 840,
+      "token_integer_entries": 2520,
+      "comparator_invocations": 1,
+      "reference_substitution": false,
+      "repair_or_renormalization": false
+    }
+  },
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release/browser-b1-20261112-01",
+  "evidence_directories": [
+    "preparation",
+    "export-01",
+    "browser-01"
+  ],
+  "report": "docs/runtime/browser-b1.md",
+  "inputs": {
+    "scope": "exact original three P11 TRAIN cases only; not held-out evaluation",
+    "sha256": "26015911424707f5c9194201d0d9ad3342e0af71399ceefe9e9a4924491e3437",
+    "case_ids": [
+      "data:pilot-v1:intent:g01:r01",
+      "data:pilot-v1:sentiment-r2:g01:r01",
+      "data:pilot-v1:rule_application:g01:r01"
+    ],
+    "option_counts": [
+      3,
+      4,
+      4
+    ],
+    "token_matrix_shapes": [
+      [
+        3,
+        48
+      ],
+      [
+        4,
+        69
+      ],
+      [
+        4,
+        105
+      ]
+    ],
+    "long_input_truncation_parity_demonstrated": false
+  },
+  "source": {
+    "exporter_sha256": "3213547fac2392b0b1bb9c6d7d1cc701db517b470f4143e3b51239f741f50433",
+    "native_head_at_execution": "863e5e23aeb543724ae5c650a6049a40d155e5a3",
+    "dirty_at_execution": true,
+    "untracked_at_execution": [
+      "docs/runtime/browser-b1-export.md",
+      "scripts/release/browser_b1_export.py"
+    ],
+    "cross_encoder_sha256": "955ef625340373465300cc584dd7df8dc7dc12f239f74c1b79d1813bd239f481",
+    "scorer_sha256": "83f78cb6dda53266f5dd8f84cc0865b33c7334d3922052036f1b5a184b31945c",
+    "engine_commit": "c404fae6ad404798c7bb3680af8bf9ce61e17461",
+    "combined_host_commit": "42659b3fd42266a6aca97ee112da9fbf0064d7b3",
+    "main_integration": "Approved engine/host 513bbc646c4f3da0efab4d3e532087b63cce1c73; post-run UI timing-label 30ad9f17994cb663216b93bc977f82c0f9ca2f1b; exporter/result publication in separate Runtime handoff"
+  },
+  "native_export": {
+    "status": "completed",
+    "checkpoint": "artifacts/model/m9-msmarco-duration-20261111-01/training/checkpoint",
+    "checkpoint_pins_sha256": "fa5548ec733ddf56879c8c0968b71086e400025de21f5ce9bf119a34410763f2",
+    "environment": "new isolated export-env",
+    "python": "3.12.16",
+    "torch": "2.15.0",
+    "transformers": "4.57.6",
+    "onnx": "1.19.1",
+    "device": "cpu",
+    "threads": 4,
+    "dtype": "float32",
+    "attention_configured_and_internal": "sdpa",
+    "dynamo": false,
+    "opset": 17,
+    "do_constant_folding": false,
+    "reference_calls_entered_completed": [
+      3,
+      3
+    ],
+    "trace_calls_entered_completed": [
+      1,
+      1
+    ],
+    "total_calls_entered_completed": [
+      4,
+      4
+    ],
+    "controller_seconds": 10.78799775,
+    "charge_seconds": 12,
+    "warnings": {
+      "DeprecationWarning": 2,
+      "TracerWarning": 1
+    },
+    "status_receipt": "export-01/status.json",
+    "native_reference_receipt": "export-01/native-references.json",
+    "asset_inventory": "export-01/asset-inventory.json",
+    "onnx_model": {
+      "bytes": 90997024,
+      "sha256": "78fcd8a963d0ddd4d381200eb11f091a1e88ac80dab8d254cc3c6de1900ed1f1"
+    }
+  },
+  "browser": {
+    "status": "complete",
+    "receipt": "browser-01/receipt.json",
+    "receipt_sha256_from_delivery_metadata": "a425ed006392966a4d849a58f78b4638f74a6a5f0a83d59d38e29066d73ce689",
+    "delivery_summary": "browser-01/delivery-summary.json",
+    "name_version": "Safari 27.0",
+    "url": "http://127.0.0.1:4173/",
+    "window_id": "196264",
+    "tab_handle": "tab_mwdevi54f9e1ea16e96_14",
+    "transformers_js": "3.8.1",
+    "onnxruntime_web": "1.22.0-dev.20250409-89f8206ba4",
+    "backend": "wasm",
+    "threads": 1,
+    "dtype": "float32",
+    "cross_origin_isolated": true,
+    "auto_load": false,
+    "cases_executed": 3,
+    "probabilities": 11,
+    "extra_warmups_or_repeats": 0,
+    "errors": [],
+    "initialization_ms": 375.36,
+    "model_load_ms": 270.08000000000004,
+    "tokenizer_load_ms": 26.239999999999995,
+    "per_case_inference_ms": [
+      128.23999999999995,
+      226.74,
+      352.4200000000001
+    ],
+    "worker_requests": [
+      {
+        "path": "/models/m9/tokenizer.json",
+        "duration_ms": 4.960000000000001,
+        "source": "fetch"
+      },
+      {
+        "path": "/models/m9/tokenizer_config.json",
+        "duration_ms": 4.080000000000005,
+        "source": "fetch"
+      },
+      {
+        "path": "/models/m9/model.onnx",
+        "duration_ms": 62.94,
+        "source": "fetch"
+      },
+      {
+        "path": "/ort/ort-wasm-simd-threaded.wasm",
+        "duration_ms": 13.440000000000026,
+        "source": "fetch"
+      },
+      {
+        "path": "/ort/ort-wasm-simd-threaded.mjs",
+        "duration_ms": 1.6400000000000148,
+        "source": "resource"
+      }
+    ],
+    "timing_qualification": "First case then two different cases using resident model; not a controlled repeat benchmark or cold-cache/full-first-visit/download measurement. Fetch timings overlap initialization.",
+    "model_interval_seconds": 1.1565600000000122,
+    "whole_bridge_seconds": 1.170320000000007,
+    "controller_seconds": 1.9822921669110656,
+    "charge_seconds": 3,
+    "disposed": true,
+    "final_busy": false,
+    "final_engine_metadata": null,
+    "browser_peak_memory": null
+  },
+  "assets_and_host": {
+    "infra_evidence_root": "artifacts/handoffs/infra/browser-b1-20261112-01",
+    "metadata": [
+      "asset-manifest-01.json",
+      "build-assets-01.json",
+      "host-server-01.jsonl"
+    ],
+    "staged_bytes": 103099144,
+    "dist_bytes": 125634745,
+    "unrequested_jsep_wasm_bytes_metadata": 21596019,
+    "unrequested_jsep_wasm_bytes_supplied_summary": 21596016,
+    "jsep_size_discrepancy_bytes": 3,
+    "mjs_file_bytes": 20856,
+    "mjs_browser_resource_reported_bytes": 20869,
+    "byte_qualification": "Static file bytes, resource timing sizes, server offered bytes and downloaded bytes are not interchangeable; dist includes unrequested assets.",
+    "static_server_pid": 7826,
+    "static_server_start_utc": "2026-11-12T11:04:19.939Z",
+    "static_server_deadline_utc": "2026-11-12T12:05:49.939Z",
+    "static_server_planned_shutdown_utc": "2026-11-12T11:49:31Z",
+    "server_owner": "infra",
+    "server_current_liveness_verified": false,
+    "python_inference_backend": false,
+    "main_and_worker_paths": "local only",
+    "consolidated_request_summary": "request-observation-01.json and host-requests-browser-01.jsonl;13requests including readinessHEAD,12GETs,11successfulGETs offering103805736B;favicon404",
+    "full_network_trace_claimed": false,
+    "offline_reload_demonstrated": false,
+    "cached_download_demonstrated": false,
+    "large_asset_rehash_for_publication": false
+  },
+  "builds": {
+    "typescript_attempts": [
+      "failed",
+      "failed",
+      "failed",
+      "passed"
+    ],
+    "logs": [
+      "preparation/engine-build-01.log",
+      "preparation/engine-build-02.log",
+      "preparation/engine-build-03.log",
+      "preparation/engine-build-04.log"
+    ],
+    "python_package": "passed",
+    "python_log": "preparation/python-build-01.log",
+    "qualification": "Retained prior build receipts; not rerun for publication",
+    "tests_or_lint_run": false
+  },
+  "budget": {
+    "aggregate_execution_charge_seconds": 15,
+    "aggregate_execution_limit_seconds": 1200,
+    "gbp_spend": 0
+  },
+  "remaining_gaps": [
+    "Post-run UI changes built, not rerun; executed source identity remains distinct",
+    "Three-byte JSEP summary versus exact asset metadata discrepancy"
+  ],
+  "not_claimed": [
+    "all-input tokenization or trace certification",
+    "long-input truncation parity",
+    "held-out model quality",
+    "controlled warm benchmark",
+    "browser peak memory",
+    "offline reload",
+    "cached download",
+    "public deployment",
+    "quantization",
+    "WebGPU"
+  ],
+  "publication_actions": "Existing artifact inspection plus source/JSON review and packaging builds; no new model/browser execution or evaluation calculation.",
+  "review_evidence": [
+    {
+      "path": "artifacts/evaluation/browser-b1-result-v1/report.md",
+      "bytes": 7242,
+      "sha256": "6942cf0f473c372897a16114de4886ba9546c404d46ee02686f0616a0b2a9daf"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b1-result-v1/comparison.json",
+      "bytes": 3409,
+      "sha256": "e6ad42ccf3dfe21f6250ab0e61c235456ed2586b1a3788ed473a6f4903d610ae"
+    },
+    {
+      "path": "artifacts/evaluation/browser-b1-result-v1/projection.json",
+      "bytes": 90436,
+      "sha256": "f55e20ea740a5dc31131d7db34fa315afb7171ec4f5e8c9ddb4e9c583273b026"
+    },
+    {
+      "path": "artifacts/model/browser-b1-20261112-01/chain-return.json",
+      "bytes": 3732,
+      "sha256": "a14eeef60b5741919f6ceb1217814c2fdcee6b5036634dac5e5afb1132e4fd1f"
+    },
+    {
+      "path": "artifacts/handoffs/infra/browser-b1-20261112-01/request-observation-01.json",
+      "bytes": 3439,
+      "sha256": "49ccb9de055502c435265d8952ee17792c9a4dabf30e3fe48984b4dcea642e7f"
+    }
+  ]
+}
