@@ -4,6 +4,8 @@
 
 Timur explicitly requests eight hours of active coordination while AFK, with all six teams monitoring and ready. During this fixed window, owners remain active after delivery and check the canonical inbox roughly every minute; the30-idle-minute parking rule is temporarily superseded, not reset by chatter. No daemon/automatic wake is created. Full initial authority and immediate priorities: `artifacts/handoffs/lead/night-20261112/shared.md`. E8/E9 scoring is ready now; R8/D8 prepare independent public-source exploration/confirmation families; Model/Runtime retain the single ML scheduler and prepare named follow-ons. No blanket new-learning/spend/publication grant. Original final remains sealed. At08:30:36UTC restore ordinary bounded continuation and publish exact handoff/job state; do not abandon a supervised process.
 
+Active prospective grants in `artifacts/handoffs/lead/night-20261112/`: `learning-queue-v1.md` (P8/E10 D3; M10/P9/E11 seed7 replication; eligible M11/P10/E12 thirty-epoch encoder), `external-protocol-v1.md` plus `external-cohort-v2.md` (D8/E13 exploration and sealed confirmation; FOUR fixed predictors plus up to TWO optional), `research-follow-on.md` (R9 source-only stronger-head design), `nli-screen.md` (R10/P12/E14 one conditionally approved frozen NLI baseline), and `portable-reference.md` (P11 local M9 bundle/I6 recipient audit). Model retains exact resource scheduling; specific grants, not availability, authorize ML. Full phase boundaries and budgets are in those files. E8/E9 are delivered at1dde6fd: M8nearP3; M9new165/240 bothorders, sentiment70/80,intent78/80,rules17/80, rule transfer worse despite TRAIN gains. M11's prospective condition passes. No default/calibration/general-purpose promotion. Research R8 source selection is delivered at58f0adf; Data/Evaluation own actual selection/release and may proceed without another review gate.
+
 ## LD004: delegated ownership, effective now
 
 Timur identified lead review as the bottleneck. Workstream owners now own their implementation, review, delivery, and in-scope merges to main. This supersedes earlier prompts/rules requiring lead approval for every merge or next task.
@@ -26,7 +28,7 @@ Create/manage your own isolated workspaces. Do not edit other owners' files or s
 
 Root dependencies and shared interfaces still need the lead; cross-team implementation changes need the affected owner's agreement. Neither is permission to halt unrelated useful work. Coordinate routine inputs, predictions, and findings directly through public handoff files.
 
-## Current assignments — M8 and a bounded fit-first follow-on
+## Earlier wave — M8/M9/P6/P7/E8/E9 delivered; do not replay
 
 All six owners remain. Existing agent/token capacity is available; paid API/compute still needs a bounded allocation within the aggregate £50 ceiling. No new dependency or paid allocation is required for the current experiment.
 
