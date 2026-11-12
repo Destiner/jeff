@@ -1,0 +1,32 @@
+{
+  "name": "@jeff/sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "models/*.json",
+    "models/README*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && vite build --config vite.config.ts",
+    "prepack": "bun run build"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "onnxruntime-web": "1.22.0-dev.20250409-89f8206ba4"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.2.2"
+  }
+}
