@@ -1,5 +1,6 @@
 # Model and training
 
+- [M13 task-aligned M9 warm-start results](m13-task-aligned-results.md).
 - [M12 stronger frozen-backbone head-LR results](m12-head-lr-results.md).
 - [M11 thirty-epoch results and evidence inventory](m11-msmarco-duration30-results.md).
 - [M10 seed7 results and E11/E16 follow-through](m10-qwen-seed7-results.md).
@@ -10,7 +11,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest contrast: stronger frozen-backbone head learning rate
+## Latest contrast: task-aligned M9 warm-start
+
+M13's sole fixed CPU FP32 run initializes from actual trained M9, uses fresh AdamW and exactly480 selected TRAIN rows for3epochs/360updates. All105 initial parameter hashes matched M9's endpoint. Fixed TRAINfit is466/480; no initial pass on this mixture was authorized, so this is not a measured fit gain. Fresh M13/M9 reserved64 outputs and M13-only retention240 are delivered; independent acceptance is pending and M9 remains default. Native chain closed at88/1200seconds with actual process return, no retry. See [results](m13-task-aligned-results.md) and [frozen plan](m13-task-aligned-plan.md).
+
+## Prior contrast: stronger frozen-backbone head learning rate
 
 M12 changes only M8 head LR2e-6→2e-4. TRAIN CE improves1.332200→1.135531 but agreement declines804→786/1500; first-slot choices reach936/1500. [E15](../evaluation/e15-head-learning-rate.md) finds new native/reversed121/113 versus M8's130/119, both-correct86→75 and four lost both-correct probe pairs despite lower aggregate proper scores. The separate two-forward reversal mean reaches132, no better than M8 mean and below P3 mean134. M12/P13 is complete at308.209917/900seconds; no rescue, capacity verdict or promotion. See [results](m12-head-lr-results.md) and [run index](m12-head-lr-run.json).
 

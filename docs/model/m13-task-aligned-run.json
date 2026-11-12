@@ -1,0 +1,221 @@
+{
+  "schema": "jeff.model.m13.run.v1",
+  "status": "native_complete_independent_acceptance_pending",
+  "serving_default": "M9",
+  "execution_source": "3cc10dbaea93592841e28fafe126f97f73145dc1",
+  "source_integration": "a0c22164065e6ed3a3fbf24598926e3db306b8be",
+  "scientific_freeze_utc": "2026-11-12T18:36:52Z",
+  "reserved_content_freeze_utc": "2026-11-12T18:50:56.005180Z",
+  "training_start_utc": "2026-11-12T19:21:06.344479Z",
+  "training_end_utc": "2026-11-12T19:22:11.521488Z",
+  "initializer": {
+    "checkpoint": "artifacts/model/m9-msmarco-duration-20261111-01/training/checkpoint",
+    "checkpoint_config_sha256": "09c74c0374cbd46e97c608e7da8c6eb201f2f5b95370c2e347ca42320658c164",
+    "run_sha256": "d50013f9236c69ae47d0b5212a0f607ae461c8bd92a28e25cc2a1d9a162067ee",
+    "parameter_reference": "weights.after",
+    "initial_parameter_hashes_matched": 105,
+    "fresh_optimizer": true
+  },
+  "recipe": {
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "interop_threads": 4,
+    "seed": 42,
+    "batch_size": 4,
+    "epochs": 3,
+    "updates": 360,
+    "presentations": 1440,
+    "backbone_lr": 2e-05,
+    "head_lr": 0.0005,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "temperature": 1,
+    "max_length": 256,
+    "scheduler": null,
+    "clipping": null,
+    "retry": false
+  },
+  "training_data": {
+    "manifest": "artifacts/data/data-final-sprint-v1/manifest.json",
+    "sha256": "4c41158e48c5546b6489bc4887ddedcd0dcbf8c8af36ed744fa8d41f7efb9634",
+    "fresh": 240,
+    "original_train_replay": {
+      "intent": 80,
+      "sentiment": 80,
+      "rule_application": 80
+    }
+  },
+  "checkpoint": {
+    "path": "artifacts/model/final-sprint-20261112-01/learning-01/run01/training/checkpoint",
+    "files": {
+      "checkpoint.json": {
+        "sha256": "e8fa2393137263f40c984149eff6b86a1fcae581a5e06bfbe207c6cb01f57e20",
+        "bytes": 124920
+      },
+      "encoder/config.json": {
+        "sha256": "db0c02d5ad2dc84ac6c890d5273dba1991d8cd9c9d62d35f8d427b54f6c5e18b",
+        "bytes": 787
+      },
+      "encoder/model.safetensors": {
+        "sha256": "5433cde7023f25fbda2cc6e7ff59149c4e8ba1e5a296a514b4dd5fb12bd8f629",
+        "bytes": 90866412
+      },
+      "tokenizer/special_tokens_map.json": {
+        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+        "bytes": 695
+      },
+      "tokenizer/tokenizer.json": {
+        "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+        "bytes": 711649
+      },
+      "tokenizer/tokenizer_config.json": {
+        "sha256": "3df6fee188851b9a493bc30c9cf70aa76b40b176eadcd3ef35793d06d6c9dc07",
+        "bytes": 1463
+      },
+      "tokenizer/vocab.txt": {
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+        "bytes": 231508
+      }
+    }
+  },
+  "fixed_train_fit": {
+    "overall": {
+      "count": 480,
+      "target_agreement": 466,
+      "nll": 0.10320665716233475,
+      "brier": 0.054181550992835656
+    },
+    "family:intent": {
+      "count": 240,
+      "target_agreement": 239,
+      "nll": 0.051993987229098114,
+      "brier": 0.021763075317829717
+    },
+    "shard:workspace-routing.train.jsonl": {
+      "count": 80,
+      "target_agreement": 80,
+      "nll": 0.012053130718271608,
+      "brier": 0.0014658529433358319
+    },
+    "family:sentiment": {
+      "count": 160,
+      "target_agreement": 157,
+      "nll": 0.04653802189891196,
+      "brier": 0.0231600164780064
+    },
+    "shard:direct-sentiment.train.jsonl": {
+      "count": 80,
+      "target_agreement": 77,
+      "nll": 0.09145608631500982,
+      "brier": 0.04612654210829264
+    },
+    "shard:software-ticket.train.jsonl": {
+      "count": 80,
+      "target_agreement": 79,
+      "nll": 0.14118411303406433,
+      "brier": 0.06362994481533737
+    },
+    "shard:replay.train.jsonl": {
+      "count": 240,
+      "target_agreement": 230,
+      "nll": 0.12484887096888767,
+      "brier": 0.07128898869668274
+    },
+    "family:rule_application": {
+      "count": 80,
+      "target_agreement": 70,
+      "nll": 0.3701819374888905,
+      "brier": 0.21348004704751214
+    }
+  },
+  "native_ledger": {
+    "schema": "m13-native-chain-return-1",
+    "at": "2026-11-12T19:28:53.242095+00:00",
+    "status": "closed",
+    "source_revision": "3cc10dbaea93592841e28fafe126f97f73145dc1",
+    "stages": {
+      "preflight-01": {
+        "return_sha256": "b87371913247d243d14837d81c6019bce7dceb40148aba4eaea4054bd510a9e0",
+        "charge_seconds": 7,
+        "actual_external_seconds": 5.29
+      },
+      "learning-01": {
+        "return_sha256": "9d563d56ffa6f7fb9cd5d31afdabfaf7498d9201ce043b5a38de7d7381645c1d",
+        "charge_seconds": 67,
+        "actual_external_seconds": 65.19
+      },
+      "postfit-01": {
+        "return_sha256": "680eccec55c60a66f94b5dbb4ae11f52a9e6d7c843ffa27da78aeb9d21020b6b",
+        "charge_seconds": 10,
+        "actual_external_seconds": 8.97
+      },
+      "incumbent-01": {
+        "return_sha256": "1b507c235980810e76483f80e3abbdd530f0bb30227d6533d15cbdedfd9bb751",
+        "charge_seconds": 4,
+        "actual_external_seconds": 2.14
+      }
+    },
+    "charge_seconds": 88,
+    "cap_seconds": 1200,
+    "unused_seconds_authorize_nothing": true,
+    "all_owned_processes_and_groups_returned": true,
+    "training_attempts": 1,
+    "updates": 360,
+    "presentations": 1440,
+    "training_rows": 480,
+    "postlearning_decisions": 848,
+    "postlearning_probabilities": 3290,
+    "postlearning_forwards": 212,
+    "postlearning_startup_forwards": 0,
+    "reference_access": false,
+    "sdk_export_ledger": {
+      "charged_seconds": 6,
+      "cap_seconds": 300,
+      "current_grant": "closed",
+      "offline": "unattempted"
+    },
+    "additional_actual_gbp": 0,
+    "additional_pending_gbp": 0
+  },
+  "acceptance": {
+    "status": "pending",
+    "primary_choices": 32,
+    "primary_proper_cases": 30,
+    "uncertain_sentiments": 2,
+    "references_read_by_model": false,
+    "M13_exported": false,
+    "M13_browser_executed": false
+  },
+  "evidence": {
+    "artifacts/model/final-sprint-20261112-01/learning-return.json": {
+      "sha256": "3aeaee8e5acabb31c4f76a43d34aaea88b1813c19d0e78aacfc1ca19a654d091"
+    },
+    "artifacts/model/final-sprint-20261112-01/train-fit-summary.json": {
+      "sha256": "9a16bec10abe6dd5efbac95b078222bbbd7dbc8bc6f9ce0d897cb9f50a39cbf1"
+    },
+    "artifacts/model/final-sprint-20261112-01/preflight-01/return.json": {
+      "sha256": "b87371913247d243d14837d81c6019bce7dceb40148aba4eaea4054bd510a9e0"
+    },
+    "artifacts/model/final-sprint-20261112-01/learning-01/return.json": {
+      "sha256": "9d563d56ffa6f7fb9cd5d31afdabfaf7498d9201ce043b5a38de7d7381645c1d"
+    },
+    "artifacts/model/final-sprint-20261112-01/postfit-01/return.json": {
+      "sha256": "680eccec55c60a66f94b5dbb4ae11f52a9e6d7c843ffa27da78aeb9d21020b6b"
+    },
+    "artifacts/model/final-sprint-20261112-01/incumbent-01/return.json": {
+      "sha256": "1b507c235980810e76483f80e3abbdd530f0bb30227d6533d15cbdedfd9bb751"
+    }
+  },
+  "qualifications": [
+    "TRAIN fit is not held-out quality; no initial480 fit was run.",
+    "Checkpoint embedded run.status remains historical running; standalone, external and fresh reload evidence are separate.",
+    "RSS scopes are sampled/nonadditive, not continuous physical peaks.",
+    "SDK proof-consumer online parity does not certify production UI or offline inference.",
+    "Private case locators do not extend access permissions."
+  ]
+}
