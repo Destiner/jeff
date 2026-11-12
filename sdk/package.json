@@ -18,7 +18,7 @@
     "models/README*"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && vite build --config vite.config.ts",
+    "build": "bun scripts/build.mjs",
     "prepack": "bun run build"
   },
   "dependencies": {

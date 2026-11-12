@@ -1,10 +1,12 @@
-import { validateDecision } from './types.js';
-import type { Decision, Metadata, Progress, Result, WorkerReply, WorkerRequest } from './types.js';
-export type { Decision, Prediction, Metadata, Progress, Result, RequestRecord } from './types.js';
+import { snapshotDecision } from './types.js';
+import { localDirectory } from './assets.js';
+import type { Decision, DecisionInput, Prediction, Metadata, Progress, Result, WorkerReply, WorkerRequest } from './types.js';
+export type { Decision, DecisionInput, Option, Prediction, Metadata, ModelDescriptor, AssetPin, Progress, Result, RequestRecord } from './types.js';
 
 export type Engine = {
   metadata: Metadata;
-  predict(input: Decision): Promise<Result>;
+  predict(input: DecisionInput): Promise<Prediction>;
+  predictWithDiagnostics(input: DecisionInput): Promise<Result>;
   dispose(): Promise<void>;
 };
 
@@ -12,14 +14,21 @@ const INIT_MS = 120_000;
 const PREDICT_MS = 60_000;
 const DISPOSE_MS = 5_000;
 
-export async function createEngine(options: {
-  assetBaseUrl: string; onProgress?: (event: Progress) => void; signal?: AbortSignal;
-}): Promise<Engine> {
+export type EngineOptions = {
+  assetBaseUrl: string; ortBaseUrl: string; expectedModelId?: string;
+  onProgress?: (event: Progress) => void; signal?: AbortSignal;
+};
+
+export async function createEngine(options: EngineOptions): Promise<Engine> {
+  if (typeof window === 'undefined' || typeof Worker === 'undefined' || !globalThis.isSecureContext) {
+    throw new Error('Jeff requires a secure browser context with module workers (HTTPS or localhost)');
+  }
   if (options.signal?.aborted) throw new DOMException('Engine creation aborted', 'AbortError');
-  const base = new URL(options.assetBaseUrl, location.href);
-  if (base.origin !== location.origin || !['http:', 'https:'].includes(base.protocol) ||
-      base.username || base.password || base.search || base.hash || !base.pathname.endsWith('/')) {
-    throw new Error('assetBaseUrl must be a same-origin HTTP(S) directory URL ending in /');
+  const base = localDirectory(options.assetBaseUrl, location.origin, location.href);
+  const ortBase = localDirectory(options.ortBaseUrl, location.origin, location.href);
+  if (options.expectedModelId !== undefined &&
+      (typeof options.expectedModelId !== 'string' || !options.expectedModelId.trim())) {
+    throw new Error('expectedModelId must be a nonempty string when supplied');
   }
   const workerUrl = new URL('./worker.js', import.meta.url);
   const worker = new Worker(workerUrl, { type: 'module' });
@@ -29,7 +38,7 @@ export async function createEngine(options: {
   let disposePromise: Promise<void> | undefined;
   let queue: Promise<unknown> = Promise.resolve();
   const pending = new Map<number, {
-    resolve: (value: Metadata | Result | null) => void;
+    resolve: (value: Metadata | Prediction | Result | null) => void;
     reject: (error: Error) => void; timer: ReturnType<typeof setTimeout>;
   }>();
   const abort = () => stop(new DOMException('Engine operation aborted', 'AbortError'));
@@ -62,7 +71,7 @@ export async function createEngine(options: {
     item.resolve(data.value);
   };
   function request(message: WorkerRequest, timeoutMs: number) {
-    return new Promise<Metadata | Result | null>((resolve, reject) => {
+    return new Promise<Metadata | Prediction | Result | null>((resolve, reject) => {
       if (closed) { reject(new Error('Engine is closed')); return; }
       const timer = setTimeout(() => stop(new Error(`Engine ${message.kind} deadline exceeded (${timeoutMs}ms)`)), timeoutMs);
       pending.set(message.id, { resolve, reject, timer });
@@ -70,25 +79,27 @@ export async function createEngine(options: {
     });
   }
   try {
-    const metadata = await request({ kind: 'init', id: ++sequence, assetBaseUrl: base.href }, INIT_MS) as Metadata;
+    const metadata = await request({ kind: 'init', id: ++sequence, assetBaseUrl: base.href,
+      ortBaseUrl: ortBase.href, expectedModelId: options.expectedModelId }, INIT_MS) as Metadata;
+    function run(input: DecisionInput, diagnostics: boolean): Promise<Prediction | Result> {
+      if (closed || disposing) return Promise.reject(new Error('Engine is closed or disposing'));
+      let snapshot: Decision;
+      // Capture before queueing so later caller mutation cannot change the decision.
+      try { snapshot = snapshotDecision(input); } catch (error) { return Promise.reject(error); }
+      const task = queue.then(async () => {
+        const result = await request({ kind: 'predict', id: ++sequence, input: snapshot, diagnostics }, PREDICT_MS) as Prediction | Result;
+        if ('diagnostics' in result) metadata.requests = result.diagnostics.requests;
+        return result;
+      });
+      queue = task;
+      // Observe internally while leaving the original rejecting promise with the caller.
+      void task.catch(() => undefined);
+      return task;
+    }
     return {
       metadata,
-      predict(input) {
-        if (closed || disposing) return Promise.reject(new Error('Engine is closed or disposing'));
-        try { validateDecision(input); } catch (error) { return Promise.reject(error); }
-        // Capture now so caller mutation cannot change a queued decision.
-        const snapshot: Decision = {
-          schema_version: '0.1', id: input.id, state: input.state, question: input.question,
-          options: input.options.map(o => ({ id: o.id, text: o.text })),
-        };
-        const task = queue.then(async () => {
-          const result = await request({ kind: 'predict', id: ++sequence, input: snapshot }, PREDICT_MS) as Result;
-          metadata.requests = result.diagnostics.requests;
-          return result;
-        });
-        queue = task;
-        return task;
-      },
+      predict: input => run(input, false) as Promise<Prediction>,
+      predictWithDiagnostics: input => run(input, true) as Promise<Result>,
       dispose() {
         if (disposePromise) return disposePromise;
         disposing = true;

@@ -15,6 +15,5 @@
     "noEmitOnError": true,
     "types": []
   },
-  "files": ["node_modules/onnxruntime-web/types.d.ts"],
   "include": ["src/**/*.ts"]
 }

@@ -1,0 +1,24 @@
+{
+  "schema_version": "jeff.browser-encoder.v1",
+  "id": "m9-msmarco-duration-20261111-01",
+  "label": "M9",
+  "checkpoint_sha256": "09c74c0374cbd46e97c608e7da8c6eb201f2f5b95370c2e347ca42320658c164",
+  "format": "state-question-candidate-v1",
+  "precision": "fp32",
+  "max_pair_tokens": 256,
+  "scoring": "softmax-t1",
+  "files": {
+    "model.onnx": {
+      "bytes": 90997024,
+      "sha256": "78fcd8a963d0ddd4d381200eb11f091a1e88ac80dab8d254cc3c6de1900ed1f1"
+    },
+    "tokenizer.json": {
+      "bytes": 711649,
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1272,
+      "sha256": "7b082b48a08a0b5c5939d99472e33addce3d96202155e33f7928cecd171186a0"
+    }
+  }
+}

@@ -2,7 +2,8 @@
 import { BertTokenizer, env } from '@huggingface/transformers';
 import * as ort from 'onnxruntime-web/wasm';
 import { validateDecision } from './types.js';
-import type { Decision, Metadata, Progress, RequestRecord, Result, WorkerReply, WorkerRequest } from './types.js';
+import { localDirectory, validateDescriptor } from './assets.js';
+import type { AssetPin, Decision, Metadata, ModelDescriptor, Prediction, Progress, RequestRecord, Result, WorkerReply, WorkerRequest } from './types.js';
 
 const scope = self as unknown as DedicatedWorkerGlobalScope;
 const send = (reply: WorkerReply) => scope.postMessage(reply);
@@ -10,6 +11,7 @@ const progress = (stage: string, message: string) => send({ kind: 'progress', ev
 let assetProgress = new Map<string, Pick<Progress, 'stage' | 'message'>>();
 let session: ort.InferenceSession | undefined;
 let tokenizer: BertTokenizer | undefined;
+let descriptor: ModelDescriptor;
 let special: { cls: number; sep: number; pad: number };
 const records: RequestRecord[] = [];
 let allowed = new Set<string>();
@@ -97,23 +99,34 @@ function requests(): RequestRecord[] {
   return result;
 }
 
-async function initialize(assetBaseUrl: string): Promise<Metadata> {
+async function pinnedAsset(url: string, pin: AssetPin): Promise<ArrayBuffer> {
+  const bytes = await (await fetch(url)).arrayBuffer();
+  if (bytes.byteLength !== pin.bytes) throw new Error('Asset length differs from model.json');
+  const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', bytes));
+  const sha256 = Array.from(digest, n => n.toString(16).padStart(2, '0')).join('');
+  if (sha256 !== pin.sha256) throw new Error('Asset SHA256 differs from model.json');
+  return bytes;
+}
+
+async function initialize(assetBaseUrl: string, ortBaseUrl: string, expectedModelId?: string): Promise<Metadata> {
   const start = performance.now();
-  const base = new URL(assetBaseUrl, scope.location.href);
-  if (base.origin !== scope.location.origin || !['http:', 'https:'].includes(base.protocol) ||
-      base.search || base.hash || base.username || base.password || !base.pathname.endsWith('/')) {
-    throw new Error('Invalid same-origin asset directory');
-  }
+  const base = localDirectory(assetBaseUrl, scope.location.origin, scope.location.href);
+  const ortBase = localDirectory(ortBaseUrl, scope.location.origin, scope.location.href);
+  const descriptorUrl = new URL('model.json', base).href;
+  allowed = new Set([descriptorUrl]);
+  progress('identity', 'Reading local model identity');
+  descriptor = validateDescriptor(await (await fetch(descriptorUrl)).json(), expectedModelId);
   const modelUrl = new URL('model.onnx', base).href;
   const tokenizerUrl = new URL('tokenizer.json', base).href;
   const configUrl = new URL('tokenizer_config.json', base).href;
-  const wasmUrl = new URL('/ort/ort-wasm-simd-threaded.wasm', base).href;
-  const mjsUrl = new URL('/ort/ort-wasm-simd-threaded.mjs', base).href;
-  allowed = new Set([modelUrl, tokenizerUrl, configUrl, wasmUrl, mjsUrl]);
+  const wasmUrl = new URL('ort-wasm-simd-threaded.wasm', ortBase).href;
+  const mjsUrl = new URL('ort-wasm-simd-threaded.mjs', ortBase).href;
+  allowed = new Set([descriptorUrl, modelUrl, tokenizerUrl, configUrl, wasmUrl, mjsUrl]);
   assetProgress = new Map([
     [modelUrl, { stage: 'model', message: 'Reading local FP32 model asset' }],
     [tokenizerUrl, { stage: 'tokenizer', message: 'Reading local BERT tokenizer asset' }],
     [configUrl, { stage: 'tokenizer', message: 'Reading local BERT tokenizer configuration' }],
+    [wasmUrl, { stage: 'runtime', message: 'Reading local WASM runtime' }],
   ]);
   env.allowRemoteModels = false;
   env.allowLocalModels = true;
@@ -121,15 +134,15 @@ async function initialize(assetBaseUrl: string): Promise<Metadata> {
   env.useFSCache = false;
   env.useCustomCache = false;
   if (env.version !== '3.8.1' || ort.env.versions.web !== '1.22.0-dev.20250409-89f8206ba4') {
-    throw new Error('Runtime dependency versions differ from the B1 pinned contract');
+    throw new Error('Runtime dependency versions differ from the SDK pinned contract');
   }
   ort.env.wasm.numThreads = 1;
   ort.env.wasm.proxy = false;
   ort.env.wasm.wasmPaths = { wasm: wasmUrl, mjs: mjsUrl };
   progress('tokenizer', 'Loading original local BERT tokenizer');
   const tokenizerStart = performance.now();
-  const json = await (await fetch(tokenizerUrl)).json();
-  const config = await (await fetch(configUrl)).json();
+  const json = JSON.parse(new TextDecoder().decode(await pinnedAsset(tokenizerUrl, descriptor.files['tokenizer.json'])));
+  const config = JSON.parse(new TextDecoder().decode(await pinnedAsset(configUrl, descriptor.files['tokenizer_config.json'])));
   if (json.model?.type !== 'WordPiece' || json.normalizer?.type !== 'BertNormalizer' ||
       json.pre_tokenizer?.type !== 'BertPreTokenizer' ||
       (config.padding_side && config.padding_side !== 'right') ||
@@ -164,7 +177,7 @@ async function initialize(assetBaseUrl: string): Promise<Metadata> {
   tokenizer = new BertTokenizer(json, config);
   const tokenizerLoadMs = performance.now() - tokenizerStart;
   progress('model', 'Loading local FP32 model asset');
-  const model = await (await fetch(modelUrl)).arrayBuffer();
+  const model = await pinnedAsset(modelUrl, descriptor.files['model.onnx']);
   progress('session', 'Initializing single-thread WASM session');
   const modelStart = performance.now();
   session = await ort.InferenceSession.create(model, { executionProviders: ['wasm'] });
@@ -175,14 +188,14 @@ async function initialize(assetBaseUrl: string): Promise<Metadata> {
   }
   progress('ready', 'Local model initialized');
   return {
-    backend: 'wasm', workerBackend: 'wasm', threads: 1, modelLoadMs,
+    backend: 'wasm', workerBackend: 'wasm', threads: 1, model: descriptor, modelLoadMs,
     tokenizerLoadMs, initializationMs: performance.now() - start,
     versions: { transformers: env.version, onnxruntime: ort.env.versions.web,
       browser: scope.navigator.userAgent }, requests: requests(),
   };
 }
 
-async function predict(input: Decision): Promise<Result> {
+async function predict(input: Decision, diagnostics: boolean): Promise<Prediction | Result> {
   validateDecision(input);
   if (!session || !tokenizer) throw new Error('Engine is not initialized');
   const start = performance.now();
@@ -193,7 +206,7 @@ async function predict(input: Decision): Promise<Result> {
     const a = first.slice();
     const b = tokenizer.encode(`Candidate:\n${option.text}`, { add_special_tokens: false });
     if (a.length + b.length + 3 > 256) {
-      throw new Error('Input exceeds the M9 limit of 256 tokens per encoded candidate pair; shorten the state, question or options');
+      throw new Error('Input exceeds the supported limit of 256 tokens per encoded candidate pair; shorten the state, question or options');
     }
     input_ids.push([special.cls, ...a, special.sep, ...b, special.sep]);
     token_type_ids.push([...new Array(a.length + 2).fill(0), ...new Array(b.length + 1).fill(1)]);
@@ -225,10 +238,12 @@ async function predict(input: Decision): Promise<Result> {
     const maximum = Math.max(...logits);
     const exps = logits.map(value => Math.exp(value - maximum));
     const sum = exps.reduce((a, b) => a + b, 0);
+    const prediction: Prediction = { schema_version: '0.1', id: input.id, probabilities: input.options.map((option, i) => ({
+      option_id: option.id, probability: exps[i] / sum,
+    })) };
+    if (!diagnostics) return prediction;
     return {
-      prediction: { schema_version: '0.1', id: input.id, probabilities: input.options.map((option, i) => ({
-        option_id: option.id, probability: exps[i] / sum,
-      })) },
+      prediction,
       diagnostics: { backend: 'wasm', tokenization, logits, inferenceMs, tokenizerMs,
         totalMs: performance.now() - start, requests: requests() },
     };
@@ -242,9 +257,9 @@ let queue = Promise.resolve();
 scope.onmessage = ({ data }: MessageEvent<WorkerRequest>) => {
   queue = queue.then(async () => {
     try {
-      let value: Metadata | Result | null = null;
-      if (data.kind === 'init') value = await initialize(data.assetBaseUrl);
-      else if (data.kind === 'predict') value = await predict(data.input);
+      let value: Metadata | Prediction | Result | null = null;
+      if (data.kind === 'init') value = await initialize(data.assetBaseUrl, data.ortBaseUrl, data.expectedModelId);
+      else if (data.kind === 'predict') value = await predict(data.input, data.diagnostics);
       else if (data.kind === 'dispose') {
         try { await session?.release(); } finally { session = undefined; tokenizer = undefined; }
       } else throw new Error('Unknown engine message');
