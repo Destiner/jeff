@@ -24,7 +24,7 @@ def expired(signum, frame):
 
 
 signal.signal(signal.SIGALRM, expired)
-signal.setitimer(signal.ITIMER_REAL, 1200)
+signal.setitimer(signal.ITIMER_REAL, 1154)
 import argparse
 import datetime as dt
 import hashlib
@@ -35,7 +35,8 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[2]
 NATIVE = Path('/Users/destiner/Code/jeff/.worktrees/release/.venv/bin/python')
-ORDER = ['p3', 'm7', 'msmarco-start', 'm9']
+ORDER = ['m10', 'm11', 'm12', 'p12-nli']
+PRIOR = Path('/Users/destiner/Code/jeff/artifacts/release/e13-exploration-20261112-01/delivery-summary.json')
 INPUT_ROOT = Path('/Users/destiner/Code/jeff/artifacts/evaluation/e13-exploration-inputs-v1')
 INPUTS = {'native.jsonl': '1c8dca5c849faba518478c8676be37290d7722fde2f3edfe791d71e0ca23a074',
           'reversed.jsonl': '5e115753f7ee2bc6193c1c9758ddf59f05f2bae35a79eb975678afb8ce8ed2d1',
@@ -116,7 +117,13 @@ def main():
     require(gs <= now() < ge <= stamp('2026-11-12T08:30:36+00:00'), 'grant window')
     require(now() < stamp('2026-11-12T08:00:00+00:00'), 'starts closed')
     require(op['candidate_order'] == ORDER and op['source_root'] == str(ROOT), 'frozen order/root')
-    end = min(CLOCK + 1200, time.monotonic() + (ge - now()).total_seconds())
+    require(op['phase'] == 'exploration' and op['prior_delivery']['path'] == str(PRIOR), 'exploration ledger only')
+    check(op['prior_delivery'], CLOCK + 30)
+    prior = load(PRIOR)
+    require(prior['status'] == 'complete' and prior['conservative_cumulative_charge_seconds'] == 46 and
+            prior['remaining_from_1200_seconds'] == 1154 and prior['outer_exit_code'] == 0 and
+            prior['all_native_groups_absent'] is True, 'prior exploration charge/return')
+    end = min(CLOCK + 1154, time.monotonic() + (ge - now()).total_seconds())
     require(end - time.monotonic() >= 725, 'full four-job budget unavailable')
     signal.setitimer(signal.ITIMER_REAL, end - time.monotonic())
     out = a.output_root.absolute()
@@ -138,15 +145,24 @@ def main():
             check(ref, deadline - 2)
             b = load(ref['path'])
             require(b['candidate'] == candidate and b['source_root'] == str(ROOT), 'binding role/root')
+            if candidate == 'p12-nli':
+                require(b['schema_version'] == 'e13.nli.wrapper.v1' and
+                        b['native_binding']['path'] != ref['path'], 'separate native NLI descriptor required')
             for key in ('model_activation', 'reservation', 'renewed_window_message'):
                 require(b[key] == op[key], 'activation binding mismatch')
             for path, sha in b['executable_sources'].items():
                 check({'path': path, 'sha256': sha}, deadline - 2)
-            for key in ('input_manifest', 'config', 'checkpoint_manifest', 'download_manifest'):
+            for key in ('input_manifest', 'config', 'checkpoint_manifest', 'download_manifest', 'native_binding'):
                 if b.get(key) is not None:
                     check(b[key], deadline - 2)
             require(str(NATIVE.resolve()) == b['native_interpreter']['path'], 'native interpreter changed')
             check(b['native_interpreter'], deadline - 2)
+            if candidate == 'p12-nli':
+                native_binding = load(b['native_binding']['path'])
+                require(native_binding['schema_version'] == 'e13.nli.binding.v1' and
+                        native_binding['candidate'] == candidate and
+                        native_binding['input_manifest'] == b['input_manifest'],
+                        'native NLI input binding mismatch')
             manifest = load(b['input_manifest']['path'])
             require(manifest['release']['path'] == str(INPUT_ROOT / 'inference-handoff.json'), 'release scope')
             require(manifest['pair_map'] == {'path': str(INPUT_ROOT / 'pairs.json'), 'sha256': INPUTS['pairs.json']}, 'pair scope')
@@ -164,6 +180,9 @@ def main():
                 PROCESS = subprocess.Popen(command, cwd=ROOT, env=env, stdout=stdout,
                                            stderr=stderr, start_new_session=True)
                 record['pid'] = PROCESS.pid
+                write(out / (candidate + '.child-registration.json'),
+                      {'candidate': candidate, 'pid': PROCESS.pid, 'pgid': PROCESS.pid,
+                       'phase': 'exploration', 'command': command})
                 while time.monotonic() < deadline - 2:
                     if PROCESS.poll() is not None and not alive(PROCESS.pid):
                         break
@@ -176,11 +195,30 @@ def main():
                     require(rss <= 8 * 1024**3, 'group RSS guard')
                     time.sleep(.03)
             require(PROCESS.poll() == 0 and not record.get('timeout'), 'native failed or timed out')
-            receipt = load(out / candidate / ('run/receipt.json' if candidate in ('p3', 'm7') else 'receipt.json'))
+            receipt = load(out / candidate / ('run/receipt.json' if candidate in ('m10', 'm12') else 'receipt.json'))
             require(receipt['status'] == 'complete', 'native receipt incomplete')
-            if candidate in ('p3', 'm7'):
-                require(receipt['forwards']['attempted'] == receipt['forwards']['completed'] == 403,
-                        'Qwen forward coverage')
+            if candidate in ('m10', 'm12'):
+                require(receipt['forwards']['attempted'] == receipt['forwards']['completed'] ==
+                        receipt['forwards']['maximum'] == 403 and
+                        receipt['forwards']['expected_startup'] == 3 and
+                        receipt['forwards']['expected_suite_rows'] == [200, 200] and
+                        len(receipt['suites']) == 2 and
+                        all(s['status'] == 'complete' and s['expected_rows'] == s['written_rows'] == 200
+                            for s in receipt['suites']), 'Qwen forward coverage')
+            elif candidate == 'p12-nli':
+                require(receipt['schema_version'] == 'e13.nli.run.v1' and
+                        receipt['expected_counts'] == {
+                            'decisions': 400, 'candidate_pairs': 800, 'native_forwards': 100,
+                            'startup_forwards': 0,
+                            'suites': [{'name': name, 'decisions': 200, 'candidate_pairs': 400,
+                                        'native_forwards': 50}
+                                       for name in ('e13-native', 'e13-reversed')]} and
+                        receipt['native_attempted'] == receipt['native_completed'] == 100 and
+                        receipt['pairs_attempted'] == receipt['pairs_completed'] == 800 and
+                        receipt['startup_forwards'] == 0 and
+                        sum(s['written_rows'] for s in receipt['suites']) == 400 and
+                        sum(s['written_probabilities'] for s in receipt['suites']) == 800,
+                        'NLI coverage')
             else:
                 require(receipt['native_forward_attempted'] == receipt['native_forward_completed'] == 100 and
                         receipt['written_decisions'] == 400 and
@@ -188,7 +226,7 @@ def main():
                         'encoder coverage')
             record['outputs'] = []
             for item in manifest['datasets']:
-                path = out / candidate / ('run' if candidate in ('p3', 'm7') else '') / (item['name'] + '.jsonl')
+                path = out / candidate / ('run' if candidate in ('m10', 'm12') else '') / (item['name'] + '.jsonl')
                 raw = path.read_bytes()
                 predictions = [json.loads(line) for line in raw.splitlines()]
                 inputs = [json.loads(line) for line in Path(item['path']).read_bytes().splitlines()]
@@ -224,11 +262,15 @@ def main():
             PUBLISHED = published
             os.replace(pending, published)
             require(time.monotonic() < deadline, 'post-publication deadline')
+            write(out / (candidate + '.publication-receipt.json'),
+                  {'elapsed_seconds_after_publication': time.monotonic() - start,
+                   'phase': 'exploration'})
             signal.setitimer(signal.ITIMER_REAL, max(.001, end - time.monotonic()))
             PUBLISHED = None
         if not record['cleanup_complete']:
             break
-    write(out / 'batch-receipt.json', {'runs': records, 'success': len(records) == 4 and all(r['success'] for r in records),
+    write(out / 'batch-receipt.json', {'phase': 'exploration', 'prior_charge_seconds': 46,
+          'elapsed_seconds_before_publication': time.monotonic() - CLOCK, 'runs': records, 'success': len(records) == 4 and all(r['success'] for r in records),
           'qualification': 'Source-prepared harness; sampled group RSS, not continuous peak. Success also requires parent exit zero. No retries.'})
     require(time.monotonic() < end, 'aggregate publication deadline')
     return 0 if len(records) == 4 and all(r['success'] for r in records) else 1

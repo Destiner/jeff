@@ -317,16 +317,21 @@ def evidence(config_path, manifest_path, model_dir, checkpoint_manifest=None):
                 "E13 P3 assets differ from original download")
     is_v2 = (binding is not None and
              binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v2")
+    # The E13 candidate pin above is mandatory before this v2 exception.
+    e13_m12_v2 = e13 and candidate == "m12" and is_v2
     if execution_profile:
         require(binding is None or
-                binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v1",
-                "execution profiles permit only original assets or trained v1 checkpoints")
+                binding["manifest"]["schema_version"] == "jeff.qwen-trained-checkpoint.v1" or
+                e13_m12_v2,
+                "execution profiles permit only original assets, trained v1, or E13 pinned M12 v2")
     if is_v2:
         from jeff.runtime import qwen_readout
 
     suites = read_inputs(manifest_path)
     if is_v2:
-        require(tuple(len(rows) for _, rows, _ in suites) == (300, 300, 24),
+        expected_rows = (200, 200) if e13_m12_v2 else (300, 300, 24)
+        require(tuple(len(rows) for _, rows, _ in suites) == expected_rows,
+                "E13 pinned M12 v2 requires 200/200 exploration suites" if e13_m12_v2 else
                 "v2 requires the frozen 300/300/24 development suites")
         require(cfg["startup_rows"] == 3, "v2 requires exactly three startup forwards")
     tokenizer = AutoTokenizer.from_pretrained(str(model_dir), local_files_only=True, trust_remote_code=False)
@@ -403,8 +408,8 @@ def predict(args, receipt, start):
     if is_v2:
         from jeff.runtime import qwen_readout
 
-        receipt["forwards"] = {"maximum": 627, "expected_startup": 3,
-                               "expected_suite_rows": [300, 300, 24],
+        receipt["forwards"] = {"maximum": forward_maximum, "expected_startup": 3,
+                               "expected_suite_rows": [len(rows) for _, rows, _ in suites],
                                "attempted": 0, "completed": 0}
         context_keys = {"git_revision", "git_status"}
         require({k: v for k, v in current.items() if k not in context_keys} ==
@@ -588,7 +593,7 @@ def predict(args, receipt, start):
     if bounded_execution:
         require(receipt["startup"]["rows"] == 3 and
                 receipt["forwards"]["attempted"] == receipt["forwards"]["completed"] == forward_maximum,
-                "v2 requires exactly 627 attempted and completed forwards" if is_v2 else
+                "v2 requires exactly 627 attempted and completed forwards" if is_v2 and not e13 else
                 f"execution profile requires exactly {forward_maximum} attempted and completed forwards")
     receipt["memory_samples"].append(memory(torch, args.device, "end"))
     deadline()

@@ -17,13 +17,18 @@ def main():
             raise ValueError('actual Model grant required')
     root = Path(b['source_root'])
     sys.path.insert(0, str(root / 'src'))
-    if b['candidate'] in ('msmarco-start', 'm9'):
+    if b['candidate'] == 'p12-nli':
+        from jeff.runtime import nli_challenger
+        sys.argv = ['nli_challenger', 'predict', '--binding', b['native_binding']['path'],
+                    '--output-dir', str(a.output_dir)]
+        return nli_challenger.main()
+    if b['candidate'] == 'm11':
         from jeff.runtime import external_encoder
         sys.argv = ['external_encoder', '--binding', str(a.binding), '--output-dir', str(a.output_dir)]
         external_encoder.main()
         return 0
-    if b['candidate'] not in ('p3', 'm7'):
-        raise ValueError('first four only')
+    if b['candidate'] not in ('m10', 'm12'):
+        raise ValueError('late exploration four only')
     from jeff.runtime import qwen_challenger as q
     a.output_dir.mkdir(exist_ok=False)
     audit = a.output_dir / 'audit'
