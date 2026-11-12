@@ -25,7 +25,7 @@ Use the **actual exported M9 directory**, not the source checkpoint or a downloa
 
 The copy step uses exclusive creation. Existing/partial copies cause a visible error rather than silently replacing an earlier attempt; preserve their evidence before deliberately preparing a fresh destination. Builds typecheck and bundle with Vite, without software tests or lint. Node-only ONNX Runtime is not used; its blocked Bun postinstall does not need approval for browser inference.
 
-Open **http://127.0.0.1:4173/**. Fill context, question and2–6 choices, then **Run locally**. Nothing loads the model automatically. First run includes model initialization; later runs reuse that worker/session until disposed or the page closes. Editing inputs clears stale results. Invalid or missing assets/results produce an error, never fixture scores. In the shared B1 workflow, only Runtime operates the model under Model's serialized reservation.
+Open **http://127.0.0.1:4173/**. Fill context, question and2–6 choices, then **Run locally**. Nothing loads the model automatically. First run includes model initialization; later runs reuse that worker/session until disposed or the page closes. Disposal retains the last computed comparison with an explicit released-model state; editing inputs still clears stale results. Invalid or missing assets/results produce an error, never fixture scores. In the shared B1 workflow, only Runtime operates the model under Model's serialized reservation.
 
 ## Serving and evidence
 

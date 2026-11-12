@@ -289,7 +289,6 @@ async function dispose(): Promise<void> {
   assertIdle();
   setBusy(true);
   phase = 'disposing';
-  clearResult();
   clearError();
   status.textContent = 'Releasing model…';
   try {
@@ -297,7 +296,9 @@ async function dispose(): Promise<void> {
     engine = null;
     phase = 'idle';
     backend.textContent = 'Backend: not initialized';
-    status.textContent = 'Model released. Run locally to load it again.';
+    status.textContent = result
+      ? 'Model released. Last comparison retained; run again to reload.'
+      : 'Model released. Run locally to load it again.';
   } catch (error) {
     showError(error);
     throw error;
