@@ -40,7 +40,7 @@ If pickup is late, publish a shorter feasible plan rather than silently sliding 
 - Keep failures, original artifacts, checkpoint/source distinctions and weak results. No probabilities-as-calibrated-confidence claims.
 
 ## Data/evaluation boundaries
-Data prepares240 fresh examples:80 workspace routing,80 direct sentiment,80 software ticket intent; class/style/position variation, scenario-group split discipline. Add240 deterministic supported-task replay rows from released original v2 TRAIN only (120intent/120sentiment). No rule-learning expansion. This is candidate preparation, not permission to train or claim new labels are human truth.
+Data prepares240 fresh examples:80 workspace routing,80 direct sentiment,80 software ticket intent; class/style/position variation, scenario-group split discipline. The selected M13 replay is240 deterministic original-v2-TRAIN rows:80intent/80sentiment/80rule_application. This supersedes the original120intent/120sentiment default via the18:31 conditional amendment and18:36 joint freeze. It rehearses existing rules; it does not add rule scenarios or expand rule research. This is candidate preparation, not permission to train or claim new labels are human truth.
 Evaluation independently authors64 reserved cases (16 per each of those3 domains plus16 novel taxonomy/description-transfer cases); freezes content/preferences/grouping before learning. Model gets only exact decision-only exports, never the private reference directory. Data/Research get no new reserved cases. Evaluation checks exclusion against training and S1/S2; no hidden confirmation-driven selection/repair.
 Evaluation freezes the comparison/promotion rule before new learning or fresh-set model outputs: primary routing+sentiment, ticket stretch and transfer/retention separately. Observe both top-choice and proper-score changes; no pooled headline that hides a regression. New reserved set is opened once for the prospectively fixed candidates/serving rules, not repurposed for tuning.
 Existing S1/S2 are exploratory development. M10 reversal mean, if analyzed, is fixed arithmetic ID-aligned mean, a separately named two-forward rule, never a fitted rescue.
@@ -75,4 +75,39 @@ Evaluation provides exact filenames/hashes/allowed consumers. Model, Data, Resea
 
 Lead is also adding generic node_modules/ to root .gitignore for the authorized JS workspace; Infra need not race that file. Existing dist/build/artifacts ignores remain.
 
-This document records the plan/authority, not completed executions. Six task messages were actually dispatched at17:45UTC; local briefs and dispatch IDs are under `artifacts/handoffs/lead/final-sprint-20261112-01/`. A read-only review found no additional material ownership/count/dependency conflict. The fresh private-path correction was separately sent before execution. Lead source work includes only this plan, the coordination pointer and a generic node_modules ignore.
+The plan above is authority, not proof of completed execution. Six task messages were dispatched at17:45UTC; local briefs and dispatch IDs are under `artifacts/handoffs/lead/final-sprint-20261112-01/`. The private-path correction was separately sent before execution.
+
+## Actual decision and progress — observed18:38UTC
+
+All six owners resumed around17:59. The18:00 initial targets were missed: API agreement arrived18:04, S2 actually delivered18:15:35 (later than its revised18:08 ETA). Later hard cutoffs remain unchanged.
+
+### One scientific choice: M13
+
+Model and Research jointly froze the choice at **18:36:53UTC**, before learning or fresh reserved outcomes:
+- Initialize from the actual trained M9, retaining its head and verifying initial parameters against its saved final state. Fresh optimizer, not resumed optimizer state.
+- Exactly480rows:80fresh workspace,80fresh sentiment,80fresh ticket;80original-TRAIN replay rows from each of intent/sentiment/rule_application. Deterministic selection, no outcome-chosen replay.
+- Full-parameter CPU FP32/fourthreads; AdamW backboneLR2e-5/headLR5e-4, decay.01, betas(.9,.999), epsilon1e-8; seed42/batch4/three additional epochs on THIS mixture,1440presentations/360updates. No scheduler/clipping, alternative arm, checkpoint selection or post-update retry.
+- Same formatter/tokenizer/cap256/T1 serving. No null subtraction, temperature fit, Qwen deployment retry or architecture change.
+- Final Data release, exact independent64-case content/exclusion freeze, source/initial-state binding and one final-release tokenizer preflight still precede learning. **No new training had occurred at this observation.**
+
+The all-family rehearsal replaces the120/120 default because the already-frozen retention guard includes rules. It trades40old intent and40old sentiment rows for80old rules, not a proven optimum or guaranteed retention. Earlier candidates/reviews remain retained; changed mixtures need new immutable pins/exclusion receipts.
+
+### Evidence used for the choice
+
+All planned diagnostics finished:352decisions plus the sole16-decision null probe,1546probabilities,272physical calls across six serialized CPU loads. Model charged60/600seconds and CLOSED the diagnostic ledger; unused time grants no further experiments.
+
+- S1 pooled preferred agreement: M9 38/96, original START45/96, M10native57/96/reversed62/96; the fixed sum-normalized two-view mean61/96. These are48cases in two formats, not96independent examples.
+- Relevant workspace slice: M9 preferred9/12/acceptable11/12 versus START5/12/8/12; sixcases in two formats. Bookmarks/reaction policy/creature tasks are not pooled into this routing claim.
+- S2 direct sentiment: M9 **13/16**, NLL.330177/Brier.205109 versus START7/16,1.427232/.743309. M9 class counts positive4/4,negative2/4,neutral4/4,mixed3/4; routine10/12,awkward3/4. M10native14/16, reversed/mean15/16, without a browser serving result.
+- Research found no demonstrated loading/head/sign/rendering defect. The null probe showed narrow empty-state candidate preferences AND substantial context-dependent changes/amplification, not ignored context or a justified universal bias correction. A bounded24-row TRAIN review supports task-relation coverage mismatch as an actionable explanation, not a proven root cause.
+- All labels remain AI-authored/reviewed, exploratory and never training. Proper-score arithmetic sum-normalizes valid vectors explicitly; raw records are unchanged. The new two-view diagnostic is not claimed byte-identical to historical E16.
+
+### Fixed promotion and delivery
+
+Evaluation froze criteria18:28: native-order M9+M13 on64fresh cases; primary routing+sentiment32 requires at least4preferred gains, no per-domain preferred/acceptable loss, NLL/Brier each improve at least.02 and neither primary domain's proper scores worsen. Exact reused240development retention has overall/per-family choice and proper-score guards; oldM9 vectors are reused. Tickets/novel taxonomy are reported separately and cannot rescue a failed primary gate. Valid fresh reload and actual compatible browser parity are also required. These are practical gates, not calibration/general-reliability proof.
+
+SDK source has passed an actual packed separate-consumer build; integrated host/browser proof is still pending. Its descriptor binds model identity and file hashes; it does not sign publisher authenticity. Source changes do not inherit B2's browser/offline proof.
+
+Isolated UI previews are available at `http://127.0.0.1:4174/` (finite host expires no later23:15): request queue replays four measured M9 examples, chat is layout-only until connected. **No user design approval or gallery promotion has occurred.** Lead observed both rendered ARIA trees/navigation, not visual-layout or inference proof. The narrowed sentiment screen supports a curated demo with its misses retained, not dependable social-reaction competence.
+
+Controlling local records: `artifacts/handoffs/lead/final-sprint-20261112-01/{retention-mixture-decision.md,converging-decision.md}`; Model joint-freeze mailbox message63a3a3b2-57f2-497b-a0bf-0682c22d188a. Source/evidence owners retain detailed recipes, raw outputs, failures and immutable receipts. Publication and routine Lead acknowledgments are not execution gates.
