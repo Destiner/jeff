@@ -1,5 +1,6 @@
 # Model and training
 
+- [M12 stronger frozen-backbone head-LR results](m12-head-lr-results.md).
 - [M11 thirty-epoch results and evidence inventory](m11-msmarco-duration30-results.md).
 - [M10 seed7 results and E11/E16 follow-through](m10-qwen-seed7-results.md).
 
@@ -9,7 +10,11 @@ A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6
 
 This deliberately small provisional model proves training/save/reload before a larger architecture search. The base is Apache-2.0 and originally trained for sentence embeddings, **not** decision correctness. M3 adds a separately selectable retained-pretrained-head MS MARCO cross-encoder; see `msmarco-pilot-results.md` and `configs/model/msmarco-pilot-256.json`. Its native pooled-CLS/dropout/classifier path preserves the pretrained ranking head, uses raw scalar logits and external choice cross-entropy, and has its own self-contained checkpoint architecture. The existing mean-pool path and checkpoints remain supported and remain the CLI default.
 
-## Latest fit diagnostic: fresh thirty-epoch MS MARCO
+## Latest contrast: stronger frozen-backbone head learning rate
+
+M12 changes only M8 head LR2e-6→2e-4. TRAIN CE improves1.332200→1.135531 but agreement declines804→786/1500; first-slot choices reach936/1500. [E15](../evaluation/e15-head-learning-rate.md) finds new native/reversed121/113 versus M8's130/119, both-correct86→75 and four lost both-correct probe pairs despite lower aggregate proper scores. The separate two-forward reversal mean reaches132, no better than M8 mean and below P3 mean134. M12/P13 is complete at308.209917/900seconds; no rescue, capacity verdict or promotion. See [results](m12-head-lr-results.md) and [run index](m12-head-lr-run.json).
+
+## Fit diagnostic: fresh thirty-epoch MS MARCO
 
 M11's fresh original-base30-total-epoch endpoint improves M9 TRAIN agreement1314→1414/1500 and rules314→414/500, with130rule gains/30losses. But [E12](../evaluation/e12-encoder-duration30.md) finds new-development165→162/240 and worse NLL/Brier. D3 gains26→29/96 while both proper scores worsen. Three small mapped TRAIN mechanism sets are now completely fitted without strong new-policy transfer. M11/P10 is closed; no promotion, further duration arm or architecture-limit claim. See [results](m11-msmarco-duration30-results.md) and [run index](m11-msmarco-duration30-run.json).
 

@@ -1,0 +1,464 @@
+{
+  "schema_version": "m12.result-index.v1",
+  "created_at": "2026-11-12T05:28:48.885127+00:00",
+  "status": "completed; preserved without promotion",
+  "execution_revision": "f75d72bd1487f9cf874aa48231233840881573fc",
+  "independent_evaluation_main": "24675ad1c8e176ee358c6820bd143e9e81c7df11",
+  "artifact_root": "/Users/destiner/Code/jeff/artifacts/model/m12-qwen-head-lr-20261112-01",
+  "scientific_change": {
+    "head_learning_rate_before": 2e-06,
+    "head_learning_rate_after": 0.0002,
+    "other_scientific_recipe": "unchanged M8 original base/seed42/materialized schedule",
+    "trainable_scalars": 5376,
+    "original_frozen_parameters": 494032768,
+    "presentations": 1500,
+    "updates": 375
+  },
+  "backbone_forwards": {
+    "attempted": 4500,
+    "completed": 4500,
+    "per_phase": {
+      "START": 1500,
+      "TRAIN": 1500,
+      "FINAL": 1500
+    }
+  },
+  "train_fit": {
+    "START": {
+      "overall": {
+        "count": 1500,
+        "agreements": 805,
+        "producer_mean_ce": 1.357723628623095,
+        "fp64_logit_mean_ce": 1.3577236356566607,
+        "raw_probability_mean_ce": 1.3577236283507916,
+        "brier": 0.650797230000273,
+        "ties": 0,
+        "winner_position_counts": [
+          417,
+          384,
+          411,
+          278,
+          7,
+          3
+        ]
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 184,
+        "producer_mean_ce": 1.6571261154494714,
+        "fp64_logit_mean_ce": 1.6571261239086912,
+        "raw_probability_mean_ce": 1.6571261132385968,
+        "brier": 0.8413623119646345,
+        "ties": 0,
+        "winner_position_counts": [
+          168,
+          85,
+          137,
+          110,
+          0,
+          0
+        ]
+      },
+      "intent": {
+        "count": 500,
+        "agreements": 442,
+        "producer_mean_ce": 0.3961529250507128,
+        "fp64_logit_mean_ce": 0.39615292881797776,
+        "raw_probability_mean_ce": 0.39615292881546893,
+        "brier": 0.18735888110348717,
+        "ties": 0,
+        "winner_position_counts": [
+          114,
+          141,
+          156,
+          79,
+          7,
+          3
+        ]
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 179,
+        "producer_mean_ce": 2.0198918453691004,
+        "fp64_logit_mean_ce": 2.019891854243313,
+        "raw_probability_mean_ce": 2.0198918429983093,
+        "brier": 0.9236704969326973,
+        "ties": 0,
+        "winner_position_counts": [
+          135,
+          158,
+          118,
+          89,
+          0,
+          0
+        ]
+      }
+    },
+    "M8": {
+      "overall": {
+        "count": 1500,
+        "agreements": 804,
+        "producer_mean_ce": 1.3322002739556074,
+        "fp64_logit_mean_ce": 1.3322002820151342,
+        "raw_probability_mean_ce": 1.332200276107253,
+        "brier": 0.6402912561214542,
+        "ties": 0,
+        "winner_position_counts": [
+          468,
+          394,
+          362,
+          266,
+          7,
+          3
+        ]
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 184,
+        "producer_mean_ce": 1.6293240246069618,
+        "fp64_logit_mean_ce": 1.629324033463611,
+        "raw_probability_mean_ce": 1.6293240265267728,
+        "brier": 0.8278655395044732,
+        "ties": 0,
+        "winner_position_counts": [
+          197,
+          93,
+          113,
+          97,
+          0,
+          0
+        ]
+      },
+      "intent": {
+        "count": 500,
+        "agreements": 441,
+        "producer_mean_ce": 0.37004803925060786,
+        "fp64_logit_mean_ce": 0.3700480389501133,
+        "raw_probability_mean_ce": 0.37004804118537105,
+        "brier": 0.1765791302078477,
+        "ties": 0,
+        "winner_position_counts": [
+          116,
+          143,
+          151,
+          80,
+          7,
+          3
+        ]
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 179,
+        "producer_mean_ce": 1.9972287580092525,
+        "fp64_logit_mean_ce": 1.997228773631678,
+        "raw_probability_mean_ce": 1.9972287606096144,
+        "brier": 0.9164290986520416,
+        "ties": 0,
+        "winner_position_counts": [
+          155,
+          158,
+          98,
+          89,
+          0,
+          0
+        ]
+      }
+    },
+    "M12": {
+      "overall": {
+        "count": 1500,
+        "agreements": 786,
+        "producer_mean_ce": 1.1355308349472895,
+        "fp64_logit_mean_ce": 1.1355308440087364,
+        "raw_probability_mean_ce": 1.1355308378347204,
+        "brier": 0.6155797627493859,
+        "ties": 0,
+        "winner_position_counts": [
+          936,
+          224,
+          241,
+          80,
+          14,
+          5
+        ]
+      },
+      "rule_application": {
+        "count": 500,
+        "agreements": 183,
+        "producer_mean_ce": 1.441023071460426,
+        "fp64_logit_mean_ce": 1.4410230819781433,
+        "raw_probability_mean_ce": 1.4410230731155529,
+        "brier": 0.8146800523816004,
+        "ties": 0,
+        "winner_position_counts": [
+          426,
+          39,
+          28,
+          6,
+          1,
+          0
+        ]
+      },
+      "intent": {
+        "count": 500,
+        "agreements": 430,
+        "producer_mean_ce": 0.3961810164750896,
+        "fp64_logit_mean_ce": 0.39618101917153814,
+        "raw_probability_mean_ce": 0.39618102085504003,
+        "brier": 0.20862808094537158,
+        "ties": 0,
+        "winner_position_counts": [
+          173,
+          123,
+          134,
+          52,
+          13,
+          5
+        ]
+      },
+      "sentiment": {
+        "count": 500,
+        "agreements": 173,
+        "producer_mean_ce": 1.569388416906353,
+        "fp64_logit_mean_ce": 1.5693884308765276,
+        "raw_probability_mean_ce": 1.5693884195335683,
+        "brier": 0.8234311549211858,
+        "ties": 0,
+        "winner_position_counts": [
+          337,
+          62,
+          79,
+          22,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "same_id_changes": {
+    "START_to_M12": {
+      "overall": {
+        "gains": 172,
+        "losses": 191,
+        "changed_choices": 573,
+        "ce_regressions": 811,
+        "brier_regressions": 838
+      },
+      "rule_application": {
+        "gains": 81,
+        "losses": 82,
+        "changed_choices": 269,
+        "ce_regressions": 226,
+        "brier_regressions": 254
+      },
+      "intent": {
+        "gains": 27,
+        "losses": 39,
+        "changed_choices": 75,
+        "ce_regressions": 363,
+        "brier_regressions": 357
+      },
+      "sentiment": {
+        "gains": 64,
+        "losses": 70,
+        "changed_choices": 229,
+        "ce_regressions": 222,
+        "brier_regressions": 227
+      }
+    },
+    "M8_to_M12": {
+      "overall": {
+        "gains": 162,
+        "losses": 180,
+        "changed_choices": 526,
+        "ce_regressions": 807,
+        "brier_regressions": 822
+      },
+      "rule_application": {
+        "gains": 75,
+        "losses": 76,
+        "changed_choices": 239,
+        "ce_regressions": 227,
+        "brier_regressions": 249
+      },
+      "intent": {
+        "gains": 27,
+        "losses": 38,
+        "changed_choices": 76,
+        "ce_regressions": 357,
+        "brier_regressions": 351
+      },
+      "sentiment": {
+        "gains": 60,
+        "losses": 66,
+        "changed_choices": 211,
+        "ce_regressions": 223,
+        "brier_regressions": 222
+      }
+    }
+  },
+  "pins": {
+    "audit-freeze.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/audit-freeze.json",
+      "sha256": "fa26ddcc640036ad6c05efbdce28025558518fd0ced832ed6519a58c01368462"
+    },
+    "train-freeze.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/train-freeze.json",
+      "sha256": "7883361013ae614228dc4252b7e840c779217cb9b208b7c05cdd4b87372c6c6d"
+    },
+    "full-run-freeze.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/full-run-freeze.json",
+      "sha256": "8ee845b6cd70453202c8ed95601601811e11df041d019642e051a6c6ec0aa9e8"
+    },
+    "train-audit/audit.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/train-audit/audit.json",
+      "sha256": "a4e9372480c904e20d111564d5d4ed2de5db8acc677bfba6c9bc04ccba05288f"
+    },
+    "training/checkpoint-manifest.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/training/checkpoint-manifest.json",
+      "sha256": "a3f6fd327bb52ecef730297eb0abb93f7a5a0d1b83e8fec276209b5ec6faf6a2"
+    },
+    "training/receipt.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/training/receipt.json",
+      "sha256": "fcbd8d61111d14bd4ebff2a3da10e166a76d19f298c30ae70849a3ef71c6821e"
+    },
+    "training/readout-proof.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/training/readout-proof.json",
+      "sha256": "b4dafd62fd7badb6df9fe3666e0924f209561495fc8d2d51b73e9945b6d61b51"
+    },
+    "training/head-evidence.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/training/head-evidence.json",
+      "sha256": "10855c6603b957a71d295e06657a703771d4b9a7251081e86d2d8ca31e68b945"
+    },
+    "checkpoint-ready.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/checkpoint-ready.json",
+      "sha256": "d335724c4a386c4a70d945a7fc877e1ff97339390248fd16400d0c8deefef043"
+    },
+    "first-look.py": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/first-look.py",
+      "sha256": "5548b6cef7880314e92b71fa2cc205471271c73101031714d6f5b0508dd927c2"
+    },
+    "first-look.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/first-look.json",
+      "sha256": "6da85db6f58dabfad556d565c2c6f1360695b9b991d99b9b6b7e6673415a502e"
+    },
+    "p13-return.json": {
+      "path": "artifacts/model/m12-qwen-head-lr-20261112-01/p13-return.json",
+      "sha256": "f54af89f1a71ecc4d4ee32415bf676e4d7efd015b0b17877569a65390f95f2a1"
+    },
+    "docs/evaluation/e15-head-learning-rate.md": {
+      "path": "docs/evaluation/e15-head-learning-rate.md",
+      "sha256": "36daa84f02da0e2c01a297927878c8ed397735ff1f9c1d6fde6eb0f2d90a53f1"
+    },
+    "docs/evaluation/e16-m12-reversal-mean.md": {
+      "path": "docs/evaluation/e16-m12-reversal-mean.md",
+      "sha256": "e69cff2fda7a665f4404e160fd262b127a4b741807b6794bca740648626ba363"
+    },
+    "manifests/evaluation/e15-m12-report-v1.json": {
+      "path": "manifests/evaluation/e15-m12-report-v1.json",
+      "sha256": "bb5e227d1ba295409d1a8f0603c3fe464c493f65df230af270bcf7aa29a25778"
+    },
+    "artifacts/evaluation/e15-m12-control-review-v1/findings.md": {
+      "path": "artifacts/evaluation/e15-m12-control-review-v1/findings.md",
+      "sha256": "c59f7f2095b154af3629c225af28348c26c70a6b4d62c713871d6c723ff7ff89"
+    },
+    "artifacts/evaluation/e15-p13-binding-v1/findings.md": {
+      "path": "artifacts/evaluation/e15-p13-binding-v1/findings.md",
+      "sha256": "9e50e94969015a9a419a59a7363cd83926e45ccfa0fb39817e7a4815565673c7"
+    },
+    "artifacts/evaluation/e15-quality-review-v1/findings.md": {
+      "path": "artifacts/evaluation/e15-quality-review-v1/findings.md",
+      "sha256": "323e1b67360b7ded512a7f996ee8153f69ade4dcb80b81f7070cd1436f57bd5d"
+    },
+    "artifacts/model/m12-preparation-20261112-01/owner-controller-closure.json": {
+      "path": "artifacts/model/m12-preparation-20261112-01/owner-controller-closure.json",
+      "sha256": "fc1bf237435838939c24916810c38e42dc3487cf0f6ec0377add79539efae71c"
+    }
+  },
+  "first_look_vector_bindings": {
+    "START": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m12-qwen-head-lr-20261112-01/training/fit-before.jsonl",
+      "sha256": "4940b17902562c8da5cf34e80eaa3618fa5ab52c20ad90715fd6dc6d3c9d12d5"
+    },
+    "M8": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m8-qwen-readout-20261111-01/training/fit-after.jsonl",
+      "sha256": "d8b24ca5f85790611068f7ec3b113e4819adc8b1c807a7ca3f7d1b44ab0b8635"
+    },
+    "M12": {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m12-qwen-head-lr-20261112-01/training/fit-after.jsonl",
+      "sha256": "eed53ca3f251e97654cd86f9d25d9e19468fe726616eba3a8588ae6aa05539cc"
+    }
+  },
+  "audit_seconds": 2.965878834016621,
+  "training_seconds": 261.24403841700405,
+  "model_seconds": 264.20991725102067,
+  "p13_conservative_seconds": 44,
+  "aggregate_charged_seconds": 308.20991725102067,
+  "aggregate_ceiling_seconds": 900,
+  "unused_not_authority_seconds": 591.7900827489793,
+  "p13": {
+    "decisions": 624,
+    "probabilities": 2390,
+    "startup_forwards": 3,
+    "attempted_completed_forwards": 627,
+    "loading_diagnostics": "four empty lists in both recorded locations",
+    "timing_qualification": "Saved outer-publication42.496176875s differs from later handoff42.496509959s; same44s conservative charge, no speed claim."
+  },
+  "e15_summary": {
+    "new_native_reversed_agreement": [
+      121,
+      113
+    ],
+    "new_both_correct": 75,
+    "new_flips": 142,
+    "new_family_native_reversed": {
+      "intent": [
+        73,
+        70
+      ],
+      "sentiment": [
+        26,
+        25
+      ],
+      "rule_application": [
+        22,
+        18
+      ]
+    },
+    "inherited_native_reversed_agreement": [
+      34,
+      36
+    ],
+    "probe_native_reversed_agreement": [
+      10,
+      6
+    ],
+    "probe_both_correct": 5,
+    "qualification": "Exact proper scores/retention/source-group regressions are Evaluation-owned, not newly rescored here."
+  },
+  "e16_separate_mean": {
+    "new_agreement": 132,
+    "new_nll": 1.072924953,
+    "new_brier": 0.564642226,
+    "new_family_agreement": [
+      76,
+      32,
+      24
+    ],
+    "probe_agreement": 9,
+    "native_to_mean_new_gains_losses": [
+      27,
+      16
+    ],
+    "status": "distinct two-forward rule, not raw M12 or automatic confirmation"
+  },
+  "qualifications": [
+    "Initial failure receipt is an incomplete-start sentinel, not terminal failure.",
+    "Final projection proof reuses the same hidden state; not fresh per-case pipeline equivalence.",
+    "Producer proofs and artifact consistency are not independent weight/update replay.",
+    "Sampled memory scopes are nonadditive; P12 headroom deviation is separate.",
+    "Controller last fix02:58:33 explicitly adopted33s late, not retroactive independent approval.",
+    "No convergence, capacity, calibration, general competence or promotion claim.",
+    "No additional actual/pending spending."
+  ]
+}
