@@ -40,6 +40,8 @@ def parser():
     result.add_argument("--seed", type=int, default=42)
     result.add_argument("--max-steps", type=int)
     result.add_argument("--threads", type=int, default=4)
+    result.add_argument("--initial-checkpoint")
+    result.add_argument("--initial-checkpoint-sha256", help="SHA256 of initial checkpoint.json")
     result.add_argument("--m9-resource-guards", action="store_true")
     result.add_argument("--m9-initial-run")
     result.add_argument("--m9-initial-run-sha256")
@@ -213,6 +215,24 @@ def train_run(args, output, record, started, guards=None):
     if args.seed < 0 or args.seed >= 2**64:
         raise ValueError("seed must be in [0, 2**64)")
 
+    initial_checkpoint = getattr(args, "initial_checkpoint", None)
+    initial_checkpoint_sha256 = getattr(args, "initial_checkpoint_sha256", None)
+    if initial_checkpoint is None:
+        if initial_checkpoint_sha256 is not None:
+            raise ValueError("initial_checkpoint_sha256 requires initial_checkpoint")
+    else:
+        if not initial_checkpoint or args.architecture != "retained_cross_encoder":
+            raise ValueError("initial_checkpoint requires retained_cross_encoder and a nonempty path")
+        if not re.fullmatch(r"[0-9a-f]{64}", initial_checkpoint_sha256 or ""):
+            raise ValueError("initial_checkpoint requires an exact lowercase SHA256 of checkpoint.json")
+        if guards is None or not args.m9_initial_run:
+            raise ValueError("M13 initialization requires guarded pinned initial-run binding")
+        if args.m9_initial_run_sha256 != "d50013f9236c69ae47d0b5212a0f607ae461c8bd92a28e25cc2a1d9a162067ee":
+            raise ValueError("M13 initialization requires the frozen actual M9 training run SHA256")
+        checkpoint_config = Path(initial_checkpoint) / "checkpoint.json"
+        if hashlib.sha256(checkpoint_config.read_bytes()).hexdigest() != initial_checkpoint_sha256:
+            raise ValueError("Initial checkpoint.json bytes changed")
+
     rows, identity, manifest_bytes = load_dataset(args.dataset_manifest, validate_decision)
     record["dataset"] = identity
     with (output / "dataset-manifest.json").open("xb") as stream:
@@ -237,9 +257,16 @@ def train_run(args, output, record, started, guards=None):
                      Path(scorer_module.__file__), Path(selected_scorer_module.__file__))
     }
 
-    model = scorer_class.from_pretrained(
-        args.model_id, args.revision, max_length=args.max_length, device=str(device)
-    )
+    if initial_checkpoint is None:
+        model = scorer_class.from_pretrained(
+            args.model_id, args.revision, max_length=args.max_length, device=str(device)
+        )
+    else:
+        model = scorer_module.load_checkpoint(initial_checkpoint, device=str(device))
+        if type(model) is not scorer_class:
+            raise ValueError("Initial checkpoint must contain the requested retained cross-encoder")
+        if model.temperature != 1.0:
+            raise ValueError("M13 initial checkpoint requires unchanged temperature 1.0")
     if guards is not None:
         guards.check("after_load")
     loaded_head_hashes = None
@@ -273,15 +300,21 @@ def train_run(args, output, record, started, guards=None):
             raise ValueError("M9 requires a pinned original M4 run for pre-update identity binding")
         reference_bytes = Path(args.m9_initial_run).read_bytes()
         if hashlib.sha256(reference_bytes).hexdigest() != args.m9_initial_run_sha256:
+            if initial_checkpoint is not None:
+                raise ValueError("M13 trained M9 reference bytes changed")
             raise ValueError("M9 original-run reference bytes changed")
         reference = json.loads(reference_bytes)
+        reference_stage = "after" if initial_checkpoint is not None else "before"
         record["m9_initial_binding"] = {
             "reference_path": str(Path(args.m9_initial_run).resolve()),
             "reference_sha256": args.m9_initial_run_sha256,
+            "reference_stage": f"weights.{reference_stage}",
             "actual_parameter_hashes": baseline_hashes,
-            "exact_match": baseline_hashes == reference["weights"]["before"],
+            "exact_match": baseline_hashes == reference["weights"][reference_stage],
         }
         if reference["status"] != "completed" or not record["m9_initial_binding"]["exact_match"]:
+            if initial_checkpoint is not None:
+                raise ValueError("M13 initial parameters differ from trained M9; no updates allowed")
             raise ValueError("M9 initial parameters differ from the original M4 start; no updates allowed")
     elif args.m9_initial_run or args.m9_initial_run_sha256:
         raise ValueError("M9 initial binding requires its resource guards")
@@ -300,10 +333,19 @@ def train_run(args, output, record, started, guards=None):
         "tokenizer_revision": model.revision, "max_length": model.max_length,
         "temperature": model.temperature,
         "head_initialization": "pretrained" if loaded_head_hashes is not None else "random",
-        "baseline": ("pretrained backbone with retained pretrained ranking head"
+        "baseline": ("trained M9 checkpoint with retained trained ranking head and fresh AdamW"
+                     if initial_checkpoint is not None else
+                     "pretrained backbone with retained pretrained ranking head"
                      if loaded_head_hashes is not None else
                      "pretrained backbone with explicitly reset randomly initialized linear scoring head"),
     }
+    if initial_checkpoint is not None:
+        record["base_model"]["initialization"] = {
+            "kind": "trained_checkpoint", "source": "actual M9 trained twelve-epoch endpoint",
+            "checkpoint_path": str(Path(initial_checkpoint).resolve()),
+            "checkpoint_config_sha256": initial_checkpoint_sha256,
+            "reference_stage": "weights.after", "optimizer_state": "fresh; not resumed",
+        }
     record["optimizer"] = {
         "name": "AdamW", "backbone_learning_rate": args.learning_rate,
         "head_learning_rate": args.head_learning_rate, "weight_decay": 0.01,
@@ -324,8 +366,11 @@ def train_run(args, output, record, started, guards=None):
     if loaded_head_hashes is not None:
         baseline_head_hashes = parameter_hashes(torch, model.head, guards)
         if model.head_initialization != "pretrained" or baseline_head_hashes != loaded_head_hashes:
+            if initial_checkpoint is not None:
+                raise ValueError("Retained trained M9 ranking head changed before baseline save")
             raise ValueError("Retained pretrained ranking head changed before baseline save")
-        record["weights"]["pretrained_head_provenance"] = {
+        provenance_key = "trained_checkpoint_head_provenance" if initial_checkpoint is not None else "pretrained_head_provenance"
+        record["weights"][provenance_key] = {
             "loaded": loaded_head_hashes, "baseline": baseline_head_hashes,
             "unchanged_before_baseline_save": True,
         }
