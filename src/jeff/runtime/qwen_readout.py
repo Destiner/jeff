@@ -1,4 +1,4 @@
-"""Fail-closed M8 metadata and fresh-load identity checks; no ML imports at import.
+"""Fail-closed M8/M12 metadata and fresh-load identity checks; no ML imports at import.
 
 Producer scope/binding statements attest history, not independently replayed
 training truth. Only validate_loaded establishes actual reloaded tensor identity.
@@ -57,6 +57,14 @@ RECIPE = {
     "optimizer": "AdamW", "learning_rate": 2e-6, "betas": [0.9, 0.999],
     "epsilon": 1e-8, "weight_decay": 0.01, "gradient_clip": 1.0, "foreach": False,
     "max_input_tokens": 1024, "maximum_run_seconds": 2700, "maximum_capacity_seconds": 600,
+}
+M12_RECIPE = {
+    **RECIPE, "schema_version": "m12.recipe.v1", "learning_rate": 0.0002,
+    "maximum_run_seconds": 590,
+}
+RECIPE_PROFILES = {
+    "m8.recipe.v1": ("m8.train.v1", RECIPE),
+    "m12.recipe.v1": ("m12.train.v1", M12_RECIPE),
 }
 
 
@@ -267,8 +275,20 @@ def validate_metadata(manifest_path, model_dir, manifest, receipt_path, *,
             all(receipt["base_loading_info"].get(k) == [] for k in
                 ("missing_keys", "unexpected_keys", "mismatched_keys", "error_msgs")),
             "producer original-base load diagnostics are incomplete or nonzero")
-    require(receipt["schema_version"] == "m8.train.v1" and receipt["status"] == "complete" and
-            receipt["command"] == "train" and _same(receipt["extra_backwards"], 0), "incomplete M8 source receipt")
+    recipe = receipt["identity"]["evidence"]["recipe"]
+    require(isinstance(recipe, dict) and isinstance(recipe.get("schema_version"), str) and
+            recipe["schema_version"] in RECIPE_PROFILES, "unsupported readout recipe profile")
+    receipt_schema, expected_recipe = RECIPE_PROFILES[recipe["schema_version"]]
+    require(receipt["schema_version"] == receipt_schema and receipt["status"] == "complete" and
+            receipt["command"] == "train" and _same(receipt["extra_backwards"], 0),
+            "incomplete source receipt or receipt/profile mismatch")
+    if receipt_schema == "m12.train.v1":
+        require(_same(receipt.get("backbone_forwards"), {
+            "maximum": 4500, "attempted": 4500, "completed": 4500,
+            "by_phase": {phase: {"attempted": 1500, "completed": 1500}
+                         for phase in ("START", "TRAIN", "FINAL")},
+        }), "M12 requires exactly 4500 complete backbone calls in the fixed phases")
+
     for key in ("presentations", "optimizer_steps", "optimizer_step_attempts", "gradient_norms", "online", "adam_final_state"):
         require(_same(receipt[key], training[key]), f"receipt training crosslink {key}")
     for key, proof_key in (("fit_before", "start_binding"), ("fit_after", "final_binding"),
@@ -291,11 +311,11 @@ def validate_metadata(manifest_path, model_dir, manifest, receipt_path, *,
             evidence["recipe_sha256"] == manifest["training_recipe_sha256"] and
             evidence["data"]["manifest_sha256"] == manifest["training_data_manifest_sha256"] == DATA,
             "receipt manifest training identity mismatch")
-    recipe = evidence["recipe"]
     guards = {"max_cpu_rss_bytes": 16 * 2**30, "max_mps_driver_bytes": 16 * 2**30,
               "min_recommended_headroom_bytes": 2 * 2**30}
-    require(isinstance(recipe, dict) and set(recipe) == set(RECIPE) | set(guards) and
-            all(_same(recipe[k], v) for k, v in RECIPE.items()), "changed M8 recipe")
+    require(set(recipe) == set(expected_recipe) | set(guards) and
+            all(_same(recipe[k], v) for k, v in expected_recipe.items()),
+            "changed readout profile recipe")
     for key, bound in guards.items():
         value = recipe[key]
         require(type(value) is int and value > 0 and
