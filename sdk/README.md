@@ -4,7 +4,7 @@ Private local ESM package, version `0.1.0`, for the compatible FP32 decision enc
 
 ## Local integration
 
-The Infra-owned root workspace should include this package; demos consume `"@jeff/sdk": "workspace:*"`. Do not create a second dependency/lockfile setup for a demo. Runtime dependencies are exactly `@huggingface/transformers@3.8.1` and `onnxruntime-web@1.22.0-dev.20250409-89f8206ba4`; consumers must retain those same fixed versions. Build tooling is TypeScript `5.9.3` and Vite `7.2.2`. The package build command is `bun run --cwd sdk build` from the workspace root. The host bundler/deployment must retain the built module worker next to the built SDK entry as referenced by `new URL('./worker.js', import.meta.url)`.
+The Infra-owned root workspace should include this package; demos consume `"@jeff/sdk": "workspace:*"`. Do not create a second dependency/lockfile setup for a demo. Runtime dependencies are exactly `@huggingface/transformers@3.8.1` and `onnxruntime-web@1.22.0-dev.20250409-89f8206ba4`; consumers must retain those same fixed versions. Build tooling is TypeScript `5.9.3` and Vite `7.2.2`. The package build command is `bun run --cwd sdk build` from the workspace root. The host must preserve the package-relative module worker referenced by `new URL('./worker.js', import.meta.url)`, or let its bundler rewrite/copy that asset. The packed-package Vite consumer does the latter, emitting a hashed worker; do not relocate the entry or worker independently without updating that URL.
 
 ### Stage local assets
 
@@ -73,7 +73,7 @@ try {
 
 `predict(input: DecisionInput): Promise<Prediction>` returns only the v0.1 prediction, not a diagnostics wrapper. Supply a nonempty question and at least two options with nonempty, unique IDs and nonempty text. State defaults to `''`; wire `schema_version` defaults to `'0.1'`; omitted decision ID becomes `sdk:${crypto.randomUUID()}`. A string-only options array is also accepted and receives IDs `option-1`, `option-2`, etc. Do not mix strings and option objects. An explicit valid `Decision` retains its schema version, ID, state, question and option IDs/text. Input is snapshotted before queueing so subsequent caller mutation does not change it.
 
-This is the trained M9 source/scorer described by the selected descriptor: FP32 scalar logits, the existing BERT formatter pairing `State:\n{state}\nQuestion:\n{question}` with `Candidate:\n{text}`, and softmax T=1 across the supplied choices. Each encoded pair, including special tokens, must fit 256 tokens. Overlength input is rejected, not silently truncated; no formatter or truncation redesign is implied. These probabilities are not claimed to be calibrated.
+This preserves the M9-compatible encoder/scorer contract: FP32 scalar logits, the existing BERT formatter pairing `State:\n{state}\nQuestion:\n{question}` with `Candidate:\n{text}`, and softmax T=1 across the supplied choices. Each encoded pair, including special tokens, must fit 256 tokens. Overlength input is rejected, not silently truncated; no formatter or truncation redesign is implied. These probabilities are not claimed to be calibrated. The supplied reference descriptor identifies trained M9; another compatible checkpoint needs its own descriptor, asset pins and execution evidence, not an M9 relabel.
 
 ## Metadata and optional diagnostics
 
@@ -100,4 +100,6 @@ Offline caching and service-worker scope/cache graphs belong to the host, not th
 
 ## Evidence boundary
 
-These are source/API and local deployment instructions. Historical B2 success is not proof for the extracted SDK. Numerical parity, performance, a separate consumer's deployed worker graph and online/offline behavior require actual scheduled SDK execution evidence; no such pass is claimed here.
+The actual packed-package consumer ran in Safari 27 on six frozen M9 cases: all 24 probabilities and top choices passed independent saved-output comparison (maximum drift 8.8668822495474586e-7, gate 1e-4). Three detailed calls also matched 1,668 token integers; the three plain calls did not return tokens. This is bounded portability evidence, not quality, calibration, general browser support or production-demo acceptance.
+
+The host prepared its new ten-file cache, but fresh-document server-unavailable inference was not attempted before the execution cutoff. SDK offline inference therefore remains unverified; historical B2 proof does not fill that gap. Runtime evidence is under `artifacts/release/final-sdk-20261112-01/` in the repository; independent comparison was reported by Evaluation in mailbox `f29bdc72-824a-481e-8d94-6b5834828c41`. No new execution is authorized by these reproduction instructions.
