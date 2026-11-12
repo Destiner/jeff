@@ -1,0 +1,55 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "status": "completed-independent-evaluation",
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-e16-publication-v1/receipt.json",
+    "sha256": "6e42fcde0224933e8b7c8b4d3c80cdf75cbfe78dabf1479ef4094ccbb4995854",
+    "bytes": 287187
+  },
+  "additional_actual_pending_GBP": 0,
+  "milestone": "E15",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e15-head-learning-rate.md",
+    "sha256": "36daa84f02da0e2c01a297927878c8ed397735ff1f9c1d6fde6eb0f2d90a53f1",
+    "bytes": 9873
+  },
+  "executed_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e15-m12-v1.json",
+    "sha256": "29b18352ad06b68ebf7365b076883a820fe01b42ad1e2fd1a76bff0a406e0ab9",
+    "bytes": 7472
+  },
+  "execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-scoring-preparation-v1/execution-01/completion.json",
+    "sha256": "b1c179498cf70b639fca8e9ccac1d43b6f068fea80562277a86f9d2e1467a1d5",
+    "bytes": 55382
+  },
+  "train_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-m12-control-review-v1/completion-receipt.json",
+    "sha256": "0d9a5dc88162ee70c4a73aa61f80843056f8c995908c1e3150ab254e074fa5d5",
+    "bytes": 3503
+  },
+  "runtime_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-p13-binding-v1/completion-receipt.json",
+    "sha256": "52bffeb815cbd003961c089d17fdca4815e62dc6dd1ee1017d985d2e5d04b9ba",
+    "bytes": 2806
+  },
+  "quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-quality-review-v1/final-receipt.json",
+    "sha256": "796dfe3e74139d25d09080e5bc052657db779399311827d69cf5cebf8f46452c",
+    "bytes": 5612
+  },
+  "pre_execution_binding_correction": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-scoring-preparation-v1/owner-pre-execution-binding-correction.json",
+    "sha256": "45ea978d96ba2ca5e46a42e6c09b37803e096921c52c8cf9cca05e31c9730d86",
+    "bytes": 1960
+  },
+  "actual_entrypoint": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-scoring-preparation-v1/execute_e15_v2.py",
+    "sha256": "83abe4e8c5cdea19e30130b56dec7efeac1f230b6a073dd07e45d803273e70d0",
+    "bytes": 8073
+  },
+  "retained_raw_contexts": 16,
+  "new_presentations": 624,
+  "interpretation": "100xnominalheadLR improvesprobabilityfitbutworsensagreement/pair/proberetention againstP3/M8. No convergence/capacity/promotion. Meanrule remainsseparate.",
+  "runtime_qualification": "Actualv2four-emptyloaddiagnostics andfixed624tokenmetadata correspondence supported; notweightreplay/freshfullper-caseequivalence/generalwarningharmlessness. Savedouterpublication42.496176875s versus laterhandoff42.496509959s notfoundininspectedreceipts;44schargeunchanged."
+}

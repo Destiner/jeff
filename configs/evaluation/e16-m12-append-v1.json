@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-12T04:49:26.510906+00:00",
+  "authority": "E16 0d9a0b02-a395-4cdd-8109-5eb749775e4b actualM12extension; fixedmeanunchanged",
+  "method": "Exactlysameinitialrule, preflightall3populations, normalizeeach/alignmentbyexplicitIDs/(p+q)/2/native-onlyscore, no selectionornewweight",
+  "source": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m10-reversal-mean-v1/derive.py",
+    "sha256": "19160a28ed66f1d0311acb6ed34a0234d60e68777b705e273197c3791169aebd",
+    "bytes": 9575
+  },
+  "new_source": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e16-m12-reversal-mean-v1/derive.py",
+    "sha256": "fd2261aa5851e646889499a3df00160909b8e6c84cb09d5c1478fe51a2343d60",
+    "bytes": 9571
+  },
+  "changes": {
+    "m10-qwen-seed7-trained": "m12-qwen-head-lr-trained",
+    "night-scoring-preparation-v2/e11-execution-01": "e15-scoring-preparation-v1/execution-01",
+    "recipe-all15.json": "recipe-all17.json",
+    "one-authorized-M10-candidate": "one-authorized-M12-candidate"
+  },
+  "actual_completed_e15": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-scoring-preparation-v1/execution-01/completion.json",
+    "sha256": "b1c179498cf70b639fca8e9ccac1d43b6f068fea80562277a86f9d2e1467a1d5",
+    "bytes": 55382
+  },
+  "actual_recipe": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e15-scoring-preparation-v1/execution-01/recipe-all17.json",
+    "sha256": "9bd41b5bd8c4955a7e46b7f494b5fd80848e3404871b500b556b6a36f008a7e8",
+    "bytes": 96326
+  },
+  "scope": "OneactualM12,3newscorecalls312nativevectors; no oldscoringorML; privatecaseevidence remainsEvaluation-only; no automaticconfirmationadmission."
+}
