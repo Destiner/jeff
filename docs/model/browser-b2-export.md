@@ -1,8 +1,10 @@
 # BROWSER-B2: actual M10 → FP16 WebGPU scorer
 
-**Native export completed; browser acceptance is separate.** The single export
-at source `c99cc5d480017896d4a8302ac66e5ee3e84d9fbd` completed on
-2026-11-12 at 12:17:02 UTC. See [the retained execution record](browser-b2-results.md).
+**Native export completed; browser attempt stopped on sampled memory pressure.**
+The single export at source `c99cc5d480017896d4a8302ac66e5ee3e84d9fbd`
+completed on2026-11-12 at12:17:02UTC. The later Safari engine initialized but
+returned no prediction before abort/disposal; there is no numerical acceptance.
+See [the retained execution record](browser-b2-results.md).
 This is one FP16 route, not a quantization/backend experiment ladder. Source-only
 preparation did not execute models; the later explicitly activated attempt did.
 
