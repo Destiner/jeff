@@ -9,11 +9,12 @@ The Data workstream owns only `src/jeff/data/`, `configs/data/`, `manifests/data
 | `data-tiny-v1` | 6 / 3 | `manifests/data/tiny-v1.json` | Pipeline plumbing only |
 | `data-pilot-v1` | 300 / 60 | `manifests/data/pilot-v1.json` | Initial three-family training pilot |
 | `data-pilot-v2` | 1,500 / 300 | `manifests/data/pilot-v2.json` | Diverse expansion, including unchanged v1 |
+| `data-final-sprint-v1` | 480 / 0 | `manifests/data/final-sprint-v1.json` | 240 fresh routing/sentiment/ticket cases + 240 original TRAIN replay; chosen M13 mixture |
 | `data-d3-seen-rules-v1` | 0 / 96 | `manifests/data/d3-seen-rules-v1.json` | Validation-only seen-mechanism/new-policy diagnostic; never train |
 
 The shared root is `/Users/destiner/Code/jeff/artifacts`. Each dataset also has a standalone `manifest.json` below `data/<dataset-id>/` (D3 uses `data/data-d3-seen-rules-v1/release/manifest.json`), so Model need not merge data code to consume it. **Use the manifest, not a directory glob.** Original sentiment producer rows are retained for provenance but excluded in favor of corrected `sentiment-r2` rows. Do not concatenate tiny and pilot automatically.
 
-See [v1 quality and provenance](pilot-v1.md), [v2 delivery and limitations](pilot-v2.md), and [D3's separate diagnostic and limitations](d3-seen-rules-v1.md). D3 has 96 decisions across 48 new policies and eight deliberately trained mechanisms; it and all derivatives are permanently training-excluded. V2 contains v1: do not concatenate the two manifests. Report inherited versus new validation strata separately. Small hashed manifests/configuration live in Git; JSONL, authored source cases, generation scripts, group allocations, reviewer decisions, and detailed reports remain in artifact storage. The Git checkout alone does not contain the training rows.
+See [v1 quality and provenance](pilot-v1.md), [v2 delivery and limitations](pilot-v2.md), [the final-sprint mixture, reviews and limitations](final-sprint-v1.md), and [D3's separate diagnostic and limitations](d3-seen-rules-v1.md). The final-sprint release already includes 80 original TRAIN rows per family: do not concatenate it with v2. Its data release does not independently authorize learning. D3 has 96 decisions across 48 new policies and eight deliberately trained mechanisms; it and all derivatives are permanently training-excluded. V2 contains v1: do not concatenate the two manifests. Report inherited versus new validation strata separately. Small hashed manifests/configuration live in Git; JSONL, authored source cases, generation scripts, group allocations, reviewer decisions, and detailed reports remain in artifact storage. The Git checkout alone does not contain the training rows.
 
 ## Evaluation-only external populations
 

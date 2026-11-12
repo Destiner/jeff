@@ -1,5 +1,7 @@
 # File-based evaluation
 
+[Final-sprint diagnostics](final-sprint-diagnostics.md): M9 retains the workspace advantage and matches13/16 direct-sentiment judgments versus the original encoder's7/16, with negative-class weakness and M10 order/proper-score tradeoffs preserved. The separate [prospective decision plan](final-sprint-plan.md) freezes primary-task, old-development retention and deployability gates before the sole M13 learning attempt; it does not report a promotion.
+
 [Browser B2 acceptance](browser-b2.md): the trained M9 passes the same three-case probability/token checks both online and after fresh app navigation with the static server unavailable. Qwen FP16 WebGPU initialized but was stopped on sampled memory pressure during its first request, returning no predictions; its parity gate is unmeasured and it is not accepted for normal-demo exposure. These are bounded portability/functional results, not new quality or calibration evidence.
 
 [E13 first-four exploration](e13-exploration-firstfour.md) reports severe decoder order sensitivity and adverse family-level tradeoffs; the three post-cutoff E16 means remain separate predictors with no confirmation admission. Independent first-four arithmetic found no covered discrepancies. The [later-four exploration append](e13-exploration-laterfour.md) adds M10/M11/M12/frozen NLI and exactly two more means without rescoring these results; its independent arithmetic is verified with metadata and tool-output confinement qualifications.
