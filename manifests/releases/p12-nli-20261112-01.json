@@ -1,0 +1,52 @@
+{
+  "schema_version": "runtime-publication.v1",
+  "release_id": "p12-nli-20261112-01",
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release/",
+  "report": "docs/runtime/p12-frozen-nli.md",
+  "evaluation_report": "docs/evaluation/e14-frozen-nli.md",
+  "status": "execution_complete_resource_compliance_incomplete",
+  "source_commit": "7a3bd87798c808b04773c15effc7d9130d545f99",
+  "counts": {"decisions": 624, "native_attempted": 156, "native_completed": 156, "candidate_pairs": 2390, "startup_forwards": 0},
+  "parent_seconds": 19.51626120880246,
+  "conservative_charge_seconds": 21,
+  "ceiling_seconds": 480,
+  "resource_qualification": {
+    "mandatory_companion": "p12-nli-20261112-01/resource-qualification.json",
+    "required_metric": "torch.mps.recommended_max_memory() - torch.mps.driver_allocated_memory()",
+    "required_headroom_measured": false,
+    "required_headroom_enforced": false,
+    "required_headroom_actual_bytes": null,
+    "observed_wrong_metric": "vm_stat free + inactive bytes",
+    "retrospective_imputation_permitted": false
+  },
+  "evidence": [
+    {"path": "p12-nli-20261112-01/delivery-summary.json"},
+    {"path": "p12-nli-20261112-01/resource-qualification.json"},
+    {"path": "p12-nli-20261112-01/execution-01/run/receipt.json", "sha256": "f046b021b602921990451ce3d8656747130eac794580966f630a5716b0844ca1"},
+    {"path": "p12-nli-20261112-01/execution-01/process-receipt.json", "sha256": "64d93516bc22a8528ed133eac27a4122cd38e391f93a62332e1fcf8583f4aa7c"}
+  ],
+  "distinct_later_e13_nli": {
+    "source_commit": "0d2edfe499ed1d45c5835efae54b95655c3a8771",
+    "native_receipt": "e13-later-exploration-20261112-01/execution-01/p12-nli/receipt.json",
+    "native_receipt_sha256": "d396bf862fb4cb729a60b9dada8829512836ce8cf5ed58fc3335a3a340aa709b",
+    "started_utc": "2026-11-12T07:31:06.295727+00:00",
+    "presentations": 400,
+    "candidate_pairs": 800,
+    "native_forwards": 100,
+    "startup_forwards": 0,
+    "correct_prospective_guard": true,
+    "post_torch_samples": 308,
+    "minimum_sampled_recommended_minus_driver_bytes": 17978408960,
+    "maximum_sampled_driver_bytes": 1091256320,
+    "lifetime_process_peak_rss_bytes": 1120092160,
+    "repairs_old_p12": false,
+    "qualification": "Separate exploration workload, not old624 rerun; resource quantities are nonadditive and samples are not continuous peaks."
+  },
+  "scientific_condition": {"original_R10_assets_renderer_scorer_preserved": true, "complete_pair_cap": 512, "adaptation": false},
+  "qualifications": [
+    "Runtime evidence is not quality, calibration or promotion; Evaluation owns E14 interpretation.",
+    "Original authorized headroom remains unknown; physical free + inactive is the wrong metric.",
+    "Parent clock excludes initial interpreter/time import; conservative charge retains startup qualification.",
+    "Existing receipt pins transcribed, not independently rehashed; no new scoring."
+  ]
+}

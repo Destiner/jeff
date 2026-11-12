@@ -1,0 +1,34 @@
+{
+  "schema_version": "runtime-publication.v1",
+  "release_id": "d8-token-pass-20261112-07",
+  "evidence_root": "/Users/destiner/Code/jeff/artifacts/release/",
+  "report": "docs/runtime/d8-tokenizer-audit.md",
+  "status": "tokenizer_audit_complete_not_quality_or_promotion",
+  "counts": {"pairs": 800, "presentations": 1600, "audit_records": 2400, "encoder_pairs": 3200, "decoder_prompts": 1600, "fitting_pairs": 800},
+  "maximum_tokens": {"encoder": 54, "decoder": 89},
+  "caps": {"encoder": 256, "decoder": 1024},
+  "parent_seconds": 6.101216292008758,
+  "cumulative_parent_seconds": 20.819555623922497,
+  "ceiling_seconds": 180,
+  "evidence": [
+    {"path": "d8-token-pass-20261112-07/parent-receipt.json", "sha256": "f43ff5f9bbdd931716456c926efc7fba31cc3550091622db8923f5f6ee90885c"},
+    {"path": "d8-token-pass-20261112-07/audit/status.json", "sha256": "a29c7832a95e83d86835abc22565730f33a1f8db22167887fee18128ee0f7c10"},
+    {"path": "d8-token-parent-20261112-07/offline.sb", "sha256": "bb6bba34aafc606ff0f0e3e8532dff53f690decd6bc2cb4312e4b4ab0df2a5fb"}
+  ],
+  "closed_attempts": [
+    {"attempt": "01", "seconds": 0.0461804578, "outcome": "exit71_before_entry_stderr_discarded_cause_unknown"},
+    {"attempt": "02", "seconds": 0.046074875, "outcome": "SIGABRT_before_entry"},
+    {"attempt": "03", "seconds": 4.415010666, "outcome": "scratch_denial_after_Torch"},
+    {"attempt": "04", "seconds": 4.942871250, "outcome": "vocabulary_false_positive"},
+    {"attempt": "05", "seconds": null, "outcome": "never_executed"},
+    {"attempt": "06", "seconds": 5.2682020827, "outcome": "listdir_denial_before_tokenizer_construction"},
+    {"attempt": "07", "seconds": 6.101216292008758, "outcome": "complete"}
+  ],
+  "qualifications": [
+    "Torch definitions imported; no model construction, weights, forwards or GPU execution.",
+    "Exactly two literal tokenizer directory listing allowances, not recursive access.",
+    "Python logs do not cover all native opens; retained Seatbelt policy defines actual enforcement scope.",
+    "Population selection belongs to Data/Evaluation, not Runtime.",
+    "Existing receipt pins transcribed, not independently rehashed or rescored."
+  ]
+}
