@@ -1,0 +1,22 @@
+{
+  "name": "m11_duration30",
+  "prediction": {
+    "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/run/d3-seen-rules96.jsonl",
+    "sha256": "bac40c5e096647408ce8240a3fa33bf62fac0551f4815142b27a32c124182828"
+  },
+  "input": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e4-d3-released-boundary-v1/inputs.jsonl",
+    "sha256": "afd02eb196889f79384488fa1998dcb95c79d96dccd1235a70fd30940c2bf928"
+  },
+  "receipts": [
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/release/p10-m11-20261112-01/delivery-summary.json",
+      "sha256": "435e3b92121ffb491d3a61e69a5ba79e647626740a0be0e0e91a8fe694e880db"
+    },
+    {
+      "path": "/Users/destiner/Code/jeff/artifacts/model/m11-msmarco-duration30-20261112-01/checkpoint-ready.json",
+      "sha256": "857dcd2103d9d2da1aeb56d41f1ec652066599745e0a61437d72e79b547f37b9"
+    }
+  ],
+  "owner_review": "E12 prospectively adoptedby01:03UTC. Actualcompleted M11/P10 handoff consumed03:53UTC; fiveRuntimeoutput/deliverypins andactualcheckpoint-ready pin match. IndependentM11TRAIN/controlreview3079checks complete; actualP10parent reports same624+96originalD3/720/180/zero-startup andclosure, no requestfornewdata/reversals. This binding accepts actualdeliveredD3 association andsmallcompletedreceipts asprovenance; independentP10executionbindingandqualityreviews follow, notautomaticsemanticcertification. Retain staleembeddedrunningstatus qualification and102.897345s operationalcompatibilityrepair; scientificcriteriaunchanged."
+}

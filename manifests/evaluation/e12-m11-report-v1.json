@@ -1,0 +1,86 @@
+{
+  "schema_version": "jeff.evaluation.published-report.v1",
+  "milestone": "E12",
+  "status": "completed-independent-evaluation",
+  "report": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/evaluation/e12-encoder-duration30.md",
+    "sha256": "4bdd854f3b4b7a5d5f02a7d45438600a8c4a07f8b0365eb6d5b57cd7bb28a1d5",
+    "bytes": 13217
+  },
+  "same624_recipe": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e12-m11-v1.json",
+    "sha256": "3d6c6f1ffc1621400eb97efff4333c7419b62b13d503b263dc872bd7fabd9e5e",
+    "bytes": 7490
+  },
+  "d3_binding": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/configs/evaluation/e12-d3-v1.json",
+    "sha256": "b0180fc91617b2a96747fd27834cdc27fdaa3588b6950943a978cf3067d715bb",
+    "bytes": 1518
+  },
+  "same624_execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/night-scoring-preparation-v2/e12-execution-01/completion.json",
+    "sha256": "295fd4ad242755579bc2002c32c943776be8e584d66fa1b2f90c1ede65dc8dbd",
+    "bytes": 51655
+  },
+  "d3_execution": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-d3-preparation-v1/execution-01/receipt.json",
+    "sha256": "d6c44986ad53041228f8cf28c3f1b5801ddc092c34331417f8f28e1736854098",
+    "bytes": 1016
+  },
+  "train_control_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-m11-control-review-v1/completion-receipt.json",
+    "sha256": "b06fd7fdae491074bbf0d664826ff1c42a4094514b80a4f3188fff6a2829cbf6",
+    "bytes": 2863
+  },
+  "quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-quality-review-v1/final-receipt.json",
+    "sha256": "c387e67f964a112161848e06f25ee830674e69b8b4edcf762649463910311cba",
+    "bytes": 3933
+  },
+  "d3_quality_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-d3-quality-review-v1/receipt.json",
+    "sha256": "72c34a45a263aecf0e76f478321b8924ffcfe2260cc6cf64f1e3af5f84dde3c5",
+    "bytes": 17844
+  },
+  "runtime_binding_review": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-p10-binding-v1/completion-receipt.json",
+    "sha256": "1a06ad4b383e23cad6ffb040146762e08a25390a1b816cd979ab12521558dbc6",
+    "bytes": 1914
+  },
+  "safe_r14_projection": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-r14-aggregate-v1/aggregates.json",
+    "sha256": "279a89766e10786bfbb7be46987539cba2ba09bf7b7144addaddc88cf4aa710d",
+    "bytes": 269820
+  },
+  "r14_interpretation": {
+    "path": "/Users/destiner/Code/jeff/.worktrees/evaluation/docs/research/m11-mechanism-fit-append.md",
+    "sha256": "c85b97b4e6401e4407f4a4de15cfe2b3a13edb415ca251bb3b778a4949a688df",
+    "bytes": 7352
+  },
+  "owner_integrity": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e12-owner-integrity-v1/receipt.json",
+    "sha256": "c783eaf6b3ce7b1bcc3e80ab1d126e75af753189e9362f50aed89c9bb1389c7f",
+    "bytes": 83061
+  },
+  "populations_separate": {
+    "inherited_pairs": 60,
+    "new_pairs": 240,
+    "probe_pairs": 12,
+    "d3_original_cases": 96,
+    "d3_policies": 48,
+    "d3_mechanisms": 8
+  },
+  "retained_contexts": {
+    "same624": 14,
+    "d3": 9
+  },
+  "interpretation": "M11 strongerTRAINfit does not improve broaddevelopment versusM9; D3choice/policy gains coexist with worseproper scores. Three20-caseTRAINmechanismsets arefullyfit butnewD3policies remainweak, notmechanismmastery/isolatedarchitecturecapacityproof. No furtherdurationarm/promotion.",
+  "execution_qualifications": [
+    "Stale embeddedcheckpoint runningstatus resolvedbyactualcompletedexternalrecords",
+    "OneP10load720decisions180batches0startup, chain848.846766583/1500s",
+    "Longest-firstcap256 retained; noindependentuntruncatedlengthclaim",
+    "Recordedparameterhashcomparisons andsourcechecks arenottensorreplay; weightbytesnotrehased",
+    "Resource scopesnonadditive/sampled, no controlledspeedup"
+  ],
+  "additional_actual_pending_GBP": 0
+}
