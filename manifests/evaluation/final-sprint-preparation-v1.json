@@ -1,0 +1,141 @@
+{
+  "schema": "evaluation.final-sprint.publication-preparation/1",
+  "status": "reviewed_diagnostics_and_prospective_plan",
+  "scope": "Safe artifact byte pins and document metadata only; no transitive source traversal or private payloads. Pins are not independent certification of claims.",
+  "outcomes": {
+    "new_model_outcome_established": false,
+    "promotion_established": false,
+    "actual_browser_parity_established": false
+  },
+  "artifacts": [
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s1-v1/report.md",
+      "bytes": 10615,
+      "sha256": "6acb7ca0819bc7fd43c5093d345dcf3c9d6cd07820249ec30c75e88e8eab9701"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s1-v1/results.json",
+      "bytes": 588696,
+      "sha256": "71438fc555b816cefc797db56a791034196e801703fcd1f1b9f73e12defb0a63"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s1-v1/pins.json",
+      "bytes": 2704,
+      "sha256": "be6b76442bd9715dd3ec9bfc011c3b4de92127c0e8e7c5d1f00d62f4e247aada"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s2-v1/report.md",
+      "bytes": 2894,
+      "sha256": "2f06ab444732ab94498c42568c9f3664ea7ac2df607000e67a4ffe43485c9f31"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s2-v1/results.json",
+      "bytes": 77514,
+      "sha256": "322eead2f00916cd420539b8ff7418bd290e1e5e4e85ccacfb6c997ca6f4405c"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/analysis-s2-v1/pins.json",
+      "bytes": 2101,
+      "sha256": "7132c687dae950141e4463693fda2d071518513ee23e2707dc5605079dd546db"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/diagnostic-numeric-review-v1/report.md",
+      "bytes": 2208,
+      "sha256": "cdf5fa5f02a17d3ef86df8cafa331789e9679cf59841325f210a60f3753e14f2"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/diagnostic-numeric-review-v1/receipt.json",
+      "bytes": 11151,
+      "sha256": "e00c71da92d2f87a5dd43fced0ed5d11f7dd4d527f2d5dd416b291b14c6c6bd6"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/diagnostic-binding-review-v1/report.md",
+      "bytes": 9004,
+      "sha256": "b173d812efc4ef694f941bc5b76c529b545ab972937a17329c35269e6769ea5b"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/diagnostic-binding-review-v1/receipt.json",
+      "bytes": 13580,
+      "sha256": "20d22eb8f53c1c8a78f604a41e4eeb3cafffd04026812fd68234cb0d1c19dc4e"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/promotion-plan-v1.md",
+      "bytes": 6678,
+      "sha256": "286793e0701cc617ff08e5ad582b1f7c63ad4e0bb2d224bd6182f42e95c0a35b"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/promotion-plan-v1.receipt.json",
+      "bytes": 543,
+      "sha256": "a01ab1dbd4fce3cd5860306f71fe2ee5e4568ce77e88bc3e17eee8eb1acd8c19"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/reserved-freeze-v1.json",
+      "bytes": 675,
+      "sha256": "a99fdf5f1950950d81aeebb29ddce2233c3545c650a5e7ab3d346c0558647974"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/release-binding-v1.json",
+      "bytes": 3715,
+      "sha256": "8e3bdfa3986bb67e83669f9b5f47b57123c3c046b0a154ddeed96ee5e6867be9"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/exclusion-final-v1/report.json",
+      "bytes": 2958,
+      "sha256": "9777e17d56fc16df09f21332979813ad2d087323cf5a8bce3c0a0e43e0227b6a"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/sdk-reference-v1/reference.json",
+      "bytes": 7777,
+      "sha256": "93cb86db4b0f4ee65d5af5eeaf1a68537e87b46408c46e4b29f0f31a8cb00ac2"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/sdk-reference-v1/README.md",
+      "bytes": 2143,
+      "sha256": "2914e7433cb1095550ce867d0183b1af8d805b9af41d519d1a09b270bffa3865"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/final-scoring-preparation-v2/review.md",
+      "bytes": 7206,
+      "sha256": "b06204991c60300a1cdbd97c584f339e2767d8760717275437ba9da5208d4fe4"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/final-scoring-preparation-v2/repair-receipt.json",
+      "bytes": 1374,
+      "sha256": "3785134127e6440049fe0a282e11acc40279136eb4735ef60384a43617c8b7f0"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/final-scoring-preparation-v2/source-pins.json",
+      "bytes": 2688,
+      "sha256": "4b3af66475576750095db20d812dc75489812853277da8ff9ad333fd65869630"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/final-scoring-preparation-v2/score.py",
+      "bytes": 19450,
+      "sha256": "5b44dce3e57e2c0faaeaa9dbe142c141ad39f483d3b11d97a349ec0de3479151"
+    },
+    {
+      "path": "../../artifacts/evaluation/final-sprint-20261112-01/s2-v1/manifest.json",
+      "bytes": 3324,
+      "sha256": "ebaf92665d8d5766f9e82fadaf6281f8131cb20058f95ab48c707a7480bf1d9f"
+    }
+  ],
+  "documents": [
+    {
+      "path": "../../docs/evaluation/final-sprint-diagnostics.md",
+      "bytes": 8619,
+      "sha256": "5e578b78a44b9b7a177733c078562c775d014e5725ffd382a54a52899ad4d353"
+    },
+    {
+      "path": "../../docs/evaluation/final-sprint-plan.md",
+      "bytes": 8353,
+      "sha256": "8c9c165bb3fab55ca3534f1d809e3fbb44f81caaf5676467cffa4bf82c04f56e"
+    }
+  ],
+  "publication_actions": {
+    "arithmetic_rerun": false,
+    "tests_lint": false,
+    "package_build": "recorded_separately_in_owner_handoff",
+    "model_or_tokenizer_execution": false,
+    "commit_merge": "recorded_separately_in_owner_handoff"
+  }
+}
