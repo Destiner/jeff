@@ -8,6 +8,7 @@ AGENTS.local.md
 .scratch/
 .venv/
 __pycache__/
+node_modules/
 *.pyc
 build/
 dist/
