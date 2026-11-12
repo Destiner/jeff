@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, realpath, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,7 +9,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const require = createRequire(import.meta.url);
 // ORT's pinned conditional exports omit types. Resolve its real package location
 // so both isolated installs and hoisted workspace dependencies use its declarations.
-const ortTypes = resolve(dirname(require.resolve('onnxruntime-web/wasm')), '../types.d.ts');
+const ortTypes = await realpath(resolve(dirname(require.resolve('onnxruntime-web/wasm')), '../types.d.ts'));
 const config = resolve(root, '.build/tsconfig.json');
 await mkdir(dirname(config), { recursive: true });
 await writeFile(config, JSON.stringify({ extends: '../tsconfig.json', files: [ortTypes] }, null, 2));
