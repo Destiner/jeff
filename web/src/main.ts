@@ -134,7 +134,8 @@ function showError(error: unknown): void {
   status.textContent = 'Unable to compare. Resolve the error below and run again.';
 }
 
-function edited(): void {
+function edited(regenerateId = true): void {
+  if (regenerateId) draft.id = crypto.randomUUID();
   clearResult();
   clearError();
   phase = 'idle';
@@ -189,7 +190,7 @@ function loadDecision(input: Decision): void {
   };
   context.value = draft.state;
   question.value = draft.question;
-  edited();
+  edited(false);
   renderChoices();
 }
 
