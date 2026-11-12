@@ -1,5 +1,7 @@
 # Model and training
 
+- [M10 seed7 results and evidence inventory](m10-qwen-seed7-results.md).
+
 ## The first genuine loop
 
 A ~22.7M-parameter pretrained BERT encoder, `sentence-transformers/all-MiniLM-L6-v2` at revision `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`, supplies language representations. A new shared scalar head scores each candidate. AdamW updates both the pretrained backbone and head using cross-entropy over the supplied options.
