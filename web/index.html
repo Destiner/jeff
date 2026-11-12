@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Compare your supplied choices with Jeff's M9 reference model, locally in your browser." />
+    <title>Jeff — Compare choices</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Jeff home">jeff<span aria-hidden="true">.</span></a>
+        <span class="model-tag">M9 / reference</span>
+      </header>
+      <div class="intro">
+        <p class="eyebrow">A little perspective</p>
+        <h1>Put your choices in context.</h1>
+        <p>Give Jeff a question and the choices you want to compare. The model runs locally in your browser.</p>
+      </div>
+      <div class="workspace">
+        <form id="decision-form" novalidate>
+          <fieldset id="inputs">
+            <legend class="sr-only">Your decision</legend>
+            <label for="context">Context <span class="optional">Optional</span></label>
+            <textarea id="context" rows="5" placeholder="What information should the model consider?"></textarea>
+            <label for="question">Question</label>
+            <textarea id="question" rows="2" placeholder="What would you like to decide?" required></textarea>
+            <div class="choices-heading"><h2>Choices</h2><span id="choice-count">2 of 6</span></div>
+            <div id="choices"></div>
+            <button id="add-choice" class="secondary" type="button">+ Add choice</button>
+            <div class="run-row"><button id="run" class="primary" type="submit">Run locally <span aria-hidden="true">→</span></button><span class="run-note">First run loads model assets.</span></div>
+          </fieldset>
+          <p id="status" class="status" role="status" aria-live="polite">Model not loaded.</p>
+          <p id="error" class="error" role="alert" hidden></p>
+        </form>
+        <aside class="results-panel" aria-labelledby="results-heading">
+          <p class="eyebrow">The comparison</p>
+          <h2 id="results-heading">Choice scores</h2>
+          <p class="qualification">Scores compare these choices; not calibrated confidence.</p>
+          <div id="empty-results" class="empty-results"><span class="empty-mark" aria-hidden="true">↗</span><p>Your comparison will appear here.</p><p class="subtle">Add a question and at least two choices, then run locally.</p></div>
+          <section id="results" aria-label="Model results" hidden>
+            <p id="result-summary" class="result-summary"></p>
+            <ol id="scores"></ol>
+            <p id="timing" class="timing"></p>
+          </section>
+        </aside>
+      </div>
+      <footer><span>M9 reference model</span><span id="backend">Backend: not initialized</span></footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
