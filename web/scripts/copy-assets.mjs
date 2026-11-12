@@ -1,5 +1,5 @@
 import { constants, createWriteStream } from 'node:fs';
-import { lstat, mkdir, open, writeFile } from 'node:fs/promises';
+import { lstat, mkdir, open, readFile, realpath, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { Readable, Transform } from 'node:stream';
@@ -21,12 +21,12 @@ function options() {
   for (let i = 0; i < args.length; i += 2) {
     const flag = args[i];
     const value = args[i + 1];
-    if (!['--model-dir', '--inputs'].includes(flag) || result[flag] || !value || !path.isAbsolute(value)) {
-      throw new Error('Usage: bun scripts/copy-assets.mjs --model-dir ABSOLUTE_NEW_EXPORT_ROOT --inputs ABSOLUTE_ORIGINAL_P11_INPUTS_JSONL');
+    if (!['--model-dir', '--descriptor', '--inputs'].includes(flag) || result[flag] || !value || !path.isAbsolute(value)) {
+      throw new Error('Usage: bun scripts/copy-assets.mjs --model-dir ABSOLUTE_EXPORT_ROOT [--descriptor ABSOLUTE_MODEL_JSON] [--inputs ABSOLUTE_ORIGINAL_P11_INPUTS_JSONL]');
     }
     result[flag] = path.resolve(value);
   }
-  if (!result['--model-dir'] || !result['--inputs']) throw new Error('Both --model-dir and --inputs are required');
+  if (!result['--model-dir']) throw new Error('--model-dir is required');
   return result;
 }
 
@@ -108,17 +108,38 @@ async function main() {
   const args = options();
   const modelRoot = args['--model-dir'];
   if (!(await inspectPath(modelRoot)).isDirectory()) throw new Error('Model export root must be a real directory');
-  const modelFiles = [
-    ['model.onnx', 'model.onnx'],
-    ...['tokenizer.json', 'tokenizer_config.json', 'special_tokens_map.json', 'vocab.txt']
-      .map(name => [`tokenizer/${name}`, name]),
-    ['encoder/config.json', 'config.json'],
-  ];
-  const ortRoot = path.join(web, 'node_modules', 'onnxruntime-web', 'dist');
+  const config = JSON.parse(await readFile(path.join(web, 'model-config.json'), 'utf8'));
+  if (!/^\/models\/[a-z0-9-]+\/$/.test(config.assetBaseUrl) || config.ortBaseUrl !== '/ort/') throw new Error('Unsupported configured asset paths');
+  const descriptorPath = args['--descriptor'] ?? path.resolve(web, '../sdk/models/m9.json');
+  const descriptorHandle = await openRegular(descriptorPath);
+  let descriptor;
+  let descriptorPin;
+  try {
+    if ((await descriptorHandle.stat()).size > 65536) throw new Error('Model descriptor is too large');
+    const bytes = await descriptorHandle.readFile();
+    descriptorPin = { bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex') };
+    descriptor = JSON.parse(bytes.toString('utf8'));
+  } finally { await descriptorHandle.close(); }
+  const keys = ['schema_version', 'id', 'label', 'checkpoint_sha256', 'format', 'precision', 'max_pair_tokens', 'scoring', 'files'];
+  if (!descriptor || Object.keys(descriptor).length !== keys.length || !keys.every(key => Object.hasOwn(descriptor, key)) ||
+      descriptor.schema_version !== 'jeff.browser-encoder.v1' || descriptor.id !== config.expectedModelId || descriptor.label !== config.label ||
+      !/^[a-f0-9]{64}$/.test(descriptor.checkpoint_sha256) || descriptor.format !== 'state-question-candidate-v1' ||
+      descriptor.precision !== 'fp32' || descriptor.max_pair_tokens !== 256 || descriptor.scoring !== 'softmax-t1' ||
+      !descriptor.files || Object.keys(descriptor.files).sort().join(',') !== 'model.onnx,tokenizer.json,tokenizer_config.json') {
+    throw new Error('Descriptor does not match the selected model identity and supported encoder contract');
+  }
+  for (const pin of Object.values(descriptor.files)) {
+    if (!pin || !Number.isSafeInteger(pin.bytes) || pin.bytes <= 0 || !/^[a-f0-9]{64}$/.test(pin.sha256) ||
+        Object.keys(pin).sort().join(',') !== 'bytes,sha256') throw new Error('Invalid model asset pin');
+  }
+  const modelFiles = [['model.onnx', 'model.onnx'], ['tokenizer/tokenizer.json', 'tokenizer.json'], ['tokenizer/tokenizer_config.json', 'tokenizer_config.json']];
+  // Installed packages may be isolated-linker symlinks; resolve only this explicit dependency.
+  const ortRoot = await realpath(path.join(web, 'node_modules', 'onnxruntime-web', 'dist'));
   const entries = [
-    ...modelFiles.map(([source, name]) => ({ source: path.join(modelRoot, source), url: `/models/m9/${name}` })), 
-    ...['ort-wasm-simd-threaded.wasm', 'ort-wasm-simd-threaded.mjs'].map(name => ({ source: path.join(ortRoot, name), url: `/ort/${name}` })),
-    { source: args['--inputs'], url: '/examples/p11-train.jsonl' },
+    { source: descriptorPath, url: `${config.assetBaseUrl}model.json`, pin: descriptorPin },
+    ...modelFiles.map(([source, name]) => ({ source: path.join(modelRoot, source), url: `${config.assetBaseUrl}${name}`, pin: descriptor.files[name] })),
+    ...['ort-wasm-simd-threaded.wasm', 'ort-wasm-simd-threaded.mjs'].map(name => ({ source: path.join(ortRoot, name), url: `${config.ortBaseUrl}${name}` })),
+    ...(args['--inputs'] ? [{ source: args['--inputs'], url: '/examples/p11-train.jsonl' }] : []),
   ];
   const manifestPath = path.join(web, 'asset-manifest.local.json');
   try {
@@ -127,16 +148,18 @@ async function main() {
       entry.handle = await openRegular(entry.source);
       entry.bytes = (await entry.handle.stat()).size;
       entry.sha256 = await digest(entry.handle);
+      if (entry.pin && (entry.bytes !== entry.pin.bytes || entry.sha256 !== entry.pin.sha256)) throw new Error(`Asset does not match the model descriptor: ${entry.url}`);
       entry.destination = path.join(publicRoot, entry.url.slice(1));
     }
-    const inputs = entries.at(-1);
-    if (inputs.sha256 !== inputHash) throw new Error('P11 inputs SHA-256 does not match the frozen original');
-    // Read only the explicit, hash-bound input file, never labels or references.
-    const chunks = [];
-    for await (const chunk of contents(inputs.handle)) chunks.push(chunk);
-    const inputBuffer = Buffer.concat(chunks);
-    if (createHash('sha256').update(inputBuffer).digest('hex') !== inputHash) throw new Error('P11 inputs changed during validation');
-    validateInputs(inputBuffer);
+    const inputs = entries.find(entry => entry.url === '/examples/p11-train.jsonl');
+    if (inputs) {
+      if (inputs.sha256 !== inputHash) throw new Error('P11 inputs SHA-256 does not match the frozen original');
+      const chunks = [];
+      for await (const chunk of contents(inputs.handle)) chunks.push(chunk);
+      const inputBuffer = Buffer.concat(chunks);
+      if (createHash('sha256').update(inputBuffer).digest('hex') !== inputHash) throw new Error('P11 inputs changed during validation');
+      validateInputs(inputBuffer);
+    }
     let priorManifest;
     if (await inspectPath(manifestPath, true)) {
       const handle = await openRegular(manifestPath);

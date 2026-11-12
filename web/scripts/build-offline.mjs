@@ -6,17 +6,16 @@ import { fileURLToPath } from 'node:url';
 const web = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = resolve(web, 'dist');
 const hash = value => createHash('sha256').update(value).digest('hex');
+const config = JSON.parse(await readFile(resolve(web, 'model-config.json'), 'utf8'));
+if (!/^\/models\/[a-z0-9-]+\/$/.test(config.assetBaseUrl) || config.ortBaseUrl !== '/ort/') throw new Error('Unsupported configured asset paths');
 const required = [
-  '/models/m9/model.onnx', '/models/m9/tokenizer.json',
-  '/models/m9/tokenizer_config.json', '/models/m9/special_tokens_map.json',
-  '/models/m9/vocab.txt', '/models/m9/config.json',
-  '/ort/ort-wasm-simd-threaded.wasm', '/ort/ort-wasm-simd-threaded.mjs',
-  '/examples/p11-train.jsonl',
+  ...['model.json', 'model.onnx', 'tokenizer.json', 'tokenizer_config.json'].map(name => config.assetBaseUrl + name),
+  ...['ort-wasm-simd-threaded.wasm', 'ort-wasm-simd-threaded.mjs'].map(name => config.ortBaseUrl + name),
 ];
 const forbidden = value => /(?:qwen|m10|jsep)/i.test(value);
 const assets = new Map();
 const missing = [];
-const appFiles = new Set(['/index.html']);
+const appFiles = new Set(['/index.html', '/chat.html', '/playground.html']);
 let viteManifest;
 try {
   viteManifest = JSON.parse(await readFile(resolve(dist, '.vite/manifest.json'), 'utf8'));
@@ -28,7 +27,7 @@ try {
 // A Qwen adapter must remain a separately named chunk (qwen/m10), not an M9 dependency.
 async function addApp(url) {
   if (assets.has(url) || forbidden(url)) return;
-  if (!/^\/(?:index\.html|assets\/[\w.-]+\.(?:js|css))$/.test(url)) {
+  if (!/^\/(?:(?:index|chat|playground)\.html|assets\/[\w.-]+\.(?:js|css))$/.test(url)) {
     throw new Error(`Unsupported offline app dependency: ${url}`);
   }
   const body = await readFile(resolve(dist, `.${url}`));
@@ -65,7 +64,7 @@ if (viteManifest) {
 }
 for (const file of appFiles) await addApp(file);
 if (![...assets.keys()].some(url => /^\/assets\/worker-[\w-]+\.js$/.test(url))) {
-  throw new Error('The emitted M9 worker is missing from the offline app graph.');
+  throw new Error('The emitted SDK worker is missing from the offline app graph.');
 }
 let receipt;
 try {

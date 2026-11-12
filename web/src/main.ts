@@ -1,13 +1,16 @@
 import './style.css';
 import { initializeOffline, prepareOffline, readOfflineStatus, type OfflineStatus } from './offline';
-import type { Decision, Prediction, Progress, createEngine } from './runtime/index';
+import type { Decision, Prediction, Progress, Result, createEngine } from '@jeff/sdk';
+import { model, modelLabel } from './model';
+import { navigation } from './navigation';
+import { routingExamples, sentimentExamples } from './examples';
 
 type Engine = Awaited<ReturnType<typeof createEngine>>;
-type Diagnostics = Awaited<ReturnType<Engine['predict']>>['diagnostics'];
+type Diagnostics = Result['diagnostics'];
 type Receipt = {
   input: Decision;
   prediction: Prediction;
-  diagnostics: Diagnostics;
+  diagnostics?: Diagnostics;
   engineMetadata: Engine['metadata'];
   wallMs: number;
 };
@@ -22,7 +25,7 @@ type BrowserState = {
 };
 type BrowserBridge = {
   loadDecision(input: Decision): void;
-  run(input?: Decision): Promise<Receipt>;
+  run(input?: Decision, options?: { diagnostics?: boolean }): Promise<Receipt>;
   readonly history: readonly Receipt[];
   dispose(): Promise<void>;
   offline: { prepare(): Promise<OfflineStatus>; status(): Promise<OfflineStatus> };
@@ -241,10 +244,10 @@ function renderOffline(value: OfflineStatus): void {
   offlineStatusText.textContent = value.message;
   offlineProgress.hidden = value.state !== 'preparing';
   updateProgress(offlineProgress, value.loadedBytes, value.totalBytes);
-  offlineButton.textContent = value.state === 'ready' ? 'Refresh offline copy' : 'Make M9 available offline';
+  offlineButton.textContent = value.state === 'ready' ? 'Refresh offline copy' : `Make ${modelLabel} available offline`;
   offlineButton.disabled = busy || cacheBusy || value.state === 'unsupported';
   offlineDetail.textContent = value.state === 'preparing' && value.loadedBytes !== undefined
-    ? `${bytes(value.loadedBytes)}${value.totalBytes === undefined ? ' saved' : ` of ${bytes(value.totalBytes)} saved`} · app and M9 assets only`
+    ? `${bytes(value.loadedBytes)}${value.totalBytes === undefined ? ' saved' : ` of ${bytes(value.totalBytes)} saved`} · app and model assets only`
     : 'Only app and model assets are saved. Your inputs and results stay in memory.';
 }
 
@@ -291,12 +294,13 @@ function renderReceipt(receipt: Receipt): void {
     row.append(heading, meter);
     scores.append(row);
   }
-  element('timing').textContent = `WASM · Inference ${receipt.diagnostics.inferenceMs.toFixed(0)} ms · This run ${receipt.wallMs.toFixed(0)} ms (includes model loading if needed)`;
+  const timing = receipt.diagnostics ? `Inference ${receipt.diagnostics.inferenceMs.toFixed(0)} ms · ` : '';
+  element('timing').textContent = `WASM · ${timing}This run ${receipt.wallMs.toFixed(0)} ms (includes model loading if needed)`;
   results.hidden = false;
   emptyResults.hidden = true;
 }
 
-async function run(input?: Decision): Promise<Receipt> {
+async function run(input?: Decision, request: { diagnostics?: boolean } = {}): Promise<Receipt> {
   assertIdle();
   const current = ++operation;
   const started = performance.now();
@@ -309,19 +313,18 @@ async function run(input?: Decision): Promise<Receipt> {
     setBusy(true);
     if (!engine) {
       phase = 'loading';
-      status.textContent = 'Loading M9 reference model…';
+      status.textContent = `Loading ${modelLabel} model…`;
       initializationAbort = new AbortController();
       const signal = initializationAbort.signal;
-      const { createEngine } = await import('./runtime/index');
+      const { createEngine } = await import('@jeff/sdk');
       if (signal.aborted || current !== operation) throw new Error('Model loading cancelled.');
       const options = {
-        assetBaseUrl: '/models/m9/', signal,
+        ...model, signal,
         onProgress: (event: Progress) => { if (current === operation) loadingProgress(event); },
       };
       const loaded = await createEngine(options);
       if (current !== operation) { await loaded.dispose(); throw new Error('Model loading cancelled.'); }
       engine = loaded;
-      initializationAbort = null;
       backend.textContent = `Backend: ${engine.metadata.backend} · ONNX session ${engine.metadata.modelLoadMs.toFixed(0)} ms`;
     }
     const active = engine;
@@ -329,10 +332,12 @@ async function run(input?: Decision): Promise<Receipt> {
     modelProgress.hidden = true;
     modelProgressText.hidden = true;
     status.textContent = 'Comparing your choices locally…';
-    const output = await active.predict(clone(submitted));
+    const output = request.diagnostics
+      ? await active.predictWithDiagnostics(clone(submitted))
+      : { prediction: await active.predict(clone(submitted)), diagnostics: undefined };
     if (current !== operation) throw new Error('Comparison cancelled.');
     validatePrediction(submitted, output.prediction);
-    if (output.diagnostics.backend !== 'wasm' || active.metadata.backend !== 'wasm') {
+    if ((output.diagnostics && output.diagnostics.backend !== 'wasm') || active.metadata.backend !== 'wasm') {
       throw new Error('Unexpected runtime backend. No scores are shown.');
     }
     const receipt: Receipt = clone({
@@ -442,5 +447,20 @@ window.jeffBrowser = {
     engineMetadata: engine?.metadata ?? null, result,
   }),
 };
+navigation(document.querySelector<HTMLElement>('.masthead')!, 'playground');
+for (const label of document.querySelectorAll<HTMLElement>('[data-model-label]')) label.textContent = modelLabel;
+const presets = element<HTMLSelectElement>('example');
+const examples = [...routingExamples.map(sample => ({ name: sample.title, sample })),
+  ...sentimentExamples.map((sample, index) => ({ name: `Message ${index + 1}: ${sample.state.slice(0, 48)}…`, sample }))];
+for (const [index, example] of examples.entries()) {
+  const option = document.createElement('option'); option.value = String(index); option.textContent = example.name; presets.append(option);
+}
+presets.addEventListener('change', () => {
+  const example = examples[Number(presets.value)];
+  if (presets.value === '' || !example) return;
+  try { loadDecision({ schema_version: '0.1', ...example.sample }); }
+  catch (error) { showError(error); }
+});
+window.addEventListener('pagehide', () => { void dispose().catch(() => {}); });
 renderChoices();
 void initializeOffline(renderOffline);

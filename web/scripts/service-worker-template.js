@@ -1,6 +1,6 @@
 /* Generated immutable static-only worker. Preparation belongs to the window. */
 const manifest = /* OFFLINE_MANIFEST */;
-const cacheName = `jeff-m9-offline-v1-${manifest.version}`;
+const cacheName = `jeff-browser-offline-v2-${manifest.version}`;
 const markerUrl = new URL(`/__jeff_offline_complete__/${manifest.version}`, self.location.origin).href;
 const descriptors = new Map(manifest.assets.map(asset => [asset.url, asset]));
 

@@ -1,0 +1,11 @@
+{
+  "name": "jeff-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "workspaces": ["sdk", "web"],
+  "scripts": {
+    "build": "bun run --cwd sdk build && bun run --cwd web build",
+    "demo": "bun run --cwd web demo"
+  }
+}
