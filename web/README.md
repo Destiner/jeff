@@ -10,12 +10,37 @@ Both dark layouts use the approved comfortable density. There are no gallery con
 
 ## Run locally
 
-From the repository root, with Bun 1.4.4 installed:
+From the repository root, with **Bun 1.4.4** installed, obtain the [M9 release archive and checksum](https://github.com/Destiner/jeff/releases/tag/m9-browser-v1). The model is separate from Git and npm dependencies. While the repository is private, GitHub access is required for acquisition; inference itself needs no credentials.
+
+Authenticated GitHub acquisition:
 
 ```sh
-bun install --frozen-lockfile --ignore-scripts
-bun run demo
+mkdir -p artifacts/m9
+gh release download m9-browser-v1 --repo Destiner/jeff \
+  --pattern 'jeff-m9-browser-v1.tar.gz*' --dir artifacts/m9
 ```
+
+When the repository is public, credential-free HTTP acquisition instead:
+
+```sh
+mkdir -p artifacts/m9
+BASE=https://github.com/Destiner/jeff/releases/download/m9-browser-v1
+curl -fL "$BASE/jeff-m9-browser-v1.tar.gz" -o artifacts/m9/jeff-m9-browser-v1.tar.gz
+curl -fL "$BASE/jeff-m9-browser-v1.tar.gz.sha256" -o artifacts/m9/jeff-m9-browser-v1.tar.gz.sha256
+```
+
+Verify, extract and launch:
+
+```sh
+(cd artifacts/m9 && \
+  shasum -a 256 -c jeff-m9-browser-v1.tar.gz.sha256 && \
+  tar -xzf jeff-m9-browser-v1.tar.gz && shasum -a 256 -c SHA256SUMS)
+bun install --frozen-lockfile --ignore-scripts
+ASSETS="$(cd artifacts/m9 && pwd -P)"
+bun run demo --model-dir "$ASSETS" --descriptor "$ASSETS/model.json"
+```
+
+Archive: **83,457,505 bytes**, SHA-256 **`eae183b0814afd62c54f1efe169aae8bc36cfa717809cc77a117963239c29286`**. Use physical paths (`pwd -P`): the copier rejects symlink components, including macOS `/var` when the physical path is `/private/var`. Keep the bundled notices alongside redistributed assets. See [actual setup/execution evidence](../docs/runtime/submission-delivery.md); anonymous acquisition is not yet verified.
 
 Open **http://127.0.0.1:4174/**. The fresh default origin avoids silently reusing the historical B2 worker on port4173. Do not unregister unrelated/user service workers.
 
@@ -36,7 +61,7 @@ Defaults resolve artifacts through Git's common directory, not the working direc
 - Export root: `artifacts/release/browser-b1-20261112-01/export-01/assets`.
 - Descriptor: tracked `sdk/models/m9.json`.
 
-These local artifacts are not downloaded by the command. A fresh public clone does **not** contain trained weights. It needs an explicitly provided compatible export: `--model-dir ABSOLUTE_EXPORT_ROOT --descriptor ABSOLUTE_MODEL_JSON`.
+These defaults are retained local artifacts, not downloaded by the launcher. A fresh clone does **not** contain trained weights. Use the release and explicit `--model-dir`/`--descriptor` commands above; its nested tokenizer layout is compatible with the copier.
 
 A local prebuilt handoff is retained at `artifacts/infra/final-sprint-20261112-01/local-kit/`, with adjacent `jeff-local-kit-20261112.tar` (104,171,520B, SHA256 `8e6c8d04a0ebc4d92bed4b97336871d0adb5c0ef79bd886269fd8e2d31901ce4`). This ignored local artifact is **not a public download**. From its extracted directory, `bun web/scripts/serve.mjs --port 4174 --duration-seconds 7200` serves the exact built apps/model without installation, Python or rebuilding. Its separate15-second static launch, four HTTP byte checks and automatic exit were observed; no model inference was performed by that packaging check.
 
@@ -73,14 +98,16 @@ The playground's explicit preparation action covers all three app pages, their e
 
 Quota/storage/unsupported-browser errors remain visible. Updates can require closing old app tabs and reopening; preparation bypasses the old worker while ordinary runtime requests can use its complete cache. Storage can later be evicted. **Cache completeness is not a fresh browser SHA-256 audit:** same-length wrong cache bytes are not excluded by preparation alone. SDK model-buffer checks are separate.
 
-Current final-sprint evidence:
+Historical packed-SDK final-sprint evidence:
 
 - The actual independently packed SDK consumer completed one M9 initialization and six online predictions: first3 simple, last3 detailed,24probabilities. Evaluation's saved-output comparison passed with max absolute drift **8.8668822495474586e-7≤1e-4**, six matching canonical tops and raw sums≤1e-6; no normalization. The three detailed cases matched9matrices/1668integer entries. Plain-call tokens remain unverified.
 - This was the isolated `/sdk-proof/index.html` consumer, **not inference through the production queue/chat/playground buttons**. Package/source, operator/lifecycle and saved-output arithmetic evidence have distinct roles. Runtime owns execution; Infra did not run a model.
 - The first controller attempt stopped before contacting the browser because of preflight time arithmetic;2seconds were charged. Explicitly renewed online execution charged4seconds. The closed chain total is6/300seconds; unused seconds authorize nothing.
 - Its scoped10-file cache became ready and the server actually stopped at19:14:04.712124UTC. Runtime received the stop after its latest capped start, so **fresh server-unavailable navigation/inference was not attempted**. New SDK/product-graph offline inference remains unverified. Historical B2 success does not fill that gap.
 
-A subsequent exact six-case final-app packet and capture-only consumer build (`b7de809`, required graph `19876c1858b65fc905679d25`) were prepared. The actual three-page readiness arrived late and Model issued no activation before its20:15 availability cutoff. **Final production-button/bridge inference was unattempted**, not passed or failed numerical parity. No new offline phase was activated. Prepared controls/references remain future handoff material, not standing permission to run.
+A subsequent exact six-case final-app packet and capture-only consumer build (`b7de809`, required graph `19876c1858b65fc905679d25`) were prepared. The actual three-page readiness arrived late and Model issued no activation before its20:15 availability cutoff. **That original production-button/bridge phase closed unattempted**, not passed or failed numerical parity. No new offline phase was activated. Prepared controls/references remain future handoff material, not standing permission to run.
+
+A separately authorized submission phase later completed six real production-button predictions in Chromium across two recording segments. All six native-reference tops matched, maximum raw probability drift was **1.6874564367e-6**, and both manual queue routes were captured. The first Chromium controller remains failed after a resource-sample guard stopped it following the fifth prediction; only the unattempted sixth case ran afterward. A preceding Safari initialization timed out without a returned prediction. No new-app offline claim follows. [Full delivery report and video](../docs/runtime/submission-delivery.md).
 
 Local receipts: `artifacts/release/final-sdk-20261112-01/`; Infra staging/composition/lifecycle/build evidence: `artifacts/infra/final-sprint-20261112-01/`. Independent comparison was delivered by Evaluation in messagee5271405-8393-40b4-9f24-0fef8972b0b4. Later publication or UI builds are not retroactive execution provenance.
 
@@ -96,4 +123,4 @@ The original B1/B2 M9 worktree, evidence and accepted historical server-unavaila
 
 ## Notices
 
-`web/public/notices/` retains the bounded upstream notices and inventory from B2. It is not exhaustive binary attribution, a first-party redistribution grant, dataset/teacher/demo-text rights clearance or permission for public release. Current serving is local only. The source repository was separately approved for public visibility; the ignored model-assets/local-kit artifacts were not approved for public upload.
+`web/public/notices/` retains the bounded upstream notices and inventory from B2. The separately authorized M9 release includes the pinned upstream Apache-2.0 model card, license text, attribution and modification notices. These are not exhaustive dataset/teacher rights clearance or a first-party project license. The old local kit remains a distinct ignored artifact; only the reviewed model archive/checksum and demonstration video were approved for release distribution.

@@ -1,0 +1,112 @@
+{
+  "schema_version": "jeff.submission-delivery.v1",
+  "date": "2026-11-12",
+  "executed_source": "1e804a332c475fbaa24a69f91df6ad476029258d",
+  "sdk_revision": "4a1334d585bec2dd69aec9f07eb68e0fcc4c3771",
+  "model_id": "m9-msmarco-duration-20261111-01",
+  "browser": "Chromium 151.0.7922.34",
+  "runtime": "FP32 single-thread WASM",
+  "actual_completed_decisions": 6,
+  "actual_probability_values": 24,
+  "top_choice_matches": 6,
+  "max_raw_probability_difference": 1.6874564367e-06,
+  "max_recorded_decimal_sum_error": 6.8e-17,
+  "plain_calls_only": true,
+  "token_parity": "unverified for these calls",
+  "new_app_offline": "unverified",
+  "execution_status": "six case outputs accepted; interrupted controllers remain failed",
+  "attempts": [
+    {
+      "browser": "Safari",
+      "status": "failed during initialization",
+      "completed_predictions": 0,
+      "charged_seconds": 121
+    },
+    {
+      "browser": "Chromium",
+      "status": "failed resource-sample guard",
+      "completed_predictions": 5,
+      "charged_seconds": 48
+    },
+    {
+      "browser": "Chromium",
+      "status": "complete explicit last-case continuation",
+      "completed_predictions": 1,
+      "charged_seconds": 13
+    }
+  ],
+  "shared_browser_ledger": {
+    "historical_seconds": 6,
+    "charged_seconds": 188,
+    "limit_seconds": 300,
+    "status": "closed"
+  },
+  "acquisition": {
+    "release_download": "authenticated GitHub, archive/checksum verified",
+    "source_clone": "fresh local Git clone",
+    "install_build_serve_environment": "isolated, credential-free",
+    "anonymous_clone_download": "deferred while repository private",
+    "initial_symlink_path_failure_preserved": true,
+    "successful_launch_seconds": 2.5627252920530736,
+    "overall_setup_seconds": 65.106393,
+    "cold_machine_or_cache_independence_claim": false
+  },
+  "release": {
+    "url": "https://github.com/Destiner/jeff/releases/tag/m9-browser-v1",
+    "archive": {
+      "name": "jeff-m9-browser-v1.tar.gz",
+      "bytes": 83457505,
+      "sha256": "eae183b0814afd62c54f1efe169aae8bc36cfa717809cc77a117963239c29286"
+    },
+    "video": {
+      "name": "jeff-actual-demo.mp4",
+      "bytes": 905405,
+      "sha256": "06301bb22c7426929a00944dcc145fe539e5bf2d51725e28cf6d850d8913c53a",
+      "duration_seconds": 85.08,
+      "two_segments": true,
+      "cuts_and_frame_sampling_disclosed": true
+    }
+  },
+  "evidence_files_local_not_bundled": [
+    {
+      "path": "artifacts/lead/submission-20261112-01/comparison/receipt.json",
+      "sha256": "486be696fa40d1ecab564be4ae1af373952e14600fd17ebd00d22fa08b159b10"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/comparison/report.md",
+      "sha256": "fbb12f2e3fb86f4a1e78ee5da25bd331f984c71f67eed9f66416d40ac78b966e"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/video/final/edit-manifest.json",
+      "sha256": "f63a4287a3797206eca1d71117507e1e35768388adc154cd08519828784b6f11"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/clean-setup-02.json",
+      "sha256": "a7c86d6732ff92046c57e9c7bdaee41b8fed08b13337d3ce91d5a9555789e9df"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/video-publication.json",
+      "sha256": "b0791454cb6904804716d13f68752a1b4d6706876ad2a9fef3b3c57bbf87901e"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/asset-publication.json",
+      "sha256": "459d0e1f57296c219ae2380778b7735648355ed5144a2ad22aed21fdbb6634b6"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/execution/run01/controller-return.json",
+      "sha256": "457c1ac86c741ffe528282c3396039c438e5a07649a975cd7a488f6883a75541"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/chromium/external-return.json",
+      "sha256": "94ebe80a5b28c0d4e0a388023b1792190e224f4066beebe9857285761269d7d7"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/chromium/single-external-return.json",
+      "sha256": "f630295f314d6c09985a1820da83d8860876e952a0ac8c46640c0e5eb43a3d56"
+    },
+    {
+      "path": "artifacts/lead/submission-20261112-01/closure.json",
+      "sha256": "703cbfa9217d050293e046b9b468d6c61e4b5ab7f7c2b822ed3f6d5ecc3fcb13"
+    }
+  ]
+}

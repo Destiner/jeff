@@ -1,5 +1,7 @@
 # Workstream ownership and coordination
 
+**Submission delivery, 2026-11-12:** the user's separate delivery request completed six real Chromium app-button predictions, M9 release distribution and an edited demo. [Current delivery report](runtime/submission-delivery.md) records preserved interrupted attempts, independent saved-output comparison, private-repository acquisition limits and the closed **188/300s** browser ledger. M9 remains selected; no training, native replay, Qwen retry or new-app offline phase was added. Lead adopted delivery documentation with bounded preparation/review helpers; original owners remain parked. Further model execution needs new authority. The owner made the repository private again and retains the public-visibility decision.
+
 ## Final parallel sprint — 2026-11-12, dispatched17:45UTC
 
 **Current plan: [final sprint](final-sprint-20261112.md).** This supersedes the completed B1/B2/S1 task windows, not their retained evidence. Timur authorized parallel SDK/demos, failure diagnosis and preparation for one final improvement opportunity before23:59 London. Most owners require actual manual resume; dispatch is not execution.
