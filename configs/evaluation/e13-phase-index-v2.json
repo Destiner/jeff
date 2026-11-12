@@ -1,0 +1,34 @@
+{
+  "schema_version": "jeff.evaluation.e13-phase-index.v2",
+  "status": "method-frozen-no-selected-population-yet",
+  "method": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-phase-freeze-v1/plan.md",
+    "bytes": 14216,
+    "sha256": "bb3ed4770d991f89faeaad6aca077c74ffdcc6065d7dbdc9eb8abe491c2fa5d2"
+  },
+  "initial_freeze": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-phase-freeze-v1/receipt.json",
+    "bytes": 1719,
+    "sha256": "94a004003ae4220ea34aa9069d3ef2e518ff44003764543629e0c604477d349b"
+  },
+  "cohort_and_boundary_addendum": {
+    "path": "/Users/destiner/Code/jeff/artifacts/evaluation/e13-phase-freeze-v1/cohort-boundary-addendum-v2.md",
+    "bytes": 2753,
+    "sha256": "07c77a5c2f244dd5c42809dd5892b7bc7e9c8a7d4b13bacb7bdd51c917253abd"
+  },
+  "cohort_authority": {
+    "path": "/Users/destiner/Code/jeff/artifacts/handoffs/lead/night-20261112/external-cohort-v2.md",
+    "bytes": 1606,
+    "sha256": "41f49ba252d34d50e05aa0d19f94383f19e45647bcc2f526f74d6fad0b313525"
+  },
+  "boundary_authority": {
+    "path": "/Users/destiner/Code/jeff/artifacts/handoffs/lead/night-20261112/confirmation-boundary.md",
+    "bytes": 1428,
+    "sha256": "b2f38ec02930e4782fbf5753a9eccdcf07645b361a90fc591804972ee3f0c074"
+  },
+  "confirmed_fixed_exploration_predictors": 4,
+  "max_confirmation_predictors": 6,
+  "max_optional_confirmation_predictors": 2,
+  "confirmation_lock_utc": "2026-11-12T06:30:00Z",
+  "scope": "Only new final/e13-external-v1 subtree; original final24 untouched; tokenizer-only exactpinned label-free construction exposure, not inference; actual counts/grants pending"
+}

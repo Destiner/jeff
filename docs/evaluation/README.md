@@ -12,6 +12,8 @@ E4's [historical LR control](e4-m5-lr-control.md) fails its frozen loss conditio
 
 Prior [Data-v2 / M4 comparison](pilot-e3-m4.md): both candidates improve new-data agreement/loss, but neither passes the pre-result historical robustness gate. Includes frozen inherited/new/probe boundaries, probability quality, source-unit results and exact-reversal evidence. Prior [E2 pilot/M3 results](pilot-e2-m3.md) remain intact.
 
+Prospective night work: [E10–E12/E14 comparisons](night-comparisons.md) and [E13 external-family phase protocol](e13-external-protocol.md). Preparation is not execution; E13's new confirmation boundary never opens original final24.
+
 E3 preparation: [protocol](e3-plan.md), [identity freeze](e3-freeze.md), and [pinned study recipe](e3-study.md).
 
 Runtime dependencies: Python standard library only (project Python 3.12/uv). No imports from Data, Model, or Training. No model downloads, software tests, or linting.
